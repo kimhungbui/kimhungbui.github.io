@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/Statistical Inference and Learning.html",
       "/posts/post_template/index.html"
     ]
   }

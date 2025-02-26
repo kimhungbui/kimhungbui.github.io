@@ -48,5 +48,240 @@
   <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
   <media:content url="https://kimhungbui.github.io/posts/post_template/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
+<item>
+  <title></title>
+  <link>https://kimhungbui.github.io/posts/Statistical Inference and Learning.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<hr>
+<section id="i.-overview-of-statistical-inference" class="level2">
+<h2 class="anchored" data-anchor-id="i.-overview-of-statistical-inference">I. Overview of Statistical Inference</h2>
+<ul>
+<li><p><strong>Definition:</strong><br>
+Statistical inference (often called “learning” in computer science) is the process of using data to deduce the underlying distribution <img src="https://latex.codecogs.com/png.latex?F"> that generated the data. This may involve estimating the entire distribution or specific features (such as the mean).</p></li>
+<li><p><strong>Applications:</strong></p>
+<ul>
+<li>Extracting meaningful information from data<br>
+</li>
+<li>Making informed decisions and predictions<br>
+</li>
+<li>Serving as the foundation for more advanced topics in statistics and machine learning</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="ii.-modeling-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-modeling-approaches">II. Modeling Approaches</h2>
+<section id="a.-parametric-models" class="level3">
+<h3 class="anchored" data-anchor-id="a.-parametric-models">A. Parametric Models</h3>
+<ul>
+<li><strong>Definition:</strong><br>
+A model defined by a finite number of parameters.<br>
+</li>
+<li><strong>Example (Normal Distribution):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0Af(x;%20%5Cmu,%20%5Csigma)%20=%20%5Cfrac%7B1%7D%7B%5Csigma%20%5Csqrt%7B2%5Cpi%7D%7D%20%5Cexp%5Cleft(-%5Cfrac%7B(x-%5Cmu)%5E2%7D%7B2%5Csigma%5E2%7D%5Cright)%0A"></li>
+<li><strong>Characteristics:</strong>
+<ul>
+<li>Simpler to analyze and interpret<br>
+</li>
+<li>More efficient when the assumptions hold true</li>
+</ul></li>
+</ul>
+</section>
+<section id="b.-nonparametric-models" class="level3">
+<h3 class="anchored" data-anchor-id="b.-nonparametric-models">B. Nonparametric Models</h3>
+<ul>
+<li><strong>Definition:</strong><br>
+Models that do not restrict the distribution to a finite-dimensional parameter space.</li>
+<li><strong>Examples:</strong>
+<ul>
+<li>Estimating the entire cumulative distribution function (cdf) <img src="https://latex.codecogs.com/png.latex?F"><br>
+</li>
+<li>Estimating a probability density function (pdf) with smoothness assumptions (e.g., assuming the pdf belongs to a [[Sobolev space]])</li>
+</ul></li>
+<li><strong>Characteristics:</strong>
+<ul>
+<li>Greater flexibility to model complex data<br>
+</li>
+<li>Fewer assumptions about the form of the distribution</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="example-6.1-one-dimensional-parametric-estimation--" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.1-one-dimensional-parametric-estimation--">Example 6.1: One-Dimensional Parametric Estimation -</h2>
+<p><strong>Scenario:</strong> We observe independent Bernoulli(<img src="https://latex.codecogs.com/png.latex?p">) random variables <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n">. - <strong>Goal:</strong> Estimate the unknown parameter <img src="https://latex.codecogs.com/png.latex?p"> (the probability of success). - <strong>Estimator:</strong> The natural estimator is the sample mean: <img src="https://latex.codecogs.com/png.latex?%20%5Chat%7Bp%7D_n%20=%20%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi=1%7D%5En%20X_i.%20"> - <strong>Key Points:</strong> - <strong>Unbiasedness:</strong> <img src="https://latex.codecogs.com/png.latex?E(%5Chat%7Bp%7D_n)%20=%20p."> Thus, the estimator is unbiased. - <strong>Variance:</strong> Since <img src="https://latex.codecogs.com/png.latex?%5Coperatorname%7BVar%7D(X_i)%20=%20p(1-p)">, the variance of the estimator is <img src="https://latex.codecogs.com/png.latex?%20%5Coperatorname%7BVar%7D(%5Chat%7Bp%7D_n)%20=%20%5Cfrac%7Bp(1-p)%7D%7Bn%7D.%20"> - <strong>Consistency:</strong> As <img src="https://latex.codecogs.com/png.latex?n"> increases, the variance shrinks, making <img src="https://latex.codecogs.com/png.latex?%5Chat%7Bp%7D_n"> a consistent estimator of <img src="https://latex.codecogs.com/png.latex?p">.</p>
+</section>
+<section id="example-6.2-two-dimensional-parametric-estimation--" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.2-two-dimensional-parametric-estimation--">Example 6.2: Two-Dimensional Parametric Estimation -</h2>
+<p><strong>Scenario:</strong> Suppose <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n"> are independent observations from a distribution <img src="https://latex.codecogs.com/png.latex?F"> whose probability density function is given by a parametric family: <img src="https://latex.codecogs.com/png.latex?%20f(x;%20%5Cmu,%20%5Csigma)%20=%20%5Cfrac%7B1%7D%7B%5Csigma%20%5Csqrt%7B2%5Cpi%7D%7D%20%5Cexp%5Cleft(-%5Cfrac%7B(x-%5Cmu)%5E2%7D%7B2%5Csigma%5E2%7D%5Cright).%20"> - <strong>Goal:</strong> Estimate the two parameters: the mean <img src="https://latex.codecogs.com/png.latex?%5Cmu"> and the standard deviation <img src="https://latex.codecogs.com/png.latex?%5Csigma">. - <strong>Nuisance Parameter:</strong> If we are primarily interested in <img src="https://latex.codecogs.com/png.latex?%5Cmu">, then <img src="https://latex.codecogs.com/png.latex?%5Csigma"> becomes a nuisance parameter—an additional parameter that must be estimated but is not of direct interest. - <strong>Key Points:</strong> - <strong>Multidimensionality:</strong> The estimation problem involves simultaneous estimation of <img src="https://latex.codecogs.com/png.latex?%5Cmu"> and <img src="https://latex.codecogs.com/png.latex?%5Csigma">. - <strong>Methods:</strong> Techniques such as maximum likelihood estimation (MLE) are commonly used, sometimes incorporating methods (like profile likelihood) to eliminate the effect of nuisance parameters when focusing on <img src="https://latex.codecogs.com/png.latex?%5Cmu">.</p>
+</section>
+<section id="iii.-core-concepts-in-inference" class="level2">
+<h2 class="anchored" data-anchor-id="iii.-core-concepts-in-inference">III. Core Concepts in Inference</h2>
+<section id="point-estimation" class="level3">
+<h3 class="anchored" data-anchor-id="point-estimation">1. Point Estimation</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+A point estimator is a function of the data, denoted as<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D_n%20=%20g(X_1,%20X_2,%20%5Cdots,%20X_n)%0A"><br>
+used to provide a single “best guess” for the unknown parameter <img src="https://latex.codecogs.com/png.latex?%5Ctheta">.</p></li>
+<li><p><strong>Key Properties:</strong></p>
+<ul>
+<li><strong>Bias:</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bbias%7D(%5Chat%7B%5Ctheta%7D_n)%20=%20E(%5Chat%7B%5Ctheta%7D_n)%20-%20%5Ctheta%0A"></li>
+<li><strong>Variance and Standard Error (se):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bse%7D%20=%20%5Csqrt%7BVar(%5Chat%7B%5Ctheta%7D_n)%7D%0A"></li>
+<li><strong>Mean Squared Error (MSE):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bmse%7D%20=%20E%5Cleft%5B(%5Chat%7B%5Ctheta%7D_n%20-%20%5Ctheta)%5E2%5Cright%5D%20=%20%5Ctext%7Bbias%7D%5E2(%5Chat%7B%5Ctheta%7D_n)%20+%20Var(%5Chat%7B%5Ctheta%7D_n)%0A"></li>
+<li><strong>Consistency:</strong><br>
+An estimator is consistent if<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D_n%20%5Cxrightarrow%7BP%7D%20%5Ctheta%20%5Cquad%20%5Ctext%7Bas%20%7D%20n%20%5Cto%20%5Cinfty%0A"></li>
+<li><strong>Asymptotic Normality:</strong><br>
+Many estimators satisfy<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5Chat%7B%5Ctheta%7D_n%20-%20%5Ctheta%7D%7B%5Ctext%7Bse%7D%7D%20%5Capprox%20N(0,%201)%0A"><br>
+for large samples, which facilitates the construction of confidence intervals.</li>
+</ul></li>
+</ul>
+</section>
+<section id="confidence-sets" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-sets">2. Confidence Sets</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+A confidence interval (or set) is a range constructed from the data that, over many repetitions of the experiment, contains the true parameter <img src="https://latex.codecogs.com/png.latex?%5Ctheta"> with a specified probability (coverage).</p></li>
+<li><p><strong>Example (Normal-Based Interval):</strong><br>
+When <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Ctheta%7D_n"> is approximately normally distributed, an approximate <img src="https://latex.codecogs.com/png.latex?1-%5Calpha"> confidence interval is: <img src="https://latex.codecogs.com/png.latex?%0AC_n%20=%20%5Cleft(%20%5Chat%7B%5Ctheta%7D_n%20-%20z_%7B%5Calpha/2%7D%5C,%5Ctext%7Bse%7D,%20%5Cquad%20%5Chat%7B%5Ctheta%7D_n%20+%20z_%7B%5Calpha/2%7D%5C,%5Ctext%7Bse%7D%20%5Cright)%0A"> where <img src="https://latex.codecogs.com/png.latex?z_%7B%5Calpha/2%7D"> is the quantile of the standard Normal distribution such that <img src="https://latex.codecogs.com/png.latex?%0AP(Z%20%3E%20z_%7B%5Calpha/2%7D)%20=%20%5Cfrac%7B%5Calpha%7D%7B2%7D.%0A"></p></li>
+</ul>
+</section>
+<section id="hypothesis-testing" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-testing">3. Hypothesis Testing</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+Hypothesis testing involves formulating a null hypothesis <img src="https://latex.codecogs.com/png.latex?H_0"> (a default statement, such as a coin being fair) and an alternative hypothesis <img src="https://latex.codecogs.com/png.latex?H_1">, then using the data to decide whether there is sufficient evidence to reject <img src="https://latex.codecogs.com/png.latex?H_0">.</p></li>
+<li><p><strong>Example (Testing Coin Fairness):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0AH_0:%20p%20=%200.5%20%5Cquad%20%5Ctext%7Bversus%7D%20%5Cquad%20H_1:%20p%20%5Cneq%200.5%0A"></p></li>
+<li><p><strong>Process:</strong></p>
+<ul>
+<li>Define an appropriate test statistic (e.g., <img src="https://latex.codecogs.com/png.latex?T%20=%20%7C%5Chat%7Bp%7D_n%20-%200.5%7C">)<br>
+</li>
+<li>Set a significance level <img src="https://latex.codecogs.com/png.latex?%5Calpha"><br>
+</li>
+<li>Determine the rejection region based on <img src="https://latex.codecogs.com/png.latex?%5Calpha"> or compute a p-value<br>
+</li>
+<li>Reject <img src="https://latex.codecogs.com/png.latex?H_0"> if the test statistic falls into the rejection region</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="iv.-frequentist-vs.-bayesian-inference" class="level2">
+<h2 class="anchored" data-anchor-id="iv.-frequentist-vs.-bayesian-inference">IV. Frequentist vs.&nbsp;Bayesian Inference</h2>
+<ul>
+<li><strong>Frequentist Inference:</strong>
+<ul>
+<li>Treats parameters as fixed but unknown<br>
+</li>
+<li>Focuses on the properties of estimators over repeated sampling (e.g., confidence intervals, hypothesis tests)</li>
+</ul></li>
+<li><strong>Bayesian Inference:</strong>
+<ul>
+<li>Treats parameters as random variables with prior distributions<br>
+</li>
+<li>Uses Bayes’ theorem to update beliefs in light of new data, allowing direct probability statements about parameters</li>
+</ul></li>
+<li><strong>Comparison:</strong>
+<ul>
+<li><strong>Frequentist methods</strong> emphasize long-run frequency properties.<br>
+</li>
+<li><strong>Bayesian methods</strong> provide a framework for incorporating prior knowledge and making probabilistic statements about parameters.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="v.-additional-information" class="level2">
+<h2 class="anchored" data-anchor-id="v.-additional-information">V. Additional Information</h2>
+<section id="bibliographic-references" class="level3">
+<h3 class="anchored" data-anchor-id="bibliographic-references">Bibliographic References</h3>
+<ul>
+<li><strong>Elementary Level:</strong>
+<ul>
+<li>DeGroot and Schervish (2002)<br>
+</li>
+<li>Larsen and Marx (1986)</li>
+</ul></li>
+<li><strong>Intermediate Level:</strong>
+<ul>
+<li>Casella and Berger (2002)<br>
+</li>
+<li>Bickel and Doksum (2000)<br>
+</li>
+<li>Rice (1995)</li>
+</ul></li>
+<li><strong>Advanced Level:</strong>
+<ul>
+<li>Cox and Hinkley (2000)<br>
+</li>
+<li>Lehmann and Casella (1998)<br>
+</li>
+<li>Lehmann (1986)<br>
+</li>
+<li>van der Vaart (1998)</li>
+</ul></li>
+</ul>
+</section>
+<section id="exercises" class="level3">
+<h3 class="anchored" data-anchor-id="exercises">Exercises</h3>
+<ol type="1">
+<li><p><strong>Poisson Estimation:</strong><br>
+For <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n%20%5Csim%20%5Ctext%7BPoisson%7D(%5Clambda)"> with the estimator<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Clambda%7D%20=%20%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi=1%7D%5En%20X_i,%0A"><br>
+determine the bias, standard error, and mean squared error.</p></li>
+<li><p><strong>Uniform Distribution Estimation (Method 1):</strong><br>
+For <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n%20%5Csim%20%5Ctext%7BUniform%7D(0,%20%5Ctheta)"> and the estimator<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D%20=%20%5Cmax%5C%7BX_1,%20X_2,%20%5Cdots,%20X_n%5C%7D,%0A"><br>
+calculate the bias, standard error, and mse.</p></li>
+<li><p><strong>Uniform Distribution Estimation (Method 2):</strong><br>
+For the same model with the estimator<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D%20=%202X_%7B(n)%7D,%0A"><br>
+where <img src="https://latex.codecogs.com/png.latex?X_%7B(n)%7D"> is the maximum, compute the bias, standard error, and mse.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="vi.-key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="vi.-key-takeaways">VI. Key Takeaways</h2>
+<ul>
+<li><p><strong>Inference Fundamentals:</strong><br>
+Learning how to deduce properties of a population from a sample is central to statistics and machine learning.</p></li>
+<li><p><strong>Model Choice:</strong></p>
+<ul>
+<li><strong>Parametric models</strong> are simpler but rely on strong assumptions.<br>
+</li>
+<li><strong>Nonparametric models</strong> offer flexibility with fewer assumptions.</li>
+</ul></li>
+<li><p><strong>Estimator Evaluation:</strong><br>
+Properties such as bias, variance (or standard error), and mean squared error are essential in assessing the quality of estimators.</p></li>
+<li><p><strong>Confidence and Testing:</strong></p>
+<ul>
+<li>Confidence intervals quantify the uncertainty in estimates.<br>
+</li>
+<li>Hypothesis testing provides a formal framework for decision-making.</li>
+</ul></li>
+<li><p><strong>Philosophical Approaches:</strong><br>
+The frequentist and Bayesian paradigms provide different perspectives on probability and inference, influencing how uncertainty is quantified and interpreted.</p></li>
+</ul>
+<hr>
+<p>These detailed notes, organized into clear sections and using $$ for mathematical expressions, should provide a comprehensive reference and enhance your understanding of the fundamental concepts in statistical inference and learning.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://kimhungbui.github.io/posts/Statistical Inference and Learning.html</guid>
+  <pubDate>Wed, 26 Feb 2025 04:31:38 GMT</pubDate>
+</item>
 </channel>
 </rss>

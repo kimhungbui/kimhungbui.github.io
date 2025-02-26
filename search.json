@@ -28,6 +28,62 @@
     "text": "This is a subsection\nSubsection text! You get it now I assume\nThis is how you reference an image in your blog post\n\n\n\nThis is just a photo I took last time I was in Dundee.\n\n\nThat’s it! go for it!"
   },
   {
+    "objectID": "posts/Statistical Inference and Learning.html#i.-overview-of-statistical-inference",
+    "href": "posts/Statistical Inference and Learning.html#i.-overview-of-statistical-inference",
+    "title": "My Personal Website",
+    "section": "I. Overview of Statistical Inference",
+    "text": "I. Overview of Statistical Inference\n\nDefinition:\nStatistical inference (often called “learning” in computer science) is the process of using data to deduce the underlying distribution \\[F\\] that generated the data. This may involve estimating the entire distribution or specific features (such as the mean).\nApplications:\n\nExtracting meaningful information from data\n\nMaking informed decisions and predictions\n\nServing as the foundation for more advanced topics in statistics and machine learning"
+  },
+  {
+    "objectID": "posts/Statistical Inference and Learning.html#ii.-modeling-approaches",
+    "href": "posts/Statistical Inference and Learning.html#ii.-modeling-approaches",
+    "title": "My Personal Website",
+    "section": "II. Modeling Approaches",
+    "text": "II. Modeling Approaches\n\nA. Parametric Models\n\nDefinition:\nA model defined by a finite number of parameters.\n\nExample (Normal Distribution):\n\\[\nf(x; \\mu, \\sigma) = \\frac{1}{\\sigma \\sqrt{2\\pi}} \\exp\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right)\n\\]\nCharacteristics:\n\nSimpler to analyze and interpret\n\nMore efficient when the assumptions hold true\n\n\n\n\nB. Nonparametric Models\n\nDefinition:\nModels that do not restrict the distribution to a finite-dimensional parameter space.\nExamples:\n\nEstimating the entire cumulative distribution function (cdf) \\[F\\]\n\nEstimating a probability density function (pdf) with smoothness assumptions (e.g., assuming the pdf belongs to a [[Sobolev space]])\n\nCharacteristics:\n\nGreater flexibility to model complex data\n\nFewer assumptions about the form of the distribution"
+  },
+  {
+    "objectID": "posts/Statistical Inference and Learning.html#example-6.1-one-dimensional-parametric-estimation--",
+    "href": "posts/Statistical Inference and Learning.html#example-6.1-one-dimensional-parametric-estimation--",
+    "title": "My Personal Website",
+    "section": "Example 6.1: One-Dimensional Parametric Estimation -",
+    "text": "Example 6.1: One-Dimensional Parametric Estimation -\nScenario: We observe independent Bernoulli(\\[p\\]) random variables \\[X_1, X_2, \\dots, X_n\\]. - Goal: Estimate the unknown parameter \\[p\\] (the probability of success). - Estimator: The natural estimator is the sample mean: \\[ \\hat{p}_n = \\frac{1}{n}\\sum_{i=1}^n X_i. \\] - Key Points: - Unbiasedness: \\[E(\\hat{p}_n) = p.\\] Thus, the estimator is unbiased. - Variance: Since \\[\\operatorname{Var}(X_i) = p(1-p)\\], the variance of the estimator is \\[ \\operatorname{Var}(\\hat{p}_n) = \\frac{p(1-p)}{n}. \\] - Consistency: As \\[n\\] increases, the variance shrinks, making \\[\\hat{p}_n\\] a consistent estimator of \\[p\\]."
+  },
+  {
+    "objectID": "posts/Statistical Inference and Learning.html#example-6.2-two-dimensional-parametric-estimation--",
+    "href": "posts/Statistical Inference and Learning.html#example-6.2-two-dimensional-parametric-estimation--",
+    "title": "My Personal Website",
+    "section": "Example 6.2: Two-Dimensional Parametric Estimation -",
+    "text": "Example 6.2: Two-Dimensional Parametric Estimation -\nScenario: Suppose \\[X_1, X_2, \\dots, X_n\\] are independent observations from a distribution \\[F\\] whose probability density function is given by a parametric family: \\[ f(x; \\mu, \\sigma) = \\frac{1}{\\sigma \\sqrt{2\\pi}} \\exp\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right). \\] - Goal: Estimate the two parameters: the mean \\[\\mu\\] and the standard deviation \\[\\sigma\\]. - Nuisance Parameter: If we are primarily interested in \\[\\mu\\], then \\[\\sigma\\] becomes a nuisance parameter—an additional parameter that must be estimated but is not of direct interest. - Key Points: - Multidimensionality: The estimation problem involves simultaneous estimation of \\[\\mu\\] and \\[\\sigma\\]. - Methods: Techniques such as maximum likelihood estimation (MLE) are commonly used, sometimes incorporating methods (like profile likelihood) to eliminate the effect of nuisance parameters when focusing on \\[\\mu\\]."
+  },
+  {
+    "objectID": "posts/Statistical Inference and Learning.html#iii.-core-concepts-in-inference",
+    "href": "posts/Statistical Inference and Learning.html#iii.-core-concepts-in-inference",
+    "title": "My Personal Website",
+    "section": "III. Core Concepts in Inference",
+    "text": "III. Core Concepts in Inference\n\n1. Point Estimation\n\nConcept:\nA point estimator is a function of the data, denoted as\n\\[\n\\hat{\\theta}_n = g(X_1, X_2, \\dots, X_n)\n\\]\nused to provide a single “best guess” for the unknown parameter \\[\\theta\\].\nKey Properties:\n\nBias:\n\\[\n\\text{bias}(\\hat{\\theta}_n) = E(\\hat{\\theta}_n) - \\theta\n\\]\nVariance and Standard Error (se):\n\\[\n\\text{se} = \\sqrt{Var(\\hat{\\theta}_n)}\n\\]\nMean Squared Error (MSE):\n\\[\n\\text{mse} = E\\left[(\\hat{\\theta}_n - \\theta)^2\\right] = \\text{bias}^2(\\hat{\\theta}_n) + Var(\\hat{\\theta}_n)\n\\]\nConsistency:\nAn estimator is consistent if\n\\[\n\\hat{\\theta}_n \\xrightarrow{P} \\theta \\quad \\text{as } n \\to \\infty\n\\]\nAsymptotic Normality:\nMany estimators satisfy\n\\[\n\\frac{\\hat{\\theta}_n - \\theta}{\\text{se}} \\approx N(0, 1)\n\\]\nfor large samples, which facilitates the construction of confidence intervals.\n\n\n\n\n2. Confidence Sets\n\nConcept:\nA confidence interval (or set) is a range constructed from the data that, over many repetitions of the experiment, contains the true parameter \\[\\theta\\] with a specified probability (coverage).\nExample (Normal-Based Interval):\nWhen \\[\\hat{\\theta}_n\\] is approximately normally distributed, an approximate \\[1-\\alpha\\] confidence interval is: \\[\nC_n = \\left( \\hat{\\theta}_n - z_{\\alpha/2}\\,\\text{se}, \\quad \\hat{\\theta}_n + z_{\\alpha/2}\\,\\text{se} \\right)\n\\] where \\[z_{\\alpha/2}\\] is the quantile of the standard Normal distribution such that \\[\nP(Z &gt; z_{\\alpha/2}) = \\frac{\\alpha}{2}.\n\\]\n\n\n\n3. Hypothesis Testing\n\nConcept:\nHypothesis testing involves formulating a null hypothesis \\[H_0\\] (a default statement, such as a coin being fair) and an alternative hypothesis \\[H_1\\], then using the data to decide whether there is sufficient evidence to reject \\[H_0\\].\nExample (Testing Coin Fairness):\n\\[\nH_0: p = 0.5 \\quad \\text{versus} \\quad H_1: p \\neq 0.5\n\\]\nProcess:\n\nDefine an appropriate test statistic (e.g., \\[T = |\\hat{p}_n - 0.5|\\])\n\nSet a significance level \\[\\alpha\\]\n\nDetermine the rejection region based on \\[\\alpha\\] or compute a p-value\n\nReject \\[H_0\\] if the test statistic falls into the rejection region"
+  },
+  {
+    "objectID": "posts/Statistical Inference and Learning.html#iv.-frequentist-vs.-bayesian-inference",
+    "href": "posts/Statistical Inference and Learning.html#iv.-frequentist-vs.-bayesian-inference",
+    "title": "My Personal Website",
+    "section": "IV. Frequentist vs. Bayesian Inference",
+    "text": "IV. Frequentist vs. Bayesian Inference\n\nFrequentist Inference:\n\nTreats parameters as fixed but unknown\n\nFocuses on the properties of estimators over repeated sampling (e.g., confidence intervals, hypothesis tests)\n\nBayesian Inference:\n\nTreats parameters as random variables with prior distributions\n\nUses Bayes’ theorem to update beliefs in light of new data, allowing direct probability statements about parameters\n\nComparison:\n\nFrequentist methods emphasize long-run frequency properties.\n\nBayesian methods provide a framework for incorporating prior knowledge and making probabilistic statements about parameters."
+  },
+  {
+    "objectID": "posts/Statistical Inference and Learning.html#v.-additional-information",
+    "href": "posts/Statistical Inference and Learning.html#v.-additional-information",
+    "title": "My Personal Website",
+    "section": "V. Additional Information",
+    "text": "V. Additional Information\n\nBibliographic References\n\nElementary Level:\n\nDeGroot and Schervish (2002)\n\nLarsen and Marx (1986)\n\nIntermediate Level:\n\nCasella and Berger (2002)\n\nBickel and Doksum (2000)\n\nRice (1995)\n\nAdvanced Level:\n\nCox and Hinkley (2000)\n\nLehmann and Casella (1998)\n\nLehmann (1986)\n\nvan der Vaart (1998)\n\n\n\n\nExercises\n\nPoisson Estimation:\nFor \\[X_1, X_2, \\dots, X_n \\sim \\text{Poisson}(\\lambda)\\] with the estimator\n\\[\n\\hat{\\lambda} = \\frac{1}{n}\\sum_{i=1}^n X_i,\n\\]\ndetermine the bias, standard error, and mean squared error.\nUniform Distribution Estimation (Method 1):\nFor \\[X_1, X_2, \\dots, X_n \\sim \\text{Uniform}(0, \\theta)\\] and the estimator\n\\[\n\\hat{\\theta} = \\max\\{X_1, X_2, \\dots, X_n\\},\n\\]\ncalculate the bias, standard error, and mse.\nUniform Distribution Estimation (Method 2):\nFor the same model with the estimator\n\\[\n\\hat{\\theta} = 2X_{(n)},\n\\]\nwhere \\[X_{(n)}\\] is the maximum, compute the bias, standard error, and mse."
+  },
+  {
+    "objectID": "posts/Statistical Inference and Learning.html#vi.-key-takeaways",
+    "href": "posts/Statistical Inference and Learning.html#vi.-key-takeaways",
+    "title": "My Personal Website",
+    "section": "VI. Key Takeaways",
+    "text": "VI. Key Takeaways\n\nInference Fundamentals:\nLearning how to deduce properties of a population from a sample is central to statistics and machine learning.\nModel Choice:\n\nParametric models are simpler but rely on strong assumptions.\n\nNonparametric models offer flexibility with fewer assumptions.\n\nEstimator Evaluation:\nProperties such as bias, variance (or standard error), and mean squared error are essential in assessing the quality of estimators.\nConfidence and Testing:\n\nConfidence intervals quantify the uncertainty in estimates.\n\nHypothesis testing provides a formal framework for decision-making.\n\nPhilosophical Approaches:\nThe frequentist and Bayesian paradigms provide different perspectives on probability and inference, influencing how uncertainty is quantified and interpreted.\n\n\nThese detailed notes, organized into clear sections and using $$ for mathematical expressions, should provide a comprehensive reference and enhance your understanding of the fundamental concepts in statistical inference and learning."
+  },
+  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "My Personal Website",
@@ -39,6 +95,6 @@
     "href": "posts.html",
     "title": "Blog",
     "section": "",
-    "text": "Post template\n\n\n\n\n\n\ntemplate\n\n\nany-category-you-want\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\nNo matching items"
+    "text": "I. Overview of Statistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost template\n\n\n\n\n\n\ntemplate\n\n\nany-category-you-want\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\nNo matching items"
   }
 ]
