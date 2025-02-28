@@ -2,7 +2,8 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/Statistical Inference and Learning.html",
+      "/posts/Statistical-Inference-and-Learning.html",
+      "/posts/bernoulli-random-variable.html",
       "/posts/post_template/index.html"
     ]
   }

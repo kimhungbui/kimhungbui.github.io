@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kimhungbui.github.io/cv.html</loc>
-    <lastmod>2025-02-26T04:31:24.723Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/index.html</loc>
-    <lastmod>2025-02-26T04:31:24.724Z</lastmod>
-  </url>
-  <url>
     <loc>https://kimhungbui.github.io/posts/post_template/index.html</loc>
-    <lastmod>2025-02-26T04:31:24.734Z</lastmod>
+    <lastmod>2025-02-28T05:41:07.579Z</lastmod>
   </url>
   <url>
-    <loc>https://kimhungbui.github.io/posts/Statistical Inference and Learning.html</loc>
-    <lastmod>2025-02-26T04:31:24.726Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/LICENSE.html</loc>
-    <lastmod>2025-02-26T04:31:24.722Z</lastmod>
+    <loc>https://kimhungbui.github.io/posts/Statistical-Inference-and-Learning.html</loc>
+    <lastmod>2025-02-28T05:41:07.571Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/posts.html</loc>
-    <lastmod>2025-02-26T04:31:24.725Z</lastmod>
+    <lastmod>2025-02-28T05:41:07.570Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/index.html</loc>
+    <lastmod>2025-02-28T05:41:07.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/cv.html</loc>
+    <lastmod>2025-02-28T05:41:07.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/LICENSE.html</loc>
+    <lastmod>2025-02-28T05:41:07.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/posts/bernoulli-random-variable.html</loc>
+    <lastmod>2025-02-28T05:41:07.571Z</lastmod>
   </url>
 </urlset>

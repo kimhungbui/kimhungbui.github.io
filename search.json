@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Write more markdown here!\nI’am Hung"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hi! This is a title.",
-    "section": "",
-    "text": "Just write markdown here! This is your home page, it’s where folks will land when they go to the main website address. Anything that is valid Quarto Markdown can go here!"
-  },
-  {
     "objectID": "posts/post_template/index.html",
     "href": "posts/post_template/index.html",
     "title": "Post template",
@@ -28,60 +14,102 @@
     "text": "This is a subsection\nSubsection text! You get it now I assume\nThis is how you reference an image in your blog post\n\n\n\nThis is just a photo I took last time I was in Dundee.\n\n\nThat’s it! go for it!"
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#i.-overview-of-statistical-inference",
-    "href": "posts/Statistical Inference and Learning.html#i.-overview-of-statistical-inference",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#i.-overview-of-statistical-inference",
+    "href": "posts/Statistical-Inference-and-Learning.html#i.-overview-of-statistical-inference",
+    "title": "Statistical Inference and Learning",
     "section": "I. Overview of Statistical Inference",
-    "text": "I. Overview of Statistical Inference\n\nDefinition:\nStatistical inference (often called “learning” in computer science) is the process of using data to deduce the underlying distribution \\[F\\] that generated the data. This may involve estimating the entire distribution or specific features (such as the mean).\nApplications:\n\nExtracting meaningful information from data\n\nMaking informed decisions and predictions\n\nServing as the foundation for more advanced topics in statistics and machine learning"
+    "text": "I. Overview of Statistical Inference\n\nDefinition:\nStatistical inference (often called “learning” in computer science) is the process of using data to deduce the underlying distribution \\(F\\) that generated the data. This may involve estimating the entire distribution or specific features (such as the mean).\nApplications:\n\nExtracting meaningful information from data\n\nMaking informed decisions and predictions\n\nServing as the foundation for more advanced topics in statistics and machine learning"
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#ii.-modeling-approaches",
-    "href": "posts/Statistical Inference and Learning.html#ii.-modeling-approaches",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#ii.-modeling-approaches",
+    "href": "posts/Statistical-Inference-and-Learning.html#ii.-modeling-approaches",
+    "title": "Statistical Inference and Learning",
     "section": "II. Modeling Approaches",
-    "text": "II. Modeling Approaches\n\nA. Parametric Models\n\nDefinition:\nA model defined by a finite number of parameters.\n\nExample (Normal Distribution):\n\\[\nf(x; \\mu, \\sigma) = \\frac{1}{\\sigma \\sqrt{2\\pi}} \\exp\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right)\n\\]\nCharacteristics:\n\nSimpler to analyze and interpret\n\nMore efficient when the assumptions hold true\n\n\n\n\nB. Nonparametric Models\n\nDefinition:\nModels that do not restrict the distribution to a finite-dimensional parameter space.\nExamples:\n\nEstimating the entire cumulative distribution function (cdf) \\[F\\]\n\nEstimating a probability density function (pdf) with smoothness assumptions (e.g., assuming the pdf belongs to a [[Sobolev space]])\n\nCharacteristics:\n\nGreater flexibility to model complex data\n\nFewer assumptions about the form of the distribution"
+    "text": "II. Modeling Approaches\n\nA. Parametric Models\n\nDefinition:\nA model defined by a finite number of parameters.\n\nExample (Normal Distribution):\n\\[\nf(x; \\mu, \\sigma) = \\frac{1}{\\sigma \\sqrt{2\\pi}} \\exp\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right)\n\\]\nCharacteristics:\n\nSimpler to analyze and interpret\n\nMore efficient when the assumptions hold true\n\n\n\n\nB. Nonparametric Models\n\nDefinition:\nModels that do not restrict the distribution to a finite-dimensional parameter space.\nExamples:\n\nEstimating the entire cumulative distribution function (cdf)\\(F\\)\n\nEstimating a probability density function (pdf) with smoothness assumptions (e.g., assuming the pdf belongs to a [[Sobolev space]])\n\nCharacteristics:\n\nGreater flexibility to model complex data\n\nFewer assumptions about the form of the distribution"
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#example-6.1-one-dimensional-parametric-estimation--",
-    "href": "posts/Statistical Inference and Learning.html#example-6.1-one-dimensional-parametric-estimation--",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#example-6.1-one-dimensional-parametric-estimation--",
+    "href": "posts/Statistical-Inference-and-Learning.html#example-6.1-one-dimensional-parametric-estimation--",
+    "title": "Statistical Inference and Learning",
     "section": "Example 6.1: One-Dimensional Parametric Estimation -",
-    "text": "Example 6.1: One-Dimensional Parametric Estimation -\nScenario: We observe independent Bernoulli(\\[p\\]) random variables \\[X_1, X_2, \\dots, X_n\\]. - Goal: Estimate the unknown parameter \\[p\\] (the probability of success). - Estimator: The natural estimator is the sample mean: \\[ \\hat{p}_n = \\frac{1}{n}\\sum_{i=1}^n X_i. \\] - Key Points: - Unbiasedness: \\[E(\\hat{p}_n) = p.\\] Thus, the estimator is unbiased. - Variance: Since \\[\\operatorname{Var}(X_i) = p(1-p)\\], the variance of the estimator is \\[ \\operatorname{Var}(\\hat{p}_n) = \\frac{p(1-p)}{n}. \\] - Consistency: As \\[n\\] increases, the variance shrinks, making \\[\\hat{p}_n\\] a consistent estimator of \\[p\\]."
+    "text": "Example 6.1: One-Dimensional Parametric Estimation -\nScenario: We observe independent Bernoulli(\\(p\\)) random variables \\(X_1, X_2, \\dots, X_n\\).\nGoal: Estimate the unknown parameter \\(p\\) (the probability of success).\nEstimator: The natural estimator is the sample mean: \\[ \\hat{p}_n = \\frac{1}{n}\\sum_{i=1}^n X_i. \\] Key Points: - Unbiasedness: \\[E(\\hat{p}_n) = p.\\] Thus, the estimator is unbiased.\nVariance: Since \\[\\operatorname{Var}(X_i) = p(1-p)\\], the variance of the estimator is\n\\[ \\operatorname{Var}(\\hat{p}_n) = \\frac{p(1-p)}{n}. \\] - Consistency: As \\(n\\) increases, the variance shrinks, making \\(\\hat{p}_n\\) a consistent estimator of \\(p\\).\n\n# Example 6.1: One-Dimensional Parametric Estimation (Bernoulli)\nimport numpy as np\n\n# True parameter for Bernoulli distribution\np_true = 0.7\nn = 1000  # number of observations\n\n# Generate n independent Bernoulli(p) observations (0 or 1)\nX = np.random.binomial(1, p_true, n)\n\n# Estimator: sample mean is the natural estimator for p\np_hat = np.mean(X)\n\nprint(\"Example 6.1: Bernoulli Parameter Estimation\")\nprint(\"True p:\", p_true)\nprint(\"Estimated p:\", p_hat)"
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#example-6.2-two-dimensional-parametric-estimation--",
-    "href": "posts/Statistical Inference and Learning.html#example-6.2-two-dimensional-parametric-estimation--",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#example-6.2-two-dimensional-parametric-estimation--",
+    "href": "posts/Statistical-Inference-and-Learning.html#example-6.2-two-dimensional-parametric-estimation--",
+    "title": "Statistical Inference and Learning",
     "section": "Example 6.2: Two-Dimensional Parametric Estimation -",
-    "text": "Example 6.2: Two-Dimensional Parametric Estimation -\nScenario: Suppose \\[X_1, X_2, \\dots, X_n\\] are independent observations from a distribution \\[F\\] whose probability density function is given by a parametric family: \\[ f(x; \\mu, \\sigma) = \\frac{1}{\\sigma \\sqrt{2\\pi}} \\exp\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right). \\] - Goal: Estimate the two parameters: the mean \\[\\mu\\] and the standard deviation \\[\\sigma\\]. - Nuisance Parameter: If we are primarily interested in \\[\\mu\\], then \\[\\sigma\\] becomes a nuisance parameter—an additional parameter that must be estimated but is not of direct interest. - Key Points: - Multidimensionality: The estimation problem involves simultaneous estimation of \\[\\mu\\] and \\[\\sigma\\]. - Methods: Techniques such as maximum likelihood estimation (MLE) are commonly used, sometimes incorporating methods (like profile likelihood) to eliminate the effect of nuisance parameters when focusing on \\[\\mu\\]."
+    "text": "Example 6.2: Two-Dimensional Parametric Estimation -\nScenario: Suppose \\[X_1, X_2, \\dots, X_n\\] are independent observations from a distribution \\[F\\] whose probability density function is given by a parametric family: \\[ f(x; \\mu, \\sigma) = \\frac{1}{\\sigma \\sqrt{2\\pi}} \\exp\\left(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right). \\] - Goal: Estimate the two parameters: the mean \\[\\mu\\] and the standard deviation \\[\\sigma\\]. - Nuisance Parameter: If we are primarily interested in \\[\\mu\\], then \\[\\sigma\\] becomes a nuisance parameter—an additional parameter that must be estimated but is not of direct interest. - Key Points: - Multidimensionality: The estimation problem involves simultaneous estimation of \\[\\mu\\] and \\[\\sigma\\]. - Methods: Techniques such as maximum likelihood estimation (MLE) are commonly used, sometimes incorporating methods (like profile likelihood) to eliminate the effect of nuisance parameters when focusing on \\[\\mu\\]. . # Analytical Explanation of Two Nonparametric Estimation Examples\nBelow, we analyze and explain two examples that illustrate nonparametric estimation techniques: one for estimating the cumulative distribution function (CDF) and another for estimating the probability density function (PDF)."
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#iii.-core-concepts-in-inference",
-    "href": "posts/Statistical Inference and Learning.html#iii.-core-concepts-in-inference",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#example-6.3-nonparametric-estimation-of-the-cdf",
+    "href": "posts/Statistical-Inference-and-Learning.html#example-6.3-nonparametric-estimation-of-the-cdf",
+    "title": "Statistical Inference and Learning",
+    "section": "Example 6.3: Nonparametric Estimation of the CDF",
+    "text": "Example 6.3: Nonparametric Estimation of the CDF\n\nProblem Statement\n\nData:\nWe have independent observations \\[X_1, X_2, \\dots, X_n\\] drawn from an unknown distribution with CDF \\[F\\].\nObjective:\nEstimate the entire cumulative distribution function \\[F\\], assuming minimal assumptions—namely, that \\[F\\] is any valid CDF (denoted by \\[\\mathcal{F}_{\\text{ALL}}\\]).\n\n\n\nApproach\n\nEstimator:\nThe natural nonparametric estimator for the CDF is the empirical distribution function (EDF) defined as: \\[\n\\hat{F}_n(x) = \\frac{1}{n} \\sum_{i=1}^n \\mathbf{1}\\{X_i \\le x\\},\n\\] where \\[\\mathbf{1}\\{X_i \\le x\\}\\] is an indicator function that is 1 if \\[X_i \\le x\\] and 0 otherwise.\n\n\n\nWhy This Works\n\nMinimal Assumptions:\nNo specific parametric form for \\[F\\] is assumed; all that is required is that \\[F\\] is a valid CDF. This makes the method very general.\nConvergence Properties:\nThe Glivenko–Cantelli theorem guarantees that the empirical CDF converges uniformly to the true CDF: \\[\n\\sup_x \\left| \\hat{F}_n(x) - F(x) \\right| \\to 0 \\quad \\text{as} \\quad n \\to \\infty.\n\\] This property ensures that the estimator is consistent.\nIntuitive Interpretation:\nThe EDF simply calculates the proportion of observations less than or equal to a given value, which is the natural way to “build” the CDF from data."
+  },
+  {
+    "objectID": "posts/Statistical-Inference-and-Learning.html#example-6.4-nonparametric-density-estimation",
+    "href": "posts/Statistical-Inference-and-Learning.html#example-6.4-nonparametric-density-estimation",
+    "title": "Statistical Inference and Learning",
+    "section": "Example 6.4: Nonparametric Density Estimation",
+    "text": "Example 6.4: Nonparametric Density Estimation\n\nProblem Statement\n\nData:\nAgain, we have independent observations \\[X_1, X_2, \\dots, X_n\\] from a distribution with CDF \\[F\\]. Let the associated PDF be \\[f = F'\\].\nObjective:\nEstimate the PDF \\[f\\]. However, unlike the CDF, estimating the density function nonparametrically is not possible under the sole assumption that \\[F\\] is any CDF.\n\n\n\nNeed for Additional Assumptions\n\nIll-Posed Without Smoothness:\nThe space of all CDFs (denoted by \\[\\mathcal{F}_{\\text{ALL}}\\]) is too vast; a generic CDF need not be differentiable. Even if a density exists, it can be highly irregular, making consistent estimation difficult or impossible.\nIntroducing Smoothness via Sobolev Spaces:\nTo estimate \\[f\\] reliably, we assume that \\[f\\] belongs to a more restricted function class. One common assumption is that \\[f\\] lies in a Sobolev space (denoted by \\[\\mathcal{F}_{\\text{SOB}}\\]).\nFor instance, one might assume: \\[\n\\mathcal{F}_{\\text{SOB}} = \\left\\{ f \\in \\mathcal{F}_{\\text{DENS}} : \\int \\left(f^{(s)}(x)\\right)^2 dx &lt; \\infty \\right\\},\n\\] where:\n\n\\[\\mathcal{F}_{\\text{DENS}}\\] is the set of all probability density functions.\n\\[f^{(s)}(x)\\] denotes the \\[s\\]-th derivative of \\[f\\].\nThe condition \\[\\int \\left(f^{(s)}(x)\\right)^2 dx &lt; \\infty\\] ensures that \\[f\\] is not “too wiggly” or irregular.\n\n\n\n\nEstimation Methods\n\nKernel Density Estimation (KDE):\nWith the smoothness assumption in place, methods such as kernel density estimation can be employed. A kernel density estimator has the form: \\[\n\\hat{f}_n(x) = \\frac{1}{nh} \\sum_{i=1}^n K\\left(\\frac{x - X_i}{h}\\right),\n\\] where:\n\n\\[K(\\cdot)\\] is a smooth kernel function (e.g., Gaussian).\n\\[h\\] is a bandwidth parameter that controls the smoothness of the estimate.\n\n\n\n\nWhy These Assumptions are Necessary\n\nRegularization:\nThe smoothness condition imposed by the Sobolev space helps regularize the estimation problem. It restricts the set of possible densities to those that have bounded variation or a controlled number of oscillations.\nImproved Convergence:\nSmoothness assumptions lead to better convergence properties of the density estimator, allowing for rates of convergence that can be rigorously analyzed.\nPractical Feasibility:\nIn many real-world scenarios, the underlying density is indeed smooth (e.g., physical phenomena, economic variables), making this assumption both realistic and useful."
+  },
+  {
+    "objectID": "posts/Statistical-Inference-and-Learning.html#summary",
+    "href": "posts/Statistical-Inference-and-Learning.html#summary",
+    "title": "Statistical Inference and Learning",
+    "section": "Summary",
+    "text": "Summary\n\nExample 6.3:\n\nTask: Estimate the CDF \\[F\\] from data with minimal assumptions.\nMethod: Use the empirical CDF \\[\\hat{F}_n(x) = \\frac{1}{n}\\sum_{i=1}^n \\mathbf{1}\\{X_i \\le x\\}\\].\nKey Property: Convergence guaranteed by the Glivenko–Cantelli theorem.\n\nExample 6.4:\n\nTask: Estimate the density \\[f\\] from data.\nChallenge: Estimation is ill-posed without additional assumptions.\nSolution: Assume that \\[f\\] is smooth by requiring it to belong to a Sobolev space (e.g., \\[\\mathcal{F}_{\\text{DENS}} \\cap \\mathcal{F}_{\\text{SOB}}\\]), then use methods like kernel density estimation.\nBenefit: Smoothness constraints make the problem well-posed and lead to estimators with favorable convergence properties.\n\n\nThese examples highlight the progression from estimating a distribution function under minimal assumptions to needing extra regularity conditions when estimating derivatives like the density."
+  },
+  {
+    "objectID": "posts/Statistical-Inference-and-Learning.html#iii.-core-concepts-in-inference",
+    "href": "posts/Statistical-Inference-and-Learning.html#iii.-core-concepts-in-inference",
+    "title": "Statistical Inference and Learning",
     "section": "III. Core Concepts in Inference",
     "text": "III. Core Concepts in Inference\n\n1. Point Estimation\n\nConcept:\nA point estimator is a function of the data, denoted as\n\\[\n\\hat{\\theta}_n = g(X_1, X_2, \\dots, X_n)\n\\]\nused to provide a single “best guess” for the unknown parameter \\[\\theta\\].\nKey Properties:\n\nBias:\n\\[\n\\text{bias}(\\hat{\\theta}_n) = E(\\hat{\\theta}_n) - \\theta\n\\]\nVariance and Standard Error (se):\n\\[\n\\text{se} = \\sqrt{Var(\\hat{\\theta}_n)}\n\\]\nMean Squared Error (MSE):\n\\[\n\\text{mse} = E\\left[(\\hat{\\theta}_n - \\theta)^2\\right] = \\text{bias}^2(\\hat{\\theta}_n) + Var(\\hat{\\theta}_n)\n\\]\nConsistency:\nAn estimator is consistent if\n\\[\n\\hat{\\theta}_n \\xrightarrow{P} \\theta \\quad \\text{as } n \\to \\infty\n\\]\nAsymptotic Normality:\nMany estimators satisfy\n\\[\n\\frac{\\hat{\\theta}_n - \\theta}{\\text{se}} \\approx N(0, 1)\n\\]\nfor large samples, which facilitates the construction of confidence intervals.\n\n\n\n\n2. Confidence Sets\n\nConcept:\nA confidence interval (or set) is a range constructed from the data that, over many repetitions of the experiment, contains the true parameter \\[\\theta\\] with a specified probability (coverage).\nExample (Normal-Based Interval):\nWhen \\[\\hat{\\theta}_n\\] is approximately normally distributed, an approximate \\[1-\\alpha\\] confidence interval is: \\[\nC_n = \\left( \\hat{\\theta}_n - z_{\\alpha/2}\\,\\text{se}, \\quad \\hat{\\theta}_n + z_{\\alpha/2}\\,\\text{se} \\right)\n\\] where \\[z_{\\alpha/2}\\] is the quantile of the standard Normal distribution such that \\[\nP(Z &gt; z_{\\alpha/2}) = \\frac{\\alpha}{2}.\n\\]\n\n\n\n3. Hypothesis Testing\n\nConcept:\nHypothesis testing involves formulating a null hypothesis \\[H_0\\] (a default statement, such as a coin being fair) and an alternative hypothesis \\[H_1\\], then using the data to decide whether there is sufficient evidence to reject \\[H_0\\].\nExample (Testing Coin Fairness):\n\\[\nH_0: p = 0.5 \\quad \\text{versus} \\quad H_1: p \\neq 0.5\n\\]\nProcess:\n\nDefine an appropriate test statistic (e.g., \\[T = |\\hat{p}_n - 0.5|\\])\n\nSet a significance level \\[\\alpha\\]\n\nDetermine the rejection region based on \\[\\alpha\\] or compute a p-value\n\nReject \\[H_0\\] if the test statistic falls into the rejection region"
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#iv.-frequentist-vs.-bayesian-inference",
-    "href": "posts/Statistical Inference and Learning.html#iv.-frequentist-vs.-bayesian-inference",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#iv.-frequentist-vs.-bayesian-inference",
+    "href": "posts/Statistical-Inference-and-Learning.html#iv.-frequentist-vs.-bayesian-inference",
+    "title": "Statistical Inference and Learning",
     "section": "IV. Frequentist vs. Bayesian Inference",
     "text": "IV. Frequentist vs. Bayesian Inference\n\nFrequentist Inference:\n\nTreats parameters as fixed but unknown\n\nFocuses on the properties of estimators over repeated sampling (e.g., confidence intervals, hypothesis tests)\n\nBayesian Inference:\n\nTreats parameters as random variables with prior distributions\n\nUses Bayes’ theorem to update beliefs in light of new data, allowing direct probability statements about parameters\n\nComparison:\n\nFrequentist methods emphasize long-run frequency properties.\n\nBayesian methods provide a framework for incorporating prior knowledge and making probabilistic statements about parameters."
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#v.-additional-information",
-    "href": "posts/Statistical Inference and Learning.html#v.-additional-information",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#v.-additional-information",
+    "href": "posts/Statistical-Inference-and-Learning.html#v.-additional-information",
+    "title": "Statistical Inference and Learning",
     "section": "V. Additional Information",
     "text": "V. Additional Information\n\nBibliographic References\n\nElementary Level:\n\nDeGroot and Schervish (2002)\n\nLarsen and Marx (1986)\n\nIntermediate Level:\n\nCasella and Berger (2002)\n\nBickel and Doksum (2000)\n\nRice (1995)\n\nAdvanced Level:\n\nCox and Hinkley (2000)\n\nLehmann and Casella (1998)\n\nLehmann (1986)\n\nvan der Vaart (1998)\n\n\n\n\nExercises\n\nPoisson Estimation:\nFor \\[X_1, X_2, \\dots, X_n \\sim \\text{Poisson}(\\lambda)\\] with the estimator\n\\[\n\\hat{\\lambda} = \\frac{1}{n}\\sum_{i=1}^n X_i,\n\\]\ndetermine the bias, standard error, and mean squared error.\nUniform Distribution Estimation (Method 1):\nFor \\[X_1, X_2, \\dots, X_n \\sim \\text{Uniform}(0, \\theta)\\] and the estimator\n\\[\n\\hat{\\theta} = \\max\\{X_1, X_2, \\dots, X_n\\},\n\\]\ncalculate the bias, standard error, and mse.\nUniform Distribution Estimation (Method 2):\nFor the same model with the estimator\n\\[\n\\hat{\\theta} = 2X_{(n)},\n\\]\nwhere \\[X_{(n)}\\] is the maximum, compute the bias, standard error, and mse."
   },
   {
-    "objectID": "posts/Statistical Inference and Learning.html#vi.-key-takeaways",
-    "href": "posts/Statistical Inference and Learning.html#vi.-key-takeaways",
-    "title": "My Personal Website",
+    "objectID": "posts/Statistical-Inference-and-Learning.html#vi.-key-takeaways",
+    "href": "posts/Statistical-Inference-and-Learning.html#vi.-key-takeaways",
+    "title": "Statistical Inference and Learning",
     "section": "VI. Key Takeaways",
-    "text": "VI. Key Takeaways\n\nInference Fundamentals:\nLearning how to deduce properties of a population from a sample is central to statistics and machine learning.\nModel Choice:\n\nParametric models are simpler but rely on strong assumptions.\n\nNonparametric models offer flexibility with fewer assumptions.\n\nEstimator Evaluation:\nProperties such as bias, variance (or standard error), and mean squared error are essential in assessing the quality of estimators.\nConfidence and Testing:\n\nConfidence intervals quantify the uncertainty in estimates.\n\nHypothesis testing provides a formal framework for decision-making.\n\nPhilosophical Approaches:\nThe frequentist and Bayesian paradigms provide different perspectives on probability and inference, influencing how uncertainty is quantified and interpreted.\n\n\nThese detailed notes, organized into clear sections and using $$ for mathematical expressions, should provide a comprehensive reference and enhance your understanding of the fundamental concepts in statistical inference and learning."
+    "text": "VI. Key Takeaways\n\nInference Fundamentals:\nLearning how to deduce properties of a population from a sample is central to statistics and machine learning.\nModel Choice:\n\nParametric models are simpler but rely on strong assumptions.\n\nNonparametric models offer flexibility with fewer assumptions.\n\nEstimator Evaluation:\nProperties such as bias, variance (or standard error), and mean squared error are essential in assessing the quality of estimators.\nConfidence and Testing:\n\nConfidence intervals quantify the uncertainty in estimates.\n\nHypothesis testing provides a formal framework for decision-making.\n\nPhilosophical Approaches:\nThe frequentist and Bayesian paradigms provide different perspectives on probability and inference, influencing how uncertainty is quantified and interpreted."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Statistical Inference and Learning\n\n\n\n\n\n\nStatistical\n\n\n\nYour post description\n\n\n\n\n\nFeb 26, 2025\n\n\nYour name\n\n\n\n\n\n\n\n\n\n\n\n\nBernoulli Randome Variable\n\n\n\n\n\n\ntemplate\n\n\nany-category-you-want\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\n\n\n\n\n\n\nPost template\n\n\n\n\n\n\ntemplate\n\n\nany-category-you-want\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hi! This is a title.",
+    "section": "",
+    "text": "Just write markdown here! This is your home page, it’s where folks will land when they go to the main website address. Anything that is valid Quarto Markdown can go here!"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Write more markdown here!\nI’am Hung"
   },
   {
     "objectID": "LICENSE.html",
@@ -91,10 +119,52 @@
     "text": "ANTI-CAPITALIST SOFTWARE LICENSE (v 1.4)\nCopyright © 2024 Erick Ratamero\nThis is anti-capitalist software, released for free use by individuals and organizations that do not operate by capitalist principles.\nPermission is hereby granted, free of charge, to any person or organization (the “User”) obtaining a copy of this software and associated documentation files (the “Software”), to use, copy, modify, merge, distribute, and/or sell copies of the Software, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or modified versions of the Software.\nThe User is one of the following:\n\n\nAn individual person, laboring for themselves\nA non-profit organization\nAn educational institution\nAn organization that seeks shared profit for all of its members, and allows non-members to set the cost of their labor\n\n\nIf the User is an organization with owners, then all owners are workers and all workers are owners with equal equity and/or equal vote.\nIf the User is an organization, then the User is not law enforcement or military, or working for or under either.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT EXPRESS OR IMPLIED WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Blog",
+    "objectID": "posts/bernoulli-random-variable.html",
+    "href": "posts/bernoulli-random-variable.html",
+    "title": "Bernoulli Randome Variable",
     "section": "",
-    "text": "I. Overview of Statistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost template\n\n\n\n\n\n\ntemplate\n\n\nany-category-you-want\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\nNo matching items"
+    "text": "The Bernoulli distribution is a discrete probability distribution that models the outcome of a single trial with two possible outcomes: success (1) and failure (0).\n\n\n\nA Bernoulli random variable ( X ) takes the value: - ( X = 1 ) with probability ( p ) (success), - ( X = 0 ) with probability ( 1 - p ) (failure).\nMathematically, the probability mass function (PMF) is given by: \\[\nP(X = x) = p^x (1 - p)^{1 - x}, \\quad x \\in \\{0, 1\\}, \\ 0 \\leq p \\leq 1.\n\\]\n\n\n\n\n\n\nThe mean represents the expected outcome of the random variable: \\[\nE[X] = p.\n\\]\nWe expected value \\(E(x)\\) of a random variable \\(X\\) is given by: \\[\nE(X) = \\sigma x \\dot P(X = x)\n\\] For a Bernoulli random variable: \\[\nE(X) = 1 \\dot p + 0 \\dot( 1 - p) = p\n\\]\n\n\n\nThe variance measures how much the outcomes deviate from the mean: \\[\n\\operatorname{Var}(X) = p(1 - p).\n\\] The variance of a random variable \\(X\\) measures how much the values of \\(X\\) deviate from its mean: \\[\nVar(X) = E[(X-E(X))^2]\n\\] expand this: \\[\nVar(X) = E(X^2 - 2pX + p^2)\n\\] Since \\(p^2\\) is constant and \\(E(X)= p\\), we have: \\[\nVar(X) = E(X^2) - 2pE(X) + p^2\n\\]\nFor a Bernoulli variable, \\(X^2 = X\\) (because \\(1^2 = 1\\) and \\(0^2=0\\)): \\[\nE(X^2) = E(X) = p\n\\] Substituting back, \\[\nVar(X) = p - 2p^2 + p = p - p^2 = p(1)\n\\] ### 📝 Standard Deviation The standard deviation is the square root of the variance: \\[\n\\sigma = \\sqrt{p(1 - p)}.\n\\]\n\n\n\nSkewness measures the asymmetry of the distribution: \\[\n\\gamma_1 = \\frac{1 - 2p}{\\sqrt{p(1 - p)}}.\n\\]\n\n\n\nThe kurtosis of the Bernoulli distribution is: \\[\n\\gamma_2 = \\frac{1 - 6p(1 - p)}{p(1 - p)}.\n\\]\n\n\n\nThe estimator for \\(p\\) based on \\(n\\) independent observations \\(X_1, X_2, \\dots, X_n\\) is the sample mean:\n\\[\n\\hat{p}_n = \\frac{1}{n}\\sigma^{n}_{i=1}X_i.\n\\]\n\n\n\n\n\nDomain: ( x {0, 1} ).\nParameter: Single parameter ( p ), where ( 0 p ).\nSupport: The distribution is defined on two points: 0 and 1.\nMemoryless: The Bernoulli distribution is not memoryless.\nSpecial Case:\n\nIf ( p = 0.5 ), the distribution is symmetric.\nIf ( p ), the distribution is skewed.\n\n\n\n\n\n\n\nBinomial Distribution:\nThe Bernoulli distribution is a special case of the Binomial distribution with ( n = 1 ): \\[\n\\text{Bernoulli}(p) = \\text{Binomial}(n=1, p).\n\\]\nGeometric Distribution:\nA geometric random variable models the number of Bernoulli trials until the first success.\nBeta Distribution (Conjugate Prior):\nIn Bayesian statistics, the Beta distribution is the conjugate prior for the Bernoulli likelihood.\n\n\n\n\n\n\nModeling Binary Outcomes:\n\nCoin flips (Heads/Tails)\nPass/Fail tests\nYes/No survey responses\nOn/Off states in systems\n\nMachine Learning:\n\nLogistic regression for binary classification.\nBernoulli Naive Bayes classifiers.\n\nStatistical Inference:\n\nEstimating proportions (e.g., percentage of people supporting a policy).\n\n\n\n\n\n\nimport numpy as np\n\n# Parameters\np = 0.7  # Probability of success\nn = 1000  # Number of trials\n\n# Simulate Bernoulli trials\ndata = np.random.binomial(n=1, p=p, size=n)\n\n# Estimating p\np_estimate = np.mean(data)\n\nprint(f\"True probability p: {p}\")\nprint(f\"Estimated probability p̂: {p_estimate:.4f}\")"
+  },
+  {
+    "objectID": "posts/bernoulli-random-variable.html#definition",
+    "href": "posts/bernoulli-random-variable.html#definition",
+    "title": "Bernoulli Randome Variable",
+    "section": "",
+    "text": "A Bernoulli random variable ( X ) takes the value: - ( X = 1 ) with probability ( p ) (success), - ( X = 0 ) with probability ( 1 - p ) (failure).\nMathematically, the probability mass function (PMF) is given by: \\[\nP(X = x) = p^x (1 - p)^{1 - x}, \\quad x \\in \\{0, 1\\}, \\ 0 \\leq p \\leq 1.\n\\]"
+  },
+  {
+    "objectID": "posts/bernoulli-random-variable.html#properties-of-the-bernoulli-distribution",
+    "href": "posts/bernoulli-random-variable.html#properties-of-the-bernoulli-distribution",
+    "title": "Bernoulli Randome Variable",
+    "section": "",
+    "text": "The mean represents the expected outcome of the random variable: \\[\nE[X] = p.\n\\]\nWe expected value \\(E(x)\\) of a random variable \\(X\\) is given by: \\[\nE(X) = \\sigma x \\dot P(X = x)\n\\] For a Bernoulli random variable: \\[\nE(X) = 1 \\dot p + 0 \\dot( 1 - p) = p\n\\]\n\n\n\nThe variance measures how much the outcomes deviate from the mean: \\[\n\\operatorname{Var}(X) = p(1 - p).\n\\] The variance of a random variable \\(X\\) measures how much the values of \\(X\\) deviate from its mean: \\[\nVar(X) = E[(X-E(X))^2]\n\\] expand this: \\[\nVar(X) = E(X^2 - 2pX + p^2)\n\\] Since \\(p^2\\) is constant and \\(E(X)= p\\), we have: \\[\nVar(X) = E(X^2) - 2pE(X) + p^2\n\\]\nFor a Bernoulli variable, \\(X^2 = X\\) (because \\(1^2 = 1\\) and \\(0^2=0\\)): \\[\nE(X^2) = E(X) = p\n\\] Substituting back, \\[\nVar(X) = p - 2p^2 + p = p - p^2 = p(1)\n\\] ### 📝 Standard Deviation The standard deviation is the square root of the variance: \\[\n\\sigma = \\sqrt{p(1 - p)}.\n\\]\n\n\n\nSkewness measures the asymmetry of the distribution: \\[\n\\gamma_1 = \\frac{1 - 2p}{\\sqrt{p(1 - p)}}.\n\\]\n\n\n\nThe kurtosis of the Bernoulli distribution is: \\[\n\\gamma_2 = \\frac{1 - 6p(1 - p)}{p(1 - p)}.\n\\]\n\n\n\nThe estimator for \\(p\\) based on \\(n\\) independent observations \\(X_1, X_2, \\dots, X_n\\) is the sample mean:\n\\[\n\\hat{p}_n = \\frac{1}{n}\\sigma^{n}_{i=1}X_i.\n\\]"
+  },
+  {
+    "objectID": "posts/bernoulli-random-variable.html#key-characteristics",
+    "href": "posts/bernoulli-random-variable.html#key-characteristics",
+    "title": "Bernoulli Randome Variable",
+    "section": "",
+    "text": "Domain: ( x {0, 1} ).\nParameter: Single parameter ( p ), where ( 0 p ).\nSupport: The distribution is defined on two points: 0 and 1.\nMemoryless: The Bernoulli distribution is not memoryless.\nSpecial Case:\n\nIf ( p = 0.5 ), the distribution is symmetric.\nIf ( p ), the distribution is skewed."
+  },
+  {
+    "objectID": "posts/bernoulli-random-variable.html#relationship-to-other-distributions",
+    "href": "posts/bernoulli-random-variable.html#relationship-to-other-distributions",
+    "title": "Bernoulli Randome Variable",
+    "section": "",
+    "text": "Binomial Distribution:\nThe Bernoulli distribution is a special case of the Binomial distribution with ( n = 1 ): \\[\n\\text{Bernoulli}(p) = \\text{Binomial}(n=1, p).\n\\]\nGeometric Distribution:\nA geometric random variable models the number of Bernoulli trials until the first success.\nBeta Distribution (Conjugate Prior):\nIn Bayesian statistics, the Beta distribution is the conjugate prior for the Bernoulli likelihood."
+  },
+  {
+    "objectID": "posts/bernoulli-random-variable.html#applications-of-the-bernoulli-distribution",
+    "href": "posts/bernoulli-random-variable.html#applications-of-the-bernoulli-distribution",
+    "title": "Bernoulli Randome Variable",
+    "section": "",
+    "text": "Modeling Binary Outcomes:\n\nCoin flips (Heads/Tails)\nPass/Fail tests\nYes/No survey responses\nOn/Off states in systems\n\nMachine Learning:\n\nLogistic regression for binary classification.\nBernoulli Naive Bayes classifiers.\n\nStatistical Inference:\n\nEstimating proportions (e.g., percentage of people supporting a policy)."
+  },
+  {
+    "objectID": "posts/bernoulli-random-variable.html#python-example-simulating-a-bernoulli-random-variable",
+    "href": "posts/bernoulli-random-variable.html#python-example-simulating-a-bernoulli-random-variable",
+    "title": "Bernoulli Randome Variable",
+    "section": "",
+    "text": "import numpy as np\n\n# Parameters\np = 0.7  # Probability of success\nn = 1000  # Number of trials\n\n# Simulate Bernoulli trials\ndata = np.random.binomial(n=1, p=p, size=n)\n\n# Estimating p\np_estimate = np.mean(data)\n\nprint(f\"True probability p: {p}\")\nprint(f\"Estimated probability p̂: {p_estimate:.4f}\")"
   }
 ]
