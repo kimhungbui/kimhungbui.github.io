@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/Leetcode-Divide-array-into-equal-pairs.html",
       "/posts/Statistical-Inference-and-Learning.html",
       "/posts/bernoulli-random-variable.html",
       "/posts/post_template/index.html"

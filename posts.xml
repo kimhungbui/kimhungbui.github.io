@@ -10,7 +10,352 @@
 <atom:link href="https://kimhungbui.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website&#39;s Description</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 26 Feb 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 17 Mar 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Divide Array Into Equal Pairs</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/posts/Leetcode-Divide-array-into-equal-pairs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Topic: <code>array, hash table, bit manipulation, counting</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are given an integer array nums consisting of <code>2 * n</code> integers.</p>
+<p>You need to divide nums into n pairs such that:</p>
+<pre><code>Each element belongs to exactly one pair.
+The elements present in a pair are equal.</code></pre>
+<p>Return true if nums can be divided into n pairs, otherwise return false.</p>
+<p>Example 1:</p>
+<ul>
+<li><p>Input: <code>nums = [3,2,3,2,2,2]</code></p></li>
+<li><p>Output: <code>true</code></p></li>
+<li><p>Explanation: <code>There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.</code></p></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,4]</code></li>
+<li>Output: <code>false</code></li>
+<li>Explanation: <code>There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.</code></li>
+</ul>
+<p>Constraints:</p>
+<ul>
+<li><code>nums.length == 2 * n</code></li>
+<li><code>1 &lt;= n &lt;= 500</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 500</code></li>
+</ul>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+<section id="count-array" class="level2">
+<h2 class="anchored" data-anchor-id="count-array">Count array</h2>
+<p><code>nums</code> that have 2 * n intenger</p>
+<p>divide <code>nums</code> into n pairs</p>
+<p>1 element in 1 pair</p>
+<p>elements in pair is equal</p>
+<p>return true if can devide to n pair,</p>
+<p>So, we can use count array</p>
+<pre><code>if all even \`return true\`
+
+else \`return false\`</code></pre>
+<p>TC: O(n)</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb3-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb3-3">    ans <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb3-4">    count_array <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-5">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb3-6">        count_array[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-7">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(count_array)</span>
+<span id="cb3-8">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> count_array:</span>
+<span id="cb3-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-10">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> ans</span></code></pre></div>
+</section>
+<section id="map" class="level2">
+<h2 class="anchored" data-anchor-id="map">Map</h2>
+<p>like approach 1, we can use map for that (better code)</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb4-2">        frequency <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Counter(nums)</span>
+<span id="cb4-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb4-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(count <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> count <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> frequency.values())</span></code></pre></div>
+</section>
+<section id="bool-array" class="level2">
+<h2 class="anchored" data-anchor-id="bool-array">Bool array</h2>
+<p>an improve, use boolean array</p>
+<p>O(n)</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb5-2"></span>
+<span id="cb5-3">        max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(nums)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5">        needs_pair <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb5-6"></span>
+<span id="cb5-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb5-8">            needs_pair[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> needs_pair[num]</span>
+<span id="cb5-9"></span>
+<span id="cb5-10">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">any</span>(needs_pair[num] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums)</span></code></pre></div>
+</section>
+<section id="sorted" class="level2">
+<h2 class="anchored" data-anchor-id="sorted">Sorted</h2>
+<p>sorted that can have TC: O(nlogn)</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb6-2">        nums.sort()</span>
+<span id="cb6-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb6-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(nums[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> nums[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>))</span></code></pre></div>
+</section>
+<section id="hash-set" class="level2">
+<h2 class="anchored" data-anchor-id="hash-set">Hash set</h2>
+<p>we can store a element when first meet it, and even get it, we remote from set</p>
+<p>when retrieve all, if set have element.</p>
+<p>hash set have TC of lookup, addition, removal in constant time.</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb7-2">        unpaired <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>()</span>
+<span id="cb7-3"></span>
+<span id="cb7-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb7-5">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> unpaired:</span>
+<span id="cb7-6">                unpaired.remove(num)</span>
+<span id="cb7-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb7-8">                unpaired.add(num)</span>
+<span id="cb7-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> unpaired</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/posts/Leetcode-Divide-array-into-equal-pairs.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/posts/dundee.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Statistical Inference and Learning</title>
   <dc:creator>Your name</dc:creator>

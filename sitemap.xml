@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kimhungbui.github.io/posts/post_template/index.html</loc>
-    <lastmod>2025-02-28T05:41:07.579Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/Statistical-Inference-and-Learning.html</loc>
-    <lastmod>2025-02-28T05:41:07.571Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts.html</loc>
-    <lastmod>2025-02-28T05:41:07.570Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/index.html</loc>
-    <lastmod>2025-02-28T05:41:07.569Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/cv.html</loc>
-    <lastmod>2025-02-28T05:41:07.569Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/LICENSE.html</loc>
-    <lastmod>2025-02-28T05:41:07.568Z</lastmod>
+    <loc>https://kimhungbui.github.io/posts/Leetcode-Divide-array-into-equal-pairs.html</loc>
+    <lastmod>2025-03-17T03:41:01.501Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/posts/bernoulli-random-variable.html</loc>
-    <lastmod>2025-02-28T05:41:07.571Z</lastmod>
+    <lastmod>2025-03-17T03:41:01.501Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/LICENSE.html</loc>
+    <lastmod>2025-03-17T03:41:01.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/cv.html</loc>
+    <lastmod>2025-03-17T03:41:01.499Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/index.html</loc>
+    <lastmod>2025-03-17T03:41:01.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/posts.html</loc>
+    <lastmod>2025-03-17T03:41:01.501Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/posts/Statistical-Inference-and-Learning.html</loc>
+    <lastmod>2025-03-17T03:41:01.501Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/posts/post_template/index.html</loc>
+    <lastmod>2025-03-17T03:41:01.509Z</lastmod>
   </url>
 </urlset>
