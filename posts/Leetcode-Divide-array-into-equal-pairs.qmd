@@ -1,0 +1,142 @@
+---
+title: Divide Array Into Equal Pairs
+image: dundee.jpg
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/divide-array-into-equal-pairs/description/?envType=daily-question&envId=2025-03-17
+date: 2025-03-17
+categories:
+  - leetcode
+  - programming
+draft: false
+---
+
+Topic: `array, hash table, bit manipulation, counting`
+
+# Question
+
+You are given an integer array nums consisting of `2 * n` integers.
+
+You need to divide nums into n pairs such that:
+
+```         
+Each element belongs to exactly one pair.
+The elements present in a pair are equal.
+```
+
+Return true if nums can be divided into n pairs, otherwise return false.
+
+Example 1:
+
+Input: `nums = [3,2,3,2,2,2]` Output: `true` Explanation: `There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.`
+
+Example 2:
+
+Input: `nums = [1,2,3,4]` Output: `false` Explanation: `There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.`
+
+Constraints:
+
+-   `nums.length == 2 * n`
+-   `1 <= n <= 500`
+-   `1 <= nums[i] <= 500`
+
+# Approaches
+
+# Count array
+
+`nums` that have 2 \* n intenger
+
+divide `nums` into n pairs
+
+1 element in 1 pair
+
+elements in pair is equal
+
+return true if can devide to n pair,
+
+-\> count array
+
+if all even \`return true\`
+
+else \`return false\`
+
+TC: O(n)
+
+``` python
+class Solution:
+    def divideArray(self, nums: List[int]) -> bool:
+    ans = True
+    count_array = [0]*(500+1)
+    for num in nums:
+        count_array[num] += 1
+    print(count_array)
+    for num in count_array:
+        if num % 2 != 0:
+            return False
+    return ans
+```
+
+## Map
+
+like approach 1, we can use map for that (better code)
+
+``` python
+    def divideArray(self, nums: List[int]) -> bool:
+        frequency = Counter(nums)
+        # check consecutive pairs in sorted array
+        return all(count % 2 == 0 for count in frequency.values())
+```
+
+## Bool array
+
+an improve, use boolean array
+
+O(n)
+
+```{python}
+    def divideArray(self, nums: List[int]) -> bool:
+
+        max_num = max(nums)
+
+        needs_pair = [False] * (max_num + 1)
+
+        for num in nums:
+            needs_pair[num] = not needs_pair[num]
+
+        return not any(needs_pair[num] for num in nums)
+```
+
+## Sorted 
+
+sorted that can have TC: O(nlogn)
+
+```{python}
+    def divideArray(self, nums: List[int]) -> bool:
+        nums.sort()
+        # check consecutive pairs in sorted array
+        return all(nums[i] == nums[i+1] for i in range (0, len(nums), 2))
+```
+
+## Hash set
+
+we can store a element when first meet it, and even get it, we remote from set
+
+when retrieve all, if set have element.
+
+hash set have TC of lookup, addition, removal in constant time.
+
+```{python}
+    def divideArray(self, nums: List[int]) -> bool:
+        unpaired = set()
+
+        for num in nums:
+            if num in unpaired:
+                unpaired.remove(num)
+            else:
+                unpaired.add(num)
+        return not unpaired
+```
