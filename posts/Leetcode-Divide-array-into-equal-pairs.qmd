@@ -32,11 +32,17 @@ Return true if nums can be divided into n pairs, otherwise return false.
 
 Example 1:
 
-Input: `nums = [3,2,3,2,2,2]` Output: `true` Explanation: `There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.`
+- Input: `nums = [3,2,3,2,2,2]`
+
+- Output: `true` 
+
+- Explanation: `There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.`
 
 Example 2:
 
-Input: `nums = [1,2,3,4]` Output: `false` Explanation: `There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.`
+- Input: `nums = [1,2,3,4]` 
+- Output: `false` 
+- Explanation: `There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.`
 
 Constraints:
 
@@ -46,7 +52,7 @@ Constraints:
 
 # Approaches
 
-# Count array
+## Count array
 
 `nums` that have 2 \* n intenger
 
@@ -58,11 +64,11 @@ elements in pair is equal
 
 return true if can devide to n pair,
 
--\> count array
+So, we can use count array
 
-if all even \`return true\`
+    if all even \`return true\`
 
-else \`return false\`
+    else \`return false\`
 
 TC: O(n)
 
@@ -97,7 +103,7 @@ an improve, use boolean array
 
 O(n)
 
-```{python}
+```python
     def divideArray(self, nums: List[int]) -> bool:
 
         max_num = max(nums)
@@ -114,7 +120,7 @@ O(n)
 
 sorted that can have TC: O(nlogn)
 
-```{python}
+```python
     def divideArray(self, nums: List[int]) -> bool:
         nums.sort()
         # check consecutive pairs in sorted array
@@ -129,7 +135,7 @@ when retrieve all, if set have element.
 
 hash set have TC of lookup, addition, removal in constant time.
 
-```{python}
+```python
     def divideArray(self, nums: List[int]) -> bool:
         unpaired = set()
 
