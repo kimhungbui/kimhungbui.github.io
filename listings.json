@@ -2,7 +2,10 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/leetcode-Longest-Nice-Subarray.html",
+      "/posts/house-robber.html",
       "/posts/Leetcode-Divide-array-into-equal-pairs.html",
+      "/posts/how-to-approach-most-dp-problems.html",
       "/posts/Statistical-Inference-and-Learning.html",
       "/posts/bernoulli-random-variable.html",
       "/posts/post_template/index.html"
