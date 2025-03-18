@@ -1,0 +1,141 @@
+---
+title: How to approach most DP problems
+lightbox: false
+description: Approaches for DP problems
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems
+date: 2025-03-17
+categories:
+  - leetcode
+  - programming
+draft: false
+---
+To solve a dp problem:
+https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems/
+
+This particular problem can be approached using the following sequence:
+
+1. Find recursive relation
+2. Recursive (top-down)
+3. Recursive + memo (top-down)
+4. Iterative + memo (bottom-up)
+5. Iterative + N variables (bottom-up)
+
+# Step 1: Figure out recursive relation.
+
+A robber has 2 options:
+1. rob current house `i`;
+2. Don't rob current house.
+
+If an option `1` is selected it means that she can't rob previous `i-1` house but can rob the one before previous `i-2` and get alls cumulative loot that follows.
+
+If an option `2` is selected the robber loot from robbery of `i-1` and all the following buildings.
+
+So it boils down to calculating what is more profitable:
+
+- robbery of current house + loot from house before the previous
+
+- loot from the previous house robbery and any loot capture before that
+
+`rob(i) = Math.max(rob(i-2) + currentHouseValue, rob(i-1))`
+
+# Step 2: Recursive (top-down):
+
+Converting the recurrent relation from step 1:
+
+``` python
+    def rob(self, nums: List[int]) -> int:
+        return self.rob_helper(nums, len(nums) - 1)
+
+    def rob_helper(self, nums: List[int], i: int) -> int:
+        # stop case
+        if (i < 0):
+            return 0
+        
+        return max(self.rob_helper(nums, i - 2) + nums[i], self.rob_helper(nums, i - 1)) 
+```
+
+but it is TLE:
+
+![[Pasted image 20250317111239.png]]
+
+this algorithm will process the same `i` multiple times and it needs improvement. TC: `[to fill]`
+
+# Step 3: Recursive + memo (top-down)
+
+``` python
+    memory = []
+
+    def rob(self, nums: List[int]) -> int:
+
+        # 0 stand for not rob that house is better
+
+        # -1 for not check house
+
+        self.memory = [-1] * (len(nums) + 1)
+
+        return self.rob_helper(nums, len(nums) - 1)
+
+  
+
+    def rob_helper(self, nums: List[int], i: int) -> int:
+
+        # stop case
+
+        if (i < 0):
+
+            return 0    
+
+        if self.memory[i] >= 0:
+
+            return self.memory[i]
+
+        result = max(self.rob_helper(nums, i - 2) + nums[i], self.rob_helper(nums, i - 1))
+
+        self.memory[i] = result
+
+        return result
+```
+![[Pasted image 20250317112240.png]]
+This approach is better, this should run in `O(n)` time. Space complexity is `O(n)`.
+
+Because the recursive stack, let's try to get rid of it.
+## Step 4: Iterative + memo (bottom-up)
+```python
+    def rob(self, nums: List[int]) -> int:
+        # 0 stand for not rob that house is better
+        # -1 for not check house
+        if len(nums) == 0:
+            return 0
+
+        if len(nums) == 1:
+            return nums[0]
+
+        memory = [0] * (len(nums) + 1)
+        memory[0] = 0
+        memory[1] = nums[0]
+        for i in range(len(nums)):
+            val = nums[i]
+            # the next val is rob now, or rob the last
+            memory[i+1] = max(memory[i], memory[i-1] + val)
+        return memory[len(nums)]
+```
+
+## Step 5: Iterative + 2 variables (bottom-up)
+In the previous step, we use only `memo[i]` and `memo[i-1]`, so going just 2 step back. We can hold them in 2 variables instead.
+This optimization is met in Fibonacci sequence creation and some other problems [[Optimize Fibonacci]]
+
+```python
+    def rob(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0
+        prev1, prev2 = 0, 0
+        for num in nums:
+            temp = prev1
+            prev1 = max(prev2 + num, prev1)
+            prev2 = temp
+        return prev1
+```
