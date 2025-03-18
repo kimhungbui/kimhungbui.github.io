@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Hung">
-<meta name="dcterms.date" content="2025-03-17">
+<meta name="author" content="Your name">
+<meta name="dcterms.date" content="2024-09-11">
 <meta name="description" content="Your post description">
 
-<title>House robber – Bui Kim Hung</title>
+<title>Bernoulli Randome Variable – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,6 +106,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,8 +145,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Bui Kim Hung</span>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,21 +156,21 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv.html"> 
+    <a class="nav-link" href="../../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts.html"> 
+    <a class="nav-link" href="../../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -123,15 +186,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">House robber</h1>
+      <h1 class="title">Bernoulli Randome Variable</h1>
                   <div>
         <div class="description">
           Your post description
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">leetcode</div>
-                <div class="quarto-category">programming</div>
+                <div class="quarto-category">template</div>
+                <div class="quarto-category">any-category-you-want</div>
               </div>
                   </div>
   </div>
@@ -141,12 +204,12 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title-meta-heading">Affiliation</div>
     
       <div class="quarto-title-meta-contents">
-      <p class="author"><a href="https://your.personal.website">Hung</a> </p>
+      <p class="author"><a href="https://your.personal.website">Your name</a> </p>
     </div>
     <div class="quarto-title-meta-contents">
           <p class="affiliation">
-              <a href="https://leetcode.com/problems/house-robber/description/">
-              Leetcode
+              <a href="https://your.workplace.website">
+              Maybe your workplace?
               </a>
             </p>
         </div>
@@ -158,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 17, 2025</p>
+        <p class="date">September 11, 2024</p>
       </div>
     </div>
     
@@ -174,8 +237,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question">Question</a></li>
-  <li><a href="#approaches" id="toc-approaches" class="nav-link" data-scroll-target="#approaches">Approaches</a></li>
+  <li><a href="#bernoulli-distribution" id="toc-bernoulli-distribution" class="nav-link active" data-scroll-target="#bernoulli-distribution">Bernoulli Distribution</a>
+  <ul class="collapse">
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">📌 1. Definition</a></li>
+  <li><a href="#properties-of-the-bernoulli-distribution" id="toc-properties-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</a>
+  <ul class="collapse">
+  <li><a href="#mean-expected-value" id="toc-mean-expected-value" class="nav-link" data-scroll-target="#mean-expected-value">🎯 Mean (Expected Value)</a></li>
+  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">🎲 Variance</a></li>
+  <li><a href="#skewness" id="toc-skewness" class="nav-link" data-scroll-target="#skewness">📏 Skewness</a></li>
+  <li><a href="#kurtosis" id="toc-kurtosis" class="nav-link" data-scroll-target="#kurtosis">🛡️ Kurtosis</a></li>
+  <li><a href="#variance-of-the-estimator-hatp" id="toc-variance-of-the-estimator-hatp" class="nav-link" data-scroll-target="#variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></a></li>
+  </ul></li>
+  <li><a href="#key-characteristics" id="toc-key-characteristics" class="nav-link" data-scroll-target="#key-characteristics">📚 3. Key Characteristics</a></li>
+  <li><a href="#relationship-to-other-distributions" id="toc-relationship-to-other-distributions" class="nav-link" data-scroll-target="#relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</a></li>
+  <li><a href="#applications-of-the-bernoulli-distribution" id="toc-applications-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</a></li>
+  <li><a href="#python-example-simulating-a-bernoulli-random-variable" id="toc-python-example-simulating-a-bernoulli-random-variable" class="nav-link" data-scroll-target="#python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -186,31 +263,140 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Topic: <code>array, dymanic programming</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
-<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
-<p>Example 1:</p>
-<ul>
-<li>Input: <code>nums = [1,2,3,1]</code></li>
-<li>Output: <code>4</code></li>
-<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
-</ul>
-<p>Example 2:</p>
-<ul>
-<li>Input: <code>nums = [2,7,9,3,1]</code></li>
-<li>Output: <code>12</code></li>
-<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
-</ul>
-<p>Constraints:</p>
-<pre><code>1 &lt;= nums.length &lt;= 100
-0 &lt;= nums[i] &lt;= 400</code></pre>
+<section id="bernoulli-distribution" class="level1">
+<h1>Bernoulli Distribution</h1>
+<p>The <strong>Bernoulli distribution</strong> is a discrete probability distribution that models the outcome of a single trial with two possible outcomes: success (1) and failure (0).</p>
+<hr>
+<section id="definition" class="level2">
+<h2 class="anchored" data-anchor-id="definition">📌 1. Definition</h2>
+<p>A <strong>Bernoulli random variable</strong> ( X ) takes the value: - ( X = 1 ) with probability ( p ) (success), - ( X = 0 ) with probability ( 1 - p ) (failure).</p>
+<p>Mathematically, the probability mass function (PMF) is given by: <span class="math display">\[
+P(X = x) = p^x (1 - p)^{1 - x}, \quad x \in \{0, 1\}, \ 0 \leq p \leq 1.
+\]</span></p>
+<hr>
 </section>
-<section id="approaches" class="level1">
-<h1>Approaches</h1>
+<section id="properties-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</h2>
+<section id="mean-expected-value" class="level3">
+<h3 class="anchored" data-anchor-id="mean-expected-value">🎯 Mean (Expected Value)</h3>
+<p>The mean represents the expected outcome of the random variable: <span class="math display">\[
+E[X] = p.
+\]</span></p>
+<p>We expected value <span class="math inline">\(E(x)\)</span> of a random variable <span class="math inline">\(X\)</span> is given by: <span class="math display">\[
+E(X) = \sigma x \dot P(X = x)
+\]</span> For a Bernoulli random variable: <span class="math display">\[
+E(X) = 1 \dot p + 0 \dot( 1 - p) = p
+\]</span></p>
+</section>
+<section id="variance" class="level3">
+<h3 class="anchored" data-anchor-id="variance">🎲 Variance</h3>
+<p>The variance measures how much the outcomes deviate from the mean: <span class="math display">\[
+\operatorname{Var}(X) = p(1 - p).
+\]</span> The variance of a random variable <span class="math inline">\(X\)</span> measures how much the values of <span class="math inline">\(X\)</span> deviate from its mean: <span class="math display">\[
+Var(X) = E[(X-E(X))^2]
+\]</span> expand this: <span class="math display">\[
+Var(X) = E(X^2 - 2pX + p^2)
+\]</span> Since <span class="math inline">\(p^2\)</span> is constant and <span class="math inline">\(E(X)= p\)</span>, we have: <span class="math display">\[
+Var(X) = E(X^2) - 2pE(X) + p^2
+\]</span></p>
+<p>For a Bernoulli variable, <span class="math inline">\(X^2 = X\)</span> (because <span class="math inline">\(1^2 = 1\)</span> and <span class="math inline">\(0^2=0\)</span>): <span class="math display">\[
+E(X^2) = E(X) = p
+\]</span> Substituting back, <span class="math display">\[
+Var(X) = p - 2p^2 + p = p - p^2 = p(1)
+\]</span> ### 📝 Standard Deviation The standard deviation is the square root of the variance: <span class="math display">\[
+\sigma = \sqrt{p(1 - p)}.
+\]</span></p>
+</section>
+<section id="skewness" class="level3">
+<h3 class="anchored" data-anchor-id="skewness">📏 Skewness</h3>
+<p>Skewness measures the asymmetry of the distribution: <span class="math display">\[
+\gamma_1 = \frac{1 - 2p}{\sqrt{p(1 - p)}}.
+\]</span></p>
+</section>
+<section id="kurtosis" class="level3">
+<h3 class="anchored" data-anchor-id="kurtosis">🛡️ Kurtosis</h3>
+<p>The kurtosis of the Bernoulli distribution is: <span class="math display">\[
+\gamma_2 = \frac{1 - 6p(1 - p)}{p(1 - p)}.
+\]</span></p>
+</section>
+<section id="variance-of-the-estimator-hatp" class="level3">
+<h3 class="anchored" data-anchor-id="variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></h3>
+<p>The estimator for <span class="math inline">\(p\)</span> based on <span class="math inline">\(n\)</span> independent observations <span class="math inline">\(X_1, X_2, \dots, X_n\)</span> is the <strong>sample mean</strong>:</p>
+<p><span class="math display">\[
+\hat{p}_n = \frac{1}{n}\sigma^{n}_{i=1}X_i.
+\]</span></p>
+</section>
+</section>
+<section id="key-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="key-characteristics">📚 3. Key Characteristics</h2>
+<ul>
+<li><strong>Domain:</strong> ( x {0, 1} ).</li>
+<li><strong>Parameter:</strong> Single parameter ( p ), where ( 0 p ).</li>
+<li><strong>Support:</strong> The distribution is defined on two points: 0 and 1.</li>
+<li><strong>Memoryless:</strong> The Bernoulli distribution is <strong>not</strong> memoryless.</li>
+<li><strong>Special Case:</strong>
+<ul>
+<li>If ( p = 0.5 ), the distribution is symmetric.</li>
+<li>If ( p ), the distribution is skewed.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="relationship-to-other-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</h2>
+<ul>
+<li><p><strong>Binomial Distribution:</strong><br>
+The Bernoulli distribution is a special case of the <strong>Binomial distribution</strong> with ( n = 1 ): <span class="math display">\[
+\text{Bernoulli}(p) = \text{Binomial}(n=1, p).
+\]</span></p></li>
+<li><p><strong>Geometric Distribution:</strong><br>
+A geometric random variable models the number of Bernoulli trials until the first success.</p></li>
+<li><p><strong>Beta Distribution (Conjugate Prior):</strong><br>
+In Bayesian statistics, the Beta distribution is the conjugate prior for the Bernoulli likelihood.</p></li>
+</ul>
+<hr>
+</section>
+<section id="applications-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</h2>
+<ul>
+<li><strong>Modeling Binary Outcomes:</strong>
+<ul>
+<li>Coin flips (Heads/Tails)</li>
+<li>Pass/Fail tests</li>
+<li>Yes/No survey responses</li>
+<li>On/Off states in systems</li>
+</ul></li>
+<li><strong>Machine Learning:</strong>
+<ul>
+<li>Logistic regression for binary classification.</li>
+<li>Bernoulli Naive Bayes classifiers.</li>
+</ul></li>
+<li><strong>Statistical Inference:</strong>
+<ul>
+<li>Estimating proportions (e.g., percentage of people supporting a policy).</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="python-example-simulating-a-bernoulli-random-variable" class="level2">
+<h2 class="anchored" data-anchor-id="python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.7</span>  <span class="co"># Probability of success</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># Number of trials</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate Bernoulli trials</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.binomial(n<span class="op">=</span><span class="dv">1</span>, p<span class="op">=</span>p, size<span class="op">=</span>n)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimating p</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>p_estimate <span class="op">=</span> np.mean(data)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"True probability p: </span><span class="sc">{</span>p<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Estimated probability p̂: </span><span class="sc">{</span>p_estimate<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

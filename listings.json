@@ -2,13 +2,13 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/leetcode-Longest-Nice-Subarray.html",
-      "/posts/house-robber.html",
-      "/posts/Leetcode-Divide-array-into-equal-pairs.html",
-      "/posts/how-to-approach-most-dp-problems.html",
-      "/posts/Statistical-Inference-and-Learning.html",
-      "/posts/bernoulli-random-variable.html",
-      "/posts/post_template/index.html"
+      "/posts/leetcode/leetcode-Longest-Nice-Subarray.html",
+      "/posts/leetcode/house-robber.html",
+      "/posts/leetcode/Leetcode-Divide-array-into-equal-pairs.html",
+      "/posts/leetcode/how-to-approach-most-dp-problems.html",
+      "/posts/math/statistic/Statistical-Inference-and-Learning.html",
+      "/posts/post_template/index.html",
+      "/posts/math/statistic/bernoulli-random-variable.html"
     ]
   }
 ]
