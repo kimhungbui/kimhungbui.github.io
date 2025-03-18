@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Your name">
-<meta name="dcterms.date" content="2024-09-11">
+<meta name="dcterms.date" content="2025-02-26">
 <meta name="description" content="Your post description">
 
-<title>Bernoulli Randome Variable – Kim Hung Bui</title>
+<title>Statistical Inference and Learning – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -186,15 +186,14 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Bernoulli Randome Variable</h1>
+      <h1 class="title">Statistical Inference and Learning</h1>
                   <div>
         <div class="description">
           Your post description
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">template</div>
-                <div class="quarto-category">any-category-you-want</div>
+                <div class="quarto-category">Statistical</div>
               </div>
                   </div>
   </div>
@@ -221,7 +220,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 11, 2024</p>
+        <p class="date">February 26, 2025</p>
       </div>
     </div>
     
@@ -237,22 +236,42 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bernoulli-distribution" id="toc-bernoulli-distribution" class="nav-link active" data-scroll-target="#bernoulli-distribution">Bernoulli Distribution</a>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#i.-overview-of-statistical-inference" id="toc-i.-overview-of-statistical-inference" class="nav-link" data-scroll-target="#i.-overview-of-statistical-inference">I. Overview of Statistical Inference</a></li>
+  <li><a href="#ii.-modeling-approaches" id="toc-ii.-modeling-approaches" class="nav-link" data-scroll-target="#ii.-modeling-approaches">II. Modeling Approaches</a>
   <ul class="collapse">
-  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">📌 1. Definition</a></li>
-  <li><a href="#properties-of-the-bernoulli-distribution" id="toc-properties-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</a>
+  <li><a href="#a.-parametric-models" id="toc-a.-parametric-models" class="nav-link" data-scroll-target="#a.-parametric-models">A. Parametric Models</a></li>
+  <li><a href="#b.-nonparametric-models" id="toc-b.-nonparametric-models" class="nav-link" data-scroll-target="#b.-nonparametric-models">B. Nonparametric Models</a></li>
+  </ul></li>
+  <li><a href="#example-6.1-one-dimensional-parametric-estimation--" id="toc-example-6.1-one-dimensional-parametric-estimation--" class="nav-link" data-scroll-target="#example-6.1-one-dimensional-parametric-estimation--">Example 6.1: One-Dimensional Parametric Estimation -</a></li>
+  <li><a href="#example-6.2-two-dimensional-parametric-estimation--" id="toc-example-6.2-two-dimensional-parametric-estimation--" class="nav-link" data-scroll-target="#example-6.2-two-dimensional-parametric-estimation--">Example 6.2: Two-Dimensional Parametric Estimation -</a></li>
+  <li><a href="#example-6.3-nonparametric-estimation-of-the-cdf" id="toc-example-6.3-nonparametric-estimation-of-the-cdf" class="nav-link" data-scroll-target="#example-6.3-nonparametric-estimation-of-the-cdf">Example 6.3: Nonparametric Estimation of the CDF</a>
   <ul class="collapse">
-  <li><a href="#mean-expected-value" id="toc-mean-expected-value" class="nav-link" data-scroll-target="#mean-expected-value">🎯 Mean (Expected Value)</a></li>
-  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">🎲 Variance</a></li>
-  <li><a href="#skewness" id="toc-skewness" class="nav-link" data-scroll-target="#skewness">📏 Skewness</a></li>
-  <li><a href="#kurtosis" id="toc-kurtosis" class="nav-link" data-scroll-target="#kurtosis">🛡️ Kurtosis</a></li>
-  <li><a href="#variance-of-the-estimator-hatp" id="toc-variance-of-the-estimator-hatp" class="nav-link" data-scroll-target="#variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement"><strong>Problem Statement</strong></a></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach"><strong>Approach</strong></a></li>
+  <li><a href="#why-this-works" id="toc-why-this-works" class="nav-link" data-scroll-target="#why-this-works"><strong>Why This Works</strong></a></li>
   </ul></li>
-  <li><a href="#key-characteristics" id="toc-key-characteristics" class="nav-link" data-scroll-target="#key-characteristics">📚 3. Key Characteristics</a></li>
-  <li><a href="#relationship-to-other-distributions" id="toc-relationship-to-other-distributions" class="nav-link" data-scroll-target="#relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</a></li>
-  <li><a href="#applications-of-the-bernoulli-distribution" id="toc-applications-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</a></li>
-  <li><a href="#python-example-simulating-a-bernoulli-random-variable" id="toc-python-example-simulating-a-bernoulli-random-variable" class="nav-link" data-scroll-target="#python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</a></li>
+  <li><a href="#example-6.4-nonparametric-density-estimation" id="toc-example-6.4-nonparametric-density-estimation" class="nav-link" data-scroll-target="#example-6.4-nonparametric-density-estimation">Example 6.4: Nonparametric Density Estimation</a>
+  <ul class="collapse">
+  <li><a href="#problem-statement-1" id="toc-problem-statement-1" class="nav-link" data-scroll-target="#problem-statement-1"><strong>Problem Statement</strong></a></li>
+  <li><a href="#need-for-additional-assumptions" id="toc-need-for-additional-assumptions" class="nav-link" data-scroll-target="#need-for-additional-assumptions"><strong>Need for Additional Assumptions</strong></a></li>
+  <li><a href="#estimation-methods" id="toc-estimation-methods" class="nav-link" data-scroll-target="#estimation-methods"><strong>Estimation Methods</strong></a></li>
+  <li><a href="#why-these-assumptions-are-necessary" id="toc-why-these-assumptions-are-necessary" class="nav-link" data-scroll-target="#why-these-assumptions-are-necessary"><strong>Why These Assumptions are Necessary</strong></a></li>
   </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><strong>Summary</strong></a></li>
+  <li><a href="#iii.-core-concepts-in-inference" id="toc-iii.-core-concepts-in-inference" class="nav-link" data-scroll-target="#iii.-core-concepts-in-inference">III. Core Concepts in Inference</a>
+  <ul class="collapse">
+  <li><a href="#point-estimation" id="toc-point-estimation" class="nav-link" data-scroll-target="#point-estimation">1. Point Estimation</a></li>
+  <li><a href="#confidence-sets" id="toc-confidence-sets" class="nav-link" data-scroll-target="#confidence-sets">2. Confidence Sets</a></li>
+  <li><a href="#hypothesis-testing" id="toc-hypothesis-testing" class="nav-link" data-scroll-target="#hypothesis-testing">3. Hypothesis Testing</a></li>
+  </ul></li>
+  <li><a href="#iv.-frequentist-vs.-bayesian-inference" id="toc-iv.-frequentist-vs.-bayesian-inference" class="nav-link" data-scroll-target="#iv.-frequentist-vs.-bayesian-inference">IV. Frequentist vs.&nbsp;Bayesian Inference</a></li>
+  <li><a href="#v.-additional-information" id="toc-v.-additional-information" class="nav-link" data-scroll-target="#v.-additional-information">V. Additional Information</a>
+  <ul class="collapse">
+  <li><a href="#bibliographic-references" id="toc-bibliographic-references" class="nav-link" data-scroll-target="#bibliographic-references">Bibliographic References</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul></li>
+  <li><a href="#vi.-key-takeaways" id="toc-vi.-key-takeaways" class="nav-link" data-scroll-target="#vi.-key-takeaways">VI. Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
@@ -263,140 +282,384 @@ window.Quarto = {
 
 
 
-<section id="bernoulli-distribution" class="level1">
-<h1>Bernoulli Distribution</h1>
-<p>The <strong>Bernoulli distribution</strong> is a discrete probability distribution that models the outcome of a single trial with two possible outcomes: success (1) and failure (0).</p>
-<hr>
-<section id="definition" class="level2">
-<h2 class="anchored" data-anchor-id="definition">📌 1. Definition</h2>
-<p>A <strong>Bernoulli random variable</strong> ( X ) takes the value: - ( X = 1 ) with probability ( p ) (success), - ( X = 0 ) with probability ( 1 - p ) (failure).</p>
-<p>Mathematically, the probability mass function (PMF) is given by: <span class="math display">\[
-P(X = x) = p^x (1 - p)^{1 - x}, \quad x \in \{0, 1\}, \ 0 \leq p \leq 1.
-\]</span></p>
-<hr>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 </section>
-<section id="properties-of-the-bernoulli-distribution" class="level2">
-<h2 class="anchored" data-anchor-id="properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</h2>
-<section id="mean-expected-value" class="level3">
-<h3 class="anchored" data-anchor-id="mean-expected-value">🎯 Mean (Expected Value)</h3>
-<p>The mean represents the expected outcome of the random variable: <span class="math display">\[
-E[X] = p.
-\]</span></p>
-<p>We expected value <span class="math inline">\(E(x)\)</span> of a random variable <span class="math inline">\(X\)</span> is given by: <span class="math display">\[
-E(X) = \sigma x \dot P(X = x)
-\]</span> For a Bernoulli random variable: <span class="math display">\[
-E(X) = 1 \dot p + 0 \dot( 1 - p) = p
-\]</span></p>
-</section>
-<section id="variance" class="level3">
-<h3 class="anchored" data-anchor-id="variance">🎲 Variance</h3>
-<p>The variance measures how much the outcomes deviate from the mean: <span class="math display">\[
-\operatorname{Var}(X) = p(1 - p).
-\]</span> The variance of a random variable <span class="math inline">\(X\)</span> measures how much the values of <span class="math inline">\(X\)</span> deviate from its mean: <span class="math display">\[
-Var(X) = E[(X-E(X))^2]
-\]</span> expand this: <span class="math display">\[
-Var(X) = E(X^2 - 2pX + p^2)
-\]</span> Since <span class="math inline">\(p^2\)</span> is constant and <span class="math inline">\(E(X)= p\)</span>, we have: <span class="math display">\[
-Var(X) = E(X^2) - 2pE(X) + p^2
-\]</span></p>
-<p>For a Bernoulli variable, <span class="math inline">\(X^2 = X\)</span> (because <span class="math inline">\(1^2 = 1\)</span> and <span class="math inline">\(0^2=0\)</span>): <span class="math display">\[
-E(X^2) = E(X) = p
-\]</span> Substituting back, <span class="math display">\[
-Var(X) = p - 2p^2 + p = p - p^2 = p(1)
-\]</span> ### 📝 Standard Deviation The standard deviation is the square root of the variance: <span class="math display">\[
-\sigma = \sqrt{p(1 - p)}.
-\]</span></p>
-</section>
-<section id="skewness" class="level3">
-<h3 class="anchored" data-anchor-id="skewness">📏 Skewness</h3>
-<p>Skewness measures the asymmetry of the distribution: <span class="math display">\[
-\gamma_1 = \frac{1 - 2p}{\sqrt{p(1 - p)}}.
-\]</span></p>
-</section>
-<section id="kurtosis" class="level3">
-<h3 class="anchored" data-anchor-id="kurtosis">🛡️ Kurtosis</h3>
-<p>The kurtosis of the Bernoulli distribution is: <span class="math display">\[
-\gamma_2 = \frac{1 - 6p(1 - p)}{p(1 - p)}.
-\]</span></p>
-</section>
-<section id="variance-of-the-estimator-hatp" class="level3">
-<h3 class="anchored" data-anchor-id="variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></h3>
-<p>The estimator for <span class="math inline">\(p\)</span> based on <span class="math inline">\(n\)</span> independent observations <span class="math inline">\(X_1, X_2, \dots, X_n\)</span> is the <strong>sample mean</strong>:</p>
-<p><span class="math display">\[
-\hat{p}_n = \frac{1}{n}\sigma^{n}_{i=1}X_i.
-\]</span></p>
-</section>
-</section>
-<section id="key-characteristics" class="level2">
-<h2 class="anchored" data-anchor-id="key-characteristics">📚 3. Key Characteristics</h2>
+<section id="i.-overview-of-statistical-inference" class="level2">
+<h2 class="anchored" data-anchor-id="i.-overview-of-statistical-inference">I. Overview of Statistical Inference</h2>
 <ul>
-<li><strong>Domain:</strong> ( x {0, 1} ).</li>
-<li><strong>Parameter:</strong> Single parameter ( p ), where ( 0 p ).</li>
-<li><strong>Support:</strong> The distribution is defined on two points: 0 and 1.</li>
-<li><strong>Memoryless:</strong> The Bernoulli distribution is <strong>not</strong> memoryless.</li>
-<li><strong>Special Case:</strong>
+<li><p><strong>Definition:</strong><br>
+Statistical inference (often called “learning” in computer science) is the process of using data to deduce the underlying distribution <span class="math inline">\(F\)</span> that generated the data. This may involve estimating the entire distribution or specific features (such as the mean).</p></li>
+<li><p><strong>Applications:</strong></p>
 <ul>
-<li>If ( p = 0.5 ), the distribution is symmetric.</li>
-<li>If ( p ), the distribution is skewed.</li>
+<li>Extracting meaningful information from data<br>
+</li>
+<li>Making informed decisions and predictions<br>
+</li>
+<li>Serving as the foundation for more advanced topics in statistics and machine learning</li>
 </ul></li>
 </ul>
 <hr>
 </section>
-<section id="relationship-to-other-distributions" class="level2">
-<h2 class="anchored" data-anchor-id="relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</h2>
+<section id="ii.-modeling-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-modeling-approaches">II. Modeling Approaches</h2>
+<section id="a.-parametric-models" class="level3">
+<h3 class="anchored" data-anchor-id="a.-parametric-models">A. Parametric Models</h3>
 <ul>
-<li><p><strong>Binomial Distribution:</strong><br>
-The Bernoulli distribution is a special case of the <strong>Binomial distribution</strong> with ( n = 1 ): <span class="math display">\[
-\text{Bernoulli}(p) = \text{Binomial}(n=1, p).
+<li><strong>Definition:</strong><br>
+A model defined by a finite number of parameters.<br>
+</li>
+<li><strong>Example (Normal Distribution):</strong><br>
+<span class="math display">\[
+f(x; \mu, \sigma) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+\]</span></li>
+<li><strong>Characteristics:</strong>
+<ul>
+<li>Simpler to analyze and interpret<br>
+</li>
+<li>More efficient when the assumptions hold true</li>
+</ul></li>
+</ul>
+</section>
+<section id="b.-nonparametric-models" class="level3">
+<h3 class="anchored" data-anchor-id="b.-nonparametric-models">B. Nonparametric Models</h3>
+<ul>
+<li><strong>Definition:</strong><br>
+Models that do not restrict the distribution to a finite-dimensional parameter space.</li>
+<li><strong>Examples:</strong>
+<ul>
+<li>Estimating the entire cumulative distribution function (cdf)<span class="math inline">\(F\)</span><br>
+</li>
+<li>Estimating a probability density function (pdf) with smoothness assumptions (e.g., assuming the pdf belongs to a [[Sobolev space]])</li>
+</ul></li>
+<li><strong>Characteristics:</strong>
+<ul>
+<li>Greater flexibility to model complex data<br>
+</li>
+<li>Fewer assumptions about the form of the distribution</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="example-6.1-one-dimensional-parametric-estimation--" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.1-one-dimensional-parametric-estimation--">Example 6.1: One-Dimensional Parametric Estimation -</h2>
+<p><strong>Scenario:</strong> We observe independent Bernoulli(<span class="math inline">\(p\)</span>) random variables <span class="math inline">\(X_1, X_2, \dots, X_n\)</span>.</p>
+<p><strong>Goal:</strong> Estimate the unknown parameter <span class="math inline">\(p\)</span> (the probability of success).</p>
+<p><strong>Estimator:</strong> The natural estimator is the sample mean: <span class="math display">\[ \hat{p}_n = \frac{1}{n}\sum_{i=1}^n X_i. \]</span> <strong>Key Points:</strong> - <strong>Unbiasedness:</strong> <span class="math display">\[E(\hat{p}_n) = p.\]</span> Thus, the estimator is unbiased.</p>
+<p><strong>Variance:</strong> Since <span class="math display">\[\operatorname{Var}(X_i) = p(1-p)\]</span>, the variance of the estimator is</p>
+<p><span class="math display">\[ \operatorname{Var}(\hat{p}_n) = \frac{p(1-p)}{n}. \]</span> - <strong>Consistency:</strong> As <span class="math inline">\(n\)</span> increases, the variance shrinks, making <span class="math inline">\(\hat{p}_n\)</span> a consistent estimator of <span class="math inline">\(p\)</span>.</p>
+<div class="sourceCode" id="cb1" style="color: gray;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 6.1: One-Dimensional Parametric Estimation (Bernoulli)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># True parameter for Bernoulli distribution</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>p_true <span class="op">=</span> <span class="fl">0.7</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># number of observations</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate n independent Bernoulli(p) observations (0 or 1)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.random.binomial(<span class="dv">1</span>, p_true, n)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimator: sample mean is the natural estimator for p</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>p_hat <span class="op">=</span> np.mean(X)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Example 6.1: Bernoulli Parameter Estimation"</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"True p:"</span>, p_true)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Estimated p:"</span>, p_hat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="example-6.2-two-dimensional-parametric-estimation--" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.2-two-dimensional-parametric-estimation--">Example 6.2: Two-Dimensional Parametric Estimation -</h2>
+<p><strong>Scenario:</strong> Suppose <span class="math display">\[X_1, X_2, \dots, X_n\]</span> are independent observations from a distribution <span class="math display">\[F\]</span> whose probability density function is given by a parametric family: <span class="math display">\[ f(x; \mu, \sigma) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right). \]</span> - <strong>Goal:</strong> Estimate the two parameters: the mean <span class="math display">\[\mu\]</span> and the standard deviation <span class="math display">\[\sigma\]</span>. - <strong>Nuisance Parameter:</strong> If we are primarily interested in <span class="math display">\[\mu\]</span>, then <span class="math display">\[\sigma\]</span> becomes a nuisance parameter—an additional parameter that must be estimated but is not of direct interest. - <strong>Key Points:</strong> - <strong>Multidimensionality:</strong> The estimation problem involves simultaneous estimation of <span class="math display">\[\mu\]</span> and <span class="math display">\[\sigma\]</span>. - <strong>Methods:</strong> Techniques such as maximum likelihood estimation (MLE) are commonly used, sometimes incorporating methods (like profile likelihood) to eliminate the effect of nuisance parameters when focusing on <span class="math display">\[\mu\]</span>. . # Analytical Explanation of Two Nonparametric Estimation Examples</p>
+<p>Below, we analyze and explain two examples that illustrate nonparametric estimation techniques: one for estimating the cumulative distribution function (CDF) and another for estimating the probability density function (PDF).</p>
+<hr>
+</section>
+<section id="example-6.3-nonparametric-estimation-of-the-cdf" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.3-nonparametric-estimation-of-the-cdf">Example 6.3: Nonparametric Estimation of the CDF</h2>
+<section id="problem-statement" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement"><strong>Problem Statement</strong></h3>
+<ul>
+<li><p><strong>Data:</strong><br>
+We have independent observations <span class="math display">\[X_1, X_2, \dots, X_n\]</span> drawn from an unknown distribution with CDF <span class="math display">\[F\]</span>.</p></li>
+<li><p><strong>Objective:</strong><br>
+Estimate the entire cumulative distribution function <span class="math display">\[F\]</span>, assuming minimal assumptions—namely, that <span class="math display">\[F\]</span> is any valid CDF (denoted by <span class="math display">\[\mathcal{F}_{\text{ALL}}\]</span>).</p></li>
+</ul>
+</section>
+<section id="approach" class="level3">
+<h3 class="anchored" data-anchor-id="approach"><strong>Approach</strong></h3>
+<ul>
+<li><strong>Estimator:</strong><br>
+The natural nonparametric estimator for the CDF is the <strong>empirical distribution function (EDF)</strong> defined as: <span class="math display">\[
+\hat{F}_n(x) = \frac{1}{n} \sum_{i=1}^n \mathbf{1}\{X_i \le x\},
+\]</span> where <span class="math display">\[\mathbf{1}\{X_i \le x\}\]</span> is an indicator function that is 1 if <span class="math display">\[X_i \le x\]</span> and 0 otherwise.</li>
+</ul>
+</section>
+<section id="why-this-works" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-works"><strong>Why This Works</strong></h3>
+<ul>
+<li><p><strong>Minimal Assumptions:</strong><br>
+No specific parametric form for <span class="math display">\[F\]</span> is assumed; all that is required is that <span class="math display">\[F\]</span> is a valid CDF. This makes the method very general.</p></li>
+<li><p><strong>Convergence Properties:</strong><br>
+The <strong>Glivenko–Cantelli theorem</strong> guarantees that the empirical CDF converges uniformly to the true CDF: <span class="math display">\[
+\sup_x \left| \hat{F}_n(x) - F(x) \right| \to 0 \quad \text{as} \quad n \to \infty.
+\]</span> This property ensures that the estimator is consistent.</p></li>
+<li><p><strong>Intuitive Interpretation:</strong><br>
+The EDF simply calculates the proportion of observations less than or equal to a given value, which is the natural way to “build” the CDF from data.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="example-6.4-nonparametric-density-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.4-nonparametric-density-estimation">Example 6.4: Nonparametric Density Estimation</h2>
+<section id="problem-statement-1" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement-1"><strong>Problem Statement</strong></h3>
+<ul>
+<li><p><strong>Data:</strong><br>
+Again, we have independent observations <span class="math display">\[X_1, X_2, \dots, X_n\]</span> from a distribution with CDF <span class="math display">\[F\]</span>. Let the associated PDF be <span class="math display">\[f = F'\]</span>.</p></li>
+<li><p><strong>Objective:</strong><br>
+Estimate the PDF <span class="math display">\[f\]</span>. However, unlike the CDF, estimating the density function nonparametrically is not possible under the sole assumption that <span class="math display">\[F\]</span> is any CDF.</p></li>
+</ul>
+</section>
+<section id="need-for-additional-assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="need-for-additional-assumptions"><strong>Need for Additional Assumptions</strong></h3>
+<ul>
+<li><p><strong>Ill-Posed Without Smoothness:</strong><br>
+The space of all CDFs (denoted by <span class="math display">\[\mathcal{F}_{\text{ALL}}\]</span>) is too vast; a generic CDF need not be differentiable. Even if a density exists, it can be highly irregular, making consistent estimation difficult or impossible.</p></li>
+<li><p><strong>Introducing Smoothness via Sobolev Spaces:</strong><br>
+To estimate <span class="math display">\[f\]</span> reliably, we assume that <span class="math display">\[f\]</span> belongs to a more restricted function class. One common assumption is that <span class="math display">\[f\]</span> lies in a <strong>Sobolev space</strong> (denoted by <span class="math display">\[\mathcal{F}_{\text{SOB}}\]</span>).<br>
+For instance, one might assume: <span class="math display">\[
+\mathcal{F}_{\text{SOB}} = \left\{ f \in \mathcal{F}_{\text{DENS}} : \int \left(f^{(s)}(x)\right)^2 dx &lt; \infty \right\},
+\]</span> where:</p>
+<ul>
+<li><span class="math display">\[\mathcal{F}_{\text{DENS}}\]</span> is the set of all probability density functions.</li>
+<li><span class="math display">\[f^{(s)}(x)\]</span> denotes the <span class="math display">\[s\]</span>-th derivative of <span class="math display">\[f\]</span>.</li>
+<li>The condition <span class="math display">\[\int \left(f^{(s)}(x)\right)^2 dx &lt; \infty\]</span> ensures that <span class="math display">\[f\]</span> is not “too wiggly” or irregular.</li>
+</ul></li>
+</ul>
+</section>
+<section id="estimation-methods" class="level3">
+<h3 class="anchored" data-anchor-id="estimation-methods"><strong>Estimation Methods</strong></h3>
+<ul>
+<li><strong>Kernel Density Estimation (KDE):</strong><br>
+With the smoothness assumption in place, methods such as kernel density estimation can be employed. A kernel density estimator has the form: <span class="math display">\[
+\hat{f}_n(x) = \frac{1}{nh} \sum_{i=1}^n K\left(\frac{x - X_i}{h}\right),
+\]</span> where:
+<ul>
+<li><span class="math display">\[K(\cdot)\]</span> is a smooth kernel function (e.g., Gaussian).</li>
+<li><span class="math display">\[h\]</span> is a bandwidth parameter that controls the smoothness of the estimate.</li>
+</ul></li>
+</ul>
+</section>
+<section id="why-these-assumptions-are-necessary" class="level3">
+<h3 class="anchored" data-anchor-id="why-these-assumptions-are-necessary"><strong>Why These Assumptions are Necessary</strong></h3>
+<ul>
+<li><p><strong>Regularization:</strong><br>
+The smoothness condition imposed by the Sobolev space helps regularize the estimation problem. It restricts the set of possible densities to those that have bounded variation or a controlled number of oscillations.</p></li>
+<li><p><strong>Improved Convergence:</strong><br>
+Smoothness assumptions lead to better convergence properties of the density estimator, allowing for rates of convergence that can be rigorously analyzed.</p></li>
+<li><p><strong>Practical Feasibility:</strong><br>
+In many real-world scenarios, the underlying density is indeed smooth (e.g., physical phenomena, economic variables), making this assumption both realistic and useful.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary"><strong>Summary</strong></h2>
+<ul>
+<li><strong>Example 6.3:</strong>
+<ul>
+<li><strong>Task:</strong> Estimate the CDF <span class="math display">\[F\]</span> from data with minimal assumptions.</li>
+<li><strong>Method:</strong> Use the empirical CDF <span class="math display">\[\hat{F}_n(x) = \frac{1}{n}\sum_{i=1}^n \mathbf{1}\{X_i \le x\}\]</span>.</li>
+<li><strong>Key Property:</strong> Convergence guaranteed by the Glivenko–Cantelli theorem.</li>
+</ul></li>
+<li><strong>Example 6.4:</strong>
+<ul>
+<li><strong>Task:</strong> Estimate the density <span class="math display">\[f\]</span> from data.</li>
+<li><strong>Challenge:</strong> Estimation is ill-posed without additional assumptions.</li>
+<li><strong>Solution:</strong> Assume that <span class="math display">\[f\]</span> is smooth by requiring it to belong to a Sobolev space (e.g., <span class="math display">\[\mathcal{F}_{\text{DENS}} \cap \mathcal{F}_{\text{SOB}}\]</span>), then use methods like kernel density estimation.</li>
+<li><strong>Benefit:</strong> Smoothness constraints make the problem well-posed and lead to estimators with favorable convergence properties.</li>
+</ul></li>
+</ul>
+<p>These examples highlight the progression from estimating a distribution function under minimal assumptions to needing extra regularity conditions when estimating derivatives like the density.</p>
+</section>
+<section id="iii.-core-concepts-in-inference" class="level2">
+<h2 class="anchored" data-anchor-id="iii.-core-concepts-in-inference">III. Core Concepts in Inference</h2>
+<section id="point-estimation" class="level3">
+<h3 class="anchored" data-anchor-id="point-estimation">1. Point Estimation</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+A point estimator is a function of the data, denoted as<br>
+<span class="math display">\[
+\hat{\theta}_n = g(X_1, X_2, \dots, X_n)
+\]</span><br>
+used to provide a single “best guess” for the unknown parameter <span class="math display">\[\theta\]</span>.</p></li>
+<li><p><strong>Key Properties:</strong></p>
+<ul>
+<li><strong>Bias:</strong><br>
+<span class="math display">\[
+\text{bias}(\hat{\theta}_n) = E(\hat{\theta}_n) - \theta
+\]</span></li>
+<li><strong>Variance and Standard Error (se):</strong><br>
+<span class="math display">\[
+\text{se} = \sqrt{Var(\hat{\theta}_n)}
+\]</span></li>
+<li><strong>Mean Squared Error (MSE):</strong><br>
+<span class="math display">\[
+\text{mse} = E\left[(\hat{\theta}_n - \theta)^2\right] = \text{bias}^2(\hat{\theta}_n) + Var(\hat{\theta}_n)
+\]</span></li>
+<li><strong>Consistency:</strong><br>
+An estimator is consistent if<br>
+<span class="math display">\[
+\hat{\theta}_n \xrightarrow{P} \theta \quad \text{as } n \to \infty
+\]</span></li>
+<li><strong>Asymptotic Normality:</strong><br>
+Many estimators satisfy<br>
+<span class="math display">\[
+\frac{\hat{\theta}_n - \theta}{\text{se}} \approx N(0, 1)
+\]</span><br>
+for large samples, which facilitates the construction of confidence intervals.</li>
+</ul></li>
+</ul>
+</section>
+<section id="confidence-sets" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-sets">2. Confidence Sets</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+A confidence interval (or set) is a range constructed from the data that, over many repetitions of the experiment, contains the true parameter <span class="math display">\[\theta\]</span> with a specified probability (coverage).</p></li>
+<li><p><strong>Example (Normal-Based Interval):</strong><br>
+When <span class="math display">\[\hat{\theta}_n\]</span> is approximately normally distributed, an approximate <span class="math display">\[1-\alpha\]</span> confidence interval is: <span class="math display">\[
+C_n = \left( \hat{\theta}_n - z_{\alpha/2}\,\text{se}, \quad \hat{\theta}_n + z_{\alpha/2}\,\text{se} \right)
+\]</span> where <span class="math display">\[z_{\alpha/2}\]</span> is the quantile of the standard Normal distribution such that <span class="math display">\[
+P(Z &gt; z_{\alpha/2}) = \frac{\alpha}{2}.
 \]</span></p></li>
-<li><p><strong>Geometric Distribution:</strong><br>
-A geometric random variable models the number of Bernoulli trials until the first success.</p></li>
-<li><p><strong>Beta Distribution (Conjugate Prior):</strong><br>
-In Bayesian statistics, the Beta distribution is the conjugate prior for the Bernoulli likelihood.</p></li>
 </ul>
-<hr>
 </section>
-<section id="applications-of-the-bernoulli-distribution" class="level2">
-<h2 class="anchored" data-anchor-id="applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</h2>
+<section id="hypothesis-testing" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-testing">3. Hypothesis Testing</h3>
 <ul>
-<li><strong>Modeling Binary Outcomes:</strong>
+<li><p><strong>Concept:</strong><br>
+Hypothesis testing involves formulating a null hypothesis <span class="math display">\[H_0\]</span> (a default statement, such as a coin being fair) and an alternative hypothesis <span class="math display">\[H_1\]</span>, then using the data to decide whether there is sufficient evidence to reject <span class="math display">\[H_0\]</span>.</p></li>
+<li><p><strong>Example (Testing Coin Fairness):</strong><br>
+<span class="math display">\[
+H_0: p = 0.5 \quad \text{versus} \quad H_1: p \neq 0.5
+\]</span></p></li>
+<li><p><strong>Process:</strong></p>
 <ul>
-<li>Coin flips (Heads/Tails)</li>
-<li>Pass/Fail tests</li>
-<li>Yes/No survey responses</li>
-<li>On/Off states in systems</li>
-</ul></li>
-<li><strong>Machine Learning:</strong>
-<ul>
-<li>Logistic regression for binary classification.</li>
-<li>Bernoulli Naive Bayes classifiers.</li>
-</ul></li>
-<li><strong>Statistical Inference:</strong>
-<ul>
-<li>Estimating proportions (e.g., percentage of people supporting a policy).</li>
+<li>Define an appropriate test statistic (e.g., <span class="math display">\[T = |\hat{p}_n - 0.5|\]</span>)<br>
+</li>
+<li>Set a significance level <span class="math display">\[\alpha\]</span><br>
+</li>
+<li>Determine the rejection region based on <span class="math display">\[\alpha\]</span> or compute a p-value<br>
+</li>
+<li>Reject <span class="math display">\[H_0\]</span> if the test statistic falls into the rejection region</li>
 </ul></li>
 </ul>
 <hr>
 </section>
-<section id="python-example-simulating-a-bernoulli-random-variable" class="level2">
-<h2 class="anchored" data-anchor-id="python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.7</span>  <span class="co"># Probability of success</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># Number of trials</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate Bernoulli trials</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.binomial(n<span class="op">=</span><span class="dv">1</span>, p<span class="op">=</span>p, size<span class="op">=</span>n)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimating p</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>p_estimate <span class="op">=</span> np.mean(data)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"True probability p: </span><span class="sc">{</span>p<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Estimated probability p̂: </span><span class="sc">{</span>p_estimate<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-
 </section>
+<section id="iv.-frequentist-vs.-bayesian-inference" class="level2">
+<h2 class="anchored" data-anchor-id="iv.-frequentist-vs.-bayesian-inference">IV. Frequentist vs.&nbsp;Bayesian Inference</h2>
+<ul>
+<li><strong>Frequentist Inference:</strong>
+<ul>
+<li>Treats parameters as fixed but unknown<br>
+</li>
+<li>Focuses on the properties of estimators over repeated sampling (e.g., confidence intervals, hypothesis tests)</li>
+</ul></li>
+<li><strong>Bayesian Inference:</strong>
+<ul>
+<li>Treats parameters as random variables with prior distributions<br>
+</li>
+<li>Uses Bayes’ theorem to update beliefs in light of new data, allowing direct probability statements about parameters</li>
+</ul></li>
+<li><strong>Comparison:</strong>
+<ul>
+<li><strong>Frequentist methods</strong> emphasize long-run frequency properties.<br>
+</li>
+<li><strong>Bayesian methods</strong> provide a framework for incorporating prior knowledge and making probabilistic statements about parameters.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="v.-additional-information" class="level2">
+<h2 class="anchored" data-anchor-id="v.-additional-information">V. Additional Information</h2>
+<section id="bibliographic-references" class="level3">
+<h3 class="anchored" data-anchor-id="bibliographic-references">Bibliographic References</h3>
+<ul>
+<li><strong>Elementary Level:</strong>
+<ul>
+<li>DeGroot and Schervish (2002)<br>
+</li>
+<li>Larsen and Marx (1986)</li>
+</ul></li>
+<li><strong>Intermediate Level:</strong>
+<ul>
+<li>Casella and Berger (2002)<br>
+</li>
+<li>Bickel and Doksum (2000)<br>
+</li>
+<li>Rice (1995)</li>
+</ul></li>
+<li><strong>Advanced Level:</strong>
+<ul>
+<li>Cox and Hinkley (2000)<br>
+</li>
+<li>Lehmann and Casella (1998)<br>
+</li>
+<li>Lehmann (1986)<br>
+</li>
+<li>van der Vaart (1998)</li>
+</ul></li>
+</ul>
+</section>
+<section id="exercises" class="level3">
+<h3 class="anchored" data-anchor-id="exercises">Exercises</h3>
+<ol type="1">
+<li><p><strong>Poisson Estimation:</strong><br>
+For <span class="math display">\[X_1, X_2, \dots, X_n \sim \text{Poisson}(\lambda)\]</span> with the estimator<br>
+<span class="math display">\[
+\hat{\lambda} = \frac{1}{n}\sum_{i=1}^n X_i,
+\]</span><br>
+determine the bias, standard error, and mean squared error.</p></li>
+<li><p><strong>Uniform Distribution Estimation (Method 1):</strong><br>
+For <span class="math display">\[X_1, X_2, \dots, X_n \sim \text{Uniform}(0, \theta)\]</span> and the estimator<br>
+<span class="math display">\[
+\hat{\theta} = \max\{X_1, X_2, \dots, X_n\},
+\]</span><br>
+calculate the bias, standard error, and mse.</p></li>
+<li><p><strong>Uniform Distribution Estimation (Method 2):</strong><br>
+For the same model with the estimator<br>
+<span class="math display">\[
+\hat{\theta} = 2X_{(n)},
+\]</span><br>
+where <span class="math display">\[X_{(n)}\]</span> is the maximum, compute the bias, standard error, and mse.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="vi.-key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="vi.-key-takeaways">VI. Key Takeaways</h2>
+<ul>
+<li><p><strong>Inference Fundamentals:</strong><br>
+Learning how to deduce properties of a population from a sample is central to statistics and machine learning.</p></li>
+<li><p><strong>Model Choice:</strong></p>
+<ul>
+<li><strong>Parametric models</strong> are simpler but rely on strong assumptions.<br>
+</li>
+<li><strong>Nonparametric models</strong> offer flexibility with fewer assumptions.</li>
+</ul></li>
+<li><p><strong>Estimator Evaluation:</strong><br>
+Properties such as bias, variance (or standard error), and mean squared error are essential in assessing the quality of estimators.</p></li>
+<li><p><strong>Confidence and Testing:</strong></p>
+<ul>
+<li>Confidence intervals quantify the uncertainty in estimates.<br>
+</li>
+<li>Hypothesis testing provides a formal framework for decision-making.</li>
+</ul></li>
+<li><p><strong>Philosophical Approaches:</strong><br>
+The frequentist and Bayesian paradigms provide different perspectives on probability and inference, influencing how uncertainty is quantified and interpreted.</p></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->

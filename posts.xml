@@ -14,7 +14,7 @@
 <item>
   <title>leetcode-Longest-Nice-Subarray</title>
   <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/posts/leetcode/leetcode-Longest-Nice-Subarray.html</link>
+  <link>https://kimhungbui.github.io/posts/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</link>
   <description><![CDATA[ 
 
 
@@ -197,56 +197,13 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
  ]]></description>
   <category>leetcode</category>
   <category>programming</category>
-  <guid>https://kimhungbui.github.io/posts/leetcode/leetcode-Longest-Nice-Subarray.html</guid>
+  <guid>https://kimhungbui.github.io/posts/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</guid>
   <pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>House robber</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/posts/leetcode/house-robber.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Topic: <code>array, dymanic programming</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
-<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
-<p>Example 1:</p>
-<ul>
-<li>Input: <code>nums = [1,2,3,1]</code></li>
-<li>Output: <code>4</code></li>
-<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
-</ul>
-<p>Example 2:</p>
-<ul>
-<li>Input: <code>nums = [2,7,9,3,1]</code></li>
-<li>Output: <code>12</code></li>
-<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
-</ul>
-<p>Constraints:</p>
-<pre><code>1 &lt;= nums.length &lt;= 100
-0 &lt;= nums[i] &lt;= 400</code></pre>
-</section>
-<section id="approaches" class="level1">
-<h1>Approaches</h1>
-
-
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/posts/leetcode/house-robber.html</guid>
-  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Divide Array Into Equal Pairs</title>
   <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/posts/leetcode/Leetcode-Divide-array-into-equal-pairs.html</link>
+  <link>https://kimhungbui.github.io/posts/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</link>
   <description><![CDATA[ 
 
 
@@ -584,13 +541,13 @@ font-style: inherit;">not</span> unpaired</span></code></pre></div>
  ]]></description>
   <category>leetcode</category>
   <category>programming</category>
-  <guid>https://kimhungbui.github.io/posts/leetcode/Leetcode-Divide-array-into-equal-pairs.html</guid>
+  <guid>https://kimhungbui.github.io/posts/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</guid>
   <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How to approach most DP problems</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/posts/leetcode/how-to-approach-most-dp-problems.html</link>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/posts/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</link>
   <description><![CDATA[ 
 
 
@@ -1034,13 +991,56 @@ font-style: inherit;">return</span> prev1</span></code></pre></div>
  ]]></description>
   <category>leetcode</category>
   <category>programming</category>
-  <guid>https://kimhungbui.github.io/posts/leetcode/how-to-approach-most-dp-problems.html</guid>
+  <guid>https://kimhungbui.github.io/posts/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>House robber</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/posts/leetcode-house-robber/house-robber.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Topic: <code>array, dymanic programming</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
+<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
+<p>Example 1:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,1]</code></li>
+<li>Output: <code>4</code></li>
+<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [2,7,9,3,1]</code></li>
+<li>Output: <code>12</code></li>
+<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
+</ul>
+<p>Constraints:</p>
+<pre><code>1 &lt;= nums.length &lt;= 100
+0 &lt;= nums[i] &lt;= 400</code></pre>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/posts/leetcode-house-robber/house-robber.html</guid>
   <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Statistical Inference and Learning</title>
   <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/posts/math/statistic/Statistical-Inference-and-Learning.html</link>
+  <link>https://kimhungbui.github.io/posts/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</link>
   <description><![CDATA[ 
 
 
@@ -1435,14 +1435,51 @@ The frequentist and Bayesian paradigms provide different perspectives on probabi
 
  ]]></description>
   <category>Statistical</category>
-  <guid>https://kimhungbui.github.io/posts/math/statistic/Statistical-Inference-and-Learning.html</guid>
+  <guid>https://kimhungbui.github.io/posts/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</guid>
   <pubDate>Wed, 26 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/posts/math/statistic/Statistical-Inference.png" medium="image" type="image/png"/>
+  <media:content url="https://kimhungbui.github.io/posts/math-statistic-statistical-inference-and-learning/Statistical-Inference.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Post template</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/posts/post_template/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Just write more markdown here!</p>
+<section id="this-is-a-section" class="level1">
+<h1>This is a section</h1>
+<p>Section text!</p>
+<section id="this-is-a-subsection" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-a-subsection">This is a subsection</h2>
+<p>Subsection text! You get it now I assume</p>
+<p>This is how you reference an image in your blog post</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="dundee.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="This is just a photo I took last time I was in Dundee."><img src="https://kimhungbui.github.io/posts/post_template/dundee.jpg" class="img-fluid figure-img" alt="This is just a photo I took last time I was in Dundee."></a></p>
+<figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
+</figure>
+</div>
+<p>That’s it! go for it!</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>template</category>
+  <category>any-category-you-want</category>
+  <guid>https://kimhungbui.github.io/posts/post_template/</guid>
+  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/posts/post_template/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Bernoulli Randome Variable</title>
-  <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/posts/bernoulli-random-variable/bernoulli-random-variable.html</link>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/posts/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</link>
   <description><![CDATA[ 
 
 
@@ -1610,47 +1647,38 @@ font-style: inherit;">"</span>)</span></code></pre></div>
 </section>
 
  ]]></description>
-  <category>template</category>
-  <category>any-category-you-want</category>
-  <guid>https://kimhungbui.github.io/posts/bernoulli-random-variable/bernoulli-random-variable.html</guid>
+  <category>math</category>
+  <category>statistic</category>
+  <guid>https://kimhungbui.github.io/posts/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</guid>
   <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Post template</title>
+  <title>Why we have normal distribution formular</title>
   <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/posts/post_template/</link>
+  <link>https://kimhungbui.github.io/posts/math-statistic-why-normal-distribution-formular/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p>Just write more markdown here!</p>
-<section id="this-is-a-section" class="level1">
-<h1>This is a section</h1>
-<p>Section text!</p>
-<section id="this-is-a-subsection" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-subsection">This is a subsection</h2>
-<p>Subsection text! You get it now I assume</p>
-<p>This is how you reference an image in your blog post</p>
+<p>To do</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="dundee.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="This is just a photo I took last time I was in Dundee."><img src="https://kimhungbui.github.io/posts/post_template/dundee.jpg" class="img-fluid figure-img" alt="This is just a photo I took last time I was in Dundee."></a></p>
+<p><img src="https://kimhungbui.github.io/posts/math-statistic-why-normal-distribution-formular/dundee.jpg" class="img-fluid figure-img"></p>
 <figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
 </figure>
 </div>
 <p>That’s it! go for it!</p>
 
 
-</section>
-</section>
 
  ]]></description>
-  <category>template</category>
-  <category>any-category-you-want</category>
-  <guid>https://kimhungbui.github.io/posts/post_template/</guid>
+  <category>math</category>
+  <category>statistic</category>
+  <guid>https://kimhungbui.github.io/posts/math-statistic-why-normal-distribution-formular/</guid>
   <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/posts/post_template/dundee.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://kimhungbui.github.io/posts/math-statistic-why-normal-distribution-formular/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

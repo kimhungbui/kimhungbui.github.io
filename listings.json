@@ -2,13 +2,14 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/leetcode/leetcode-Longest-Nice-Subarray.html",
-      "/posts/leetcode/house-robber.html",
-      "/posts/leetcode/Leetcode-Divide-array-into-equal-pairs.html",
-      "/posts/leetcode/how-to-approach-most-dp-problems.html",
-      "/posts/math/statistic/Statistical-Inference-and-Learning.html",
-      "/posts/bernoulli-random-variable/bernoulli-random-variable.html",
-      "/posts/post_template/index.html"
+      "/posts/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html",
+      "/posts/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html",
+      "/posts/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
+      "/posts/leetcode-house-robber/house-robber.html",
+      "/posts/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html",
+      "/posts/post_template/index.html",
+      "/posts/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html",
+      "/posts/math-statistic-why-normal-distribution-formular/index.html"
     ]
   }
 ]

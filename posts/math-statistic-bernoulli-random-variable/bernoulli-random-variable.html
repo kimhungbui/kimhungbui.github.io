@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Hung">
-<meta name="dcterms.date" content="2025-03-17">
-<meta name="description" content="Approaches for DP problems">
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2024-09-11">
+<meta name="description" content="Bernoulli Randome Variable">
 
-<title>How to approach most DP problems – Kim Hung Bui</title>
+<title>Bernoulli Randome Variable – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,6 +106,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -157,42 +186,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">How to approach most DP problems</h1>
+      <h1 class="title">Bernoulli Randome Variable</h1>
                   <div>
         <div class="description">
-          Approaches for DP problems
+          Bernoulli Randome Variable
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">leetcode</div>
-                <div class="quarto-category">programming</div>
+                <div class="quarto-category">math</div>
+                <div class="quarto-category">statistic</div>
               </div>
                   </div>
   </div>
     
-  <div class="quarto-title-meta-author">
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-heading">Affiliation</div>
-    
-      <div class="quarto-title-meta-contents">
-      <p class="author"><a href="https://your.personal.website">Hung</a> </p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              <a href="https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems">
-              Leetcode
-              </a>
-            </p>
-        </div>
-    </div>
-
+  
   <div class="quarto-title-meta">
 
-        
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Kim Hung Bui </p>
+            </div>
+    </div>
+      
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 17, 2025</p>
+        <p class="date">September 11, 2024</p>
       </div>
     </div>
     
@@ -208,11 +228,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-figure-out-recursive-relation." id="toc-step-1-figure-out-recursive-relation." class="nav-link active" data-scroll-target="#step-1-figure-out-recursive-relation.">Step 1: Figure out recursive relation.</a></li>
-  <li><a href="#step-2-recursive-top-down" id="toc-step-2-recursive-top-down" class="nav-link" data-scroll-target="#step-2-recursive-top-down">Step 2: Recursive (top-down):</a></li>
-  <li><a href="#step-3-recursive-memo-top-down" id="toc-step-3-recursive-memo-top-down" class="nav-link" data-scroll-target="#step-3-recursive-memo-top-down">Step 3: Recursive + memo (top-down)</a>
+  <li><a href="#bernoulli-distribution" id="toc-bernoulli-distribution" class="nav-link active" data-scroll-target="#bernoulli-distribution">Bernoulli Distribution</a>
   <ul class="collapse">
-  <li><a href="#step-5-iterative-2-variables-bottom-up" id="toc-step-5-iterative-2-variables-bottom-up" class="nav-link" data-scroll-target="#step-5-iterative-2-variables-bottom-up">Step 5: Iterative + 2 variables (bottom-up)</a></li>
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">📌 1. Definition</a></li>
+  <li><a href="#properties-of-the-bernoulli-distribution" id="toc-properties-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</a>
+  <ul class="collapse">
+  <li><a href="#mean-expected-value" id="toc-mean-expected-value" class="nav-link" data-scroll-target="#mean-expected-value">🎯 Mean (Expected Value)</a></li>
+  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">🎲 Variance</a></li>
+  <li><a href="#skewness" id="toc-skewness" class="nav-link" data-scroll-target="#skewness">📏 Skewness</a></li>
+  <li><a href="#kurtosis" id="toc-kurtosis" class="nav-link" data-scroll-target="#kurtosis">🛡️ Kurtosis</a></li>
+  <li><a href="#variance-of-the-estimator-hatp" id="toc-variance-of-the-estimator-hatp" class="nav-link" data-scroll-target="#variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></a></li>
+  </ul></li>
+  <li><a href="#key-characteristics" id="toc-key-characteristics" class="nav-link" data-scroll-target="#key-characteristics">📚 3. Key Characteristics</a></li>
+  <li><a href="#relationship-to-other-distributions" id="toc-relationship-to-other-distributions" class="nav-link" data-scroll-target="#relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</a></li>
+  <li><a href="#applications-of-the-bernoulli-distribution" id="toc-applications-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</a></li>
+  <li><a href="#python-example-simulating-a-bernoulli-random-variable" id="toc-python-example-simulating-a-bernoulli-random-variable" class="nav-link" data-scroll-target="#python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -224,107 +254,137 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>To solve a dp problem: https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems/</p>
-<p>This particular problem can be approached using the following sequence:</p>
-<ol type="1">
-<li>Find recursive relation</li>
-<li>Recursive (top-down)</li>
-<li>Recursive + memo (top-down)</li>
-<li>Iterative + memo (bottom-up)</li>
-<li>Iterative + N variables (bottom-up)</li>
-</ol>
-<section id="step-1-figure-out-recursive-relation." class="level1">
-<h1>Step 1: Figure out recursive relation.</h1>
-<p>A robber has 2 options: 1. rob current house <code>i</code>; 2. Don’t rob current house.</p>
-<p>If an option <code>1</code> is selected it means that she can’t rob previous <code>i-1</code> house but can rob the one before previous <code>i-2</code> and get alls cumulative loot that follows.</p>
-<p>If an option <code>2</code> is selected the robber loot from robbery of <code>i-1</code> and all the following buildings.</p>
-<p>So it boils down to calculating what is more profitable:</p>
+<section id="bernoulli-distribution" class="level1">
+<h1>Bernoulli Distribution</h1>
+<p>The <strong>Bernoulli distribution</strong> is a discrete probability distribution that models the outcome of a single trial with two possible outcomes: success (1) and failure (0).</p>
+<hr>
+<section id="definition" class="level2">
+<h2 class="anchored" data-anchor-id="definition">📌 1. Definition</h2>
+<p>A <strong>Bernoulli random variable</strong> ( X ) takes the value: - ( X = 1 ) with probability ( p ) (success), - ( X = 0 ) with probability ( 1 - p ) (failure).</p>
+<p>Mathematically, the probability mass function (PMF) is given by: <span class="math display">\[
+P(X = x) = p^x (1 - p)^{1 - x}, \quad x \in \{0, 1\}, \ 0 \leq p \leq 1.
+\]</span></p>
+<hr>
+</section>
+<section id="properties-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</h2>
+<section id="mean-expected-value" class="level3">
+<h3 class="anchored" data-anchor-id="mean-expected-value">🎯 Mean (Expected Value)</h3>
+<p>The mean represents the expected outcome of the random variable: <span class="math display">\[
+E[X] = p.
+\]</span></p>
+<p>We expected value <span class="math inline">\(E(x)\)</span> of a random variable <span class="math inline">\(X\)</span> is given by: <span class="math display">\[
+E(X) = \sigma x \dot P(X = x)
+\]</span> For a Bernoulli random variable: <span class="math display">\[
+E(X) = 1 \dot p + 0 \dot( 1 - p) = p
+\]</span></p>
+</section>
+<section id="variance" class="level3">
+<h3 class="anchored" data-anchor-id="variance">🎲 Variance</h3>
+<p>The variance measures how much the outcomes deviate from the mean: <span class="math display">\[
+\operatorname{Var}(X) = p(1 - p).
+\]</span> The variance of a random variable <span class="math inline">\(X\)</span> measures how much the values of <span class="math inline">\(X\)</span> deviate from its mean: <span class="math display">\[
+Var(X) = E[(X-E(X))^2]
+\]</span> expand this: <span class="math display">\[
+Var(X) = E(X^2 - 2pX + p^2)
+\]</span> Since <span class="math inline">\(p^2\)</span> is constant and <span class="math inline">\(E(X)= p\)</span>, we have: <span class="math display">\[
+Var(X) = E(X^2) - 2pE(X) + p^2
+\]</span></p>
+<p>For a Bernoulli variable, <span class="math inline">\(X^2 = X\)</span> (because <span class="math inline">\(1^2 = 1\)</span> and <span class="math inline">\(0^2=0\)</span>): <span class="math display">\[
+E(X^2) = E(X) = p
+\]</span> Substituting back, <span class="math display">\[
+Var(X) = p - 2p^2 + p = p - p^2 = p(1)
+\]</span> ### 📝 Standard Deviation The standard deviation is the square root of the variance: <span class="math display">\[
+\sigma = \sqrt{p(1 - p)}.
+\]</span></p>
+</section>
+<section id="skewness" class="level3">
+<h3 class="anchored" data-anchor-id="skewness">📏 Skewness</h3>
+<p>Skewness measures the asymmetry of the distribution: <span class="math display">\[
+\gamma_1 = \frac{1 - 2p}{\sqrt{p(1 - p)}}.
+\]</span></p>
+</section>
+<section id="kurtosis" class="level3">
+<h3 class="anchored" data-anchor-id="kurtosis">🛡️ Kurtosis</h3>
+<p>The kurtosis of the Bernoulli distribution is: <span class="math display">\[
+\gamma_2 = \frac{1 - 6p(1 - p)}{p(1 - p)}.
+\]</span></p>
+</section>
+<section id="variance-of-the-estimator-hatp" class="level3">
+<h3 class="anchored" data-anchor-id="variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></h3>
+<p>The estimator for <span class="math inline">\(p\)</span> based on <span class="math inline">\(n\)</span> independent observations <span class="math inline">\(X_1, X_2, \dots, X_n\)</span> is the <strong>sample mean</strong>:</p>
+<p><span class="math display">\[
+\hat{p}_n = \frac{1}{n}\sigma^{n}_{i=1}X_i.
+\]</span></p>
+</section>
+</section>
+<section id="key-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="key-characteristics">📚 3. Key Characteristics</h2>
 <ul>
-<li><p>robbery of current house + loot from house before the previous</p></li>
-<li><p>loot from the previous house robbery and any loot capture before that</p></li>
+<li><strong>Domain:</strong> ( x {0, 1} ).</li>
+<li><strong>Parameter:</strong> Single parameter ( p ), where ( 0 p ).</li>
+<li><strong>Support:</strong> The distribution is defined on two points: 0 and 1.</li>
+<li><strong>Memoryless:</strong> The Bernoulli distribution is <strong>not</strong> memoryless.</li>
+<li><strong>Special Case:</strong>
+<ul>
+<li>If ( p = 0.5 ), the distribution is symmetric.</li>
+<li>If ( p ), the distribution is skewed.</li>
+</ul></li>
 </ul>
-<p><code>rob(i) = Math.max(rob(i-2) + currentHouseValue, rob(i-1))</code></p>
+<hr>
 </section>
-<section id="step-2-recursive-top-down" class="level1">
-<h1>Step 2: Recursive (top-down):</h1>
-<p>Converting the recurrent relation from step 1:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> rob(<span class="va">self</span>, nums: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.rob_helper(nums, <span class="bu">len</span>(nums) <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> rob_helper(<span class="va">self</span>, nums: List[<span class="bu">int</span>], i: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># stop case</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (i <span class="op">&lt;</span> <span class="dv">0</span>):</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">0</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">max</span>(<span class="va">self</span>.rob_helper(nums, i <span class="op">-</span> <span class="dv">2</span>) <span class="op">+</span> nums[i], <span class="va">self</span>.rob_helper(nums, i <span class="op">-</span> <span class="dv">1</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>but it is TLE:</p>
-<p>![[Pasted image 20250317111239.png]]</p>
-<p>this algorithm will process the same <code>i</code> multiple times and it needs improvement. TC: <code>[to fill]</code></p>
+<section id="relationship-to-other-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</h2>
+<ul>
+<li><p><strong>Binomial Distribution:</strong><br>
+The Bernoulli distribution is a special case of the <strong>Binomial distribution</strong> with ( n = 1 ): <span class="math display">\[
+\text{Bernoulli}(p) = \text{Binomial}(n=1, p).
+\]</span></p></li>
+<li><p><strong>Geometric Distribution:</strong><br>
+A geometric random variable models the number of Bernoulli trials until the first success.</p></li>
+<li><p><strong>Beta Distribution (Conjugate Prior):</strong><br>
+In Bayesian statistics, the Beta distribution is the conjugate prior for the Bernoulli likelihood.</p></li>
+</ul>
+<hr>
 </section>
-<section id="step-3-recursive-memo-top-down" class="level1">
-<h1>Step 3: Recursive + memo (top-down)</h1>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; memory <span class="op">=</span> []</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; <span class="kw">def</span> rob(<span class="va">self</span>, nums: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="co"># 0 stand for not rob that house is better</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="co"># -1 for not check house</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="va">self</span>.memory <span class="op">=</span> [<span class="op">-</span><span class="dv">1</span>] <span class="op">*</span> (<span class="bu">len</span>(nums) <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> <span class="va">self</span>.rob_helper(nums, <span class="bu">len</span>(nums) <span class="op">-</span> <span class="dv">1</span>)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; <span class="kw">def</span> rob_helper(<span class="va">self</span>, nums: List[<span class="bu">int</span>], i: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="co"># stop case</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">if</span> (i <span class="op">&lt;</span> <span class="dv">0</span>):</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> <span class="dv">0</span> &nbsp; &nbsp;</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">if</span> <span class="va">self</span>.memory[i] <span class="op">&gt;=</span> <span class="dv">0</span>:</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> <span class="va">self</span>.memory[i]</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; result <span class="op">=</span> <span class="bu">max</span>(<span class="va">self</span>.rob_helper(nums, i <span class="op">-</span> <span class="dv">2</span>) <span class="op">+</span> nums[i], <span class="va">self</span>.rob_helper(nums, i <span class="op">-</span> <span class="dv">1</span>))</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="va">self</span>.memory[i] <span class="op">=</span> result</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>![[Pasted image 20250317112240.png]] This approach is better, this should run in <code>O(n)</code> time. Space complexity is <code>O(n)</code>.</p>
-<p>Because the recursive stack, let’s try to get rid of it. ## Step 4: Iterative + memo (bottom-up)</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; <span class="kw">def</span> rob(<span class="va">self</span>, nums: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="co"># 0 stand for not rob that house is better</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="co"># -1 for not check house</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">if</span> <span class="bu">len</span>(nums) <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> <span class="dv">0</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">if</span> <span class="bu">len</span>(nums) <span class="op">==</span> <span class="dv">1</span>:</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> nums[<span class="dv">0</span>]</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; memory <span class="op">=</span> [<span class="dv">0</span>] <span class="op">*</span> (<span class="bu">len</span>(nums) <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; memory[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; memory[<span class="dv">1</span>] <span class="op">=</span> nums[<span class="dv">0</span>]</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(nums)):</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; val <span class="op">=</span> nums[i]</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co"># the next val is rob now, or rob the last</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory[i<span class="op">+</span><span class="dv">1</span>] <span class="op">=</span> <span class="bu">max</span>(memory[i], memory[i<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span> val)</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> memory[<span class="bu">len</span>(nums)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="step-5-iterative-2-variables-bottom-up" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-iterative-2-variables-bottom-up">Step 5: Iterative + 2 variables (bottom-up)</h2>
-<p>In the previous step, we use only <code>memo[i]</code> and <code>memo[i-1]</code>, so going just 2 step back. We can hold them in 2 variables instead. This optimization is met in Fibonacci sequence creation and some other problems [[Optimize Fibonacci]]</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; <span class="kw">def</span> rob(<span class="va">self</span>, nums: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">if</span> <span class="bu">len</span>(nums) <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> <span class="dv">0</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; prev1, prev2 <span class="op">=</span> <span class="dv">0</span>, <span class="dv">0</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">for</span> num <span class="kw">in</span> nums:</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temp <span class="op">=</span> prev1</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; prev1 <span class="op">=</span> <span class="bu">max</span>(prev2 <span class="op">+</span> num, prev1)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; prev2 <span class="op">=</span> temp</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> prev1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="applications-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</h2>
+<ul>
+<li><strong>Modeling Binary Outcomes:</strong>
+<ul>
+<li>Coin flips (Heads/Tails)</li>
+<li>Pass/Fail tests</li>
+<li>Yes/No survey responses</li>
+<li>On/Off states in systems</li>
+</ul></li>
+<li><strong>Machine Learning:</strong>
+<ul>
+<li>Logistic regression for binary classification.</li>
+<li>Bernoulli Naive Bayes classifiers.</li>
+</ul></li>
+<li><strong>Statistical Inference:</strong>
+<ul>
+<li>Estimating proportions (e.g., percentage of people supporting a policy).</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="python-example-simulating-a-bernoulli-random-variable" class="level2">
+<h2 class="anchored" data-anchor-id="python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.7</span>  <span class="co"># Probability of success</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># Number of trials</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate Bernoulli trials</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.binomial(n<span class="op">=</span><span class="dv">1</span>, p<span class="op">=</span>p, size<span class="op">=</span>n)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimating p</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>p_estimate <span class="op">=</span> np.mean(data)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"True probability p: </span><span class="sc">{</span>p<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Estimated probability p̂: </span><span class="sc">{</span>p_estimate<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

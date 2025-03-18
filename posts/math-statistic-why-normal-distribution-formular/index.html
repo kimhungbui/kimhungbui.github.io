@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-09-11">
 <meta name="description" content="Your post description">
 
-<title>Post template – Kim Hung Bui</title>
+<title>Why we have normal distribution formular – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,9 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -126,15 +123,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post template</h1>
+      <h1 class="title">Why we have normal distribution formular</h1>
                   <div>
         <div class="description">
           Your post description
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">template</div>
-                <div class="quarto-category">any-category-you-want</div>
+                <div class="quarto-category">math</div>
+                <div class="quarto-category">statistic</div>
               </div>
                   </div>
   </div>
@@ -172,17 +169,8 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#this-is-a-section" id="toc-this-is-a-section" class="nav-link active" data-scroll-target="#this-is-a-section">This is a section</a>
-  <ul class="collapse">
-  <li><a href="#this-is-a-subsection" id="toc-this-is-a-subsection" class="nav-link" data-scroll-target="#this-is-a-subsection">This is a subsection</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -191,25 +179,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Just write more markdown here!</p>
-<section id="this-is-a-section" class="level1">
-<h1>This is a section</h1>
-<p>Section text!</p>
-<section id="this-is-a-subsection" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-subsection">This is a subsection</h2>
-<p>Subsection text! You get it now I assume</p>
-<p>This is how you reference an image in your blog post</p>
+<p>To do</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="dundee.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="This is just a photo I took last time I was in Dundee."><img src="dundee.jpg" class="img-fluid figure-img" alt="This is just a photo I took last time I was in Dundee."></a></p>
+<p><img src="dundee.jpg" class="img-fluid figure-img"></p>
 <figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
 </figure>
 </div>
 <p>That’s it! go for it!</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -777,38 +756,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
