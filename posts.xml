@@ -1440,46 +1440,9 @@ The frequentist and Bayesian paradigms provide different perspectives on probabi
   <media:content url="https://kimhungbui.github.io/posts/math/statistic/Statistical-Inference.png" medium="image" type="image/png"/>
 </item>
 <item>
-  <title>Post template</title>
-  <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/posts/post_template/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Just write more markdown here!</p>
-<section id="this-is-a-section" class="level1">
-<h1>This is a section</h1>
-<p>Section text!</p>
-<section id="this-is-a-subsection" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-subsection">This is a subsection</h2>
-<p>Subsection text! You get it now I assume</p>
-<p>This is how you reference an image in your blog post</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="dundee.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="This is just a photo I took last time I was in Dundee."><img src="https://kimhungbui.github.io/posts/post_template/dundee.jpg" class="img-fluid figure-img" alt="This is just a photo I took last time I was in Dundee."></a></p>
-<figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
-</figure>
-</div>
-<p>That’s it! go for it!</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>template</category>
-  <category>any-category-you-want</category>
-  <guid>https://kimhungbui.github.io/posts/post_template/</guid>
-  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/posts/post_template/dundee.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
   <title>Bernoulli Randome Variable</title>
   <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/posts/math/statistic/bernoulli-random-variable.html</link>
+  <link>https://kimhungbui.github.io/posts/bernoulli-random-variable/bernoulli-random-variable.html</link>
   <description><![CDATA[ 
 
 
@@ -1649,8 +1612,45 @@ font-style: inherit;">"</span>)</span></code></pre></div>
  ]]></description>
   <category>template</category>
   <category>any-category-you-want</category>
-  <guid>https://kimhungbui.github.io/posts/math/statistic/bernoulli-random-variable.html</guid>
+  <guid>https://kimhungbui.github.io/posts/bernoulli-random-variable/bernoulli-random-variable.html</guid>
   <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Post template</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/posts/post_template/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Just write more markdown here!</p>
+<section id="this-is-a-section" class="level1">
+<h1>This is a section</h1>
+<p>Section text!</p>
+<section id="this-is-a-subsection" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-a-subsection">This is a subsection</h2>
+<p>Subsection text! You get it now I assume</p>
+<p>This is how you reference an image in your blog post</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="dundee.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="This is just a photo I took last time I was in Dundee."><img src="https://kimhungbui.github.io/posts/post_template/dundee.jpg" class="img-fluid figure-img" alt="This is just a photo I took last time I was in Dundee."></a></p>
+<figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
+</figure>
+</div>
+<p>That’s it! go for it!</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>template</category>
+  <category>any-category-you-want</category>
+  <guid>https://kimhungbui.github.io/posts/post_template/</guid>
+  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/posts/post_template/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
