@@ -1,6 +1,5 @@
 ---
 title: Divide Array Into Equal Pairs
-image: dundee.jpg
 lightbox: false
 description: Your post description
 author:
