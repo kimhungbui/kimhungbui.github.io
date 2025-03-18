@@ -5,17 +5,25 @@ project:
 website:
   title: "Kim Hung Bui"
   site-url: https://kimhungbui.github.io
-  description: "My Personal Website's"
+  description: "My Personal Website"
   navbar:
     left:
-      - href: index.md
+      - href: index.qmd
         text: Home
-      - href: cv.md
+      - href: cv.qmd
         text: Resume
-      - posts.md
+      - text: Knowledge Base
+        menu:
+          - href: posts/topic1.qmd
+            text: Topic 1
+          - href: posts/topic2.qmd
+            text: Topic 2
+          - href: posts/topic3.qmd
+            text: Topic 3
     right:
       - icon: rss
         href: posts.xml
+
 
 
 format:
