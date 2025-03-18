@@ -3,7 +3,7 @@ title: How to approach most DP problems
 lightbox: false
 description: Approaches for DP problems
 author:
-  - name: Hung
+  - name: Kim Hung Bui
     url: https://your.personal.website
     affiliation: Leetcode
     affiliation-url: https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems

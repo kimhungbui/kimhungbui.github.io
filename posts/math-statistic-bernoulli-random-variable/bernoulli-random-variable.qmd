@@ -2,16 +2,14 @@
 title: Bernoulli Randome Variable
 # image: 
 lightbox: false
-description: Your post description
+description: Bernoulli Randome Variable
 author:
-  - name: Your name
-    url: https://your.personal.website
-    affiliation: Maybe your workplace?
-    affiliation-url: https://your.workplace.website
+  - name: Kim Hung Bui
+
 date: 2024-09-11
 categories:
-  - template
-  - any-category-you-want
+  - math
+  - statistic
 draft: false
 ---
 
