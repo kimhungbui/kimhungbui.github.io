@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "Bui Kim Hung"
+  title: "Kim Hung Bui"
   site-url: https://kimhungbui.github.io
-  description: "My Personal Website's Description"
+  description: "My Personal Website's"
   navbar:
     left:
       - href: index.md
