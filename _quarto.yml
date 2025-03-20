@@ -12,7 +12,11 @@ website:
         text: Home
       - href: cv.md
         text: Resume
+      - mathematic.md
+      - programming.md
+      - english.md
       - posts.md
+
     right:
       - icon: rss
         href: posts.xml
