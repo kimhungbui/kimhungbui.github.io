@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hung">
+<meta name="dcterms.date" content="2025-03-20">
+<meta name="description" content="Your post description">
 
-<title>Kim Hung Bui personal page – Kim Hung Bui</title>
+<title>3191. Minimum Operations to Make Binary Array Elements Equal to One I – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,14 +75,14 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
@@ -89,11 +93,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
@@ -104,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -117,44 +121,99 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">3191. Minimum Operations to Make Binary Array Elements Equal to One I</h1>
+                  <div>
+        <div class="description">
+          Your post description
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">leetcode</div>
+                <div class="quarto-category">programming</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://your.personal.website">Hung</a> </p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/description/">
+              Leetcode
+              </a>
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 20, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Kim Hung Bui personal page</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="https://your.mastodon.here" class="about-link" rel="" target="">
-    <i class="bi bi-mastodon"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://github.com/kimhungbui" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://www.linkedin.com/in/hung-bui-kim-38a347239/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text"></span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-
-
-</main></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link active" data-scroll-target="#analysis">Analysis</a></li>
+  </ul>
+</nav>
     </div>
-    <img src="images/yourphoto.png" class="about-image
-  rounded " style="width: 15em;">
-  </div>
-</div>
- <!-- /main -->
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>You are given a</p>
+<p>nums.</p>
+<p>You can do the following operation on the array any number of times (possibly zero):</p>
+<pre><code>Choose any 3 consecutive elements from the array and flip all of them.</code></pre>
+<p>Flipping an element means changing its value from 0 to 1, and from 1 to 0.</p>
+<p>Return the minimum number of operations required to make all elements in nums equal to 1. If it is impossible, return -1.</p>
+<p>Example 1:</p>
+<p>Input: nums = [0,1,1,1,0,0]</p>
+<p>Output: 3</p>
+<p>Explanation: We can do the following operations:</p>
+<pre><code>Choose the elements at indices 0, 1 and 2. The resulting array is nums = [1,0,0,1,0,0].
+Choose the elements at indices 1, 2 and 3. The resulting array is nums = [1,1,1,0,0,0].
+Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,1,1,1].</code></pre>
+<p>Example 2:</p>
+<p>Input: nums = [0,1,1,1]</p>
+<p>Output: -1</p>
+<p>Explanation: It is impossible to make all elements equal to 1.</p>
+<p>Constraints:</p>
+<pre><code>3 &lt;= nums.length &lt;= 105
+0 &lt;= nums[i] &lt;= 1</code></pre>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Since we can only flip three consecutive elements at a time, isolated <code>0</code>s or certain patterns of <code>0</code>s may prevent us from turning everything into <code>1</code>. If the number of <code>0</code>s in certain positions makes it impossible to fully eliminate them using groups of three, the transformation cannot be achieved.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -319,6 +378,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

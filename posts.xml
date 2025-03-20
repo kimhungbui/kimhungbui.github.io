@@ -10,7 +10,249 @@
 <atom:link href="https://kimhungbui.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Tue, 18 Mar 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 20 Mar 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Health Services</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/posts/english-health-services/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>Health services are a basic necessity. However, private companies have made them quite costly for ordinary individuals</em> <em>Do the advantages of private health care outweigh its disadvantage</em></p>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<p>Advantages of Private Health Care: - Efficiency and shorter Waiting Times: Private hospitals offer quicker services compare to public hospitals, where long waiting lists are common. - Better facilities and advanced technology: Many private health institution provide cutting-edge medical technology, specialized treatments, and higher standards of care. - Greater Patient Choice: Individuals can select their preferred doctors, hospitals, and treatment plans, leading to more personalized care. Disadvantages of Private Health Care: - High costs and Limited Accessibility: Private health care is expensive, making it inaccessible for low-income individuals who cannot afford quality treatment. - Profit-driven System: The focus on profit can sometimes lead to unnecessary medical procedures, overcharging, or prioritizing financial gain over patient well-being. - Health inequality: A reliance on private health care can widen the gap between the rich and the poor, as only those who can afford it receive top-tier medical services. ## Sample essay Health care is an essential service, yet private medical facilities often make it unaffordable for many individuals. While private health care offers significant advantages such as efficiency, superior technology, and greater patient choice, it also has considerable drawbacks, particularly its high costs and contribution to social inequality. In my view, although private health care enhances medical standards, its disadvantages outweigh its benefits due to its exclusive and financial burden on ordinary citizens.</p>
+<p>One of the key benefits of private health care is it efficiency. Unlike public hospitals, which often suffer from overcrowding and long waiting times, private institutions provide quicker access to medical attention. This is particularly crucial for emergency treatments or specialized procedures that require immediate intervention. Additionally, private hospitals invest heavily in advanced medical technology and modern infrastructure, ensuring high-quality treatment and specialized care. For instance, many private institutions offer robotic surgeries and personalized cancer treatments, which are not always available in public hospitals. Furthermore, private health care allows patients to choose their doctors and treatment plans, leading to a more personalized and comfortable experience.</p>
+<p>However, the drawbacks of private health care are significant. The most pressing concern is its exorbitant cost, making it unaffordable for a large portion of the population. Many life-saving procedures and medications are out of reach for lower-income individuals, forcing them to rely on overstretched public health systems. Furthermore, because private hospitals overate on a profit-driven model, there is a risk of unnecessary procedures being performed to maximize revenue, sometimes at the expensive of patient welfare. Lastly, the presence of an expensive private health care sector creates a divide between the wealthy and the poor, exacerbating health inequalities. In countries without strong public health care, the underprivileged often suffer from preventable diseases simply due to financial constraints.</p>
+<p>In conclusion, while private health care provides high-quality services and efficiency, its high costs and potential for exploitation make it a less viable option for the general population. A well-functioning public health system remains crucial to ensuring that medical care is accessible to all, regardless of financial status. Governments should regulate private health care costs and prioritize investment in public health services to balance quality with accessibility.</p>
+</section>
+<section id="structure" class="level2">
+<h2 class="anchored" data-anchor-id="structure">Structure</h2>
+<p>1.Health care is an essential service, yet private medical facilities often make it unaffordable for many individuals. 2. While private health care offers significant advantages such as efficiency, superior technology, and greater patient choice, it also has considerable drawbacks, particularly its high costs and contribution to social inequality. 3.In my view, although private health care enhances medical standards, its disadvantages outweigh its benefits due to its exclusive and financial burden on ordinary citizens. 1.<strong><em>Paraphrase the question.</em></strong> 2.<strong>Mention both advantages and disadvantages.</strong><em> 3.</em><strong>Clearly state your opinion.</strong>* One of the key benefits of private health care is its efficiency, as it ensures faster access to treatment, advanced medical technology, and personalized care.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>english</category>
+  <category>writing</category>
+  <category>advantages disadvantage</category>
+  <guid>https://kimhungbui.github.io/posts/english-health-services/</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>3191. Minimum Operations to Make Binary Array Elements Equal to One I</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/posts/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>You are given a</p>
+<p>nums.</p>
+<p>You can do the following operation on the array any number of times (possibly zero):</p>
+<pre><code>Choose any 3 consecutive elements from the array and flip all of them.</code></pre>
+<p>Flipping an element means changing its value from 0 to 1, and from 1 to 0.</p>
+<p>Return the minimum number of operations required to make all elements in nums equal to 1. If it is impossible, return -1.</p>
+<p>Example 1:</p>
+<p>Input: nums = [0,1,1,1,0,0]</p>
+<p>Output: 3</p>
+<p>Explanation: We can do the following operations:</p>
+<pre><code>Choose the elements at indices 0, 1 and 2. The resulting array is nums = [1,0,0,1,0,0].
+Choose the elements at indices 1, 2 and 3. The resulting array is nums = [1,1,1,0,0,0].
+Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,1,1,1].</code></pre>
+<p>Example 2:</p>
+<p>Input: nums = [0,1,1,1]</p>
+<p>Output: -1</p>
+<p>Explanation: It is impossible to make all elements equal to 1.</p>
+<p>Constraints:</p>
+<pre><code>3 &lt;= nums.length &lt;= 105
+0 &lt;= nums[i] &lt;= 1</code></pre>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Since we can only flip three consecutive elements at a time, isolated <code>0</code>s or certain patterns of <code>0</code>s may prevent us from turning everything into <code>1</code>. If the number of <code>0</code>s in certain positions makes it impossible to fully eliminate them using groups of three, the transformation cannot be achieved.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/posts/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>IELTS Writing Task 2 - Topic Sentences – The Fastest Way to Improve your Score</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/posts/english-topic-sentence/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="what-are-topic-sentence" class="level1">
+<h1>What are topic sentence ?</h1>
+<p>The standard essay structure for a IELTS Task 2 essay is four paragraphs - an introduction, two body paragraphs and a conclusion.</p>
+<p>The topic sentence is the first sentence of each body paragraph. It tells the examiner the main idea of the paragraph so it functions like a mini introduction.</p>
+</section>
+<section id="why-are-topic-sentences-important" class="level1">
+<h1>Why are Topic Sentences Important?</h1>
+<p>Good topic sentences help to make our paragraphs clear and easy to read.</p>
+<p>As we can see from the table below, clear paragraphs really help our coherence and cohesion score.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 50%">
+<col style="width: 43%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Band Score</strong></td>
+<td><strong>Official IELTS description</strong><br><br> <strong>(Coherence and Cohesion)</strong></td>
+<td><strong>What it means.</strong></td>
+</tr>
+<tr class="even">
+<td>7+</td>
+<td>“logically organises information and ideas…presents a clear central topic within each paragraph.”</td>
+<td>Body paragraphs have one main idea.<br><br> Topic sentences are clear.</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>“arranges information and ideas coherently…uses paragraphing, but not always logically.”</td>
+<td>Body paragraphs don’t always have one main idea.<br><br> Topic sentences are not always clear.</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>“presents information with some organisation…may not write in paragraphs, or paragraphing may be inadequate.”</td>
+<td>Paragraphs are not used well.<br><br> Topic sentences are not clear.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-write-a-good-topic-sentence" class="level1">
+<h1>How to Write a Good Topic Sentence ?</h1>
+<p>A good topic sentence should be clear and simple.</p>
+<p>A basic topic sentence has two parts: 1. The topic. 2. The reason / main idea. ![[18920776_935567866585887_4103732896360495495_o-768x575.jpg]]</p>
+<p><strong>Example Question</strong></p>
+<pre><code>Global warming/Climate change are pressing problems that every country and the world will have to deal with in the future.
+What are the causes of global warming ?
+What are some possible solutions ?</code></pre>
+<p><strong>Body paragraph 1 (the main cause of global warming)</strong> Topic: the main cause of global warming Reason/ main idea: mass consumption of fossil fuels</p>
+<p>So the topic sentence is: The main cause of climate change is the mass consumption of fossil fuels.</p>
+<p><strong>Body paragraph 2 (a possible solution)</strong></p>
+<p>Topic: one possible solution for dealing with global warming Reason/main idea: higher taxes on automobiles</p>
+<p>The topic sentence is: One possible solution for dealing with climate change could be higher taxes on automobiles.</p>
+</section>
+<section id="topic-sentence-will-help-us-to-stay-married-to-one-main-idea." class="level1">
+<h1>Topic sentence will help us to stay married to one main idea.</h1>
+<p>As we saw in the table above, we should “present a clear central topic within each paragraph”. This means each body paragraph should be focused on just one main idea.</p>
+<p>Therefore planning for our topic sentences helps us to decide what is the main idea for that paragraph.</p>
+<p>After that we should ONLY think of support for that idea. We are married to that main idea. We can’t cheat on it with another main idea.</p>
+<p>So for the following topic sentence, we should only discuss the mass consumption of fuels.</p>
+<pre><code>The main cause of climate change is the mass consumption of fossil fuels.</code></pre>
+<p>Some students spend nearly the whole paragraph discussing one main idea. But then near the end, they seem to panic or get overexcited, and suddenly add a second unrelated idea e.g.&nbsp;deforestation or methane emissions from animals. This is a very common mistake but as the table above showed this will lower our coherence and cohesion score. Remember each paragraph can only have “one central topic”. As part of our planning stage in the task 2 writing exam, we should write down our topic sentences. This will make it easier when we start writing our essay to keep our supporting ideas clear, and focused on our main idea. If we accidentally include a second main idea at the end - cross it out. Stay focused.</p>
+</section>
+<section id="how-to-practice-topic-sentences" class="level1">
+<h1>How to Practice Topic Sentences</h1>
+<section id="analyze-sample-essays" class="level2">
+<h2 class="anchored" data-anchor-id="analyze-sample-essays">Analyze sample essays</h2>
+<ol type="1">
+<li>Look at some task 2 sample essays.</li>
+<li>Highlight the topic sentence(s) - what is the topic? What is the main idea?</li>
+<li>Read the body paragraph(s) - do all the supporting ideas relate to that idea?</li>
+</ol>
+</section>
+<section id="practice-writing-topic-sentences-for-sample-essays" class="level2">
+<h2 class="anchored" data-anchor-id="practice-writing-topic-sentences-for-sample-essays">Practice writing topic sentences for sample essays</h2>
+<ol type="1">
+<li>Look at some task 2 sample essay.</li>
+<li>Cover up the first sentence of the body paragraph(s).</li>
+<li>Read the body again - what is the topic and main idea ?</li>
+<li>Write a topic sentence for that paragraph, then compare it with the original one. ## Analyze our own writing</li>
+<li>Look back through our old task 2 essays.</li>
+<li>Are the topic sentences good? If not, write new ones. ## Practice writing topic sentences for new question</li>
+<li>Look at some sample task 2 question (there is one below)</li>
+<li>Analyze the question and brainstorm main ideas.</li>
+<li>Choose the main topic and main idea for each body paragraph.</li>
+<li>Write our topic sentences.</li>
+</ol>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>english</category>
+  <category>writing</category>
+  <guid>https://kimhungbui.github.io/posts/english-topic-sentence/</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Zoos</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/posts/english-writting-zoos/zoos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><em>Zoos have long been a subject of debate. While some people argue that zoos play a crucial role in conserving endangered species and educating the public about wildlife, others contend that confining animals to artificial environments is unethical. Discuss both views and give your own opinion.</em></p>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Advantage: pros: Conservation zoos often participate in breeding programs and reintroduction efforts for endangered species. Education: They provide a unique opportunity for the public to learn about wildlife and environmental issues. Research: Zoos support scientific research and rehabilitation programs that can benefit species survival</p>
+<p>Disadvantage Cons: Ethical concerns: Confining animals can lead to physical and psychological stress, raising serious animal welfare issues. Natural Behavior: The artificial habitats in zoos may prevent animals from expressing their natural behaviors, potentially leading to a diminished quality of life.</p>
+</section>
+<section id="sample" class="level1">
+<h1>Sample</h1>
+<p>In recent years, zoos have become a focal point of heated debate. On the one hand, proponents argue that zoos are indispensable for conserving endangered species and educating the public. On the other hand, critics maintain that confining animals to unnatural settings is inherently unethical. In my view, while the welfare of captive animals must be a priority, the benefits of well-managed zoos in conservation and education are substantial.</p>
+<p>Supporters of zoos highlight their critical role in preserving biodiversity. With numerous species facing extinction, zoos provide a controlled environment where endangered animals can be bred and nurtured away from the threats of habitat loss and poaching. Many institutions have pioneered successful breeding programs, subsequently reintroducing species into the wild. Moreover, zoos serve as a vital educational platform, offering visitors first-hand exposure to wildlife. This experience not only fosters environmental awareness but also inspires future generations to engage in conservation efforts. Additionally, ongoing research in these settings has led to significant advancements in veterinary medicine and species rehabilitation.</p>
+<p>Conversely, opponents argue that the confinement of animals infringes on their natural rights. Critics assert that even the most well-intentioned zoos cannot replicate the complex ecosystems that wild animals depend on, often leading to behavioral and psychological issues. The ethical debate is further intensified by instances of inadequate care and substandard living conditions in some facilities. While these concerns are valid, they underscore the need for stringent regulations rather than the outright dismissal of zoos as an institution.</p>
+<p>In conclusion, although the ethical implications of captivity are significant, I believe that the conservation, education, and research benefits provided by zoos justify their existence - provided that animal welfare is rigorously safeguarded. This balanced approach can ensure that zoos continue to contribute positively to both wildlife preservation and public understanding of environmental issues.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>english</category>
+  <category>writing</category>
+  <category>advantages disadvantage</category>
+  <guid>https://kimhungbui.github.io/posts/english-writting-zoos/zoos.html</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Parity invariance</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/posts/program-parity-invariance/parity-invariance.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Parity invariance means that the number of times a position is flipped determines its final value. If a position is flipped an odd number of times, its value changes, but if it is flipped an even number of times, it stays the same.</p>
+<p>Consider the array <code>[1, 0, 0, 1, 0, 1, 1]</code>. We start by flipping three consecutive elements to try and transform all <code>0</code>s into <code>1</code>s. First, flipping the subarray <code>[0, 0, 1]</code> at indices <code>1..3</code> changes the array to <code>[1, 1, 1, 0, 0, 1, 1]</code>. Then, flipping <code>[0, 0, 1]</code> at indices <code>[3..5]</code> gives <code>[1, 1, 1, 1, 1, 0, 1]</code>. Finally, flipping <code>[1, 0, 1]</code> at indices <code>[1, 0, 1]</code> at indices <code>4..6</code> results in <code>[1, 1, 1, 1, 1, 1, 0, 1, 0]</code>.</p>
+<p>At this point, we see that the <code>0</code>s at positions <code>4</code> and <code>6</code> remain, and there is no way to flip them without also flipping the other elements. Since we can only flip three elements at a time, we cannot isolate these <code>0</code>s in a way that allow us to change them to <code>1</code>s. This happens because these positions were flipped an even number of times, so they retain their original value. Because of this <strong>parity constraint</strong>, the transformation is impossible.</p>
+
+
+
+ ]]></description>
+  <category>bit manipulation</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/posts/program-parity-invariance/parity-invariance.html</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>leetcode-Longest-Nice-Subarray</title>
   <dc:creator>Hung </dc:creator>

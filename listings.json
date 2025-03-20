@@ -2,6 +2,11 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/english-health-services/index.html",
+      "/posts/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html",
+      "/posts/english-topic-sentence/index.html",
+      "/posts/english-writting-zoos/zoos.html",
+      "/posts/program-parity-invariance/parity-invariance.html",
       "/posts/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html",
       "/posts/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html",
       "/posts/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
