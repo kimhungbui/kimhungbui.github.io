@@ -1,5 +1,5 @@
 ---
-title: "Mathematic"
+title: "Programming"
 listing: 
   contents: programming # all Quarto docs in the `posts` directory will be included on your listing page
   type: default # or `default` or `table`; each type has its own set of yaml options to include
