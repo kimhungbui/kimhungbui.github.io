@@ -8,18 +8,11 @@ website:
   description: "My Personal Website"
   navbar:
     left:
-      - href: index.qmd
+      - href: index.md
         text: Home
-      - href: cv.qmd
+      - href: cv.md
         text: Resume
-      - text: Knowledge Base
-        menu:
-          - href: posts/topic1.qmd
-            text: Topic 1
-          - href: posts/topic2.qmd
-            text: Topic 2
-          - href: posts/topic3.qmd
-            text: Topic 3
+      - posts.mdgut
     right:
       - icon: rss
         href: posts.xml
