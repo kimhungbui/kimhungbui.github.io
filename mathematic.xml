@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Kim Hung Bui</title>
+<link>https://kimhungbui.github.io/mathematic.html</link>
+<atom:link href="https://kimhungbui.github.io/mathematic.xml" rel="self" type="application/rss+xml"/>
+<description>My Personal Website</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Wed, 26 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Statistical Inference and Learning</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+</section>
+<section id="i.-overview-of-statistical-inference" class="level2">
+<h2 class="anchored" data-anchor-id="i.-overview-of-statistical-inference">I. Overview of Statistical Inference</h2>
+<ul>
+<li><p><strong>Definition:</strong><br>
+Statistical inference (often called “learning” in computer science) is the process of using data to deduce the underlying distribution <img src="https://latex.codecogs.com/png.latex?F"> that generated the data. This may involve estimating the entire distribution or specific features (such as the mean).</p></li>
+<li><p><strong>Applications:</strong></p>
+<ul>
+<li>Extracting meaningful information from data<br>
+</li>
+<li>Making informed decisions and predictions<br>
+</li>
+<li>Serving as the foundation for more advanced topics in statistics and machine learning</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="ii.-modeling-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-modeling-approaches">II. Modeling Approaches</h2>
+<section id="a.-parametric-models" class="level3">
+<h3 class="anchored" data-anchor-id="a.-parametric-models">A. Parametric Models</h3>
+<ul>
+<li><strong>Definition:</strong><br>
+A model defined by a finite number of parameters.<br>
+</li>
+<li><strong>Example (Normal Distribution):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0Af(x;%20%5Cmu,%20%5Csigma)%20=%20%5Cfrac%7B1%7D%7B%5Csigma%20%5Csqrt%7B2%5Cpi%7D%7D%20%5Cexp%5Cleft(-%5Cfrac%7B(x-%5Cmu)%5E2%7D%7B2%5Csigma%5E2%7D%5Cright)%0A"></li>
+<li><strong>Characteristics:</strong>
+<ul>
+<li>Simpler to analyze and interpret<br>
+</li>
+<li>More efficient when the assumptions hold true</li>
+</ul></li>
+</ul>
+</section>
+<section id="b.-nonparametric-models" class="level3">
+<h3 class="anchored" data-anchor-id="b.-nonparametric-models">B. Nonparametric Models</h3>
+<ul>
+<li><strong>Definition:</strong><br>
+Models that do not restrict the distribution to a finite-dimensional parameter space.</li>
+<li><strong>Examples:</strong>
+<ul>
+<li>Estimating the entire cumulative distribution function (cdf)<img src="https://latex.codecogs.com/png.latex?F"><br>
+</li>
+<li>Estimating a probability density function (pdf) with smoothness assumptions (e.g., assuming the pdf belongs to a [[Sobolev space]])</li>
+</ul></li>
+<li><strong>Characteristics:</strong>
+<ul>
+<li>Greater flexibility to model complex data<br>
+</li>
+<li>Fewer assumptions about the form of the distribution</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="example-6.1-one-dimensional-parametric-estimation--" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.1-one-dimensional-parametric-estimation--">Example 6.1: One-Dimensional Parametric Estimation -</h2>
+<p><strong>Scenario:</strong> We observe independent Bernoulli(<img src="https://latex.codecogs.com/png.latex?p">) random variables <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n">.</p>
+<p><strong>Goal:</strong> Estimate the unknown parameter <img src="https://latex.codecogs.com/png.latex?p"> (the probability of success).</p>
+<p><strong>Estimator:</strong> The natural estimator is the sample mean: <img src="https://latex.codecogs.com/png.latex?%20%5Chat%7Bp%7D_n%20=%20%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi=1%7D%5En%20X_i.%20"> <strong>Key Points:</strong> - <strong>Unbiasedness:</strong> <img src="https://latex.codecogs.com/png.latex?E(%5Chat%7Bp%7D_n)%20=%20p."> Thus, the estimator is unbiased.</p>
+<p><strong>Variance:</strong> Since <img src="https://latex.codecogs.com/png.latex?%5Coperatorname%7BVar%7D(X_i)%20=%20p(1-p)">, the variance of the estimator is</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20%5Coperatorname%7BVar%7D(%5Chat%7Bp%7D_n)%20=%20%5Cfrac%7Bp(1-p)%7D%7Bn%7D.%20"> - <strong>Consistency:</strong> As <img src="https://latex.codecogs.com/png.latex?n"> increases, the variance shrinks, making <img src="https://latex.codecogs.com/png.latex?%5Chat%7Bp%7D_n"> a consistent estimator of <img src="https://latex.codecogs.com/png.latex?p">.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example 6.1: One-Dimensional Parametric Estimation (Bernoulli)</span></span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># True parameter for Bernoulli distribution</span></span>
+<span id="cb1-6">p_true <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.7</span></span>
+<span id="cb1-7">n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1000</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># number of observations</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Generate n independent Bernoulli(p) observations (0 or 1)</span></span>
+<span id="cb1-10">X <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.random.binomial(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, p_true, n)</span>
+<span id="cb1-11"></span>
+<span id="cb1-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Estimator: sample mean is the natural estimator for p</span></span>
+<span id="cb1-13">p_hat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.mean(X)</span>
+<span id="cb1-14"></span>
+<span id="cb1-15"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Example 6.1: Bernoulli Parameter Estimation"</span>)</span>
+<span id="cb1-16"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"True p:"</span>, p_true)</span>
+<span id="cb1-17"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Estimated p:"</span>, p_hat)</span></code></pre></div>
+</section>
+<section id="example-6.2-two-dimensional-parametric-estimation--" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.2-two-dimensional-parametric-estimation--">Example 6.2: Two-Dimensional Parametric Estimation -</h2>
+<p><strong>Scenario:</strong> Suppose <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n"> are independent observations from a distribution <img src="https://latex.codecogs.com/png.latex?F"> whose probability density function is given by a parametric family: <img src="https://latex.codecogs.com/png.latex?%20f(x;%20%5Cmu,%20%5Csigma)%20=%20%5Cfrac%7B1%7D%7B%5Csigma%20%5Csqrt%7B2%5Cpi%7D%7D%20%5Cexp%5Cleft(-%5Cfrac%7B(x-%5Cmu)%5E2%7D%7B2%5Csigma%5E2%7D%5Cright).%20"> - <strong>Goal:</strong> Estimate the two parameters: the mean <img src="https://latex.codecogs.com/png.latex?%5Cmu"> and the standard deviation <img src="https://latex.codecogs.com/png.latex?%5Csigma">. - <strong>Nuisance Parameter:</strong> If we are primarily interested in <img src="https://latex.codecogs.com/png.latex?%5Cmu">, then <img src="https://latex.codecogs.com/png.latex?%5Csigma"> becomes a nuisance parameter—an additional parameter that must be estimated but is not of direct interest. - <strong>Key Points:</strong> - <strong>Multidimensionality:</strong> The estimation problem involves simultaneous estimation of <img src="https://latex.codecogs.com/png.latex?%5Cmu"> and <img src="https://latex.codecogs.com/png.latex?%5Csigma">. - <strong>Methods:</strong> Techniques such as maximum likelihood estimation (MLE) are commonly used, sometimes incorporating methods (like profile likelihood) to eliminate the effect of nuisance parameters when focusing on <img src="https://latex.codecogs.com/png.latex?%5Cmu">. . # Analytical Explanation of Two Nonparametric Estimation Examples</p>
+<p>Below, we analyze and explain two examples that illustrate nonparametric estimation techniques: one for estimating the cumulative distribution function (CDF) and another for estimating the probability density function (PDF).</p>
+<hr>
+</section>
+<section id="example-6.3-nonparametric-estimation-of-the-cdf" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.3-nonparametric-estimation-of-the-cdf">Example 6.3: Nonparametric Estimation of the CDF</h2>
+<section id="problem-statement" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement"><strong>Problem Statement</strong></h3>
+<ul>
+<li><p><strong>Data:</strong><br>
+We have independent observations <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n"> drawn from an unknown distribution with CDF <img src="https://latex.codecogs.com/png.latex?F">.</p></li>
+<li><p><strong>Objective:</strong><br>
+Estimate the entire cumulative distribution function <img src="https://latex.codecogs.com/png.latex?F">, assuming minimal assumptions—namely, that <img src="https://latex.codecogs.com/png.latex?F"> is any valid CDF (denoted by <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D_%7B%5Ctext%7BALL%7D%7D">).</p></li>
+</ul>
+</section>
+<section id="approach" class="level3">
+<h3 class="anchored" data-anchor-id="approach"><strong>Approach</strong></h3>
+<ul>
+<li><strong>Estimator:</strong><br>
+The natural nonparametric estimator for the CDF is the <strong>empirical distribution function (EDF)</strong> defined as: <img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7BF%7D_n(x)%20=%20%5Cfrac%7B1%7D%7Bn%7D%20%5Csum_%7Bi=1%7D%5En%20%5Cmathbf%7B1%7D%5C%7BX_i%20%5Cle%20x%5C%7D,%0A"> where <img src="https://latex.codecogs.com/png.latex?%5Cmathbf%7B1%7D%5C%7BX_i%20%5Cle%20x%5C%7D"> is an indicator function that is 1 if <img src="https://latex.codecogs.com/png.latex?X_i%20%5Cle%20x"> and 0 otherwise.</li>
+</ul>
+</section>
+<section id="why-this-works" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-works"><strong>Why This Works</strong></h3>
+<ul>
+<li><p><strong>Minimal Assumptions:</strong><br>
+No specific parametric form for <img src="https://latex.codecogs.com/png.latex?F"> is assumed; all that is required is that <img src="https://latex.codecogs.com/png.latex?F"> is a valid CDF. This makes the method very general.</p></li>
+<li><p><strong>Convergence Properties:</strong><br>
+The <strong>Glivenko–Cantelli theorem</strong> guarantees that the empirical CDF converges uniformly to the true CDF: <img src="https://latex.codecogs.com/png.latex?%0A%5Csup_x%20%5Cleft%7C%20%5Chat%7BF%7D_n(x)%20-%20F(x)%20%5Cright%7C%20%5Cto%200%20%5Cquad%20%5Ctext%7Bas%7D%20%5Cquad%20n%20%5Cto%20%5Cinfty.%0A"> This property ensures that the estimator is consistent.</p></li>
+<li><p><strong>Intuitive Interpretation:</strong><br>
+The EDF simply calculates the proportion of observations less than or equal to a given value, which is the natural way to “build” the CDF from data.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="example-6.4-nonparametric-density-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="example-6.4-nonparametric-density-estimation">Example 6.4: Nonparametric Density Estimation</h2>
+<section id="problem-statement-1" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement-1"><strong>Problem Statement</strong></h3>
+<ul>
+<li><p><strong>Data:</strong><br>
+Again, we have independent observations <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n"> from a distribution with CDF <img src="https://latex.codecogs.com/png.latex?F">. Let the associated PDF be <img src="https://latex.codecogs.com/png.latex?f%20=%20F'">.</p></li>
+<li><p><strong>Objective:</strong><br>
+Estimate the PDF <img src="https://latex.codecogs.com/png.latex?f">. However, unlike the CDF, estimating the density function nonparametrically is not possible under the sole assumption that <img src="https://latex.codecogs.com/png.latex?F"> is any CDF.</p></li>
+</ul>
+</section>
+<section id="need-for-additional-assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="need-for-additional-assumptions"><strong>Need for Additional Assumptions</strong></h3>
+<ul>
+<li><p><strong>Ill-Posed Without Smoothness:</strong><br>
+The space of all CDFs (denoted by <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D_%7B%5Ctext%7BALL%7D%7D">) is too vast; a generic CDF need not be differentiable. Even if a density exists, it can be highly irregular, making consistent estimation difficult or impossible.</p></li>
+<li><p><strong>Introducing Smoothness via Sobolev Spaces:</strong><br>
+To estimate <img src="https://latex.codecogs.com/png.latex?f"> reliably, we assume that <img src="https://latex.codecogs.com/png.latex?f"> belongs to a more restricted function class. One common assumption is that <img src="https://latex.codecogs.com/png.latex?f"> lies in a <strong>Sobolev space</strong> (denoted by <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D_%7B%5Ctext%7BSOB%7D%7D">).<br>
+For instance, one might assume: <img src="https://latex.codecogs.com/png.latex?%0A%5Cmathcal%7BF%7D_%7B%5Ctext%7BSOB%7D%7D%20=%20%5Cleft%5C%7B%20f%20%5Cin%20%5Cmathcal%7BF%7D_%7B%5Ctext%7BDENS%7D%7D%20:%20%5Cint%20%5Cleft(f%5E%7B(s)%7D(x)%5Cright)%5E2%20dx%20%3C%20%5Cinfty%20%5Cright%5C%7D,%0A"> where:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D_%7B%5Ctext%7BDENS%7D%7D"> is the set of all probability density functions.</li>
+<li><img src="https://latex.codecogs.com/png.latex?f%5E%7B(s)%7D(x)"> denotes the <img src="https://latex.codecogs.com/png.latex?s">-th derivative of <img src="https://latex.codecogs.com/png.latex?f">.</li>
+<li>The condition <img src="https://latex.codecogs.com/png.latex?%5Cint%20%5Cleft(f%5E%7B(s)%7D(x)%5Cright)%5E2%20dx%20%3C%20%5Cinfty"> ensures that <img src="https://latex.codecogs.com/png.latex?f"> is not “too wiggly” or irregular.</li>
+</ul></li>
+</ul>
+</section>
+<section id="estimation-methods" class="level3">
+<h3 class="anchored" data-anchor-id="estimation-methods"><strong>Estimation Methods</strong></h3>
+<ul>
+<li><strong>Kernel Density Estimation (KDE):</strong><br>
+With the smoothness assumption in place, methods such as kernel density estimation can be employed. A kernel density estimator has the form: <img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7Bf%7D_n(x)%20=%20%5Cfrac%7B1%7D%7Bnh%7D%20%5Csum_%7Bi=1%7D%5En%20K%5Cleft(%5Cfrac%7Bx%20-%20X_i%7D%7Bh%7D%5Cright),%0A"> where:
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?K(%5Ccdot)"> is a smooth kernel function (e.g., Gaussian).</li>
+<li><img src="https://latex.codecogs.com/png.latex?h"> is a bandwidth parameter that controls the smoothness of the estimate.</li>
+</ul></li>
+</ul>
+</section>
+<section id="why-these-assumptions-are-necessary" class="level3">
+<h3 class="anchored" data-anchor-id="why-these-assumptions-are-necessary"><strong>Why These Assumptions are Necessary</strong></h3>
+<ul>
+<li><p><strong>Regularization:</strong><br>
+The smoothness condition imposed by the Sobolev space helps regularize the estimation problem. It restricts the set of possible densities to those that have bounded variation or a controlled number of oscillations.</p></li>
+<li><p><strong>Improved Convergence:</strong><br>
+Smoothness assumptions lead to better convergence properties of the density estimator, allowing for rates of convergence that can be rigorously analyzed.</p></li>
+<li><p><strong>Practical Feasibility:</strong><br>
+In many real-world scenarios, the underlying density is indeed smooth (e.g., physical phenomena, economic variables), making this assumption both realistic and useful.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary"><strong>Summary</strong></h2>
+<ul>
+<li><strong>Example 6.3:</strong>
+<ul>
+<li><strong>Task:</strong> Estimate the CDF <img src="https://latex.codecogs.com/png.latex?F"> from data with minimal assumptions.</li>
+<li><strong>Method:</strong> Use the empirical CDF <img src="https://latex.codecogs.com/png.latex?%5Chat%7BF%7D_n(x)%20=%20%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi=1%7D%5En%20%5Cmathbf%7B1%7D%5C%7BX_i%20%5Cle%20x%5C%7D">.</li>
+<li><strong>Key Property:</strong> Convergence guaranteed by the Glivenko–Cantelli theorem.</li>
+</ul></li>
+<li><strong>Example 6.4:</strong>
+<ul>
+<li><strong>Task:</strong> Estimate the density <img src="https://latex.codecogs.com/png.latex?f"> from data.</li>
+<li><strong>Challenge:</strong> Estimation is ill-posed without additional assumptions.</li>
+<li><strong>Solution:</strong> Assume that <img src="https://latex.codecogs.com/png.latex?f"> is smooth by requiring it to belong to a Sobolev space (e.g., <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BF%7D_%7B%5Ctext%7BDENS%7D%7D%20%5Ccap%20%5Cmathcal%7BF%7D_%7B%5Ctext%7BSOB%7D%7D">), then use methods like kernel density estimation.</li>
+<li><strong>Benefit:</strong> Smoothness constraints make the problem well-posed and lead to estimators with favorable convergence properties.</li>
+</ul></li>
+</ul>
+<p>These examples highlight the progression from estimating a distribution function under minimal assumptions to needing extra regularity conditions when estimating derivatives like the density.</p>
+</section>
+<section id="iii.-core-concepts-in-inference" class="level2">
+<h2 class="anchored" data-anchor-id="iii.-core-concepts-in-inference">III. Core Concepts in Inference</h2>
+<section id="point-estimation" class="level3">
+<h3 class="anchored" data-anchor-id="point-estimation">1. Point Estimation</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+A point estimator is a function of the data, denoted as<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D_n%20=%20g(X_1,%20X_2,%20%5Cdots,%20X_n)%0A"><br>
+used to provide a single “best guess” for the unknown parameter <img src="https://latex.codecogs.com/png.latex?%5Ctheta">.</p></li>
+<li><p><strong>Key Properties:</strong></p>
+<ul>
+<li><strong>Bias:</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bbias%7D(%5Chat%7B%5Ctheta%7D_n)%20=%20E(%5Chat%7B%5Ctheta%7D_n)%20-%20%5Ctheta%0A"></li>
+<li><strong>Variance and Standard Error (se):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bse%7D%20=%20%5Csqrt%7BVar(%5Chat%7B%5Ctheta%7D_n)%7D%0A"></li>
+<li><strong>Mean Squared Error (MSE):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bmse%7D%20=%20E%5Cleft%5B(%5Chat%7B%5Ctheta%7D_n%20-%20%5Ctheta)%5E2%5Cright%5D%20=%20%5Ctext%7Bbias%7D%5E2(%5Chat%7B%5Ctheta%7D_n)%20+%20Var(%5Chat%7B%5Ctheta%7D_n)%0A"></li>
+<li><strong>Consistency:</strong><br>
+An estimator is consistent if<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D_n%20%5Cxrightarrow%7BP%7D%20%5Ctheta%20%5Cquad%20%5Ctext%7Bas%20%7D%20n%20%5Cto%20%5Cinfty%0A"></li>
+<li><strong>Asymptotic Normality:</strong><br>
+Many estimators satisfy<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5Chat%7B%5Ctheta%7D_n%20-%20%5Ctheta%7D%7B%5Ctext%7Bse%7D%7D%20%5Capprox%20N(0,%201)%0A"><br>
+for large samples, which facilitates the construction of confidence intervals.</li>
+</ul></li>
+</ul>
+</section>
+<section id="confidence-sets" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-sets">2. Confidence Sets</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+A confidence interval (or set) is a range constructed from the data that, over many repetitions of the experiment, contains the true parameter <img src="https://latex.codecogs.com/png.latex?%5Ctheta"> with a specified probability (coverage).</p></li>
+<li><p><strong>Example (Normal-Based Interval):</strong><br>
+When <img src="https://latex.codecogs.com/png.latex?%5Chat%7B%5Ctheta%7D_n"> is approximately normally distributed, an approximate <img src="https://latex.codecogs.com/png.latex?1-%5Calpha"> confidence interval is: <img src="https://latex.codecogs.com/png.latex?%0AC_n%20=%20%5Cleft(%20%5Chat%7B%5Ctheta%7D_n%20-%20z_%7B%5Calpha/2%7D%5C,%5Ctext%7Bse%7D,%20%5Cquad%20%5Chat%7B%5Ctheta%7D_n%20+%20z_%7B%5Calpha/2%7D%5C,%5Ctext%7Bse%7D%20%5Cright)%0A"> where <img src="https://latex.codecogs.com/png.latex?z_%7B%5Calpha/2%7D"> is the quantile of the standard Normal distribution such that <img src="https://latex.codecogs.com/png.latex?%0AP(Z%20%3E%20z_%7B%5Calpha/2%7D)%20=%20%5Cfrac%7B%5Calpha%7D%7B2%7D.%0A"></p></li>
+</ul>
+</section>
+<section id="hypothesis-testing" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-testing">3. Hypothesis Testing</h3>
+<ul>
+<li><p><strong>Concept:</strong><br>
+Hypothesis testing involves formulating a null hypothesis <img src="https://latex.codecogs.com/png.latex?H_0"> (a default statement, such as a coin being fair) and an alternative hypothesis <img src="https://latex.codecogs.com/png.latex?H_1">, then using the data to decide whether there is sufficient evidence to reject <img src="https://latex.codecogs.com/png.latex?H_0">.</p></li>
+<li><p><strong>Example (Testing Coin Fairness):</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0AH_0:%20p%20=%200.5%20%5Cquad%20%5Ctext%7Bversus%7D%20%5Cquad%20H_1:%20p%20%5Cneq%200.5%0A"></p></li>
+<li><p><strong>Process:</strong></p>
+<ul>
+<li>Define an appropriate test statistic (e.g., <img src="https://latex.codecogs.com/png.latex?T%20=%20%7C%5Chat%7Bp%7D_n%20-%200.5%7C">)<br>
+</li>
+<li>Set a significance level <img src="https://latex.codecogs.com/png.latex?%5Calpha"><br>
+</li>
+<li>Determine the rejection region based on <img src="https://latex.codecogs.com/png.latex?%5Calpha"> or compute a p-value<br>
+</li>
+<li>Reject <img src="https://latex.codecogs.com/png.latex?H_0"> if the test statistic falls into the rejection region</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="iv.-frequentist-vs.-bayesian-inference" class="level2">
+<h2 class="anchored" data-anchor-id="iv.-frequentist-vs.-bayesian-inference">IV. Frequentist vs.&nbsp;Bayesian Inference</h2>
+<ul>
+<li><strong>Frequentist Inference:</strong>
+<ul>
+<li>Treats parameters as fixed but unknown<br>
+</li>
+<li>Focuses on the properties of estimators over repeated sampling (e.g., confidence intervals, hypothesis tests)</li>
+</ul></li>
+<li><strong>Bayesian Inference:</strong>
+<ul>
+<li>Treats parameters as random variables with prior distributions<br>
+</li>
+<li>Uses Bayes’ theorem to update beliefs in light of new data, allowing direct probability statements about parameters</li>
+</ul></li>
+<li><strong>Comparison:</strong>
+<ul>
+<li><strong>Frequentist methods</strong> emphasize long-run frequency properties.<br>
+</li>
+<li><strong>Bayesian methods</strong> provide a framework for incorporating prior knowledge and making probabilistic statements about parameters.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="v.-additional-information" class="level2">
+<h2 class="anchored" data-anchor-id="v.-additional-information">V. Additional Information</h2>
+<section id="bibliographic-references" class="level3">
+<h3 class="anchored" data-anchor-id="bibliographic-references">Bibliographic References</h3>
+<ul>
+<li><strong>Elementary Level:</strong>
+<ul>
+<li>DeGroot and Schervish (2002)<br>
+</li>
+<li>Larsen and Marx (1986)</li>
+</ul></li>
+<li><strong>Intermediate Level:</strong>
+<ul>
+<li>Casella and Berger (2002)<br>
+</li>
+<li>Bickel and Doksum (2000)<br>
+</li>
+<li>Rice (1995)</li>
+</ul></li>
+<li><strong>Advanced Level:</strong>
+<ul>
+<li>Cox and Hinkley (2000)<br>
+</li>
+<li>Lehmann and Casella (1998)<br>
+</li>
+<li>Lehmann (1986)<br>
+</li>
+<li>van der Vaart (1998)</li>
+</ul></li>
+</ul>
+</section>
+<section id="exercises" class="level3">
+<h3 class="anchored" data-anchor-id="exercises">Exercises</h3>
+<ol type="1">
+<li><p><strong>Poisson Estimation:</strong><br>
+For <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n%20%5Csim%20%5Ctext%7BPoisson%7D(%5Clambda)"> with the estimator<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Clambda%7D%20=%20%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi=1%7D%5En%20X_i,%0A"><br>
+determine the bias, standard error, and mean squared error.</p></li>
+<li><p><strong>Uniform Distribution Estimation (Method 1):</strong><br>
+For <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n%20%5Csim%20%5Ctext%7BUniform%7D(0,%20%5Ctheta)"> and the estimator<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D%20=%20%5Cmax%5C%7BX_1,%20X_2,%20%5Cdots,%20X_n%5C%7D,%0A"><br>
+calculate the bias, standard error, and mse.</p></li>
+<li><p><strong>Uniform Distribution Estimation (Method 2):</strong><br>
+For the same model with the estimator<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7B%5Ctheta%7D%20=%202X_%7B(n)%7D,%0A"><br>
+where <img src="https://latex.codecogs.com/png.latex?X_%7B(n)%7D"> is the maximum, compute the bias, standard error, and mse.</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="vi.-key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="vi.-key-takeaways">VI. Key Takeaways</h2>
+<ul>
+<li><p><strong>Inference Fundamentals:</strong><br>
+Learning how to deduce properties of a population from a sample is central to statistics and machine learning.</p></li>
+<li><p><strong>Model Choice:</strong></p>
+<ul>
+<li><strong>Parametric models</strong> are simpler but rely on strong assumptions.<br>
+</li>
+<li><strong>Nonparametric models</strong> offer flexibility with fewer assumptions.</li>
+</ul></li>
+<li><p><strong>Estimator Evaluation:</strong><br>
+Properties such as bias, variance (or standard error), and mean squared error are essential in assessing the quality of estimators.</p></li>
+<li><p><strong>Confidence and Testing:</strong></p>
+<ul>
+<li>Confidence intervals quantify the uncertainty in estimates.<br>
+</li>
+<li>Hypothesis testing provides a formal framework for decision-making.</li>
+</ul></li>
+<li><p><strong>Philosophical Approaches:</strong><br>
+The frequentist and Bayesian paradigms provide different perspectives on probability and inference, influencing how uncertainty is quantified and interpreted.</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>Statistical</category>
+  <guid>https://kimhungbui.github.io/math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</guid>
+  <pubDate>Wed, 26 Feb 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/math/math-statistic-statistical-inference-and-learning/Statistical-Inference.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Bernoulli Randome Variable</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="bernoulli-distribution" class="level1">
+<h1>Bernoulli Distribution</h1>
+<p>The <strong>Bernoulli distribution</strong> is a discrete probability distribution that models the outcome of a single trial with two possible outcomes: success (1) and failure (0).</p>
+<hr>
+<section id="definition" class="level2">
+<h2 class="anchored" data-anchor-id="definition">📌 1. Definition</h2>
+<p>A <strong>Bernoulli random variable</strong> ( X ) takes the value: - ( X = 1 ) with probability ( p ) (success), - ( X = 0 ) with probability ( 1 - p ) (failure).</p>
+<p>Mathematically, the probability mass function (PMF) is given by: <img src="https://latex.codecogs.com/png.latex?%0AP(X%20=%20x)%20=%20p%5Ex%20(1%20-%20p)%5E%7B1%20-%20x%7D,%20%5Cquad%20x%20%5Cin%20%5C%7B0,%201%5C%7D,%20%5C%200%20%5Cleq%20p%20%5Cleq%201.%0A"></p>
+<hr>
+</section>
+<section id="properties-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</h2>
+<section id="mean-expected-value" class="level3">
+<h3 class="anchored" data-anchor-id="mean-expected-value">🎯 Mean (Expected Value)</h3>
+<p>The mean represents the expected outcome of the random variable: <img src="https://latex.codecogs.com/png.latex?%0AE%5BX%5D%20=%20p.%0A"></p>
+<p>We expected value <img src="https://latex.codecogs.com/png.latex?E(x)"> of a random variable <img src="https://latex.codecogs.com/png.latex?X"> is given by: <img src="https://latex.codecogs.com/png.latex?%0AE(X)%20=%20%5Csigma%20x%20%5Cdot%20P(X%20=%20x)%0A"> For a Bernoulli random variable: <img src="https://latex.codecogs.com/png.latex?%0AE(X)%20=%201%20%5Cdot%20p%20+%200%20%5Cdot(%201%20-%20p)%20=%20p%0A"></p>
+</section>
+<section id="variance" class="level3">
+<h3 class="anchored" data-anchor-id="variance">🎲 Variance</h3>
+<p>The variance measures how much the outcomes deviate from the mean: <img src="https://latex.codecogs.com/png.latex?%0A%5Coperatorname%7BVar%7D(X)%20=%20p(1%20-%20p).%0A"> The variance of a random variable <img src="https://latex.codecogs.com/png.latex?X"> measures how much the values of <img src="https://latex.codecogs.com/png.latex?X"> deviate from its mean: <img src="https://latex.codecogs.com/png.latex?%0AVar(X)%20=%20E%5B(X-E(X))%5E2%5D%0A"> expand this: <img src="https://latex.codecogs.com/png.latex?%0AVar(X)%20=%20E(X%5E2%20-%202pX%20+%20p%5E2)%0A"> Since <img src="https://latex.codecogs.com/png.latex?p%5E2"> is constant and <img src="https://latex.codecogs.com/png.latex?E(X)=%20p">, we have: <img src="https://latex.codecogs.com/png.latex?%0AVar(X)%20=%20E(X%5E2)%20-%202pE(X)%20+%20p%5E2%0A"></p>
+<p>For a Bernoulli variable, <img src="https://latex.codecogs.com/png.latex?X%5E2%20=%20X"> (because <img src="https://latex.codecogs.com/png.latex?1%5E2%20=%201"> and <img src="https://latex.codecogs.com/png.latex?0%5E2=0">): <img src="https://latex.codecogs.com/png.latex?%0AE(X%5E2)%20=%20E(X)%20=%20p%0A"> Substituting back, <img src="https://latex.codecogs.com/png.latex?%0AVar(X)%20=%20p%20-%202p%5E2%20+%20p%20=%20p%20-%20p%5E2%20=%20p(1)%0A"> ### 📝 Standard Deviation The standard deviation is the square root of the variance: <img src="https://latex.codecogs.com/png.latex?%0A%5Csigma%20=%20%5Csqrt%7Bp(1%20-%20p)%7D.%0A"></p>
+</section>
+<section id="skewness" class="level3">
+<h3 class="anchored" data-anchor-id="skewness">📏 Skewness</h3>
+<p>Skewness measures the asymmetry of the distribution: <img src="https://latex.codecogs.com/png.latex?%0A%5Cgamma_1%20=%20%5Cfrac%7B1%20-%202p%7D%7B%5Csqrt%7Bp(1%20-%20p)%7D%7D.%0A"></p>
+</section>
+<section id="kurtosis" class="level3">
+<h3 class="anchored" data-anchor-id="kurtosis">🛡️ Kurtosis</h3>
+<p>The kurtosis of the Bernoulli distribution is: <img src="https://latex.codecogs.com/png.latex?%0A%5Cgamma_2%20=%20%5Cfrac%7B1%20-%206p(1%20-%20p)%7D%7Bp(1%20-%20p)%7D.%0A"></p>
+</section>
+<section id="variance-of-the-estimator-hatp" class="level3">
+<h3 class="anchored" data-anchor-id="variance-of-the-estimator-hatp">Variance of the Estimator <img src="https://latex.codecogs.com/png.latex?%5Chat%7Bp%7D"></h3>
+<p>The estimator for <img src="https://latex.codecogs.com/png.latex?p"> based on <img src="https://latex.codecogs.com/png.latex?n"> independent observations <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cdots,%20X_n"> is the <strong>sample mean</strong>:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7Bp%7D_n%20=%20%5Cfrac%7B1%7D%7Bn%7D%5Csigma%5E%7Bn%7D_%7Bi=1%7DX_i.%0A"></p>
+</section>
+</section>
+<section id="key-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="key-characteristics">📚 3. Key Characteristics</h2>
+<ul>
+<li><strong>Domain:</strong> ( x {0, 1} ).</li>
+<li><strong>Parameter:</strong> Single parameter ( p ), where ( 0 p ).</li>
+<li><strong>Support:</strong> The distribution is defined on two points: 0 and 1.</li>
+<li><strong>Memoryless:</strong> The Bernoulli distribution is <strong>not</strong> memoryless.</li>
+<li><strong>Special Case:</strong>
+<ul>
+<li>If ( p = 0.5 ), the distribution is symmetric.</li>
+<li>If ( p ), the distribution is skewed.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="relationship-to-other-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</h2>
+<ul>
+<li><p><strong>Binomial Distribution:</strong><br>
+The Bernoulli distribution is a special case of the <strong>Binomial distribution</strong> with ( n = 1 ): <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7BBernoulli%7D(p)%20=%20%5Ctext%7BBinomial%7D(n=1,%20p).%0A"></p></li>
+<li><p><strong>Geometric Distribution:</strong><br>
+A geometric random variable models the number of Bernoulli trials until the first success.</p></li>
+<li><p><strong>Beta Distribution (Conjugate Prior):</strong><br>
+In Bayesian statistics, the Beta distribution is the conjugate prior for the Bernoulli likelihood.</p></li>
+</ul>
+<hr>
+</section>
+<section id="applications-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</h2>
+<ul>
+<li><strong>Modeling Binary Outcomes:</strong>
+<ul>
+<li>Coin flips (Heads/Tails)</li>
+<li>Pass/Fail tests</li>
+<li>Yes/No survey responses</li>
+<li>On/Off states in systems</li>
+</ul></li>
+<li><strong>Machine Learning:</strong>
+<ul>
+<li>Logistic regression for binary classification.</li>
+<li>Bernoulli Naive Bayes classifiers.</li>
+</ul></li>
+<li><strong>Statistical Inference:</strong>
+<ul>
+<li>Estimating proportions (e.g., percentage of people supporting a policy).</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="python-example-simulating-a-bernoulli-random-variable" class="level2">
+<h2 class="anchored" data-anchor-id="python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</h2>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Parameters</span></span>
+<span id="cb1-4">p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.7</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Probability of success</span></span>
+<span id="cb1-5">n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1000</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Number of trials</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Simulate Bernoulli trials</span></span>
+<span id="cb1-8">data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.random.binomial(n<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, p<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>p, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>n)</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Estimating p</span></span>
+<span id="cb1-11">p_estimate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.mean(data)</span>
+<span id="cb1-12"></span>
+<span id="cb1-13"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"True probability p: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>p<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span>
+<span id="cb1-14"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Estimated probability p̂: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>p_estimate<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:.4f}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>math</category>
+  <category>statistic</category>
+  <guid>https://kimhungbui.github.io/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</guid>
+  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why we have normal distribution formular</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>To do</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/dundee.jpg" class="img-fluid figure-img"></p>
+<figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
+</figure>
+</div>
+<p>That’s it! go for it!</p>
+
+
+
+ ]]></description>
+  <category>math</category>
+  <category>statistic</category>
+  <guid>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/</guid>
+  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/dundee.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

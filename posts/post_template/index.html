@@ -44,9 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,6 +99,18 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../mathematic.html"> 
+<span class="menu-text">Mathematic</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../programming.html"> 
+<span class="menu-text">Mathematic</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../english.html"> 
+<span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../posts.html"> 
@@ -201,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This is how you reference an image in your blog post</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="dundee.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="This is just a photo I took last time I was in Dundee."><img src="dundee.jpg" class="img-fluid figure-img" alt="This is just a photo I took last time I was in Dundee."></a></p>
+<p><img src="dundee.jpg" class="img-fluid figure-img"></p>
 <figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
 </figure>
 </div>
@@ -777,38 +786,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","loop":false,"selector":".lightbox","descPosition":"bottom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

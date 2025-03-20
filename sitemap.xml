@@ -1,71 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kimhungbui.github.io/posts/program-parity-invariance/parity-invariance.html</loc>
-    <lastmod>2025-03-20T10:59:24.843Z</lastmod>
+    <loc>https://kimhungbui.github.io/english.html</loc>
+    <lastmod>2025-03-20T11:25:48.760Z</lastmod>
   </url>
   <url>
-    <loc>https://kimhungbui.github.io/posts/math-statistic-why-normal-distribution-formular/index.html</loc>
-    <lastmod>2025-03-20T10:59:24.835Z</lastmod>
+    <loc>https://kimhungbui.github.io/posts/extreme-early-retirement/index.html</loc>
+    <lastmod>2025-03-20T11:25:48.770Z</lastmod>
   </url>
   <url>
-    <loc>https://kimhungbui.github.io/posts/english-topic-sentence/index.html</loc>
-    <lastmod>2025-03-20T10:59:24.826Z</lastmod>
+    <loc>https://kimhungbui.github.io/mathematic.html</loc>
+    <lastmod>2025-03-20T11:25:48.769Z</lastmod>
   </url>
   <url>
-    <loc>https://kimhungbui.github.io/posts/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</loc>
-    <lastmod>2025-03-20T10:59:24.827Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/english-health-services/index.html</loc>
-    <lastmod>2025-03-20T10:59:24.826Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</loc>
-    <lastmod>2025-03-20T10:59:24.827Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</loc>
-    <lastmod>2025-03-20T10:59:24.827Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts.html</loc>
-    <lastmod>2025-03-20T10:59:24.826Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/index.html</loc>
-    <lastmod>2025-03-20T10:59:24.825Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/cv.html</loc>
-    <lastmod>2025-03-20T10:59:24.824Z</lastmod>
+    <loc>https://kimhungbui.github.io/english/english-topic-sentence/index.html</loc>
+    <lastmod>2025-03-20T11:25:48.760Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/LICENSE.html</loc>
-    <lastmod>2025-03-20T10:59:24.823Z</lastmod>
+    <lastmod>2025-03-20T11:25:48.759Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</loc>
+    <lastmod>2025-03-20T11:25:48.761Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/posts.html</loc>
+    <lastmod>2025-03-20T11:25:48.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/index.html</loc>
+    <lastmod>2025-03-20T11:25:48.761Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</loc>
+    <lastmod>2025-03-20T11:25:48.778Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</loc>
+    <lastmod>2025-03-20T11:25:48.778Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</loc>
+    <lastmod>2025-03-20T11:25:48.778Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</loc>
+    <lastmod>2025-03-20T11:25:48.778Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</loc>
+    <lastmod>2025-03-20T11:25:48.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</loc>
+    <lastmod>2025-03-20T11:25:48.778Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/cv.html</loc>
+    <lastmod>2025-03-20T11:25:48.760Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</loc>
+    <lastmod>2025-03-20T11:25:48.761Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/index.html</loc>
+    <lastmod>2025-03-20T11:25:48.769Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/english-health-services/index.html</loc>
+    <lastmod>2025-03-20T11:25:48.760Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/english-writting-zoos/zoos.html</loc>
+    <lastmod>2025-03-20T11:25:48.760Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/posts/post_template/index.html</loc>
-    <lastmod>2025-03-20T10:59:24.842Z</lastmod>
+    <lastmod>2025-03-20T11:25:48.778Z</lastmod>
   </url>
   <url>
-    <loc>https://kimhungbui.github.io/posts/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</loc>
-    <lastmod>2025-03-20T10:59:24.827Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</loc>
-    <lastmod>2025-03-20T10:59:24.827Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</loc>
-    <lastmod>2025-03-20T10:59:24.843Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/leetcode-house-robber/house-robber.html</loc>
-    <lastmod>2025-03-20T10:59:24.827Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts/english-writting-zoos/zoos.html</loc>
-    <lastmod>2025-03-20T10:59:24.826Z</lastmod>
+    <loc>https://kimhungbui.github.io/programming.html</loc>
+    <lastmod>2025-03-20T11:25:48.778Z</lastmod>
   </url>
 </urlset>

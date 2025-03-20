@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Kim Hung Bui</title>
+<link>https://kimhungbui.github.io/programming.html</link>
+<atom:link href="https://kimhungbui.github.io/programming.xml" rel="self" type="application/rss+xml"/>
+<description>My Personal Website</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Thu, 20 Mar 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>3191. Minimum Operations to Make Binary Array Elements Equal to One I</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>You are given a</p>
+<p>nums.</p>
+<p>You can do the following operation on the array any number of times (possibly zero):</p>
+<pre><code>Choose any 3 consecutive elements from the array and flip all of them.</code></pre>
+<p>Flipping an element means changing its value from 0 to 1, and from 1 to 0.</p>
+<p>Return the minimum number of operations required to make all elements in nums equal to 1. If it is impossible, return -1.</p>
+<p>Example 1:</p>
+<p>Input: nums = [0,1,1,1,0,0]</p>
+<p>Output: 3</p>
+<p>Explanation: We can do the following operations:</p>
+<pre><code>Choose the elements at indices 0, 1 and 2. The resulting array is nums = [1,0,0,1,0,0].
+Choose the elements at indices 1, 2 and 3. The resulting array is nums = [1,1,1,0,0,0].
+Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,1,1,1].</code></pre>
+<p>Example 2:</p>
+<p>Input: nums = [0,1,1,1]</p>
+<p>Output: -1</p>
+<p>Explanation: It is impossible to make all elements equal to 1.</p>
+<p>Constraints:</p>
+<pre><code>3 &lt;= nums.length &lt;= 105
+0 &lt;= nums[i] &lt;= 1</code></pre>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Since we can only flip three consecutive elements at a time, isolated <code>0</code>s or certain patterns of <code>0</code>s may prevent us from turning everything into <code>1</code>. If the number of <code>0</code>s in certain positions makes it impossible to fully eliminate them using groups of three, the transformation cannot be achieved.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Parity invariance</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Parity invariance means that the number of times a position is flipped determines its final value. If a position is flipped an odd number of times, its value changes, but if it is flipped an even number of times, it stays the same.</p>
+<p>Consider the array <code>[1, 0, 0, 1, 0, 1, 1]</code>. We start by flipping three consecutive elements to try and transform all <code>0</code>s into <code>1</code>s. First, flipping the subarray <code>[0, 0, 1]</code> at indices <code>1..3</code> changes the array to <code>[1, 1, 1, 0, 0, 1, 1]</code>. Then, flipping <code>[0, 0, 1]</code> at indices <code>[3..5]</code> gives <code>[1, 1, 1, 1, 1, 0, 1]</code>. Finally, flipping <code>[1, 0, 1]</code> at indices <code>[1, 0, 1]</code> at indices <code>4..6</code> results in <code>[1, 1, 1, 1, 1, 1, 0, 1, 0]</code>.</p>
+<p>At this point, we see that the <code>0</code>s at positions <code>4</code> and <code>6</code> remain, and there is no way to flip them without also flipping the other elements. Since we can only flip three elements at a time, we cannot isolate these <code>0</code>s in a way that allow us to change them to <code>1</code>s. This happens because these positions were flipped an even number of times, so they retain their original value. Because of this <strong>parity constraint</strong>, the transformation is impossible.</p>
+
+
+
+ ]]></description>
+  <category>bit manipulation</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>leetcode-Longest-Nice-Subarray</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>array, bit manipulation, slide windown</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are given an array <code>nums</code> consisting of <strong>positive</strong> integers.</p>
+<p>We call a subarray of <code>nums</code> <strong>nice</strong> if the bitwise <strong>AND</strong> of every pair of elements that are in <strong>different</strong> positions in the subarray is equal to <code>0</code>.</p>
+<p>Return <em>the length of the <strong>longest</strong> nice subarray</em>.</p>
+<p>A <strong>subarray</strong> is a <strong>contiguous</strong> part of an array.</p>
+<p><strong>Note</strong> that subarrays of length <code>1</code> are always considered nice.</p>
+<p>Example 1:</p>
+<p>Input: nums = [1,3,8,48,10] Output: 3 Explanation: The longest nice subarray is [3,8,48]. This subarray satisfies the conditions: - 3 AND 8 = 0. - 3 AND 48 = 0. - 8 AND 48 = 0. It can be proven that no longer nice subarray can be obtained, so we return 3.</p>
+<p>Example 2:</p>
+<p>Input: nums = [3,1,5,11,13] Output: 1 Explanation: The length of the longest nice subarray is 1. Any subarray of length 1 can be chosen.</p>
+<p>Constraints:</p>
+<pre><code>1 &lt;= nums.length &lt;= 105
+1 &lt;= nums[i] &lt;= 109</code></pre>
+</section>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>&nbsp; &nbsp; example 1:</p>
+<p>&nbsp; &nbsp; [1, 3, 8, 48, 10]</p>
+<p>&nbsp; &nbsp; 3 in bin: 0011</p>
+<p>&nbsp; &nbsp; 8 in bin: 1000</p>
+<p>&nbsp; &nbsp; 48d = 1100000</p>
+<p>&nbsp; &nbsp; 10d = 1010</p>
+<p>&nbsp; &nbsp; 0011 AND 1000 = 0</p>
+<p>&nbsp; &nbsp; 3, 8, 48 AND = 0</p>
+<p>&nbsp; &nbsp; 10 and 8 not = 0</p>
+<p>&nbsp; &nbsp; so, if pair AND = 0</p>
+<p>&nbsp; &nbsp; that pair have no common bit</p>
+<p>&nbsp; &nbsp; so, we store a bit array to check the state of bit</p>
+<p>&nbsp; &nbsp; and if, to better, we just need to store number of bit in that array instead.</p>
+<p>&nbsp; &nbsp; oh no, it wrong.</p>
+<p>&nbsp; &nbsp; so if we must store a array.</p>
+<p>&nbsp; &nbsp; no, we can use bitwise operator <code>&amp;</code> to check if <code>a AND b == 0</code> or not</p>
+<p>&nbsp; &nbsp; and <code>OR</code> for cumulative bit</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">&nbsp; &nbsp; x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span></span>
+<span id="cb2-2">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 101</span></span>
+<span id="cb2-3">&nbsp; &nbsp; x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span></span>
+<span id="cb2-4">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 3 == 011</span></span>
+<span id="cb2-5">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 101 |= 011 = 111</span></span>
+<span id="cb2-6">&nbsp; &nbsp; <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(x)</span>
+<span id="cb2-7">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 7</span></span></code></pre></div>
+<p>&nbsp; &nbsp; to search for longest (can use <code>i</code>, and <code>j</code>) for check all the begin and end</p>
+<p>&nbsp; &nbsp; improve it by two pointer to decrease TC from <code>O(n^2)</code> to <code>O(n)</code></p>
+<p>&nbsp; &nbsp; and now, how to get rid of num of left from cumulative bit in slide windown</p>
+<p>&nbsp; &nbsp; check that case: [011, 100]</p>
+<p>&nbsp; &nbsp; now, culmulative bit: 111</p>
+<p>&nbsp; &nbsp; we want it after left += 1, is 100</p>
+<p>&nbsp; &nbsp; in XOR: 111 XOR 011 == 100</p>
+<p>&nbsp; &nbsp; XOR parameter in python is <code>^=</code></p>
+</section>
+<section id="code" class="level1">
+<h1>Code</h1>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> longestNiceSubarray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb3-2"></span>
+<span id="cb3-3">&nbsp; &nbsp; &nbsp; &nbsp; cumulative_bit <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-4"></span>
+<span id="cb3-5">&nbsp; &nbsp; &nbsp; &nbsp; ans <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-6"></span>
+<span id="cb3-7">&nbsp; &nbsp; &nbsp; &nbsp; left <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-8"></span>
+<span id="cb3-9">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> right <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums)):</span>
+<span id="cb3-10"></span>
+<span id="cb3-11">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># when AND not ease</span></span>
+<span id="cb3-12"></span>
+<span id="cb3-13">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span> cumulative_bit <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span> nums[right] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>: <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># right can not cumulative, increase left until it can ease, use XOR for get rid of it</span></span>
+<span id="cb3-14"></span>
+<span id="cb3-15">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cumulative_bit <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">^=</span> nums[left]</span>
+<span id="cb3-16"></span>
+<span id="cb3-17">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; left <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-18"></span>
+<span id="cb3-19">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># until can AND</span></span>
+<span id="cb3-20"></span>
+<span id="cb3-21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># use OR to cumulative it</span></span>
+<span id="cb3-22"></span>
+<span id="cb3-23">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cumulative_bit <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|=</span> nums[right]</span>
+<span id="cb3-24"></span>
+<span id="cb3-25">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ans <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(ans, right <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> left <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-26"></span>
+<span id="cb3-27">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> ans</span></code></pre></div>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</guid>
+  <pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Divide Array Into Equal Pairs</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>array, hash table, bit manipulation, counting</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are given an integer array nums consisting of <code>2 * n</code> integers.</p>
+<p>You need to divide nums into n pairs such that:</p>
+<pre><code>Each element belongs to exactly one pair.
+The elements present in a pair are equal.</code></pre>
+<p>Return true if nums can be divided into n pairs, otherwise return false.</p>
+<p>Example 1:</p>
+<ul>
+<li><p>Input: <code>nums = [3,2,3,2,2,2]</code></p></li>
+<li><p>Output: <code>true</code></p></li>
+<li><p>Explanation: <code>There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.</code></p></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,4]</code></li>
+<li>Output: <code>false</code></li>
+<li>Explanation: <code>There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.</code></li>
+</ul>
+<p>Constraints:</p>
+<ul>
+<li><code>nums.length == 2 * n</code></li>
+<li><code>1 &lt;= n &lt;= 500</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 500</code></li>
+</ul>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+<section id="count-array" class="level2">
+<h2 class="anchored" data-anchor-id="count-array">Count array</h2>
+<p><code>nums</code> that have 2 * n intenger</p>
+<p>divide <code>nums</code> into n pairs</p>
+<p>1 element in 1 pair</p>
+<p>elements in pair is equal</p>
+<p>return true if can devide to n pair,</p>
+<p>So, we can use count array</p>
+<pre><code>if all even \`return true\`
+
+else \`return false\`</code></pre>
+<p>TC: O(n)</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb3-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb3-3">    ans <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb3-4">    count_array <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-5">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb3-6">        count_array[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-7">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(count_array)</span>
+<span id="cb3-8">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> count_array:</span>
+<span id="cb3-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-10">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> ans</span></code></pre></div>
+</section>
+<section id="map" class="level2">
+<h2 class="anchored" data-anchor-id="map">Map</h2>
+<p>like approach 1, we can use map for that (better code)</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb4-2">        frequency <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Counter(nums)</span>
+<span id="cb4-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb4-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(count <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> count <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> frequency.values())</span></code></pre></div>
+</section>
+<section id="bool-array" class="level2">
+<h2 class="anchored" data-anchor-id="bool-array">Bool array</h2>
+<p>an improve, use boolean array</p>
+<p>O(n)</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb5-2"></span>
+<span id="cb5-3">        max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(nums)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5">        needs_pair <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb5-6"></span>
+<span id="cb5-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb5-8">            needs_pair[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> needs_pair[num]</span>
+<span id="cb5-9"></span>
+<span id="cb5-10">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">any</span>(needs_pair[num] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums)</span></code></pre></div>
+</section>
+<section id="sorted" class="level2">
+<h2 class="anchored" data-anchor-id="sorted">Sorted</h2>
+<p>sorted that can have TC: O(nlogn)</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb6-2">        nums.sort()</span>
+<span id="cb6-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb6-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(nums[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> nums[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>))</span></code></pre></div>
+</section>
+<section id="hash-set" class="level2">
+<h2 class="anchored" data-anchor-id="hash-set">Hash set</h2>
+<p>we can store a element when first meet it, and even get it, we remote from set</p>
+<p>when retrieve all, if set have element.</p>
+<p>hash set have TC of lookup, addition, removal in constant time.</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb7-2">        unpaired <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>()</span>
+<span id="cb7-3"></span>
+<span id="cb7-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb7-5">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> unpaired:</span>
+<span id="cb7-6">                unpaired.remove(num)</span>
+<span id="cb7-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb7-8">                unpaired.add(num)</span>
+<span id="cb7-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> unpaired</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>How to approach most DP problems</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>To solve a dp problem: https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems/</p>
+<p>This particular problem can be approached using the following sequence:</p>
+<ol type="1">
+<li>Find recursive relation</li>
+<li>Recursive (top-down)</li>
+<li>Recursive + memo (top-down)</li>
+<li>Iterative + memo (bottom-up)</li>
+<li>Iterative + N variables (bottom-up)</li>
+</ol>
+<section id="step-1-figure-out-recursive-relation." class="level1">
+<h1>Step 1: Figure out recursive relation.</h1>
+<p>A robber has 2 options: 1. rob current house <code>i</code>; 2. Don’t rob current house.</p>
+<p>If an option <code>1</code> is selected it means that she can’t rob previous <code>i-1</code> house but can rob the one before previous <code>i-2</code> and get alls cumulative loot that follows.</p>
+<p>If an option <code>2</code> is selected the robber loot from robbery of <code>i-1</code> and all the following buildings.</p>
+<p>So it boils down to calculating what is more profitable:</p>
+<ul>
+<li><p>robbery of current house + loot from house before the previous</p></li>
+<li><p>loot from the previous house robbery and any loot capture before that</p></li>
+</ul>
+<p><code>rob(i) = Math.max(rob(i-2) + currentHouseValue, rob(i-1))</code></p>
+</section>
+<section id="step-2-recursive-top-down" class="level1">
+<h1>Step 2: Recursive (top-down):</h1>
+<p>Converting the recurrent relation from step 1:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> rob(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb1-2">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.rob_helper(nums, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-3"></span>
+<span id="cb1-4">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> rob_helper(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>], i: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb1-5">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># stop case</span></span>
+<span id="cb1-6">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>):</span>
+<span id="cb1-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb1-8">        </span>
+<span id="cb1-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.rob_helper(nums, i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> nums[i], <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.rob_helper(nums, i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)) </span></code></pre></div>
+<p>but it is TLE:</p>
+<p>![[Pasted image 20250317111239.png]]</p>
+<p>this algorithm will process the same <code>i</code> multiple times and it needs improvement. TC: <code>[to fill]</code></p>
+</section>
+<section id="step-3-recursive-memo-top-down" class="level1">
+<h1>Step 3: Recursive + memo (top-down)</h1>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">&nbsp; &nbsp; memory <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []</span>
+<span id="cb2-2"></span>
+<span id="cb2-3">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> rob(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb2-4"></span>
+<span id="cb2-5">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 0 stand for not rob that house is better</span></span>
+<span id="cb2-6"></span>
+<span id="cb2-7">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># -1 for not check house</span></span>
+<span id="cb2-8"></span>
+<span id="cb2-9">&nbsp; &nbsp; &nbsp; &nbsp; <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.memory <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-10"></span>
+<span id="cb2-11">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.rob_helper(nums, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb2-12"></span>
+<span id="cb2-13">  </span>
+<span id="cb2-14"></span>
+<span id="cb2-15">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> rob_helper(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>], i: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb2-16"></span>
+<span id="cb2-17">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># stop case</span></span>
+<span id="cb2-18"></span>
+<span id="cb2-19">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>):</span>
+<span id="cb2-20"></span>
+<span id="cb2-21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span> &nbsp; &nbsp;</span>
+<span id="cb2-22"></span>
+<span id="cb2-23">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.memory[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb2-24"></span>
+<span id="cb2-25">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.memory[i]</span>
+<span id="cb2-26"></span>
+<span id="cb2-27">&nbsp; &nbsp; &nbsp; &nbsp; result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.rob_helper(nums, i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> nums[i], <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.rob_helper(nums, i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>))</span>
+<span id="cb2-28"></span>
+<span id="cb2-29">&nbsp; &nbsp; &nbsp; &nbsp; <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.memory[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> result</span>
+<span id="cb2-30"></span>
+<span id="cb2-31">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> result</span></code></pre></div>
+<p>![[Pasted image 20250317112240.png]] This approach is better, this should run in <code>O(n)</code> time. Space complexity is <code>O(n)</code>.</p>
+<p>Because the recursive stack, let’s try to get rid of it. ## Step 4: Iterative + memo (bottom-up)</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> rob(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb3-2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 0 stand for not rob that house is better</span></span>
+<span id="cb3-3">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># -1 for not check house</span></span>
+<span id="cb3-4">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-5">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-6"></span>
+<span id="cb3-7">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:</span>
+<span id="cb3-8">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> nums[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb3-9"></span>
+<span id="cb3-10">&nbsp; &nbsp; &nbsp; &nbsp; memory <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-11">&nbsp; &nbsp; &nbsp; &nbsp; memory[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-12">&nbsp; &nbsp; &nbsp; &nbsp; memory[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> nums[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb3-13">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums)):</span>
+<span id="cb3-14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; val <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> nums[i]</span>
+<span id="cb3-15">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># the next val is rob now, or rob the last</span></span>
+<span id="cb3-16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memory[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(memory[i], memory[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> val)</span>
+<span id="cb3-17">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> memory[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums)]</span></code></pre></div>
+<section id="step-5-iterative-2-variables-bottom-up" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-iterative-2-variables-bottom-up">Step 5: Iterative + 2 variables (bottom-up)</h2>
+<p>In the previous step, we use only <code>memo[i]</code> and <code>memo[i-1]</code>, so going just 2 step back. We can hold them in 2 variables instead. This optimization is met in Fibonacci sequence creation and some other problems [[Optimize Fibonacci]]</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> rob(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb4-2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb4-3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb4-4">&nbsp; &nbsp; &nbsp; &nbsp; prev1, prev2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb4-5">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb4-6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temp <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> prev1</span>
+<span id="cb4-7">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; prev1 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(prev2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> num, prev1)</span>
+<span id="cb4-8">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; prev2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> temp</span>
+<span id="cb4-9">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> prev1</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>House robber</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>array, dymanic programming</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
+<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
+<p>Example 1:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,1]</code></li>
+<li>Output: <code>4</code></li>
+<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [2,7,9,3,1]</code></li>
+<li>Output: <code>12</code></li>
+<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
+</ul>
+<p>Constraints:</p>
+<pre><code>1 &lt;= nums.length &lt;= 100
+0 &lt;= nums[i] &lt;= 400</code></pre>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

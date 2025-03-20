@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Kim Hung Bui</title>
+<title>index – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,76 +68,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Kim Hung Bui" href="posts.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
@@ -150,33 +90,33 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./mathematic.html"> 
+    <a class="nav-link" href="../../mathematic.html"> 
 <span class="menu-text">Mathematic</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Mathematic</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -193,105 +133,117 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="any-category-you-want">any-category-you-want <span class="quarto-category-count">(1)</span></div><div class="category" data-category="template">template <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#family-man-retires-at-39-extreme-early-retirement-fire" id="toc-family-man-retires-at-39-extreme-early-retirement-fire" class="nav-link active" data-scroll-target="#family-man-retires-at-39-extreme-early-retirement-fire">Family Man Retires at 39 – Extreme Early Retirement | FIRE</a>
+  <ul class="collapse">
+  <li><a href="#early-retirement-journey-and-financial-strategies" id="toc-early-retirement-journey-and-financial-strategies" class="nav-link" data-scroll-target="#early-retirement-journey-and-financial-strategies">Early Retirement Journey and Financial Strategies</a></li>
+  <li><a href="#spending-reduction-and-financial-management" id="toc-spending-reduction-and-financial-management" class="nav-link" data-scroll-target="#spending-reduction-and-financial-management">Spending Reduction and Financial Management</a></li>
+  <li><a href="#investment-strategy-and-market-volatility" id="toc-investment-strategy-and-market-volatility" class="nav-link" data-scroll-target="#investment-strategy-and-market-volatility">Investment Strategy and Market Volatility</a></li>
+  <li><a href="#challenges-and-adaptation-in-early-retirement" id="toc-challenges-and-adaptation-in-early-retirement" class="nav-link" data-scroll-target="#challenges-and-adaptation-in-early-retirement">Challenges and Adaptation in Early Retirement</a></li>
+  <li><a href="#family-life-and-financial-education-for-children" id="toc-family-life-and-financial-education-for-children" class="nav-link" data-scroll-target="#family-life-and-financial-education-for-children">Family Life and Financial Education for Children</a></li>
+  <li><a href="#wifes-continued-work-and-financial-planning" id="toc-wifes-continued-work-and-financial-planning" class="nav-link" data-scroll-target="#wifes-continued-work-and-financial-planning">Wife’s Continued Work and Financial Planning</a></li>
+  <li><a href="#housing-plans-and-government-benefits" id="toc-housing-plans-and-government-benefits" class="nav-link" data-scroll-target="#housing-plans-and-government-benefits">Housing Plans and Government Benefits</a></li>
+  <li><a href="#part-time-work-and-enhanced-work-life-balance" id="toc-part-time-work-and-enhanced-work-life-balance" class="nav-link" data-scroll-target="#part-time-work-and-enhanced-work-life-balance">Part-Time Work and Enhanced Work-Life Balance</a></li>
+  <li><a href="#resources-and-further-information" id="toc-resources-and-further-information" class="nav-link" data-scroll-target="#resources-and-further-information">Resources and Further Information</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1742469948770" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="thumbnail">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">Family Man Retires at 39 – Extreme Early Retirement | FIRE</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">
-
-<p></p>
+<section id="family-man-retires-at-39-extreme-early-retirement-fire" class="level1">
+<h1>Family Man Retires at 39 – Extreme Early Retirement | FIRE</h1>
+<p><img src="https://i.ytimg.com/vi/8yNsKxbq0Ak/maxresdefault.jpg" class="img-fluid"></p>
 <section id="early-retirement-journey-and-financial-strategies" class="level2">
-
+<h2 class="anchored" data-anchor-id="early-retirement-journey-and-financial-strategies">Early Retirement Journey and Financial Strategies</h2>
 <ul>
-<li>Tim, a man from Regina, Saskatchewan, Canada, retired from engineering at the age of 39, after 11 years of planning and working towards his goal of early retirement…</li><li></li><li></li><li></li></ul></section><section id="spending-reduction-and-financial-management" class="level2"><ul><li></li><li></li><li></li><li></li><li></li></ul></section><section id="investment-strategy-and-market-volatility" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="challenges-and-adaptation-in-early-retirement" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="family-life-and-financial-education-for-children" class="level2"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></section><section id="wifes-continued-work-and-financial-planning" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="housing-plans-and-government-benefits" class="level2"><ul><li></li><li></li><li></li></ul></section><section id="part-time-work-and-enhanced-work-life-balance" class="level2"><ul><li></li><li></li></ul></section><section id="resources-and-further-information" class="level2"><ul><li></li></ul></section></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="template,any-category-you-want" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1742469948778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="./posts/post_template/index.html" class="no-external"></a></p><a href="./posts/post_template/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post_template/dundee.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post_template/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post_template/index.html" class="no-external">Post template</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post_template/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('template'); return false;">
-template
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('any-category-you-want'); return false;">
-any-category-you-want
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post_template/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post_template/index.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<li>Tim, a man from <a href="https://en.wikipedia.org/wiki/Regina,_Saskatchewan">Regina, Saskatchewan</a>, <a href="https://en.wikipedia.org/wiki/Canada">Canada</a>, retired from engineering at the age of 39, after 11 years of planning and working towards his goal of early retirement, and his wife plans to retire from her childcare career in a few years <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=7s">(00:00:07)</a>.</li>
+<li>Tim’s family achieved early retirement through a financial strategy known as FIRE, which involves drastically reducing spending, saving a large percentage of income, and investing the savings <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=20s">(00:00:20)</a>.</li>
+<li>Tim first considered the idea of early retirement in 2006 and started saving money, cutting costs, and figuring out what matters to him and his family <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=53s">(00:00:53)</a>.</li>
+<li>When Tim and his wife started working towards early retirement, they had student loan debt and other financial issues, but they paid off their existing debt and then focused on reducing their spending <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=72s">(00:01:12)</a>.</li>
+</ul>
+</section>
+<section id="spending-reduction-and-financial-management" class="level2">
+<h2 class="anchored" data-anchor-id="spending-reduction-and-financial-management">Spending Reduction and Financial Management</h2>
+<ul>
+<li>To reduce their spending, Tim and his wife looked at their bills, such as their power bill, and found ways to lower them, such as changing to LED lightbulbs <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=108s">(00:01:48)</a>.</li>
+<li>They also reduced their grocery bill by buying generic versions of products and making things from scratch, which often tasted better and saved them money <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=122s">(00:02:02)</a>.</li>
+<li>Tim and his wife have a focused approach to spending, only eating out a couple of times a year, and making sure their spending is aligned with what matters to them <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=151s">(00:02:31)</a>.</li>
+<li>Tim uses a phrase to help him avoid overspending, which is to ask himself if he really needs something and if he can solve a problem without spending money <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=173s">(00:02:53)</a>.</li>
+<li>Tim and his wife have paid off their mortgage and car loans in advance, which has helped them in their retirement <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=203s">(00:03:23)</a>.</li>
+</ul>
+</section>
+<section id="investment-strategy-and-market-volatility" class="level2">
+<h2 class="anchored" data-anchor-id="investment-strategy-and-market-volatility">Investment Strategy and Market Volatility</h2>
+<ul>
+<li>The individual has achieved extreme early retirement at the age of 39, with a significant amount of assets and no debt, and currently resides in <a href="https://en.wikipedia.org/wiki/Regina,_Saskatchewan">Regina, Saskatchewan</a>, <a href="https://en.wikipedia.org/wiki/Canada">Canada</a>, where housing costs are relatively low, with an average housing cost of around $278,000 <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=230s">(00:03:50)</a>.</li>
+<li>The majority of their investments are in straightforward strategies, including exchange-traded funds that mirror major indexes, allowing for a simple and low-maintenance approach to managing their finances <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=241s">(00:04:01)</a>.</li>
+<li>Despite the simplicity of their investment strategy, they still experience worries about the stock market, but have trained themselves not to check it frequently, focusing instead on long-term performance rather than short-term fluctuations <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=251s">(00:04:11)</a>.</li>
+<li>Initially, they found the wild gyrations of the stock market to be psychologically challenging, and having a larger cushion would have been helpful for peace of mind <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=267s">(00:04:27)</a>.</li>
+</ul>
+</section>
+<section id="challenges-and-adaptation-in-early-retirement" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-and-adaptation-in-early-retirement">Challenges and Adaptation in Early Retirement</h2>
+<ul>
+<li>One of the downsides of early retirement is the unusual conversations with people who question their decision to retire at a young age, leading them to reframe their explanation to focus on pursuing a writing career <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=284s">(00:04:44)</a>.</li>
+<li>They started a blog in 2006 to document their early retirement journey, which includes their doubts, learning experiences, and mistakes, and also wrote a book called “Three at Forty Five” to discuss the importance of happiness in early retirement <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=297s">(00:04:57)</a>.</li>
+<li>The first year of early retirement was problematic, involving a major lifestyle change and a process of deprogramming themselves to realize they didn’t have to work as much, and instead focus on enjoyable activities <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=329s">(00:05:29)</a>.</li>
+<li>To cope with the transition, they created to-do lists that included fun items, and have pursued various hobbies such as making their own wine and beer, playing <a href="https://en.wikipedia.org/wiki/Dungeons_&amp;_Dragons">Dungeons &amp; Dragons</a>, and creating terrain pieces <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=352s">(00:05:52)</a>.</li>
+</ul>
+</section>
+<section id="family-life-and-financial-education-for-children" class="level2">
+<h2 class="anchored" data-anchor-id="family-life-and-financial-education-for-children">Family Life and Financial Education for Children</h2>
+<ul>
+<li>They have been married for 19 years and have two sons, aged 14 and 11, and have taught them about money management, focusing on delayed gratification, saving, and responsible spending <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=383s">(00:06:23)</a>.</li>
+<li>They gave their children an allowance from a young age and allowed them to spend it on whatever they wanted, teaching them valuable lessons about money management <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=407s">(00:06:47)</a>.</li>
+<li>A strategy was implemented to teach children the value of saving money by explaining that waiting to buy something now can lead to affording bigger things later, resulting in two kids who default to saving money without knowing what they’re saving for <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=437s">(00:07:17)</a>.</li>
+<li>A friend’s advice was taken to heart, which stated that kids are a constant drain on finances, but the expenses change as they age, and it’s essential to get used to it <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=463s">(00:07:43)</a>.</li>
+<li>A system was set up to take out cash every month for the kids and put it aside, which averaged out to the same amount of money over the course of the year, with the wife managing the cash flow to prepare for upcoming expenses like winter boots <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=469s">(00:07:49)</a>.</li>
+<li>Registered education savings plans were saved for the kids’ college and university education, which was fully filled before leaving work, allowing the money to grow in interest <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=498s">(00:08:18)</a>.</li>
+</ul>
+</section>
+<section id="wifes-continued-work-and-financial-planning" class="level2">
+<h2 class="anchored" data-anchor-id="wifes-continued-work-and-financial-planning">Wife’s Continued Work and Financial Planning</h2>
+<ul>
+<li>The wife decided to continue working, which was factored into the plan, assuming she would work for a few more years to offset some of the spending and provide an extra cushion <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=530s">(00:08:50)</a>.</li>
+<li>A plan was written out in advance to prepare for potential stock market declines, including options like taking a loan or getting a part-time job, to help stay calm and rational during emotional times <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=568s">(00:09:28)</a>.</li>
+<li>Having a written plan helped to prepare for a major stock market decline a year into retirement, which ultimately worked out well in the long run <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=548s">(00:09:08)</a>.</li>
+<li>It’s recommended to write out an investment plan while calm and rational to prepare for potential future declines and have a clear plan of action <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=577s">(00:09:37)</a>.</li>
+</ul>
+</section>
+<section id="housing-plans-and-government-benefits" class="level2">
+<h2 class="anchored" data-anchor-id="housing-plans-and-government-benefits">Housing Plans and Government Benefits</h2>
+<ul>
+<li>The family’s current home is a daycare, which is quite spacious, and they plan to downsize in the long term, with any savings from lower taxes, water bills, and other expenses being used to offset potential losses <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=614s">(00:10:14)</a>.</li>
+<li>Living in <a href="https://en.wikipedia.org/wiki/Canada">Canada</a> provides benefits such as government-paid healthcare costs, which have been over-contributed to, covering basic healthcare costs, but not dental, prescription eyewear, or other expenses that are self-insured and paid out-of-pocket <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=640s">(00:10:40)</a>.</li>
+<li>Government benefits like the <a href="https://en.wikipedia.org/wiki/Canada_Pension_Plan">Canada Pension Plan</a> and <a href="https://en.wikipedia.org/wiki/Old_Age_Security">Old Age Security</a> are factored into long-term plans, but with conservative assumptions, such as only one spouse collecting Old Age Security <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=665s">(00:11:05)</a>.</li>
+</ul>
+</section>
+<section id="part-time-work-and-enhanced-work-life-balance" class="level2">
+<h2 class="anchored" data-anchor-id="part-time-work-and-enhanced-work-life-balance">Part-Time Work and Enhanced Work-Life Balance</h2>
+<ul>
+<li>A job at the local library was taken to work with great people, enjoy the work, and earn a supplemental income, which is used to fund extra activities, and has helped achieve a better work-life balance <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=690s">(00:11:30)</a>.</li>
+<li>Reduced working hours have improved overall happiness, and retirement has provided extra time to focus on desired activities and spend quality time with family, particularly children <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=730s">(00:12:10)</a>.</li>
+</ul>
+</section>
+<section id="resources-and-further-information" class="level2">
+<h2 class="anchored" data-anchor-id="resources-and-further-information">Resources and Further Information</h2>
+<ul>
+<li>Resources on early retirement, including Tim’s blog and book, are available in the video description for those interested <a href="https://www.youtube.com/watch?v=8yNsKxbq0Ak&amp;t=763s">(00:12:43)</a>.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
