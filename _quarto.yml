@@ -12,7 +12,7 @@ website:
         text: Home
       - href: cv.md
         text: Resume
-      - posts.mdgut
+      - posts.md
     right:
       - icon: rss
         href: posts.xml
