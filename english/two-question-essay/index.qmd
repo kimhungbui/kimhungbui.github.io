@@ -1,0 +1,66 @@
+---
+title: How to Structure a ‘Two Question’ Essay
+lightbox: false
+description: How to Structure a ‘Two Question’ Essay
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: How to do ielts
+    affiliation-url: https://howtodoielts.com/ielts-writing-task-2-structure-two-question-essay/
+date: 2025-03-25
+categories:
+  - english
+  - writing
+  - double question
+draft: false
+---
+Let's look at an example of this kind of question:
+
+	*Nowadays governments are investing more in public transport such as buses and trains rather than in building new roads.*
+	*What are the reasons for this?*
+	*Is this a positive or negative development?*
+
+# Clear position
+For this kind of task we need to discuss both questions.
+In the first question, we are given a situation and asked to explain why.
+The second question requires a clear opinion so **we must choose a side.**
+This is very important for our task response score.
+If we don't choose a side and support that 'position' clearly, we will lose marks for our task response. We will get a maximum of  5 for task achievement if we do not choose a side.
+
+It's not important which side we choose as long as we choose one.
+Here are the options for the second questions:
+
+1. **Agree**: We think it's a positive development that governments are spending more money on public transport. We support this opinion.
+2. **Disagree:** We think it's a negative development that governments are spending more money on public transport. We support this opinion.
+
+# Clear essay structure
+
+David Lang recommend that we should give our opinion in the introduction as well as the conclusion (for all IELTS Task 2 questions). It's OK to write a very general introduction and leave our opinion to the end. But it's not as clear and we might run out of time before we've hot to our conclusion, so overall it's a risky strategy. If we don't choose a side and support that 'position' clearly, we will lose marks for our task response.
+
+Therefore, him suggested essay structure is four paragraphs. 
+The opinion is presented in the introduction and re-stated in the conclusion.
+Ideally each body paragraph in the introduction and re-stated in the conclusion.
+
+# Possible Essay structures
+
+**1. Agree** - we feel it's a positive development that governments are spending more money on public transport.
+
+We need at least **one good reason** why it's happening and **one good reason** why it's a positive development.
+
+|                              |                                                                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------ |
+|  Paragraph 1<br><br> (intro) | Paraphrase both questions and state your overall opinion (you feel it’s a positive development)        |
+| Paragraph 2<br><br> (body 1) | Explain and support your reason why governments are spending more money on public transport.           |
+| Paragraph 3<br><br> (body 2) | Explain and support your reason why this is a positive development.                                    |
+| Paragraph 4 (conclusion)     | Re-state your overall opinion (you feel it’s a positive development) and  summarise your main reasons. |
+**2. Disagree:** - we feel it's a negative development that governments are spending more money on public transport.
+
+We need at least **one good reason** why it's happening and **one good reason** why it's a negative development.
+Only the parts highlighted below are different from the first essay
+
+|                               |                                                                                                                  |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| #### Paragraph 1 (intro)      | #### Paraphrase both questions and state your overall opinion<br><br> **(you feel it’s a negative development)** |
+| #### Paragraph 2 (body 1)     | #### Explain and support your reason why governments are spending more money on public transport.                |
+| #### **Paragraph 3 (body 2)** | #### **Explain and support your reason why this is a negative development.**                                     |
+| #### Paragraph 4 (conclusion) | #### Re-state your overall opinion **(you feel it’s a negative development)** and  summarise your main reasons.  |
