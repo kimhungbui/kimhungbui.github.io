@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Hung">
-<meta name="dcterms.date" content="2025-03-20">
-<meta name="description" content="Your post description">
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2025-03-21">
+<meta name="description" content="This article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.">
 
-<title>Health Services – Kim Hung Bui</title>
+<title>Disjoint Set Union – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -72,6 +106,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -140,9 +203,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#analysis" id="toc-analysis" class="nav-link active" data-scroll-target="#analysis">Analysis</a></li>
-  <li><a href="#structure" id="toc-structure" class="nav-link" data-scroll-target="#structure">Structure</a></li>
-  <li><a href="#david-langs-essay" id="toc-david-langs-essay" class="nav-link" data-scroll-target="#david-langs-essay">David Lang’s essay</a></li>
+  <li><a href="#build-an-efficient-data-structure" id="toc-build-an-efficient-data-structure" class="nav-link active" data-scroll-target="#build-an-efficient-data-structure">Build an efficient data structure</a>
+  <ul class="collapse">
+  <li><a href="#naive-implementation" id="toc-naive-implementation" class="nav-link" data-scroll-target="#naive-implementation">Naive implementation</a></li>
+  <li><a href="#path-compression-optimization" id="toc-path-compression-optimization" class="nav-link" data-scroll-target="#path-compression-optimization">Path compression optimization</a></li>
+  <li><a href="#union-by-size-rank" id="toc-union-by-size-rank" class="nav-link" data-scroll-target="#union-by-size-rank">Union by size / rank</a></li>
+  <li><a href="#time-complexity" id="toc-time-complexity" class="nav-link" data-scroll-target="#time-complexity">Time complexity</a></li>
+  <li><a href="#linking-by-index-coin-flip-linking" id="toc-linking-by-index-coin-flip-linking" class="nav-link" data-scroll-target="#linking-by-index-coin-flip-linking">Linking by index / coin-flip linking</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -151,17 +219,16 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Health Services</h1>
+<h1 class="title">Disjoint Set Union</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">english</div>
-    <div class="quarto-category">writing</div>
-    <div class="quarto-category">advantages disadvantage</div>
+    <div class="quarto-category">programming</div>
+    <div class="quarto-category">data structure</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Your post description
+    This article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.
   </div>
 </div>
 
@@ -170,11 +237,13 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://your.personal.website">Hung</a> </p>
+    <p class="author"><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            How to do ielts
+            <a href="https://cp-algorithms.com/data_structures/disjoint_set_union.html">
+            Algorithms for Competitive Programming
+            </a>
           </p>
       </div>
   </div>
@@ -185,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 20, 2025</p>
+      <p class="date">March 21, 2025</p>
     </div>
   </div>
   
@@ -197,30 +266,111 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Health services are a basic necessity. However, private companies have made them quite costly for ordinary individuals</em> <em>Do the advantages of private health care outweigh its disadvantage</em></p>
-<section id="analysis" class="level2">
-<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
-<p>Advantages of Private Health Care: - Efficiency and shorter Waiting Times: Private hospitals offer quicker services compare to public hospitals, where long waiting lists are common. - Better facilities and advanced technology: Many private health institution provide cutting-edge medical technology, specialized treatments, and higher standards of care. - Greater Patient Choice: Individuals can select their preferred doctors, hospitals, and treatment plans, leading to more personalized care. Disadvantages of Private Health Care: - High costs and Limited Accessibility: Private health care is expensive, making it inaccessible for low-income individuals who cannot afford quality treatment. - Profit-driven System: The focus on profit can sometimes lead to unnecessary medical procedures, overcharging, or prioritizing financial gain over patient well-being. - Health inequality: A reliance on private health care can widen the gap between the rich and the poor, as only those who can afford it receive top-tier medical services. ## Sample essay Health care is an essential service, yet private medical facilities often make it unaffordable for many individuals. While private health care offers significant advantages such as efficiency, superior technology, and greater patient choice, it also has considerable drawbacks, particularly its high costs and contribution to social inequality. In my view, although private health care enhances medical standards, its disadvantages outweigh its benefits due to its exclusive and financial burden on ordinary citizens.</p>
-<p>One of the key benefits of private health care is it efficiency. Unlike public hospitals, which often suffer from overcrowding and long waiting times, private institutions provide quicker access to medical attention. This is particularly crucial for emergency treatments or specialized procedures that require immediate intervention. Additionally, private hospitals invest heavily in advanced medical technology and modern infrastructure, ensuring high-quality treatment and specialized care. For instance, many private institutions offer robotic surgeries and personalized cancer treatments, which are not always available in public hospitals. Furthermore, private health care allows patients to choose their doctors and treatment plans, leading to a more personalized and comfortable experience.</p>
-<p>However, the drawbacks of private health care are significant. The most pressing concern is its exorbitant cost, making it unaffordable for a large portion of the population. Many life-saving procedures and medications are out of reach for lower-income individuals, forcing them to rely on overstretched public health systems. Furthermore, because private hospitals overate on a profit-driven model, there is a risk of unnecessary procedures being performed to maximize revenue, sometimes at the expensive of patient welfare. Lastly, the presence of an expensive private health care sector creates a divide between the wealthy and the poor, exacerbating health inequalities. In countries without strong public health care, the underprivileged often suffer from preventable diseases simply due to financial constraints.</p>
-<p>In conclusion, while private health care provides high-quality services and efficiency, its high costs and potential for exploitation make it a less viable option for the general population. A well-functioning public health system remains crucial to ensuring that medical care is accessible to all, regardless of financial status. Governments should regulate private health care costs and prioritize investment in public health services to balance quality with accessibility.</p>
+<p>This data structure provides the following capabilities. We are given several elements, each of which is a separate set. A DSU will have an operation to <strong>combine any two sets</strong>, and it will be able to <strong>tell in which set a specific element is</strong>. The classical version also introduces a third operation, it can <strong>create a set from a new element</strong>.</p>
+<p>Thus the basic interface of this data structure consists of only three operations: - <code>make_set()</code> - create a new set consisting of the new element <code>v</code>. - <code>union_sets(a, b)</code> - merges the two specified sets (the set in which the element <code>a</code> is located, and the set in which the element <code>b</code> is located). - <code>find_set(v)</code> - return the representative (also called leader) of the set that contains the element <code>v</code>. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after <code>union_sets</code> call). This representative can be used to check if two elements are part of the same set or not. <code>a</code> and <code>b</code> are exactly in the same set, if <code>find_set(a) == find_set(b)</code>. Otherwise they are in different sets.</p>
+<p>As described on more detail later, the data structure allows us to do each of these operations in almost <span class="math inline">\(O(1)\)</span> time on average.</p>
+<p>Also in one of the subsections an alternative structure of a DSU is explained, which achieves a slower average complexity of <span class="math inline">\(O(\log n)\)</span>, but can be more powerful than the regular DSU structure.</p>
+<section id="build-an-efficient-data-structure" class="level1">
+<h1>Build an efficient data structure</h1>
+<p>We will store the sets in the form of <strong>trees</strong>: each tree will correspond to one set. And the root of the tree will be the representative/leader of the set.</p>
+<p>In the following image we can see the representative of such trees.</p>
+<p>![[DSU_example.png]] In the beginning, every element starts as a single set, there fore each vertex is its own tree. Then we combine the set containing the element 1 and the et containing the element 2. Then we combine the set containing the element 3 and the set containing the element 4. And in the last step, we combine the set containing the element 1 and the set containing the element 3.</p>
+<p>For the implementation this means that we will have to maintain an array <code>parent</code> that stores a reference to its immediate ancestor in the tree.</p>
+<section id="naive-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="naive-implementation">Naive implementation</h2>
+<p>We can already write the first implementation of the Disjoint Set Union data structure. It will be pretty inefficient at first, but later we can improve it using two optimizations, so that it will take nearly constant time for each function call.</p>
+<p>As we said, all the information about the sets of elements will be kept in an array <code>parent</code>.</p>
+<p>To create a new set (operation <code>make_set(v)</code>), we simply create a tree with root in the vertex <code>x</code>, meaning that it is its own ancestor.</p>
+<p>To combine two sets (operation <code>union_sets(a, b)</code>), we first find the representative of the set in which <code>a</code> is located, and the representative of the set in which <code>b</code> is located. If the representatives are identical, that we have nothing to do, the sets are already merged. Otherwise, we can simply specify that one of the representatives is the parent of the other representative - thereby combining the two trees.</p>
+<p>Finally the implementation of the find representative function (operation <code>find_set(v)</code>): we simply climb the ancestors of the vertex <code>v</code> until we reach the root, i.e.&nbsp;a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c++ code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> make_set<span class="op">(</span><span class="dt">int</span> v<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    parent<span class="op">[</span>v<span class="op">]</span> <span class="op">=</span> v<span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> find_set<span class="op">(</span><span class="dt">int</span> v<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>v <span class="op">==</span> parent<span class="op">[</span>v<span class="op">])</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> v<span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> find_set<span class="op">(</span>parent<span class="op">[</span>v<span class="op">]);</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> union_sets<span class="op">(</span><span class="dt">int</span> a<span class="op">,</span> <span class="dt">int</span> b<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> find_set<span class="op">(</span>a<span class="op">);</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> find_set<span class="op">(</span>b<span class="op">);</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>a <span class="op">!=</span> b<span class="op">)</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        parent<span class="op">[</span>b<span class="op">]</span> <span class="op">=</span> a<span class="op">;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>However this implementation is inefficient. It is easy to construct an example, so that the trees degenerate into long chains. In that case each call <code>find_set(v)</code> can take <span class="math inline">\(O(n)\)</span> time.</p>
+<p>This is far away from the complexity that we want to have (nearly constant time). Therefore we will consider two optimizations that will allow to significantly accelerate the work.</p>
 </section>
-<section id="structure" class="level2">
-<h2 class="anchored" data-anchor-id="structure">Structure</h2>
-<p><strong>1.</strong> Health care is an essential service, yet private medical facilities often make it unaffordable for many individuals. <strong>2.</strong> While private health care offers significant advantages such as efficiency, superior technology, and greater patient choice, it also has considerable drawbacks, particularly its high costs and contribution to social inequality. <strong>3.</strong> In my view, although private health care enhances medical standards, its disadvantages outweigh its benefits due to its exclusive and financial burden on ordinary citizens. 1.<strong><em>Paraphrase the question.</em></strong> 2.<strong>Mention both advantages and disadvantages.</strong><em> 3.</em><strong>Clearly state your opinion.</strong>* <strong>1</strong>. One of the key benefits of private health care is its efficiency, as it ensures faster access to treatment, advanced medical technology, and personalized care. <strong>2.</strong> Unlike public hospitals, which often suffer from overcrowding and long waiting times, private institutions provide quicker access to medical attention. <strong>3.</strong> This is particularly crucial for emergency treatments or specialized procedures that require immediate intervention. Additionally, private hospitals invest heavily in advanced medical technology and modern infrastructure, ensuring high-quality treatment and specialized care. <strong>4.</strong> For instance, many private institutions offer robotic surgeries and personalized cancer treatments, which are not always available in public hospitals. <strong>5.</strong> Furthermore, private health care allows patients to choose their doctors and treatment plans, leading to a more personalized and comfortable experience. 1.Write a topic sentence with a clear main idea at the end. 2.Explain our main idea 3.Develop it fully 4.Develop it with specific or hypothetical examples 5.Better to have more detail</p>
-<p><strong>1.</strong> However, the drawbacks of private health care are significant. <strong>2.</strong> The most pressing concern is its exorbitant cost, making it unaffordable for a large portion of the population. <strong>3.</strong> Many life-saving procedures and medications are out of reach for lower-income individuals, forcing them to rely on overstretched public health systems. <strong>4.</strong> Furthermore, because private hospitals overate on a profit-driven model, there is a risk of unnecessary procedures being performed to maximize revenue, sometimes at the expensive of patient welfare. Lastly, the presence of an expensive private health care sector creates a divide between the wealthy and the poor, exacerbating health inequalities. <strong>5.</strong> In countries without strong public health care, the underprivileged often suffer from preventable diseases simply due to financial constraints.</p>
-<p>1.Write a new topic sentence with a new main idea at the end 2.Explain our new main idea. 3.Include specific details and examples. 4.Add as much information as we can and make sure it links logically. 5.This country is a bit long - aim for about 275 words.</p>
-<p><strong>1.</strong> In conclusion, while private health care provides high-quality services and efficiency, its high costs and potential for exploitation make it a less viable option for the general population. 2. A well-functioning public health system remains crucial to ensuring that medical care is accessible to all, regardless of financial status. Governments should regulate private health care costs and prioritize investment in public health services to balance quality with accessibility.</p>
-<p>1.Summaries our main idea. 2.Include a final thought.</p>
+<section id="path-compression-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="path-compression-optimization">Path compression optimization</h2>
+<p>This optimization is designed for speeding up <code>find_set</code>.</p>
+<p>If we call <code>find_set()</code> for some vertex <code>x</code>, we actually find the representative <code>p</code> for all vertices that we visit on the path between <code>v</code> and the actually representative <code>p</code>. The trick is to make the paths for all those nodes shorter, by setting the parent of each visited vertex directly to <code>p</code>.</p>
+<p>We can see the operation in the following image. On the left there is a tree, and on the right side there is the compressed tree after calling <code>find_set(7)</code>, which shortens the paths for the visited node 7, 5, 3 and 2.</p>
+<p>![[DSU_path_compression.png]]</p>
+<p>The new implementation of <code>find_set</code> is as follows:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> find_set<span class="op">(</span><span class="dt">int</span> v<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>v <span class="op">==</span> parent<span class="op">[</span>v<span class="op">])</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> v<span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> parent<span class="op">[</span>v<span class="op">]</span> <span class="op">=</span> find_set<span class="op">(</span>parent<span class="op">[</span>v<span class="op">]);</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The simple implementation does what was intended: first find the representative of the set (root vertex), and then in the process of stack unwinding the visited nodes are attached directly to the representative.</p>
+<p>This simple modification of the operation already achieves the time complexity <span class="math inline">\(O(\log n)\)</span> per call on average (here without proof). There is a second modification, that will make it even faster.</p>
 </section>
-<section id="david-langs-essay" class="level1">
-<h1>David Lang’s essay</h1>
-<p>Today, the cost of basic health services due to privatization has risen dramatically. In my opinion, although this can lead to greater innovation in the medical field, it is a negative burden overall for the average person.</p>
-<p>Those who argue in favor of private medical care point out the benefits for medical knowledge generally. There is significant evidence in a wide range of industries as to the efficacy of privatization in driving innovation. The medical field i no different as hospitals in countries such as United States compete to develop innovative therapies and procedures that can enhance their reputations and generate higher revenues. These efforts in turn encourage the hiring of the brightest medical minds in the world. Without such competition, it is unlikely that many current advances in medical technology would exist at all.</p>
-<p>However, these advances do little do alleviate the dramatic financial repercussions for ordinary citizens. In the United States, a person without medical insurance is likely to owe at least thousands for relatively simple procedure. Contrast this approach with many western European nations that function on a socialized approach to medicine. In these countries, a person is comforted by the knowledge that a trip to the hospital or consultation with a doctor will be largely paid for by the government. The result of this more equal system is that there is little disparity in the care given to the wealthy and less affluent segments of population.</p>
-<p>In conclusion, despite the value of stimulating competition among medical institutions, there would be greater impact in a scheme wherein the individual could receive medical care without incurring excessive expenses. In many countries, this is already the situation.</p>
+<section id="union-by-size-rank" class="level2">
+<h2 class="anchored" data-anchor-id="union-by-size-rank">Union by size / rank</h2>
+<p>In this optimization we will change the <code>union_set</code> operation. To be precise, we will change which tree gets attached to the other one. In the naive implementation the second tree always got attached to the first one. In practice that can lead to trees containing chains of length <span class="math inline">\(O(n)\)</span>. With this optimization we will avoid this by choosing very carefully which tree gets attached.</p>
+<p>There are many possible heuristic that can be used. Most popular are the following two approaches: In the first approach we use the size of the trees as rank, and in the second one we use the depth of the tree (more precisely, the upper bound on the tree depth, because the depth will get smaller when applying path compression).</p>
+<p>In both approaches the essence of the optimization is the same: we attach the tree with the lower rank to the one with the bigger rank.</p>
+<p>Here is the implementation of union by size:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> make_set<span class="op">(</span><span class="dt">int</span> v<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    parent<span class="op">[</span>v<span class="op">]</span> <span class="op">=</span> v<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    size<span class="op">[</span>v<span class="op">]</span> <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> union_sets<span class="op">(</span><span class="dt">int</span> a<span class="op">,</span> <span class="dt">int</span> b<span class="op">){</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> find_set<span class="op">(</span>a<span class="op">);</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> find_set<span class="op">(</span>b<span class="op">);</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>a <span class="op">!=</span> b<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>size<span class="op">[</span>a<span class="op">]</span> <span class="op">&lt;</span> size<span class="op">[</span>b<span class="op">])</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>            swap<span class="op">(</span>a<span class="op">,</span> b<span class="op">);</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        parent<span class="op">[</span>b<span class="op">]</span> <span class="op">=</span> a<span class="op">;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        size<span class="op">[</span>a<span class="op">]</span> <span class="op">+=</span> size<span class="op">[</span>b<span class="op">];</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and here is the implementation of union by rank based on the depth of the trees:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> make_set<span class="op">(</span><span class="dt">int</span> v<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    parent<span class="op">[</span>v<span class="op">]</span> <span class="op">=</span> v<span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    rank<span class="op">[</span>v<span class="op">]</span> <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> union_sets<span class="op">(</span><span class="dt">int</span> a<span class="op">,</span> <span class="dt">int</span> b<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> find_set<span class="op">(</span>a<span class="op">);</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> find_set<span class="op">(</span>b<span class="op">);</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>a <span class="op">!=</span> b<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>rank<span class="op">[</span>a<span class="op">]</span> <span class="op">&lt;</span> rank<span class="op">[</span>b<span class="op">])</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>            swap<span class="op">(</span>a<span class="op">,</span> b<span class="op">);</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        parent<span class="op">[</span>b<span class="op">]</span> <span class="op">=</span> a<span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>rank<span class="op">[</span>a<span class="op">]</span> <span class="op">==</span> rank<span class="op">[</span>b<span class="op">])</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>            rank<span class="op">[</span>a<span class="op">]++;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Both optimizations are equivalent in terms of time and space complexity. So in practice we can use any of them.</p>
+</section>
+<section id="time-complexity" class="level2">
+<h2 class="anchored" data-anchor-id="time-complexity">Time complexity</h2>
+<p>As mentioned before, if we combine both optimizations - path compression with union by size / rank - we will reach nearly constant time queries. It turns out, that the final amortized complexity is <span class="math inline">\(O(\alpha(n))\)</span>, where <span class="math inline">\(\alpha (n)\)</span> is the inverse Ackermann function, which grows very slowly. In fact it grows so lowly, that it doesn’t exceed 4 for all reasonable <span class="math inline">\(n\)</span> (approximately <span class="math inline">\(n&lt;10^{600}\)</span>).</p>
+<p>Amortized complexity is the total time per operation, evaluated over a sequence of multiple operations. The idea is to guarantee the total time of the entire sequence, while allowing single operations to be much slower than the amortized time. E.g. in our case a single call might take <span class="math inline">\(O(\log n)\)</span> in the worst case, but if we do <span class="math inline">\(m\)</span> such calls back to back we will end up with an average time of <span class="math inline">\(O(\alpha (n))\)</span>.</p>
+<p>We will also not present a proof for this time complexity, since it is quite long and complicated.</p>
+<p>Also, it’s worth mentioning that DSU with union by size / rank, but without path compression works in <span class="math inline">\(O(\log n)\)</span> time per query.</p>
+</section>
+<section id="linking-by-index-coin-flip-linking" class="level2">
+<h2 class="anchored" data-anchor-id="linking-by-index-coin-flip-linking">Linking by index / coin-flip linking</h2>
+<p>Both union by rank and union by size require that we store additional data for each set, and maintain these values during each union operation. There exist also a randomized algorithm, that simplifies the union operation a little bit: linking by index.</p>
+<p>We assign each set a random value called the index, and we attach the set with the smaller index to the one with the larger one. It is likely that a bigger set will have a bigger than the smaller set, therefore this operation is closely related to union by size. In fact it can be proven, that this operation has the same time complexity as union by size. However in practice it is slightly slower than union by size.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

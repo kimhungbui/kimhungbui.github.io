@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -221,82 +221,114 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Statistical" data-listing-date-sort="1740528000000" data-listing-file-modified-sort="1742891558996" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2312">
+<div class="thumbnail">
+<p><a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external"></a></p><a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">
+<p><img loading="lazy" src="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference.png" class="thumbnail-image"></p>
+</a><p><a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external"></a></p>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="Statistical" data-listing-date-sort="1740528000000" data-listing-file-modified-sort="1742470166756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2312" data-listing-title-sort="Statistical Inference and Learning" data-listing-filename-sort="Statistical-Inference-and-Learning.qmd">
-<td>
-<span class="listing-date">Feb 26, 2025</span>
-</td>
-<td>
-<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="title listing-title">Statistical Inference and Learning</a>
-</td>
-<td>
-<span class="listing-author">Your name</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="math,statistic" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1742470166756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556" data-listing-title-sort="Bernoulli Randome Variable" data-listing-filename-sort="bernoulli-random-variable.qmd">
-<td>
-<span class="listing-date">Sep 11, 2024</span>
-</td>
-<td>
-<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="title listing-title">Bernoulli Randome Variable</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="math,statistic" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1742470166764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Why we have normal distribution formular" data-listing-filename-sort="index.md">
-<td>
-<span class="listing-date">Sep 11, 2024</span>
-</td>
-<td>
-<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="title listing-title">Why we have normal distribution formular</a>
-</td>
-<td>
-<span class="listing-author">Your name</span>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">Statistical Inference and Learning</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Statistical'); return false;">
+Statistical
+</div>
+</div>
+<div class="listing-description">
+<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">
+<div class="listing-date">
+Feb 26, 2025
+</div>
+<div class="listing-author">
+Your name
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="math,statistic" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1742891558995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556">
+<div class="thumbnail">
+<p><a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external"></a></p><a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">Bernoulli Randome Variable</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
+math
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('statistic'); return false;">
+statistic
+</div>
+</div>
+<div class="listing-description">
+<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">Bernoulli Randome Variable</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">
+<div class="listing-date">
+Sep 11, 2024
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="math,statistic" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1742891559002" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+<div class="thumbnail">
+<p><a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external"></a></p><a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">
+<p><img loading="lazy" src="./math/math-statistic-why-normal-distribution-formular/dundee.jpg" class="thumbnail-image"></p>
+</a><p><a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">Why we have normal distribution formular</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
+math
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('statistic'); return false;">
+statistic
+</div>
+</div>
+<div class="listing-description">
+<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">
+<div class="listing-date">
+Sep 11, 2024
+</div>
+<div class="listing-author">
+Your name
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

@@ -2,6 +2,8 @@
   {
     "listing": "/english.html",
     "items": [
+      "/english/two-question-essay/index.html",
+      "/english/performance-enhancing-drug/index.html",
       "/english/english-health-services/index.html",
       "/english/english-topic-sentence/index.html",
       "/english/english-writting-zoos/zoos.html"
@@ -25,6 +27,8 @@
   {
     "listing": "/programming.html",
     "items": [
+      "/programming/disjoint-set-union/index.html",
+      "/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
       "/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html",
       "/programming/program-parity-invariance/parity-invariance.html",
       "/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html",
