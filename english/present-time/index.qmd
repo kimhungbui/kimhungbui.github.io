@@ -1,0 +1,25 @@
+---
+title: Grammar Present time
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: Destination C1-C2
+    affiliation-url: 
+date: 2025-03-20
+categories:
+  - english
+  - grammar
+draft: false
+---
+# Present Simple
+
+
+| Use to                              | Example                                                                         |
+| ----------------------------------- | ------------------------------------------------------------------------------- |
+| General truths                      | *The left-hand side of the brain **controls** the right-hand side of the body.* |
+| Current habits                      | *I **don't** always go to lectures that are early in the morning.*              |
+| **Permanent** situations and states | Angie **teaches** French at a local adult education centre.                     |
+|                                     |                                                                                 |
+ 

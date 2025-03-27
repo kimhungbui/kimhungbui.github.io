@@ -1,18 +1,19 @@
 ---
+title: "index"
 title: Image classification
 lightbox: false
 description: Image classification
 author:
-  - name: Kim Hung Bui
     url: https://kimhungbui.github.io
     affiliation: Stanford CS231n
     affiliation-url: https://cs231n.github.io/classification/
 date: 2025-03-21
 categories:
-  - programming
-  - data structure
 draft: false
+
 ---
+
+
 
 
 # Image Classification
@@ -20,7 +21,7 @@ draft: false
 This is the task of assigning an input image one label from a *fixed categories*. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, many other seemingly distinct CV tasks (such as object detection, segmentation) can be reduced to image classification.
 
 **Example**: In the image blow in image classification model takes a single image and assigns probabilities to 4 label {cat, dog, hat, mug}. Computer view a image as an one large 3-dimensional array of numbers. In this example, the cat image is 248 pixel wide, 400 pixel tall, and has three color channel Red, Green, Blue. Therefore, the image consists of $248 \times 400 \times 3$ numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is turn this quarter of a million numbers into a single label, such as "cat".
-![[Pasted image 20250327230513.png]]
+![](Pasted image 20250327230513.png)
 
 **Challenges:** Since this task of recognizing a visual concept (e.g. cat) is relatively trivial for human to perform, it is worth considering the challenges involved from the perspective of a CV algorithm. As we present list of challenges below.
 
@@ -32,7 +33,7 @@ This is the task of assigning an input image one label from a *fixed categories*
 - **Background clutter:** The objects of interest may *blend* into their environment, making them hard to identify.
 - **Intra-class variation:** The classes of interest can be often be relatively broad, such as *chair*. Their are many different types of these objects, each with their own appearance.
 ---
-![[Pasted image 20250327235749.png]]
+![](Pasted image 20250327235749.png)
 
 ---
 A good image classification model must be invariant to the cross product of all these variations, while simultaneously retaining sensitivity to the inter-class variations.
@@ -53,13 +54,14 @@ A good image classification model must be invariant to the cross product of all 
 	- Sensitivity Requirement: The model must **preserver discriminate features** that separate classes, even when intra-class variations (e.g. deformation in chairs) are extreme.
 **Data-driven approach**: How might we go about writing an algorithm that can classify images into distinct categories? Unlike writing an algorithm for, for example, sorting a list of numbers, it is not obvious how one might write an algorithm for identifying cats in images. Therefore, instead of trying to specify what every one of the categories of interest look like directly in code, the approach that we will take is not unlike one we would take with a child: we're going to provide the computer with many examples of each class and then develop learning algorithms that look at these examples and learn about the visual appearance of each class. This approach is referred to as a *data-driven approach*, since it relies on first accumulating a *training dataset* of labeled images. Here is an example of what such a dataset might look like:
 ---
-![[Pasted image 20250328000317.png]]
+![](Pasted image 20250328000317.png)
 
 ---
 **The image classification pipeline** We've seen that the task in Image Classification is to taken an array of pixels that represents a single image and assign a label to it. Our complete pipeline can be formalized as follows:
 - **Input:** Our input consists of a set of *N* images, each labeled with one of *K* different classes. We refer to this data as the *learning set*.
 - **Learning:** Our task is to use the training set to learn what every one of the classes looks like. We refer to this step as *training a classifier*, or *learning a model*.
 - **Evaluation:** In the end, we evaluate the quality of the classifier by asking it to predict labels for a new set of images that it has never seen before. We will then compare the true labels of these images to the ones predicted by the classifier. Intuitively, we're hoping that a lot of the predictions match up with the true answers (which we call the *ground truth*).
+
 # Nearest Neighbor Classifier
 As our first approach, we will develop what we call a **Nearest Neighbor Classifier**. This classifier has nothing to do with Convolution Neural Networks and it is very rarely used in practice, but i will allow us to get an ideal about the basic approach to an image classification.
 
@@ -67,7 +69,7 @@ As our first approach, we will develop what we call a **Nearest Neighbor Classif
 
 ---
 
-![[Pasted image 20250328001115.png]]
+![](Pasted image 20250328001115.png)
 Left: Example images from the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html). Right: first column shows a few test images and next to each we show the top 10 nearest neighbors in the training set according to pixel-wise difference.
 
 ---
