@@ -1,0 +1,83 @@
+---
+title: "Retirement Planning Dashboard"
+format: html
+execute: 
+  echo: false
+  warning: false
+  error: false
+  freeze: true
+---
+
+# Retirement Planning Calculator
+
+This interactive dashboard helps you plan your retirement savings. Use the sliders to project your future savings and understand the effects of your savings, investment return, and age.
+
+```{python}
+import panel as pn
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Initialize Panel
+pn.extension()
+
+# Widgets for user input
+current_age = pn.widgets.IntSlider(name="Current Age", start=20, end=80, value=30)
+retirement_age = pn.widgets.IntSlider(name="Retirement Age", start=40, end=80, value=65)
+life_expectancy = pn.widgets.IntSlider(name="Life Expectancy", start=70, end=100, value=85)
+savings = pn.widgets.FloatInput(name="Current Savings ($)", value=5000)
+yearly_savings = pn.widgets.FloatInput(name="Yearly Savings ($)", value=500)
+investment_return = pn.widgets.FloatSlider(name="Investment Return (%)", start=1, end=10, step=0.1, value=5)
+
+# Calculation function
+def calculate_retirement_savings(current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return):
+    years_to_retire = retirement_age - current_age
+    rate = investment_return / 100
+    future_savings = savings * (1 + rate) ** years_to_retire
+    for i in range(years_to_retire):
+        future_savings += yearly_savings * (1 + rate) ** (years_to_retire - i)
+
+    # Generate savings over time for plotting
+    years = np.arange(current_age, life_expectancy + 1)
+    savings_over_time = [savings]
+
+    for age in years[1:]:
+        if age < retirement_age:
+            savings = savings * (1 + rate) + yearly_savings
+        else:
+            savings = savings * (1 + rate) - yearly_savings * 0.8  # Withdrawal Phase
+        savings_over_time.append(savings)
+
+    return future_savings, years, savings_over_time
+
+# Update plot
+def update_plot(current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return):
+    future_savings, years, savings_over_time = calculate_retirement_savings(
+        current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return
+    )
+    
+    # Plotting the savings over time
+    plt.figure(figsize=(8, 4))
+    plt.plot(years, savings_over_time, label="Savings Over Time", color='blue')
+    plt.axvline(retirement_age, color='red', linestyle='--', label="Retirement Age")
+    plt.xlabel("Age")
+    plt.ylabel("Savings ($)")
+    plt.title("Retirement Savings Projection")
+    plt.legend()
+    plt.grid(True)
+
+    return plt.gcf()
+
+# Bind widgets to update plot
+interactive_plot = pn.bind(update_plot, current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return)
+
+# Final Dashboard Layout
+dashboard = pn.Column(
+    "# Retirement Planning Calculator",
+    "Adjust the sliders to project your retirement savings!",
+    pn.Row(current_age, retirement_age, life_expectancy),
+    pn.Row(savings, yearly_savings, investment_return),
+    interactive_plot
+)
+
+# Make the dashboard servable and interactive
+pn.serve(dashboard)
