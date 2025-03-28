@@ -1,9 +1,9 @@
 ---
 title: "English"
-listing: 
-  contents: english # all Quarto docs in the `posts` directory will be included on your listing page
-  type: default # or `default` or `table`; each type has its own set of yaml options to include
-  sort: "date desc" # can also sort on more than one field
-  categories: true # allows you to sort posts by assigned categories 
-  feed: true
+listing:
+  contents: "english" # Wrap in quotes if it's a directory name
+  type: "default" # Ensure consistent formatting
+  sort: "date desc" # Sorting order is correct
+  categories: true # Enables category sorting
+  feed: true # Enables RSS feed for the listing
 ---
