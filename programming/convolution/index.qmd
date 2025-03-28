@@ -72,3 +72,32 @@ Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 i
 One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors $I_1, I_2$, a reasonable choice for comparing them might be the **L1 distance**.
 
 $$d_1(I_1, I_2)=\Sigma_p |I_1^p - I_2^p|$$
+Where the sum is taken over all pixels. Here is the procedure visualized:
+
+![[nneg.jpeg]]
+
+``` python
+import numpy as numpy
+
+class NearestNeighbor(object):
+	def __init__(self):
+		pass
+	def train(self, X, y):
+		""" X is N \times D where each row is an example. Y is 1-dimension of size N"""
+		# the nearest neighbor classifier simpply remembers all the training data
+		self.Xtr = X
+		self.ytr = y
+	def predict(self, X):
+		""" X is N \times D where each row is an example we wish to predict label for"""
+		num_test = X.shape[0]
+		# lets make sure that the output type matches the input type
+		Ypred = np.zeros(num_test, dtype = self.dtype)
+		# loop over all test rows
+		for i in range(num_test):
+			# find the nearest training image to the i'th test image
+			# using the L1 distance (sum of absolute value differences)
+			distances = np.sum(np.abs(self.Xtr - X[i,:]), axis = 1)
+			min_index = np.argmin(distances) # get the index with smallest distance
+			Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
+		return Ypred
+```
