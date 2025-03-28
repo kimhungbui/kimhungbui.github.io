@@ -1,8 +1,13 @@
---- 
+---
 title: "Development Indicators by Continent"
 author: "Gapminder Analytics Group"
 format: dashboard
---- 
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
 
 ```{python}
 import plotly.express as px
