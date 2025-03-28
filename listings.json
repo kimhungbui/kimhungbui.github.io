@@ -14,19 +14,20 @@
     ]
   },
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/retireplan_dashboard/index.html",
-      "/posts/extreme-early-retirement/index.html",
-      "/posts/post_template/index.html"
-    ]
-  },
-  {
     "listing": "/mathematic.html",
     "items": [
       "/math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html",
       "/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html",
       "/math/math-statistic-why-normal-distribution-formular/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/retireplan_dashboard/index.html",
+      "/posts/dashboard/index.html",
+      "/posts/extreme-early-retirement/index.html",
+      "/posts/post_template/index.html"
     ]
   },
   {
