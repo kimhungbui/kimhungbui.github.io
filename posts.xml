@@ -49,76 +49,12 @@
   <media:content url="https://kimhungbui.github.io/posts/post_template/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Retirement Planning Dashboard</title>
-  <link>https://kimhungbui.github.io/posts/retireplan_dashboard.qmd/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="retirement-planning-calculator" class="level1">
-<h1>Retirement Planning Calculator</h1>
-<p>This interactive dashboard helps you plan your retirement savings. Use the sliders to project your future savings and understand the effects of your savings, investment return, and age.</p>
-<p>import panel as pn import numpy as np import matplotlib.pyplot as plt</p>
-</section>
-<section id="initialize-panel" class="level1">
-<h1>Initialize Panel</h1>
-<p>pn.extension()</p>
-</section>
-<section id="widgets-for-user-input" class="level1">
-<h1>Widgets for user input</h1>
-<p>current_age = pn.widgets.IntSlider(name=“Current Age”, start=20, end=80, value=30) retirement_age = pn.widgets.IntSlider(name=“Retirement Age”, start=40, end=80, value=65) life_expectancy = pn.widgets.IntSlider(name=“Life Expectancy”, start=70, end=100, value=85) savings = pn.widgets.FloatInput(name=“Current Savings (<img src="https://latex.codecogs.com/png.latex?)%22,%20value=5000)%0Ayearly_savings%20=%20pn.widgets.FloatInput(name=%22Yearly%20Savings%20(">)”, value=500) investment_return = pn.widgets.FloatSlider(name=“Investment Return (%)”, start=1, end=10, step=0.1, value=5)</p>
-</section>
-<section id="calculation-function" class="level1">
-<h1>Calculation function</h1>
-<p>def calculate_retirement_savings(current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return): years_to_retire = retirement_age - current_age rate = investment_return / 100 future_savings = savings * (1 + rate) ** years_to_retire for i in range(years_to_retire): future_savings += yearly_savings * (1 + rate) ** (years_to_retire - i)</p>
-<pre><code># Generate savings over time for plotting
-years = np.arange(current_age, life_expectancy + 1)
-savings_over_time = [savings]
-
-for age in years[1:]:
-    if age &lt; retirement_age:
-        savings = savings * (1 + rate) + yearly_savings
-    else:
-        savings = savings * (1 + rate) - yearly_savings * 0.8  # Withdrawal Phase
-    savings_over_time.append(savings)
-
-return future_savings, years, savings_over_time</code></pre>
-</section>
-<section id="update-plot" class="level1">
-<h1>Update plot</h1>
-<p>def update_plot(current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return): future_savings, years, savings_over_time = calculate_retirement_savings( current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return )</p>
-<pre><code># Plotting the savings over time
-plt.figure(figsize=(8, 4))
-plt.plot(years, savings_over_time, label="Savings Over Time", color='blue')
-plt.axvline(retirement_age, color='red', linestyle='--', label="Retirement Age")
-plt.xlabel("Age")
-plt.ylabel("Savings ($)")
-plt.title("Retirement Savings Projection")
-plt.legend()
-plt.grid(True)
-
-return plt.gcf()</code></pre>
-</section>
-<section id="bind-widgets-to-update-plot" class="level1">
-<h1>Bind widgets to update plot</h1>
-<p>interactive_plot = pn.bind(update_plot, current_age, retirement_age, life_expectancy, savings, yearly_savings, investment_return)</p>
-</section>
-<section id="final-dashboard-layout" class="level1">
-<h1>Final Dashboard Layout</h1>
-<p>dashboard = pn.Column( “# Retirement Planning Calculator”, “Adjust the sliders to project your retirement savings!”, pn.Row(current_age, retirement_age, life_expectancy), pn.Row(savings, yearly_savings, investment_return), interactive_plot )</p>
-</section>
-<section id="make-the-dashboard-servable-and-interactive" class="level1">
-<h1>Make the dashboard servable and interactive</h1>
-<p>pn.serve(dashboard)</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://kimhungbui.github.io/posts/retireplan_dashboard.qmd/</guid>
-  <pubDate>Fri, 28 Mar 2025 11:18:25 GMT</pubDate>
+  <title></title>
+  <dc:creator>Gapminder Analytics Group</dc:creator>
+  <link>https://kimhungbui.github.io/posts/retireplan_dashboard/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <guid>https://kimhungbui.github.io/posts/retireplan_dashboard/</guid>
+  <pubDate>Fri, 28 Mar 2025 11:47:18 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -215,7 +151,7 @@ return plt.gcf()</code></pre>
 
  ]]></description>
   <guid>https://kimhungbui.github.io/posts/extreme-early-retirement/</guid>
-  <pubDate>Fri, 28 Mar 2025 11:18:25 GMT</pubDate>
+  <pubDate>Fri, 28 Mar 2025 11:47:18 GMT</pubDate>
 </item>
 </channel>
 </rss>
