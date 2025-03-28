@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-03-21">
+<meta name="description" content="Image classification">
 
-<title>Blog – Kim Hung Bui</title>
+<title>Image classification – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -130,7 +101,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Kim Hung Bui" href="posts.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -139,7 +110,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
@@ -150,33 +121,33 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./mathematic.html"> 
+    <a class="nav-link" href="../../mathematic.html"> 
 <span class="menu-text">Mathematic</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -193,21 +164,39 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="any-category-you-want">any-category-you-want <span class="quarto-category-count">(1)</span></div><div class="category" data-category="template">template <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#image-classification" id="toc-image-classification" class="nav-link active" data-scroll-target="#image-classification">Image Classification</a></li>
+  <li><a href="#nearest-neighbor-classifier" id="toc-nearest-neighbor-classifier" class="nav-link" data-scroll-target="#nearest-neighbor-classifier">Nearest Neighbor Classifier</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Image classification</h1>
 </div>
 
+<div>
+  <div class="description">
+    Image classification
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 21, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -217,81 +206,54 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1743159061197" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="thumbnail">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">Family Man Retires at 39 – Extreme Early Retirement | FIRE</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">
-
-<p></p>
-<section id="early-retirement-journey-and-financial-strategies" class="level2">
-
+<section id="image-classification" class="level1">
+<h1>Image Classification</h1>
+<p>This is the task of assigning an input image one label from a <em>fixed categories</em>. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, many other seemingly distinct CV tasks (such as object detection, segmentation) can be reduced to image classification.</p>
+<p><strong>Example</strong>: In the image blow in image classification model takes a single image and assigns probabilities to 4 label {cat, dog, hat, mug}. Computer view a image as an one large 3-dimensional array of numbers. In this example, the cat image is 248 pixel wide, 400 pixel tall, and has three color channel Red, Green, Blue. Therefore, the image consists of <span class="math inline">\(248 \times 400 \times 3\)</span> numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is turn this quarter of a million numbers into a single label, such as “cat”. <img src="Pasted image 20250327230513.png" class="img-fluid"></p>
+<p><strong>Challenges:</strong> Since this task of recognizing a visual concept (e.g.&nbsp;cat) is relatively trivial for human to perform, it is worth considering the challenges involved from the perspective of a CV algorithm. As we present list of challenges below.</p>
 <ul>
-<li>Tim, a man from Regina, Saskatchewan, Canada, retired from engineering at the age of 39, after 11 years of planning and working towards his goal of early retirement…</li><li></li><li></li><li></li></ul></section><section id="spending-reduction-and-financial-management" class="level2"><ul><li></li><li></li><li></li><li></li><li></li></ul></section><section id="investment-strategy-and-market-volatility" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="challenges-and-adaptation-in-early-retirement" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="family-life-and-financial-education-for-children" class="level2"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></section><section id="wifes-continued-work-and-financial-planning" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="housing-plans-and-government-benefits" class="level2"><ul><li></li><li></li><li></li></ul></section><section id="part-time-work-and-enhanced-work-life-balance" class="level2"><ul><li></li><li></li></ul></section><section id="resources-and-further-information" class="level2"><ul><li></li></ul></section></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="template,any-category-you-want" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1743159061204" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="./posts/post_template/index.html" class="no-external"></a></p><a href="./posts/post_template/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post_template/dundee.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post_template/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post_template/index.html" class="no-external">Post template</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post_template/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('template'); return false;">
-template
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('any-category-you-want'); return false;">
-any-category-you-want
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post_template/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post_template/index.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<li><strong>Viewpoint variation:</strong> A single instance of an object can be oriented in many ways with respect to the camera.</li>
+<li><strong>Scale variation:</strong> Visual classes often exhibit variation of their size (size in the real world, <em>not only</em> in terms of their extent in the image)</li>
+<li><strong>Deformation:</strong> Many objects of interest are not rigid bodies and can be deformed in extremes ways.</li>
+<li><strong>Occlusion</strong>: The objects of interest can be occluded. Sometimes only a small portion of an object (as little as few pixels) could be visible.</li>
+<li><strong>Illumination conditions:</strong> The effect of illumination are drastic on the pixel level.</li>
+<li><strong>Background clutter:</strong> The objects of interest may <em>blend</em> into their environment, making them hard to identify.</li>
+<li><strong>Intra-class variation:</strong> The classes of interest can be often be relatively broad, such as <em>chair</em>. Their are many different types of these objects, each with their own appearance. <img src="Pasted image 20250327235749.png" class="img-fluid"></li>
+</ul>
+<p>A good image classification model must be invariant to the cross product of all these variations, while simultaneously retaining sensitivity to the inter-class variations.</p>
+<ol type="1">
+<li>Cross product of variations This refers to the <strong>combination of all possible variations</strong> (e.g.&nbsp;viewpoint, scale, deformation, occlusion, illumination, etc.) that can occur <strong>within a class</strong>. The term “cross production” here is metaphorical, inpsired by the mathematical concept of a Cartesian product, which generate all possible combinations of elements from multiple sets.
+<ul>
+<li><strong>Example</strong>: A chair might appear:
+<ul>
+<li>Rotate (viewpoint variation)</li>
+<li>Partially hidden (occlusion)</li>
+<li>Under bright sunlight (illumination)</li>
+<li>While being non-rigid (deformation) The model must recognize it as a “chair” <strong>despite this complex combination of variations</strong> <strong>Invariance Requirement:</strong> The model must be <strong>invariant</strong> to these variations, meaning its prediction for a class should not change even when factors alter the object’s appearance.</li>
+</ul></li>
+</ul></li>
+<li><strong>Inter-class variation</strong> There are <strong>difference between distinct classes</strong> (e.g.&nbsp;chairs vs tables). A model must retain <strong>sensitivity</strong> to these differences to avoid confusing classes, even when they share superficial similarities.
+<ul>
+<li>Example: A “stool” (class: chair) and a “small table” (class: table) might both appear at similar scales or under similar lighting. The model must distinguish them based on defining feature (e.g.&nbsp;height, presence of a backrest).</li>
+<li>Sensitivity Requirement: The model must <strong>preserver discriminate features</strong> that separate classes, even when intra-class variations (e.g.&nbsp;deformation in chairs) are extreme. <strong>Data-driven approach</strong>: How might we go about writing an algorithm that can classify images into distinct categories? Unlike writing an algorithm for, for example, sorting a list of numbers, it is not obvious how one might write an algorithm for identifying cats in images. Therefore, instead of trying to specify what every one of the categories of interest look like directly in code, the approach that we will take is not unlike one we would take with a child: we’re going to provide the computer with many examples of each class and then develop learning algorithms that look at these examples and learn about the visual appearance of each class. This approach is referred to as a <em>data-driven approach</em>, since it relies on first accumulating a <em>training dataset</em> of labeled images. Here is an example of what such a dataset might look like:</li>
+</ul></li>
+</ol>
+<p><img src="Pasted image 20250328000317.png" class="img-fluid"></p>
+<p><strong>The image classification pipeline</strong> We’ve seen that the task in Image Classification is to taken an array of pixels that represents a single image and assign a label to it. Our complete pipeline can be formalized as follows: - <strong>Input:</strong> Our input consists of a set of <em>N</em> images, each labeled with one of <em>K</em> different classes. We refer to this data as the <em>learning set</em>. - <strong>Learning:</strong> Our task is to use the training set to learn what every one of the classes looks like. We refer to this step as <em>training a classifier</em>, or <em>learning a model</em>. - <strong>Evaluation:</strong> In the end, we evaluate the quality of the classifier by asking it to predict labels for a new set of images that it has never seen before. We will then compare the true labels of these images to the ones predicted by the classifier. Intuitively, we’re hoping that a lot of the predictions match up with the true answers (which we call the <em>ground truth</em>).</p>
+</section>
+<section id="nearest-neighbor-classifier" class="level1">
+<h1>Nearest Neighbor Classifier</h1>
+<p>As our first approach, we will develop what we call a <strong>Nearest Neighbor Classifier</strong>. This classifier has nothing to do with Convolution Neural Networks and it is very rarely used in practice, but i will allow us to get an ideal about the basic approach to an image classification.</p>
+<p><strong>Example image classification dataset: CIFAR-10</strong>. <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>This dataset consist of 10 classes (for example <em>airplane, automobile, bird, etc</em>). These 60,000 images are partitioned into a training set of 50,000 images and a test set of 10,000 images. In the image below we can see 10 random example images from each one of the 10 classes.</p>
+<p><img src="Pasted image 20250328001115.png" class="img-fluid"> Left:&nbsp;Example&nbsp;images&nbsp;from&nbsp;the&nbsp;<a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>.&nbsp;Right:&nbsp;first&nbsp;column&nbsp;shows&nbsp;a&nbsp;few&nbsp;test&nbsp;images&nbsp;and&nbsp;next&nbsp;to&nbsp;each&nbsp;we&nbsp;show&nbsp;the&nbsp;top&nbsp;10&nbsp;nearest&nbsp;neighbors&nbsp;in&nbsp;the&nbsp;training&nbsp;set&nbsp;according&nbsp;to&nbsp;pixel-wise&nbsp;difference.</p>
+<p>Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 image for every one of the labels), and we wish to label the remaining 10,000. The nearest neighbor classifier will take a test image, compare it to every single one of the training images, and predict the label of the closest training image. In the image above and on the right we can see an example result of such a procedure for 10 example test images. Notice that in only about 3 of 10 examples of an image of the same class is retrieved, while in other 7 examples this is not the case. For example, in the 8th row the nearest training image to the horse head is a red car, presumably due to the strong black background. As a result, this image of a horse would in this case be mislabeled as a car.</p>
+<p>One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors <span class="math inline">\(I_1, I_2\)</span>, a reasonable choice for comparing them might be the <strong>L1 distance</strong>.</p>
+<p><span class="math display">\[d_1(I_1, I_2)=\Sigma_p |I_1^p - I_2^p|\]</span></p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

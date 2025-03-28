@@ -2,102 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kimhungbui.github.io/english.html</loc>
-    <lastmod>2025-03-25T08:32:38.993Z</lastmod>
+    <lastmod>2025-03-28T10:51:01.185Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/posts/extreme-early-retirement/index.html</loc>
-    <lastmod>2025-03-25T08:32:39.004Z</lastmod>
+    <lastmod>2025-03-28T10:51:01.197Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/mathematic.html</loc>
-    <lastmod>2025-03-25T08:32:39.002Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/english/english-topic-sentence/index.html</loc>
-    <lastmod>2025-03-25T08:32:38.993Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/english/english-health-services/index.html</loc>
-    <lastmod>2025-03-25T08:32:38.993Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/LICENSE.html</loc>
-    <lastmod>2025-03-25T08:32:38.990Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</loc>
-    <lastmod>2025-03-25T08:32:38.995Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/posts.html</loc>
-    <lastmod>2025-03-25T08:32:39.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/index.html</loc>
-    <lastmod>2025-03-25T08:32:38.995Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html</loc>
-    <lastmod>2025-03-25T08:32:39.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/disjoint-set-union/index.html</loc>
-    <lastmod>2025-03-25T08:32:39.012Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</loc>
-    <lastmod>2025-03-25T08:32:39.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</loc>
-    <lastmod>2025-03-25T08:32:39.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</loc>
-    <lastmod>2025-03-25T08:32:39.012Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</loc>
-    <lastmod>2025-03-25T08:32:39.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</loc>
-    <lastmod>2025-03-25T08:32:39.012Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</loc>
-    <lastmod>2025-03-25T08:32:39.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/cv.html</loc>
-    <lastmod>2025-03-25T08:32:38.993Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</loc>
-    <lastmod>2025-03-25T08:32:38.996Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/index.html</loc>
-    <lastmod>2025-03-25T08:32:39.002Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/english/performance-enhancing-drug/index.html</loc>
-    <lastmod>2025-03-25T08:32:38.994Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kimhungbui.github.io/english/two-question-essay/index.html</loc>
-    <lastmod>2025-03-25T08:32:38.994Z</lastmod>
+    <lastmod>2025-03-28T10:51:01.195Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/english/english-writting-zoos/zoos.html</loc>
-    <lastmod>2025-03-25T08:32:38.994Z</lastmod>
+    <lastmod>2025-03-28T10:51:01.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/two-question-essay/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/present-time/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/performance-enhancing-drug/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/LICENSE.html</loc>
+    <lastmod>2025-03-28T10:51:01.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</loc>
+    <lastmod>2025-03-28T10:51:01.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/posts.html</loc>
+    <lastmod>2025-03-28T10:51:01.196Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/disjoint-set-union/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</loc>
+    <lastmod>2025-03-28T10:51:01.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/convolution/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</loc>
+    <lastmod>2025-03-28T10:51:01.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</loc>
+    <lastmod>2025-03-28T10:51:01.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</loc>
+    <lastmod>2025-03-28T10:51:01.210Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</loc>
+    <lastmod>2025-03-28T10:51:01.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</loc>
+    <lastmod>2025-03-28T10:51:01.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/cv.html</loc>
+    <lastmod>2025-03-28T10:51:01.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html</loc>
+    <lastmod>2025-03-28T10:51:01.187Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.195Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/writing-by-hand/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/english-health-services/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/having-children-at-older-age/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/english-topic-sentence/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kimhungbui.github.io/english/financial-matters/index.html</loc>
+    <lastmod>2025-03-28T10:51:01.186Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/posts/post_template/index.html</loc>
-    <lastmod>2025-03-25T08:32:39.012Z</lastmod>
+    <lastmod>2025-03-28T10:51:01.204Z</lastmod>
   </url>
   <url>
     <loc>https://kimhungbui.github.io/programming.html</loc>
-    <lastmod>2025-03-25T08:32:39.012Z</lastmod>
+    <lastmod>2025-03-28T10:51:01.204Z</lastmod>
   </url>
 </urlset>
