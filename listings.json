@@ -33,6 +33,7 @@
   {
     "listing": "/programming.html",
     "items": [
+      "/programming/leetcode-maximum-subarray/index.html",
       "/programming/convolution/index.html",
       "/programming/disjoint-set-union/index.html",
       "/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
