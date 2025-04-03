@@ -54,6 +54,7 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
         # T.C: O(n^2)
 
 ``` {python}
+import List
     def maxSubArray(self, nums: List[int]) -> int:
         left, ans = 0, nums[0]
         for left in range(len(nums)):
