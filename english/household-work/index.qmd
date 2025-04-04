@@ -1,0 +1,69 @@
+---
+title: Ielts task 1 - Household work
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: How to do ielts
+    affiliation-url: https://howtodoielts.com/ielts-task-1-essay-household-work/
+date: 2025-03-20
+categories:
+  - english
+  - time
+draft: false
+---
+*The bar chart below shows the average duration of household women did (unemployed, part-time employed and full-time) when compared to men who had full-time work in the UK between 1985 and 2005.*
+
+*Summarise the information by selecting and reporting the main features, and make comparisons where relevant.*
+
+![](Pasted%20image%2020250328022514.png)
+
+The bar chart details hours of housework completed in the UK from 1985 to 2005 by fully employed males and females with various states of employment. Looking from an overall perspective, it is readily apparent that time spent on housework rose for all groups with the exception of unemployed women, which was stable overall. However, the latter category undertook by far the most housework, while men with full-time jobs did comparatively little.
+
+Unemployed women led throughout the period in terms of hours, at a peak of 7 hours in 1985 and 2005 and a slight dip to 6.5 hours in between. In contrast, men with full-time work were unchanged at just 1 hour in 1985 and 1995, though there was a slight rise to 1.5 hours in 2005.
+
+Women with part-time employment were slightly lower than their unemployed counterparts throughout the period, beginning at 5.3 hours in 1985, before declining to 5 hours over the next 5 years, and then finishing the period with a surge to 6 hours. The figures for women with full-time employment resembled those of men, though they were marginally higher at 2, 1.5, and 2.8 hours in 1985, 1995, and 2005, respectively.
+
+# Speaking
+
+#### **Tidiness**
+
+1. Are you a tidy person?
+   Yes, I would say I'm quite a tidy person. I like to keep my things organized, whether it's my room, desk, or digital files. I find that being tidy helps me concentrate better and reduces stress.
+2. Are you more tidy at home or at school?
+   I'm generally tidy in both places, but I'd say I'm more careful about tidiness at school or work. I think that's because I want to create a good impression and maintain a productive environment. At home, I might be a bit more relaxed, especially when I'm tired.
+3. Were you tidy as a child?
+   Not really! When I was a child, I was pretty messy. My toys and clothes were usually all over the place, and my parents had to remind me constantly to clean up. It wasn't until I got older that I started appreciating the value of being organized.
+4. Are people in your country very tidy?
+   It depends on the individual, but in general, I think people in my country value cleanliness and order, especially in public spaces. There's a strong emphasis on hygiene and keeping things neat, though of course, there are exceptions.
+
+not tidy:
+
+- To be honest, I'm not the tidiest person. I try to keep things in order, but I often get caught up in other tasks and end up leaving a bit of a mess behind. It's not that I enjoy clutter - I just tend to prioritize other things over cleaning. That said, I do try to do a proper tidy-up when it gets out of hand.
+- I'm definitely less tidy at home. When I'm at school or work, I feel a bit more pressure to maintain a neat space, especially if I'm sharing it with others. But at home, I tend to [[let things slide]] - especially if I'm busy or tired. My room isn't chaotic, but it's far from spotless.
+- Not at all. I was one of those kids who always had toys and books scattered everywhere. My parents used to joke that a tornado had hit my room. Tidiness just wasn't something I [[paid attention to]] - I was more interested in playing or creating things than cleaning up after myself.
+- I think it varies a lot. Some people are incredibly meticulous and keep everything spotless, while others are more laid-back like me. I wouldn't say tidiness is a national trait - it really depends on the individuals and sometimes on how they were raised.
+
+Tidiness:
+1. Are you a tidy person ?
+   Yes, I would definitely consider myself a tidy person. I find that having a clean and organized environment helps my think more clearly and stay focused. Tidiness isn't just about appearance for me - it's more about creating a calm and efficient space where I can function at my best.
+2. Are you more tidy at home or at school?
+   I'd say I'm equally tidy in both settings, but in slightly different ways. At home, I like everything to be in its space - I clean regularly and keep my space minimalist. At school or work, I might not be as meticulous with deep cleaning, but I still keep my desk organized and clutter-free. It helps me stay productive and avoid distractions.
+3. Were you tidy as a child?
+   Yes, even as a child I had a habit of keeping things neat. I used to arrange my books by color and make sure my toys were stored properly after playing. It wasn't something my parents had to enforce - I think I just naturally liked having order around me. That tendency has definitely [[carried over]] into adulthood.
+4. Are people in your country very tidy?
+   I believe it depends on the person, but overall, people in my country do value cleanliness and order, especially in shared or public spaces. There's a strong cultural emphasis on personal hygiene and maintaining a tidy home, particularly when guest are visiting. However, standards or tidiness can vary widely from one household to another.
+
+## Part 3
+
+1. Do you think tidiness is important in the workplace?
+   Absolutely. A tidy workplace not only creates a more professional image but also boosts efficiency. When things are organized, it's easier to find what you need, which saves time and reduce stress. Moreover, a clean environment can promote better focus and even improve team morale.
+2. Why do some people struggle to stay tidy?
+   There could be a few reasons. Some people simply lead very busy lives and don't prioritize tidiness, while others may not have developed habits of organization from a young age. In some cases, people might not even notice the mess around them - they've grown accustomed to it. For a few, it could also be tied to mental health challenges, like anxiety or ADHD, which can effect one's ability to maintain order.
+3. How can parents teach children to be tidy?
+   The most effective way is by setting a good example. If children see their parents consistently keeping things organized, they're more likely to adopt those habits themselves. It also helps to make tidying part of a daily routine and turn it into something fun or rewarding - for instance, though games or praise. Teaching them to take pride in their space can go a long way.
+4. Do you think technology helps people stay more organized and tidy?
+   Definitely. There are so many apps and digital tools now that can help people manages their time, declutter digitally, and keep track of tasks or schedules. Even simple things like calendar reminder or to-do list apps can encourage tidier habits. That said, technology can also contribute to digital clutter if not used mindfully.
+5. Is there a difference in tidiness between younger and older generations?
+   In some ways, yes. Older generations often place a high value on physical tidiness, perhaps because they grew up in a time when everything had to be done manually. Younger people, on the other hand, might prioritize digital organization - like keeping their phones or laptops neatly arranged. However, i think personal habits play a bigger role than age.
