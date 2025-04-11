@@ -1,0 +1,66 @@
+---
+title: Install Nextcloud in Ubuntu Server
+image: Statistical-Inference.png
+lightbox: false
+description: Your post description
+author:
+  - name: Your name
+    url: https://your.personal.website
+    affiliation: Maybe your workplace?
+    affiliation-url: https://your.workplace.website
+date: 2025-02-26
+categories:
+  - Statistical
+draft: false
+---
+
+# 1. Install Ubuntu Server
+
+https://ubuntu.com/download/server
+
+# 2. Nextcloud
+
+# 3. Install Postgres
+
+## ❗ LinuxServer.io Nextcloud **doesdoes not useuse PostgreSQL environmentenvironment variablesvariables** to connect to the databasedatabase.
+
+That's the issueissue rightright therethere.
+
+> UnlikeUnlike the officialofficial `nextcloud` imageimage, **`linuxserver/nextcloud` doesdoes not read `POSTGRES_USER`, `POSTGRES_PASSWORD`, etc.** from the environmentenvironment.
+
+InsteadInstead, it expects youyou to **configureconfigure the databasedatabase entirelyentirely throughthrough the web UI.**
+
+``` yml
+
+services:
+  db:
+    image: postgres:16
+    container_name: nextcloud-postgres
+    environment:
+      POSTGRES_DB: nextclouddb
+      POSTGRES_USER: nextcloud
+      POSTGRES_PASSWORD: MyStrongPassword123!
+    volumes:
+      - /opt/nextcloud/postgres:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  nextcloud:
+    image: lscr.io/linuxserver/nextcloud:latest
+    container_name: nextcloud
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - /opt/nextcloud/config:/config
+      - /opt/nextcloud/data:/data
+    ports:
+      - 443:443
+    depends_on:
+      - db
+    restart: unless-stopped
+
+```
+
+# 3. Duck DNS
+
