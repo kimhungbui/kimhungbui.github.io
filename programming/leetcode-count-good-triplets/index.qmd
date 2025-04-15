@@ -1,0 +1,152 @@
+---
+title: ouse robber
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/count-good-triplets/editorial/?envType=daily-question&envId=2025-04-15
+date: 2025-04-15
+categories:
+  - leetcode
+  - programming
+draft: false
+---
+# Question
+
+Given an array of integers `arr`, and three integers `a`, `b` and `c`. You need to find the number of good triplets.
+
+A triplet `(arr[i], arr[j], arr[k])` is **good** if the following conditions are true:
+
+- `0 <= i < j < k < arr.length`
+- `|arr[i] - arr[j]| <= a`
+- `|arr[j] - arr[k]| <= b`
+- `|arr[i] - arr[k]| <= c`
+
+Where `|x|` denotes the absolute value of `x`.
+
+Return _the number of good triplets_.
+
+**Example 1:**
+
+**Input:** `arr = [3,0,1,1,9,7], a = 7, b = 2, c = 3`
+**Output:** 4
+**Explanation:** There are 4 good triplets: `[(3,0,1), (3,0,1), (3,1,1), (0,1,1)]`.
+
+**Example 2:**
+
+**Input:** `arr = [1,1,2,2,3], a = 0, b = 0, c = 1`
+**Output:** 0
+**Explanation:** No triplet satisfies all conditions.
+
+**Constraints:**
+
+- `3 <= arr.length <= 100`
+- `0 <= arr[i] <= 1000`
+- `0 <= a, b, c <= 1000`
+
+# Analysis 
+
+### Approach 1: Enumeration
+
+#### Intuition
+
+Using `O(n3)` loops to enumerate all (i,j,k) in sequence, where 0≤i<j<k<arr.length, for each set of (i,j,k), determine whether arr[i], arr[j], and arr[k] satisfy the condition.
+
+Finally, calculate the total number of all triplets that meet the conditions.
+
+``` python
+class Solution:
+    def countGoodTriplets(self, arr: List[int], a: int, b: int, c: int) -> int:
+        n = len(arr)
+        countGoodTriplets = 0
+        for i in range(n):
+            for j in range(i + 1, n):
+	            if abs(arr[i] - arr[j]) <= a:
+                for k in range(j + 1, n):
+                    if abs(arr[j] - arr[k]) <= b and abs(arr[i] - arr[k]) <= c:
+	                    countGoodTriplets += 1
+                        
+        return countGoodTriplets
+```
+
+## Approach 2: Optimized enumeration
+
+We need to eliminate one loop or make one of them constant-time.
+
+We could try fixing `(j,k)` and then counting valid `i < j`. That $O(n^2)$ pairs, and if we can count the $i$s in $O(1)$ each, we down to $O(n^2)$ total.
+
+### Translate the $i$-constraints into an interval
+
+For a given $(j,k)$, the condition on $i$ are $$|arr[i] - arr[j]| \leq a$$
+so,
+$$arr[i] \in [arr[j]-a, arr[j]+a]$$
+
+and 
+$$|arr[i]-arr[k]|\leq c$$
+so,
+$$arr[i]\in[arr[k]-c, arr[k]+c]$$
+
+Their intersection is a single interval $[l, r]$. So we just need to count how many prior $i<j$ have $arr[i] \in [l, r]$.
+
+### Choose a data structure for last range-count
+
+Since `arr[i]` is small-range, maintain a frequency array `freq[0..M]` for all seen indices $<j$, and its prefix sums `sum[v] = `$\Sigma_{u=0}^v freq[u]$ 
+
+Then the count in $[l, r]$ is simply `sum[r]-sum[l-1]` in $O(1)$.
+
+### Ensure the $i<j$ ordering
+
+We iterate $j$ from 1 to $n$. Before handling any $(j, k)$ pairs, our `freq/sum` reflects exact indices 1 through $j-1$.
+
+For each $k>j$, check $|arr[j] - arr[k]|\leq b$. If it passes, compute $[l, r]$ and do the $O(1)$ range-sum query.
+
+After finishing all $k$ for this $j$, we insert $arr[j]$ into `freq` (and update `sum`), before moving onto $j + 1$.
+
+``` python
+class Solution:
+    def countGoodTriplets(self, arr: List[int], a: int, b: int, c: int) -> int:
+        # ans: total count of valid (i,j,k)
+        ans = 0
+        
+        n = len(arr)
+        # total[v] will hold the prefix-sum of frequencies:
+        #   total[v] = number of i<j with arr[i] ≤ v
+        # we assume arr[i] ∈ [0..1000], so we size total to 1001
+        total = [0] * 1001
+
+        # Move j from 0 to n-1
+        for j in range(n):
+            # Pair j with every k>j
+            for k in range(j + 1, n):
+                # First check the |arr[j] - arr[k]| ≤ b constraint
+                if abs(arr[j] - arr[k]) <= b:
+                    # Compute the interval of allowed arr[i] from j’s constraint
+                    lj, rj = arr[j] - a, arr[j] + a
+                    # Compute the interval of allowed arr[i] from k’s constraint
+                    lk, rk = arr[k] - c, arr[k] + c
+
+                    # Intersection [l..r] of the two intervals
+                    # also clamp to [0..1000] to stay in array bounds
+                    l = max(0, lj, lk)
+                    r = min(1000, rj, rk)
+
+                    # If the intersection is non-empty, count how many
+                    # prior i<j have arr[i] in [l..r] via prefix sums
+                    if l <= r:
+                        if l == 0:
+                            ans += total[r]
+                        else:
+                            ans += total[r] - total[l - 1]
+
+            # After processing all k for this j, we “add” arr[j] into our
+            # prefix-sum structure so that future iterations see it.
+            # We do this by incrementing total[v] for all v ≥ arr[j].
+            # That way total[v] remains = # of arr[i] ≤ v for i<next j.
+            for v in range(arr[j], 1001):
+                total[v] += 1
+
+        return ans
+
+```

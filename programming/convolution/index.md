@@ -75,3 +75,22 @@ Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 i
 One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors $I_1, I_2$, a reasonable choice for comparing them might be the **L1 distance**.
 
 $$d_1(I_1, I_2)=\Sigma_p |I_1^p - I_2^p|$$
+Where the sum is taken over all pixels. Here is the procedure visualized:
+
+![[Pasted image 20250411142035.png]]
+
+
+## The choice of distance.
+There are many other ways of computing distances between vectors. Another common choice could be to instead use the __L2 distance__, which has the geometric interpretation of computing the euclidean distance between two vectors.
+
+$$d_2(I_1, I_2)=\sqrt{\Sigma_p(I^p_1-I^p_2)^2}$$
+
+The square root is a _monotonic function_. That is, it scales the absolute sizes of the distances but it preserves the ordering, so the nearest neighbors with or without it are identical. In practical nearest neighbor application, we could leave out the square root operation.
+
+**L1 vs. L2.** It is interesting to consider differences between the two metrics. In particular, the L2 distance is much more unforgiving than the L1 distance when it comes to differences between two vectors. That is, the L2 distance prefers many medium disagreements to one big one.
+
+# k - nearest Neighbor Classifier
+
+The idea: instead of finding the single closest image in the training set, we will find the top __k__ closest images, and have them vote on the label of the test image. In particular, when _k=1_, we recover the NN classifier. Intuitively, higher values of __k__ have a smoothing effect that makes the classifier more resistant to outliers
+
+![](Pasted%20image%2020250411144413.png)
