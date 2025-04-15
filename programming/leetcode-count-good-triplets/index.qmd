@@ -1,5 +1,5 @@
 ---
-title: ouse robber
+title: Count good triplets
 lightbox: false
 description: Your post description
 author:
