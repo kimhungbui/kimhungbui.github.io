@@ -10,7 +10,273 @@
 <atom:link href="https://kimhungbui.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 11 Sep 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 26 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Install Nextcloud in Ubuntu Server</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/posts/nextcloud-install/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="install-ubuntu-server" class="level1">
+<h1>1. Install Ubuntu Server</h1>
+<p>https://ubuntu.com/download/server</p>
+</section>
+<section id="nextcloud" class="level1">
+<h1>2. Nextcloud</h1>
+</section>
+<section id="install-postgres" class="level1">
+<h1>3. Install Postgres</h1>
+<section id="linuxserver.io-nextcloud-doesdoes-not-useuse-postgresql-environmentenvironment-variablesvariables-to-connect-to-the-databasedatabase." class="level2">
+<h2 class="anchored" data-anchor-id="linuxserver.io-nextcloud-doesdoes-not-useuse-postgresql-environmentenvironment-variablesvariables-to-connect-to-the-databasedatabase.">❗ LinuxServer.io Nextcloud <strong>doesdoes not useuse PostgreSQL environmentenvironment variablesvariables</strong> to connect to the databasedatabase.</h2>
+<p>That’s the issueissue rightright therethere.</p>
+<blockquote class="blockquote">
+<p>UnlikeUnlike the officialofficial <code>nextcloud</code> imageimage, <strong><code>linuxserver/nextcloud</code> doesdoes not read <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code>, etc.</strong> from the environmentenvironment.</p>
+</blockquote>
+<p>InsteadInstead, it expects youyou to <strong>configureconfigure the databasedatabase entirelyentirely throughthrough the web UI.</strong></p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">services</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">db</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">image</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> postgres:16</span></span>
+<span id="cb1-5"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">container_name</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> nextcloud-postgres</span></span>
+<span id="cb1-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">environment</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-7"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">POSTGRES_DB</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> nextclouddb</span></span>
+<span id="cb1-8"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">POSTGRES_USER</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> nextcloud</span></span>
+<span id="cb1-9"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">POSTGRES_PASSWORD</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> MyStrongPassword123!</span></span>
+<span id="cb1-10"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">volumes</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-11"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> /opt/nextcloud/postgres:/var/lib/postgresql/data</span></span>
+<span id="cb1-12"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">restart</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> unless-stopped</span></span>
+<span id="cb1-13"></span>
+<span id="cb1-14"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">nextcloud</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-15"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">image</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> lscr.io/linuxserver/nextcloud:latest</span></span>
+<span id="cb1-16"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">container_name</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> nextcloud</span></span>
+<span id="cb1-17"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">environment</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-18"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> PUID=1000</span></span>
+<span id="cb1-19"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> PGID=1000</span></span>
+<span id="cb1-20"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> TZ=Etc/UTC</span></span>
+<span id="cb1-21"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">volumes</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-22"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> /opt/nextcloud/config:/config</span></span>
+<span id="cb1-23"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> /opt/nextcloud/data:/data</span></span>
+<span id="cb1-24"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ports</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-25"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> 443:443</span></span>
+<span id="cb1-26"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">depends_on</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-27"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> db</span></span>
+<span id="cb1-28"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">restart</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> unless-stopped</span></span></code></pre></div>
+</section>
+</section>
+<section id="duck-dns" class="level1">
+<h1>3. Duck DNS</h1>
+
+
+</section>
+
+ ]]></description>
+  <category>Statistical</category>
+  <guid>https://kimhungbui.github.io/posts/nextcloud-install/</guid>
+  <pubDate>Wed, 26 Feb 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/posts/nextcloud-install/Statistical-Inference.png" medium="image" type="image/png"/>
+</item>
 <item>
   <title>Post template</title>
   <dc:creator>Your name</dc:creator>
@@ -54,7 +320,7 @@
   <link>https://kimhungbui.github.io/posts/retireplan_dashboard/</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://kimhungbui.github.io/posts/retireplan_dashboard/</guid>
-  <pubDate>Thu, 03 Apr 2025 19:26:17 GMT</pubDate>
+  <pubDate>Tue, 15 Apr 2025 04:36:03 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -151,7 +417,7 @@
 
  ]]></description>
   <guid>https://kimhungbui.github.io/posts/extreme-early-retirement/</guid>
-  <pubDate>Thu, 03 Apr 2025 19:26:17 GMT</pubDate>
+  <pubDate>Tue, 15 Apr 2025 04:36:03 GMT</pubDate>
 </item>
 </channel>
 </rss>
