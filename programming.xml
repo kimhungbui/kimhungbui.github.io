@@ -12,7 +12,7 @@
 <generator>quarto-1.5.57</generator>
 <lastBuildDate>Tue, 15 Apr 2025 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>ouse robber</title>
+  <title>Count good triplets</title>
   <dc:creator>Hung </dc:creator>
   <link>https://kimhungbui.github.io/programming/leetcode-count-good-triplets/</link>
   <description><![CDATA[ 
@@ -429,7 +429,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="5f6082a4" class="cell" data-execution_count="1">
+<div id="a0184392" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
