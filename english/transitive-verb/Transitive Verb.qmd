@@ -1,0 +1,53 @@
+---
+title: Transitive Verb
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: 
+    affiliation-url: 
+date: 2025-04-16
+categories:
+  - english
+  - grammar
+draft: false
+---
+A transitive verb is a verb that requires an object to receive the action.
+
+
+> [!Example] Example
+> Correct: The speaker __discussed__ _different marketing strategies_ in the video.
+> Incorrect: The speaker __discussed__ in the video.
+> The verb "discuss" requires an object ("different marketing strategies"). It is necessary to state that the speaker discussed.
+
+__Example Sentences:__
+
+Some other examples of transitive verbs are "address," "borrow," "bring," "discuss," "raise," "offer," "pay," "write," "promise," and "have."
+
+- The instructor __addressed__ _the student's_ question.
+
+- Miriam __borrowed__ _the methodology book_ from her classmate because she forgot her copy.
+
+- Can you __bring__ _your copy of the textbook_ to our study group meeting?
+
+- The committee members __will raise__ _money_ for the new project.
+
+## Direct and Indirect Objects
+
+A transitive verb can take more than one object.
+
+- Donovan __gave__ ___his sister___ _a laptop_.
+
+In this sentence, there is an indirect object, "his sister," and a direct object, "a laptop." However, there is another way to say this same idea using a prepositional phrase.
+
+- Donovan __gave__ _a laptop_ to his sister.
+In English, an indirect object may come between a transitive verb and the direct object, as the first example sentence about Donovan, or the indirect object could be in the form of a prepositional phrase, like the second example sentence about Donovan.
+
+An indirect object is only needed if the action is being done to or for somebody, when using a transitive verb, we need to include a direct object, but we may not need to include in indirect object.
+
+
+
+
+
+
