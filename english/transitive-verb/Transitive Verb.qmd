@@ -1,5 +1,5 @@
 ---
-title: Transitive Verb
+title: Transitive Verb an Intransitive Verb
 lightbox: false
 description: Your post description
 author:
@@ -46,7 +46,30 @@ In English, an indirect object may come between a transitive verb and the direct
 
 An indirect object is only needed if the action is being done to or for somebody, when using a transitive verb, we need to include a direct object, but we may not need to include in indirect object.
 
+## Finding the object
 
+We can figure out the object by using the question format: "The subject did what?" or "The subject 'verb' what?"
+	The instructor __addressed__ what
+	_the student's question_
+
+Miriam __borrowed__ what?
+_the methodology book_
+
+Can you __bring__ what?
+_your copy of the textbook_
+
+The speaker __discussed__ what?
+_different marketing strategies_
+
+The committee members __will raise__ what?
+_money_
+
+We can find the indirect by asking the question "To whom?" or "For whom?"
+
+Donovan __gave__ _a laptop_ to whom?
+_his sister_
+
+# Intransitive Verbs
 
 
 
