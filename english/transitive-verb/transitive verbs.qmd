@@ -71,6 +71,57 @@ _his sister_
 
 # Intransitive Verbs
 
+An intransitive verb does not take an object. Using an object immediately after an intransitive verb will create an incorrect sentence. However, there may be other information after the verb, such as one or more prepositional phrases or an _adverb_.
+
+
+> [!Example] Example
+> Correct: The students __arrived__ at the residency in Houston.
+> Incorrect: The students __arrived__ _Houston_.
+
+The second sentence is incorrect because the verb cannot take an object.
+
+__Example Sentences__
+
+Some other examples of intransitive verbs are "deteriorate", "vote", "sit", "increase", "laugh", "originate", "fluctuate", and "trend".
+
+> The patient's health __deteriorated quickly__.
+> Ahmad __voted__ in the local election.
+> May I __sit _here___
+> Attendance **increased** at the weekly study sessions as finals drew near.
+> Susan __laughed__.
+
+Note: An intransitive verb can take more than one prepositional phrase of adverb.
+
+> The patient's health __deteriorated _quickly___ _during the night_.
+> Ahmad __voted__ _for the incumbent_ in the local election.
+
+
+# Verbs That Are Both Transitive and Intransitive
+
+Some verbs can be both transitive and intransitive, depending on the situation. In some instances, such a verb may require an object, while in others it does not require an object.
+
+__Example Sentences__
+
+Format reminder: __verb__, _object_, ___propositional phrase___, `adverb`.
+
+__continue__
+
+> We will __continue__ _the meeting_ after the break. (transitive)
+> The meeting __continued__ ___after the break___. (intransitive)
+
+__play__
+> Three of the students __play__ _the guitar_. (transitive)
+> The students will __play__ `outside today`.
+
+ __return__
+ > Javier __returned__ _the book_ to the library. (transitive)
+> The students __returned__ ___to school___ __after the winter break___. (intransitive)
+
+__grow__
+
+> I __grow__ _zucchini_ in my garden. (transitive)
+> My daughter __is growing__ `quickly`. (intransitive)
+
 
 
 
