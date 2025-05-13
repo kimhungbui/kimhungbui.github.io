@@ -1,0 +1,25 @@
+---
+title: 5 basic structures of sentences in english
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+date: 2025-03-20
+categories:
+  - english
+  - grammar
+draft: false
+---
+All sentences in English are included in 1 of 5 structures. The verb used will decide the structure of the sentence. 
+We should use the _subject + verb_ structure as the core structure when speaking in English, after that, we choose a verb and complete the sentence.
+
+
+
+
+|     | __5 simple structure in english__                                                                                                                                                                                                                                                                                                 |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | If we want to say "subject do something", we use structure 1 "subject + verb". Verbs which can be used in that structure are "to be" and [transitive verbs](../transitive-verb/transitive%20verbs.qmd).<br><br>She stay at the student center.                                                                                    |
+| 2   | To talk about what the subject is like, we use structure 2: "subject + verb + complement". Verbs which can be used in in the structure "to be" and "linking verbs" like: _become, look, sound, smell, seem, ..._. In that case, complement after that verb is 'adjective' or 'noun phrase'.<br><br>Her brother is a soccer player |
+|     |                                                                                                                                                                                                                                                                                                                                   |
+|     |                                                                                                                                                                                                                                                                                                                                   |

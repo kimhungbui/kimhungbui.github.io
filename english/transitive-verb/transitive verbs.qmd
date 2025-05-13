@@ -5,8 +5,6 @@ description: Your post description
 author:
   - name: Hung
     url: https://your.personal.website
-    affiliation: 
-    affiliation-url: 
 date: 2025-04-16
 categories:
   - english
