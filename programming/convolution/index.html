@@ -203,7 +203,12 @@ window.Quarto = {
    
   <ul>
   <li><a href="#image-classification" id="toc-image-classification" class="nav-link active" data-scroll-target="#image-classification">Image Classification</a></li>
-  <li><a href="#nearest-neighbor-classifier" id="toc-nearest-neighbor-classifier" class="nav-link" data-scroll-target="#nearest-neighbor-classifier">Nearest Neighbor Classifier</a></li>
+  <li><a href="#nearest-neighbor-classifier" id="toc-nearest-neighbor-classifier" class="nav-link" data-scroll-target="#nearest-neighbor-classifier">Nearest Neighbor Classifier</a>
+  <ul class="collapse">
+  <li><a href="#the-choice-of-distance" id="toc-the-choice-of-distance" class="nav-link" data-scroll-target="#the-choice-of-distance">The choice of distance</a></li>
+  </ul></li>
+  <li><a href="#k---nearest-neighbor-classifier" id="toc-k---nearest-neighbor-classifier" class="nav-link" data-scroll-target="#k---nearest-neighbor-classifier">k - Nearest Neighbor Classifier</a></li>
+  <li><a href="#validation-sets-for-hyperparameter-tunning." id="toc-validation-sets-for-hyperparameter-tunning." class="nav-link" data-scroll-target="#validation-sets-for-hyperparameter-tunning.">Validation sets for Hyperparameter tunning.</a></li>
   </ul>
 </nav>
     </div>
@@ -307,6 +312,20 @@ window.Quarto = {
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>            min_index <span class="op">=</span> np.argmin(distances) <span class="co"># get the index with smallest distance</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>            Ypred[i] <span class="op">=</span> <span class="va">self</span>.ytr[min_index] <span class="co"># predict the label of the nearest example</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> Ypred</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="the-choice-of-distance" class="level2">
+<h2 class="anchored" data-anchor-id="the-choice-of-distance">The choice of distance</h2>
+</section>
+</section>
+<section id="k---nearest-neighbor-classifier" class="level1">
+<h1>k - Nearest Neighbor Classifier</h1>
+<p>The idea: instead of finding the single closest image in the training set, we will find the top <strong>k</strong> closest images, and have them vote on the label of the test image. In particular, when <em>k=1</em>, we recover the NN classifier. Intuitively, higher values of <strong>k</strong> have smoothing effect that makes the classifier more resistant to outliers:</p>
+<p><img src="Pasted image 20250507141512.png" class="img-fluid"></p>
+<p>An&nbsp;example&nbsp;of&nbsp;the&nbsp;difference&nbsp;between&nbsp;Nearest&nbsp;Neighbor&nbsp;and&nbsp;a&nbsp;5-Nearest&nbsp;Neighbor&nbsp;classifier,&nbsp;using&nbsp;2-dimensional&nbsp;points&nbsp;and&nbsp;3&nbsp;classes&nbsp;(red,&nbsp;blue,&nbsp;green).&nbsp;The&nbsp;colored&nbsp;regions&nbsp;show&nbsp;the&nbsp;<strong>decision&nbsp;boundaries</strong>&nbsp;induced&nbsp;by&nbsp;the&nbsp;classifier&nbsp;with&nbsp;an&nbsp;L2&nbsp;distance.&nbsp;The&nbsp;white&nbsp;regions&nbsp;show&nbsp;points&nbsp;that&nbsp;are&nbsp;ambiguously&nbsp;classified&nbsp;(i.e.&nbsp;class&nbsp;votes&nbsp;are&nbsp;tied&nbsp;for&nbsp;at&nbsp;least&nbsp;two&nbsp;classes).&nbsp;Notice&nbsp;that&nbsp;in&nbsp;the&nbsp;case&nbsp;of&nbsp;a&nbsp;NN&nbsp;classifier,&nbsp;outlier&nbsp;datapoints&nbsp;(e.g.&nbsp;green&nbsp;point&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;a&nbsp;cloud&nbsp;of&nbsp;blue&nbsp;points)&nbsp;create&nbsp;small&nbsp;islands&nbsp;of&nbsp;likely&nbsp;incorrect&nbsp;predictions,&nbsp;while&nbsp;the&nbsp;5-NN&nbsp;classifier&nbsp;smooths&nbsp;over&nbsp;these&nbsp;irregularities,&nbsp;likely&nbsp;leading&nbsp;to&nbsp;better&nbsp;<strong>generalization</strong>&nbsp;on&nbsp;the&nbsp;test&nbsp;data&nbsp;(not&nbsp;shown).&nbsp;Also&nbsp;note&nbsp;that&nbsp;the&nbsp;gray&nbsp;regions&nbsp;in&nbsp;the&nbsp;5-NN&nbsp;image&nbsp;are&nbsp;caused&nbsp;by&nbsp;ties&nbsp;in&nbsp;the&nbsp;votes&nbsp;among&nbsp;the&nbsp;nearest&nbsp;neighbors&nbsp;(e.g.&nbsp;2&nbsp;neighbors&nbsp;are&nbsp;red,&nbsp;next&nbsp;two&nbsp;neighbors&nbsp;are&nbsp;blue,&nbsp;last&nbsp;neighbor&nbsp;is&nbsp;green).</p>
+</section>
+<section id="validation-sets-for-hyperparameter-tunning." class="level1">
+<h1>Validation sets for Hyperparameter tunning.</h1>
+<p>We saw that there are many different distance functions we could have used: L1 norm, L2. norm, there are many other choices we didn’t even consider (e.g.&nbsp;dot products). These choices are called <strong>hyperparameters</strong> nd they come up very often in the design of many ML algorithms that learn from data. It’s often not obvious what values/settings one should choose.</p>
+<p>We might be tempted to suggest what we should try out many different values and see what work bests. That is a fine idea and that’s indeed what we will do, but this must be done very carefully. In particular, <strong>we cannot use the test set for the purpose of tweaking hyperparameters</strong>. Whenever we’re designing ML algorithms, we should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that we may tune our hyperparameters to work well on the test set, but if we were to deploy our model we could see a significantly reduced performance. in practice, we would say that we <strong>overfit</strong> to the test set. Another way of looking at it is that if we tune</p>
 
 
 </section>

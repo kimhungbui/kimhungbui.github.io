@@ -10,7 +10,25 @@
 <atom:link href="https://kimhungbui.github.io/programming.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Tue, 15 Apr 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 07 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Role of Parallel Computing</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/parallel-computing/chapter1.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>parallel</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/parallel-computing/chapter1.html</guid>
+  <pubDate>Wed, 07 May 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Count good triplets</title>
   <dc:creator>Hung </dc:creator>
@@ -429,7 +447,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="a0184392" class="cell" data-execution_count="1">
+<div id="c7f5010a" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
@@ -506,193 +524,6 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-maximum-subarray/</guid>
   <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Image classification</title>
-  <link>https://kimhungbui.github.io/programming/convolution/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="image-classification" class="level1">
-<h1>Image Classification</h1>
-<p>This is the task of assigning an input image one label from a <em>fixed categories</em>. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, many other seemingly distinct CV tasks (such as object detection, segmentation) can be reduced to image classification.</p>
-<p><strong>Example</strong>: In the image blow in image classification model takes a single image and assigns probabilities to 4 label {cat, dog, hat, mug}. Computer view a image as an one large 3-dimensional array of numbers. In this example, the cat image is 248 pixel wide, 400 pixel tall, and has three color channel Red, Green, Blue. Therefore, the image consists of <img src="https://latex.codecogs.com/png.latex?248%20%5Ctimes%20400%20%5Ctimes%203"> numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is turn this quarter of a million numbers into a single label, such as “cat”. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327230513.png" class="img-fluid"></p>
-<p><strong>Challenges:</strong> Since this task of recognizing a visual concept (e.g.&nbsp;cat) is relatively trivial for human to perform, it is worth considering the challenges involved from the perspective of a CV algorithm. As we present list of challenges below.</p>
-<ul>
-<li><strong>Viewpoint variation:</strong> A single instance of an object can be oriented in many ways with respect to the camera.</li>
-<li><strong>Scale variation:</strong> Visual classes often exhibit variation of their size (size in the real world, <em>not only</em> in terms of their extent in the image)</li>
-<li><strong>Deformation:</strong> Many objects of interest are not rigid bodies and can be deformed in extremes ways.</li>
-<li><strong>Occlusion</strong>: The objects of interest can be occluded. Sometimes only a small portion of an object (as little as few pixels) could be visible.</li>
-<li><strong>Illumination conditions:</strong> The effect of illumination are drastic on the pixel level.</li>
-<li><strong>Background clutter:</strong> The objects of interest may <em>blend</em> into their environment, making them hard to identify.</li>
-<li><strong>Intra-class variation:</strong> The classes of interest can be often be relatively broad, such as <em>chair</em>. Their are many different types of these objects, each with their own appearance. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327235749.png" class="img-fluid"></li>
-</ul>
-<p>A good image classification model must be invariant to the cross product of all these variations, while simultaneously retaining sensitivity to the inter-class variations.</p>
-<ol type="1">
-<li>Cross product of variations This refers to the <strong>combination of all possible variations</strong> (e.g.&nbsp;viewpoint, scale, deformation, occlusion, illumination, etc.) that can occur <strong>within a class</strong>. The term “cross production” here is metaphorical, inpsired by the mathematical concept of a Cartesian product, which generate all possible combinations of elements from multiple sets.
-<ul>
-<li><strong>Example</strong>: A chair might appear:
-<ul>
-<li>Rotate (viewpoint variation)</li>
-<li>Partially hidden (occlusion)</li>
-<li>Under bright sunlight (illumination)</li>
-<li>While being non-rigid (deformation) The model must recognize it as a “chair” <strong>despite this complex combination of variations</strong> <strong>Invariance Requirement:</strong> The model must be <strong>invariant</strong> to these variations, meaning its prediction for a class should not change even when factors alter the object’s appearance.</li>
-</ul></li>
-</ul></li>
-<li><strong>Inter-class variation</strong> There are <strong>difference between distinct classes</strong> (e.g.&nbsp;chairs vs tables). A model must retain <strong>sensitivity</strong> to these differences to avoid confusing classes, even when they share superficial similarities.
-<ul>
-<li>Example: A “stool” (class: chair) and a “small table” (class: table) might both appear at similar scales or under similar lighting. The model must distinguish them based on defining feature (e.g.&nbsp;height, presence of a backrest).</li>
-<li>Sensitivity Requirement: The model must <strong>preserver discriminate features</strong> that separate classes, even when intra-class variations (e.g.&nbsp;deformation in chairs) are extreme. <strong>Data-driven approach</strong>: How might we go about writing an algorithm that can classify images into distinct categories? Unlike writing an algorithm for, for example, sorting a list of numbers, it is not obvious how one might write an algorithm for identifying cats in images. Therefore, instead of trying to specify what every one of the categories of interest look like directly in code, the approach that we will take is not unlike one we would take with a child: we’re going to provide the computer with many examples of each class and then develop learning algorithms that look at these examples and learn about the visual appearance of each class. This approach is referred to as a <em>data-driven approach</em>, since it relies on first accumulating a <em>training dataset</em> of labeled images. Here is an example of what such a dataset might look like:</li>
-</ul></li>
-</ol>
-<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328000317.png" class="img-fluid"></p>
-<p><strong>The image classification pipeline</strong> We’ve seen that the task in Image Classification is to taken an array of pixels that represents a single image and assign a label to it. Our complete pipeline can be formalized as follows: - <strong>Input:</strong> Our input consists of a set of <em>N</em> images, each labeled with one of <em>K</em> different classes. We refer to this data as the <em>learning set</em>. - <strong>Learning:</strong> Our task is to use the training set to learn what every one of the classes looks like. We refer to this step as <em>training a classifier</em>, or <em>learning a model</em>. - <strong>Evaluation:</strong> In the end, we evaluate the quality of the classifier by asking it to predict labels for a new set of images that it has never seen before. We will then compare the true labels of these images to the ones predicted by the classifier. Intuitively, we’re hoping that a lot of the predictions match up with the true answers (which we call the <em>ground truth</em>).</p>
-</section>
-<section id="nearest-neighbor-classifier" class="level1">
-<h1>Nearest Neighbor Classifier</h1>
-<p>As our first approach, we will develop what we call a <strong>Nearest Neighbor Classifier</strong>. This classifier has nothing to do with Convolution Neural Networks and it is very rarely used in practice, but i will allow us to get an ideal about the basic approach to an image classification.</p>
-<p><strong>Example image classification dataset: CIFAR-10</strong>. <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>This dataset consist of 10 classes (for example <em>airplane, automobile, bird, etc</em>). These 60,000 images are partitioned into a training set of 50,000 images and a test set of 10,000 images. In the image below we can see 10 random example images from each one of the 10 classes.</p>
-<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328001115.png" class="img-fluid"> Left:&nbsp;Example&nbsp;images&nbsp;from&nbsp;the&nbsp;<a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>.&nbsp;Right:&nbsp;first&nbsp;column&nbsp;shows&nbsp;a&nbsp;few&nbsp;test&nbsp;images&nbsp;and&nbsp;next&nbsp;to&nbsp;each&nbsp;we&nbsp;show&nbsp;the&nbsp;top&nbsp;10&nbsp;nearest&nbsp;neighbors&nbsp;in&nbsp;the&nbsp;training&nbsp;set&nbsp;according&nbsp;to&nbsp;pixel-wise&nbsp;difference.</p>
-<p>Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 image for every one of the labels), and we wish to label the remaining 10,000. The nearest neighbor classifier will take a test image, compare it to every single one of the training images, and predict the label of the closest training image. In the image above and on the right we can see an example result of such a procedure for 10 example test images. Notice that in only about 3 of 10 examples of an image of the same class is retrieved, while in other 7 examples this is not the case. For example, in the 8th row the nearest training image to the horse head is a red car, presumably due to the strong black background. As a result, this image of a horse would in this case be mislabeled as a car.</p>
-<p>One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors <img src="https://latex.codecogs.com/png.latex?I_1,%20I_2">, a reasonable choice for comparing them might be the <strong>L1 distance</strong>.</p>
-<p><img src="https://latex.codecogs.com/png.latex?d_1(I_1,%20I_2)=%5CSigma_p%20%7CI_1%5Ep%20-%20I_2%5Ep%7C"> Where the sum is taken over all pixels. Here is the procedure visualized:</p>
-<p>![[nneg.jpeg]]</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> numpy</span>
-<span id="cb1-2"></span>
-<span id="cb1-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">class</span> NearestNeighbor(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">object</span>):</span>
-<span id="cb1-4">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">__init__</span>(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>):</span>
-<span id="cb1-5">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">pass</span></span>
-<span id="cb1-6">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> train(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, X, y):</span>
-<span id="cb1-7">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
-background-color: null;
-font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">imes D where each row is an example. Y is 1-dimension of size N"""</span></span>
-<span id="cb1-8">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># the nearest neighbor classifier simpply remembers all the training data</span></span>
-<span id="cb1-9">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> X</span>
-<span id="cb1-10">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.ytr <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> y</span>
-<span id="cb1-11">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> predict(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, X):</span>
-<span id="cb1-12">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
-background-color: null;
-font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">imes D where each row is an example we wish to predict label for"""</span></span>
-<span id="cb1-13">        num_test <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> X.shape[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>]</span>
-<span id="cb1-14">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># lets make sure that the output type matches the input type</span></span>
-<span id="cb1-15">        Ypred <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.zeros(num_test, dtype <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.dtype)</span>
-<span id="cb1-16">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># loop over all test rows</span></span>
-<span id="cb1-17">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(num_test):</span>
-<span id="cb1-18">            <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># find the nearest training image to the i'th test image</span></span>
-<span id="cb1-19">            <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># using the L1 distance (sum of absolute value differences)</span></span>
-<span id="cb1-20">            distances <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">sum</span>(np.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">abs</span>(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> X[i,:]), axis <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb1-21">            min_index <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.argmin(distances) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># get the index with smallest distance</span></span>
-<span id="cb1-22">            Ypred[i] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.ytr[min_index] <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># predict the label of the nearest example</span></span>
-<span id="cb1-23">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> Ypred</span></code></pre></div>
-
-
-</section>
-
- ]]></description>
-  <guid>https://kimhungbui.github.io/programming/convolution/</guid>
-  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Disjoint Set Union</title>
@@ -1190,63 +1021,6 @@ font-style: inherit;">}</span></span></code></pre></div>
   <media:content url="https://kimhungbui.github.io/programming/disjoint-set-union/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Minimum Cost Walk in Weighted Graph</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>There is an undirected weighted graph with n vertices labeled from 0 to n - 1.</p>
-<p>You are given the integer n and an array edges, where edges[i] = [ui, vi, wi] indicates that there is an edge between vertices ui and vi with a weight of wi.</p>
-<p>A walk on a graph is a sequence of vertices and edges. The walk starts and ends with a vertex, and each edge connects the vertex that comes before it and the vertex that comes after it. It’s important to note that a walk may visit the same edge or vertex more than once.</p>
-<p>The cost of a walk starting at node u and ending at node v is defined as the bitwise AND of the weights of the edges traversed during the walk. In other words, if the sequence of edge weights encountered during the walk is w0, w1, w2, …, wk, then the cost is calculated as w0 &amp; w1 &amp; w2 &amp; … &amp; wk, where &amp; denotes the bitwise AND operator.</p>
-<p>You are also given a 2D array query, where query[i] = [si, ti]. For each query, you need to find the minimum cost of the walk starting at vertex si and ending at vertex ti. If there exists no such walk, the answer is -1.</p>
-<p>Return the array answer, where answer[i] denotes the minimum cost of a walk for query i.</p>
-<p>Example 1:</p>
-<p>Input: <code>n = 5</code>, edges = <code>[[0,1,7],[1,3,7],[1,2,1]]</code>, query = <code>[[0,3],[3,4]]</code></p>
-<p>Output: <code>[1,-1]</code></p>
-<p>Explanation:</p>
-<p>To achieve the cost of 1 in the first query, we need to move on the following edges: 0-&gt;1 (weight 7), 1-&gt;2 (weight 1), 2-&gt;1 (weight 1), 1-&gt;3 (weight 7).</p>
-<p>In the second query, there is no walk between nodes 3 and 4, so the answer is -1.</p>
-<p>Example 2:</p>
-<p>Input: n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]</p>
-<p>Output: [0]</p>
-<p>Explanation:</p>
-<p>To achieve the cost of 0 in the first query, we need to move on the following edges: 1-&gt;2 (weight 1), 2-&gt;1 (weight 6), 1-&gt;2 (weight 1).</p>
-<p>Constraints:</p>
-<pre><code>2 &lt;= n &lt;= 105
-0 &lt;= edges.length &lt;= 105
-edges[i].length == 3
-0 &lt;= ui, vi &lt;= n - 1
-ui != vi
-0 &lt;= wi &lt;= 105
-1 &lt;= query.length &lt;= 105
-query[i].length == 2
-0 &lt;= si, ti &lt;= n - 1
-si != ti</code></pre>
-</section>
-<section id="analysis" class="level1">
-<h1>Analysis</h1>
-<p>Let’s determine when the answer to a query is <code>-1</code>. This happens when no walk exists between the two nodes, meaning they belong to different connected components.</p>
-<p>Now, suppose the two nodes belong to the same connected component. What is the minimum cost of a walk connecting them? As mentioned, the optimal walk includes as many edges as possible. Since revisiting an edge does not affect the total score, we can freely traverse the edges of the component, meaning that we can move back and forth to reach all of them. Therefore, the best way to achieve the lowest cost is to visit every edge in the component.</p>
-<p>To efficiently find and process the connected components of the graph, we use the Disjoint Set (Union-Find) data structure. When we Union two nodes, we merge their entire groups, as now a path exists between every node in one group and every node in the other. To maintain efficiency, the root of the larger group is chosen as the representative of the merge group. This minimizes the time needed for future Find operations by reducing the number of steps required to reach the current representative.</p>
-
-
-</section>
-
- ]]></description>
-  <category>programming</category>
-  <category>data structure</category>
-  <category>DSU</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</guid>
-  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/dundee.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
   <title>Docker basics</title>
   <dc:creator>Kim Hung Bui</dc:creator>
   <link>https://kimhungbui.github.io/programming/docker-intro/</link>
@@ -1429,6 +1203,285 @@ font-style: inherit;">8</span> minutes ago              vibrant_bell</span></cod
   <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>Image classification</title>
+  <link>https://kimhungbui.github.io/programming/convolution/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="image-classification" class="level1">
+<h1>Image Classification</h1>
+<p>This is the task of assigning an input image one label from a <em>fixed categories</em>. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, many other seemingly distinct CV tasks (such as object detection, segmentation) can be reduced to image classification.</p>
+<p><strong>Example</strong>: In the image blow in image classification model takes a single image and assigns probabilities to 4 label {cat, dog, hat, mug}. Computer view a image as an one large 3-dimensional array of numbers. In this example, the cat image is 248 pixel wide, 400 pixel tall, and has three color channel Red, Green, Blue. Therefore, the image consists of <img src="https://latex.codecogs.com/png.latex?248%20%5Ctimes%20400%20%5Ctimes%203"> numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is turn this quarter of a million numbers into a single label, such as “cat”. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327230513.png" class="img-fluid"></p>
+<p><strong>Challenges:</strong> Since this task of recognizing a visual concept (e.g.&nbsp;cat) is relatively trivial for human to perform, it is worth considering the challenges involved from the perspective of a CV algorithm. As we present list of challenges below.</p>
+<ul>
+<li><strong>Viewpoint variation:</strong> A single instance of an object can be oriented in many ways with respect to the camera.</li>
+<li><strong>Scale variation:</strong> Visual classes often exhibit variation of their size (size in the real world, <em>not only</em> in terms of their extent in the image)</li>
+<li><strong>Deformation:</strong> Many objects of interest are not rigid bodies and can be deformed in extremes ways.</li>
+<li><strong>Occlusion</strong>: The objects of interest can be occluded. Sometimes only a small portion of an object (as little as few pixels) could be visible.</li>
+<li><strong>Illumination conditions:</strong> The effect of illumination are drastic on the pixel level.</li>
+<li><strong>Background clutter:</strong> The objects of interest may <em>blend</em> into their environment, making them hard to identify.</li>
+<li><strong>Intra-class variation:</strong> The classes of interest can be often be relatively broad, such as <em>chair</em>. Their are many different types of these objects, each with their own appearance. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327235749.png" class="img-fluid"></li>
+</ul>
+<p>A good image classification model must be invariant to the cross product of all these variations, while simultaneously retaining sensitivity to the inter-class variations.</p>
+<ol type="1">
+<li>Cross product of variations This refers to the <strong>combination of all possible variations</strong> (e.g.&nbsp;viewpoint, scale, deformation, occlusion, illumination, etc.) that can occur <strong>within a class</strong>. The term “cross production” here is metaphorical, inpsired by the mathematical concept of a Cartesian product, which generate all possible combinations of elements from multiple sets.
+<ul>
+<li><strong>Example</strong>: A chair might appear:
+<ul>
+<li>Rotate (viewpoint variation)</li>
+<li>Partially hidden (occlusion)</li>
+<li>Under bright sunlight (illumination)</li>
+<li>While being non-rigid (deformation) The model must recognize it as a “chair” <strong>despite this complex combination of variations</strong> <strong>Invariance Requirement:</strong> The model must be <strong>invariant</strong> to these variations, meaning its prediction for a class should not change even when factors alter the object’s appearance.</li>
+</ul></li>
+</ul></li>
+<li><strong>Inter-class variation</strong> There are <strong>difference between distinct classes</strong> (e.g.&nbsp;chairs vs tables). A model must retain <strong>sensitivity</strong> to these differences to avoid confusing classes, even when they share superficial similarities.
+<ul>
+<li>Example: A “stool” (class: chair) and a “small table” (class: table) might both appear at similar scales or under similar lighting. The model must distinguish them based on defining feature (e.g.&nbsp;height, presence of a backrest).</li>
+<li>Sensitivity Requirement: The model must <strong>preserver discriminate features</strong> that separate classes, even when intra-class variations (e.g.&nbsp;deformation in chairs) are extreme. <strong>Data-driven approach</strong>: How might we go about writing an algorithm that can classify images into distinct categories? Unlike writing an algorithm for, for example, sorting a list of numbers, it is not obvious how one might write an algorithm for identifying cats in images. Therefore, instead of trying to specify what every one of the categories of interest look like directly in code, the approach that we will take is not unlike one we would take with a child: we’re going to provide the computer with many examples of each class and then develop learning algorithms that look at these examples and learn about the visual appearance of each class. This approach is referred to as a <em>data-driven approach</em>, since it relies on first accumulating a <em>training dataset</em> of labeled images. Here is an example of what such a dataset might look like:</li>
+</ul></li>
+</ol>
+<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328000317.png" class="img-fluid"></p>
+<p><strong>The image classification pipeline</strong> We’ve seen that the task in Image Classification is to taken an array of pixels that represents a single image and assign a label to it. Our complete pipeline can be formalized as follows: - <strong>Input:</strong> Our input consists of a set of <em>N</em> images, each labeled with one of <em>K</em> different classes. We refer to this data as the <em>learning set</em>. - <strong>Learning:</strong> Our task is to use the training set to learn what every one of the classes looks like. We refer to this step as <em>training a classifier</em>, or <em>learning a model</em>. - <strong>Evaluation:</strong> In the end, we evaluate the quality of the classifier by asking it to predict labels for a new set of images that it has never seen before. We will then compare the true labels of these images to the ones predicted by the classifier. Intuitively, we’re hoping that a lot of the predictions match up with the true answers (which we call the <em>ground truth</em>).</p>
+</section>
+<section id="nearest-neighbor-classifier" class="level1">
+<h1>Nearest Neighbor Classifier</h1>
+<p>As our first approach, we will develop what we call a <strong>Nearest Neighbor Classifier</strong>. This classifier has nothing to do with Convolution Neural Networks and it is very rarely used in practice, but i will allow us to get an ideal about the basic approach to an image classification.</p>
+<p><strong>Example image classification dataset: CIFAR-10</strong>. <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>This dataset consist of 10 classes (for example <em>airplane, automobile, bird, etc</em>). These 60,000 images are partitioned into a training set of 50,000 images and a test set of 10,000 images. In the image below we can see 10 random example images from each one of the 10 classes.</p>
+<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328001115.png" class="img-fluid"> Left:&nbsp;Example&nbsp;images&nbsp;from&nbsp;the&nbsp;<a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>.&nbsp;Right:&nbsp;first&nbsp;column&nbsp;shows&nbsp;a&nbsp;few&nbsp;test&nbsp;images&nbsp;and&nbsp;next&nbsp;to&nbsp;each&nbsp;we&nbsp;show&nbsp;the&nbsp;top&nbsp;10&nbsp;nearest&nbsp;neighbors&nbsp;in&nbsp;the&nbsp;training&nbsp;set&nbsp;according&nbsp;to&nbsp;pixel-wise&nbsp;difference.</p>
+<p>Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 image for every one of the labels), and we wish to label the remaining 10,000. The nearest neighbor classifier will take a test image, compare it to every single one of the training images, and predict the label of the closest training image. In the image above and on the right we can see an example result of such a procedure for 10 example test images. Notice that in only about 3 of 10 examples of an image of the same class is retrieved, while in other 7 examples this is not the case. For example, in the 8th row the nearest training image to the horse head is a red car, presumably due to the strong black background. As a result, this image of a horse would in this case be mislabeled as a car.</p>
+<p>One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors <img src="https://latex.codecogs.com/png.latex?I_1,%20I_2">, a reasonable choice for comparing them might be the <strong>L1 distance</strong>.</p>
+<p><img src="https://latex.codecogs.com/png.latex?d_1(I_1,%20I_2)=%5CSigma_p%20%7CI_1%5Ep%20-%20I_2%5Ep%7C"> Where the sum is taken over all pixels. Here is the procedure visualized:</p>
+<p>![[nneg.jpeg]]</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> numpy</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> NearestNeighbor(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">object</span>):</span>
+<span id="cb1-4">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__init__</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>):</span>
+<span id="cb1-5">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">pass</span></span>
+<span id="cb1-6">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> train(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, X, y):</span>
+<span id="cb1-7">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">imes D where each row is an example. Y is 1-dimension of size N"""</span></span>
+<span id="cb1-8">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># the nearest neighbor classifier simpply remembers all the training data</span></span>
+<span id="cb1-9">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> X</span>
+<span id="cb1-10">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.ytr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> y</span>
+<span id="cb1-11">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> predict(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, X):</span>
+<span id="cb1-12">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">imes D where each row is an example we wish to predict label for"""</span></span>
+<span id="cb1-13">        num_test <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> X.shape[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb1-14">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># lets make sure that the output type matches the input type</span></span>
+<span id="cb1-15">        Ypred <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.zeros(num_test, dtype <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.dtype)</span>
+<span id="cb1-16">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># loop over all test rows</span></span>
+<span id="cb1-17">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(num_test):</span>
+<span id="cb1-18">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># find the nearest training image to the i'th test image</span></span>
+<span id="cb1-19">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># using the L1 distance (sum of absolute value differences)</span></span>
+<span id="cb1-20">            distances <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">abs</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> X[i,:]), axis <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-21">            min_index <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.argmin(distances) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># get the index with smallest distance</span></span>
+<span id="cb1-22">            Ypred[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.ytr[min_index] <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># predict the label of the nearest example</span></span>
+<span id="cb1-23">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> Ypred</span></code></pre></div>
+<section id="the-choice-of-distance" class="level2">
+<h2 class="anchored" data-anchor-id="the-choice-of-distance">The choice of distance</h2>
+</section>
+</section>
+<section id="k---nearest-neighbor-classifier" class="level1">
+<h1>k - Nearest Neighbor Classifier</h1>
+<p>The idea: instead of finding the single closest image in the training set, we will find the top <strong>k</strong> closest images, and have them vote on the label of the test image. In particular, when <em>k=1</em>, we recover the NN classifier. Intuitively, higher values of <strong>k</strong> have smoothing effect that makes the classifier more resistant to outliers:</p>
+<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250507141512.png" class="img-fluid"></p>
+<p>An&nbsp;example&nbsp;of&nbsp;the&nbsp;difference&nbsp;between&nbsp;Nearest&nbsp;Neighbor&nbsp;and&nbsp;a&nbsp;5-Nearest&nbsp;Neighbor&nbsp;classifier,&nbsp;using&nbsp;2-dimensional&nbsp;points&nbsp;and&nbsp;3&nbsp;classes&nbsp;(red,&nbsp;blue,&nbsp;green).&nbsp;The&nbsp;colored&nbsp;regions&nbsp;show&nbsp;the&nbsp;<strong>decision&nbsp;boundaries</strong>&nbsp;induced&nbsp;by&nbsp;the&nbsp;classifier&nbsp;with&nbsp;an&nbsp;L2&nbsp;distance.&nbsp;The&nbsp;white&nbsp;regions&nbsp;show&nbsp;points&nbsp;that&nbsp;are&nbsp;ambiguously&nbsp;classified&nbsp;(i.e.&nbsp;class&nbsp;votes&nbsp;are&nbsp;tied&nbsp;for&nbsp;at&nbsp;least&nbsp;two&nbsp;classes).&nbsp;Notice&nbsp;that&nbsp;in&nbsp;the&nbsp;case&nbsp;of&nbsp;a&nbsp;NN&nbsp;classifier,&nbsp;outlier&nbsp;datapoints&nbsp;(e.g.&nbsp;green&nbsp;point&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;a&nbsp;cloud&nbsp;of&nbsp;blue&nbsp;points)&nbsp;create&nbsp;small&nbsp;islands&nbsp;of&nbsp;likely&nbsp;incorrect&nbsp;predictions,&nbsp;while&nbsp;the&nbsp;5-NN&nbsp;classifier&nbsp;smooths&nbsp;over&nbsp;these&nbsp;irregularities,&nbsp;likely&nbsp;leading&nbsp;to&nbsp;better&nbsp;<strong>generalization</strong>&nbsp;on&nbsp;the&nbsp;test&nbsp;data&nbsp;(not&nbsp;shown).&nbsp;Also&nbsp;note&nbsp;that&nbsp;the&nbsp;gray&nbsp;regions&nbsp;in&nbsp;the&nbsp;5-NN&nbsp;image&nbsp;are&nbsp;caused&nbsp;by&nbsp;ties&nbsp;in&nbsp;the&nbsp;votes&nbsp;among&nbsp;the&nbsp;nearest&nbsp;neighbors&nbsp;(e.g.&nbsp;2&nbsp;neighbors&nbsp;are&nbsp;red,&nbsp;next&nbsp;two&nbsp;neighbors&nbsp;are&nbsp;blue,&nbsp;last&nbsp;neighbor&nbsp;is&nbsp;green).</p>
+</section>
+<section id="validation-sets-for-hyperparameter-tunning." class="level1">
+<h1>Validation sets for Hyperparameter tunning.</h1>
+<p>We saw that there are many different distance functions we could have used: L1 norm, L2. norm, there are many other choices we didn’t even consider (e.g.&nbsp;dot products). These choices are called <strong>hyperparameters</strong> nd they come up very often in the design of many ML algorithms that learn from data. It’s often not obvious what values/settings one should choose.</p>
+<p>We might be tempted to suggest what we should try out many different values and see what work bests. That is a fine idea and that’s indeed what we will do, but this must be done very carefully. In particular, <strong>we cannot use the test set for the purpose of tweaking hyperparameters</strong>. Whenever we’re designing ML algorithms, we should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that we may tune our hyperparameters to work well on the test set, but if we were to deploy our model we could see a significantly reduced performance. in practice, we would say that we <strong>overfit</strong> to the test set. Another way of looking at it is that if we tune</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://kimhungbui.github.io/programming/convolution/</guid>
+  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Minimum Cost Walk in Weighted Graph</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>There is an undirected weighted graph with n vertices labeled from 0 to n - 1.</p>
+<p>You are given the integer n and an array edges, where edges[i] = [ui, vi, wi] indicates that there is an edge between vertices ui and vi with a weight of wi.</p>
+<p>A walk on a graph is a sequence of vertices and edges. The walk starts and ends with a vertex, and each edge connects the vertex that comes before it and the vertex that comes after it. It’s important to note that a walk may visit the same edge or vertex more than once.</p>
+<p>The cost of a walk starting at node u and ending at node v is defined as the bitwise AND of the weights of the edges traversed during the walk. In other words, if the sequence of edge weights encountered during the walk is w0, w1, w2, …, wk, then the cost is calculated as w0 &amp; w1 &amp; w2 &amp; … &amp; wk, where &amp; denotes the bitwise AND operator.</p>
+<p>You are also given a 2D array query, where query[i] = [si, ti]. For each query, you need to find the minimum cost of the walk starting at vertex si and ending at vertex ti. If there exists no such walk, the answer is -1.</p>
+<p>Return the array answer, where answer[i] denotes the minimum cost of a walk for query i.</p>
+<p>Example 1:</p>
+<p>Input: <code>n = 5</code>, edges = <code>[[0,1,7],[1,3,7],[1,2,1]]</code>, query = <code>[[0,3],[3,4]]</code></p>
+<p>Output: <code>[1,-1]</code></p>
+<p>Explanation:</p>
+<p>To achieve the cost of 1 in the first query, we need to move on the following edges: 0-&gt;1 (weight 7), 1-&gt;2 (weight 1), 2-&gt;1 (weight 1), 1-&gt;3 (weight 7).</p>
+<p>In the second query, there is no walk between nodes 3 and 4, so the answer is -1.</p>
+<p>Example 2:</p>
+<p>Input: n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]</p>
+<p>Output: [0]</p>
+<p>Explanation:</p>
+<p>To achieve the cost of 0 in the first query, we need to move on the following edges: 1-&gt;2 (weight 1), 2-&gt;1 (weight 6), 1-&gt;2 (weight 1).</p>
+<p>Constraints:</p>
+<pre><code>2 &lt;= n &lt;= 105
+0 &lt;= edges.length &lt;= 105
+edges[i].length == 3
+0 &lt;= ui, vi &lt;= n - 1
+ui != vi
+0 &lt;= wi &lt;= 105
+1 &lt;= query.length &lt;= 105
+query[i].length == 2
+0 &lt;= si, ti &lt;= n - 1
+si != ti</code></pre>
+</section>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Let’s determine when the answer to a query is <code>-1</code>. This happens when no walk exists between the two nodes, meaning they belong to different connected components.</p>
+<p>Now, suppose the two nodes belong to the same connected component. What is the minimum cost of a walk connecting them? As mentioned, the optimal walk includes as many edges as possible. Since revisiting an edge does not affect the total score, we can freely traverse the edges of the component, meaning that we can move back and forth to reach all of them. Therefore, the best way to achieve the lowest cost is to visit every edge in the component.</p>
+<p>To efficiently find and process the connected components of the graph, we use the Disjoint Set (Union-Find) data structure. When we Union two nodes, we merge their entire groups, as now a path exists between every node in one group and every node in the other. To maintain efficiency, the root of the larger group is chosen as the representative of the merge group. This minimizes the time needed for future Find operations by reducing the number of steps required to reach the current representative.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>programming</category>
+  <category>data structure</category>
+  <category>DSU</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</guid>
+  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/dundee.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Parity invariance</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Parity invariance means that the number of times a position is flipped determines its final value. If a position is flipped an odd number of times, its value changes, but if it is flipped an even number of times, it stays the same.</p>
+<p>Consider the array <code>[1, 0, 0, 1, 0, 1, 1]</code>. We start by flipping three consecutive elements to try and transform all <code>0</code>s into <code>1</code>s. First, flipping the subarray <code>[0, 0, 1]</code> at indices <code>1..3</code> changes the array to <code>[1, 1, 1, 0, 0, 1, 1]</code>. Then, flipping <code>[0, 0, 1]</code> at indices <code>[3..5]</code> gives <code>[1, 1, 1, 1, 1, 0, 1]</code>. Finally, flipping <code>[1, 0, 1]</code> at indices <code>[1, 0, 1]</code> at indices <code>4..6</code> results in <code>[1, 1, 1, 1, 1, 1, 0, 1, 0]</code>.</p>
+<p>At this point, we see that the <code>0</code>s at positions <code>4</code> and <code>6</code> remain, and there is no way to flip them without also flipping the other elements. Since we can only flip three elements at a time, we cannot isolate these <code>0</code>s in a way that allow us to change them to <code>1</code>s. This happens because these positions were flipped an even number of times, so they retain their original value. Because of this <strong>parity constraint</strong>, the transformation is impossible.</p>
+
+
+
+ ]]></description>
+  <category>bit manipulation</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</guid>
+  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
   <title>3191. Minimum Operations to Make Binary Array Elements Equal to One I</title>
   <dc:creator>Hung </dc:creator>
   <link>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</link>
@@ -1468,27 +1521,6 @@ Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,
   <category>leetcode</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</guid>
-  <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Parity invariance</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Parity invariance means that the number of times a position is flipped determines its final value. If a position is flipped an odd number of times, its value changes, but if it is flipped an even number of times, it stays the same.</p>
-<p>Consider the array <code>[1, 0, 0, 1, 0, 1, 1]</code>. We start by flipping three consecutive elements to try and transform all <code>0</code>s into <code>1</code>s. First, flipping the subarray <code>[0, 0, 1]</code> at indices <code>1..3</code> changes the array to <code>[1, 1, 1, 0, 0, 1, 1]</code>. Then, flipping <code>[0, 0, 1]</code> at indices <code>[3..5]</code> gives <code>[1, 1, 1, 1, 1, 0, 1]</code>. Finally, flipping <code>[1, 0, 1]</code> at indices <code>[1, 0, 1]</code> at indices <code>4..6</code> results in <code>[1, 1, 1, 1, 1, 1, 0, 1, 0]</code>.</p>
-<p>At this point, we see that the <code>0</code>s at positions <code>4</code> and <code>6</code> remain, and there is no way to flip them without also flipping the other elements. Since we can only flip three elements at a time, we cannot isolate these <code>0</code>s in a way that allow us to change them to <code>1</code>s. This happens because these positions were flipped an even number of times, so they retain their original value. Because of this <strong>parity constraint</strong>, the transformation is impossible.</p>
-
-
-
- ]]></description>
-  <category>bit manipulation</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</guid>
   <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1678,349 +1710,6 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</guid>
   <pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Divide Array Into Equal Pairs</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Topic: <code>array, hash table, bit manipulation, counting</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are given an integer array nums consisting of <code>2 * n</code> integers.</p>
-<p>You need to divide nums into n pairs such that:</p>
-<pre><code>Each element belongs to exactly one pair.
-The elements present in a pair are equal.</code></pre>
-<p>Return true if nums can be divided into n pairs, otherwise return false.</p>
-<p>Example 1:</p>
-<ul>
-<li><p>Input: <code>nums = [3,2,3,2,2,2]</code></p></li>
-<li><p>Output: <code>true</code></p></li>
-<li><p>Explanation: <code>There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.</code></p></li>
-</ul>
-<p>Example 2:</p>
-<ul>
-<li>Input: <code>nums = [1,2,3,4]</code></li>
-<li>Output: <code>false</code></li>
-<li>Explanation: <code>There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.</code></li>
-</ul>
-<p>Constraints:</p>
-<ul>
-<li><code>nums.length == 2 * n</code></li>
-<li><code>1 &lt;= n &lt;= 500</code></li>
-<li><code>1 &lt;= nums[i] &lt;= 500</code></li>
-</ul>
-</section>
-<section id="approaches" class="level1">
-<h1>Approaches</h1>
-<section id="count-array" class="level2">
-<h2 class="anchored" data-anchor-id="count-array">Count array</h2>
-<p><code>nums</code> that have 2 * n intenger</p>
-<p>divide <code>nums</code> into n pairs</p>
-<p>1 element in 1 pair</p>
-<p>elements in pair is equal</p>
-<p>return true if can devide to n pair,</p>
-<p>So, we can use count array</p>
-<pre><code>if all even \`return true\`
-
-else \`return false\`</code></pre>
-<p>TC: O(n)</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">class</span> Solution:</span>
-<span id="cb3-2">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb3-3">    ans <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span></span>
-<span id="cb3-4">    count_array <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">500</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb3-5">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums:</span>
-<span id="cb3-6">        count_array[num] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb3-7">    <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(count_array)</span>
-<span id="cb3-8">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> count_array:</span>
-<span id="cb3-9">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> num <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>:</span>
-<span id="cb3-10">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span></span>
-<span id="cb3-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> ans</span></code></pre></div>
-</section>
-<section id="map" class="level2">
-<h2 class="anchored" data-anchor-id="map">Map</h2>
-<p>like approach 1, we can use map for that (better code)</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb4-2">        frequency <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Counter(nums)</span>
-<span id="cb4-3">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># check consecutive pairs in sorted array</span></span>
-<span id="cb4-4">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">all</span>(count <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> count <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> frequency.values())</span></code></pre></div>
-</section>
-<section id="bool-array" class="level2">
-<h2 class="anchored" data-anchor-id="bool-array">Bool array</h2>
-<p>an improve, use boolean array</p>
-<p>O(n)</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb5-2"></span>
-<span id="cb5-3">        max_num <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">max</span>(nums)</span>
-<span id="cb5-4"></span>
-<span id="cb5-5">        needs_pair <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> (max_num <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb5-6"></span>
-<span id="cb5-7">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums:</span>
-<span id="cb5-8">            needs_pair[num] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">not</span> needs_pair[num]</span>
-<span id="cb5-9"></span>
-<span id="cb5-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">not</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">any</span>(needs_pair[num] <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums)</span></code></pre></div>
-</section>
-<section id="sorted" class="level2">
-<h2 class="anchored" data-anchor-id="sorted">Sorted</h2>
-<p>sorted that can have TC: O(nlogn)</p>
-<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb6-2">        nums.sort()</span>
-<span id="cb6-3">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># check consecutive pairs in sorted array</span></span>
-<span id="cb6-4">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">all</span>(nums[i] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> nums[i<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span> (<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(nums), <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>))</span></code></pre></div>
-</section>
-<section id="hash-set" class="level2">
-<h2 class="anchored" data-anchor-id="hash-set">Hash set</h2>
-<p>we can store a element when first meet it, and even get it, we remote from set</p>
-<p>when retrieve all, if set have element.</p>
-<p>hash set have TC of lookup, addition, removal in constant time.</p>
-<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb7-2">        unpaired <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">set</span>()</span>
-<span id="cb7-3"></span>
-<span id="cb7-4">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums:</span>
-<span id="cb7-5">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> unpaired:</span>
-<span id="cb7-6">                unpaired.remove(num)</span>
-<span id="cb7-7">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">else</span>:</span>
-<span id="cb7-8">                unpaired.add(num)</span>
-<span id="cb7-9">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">not</span> unpaired</span></code></pre></div>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</guid>
-  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How to approach most DP problems</title>
@@ -2511,6 +2200,349 @@ font-style: inherit;">return</span> prev1</span></code></pre></div>
   <category>leetcode</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Divide Array Into Equal Pairs</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>array, hash table, bit manipulation, counting</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are given an integer array nums consisting of <code>2 * n</code> integers.</p>
+<p>You need to divide nums into n pairs such that:</p>
+<pre><code>Each element belongs to exactly one pair.
+The elements present in a pair are equal.</code></pre>
+<p>Return true if nums can be divided into n pairs, otherwise return false.</p>
+<p>Example 1:</p>
+<ul>
+<li><p>Input: <code>nums = [3,2,3,2,2,2]</code></p></li>
+<li><p>Output: <code>true</code></p></li>
+<li><p>Explanation: <code>There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.</code></p></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,4]</code></li>
+<li>Output: <code>false</code></li>
+<li>Explanation: <code>There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.</code></li>
+</ul>
+<p>Constraints:</p>
+<ul>
+<li><code>nums.length == 2 * n</code></li>
+<li><code>1 &lt;= n &lt;= 500</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 500</code></li>
+</ul>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+<section id="count-array" class="level2">
+<h2 class="anchored" data-anchor-id="count-array">Count array</h2>
+<p><code>nums</code> that have 2 * n intenger</p>
+<p>divide <code>nums</code> into n pairs</p>
+<p>1 element in 1 pair</p>
+<p>elements in pair is equal</p>
+<p>return true if can devide to n pair,</p>
+<p>So, we can use count array</p>
+<pre><code>if all even \`return true\`
+
+else \`return false\`</code></pre>
+<p>TC: O(n)</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb3-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb3-3">    ans <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb3-4">    count_array <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-5">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb3-6">        count_array[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-7">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(count_array)</span>
+<span id="cb3-8">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> count_array:</span>
+<span id="cb3-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-10">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> ans</span></code></pre></div>
+</section>
+<section id="map" class="level2">
+<h2 class="anchored" data-anchor-id="map">Map</h2>
+<p>like approach 1, we can use map for that (better code)</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb4-2">        frequency <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Counter(nums)</span>
+<span id="cb4-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb4-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(count <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> count <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> frequency.values())</span></code></pre></div>
+</section>
+<section id="bool-array" class="level2">
+<h2 class="anchored" data-anchor-id="bool-array">Bool array</h2>
+<p>an improve, use boolean array</p>
+<p>O(n)</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb5-2"></span>
+<span id="cb5-3">        max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(nums)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5">        needs_pair <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb5-6"></span>
+<span id="cb5-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb5-8">            needs_pair[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> needs_pair[num]</span>
+<span id="cb5-9"></span>
+<span id="cb5-10">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">any</span>(needs_pair[num] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums)</span></code></pre></div>
+</section>
+<section id="sorted" class="level2">
+<h2 class="anchored" data-anchor-id="sorted">Sorted</h2>
+<p>sorted that can have TC: O(nlogn)</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb6-2">        nums.sort()</span>
+<span id="cb6-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb6-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(nums[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> nums[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>))</span></code></pre></div>
+</section>
+<section id="hash-set" class="level2">
+<h2 class="anchored" data-anchor-id="hash-set">Hash set</h2>
+<p>we can store a element when first meet it, and even get it, we remote from set</p>
+<p>when retrieve all, if set have element.</p>
+<p>hash set have TC of lookup, addition, removal in constant time.</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb7-2">        unpaired <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>()</span>
+<span id="cb7-3"></span>
+<span id="cb7-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb7-5">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> unpaired:</span>
+<span id="cb7-6">                unpaired.remove(num)</span>
+<span id="cb7-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb7-8">                unpaired.add(num)</span>
+<span id="cb7-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> unpaired</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</guid>
   <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
