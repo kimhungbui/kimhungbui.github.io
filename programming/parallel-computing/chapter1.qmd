@@ -1,0 +1,16 @@
+---
+title: Role of Parallel Computing
+
+lightbox: false
+description: introduction to parallel computing
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: 
+    affiliation-url: 
+date: 2025-05-07
+categories:
+  - parallel
+  - programming
+draft: false
+---

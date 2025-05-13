@@ -101,3 +101,20 @@ class NearestNeighbor(object):
 			Ypred[i] = self.ytr[min_index] # predict the label of the nearest example
 		return Ypred
 ```
+
+## The choice of distance
+
+# k - Nearest Neighbor Classifier
+
+The idea: instead of finding the single closest image in the training set, we will find the top __k__ closest images, and have them vote on the label of the test image. In particular, when _k=1_, we recover the NN classifier. Intuitively, higher values of __k__ have smoothing effect that makes the classifier more resistant to outliers:
+
+![](Pasted%20image%2020250507141512.png)
+
+
+An example of the difference between Nearest Neighbor and a 5-Nearest Neighbor classifier, using 2-dimensional points and 3 classes (red, blue, green). The colored regions show the **decision boundaries** induced by the classifier with an L2 distance. The white regions show points that are ambiguously classified (i.e. class votes are tied for at least two classes). Notice that in the case of a NN classifier, outlier datapoints (e.g. green point in the middle of a cloud of blue points) create small islands of likely incorrect predictions, while the 5-NN classifier smooths over these irregularities, likely leading to better **generalization** on the test data (not shown). Also note that the gray regions in the 5-NN image are caused by ties in the votes among the nearest neighbors (e.g. 2 neighbors are red, next two neighbors are blue, last neighbor is green).
+
+# Validation sets for Hyperparameter tunning.
+
+We saw that there are many different distance functions we could have used: L1 norm, L2. norm, there are many other choices we didn't even consider (e.g. dot products). These choices are called __hyperparameters__ nd they come up very often in the design of many ML algorithms that learn from data. It's often not obvious what values/settings one should choose.
+
+We might be tempted to suggest what we should try out many different values and see what work bests. That is a fine idea and that's indeed what we will do, but this must be done very carefully. In particular, __we cannot use the test set for the purpose of tweaking hyperparameters__. Whenever we're designing ML algorithms, we should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that we may tune our hyperparameters to work well on the test set, but if we were to deploy our model we could see a significantly reduced performance. in practice, we would say that we __overfit__ to the test set. Another way of looking at it is that if we tune 
