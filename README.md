@@ -1,3 +1,6 @@
+[![pages-build-deployment](https://github.com/kimhungbui/kimhungbui.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/kimhungbui/kimhungbui.github.io/actions/workflows/pages/pages-build-deployment)
+
+
 # quarto-website-with-blog
 Template repo for a Quarto website with a blog!
 
