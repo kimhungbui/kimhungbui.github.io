@@ -1,0 +1,96 @@
+---
+title: List of grammars subject for IELTS
+lightbox: false
+description: Grammar pathway for ielts
+author:
+  - name: Hung
+    url: https://your.personal.website
+date: 2025-05-07
+categories:
+  - parallel
+  - programming
+draft: true
+---
+
+## Summary  
+To master the full range of advanced grammar needed for IELTS Band 8 in Speaking and Writing, focus your study on the following units in *English Grammar in Use* (5th Ed.) by Raymond Murphy:
+
+- **Tenses** (simple, continuous, perfect, future) → Units 1–16, 19–25 + Appendices 2–3  
+- **Conditionals & Wishes** → Units 38–41  
+- **Passive Voice** → Units 42–46  
+- **Relative Clauses & Reduced Clauses** → Units 92–97 (+ Unit 68 for –ing clauses)  
+- **Subordinate (Complex) Clauses & Linking Adverbials** → Units 113–120  
+- **Participial Phrases** → Units 68 & 97  
+
+Units on **clefts, inversion** and **nominalisation** aren’t explicitly in Murphy’s intermediate-level text; you’ll need to practise those with supplementary materials.
+
+---
+
+## 1. Variety of Tenses  
+-  **Present & Past Simple/Continuous**: Units 1–6  
+- **Present Perfect & Perfect Continuous**: Units 7–12  
+- **Perfect vs. Past**: Units 13–16  
+- **Future Forms**: Units 19–25  
+- **Review Appendices**:  
+  - Appendix 2 (Present & Past Tenses)  
+  - Appendix 3 (The Future)  
+
+## 2. Conditionals & “Wish” Structures  
+- **Zero, First, Second & Third Conditionals**: Units 38–40  
+- **Wish**: Unit 41  
+
+## 3. Passive Constructions  
+- **Basic Passives** (is done, was done): Units 42–43  
+- **Advanced Passives** (have something done; “It is said that…”): Units 44–46  
+
+## 4. Relative Clauses & Reduced Clauses  
+- **Defining & Non-defining Clauses**: Units 92–96  
+- **Reduced –ing/–ed Clauses**: Unit 97  
+
+## 5. Participial Phrases & –ing Clauses  
+- **–ing Clauses** (e.g. “playing football”): Unit 68  
+- **Reduced Relative Clauses**: Unit 97 (also covers –ing/–ed forms)  
+
+## 6. Subordinate (Complex) Clauses & Linking Adverbials  
+- **Adverbial Clauses & Conjunctions** (although, despite, unless, as, while, by the time, etc.): Units 113–120  
+
+---
+
+## Topics to Supplement Externally  
+- **Cleft Sentences** (“What I find most worrying is…”) – practice with an advanced grammar reference.  
+- **Inversion** (“Not only did I…”, “Hardly had…when…”) – available in higher-level grammar guides or online corpora.  
+- **Nominalisation** (turning verbs/adjectives into nouns) – study in dedicated academic writing resources.  
+
+- [ ] **Tenses**  
+  - [x] Simple & Continuous → Units 1–6  
+  - [x] Perfect & Perfect Continuous → Units 7–12  
+  - [x] Perfect vs. Past → Units 13–16  
+  - [ ] Future Forms → Units 19–25  
+  - [ ] Review Appendices  
+    - [ ] Appendix 2 (Present & Past Tenses)  
+    - [ ] Appendix 3 (The Future)  
+
+- [ ] **Conditionals & Wishes**  
+  - [ ] Zero, First, Second & Third Conditionals → Units 38–40  
+  - [ ] Wish → Unit 41  
+
+- [ ] **Passive Voice**  
+  - [ ] Basic Passives (is done, was done) → Units 42–43  
+  - [ ] Advanced Passives (have something done; “It is said that…”) → Units 44–46  
+
+- [ ] **Relative Clauses & Reduced Clauses**  
+  - [ ] Defining & Non-defining Clauses → Units 92–96  
+  - [ ] Reduced –ing/–ed Clauses → Unit 97  
+
+- [ ] **Participial Phrases & –ing Clauses**  
+  - [ ] –ing Clauses (e.g. “playing football”) → Unit 68  
+  - [ ] Reduced Relative Clauses (–ing/–ed forms) → Unit 97  
+
+- [ ] **Subordinate Clauses & Linking Adverbials**  
+  - [ ] Adverbial Clauses & Conjunctions → Units 113–120  
+
+- [ ] **Supplement Externally**  
+  - [ ] Cleft Sentences (“What I find most worrying is…”)  
+  - [ ] Inversion (“Not only did I…”, “Hardly had… when…”)  
+  - [ ] Nominalisation (turning verbs/adjectives into nouns)  
+
