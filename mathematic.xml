@@ -413,33 +413,6 @@ The frequentist and Bayesian paradigms provide different perspectives on probabi
   <media:content url="https://kimhungbui.github.io/math/math-statistic-statistical-inference-and-learning/Statistical-Inference.png" medium="image" type="image/png"/>
 </item>
 <item>
-  <title>Why we have normal distribution formular</title>
-  <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>To do</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/dundee.jpg" class="img-fluid figure-img"></p>
-<figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
-</figure>
-</div>
-<p>That’s it! go for it!</p>
-
-
-
- ]]></description>
-  <category>math</category>
-  <category>statistic</category>
-  <guid>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/</guid>
-  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/dundee.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
   <title>Bernoulli Randome Variable</title>
   <dc:creator>Kim Hung Bui</dc:creator>
   <link>https://kimhungbui.github.io/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</link>
@@ -613,6 +586,33 @@ font-style: inherit;">"</span>)</span></code></pre></div>
   <category>statistic</category>
   <guid>https://kimhungbui.github.io/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html</guid>
   <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why we have normal distribution formular</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>To do</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/dundee.jpg" class="img-fluid figure-img"></p>
+<figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
+</figure>
+</div>
+<p>That’s it! go for it!</p>
+
+
+
+ ]]></description>
+  <category>math</category>
+  <category>statistic</category>
+  <guid>https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/</guid>
+  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
