@@ -64,3 +64,33 @@ services:
 
 # 3. Duck DNS
 
+
+
+## Errors:
+
+Bad gateway:
+![](Pasted%20image%2020250523111025.png)
+Because your Portainer HTTPS endpoint is using a self-signed certificate, Cloudflared (by default) will try to validate it—and fail—so you get a 502 even though curl -vk https://127.0.0.1:9443 works locally.
+
+Here's how to fix that when you're using the Web Dashboard to manage your tunnel:
+
+1. Enable “Disable TLS Verification” on the Hostname
+In the Cloudflare dashboard go to Zero Trust → Access → Tunnels.
+
+Click your tunnel, then open the Public hostnames tab.
+
+Find the row for portainer.kimhungbui.com and click Edit.
+
+Under Origin Connection you should see a toggle or checkbox labeled something like “Disable TLS verification” (or “Skip certificate validation”).
+
+Enable that option and save.
+
+This tells Cloudflared not to reject your Portainer’s self-signed cert.
+
+![](Pasted%20image%2020250523111115.png)
+
+![](Pasted%20image%2020250523111128.png)
+
+It work:
+
+![](Pasted%20image%2020250523111147.png)
