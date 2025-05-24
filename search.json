@@ -705,5 +705,12 @@
     "title": "Install Nextcloud in Ubuntu Server",
     "section": "❗ LinuxServer.io Nextcloud doesdoes not useuse PostgreSQL environmentenvironment variablesvariables to connect to the databasedatabase.",
     "text": "❗ LinuxServer.io Nextcloud doesdoes not useuse PostgreSQL environmentenvironment variablesvariables to connect to the databasedatabase.\nThat’s the issueissue rightright therethere.\n\nUnlikeUnlike the officialofficial nextcloud imageimage, linuxserver/nextcloud doesdoes not read POSTGRES_USER, POSTGRES_PASSWORD, etc. from the environmentenvironment.\n\nInsteadInstead, it expects youyou to configureconfigure the databasedatabase entirelyentirely throughthrough the web UI.\n\nservices:\n  db:\n    image: postgres:16\n    container_name: nextcloud-postgres\n    environment:\n      POSTGRES_DB: nextclouddb\n      POSTGRES_USER: nextcloud\n      POSTGRES_PASSWORD: MyStrongPassword123!\n    volumes:\n      - /opt/nextcloud/postgres:/var/lib/postgresql/data\n    restart: unless-stopped\n\n  nextcloud:\n    image: lscr.io/linuxserver/nextcloud:latest\n    container_name: nextcloud\n    environment:\n      - PUID=1000\n      - PGID=1000\n      - TZ=Etc/UTC\n    volumes:\n      - /opt/nextcloud/config:/config\n      - /opt/nextcloud/data:/data\n    ports:\n      - 443:443\n    depends_on:\n      - db\n    restart: unless-stopped"
+  },
+  {
+    "objectID": "posts/nextcloud-install/index.html#errors",
+    "href": "posts/nextcloud-install/index.html#errors",
+    "title": "Install Nextcloud in Ubuntu Server",
+    "section": "Errors:",
+    "text": "Errors:\nBad gateway:  Because your Portainer HTTPS endpoint is using a self-signed certificate, Cloudflared (by default) will try to validate it—and fail—so you get a 502 even though curl -vk https://127.0.0.1:9443 works locally.\nHere’s how to fix that when you’re using the Web Dashboard to manage your tunnel:\n\nEnable “Disable TLS Verification” on the Hostname In the Cloudflare dashboard go to Zero Trust → Access → Tunnels.\n\nClick your tunnel, then open the Public hostnames tab.\nFind the row for portainer.kimhungbui.com and click Edit.\nUnder Origin Connection you should see a toggle or checkbox labeled something like “Disable TLS verification” (or “Skip certificate validation”).\nEnable that option and save.\nThis tells Cloudflared not to reject your Portainer’s self-signed cert.\n\n\nIt work:"
   }
 ]

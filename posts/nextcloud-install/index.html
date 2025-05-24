@@ -225,7 +225,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#linuxserver.io-nextcloud-doesdoes-not-useuse-postgresql-environmentenvironment-variablesvariables-to-connect-to-the-databasedatabase." id="toc-linuxserver.io-nextcloud-doesdoes-not-useuse-postgresql-environmentenvironment-variablesvariables-to-connect-to-the-databasedatabase." class="nav-link" data-scroll-target="#linuxserver.io-nextcloud-doesdoes-not-useuse-postgresql-environmentenvironment-variablesvariables-to-connect-to-the-databasedatabase.">❗ LinuxServer.io Nextcloud <strong>doesdoes not useuse PostgreSQL environmentenvironment variablesvariables</strong> to connect to the databasedatabase.</a></li>
   </ul></li>
-  <li><a href="#duck-dns" id="toc-duck-dns" class="nav-link" data-scroll-target="#duck-dns">3. Duck DNS</a></li>
+  <li><a href="#duck-dns" id="toc-duck-dns" class="nav-link" data-scroll-target="#duck-dns">3. Duck DNS</a>
+  <ul class="collapse">
+  <li><a href="#errors" id="toc-errors" class="nav-link" data-scroll-target="#errors">Errors:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -284,8 +287,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="duck-dns" class="level1">
 <h1>3. Duck DNS</h1>
+<section id="errors" class="level2">
+<h2 class="anchored" data-anchor-id="errors">Errors:</h2>
+<p>Bad gateway: <img src="Pasted image 20250523111025.png" class="img-fluid"> Because your Portainer HTTPS endpoint is using a self-signed certificate, Cloudflared (by default) will try to validate it—and fail—so you get a 502 even though curl -vk https://127.0.0.1:9443 works locally.</p>
+<p>Here’s how to fix that when you’re using the Web Dashboard to manage your tunnel:</p>
+<ol type="1">
+<li>Enable “Disable TLS Verification” on the Hostname In the Cloudflare dashboard go to Zero Trust → Access → Tunnels.</li>
+</ol>
+<p>Click your tunnel, then open the Public hostnames tab.</p>
+<p>Find the row for portainer.kimhungbui.com and click Edit.</p>
+<p>Under Origin Connection you should see a toggle or checkbox labeled something like “Disable TLS verification” (or “Skip certificate validation”).</p>
+<p>Enable that option and save.</p>
+<p>This tells Cloudflared not to reject your Portainer’s self-signed cert.</p>
+<p><img src="Pasted image 20250523111115.png" class="img-fluid"></p>
+<p><img src="Pasted image 20250523111128.png" class="img-fluid"></p>
+<p>It work:</p>
+<p><img src="Pasted image 20250523111147.png" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
