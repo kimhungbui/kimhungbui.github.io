@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hung">
+<meta name="dcterms.date" content="2025-05-30">
+<meta name="description" content="Your post description">
 
-<title>Mathematic – Kim Hung Bui</title>
+<title>127. Word Ladder – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +105,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Kim Hung Bui" href="mathematic.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -139,7 +116,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
@@ -150,33 +127,33 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./mathematic.html" aria-current="page"> 
+    <a class="nav-link" href="../../mathematic.html"> 
 <span class="menu-text">Mathematic</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -193,21 +170,62 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Statistical">Statistical <span class="quarto-category-count">(1)</span></div><div class="category" data-category="math">math <span class="quarto-category-count">(2)</span></div><div class="category" data-category="statistic">statistic <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link active" data-scroll-target="#analysis">Analysis</a>
+  <ul class="collapse">
+  <li><a href="#the-pitfalls-of-naïve-backtracking" id="toc-the-pitfalls-of-naïve-backtracking" class="nav-link" data-scroll-target="#the-pitfalls-of-naïve-backtracking">2. The Pitfalls of Naïve Backtracking</a></li>
+  </ul></li>
+  <li><a href="#the-sleek-bfs-solution" id="toc-the-sleek-bfs-solution" class="nav-link" data-scroll-target="#the-sleek-bfs-solution">3. The Sleek BFS Solution</a></li>
+  <li><a href="#wrapping-up" id="toc-wrapping-up" class="nav-link" data-scroll-target="#wrapping-up">4. Wrapping Up</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mathematic</h1>
+<h1 class="title">127. Word Ladder</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">leetcode</div>
+    <div class="quarto-category">programming</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Your post description
+  </div>
 </div>
 
-
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://your.personal.website">Hung</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://leetcode.com/problems/word-ladder/description/">
+            Leetcode
+            </a>
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 30, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -217,122 +235,109 @@ window.Quarto = {
 </header>
 
 
+<p>A transformation sequence from word <code>beginWord</code> to word <code>endWord</code> using a dictionary <code>wordList</code> is a sequence of words <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code> such that:</p>
+<ul>
+<li>Every adjacent pair of words differs by a single letter.</li>
+<li>Every <code>si</code> for <code>1 &lt;= i &lt;= k</code> is in <code>wordList</code>. Note that <code>beginWord</code> does not need to be in <code>wordList</code>.</li>
+<li><code>sk == endWord</code> Given two words, <code>beginWord</code> and <code>endWord</code>, and a dictionary <code>wordList</code>, return the number of words in the shortest transformation sequence from <code>beginWord</code> to <code>endWord</code>, or <code>0</code> if no such sequence exists.`</li>
+</ul>
+<p>Example 1:</p>
+<pre><code>Input: `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]`
+Output: `5`
+Explanation: `One shortest transformation sequence is "hit" -&gt; "hot" -&gt; "dot" -&gt; "dog" -&gt; cog", which is 5 words long.`</code></pre>
+<p>Example 2:</p>
+<pre><code>Input: `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]`
+Output: `0`
+Explanation: `The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.`</code></pre>
+<p>Constraints:</p>
+<p>1 &lt;= beginWord.length &lt;= 10 endWord.length == beginWord.length 1 &lt;= wordList.length &lt;= 5000 wordList[i].length == beginWord.length beginWord, endWord, and wordList[i] consist of lowercase English letters. beginWord != endWord All the words in wordList are unique.</p>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Have you ever tried to transform one word into another—one letter at a time—while only stepping through real English words? That’s the classic <strong>Word Ladder</strong> puzzle, and it’s exactly what LeetCode’s <strong>Ladder Length</strong> problem asks us to solve. In this blog post, we’ll walk through:</p>
+<ol type="1">
+<li><strong>Why BFS (Breadth-First Search) is the perfect fit</strong><br>
+</li>
+<li><strong>What goes wrong with a naïve backtracking approach</strong><br>
+</li>
+<li><strong>The clean, efficient BFS solution</strong></li>
+</ol>
+<hr>
+<section id="the-pitfalls-of-naïve-backtracking" class="level2">
+<h2 class="anchored" data-anchor-id="the-pitfalls-of-naïve-backtracking">2. The Pitfalls of Naïve Backtracking</h2>
+<p>It’s tempting to reach for a simple recursive strategy:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> ladderLength_naive(begin, end, word_dict):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> backtrack(current, remaining, depth):</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> current <span class="op">==</span> end:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> depth</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        best <span class="op">=</span> <span class="bu">float</span>(<span class="st">'inf'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> word <span class="kw">in</span> <span class="bu">list</span>(remaining):</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            <span class="co"># only recurse on one-letter neighbors</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="bu">sum</span>(a <span class="op">!=</span> b <span class="cf">for</span> a,b <span class="kw">in</span> <span class="bu">zip</span>(current, word)) <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                remaining.remove(word)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                cand <span class="op">=</span> backtrack(word, remaining, depth <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> cand:</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                    best <span class="op">=</span> <span class="bu">min</span>(best, cand)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                remaining.add(word)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> best <span class="cf">if</span> best <span class="op">!=</span> <span class="bu">float</span>(<span class="st">'inf'</span>) <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> backtrack(begin, <span class="bu">set</span>(word_dict), <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Why it stumbles</strong> 1. Exponential Recursion Every choice spawns a new branch, and many branches share subproblems—leading to redundant work.</p>
+<ol start="2" type="1">
+<li><p>No Early Stopping You might explore a deep chain long after a shorter route exists elsewhere.</p></li>
+<li><p>Backtracking Overhead Adding/removing words from the working set at each step is costly and easy to get wrong.</p></li>
+</ol>
+<p>In practice, this approach chokes on even modestly sized dictionaries.</p>
+<hr>
+</section>
+</section>
+<section id="the-sleek-bfs-solution" class="level1">
+<h1>3. The Sleek BFS Solution</h1>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> deque</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> ladderLength(<span class="va">self</span>, begin: <span class="bu">str</span>, end: <span class="bu">str</span>, word_dict: List[<span class="bu">str</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Quick reject if 'end' is unreachable</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> end <span class="kw">not</span> <span class="kw">in</span> word_dict <span class="kw">and</span> begin <span class="op">!=</span> end:</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">0</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        word_set <span class="op">=</span> <span class="bu">set</span>(word_dict)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        word_set.add(end)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        visited <span class="op">=</span> {begin}</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        queue <span class="op">=</span> deque([(begin, <span class="dv">1</span>)])  <span class="co"># (current_word, steps_so_far)</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> queue:</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>            word, steps <span class="op">=</span> queue.popleft()</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> word <span class="op">==</span> end:</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> steps</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Try changing each character to every 'a'–'z'</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(word)):</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>                original <span class="op">=</span> word[i]</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> c <span class="kw">in</span> <span class="st">'abcdefghijklmnopqrstuvwxyz'</span>:</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> c <span class="op">==</span> original:</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>                        <span class="cf">continue</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>                    candidate <span class="op">=</span> word[:i] <span class="op">+</span> c <span class="op">+</span> word[i<span class="op">+</span><span class="dv">1</span>:]</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">if</span> candidate <span class="kw">in</span> word_set <span class="kw">and</span> candidate <span class="kw">not</span> <span class="kw">in</span> visited:</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>                        visited.add(candidate)</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>                        queue.append((candidate, steps <span class="op">+</span> <span class="dv">1</span>))</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Key Advantages</strong> - O(1) Lookups in both word_set and visited</p>
+<ul>
+<li><p>Single Visit per valid word</p></li>
+<li><p>Guaranteed Shortest Path by BFS layering</p></li>
+</ul>
+<p>In terms of complexity, each of the up-to-26 letter-swaps per position in each word is checked only once per word, yielding O(N · L · 26) time (where N is dictionary size and L is word length) and O(N) space.</p>
+</section>
+<section id="wrapping-up" class="level1">
+<h1>4. Wrapping Up</h1>
+<p>When you need the shortest transformation in an unweighted graph—whether it’s words, grid cells, or social-network connections—BFS should be your first thought. Naïve recursion might look neat on paper, but real-world constraints demand the efficiency and crisp guarantees that BFS + a visited set provides.</p>
+<p>Happy coding, and may all your word ladders be short! 🚀</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Statistical" data-listing-date-sort="1740528000000" data-listing-file-modified-sort="1748576024671" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2312">
-<div class="thumbnail">
-<p><a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external"></a></p><a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">
-<p><img loading="lazy" src="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference.png" class="thumbnail-image"></p>
-</a><p><a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">Statistical Inference and Learning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Statistical'); return false;">
-Statistical
-</div>
-</div>
-<div class="listing-description">
-<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="math,statistic" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1748576024671" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556">
-<div class="thumbnail">
-<p><a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external"></a></p><a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">Bernoulli Randome Variable</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
-math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('statistic'); return false;">
-statistic
-</div>
-</div>
-<div class="listing-description">
-<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">Bernoulli Randome Variable</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Kim Hung Bui
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="math,statistic" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1748576024678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<div class="thumbnail">
-<p><a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external"></a></p><a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">
-<p><img loading="lazy" src="./math/math-statistic-why-normal-distribution-formular/dundee.jpg" class="thumbnail-image"></p>
-</a><p><a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">Why we have normal distribution formular</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
-math
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('statistic'); return false;">
-statistic
-</div>
-</div>
-<div class="listing-description">
-<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./math/math-statistic-why-normal-distribution-formular/index.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

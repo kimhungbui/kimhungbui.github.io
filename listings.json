@@ -12,6 +12,7 @@
   {
     "listing": "/programming.html",
     "items": [
+      "/programming/leetcode-word-ladder/index.html",
       "/programming/parallel-computing/chapter1.html",
       "/programming/leetcode-count-good-triplets/index.html",
       "/programming/leetcode-maximum-subarray/index.html",

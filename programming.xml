@@ -10,7 +10,342 @@
 <atom:link href="https://kimhungbui.github.io/programming.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 07 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 30 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>127. Word Ladder</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-word-ladder/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A transformation sequence from word <code>beginWord</code> to word <code>endWord</code> using a dictionary <code>wordList</code> is a sequence of words <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code> such that:</p>
+<ul>
+<li>Every adjacent pair of words differs by a single letter.</li>
+<li>Every <code>si</code> for <code>1 &lt;= i &lt;= k</code> is in <code>wordList</code>. Note that <code>beginWord</code> does not need to be in <code>wordList</code>.</li>
+<li><code>sk == endWord</code> Given two words, <code>beginWord</code> and <code>endWord</code>, and a dictionary <code>wordList</code>, return the number of words in the shortest transformation sequence from <code>beginWord</code> to <code>endWord</code>, or <code>0</code> if no such sequence exists.`</li>
+</ul>
+<p>Example 1:</p>
+<pre><code>Input: `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]`
+Output: `5`
+Explanation: `One shortest transformation sequence is "hit" -&gt; "hot" -&gt; "dot" -&gt; "dog" -&gt; cog", which is 5 words long.`</code></pre>
+<p>Example 2:</p>
+<pre><code>Input: `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]`
+Output: `0`
+Explanation: `The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.`</code></pre>
+<p>Constraints:</p>
+<p>1 &lt;= beginWord.length &lt;= 10 endWord.length == beginWord.length 1 &lt;= wordList.length &lt;= 5000 wordList[i].length == beginWord.length beginWord, endWord, and wordList[i] consist of lowercase English letters. beginWord != endWord All the words in wordList are unique.</p>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Have you ever tried to transform one word into another—one letter at a time—while only stepping through real English words? That’s the classic <strong>Word Ladder</strong> puzzle, and it’s exactly what LeetCode’s <strong>Ladder Length</strong> problem asks us to solve. In this blog post, we’ll walk through:</p>
+<ol type="1">
+<li><strong>Why BFS (Breadth-First Search) is the perfect fit</strong><br>
+</li>
+<li><strong>What goes wrong with a naïve backtracking approach</strong><br>
+</li>
+<li><strong>The clean, efficient BFS solution</strong></li>
+</ol>
+<hr>
+<section id="the-pitfalls-of-naïve-backtracking" class="level2">
+<h2 class="anchored" data-anchor-id="the-pitfalls-of-naïve-backtracking">2. The Pitfalls of Naïve Backtracking</h2>
+<p>It’s tempting to reach for a simple recursive strategy:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> ladderLength_naive(begin, end, word_dict):</span>
+<span id="cb3-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> backtrack(current, remaining, depth):</span>
+<span id="cb3-3">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> current <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> end:</span>
+<span id="cb3-4">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> depth</span>
+<span id="cb3-5">        best <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">float</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'inf'</span>)</span>
+<span id="cb3-6">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> word <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>(remaining):</span>
+<span id="cb3-7">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># only recurse on one-letter neighbors</span></span>
+<span id="cb3-8">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> b <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> a,b <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(current, word)) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:</span>
+<span id="cb3-9">                remaining.remove(word)</span>
+<span id="cb3-10">                cand <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> backtrack(word, remaining, depth <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-11">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> cand:</span>
+<span id="cb3-12">                    best <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">min</span>(best, cand)</span>
+<span id="cb3-13">                remaining.add(word)</span>
+<span id="cb3-14">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> best <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> best <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">float</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'inf'</span>) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-15"></span>
+<span id="cb3-16">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> backtrack(begin, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(word_dict), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span></code></pre></div>
+<p><strong>Why it stumbles</strong> 1. Exponential Recursion Every choice spawns a new branch, and many branches share subproblems—leading to redundant work.</p>
+<ol start="2" type="1">
+<li><p>No Early Stopping You might explore a deep chain long after a shorter route exists elsewhere.</p></li>
+<li><p>Backtracking Overhead Adding/removing words from the working set at each step is costly and easy to get wrong.</p></li>
+</ol>
+<p>In practice, this approach chokes on even modestly sized dictionaries.</p>
+<hr>
+</section>
+</section>
+<section id="the-sleek-bfs-solution" class="level1">
+<h1>3. The Sleek BFS Solution</h1>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> collections <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> deque</span>
+<span id="cb4-2"></span>
+<span id="cb4-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb4-4">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> ladderLength(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, begin: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>, end: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>, word_dict: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb4-5">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Quick reject if 'end' is unreachable</span></span>
+<span id="cb4-6">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> end <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> word_dict <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> begin <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> end:</span>
+<span id="cb4-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb4-8"></span>
+<span id="cb4-9">        word_set <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(word_dict)</span>
+<span id="cb4-10">        word_set.add(end)</span>
+<span id="cb4-11">        visited <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {begin}</span>
+<span id="cb4-12">        queue <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> deque([(begin, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)])  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># (current_word, steps_so_far)</span></span>
+<span id="cb4-13"></span>
+<span id="cb4-14">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span> queue:</span>
+<span id="cb4-15">            word, steps <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> queue.popleft()</span>
+<span id="cb4-16">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> word <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> end:</span>
+<span id="cb4-17">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> steps</span>
+<span id="cb4-18"></span>
+<span id="cb4-19">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Try changing each character to every 'a'–'z'</span></span>
+<span id="cb4-20">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(word)):</span>
+<span id="cb4-21">                original <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> word[i]</span>
+<span id="cb4-22">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> c <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'abcdefghijklmnopqrstuvwxyz'</span>:</span>
+<span id="cb4-23">                    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> original:</span>
+<span id="cb4-24">                        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">continue</span></span>
+<span id="cb4-25">                    candidate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> word[:i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> word[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:]</span>
+<span id="cb4-26">                    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> candidate <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> word_set <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> candidate <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> visited:</span>
+<span id="cb4-27">                        visited.add(candidate)</span>
+<span id="cb4-28">                        queue.append((candidate, steps <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>))</span>
+<span id="cb4-29"></span>
+<span id="cb4-30">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span></code></pre></div>
+<p><strong>Key Advantages</strong> - O(1) Lookups in both word_set and visited</p>
+<ul>
+<li><p>Single Visit per valid word</p></li>
+<li><p>Guaranteed Shortest Path by BFS layering</p></li>
+</ul>
+<p>In terms of complexity, each of the up-to-26 letter-swaps per position in each word is checked only once per word, yielding O(N · L · 26) time (where N is dictionary size and L is word length) and O(N) space.</p>
+</section>
+<section id="wrapping-up" class="level1">
+<h1>4. Wrapping Up</h1>
+<p>When you need the shortest transformation in an unweighted graph—whether it’s words, grid cells, or social-network connections—BFS should be your first thought. Naïve recursion might look neat on paper, but real-world constraints demand the efficiency and crisp guarantees that BFS + a visited set provides.</p>
+<p>Happy coding, and may all your word ladders be short! 🚀</p>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-word-ladder/</guid>
+  <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Role of Parallel Computing</title>
   <dc:creator>Hung </dc:creator>
@@ -447,7 +782,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="6c2c9040" class="cell" data-execution_count="1">
+<div id="ef02695b" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
