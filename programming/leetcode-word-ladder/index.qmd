@@ -1,0 +1,148 @@
+---
+title: 127. Word Ladder
+
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/word-ladder/description/
+date: 2025-05-30
+categories:
+  - leetcode
+  - programming
+draft: false
+---
+
+A transformation sequence from word `beginWord` to word `endWord` using a dictionary `wordList` is a sequence of words `beginWord -> s1 -> s2 -> ... -> sk` such that:
+
+- Every adjacent pair of words differs by a single letter.
+- Every `si` for `1 <= i <= k` is in `wordList`. Note that `beginWord` does not need to be in `wordList`.
+- `sk == endWord`
+Given two words, `beginWord` and `endWord`, and a dictionary `wordList`, return the number of words in the shortest transformation sequence from `beginWord` to `endWord`, or `0` if no such sequence exists.`
+
+ 
+
+Example 1:
+
+    Input: `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]`
+    Output: `5`
+    Explanation: `One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog", which is 5 words long.`
+Example 2:
+
+    Input: `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]`
+    Output: `0`
+    Explanation: `The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.`
+ 
+
+Constraints:
+
+1 <= beginWord.length <= 10
+endWord.length == beginWord.length
+1 <= wordList.length <= 5000
+wordList[i].length == beginWord.length
+beginWord, endWord, and wordList[i] consist of lowercase English letters.
+beginWord != endWord
+All the words in wordList are unique.
+
+
+# Analysis
+
+
+
+Have you ever tried to transform one word into another—one letter at a time—while only stepping through real English words? That’s the classic **Word Ladder** puzzle, and it’s exactly what LeetCode’s **Ladder Length** problem asks us to solve. In this blog post, we’ll walk through:
+
+1. **Why BFS (Breadth-First Search) is the perfect fit**  
+2. **What goes wrong with a naïve backtracking approach**  
+3. **The clean, efficient BFS solution**  
+
+---
+
+## 2. The Pitfalls of Naïve Backtracking
+
+It’s tempting to reach for a simple recursive strategy:
+
+```python
+def ladderLength_naive(begin, end, word_dict):
+    def backtrack(current, remaining, depth):
+        if current == end:
+            return depth
+        best = float('inf')
+        for word in list(remaining):
+            # only recurse on one-letter neighbors
+            if sum(a != b for a,b in zip(current, word)) == 1:
+                remaining.remove(word)
+                cand = backtrack(word, remaining, depth + 1)
+                if cand:
+                    best = min(best, cand)
+                remaining.add(word)
+        return best if best != float('inf') else 0
+
+    return backtrack(begin, set(word_dict), 1)
+```
+
+__Why it stumbles__
+1. Exponential Recursion
+Every choice spawns a new branch, and many branches share subproblems—leading to redundant work.
+
+2. No Early Stopping
+You might explore a deep chain long after a shorter route exists elsewhere.
+
+3. Backtracking Overhead
+Adding/removing words from the working set at each step is costly and easy to get wrong.
+
+In practice, this approach chokes on even modestly sized dictionaries.
+
+
+---
+
+# 3. The Sleek BFS Solution
+
+``` python
+from collections import deque
+
+class Solution:
+    def ladderLength(self, begin: str, end: str, word_dict: List[str]) -> int:
+        # Quick reject if 'end' is unreachable
+        if end not in word_dict and begin != end:
+            return 0
+
+        word_set = set(word_dict)
+        word_set.add(end)
+        visited = {begin}
+        queue = deque([(begin, 1)])  # (current_word, steps_so_far)
+
+        while queue:
+            word, steps = queue.popleft()
+            if word == end:
+                return steps
+
+            # Try changing each character to every 'a'–'z'
+            for i in range(len(word)):
+                original = word[i]
+                for c in 'abcdefghijklmnopqrstuvwxyz':
+                    if c == original:
+                        continue
+                    candidate = word[:i] + c + word[i+1:]
+                    if candidate in word_set and candidate not in visited:
+                        visited.add(candidate)
+                        queue.append((candidate, steps + 1))
+
+        return 0
+```
+
+__Key Advantages__
+- O(1) Lookups in both word_set and visited
+
+- Single Visit per valid word
+
+- Guaranteed Shortest Path by BFS layering
+
+In terms of complexity, each of the up-to-26 letter-swaps per position in each word is checked only once per word, yielding O(N · L · 26) time (where N is dictionary size and L is word length) and O(N) space.
+
+# 4. Wrapping Up
+
+When you need the shortest transformation in an unweighted graph—whether it's words, grid cells, or social-network connections—BFS should be your first thought. Naïve recursion might look neat on paper, but real-world constraints demand the efficiency and crisp guarantees that BFS + a visited set provides.
+
+Happy coding, and may all your word ladders be short! 🚀
