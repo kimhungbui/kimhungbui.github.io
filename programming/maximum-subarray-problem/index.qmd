@@ -1,6 +1,6 @@
 ---
 title: Maximum subarray problem and Kadane's algorithm
-
+image: Pasted%20image%2020250602105019.png
 lightbox: false
 description: Problem in computer science
 author:
@@ -14,7 +14,7 @@ categories:
   - programming
 draft: false
 ---
-
+![](Pasted%20image%2020250602105019.png)
 
 In computer science, the maximum sum subarray problem, also known as the maximum segment sum problem, is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array `A[1...n]` of numbers. It can be solved in $O(n)$ time and 
 $O(1)$ space.
