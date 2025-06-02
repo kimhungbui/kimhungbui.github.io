@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hung">
+<meta name="dcterms.date" content="2025-06-02">
+<meta name="description" content="Problem in computer science">
 
-<title>Blog – Kim Hung Bui</title>
+<title>Maximum subarray problem and Kadane’s algorithm – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -130,7 +102,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Kim Hung Bui" href="posts.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -139,7 +111,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
@@ -150,33 +122,33 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./mathematic.html"> 
+    <a class="nav-link" href="../../mathematic.html"> 
 <span class="menu-text">Mathematic</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -193,21 +165,67 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Statistical">Statistical <span class="quarto-category-count">(1)</span></div><div class="category" data-category="any-category-you-want">any-category-you-want <span class="quarto-category-count">(1)</span></div><div class="category" data-category="template">template <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#application" id="toc-application" class="nav-link active" data-scroll-target="#application">Application</a></li>
+  <li><a href="#kadanes-algorithm" id="toc-kadanes-algorithm" class="nav-link" data-scroll-target="#kadanes-algorithm">Kadane’s algorithm</a>
+  <ul class="collapse">
+  <li><a href="#brute-force-thoughts" id="toc-brute-force-thoughts" class="nav-link" data-scroll-target="#brute-force-thoughts">Brute-Force Thoughts</a></li>
+  <li><a href="#key-observation-intuition" id="toc-key-observation-intuition" class="nav-link" data-scroll-target="#key-observation-intuition">Key Observation (Intuition)</a></li>
+  <li><a href="#deriving-kadanes-recurrence" id="toc-deriving-kadanes-recurrence" class="nav-link" data-scroll-target="#deriving-kadanes-recurrence">Deriving Kadane’s Recurrence</a></li>
+  <li><a href="#intuitive-explanation" id="toc-intuitive-explanation" class="nav-link" data-scroll-target="#intuitive-explanation">Intuitive Explanation</a></li>
+  <li><a href="#worked-example" id="toc-worked-example" class="nav-link" data-scroll-target="#worked-example">Worked Example</a></li>
+  <li><a href="#handling-all-negative-arrays" id="toc-handling-all-negative-arrays" class="nav-link" data-scroll-target="#handling-all-negative-arrays">Handling All-Negative Arrays</a></li>
+  <li><a href="#final-remarks" id="toc-final-remarks" class="nav-link" data-scroll-target="#final-remarks">Final Remarks</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Maximum subarray problem and Kadane’s algorithm</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">leetcode</div>
+    <div class="quarto-category">programming</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Problem in computer science
+  </div>
 </div>
 
-
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://your.personal.website">Hung</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.wikiwand.com/en/articles/Maximum_subarray_problem">
+            Leetcode
+            </a>
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 2, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -217,161 +235,241 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1748835074829">
-<div class="thumbnail">
-<p><a href="./posts/dashboard/index.html" class="no-external"></a></p><a href="./posts/dashboard/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/dashboard/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/dashboard/index.html" class="no-external"></a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/dashboard/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/dashboard/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/dashboard/index.html" class="no-external"></a></p><a href="./posts/dashboard/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1748835074835" data-listing-reading-time-sort="1" data-listing-word-count-sort="61">
-<div class="thumbnail">
-<p><a href="./posts/retireplan_dashboard/index.html" class="no-external"></a></p><a href="./posts/retireplan_dashboard/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/retireplan_dashboard/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/retireplan_dashboard/index.html" class="no-external">Development Indicators by Continent</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/retireplan_dashboard/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/retireplan_dashboard/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/retireplan_dashboard/index.html" class="no-external"></a></p><a href="./posts/retireplan_dashboard/index.html" class="no-external">
-<div class="listing-author">
-Gapminder Analytics Group
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1748835074829" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="thumbnail">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">Family Man Retires at 39 – Extreme Early Retirement | FIRE</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">
-
-<p></p>
-<section id="early-retirement-journey-and-financial-strategies" class="level2">
-
+<p>In computer science, the maximum sum subarray problem, also known as the maximum segment sum problem, is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array <code>A[1...n]</code> of numbers. It can be solved in <span class="math inline">\(O(n)\)</span> time and <span class="math inline">\(O(1)\)</span> space.</p>
+<p>Formally, the task is to find indices <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> with <span class="math inline">\(1\leq i \leq j \leq n\)</span> such that the sum <span class="math display">\[
+\Sigma^j_{x=i}A[x]
+\]</span> is as large as possible</p>
+<section id="application" class="level1">
+<h1>Application</h1>
+<p>Maximum subarray problems arise in many fields, such as genomic sequence analysis and computer vision.</p>
+<p>Genomic sequence analysis employs maximum subarray algorithms to identify important biological segments of protein sequences that have unusual properties, by assigning scores to points within the sequence that are positive when a motif to be recognized is present, and negative when it is not, and then seeking the maximum subarray among these scores. These problems include conserved segments, GC-rich regions, tandem repeats, low-complexity filter, DNA binding domains, and regions of high charge.</p>
+<p>In computer vision, bitmap images generally consist only of positive values, for which the maximum subarray problem is trivial: the result is always the whole array. However, after subtracting a threshold value (such as the average pixel value) from each pixel, so that above-average pixels will be positive and below-average pixels will be negative, the maximum subarray problem can be applied to the modified image to detect bright areas within it.</p>
+</section>
+<section id="kadanes-algorithm" class="level1">
+<h1>Kadane’s algorithm</h1>
+<section id="brute-force-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="brute-force-thoughts">Brute-Force Thoughts</h2>
+<p>A naive way to find the maximum subarray is:</p>
+<ol type="1">
+<li><p>Enumerate all pairs of indices <code>(i, j)</code> with <code>0 ≤ i ≤ j &lt; n</code>.</p></li>
+<li><p>Compute the sum of <code>array[i..j]</code>.</p></li>
+<li><p>Track the largest sum seen.</p></li>
+</ol>
+<p>That requires <span class="math inline">\(O(n^2)\)</span> subarrays and, if we sum each subarray from scratch, up to <span class="math inline">\(O(n)\)</span> per sum, yielding <span class="math inline">\(O(n^3)\)</span> time. We can improve one factor to <span class="math inline">\(O(n^2)\)</span> by keeping a running sum when extending the end index, but that’s still too slow when <code>n</code> is large.</p>
+<p>We want something like <span class="math inline">\(O(n)\)</span> time.</p>
+<hr>
+</section>
+<section id="key-observation-intuition" class="level2">
+<h2 class="anchored" data-anchor-id="key-observation-intuition">Key Observation (Intuition)</h2>
+<blockquote class="blockquote">
+<p><strong>Observation:</strong> Suppose you want to know “What is the maximum-sum subarray that ends exactly at index i?” Once you know that, you could check all i and pick the best among them.</p>
+</blockquote>
 <ul>
-<li>Tim, a man from Regina, Saskatchewan, Canada, retired from engineering at the age of 39, after 11 years of planning and working towards his goal of early retirement…</li><li></li><li></li><li></li></ul></section><section id="spending-reduction-and-financial-management" class="level2"><ul><li></li><li></li><li></li><li></li><li></li></ul></section><section id="investment-strategy-and-market-volatility" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="challenges-and-adaptation-in-early-retirement" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="family-life-and-financial-education-for-children" class="level2"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></section><section id="wifes-continued-work-and-financial-planning" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="housing-plans-and-government-benefits" class="level2"><ul><li></li><li></li><li></li></ul></section><section id="part-time-work-and-enhanced-work-life-balance" class="level2"><ul><li></li><li></li></ul></section><section id="resources-and-further-information" class="level2"><ul><li></li></ul></section></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Statistical" data-listing-date-sort="1740528000000" data-listing-file-modified-sort="1748835074829" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301">
-<div class="thumbnail">
-<p><a href="./posts/nextcloud-install/index.html" class="no-external"></a></p><a href="./posts/nextcloud-install/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/nextcloud-install/Statistical-Inference.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/nextcloud-install/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/nextcloud-install/index.html" class="no-external">Install Nextcloud in Ubuntu Server</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/nextcloud-install/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Statistical'); return false;">
-Statistical
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/nextcloud-install/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/nextcloud-install/index.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="template,any-category-you-want" data-listing-date-sort="1726012800000" data-listing-file-modified-sort="1748835074835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<div class="thumbnail">
-<p><a href="./posts/post_template/index.html" class="no-external"></a></p><a href="./posts/post_template/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post_template/dundee.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post_template/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post_template/index.html" class="no-external">Post template</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post_template/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('template'); return false;">
-template
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('any-category-you-want'); return false;">
-any-category-you-want
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post_template/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post_template/index.html" class="no-external">
-<div class="listing-date">
-Sep 11, 2024
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<li><p>Define<br>
+<span class="math display">\[dp[i] = \text{the maximum subarray sum among all subarrays that end at index }i.\]</span> Our ultimate answer (global max) will be<br>
+<span class="math display">\[
+  \max_{0 \le k &lt; n} dp[k].
+\]</span></p></li>
+<li><p>How do we compute <code>dp[i]</code> if we already know <code>dp[i–1]</code>? Consider any subarray that ends at i. It either:</p>
+<ol type="1">
+<li>Is just the single element <code>array[i]</code> (i.e., we “start fresh” at i), or<br>
+</li>
+<li>Is some subarray that ended at i−1 plus <code>array[i]</code> (i.e., we <strong>extend</strong> the best ending at i−1).</li>
+</ol>
+<p>In other words: <span class="math display">\[
+  dp[i] \;=\; \max\bigl(\; array[i],\; dp[i-1] + array[i] \bigr).
+\]</span></p>
+<ul>
+<li>If <code>dp[i-1]</code> (the best ending at i−1) is negative, then we’re better off “dropping” it and taking <code>array[i]</code> alone.</li>
+<li>If <code>dp[i-1]</code> is positive (or zero), then extending it by adding <code>array[i]</code> only makes the sum larger.</li>
+</ul></li>
+</ul>
+<p>That recurrence is exactly Kadane’s idea.</p>
+<hr>
+</section>
+<section id="deriving-kadanes-recurrence" class="level2">
+<h2 class="anchored" data-anchor-id="deriving-kadanes-recurrence">Deriving Kadane’s Recurrence</h2>
+<ol type="1">
+<li><p><strong>Define</strong><br>
+<span class="math display">\[dp[i] = \text{max subarray sum ending exactly at index }i.\]</span></p></li>
+<li><p><strong>Base case</strong>:<br>
+<span class="math display">\[dp[0] = array[0].\]</span></p></li>
+<li><p><strong>Transition</strong>: For each (i ), consider two possibilities for the subarray that ends at (i):</p>
+<ul>
+<li><strong>Start a new subarray</strong> at (i). Its sum is (array[i]).<br>
+</li>
+<li><strong>Extend</strong> the best subarray ending at (i-1) by including the element at (i). Its sum is (dp[i-1] + array[i]).</li>
+</ul>
+<p>Therefore: <span class="math display">\[
+  dp[i] = \max\bigl(array[i],\, dp[i-1] + array[i]\bigr).
+\]</span></p></li>
+<li><p><strong>Global answer</strong>: As you fill these in from (i = 0) up to (n-1), keep track of <span class="math display">\[
+  \text{global\_max} = \max_{0 \le k &lt; n} dp[k].
+\]</span> That is the maximum sum among all possible ending-at-k subarrays, which necessarily includes the overall best subarray.</p></li>
+</ol>
+<p>Because computing each <code>dp[i]</code> takes O(1) time, the entire process is O(n).</p>
+<hr>
+</section>
+<section id="intuitive-explanation" class="level2">
+<h2 class="anchored" data-anchor-id="intuitive-explanation">Intuitive Explanation</h2>
+<ul>
+<li><p>As you sweep from left to right, maintain two values:</p>
+<ol type="1">
+<li><code>current_max</code> = “best subarray sum ending exactly at the current position.”</li>
+<li><code>global_max</code> = “best subarray sum seen so far anywhere.”</li>
+</ol></li>
+<li><p>When you arrive at a new element <code>x = array[i]</code>, ask yourself:<br>
+&gt; “If I want to pick a subarray that ends at i, is it better to (a) start fresh at i (just take x), or (b) stick with the best contiguous sum I had ending at i−1 and add x to it?”</p>
+<ul>
+<li>If the best sum ending at i−1 was negative, adding x would only make it worse than just taking x alone.<br>
+</li>
+<li>If the best sum ending at i−1 was positive, adding x can only help (or at least not make it smaller than x).</li>
+</ul>
+<p>Concretely:</p>
+<pre class="plaintext"><code>current_max = max(x, current_max + x)
+global_max  = max(global_max, current_max)</code></pre></li>
+</ul>
+<p>and then move on to i+1.</p>
+<p>Think of it like this: whenever the running sum (best-ending-here) dips below zero, you toss it away and start over at the next index, because any prefix with negative sum would only drag down whatever comes after.</p>
+<pre><code>function Kadane(array):
+    if array is empty:
+        return 0   // or some convention (e.g. negative infinity) depending on the problem
+
+    current_max = array[0]
+    global_max  = array[0]
+
+    for i from 1 to (n - 1):
+        x = array[i]
+        // Either extend the previous best subarray, or start new at i
+        current_max = max(x, current_max + x)
+
+        // Update global answer if needed
+        global_max = max(global_max, current_max)
+
+    return global_max</code></pre>
+<p>Initialization: We set both current_max and global_max to array[0]. That handles the case where all numbers might be negative: the answer is the single largest element.</p>
+<p>Loop: At each step, update current_max using the recurrence. Then, if the new current_max is higher than any global_max we’ve seen so far, update global_max.</p>
+<p>Return: By the end, global_max holds the largest sum of any contiguous subarray in the whole array.</p>
+</section>
+<section id="worked-example" class="level2">
+<h2 class="anchored" data-anchor-id="worked-example">Worked Example</h2>
+<p>Take the array <code>[-2, 1, -3, 4, -1, 2, 1, -5, 4]</code>. Walk through Kadane’s steps:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 8%">
+<col style="width: 19%">
+<col style="width: 58%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">i</th>
+<th style="text-align: center;">array[i]</th>
+<th style="text-align: center;">current_max (before)</th>
+<th style="text-align: center;">current_max (after) = max(array[i], current_max₍i−1₎ + array[i])</th>
+<th style="text-align: center;">global_max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">(init) −2</td>
+<td style="text-align: center;">max(−2, —) = −2</td>
+<td style="text-align: center;">−2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">+1</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">max( 1, (−2 + 1) = −1 ) = 1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">−3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">max(−3, (1 + (−3)) = −2 ) = −2</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">+4</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">max( 4, (−2 + 4) = 2 ) = 4</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">−1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">max(−1, (4 + (−1)) = 3 ) = 3</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">max( 2, (3 + 2) = 5 ) = 5</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">+1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">max( 1, (5 + 1) = 6 ) = 6</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">max(−5, (6 + (−5)) = 1 ) = 1</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">+4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">max( 4, (1 + 4) = 5 ) = 5</td>
+<td style="text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+<p>At index 6, <code>current_max</code> becomes 6, and that’s the largest sum observed. Indeed, subarray <code>[4, −1, 2, 1]</code> ends at i=6 and has sum 6.</p>
+<p>By index 7, adding −5 would drop the running sum to 1, but since 1 is still ≥ −5 itself, Kadane chooses 1 (i.e., “extend” rather than “start new”).</p>
+<p>By index 8, it’s better to start new at 8 or to extend the 1? We compare:</p>
+<ul>
+<li><strong>“Start new”</strong> at 8: sum = 4</li>
+<li><strong>“Extend previous”</strong> (which was 1): sum = 1 + 4 = 5</li>
+</ul>
+<p>→ so we pick 5. However, 5 &lt; global_max = 6, so <code>global_max</code> remains 6.</p>
+<hr>
+</section>
+<section id="handling-all-negative-arrays" class="level2">
+<h2 class="anchored" data-anchor-id="handling-all-negative-arrays">Handling All-Negative Arrays</h2>
+<p>A common question: “What if the array is entirely negative, e.g.&nbsp;<code>[-5, -3, -8]</code>?”<br>
+Kadane’s initialization of</p>
+<pre><code>current_max = global_max = array[0]</code></pre>
+<p>automatically handles that. We never zero out a running sum unless it’s worse than starting fresh. So if all numbers are negative, every time you consider a new element <code>x</code>, you compute</p>
+<pre><code>current_max = max(x, current_max + x)</code></pre>
+<p>Since <code>current_max + x</code> is even more negative than <code>x</code> alone, the recurrence forces <code>current_max</code> to be the largest single negative element encountered so far. Thus the global max ends up being the least-negative (i.e., the “largest”) element of the array.</p>
+<hr>
+</section>
+<section id="final-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="final-remarks">Final Remarks</h2>
+<ul>
+<li><strong>Time complexity</strong>: O(n), since each element is processed exactly once with O(1) work per element.</li>
+<li><strong>Space complexity</strong>: O(1) extra space if you only keep two scalars (<code>current_max</code>, <code>global_max</code>). (If you store the entire <code>dp[]</code> array, it’s O(n), but you don’t need to; you only ever use the “previous” value.)</li>
+</ul>
+<p>Kadane’s algorithm is essentially a specialized form of dynamic programming that keeps track of a “running best suffix sum” and resets whenever that suffix sum would be negative. Once you grasp that the maximum-sum subarray ending at i is either “continue from i−1” or “start anew at i,” the rest follows naturally.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

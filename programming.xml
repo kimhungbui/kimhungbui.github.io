@@ -10,7 +10,246 @@
 <atom:link href="https://kimhungbui.github.io/programming.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 30 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 02 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Maximum subarray problem and Kadane’s algorithm</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/maximum-subarray-problem/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In computer science, the maximum sum subarray problem, also known as the maximum segment sum problem, is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array <code>A[1...n]</code> of numbers. It can be solved in <img src="https://latex.codecogs.com/png.latex?O(n)"> time and <img src="https://latex.codecogs.com/png.latex?O(1)"> space.</p>
+<p>Formally, the task is to find indices <img src="https://latex.codecogs.com/png.latex?i"> and <img src="https://latex.codecogs.com/png.latex?j"> with <img src="https://latex.codecogs.com/png.latex?1%5Cleq%20i%20%5Cleq%20j%20%5Cleq%20n"> such that the sum <img src="https://latex.codecogs.com/png.latex?%0A%5CSigma%5Ej_%7Bx=i%7DA%5Bx%5D%0A"> is as large as possible</p>
+<section id="application" class="level1">
+<h1>Application</h1>
+<p>Maximum subarray problems arise in many fields, such as genomic sequence analysis and computer vision.</p>
+<p>Genomic sequence analysis employs maximum subarray algorithms to identify important biological segments of protein sequences that have unusual properties, by assigning scores to points within the sequence that are positive when a motif to be recognized is present, and negative when it is not, and then seeking the maximum subarray among these scores. These problems include conserved segments, GC-rich regions, tandem repeats, low-complexity filter, DNA binding domains, and regions of high charge.</p>
+<p>In computer vision, bitmap images generally consist only of positive values, for which the maximum subarray problem is trivial: the result is always the whole array. However, after subtracting a threshold value (such as the average pixel value) from each pixel, so that above-average pixels will be positive and below-average pixels will be negative, the maximum subarray problem can be applied to the modified image to detect bright areas within it.</p>
+</section>
+<section id="kadanes-algorithm" class="level1">
+<h1>Kadane’s algorithm</h1>
+<section id="brute-force-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="brute-force-thoughts">Brute-Force Thoughts</h2>
+<p>A naive way to find the maximum subarray is:</p>
+<ol type="1">
+<li><p>Enumerate all pairs of indices <code>(i, j)</code> with <code>0 ≤ i ≤ j &lt; n</code>.</p></li>
+<li><p>Compute the sum of <code>array[i..j]</code>.</p></li>
+<li><p>Track the largest sum seen.</p></li>
+</ol>
+<p>That requires <img src="https://latex.codecogs.com/png.latex?O(n%5E2)"> subarrays and, if we sum each subarray from scratch, up to <img src="https://latex.codecogs.com/png.latex?O(n)"> per sum, yielding <img src="https://latex.codecogs.com/png.latex?O(n%5E3)"> time. We can improve one factor to <img src="https://latex.codecogs.com/png.latex?O(n%5E2)"> by keeping a running sum when extending the end index, but that’s still too slow when <code>n</code> is large.</p>
+<p>We want something like <img src="https://latex.codecogs.com/png.latex?O(n)"> time.</p>
+<hr>
+</section>
+<section id="key-observation-intuition" class="level2">
+<h2 class="anchored" data-anchor-id="key-observation-intuition">Key Observation (Intuition)</h2>
+<blockquote class="blockquote">
+<p><strong>Observation:</strong> Suppose you want to know “What is the maximum-sum subarray that ends exactly at index i?” Once you know that, you could check all i and pick the best among them.</p>
+</blockquote>
+<ul>
+<li><p>Define<br>
+<img src="https://latex.codecogs.com/png.latex?dp%5Bi%5D%20=%20%5Ctext%7Bthe%20maximum%20subarray%20sum%20among%20all%20subarrays%20that%20end%20at%20index%20%7Di."> Our ultimate answer (global max) will be<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%20%20%5Cmax_%7B0%20%5Cle%20k%20%3C%20n%7D%20dp%5Bk%5D.%0A"></p></li>
+<li><p>How do we compute <code>dp[i]</code> if we already know <code>dp[i–1]</code>? Consider any subarray that ends at i. It either:</p>
+<ol type="1">
+<li>Is just the single element <code>array[i]</code> (i.e., we “start fresh” at i), or<br>
+</li>
+<li>Is some subarray that ended at i−1 plus <code>array[i]</code> (i.e., we <strong>extend</strong> the best ending at i−1).</li>
+</ol>
+<p>In other words: <img src="https://latex.codecogs.com/png.latex?%0A%20%20dp%5Bi%5D%20%5C;=%5C;%20%5Cmax%5Cbigl(%5C;%20array%5Bi%5D,%5C;%20dp%5Bi-1%5D%20+%20array%5Bi%5D%20%5Cbigr).%0A"></p>
+<ul>
+<li>If <code>dp[i-1]</code> (the best ending at i−1) is negative, then we’re better off “dropping” it and taking <code>array[i]</code> alone.</li>
+<li>If <code>dp[i-1]</code> is positive (or zero), then extending it by adding <code>array[i]</code> only makes the sum larger.</li>
+</ul></li>
+</ul>
+<p>That recurrence is exactly Kadane’s idea.</p>
+<hr>
+</section>
+<section id="deriving-kadanes-recurrence" class="level2">
+<h2 class="anchored" data-anchor-id="deriving-kadanes-recurrence">Deriving Kadane’s Recurrence</h2>
+<ol type="1">
+<li><p><strong>Define</strong><br>
+<img src="https://latex.codecogs.com/png.latex?dp%5Bi%5D%20=%20%5Ctext%7Bmax%20subarray%20sum%20ending%20exactly%20at%20index%20%7Di."></p></li>
+<li><p><strong>Base case</strong>:<br>
+<img src="https://latex.codecogs.com/png.latex?dp%5B0%5D%20=%20array%5B0%5D."></p></li>
+<li><p><strong>Transition</strong>: For each (i ), consider two possibilities for the subarray that ends at (i):</p>
+<ul>
+<li><strong>Start a new subarray</strong> at (i). Its sum is (array[i]).<br>
+</li>
+<li><strong>Extend</strong> the best subarray ending at (i-1) by including the element at (i). Its sum is (dp[i-1] + array[i]).</li>
+</ul>
+<p>Therefore: <img src="https://latex.codecogs.com/png.latex?%0A%20%20dp%5Bi%5D%20=%20%5Cmax%5Cbigl(array%5Bi%5D,%5C,%20dp%5Bi-1%5D%20+%20array%5Bi%5D%5Cbigr).%0A"></p></li>
+<li><p><strong>Global answer</strong>: As you fill these in from (i = 0) up to (n-1), keep track of <img src="https://latex.codecogs.com/png.latex?%0A%20%20%5Ctext%7Bglobal%5C_max%7D%20=%20%5Cmax_%7B0%20%5Cle%20k%20%3C%20n%7D%20dp%5Bk%5D.%0A"> That is the maximum sum among all possible ending-at-k subarrays, which necessarily includes the overall best subarray.</p></li>
+</ol>
+<p>Because computing each <code>dp[i]</code> takes O(1) time, the entire process is O(n).</p>
+<hr>
+</section>
+<section id="intuitive-explanation" class="level2">
+<h2 class="anchored" data-anchor-id="intuitive-explanation">Intuitive Explanation</h2>
+<ul>
+<li><p>As you sweep from left to right, maintain two values:</p>
+<ol type="1">
+<li><code>current_max</code> = “best subarray sum ending exactly at the current position.”</li>
+<li><code>global_max</code> = “best subarray sum seen so far anywhere.”</li>
+</ol></li>
+<li><p>When you arrive at a new element <code>x = array[i]</code>, ask yourself:<br>
+&gt; “If I want to pick a subarray that ends at i, is it better to (a) start fresh at i (just take x), or (b) stick with the best contiguous sum I had ending at i−1 and add x to it?”</p>
+<ul>
+<li>If the best sum ending at i−1 was negative, adding x would only make it worse than just taking x alone.<br>
+</li>
+<li>If the best sum ending at i−1 was positive, adding x can only help (or at least not make it smaller than x).</li>
+</ul>
+<p>Concretely:</p>
+<pre class="plaintext"><code>current_max = max(x, current_max + x)
+global_max  = max(global_max, current_max)</code></pre></li>
+</ul>
+<p>and then move on to i+1.</p>
+<p>Think of it like this: whenever the running sum (best-ending-here) dips below zero, you toss it away and start over at the next index, because any prefix with negative sum would only drag down whatever comes after.</p>
+<pre><code>function Kadane(array):
+    if array is empty:
+        return 0   // or some convention (e.g. negative infinity) depending on the problem
+
+    current_max = array[0]
+    global_max  = array[0]
+
+    for i from 1 to (n - 1):
+        x = array[i]
+        // Either extend the previous best subarray, or start new at i
+        current_max = max(x, current_max + x)
+
+        // Update global answer if needed
+        global_max = max(global_max, current_max)
+
+    return global_max</code></pre>
+<p>Initialization: We set both current_max and global_max to array[0]. That handles the case where all numbers might be negative: the answer is the single largest element.</p>
+<p>Loop: At each step, update current_max using the recurrence. Then, if the new current_max is higher than any global_max we’ve seen so far, update global_max.</p>
+<p>Return: By the end, global_max holds the largest sum of any contiguous subarray in the whole array.</p>
+</section>
+<section id="worked-example" class="level2">
+<h2 class="anchored" data-anchor-id="worked-example">Worked Example</h2>
+<p>Take the array <code>[-2, 1, -3, 4, -1, 2, 1, -5, 4]</code>. Walk through Kadane’s steps:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 8%">
+<col style="width: 19%">
+<col style="width: 58%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">i</th>
+<th style="text-align: center;">array[i]</th>
+<th style="text-align: center;">current_max (before)</th>
+<th style="text-align: center;">current_max (after) = max(array[i], current_max₍i−1₎ + array[i])</th>
+<th style="text-align: center;">global_max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">(init) −2</td>
+<td style="text-align: center;">max(−2, —) = −2</td>
+<td style="text-align: center;">−2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">+1</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">max( 1, (−2 + 1) = −1 ) = 1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">−3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">max(−3, (1 + (−3)) = −2 ) = −2</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">+4</td>
+<td style="text-align: center;">−2</td>
+<td style="text-align: center;">max( 4, (−2 + 4) = 2 ) = 4</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">−1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">max(−1, (4 + (−1)) = 3 ) = 3</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">max( 2, (3 + 2) = 5 ) = 5</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">+1</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">max( 1, (5 + 1) = 6 ) = 6</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">−5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">max(−5, (6 + (−5)) = 1 ) = 1</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">+4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">max( 4, (1 + 4) = 5 ) = 5</td>
+<td style="text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+<p>At index 6, <code>current_max</code> becomes 6, and that’s the largest sum observed. Indeed, subarray <code>[4, −1, 2, 1]</code> ends at i=6 and has sum 6.</p>
+<p>By index 7, adding −5 would drop the running sum to 1, but since 1 is still ≥ −5 itself, Kadane chooses 1 (i.e., “extend” rather than “start new”).</p>
+<p>By index 8, it’s better to start new at 8 or to extend the 1? We compare:</p>
+<ul>
+<li><strong>“Start new”</strong> at 8: sum = 4</li>
+<li><strong>“Extend previous”</strong> (which was 1): sum = 1 + 4 = 5</li>
+</ul>
+<p>→ so we pick 5. However, 5 &lt; global_max = 6, so <code>global_max</code> remains 6.</p>
+<hr>
+</section>
+<section id="handling-all-negative-arrays" class="level2">
+<h2 class="anchored" data-anchor-id="handling-all-negative-arrays">Handling All-Negative Arrays</h2>
+<p>A common question: “What if the array is entirely negative, e.g.&nbsp;<code>[-5, -3, -8]</code>?”<br>
+Kadane’s initialization of</p>
+<pre><code>current_max = global_max = array[0]</code></pre>
+<p>automatically handles that. We never zero out a running sum unless it’s worse than starting fresh. So if all numbers are negative, every time you consider a new element <code>x</code>, you compute</p>
+<pre><code>current_max = max(x, current_max + x)</code></pre>
+<p>Since <code>current_max + x</code> is even more negative than <code>x</code> alone, the recurrence forces <code>current_max</code> to be the largest single negative element encountered so far. Thus the global max ends up being the least-negative (i.e., the “largest”) element of the array.</p>
+<hr>
+</section>
+<section id="final-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="final-remarks">Final Remarks</h2>
+<ul>
+<li><strong>Time complexity</strong>: O(n), since each element is processed exactly once with O(1) work per element.</li>
+<li><strong>Space complexity</strong>: O(1) extra space if you only keep two scalars (<code>current_max</code>, <code>global_max</code>). (If you store the entire <code>dp[]</code> array, it’s O(n), but you don’t need to; you only ever use the “previous” value.)</li>
+</ul>
+<p>Kadane’s algorithm is essentially a specialized form of dynamic programming that keeps track of a “running best suffix sum” and resets whenever that suffix sum would be negative. Once you grasp that the maximum-sum subarray ending at i is either “continue from i−1” or “start anew at i,” the rest follows naturally.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/maximum-subarray-problem/</guid>
+  <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>127. Word Ladder</title>
   <dc:creator>Hung </dc:creator>
@@ -386,6 +625,48 @@ font-style: inherit;">0</span></span></code></pre></div>
   <category>leetcode</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-find-closest-node-given-2-nodes/</guid>
+  <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Finetuning</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/finetunning/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Finetuning is a process of adapting a model to a specific task by further training the whole model or part of the model. It is one of the three very common AI engineering techniques used to adapt a model to specific needs, alongside prompt engineering and Retrieval-Augmented Generation (RAG). While prompt-based methods like prompt engineering and RAG influence a model’s quality solely through inputs without modifying the model itself, finetuning adapts a model by adjusting its weights. Finetuning techniques are generally more complicated and require more data compared to prompt-based methods. However, they can significantly improve a model’s quality, latency, and cost. Adapting a model by changing its weights makes things possible that aren’t otherwise, such as adapting it to a new task it wasn’t exposed to during initial training.</p>
+<p>Finetuning is considered part of a model’s training process, specifically an extension of model pre-training. Training that happens after pre-training is referred to as finetuning, and it can take various forms. Chapter 2 discusses two types of finetuning: supervised finetuning and preference finetuning.</p>
+<p>The goal of finetuning is to get a base model, which has some but not all of the necessary capabilities, to perform well enough for a specific task. Finetuning improves sample efficiency, meaning a model can learn the desired behavior with fewer examples than training from scratch. For instance, while training a model for legal question answering from scratch might require millions of examples, finetuning a good base model might only require a few hundred. Finetuning can enhance various aspects of a model, including its domain-specific capabilities (like coding or medical question answering) and safety, but it is most often used to improve the model’s instruction-following ability, especially to adhere to specific output styles and formats.</p>
+<section id="when-to-finetune" class="level1">
+<h1>1. When to Finetune:</h1>
+<ul>
+<li><p>Enhancing domain-specific capabilities: If a model struggles with a specific domain (e.g., a less common SQL dialect or customer-specific queries), finetuning on relevant data can help.</p></li>
+<li><p>Improving instruction following and structured outputs: Finetuning is the most effective and general approach to get models to generate outputs in a desired format. While prompting is less reliable, finetuning a model on examples following the desired format is much more reliable. For certain tasks like classification, modifying the model’s architecture before finetuning by adding a classifier head can guarantee the output format.</p></li>
+<li><p>Bias mitigation: Finetuning with carefully curated data can counteract biases present in the base model’s training data. For example, finetuning on data with female CEOs or texts authored by women/African authors can reduce gender and racial biases.</p></li>
+<li><p>Distillation: Finetuning a smaller model to imitate the behavior of a larger model using data generated by the larger model is a common approach called distillation. This makes the smaller model cheaper and faster to use in production.</p></li>
+<li><p>Optimizing token usage (historically): Before prompt caching, finetuning could help optimize token usage by training the model on examples instead of including them in every prompt, resulting in shorter, cheaper, and lower-latency prompts. Although prompt caching has reduced this benefit, finetuning still removes the limitation of context length on the number of examples used.</p></li>
+<li><p>Extending context length: Long-context finetuning requires modifying the model’s architecture and can increase the maximum context length, though it is harder to do and the resulting model might degrade on shorter sequences.</p></li>
+</ul>
+</section>
+<section id="reasons-not-to-finetune" class="level1">
+<h1>2. Reasons Not to Finetune:</h1>
+<ul>
+<li><p>Performance degradation on other tasks: Finetuning for a specific task can sometimes degrade performance on other tasks.</p></li>
+<li><p>High up-front investment and continual maintenance: Finetuning requires significant resources, including acquiring high-quality annotated data (which can be slow and expensive) and ML knowledge to evaluate base models, monitor training, and debug.</p></li>
+<li><p>Serving complexity: Once finetuned, serving the model requires figuring out hosting (in-house or API) and inference optimization, which is non-trivial for large models.</p></li>
+<li><p>Pace of base model improvement: New base models are constantly being developed and may improve faster than a finetuned model can be updated.</p></li>
+<li><p>Prompting might be sufficient: Many practitioners find that after complaints about prompting’s ineffectiveness, refining the prompt experiment process shows that prompting alone can be sufficient.</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/finetunning/</guid>
   <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -824,7 +1105,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="d666c373" class="cell" data-execution_count="1">
+<div id="e8cac66e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
@@ -901,389 +1182,6 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-maximum-subarray/</guid>
   <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Image classification</title>
-  <link>https://kimhungbui.github.io/programming/convolution/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="image-classification" class="level1">
-<h1>Image Classification</h1>
-<p>This is the task of assigning an input image one label from a <em>fixed categories</em>. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, many other seemingly distinct CV tasks (such as object detection, segmentation) can be reduced to image classification.</p>
-<p><strong>Example</strong>: In the image blow in image classification model takes a single image and assigns probabilities to 4 label {cat, dog, hat, mug}. Computer view a image as an one large 3-dimensional array of numbers. In this example, the cat image is 248 pixel wide, 400 pixel tall, and has three color channel Red, Green, Blue. Therefore, the image consists of <img src="https://latex.codecogs.com/png.latex?248%20%5Ctimes%20400%20%5Ctimes%203"> numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is turn this quarter of a million numbers into a single label, such as “cat”. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327230513.png" class="img-fluid"></p>
-<p><strong>Challenges:</strong> Since this task of recognizing a visual concept (e.g.&nbsp;cat) is relatively trivial for human to perform, it is worth considering the challenges involved from the perspective of a CV algorithm. As we present list of challenges below.</p>
-<ul>
-<li><strong>Viewpoint variation:</strong> A single instance of an object can be oriented in many ways with respect to the camera.</li>
-<li><strong>Scale variation:</strong> Visual classes often exhibit variation of their size (size in the real world, <em>not only</em> in terms of their extent in the image)</li>
-<li><strong>Deformation:</strong> Many objects of interest are not rigid bodies and can be deformed in extremes ways.</li>
-<li><strong>Occlusion</strong>: The objects of interest can be occluded. Sometimes only a small portion of an object (as little as few pixels) could be visible.</li>
-<li><strong>Illumination conditions:</strong> The effect of illumination are drastic on the pixel level.</li>
-<li><strong>Background clutter:</strong> The objects of interest may <em>blend</em> into their environment, making them hard to identify.</li>
-<li><strong>Intra-class variation:</strong> The classes of interest can be often be relatively broad, such as <em>chair</em>. Their are many different types of these objects, each with their own appearance. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327235749.png" class="img-fluid"></li>
-</ul>
-<p>A good image classification model must be invariant to the cross product of all these variations, while simultaneously retaining sensitivity to the inter-class variations.</p>
-<ol type="1">
-<li>Cross product of variations This refers to the <strong>combination of all possible variations</strong> (e.g.&nbsp;viewpoint, scale, deformation, occlusion, illumination, etc.) that can occur <strong>within a class</strong>. The term “cross production” here is metaphorical, inpsired by the mathematical concept of a Cartesian product, which generate all possible combinations of elements from multiple sets.
-<ul>
-<li><strong>Example</strong>: A chair might appear:
-<ul>
-<li>Rotate (viewpoint variation)</li>
-<li>Partially hidden (occlusion)</li>
-<li>Under bright sunlight (illumination)</li>
-<li>While being non-rigid (deformation) The model must recognize it as a “chair” <strong>despite this complex combination of variations</strong> <strong>Invariance Requirement:</strong> The model must be <strong>invariant</strong> to these variations, meaning its prediction for a class should not change even when factors alter the object’s appearance.</li>
-</ul></li>
-</ul></li>
-<li><strong>Inter-class variation</strong> There are <strong>difference between distinct classes</strong> (e.g.&nbsp;chairs vs tables). A model must retain <strong>sensitivity</strong> to these differences to avoid confusing classes, even when they share superficial similarities.
-<ul>
-<li>Example: A “stool” (class: chair) and a “small table” (class: table) might both appear at similar scales or under similar lighting. The model must distinguish them based on defining feature (e.g.&nbsp;height, presence of a backrest).</li>
-<li>Sensitivity Requirement: The model must <strong>preserver discriminate features</strong> that separate classes, even when intra-class variations (e.g.&nbsp;deformation in chairs) are extreme. <strong>Data-driven approach</strong>: How might we go about writing an algorithm that can classify images into distinct categories? Unlike writing an algorithm for, for example, sorting a list of numbers, it is not obvious how one might write an algorithm for identifying cats in images. Therefore, instead of trying to specify what every one of the categories of interest look like directly in code, the approach that we will take is not unlike one we would take with a child: we’re going to provide the computer with many examples of each class and then develop learning algorithms that look at these examples and learn about the visual appearance of each class. This approach is referred to as a <em>data-driven approach</em>, since it relies on first accumulating a <em>training dataset</em> of labeled images. Here is an example of what such a dataset might look like:</li>
-</ul></li>
-</ol>
-<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328000317.png" class="img-fluid"></p>
-<p><strong>The image classification pipeline</strong> We’ve seen that the task in Image Classification is to taken an array of pixels that represents a single image and assign a label to it. Our complete pipeline can be formalized as follows: - <strong>Input:</strong> Our input consists of a set of <em>N</em> images, each labeled with one of <em>K</em> different classes. We refer to this data as the <em>learning set</em>. - <strong>Learning:</strong> Our task is to use the training set to learn what every one of the classes looks like. We refer to this step as <em>training a classifier</em>, or <em>learning a model</em>. - <strong>Evaluation:</strong> In the end, we evaluate the quality of the classifier by asking it to predict labels for a new set of images that it has never seen before. We will then compare the true labels of these images to the ones predicted by the classifier. Intuitively, we’re hoping that a lot of the predictions match up with the true answers (which we call the <em>ground truth</em>).</p>
-</section>
-<section id="nearest-neighbor-classifier" class="level1">
-<h1>Nearest Neighbor Classifier</h1>
-<p>As our first approach, we will develop what we call a <strong>Nearest Neighbor Classifier</strong>. This classifier has nothing to do with Convolution Neural Networks and it is very rarely used in practice, but i will allow us to get an ideal about the basic approach to an image classification.</p>
-<p><strong>Example image classification dataset: CIFAR-10</strong>. <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>This dataset consist of 10 classes (for example <em>airplane, automobile, bird, etc</em>). These 60,000 images are partitioned into a training set of 50,000 images and a test set of 10,000 images. In the image below we can see 10 random example images from each one of the 10 classes.</p>
-<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328001115.png" class="img-fluid"> Left:&nbsp;Example&nbsp;images&nbsp;from&nbsp;the&nbsp;<a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>.&nbsp;Right:&nbsp;first&nbsp;column&nbsp;shows&nbsp;a&nbsp;few&nbsp;test&nbsp;images&nbsp;and&nbsp;next&nbsp;to&nbsp;each&nbsp;we&nbsp;show&nbsp;the&nbsp;top&nbsp;10&nbsp;nearest&nbsp;neighbors&nbsp;in&nbsp;the&nbsp;training&nbsp;set&nbsp;according&nbsp;to&nbsp;pixel-wise&nbsp;difference.</p>
-<p>Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 image for every one of the labels), and we wish to label the remaining 10,000. The nearest neighbor classifier will take a test image, compare it to every single one of the training images, and predict the label of the closest training image. In the image above and on the right we can see an example result of such a procedure for 10 example test images. Notice that in only about 3 of 10 examples of an image of the same class is retrieved, while in other 7 examples this is not the case. For example, in the 8th row the nearest training image to the horse head is a red car, presumably due to the strong black background. As a result, this image of a horse would in this case be mislabeled as a car.</p>
-<p>One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors <img src="https://latex.codecogs.com/png.latex?I_1,%20I_2">, a reasonable choice for comparing them might be the <strong>L1 distance</strong>.</p>
-<p><img src="https://latex.codecogs.com/png.latex?d_1(I_1,%20I_2)=%5CSigma_p%20%7CI_1%5Ep%20-%20I_2%5Ep%7C"> Where the sum is taken over all pixels. Here is the procedure visualized:</p>
-<p>![[nneg.jpeg]]</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> numpy</span>
-<span id="cb1-2"></span>
-<span id="cb1-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">class</span> NearestNeighbor(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">object</span>):</span>
-<span id="cb1-4">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">__init__</span>(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>):</span>
-<span id="cb1-5">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">pass</span></span>
-<span id="cb1-6">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> train(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, X, y):</span>
-<span id="cb1-7">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
-background-color: null;
-font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">imes D where each row is an example. Y is 1-dimension of size N"""</span></span>
-<span id="cb1-8">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># the nearest neighbor classifier simpply remembers all the training data</span></span>
-<span id="cb1-9">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> X</span>
-<span id="cb1-10">        <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.ytr <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> y</span>
-<span id="cb1-11">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> predict(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, X):</span>
-<span id="cb1-12">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
-background-color: null;
-font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">imes D where each row is an example we wish to predict label for"""</span></span>
-<span id="cb1-13">        num_test <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> X.shape[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>]</span>
-<span id="cb1-14">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># lets make sure that the output type matches the input type</span></span>
-<span id="cb1-15">        Ypred <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.zeros(num_test, dtype <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.dtype)</span>
-<span id="cb1-16">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># loop over all test rows</span></span>
-<span id="cb1-17">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(num_test):</span>
-<span id="cb1-18">            <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># find the nearest training image to the i'th test image</span></span>
-<span id="cb1-19">            <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># using the L1 distance (sum of absolute value differences)</span></span>
-<span id="cb1-20">            distances <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">sum</span>(np.<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">abs</span>(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> X[i,:]), axis <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb1-21">            min_index <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.argmin(distances) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># get the index with smallest distance</span></span>
-<span id="cb1-22">            Ypred[i] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>.ytr[min_index] <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># predict the label of the nearest example</span></span>
-<span id="cb1-23">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> Ypred</span></code></pre></div>
-<section id="the-choice-of-distance" class="level2">
-<h2 class="anchored" data-anchor-id="the-choice-of-distance">The choice of distance</h2>
-</section>
-</section>
-<section id="k---nearest-neighbor-classifier" class="level1">
-<h1>k - Nearest Neighbor Classifier</h1>
-<p>The idea: instead of finding the single closest image in the training set, we will find the top <strong>k</strong> closest images, and have them vote on the label of the test image. In particular, when <em>k=1</em>, we recover the NN classifier. Intuitively, higher values of <strong>k</strong> have smoothing effect that makes the classifier more resistant to outliers:</p>
-<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250507141512.png" class="img-fluid"></p>
-<p>An&nbsp;example&nbsp;of&nbsp;the&nbsp;difference&nbsp;between&nbsp;Nearest&nbsp;Neighbor&nbsp;and&nbsp;a&nbsp;5-Nearest&nbsp;Neighbor&nbsp;classifier,&nbsp;using&nbsp;2-dimensional&nbsp;points&nbsp;and&nbsp;3&nbsp;classes&nbsp;(red,&nbsp;blue,&nbsp;green).&nbsp;The&nbsp;colored&nbsp;regions&nbsp;show&nbsp;the&nbsp;<strong>decision&nbsp;boundaries</strong>&nbsp;induced&nbsp;by&nbsp;the&nbsp;classifier&nbsp;with&nbsp;an&nbsp;L2&nbsp;distance.&nbsp;The&nbsp;white&nbsp;regions&nbsp;show&nbsp;points&nbsp;that&nbsp;are&nbsp;ambiguously&nbsp;classified&nbsp;(i.e.&nbsp;class&nbsp;votes&nbsp;are&nbsp;tied&nbsp;for&nbsp;at&nbsp;least&nbsp;two&nbsp;classes).&nbsp;Notice&nbsp;that&nbsp;in&nbsp;the&nbsp;case&nbsp;of&nbsp;a&nbsp;NN&nbsp;classifier,&nbsp;outlier&nbsp;datapoints&nbsp;(e.g.&nbsp;green&nbsp;point&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;a&nbsp;cloud&nbsp;of&nbsp;blue&nbsp;points)&nbsp;create&nbsp;small&nbsp;islands&nbsp;of&nbsp;likely&nbsp;incorrect&nbsp;predictions,&nbsp;while&nbsp;the&nbsp;5-NN&nbsp;classifier&nbsp;smooths&nbsp;over&nbsp;these&nbsp;irregularities,&nbsp;likely&nbsp;leading&nbsp;to&nbsp;better&nbsp;<strong>generalization</strong>&nbsp;on&nbsp;the&nbsp;test&nbsp;data&nbsp;(not&nbsp;shown).&nbsp;Also&nbsp;note&nbsp;that&nbsp;the&nbsp;gray&nbsp;regions&nbsp;in&nbsp;the&nbsp;5-NN&nbsp;image&nbsp;are&nbsp;caused&nbsp;by&nbsp;ties&nbsp;in&nbsp;the&nbsp;votes&nbsp;among&nbsp;the&nbsp;nearest&nbsp;neighbors&nbsp;(e.g.&nbsp;2&nbsp;neighbors&nbsp;are&nbsp;red,&nbsp;next&nbsp;two&nbsp;neighbors&nbsp;are&nbsp;blue,&nbsp;last&nbsp;neighbor&nbsp;is&nbsp;green).</p>
-</section>
-<section id="validation-sets-for-hyperparameter-tunning." class="level1">
-<h1>Validation sets for Hyperparameter tunning.</h1>
-<p>We saw that there are many different distance functions we could have used: L1 norm, L2. norm, there are many other choices we didn’t even consider (e.g.&nbsp;dot products). These choices are called <strong>hyperparameters</strong> nd they come up very often in the design of many ML algorithms that learn from data. It’s often not obvious what values/settings one should choose.</p>
-<p>We might be tempted to suggest what we should try out many different values and see what work bests. That is a fine idea and that’s indeed what we will do, but this must be done very carefully. In particular, <strong>we cannot use the test set for the purpose of tweaking hyperparameters</strong>. Whenever we’re designing ML algorithms, we should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that we may tune our hyperparameters to work well on the test set, but if we were to deploy our model we could see a significantly reduced performance. in practice, we would say that we <strong>overfit</strong> to the test set. Another way of looking at it is that if we tune</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://kimhungbui.github.io/programming/convolution/</guid>
-  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Docker basics</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/docker-intro/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This chapter introduces containerization with Docker and relevant concepts such as image and volume. By the end of this chapter you are able to:</p>
-<ul>
-<li>Run containerized applications</li>
-<li>Containerize applications</li>
-<li>Utilize volumes to store data persistently outside of the containers.</li>
-<li>Use port mapping to enable access via TCP to containerized applications</li>
-<li>Share your own containers publicly</li>
-</ul>
-<section id="definitions-and-basic-concept" class="level1">
-<h1>Definitions and basic concept</h1>
-<section id="what-is-devops" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-devops">What is DevOps</h2>
-<p>The term itself consists of two parts <em>Dev</em> and <em>Ops</em>. Dev refers to the development of software and Ops to operations. Simple definition for DevOps would be that it means the release, configuring, and monitoring of software is in the hand people who develop it.</p>
-</section>
-<section id="what-is-docker" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-docker">What is Docker</h2>
-<blockquote class="blockquote">
-<p>“Docker&nbsp;is&nbsp;a&nbsp;set&nbsp;of&nbsp;platform&nbsp;as&nbsp;a&nbsp;service&nbsp;(PaaS)&nbsp;products&nbsp;that&nbsp;use&nbsp;OS-level&nbsp;virtualization&nbsp;to&nbsp;deliver&nbsp;software&nbsp;in&nbsp;packages&nbsp;called&nbsp;containers.”&nbsp;-&nbsp;<a href="https://en.wikipedia.org/wiki/Docker_(software)">from&nbsp;Wikipedia(opens&nbsp;in&nbsp;a&nbsp;new&nbsp;tab)</a>.</p>
-</blockquote>
-<p>So we get two definitions: 1. Docker is a set of tools to deliver software incontainers. 2. Containers are packages of software. <img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403152352.png" class="img-fluid"></p>
-<p>The above image illustrate how containers include the application and its dependencies. These containers are isolated so that they don’t interfere with each other or the software running outside of the containers. If we want to enable interactions between them, Docker offers tools to do so.</p>
-</section>
-<section id="benefits-from-containers" class="level2">
-<h2 class="anchored" data-anchor-id="benefits-from-containers">Benefits from containers</h2>
-<p>Containers package applications. In different scenarios: ### Scenario 1: Works on my machine</p>
-<p>Let’s first take a closer look into what happens in web development without containers following the chain above starting from “Plan”.</p>
-<p>First we plan an application. Then our team of 1-n developers create the software. It works on one’s computer. It may even go through a testing pipeline working perfectly. We send it to the server and it does not work.</p>
-<p>This&nbsp;is&nbsp;known&nbsp;as&nbsp;the&nbsp;<strong>“works&nbsp;on&nbsp;my&nbsp;machine”</strong>&nbsp;problem.&nbsp;The&nbsp;only&nbsp;way&nbsp;to&nbsp;solve&nbsp;this&nbsp;is&nbsp;by&nbsp;finding&nbsp;out&nbsp;what&nbsp;in&nbsp;tarnation&nbsp;the&nbsp;developer&nbsp;had&nbsp;installed&nbsp;on&nbsp;their&nbsp;machine&nbsp;that&nbsp;made&nbsp;the&nbsp;application&nbsp;work.</p>
-<p>Containers&nbsp;solve&nbsp;this&nbsp;problem&nbsp;by&nbsp;allowing&nbsp;the&nbsp;developer&nbsp;to&nbsp;personally&nbsp;run&nbsp;the&nbsp;application&nbsp;inside&nbsp;a&nbsp;container,&nbsp;which&nbsp;then&nbsp;includes&nbsp;all&nbsp;of&nbsp;the&nbsp;dependencies&nbsp;required&nbsp;for&nbsp;the&nbsp;app&nbsp;to&nbsp;work.</p>
-<ul>
-<li>You&nbsp;may&nbsp;still&nbsp;occasionally&nbsp;hear&nbsp;about&nbsp;“works&nbsp;in&nbsp;my&nbsp;<strong>container</strong>”&nbsp;issues&nbsp;-&nbsp;these&nbsp;are&nbsp;often&nbsp;just&nbsp;usage&nbsp;errors. ### Scenario 2: Isolated environments</li>
-</ul>
-<p>We have 5 different Python applications. We need to deploy them to a server that already has an application requiring Python 2.7 and of course none of our applications are 2.7. What do we do now?</p>
-<p>Since containers package the software with all of its dependencies, we package the existing app and all 5 new ones with their respective Python versions and that’s it.</p>
-<p>Sometimes&nbsp;different&nbsp;parts&nbsp;of&nbsp;a&nbsp;system&nbsp;may&nbsp;change&nbsp;over&nbsp;time,&nbsp;possibly&nbsp;leading&nbsp;to&nbsp;the&nbsp;application&nbsp;not&nbsp;working.&nbsp;These&nbsp;changes&nbsp;may&nbsp;be&nbsp;anything&nbsp;from&nbsp;an&nbsp;operating&nbsp;system&nbsp;update&nbsp;to&nbsp;changes&nbsp;in&nbsp;dependencies.</p>
-<section id="scenario-3-development" class="level3">
-<h3 class="anchored" data-anchor-id="scenario-3-development">Scenario 3: Development</h3>
-<p>We are brought into a dev team. They run a web app that uses other services when running: a Postgres database, MongoDB, Redis and a number of others. Simple enough, we install whatever is required to run the application and all of the applications that it depends on …</p>
-<p>What a headache to start installing and then managing the development databases on your own machine.</p>
-<p>Thankfully, by the time we are told to do that we are already a Docker expert. With one command we get an isolated application, like Postgres or Mongo, running in our machine.</p>
-</section>
-<section id="scenario-4-scaling" class="level3">
-<h3 class="anchored" data-anchor-id="scenario-4-scaling">Scenario 4: Scaling</h3>
-<p>Starting and stopping a Docker container has little overhead. But when we run our own Netflix or Facebook, we want to meet the changing demand. With some advanced tooling that we will learn about in parts 2 and 3, we can spin up multiple containers instantly and load balance traffic between them.</p>
-<p>Container orchestration will be discussed in parts 2 and 3. But the simplest example: what happens when one application dies? The orchestration system notices it, splits traffic between the working replicas, and spins up a new container to replace the dead one.</p>
-</section>
-</section>
-<section id="virtual-machines" class="level2">
-<h2 class="anchored" data-anchor-id="virtual-machines">Virtual machines</h2>
-<p><img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403154053.png" class="img-fluid"></p>
-<p>VM virtualizes the physical hardware. Each VM includes a full OS along with the necessary binaries and libraries, making them heavier and more resources-intensive. Containers, on the other hand, share the host OS kernel and only package the application and its dependencies, resulting in a more lightweight and efficient solution.</p>
-<p>VMs provide strong isolation and are suited for running multiple OS environments, but they have a performance overhead and longer startup times. Containers offer faster startup, better resource utilization, and high portability across different environments, though their isolation is at the process level, which may not be as robust as that of VMs. Overall, VMs could be used for scenarios needing complete OS environments, while containers excel in lightweight, efficient, and consistent application deployment.</p>
-<p>Docker relies on Linux kernels, which means that macOS and Windows cannot run Docker natively without some additional steps. Each operating system has its own solution for running docker.</p>
-</section>
-<section id="image-and-containers" class="level2">
-<h2 class="anchored" data-anchor-id="image-and-containers">Image and containers</h2>
-<p>Since we already know what containers are it’s easier to explain images through them: Containers are instances of images. A basic mistake is to confuse images and containers.</p>
-<p>Cooking metaphor:</p>
-<p>Think of a container as a ready-to-eat meal that we can simply heat up and consume. An image, on the other hand, is the recipe <em>and</em> the ingredients for that meal.</p>
-<p>So just like how we need a recipe and ingredients to make a meal, we need an image and a container runtime (Docker engine) to create a container. The image provides all the necessary instructions and dependencies for the container to run, just like a recipe provides the steps and ingredients to make a meal.</p>
-<p>In short, an image is like a blueprint or template and the building material, while a container is an instance of that blueprint or template.</p>
-<section id="image" class="level3">
-<h3 class="anchored" data-anchor-id="image">Image</h3>
-<p>A Docker image is a file. An image <em>never changes</em>; we cannot edit an existing file. Creating a new image happens by starting from a base image and adding new <strong>layers</strong> to it. We will talk about layers later, but we should think of images as <em>immutable</em>, they can not be changed after they are created.</p>
-<p>List all of ours image with <code>docker image ls</code></p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> docker image ls</span>
-<span id="cb1-2">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">REPOSITORY</span>      TAG      IMAGE ID       CREATED         SIZE</span>
-<span id="cb1-3">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">hello-world</span>     latest   d1165f221234   9 days ago      13.3kB</span></code></pre></div>
-<p>Containers are created from images, so when we ran hello-world twice we downloaded one <em>image</em> and created two of them from the single image.</p>
-<p>Well then, if images are used to create containers, where do images come from? This image file is built from an instructional file named <strong>Dockerfile</strong> that is parsed when we run <code>docker image build</code>.</p>
-<p>Dockerfile is a file that is by default called <em>Dockerfile</em>, that looks something like this</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb2-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">FROM</span> &lt;image&gt;:&lt;tag&gt;</span>
-<span id="cb2-2"></span>
-<span id="cb2-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">RUN</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span>install <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">some</span> dependencies<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span></span>
-<span id="cb2-4"></span>
-<span id="cb2-5"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">CMD</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span>command <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">that</span> is executed on <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">`</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">docker</span> container run<span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span></span></code></pre></div>
-<p>and is the instruction set for building an image. We will look into Dockerfiles later when we to build our own images.</p>
-<p>If we go back to the cooking metaphor, as Dockerfile provides the instructions needed to build an image we can think of that as the recipe for images. We’re now 2 recipes deep, as a Dockerfile is the recipe for an image and an image is the recipe for the container. The only difference is that Dockerfile is written by us, whereas image is written by our machine based on the Dockerfile.</p>
-</section>
-</section>
-<section id="container" class="level2">
-<h2 class="anchored" data-anchor-id="container">Container</h2>
-<p>Containers only contain what is required to execute an application; and we can start, stop and interact with them. They are <strong>isolated</strong> environments in the host machine with the ability to interact with each other and the host machine itself via defined method (TCP/UDP).</p>
-<p>List all of our containers with <code>docker container ls</code></p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> docker container ls</span>
-<span id="cb3-2">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">CONTAINER</span> ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES</span></code></pre></div>
-<p>Without <code>-a</code> flag it will only print running containers.</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> docker container ls <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-a</span></span>
-<span id="cb4-2">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">CONTAINER</span> ID   IMAGE           COMMAND      CREATED          STATUS                      PORTS     NAMES</span>
-<span id="cb4-3">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">b7a53260b513</span>   hello-world     <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"/hello"</span>     5 minutes ago    Exited <span class="er" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">(</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">)</span> <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">5</span> minutes ago              brave_bhabha</span>
-<span id="cb4-4">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">1cd4cb01482d</span>   hello-world     <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"/hello"</span>     8 minutes ago    Exited <span class="er" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">(</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">)</span> <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">8</span> minutes ago              vibrant_bell</span></code></pre></div>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>programming</category>
-  <category>docker</category>
-  <guid>https://kimhungbui.github.io/programming/docker-intro/</guid>
-  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Minimum Cost Walk in Weighted Graph</title>
@@ -1838,6 +1736,389 @@ font-style: inherit;">}</span></span></code></pre></div>
   <media:content url="https://kimhungbui.github.io/programming/disjoint-set-union/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>Docker basics</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/docker-intro/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This chapter introduces containerization with Docker and relevant concepts such as image and volume. By the end of this chapter you are able to:</p>
+<ul>
+<li>Run containerized applications</li>
+<li>Containerize applications</li>
+<li>Utilize volumes to store data persistently outside of the containers.</li>
+<li>Use port mapping to enable access via TCP to containerized applications</li>
+<li>Share your own containers publicly</li>
+</ul>
+<section id="definitions-and-basic-concept" class="level1">
+<h1>Definitions and basic concept</h1>
+<section id="what-is-devops" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-devops">What is DevOps</h2>
+<p>The term itself consists of two parts <em>Dev</em> and <em>Ops</em>. Dev refers to the development of software and Ops to operations. Simple definition for DevOps would be that it means the release, configuring, and monitoring of software is in the hand people who develop it.</p>
+</section>
+<section id="what-is-docker" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-docker">What is Docker</h2>
+<blockquote class="blockquote">
+<p>“Docker&nbsp;is&nbsp;a&nbsp;set&nbsp;of&nbsp;platform&nbsp;as&nbsp;a&nbsp;service&nbsp;(PaaS)&nbsp;products&nbsp;that&nbsp;use&nbsp;OS-level&nbsp;virtualization&nbsp;to&nbsp;deliver&nbsp;software&nbsp;in&nbsp;packages&nbsp;called&nbsp;containers.”&nbsp;-&nbsp;<a href="https://en.wikipedia.org/wiki/Docker_(software)">from&nbsp;Wikipedia(opens&nbsp;in&nbsp;a&nbsp;new&nbsp;tab)</a>.</p>
+</blockquote>
+<p>So we get two definitions: 1. Docker is a set of tools to deliver software incontainers. 2. Containers are packages of software. <img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403152352.png" class="img-fluid"></p>
+<p>The above image illustrate how containers include the application and its dependencies. These containers are isolated so that they don’t interfere with each other or the software running outside of the containers. If we want to enable interactions between them, Docker offers tools to do so.</p>
+</section>
+<section id="benefits-from-containers" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-from-containers">Benefits from containers</h2>
+<p>Containers package applications. In different scenarios: ### Scenario 1: Works on my machine</p>
+<p>Let’s first take a closer look into what happens in web development without containers following the chain above starting from “Plan”.</p>
+<p>First we plan an application. Then our team of 1-n developers create the software. It works on one’s computer. It may even go through a testing pipeline working perfectly. We send it to the server and it does not work.</p>
+<p>This&nbsp;is&nbsp;known&nbsp;as&nbsp;the&nbsp;<strong>“works&nbsp;on&nbsp;my&nbsp;machine”</strong>&nbsp;problem.&nbsp;The&nbsp;only&nbsp;way&nbsp;to&nbsp;solve&nbsp;this&nbsp;is&nbsp;by&nbsp;finding&nbsp;out&nbsp;what&nbsp;in&nbsp;tarnation&nbsp;the&nbsp;developer&nbsp;had&nbsp;installed&nbsp;on&nbsp;their&nbsp;machine&nbsp;that&nbsp;made&nbsp;the&nbsp;application&nbsp;work.</p>
+<p>Containers&nbsp;solve&nbsp;this&nbsp;problem&nbsp;by&nbsp;allowing&nbsp;the&nbsp;developer&nbsp;to&nbsp;personally&nbsp;run&nbsp;the&nbsp;application&nbsp;inside&nbsp;a&nbsp;container,&nbsp;which&nbsp;then&nbsp;includes&nbsp;all&nbsp;of&nbsp;the&nbsp;dependencies&nbsp;required&nbsp;for&nbsp;the&nbsp;app&nbsp;to&nbsp;work.</p>
+<ul>
+<li>You&nbsp;may&nbsp;still&nbsp;occasionally&nbsp;hear&nbsp;about&nbsp;“works&nbsp;in&nbsp;my&nbsp;<strong>container</strong>”&nbsp;issues&nbsp;-&nbsp;these&nbsp;are&nbsp;often&nbsp;just&nbsp;usage&nbsp;errors. ### Scenario 2: Isolated environments</li>
+</ul>
+<p>We have 5 different Python applications. We need to deploy them to a server that already has an application requiring Python 2.7 and of course none of our applications are 2.7. What do we do now?</p>
+<p>Since containers package the software with all of its dependencies, we package the existing app and all 5 new ones with their respective Python versions and that’s it.</p>
+<p>Sometimes&nbsp;different&nbsp;parts&nbsp;of&nbsp;a&nbsp;system&nbsp;may&nbsp;change&nbsp;over&nbsp;time,&nbsp;possibly&nbsp;leading&nbsp;to&nbsp;the&nbsp;application&nbsp;not&nbsp;working.&nbsp;These&nbsp;changes&nbsp;may&nbsp;be&nbsp;anything&nbsp;from&nbsp;an&nbsp;operating&nbsp;system&nbsp;update&nbsp;to&nbsp;changes&nbsp;in&nbsp;dependencies.</p>
+<section id="scenario-3-development" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-3-development">Scenario 3: Development</h3>
+<p>We are brought into a dev team. They run a web app that uses other services when running: a Postgres database, MongoDB, Redis and a number of others. Simple enough, we install whatever is required to run the application and all of the applications that it depends on …</p>
+<p>What a headache to start installing and then managing the development databases on your own machine.</p>
+<p>Thankfully, by the time we are told to do that we are already a Docker expert. With one command we get an isolated application, like Postgres or Mongo, running in our machine.</p>
+</section>
+<section id="scenario-4-scaling" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-4-scaling">Scenario 4: Scaling</h3>
+<p>Starting and stopping a Docker container has little overhead. But when we run our own Netflix or Facebook, we want to meet the changing demand. With some advanced tooling that we will learn about in parts 2 and 3, we can spin up multiple containers instantly and load balance traffic between them.</p>
+<p>Container orchestration will be discussed in parts 2 and 3. But the simplest example: what happens when one application dies? The orchestration system notices it, splits traffic between the working replicas, and spins up a new container to replace the dead one.</p>
+</section>
+</section>
+<section id="virtual-machines" class="level2">
+<h2 class="anchored" data-anchor-id="virtual-machines">Virtual machines</h2>
+<p><img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403154053.png" class="img-fluid"></p>
+<p>VM virtualizes the physical hardware. Each VM includes a full OS along with the necessary binaries and libraries, making them heavier and more resources-intensive. Containers, on the other hand, share the host OS kernel and only package the application and its dependencies, resulting in a more lightweight and efficient solution.</p>
+<p>VMs provide strong isolation and are suited for running multiple OS environments, but they have a performance overhead and longer startup times. Containers offer faster startup, better resource utilization, and high portability across different environments, though their isolation is at the process level, which may not be as robust as that of VMs. Overall, VMs could be used for scenarios needing complete OS environments, while containers excel in lightweight, efficient, and consistent application deployment.</p>
+<p>Docker relies on Linux kernels, which means that macOS and Windows cannot run Docker natively without some additional steps. Each operating system has its own solution for running docker.</p>
+</section>
+<section id="image-and-containers" class="level2">
+<h2 class="anchored" data-anchor-id="image-and-containers">Image and containers</h2>
+<p>Since we already know what containers are it’s easier to explain images through them: Containers are instances of images. A basic mistake is to confuse images and containers.</p>
+<p>Cooking metaphor:</p>
+<p>Think of a container as a ready-to-eat meal that we can simply heat up and consume. An image, on the other hand, is the recipe <em>and</em> the ingredients for that meal.</p>
+<p>So just like how we need a recipe and ingredients to make a meal, we need an image and a container runtime (Docker engine) to create a container. The image provides all the necessary instructions and dependencies for the container to run, just like a recipe provides the steps and ingredients to make a meal.</p>
+<p>In short, an image is like a blueprint or template and the building material, while a container is an instance of that blueprint or template.</p>
+<section id="image" class="level3">
+<h3 class="anchored" data-anchor-id="image">Image</h3>
+<p>A Docker image is a file. An image <em>never changes</em>; we cannot edit an existing file. Creating a new image happens by starting from a base image and adding new <strong>layers</strong> to it. We will talk about layers later, but we should think of images as <em>immutable</em>, they can not be changed after they are created.</p>
+<p>List all of ours image with <code>docker image ls</code></p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> docker image ls</span>
+<span id="cb1-2">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">REPOSITORY</span>      TAG      IMAGE ID       CREATED         SIZE</span>
+<span id="cb1-3">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">hello-world</span>     latest   d1165f221234   9 days ago      13.3kB</span></code></pre></div>
+<p>Containers are created from images, so when we ran hello-world twice we downloaded one <em>image</em> and created two of them from the single image.</p>
+<p>Well then, if images are used to create containers, where do images come from? This image file is built from an instructional file named <strong>Dockerfile</strong> that is parsed when we run <code>docker image build</code>.</p>
+<p>Dockerfile is a file that is by default called <em>Dockerfile</em>, that looks something like this</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> &lt;image&gt;:&lt;tag&gt;</span>
+<span id="cb2-2"></span>
+<span id="cb2-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">RUN</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>install <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">some</span> dependencies<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CMD</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>command <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">that</span> is executed on <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">`</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">docker</span> container run<span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div>
+<p>and is the instruction set for building an image. We will look into Dockerfiles later when we to build our own images.</p>
+<p>If we go back to the cooking metaphor, as Dockerfile provides the instructions needed to build an image we can think of that as the recipe for images. We’re now 2 recipes deep, as a Dockerfile is the recipe for an image and an image is the recipe for the container. The only difference is that Dockerfile is written by us, whereas image is written by our machine based on the Dockerfile.</p>
+</section>
+</section>
+<section id="container" class="level2">
+<h2 class="anchored" data-anchor-id="container">Container</h2>
+<p>Containers only contain what is required to execute an application; and we can start, stop and interact with them. They are <strong>isolated</strong> environments in the host machine with the ability to interact with each other and the host machine itself via defined method (TCP/UDP).</p>
+<p>List all of our containers with <code>docker container ls</code></p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> docker container ls</span>
+<span id="cb3-2">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">CONTAINER</span> ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES</span></code></pre></div>
+<p>Without <code>-a</code> flag it will only print running containers.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> docker container ls <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-a</span></span>
+<span id="cb4-2">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">CONTAINER</span> ID   IMAGE           COMMAND      CREATED          STATUS                      PORTS     NAMES</span>
+<span id="cb4-3">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">b7a53260b513</span>   hello-world     <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/hello"</span>     5 minutes ago    Exited <span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">5</span> minutes ago              brave_bhabha</span>
+<span id="cb4-4">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">1cd4cb01482d</span>   hello-world     <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/hello"</span>     8 minutes ago    Exited <span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">8</span> minutes ago              vibrant_bell</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>programming</category>
+  <category>docker</category>
+  <guid>https://kimhungbui.github.io/programming/docker-intro/</guid>
+  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Image classification</title>
+  <link>https://kimhungbui.github.io/programming/convolution/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="image-classification" class="level1">
+<h1>Image Classification</h1>
+<p>This is the task of assigning an input image one label from a <em>fixed categories</em>. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, many other seemingly distinct CV tasks (such as object detection, segmentation) can be reduced to image classification.</p>
+<p><strong>Example</strong>: In the image blow in image classification model takes a single image and assigns probabilities to 4 label {cat, dog, hat, mug}. Computer view a image as an one large 3-dimensional array of numbers. In this example, the cat image is 248 pixel wide, 400 pixel tall, and has three color channel Red, Green, Blue. Therefore, the image consists of <img src="https://latex.codecogs.com/png.latex?248%20%5Ctimes%20400%20%5Ctimes%203"> numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is turn this quarter of a million numbers into a single label, such as “cat”. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327230513.png" class="img-fluid"></p>
+<p><strong>Challenges:</strong> Since this task of recognizing a visual concept (e.g.&nbsp;cat) is relatively trivial for human to perform, it is worth considering the challenges involved from the perspective of a CV algorithm. As we present list of challenges below.</p>
+<ul>
+<li><strong>Viewpoint variation:</strong> A single instance of an object can be oriented in many ways with respect to the camera.</li>
+<li><strong>Scale variation:</strong> Visual classes often exhibit variation of their size (size in the real world, <em>not only</em> in terms of their extent in the image)</li>
+<li><strong>Deformation:</strong> Many objects of interest are not rigid bodies and can be deformed in extremes ways.</li>
+<li><strong>Occlusion</strong>: The objects of interest can be occluded. Sometimes only a small portion of an object (as little as few pixels) could be visible.</li>
+<li><strong>Illumination conditions:</strong> The effect of illumination are drastic on the pixel level.</li>
+<li><strong>Background clutter:</strong> The objects of interest may <em>blend</em> into their environment, making them hard to identify.</li>
+<li><strong>Intra-class variation:</strong> The classes of interest can be often be relatively broad, such as <em>chair</em>. Their are many different types of these objects, each with their own appearance. <img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250327235749.png" class="img-fluid"></li>
+</ul>
+<p>A good image classification model must be invariant to the cross product of all these variations, while simultaneously retaining sensitivity to the inter-class variations.</p>
+<ol type="1">
+<li>Cross product of variations This refers to the <strong>combination of all possible variations</strong> (e.g.&nbsp;viewpoint, scale, deformation, occlusion, illumination, etc.) that can occur <strong>within a class</strong>. The term “cross production” here is metaphorical, inpsired by the mathematical concept of a Cartesian product, which generate all possible combinations of elements from multiple sets.
+<ul>
+<li><strong>Example</strong>: A chair might appear:
+<ul>
+<li>Rotate (viewpoint variation)</li>
+<li>Partially hidden (occlusion)</li>
+<li>Under bright sunlight (illumination)</li>
+<li>While being non-rigid (deformation) The model must recognize it as a “chair” <strong>despite this complex combination of variations</strong> <strong>Invariance Requirement:</strong> The model must be <strong>invariant</strong> to these variations, meaning its prediction for a class should not change even when factors alter the object’s appearance.</li>
+</ul></li>
+</ul></li>
+<li><strong>Inter-class variation</strong> There are <strong>difference between distinct classes</strong> (e.g.&nbsp;chairs vs tables). A model must retain <strong>sensitivity</strong> to these differences to avoid confusing classes, even when they share superficial similarities.
+<ul>
+<li>Example: A “stool” (class: chair) and a “small table” (class: table) might both appear at similar scales or under similar lighting. The model must distinguish them based on defining feature (e.g.&nbsp;height, presence of a backrest).</li>
+<li>Sensitivity Requirement: The model must <strong>preserver discriminate features</strong> that separate classes, even when intra-class variations (e.g.&nbsp;deformation in chairs) are extreme. <strong>Data-driven approach</strong>: How might we go about writing an algorithm that can classify images into distinct categories? Unlike writing an algorithm for, for example, sorting a list of numbers, it is not obvious how one might write an algorithm for identifying cats in images. Therefore, instead of trying to specify what every one of the categories of interest look like directly in code, the approach that we will take is not unlike one we would take with a child: we’re going to provide the computer with many examples of each class and then develop learning algorithms that look at these examples and learn about the visual appearance of each class. This approach is referred to as a <em>data-driven approach</em>, since it relies on first accumulating a <em>training dataset</em> of labeled images. Here is an example of what such a dataset might look like:</li>
+</ul></li>
+</ol>
+<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328000317.png" class="img-fluid"></p>
+<p><strong>The image classification pipeline</strong> We’ve seen that the task in Image Classification is to taken an array of pixels that represents a single image and assign a label to it. Our complete pipeline can be formalized as follows: - <strong>Input:</strong> Our input consists of a set of <em>N</em> images, each labeled with one of <em>K</em> different classes. We refer to this data as the <em>learning set</em>. - <strong>Learning:</strong> Our task is to use the training set to learn what every one of the classes looks like. We refer to this step as <em>training a classifier</em>, or <em>learning a model</em>. - <strong>Evaluation:</strong> In the end, we evaluate the quality of the classifier by asking it to predict labels for a new set of images that it has never seen before. We will then compare the true labels of these images to the ones predicted by the classifier. Intuitively, we’re hoping that a lot of the predictions match up with the true answers (which we call the <em>ground truth</em>).</p>
+</section>
+<section id="nearest-neighbor-classifier" class="level1">
+<h1>Nearest Neighbor Classifier</h1>
+<p>As our first approach, we will develop what we call a <strong>Nearest Neighbor Classifier</strong>. This classifier has nothing to do with Convolution Neural Networks and it is very rarely used in practice, but i will allow us to get an ideal about the basic approach to an image classification.</p>
+<p><strong>Example image classification dataset: CIFAR-10</strong>. <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>This dataset consist of 10 classes (for example <em>airplane, automobile, bird, etc</em>). These 60,000 images are partitioned into a training set of 50,000 images and a test set of 10,000 images. In the image below we can see 10 random example images from each one of the 10 classes.</p>
+<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250328001115.png" class="img-fluid"> Left:&nbsp;Example&nbsp;images&nbsp;from&nbsp;the&nbsp;<a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>.&nbsp;Right:&nbsp;first&nbsp;column&nbsp;shows&nbsp;a&nbsp;few&nbsp;test&nbsp;images&nbsp;and&nbsp;next&nbsp;to&nbsp;each&nbsp;we&nbsp;show&nbsp;the&nbsp;top&nbsp;10&nbsp;nearest&nbsp;neighbors&nbsp;in&nbsp;the&nbsp;training&nbsp;set&nbsp;according&nbsp;to&nbsp;pixel-wise&nbsp;difference.</p>
+<p>Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 image for every one of the labels), and we wish to label the remaining 10,000. The nearest neighbor classifier will take a test image, compare it to every single one of the training images, and predict the label of the closest training image. In the image above and on the right we can see an example result of such a procedure for 10 example test images. Notice that in only about 3 of 10 examples of an image of the same class is retrieved, while in other 7 examples this is not the case. For example, in the 8th row the nearest training image to the horse head is a red car, presumably due to the strong black background. As a result, this image of a horse would in this case be mislabeled as a car.</p>
+<p>One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors <img src="https://latex.codecogs.com/png.latex?I_1,%20I_2">, a reasonable choice for comparing them might be the <strong>L1 distance</strong>.</p>
+<p><img src="https://latex.codecogs.com/png.latex?d_1(I_1,%20I_2)=%5CSigma_p%20%7CI_1%5Ep%20-%20I_2%5Ep%7C"> Where the sum is taken over all pixels. Here is the procedure visualized:</p>
+<p>![[nneg.jpeg]]</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> numpy</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> NearestNeighbor(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">object</span>):</span>
+<span id="cb1-4">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__init__</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>):</span>
+<span id="cb1-5">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">pass</span></span>
+<span id="cb1-6">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> train(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, X, y):</span>
+<span id="cb1-7">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">imes D where each row is an example. Y is 1-dimension of size N"""</span></span>
+<span id="cb1-8">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># the nearest neighbor classifier simpply remembers all the training data</span></span>
+<span id="cb1-9">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> X</span>
+<span id="cb1-10">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.ytr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> y</span>
+<span id="cb1-11">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> predict(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, X):</span>
+<span id="cb1-12">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">imes D where each row is an example we wish to predict label for"""</span></span>
+<span id="cb1-13">        num_test <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> X.shape[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb1-14">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># lets make sure that the output type matches the input type</span></span>
+<span id="cb1-15">        Ypred <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.zeros(num_test, dtype <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.dtype)</span>
+<span id="cb1-16">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># loop over all test rows</span></span>
+<span id="cb1-17">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(num_test):</span>
+<span id="cb1-18">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># find the nearest training image to the i'th test image</span></span>
+<span id="cb1-19">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># using the L1 distance (sum of absolute value differences)</span></span>
+<span id="cb1-20">            distances <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">abs</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> X[i,:]), axis <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-21">            min_index <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.argmin(distances) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># get the index with smallest distance</span></span>
+<span id="cb1-22">            Ypred[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.ytr[min_index] <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># predict the label of the nearest example</span></span>
+<span id="cb1-23">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> Ypred</span></code></pre></div>
+<section id="the-choice-of-distance" class="level2">
+<h2 class="anchored" data-anchor-id="the-choice-of-distance">The choice of distance</h2>
+</section>
+</section>
+<section id="k---nearest-neighbor-classifier" class="level1">
+<h1>k - Nearest Neighbor Classifier</h1>
+<p>The idea: instead of finding the single closest image in the training set, we will find the top <strong>k</strong> closest images, and have them vote on the label of the test image. In particular, when <em>k=1</em>, we recover the NN classifier. Intuitively, higher values of <strong>k</strong> have smoothing effect that makes the classifier more resistant to outliers:</p>
+<p><img src="https://kimhungbui.github.io/programming/convolution/Pasted image 20250507141512.png" class="img-fluid"></p>
+<p>An&nbsp;example&nbsp;of&nbsp;the&nbsp;difference&nbsp;between&nbsp;Nearest&nbsp;Neighbor&nbsp;and&nbsp;a&nbsp;5-Nearest&nbsp;Neighbor&nbsp;classifier,&nbsp;using&nbsp;2-dimensional&nbsp;points&nbsp;and&nbsp;3&nbsp;classes&nbsp;(red,&nbsp;blue,&nbsp;green).&nbsp;The&nbsp;colored&nbsp;regions&nbsp;show&nbsp;the&nbsp;<strong>decision&nbsp;boundaries</strong>&nbsp;induced&nbsp;by&nbsp;the&nbsp;classifier&nbsp;with&nbsp;an&nbsp;L2&nbsp;distance.&nbsp;The&nbsp;white&nbsp;regions&nbsp;show&nbsp;points&nbsp;that&nbsp;are&nbsp;ambiguously&nbsp;classified&nbsp;(i.e.&nbsp;class&nbsp;votes&nbsp;are&nbsp;tied&nbsp;for&nbsp;at&nbsp;least&nbsp;two&nbsp;classes).&nbsp;Notice&nbsp;that&nbsp;in&nbsp;the&nbsp;case&nbsp;of&nbsp;a&nbsp;NN&nbsp;classifier,&nbsp;outlier&nbsp;datapoints&nbsp;(e.g.&nbsp;green&nbsp;point&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;a&nbsp;cloud&nbsp;of&nbsp;blue&nbsp;points)&nbsp;create&nbsp;small&nbsp;islands&nbsp;of&nbsp;likely&nbsp;incorrect&nbsp;predictions,&nbsp;while&nbsp;the&nbsp;5-NN&nbsp;classifier&nbsp;smooths&nbsp;over&nbsp;these&nbsp;irregularities,&nbsp;likely&nbsp;leading&nbsp;to&nbsp;better&nbsp;<strong>generalization</strong>&nbsp;on&nbsp;the&nbsp;test&nbsp;data&nbsp;(not&nbsp;shown).&nbsp;Also&nbsp;note&nbsp;that&nbsp;the&nbsp;gray&nbsp;regions&nbsp;in&nbsp;the&nbsp;5-NN&nbsp;image&nbsp;are&nbsp;caused&nbsp;by&nbsp;ties&nbsp;in&nbsp;the&nbsp;votes&nbsp;among&nbsp;the&nbsp;nearest&nbsp;neighbors&nbsp;(e.g.&nbsp;2&nbsp;neighbors&nbsp;are&nbsp;red,&nbsp;next&nbsp;two&nbsp;neighbors&nbsp;are&nbsp;blue,&nbsp;last&nbsp;neighbor&nbsp;is&nbsp;green).</p>
+</section>
+<section id="validation-sets-for-hyperparameter-tunning." class="level1">
+<h1>Validation sets for Hyperparameter tunning.</h1>
+<p>We saw that there are many different distance functions we could have used: L1 norm, L2. norm, there are many other choices we didn’t even consider (e.g.&nbsp;dot products). These choices are called <strong>hyperparameters</strong> nd they come up very often in the design of many ML algorithms that learn from data. It’s often not obvious what values/settings one should choose.</p>
+<p>We might be tempted to suggest what we should try out many different values and see what work bests. That is a fine idea and that’s indeed what we will do, but this must be done very carefully. In particular, <strong>we cannot use the test set for the purpose of tweaking hyperparameters</strong>. Whenever we’re designing ML algorithms, we should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that we may tune our hyperparameters to work well on the test set, but if we were to deploy our model we could see a significantly reduced performance. in practice, we would say that we <strong>overfit</strong> to the test set. Another way of looking at it is that if we tune</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://kimhungbui.github.io/programming/convolution/</guid>
+  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
   <title>Parity invariance</title>
   <dc:creator>Hung </dc:creator>
   <link>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</link>
@@ -2087,48 +2368,6 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</guid>
   <pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>House robber</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Topic: <code>array, dymanic programming</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
-<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
-<p>Example 1:</p>
-<ul>
-<li>Input: <code>nums = [1,2,3,1]</code></li>
-<li>Output: <code>4</code></li>
-<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
-</ul>
-<p>Example 2:</p>
-<ul>
-<li>Input: <code>nums = [2,7,9,3,1]</code></li>
-<li>Output: <code>12</code></li>
-<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
-</ul>
-<p>Constraints:</p>
-<pre><code>1 &lt;= nums.length &lt;= 100
-0 &lt;= nums[i] &lt;= 400</code></pre>
-</section>
-<section id="approaches" class="level1">
-<h1>Approaches</h1>
-
-
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</guid>
-  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Divide Array Into Equal Pairs</title>
@@ -2471,6 +2710,48 @@ font-style: inherit;">not</span> unpaired</span></code></pre></div>
   <category>leetcode</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>House robber</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>array, dymanic programming</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
+<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
+<p>Example 1:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,1]</code></li>
+<li>Output: <code>4</code></li>
+<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [2,7,9,3,1]</code></li>
+<li>Output: <code>12</code></li>
+<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
+</ul>
+<p>Constraints:</p>
+<pre><code>1 &lt;= nums.length &lt;= 100
+0 &lt;= nums[i] &lt;= 400</code></pre>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</guid>
   <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
