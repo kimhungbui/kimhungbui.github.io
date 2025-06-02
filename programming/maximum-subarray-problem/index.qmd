@@ -1,0 +1,208 @@
+---
+title: Maximum subarray problem and Kadane's algorithm
+
+lightbox: false
+description: Problem in computer science
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: Leetcode
+    affiliation-url: https://www.wikiwand.com/en/articles/Maximum_subarray_problem
+date: 2025-06-02
+categories:
+  - leetcode
+  - programming
+draft: false
+---
+
+
+In computer science, the maximum sum subarray problem, also known as the maximum segment sum problem, is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array `A[1...n]` of numbers. It can be solved in $O(n)$ time and 
+$O(1)$ space.
+
+Formally, the task is to find indices $i$ and $j$ with $1\leq i \leq j \leq n$ such that the sum 
+$$
+\Sigma^j_{x=i}A[x]
+$$
+is as large as possible
+
+# Application
+
+Maximum subarray problems arise in many fields, such as genomic sequence analysis and computer vision.
+
+Genomic sequence analysis employs maximum subarray algorithms to identify important biological segments of protein sequences that have unusual properties, by assigning scores to points within the sequence that are positive when a motif to be recognized is present, and negative when it is not, and then seeking the maximum subarray among these scores. These problems include conserved segments, GC-rich regions, tandem repeats, low-complexity filter, DNA binding domains, and regions of high charge.
+
+In computer vision, bitmap images generally consist only of positive values, for which the maximum subarray problem is trivial: the result is always the whole array. However, after subtracting a threshold value (such as the average pixel value) from each pixel, so that above-average pixels will be positive and below-average pixels will be negative, the maximum subarray problem can be applied to the modified image to detect bright areas within it.
+
+# Kadane's algorithm
+
+## Brute-Force Thoughts
+
+A naive way to find the maximum subarray is:
+
+1. Enumerate all pairs of indices `(i, j)` with `0 ≤ i ≤ j < n`.
+
+2. Compute the sum of `array[i..j]`.
+
+3. Track the largest sum seen.
+
+That requires $O(n^2)$ subarrays and, if we sum each subarray from scratch, up to $O(n)$ per sum, yielding $O(n^3)$ time. We can improve one factor to $O(n^2)$ by keeping a running sum when extending the end index, but that's still too slow when `n` is large.
+
+We want something like $O(n)$ time.
+
+---
+
+## Key Observation (Intuition)
+
+> **Observation:** Suppose you want to know “What is the maximum-sum subarray that ends exactly at index i?” Once you know that, you could check all i and pick the best among them.
+
+- Define  
+  $$dp[i] = \text{the maximum subarray sum among all subarrays that end at index }i.$$
+  Our ultimate answer (global max) will be  
+  $$
+    \max_{0 \le k < n} dp[k].
+  $$
+
+- How do we compute `dp[i]` if we already know `dp[i–1]`? Consider any subarray that ends at i. It either:  
+  1. Is just the single element `array[i]` (i.e., we “start fresh” at i), or  
+  2. Is some subarray that ended at i−1 plus `array[i]` (i.e., we **extend** the best ending at i−1).
+
+  In other words:
+  $$
+    dp[i] \;=\; \max\bigl(\; array[i],\; dp[i-1] + array[i] \bigr).
+  $$
+  - If `dp[i-1]` (the best ending at i−1) is negative, then we’re better off “dropping” it and taking `array[i]` alone.
+  - If `dp[i-1]` is positive (or zero), then extending it by adding `array[i]` only makes the sum larger.
+
+That recurrence is exactly Kadane’s idea.
+
+---
+
+## Deriving Kadane’s Recurrence
+
+1. **Define**  
+   $$dp[i] = \text{max subarray sum ending exactly at index }i.$$
+2. **Base case**:  
+   $$dp[0] = array[0].$$
+3. **Transition**: For each \(i \ge 1\), consider two possibilities for the subarray that ends at \(i\):  
+   - **Start a new subarray** at \(i\). Its sum is \(array[i]\).  
+   - **Extend** the best subarray ending at \(i-1\) by including the element at \(i\). Its sum is \(dp[i-1] + array[i]\).
+
+   Therefore:
+   $$
+     dp[i] = \max\bigl(array[i],\, dp[i-1] + array[i]\bigr).
+   $$
+
+4. **Global answer**: As you fill these in from \(i = 0\) up to \(n-1\), keep track of
+   $$
+     \text{global\_max} = \max_{0 \le k < n} dp[k].
+   $$
+   That is the maximum sum among all possible ending-at-k subarrays, which necessarily includes the overall best subarray.
+
+Because computing each `dp[i]` takes O(1) time, the entire process is O(n).
+
+---
+
+## Intuitive Explanation
+
+- As you sweep from left to right, maintain two values:
+  1. `current_max` = “best subarray sum ending exactly at the current position.”
+  2. `global_max` = “best subarray sum seen so far anywhere.”
+
+- When you arrive at a new element `x = array[i]`, ask yourself:  
+  > “If I want to pick a subarray that ends at i, is it better to (a) start fresh at i (just take x), or (b) stick with the best contiguous sum I had ending at i−1 and add x to it?”
+
+  - If the best sum ending at i−1 was negative, adding x would only make it worse than just taking x alone.  
+  - If the best sum ending at i−1 was positive, adding x can only help (or at least not make it smaller than x).
+
+  Concretely:
+
+  ```plaintext
+  current_max = max(x, current_max + x)
+  global_max  = max(global_max, current_max)
+  ```
+
+and then move on to i+1.
+
+Think of it like this: whenever the running sum (best-ending-here) dips below zero, you toss it away and start over at the next index, because any prefix with negative sum would only drag down whatever comes after.
+
+```
+function Kadane(array):
+    if array is empty:
+        return 0   // or some convention (e.g. negative infinity) depending on the problem
+
+    current_max = array[0]
+    global_max  = array[0]
+
+    for i from 1 to (n - 1):
+        x = array[i]
+        // Either extend the previous best subarray, or start new at i
+        current_max = max(x, current_max + x)
+
+        // Update global answer if needed
+        global_max = max(global_max, current_max)
+
+    return global_max
+```
+
+Initialization: We set both current_max and global_max to array[0]. That handles the case where all numbers might be negative: the answer is the single largest element.
+
+Loop: At each step, update current_max using the recurrence. Then, if the new current_max is higher than any global_max we've seen so far, update global_max.
+
+Return: By the end, global_max holds the largest sum of any contiguous subarray in the whole array.
+
+## Worked Example
+
+Take the array `[-2, 1, -3, 4, -1, 2, 1, -5, 4]`. Walk through Kadane’s steps:
+
+| i | array[i] | current_max (before) | current_max (after) = max(array[i], current_max₍i−1₎ + array[i]) | global_max |
+|:-:|:--------:|:--------------------:|:-----------------------------------------------------------------:|:----------:|
+| 0 |    −2    |     (init) −2        | max(−2, —) = −2                                                   | −2         |
+| 1 |    +1    |        −2            | max( 1, (−2 + 1) = −1 ) = 1                                       | 1          |
+| 2 |    −3    |         1             | max(−3, (1 + (−3)) = −2 ) = −2                                    | 1          |
+| 3 |    +4    |        −2            | max( 4, (−2 + 4) = 2 ) = 4                                         | 4          |
+| 4 |    −1    |         4             | max(−1, (4 + (−1)) = 3 ) = 3                                      | 4          |
+| 5 |    +2    |         3             | max( 2, (3 + 2) = 5 ) = 5                                         | 5          |
+| 6 |    +1    |         5             | max( 1, (5 + 1) = 6 ) = 6                                         | 6          |
+| 7 |    −5    |         6             | max(−5, (6 + (−5)) = 1 ) = 1                                      | 6          |
+| 8 |    +4    |         1             | max( 4, (1 + 4) = 5 ) = 5                                         | 6          |
+
+At index 6, `current_max` becomes 6, and that's the largest sum observed. Indeed, subarray `[4, −1, 2, 1]` ends at i=6 and has sum 6.
+
+By index 7, adding −5 would drop the running sum to 1, but since 1 is still ≥ −5 itself, Kadane chooses 1 (i.e., “extend” rather than “start new”).
+
+By index 8, it's better to start new at 8 or to extend the 1? We compare:
+
+- **“Start new”** at 8: sum = 4
+- **“Extend previous”** (which was 1): sum = 1 + 4 = 5
+
+→ so we pick 5. However, 5 < global_max = 6, so `global_max` remains 6.
+
+---
+
+## Handling All-Negative Arrays
+
+A common question: “What if the array is entirely negative, e.g. `[-5, -3, -8]`?”  
+Kadane’s initialization of
+
+```
+current_max = global_max = array[0]
+```
+
+
+automatically handles that. We never zero out a running sum unless it's worse than starting fresh. So if all numbers are negative, every time you consider a new element `x`, you compute
+
+
+```
+current_max = max(x, current_max + x)
+```
+
+Since `current_max + x` is even more negative than `x` alone, the recurrence forces `current_max` to be the largest single negative element encountered so far. Thus the global max ends up being the least-negative (i.e., the “largest”) element of the array.
+
+---
+
+## Final Remarks
+
+- **Time complexity**: O(n), since each element is processed exactly once with O(1) work per element.
+- **Space complexity**: O(1) extra space if you only keep two scalars (`current_max`, `global_max`). (If you store the entire `dp[]` array, it's O(n), but you don't need to; you only ever use the “previous” value.)
+
+Kadane’s algorithm is essentially a specialized form of dynamic programming that keeps track of a “running best suffix sum” and resets whenever that suffix sum would be negative. Once you grasp that the maximum-sum subarray ending at i is either “continue from i−1” or “start anew at i,” the rest follows naturally.
