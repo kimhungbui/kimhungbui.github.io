@@ -20,6 +20,7 @@
 
 
 
+<p><img src="https://kimhungbui.github.io/programming/maximum-subarray-problem/Pasted image 20250602105019.png" class="img-fluid"></p>
 <p>In computer science, the maximum sum subarray problem, also known as the maximum segment sum problem, is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array <code>A[1...n]</code> of numbers. It can be solved in <img src="https://latex.codecogs.com/png.latex?O(n)"> time and <img src="https://latex.codecogs.com/png.latex?O(1)"> space.</p>
 <p>Formally, the task is to find indices <img src="https://latex.codecogs.com/png.latex?i"> and <img src="https://latex.codecogs.com/png.latex?j"> with <img src="https://latex.codecogs.com/png.latex?1%5Cleq%20i%20%5Cleq%20j%20%5Cleq%20n"> such that the sum <img src="https://latex.codecogs.com/png.latex?%0A%5CSigma%5Ej_%7Bx=i%7DA%5Bx%5D%0A"> is as large as possible</p>
 <section id="application" class="level1">
@@ -249,6 +250,7 @@ Kadane’s initialization of</p>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/maximum-subarray-problem/</guid>
   <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/programming/maximum-subarray-problem/Pasted%20image%2020250602105019.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>127. Word Ladder</title>
@@ -1105,7 +1107,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="e8cac66e" class="cell" data-execution_count="1">
+<div id="8c619a6c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
