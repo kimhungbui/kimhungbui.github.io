@@ -1,0 +1,25 @@
+---
+title: IELTS Essay - Digital Filmmaking
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: How to do ielts
+    affiliation-url: https://howtodoielts.com/ielts-writing-task-2-sample-answer-digital-filmmaking-real-ielts-test/
+date: 2025-06-03
+categories:
+  - english
+draft: true
+---
+_Nowadays because of digital technology, it is possible for not only studios but also individuals to produce their own films._
+
+_Do you think this is a positive or negative development_?
+
+The democratization of film has led to greater opportunity as well as fears as to the future of filmmaking. In my opinion, this is a largely positive development as it opens up the medium for a more diverse range of socioeconomic voices.
+
+The main reason that film purists resist the digital revolution is it brings down the quality of films. A good example of this is when digital film first burst onto the scene and started to replace film around the turn of the century. The initial complaints from viewers were that the film looks better and digitally shot movies have a cheap aesthetic akin to a soap opera. As digital film has proliferated beyond studios looking to cut costs, it has exponentially increased the number of films made by amateurs. This naturally leads to movies with bad acting, clumsily written dialogue, and poor overall production values.
+
+Despite the admitted cons listed above, digital film has given a voice to less wealthy filmmakers who tend to be of a different class and ethnicity. There are countless examples of students who film digitally, post their videos on YouTube, and become internet sensations. Many of these new perspectives are outside of the predominantly white, male, heterosexual homogeneity of Hollywood. It is increasingly possible for LGBT themes to surface in these shorts and for ethnic minorities around the world to break through. The most striking evidence is simply comparing the major movies made 50 years ago with the diverse range of cinema on offer today.
+
+In conclusion, although there are drawbacks in terms of quality those are mitigated by novel themes from underrepresented demographics. Studios should pay heed and relax their control over an ever-promising industry.

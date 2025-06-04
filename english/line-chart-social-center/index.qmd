@@ -1,0 +1,24 @@
+---
+title: IELTS Essay- Line Chart Social Center
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: How to do ielts
+    affiliation-url: https://howtodoielts.com/ielts-cambridge-19-essay-line-chart-social-center/
+date: 2025-06-02
+categories:
+  - english
+  - time
+draft: false
+---
+![](Pasted%20image%2020250602163817.png)
+
+David Lang essay:
+
+The line chart details participants according to activity at a social center in the Australian city of Melbourne from 2000 to 2020. Looking from an overall perspective, it is readily apparent that participants for all activities increased to varying degrees except in terms of martial arts and amateur drama. Film club was by far the most popular activity throughout, though table tennis demonstrated the strongest growth.
+
+In 2000, 64 individuals participated in the film club, a figure that dipped to 60 in 2010 and then more than recovered to finish the period at 65. The trend for martial arts was similarly stable with a beginning data point of 38, a high of 39 in 2010, and a final figure of 37.
+
+The remaining activities started the period lower with 27 participants for amateur drama, 18 for table tennis, and 0 for musical performances (unavailable at the time). Over the next 10 years, amateur dramatics commenced a decline that would end at just 5 by 2020, while table tennis underwent the inverse transformation, peaking at 52 by the same year. Musical performances were only an option starting in 2005, with participants growing and leveling off to just under 20 by the end of the period.
