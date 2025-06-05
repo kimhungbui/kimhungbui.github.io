@@ -1,0 +1,130 @@
+---
+title: Find the Lexicographically Largest String From the Box I
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/solutions/6798488/find-the-lexicographically-largest-string-from-the-box-i/?envType=daily-question&envId=2025-06-04
+date: 2025-06-04
+categories:
+  - english
+draft: true
+---
+
+## Observation
+- __Problem Restatement__  
+  You have a string `word` of length _n_ and an integer `numFriends = k`. In each “round,” you split `word` into exactly _k_ non-empty pieces and put all of those pieces into a box. You repeat over all possible ways to split into _k_ parts (no two rounds use the same cut positions). After considering every valid split, you want to know:  
+  > __Which single substring in the box is lexicographically largest?__
+
+- __Key Insight About Lengths__  
+  1. If `word` has length _n_ and you create _k_ non-empty substrings, the _smallest_ you can make each of the other _(k – 1)_ substrings is length 1.  
+  2. Therefore, one substring must “absorb” the rest of the characters, giving it length ≥ _n – (k – 1)_.  
+  3. Let  
+     ```
+     L = n – k + 1.
+     ```  
+     In _every_ valid k-way split, at least one piece has length ≥ L.  
+  4. If a substring of length > L can win lexicographically, then its first L characters would already win. Likewise, any substring shorter than L cannot out-rank an L-length substring that begins with a larger prefix.  
+  → __Conclusion__: You only need to compare substrings of length exactly L. The answer is “the lexicographically largest substring of `word` with length L.”  
+
+## Analysis
+1. __Why only length L matters__  
+   - Suppose a split produces a piece of length > L. Call it _S_. If _S_ is lex-largest, then its prefix of length L (call it _T_) appears in the box (because that piece _S_ itself contributes _all_ of its length, so _T_ is part of it). Since _T_ and _S_ share the same first L characters, _T_ ≥ _S_ in lex order. So it’s enough to look at length-L windows.  
+   - Conversely, any substring of length < L cannot beat a length-L substring that starts with an equal or larger first character.  
+
+2. __Reframe as “Best Length-L Window”__  
+   - We want __max<sub>0 ≤ i ≤ n–L</sub> (`word[i : i+L]`)__ in lex order.  
+   - A naïve sliding-window approach checks all O(n) windows of size L, but comparing strings of length L each time costs O(L) for each of O(n) windows → O(n·L) worst-case, which can be O(n²) if k is small (so L≈n).  
+
+3. __Suffix Connection__  
+   - Let “last suffix” of `word` = the lexicographically greatest among all suffixes `word[i:]`. Call its start index i₀.  
+   - If |`word[i₀:]`| ≥ L, then the first L characters of that suffix (i.e. `word[i₀ : i₀+L]`) must be the lexicographically largest length-L substring.  
+   - If |`word[i₀:]`| < L, that only happens when k=1 (so L=n) and the entire string is the only candidate.  
+   → __So we reduce to “find index i₀ of the lexicographically last suffix” in O(n), then return `word[i₀ : i₀+L]`.__
+
+## Brute Force
+1. __Brute-Force Window Scan (O(n·L))__  
+   - Compute `L = n – k + 1`.  
+   - For each starting index i from 0 to n – L:  
+     1. Extract the substring `candidate = word[i : i+L]`.  
+     2. Compare `candidate` to a running “best” string in lex order (using a standard `strcmp` or language-specific compare).  
+     3. Keep the larger one.  
+   - Return the “best” after scanning all windows.  
+
+   ```pseudo
+   best ← word[0 : L]
+   for i in [1 .. n – L]:
+       current ← word[i : i + L]
+       if current > best:
+           best ← current
+   return best
+   ```
+
+
+Time Complexity:
+
+We check (n – L + 1) windows ≈ O(n) windows.
+
+Each comparison of two length-L strings takes O(L).
+
+Total is O(n·L). In worst case, k is small so L ≈ n, so brute force → O(n²), which fails if n up to 5×10³ (25×10⁶ ops, borderline or too slow).
+
+Brute-Force Split Enumeration (Infeasible)
+
+Enumerate all ways to choose (k – 1) cut positions among (n – 1) slots: that's C(n – 1, k – 1) splits.
+
+For each split, collect the k substrings and compare all substrings of length L among them.
+
+This is combinatorial explosion (e.g., k ≈ n/2 → ~2ⁿ splits), so completely impractical.
+
+Why Brute Force Falls Short
+
+Even sliding-window doesn't leverage the “suffix” insight; it must compare every window at O(L) cost.
+
+Enumerating splits is combinatorial.
+
+We need an O(n) or O(n log n) improvement.
+
+## Improvement
+1. Reduce to “Find Lexicographically Last Suffix”
+Claim: The lexicographically largest length-L substring = the first L characters of whichever suffix word[i:] is lex-largest.
+
+Let i₀ = index where suffix word[i₀:] is lexicographically greatest.
+
+If |word[i₀:]| ≥ L, then word[i₀ : i₀ + L] is the maximum-length-L window.
+
+If |word[i₀:]| < L, that implies L = n (i.e. k=1) and the entire word is answer.
+
+Thus, two steps:
+
+Compute i₀ in O(n).
+
+Return word[i₀ : i₀ + L].
+
+### Two-pointer O(n) Algorithm Find `i_0`
+
+```
+function find_last_suffix_start(word):
+    n ← length(word)
+    i ← 0
+    j ← 1
+    ℓ ← 0   // length of current match between suffix i and suffix j
+
+    while j + ℓ < n do:
+        if word[i + ℓ] == word[j + ℓ]:
+            ℓ ← ℓ + 1
+        else if word[i + ℓ] > word[j + ℓ]:
+            // suffix at i is better; skip all starts in [j, j+ℓ]
+            j ← j + ℓ + 1
+            ℓ ← 0
+        else:
+            // suffix at j is better; discard [i, i+ℓ], jump i forward
+            i ← max(i + ℓ + 1, j)
+            j ← i + 1
+            ℓ ← 0
+
+    return i    // i is the start index of the lexicographically last suffix
+```
+
