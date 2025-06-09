@@ -1,0 +1,24 @@
+---
+title: IELTS Cambridge 16 Essay - Driverless Vehicles
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://your.personal.website
+    affiliation: How to do ielts
+    affiliation-url: https://howtodoielts.com/ielts-cambridge-16-essay-driverless-vehicles/
+date: 2025-06-03
+categories:
+  - english
+  - advantage disadvantage
+draft: false
+---
+__In the future all cars, buses and trucks will be driverless. The only people travelling inside these vehicles will be passengers.__
+
+__Do you think the advantages of driverless vehicles outweigh the disadvantages?__
+
+A future filled with driverless vehicles is an inevitability. In my opinion, though there are concomitant moral risks, the practical import for health such a seismic shift will be positive on the whole.
+
+Critics of this trend suggest that machines should not be responsible for the potential loss of human life. This argument rests on the fact when there is an accident involving humans, it is possible to either assess blame and assign punishment or accept that human error played a role. In contrast, an individual severely injured as the result of a collision caused by a machine may justly feel that all human autonomy and free will is absent from their fate. This is analogous to a natural disaster with the crucial distinction being that humanity has engineered the situation. It is human nature to prefer to control a situation rather than surrender the outcome to an autonomous machine.
+
+	Proponents of automated vehicles, on the other hand, argue the tangible ramifications concerning public safety. The evidence overwhelmingly suggests that driverless vehicles cause fewer accidents than humans. The reason for this is that humans are prone to errors related to fatigue, distractions such as smartphones, and, in some cases, altered states. Machines might experience the occasional technical error, however, they are far more consistent by comparison. In fact, the few accidents that have occurred with automated vehicles were the fault of human drivers. If all cars were driverless, this would enabled a greater 
