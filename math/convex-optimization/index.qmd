@@ -10,10 +10,16 @@ author:
 date: 2025-06-09
 categories:
   - math
-format: 
+format:
   html:
-    page-layout: custom
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
     code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
 execute:
   echo: true  # Ensures code is executed when rendering
   warning: false
@@ -21,6 +27,7 @@ execute:
   result: 'interactive'  # Ensures that the output is interactive
 ---
 
+# Define
 A **convex optimization** problem has the form
 
 $$
