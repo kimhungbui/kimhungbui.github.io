@@ -88,7 +88,7 @@
     "href": "mathematic.html",
     "title": "Mathematic",
     "section": "",
-    "text": "Development Indicators by Continent\n\n\n\n\n\n\n\n\n\n\n\nGapminder Analytics Group\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Inference and Learning\n\n\n\n\n\n\nStatistical\n\n\n\nYour post description\n\n\n\n\n\nFeb 26, 2025\n\n\nYour name\n\n\n\n\n\n\n\n\n\n\n\n\nBernoulli Randome Variable\n\n\n\n\n\n\nmath\n\n\nstatistic\n\n\n\nBernoulli Randome Variable\n\n\n\n\n\nSep 11, 2024\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nWhy we have normal distribution formular\n\n\n\n\n\n\nmath\n\n\nstatistic\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\n\n\n\n\n\n\nConvex optimiztion\n\n\n\n\n\n\nmath\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\nNo matching items"
+    "text": "Development Indicators by Continent\n\n\n\n\n\n\n\n\n\n\n\nGapminder Analytics Group\n\n\n\n\n\n\n\n\n\n\n\n\nConvex optimization\n\n\n\n\n\n\nmath\n\n\n\nYour post description\n\n\n\n\n\nJun 9, 2025\n\n\nYour name\n\n\n\n\n\n\n\n\n\n\n\n\nConvex set\n\n\n\n\n\n\nmath\n\n\n\nYour post description\n\n\n\n\n\nJun 9, 2025\n\n\nYour name\n\n\n\n\n\n\n\n\n\n\n\n\nStatistical Inference and Learning\n\n\n\n\n\n\nStatistical\n\n\n\nYour post description\n\n\n\n\n\nFeb 26, 2025\n\n\nYour name\n\n\n\n\n\n\n\n\n\n\n\n\nBernoulli Randome Variable\n\n\n\n\n\n\nmath\n\n\nstatistic\n\n\n\nBernoulli Randome Variable\n\n\n\n\n\nSep 11, 2024\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nWhy we have normal distribution formular\n\n\n\n\n\n\nmath\n\n\nstatistic\n\n\n\nYour post description\n\n\n\n\n\nSep 11, 2024\n\n\nYour name\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Lecture 8.html",
@@ -670,6 +670,13 @@
     "title": "Why we have normal distribution formular",
     "section": "",
     "text": "To do\n\n\n\nThis is just a photo I took last time I was in Dundee.\n\n\nThat’s it! go for it!"
+  },
+  {
+    "objectID": "math/convex-set/convex-set.html#affine-sets",
+    "href": "math/convex-set/convex-set.html#affine-sets",
+    "title": "Convex set",
+    "section": "1.1 Affine sets",
+    "text": "1.1 Affine sets\nAn affine set is one that contains the entire line through any two of its points. Concretely, if \\(x_1,x_2\\) lie in an affine set \\(S\\), then for all $ hetaR$ the combination\n\\[\nx(\\theta) = \\theta x_1 + (1-\\theta) x_2\n\\]\nalso lies in \\(S\\). Special cases:\nFor $ $, \\(x(\\theta)\\) traces the line segment between \\(x_1\\) and \\(x_2\\).\nFor $ &lt;0$ or $ &gt;1$, it extends beyond the endpoints.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Define two points x1 and x2\nx1 = np.array([1, 2])\nx2 = np.array([4, 0])\n\n# Sample theta values\nthetas = np.array([-0.2, 0.0, 0.6, 1.0, 1.2])\npoints = [(theta * x1 + (1 - theta) * x2) for theta in thetas]\n\n# Generate full line between extended range of theta\ntheta_full = np.linspace(-0.4, 1.4, 100)\nline = np.array([theta * x1 + (1 - theta) * x2 for theta in theta_full])\n\n# Plot\nplt.figure(figsize=(6, 4))\nplt.plot(line[:, 0], line[:, 1], 'k-', label='Line through x1 and x2')\nplt.scatter(*x1, color='red', zorder=5)\nplt.text(x1[0]+0.1, x1[1]+0.1, 'x1', fontsize=9)\nplt.scatter(*x2, color='blue', zorder=5)\nplt.text(x2[0]+0.1, x2[1]-0.3, 'x2', fontsize=9)\n\n# Plot labeled theta points\nfor theta, pt in zip(thetas, points):\n    plt.scatter(pt[0], pt[1], s=40)\n    plt.text(pt[0]+0.1, pt[1]+0.1, f'θ = {theta}', fontsize=8)\n\nplt.axis('equal')\nplt.grid(True, linestyle='--', alpha=0.5)\nplt.title('Affine Set: Line through x1 and x2')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\nExample: The solution set of linear equation\n\n\\[\n{x| Ax=b}\n\\]\nis affine"
   },
   {
     "objectID": "english/performance-enhancing-drug/index.html",

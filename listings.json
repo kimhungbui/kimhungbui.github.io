@@ -3,11 +3,11 @@
     "listing": "/mathematic.html",
     "items": [
       "/math/matrix/index.html",
-      "/math/convex-optimization/convex-set.html",
+      "/math/convex-optimization/index.html",
+      "/math/convex-set/convex-set.html",
       "/math/math-statistic-statistical-inference-and-learning/Statistical-Inference-and-Learning.html",
       "/math/math-statistic-bernoulli-random-variable/bernoulli-random-variable.html",
-      "/math/math-statistic-why-normal-distribution-formular/index.html",
-      "/math/convex-optimization/index.html"
+      "/math/math-statistic-why-normal-distribution-formular/index.html"
     ]
   },
   {

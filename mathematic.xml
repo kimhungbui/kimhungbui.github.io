@@ -10,7 +10,25 @@
 <atom:link href="https://kimhungbui.github.io/mathematic.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 26 Feb 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Convex optimization</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/math/convex-optimization/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <category>math</category>
+  <guid>https://kimhungbui.github.io/math/convex-optimization/</guid>
+  <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Convex set</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/math/convex-set/convex-set.html</link>
+  <description><![CDATA[ undefined ]]></description>
+  <category>math</category>
+  <guid>https://kimhungbui.github.io/math/convex-set/convex-set.html</guid>
+  <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Statistical Inference and Learning</title>
   <dc:creator>Your name</dc:creator>
@@ -615,21 +633,12 @@ font-style: inherit;">"</span>)</span></code></pre></div>
   <media:content url="https://kimhungbui.github.io/math/math-statistic-why-normal-distribution-formular/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Convex optimiztion</title>
-  <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/math/convex-optimization/</link>
-  <description><![CDATA[ undefined ]]></description>
-  <category>math</category>
-  <guid>https://kimhungbui.github.io/math/convex-optimization/</guid>
-  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>Development Indicators by Continent</title>
   <dc:creator>Gapminder Analytics Group</dc:creator>
   <link>https://kimhungbui.github.io/math/matrix/</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://kimhungbui.github.io/math/matrix/</guid>
-  <pubDate>Mon, 09 Jun 2025 09:19:33 GMT</pubDate>
+  <pubDate>Mon, 09 Jun 2025 09:25:38 GMT</pubDate>
 </item>
 </channel>
 </rss>
