@@ -194,7 +194,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="6fd1a70b" class="cell" data-execution_count="1">
+<div id="2df632d4" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Create a 4x4 matrix A of rank r = 2 by multiplying a (4x2) matrix B with a (2x4) matrix C.</span></span>
@@ -228,6 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Singular values of A:"</span>, np.<span class="bu">round</span>(singular_values, <span class="dv">4</span>))</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>rank_A <span class="op">=</span> np.<span class="bu">sum</span>(singular_values <span class="op">&gt;</span> <span class="fl">1e-10</span>)</span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Rank of A:"</span>, rank_A)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Matrix A (4x4, rank ≤ 2):
 [[ 0.1225  0.773   0.4317  2.6989]
