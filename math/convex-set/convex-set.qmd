@@ -1,0 +1,92 @@
+---
+title: Convex set
+lightbox: false
+description: Your post description
+author:
+  - name: Your name
+    url: https://your.personal.website
+    affiliation: Maybe your workplace?
+    affiliation-url: https://your.workplace.website
+date: 2025-06-09
+categories:
+  - math
+format: 
+  html:
+    page-layout: custom
+    code-fold: true
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+
+
+# Some standard convex sets
+
+## Affine sets
+
+An affine set is one that contains the entire line through any two of its points. Concretely, if $x_1,x_2$ lie in an affine set $S$, then for all $	heta\in\mathbb R$ the combination
+
+$$
+x(\theta) = \theta x_1 + (1-\theta) x_2
+$$
+
+also lies in $S$. Special cases:
+
+For $	\theta\in[0,1]$, $x(\theta)$ traces the line segment between $x_1$ and $x_2$.
+
+For $	\theta<0$ or $	\theta>1$, it extends beyond the endpoints.
+
+``` {python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define two points x1 and x2
+x1 = np.array([1, 2])
+x2 = np.array([4, 0])
+
+# Sample theta values
+thetas = np.array([-0.2, 0.0, 0.6, 1.0, 1.2])
+points = [(theta * x1 + (1 - theta) * x2) for theta in thetas]
+
+# Generate full line between extended range of theta
+theta_full = np.linspace(-0.4, 1.4, 100)
+line = np.array([theta * x1 + (1 - theta) * x2 for theta in theta_full])
+
+# Plot
+plt.figure(figsize=(6, 4))
+plt.plot(line[:, 0], line[:, 1], 'k-', label='Line through x1 and x2')
+plt.scatter(*x1, color='red', zorder=5)
+plt.text(x1[0]+0.1, x1[1]+0.1, 'x1', fontsize=9)
+plt.scatter(*x2, color='blue', zorder=5)
+plt.text(x2[0]+0.1, x2[1]-0.3, 'x2', fontsize=9)
+
+# Plot labeled theta points
+for theta, pt in zip(thetas, points):
+    plt.scatter(pt[0], pt[1], s=40)
+    plt.text(pt[0]+0.1, pt[1]+0.1, f'θ = {theta}', fontsize=8)
+
+plt.axis('equal')
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.title('Affine Set: Line through x1 and x2')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+```
+
+> Example: The solution set of linear equation
+
+$$
+{x| Ax=b}
+$$
+
+is affine

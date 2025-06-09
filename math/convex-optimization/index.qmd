@@ -1,5 +1,5 @@
 ---
-title: Convex optimiztion
+title: Convex optimization
 lightbox: false
 description: Your post description
 author:
@@ -7,7 +7,7 @@ author:
     url: https://your.personal.website
     affiliation: Maybe your workplace?
     affiliation-url: https://your.workplace.website
-date: 2024-09-11
+date: 2025-06-09
 categories:
   - math
 format: 
@@ -91,3 +91,40 @@ Convex problems (nonnegative curvature) can be solved reliably in polynomial tim
 Nonconvex problems (regions of negative curvature) are generally NP-hard. They can exhibit multiple local minima, saddle points, and complex landscape features, so finding the global minimum is computationally intractable in the worst case (unless P=NP).
 
 Thus, the presence of negative curvature (nonconvexity) — not merely 'nonlinearity' — is what makes an optimization problem hard to solve.
+
+``` {python}
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define convex and nonconvex functions
+convex = lambda x: x**2
+nonconvex = lambda x: x**2 + 5*np.sin(3*x)
+
+# Domain
+x = np.linspace(-3, 3, 500)
+
+# Plot both functions
+plt.figure()
+plt.plot(x, convex(x), label='Convex: $f(x)=x^2$')
+plt.plot(x, nonconvex(x), label='Nonconvex: $f(x)=x^2+5\sin(3x)$')
+
+# Mark minima
+# For convex, minimum at x=0
+plt.scatter(0, convex(0), color='black', label='Convex minimum')
+# For nonconvex, approximate local minima
+d = nonconvex(x)
+idx = (np.diff(np.sign(np.diff(d))) > 0).nonzero()[0] + 1
+plt.scatter(x[idx], d[idx], color='red', s=20, label='Nonconvex local minima')
+
+plt.title('Convex vs Nonconvex Landscapes')
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.legend()
+plt.tight_layout()
+``` 
+**negative curvature** (nonconvexity) — not merely 'nonlinearity' — is what makes an optimization problem hard to solve.
+
+
+
+
