@@ -195,10 +195,20 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#define" id="toc-define" class="nav-link active" data-scroll-target="#define"><span class="header-section-number">1</span> Define</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -248,6 +258,8 @@ window.Quarto = {
 </header>
 
 
+<section id="define" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Define</h1>
 <p>A <strong>convex optimization</strong> problem has the form</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -265,7 +277,7 @@ window.Quarto = {
 <p>A function <span class="math inline">\(f\)</span> is <strong>convex</strong> if, for all <span class="math inline">\(x,y\)</span> and <span class="math inline">\(\theta\in[0,1]\)</span>, <span class="math display">\[
 f\bigl(\theta x+(1-\theta)y\bigr)\;\le\;\theta\,f(x)\;+\;(1-\theta)\,f(y),
 \]</span> i.e.&nbsp;it has non-negative (upward) curvature.```mermaid</p>
-<div id="c8e58998" class="cell" data-execution_count="1">
+<div id="e07ec4dc" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -316,7 +328,7 @@ f\bigl(\theta x+(1-\theta)y\bigr)\;\le\;\theta\,f(x)\;+\;(1-\theta)\,f(y),
 <p>Convex problems (nonnegative curvature) can be solved reliably in polynomial time using interior-point methods, gradient-based schemes with global convergence guarantees, and other efficient algorithms. The feasible set and objective have no ‘valleys’ that trap algorithms in suboptimal points.</p>
 <p>Nonconvex problems (regions of negative curvature) are generally NP-hard. They can exhibit multiple local minima, saddle points, and complex landscape features, so finding the global minimum is computationally intractable in the worst case (unless P=NP).</p>
 <p>Thus, the presence of negative curvature (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.</p>
-<div id="a938866c" class="cell" data-execution_count="2">
+<div id="179548a3" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -359,8 +371,9 @@ f\bigl(\theta x+(1-\theta)y\bigr)\;\le\;\theta\,f(x)\;+\;(1-\theta)\,f(y),
 <p><strong>negative curvature</strong> (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.</p>
 
 
+</section>
 
-
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -15,7 +15,347 @@
   <title>Convex optimization</title>
   <dc:creator>Your name</dc:creator>
   <link>https://kimhungbui.github.io/math/convex-optimization/</link>
-  <description><![CDATA[ undefined ]]></description>
+  <description><![CDATA[ 
+
+
+
+
+<section id="define" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Define</h1>
+<p>A <strong>convex optimization</strong> problem has the form</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Baligned%7D%0A&amp;%20%5Cunderset%7Bx%7D%7B%5Ctext%7Bminimize%7D%7D%20&amp;%20&amp;%20f_0(x)%20%5C%5C%0A&amp;%20%5Ctext%7Bsubject%20to%7D%20&amp;%20&amp;%20f_i(x)%20%5Cle%200,%5Cquad%20i=1,%5Cdots,m,%5C%5C%0A&amp;%20&amp;%20&amp;%20A%20x%20=%20b.%0A%5Cend%7Baligned%7D%0A"></p>
+<ul>
+<li><strong>Variable</strong>: <img src="https://latex.codecogs.com/png.latex?x%5Cin%5Cmathbb%20R%5En"></li>
+<li><strong>Equality constraints</strong>: linear (<img src="https://latex.codecogs.com/png.latex?A%20x%20=%20b">)<br>
+</li>
+<li><strong>Inequality constraints</strong>: <img src="https://latex.codecogs.com/png.latex?f_1,%5Cdots,f_m"> are <strong>convex</strong> functions</li>
+</ul>
+<p>A function <img src="https://latex.codecogs.com/png.latex?f"> is <strong>convex</strong> if, for all <img src="https://latex.codecogs.com/png.latex?x,y"> and <img src="https://latex.codecogs.com/png.latex?%5Ctheta%5Cin%5B0,1%5D">, <img src="https://latex.codecogs.com/png.latex?%0Af%5Cbigl(%5Ctheta%20x+(1-%5Ctheta)y%5Cbigr)%5C;%5Cle%5C;%5Ctheta%5C,f(x)%5C;+%5C;(1-%5Ctheta)%5C,f(y),%0A"> i.e.&nbsp;it has non-negative (upward) curvature.```mermaid</p>
+<div id="e07ec4dc" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># convex function</span></span>
+<span id="cb1-5">f <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">lambda</span> t: t<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># pick x, y, theta</span></span>
+<span id="cb1-8">x, y, theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2.0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.4</span></span>
+<span id="cb1-9">z <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> theta<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>theta)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>y</span>
+<span id="cb1-10"></span>
+<span id="cb1-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># sample for curve</span></span>
+<span id="cb1-12">t <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">300</span>)</span>
+<span id="cb1-13">plt.plot(t, f(t), label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"f(t) (convex curve)"</span>)</span>
+<span id="cb1-14"></span>
+<span id="cb1-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># points</span></span>
+<span id="cb1-16">plt.scatter([x, y, z], [f(x), f(y), f(z)], zorder<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)</span>
+<span id="cb1-17">plt.text(x, f(x), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"  (x, f(x))"</span>, va<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bottom"</span>)</span>
+<span id="cb1-18">plt.text(y, f(y), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"  (y, f(y))"</span>, va<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bottom"</span>)</span>
+<span id="cb1-19">plt.text(z, f(z), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"  (z, f(z))"</span>, va<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bottom"</span>)</span>
+<span id="cb1-20"></span>
+<span id="cb1-21"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># chord</span></span>
+<span id="cb1-22">fx, fy <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> f(x), f(y)</span>
+<span id="cb1-23">chord <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">lambda</span> t: fx <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> (fy<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>fx)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>(y<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>x)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>(t<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>x)</span>
+<span id="cb1-24">plt.plot([x, y], [fx, fy], <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'--'</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"chord"</span>)</span>
+<span id="cb1-25"></span>
+<span id="cb1-26">plt.legend()</span>
+<span id="cb1-27">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"t"</span>)</span>
+<span id="cb1-28">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"f(t)"</span>)</span>
+<span id="cb1-29">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Convexity: f(z) ≤ θ f(x) + (1–θ) f(y)"</span>)</span>
+<span id="cb1-30">plt.tight_layout()</span>
+<span id="cb1-31">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/math/convex-optimization/index_files/figure-html/cell-2-output-1.png" width="662" height="470" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>When is an optimization problem hard to solve?</p>
+<p>Classically, people thought:</p>
+<p>Linear problems (zero curvature) are easy, and</p>
+<p>Nonlinear problems (nonzero curvature) are hard.</p>
+<p>However, this view is too simplistic. The key distinction is actually convexity:</p>
+<p>Convex problems (nonnegative curvature) can be solved reliably in polynomial time using interior-point methods, gradient-based schemes with global convergence guarantees, and other efficient algorithms. The feasible set and objective have no ‘valleys’ that trap algorithms in suboptimal points.</p>
+<p>Nonconvex problems (regions of negative curvature) are generally NP-hard. They can exhibit multiple local minima, saddle points, and complex landscape features, so finding the global minimum is computationally intractable in the worst case (unless P=NP).</p>
+<p>Thus, the presence of negative curvature (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.</p>
+<div id="179548a3" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb2-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Define convex and nonconvex functions</span></span>
+<span id="cb2-5">convex <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">lambda</span> x: x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span></span>
+<span id="cb2-6">nonconvex <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">lambda</span> x: x<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>np.sin(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>x)</span>
+<span id="cb2-7"></span>
+<span id="cb2-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Domain</span></span>
+<span id="cb2-9">x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span>)</span>
+<span id="cb2-10"></span>
+<span id="cb2-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot both functions</span></span>
+<span id="cb2-12">plt.figure()</span>
+<span id="cb2-13">plt.plot(x, convex(x), label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Convex: $f(x)=x^2$'</span>)</span>
+<span id="cb2-14">plt.plot(x, nonconvex(x), label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Nonconvex: $f(x)=x^2+5\sin(3x)$'</span>)</span>
+<span id="cb2-15"></span>
+<span id="cb2-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Mark minima</span></span>
+<span id="cb2-17"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># For convex, minimum at x=0</span></span>
+<span id="cb2-18">plt.scatter(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, convex(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>), color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'black'</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Convex minimum'</span>)</span>
+<span id="cb2-19"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># For nonconvex, approximate local minima</span></span>
+<span id="cb2-20">d <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> nonconvex(x)</span>
+<span id="cb2-21">idx <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (np.diff(np.sign(np.diff(d))) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>).nonzero()[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb2-22">plt.scatter(x[idx], d[idx], color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'red'</span>, s<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Nonconvex local minima'</span>)</span>
+<span id="cb2-23"></span>
+<span id="cb2-24">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Convex vs Nonconvex Landscapes'</span>)</span>
+<span id="cb2-25">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'x'</span>)</span>
+<span id="cb2-26">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'f(x)'</span>)</span>
+<span id="cb2-27">plt.legend()</span>
+<span id="cb2-28">plt.tight_layout()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/math/convex-optimization/index_files/figure-html/cell-3-output-1.png" width="662" height="470" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>negative curvature</strong> (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.</p>
+
+
+</section>
+
+ ]]></description>
   <category>math</category>
   <guid>https://kimhungbui.github.io/math/convex-optimization/</guid>
   <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
@@ -23,10 +363,10 @@
 <item>
   <title>Convex set</title>
   <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/math/convex-set/convex-set.html</link>
+  <link>https://kimhungbui.github.io/math/convex-set/</link>
   <description><![CDATA[ undefined ]]></description>
   <category>math</category>
-  <guid>https://kimhungbui.github.io/math/convex-set/convex-set.html</guid>
+  <guid>https://kimhungbui.github.io/math/convex-set/</guid>
   <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -638,7 +978,7 @@ font-style: inherit;">"</span>)</span></code></pre></div>
   <link>https://kimhungbui.github.io/math/matrix/</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://kimhungbui.github.io/math/matrix/</guid>
-  <pubDate>Mon, 09 Jun 2025 09:25:38 GMT</pubDate>
+  <pubDate>Mon, 09 Jun 2025 09:52:47 GMT</pubDate>
 </item>
 </channel>
 </rss>
