@@ -4,6 +4,7 @@ author: "Gapminder Analytics Group"
 format: 
   html:
     page-layout: custom
+    code-fold: true
 execute:
   echo: true  # Ensures code is executed when rendering
   warning: false
