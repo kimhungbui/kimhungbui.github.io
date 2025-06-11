@@ -31,7 +31,7 @@
 <li><strong>Inequality constraints</strong>: <img src="https://latex.codecogs.com/png.latex?f_1,%5Cdots,f_m"> are <strong>convex</strong> functions</li>
 </ul>
 <p>A function <img src="https://latex.codecogs.com/png.latex?f"> is <strong>convex</strong> if, for all <img src="https://latex.codecogs.com/png.latex?x,y"> and <img src="https://latex.codecogs.com/png.latex?%5Ctheta%5Cin%5B0,1%5D">, <img src="https://latex.codecogs.com/png.latex?%0Af%5Cbigl(%5Ctheta%20x+(1-%5Ctheta)y%5Cbigr)%5C;%5Cle%5C;%5Ctheta%5C,f(x)%5C;+%5C;(1-%5Ctheta)%5C,f(y),%0A"> i.e.&nbsp;it has non-negative (upward) curvature.```mermaid</p>
-<div id="5122e8b3" class="cell" data-execution_count="1">
+<div id="d4d4f37b" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
@@ -200,7 +200,7 @@ font-style: inherit;">"Convexity: f(z) ≤ θ f(x) + (1–θ) f(y)"</span>)</spa
 <p>Convex problems (nonnegative curvature) can be solved reliably in polynomial time using interior-point methods, gradient-based schemes with global convergence guarantees, and other efficient algorithms. The feasible set and objective have no ‘valleys’ that trap algorithms in suboptimal points.</p>
 <p>Nonconvex problems (regions of negative curvature) are generally NP-hard. They can exhibit multiple local minima, saddle points, and complex landscape features, so finding the global minimum is computationally intractable in the worst case (unless P=NP).</p>
 <p>Thus, the presence of negative curvature (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.</p>
-<div id="8115b529" class="cell" data-execution_count="2">
+<div id="eb2510da" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
@@ -364,7 +364,331 @@ font-style: inherit;">'f(x)'</span>)</span>
   <title>Convex set</title>
   <dc:creator>Your name</dc:creator>
   <link>https://kimhungbui.github.io/math/convex-set/</link>
-  <description><![CDATA[ undefined ]]></description>
+  <description><![CDATA[ 
+
+
+
+
+<section id="some-standard-convex-sets" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Some standard convex sets</h1>
+<section id="affine-sets" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="affine-sets"><span class="header-section-number">1.1</span> Affine sets</h2>
+<p>An affine set is one that contains the entire line through any two of its points. Concretely, if <img src="https://latex.codecogs.com/png.latex?x_1,x_2"> lie in an affine set <img src="https://latex.codecogs.com/png.latex?S">, then for all $ hetaR$ the combination</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ax(%5Ctheta)%20=%20%5Ctheta%20x_1%20+%20(1-%5Ctheta)%20x_2%0A"></p>
+<p>also lies in <img src="https://latex.codecogs.com/png.latex?S">. Special cases:</p>
+<p>For <img src="https://latex.codecogs.com/png.latex?%5Ctheta%20%5Cin%5B0,1%5D">, <img src="https://latex.codecogs.com/png.latex?x(%5Ctheta)"> traces the line segment between <img src="https://latex.codecogs.com/png.latex?x_1"> and <img src="https://latex.codecogs.com/png.latex?x_2">.</p>
+<p>For <img src="https://latex.codecogs.com/png.latex?%5Ctheta%3C0"> or <img src="https://latex.codecogs.com/png.latex?%5Ctheta%3E1">, it extends beyond the endpoints.</p>
+<div id="b72f8ad6" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Define two points x1 and x2</span></span>
+<span id="cb1-5">x1 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.array([<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>])</span>
+<span id="cb1-6">x2 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.array([<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>])</span>
+<span id="cb1-7"></span>
+<span id="cb1-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Sample theta values</span></span>
+<span id="cb1-9">thetas <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.array([<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.2</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.6</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.2</span>])</span>
+<span id="cb1-10">points <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [(theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> x1 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> x2) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> theta <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> thetas]</span>
+<span id="cb1-11"></span>
+<span id="cb1-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Generate full line between extended range of theta</span></span>
+<span id="cb1-13">theta_full <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.4</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.4</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>)</span>
+<span id="cb1-14">line <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.array([theta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> x1 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> theta) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> x2 <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> theta <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> theta_full])</span>
+<span id="cb1-15"></span>
+<span id="cb1-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot</span></span>
+<span id="cb1-17">plt.figure(figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>))</span>
+<span id="cb1-18">plt.plot(line[:, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>], line[:, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'k-'</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Line through x1 and x2'</span>)</span>
+<span id="cb1-19">plt.scatter(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>x1, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'red'</span>, zorder<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)</span>
+<span id="cb1-20">plt.text(x1[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>, x1[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'x1'</span>, fontsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>)</span>
+<span id="cb1-21">plt.scatter(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>x2, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>, zorder<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>)</span>
+<span id="cb1-22">plt.text(x2[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>, x2[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.3</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'x2'</span>, fontsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>)</span>
+<span id="cb1-23"></span>
+<span id="cb1-24"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot labeled theta points</span></span>
+<span id="cb1-25"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> theta, pt <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(thetas, points):</span>
+<span id="cb1-26">    plt.scatter(pt[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>], pt[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], s<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">40</span>)</span>
+<span id="cb1-27">    plt.text(pt[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>, pt[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>, <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'θ = </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>theta<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>, fontsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>)</span>
+<span id="cb1-28"></span>
+<span id="cb1-29">plt.axis(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'equal'</span>)</span>
+<span id="cb1-30">plt.grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>, linestyle<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'--'</span>, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>)</span>
+<span id="cb1-31">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Affine Set: Line through x1 and x2'</span>)</span>
+<span id="cb1-32">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'x'</span>)</span>
+<span id="cb1-33">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'y'</span>)</span>
+<span id="cb1-34">plt.legend()</span>
+<span id="cb1-35">plt.tight_layout()</span>
+<span id="cb1-36">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/math/convex-set/index_files/figure-html/cell-2-output-1.png" width="566" height="374" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>Example: The solution set of linear equation</p>
+</blockquote>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%7Bx%7C%20Ax=b%7D%0A"></p>
+<p>is affine</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Every affine set is a solution set of linear equations">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Every affine set is a solution set of linear equations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Every affine set <img src="https://latex.codecogs.com/png.latex?S%20%5Csubseteq%20%5Cmathbb%7BR%7D%5En"> can be expressed as: <img src="https://latex.codecogs.com/png.latex?%0AS%20=%20%5C%7Bx%20%5Cin%20%5Cmathbb%7BR%7D%5En%20%5Cmid%20A%20x%20=%20b%5C%7D%0A"> for some matrix <img src="https://latex.codecogs.com/png.latex?A%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bm%20%5Ctimes%20n%7D"> and vector <img src="https://latex.codecogs.com/png.latex?b%20%5Cin%20%5Cmathbb%7BR%7D%5Em">.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Proof sketch">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof sketch
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <img src="https://latex.codecogs.com/png.latex?S"> be an affine set. Pick any point <img src="https://latex.codecogs.com/png.latex?x_0%20%5Cin%20S">, and define: <img src="https://latex.codecogs.com/png.latex?%0AV%20=%20%5C%7Bx%20-%20x_0%20%5Cmid%20x%20%5Cin%20S%5C%7D%0A"></p>
+<p>This set <img src="https://latex.codecogs.com/png.latex?V"> is a vector subspace of <img src="https://latex.codecogs.com/png.latex?%5Cmathbb%7BR%7D%5En">, because affine sets are closed under affine combinations, and subtraction cancels the translation offset.</p>
+<p>Since <img src="https://latex.codecogs.com/png.latex?V"> is a subspace, it can be written as the null space of some matrix <img src="https://latex.codecogs.com/png.latex?A%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bm%20%5Ctimes%20n%7D">: <img src="https://latex.codecogs.com/png.latex?%0AV%20=%20%5C%7Bx%20%5Cin%20%5Cmathbb%7BR%7D%5En%20%5Cmid%20A%20x%20=%200%5C%7D%0A"></p>
+<p>Hence the original affine set is: <img src="https://latex.codecogs.com/png.latex?%0AS%20=%20%5C%7Bx%20%5Cin%20%5Cmathbb%7BR%7D%5En%20%5Cmid%20A(x%20-%20x_0)%20=%200%5C%7D%0A=%20%5C%7Bx%20%5Cin%20%5Cmathbb%7BR%7D%5En%20%5Cmid%20A%20x%20=%20A%20x_0%5C%7D%0A"></p>
+<p>Let <img src="https://latex.codecogs.com/png.latex?b%20=%20A%20x_0">. Then: <img src="https://latex.codecogs.com/png.latex?%0AS%20=%20%5C%7Bx%20%5Cin%20%5Cmathbb%7BR%7D%5En%20%5Cmid%20A%20x%20=%20b%5C%7D%0A"></p>
+<p>So <img src="https://latex.codecogs.com/png.latex?S"> is the solution set of a system of linear equations.</p>
+<p>✅ Q.E.D.</p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
   <category>math</category>
   <guid>https://kimhungbui.github.io/math/convex-set/</guid>
   <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
@@ -978,7 +1302,7 @@ font-style: inherit;">"</span>)</span></code></pre></div>
   <link>https://kimhungbui.github.io/math/matrix/</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://kimhungbui.github.io/math/matrix/</guid>
-  <pubDate>Mon, 09 Jun 2025 14:30:56 GMT</pubDate>
+  <pubDate>Wed, 11 Jun 2025 04:43:23 GMT</pubDate>
 </item>
 </channel>
 </rss>

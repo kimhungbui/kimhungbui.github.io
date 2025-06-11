@@ -195,10 +195,23 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#some-standard-convex-sets" id="toc-some-standard-convex-sets" class="nav-link active" data-scroll-target="#some-standard-convex-sets"><span class="header-section-number">1</span> Some standard convex sets</a>
+  <ul class="collapse">
+  <li><a href="#affine-sets" id="toc-affine-sets" class="nav-link" data-scroll-target="#affine-sets"><span class="header-section-number">1.1</span> Affine sets</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -247,28 +260,19 @@ window.Quarto = {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#some-standard-convex-sets" id="toc-some-standard-convex-sets"><span class="header-section-number">1</span> Some standard convex sets</a>
-  <ul>
-  <li><a href="#affine-sets" id="toc-affine-sets"><span class="header-section-number">1.1</span> Affine sets</a></li>
-  </ul></li>
-  </ul>
-</nav>
+
 <section id="some-standard-convex-sets" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Some standard convex sets</h1>
 <section id="affine-sets" class="level2" data-number="1.1">
-<h2 data-number="1.1" data-anchor-id="affine-sets"><span class="header-section-number">1.1</span> Affine sets</h2>
+<h2 data-number="1.1" class="anchored" data-anchor-id="affine-sets"><span class="header-section-number">1.1</span> Affine sets</h2>
 <p>An affine set is one that contains the entire line through any two of its points. Concretely, if <span class="math inline">\(x_1,x_2\)</span> lie in an affine set <span class="math inline">\(S\)</span>, then for all $ hetaR$ the combination</p>
 <p><span class="math display">\[
 x(\theta) = \theta x_1 + (1-\theta) x_2
 \]</span></p>
 <p>also lies in <span class="math inline">\(S\)</span>. Special cases:</p>
-<p>For $ $, <span class="math inline">\(x(\theta)\)</span> traces the line segment between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>.</p>
-<p>For $ &lt;0$ or $ &gt;1$, it extends beyond the endpoints.</p>
-<div id="13b85168" class="cell" data-execution_count="1">
+<p>For <span class="math inline">\(\theta \in[0,1]\)</span>, <span class="math inline">\(x(\theta)\)</span> traces the line segment between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>.</p>
+<p>For <span class="math inline">\(\theta&lt;0\)</span> or <span class="math inline">\(\theta&gt;1\)</span>, it extends beyond the endpoints.</p>
+<div id="b72f8ad6" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -323,12 +327,55 @@ x(\theta) = \theta x_1 + (1-\theta) x_2
 {x| Ax=b}
 \]</span></p>
 <p>is affine</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Every affine set is a solution set of linear equations">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Every affine set is a solution set of linear equations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Every affine set <span class="math inline">\(S \subseteq \mathbb{R}^n\)</span> can be expressed as: <span class="math display">\[
+S = \{x \in \mathbb{R}^n \mid A x = b\}
+\]</span> for some matrix <span class="math inline">\(A \in \mathbb{R}^{m \times n}\)</span> and vector <span class="math inline">\(b \in \mathbb{R}^m\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Proof sketch">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof sketch
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(S\)</span> be an affine set. Pick any point <span class="math inline">\(x_0 \in S\)</span>, and define: <span class="math display">\[
+V = \{x - x_0 \mid x \in S\}
+\]</span></p>
+<p>This set <span class="math inline">\(V\)</span> is a vector subspace of <span class="math inline">\(\mathbb{R}^n\)</span>, because affine sets are closed under affine combinations, and subtraction cancels the translation offset.</p>
+<p>Since <span class="math inline">\(V\)</span> is a subspace, it can be written as the null space of some matrix <span class="math inline">\(A \in \mathbb{R}^{m \times n}\)</span>: <span class="math display">\[
+V = \{x \in \mathbb{R}^n \mid A x = 0\}
+\]</span></p>
+<p>Hence the original affine set is: <span class="math display">\[
+S = \{x \in \mathbb{R}^n \mid A(x - x_0) = 0\}
+= \{x \in \mathbb{R}^n \mid A x = A x_0\}
+\]</span></p>
+<p>Let <span class="math inline">\(b = A x_0\)</span>. Then: <span class="math display">\[
+S = \{x \in \mathbb{R}^n \mid A x = b\}
+\]</span></p>
+<p>So <span class="math inline">\(S\)</span> is the solution set of a system of linear equations.</p>
+<p>✅ Q.E.D.</p>
+</div>
+</div>
 
 
 </section>
 </section>
 
-
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
