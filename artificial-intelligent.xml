@@ -1,0 +1,2547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Kim Hung Bui</title>
+<link>https://kimhungbui.github.io/artificial-intelligent.html</link>
+<atom:link href="https://kimhungbui.github.io/artificial-intelligent.xml" rel="self" type="application/rss+xml"/>
+<description>My Personal Website</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Thu, 12 Jun 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Logistic regression</title>
+  <dc:creator>Your name</dc:creator>
+  <link>https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction-to-logistic-regression" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction to Logistic Regression</h1>
+<p><em>Logistic regression</em>(Tolles and Meurer, 2016) is a model named after the logistic function, which plays a central role in the model.</p>
+<p>Originally, the logistic function was created from typical statistical models of population growth. This function takes an S-shaped form and maps real values to a range in <img src="https://latex.codecogs.com/png.latex?(0,%20L)">. The general mathematical formula of the logistic function is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Af(x)%20=%20%5Cfrac%7BL%7D%7B1%20+%20e%5E%7B-k(x%20-%20x_0)%7D%7D%20%5Ctag%7B1%7D%0A"></p>
+<p>where:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?x_0"> is the value at the midpoint of the logistic curve,</li>
+<li><img src="https://latex.codecogs.com/png.latex?k"> is the growth rate of the logistic function,</li>
+<li><img src="https://latex.codecogs.com/png.latex?L"> is the maximum value of the logistic function.</li>
+</ul>
+<hr>
+<p>The logistic regression model is often used in classification tasks, especially binary classification, even though the term “regression” is included in its name. The upcoming sections will explain why this naming convention was adopted.</p>
+</section>
+<section id="general-concepts" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> General Concepts</h1>
+<section id="problem-1-increase-observation" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="problem-1-increase-observation"><span class="header-section-number">2.1</span> Problem 1: Increase observation</h2>
+<p><em>True or False:</em> For a fixed number of observations in a data set, introducing more variables normally generates a model that has a better fit to the data. What may be the drawback of such a model fitting strategy?</p>
+<p>Example:</p>
+<div id="b03940c4" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> sklearn.linear_model <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> LinearRegression</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> sklearn.preprocessing <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> PolynomialFeatures</span>
+<span id="cb1-5"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> sklearn.metrics <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> mean_squared_error</span>
+<span id="cb1-6"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> sklearn.model_selection <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> train_test_split</span>
+<span id="cb1-7"></span>
+<span id="cb1-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Create synthetic data</span></span>
+<span id="cb1-9">np.random.seed(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)</span>
+<span id="cb1-10">n_samples <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">30</span></span>
+<span id="cb1-11">X <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.sort(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> np.random.rand(n_samples, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>), axis<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)</span>
+<span id="cb1-12">y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.sin(X).ravel() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> np.random.normal(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.2</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>n_samples)</span>
+<span id="cb1-13"></span>
+<span id="cb1-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Split into training and test sets</span></span>
+<span id="cb1-15">X_train, X_test, y_train, y_test <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> train_test_split(X, y, test_size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.3</span>, random_state<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">42</span>)</span>
+<span id="cb1-16"></span>
+<span id="cb1-17"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Polynomial degrees to test</span></span>
+<span id="cb1-18">degrees <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>]</span>
+<span id="cb1-19"></span>
+<span id="cb1-20">plt.figure(figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>))</span>
+<span id="cb1-21"></span>
+<span id="cb1-22"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i, degree <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">enumerate</span>(degrees, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>):</span>
+<span id="cb1-23">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Generate polynomial features</span></span>
+<span id="cb1-24">    poly <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> PolynomialFeatures(degree<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>degree)</span>
+<span id="cb1-25">    X_train_poly <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> poly.fit_transform(X_train)</span>
+<span id="cb1-26">    X_test_poly <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> poly.transform(X_test)</span>
+<span id="cb1-27"></span>
+<span id="cb1-28">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit model</span></span>
+<span id="cb1-29">    model <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> LinearRegression()</span>
+<span id="cb1-30">    model.fit(X_train_poly, y_train)</span>
+<span id="cb1-31"></span>
+<span id="cb1-32">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Predict</span></span>
+<span id="cb1-33">    X_plot <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>).reshape(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-34">    X_plot_poly <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> poly.transform(X_plot)</span>
+<span id="cb1-35">    y_plot <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> model.predict(X_plot_poly)</span>
+<span id="cb1-36"></span>
+<span id="cb1-37">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Calculate errors</span></span>
+<span id="cb1-38">    train_mse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> mean_squared_error(y_train, model.predict(X_train_poly))</span>
+<span id="cb1-39">    test_mse <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> mean_squared_error(y_test, model.predict(X_test_poly))</span>
+<span id="cb1-40"></span>
+<span id="cb1-41">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot</span></span>
+<span id="cb1-42">    plt.subplot(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, i)</span>
+<span id="cb1-43">    plt.scatter(X_train, y_train, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Train data'</span>)</span>
+<span id="cb1-44">    plt.scatter(X_test, y_test, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'green'</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Test data'</span>)</span>
+<span id="cb1-45">    plt.plot(X_plot, y_plot, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'red'</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'Degree </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>degree<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>)</span>
+<span id="cb1-46">    plt.title(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Degree </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>degree<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">Train MSE: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>train_mse<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:.2f}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">, Test MSE: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>test_mse<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:.2f}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span>
+<span id="cb1-47">    plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"X"</span>)</span>
+<span id="cb1-48">    plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"y"</span>)</span>
+<span id="cb1-49">    plt.legend()</span>
+<span id="cb1-50"></span>
+<span id="cb1-51">plt.tight_layout()</span>
+<span id="cb1-52">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-2-output-1.png" width="1430" height="375" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We see that: - Degree 1: (underfit): High bias, both train and test error are high - Degree 3 (good fit): Balanced bias-variance, good generalization. - Degree 9 (overfit): Train error very low, but test error high – model fits noise.</p>
+<p><strong>True</strong> – Introducing more variables generally improves the model’s fit to the training data.<br>
+However, there is a major drawback: it often leads to <strong>overfitting</strong>.</p>
+<hr>
+<section id="explanation" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="explanation"><span class="header-section-number">2.1.1</span> Explanation</h3>
+<section id="why-the-fit-improves" class="level4">
+<h4 class="anchored" data-anchor-id="why-the-fit-improves">Why the Fit Improves</h4>
+<ul>
+<li>In regression or classification tasks, adding more features gives the model more flexibility to match the training data.</li>
+<li>This allows the model to capture finer patterns, reduce residuals, and minimize training error.</li>
+</ul>
+<p><strong>Example</strong>:<br>
+In polynomial regression, increasing the degree (i.e., adding more variables) can make the curve pass through all data points, resulting in nearly zero training error.</p>
+<hr>
+</section>
+</section>
+<section id="drawbacks-of-this-strategy" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="drawbacks-of-this-strategy"><span class="header-section-number">2.1.2</span> Drawbacks of This Strategy</h3>
+<section id="overfitting" class="level4">
+<h4 class="anchored" data-anchor-id="overfitting">1. Overfitting</h4>
+<ul>
+<li>A model that fits the training data too well may learn noise or random fluctuations instead of the true underlying patterns.</li>
+<li>This results in poor generalization to unseen or test data.</li>
+</ul>
+</section>
+<section id="increased-variance" class="level4">
+<h4 class="anchored" data-anchor-id="increased-variance">2. Increased Variance</h4>
+<ul>
+<li>More variables increase the model’s sensitivity to small changes in data.</li>
+<li>A high-variance model may change dramatically with minor input changes.</li>
+</ul>
+</section>
+<section id="curse-of-dimensionality" class="level4">
+<h4 class="anchored" data-anchor-id="curse-of-dimensionality">3. Curse of Dimensionality</h4>
+<ul>
+<li>In high-dimensional spaces, data becomes sparse.</li>
+<li>Concepts like distance, density, and similarity lose their meaning.</li>
+<li>Many algorithms (e.g., k-NN, clustering) perform poorly in high dimensions.</li>
+</ul>
+</section>
+<section id="interpretability" class="level4">
+<h4 class="anchored" data-anchor-id="interpretability">4. Interpretability</h4>
+<ul>
+<li>Adding more variables makes the model harder to interpret.</li>
+<li>This is a problem in domains where transparency is important (e.g., medicine, finance).</li>
+</ul>
+</section>
+<section id="computational-cost" class="level4">
+<h4 class="anchored" data-anchor-id="computational-cost">5. Computational Cost</h4>
+<ul>
+<li>More variables require more memory and longer training times.</li>
+<li>Feature selection or dimensionality reduction may be needed to manage complexity.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="summary" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.1.3</span> Summary</h3>
+<p><strong>True</strong> – Adding more variables generally improves the fit on training data,<br>
+but it increases the risk of <strong>overfitting</strong>, <strong>poor generalization</strong>, and <strong>computational burden</strong>.</p>
+<hr>
+</section>
+<section id="best-practice" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="best-practice"><span class="header-section-number">2.1.4</span> Best Practice</h3>
+<p>Use techniques like <strong>cross-validation</strong> and <strong>regularization</strong> (e.g., Lasso, Ridge, dropout)<br>
+to balance model complexity and generalization performance.</p>
+</section>
+</section>
+<section id="problem-2-odds" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="problem-2-odds"><span class="header-section-number">2.2</span> Problem 2: Odds</h2>
+<p>Define the term “<strong>odds of success</strong>” both qualitatively and formally. Give a numerical example that stresses the relation between probability and odds of an event occurring.</p>
+<section id="definition-odds-of-success" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="definition-odds-of-success"><span class="header-section-number">2.2.1</span> Definition: Odds of Success</h3>
+</section>
+<section id="qualitative-definition" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="qualitative-definition"><span class="header-section-number">2.2.2</span> Qualitative Definition</h3>
+<p>The <strong>odds of success</strong> express how much more likely an event is to occur than not occur. It is often used in statistics and logistic regression.</p>
+<ul>
+<li>If an event is <strong>very likely</strong>, the odds are high.</li>
+<li>If an event is <strong>unlikely</strong>, the odds are low.</li>
+<li>If the event is <strong>equally likely to happen or not</strong>, the odds are 1 (or “even odds”).</li>
+</ul>
+</section>
+<section id="formal-definition" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="formal-definition"><span class="header-section-number">2.2.3</span> Formal Definition</h3>
+<p>Let <strong>p</strong> be the probability of success (i.e., the event occurring). Then the <strong>odds of success</strong> are defined as:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7BOdds%20of%20success%7D%20=%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%0A"></p>
+<p>This compares the chance the event <em>does happen</em> (p) to the chance it <em>does not happen</em> (1 - p).</p>
+<hr>
+</section>
+<section id="numerical-example" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="numerical-example"><span class="header-section-number">2.2.4</span> Numerical Example</h3>
+<p>Suppose the probability of success is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ap%20=%200.75%0A"></p>
+<p>Then the odds of success are:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7BOdds%7D%20=%20%5Cfrac%7B0.75%7D%7B1%20-%200.75%7D%20=%20%5Cfrac%7B0.75%7D%7B0.25%7D%20=%203%0A"></p>
+<p><strong>Interpretation</strong>:<br>
+The event is <strong>3 times more likely</strong> to occur than not occur.<br>
+In other words, for every 3 successes, we expect 1 failure.</p>
+<hr>
+</section>
+<section id="additional-comparison" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="additional-comparison"><span class="header-section-number">2.2.5</span> Additional Comparison</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Probability (p)</th>
+<th>Odds = p / (1 - p)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.5</td>
+<td>1.0</td>
+</tr>
+<tr class="even">
+<td>0.8</td>
+<td>4.0</td>
+</tr>
+<tr class="odd">
+<td>0.25</td>
+<td>0.33</td>
+</tr>
+</tbody>
+</table>
+<p>As the probability increases toward 1, the odds increase toward infinity.</p>
+<hr>
+</section>
+<section id="inverse-from-odds-to-probability" class="level3" data-number="2.2.6">
+<h3 data-number="2.2.6" class="anchored" data-anchor-id="inverse-from-odds-to-probability"><span class="header-section-number">2.2.6</span> Inverse: From Odds to Probability</h3>
+<p>If you are given the odds $ o $, you can convert back to probability:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ap%20=%20%5Cfrac%7Bo%7D%7B1%20+%20o%7D%0A"></p>
+<p><strong>Example</strong>:<br>
+If odds = 4, then</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ap%20=%20%5Cfrac%7B4%7D%7B1%20+%204%7D%20=%20%5Cfrac%7B4%7D%7B5%7D%20=%200.8%0A"></p>
+</section>
+</section>
+<section id="problem-3-interaction" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="problem-3-interaction"><span class="header-section-number">2.3</span> Problem 3: Interaction</h2>
+<ol type="1">
+<li>Define what is meant by the term “interaction”, in the context of a logistic regression predictor variable.</li>
+<li>What is the simplest form of an interaction? Write its formulae.</li>
+<li>What statistical tests can be used to attest the significance of an interaction term?</li>
+</ol>
+<section id="definition-of-interaction-in-logistic-regression" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="definition-of-interaction-in-logistic-regression"><span class="header-section-number">2.3.1</span> 1. Definition of Interaction in Logistic Regression</h3>
+<p>In logistic regression, an <strong>interaction</strong> occurs when the <strong>effect of one predictor variable on the outcome depends on the level of another predictor variable</strong>.</p>
+<p>This means the predictors do not act independently: the combined effect of two variables is <strong>not simply additive</strong> on the log-odds scale.</p>
+<p><strong>Example</strong>:<br>
+If <img src="https://latex.codecogs.com/png.latex?X_1"> is age and <img src="https://latex.codecogs.com/png.latex?X_2"> is smoking status, an interaction term (<img src="https://latex.codecogs.com/png.latex?X_1%20%5Ccdot%20X_2">) would capture how the effect of age on the probability of disease differs between smokers and non-smokers.</p>
+<hr>
+</section>
+<section id="simplest-form-of-an-interaction" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="simplest-form-of-an-interaction"><span class="header-section-number">2.3.2</span> 2. Simplest Form of an Interaction</h3>
+<p>The simplest interaction involves <strong>two variables</strong> in a logistic regression model. The formula (on the log-odds scale) is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%5Cleft(%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%20%5Cright)%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20+%20%5Cbeta_3%20(X_1%20%5Ccdot%20X_2)%0A"></p>
+<p>Where: - <img src="https://latex.codecogs.com/png.latex?X_1"> and <img src="https://latex.codecogs.com/png.latex?X_2"> are predictors - <img src="https://latex.codecogs.com/png.latex?X_1%20%5Ccdot%20X_2"> is the interaction term - <img src="https://latex.codecogs.com/png.latex?%5Cbeta_3"> captures the <strong>change in effect</strong> of <img src="https://latex.codecogs.com/png.latex?X_1"> at different levels of <img src="https://latex.codecogs.com/png.latex?X_2"></p>
+<p>If <img src="https://latex.codecogs.com/png.latex?%5Cbeta_3%20%5Cne%200">, there is a statistically significant interaction.</p>
+<hr>
+</section>
+<section id="statistical-tests-for-interaction-terms" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="statistical-tests-for-interaction-terms"><span class="header-section-number">2.3.3</span> 3. Statistical Tests for Interaction Terms</h3>
+<p>To test whether the interaction term significantly improves the model:</p>
+<section id="a.-wald-test" class="level4">
+<h4 class="anchored" data-anchor-id="a.-wald-test">a. <strong>Wald Test</strong></h4>
+<ul>
+<li>Tests if <img src="https://latex.codecogs.com/png.latex?%5Cbeta_3%20=%200"></li>
+<li>Based on the standard error and coefficient</li>
+<li>Commonly used in software output (e.g., <code>summary()</code> in R or <code>LogitResults</code> in statsmodels)</li>
+</ul>
+</section>
+<section id="b.-likelihood-ratio-test-lrt" class="level4">
+<h4 class="anchored" data-anchor-id="b.-likelihood-ratio-test-lrt">b. <strong>Likelihood Ratio Test (LRT)</strong></h4>
+<ul>
+<li>Compares:
+<ul>
+<li><strong>Model 1</strong>: with interaction term</li>
+<li><strong>Model 2</strong>: without interaction term</li>
+</ul></li>
+<li>Null hypothesis: interaction term does not improve the model</li>
+<li>LRT is more robust than the Wald test, especially in small samples</li>
+</ul>
+<p><strong>Steps</strong>: 1. Fit both models (with and without interaction) 2. Compute:<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Cchi%5E2%20=%20-2(%5Clog%20L_%7B%5Ctext%7Breduced%7D%7D%20-%20%5Clog%20L_%7B%5Ctext%7Bfull%7D%7D)%0A"> 3. Compare with chi-square distribution (df = 1 for one interaction term)</p>
+</section>
+<section id="c.-anova-analysis-of-deviance" class="level4">
+<h4 class="anchored" data-anchor-id="c.-anova-analysis-of-deviance">c.&nbsp;<strong>ANOVA (Analysis of Deviance)</strong></h4>
+<ul>
+<li>Alternative approach to compare nested models in logistic regression.</li>
+<li>Often used in R with <code>anova(model1, model2, test = "Chisq")</code></li>
+</ul>
+</section>
+</section>
+<section id="note-interaction-and-information-theory" class="level3" data-number="2.3.4">
+<h3 data-number="2.3.4" class="anchored" data-anchor-id="note-interaction-and-information-theory"><span class="header-section-number">2.3.4</span> Note: Interaction and Information Theory</h3>
+<p>In the context of <strong>information theory</strong>, interaction terms in a model can be interpreted as capturing <strong>mutual information</strong> between predictor variables <strong>and</strong> their <strong>combined influence</strong> on the target.</p>
+<hr>
+</section>
+<section id="interaction-as-additional-information" class="level3" data-number="2.3.5">
+<h3 data-number="2.3.5" class="anchored" data-anchor-id="interaction-as-additional-information"><span class="header-section-number">2.3.5</span> Interaction as Additional Information</h3>
+<p>Without an interaction term, a model assumes <strong>additivity</strong>: each predictor affects the outcome independently. However, if two variables <em>jointly</em> influence the outcome, then their interaction carries <strong>additional information</strong> beyond their individual effects.</p>
+<p>This added value can be viewed as:</p>
+<ul>
+<li><strong>Extra bits of information</strong> (in the sense of entropy reduction) gained by knowing the joint effect of variables</li>
+<li><strong>Mutual information</strong> between variables that is <strong>relevant to the response</strong>, not captured in their marginal contributions</li>
+</ul>
+<hr>
+</section>
+<section id="impact-on-model-performance" class="level3" data-number="2.3.6">
+<h3 data-number="2.3.6" class="anchored" data-anchor-id="impact-on-model-performance"><span class="header-section-number">2.3.6</span> Impact on Model Performance</h3>
+<section id="improved-predictive-power" class="level4">
+<h4 class="anchored" data-anchor-id="improved-predictive-power">1. <strong>Improved Predictive Power</strong></h4>
+<ul>
+<li>Captures complex relationships</li>
+<li>Leads to better fit and generalization, if the interaction is real and not noise</li>
+</ul>
+</section>
+<section id="reduced-residual-uncertainty" class="level4">
+<h4 class="anchored" data-anchor-id="reduced-residual-uncertainty">2. <strong>Reduced Residual Uncertainty</strong></h4>
+<ul>
+<li>Reduces unexplained variation in the outcome</li>
+<li>Analogous to decreasing entropy in the output distribution by incorporating more structure</li>
+</ul>
+</section>
+<section id="better-feature-representation" class="level4">
+<h4 class="anchored" data-anchor-id="better-feature-representation">3. <strong>Better Feature Representation</strong></h4>
+<ul>
+<li>Interaction terms effectively <strong>encode feature combinations</strong> that correlate strongly with the outcome</li>
+<li>Similar to feature engineering guided by <strong>information gain</strong></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="summary-1" class="level3" data-number="2.3.7">
+<h3 data-number="2.3.7" class="anchored" data-anchor-id="summary-1"><span class="header-section-number">2.3.7</span> Summary</h3>
+<p>Adding interaction terms allows the model to <strong>capture dependency structures</strong> among variables that are meaningful to the target, thereby increasing the <strong>information</strong> the model has about the outcome. In information-theoretic terms, interactions <strong>reduce conditional entropy</strong> and increase <strong>mutual information</strong> between inputs and output.</p>
+</section>
+</section>
+<section id="problem-4" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="problem-4"><span class="header-section-number">2.4</span> Problem 4:</h2>
+<p>True or False: In machine learning terminology, unsupervised learning refers to the mapping of input covariates to a target response variable that is attempted at being predicted when the labels are known.</p>
+<p><strong>False</strong></p>
+<section id="explanation-1" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="explanation-1"><span class="header-section-number">2.4.1</span> Explanation</h3>
+<p>In <strong>machine learning</strong>, the statement describes <strong>supervised learning</strong>, not unsupervised learning.</p>
+<hr>
+</section>
+<section id="definitions" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="definitions"><span class="header-section-number">2.4.2</span> Definitions:</h3>
+<ul>
+<li><p><strong>Supervised Learning</strong>:<br>
+The algorithm learns to <strong>map input features (covariates)</strong> to a known <strong>target variable (labels)</strong>.<br>
+Examples: classification, regression.</p></li>
+<li><p><strong>Unsupervised Learning</strong>:<br>
+The algorithm is used when <strong>labels are unknown</strong>. It finds <strong>patterns or structures</strong> in the data.<br>
+Examples: clustering, dimensionality reduction.</p></li>
+</ul>
+<hr>
+</section>
+<section id="why-the-statement-is-false" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="why-the-statement-is-false"><span class="header-section-number">2.4.3</span> Why the Statement is False:</h3>
+<blockquote class="blockquote">
+<p><em>“Unsupervised learning refers to the mapping of input covariates to a target response variable that is attempted at being predicted when the labels are known.”</em></p>
+</blockquote>
+<ul>
+<li>It incorrectly claims <strong>unsupervised learning uses known labels</strong>, which is <strong>not true</strong>.</li>
+<li>This description actually fits <strong>supervised learning</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="corrected-version" class="level3" data-number="2.4.4">
+<h3 data-number="2.4.4" class="anchored" data-anchor-id="corrected-version"><span class="header-section-number">2.4.4</span> Corrected Version:</h3>
+<blockquote class="blockquote">
+<p><strong>Supervised learning</strong> refers to the mapping of input covariates to a target response variable, using known labels.</p>
+</blockquote>
+</section>
+</section>
+<section id="problem-5" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="problem-5"><span class="header-section-number">2.5</span> Problem 5:</h2>
+<p>Complete the following sentence: In the case of logistic regression, the response variable is the log of the odds of being classified in […].</p>
+<p><strong>Complete sentence:</strong></p>
+<p>In the case of logistic regression, the response variable is the <strong>log of the odds of being classified in the reference (or “positive”) category</strong>.</p>
+<hr>
+<section id="explanation-2" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="explanation-2"><span class="header-section-number">2.5.1</span> Explanation</h3>
+<p>Logistic regression models the probability of a binary outcome by applying the <strong>logit function</strong> to the response:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%5Cleft(%5Cfrac%7Bp%7D%7B1%20-%20p%7D%5Cright)%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Ccdots%20+%20%5Cbeta_k%20X_k%0A"></p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?p"> is the probability of the outcome being in the <strong>positive or reference class</strong> (e.g., “yes”, “success”, or class = 1).</li>
+<li>The left-hand side is the <strong>log-odds</strong> of that outcome.</li>
+<li>The model learns a linear relationship between the predictors and the <strong>log-odds</strong> of classification in the target category.</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<p>In the case of logistic regression, the response variable is the <strong>log of the odds of being classified in a group of binary or multi-class responses</strong>.<br>
+This definition essentially demonstrates that <strong>odds can take the form of a vector</strong>.</p>
+<hr>
+</section>
+<section id="clarification" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="clarification"><span class="header-section-number">2.5.2</span> Clarification:</h3>
+<ul>
+<li><p>For <strong>binary logistic regression</strong>, the model estimates: <img src="https://latex.codecogs.com/png.latex?%0A%5Clog%5Cleft(%5Cfrac%7Bp%7D%7B1%20-%20p%7D%5Cright)%0A"> where <img src="https://latex.codecogs.com/png.latex?p"> is the probability of being in the positive class.</p></li>
+<li><p>For <strong>multinomial (multi-class) logistic regression</strong>, the model estimates a set of log-odds: <img src="https://latex.codecogs.com/png.latex?%0A%5Clog%5Cleft(%5Cfrac%7Bp_k%7D%7Bp_%7Breference%7D%7D%5Cright)%0A"> for each class <img src="https://latex.codecogs.com/png.latex?k%20%5Cne"> reference, resulting in a <strong>vector of log-odds</strong>, one for each class.</p></li>
+</ul>
+<p>Thus, in multiclass cases, the model output is not a single scalar log-odds but a <strong>vector of log-odds</strong>, supporting the idea that <strong>odds can be vector-valued</strong>.</p>
+</section>
+</section>
+<section id="problem-6" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="problem-6"><span class="header-section-number">2.6</span> Problem 6:</h2>
+<p>Describe how in a logistic regression model, a transformation to the response variable is applied to yield a probability distribution. Why is it considered a more informative representation of the response?</p>
+<section id="logistic-regression-transformation-of-the-response-variable" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="logistic-regression-transformation-of-the-response-variable"><span class="header-section-number">2.6.1</span> Logistic Regression: Transformation of the Response Variable</h3>
+<p>In logistic regression, the <strong>response variable</strong> is categorical (often binary), but the model must output continuous values to fit it using linear predictors. This is done by applying a <strong>logit transformation</strong>, and then its inverse—the <strong>logistic (sigmoid) function</strong>—to map outputs to probabilities.</p>
+<hr>
+</section>
+<section id="step-by-step-transformation" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="step-by-step-transformation"><span class="header-section-number">2.6.2</span> Step-by-Step Transformation</h3>
+<ol type="1">
+<li><p><strong>Linear combination of predictors:</strong> <img src="https://latex.codecogs.com/png.latex?%0Az%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Ccdots%20+%20%5Cbeta_k%20X_k%0A"></p></li>
+<li><p><strong>Logit transformation (link function):</strong> <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Blogit%7D(p)%20=%20%5Clog%5Cleft(%5Cfrac%7Bp%7D%7B1%20-%20p%7D%5Cright)%20=%20z%0A"></p></li>
+<li><p><strong>Inverse-logit (sigmoid) function to obtain probability:</strong> <img src="https://latex.codecogs.com/png.latex?%0Ap%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-z%7D%7D%0A"></p></li>
+</ol>
+<p>This maps any real-valued input <img src="https://latex.codecogs.com/png.latex?z%20%5Cin%20(-%5Cinfty,%20%5Cinfty)"> into a valid probability <img src="https://latex.codecogs.com/png.latex?p%20%5Cin%20(0,%201)">.</p>
+<hr>
+</section>
+<section id="why-this-is-informative" class="level3" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="why-this-is-informative"><span class="header-section-number">2.6.3</span> Why This Is Informative</h3>
+<ul>
+<li><p><strong>Probabilistic output</strong>: Unlike hard class labels, logistic regression provides the <strong>estimated probability</strong> of belonging to a class, which gives <strong>more nuanced information</strong>.</p></li>
+<li><p><strong>Uncertainty awareness</strong>: Probabilities allow us to gauge <strong>confidence</strong> in predictions. For example, a prediction of 0.95 is more confident than 0.55.</p></li>
+<li><p><strong>Threshold flexibility</strong>: You can choose decision thresholds based on the application (e.g., 0.5, 0.7) rather than being locked into fixed class predictions.</p></li>
+<li><p><strong>Supports ranking and calibration</strong>: Probabilities are useful for <strong>ROC analysis</strong>, <strong>calibration</strong>, and <strong>expected loss minimization</strong>.</p></li>
+</ul>
+<hr>
+</section>
+<section id="summary-2" class="level3" data-number="2.6.4">
+<h3 data-number="2.6.4" class="anchored" data-anchor-id="summary-2"><span class="header-section-number">2.6.4</span> Summary</h3>
+<p>Logistic regression transforms the response variable through the <strong>logit link</strong> and uses its inverse to map model outputs to a <strong>valid probability distribution</strong>. This enables not only classification but also a <strong>more informative and interpretable</strong> representation of the predicted outcomes.</p>
+</section>
+<section id="note-pros-and-cons-of-output-transformations-in-logistic-regression" class="level3" data-number="2.6.5">
+<h3 data-number="2.6.5" class="anchored" data-anchor-id="note-pros-and-cons-of-output-transformations-in-logistic-regression"><span class="header-section-number">2.6.5</span> Note: Pros and Cons of Output Transformations in Logistic Regression</h3>
+<p>When transforming the response variable into a <strong>probability distribution</strong>, several methods can be used depending on the problem type. The most common are:</p>
+<ul>
+<li><strong>Sigmoid function</strong> — for binary classification</li>
+<li><strong>Softmax function</strong> — for multi-class classification</li>
+<li><strong>Classic normalization</strong> — general scaling of outputs (less used in classification)</li>
+</ul>
+<p>Below is a comparison of their <strong>pros and cons</strong>:</p>
+<hr>
+</section>
+<section id="sigmoid-function" class="level3" data-number="2.6.6">
+<h3 data-number="2.6.6" class="anchored" data-anchor-id="sigmoid-function"><span class="header-section-number">2.6.6</span> 1. Sigmoid Function</h3>
+<p><strong>Definition:</strong> <img src="https://latex.codecogs.com/png.latex?%0A%5Csigma(z)%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-z%7D%7D%0A"></p>
+<p><strong>Use Case:</strong> Binary classification (2 classes)</p>
+<p><strong>Pros:</strong> - Simple and computationally efficient - Naturally maps real values to the interval (0, 1) - Interpretable as the probability of the positive class</p>
+<p><strong>Cons:</strong> - Only supports binary output - Cannot capture interactions among multiple classes - Not ideal for mutually exclusive multi-class problems</p>
+<hr>
+</section>
+<section id="softmax-function" class="level3" data-number="2.6.7">
+<h3 data-number="2.6.7" class="anchored" data-anchor-id="softmax-function"><span class="header-section-number">2.6.7</span> 2. Softmax Function</h3>
+<p><strong>Definition:</strong> <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bsoftmax%7D(z_i)%20=%20%5Cfrac%7Be%5E%7Bz_i%7D%7D%7B%5Csum_%7Bj=1%7D%5EK%20e%5E%7Bz_j%7D%7D%0A"></p>
+<p><strong>Use Case:</strong> Multi-class classification (K &gt; 2, mutually exclusive classes)</p>
+<p><strong>Pros:</strong> - Generalizes sigmoid to multi-class setting - Produces a valid probability distribution over <img src="https://latex.codecogs.com/png.latex?K"> classes - Probabilities sum to 1, suitable for cross-entropy loss</p>
+<p><strong>Cons:</strong> - Sensitive to extreme values (due to exponentiation) - Less robust to outliers in inputs - Computationally more expensive than sigmoid</p>
+<hr>
+</section>
+<section id="classic-normalization" class="level3" data-number="2.6.8">
+<h3 data-number="2.6.8" class="anchored" data-anchor-id="classic-normalization"><span class="header-section-number">2.6.8</span> 3. Classic Normalization</h3>
+<p><strong>Definition:</strong> <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bnormalized%7D(z_i)%20=%20%5Cfrac%7Bz_i%7D%7B%5Csum_%7Bj=1%7D%5EK%20z_j%7D%0A"></p>
+<p><strong>Use Case:</strong> Sometimes used as an approximation or in non-logistic models</p>
+<p><strong>Pros:</strong> - Simple and fast - Avoids exponentiation (numerically stable)</p>
+<p><strong>Cons:</strong> - <strong>Not guaranteed to produce valid probabilities</strong> unless all <img src="https://latex.codecogs.com/png.latex?z_i%20%5Cge%200"> - Can yield values outside [0, 1] if inputs are not positive - Lacks probabilistic interpretation unless additional constraints are applied</p>
+<hr>
+</section>
+<section id="summary-table" class="level3" data-number="2.6.9">
+<h3 data-number="2.6.9" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">2.6.9</span> Summary Table</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Transformation</th>
+<th>Best for</th>
+<th>Output Range</th>
+<th>Sums to 1</th>
+<th>Interpretable Probabilities</th>
+<th>Key Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Sigmoid</strong></td>
+<td>Binary classification</td>
+<td>(0, 1)</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not suitable for &gt;2 classes</td>
+</tr>
+<tr class="even">
+<td><strong>Softmax</strong></td>
+<td>Multi-class classification</td>
+<td>(0, 1)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Sensitive to outliers</td>
+</tr>
+<tr class="odd">
+<td><strong>Normalization</strong></td>
+<td>Heuristic scaling</td>
+<td>Varies</td>
+<td>Possibly</td>
+<td>Not always</td>
+<td>May not yield valid probs</td>
+</tr>
+</tbody>
+</table>
+<div id="789d5452" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb2-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Raw model outputs (logits)</span></span>
+<span id="cb2-5">logits <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.array([<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2.0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>])</span>
+<span id="cb2-6"></span>
+<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 1. Sigmoid function (binary case, apply to a single logit)</span></span>
+<span id="cb2-8"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> sigmoid(z):</span>
+<span id="cb2-9">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> np.exp(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>z))</span>
+<span id="cb2-10"></span>
+<span id="cb2-11">sigmoid_result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sigmoid(logits[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>])  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Binary case example</span></span>
+<span id="cb2-12"></span>
+<span id="cb2-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 2. Softmax function (multi-class case)</span></span>
+<span id="cb2-14"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> softmax(z):</span>
+<span id="cb2-15">    exp_z <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.exp(z <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(z))  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># stability improvement</span></span>
+<span id="cb2-16">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> exp_z <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(exp_z)</span>
+<span id="cb2-17"></span>
+<span id="cb2-18">softmax_result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> softmax(logits)</span>
+<span id="cb2-19"></span>
+<span id="cb2-20"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># 3. Classic normalization (not ideal for probabilities unless values are positive)</span></span>
+<span id="cb2-21"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> normalize(z):</span>
+<span id="cb2-22">    z_sum <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(z)</span>
+<span id="cb2-23">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> z <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> z_sum <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> z_sum <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span> np.zeros_like(z)</span>
+<span id="cb2-24"></span>
+<span id="cb2-25">normalize_result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> normalize(logits)</span>
+<span id="cb2-26"></span>
+<span id="cb2-27"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Print results</span></span>
+<span id="cb2-28"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Raw logits:       "</span>, logits)</span>
+<span id="cb2-29"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sigmoid (z=2.0):  "</span>, sigmoid_result)</span>
+<span id="cb2-30"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Softmax:          "</span>, softmax_result)</span>
+<span id="cb2-31"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Normalization:    "</span>, normalize_result)</span>
+<span id="cb2-32"></span>
+<span id="cb2-33"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot comparison</span></span>
+<span id="cb2-34">labels <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Class 1'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Class 2'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Class 3'</span>]</span>
+<span id="cb2-35">x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.arange(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(labels))</span>
+<span id="cb2-36">width <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.25</span></span>
+<span id="cb2-37"></span>
+<span id="cb2-38">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots()</span>
+<span id="cb2-39">ax.bar(x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> width, softmax_result, width, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Softmax'</span>)</span>
+<span id="cb2-40">ax.bar(x, normalize_result, width, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Normalization'</span>)</span>
+<span id="cb2-41">ax.bar(x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> width, [sigmoid_result, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>], width, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sigmoid (binary)'</span>)</span>
+<span id="cb2-42"></span>
+<span id="cb2-43">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Output Value'</span>)</span>
+<span id="cb2-44">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Output Transformations'</span>)</span>
+<span id="cb2-45">ax.set_xticks(x)</span>
+<span id="cb2-46">ax.set_xticklabels(labels)</span>
+<span id="cb2-47">ax.legend()</span>
+<span id="cb2-48">plt.tight_layout()</span>
+<span id="cb2-49">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Raw logits:        [2.  1.  0.1]
+Sigmoid (z=2.0):   0.8807970779778823
+Softmax:           [0.65900114 0.24243297 0.09856589]
+Normalization:     [0.64516129 0.32258065 0.03225806]</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-3-output-2.png" width="662" height="470" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Summary: - Sigmoid applies to one logit for binary classification.</p>
+<ul>
+<li><p>Softmax distributes probabilities across multiple classes.</p></li>
+<li><p>Normalization divides values by their sum but doesn’t always yield valid probabilities.</p></li>
+</ul>
+</section>
+</section>
+<section id="problem-7" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="problem-7"><span class="header-section-number">2.7</span> Problem 7:</h2>
+<p>Complete the following sentence: Minimizing the negative log likelihood also means maximizing the […] of selecting the […] class.</p>
+<p><strong>Complete sentence:</strong></p>
+<p>Minimizing the negative log likelihood also means <strong>maximizing the likelihood of selecting the correct class</strong>.</p>
+<section id="explanation-3" class="level3" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="explanation-3"><span class="header-section-number">2.7.1</span> Explanation</h3>
+<p>Minimizing the <strong>negative log likelihood (NLL)</strong> is equivalent to <strong>maximizing the likelihood</strong> of the model predicting the <strong>correct class</strong>.</p>
+<section id="why" class="level4">
+<h4 class="anchored" data-anchor-id="why">Why?</h4>
+<p>Given: - A model that outputs predicted probabilities <img src="https://latex.codecogs.com/png.latex?p(y_i%20%5Cmid%20x_i)"> for each observation - True class labels <img src="https://latex.codecogs.com/png.latex?y_i"></p>
+<p>Then the <strong>likelihood</strong> for the correct predictions is: <img src="https://latex.codecogs.com/png.latex?%0AL%20=%20%5Cprod_%7Bi=1%7D%5E%7Bn%7D%20p(y_i%20%5Cmid%20x_i)%0A"></p>
+<p>Taking the <strong>log-likelihood</strong>: <img src="https://latex.codecogs.com/png.latex?%0A%5Clog%20L%20=%20%5Csum_%7Bi=1%7D%5E%7Bn%7D%20%5Clog%20p(y_i%20%5Cmid%20x_i)%0A"></p>
+<p>The <strong>negative log-likelihood (NLL)</strong> is: <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7BNLL%7D%20=%20-%5Clog%20L%20=%20-%5Csum_%7Bi=1%7D%5E%7Bn%7D%20%5Clog%20p(y_i%20%5Cmid%20x_i)%0A"></p>
+<p>So <strong>minimizing NLL</strong> is mathematically the same as <strong>maximizing the log-likelihood</strong>, which increases the probability assigned to the correct class.</p>
+<hr>
+</section>
+</section>
+<section id="python-code-illustration" class="level3" data-number="2.7.2">
+<h3 data-number="2.7.2" class="anchored" data-anchor-id="python-code-illustration"><span class="header-section-number">2.7.2</span> Python Code Illustration</h3>
+<p>Below is an example comparing NLL for different predicted probabilities of the correct class:</p>
+<div id="ac033f08" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb4-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb4-3"></span>
+<span id="cb4-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Simulated predicted probabilities for the correct class</span></span>
+<span id="cb4-5">p_correct <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.01</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>)</span>
+<span id="cb4-6">nll <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>np.log(p_correct)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Negative log-likelihood</span></span>
+<span id="cb4-7"></span>
+<span id="cb4-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot</span></span>
+<span id="cb4-9">plt.figure(figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>))</span>
+<span id="cb4-10">plt.plot(p_correct, nll, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'NLL = -log(p)'</span>, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'darkblue'</span>)</span>
+<span id="cb4-11">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Negative Log-Likelihood vs. Probability of Correct Class'</span>)</span>
+<span id="cb4-12">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Predicted Probability for Correct Class'</span>)</span>
+<span id="cb4-13">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Negative Log-Likelihood'</span>)</span>
+<span id="cb4-14">plt.grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb4-15">plt.legend()</span>
+<span id="cb4-16">plt.tight_layout()</span>
+<span id="cb4-17">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-4-output-1.png" width="662" height="374" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>When the model assigns a high probability to the correct class, the NLL is low.</p>
+<p>As the probability approaches 0, the NLL becomes very large.</p>
+<p>Thus, minimizing NLL encourages the model to be more confident and accurate in predicting the correct class.</p>
+</section>
+<section id="step-by-step-understanding-negative-log-likelihood-nll" class="level3" data-number="2.7.3">
+<h3 data-number="2.7.3" class="anchored" data-anchor-id="step-by-step-understanding-negative-log-likelihood-nll"><span class="header-section-number">2.7.3</span> Step-by-Step: Understanding Negative Log Likelihood (NLL)</h3>
+<p>This walkthrough will help you see <strong>how and why minimizing NLL means maximizing the probability of the correct class</strong>, both conceptually and numerically.</p>
+<hr>
+<section id="step-1-define-the-task" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-define-the-task">Step 1: Define the task</h4>
+<p>We have a binary classification model, and it predicts a probability for the <strong>correct class</strong>.</p>
+<hr>
+</section>
+<section id="step-2-simulate-model-predictions" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-simulate-model-predictions">Step 2: Simulate model predictions</h4>
+<p>We simulate predicted probabilities for the <strong>true class (label = 1)</strong>.</p>
+</section>
+<section id="code" class="level4">
+<h4 class="anchored" data-anchor-id="code">Code:</h4>
+<div id="d047b468" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">predicted_probs <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.9</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.7</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.3</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>]  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Predicted probability for the correct class</span></span>
+<span id="cb5-2">predicted_probs</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>[0.9, 0.7, 0.5, 0.3, 0.1]</code></pre>
+</div>
+</div>
+<div id="4e36c277" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb7-2"></span>
+<span id="cb7-3"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Predicted Probability → Negative Log-Likelihood"</span>)</span>
+<span id="cb7-4"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> p <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> predicted_probs:</span>
+<span id="cb7-5">    nll <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>np.log(p)</span>
+<span id="cb7-6">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>p<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:.1f}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> → </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>nll<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:.4f}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Predicted Probability → Negative Log-Likelihood
+0.9 → 0.1054
+0.7 → 0.3567
+0.5 → 0.6931
+0.3 → 1.2040
+0.1 → 2.3026</code></pre>
+</div>
+</div>
+<div id="437f2daa" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb9-2"></span>
+<span id="cb9-3">p_vals <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.01</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>)</span>
+<span id="cb9-4">nll_vals <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>np.log(p_vals)</span>
+<span id="cb9-5"></span>
+<span id="cb9-6">plt.plot(p_vals, nll_vals, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"NLL = -log(p)"</span>, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"blue"</span>)</span>
+<span id="cb9-7">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Predicted Probability for Correct Class"</span>)</span>
+<span id="cb9-8">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Negative Log-Likelihood"</span>)</span>
+<span id="cb9-9">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"NLL vs. Predicted Probability"</span>)</span>
+<span id="cb9-10">plt.grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb9-11">plt.legend()</span>
+<span id="cb9-12">plt.tight_layout()</span>
+<span id="cb9-13">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-7-output-1.png" width="662" height="470" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>When the model is confident and right (e.g.&nbsp;<img src="https://latex.codecogs.com/png.latex?p%20=%200.9">), the NLL is low.</p>
+<p>When it’s unsure or wrong (e.g.&nbsp;<img src="https://latex.codecogs.com/png.latex?p%20=%200.1">), the NLL is high.</p>
+<p>Therefore, minimizing NLL encourages the model to assign high probability to the correct class.</p>
+</section>
+</section>
+</section>
+<section id="problem-8" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="problem-8"><span class="header-section-number">2.8</span> Problem 8:</h2>
+<p>Assume the probability of an event occurring is p = 0.1. 1. What are the odds of the event occurring?. 2. What are the log-odds of the event occurring?. 3. Construct the probability of the event as a ratio that equals 0.1.</p>
+<section id="step-by-step-probability-odds-and-log-odds" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="step-by-step-probability-odds-and-log-odds"><span class="header-section-number">2.8.1</span> Step-by-Step: Probability, Odds, and Log-Odds</h3>
+<p>Assume the probability of an event occurring is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ap%20=%200.1%0A"></p>
+<hr>
+</section>
+<section id="what-are-the-odds-of-the-event-occurring" class="level3" data-number="2.8.2">
+<h3 data-number="2.8.2" class="anchored" data-anchor-id="what-are-the-odds-of-the-event-occurring"><span class="header-section-number">2.8.2</span> 1. What are the <strong>odds</strong> of the event occurring?</h3>
+<p><strong>Definition:</strong> &gt; Odds are the ratio of the probability of the event <strong>occurring</strong> to the probability of it <strong>not occurring</strong>.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bodds%7D%20=%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%0A"></p>
+</section>
+<section id="calculation" class="level3" data-number="2.8.3">
+<h3 data-number="2.8.3" class="anchored" data-anchor-id="calculation"><span class="header-section-number">2.8.3</span> Calculation:</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bodds%7D%20=%20%5Cfrac%7B0.1%7D%7B1%20-%200.1%7D%20=%20%5Cfrac%7B0.1%7D%7B0.9%7D%20%5Capprox%200.111%0A"></p>
+<hr>
+</section>
+<section id="what-are-the-log-odds-logit-of-the-event" class="level3" data-number="2.8.4">
+<h3 data-number="2.8.4" class="anchored" data-anchor-id="what-are-the-log-odds-logit-of-the-event"><span class="header-section-number">2.8.4</span> 2. What are the <strong>log-odds</strong> (logit) of the event?</h3>
+<p><strong>Definition:</strong> &gt; Log-odds are the logarithm of the odds (also known as the <strong>logit function</strong>):</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Blog-odds%7D%20=%20%5Clog%5Cleft(%5Cfrac%7Bp%7D%7B1%20-%20p%7D%5Cright)%0A"></p>
+</section>
+<section id="calculation-1" class="level3" data-number="2.8.5">
+<h3 data-number="2.8.5" class="anchored" data-anchor-id="calculation-1"><span class="header-section-number">2.8.5</span> Calculation:</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%5Cleft(%5Cfrac%7B0.1%7D%7B0.9%7D%5Cright)%20=%20%5Clog(0.111...)%20%5Capprox%20-2.197%0A"></p>
+<hr>
+</section>
+<section id="construct-the-probability-as-a-ratio-that-equals-0.1" class="level3" data-number="2.8.6">
+<h3 data-number="2.8.6" class="anchored" data-anchor-id="construct-the-probability-as-a-ratio-that-equals-0.1"><span class="header-section-number">2.8.6</span> 3. Construct the probability as a ratio that equals 0.1</h3>
+<p>We want to express:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5Ctext%7Bfavorable%20outcomes%7D%7D%7B%5Ctext%7Btotal%20outcomes%7D%7D%20=%200.1%0A"></p>
+<p>One example:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B1%7D%7B10%7D%20=%200.1%0A"></p>
+<p>So, this means <strong>1 favorable case out of 10 total cases</strong>, or 9 unfavorable cases.</p>
+<hr>
+</section>
+<section id="summary-table-1" class="level3" data-number="2.8.7">
+<h3 data-number="2.8.7" class="anchored" data-anchor-id="summary-table-1"><span class="header-section-number">2.8.7</span> Summary Table</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Probability</td>
+<td>0.1</td>
+<td>given</td>
+</tr>
+<tr class="even">
+<td>Odds</td>
+<td>0.111</td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B0.1%7D%7B0.9%7D"></td>
+</tr>
+<tr class="odd">
+<td>Log-Odds</td>
+<td>-2.197</td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Clog%5Cleft(%5Cfrac%7B0.1%7D%7B0.9%7D%5Cright)"></td>
+</tr>
+<tr class="even">
+<td>Ratio Form</td>
+<td>1:9</td>
+<td><img src="https://latex.codecogs.com/png.latex?1/10%20=%200.1"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="intuition-behind-probability-odds-and-log-odds" class="level3" data-number="2.8.8">
+<h3 data-number="2.8.8" class="anchored" data-anchor-id="intuition-behind-probability-odds-and-log-odds"><span class="header-section-number">2.8.8</span> Intuition Behind Probability, Odds, and Log-Odds</h3>
+<p>Understanding <strong>why</strong> we use these representations helps clarify their role in models like logistic regression.</p>
+<hr>
+</section>
+<section id="probability-p" class="level3" data-number="2.8.9">
+<h3 data-number="2.8.9" class="anchored" data-anchor-id="probability-p"><span class="header-section-number">2.8.9</span> Probability (p)</h3>
+<ul>
+<li><strong>Intuitive measure</strong> of likelihood: ranges between 0 and 1.</li>
+<li>Easy to interpret: “There is a 10% chance this will happen.”</li>
+</ul>
+<p>But: <strong>Not ideal for modeling</strong>, because probabilities are bounded, and small changes near 0 or 1 can be disproportionate.</p>
+<hr>
+</section>
+<section id="odds-fracp1---p" class="level3" data-number="2.8.10">
+<h3 data-number="2.8.10" class="anchored" data-anchor-id="odds-fracp1---p"><span class="header-section-number">2.8.10</span> Odds: <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7Bp%7D%7B1%20-%20p%7D"></h3>
+<ul>
+<li>Represent <strong>relative chances</strong>: how likely something is vs.&nbsp;not.</li>
+<li>Example: odds = 2 means “twice as likely to happen than not.”</li>
+</ul>
+<p>Odds are <strong>unbounded</strong> (0 to ∞), unlike probabilities. This makes them easier to model with <strong>linear functions</strong>.</p>
+<hr>
+</section>
+<section id="log-odds-logit-logleftfracp1---pright" class="level3" data-number="2.8.11">
+<h3 data-number="2.8.11" class="anchored" data-anchor-id="log-odds-logit-logleftfracp1---pright"><span class="header-section-number">2.8.11</span> Log-Odds (Logit): <img src="https://latex.codecogs.com/png.latex?%5Clog%5Cleft(%5Cfrac%7Bp%7D%7B1%20-%20p%7D%5Cright)"></h3>
+<ul>
+<li><strong>Transforms probabilities</strong> to the entire real line: <img src="https://latex.codecogs.com/png.latex?(-%5Cinfty,%20+%5Cinfty)">.</li>
+<li>Linear in model parameters — makes <strong>logistic regression</strong> a linear model in log-odds space.</li>
+<li>Symmetric: log-odds of 0 means <img src="https://latex.codecogs.com/png.latex?p%20=%200.5">.</li>
+</ul>
+<blockquote class="blockquote">
+<p>This transformation enables optimization with gradient-based methods and maintains interpretability via the inverse sigmoid function.</p>
+</blockquote>
+<hr>
+</section>
+<section id="summary-why-use-log-odds" class="level3" data-number="2.8.12">
+<h3 data-number="2.8.12" class="anchored" data-anchor-id="summary-why-use-log-odds"><span class="header-section-number">2.8.12</span> Summary: Why use log-odds?</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Representation</th>
+<th>Range</th>
+<th>Good For</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Probability</td>
+<td>[0, 1]</td>
+<td>Intuition, interpretability</td>
+</tr>
+<tr class="even">
+<td>Odds</td>
+<td>[0, ∞)</td>
+<td>Relative comparison</td>
+</tr>
+<tr class="odd">
+<td>Log-Odds</td>
+<td>(−∞, ∞)</td>
+<td>Linear modeling, optimization</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Log-odds give models a mathematically stable and interpretable way to reason about binary outcomes</strong> — especially for logistic regression.</p>
+<div id="8c890646" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb10-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb10-3"></span>
+<span id="cb10-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Probabilities from 0.01 to 0.99 (avoid 0 and 1 to prevent log(0))</span></span>
+<span id="cb10-5">p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.01</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.99</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span>)</span>
+<span id="cb10-6"></span>
+<span id="cb10-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Compute odds and log-odds</span></span>
+<span id="cb10-8">odds <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> p)</span>
+<span id="cb10-9">log_odds <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.log(odds)</span>
+<span id="cb10-10"></span>
+<span id="cb10-11"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting</span></span>
+<span id="cb10-12">fig, axs <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>), sharex<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb10-13"></span>
+<span id="cb10-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Probability</span></span>
+<span id="cb10-15">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>].plot(p, p, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>)</span>
+<span id="cb10-16">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>].set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability (p)"</span>)</span>
+<span id="cb10-17">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>].set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability vs. Itself (Identity)"</span>)</span>
+<span id="cb10-18">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>].grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb10-19"></span>
+<span id="cb10-20"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Odds</span></span>
+<span id="cb10-21">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>].plot(p, odds, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'green'</span>)</span>
+<span id="cb10-22">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>].set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Odds (p / (1 - p))"</span>)</span>
+<span id="cb10-23">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>].set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability vs. Odds"</span>)</span>
+<span id="cb10-24">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>].grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb10-25"></span>
+<span id="cb10-26"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Log-Odds</span></span>
+<span id="cb10-27">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>].plot(p, log_odds, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'red'</span>)</span>
+<span id="cb10-28">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>].set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Log-Odds (log(p / (1 - p)))"</span>)</span>
+<span id="cb10-29">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>].set_xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability (p)"</span>)</span>
+<span id="cb10-30">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>].set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability vs. Log-Odds"</span>)</span>
+<span id="cb10-31">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>].axhline(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'gray'</span>, linestyle<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'--'</span>)</span>
+<span id="cb10-32">axs[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>].grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb10-33"></span>
+<span id="cb10-34">plt.tight_layout()</span>
+<span id="cb10-35">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-8-output-1.png" width="758" height="950" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interpretation-of-the-plots" class="level3" data-number="2.8.13">
+<h3 data-number="2.8.13" class="anchored" data-anchor-id="interpretation-of-the-plots"><span class="header-section-number">2.8.13</span> Interpretation of the Plots</h3>
+</section>
+<section id="top-plot-probability-vs.-itself" class="level3" data-number="2.8.14">
+<h3 data-number="2.8.14" class="anchored" data-anchor-id="top-plot-probability-vs.-itself"><span class="header-section-number">2.8.14</span> Top Plot: Probability vs.&nbsp;Itself</h3>
+<ul>
+<li>This is the <strong>identity function</strong>, where the output equals the input.</li>
+<li>Useful to visualize the <strong>bounded linearity</strong> of probability values.</li>
+<li>Range is limited to [0, 1], which restricts direct use in linear models.</li>
+</ul>
+<hr>
+</section>
+<section id="middle-plot-probability-vs.-odds" class="level3" data-number="2.8.15">
+<h3 data-number="2.8.15" class="anchored" data-anchor-id="middle-plot-probability-vs.-odds"><span class="header-section-number">2.8.15</span> Middle Plot: Probability vs.&nbsp;Odds</h3>
+<ul>
+<li>Odds are computed as:<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bodds%7D%20=%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%0A"></li>
+<li>As <img src="https://latex.codecogs.com/png.latex?p%20%5Cto%201">, the odds grow <strong>rapidly</strong> (approaching ∞).</li>
+<li>As <img src="https://latex.codecogs.com/png.latex?p%20%5Cto%200">, the odds approach 0.</li>
+<li><strong>Nonlinear and asymmetric</strong>, making it difficult to model directly.</li>
+</ul>
+<hr>
+</section>
+<section id="bottom-plot-probability-vs.-log-odds-logit" class="level3" data-number="2.8.16">
+<h3 data-number="2.8.16" class="anchored" data-anchor-id="bottom-plot-probability-vs.-log-odds-logit"><span class="header-section-number">2.8.16</span> Bottom Plot: Probability vs.&nbsp;Log-Odds (Logit)</h3>
+<ul>
+<li>Log-odds are computed as:<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Blog-odds%7D%20=%20%5Clog%5Cleft(%5Cfrac%7Bp%7D%7B1%20-%20p%7D%5Cright)%0A"></li>
+<li>The transformation is:
+<ul>
+<li><strong>Smooth</strong></li>
+<li><strong>Symmetric</strong> around <img src="https://latex.codecogs.com/png.latex?p%20=%200.5"></li>
+<li><strong>Linear near <img src="https://latex.codecogs.com/png.latex?p%20=%200.5"></strong></li>
+<li>Maps <img src="https://latex.codecogs.com/png.latex?p%20%5Cin%20(0,%201)"> to <img src="https://latex.codecogs.com/png.latex?(-%5Cinfty,%20+%5Cinfty)"></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="why-use-log-odds" class="level3" data-number="2.8.17">
+<h3 data-number="2.8.17" class="anchored" data-anchor-id="why-use-log-odds"><span class="header-section-number">2.8.17</span> Why Use Log-Odds?</h3>
+<p>The log-odds transformation allows:</p>
+<ul>
+<li>Applying <strong>linear models</strong> to binary classification.</li>
+<li>Smooth optimization using gradient descent.</li>
+<li>Easy interpretability: a one-unit increase in input causes a fixed increase in log-odds.</li>
+</ul>
+<p>Thus, <strong>log-odds</strong> are the foundation of <strong>logistic regression</strong>, enabling a linear combination of inputs to model a probability through the <strong>sigmoid inverse</strong>.</p>
+</section>
+</section>
+<section id="problem-9." class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="problem-9."><span class="header-section-number">2.9</span> Problem 9.</h2>
+<p><strong>True or False:</strong> If the odds of success in a binary response is 4, the corresponding probability of success is 0.8.</p>
+<hr>
+<section id="step-by-step-solution" class="level3" data-number="2.9.1">
+<h3 data-number="2.9.1" class="anchored" data-anchor-id="step-by-step-solution"><span class="header-section-number">2.9.1</span> Step-by-step Solution</h3>
+<p>We are given: <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bodds%7D%20=%204%0A"></p>
+<p>Recall the relationship between <strong>odds</strong> and <strong>probability</strong>: <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bodds%7D%20=%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%0A"></p>
+<p>Solve for <img src="https://latex.codecogs.com/png.latex?p">: <img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7Bp%7D%7B1%20-%20p%7D%20=%204%0A%5CRightarrow%20p%20=%204(1%20-%20p)%0A%5CRightarrow%20p%20=%204%20-%204p%0A%5CRightarrow%205p%20=%204%0A%5CRightarrow%20p%20=%20%5Cfrac%7B4%7D%7B5%7D%20=%200.8%0A"></p>
+<hr>
+</section>
+<section id="final-answer" class="level3" data-number="2.9.2">
+<h3 data-number="2.9.2" class="anchored" data-anchor-id="final-answer"><span class="header-section-number">2.9.2</span> Final Answer</h3>
+<p><strong>True</strong> – If the odds are 4, the probability of success is <strong>0.8</strong>.</p>
+</section>
+</section>
+<section id="problem-10" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="problem-10"><span class="header-section-number">2.10</span> Problem 10:</h2>
+<p>Draw a graph of odds to probabilities, mapping the entire range of probabilities to their respective odds.</p>
+<div id="f9792893" class="cell" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb11-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb11-3"></span>
+<span id="cb11-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Define a range of probabilities from 0.01 to 0.99</span></span>
+<span id="cb11-5">p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.linspace(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.01</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.99</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span>)</span>
+<span id="cb11-6">odds <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> p <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> p)</span>
+<span id="cb11-7"></span>
+<span id="cb11-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plotting</span></span>
+<span id="cb11-9">plt.figure(figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>))</span>
+<span id="cb11-10">plt.plot(p, odds, color<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'blue'</span>)</span>
+<span id="cb11-11">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability (p)"</span>)</span>
+<span id="cb11-12">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Odds (p / (1 - p))"</span>)</span>
+<span id="cb11-13">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Mapping: Probability to Odds"</span>)</span>
+<span id="cb11-14">plt.grid(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb11-15">plt.ylim(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># limit to see behavior better near p=1</span></span>
+<span id="cb11-16">plt.tight_layout()</span>
+<span id="cb11-17">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-9-output-1.png" width="758" height="470" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="graph-probability-vs.-odds" class="level3" data-number="2.10.1">
+<h3 data-number="2.10.1" class="anchored" data-anchor-id="graph-probability-vs.-odds"><span class="header-section-number">2.10.1</span> Graph: Probability vs.&nbsp;Odds</h3>
+<p>This plot shows how probability values map to odds:</p>
+<ul>
+<li><p>Formula:<br>
+<img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bodds%7D%20=%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%0A"></p></li>
+<li><p>As the probability approaches 1, the odds grow rapidly toward infinity.</p></li>
+<li><p>As the probability approaches 0, the odds approach 0.</p></li>
+<li><p>The function is <strong>nonlinear and increasing</strong>, with a sharp curve as $ p $.</p></li>
+</ul>
+<p>This graph helps visualize why odds are unbounded and why it’s useful to convert them to log-odds in modeling.</p>
+</section>
+</section>
+<section id="problem-11" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="problem-11"><span class="header-section-number">2.11</span> Problem 11:</h2>
+<p>The logistic regression model is a subset of a broader range of machine learning models known as generalized linear models (GLMs), which also include analysis of variance (ANOVA), vanilla linear regression, etc. There are three components to a GLM; identify these three components for binary logistic regression.</p>
+<section id="components-of-a-generalized-linear-model-glm-in-binary-logistic-regression" class="level3" data-number="2.11.1">
+<h3 data-number="2.11.1" class="anchored" data-anchor-id="components-of-a-generalized-linear-model-glm-in-binary-logistic-regression"><span class="header-section-number">2.11.1</span> Components of a Generalized Linear Model (GLM) in Binary Logistic Regression</h3>
+<p>A <strong>Generalized Linear Model (GLM)</strong> has three main components. For <strong>binary logistic regression</strong>, they are:</p>
+<hr>
+</section>
+<section id="random-component" class="level3" data-number="2.11.2">
+<h3 data-number="2.11.2" class="anchored" data-anchor-id="random-component"><span class="header-section-number">2.11.2</span> 1. <strong>Random Component</strong></h3>
+<p>Specifies the <strong>distribution</strong> of the response variable.</p>
+<ul>
+<li>In binary logistic regression, the response ( Y {0, 1} ) is assumed to follow a <strong>Bernoulli distribution</strong>: <img src="https://latex.codecogs.com/png.latex?%0AY%20%5Csim%20%5Ctext%7BBernoulli%7D(p)%0A"></li>
+</ul>
+<hr>
+</section>
+<section id="systematic-component" class="level3" data-number="2.11.3">
+<h3 data-number="2.11.3" class="anchored" data-anchor-id="systematic-component"><span class="header-section-number">2.11.3</span> 2. <strong>Systematic Component</strong></h3>
+<p>Represents the <strong>linear predictor</strong>, which is a linear combination of input features:</p>
+<ul>
+<li><p>Let ( x = (x_1, x_2, , x_n) ), then: <img src="https://latex.codecogs.com/png.latex?%0A%5Ceta%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20x_1%20+%20%5Cbeta_2%20x_2%20+%20%5Ccdots%20+%20%5Cbeta_n%20x_n%0A"></p></li>
+<li><p>This is often written compactly as: <img src="https://latex.codecogs.com/png.latex?%0A%5Ceta%20=%20%5Cmathbf%7Bx%7D%5E%5Ctop%20%5Cboldsymbol%7B%5Cbeta%7D%0A"></p></li>
+</ul>
+<hr>
+</section>
+<section id="link-function" class="level3" data-number="2.11.4">
+<h3 data-number="2.11.4" class="anchored" data-anchor-id="link-function"><span class="header-section-number">2.11.4</span> 3. <strong>Link Function</strong></h3>
+<p>Connects the expected value of the response to the linear predictor.</p>
+<ul>
+<li><p>In logistic regression, the link function is the <strong>logit</strong> function: <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Blogit%7D(p)%20=%20%5Clog%5Cleft(%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%20%5Cright)%20=%20%5Ceta%0A"></p></li>
+<li><p>The inverse of the logit gives the <strong>sigmoid function</strong> to recover probabilities: <img src="https://latex.codecogs.com/png.latex?%0Ap%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-%5Ceta%7D%7D%0A"></p></li>
+</ul>
+<hr>
+</section>
+<section id="summary-table-2" class="level3" data-number="2.11.5">
+<h3 data-number="2.11.5" class="anchored" data-anchor-id="summary-table-2"><span class="header-section-number">2.11.5</span> Summary Table</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>GLM Component</th>
+<th>Logistic Regression Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Random Component</td>
+<td>( Y (p) )</td>
+</tr>
+<tr class="even">
+<td>Systematic Component</td>
+<td>( = ^ )</td>
+</tr>
+<tr class="odd">
+<td>Link Function</td>
+<td>( (p) = ( ) )</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="adjusted-glm-components-for-voice-activity-detection-vad" class="level3" data-number="2.11.6">
+<h3 data-number="2.11.6" class="anchored" data-anchor-id="adjusted-glm-components-for-voice-activity-detection-vad"><span class="header-section-number">2.11.6</span> Adjusted GLM Components for Voice Activity Detection (VAD)</h3>
+<p>Assume the binary outcome: - <img src="https://latex.codecogs.com/png.latex?Y%20=%201">: voice activity detected - <img src="https://latex.codecogs.com/png.latex?Y%20=%200">: no voice activity detected</p>
+<p>We define the GLM components for a logistic regression model as follows:</p>
+<hr>
+</section>
+<section id="random-component-1" class="level3" data-number="2.11.7">
+<h3 data-number="2.11.7" class="anchored" data-anchor-id="random-component-1"><span class="header-section-number">2.11.7</span> Random Component</h3>
+<p>The response variable <img src="https://latex.codecogs.com/png.latex?Y"> is binary:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AY%20%5Csim%20%5Ctext%7BBernoulli%7D(p)%0A"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?p%20=%20%5Cmathbb%7BP%7D(Y%20=%201%20%5Cmid%20%5Ctext%7Bfeatures%7D)"> represents the probability that voice activity is present in a given time frame.</p>
+<hr>
+</section>
+<section id="systematic-components" class="level3" data-number="2.11.8">
+<h3 data-number="2.11.8" class="anchored" data-anchor-id="systematic-components"><span class="header-section-number">2.11.8</span> Systematic Components</h3>
+<p>We propose <strong>two alternative linear predictors</strong> using different input features:</p>
+<section id="systematic-component-a" class="level4">
+<h4 class="anchored" data-anchor-id="systematic-component-a">Systematic Component A:</h4>
+<p>Use energy and zero-crossing rate: <img src="https://latex.codecogs.com/png.latex?%0A%5Ceta%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20%5Ccdot%20%5Ctext%7BEnergy%7D%20+%20%5Cbeta_2%20%5Ccdot%20%5Ctext%7BZCR%7D%0A"></p>
+<ul>
+<li><strong>Energy</strong>: overall signal power in the frame<br>
+</li>
+<li><strong>ZCR</strong> (Zero Crossing Rate): frequency of sign changes in waveform</li>
+</ul>
+</section>
+<section id="systematic-component-b" class="level4">
+<h4 class="anchored" data-anchor-id="systematic-component-b">Systematic Component B:</h4>
+<p>Use MFCC coefficients (common in speech processing): <img src="https://latex.codecogs.com/png.latex?%0A%5Ceta%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20%5Ccdot%20%5Ctext%7BMFCC%7D_1%20+%20%5Cbeta_2%20%5Ccdot%20%5Ctext%7BMFCC%7D_2%20+%20%5Ccdots%20+%20%5Cbeta_%7B13%7D%20%5Ccdot%20%5Ctext%7BMFCC%7D_%7B13%7D%0A"></p>
+<ul>
+<li><strong>MFCCs</strong>: Mel-Frequency Cepstral Coefficients — compact representation of spectral shape</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="link-function-1" class="level3" data-number="2.11.9">
+<h3 data-number="2.11.9" class="anchored" data-anchor-id="link-function-1"><span class="header-section-number">2.11.9</span> Link Function</h3>
+<p>Use the <strong>logit</strong> link function to relate the probability to the linear predictor: <img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Blogit%7D(p)%20=%20%5Clog%5Cleft(%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%20%5Cright)%20=%20%5Ceta%0A"></p>
+<p>or equivalently: <img src="https://latex.codecogs.com/png.latex?%0Ap%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-%5Ceta%7D%7D%0A"></p>
+<hr>
+</section>
+<section id="summary-3" class="level3" data-number="2.11.10">
+<h3 data-number="2.11.10" class="anchored" data-anchor-id="summary-3"><span class="header-section-number">2.11.10</span> Summary</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Random Component</td>
+<td><img src="https://latex.codecogs.com/png.latex?Y%20%5Csim%20%5Ctext%7BBernoulli%7D(p)"></td>
+</tr>
+<tr class="even">
+<td>Systematic A</td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Ceta%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20%5Ccdot%20%5Ctext%7BEnergy%7D%20+%20%5Cbeta_2%20%5Ccdot%20%5Ctext%7BZCR%7D"></td>
+</tr>
+<tr class="odd">
+<td>Systematic B</td>
+<td><img src="https://latex.codecogs.com/png.latex?eta%20=%20%5Cbeta_0%20+%20%5Csum_%7Bi=1%7D%5E%7B13%7D%20%5Cbeta_i%20%5Ccdot%20%5Ctext%7BMFCC%7D_i"></td>
+</tr>
+<tr class="even">
+<td>Link Function</td>
+<td><img src="https://latex.codecogs.com/png.latex?%5Ctext%7Blogit%7D(p)%20=%20%5Clog%5Cleft(%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%20%5Cright)"></td>
+</tr>
+</tbody>
+</table>
+<p>This setup applies logistic regression to real-world audio-based classification.</p>
+<div id="69c9fbdb" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span>
+<span id="cb12-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb12-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> sklearn.linear_model <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> LogisticRegression</span>
+<span id="cb12-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> sklearn.preprocessing <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> StandardScaler</span>
+<span id="cb12-5"></span>
+<span id="cb12-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Simulate data for two systematic components</span></span>
+<span id="cb12-7">np.random.seed(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)</span>
+<span id="cb12-8">n_samples <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">200</span></span>
+<span id="cb12-9"></span>
+<span id="cb12-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Simulated features for Systematic A: Energy &amp; ZCR</span></span>
+<span id="cb12-11">energy <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.random.normal(loc<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>, scale<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>n_samples)</span>
+<span id="cb12-12">zcr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.random.normal(loc<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.3</span>, scale<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.05</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>n_samples)</span>
+<span id="cb12-13">X_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.column_stack((energy, zcr))</span>
+<span id="cb12-14"></span>
+<span id="cb12-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Simulated features for Systematic B: 13 MFCCs</span></span>
+<span id="cb12-16">mfcc <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.random.normal(loc<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, scale<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, size<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(n_samples, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">13</span>))</span>
+<span id="cb12-17">X_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> mfcc</span>
+<span id="cb12-18"></span>
+<span id="cb12-19"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Simulated binary labels based on true linear model</span></span>
+<span id="cb12-20"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> simulate_labels(X, true_coef):</span>
+<span id="cb12-21">    logits <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> X <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">@</span> true_coef[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> true_coef[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb12-22">    probs <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> np.exp(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>logits))</span>
+<span id="cb12-23">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> (np.random.rand(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(probs)) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> probs).astype(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>), probs</span>
+<span id="cb12-24"></span>
+<span id="cb12-25"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># True coefficients for Systematic A and B</span></span>
+<span id="cb12-26">true_coef_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.array([<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>])  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Intercept, Energy, ZCR</span></span>
+<span id="cb12-27">true_coef_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.array([<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> [<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.3</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">13</span>)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Intercept + MFCCs</span></span>
+<span id="cb12-28"></span>
+<span id="cb12-29"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Generate labels</span></span>
+<span id="cb12-30">y_A, p_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> simulate_labels(X_A, true_coef_A)</span>
+<span id="cb12-31">y_B, p_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> simulate_labels(X_B, true_coef_B)</span>
+<span id="cb12-32"></span>
+<span id="cb12-33"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fit logistic regression models</span></span>
+<span id="cb12-34">scaler_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> StandardScaler().fit(X_A)</span>
+<span id="cb12-35">X_A_std <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> scaler_A.transform(X_A)</span>
+<span id="cb12-36">model_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> LogisticRegression().fit(X_A_std, y_A)</span>
+<span id="cb12-37"></span>
+<span id="cb12-38">scaler_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> StandardScaler().fit(X_B)</span>
+<span id="cb12-39">X_B_std <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> scaler_B.transform(X_B)</span>
+<span id="cb12-40">model_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> LogisticRegression().fit(X_B_std, y_B)</span>
+<span id="cb12-41"></span>
+<span id="cb12-42"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Predict probabilities</span></span>
+<span id="cb12-43">p_pred_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> model_A.predict_proba(X_A_std)[:, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]</span>
+<span id="cb12-44">p_pred_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> model_B.predict_proba(X_B_std)[:, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]</span>
+<span id="cb12-45"></span>
+<span id="cb12-46"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Plot probability distributions</span></span>
+<span id="cb12-47">plt.figure(figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>))</span>
+<span id="cb12-48"></span>
+<span id="cb12-49">plt.subplot(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb12-50">plt.hist(p_pred_A[y_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>], bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.6</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'No Voice'</span>)</span>
+<span id="cb12-51">plt.hist(p_pred_A[y_A <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.6</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Voice'</span>)</span>
+<span id="cb12-52">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Predicted Probabilities (Energy &amp; ZCR)"</span>)</span>
+<span id="cb12-53">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability of Voice Activity"</span>)</span>
+<span id="cb12-54">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Count"</span>)</span>
+<span id="cb12-55">plt.legend()</span>
+<span id="cb12-56"></span>
+<span id="cb12-57">plt.subplot(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)</span>
+<span id="cb12-58">plt.hist(p_pred_B[y_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>], bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.6</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'No Voice'</span>)</span>
+<span id="cb12-59">plt.hist(p_pred_B[y_B <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], bins<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>, alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.6</span>, label<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Voice'</span>)</span>
+<span id="cb12-60">plt.title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Predicted Probabilities (MFCC Features)"</span>)</span>
+<span id="cb12-61">plt.xlabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability of Voice Activity"</span>)</span>
+<span id="cb12-62">plt.ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Count"</span>)</span>
+<span id="cb12-63">plt.legend()</span>
+<span id="cb12-64"></span>
+<span id="cb12-65">plt.tight_layout()</span>
+<span id="cb12-66">plt.show()</span></code></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-10-output-1.png" width="1142" height="470" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>What this illustrates: Logistic regression maps the linear combination of audio features (systematic component) to a probability of voice activity.</p>
+<p>The predicted probability distributions show how well the features separate the two classes (voice vs.&nbsp;no voice).</p>
+<p>This supports the GLM formulation where:</p>
+<p>Inputs are combined linearly,</p>
+<p>The output is transformed via the logit (sigmoid) link,</p>
+<p>And the response is modeled as a Bernoulli random variable.</p>
+</section>
+</section>
+<section id="problem-12" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="problem-12"><span class="header-section-number">2.12</span> Problem 12:</h2>
+<p>Let us consider the <strong>logit transformation</strong>, i.e., <strong>log-odds</strong>. Assume a scenario in which the logit forms the linear decision boundary:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%20%5Cleft(%20%5Cfrac%7B%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%7B%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%20%5Cright)%20=%20%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20%5Ctag%7B2.1%7D%0A"></p>
+<p>where: - <img src="https://latex.codecogs.com/png.latex?%5Cmathbf%7BX%7D"> is a vector of systematic components (input features), - <img src="https://latex.codecogs.com/png.latex?%5Cboldsymbol%7B%5Ctheta%7D"> is a vector of predictor coefficients, - <img src="https://latex.codecogs.com/png.latex?%5Ctheta_0"> is the intercept.</p>
+<p><strong>Task:</strong><br>
+Write the mathematical expression for the <strong>hyperplane</strong> that describes the <strong>decision boundary</strong> for this logistic regression model.</p>
+<section id="logistic-regression-decision-boundary-using-logit" class="level3" data-number="2.12.1">
+<h3 data-number="2.12.1" class="anchored" data-anchor-id="logistic-regression-decision-boundary-using-logit"><span class="header-section-number">2.12.1</span> Logistic Regression Decision Boundary (Using Logit)</h3>
+<p>Given the logit model:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%20%5Cleft(%20%5Cfrac%7B%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%7B%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%20%5Cright)%20=%20%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%0A"></p>
+<p>This expression defines the <strong>log-odds</strong> as a linear function of input features <img src="https://latex.codecogs.com/png.latex?%5Cmathbf%7BX%7D">.</p>
+<hr>
+</section>
+<section id="step-1-set-the-decision-threshold" class="level3" data-number="2.12.2">
+<h3 data-number="2.12.2" class="anchored" data-anchor-id="step-1-set-the-decision-threshold"><span class="header-section-number">2.12.2</span> Step 1: Set the Decision Threshold</h3>
+<p>In binary classification, the decision boundary occurs when both classes are equally likely:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%20=%20%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%20=%200.5%0A"></p>
+<p>Thus, the odds ratio becomes:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%7B%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%20=%201%0A"></p>
+<p>Taking the logarithm:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%20%5Cleft(%20%5Cfrac%7B%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%7B%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%20%5Cright)%20=%200%0A"></p>
+<hr>
+</section>
+<section id="step-2-solve-for-the-boundary" class="level3" data-number="2.12.3">
+<h3 data-number="2.12.3" class="anchored" data-anchor-id="step-2-solve-for-the-boundary"><span class="header-section-number">2.12.3</span> Step 2: Solve for the Boundary</h3>
+<p>Set the log-odds to zero in the original equation:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20=%200%0A"></p>
+<hr>
+</section>
+<section id="final-result-hyperplane-equation" class="level3" data-number="2.12.4">
+<h3 data-number="2.12.4" class="anchored" data-anchor-id="final-result-hyperplane-equation"><span class="header-section-number">2.12.4</span> Final Result: Hyperplane Equation</h3>
+<p>This is the equation of the <strong>decision boundary</strong> — a hyperplane that separates the feature space:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cboxed%7B%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20=%200%7D%0A"></p>
+<ul>
+<li>If <img src="https://latex.codecogs.com/png.latex?%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20%3E%200">, then <img src="https://latex.codecogs.com/png.latex?%5CPr(Y=1)%20%3E%200.5"></li>
+<li>If <img src="https://latex.codecogs.com/png.latex?%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20%3C%200">, then <img src="https://latex.codecogs.com/png.latex?%5CPr(Y=1)%20%3C%200.5"></li>
+</ul>
+<p>This linear boundary is fundamental in logistic regression for classification tasks.</p>
+</section>
+<section id="solution" class="level3" data-number="2.12.5">
+<h3 data-number="2.12.5" class="anchored" data-anchor-id="solution"><span class="header-section-number">2.12.5</span> Solution</h3>
+<p>The <strong>hyperplane</strong> that defines the <strong>decision boundary</strong> in a logistic regression model is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20=%200%20%5Ctag%7B2.15%7D%0A"></p>
+<hr>
+</section>
+<section id="derivation-from-logit-function" class="level3" data-number="2.12.6">
+<h3 data-number="2.12.6" class="anchored" data-anchor-id="derivation-from-logit-function"><span class="header-section-number">2.12.6</span> Derivation from Logit Function</h3>
+<p>We start from the <strong>logit model</strong>:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%20%5Cleft(%20%5Cfrac%7B%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%7B%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%20%5Cright)%20=%20%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%0A"></p>
+<p>This expression defines the <strong>log-odds</strong> of the response variable <img src="https://latex.codecogs.com/png.latex?Y"> being 1 as a linear function of the input vector <img src="https://latex.codecogs.com/png.latex?%5Cmathbf%7BX%7D">.</p>
+<p>At the <strong>decision boundary</strong>, we are equally likely to classify the outcome as either class (i.e., <img src="https://latex.codecogs.com/png.latex?%5CPr(Y=1)%20=%20%5CPr(Y=0)%20=%200.5">). This implies:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%7B%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%20=%201%0A"></p>
+<p>Taking the logarithm:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clog%20%5Cleft(%20%5Cfrac%7B%5CPr(Y%20=%201%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%7B%5CPr(Y%20=%200%20%5Cmid%20%5Cmathbf%7BX%7D)%7D%20%5Cright)%20=%200%0A"></p>
+<p>Now set the left-hand side of the model equal to 0:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20=%200%0A"></p>
+<hr>
+</section>
+<section id="conclusion" class="level3" data-number="2.12.7">
+<h3 data-number="2.12.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">2.12.7</span> Conclusion</h3>
+<p>The equation</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cboxed%7B%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20=%200%7D%0A"></p>
+<p>is the <strong>mathematical expression of the hyperplane</strong> that separates the classes. It forms the <strong>decision boundary</strong> in logistic regression, where the model predicts:</p>
+<ul>
+<li>Class 1 if <img src="https://latex.codecogs.com/png.latex?%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20%3E%200"></li>
+<li>Class 0 if <img src="https://latex.codecogs.com/png.latex?%5Ctheta_0%20+%20%5Cboldsymbol%7B%5Ctheta%7D%5ET%20%5Cmathbf%7BX%7D%20%3C%200"></li>
+</ul>
+</section>
+</section>
+<section id="problem-13-logit-and-sigmoid" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="problem-13-logit-and-sigmoid"><span class="header-section-number">2.13</span> Problem 13: Logit and Sigmoid</h2>
+<p>True or False:</p>
+<p><strong>Statement:</strong><br>
+<em>The logit function and the natural logistic (sigmoid) function are inverses of each other.</em></p>
+<p><strong>Answer:</strong><br>
+<strong>True</strong></p>
+<hr>
+<section id="explanation-4" class="level3" data-number="2.13.1">
+<h3 data-number="2.13.1" class="anchored" data-anchor-id="explanation-4"><span class="header-section-number">2.13.1</span> Explanation:</h3>
+<ul>
+<li><p>The <strong>sigmoid function</strong> (also known as the <strong>logistic function</strong>) is defined as:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma(z)%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-z%7D%7D%0A"></p></li>
+<li><p>The <strong>logit function</strong> is the <strong>inverse</strong> of the sigmoid and is defined as:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Blogit%7D(p)%20=%20%5Clog%20%5Cleft(%20%5Cfrac%7Bp%7D%7B1%20-%20p%7D%20%5Cright)%0A"></p></li>
+<li><p>These two functions are <strong>mathematical inverses</strong>:</p>
+<ul>
+<li>Applying the logit to the output of a sigmoid returns the original input.</li>
+<li>Applying the sigmoid to the output of a logit returns the original probability.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="additional-note" class="level3" data-number="2.13.2">
+<h3 data-number="2.13.2" class="anchored" data-anchor-id="additional-note"><span class="header-section-number">2.13.2</span> Additional Note:</h3>
+<p>The <strong>sigmoid function</strong> is widely used: - In <strong>binary classification</strong> to map a linear model’s output to a probability in [0, 1]. - As an <strong>activation function</strong> in artificial neural networks (although less common now compared to ReLU).</p>
+<p>Thus, the statement is <strong>True</strong>.</p>
+</section>
+</section>
+<section id="derivative-of-the-natural-sigmoid-function" class="level2" data-number="2.14">
+<h2 data-number="2.14" class="anchored" data-anchor-id="derivative-of-the-natural-sigmoid-function"><span class="header-section-number">2.14</span> Derivative of the Natural Sigmoid Function</h2>
+<p>Let the <strong>sigmoid function</strong> be defined as:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma(x)%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-x%7D%7D%0A"></p>
+<p>This maps real values <img src="https://latex.codecogs.com/png.latex?x%20%5Cin%20%5Cmathbb%7BR%7D"> to a range in <img src="https://latex.codecogs.com/png.latex?(0,%201)">.</p>
+<hr>
+<section id="step-1-compute-the-derivative" class="level3" data-number="2.14.1">
+<h3 data-number="2.14.1" class="anchored" data-anchor-id="step-1-compute-the-derivative"><span class="header-section-number">2.14.1</span> Step 1: Compute the Derivative</h3>
+<p>We differentiate <img src="https://latex.codecogs.com/png.latex?%5Csigma(x)"> with respect to <img src="https://latex.codecogs.com/png.latex?x">:</p>
+<p>Let:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma(x)%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-x%7D%7D%20=%20f(x)%0A"></p>
+<p>Then:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7Bd%7D%7Bdx%7D%20%5Csigma(x)%20=%20%5Cfrac%7Bd%7D%7Bdx%7D%20%5Cleft(%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-x%7D%7D%20%5Cright)%0A"></p>
+<p>Apply the quotient rule or chain rule:</p>
+<p>Let <img src="https://latex.codecogs.com/png.latex?u(x)%20=%201%20+%20e%5E%7B-x%7D">, then:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7Bd%7D%7Bdx%7D%20%5Cleft(%20%5Cfrac%7B1%7D%7Bu(x)%7D%20%5Cright)%20=%20-%5Cfrac%7B1%7D%7Bu(x)%5E2%7D%20%5Ccdot%20%5Cfrac%7Bd%7D%7Bdx%7D%20u(x)%0A"></p>
+<p>We have:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7Bd%7D%7Bdx%7D%20u(x)%20=%20%5Cfrac%7Bd%7D%7Bdx%7D%20(1%20+%20e%5E%7B-x%7D)%20=%20-e%5E%7B-x%7D%0A"></p>
+<p>So:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7Bd%7D%7Bdx%7D%20%5Csigma(x)%20=%20-%5Cfrac%7B1%7D%7B(1%20+%20e%5E%7B-x%7D)%5E2%7D%20%5Ccdot%20(-e%5E%7B-x%7D)%20=%20%5Cfrac%7Be%5E%7B-x%7D%7D%7B(1%20+%20e%5E%7B-x%7D)%5E2%7D%0A"></p>
+<hr>
+</section>
+<section id="step-2-express-in-terms-of-sigmax" class="level3" data-number="2.14.2">
+<h3 data-number="2.14.2" class="anchored" data-anchor-id="step-2-express-in-terms-of-sigmax"><span class="header-section-number">2.14.2</span> Step 2: Express in Terms of <img src="https://latex.codecogs.com/png.latex?%5Csigma(x)"></h3>
+<p>Since:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma(x)%20=%20%5Cfrac%7B1%7D%7B1%20+%20e%5E%7B-x%7D%7D,%20%5Cquad%20%5Ctext%7Bthen%7D%20%5Cquad%201%20-%20%5Csigma(x)%20=%20%5Cfrac%7Be%5E%7B-x%7D%7D%7B1%20+%20e%5E%7B-x%7D%7D%0A"></p>
+<p>So the derivative becomes:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Csigma'(x)%20=%20%5Csigma(x)%20%5Ccdot%20(1%20-%20%5Csigma(x))%0A"></p>
+<hr>
+</section>
+<section id="final-answer-1" class="level3" data-number="2.14.3">
+<h3 data-number="2.14.3" class="anchored" data-anchor-id="final-answer-1"><span class="header-section-number">2.14.3</span> Final Answer:</h3>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cboxed%7B%5Cfrac%7Bd%7D%7Bdx%7D%20%5Csigma(x)%20=%20%5Csigma(x)%20%5Ccdot%20(1%20-%20%5Csigma(x))%7D%0A"></p>
+<p>This elegant result is widely used in training neural networks via backpropagation.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>math</category>
+  <guid>https://kimhungbui.github.io/artificial-intelligent/deep-learning-interview/</guid>
+  <pubDate>Thu, 12 Jun 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Finetuning</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/artificial-intelligent/finetunning/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Finetuning is a process of adapting a model to a specific task by further training the whole model or part of the model. It is one of the three very common AI engineering techniques used to adapt a model to specific needs, alongside prompt engineering and Retrieval-Augmented Generation (RAG). While prompt-based methods like prompt engineering and RAG influence a model’s quality solely through inputs without modifying the model itself, finetuning adapts a model by adjusting its weights. Finetuning techniques are generally more complicated and require more data compared to prompt-based methods. However, they can significantly improve a model’s quality, latency, and cost. Adapting a model by changing its weights makes things possible that aren’t otherwise, such as adapting it to a new task it wasn’t exposed to during initial training.</p>
+<p>Finetuning is considered part of a model’s training process, specifically an extension of model pre-training. Training that happens after pre-training is referred to as finetuning, and it can take various forms. Chapter 2 discusses two types of finetuning: supervised finetuning and preference finetuning.</p>
+<p>The goal of finetuning is to get a base model, which has some but not all of the necessary capabilities, to perform well enough for a specific task. Finetuning improves sample efficiency, meaning a model can learn the desired behavior with fewer examples than training from scratch. For instance, while training a model for legal question answering from scratch might require millions of examples, finetuning a good base model might only require a few hundred. Finetuning can enhance various aspects of a model, including its domain-specific capabilities (like coding or medical question answering) and safety, but it is most often used to improve the model’s instruction-following ability, especially to adhere to specific output styles and formats.</p>
+<section id="when-to-finetune" class="level1">
+<h1>1. When to Finetune:</h1>
+<ul>
+<li><p>Enhancing domain-specific capabilities: If a model struggles with a specific domain (e.g., a less common SQL dialect or customer-specific queries), finetuning on relevant data can help.</p></li>
+<li><p>Improving instruction following and structured outputs: Finetuning is the most effective and general approach to get models to generate outputs in a desired format. While prompting is less reliable, finetuning a model on examples following the desired format is much more reliable. For certain tasks like classification, modifying the model’s architecture before finetuning by adding a classifier head can guarantee the output format.</p></li>
+<li><p>Bias mitigation: Finetuning with carefully curated data can counteract biases present in the base model’s training data. For example, finetuning on data with female CEOs or texts authored by women/African authors can reduce gender and racial biases.</p></li>
+<li><p>Distillation: Finetuning a smaller model to imitate the behavior of a larger model using data generated by the larger model is a common approach called distillation. This makes the smaller model cheaper and faster to use in production.</p></li>
+<li><p>Optimizing token usage (historically): Before prompt caching, finetuning could help optimize token usage by training the model on examples instead of including them in every prompt, resulting in shorter, cheaper, and lower-latency prompts. Although prompt caching has reduced this benefit, finetuning still removes the limitation of context length on the number of examples used.</p></li>
+<li><p>Extending context length: Long-context finetuning requires modifying the model’s architecture and can increase the maximum context length, though it is harder to do and the resulting model might degrade on shorter sequences.</p></li>
+</ul>
+</section>
+<section id="reasons-not-to-finetune" class="level1">
+<h1>2. Reasons Not to Finetune:</h1>
+<ul>
+<li><p>Performance degradation on other tasks: Finetuning for a specific task can sometimes degrade performance on other tasks.</p></li>
+<li><p>High up-front investment and continual maintenance: Finetuning requires significant resources, including acquiring high-quality annotated data (which can be slow and expensive) and ML knowledge to evaluate base models, monitor training, and debug.</p></li>
+<li><p>Serving complexity: Once finetuned, serving the model requires figuring out hosting (in-house or API) and inference optimization, which is non-trivial for large models.</p></li>
+<li><p>Pace of base model improvement: New base models are constantly being developed and may improve faster than a finetuned model can be updated.</p></li>
+<li><p>Prompting might be sufficient: Many practitioners find that after complaints about prompting’s ineffectiveness, refining the prompt experiment process shows that prompting alone can be sufficient.</p></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>AI</category>
+  <guid>https://kimhungbui.github.io/artificial-intelligent/finetunning/</guid>
+  <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Image classification</title>
+  <link>https://kimhungbui.github.io/artificial-intelligent/convolution/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="image-classification" class="level1">
+<h1>Image Classification</h1>
+<p>This is the task of assigning an input image one label from a <em>fixed categories</em>. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications. Moreover, many other seemingly distinct CV tasks (such as object detection, segmentation) can be reduced to image classification.</p>
+<p><strong>Example</strong>: In the image blow in image classification model takes a single image and assigns probabilities to 4 label {cat, dog, hat, mug}. Computer view a image as an one large 3-dimensional array of numbers. In this example, the cat image is 248 pixel wide, 400 pixel tall, and has three color channel Red, Green, Blue. Therefore, the image consists of <img src="https://latex.codecogs.com/png.latex?248%20%5Ctimes%20400%20%5Ctimes%203"> numbers, or a total of 297,600 numbers. Each number is an integer that ranges from 0 (black) to 255 (white). Our task is turn this quarter of a million numbers into a single label, such as “cat”. <img src="https://kimhungbui.github.io/artificial-intelligent/convolution/Pasted image 20250327230513.png" class="img-fluid"></p>
+<p><strong>Challenges:</strong> Since this task of recognizing a visual concept (e.g.&nbsp;cat) is relatively trivial for human to perform, it is worth considering the challenges involved from the perspective of a CV algorithm. As we present list of challenges below.</p>
+<ul>
+<li><strong>Viewpoint variation:</strong> A single instance of an object can be oriented in many ways with respect to the camera.</li>
+<li><strong>Scale variation:</strong> Visual classes often exhibit variation of their size (size in the real world, <em>not only</em> in terms of their extent in the image)</li>
+<li><strong>Deformation:</strong> Many objects of interest are not rigid bodies and can be deformed in extremes ways.</li>
+<li><strong>Occlusion</strong>: The objects of interest can be occluded. Sometimes only a small portion of an object (as little as few pixels) could be visible.</li>
+<li><strong>Illumination conditions:</strong> The effect of illumination are drastic on the pixel level.</li>
+<li><strong>Background clutter:</strong> The objects of interest may <em>blend</em> into their environment, making them hard to identify.</li>
+<li><strong>Intra-class variation:</strong> The classes of interest can be often be relatively broad, such as <em>chair</em>. Their are many different types of these objects, each with their own appearance. <img src="https://kimhungbui.github.io/artificial-intelligent/convolution/Pasted image 20250327235749.png" class="img-fluid"></li>
+</ul>
+<p>A good image classification model must be invariant to the cross product of all these variations, while simultaneously retaining sensitivity to the inter-class variations.</p>
+<ol type="1">
+<li>Cross product of variations This refers to the <strong>combination of all possible variations</strong> (e.g.&nbsp;viewpoint, scale, deformation, occlusion, illumination, etc.) that can occur <strong>within a class</strong>. The term “cross production” here is metaphorical, inpsired by the mathematical concept of a Cartesian product, which generate all possible combinations of elements from multiple sets.
+<ul>
+<li><strong>Example</strong>: A chair might appear:
+<ul>
+<li>Rotate (viewpoint variation)</li>
+<li>Partially hidden (occlusion)</li>
+<li>Under bright sunlight (illumination)</li>
+<li>While being non-rigid (deformation) The model must recognize it as a “chair” <strong>despite this complex combination of variations</strong> <strong>Invariance Requirement:</strong> The model must be <strong>invariant</strong> to these variations, meaning its prediction for a class should not change even when factors alter the object’s appearance.</li>
+</ul></li>
+</ul></li>
+<li><strong>Inter-class variation</strong> There are <strong>difference between distinct classes</strong> (e.g.&nbsp;chairs vs tables). A model must retain <strong>sensitivity</strong> to these differences to avoid confusing classes, even when they share superficial similarities.
+<ul>
+<li>Example: A “stool” (class: chair) and a “small table” (class: table) might both appear at similar scales or under similar lighting. The model must distinguish them based on defining feature (e.g.&nbsp;height, presence of a backrest).</li>
+<li>Sensitivity Requirement: The model must <strong>preserver discriminate features</strong> that separate classes, even when intra-class variations (e.g.&nbsp;deformation in chairs) are extreme. <strong>Data-driven approach</strong>: How might we go about writing an algorithm that can classify images into distinct categories? Unlike writing an algorithm for, for example, sorting a list of numbers, it is not obvious how one might write an algorithm for identifying cats in images. Therefore, instead of trying to specify what every one of the categories of interest look like directly in code, the approach that we will take is not unlike one we would take with a child: we’re going to provide the computer with many examples of each class and then develop learning algorithms that look at these examples and learn about the visual appearance of each class. This approach is referred to as a <em>data-driven approach</em>, since it relies on first accumulating a <em>training dataset</em> of labeled images. Here is an example of what such a dataset might look like:</li>
+</ul></li>
+</ol>
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/convolution/Pasted image 20250328000317.png" class="img-fluid"></p>
+<p><strong>The image classification pipeline</strong> We’ve seen that the task in Image Classification is to taken an array of pixels that represents a single image and assign a label to it. Our complete pipeline can be formalized as follows: - <strong>Input:</strong> Our input consists of a set of <em>N</em> images, each labeled with one of <em>K</em> different classes. We refer to this data as the <em>learning set</em>. - <strong>Learning:</strong> Our task is to use the training set to learn what every one of the classes looks like. We refer to this step as <em>training a classifier</em>, or <em>learning a model</em>. - <strong>Evaluation:</strong> In the end, we evaluate the quality of the classifier by asking it to predict labels for a new set of images that it has never seen before. We will then compare the true labels of these images to the ones predicted by the classifier. Intuitively, we’re hoping that a lot of the predictions match up with the true answers (which we call the <em>ground truth</em>).</p>
+</section>
+<section id="nearest-neighbor-classifier" class="level1">
+<h1>Nearest Neighbor Classifier</h1>
+<p>As our first approach, we will develop what we call a <strong>Nearest Neighbor Classifier</strong>. This classifier has nothing to do with Convolution Neural Networks and it is very rarely used in practice, but i will allow us to get an ideal about the basic approach to an image classification.</p>
+<p><strong>Example image classification dataset: CIFAR-10</strong>. <a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>This dataset consist of 10 classes (for example <em>airplane, automobile, bird, etc</em>). These 60,000 images are partitioned into a training set of 50,000 images and a test set of 10,000 images. In the image below we can see 10 random example images from each one of the 10 classes.</p>
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/convolution/Pasted image 20250328001115.png" class="img-fluid"> Left:&nbsp;Example&nbsp;images&nbsp;from&nbsp;the&nbsp;<a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10&nbsp;dataset</a>.&nbsp;Right:&nbsp;first&nbsp;column&nbsp;shows&nbsp;a&nbsp;few&nbsp;test&nbsp;images&nbsp;and&nbsp;next&nbsp;to&nbsp;each&nbsp;we&nbsp;show&nbsp;the&nbsp;top&nbsp;10&nbsp;nearest&nbsp;neighbors&nbsp;in&nbsp;the&nbsp;training&nbsp;set&nbsp;according&nbsp;to&nbsp;pixel-wise&nbsp;difference.</p>
+<p>Suppose now that we are given the CIFAR-10 training set of 50,000 images (5000 image for every one of the labels), and we wish to label the remaining 10,000. The nearest neighbor classifier will take a test image, compare it to every single one of the training images, and predict the label of the closest training image. In the image above and on the right we can see an example result of such a procedure for 10 example test images. Notice that in only about 3 of 10 examples of an image of the same class is retrieved, while in other 7 examples this is not the case. For example, in the 8th row the nearest training image to the horse head is a red car, presumably due to the strong black background. As a result, this image of a horse would in this case be mislabeled as a car.</p>
+<p>One of the simplest possibilities is to compare the images pixel by pixel and add up all the differences. In other words, given two images and representing them as vectors <img src="https://latex.codecogs.com/png.latex?I_1,%20I_2">, a reasonable choice for comparing them might be the <strong>L1 distance</strong>.</p>
+<p><img src="https://latex.codecogs.com/png.latex?d_1(I_1,%20I_2)=%5CSigma_p%20%7CI_1%5Ep%20-%20I_2%5Ep%7C"> Where the sum is taken over all pixels. Here is the procedure visualized:</p>
+<p>![[nneg.jpeg]]</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> numpy</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> NearestNeighbor(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">object</span>):</span>
+<span id="cb1-4">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__init__</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>):</span>
+<span id="cb1-5">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">pass</span></span>
+<span id="cb1-6">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> train(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, X, y):</span>
+<span id="cb1-7">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">imes D where each row is an example. Y is 1-dimension of size N"""</span></span>
+<span id="cb1-8">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># the nearest neighbor classifier simpply remembers all the training data</span></span>
+<span id="cb1-9">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> X</span>
+<span id="cb1-10">        <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.ytr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> y</span>
+<span id="cb1-11">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> predict(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, X):</span>
+<span id="cb1-12">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">""" X is N </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\t</span><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">imes D where each row is an example we wish to predict label for"""</span></span>
+<span id="cb1-13">        num_test <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> X.shape[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb1-14">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># lets make sure that the output type matches the input type</span></span>
+<span id="cb1-15">        Ypred <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.zeros(num_test, dtype <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.dtype)</span>
+<span id="cb1-16">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># loop over all test rows</span></span>
+<span id="cb1-17">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(num_test):</span>
+<span id="cb1-18">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># find the nearest training image to the i'th test image</span></span>
+<span id="cb1-19">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># using the L1 distance (sum of absolute value differences)</span></span>
+<span id="cb1-20">            distances <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(np.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">abs</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.Xtr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> X[i,:]), axis <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-21">            min_index <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> np.argmin(distances) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># get the index with smallest distance</span></span>
+<span id="cb1-22">            Ypred[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.ytr[min_index] <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># predict the label of the nearest example</span></span>
+<span id="cb1-23">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> Ypred</span></code></pre></div>
+<section id="the-choice-of-distance" class="level2">
+<h2 class="anchored" data-anchor-id="the-choice-of-distance">The choice of distance</h2>
+</section>
+</section>
+<section id="k---nearest-neighbor-classifier" class="level1">
+<h1>k - Nearest Neighbor Classifier</h1>
+<p>The idea: instead of finding the single closest image in the training set, we will find the top <strong>k</strong> closest images, and have them vote on the label of the test image. In particular, when <em>k=1</em>, we recover the NN classifier. Intuitively, higher values of <strong>k</strong> have smoothing effect that makes the classifier more resistant to outliers:</p>
+<p><img src="https://kimhungbui.github.io/artificial-intelligent/convolution/Pasted image 20250507141512.png" class="img-fluid"></p>
+<p>An&nbsp;example&nbsp;of&nbsp;the&nbsp;difference&nbsp;between&nbsp;Nearest&nbsp;Neighbor&nbsp;and&nbsp;a&nbsp;5-Nearest&nbsp;Neighbor&nbsp;classifier,&nbsp;using&nbsp;2-dimensional&nbsp;points&nbsp;and&nbsp;3&nbsp;classes&nbsp;(red,&nbsp;blue,&nbsp;green).&nbsp;The&nbsp;colored&nbsp;regions&nbsp;show&nbsp;the&nbsp;<strong>decision&nbsp;boundaries</strong>&nbsp;induced&nbsp;by&nbsp;the&nbsp;classifier&nbsp;with&nbsp;an&nbsp;L2&nbsp;distance.&nbsp;The&nbsp;white&nbsp;regions&nbsp;show&nbsp;points&nbsp;that&nbsp;are&nbsp;ambiguously&nbsp;classified&nbsp;(i.e.&nbsp;class&nbsp;votes&nbsp;are&nbsp;tied&nbsp;for&nbsp;at&nbsp;least&nbsp;two&nbsp;classes).&nbsp;Notice&nbsp;that&nbsp;in&nbsp;the&nbsp;case&nbsp;of&nbsp;a&nbsp;NN&nbsp;classifier,&nbsp;outlier&nbsp;datapoints&nbsp;(e.g.&nbsp;green&nbsp;point&nbsp;in&nbsp;the&nbsp;middle&nbsp;of&nbsp;a&nbsp;cloud&nbsp;of&nbsp;blue&nbsp;points)&nbsp;create&nbsp;small&nbsp;islands&nbsp;of&nbsp;likely&nbsp;incorrect&nbsp;predictions,&nbsp;while&nbsp;the&nbsp;5-NN&nbsp;classifier&nbsp;smooths&nbsp;over&nbsp;these&nbsp;irregularities,&nbsp;likely&nbsp;leading&nbsp;to&nbsp;better&nbsp;<strong>generalization</strong>&nbsp;on&nbsp;the&nbsp;test&nbsp;data&nbsp;(not&nbsp;shown).&nbsp;Also&nbsp;note&nbsp;that&nbsp;the&nbsp;gray&nbsp;regions&nbsp;in&nbsp;the&nbsp;5-NN&nbsp;image&nbsp;are&nbsp;caused&nbsp;by&nbsp;ties&nbsp;in&nbsp;the&nbsp;votes&nbsp;among&nbsp;the&nbsp;nearest&nbsp;neighbors&nbsp;(e.g.&nbsp;2&nbsp;neighbors&nbsp;are&nbsp;red,&nbsp;next&nbsp;two&nbsp;neighbors&nbsp;are&nbsp;blue,&nbsp;last&nbsp;neighbor&nbsp;is&nbsp;green).</p>
+</section>
+<section id="validation-sets-for-hyperparameter-tunning." class="level1">
+<h1>Validation sets for Hyperparameter tunning.</h1>
+<p>We saw that there are many different distance functions we could have used: L1 norm, L2. norm, there are many other choices we didn’t even consider (e.g.&nbsp;dot products). These choices are called <strong>hyperparameters</strong> nd they come up very often in the design of many ML algorithms that learn from data. It’s often not obvious what values/settings one should choose.</p>
+<p>We might be tempted to suggest what we should try out many different values and see what work bests. That is a fine idea and that’s indeed what we will do, but this must be done very carefully. In particular, <strong>we cannot use the test set for the purpose of tweaking hyperparameters</strong>. Whenever we’re designing ML algorithms, we should think of the test set as a very precious resource that should ideally never be touched until one time at the very end. Otherwise, the very real danger is that we may tune our hyperparameters to work well on the test set, but if we were to deploy our model we could see a significantly reduced performance. in practice, we would say that we <strong>overfit</strong> to the test set. Another way of looking at it is that if we tune</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://kimhungbui.github.io/artificial-intelligent/convolution/</guid>
+  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
