@@ -1,0 +1,42 @@
+---
+title: IELTS essay template
+lightbox: false
+description: Essay template for IELTS
+author:
+  - name: Your name
+    url: https://your.personal.website
+    affiliation: Maybe your workplace?
+    affiliation-url: https://your.workplace.website
+date: 2025-06-16
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+# Opinion essay template
+
+## Paragraph 1 - Introduction
+
+Goal: Introduce the topic, paraphrase the question, clearly state your opinion, and outline the essay.
+
+### Background sentence (paraphrase the topic):
+In recent years, the issue of [main idea from the prompt] has sparked considerable debate.
+### Specific issue or controversy:
+Some people argue that [first side of the argument], while others believe that [second side].
+### Clear thesis statement (your opinion):
+Personally, I [completely/somewhat] agree/disagree with the idea that [restate the statement using your view].
+### Outline what the essay will cover:
+This essay will outline the reasons for my opinion, supported by relevant examples.
+
+
