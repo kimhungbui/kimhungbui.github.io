@@ -1,0 +1,1458 @@
+---
+title: Logistic regression
+lightbox: false
+description: Your post description
+author:
+  - name: Your name
+    url: https://your.personal.website
+    affiliation: Maybe your workplace?
+    affiliation-url: https://your.workplace.website
+date: 2025-06-12
+categories:
+  - math
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+# Introduction to Logistic Regression
+
+_Logistic regression_(Tolles and Meurer, 2016) is a model named after the logistic function, which plays a central role in the model.
+
+Originally, the logistic function was created from typical statistical models of population growth. This function takes an S-shaped form and maps real values to a range in $(0, L)$. The general mathematical formula of the logistic function is:
+
+$$
+f(x) = \frac{L}{1 + e^{-k(x - x_0)}} \tag{1}
+$$
+
+where:
+
+- $x_0$ is the value at the midpoint of the logistic curve,
+- $k$ is the growth rate of the logistic function,
+- $L$ is the maximum value of the logistic function.
+
+---
+
+The logistic regression model is often used in classification tasks, especially binary classification, even though the term “regression” is included in its name. The upcoming sections will explain why this naming convention was adopted.
+
+
+# General Concepts
+
+## Problem 1: Increase observation
+
+_True or False:_ For a fixed number of observations in a data set, introducing more variables normally generates a model that has a better fit to the data. What may be the drawback of such a model fitting strategy?
+
+Example:
+``` {python}
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
+
+# Create synthetic data
+np.random.seed(0)
+n_samples = 30
+X = np.sort(5 * np.random.rand(n_samples, 1), axis=0)
+y = np.sin(X).ravel() + np.random.normal(0, 0.2, size=n_samples)
+
+# Split into training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Polynomial degrees to test
+degrees = [1, 3, 9]
+
+plt.figure(figsize=(15, 4))
+
+for i, degree in enumerate(degrees, 1):
+    # Generate polynomial features
+    poly = PolynomialFeatures(degree=degree)
+    X_train_poly = poly.fit_transform(X_train)
+    X_test_poly = poly.transform(X_test)
+
+    # Fit model
+    model = LinearRegression()
+    model.fit(X_train_poly, y_train)
+
+    # Predict
+    X_plot = np.linspace(0, 5, 100).reshape(-1, 1)
+    X_plot_poly = poly.transform(X_plot)
+    y_plot = model.predict(X_plot_poly)
+
+    # Calculate errors
+    train_mse = mean_squared_error(y_train, model.predict(X_train_poly))
+    test_mse = mean_squared_error(y_test, model.predict(X_test_poly))
+
+    # Plot
+    plt.subplot(1, 3, i)
+    plt.scatter(X_train, y_train, color='blue', label='Train data')
+    plt.scatter(X_test, y_test, color='green', label='Test data')
+    plt.plot(X_plot, y_plot, color='red', label=f'Degree {degree}')
+    plt.title(f"Degree {degree}\nTrain MSE: {train_mse:.2f}, Test MSE: {test_mse:.2f}")
+    plt.xlabel("X")
+    plt.ylabel("y")
+    plt.legend()
+
+plt.tight_layout()
+plt.show()
+```
+We see that:
+- Degree 1: (underfit): High bias, both train and test error are high
+- Degree 3 (good fit): Balanced bias-variance, good generalization.
+- Degree 9 (overfit): Train error very low, but test error high – model fits noise.
+
+**True** – Introducing more variables generally improves the model's fit to the training data.  
+However, there is a major drawback: it often leads to **overfitting**.
+
+---
+
+### Explanation
+
+#### Why the Fit Improves
+- In regression or classification tasks, adding more features gives the model more flexibility to match the training data.
+- This allows the model to capture finer patterns, reduce residuals, and minimize training error.
+
+**Example**:  
+In polynomial regression, increasing the degree (i.e., adding more variables) can make the curve pass through all data points, resulting in nearly zero training error.
+
+---
+
+### Drawbacks of This Strategy
+
+#### 1. Overfitting
+- A model that fits the training data too well may learn noise or random fluctuations instead of the true underlying patterns.
+- This results in poor generalization to unseen or test data.
+
+#### 2. Increased Variance
+- More variables increase the model’s sensitivity to small changes in data.
+- A high-variance model may change dramatically with minor input changes.
+
+#### 3. Curse of Dimensionality
+- In high-dimensional spaces, data becomes sparse.
+- Concepts like distance, density, and similarity lose their meaning.
+- Many algorithms (e.g., k-NN, clustering) perform poorly in high dimensions.
+
+#### 4. Interpretability
+- Adding more variables makes the model harder to interpret.
+- This is a problem in domains where transparency is important (e.g., medicine, finance).
+
+#### 5. Computational Cost
+- More variables require more memory and longer training times.
+- Feature selection or dimensionality reduction may be needed to manage complexity.
+
+---
+
+### Summary
+
+**True** – Adding more variables generally improves the fit on training data,  
+but it increases the risk of **overfitting**, **poor generalization**, and **computational burden**.
+
+---
+
+### Best Practice
+
+Use techniques like **cross-validation** and **regularization** (e.g., Lasso, Ridge, dropout)  
+to balance model complexity and generalization performance.
+
+
+
+
+## Problem 2: Odds
+Define the term "__odds of success__" both qualitatively and formally. Give a numerical example that stresses the relation between probability and odds of an event occurring.
+
+### Definition: Odds of Success
+
+### Qualitative Definition
+The **odds of success** express how much more likely an event is to occur than not occur. It is often used in statistics and logistic regression.
+
+- If an event is **very likely**, the odds are high.
+- If an event is **unlikely**, the odds are low.
+- If the event is **equally likely to happen or not**, the odds are 1 (or "even odds").
+
+### Formal Definition
+Let **p** be the probability of success (i.e., the event occurring). Then the **odds of success** are defined as:
+
+$$
+\text{Odds of success} = \frac{p}{1 - p}
+$$
+
+This compares the chance the event *does happen* (p) to the chance it *does not happen* (1 - p).
+
+---
+
+### Numerical Example
+
+Suppose the probability of success is:
+
+$$
+p = 0.75
+$$
+
+Then the odds of success are:
+
+$$
+\text{Odds} = \frac{0.75}{1 - 0.75} = \frac{0.75}{0.25} = 3
+$$
+
+**Interpretation**:  
+The event is **3 times more likely** to occur than not occur.  
+In other words, for every 3 successes, we expect 1 failure.
+
+---
+
+### Additional Comparison
+
+| Probability (p) | Odds = p / (1 - p) |
+|-----------------|--------------------|
+| 0.5             | 1.0                |
+| 0.8             | 4.0                |
+| 0.25            | 0.33               |
+
+As the probability increases toward 1, the odds increase toward infinity.
+
+---
+
+### Inverse: From Odds to Probability
+
+If you are given the odds $ o $, you can convert back to probability:
+
+$$
+p = \frac{o}{1 + o}
+$$
+
+**Example**:  
+If odds = 4, then
+
+$$
+p = \frac{4}{1 + 4} = \frac{4}{5} = 0.8
+$$
+
+
+## Problem 3: Interaction
+
+1. Define what is meant by the term "interaction", in the context of a logistic regression predictor variable.
+2. What is the simplest form of an interaction? Write its formulae.
+3. What statistical tests can be used to attest the significance of an interaction term? 
+
+### 1. Definition of Interaction in Logistic Regression
+
+In logistic regression, an **interaction** occurs when the **effect of one predictor variable on the outcome depends on the level of another predictor variable**.
+
+This means the predictors do not act independently: the combined effect of two variables is **not simply additive** on the log-odds scale.
+
+**Example**:  
+If $X_1$ is age and $X_2$ is smoking status, an interaction term ($X_1 \cdot X_2$) would capture how the effect of age on the probability of disease differs between smokers and non-smokers.
+
+---
+
+### 2. Simplest Form of an Interaction
+
+The simplest interaction involves **two variables** in a logistic regression model. The formula (on the log-odds scale) is:
+
+$$
+\log\left( \frac{p}{1 - p} \right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 (X_1 \cdot X_2)
+$$
+
+Where:
+- $X_1$ and $X_2$ are predictors
+- $X_1 \cdot X_2$ is the interaction term
+- $\beta_3$ captures the **change in effect** of $X_1$ at different levels of $X_2$
+
+If $\beta_3 \ne 0$, there is a statistically significant interaction.
+
+---
+
+### 3. Statistical Tests for Interaction Terms
+
+To test whether the interaction term significantly improves the model:
+
+#### a. **Wald Test**
+- Tests if $\beta_3 = 0$
+- Based on the standard error and coefficient
+- Commonly used in software output (e.g., `summary()` in R or `LogitResults` in statsmodels)
+
+#### b. **Likelihood Ratio Test (LRT)**
+- Compares:
+  - **Model 1**: with interaction term
+  - **Model 2**: without interaction term
+- Null hypothesis: interaction term does not improve the model
+- LRT is more robust than the Wald test, especially in small samples
+
+**Steps**:
+1. Fit both models (with and without interaction)
+2. Compute:  
+$$
+\chi^2 = -2(\log L_{\text{reduced}} - \log L_{\text{full}})
+$$
+3. Compare with chi-square distribution (df = 1 for one interaction term)
+
+#### c. **ANOVA (Analysis of Deviance)**
+- Alternative approach to compare nested models in logistic regression.
+- Often used in R with `anova(model1, model2, test = "Chisq")`
+
+
+### Note: Interaction and Information Theory
+
+In the context of **information theory**, interaction terms in a model can be interpreted as capturing **mutual information** between predictor variables **and** their **combined influence** on the target.
+
+---
+
+### Interaction as Additional Information
+
+Without an interaction term, a model assumes **additivity**: each predictor affects the outcome independently. However, if two variables *jointly* influence the outcome, then their interaction carries **additional information** beyond their individual effects.
+
+This added value can be viewed as:
+
+- **Extra bits of information** (in the sense of entropy reduction) gained by knowing the joint effect of variables
+- **Mutual information** between variables that is **relevant to the response**, not captured in their marginal contributions
+
+---
+
+### Impact on Model Performance
+
+#### 1. **Improved Predictive Power**
+- Captures complex relationships
+- Leads to better fit and generalization, if the interaction is real and not noise
+
+#### 2. **Reduced Residual Uncertainty**
+- Reduces unexplained variation in the outcome
+- Analogous to decreasing entropy in the output distribution by incorporating more structure
+
+#### 3. **Better Feature Representation**
+- Interaction terms effectively **encode feature combinations** that correlate strongly with the outcome
+- Similar to feature engineering guided by **information gain**
+
+---
+
+### Summary
+
+Adding interaction terms allows the model to **capture dependency structures** among variables that are meaningful to the target, thereby increasing the **information** the model has about the outcome. In information-theoretic terms, interactions **reduce conditional entropy** and increase **mutual information** between inputs and output.
+
+
+## Problem 4:
+True or False: In machine learning terminology, unsupervised learning refers to the mapping of input covariates to a target response variable that is attempted at being predicted
+when the labels are known.
+
+**False**
+
+### Explanation
+
+In **machine learning**, the statement describes **supervised learning**, not unsupervised learning.
+
+---
+
+### Definitions:
+
+- **Supervised Learning**:  
+  The algorithm learns to **map input features (covariates)** to a known **target variable (labels)**.  
+  Examples: classification, regression.
+
+- **Unsupervised Learning**:  
+  The algorithm is used when **labels are unknown**. It finds **patterns or structures** in the data.  
+  Examples: clustering, dimensionality reduction.
+
+---
+
+### Why the Statement is False:
+
+> *"Unsupervised learning refers to the mapping of input covariates to a target response variable that is attempted at being predicted when the labels are known."*
+
+- It incorrectly claims **unsupervised learning uses known labels**, which is **not true**.
+- This description actually fits **supervised learning**.
+
+---
+
+### Corrected Version:
+
+> **Supervised learning** refers to the mapping of input covariates to a target response variable, using known labels.
+
+
+## Problem 5:
+Complete the following sentence: In the case of logistic regression, the response variable is the log of the odds of being classified in [...].
+
+
+**Complete sentence:**
+
+In the case of logistic regression, the response variable is the **log of the odds of being classified in the reference (or "positive") category**.
+
+---
+
+### Explanation
+
+Logistic regression models the probability of a binary outcome by applying the **logit function** to the response:
+
+$$
+\log\left(\frac{p}{1 - p}\right) = \beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k
+$$
+
+- $p$ is the probability of the outcome being in the **positive or reference class** (e.g., "yes", "success", or class = 1).
+- The left-hand side is the **log-odds** of that outcome.
+- The model learns a linear relationship between the predictors and the **log-odds** of classification in the target category.
+
+**Solution:**
+
+In the case of logistic regression, the response variable is the **log of the odds of being classified in a group of binary or multi-class responses**.  
+This definition essentially demonstrates that **odds can take the form of a vector**.
+
+---
+
+### Clarification:
+
+- For **binary logistic regression**, the model estimates:
+  $$
+  \log\left(\frac{p}{1 - p}\right)
+  $$
+  where $p$ is the probability of being in the positive class.
+
+- For **multinomial (multi-class) logistic regression**, the model estimates a set of log-odds:
+  $$
+  \log\left(\frac{p_k}{p_{reference}}\right)
+  $$
+  for each class $k \ne$ reference, resulting in a **vector of log-odds**, one for each class.
+
+Thus, in multiclass cases, the model output is not a single scalar log-odds but a **vector of log-odds**, supporting the idea that **odds can be vector-valued**.
+
+
+## Problem 6:
+Describe how in a logistic regression model, a transformation to the response variable is applied to yield a probability distribution. Why is it considered a more informative representation of the response?
+
+### Logistic Regression: Transformation of the Response Variable
+
+In logistic regression, the **response variable** is categorical (often binary), but the model must output continuous values to fit it using linear predictors. This is done by applying a **logit transformation**, and then its inverse—the **logistic (sigmoid) function**—to map outputs to probabilities.
+
+---
+
+### Step-by-Step Transformation
+
+1. **Linear combination of predictors:**
+   $$
+   z = \beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k
+   $$
+
+2. **Logit transformation (link function):**
+   $$
+   \text{logit}(p) = \log\left(\frac{p}{1 - p}\right) = z
+   $$
+
+3. **Inverse-logit (sigmoid) function to obtain probability:**
+   $$
+   p = \frac{1}{1 + e^{-z}}
+   $$
+
+This maps any real-valued input $z \in (-\infty, \infty)$ into a valid probability $p \in (0, 1)$.
+
+---
+
+### Why This Is Informative
+
+- **Probabilistic output**: Unlike hard class labels, logistic regression provides the **estimated probability** of belonging to a class, which gives **more nuanced information**.
+  
+- **Uncertainty awareness**: Probabilities allow us to gauge **confidence** in predictions. For example, a prediction of 0.95 is more confident than 0.55.
+
+- **Threshold flexibility**: You can choose decision thresholds based on the application (e.g., 0.5, 0.7) rather than being locked into fixed class predictions.
+
+- **Supports ranking and calibration**: Probabilities are useful for **ROC analysis**, **calibration**, and **expected loss minimization**.
+
+---
+
+### Summary
+
+Logistic regression transforms the response variable through the **logit link** and uses its inverse to map model outputs to a **valid probability distribution**. This enables not only classification but also a **more informative and interpretable** representation of the predicted outcomes.
+
+### Note: Pros and Cons of Output Transformations in Logistic Regression
+
+When transforming the response variable into a **probability distribution**, several methods can be used depending on the problem type. The most common are:
+
+- **Sigmoid function** — for binary classification
+- **Softmax function** — for multi-class classification
+- **Classic normalization** — general scaling of outputs (less used in classification)
+
+Below is a comparison of their **pros and cons**:
+
+---
+
+### 1. Sigmoid Function
+
+**Definition:**
+$$
+\sigma(z) = \frac{1}{1 + e^{-z}}
+$$
+
+**Use Case:** Binary classification (2 classes)
+
+**Pros:**
+- Simple and computationally efficient
+- Naturally maps real values to the interval (0, 1)
+- Interpretable as the probability of the positive class
+
+**Cons:**
+- Only supports binary output
+- Cannot capture interactions among multiple classes
+- Not ideal for mutually exclusive multi-class problems
+
+---
+
+### 2. Softmax Function
+
+**Definition:**
+$$
+\text{softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}
+$$
+
+**Use Case:** Multi-class classification (K > 2, mutually exclusive classes)
+
+**Pros:**
+- Generalizes sigmoid to multi-class setting
+- Produces a valid probability distribution over $K$ classes
+- Probabilities sum to 1, suitable for cross-entropy loss
+
+**Cons:**
+- Sensitive to extreme values (due to exponentiation)
+- Less robust to outliers in inputs
+- Computationally more expensive than sigmoid
+
+---
+
+### 3. Classic Normalization
+
+**Definition:**
+$$
+\text{normalized}(z_i) = \frac{z_i}{\sum_{j=1}^K z_j}
+$$
+
+**Use Case:** Sometimes used as an approximation or in non-logistic models
+
+**Pros:**
+- Simple and fast
+- Avoids exponentiation (numerically stable)
+
+**Cons:**
+- **Not guaranteed to produce valid probabilities** unless all $z_i \ge 0$
+- Can yield values outside [0, 1] if inputs are not positive
+- Lacks probabilistic interpretation unless additional constraints are applied
+
+---
+
+### Summary Table
+
+| Transformation    | Best for            | Output Range | Sums to 1 | Interpretable Probabilities | Key Limitation              |
+|-------------------|---------------------|--------------|-----------|-----------------------------|-----------------------------|
+| **Sigmoid**       | Binary classification | (0, 1)       | No        | Yes                         | Not suitable for >2 classes |
+| **Softmax**       | Multi-class classification | (0, 1)       | Yes       | Yes                         | Sensitive to outliers       |
+| **Normalization** | Heuristic scaling     | Varies       | Possibly   | Not always                  | May not yield valid probs   |
+
+``` {python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Raw model outputs (logits)
+logits = np.array([2.0, 1.0, 0.1])
+
+# 1. Sigmoid function (binary case, apply to a single logit)
+def sigmoid(z):
+    return 1 / (1 + np.exp(-z))
+
+sigmoid_result = sigmoid(logits[0])  # Binary case example
+
+# 2. Softmax function (multi-class case)
+def softmax(z):
+    exp_z = np.exp(z - np.max(z))  # stability improvement
+    return exp_z / np.sum(exp_z)
+
+softmax_result = softmax(logits)
+
+# 3. Classic normalization (not ideal for probabilities unless values are positive)
+def normalize(z):
+    z_sum = np.sum(z)
+    return z / z_sum if z_sum != 0 else np.zeros_like(z)
+
+normalize_result = normalize(logits)
+
+# Print results
+print("Raw logits:       ", logits)
+print("Sigmoid (z=2.0):  ", sigmoid_result)
+print("Softmax:          ", softmax_result)
+print("Normalization:    ", normalize_result)
+
+# Plot comparison
+labels = ['Class 1', 'Class 2', 'Class 3']
+x = np.arange(len(labels))
+width = 0.25
+
+fig, ax = plt.subplots()
+ax.bar(x - width, softmax_result, width, label='Softmax')
+ax.bar(x, normalize_result, width, label='Normalization')
+ax.bar(x + width, [sigmoid_result, 0, 0], width, label='Sigmoid (binary)')
+
+ax.set_ylabel('Output Value')
+ax.set_title('Output Transformations')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.legend()
+plt.tight_layout()
+plt.show()
+
+```
+
+Summary:
+- Sigmoid applies to one logit for binary classification.
+
+- Softmax distributes probabilities across multiple classes.
+
+- Normalization divides values by their sum but doesn't always yield valid probabilities.
+
+## Problem 7:
+
+Complete the following sentence: Minimizing the negative log likelihood also means maximizing the [...] of selecting the [...] class.
+
+**Complete sentence:**
+
+Minimizing the negative log likelihood also means **maximizing the likelihood of selecting the correct class**.
+
+### Explanation
+
+Minimizing the **negative log likelihood (NLL)** is equivalent to **maximizing the likelihood** of the model predicting the **correct class**.
+
+#### Why?
+
+Given:
+- A model that outputs predicted probabilities $p(y_i \mid x_i)$ for each observation
+- True class labels $y_i$
+
+Then the **likelihood** for the correct predictions is:
+$$
+L = \prod_{i=1}^{n} p(y_i \mid x_i)
+$$
+
+Taking the **log-likelihood**:
+$$
+\log L = \sum_{i=1}^{n} \log p(y_i \mid x_i)
+$$
+
+The **negative log-likelihood (NLL)** is:
+$$
+\text{NLL} = -\log L = -\sum_{i=1}^{n} \log p(y_i \mid x_i)
+$$
+
+So **minimizing NLL** is mathematically the same as **maximizing the log-likelihood**, which increases the probability assigned to the correct class.
+
+---
+
+### Python Code Illustration
+
+Below is an example comparing NLL for different predicted probabilities of the correct class:
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Simulated predicted probabilities for the correct class
+p_correct = np.linspace(0.01, 1.0, 100)
+nll = -np.log(p_correct)  # Negative log-likelihood
+
+# Plot
+plt.figure(figsize=(7, 4))
+plt.plot(p_correct, nll, label='NLL = -log(p)', color='darkblue')
+plt.title('Negative Log-Likelihood vs. Probability of Correct Class')
+plt.xlabel('Predicted Probability for Correct Class')
+plt.ylabel('Negative Log-Likelihood')
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+When the model assigns a high probability to the correct class, the NLL is low.
+
+As the probability approaches 0, the NLL becomes very large.
+
+Thus, minimizing NLL encourages the model to be more confident and accurate in predicting the correct class.
+
+### Step-by-Step: Understanding Negative Log Likelihood (NLL)
+
+This walkthrough will help you see **how and why minimizing NLL means maximizing the probability of the correct class**, both conceptually and numerically.
+
+---
+
+#### Step 1: Define the task
+
+We have a binary classification model, and it predicts a probability for the **correct class**.
+
+---
+
+####  Step 2: Simulate model predictions
+
+We simulate predicted probabilities for the **true class (label = 1)**.
+
+#### Code:
+
+``` {python}
+predicted_probs = [0.9, 0.7, 0.5, 0.3, 0.1]  # Predicted probability for the correct class
+predicted_probs
+```
+
+
+``` {python}
+import numpy as np
+
+print("Predicted Probability → Negative Log-Likelihood")
+for p in predicted_probs:
+    nll = -np.log(p)
+    print(f"{p:.1f} → {nll:.4f}")
+
+```
+
+``` {python}
+
+import matplotlib.pyplot as plt
+
+p_vals = np.linspace(0.01, 1.0, 100)
+nll_vals = -np.log(p_vals)
+
+plt.plot(p_vals, nll_vals, label="NLL = -log(p)", color="blue")
+plt.xlabel("Predicted Probability for Correct Class")
+plt.ylabel("Negative Log-Likelihood")
+plt.title("NLL vs. Predicted Probability")
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+```
+
+When the model is confident and right (e.g. $p = 0.9$), the NLL is low.
+
+When it's unsure or wrong (e.g. $p = 0.1$), the NLL is high.
+
+Therefore, minimizing NLL encourages the model to assign high probability to the correct class.
+
+## Problem 8:
+
+Assume the probability of an event occurring is p = 0.1.
+1. What are the odds of the event occurring?.
+2. What are the log-odds of the event occurring?.
+3. Construct the probability of the event as a ratio that equals 0.1.
+
+### Step-by-Step: Probability, Odds, and Log-Odds
+
+Assume the probability of an event occurring is:
+
+$$
+p = 0.1
+$$
+
+---
+
+### 1. What are the **odds** of the event occurring?
+
+**Definition:**
+> Odds are the ratio of the probability of the event **occurring** to the probability of it **not occurring**.
+
+$$
+\text{odds} = \frac{p}{1 - p}
+$$
+
+### Calculation:
+
+$$
+\text{odds} = \frac{0.1}{1 - 0.1} = \frac{0.1}{0.9} \approx 0.111
+$$
+
+---
+
+### 2. What are the **log-odds** (logit) of the event?
+
+**Definition:**
+> Log-odds are the logarithm of the odds (also known as the **logit function**):
+
+$$
+\text{log-odds} = \log\left(\frac{p}{1 - p}\right)
+$$
+
+### Calculation:
+
+$$
+\log\left(\frac{0.1}{0.9}\right) = \log(0.111...) \approx -2.197
+$$
+
+---
+
+### 3. Construct the probability as a ratio that equals 0.1
+
+We want to express:
+
+$$
+\frac{\text{favorable outcomes}}{\text{total outcomes}} = 0.1
+$$
+
+One example:
+
+$$
+\frac{1}{10} = 0.1
+$$
+
+So, this means **1 favorable case out of 10 total cases**, or 9 unfavorable cases.
+
+---
+
+### Summary Table
+
+| Metric       | Value      | Formula                        |
+|--------------|------------|--------------------------------|
+| Probability  | 0.1        | given                          |
+| Odds         | 0.111      | $\frac{0.1}{0.9}$              |
+| Log-Odds     | -2.197     | $\log\left(\frac{0.1}{0.9}\right)$ |
+| Ratio Form   | 1:9        | $1/10 = 0.1$                   |
+
+### Intuition Behind Probability, Odds, and Log-Odds
+
+Understanding **why** we use these representations helps clarify their role in models like logistic regression.
+
+---
+
+### Probability (p)
+- **Intuitive measure** of likelihood: ranges between 0 and 1.
+- Easy to interpret: "There is a 10% chance this will happen."
+
+But: **Not ideal for modeling**, because probabilities are bounded, and small changes near 0 or 1 can be disproportionate.
+
+---
+
+### Odds: $\frac{p}{1 - p}$
+- Represent **relative chances**: how likely something is vs. not.
+- Example: odds = 2 means "twice as likely to happen than not."
+
+Odds are **unbounded** (0 to ∞), unlike probabilities. This makes them easier to model with **linear functions**.
+
+---
+
+### Log-Odds (Logit): $\log\left(\frac{p}{1 - p}\right)$
+- **Transforms probabilities** to the entire real line: $(-\infty, +\infty)$.
+- Linear in model parameters — makes **logistic regression** a linear model in log-odds space.
+- Symmetric: log-odds of 0 means $p = 0.5$.
+
+> This transformation enables optimization with gradient-based methods and maintains interpretability via the inverse sigmoid function.
+
+---
+
+### Summary: Why use log-odds?
+
+| Representation | Range        | Good For                        |
+|----------------|--------------|----------------------------------|
+| Probability     | [0, 1]       | Intuition, interpretability      |
+| Odds            | [0, ∞)       | Relative comparison              |
+| Log-Odds        | (−∞, ∞)      | Linear modeling, optimization    |
+
+**Log-odds give models a mathematically stable and interpretable way to reason about binary outcomes** — especially for logistic regression.
+``` {python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Probabilities from 0.01 to 0.99 (avoid 0 and 1 to prevent log(0))
+p = np.linspace(0.01, 0.99, 500)
+
+# Compute odds and log-odds
+odds = p / (1 - p)
+log_odds = np.log(odds)
+
+# Plotting
+fig, axs = plt.subplots(3, 1, figsize=(8, 10), sharex=True)
+
+# Probability
+axs[0].plot(p, p, color='blue')
+axs[0].set_ylabel("Probability (p)")
+axs[0].set_title("Probability vs. Itself (Identity)")
+axs[0].grid(True)
+
+# Odds
+axs[1].plot(p, odds, color='green')
+axs[1].set_ylabel("Odds (p / (1 - p))")
+axs[1].set_title("Probability vs. Odds")
+axs[1].grid(True)
+
+# Log-Odds
+axs[2].plot(p, log_odds, color='red')
+axs[2].set_ylabel("Log-Odds (log(p / (1 - p)))")
+axs[2].set_xlabel("Probability (p)")
+axs[2].set_title("Probability vs. Log-Odds")
+axs[2].axhline(0, color='gray', linestyle='--')
+axs[2].grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+
+### Interpretation of the Plots
+
+### Top Plot: Probability vs. Itself
+- This is the **identity function**, where the output equals the input.
+- Useful to visualize the **bounded linearity** of probability values.
+- Range is limited to [0, 1], which restricts direct use in linear models.
+
+---
+
+### Middle Plot: Probability vs. Odds
+- Odds are computed as:  
+  $$
+  \text{odds} = \frac{p}{1 - p}
+  $$
+- As $p \to 1$, the odds grow **rapidly** (approaching ∞).
+- As $p \to 0$, the odds approach 0.
+- **Nonlinear and asymmetric**, making it difficult to model directly.
+
+---
+
+### Bottom Plot: Probability vs. Log-Odds (Logit)
+- Log-odds are computed as:  
+  $$
+  \text{log-odds} = \log\left(\frac{p}{1 - p}\right)
+  $$
+- The transformation is:
+  - **Smooth**
+  - **Symmetric** around $p = 0.5$
+  - **Linear near $p = 0.5$**
+  - Maps $p \in (0, 1)$ to $(-\infty, +\infty)$
+
+---
+
+### Why Use Log-Odds?
+
+The log-odds transformation allows:
+
+- Applying **linear models** to binary classification.
+- Smooth optimization using gradient descent.
+- Easy interpretability: a one-unit increase in input causes a fixed increase in log-odds.
+
+Thus, **log-odds** are the foundation of **logistic regression**, enabling a linear combination of inputs to model a probability through the **sigmoid inverse**.
+
+## Problem 9.
+**True or False:** If the odds of success in a binary response is 4, the corresponding probability of success is 0.8.
+
+---
+
+### Step-by-step Solution
+
+We are given:
+$$
+\text{odds} = 4
+$$
+
+Recall the relationship between **odds** and **probability**:
+$$
+\text{odds} = \frac{p}{1 - p}
+$$
+
+Solve for $p$:
+$$
+\frac{p}{1 - p} = 4
+\Rightarrow p = 4(1 - p)
+\Rightarrow p = 4 - 4p
+\Rightarrow 5p = 4
+\Rightarrow p = \frac{4}{5} = 0.8
+$$
+
+---
+
+### Final Answer
+
+**True** – If the odds are 4, the probability of success is **0.8**.
+
+## Problem 10:
+
+Draw a graph of odds to probabilities, mapping the entire range of probabilities to their respective odds.
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define a range of probabilities from 0.01 to 0.99
+p = np.linspace(0.01, 0.99, 500)
+odds = p / (1 - p)
+
+# Plotting
+plt.figure(figsize=(8, 5))
+plt.plot(p, odds, color='blue')
+plt.xlabel("Probability (p)")
+plt.ylabel("Odds (p / (1 - p))")
+plt.title("Mapping: Probability to Odds")
+plt.grid(True)
+plt.ylim(0, 20)  # limit to see behavior better near p=1
+plt.tight_layout()
+plt.show()
+
+```
+
+### Graph: Probability vs. Odds
+
+This plot shows how probability values map to odds:
+
+- Formula:  
+  $$
+  \text{odds} = \frac{p}{1 - p}
+  $$
+
+- As the probability approaches 1, the odds grow rapidly toward infinity.
+- As the probability approaches 0, the odds approach 0.
+- The function is **nonlinear and increasing**, with a sharp curve as $ p \to 1 $.
+
+This graph helps visualize why odds are unbounded and why it's useful to convert them to log-odds in modeling.
+
+## Problem 11:
+The logistic regression model is a subset of a broader range of machine learning models known as generalized linear models (GLMs), which also include analysis of variance (ANOVA), vanilla linear regression, etc. There are three components to a GLM; identify these three components for binary logistic regression.
+
+### Components of a Generalized Linear Model (GLM) in Binary Logistic Regression
+
+A **Generalized Linear Model (GLM)** has three main components. For **binary logistic regression**, they are:
+
+---
+
+### 1. **Random Component**  
+Specifies the **distribution** of the response variable.
+
+- In binary logistic regression, the response \( Y \in \{0, 1\} \) is assumed to follow a **Bernoulli distribution**:
+  $$
+  Y \sim \text{Bernoulli}(p)
+  $$
+
+---
+
+### 2. **Systematic Component**  
+Represents the **linear predictor**, which is a linear combination of input features:
+
+- Let \( x = (x_1, x_2, \ldots, x_n) \), then:
+  $$
+  \eta = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_n x_n
+  $$
+
+- This is often written compactly as:
+  $$
+  \eta = \mathbf{x}^\top \boldsymbol{\beta}
+  $$
+
+---
+
+### 3. **Link Function**  
+Connects the expected value of the response to the linear predictor.
+
+- In logistic regression, the link function is the **logit** function:
+  $$
+  \text{logit}(p) = \log\left( \frac{p}{1 - p} \right) = \eta
+  $$
+
+- The inverse of the logit gives the **sigmoid function** to recover probabilities:
+  $$
+  p = \frac{1}{1 + e^{-\eta}}
+  $$
+
+---
+
+### Summary Table
+
+| GLM Component         | Logistic Regression Specification                       |
+|-----------------------|----------------------------------------------------------|
+| Random Component      | \( Y \sim \text{Bernoulli}(p) \)                        |
+| Systematic Component  | \( \eta = \mathbf{x}^\top \boldsymbol{\beta} \)        |
+| Link Function         | \( \text{logit}(p) = \log\left( \frac{p}{1 - p} \right) \) |
+
+
+### Adjusted GLM Components for Voice Activity Detection (VAD)
+
+Assume the binary outcome:
+- $Y = 1$: voice activity detected
+- $Y = 0$: no voice activity detected
+
+We define the GLM components for a logistic regression model as follows:
+
+---
+
+### Random Component  
+The response variable $Y$ is binary:
+
+$$
+Y \sim \text{Bernoulli}(p)
+$$
+
+where $p = \mathbb{P}(Y = 1 \mid \text{features})$ represents the probability that voice activity is present in a given time frame.
+
+---
+
+### Systematic Components  
+We propose **two alternative linear predictors** using different input features:
+
+#### Systematic Component A:  
+Use energy and zero-crossing rate:
+$$
+\eta = \beta_0 + \beta_1 \cdot \text{Energy} + \beta_2 \cdot \text{ZCR}
+$$
+
+- **Energy**: overall signal power in the frame  
+- **ZCR** (Zero Crossing Rate): frequency of sign changes in waveform
+
+#### Systematic Component B:  
+Use MFCC coefficients (common in speech processing):
+$$
+\eta = \beta_0 + \beta_1 \cdot \text{MFCC}_1 + \beta_2 \cdot \text{MFCC}_2 + \cdots + \beta_{13} \cdot \text{MFCC}_{13}
+$$
+
+- **MFCCs**: Mel-Frequency Cepstral Coefficients — compact representation of spectral shape
+
+---
+
+### Link Function  
+Use the **logit** link function to relate the probability to the linear predictor:
+$$
+\text{logit}(p) = \log\left( \frac{p}{1 - p} \right) = \eta
+$$
+
+or equivalently:
+$$
+p = \frac{1}{1 + e^{-\eta}}
+$$
+
+---
+
+### Summary
+
+| Component           | Description                                                         |
+|---------------------|---------------------------------------------------------------------|
+| Random Component    | $Y \sim \text{Bernoulli}(p)$                                    |
+| Systematic A        | $\eta = \beta_0 + \beta_1 \cdot \text{Energy} + \beta_2 \cdot \text{ZCR}$ |
+| Systematic B        | $eta = \beta_0 + \sum_{i=1}^{13} \beta_i \cdot \text{MFCC}_i$  |
+| Link Function       | $\text{logit}(p) = \log\left( \frac{p}{1 - p} \right)$          |
+
+This setup applies logistic regression to real-world audio-based classification.
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+
+# Simulate data for two systematic components
+np.random.seed(0)
+n_samples = 200
+
+# Simulated features for Systematic A: Energy & ZCR
+energy = np.random.normal(loc=0.5, scale=0.1, size=n_samples)
+zcr = np.random.normal(loc=0.3, scale=0.05, size=n_samples)
+X_A = np.column_stack((energy, zcr))
+
+# Simulated features for Systematic B: 13 MFCCs
+mfcc = np.random.normal(loc=0, scale=1, size=(n_samples, 13))
+X_B = mfcc
+
+# Simulated binary labels based on true linear model
+def simulate_labels(X, true_coef):
+    logits = X @ true_coef[1:] + true_coef[0]
+    probs = 1 / (1 + np.exp(-logits))
+    return (np.random.rand(len(probs)) < probs).astype(int), probs
+
+# True coefficients for Systematic A and B
+true_coef_A = np.array([-2, 5, 8])  # Intercept, Energy, ZCR
+true_coef_B = np.array([-0.5] + [0.3]*13)  # Intercept + MFCCs
+
+# Generate labels
+y_A, p_A = simulate_labels(X_A, true_coef_A)
+y_B, p_B = simulate_labels(X_B, true_coef_B)
+
+# Fit logistic regression models
+scaler_A = StandardScaler().fit(X_A)
+X_A_std = scaler_A.transform(X_A)
+model_A = LogisticRegression().fit(X_A_std, y_A)
+
+scaler_B = StandardScaler().fit(X_B)
+X_B_std = scaler_B.transform(X_B)
+model_B = LogisticRegression().fit(X_B_std, y_B)
+
+# Predict probabilities
+p_pred_A = model_A.predict_proba(X_A_std)[:, 1]
+p_pred_B = model_B.predict_proba(X_B_std)[:, 1]
+
+# Plot probability distributions
+plt.figure(figsize=(12, 5))
+
+plt.subplot(1, 2, 1)
+plt.hist(p_pred_A[y_A == 0], bins=20, alpha=0.6, label='No Voice')
+plt.hist(p_pred_A[y_A == 1], bins=20, alpha=0.6, label='Voice')
+plt.title("Predicted Probabilities (Energy & ZCR)")
+plt.xlabel("Probability of Voice Activity")
+plt.ylabel("Count")
+plt.legend()
+
+plt.subplot(1, 2, 2)
+plt.hist(p_pred_B[y_B == 0], bins=20, alpha=0.6, label='No Voice')
+plt.hist(p_pred_B[y_B == 1], bins=20, alpha=0.6, label='Voice')
+plt.title("Predicted Probabilities (MFCC Features)")
+plt.xlabel("Probability of Voice Activity")
+plt.ylabel("Count")
+plt.legend()
+
+plt.tight_layout()
+plt.show()
+```
+
+What this illustrates:
+Logistic regression maps the linear combination of audio features (systematic component) to a probability of voice activity.
+
+The predicted probability distributions show how well the features separate the two classes (voice vs. no voice).
+
+This supports the GLM formulation where:
+
+Inputs are combined linearly,
+
+The output is transformed via the logit (sigmoid) link,
+
+And the response is modeled as a Bernoulli random variable.
+
+
+## Problem 12:
+
+Let us consider the **logit transformation**, i.e., **log-odds**. Assume a scenario in which the logit forms the linear decision boundary:
+
+$$
+\log \left( \frac{\Pr(Y = 1 \mid \mathbf{X})}{\Pr(Y = 0 \mid \mathbf{X})} \right) = \theta_0 + \boldsymbol{\theta}^T \mathbf{X} \tag{2.1}
+$$
+
+where:
+- $\mathbf{X}$ is a vector of systematic components (input features),
+- $\boldsymbol{\theta}$ is a vector of predictor coefficients,
+- $\theta_0$ is the intercept.
+
+**Task:**  
+Write the mathematical expression for the **hyperplane** that describes the **decision boundary** for this logistic regression model.
+
+
+### Logistic Regression Decision Boundary (Using Logit)
+
+Given the logit model:
+
+$$
+\log \left( \frac{\Pr(Y = 1 \mid \mathbf{X})}{\Pr(Y = 0 \mid \mathbf{X})} \right) = \theta_0 + \boldsymbol{\theta}^T \mathbf{X}
+$$
+
+This expression defines the **log-odds** as a linear function of input features $\mathbf{X}$.
+
+---
+
+### Step 1: Set the Decision Threshold
+
+In binary classification, the decision boundary occurs when both classes are equally likely:
+
+$$
+\Pr(Y = 1 \mid \mathbf{X}) = \Pr(Y = 0 \mid \mathbf{X}) = 0.5
+$$
+
+Thus, the odds ratio becomes:
+
+$$
+\frac{\Pr(Y = 1 \mid \mathbf{X})}{\Pr(Y = 0 \mid \mathbf{X})} = 1
+$$
+
+Taking the logarithm:
+
+$$
+\log \left( \frac{\Pr(Y = 1 \mid \mathbf{X})}{\Pr(Y = 0 \mid \mathbf{X})} \right) = 0
+$$
+
+---
+
+### Step 2: Solve for the Boundary
+
+Set the log-odds to zero in the original equation:
+
+$$
+\theta_0 + \boldsymbol{\theta}^T \mathbf{X} = 0
+$$
+
+---
+
+### Final Result: Hyperplane Equation
+
+This is the equation of the **decision boundary** — a hyperplane that separates the feature space:
+
+$$
+\boxed{\theta_0 + \boldsymbol{\theta}^T \mathbf{X} = 0}
+$$
+
+- If $\theta_0 + \boldsymbol{\theta}^T \mathbf{X} > 0$, then $\Pr(Y=1) > 0.5$
+- If $\theta_0 + \boldsymbol{\theta}^T \mathbf{X} < 0$, then $\Pr(Y=1) < 0.5$
+
+This linear boundary is fundamental in logistic regression for classification tasks.
+
+### Solution
+
+The **hyperplane** that defines the **decision boundary** in a logistic regression model is:
+
+$$
+\theta_0 + \boldsymbol{\theta}^T \mathbf{X} = 0 \tag{2.15}
+$$
+
+---
+
+### Derivation from Logit Function
+
+We start from the **logit model**:
+
+$$
+\log \left( \frac{\Pr(Y = 1 \mid \mathbf{X})}{\Pr(Y = 0 \mid \mathbf{X})} \right) = \theta_0 + \boldsymbol{\theta}^T \mathbf{X}
+$$
+
+This expression defines the **log-odds** of the response variable $Y$ being 1 as a linear function of the input vector $\mathbf{X}$.
+
+At the **decision boundary**, we are equally likely to classify the outcome as either class (i.e., $\Pr(Y=1) = \Pr(Y=0) = 0.5$). This implies:
+
+$$
+\frac{\Pr(Y = 1 \mid \mathbf{X})}{\Pr(Y = 0 \mid \mathbf{X})} = 1
+$$
+
+Taking the logarithm:
+
+$$
+\log \left( \frac{\Pr(Y = 1 \mid \mathbf{X})}{\Pr(Y = 0 \mid \mathbf{X})} \right) = 0
+$$
+
+Now set the left-hand side of the model equal to 0:
+
+$$
+\theta_0 + \boldsymbol{\theta}^T \mathbf{X} = 0
+$$
+
+---
+
+### Conclusion
+
+The equation
+
+$$
+\boxed{\theta_0 + \boldsymbol{\theta}^T \mathbf{X} = 0}
+$$
+
+is the **mathematical expression of the hyperplane** that separates the classes. It forms the **decision boundary** in logistic regression, where the model predicts:
+
+- Class 1 if $\theta_0 + \boldsymbol{\theta}^T \mathbf{X} > 0$
+- Class 0 if $\theta_0 + \boldsymbol{\theta}^T \mathbf{X} < 0$
+
+## Problem 13: Logit and Sigmoid
+True or False:
+
+**Statement:**  
+*The logit function and the natural logistic (sigmoid) function are inverses of each other.*
+
+**Answer:**  
+**True**
+
+---
+
+### Explanation:
+
+- The **sigmoid function** (also known as the **logistic function**) is defined as:
+
+  $$
+  \sigma(z) = \frac{1}{1 + e^{-z}}
+  $$
+
+- The **logit function** is the **inverse** of the sigmoid and is defined as:
+
+  $$
+  \text{logit}(p) = \log \left( \frac{p}{1 - p} \right)
+  $$
+
+- These two functions are **mathematical inverses**:
+  - Applying the logit to the output of a sigmoid returns the original input.
+  - Applying the sigmoid to the output of a logit returns the original probability.
+
+---
+
+### Additional Note:
+
+The **sigmoid function** is widely used:
+- In **binary classification** to map a linear model's output to a probability in [0, 1].
+- As an **activation function** in artificial neural networks (although less common now compared to ReLU).
+
+Thus, the statement is **True**.
+
+
+## Derivative of the Natural Sigmoid Function
+
+Let the **sigmoid function** be defined as:
+
+$$
+\sigma(x) = \frac{1}{1 + e^{-x}}
+$$
+
+This maps real values $x \in \mathbb{R}$ to a range in $(0, 1)$.
+
+---
+
+### Step 1: Compute the Derivative
+
+We differentiate $\sigma(x)$ with respect to $x$:
+
+Let:
+
+$$
+\sigma(x) = \frac{1}{1 + e^{-x}} = f(x)
+$$
+
+Then:
+
+$$
+\frac{d}{dx} \sigma(x) = \frac{d}{dx} \left( \frac{1}{1 + e^{-x}} \right)
+$$
+
+Apply the quotient rule or chain rule:
+
+Let $u(x) = 1 + e^{-x}$, then:
+
+$$
+\frac{d}{dx} \left( \frac{1}{u(x)} \right) = -\frac{1}{u(x)^2} \cdot \frac{d}{dx} u(x)
+$$
+
+We have:
+
+$$
+\frac{d}{dx} u(x) = \frac{d}{dx} (1 + e^{-x}) = -e^{-x}
+$$
+
+So:
+
+$$
+\frac{d}{dx} \sigma(x) = -\frac{1}{(1 + e^{-x})^2} \cdot (-e^{-x}) = \frac{e^{-x}}{(1 + e^{-x})^2}
+$$
+
+---
+
+### Step 2: Express in Terms of $\sigma(x)$
+
+Since:
+
+$$
+\sigma(x) = \frac{1}{1 + e^{-x}}, \quad \text{then} \quad 1 - \sigma(x) = \frac{e^{-x}}{1 + e^{-x}}
+$$
+
+So the derivative becomes:
+
+$$
+\sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))
+$$
+
+---
+
+### Final Answer:
+
+$$
+\boxed{\frac{d}{dx} \sigma(x) = \sigma(x) \cdot (1 - \sigma(x))}
+$$
+
+This elegant result is widely used in training neural networks via backpropagation.

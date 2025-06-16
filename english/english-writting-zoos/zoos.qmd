@@ -38,3 +38,129 @@ Supporters of zoos highlight their critical role in preserving biodiversity. Wit
 Conversely, opponents argue that the confinement of animals infringes on their natural rights. Critics assert that even the most well-intentioned zoos cannot replicate the complex ecosystems that wild animals depend on, often leading to behavioral and psychological issues. The ethical debate is further intensified by instances of inadequate care and substandard living conditions in some facilities. While these concerns are valid, they underscore the need for stringent regulations rather than the outright dismissal of zoos as an institution.
 
 In conclusion, although the ethical implications of captivity are significant, I believe that the conservation, education, and research benefits provided by zoos justify their existence - provided that animal welfare is rigorously safeguarded. This balanced approach can ensure that zoos continue to contribute positively to both wildlife preservation and public understanding of environmental issues.
+
+---
+
+1. Understand the Task
+this is a "Discuss both views and give your opinion" essay. We must:
+- Present both sides __fairly__.
+- Clearly __state our opinion__ in the introduction and conclusion.
+- Support all points with __specific ideas or examples__.
+
+1. Ideas
+View 1: Zoos are beneficial
+- Help protect endangered species (breeding programs, safe habitat).
+- Educate the public, especially children.
+- Raise awareness and funding for conservation.
+View 2: Zoos are unethical
+- Artificial settings cause stress and abnormal behavior in animals.
+- Some zoos prioritize profit over welfare.
+- Animals lose natural instincts, affecting rewilding.
+My opinion:
+Zoos can be ethical only when well-regulated and focused on conservation, not entertainment. In such cases, benefits outweigh the harm
+
+---
+
+Zoos have sparked widespread debate for decades. While many view them as essential institutions for wildlife conservation and public education, others believe that they are inherently unethical due to the unnatural confinement of animals. This essay will examine both perspectives before arguing that, under strict regulations, zoos can offer more benefits than harm.
+
+Supporters of zoos emphasize their role in protecting endangered species. Many animals face threats such as habitat destruction, poaching, and climate change, and zoos offer a controlled environment for breeding and recovery. Additionally, modern zoos serve as educational platforms. They allow people, especially children, to learn about wildlife up close, fostering a sense of connection and responsibility toward environmental preservation. In this way, zoos contribute not only to species survival but also to broader conservation efforts.
+
+On the other hand, critics argue that keeping animals in captivity is inherently cruel. Wild animals, particularly large or intelligent species, often display signs of stress, such as pacing of self-harm, when confined to small or unnatural enclosures. Moreover, some zoos operate more like entertainment venues than conservation centers, prioritizing visitor experience over animal welfare. This raise ethical concerns, particularly when animals are denied the opportunity to engage in natural behaviors or live in suitable habitats.
+
+In conclusion, while concerns about animal welfare in zoos are valid, I believe that when zoos are properly regulated and focus on genuine conservation and education, they play a vital role in protecting biodiversity. Rather than abolishing zoos entirely, efforts should focus on improving standards to ensure they serve both animals and society ethically.
+
+# Speaking
+
+## Part 2
+
+Question
+_Describe a place where you can see or interact with animals._
+You should say:
+- what a place is
+- where it is
+- what you can do there 
+and explain how you feel about this place.
+
+## Sample answer
+One place that comes to mind is the Singapore Zoo, which I visited a couple of years ago. It's located in the northern part of the city and is widely regarded as one of the most ethical and well-designed zoos in the world.
+
+What impressed me most was the open-concept layout. Instead of case, many animals live in naturalistic habitats separated from visitors by moats or hidden barriers. I was able to observe orangutans swinging freely in trees above the walkways and giraffes roaming spacious enclosures.
+
+There were also interactive sessions, such as feeding times and educational talks by zookeepers, where I learned a lot about endangered species and conservation efforts. The zoo also partners with various wildlife protection organizations and supports breeding programs for rare species.
+
+I felt genuinely inspired by the experience. It made me realize that when zoos are operated responsibly, they can help preserve biodiversity and raise public awareness about the threats facing wildlife today. I felt the zoo feeling hopeful and more committed to supporting conservation causes.
+
+## Part 3
+### Q1: Do you think zoos are necessary in today's world?
+Yes, I believe they are still necessary, but only under strict ethical and scientific standards. With habitat destruction accelerating and many species on the brink of extinction, zoos can serve as safe havens for breeding and research. That said, zoos that exist solely for entertainment, with poor living conditions, should be phased out.
+
+### Q2: How can zoos educate the public?
+Zoos have a unique ability to engage people emotionally by allowing close encounters with animals they would never see in the wild. Interactive exhibits, live demonstrations, and conservation talks can make complex environmental issues accessible and compelling, especially for children.
+
+### Q3: What alternatives to zoos do you think could replace their role in education and conservation?
+Wildlife sanctuaries and virtual reality experiences might be viable alternatives. Sanctuaries allow animals to live in more natural settings, while technology can simulate immersive encounters without keeping animals in captivity. However, these solutions aren't always scalable or practical for endangered species preservation, so ethical zoos still have a role to play.
+# Gre essay
+
+> The director of a local zoo has claimed that the zoo must expand its exotic animal exhibit to attract more visitors. He cites a recent survey showing that 85% of new zoo visitors came specifically to see exotic animals. Based on this, he concludes that investing in new exotic species will increase overall ticket sales and boost the zoo's revenue.
+
+## Real-test thinking process
+
+### Read prompt carefully
+Identify assumptions, conclusions, evidence.
+- Conclusion: Expanding exotic animal exhibit -> more visitors -> more revenue.
+- Evidence: 85% of new visitors came for exotic animals.
+- Assumptions:
+	- Exotic animals are the reason they came.
+	- New visitors = future revenue
+	- Expansion will not affect other zoo aspects negatively.
+	- Survey was accurate and representative.
+
+## Outline essay
+Plan our 4-5 paragraph structure
+- Intro: Restate the argument + claim it's flawed
+- Body 1: Question the link between visitor intent and exotic animals
+- Body 2: Weak survey design or narrow scope.
+- Body 3: Ignored costs/downsides of expansion.
+- Conclusion: Suggest further research/data before acting
+
+## Sample GRE Argument essay
+
+The argument that expanding the exotic animal exhibit will increase zoo revenue is unconvincing, as it rests on several questionable assumptions and lacks sufficient supporting evidence. Without addressing these issues, the zoo may risk investing in an initiative that fails to produce the expected benefits.
+
+First, the argument assumes a direct causal relationship between exotic animals and increased attendance. While the director cites a survey indicating that 85% of new visitors came specifically to see exotic species, this data may be misleading. The survey does not clarify whether these visitors would have attended the zoo regardless of the exhibit, nor does it prove that exotic animals were the primary motivator. Other factors such as promotions, seasonal events, or group tours may have influenced their visit. Without clear evidence of causation, the conclusion remains speculative.
+
+Secondly, the reliability of the survey itself is questionable. The argument does not provide information about the sample size, methodology, or representativeness of the surveyed visitors. For instance, if the survey was conducted only during a temporary exotic animal showcase, the data may not reflect general visitor preferences. Additionally, focusing solely on new visitors ignores the preferences of returning guests, who may value other aspects of the zoo such as local wildlife, interactive experiences, or conservation programs.
+
+Furthermore, the argument overlooks potential downsides and costs associated with expanding the exhibit. Exotic animals often require specialized care, habitats, and veterinary expertise, which can significantly increase operating expenses. If the new exhibit fails to attract sufficient new visitors or if existing patrons are alienated by the change, the zoo might face financial losses rather than gains. A cost-benefit analysis would be necessary to determine whether the investment is justified.
+
+In conclusion, the argument makes a hasty recommendation based on incomplete and possibly flawed evidence. To strengthen the case, the director should conduct more comprehensive research, including long-term visitor trends, preferences of different demographics, and a detailed financial projection. Only then can the zoo make an informed decision about expanding its exotic animal exhibit.
+
+# GRE Argument Essay Template
+
+## Introduction
+
+The argument presented concludes that [paraphrase conclusion]. While this may seem reasonable at first glance, the argument relies on several questionable assumptions and lacks critical evidence. Without addressing these flaws, the conclusion remains unconvincing.
+
+## Body Paragraph 1 - Questionable Assumption
+
+First, the argument assumes that [state key assumption]. However, this assumption may not hold true because [explain why it could be false or oversimplified]. If [state alternative possibility], the conclusion would no longer be valid. Therefore, without stronger evidence linking [premise] to [conclusion], the argument is significantly weakened.
+
+## Body Paragraph 2 - Flawed Evidence or Methodology
+
+Secondly, the evidence provided is insufficient or potentially flawed. For example, [identify weakness: small sample size, biased survey, outdated data, etc.]. Without details about [methodology, demographics, time period, etc.], it is difficult to trust the data as a solid basis for the conclusion. The argument would be stronger with [mention what kind of evidence would help].
+
+## Body Paragraph 3 - Ignored Alternatives or Consequences
+
+Furthermore, the argument ignores other possible explanations or consequences. Even if [the main assumption is true], it is possible that [state another variable, downside, or unintended effect]. The argument fails to consider [additional cost, risk, or complexity], which could undermine the proposed benefits.
+
+## Conclusion
+In summary, the argument is based on unproven assumptions, lacks reliable evidence, and ignores important alternatives. To strengthen the argument, the author would need to provide [better data/methodology], consider [other relevant factors], and support the claim with a thorough analysis. Until then, the conclusion remains logically unpersuasive.
+
+## Plug-and-play Phrases
+
+- _The argument assumes that ..._
+- _However, this assumption is not necessarily valid because..._
+- _The evidence is also questionable, as it does not specify ..._
+- _Moreover, the argument overlooks..._
+- _To improve the argument, the author should provide..._
+- _Without this, the reasoning remains flawed and speculative_
