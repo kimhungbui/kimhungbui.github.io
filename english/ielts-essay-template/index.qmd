@@ -32,11 +32,17 @@ Goal: Introduce the topic, paraphrase the question, clearly state your opinion, 
 
 ### Background sentence (paraphrase the topic):
 In recent years, the issue of [main idea from the prompt] has sparked considerable debate.
+
 ### Specific issue or controversy:
+
 Some people argue that [first side of the argument], while others believe that [second side].
+
 ### Clear thesis statement (your opinion):
+
 Personally, I [completely/somewhat] agree/disagree with the idea that [restate the statement using your view].
+
 ### Outline what the essay will cover:
+
 This essay will outline the reasons for my opinion, supported by relevant examples.
 
 ## Paragraph 2 - First Main Reason Supporting Your Opinion
@@ -44,6 +50,7 @@ This essay will outline the reasons for my opinion, supported by relevant exampl
 Goal: Present a strong reason why you agree/disagree. Explain and give an example.
 
 ### Topic sentence (main idea):
+
 The reason why I [agree/disagree] is that [state your key reason clearly].
 
 ### Explanation
@@ -112,7 +119,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 > **“Discuss both views and give your own opinion.”**
 
----
+
 
 ## Introduction
 1. **Paraphrase the question**  
@@ -122,7 +129,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 3. **Thesis (your opinion)**  
    - E.g. *I acknowledge both perspectives, but I side with [view A / view B / a balanced view] because…*
 
----
+
 
 ## Body Paragraph 1 – View A
 1. **Topic sentence**  
@@ -134,7 +141,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 4. **Link back to question**  
    - E.g. *Thus, supporters claim that [restate benefit of view A].*
 
----
+
 
 ## Body Paragraph 2 – View B (and your opinion)
 1. **Topic sentence**  
@@ -146,7 +153,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 4. **Your stance / mini‑counter**  
    - E.g. *While this point has merit, I maintain that…*
 
----
+
 
 ## Conclusion
 1. **Summarise both views**  
@@ -156,7 +163,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 3. **(Optional) Future or recommendation**  
    - E.g. *Moving forward, policymakers/individuals should…*
 
----
+
 
 ### Useful Linking Words
 - **To introduce view A:** *Firstly, Moreover, In addition*  
@@ -167,7 +174,6 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 > **“Do the advantages outweigh the disadvantages?”**
 
----
 
 ## Introduction
 1. **Paraphrase the question**  
@@ -177,7 +183,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 3. **Thesis (your overall evaluation)**  
    - e.g. “In my view, the advantages outweigh the disadvantages.”  
 
----
+
 
 ## Body Paragraph 1 – Advantages
 1. **Topic sentence (first advantage)**  
@@ -191,7 +197,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 (Optionally add a second advantage using the same structure.)
 
----
+
 
 ## Body Paragraph 2 – Disadvantages
 1. **Topic sentence (first disadvantage)**  
@@ -205,7 +211,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 (Optionally add a second disadvantage using the same structure.)
 
----
+
 
 ## Conclusion
 1. **Summarise advantages and disadvantages**  
@@ -215,7 +221,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 3. **(Optional) Recommendation or final thought**  
    - e.g. “To maximize the positives, [suggest a policy or measure].”  
 
----
+
 
 ## Linking Words & Phrases
 - **Introducing advantages:** Firstly, In addition, Moreover  
@@ -227,7 +233,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 > **“What are the problems associated with [topic] and what solutions can be proposed?”**
 
----
+
 
 ## Introduction
 1. **Paraphrase the question**  
@@ -235,7 +241,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 2. **State that there are problems and that you will propose solutions**  
    - e.g. “This essay will examine the main problems and suggest possible solutions.”  
 
----
+
 
 ## Body Paragraph 1 – Problems
 1. **Topic sentence (first problem)**  
@@ -249,7 +255,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 (Optionally add a second problem using the same structure.)
 
----
+
 
 ## Body Paragraph 2 – Solutions
 1. **Topic sentence (first solution)**  
@@ -263,7 +269,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 (Optionally add a second solution using the same structure.)
 
----
+
 
 ## Conclusion
 1. **Summarise the problems and solutions**  
@@ -271,7 +277,7 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 2. **Final evaluative comment**  
    - e.g. “If these measures are implemented effectively, [positive final thought].”  
 
----
+
 
 ## Linking Words & Phrases
 - **Introducing problems:** Firstly, One major issue, Another problem  
@@ -282,7 +288,6 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 
 > **“Answer the specific questions asked in the prompt.”**
 
----
 
 ## Introduction
 1. **Paraphrase the prompt**  
@@ -319,7 +324,6 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 ## (Optional) Body Paragraph 3 – Answer to Question 3
 1. **If a third question is asked**, repeat the same structure.
 
----
 
 ## Conclusion
 1. **Summarise your answers**  
@@ -327,7 +331,6 @@ For these reasons, I am convinced that [reaffirm your opinion], and I believe th
 2. **Final thought (optional)**  
    - E.g. “Overall, addressing these issues will require [brief recommendation or implication].”
 
----
 
 ## Linking Words & Phrases
 - **Introducing answers:** *First, Second, Moreover*  
