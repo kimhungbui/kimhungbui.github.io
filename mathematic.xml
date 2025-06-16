@@ -29,7 +29,7 @@
 <p>also lies in <img src="https://latex.codecogs.com/png.latex?S">. Special cases:</p>
 <p>For <img src="https://latex.codecogs.com/png.latex?%5Ctheta%20%5Cin%5B0,1%5D">, <img src="https://latex.codecogs.com/png.latex?x(%5Ctheta)"> traces the line segment between <img src="https://latex.codecogs.com/png.latex?x_1"> and <img src="https://latex.codecogs.com/png.latex?x_2">.</p>
 <p>For <img src="https://latex.codecogs.com/png.latex?%5Ctheta%3C0"> or <img src="https://latex.codecogs.com/png.latex?%5Ctheta%3E1">, it extends beyond the endpoints.</p>
-<div id="86c2b11c" class="cell" data-execution_count="1">
+<div id="f3343fc5" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
@@ -364,7 +364,7 @@ Proof sketch
 <li><strong>Inequality constraints</strong>: <img src="https://latex.codecogs.com/png.latex?f_1,%5Cdots,f_m"> are <strong>convex</strong> functions</li>
 </ul>
 <p>A function <img src="https://latex.codecogs.com/png.latex?f"> is <strong>convex</strong> if, for all <img src="https://latex.codecogs.com/png.latex?x,y"> and <img src="https://latex.codecogs.com/png.latex?%5Ctheta%5Cin%5B0,1%5D">, <img src="https://latex.codecogs.com/png.latex?%0Af%5Cbigl(%5Ctheta%20x+(1-%5Ctheta)y%5Cbigr)%5C;%5Cle%5C;%5Ctheta%5C,f(x)%5C;+%5C;(1-%5Ctheta)%5C,f(y),%0A"> i.e.&nbsp;it has non-negative (upward) curvature.```mermaid</p>
-<div id="2a9201af" class="cell" data-execution_count="1">
+<div id="48a59741" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
@@ -533,7 +533,7 @@ font-style: inherit;">"Convexity: f(z) ≤ θ f(x) + (1–θ) f(y)"</span>)</spa
 <p>Convex problems (nonnegative curvature) can be solved reliably in polynomial time using interior-point methods, gradient-based schemes with global convergence guarantees, and other efficient algorithms. The feasible set and objective have no ‘valleys’ that trap algorithms in suboptimal points.</p>
 <p>Nonconvex problems (regions of negative curvature) are generally NP-hard. They can exhibit multiple local minima, saddle points, and complex landscape features, so finding the global minimum is computationally intractable in the worst case (unless P=NP).</p>
 <p>Thus, the presence of negative curvature (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.</p>
-<div id="650fee95" class="cell" data-execution_count="2">
+<div id="39c03829" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
@@ -1302,7 +1302,7 @@ font-style: inherit;">"</span>)</span></code></pre></div>
   <link>https://kimhungbui.github.io/math/matrix/</link>
   <description><![CDATA[ undefined ]]></description>
   <guid>https://kimhungbui.github.io/math/matrix/</guid>
-  <pubDate>Mon, 16 Jun 2025 04:56:30 GMT</pubDate>
+  <pubDate>Mon, 16 Jun 2025 08:05:13 GMT</pubDate>
 </item>
 </channel>
 </rss>
