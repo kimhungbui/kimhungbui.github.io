@@ -13,6 +13,7 @@ website:
       - href: cv.md
         text: Resume
       - mathematic.md
+      - artificial-intelligent.md
       - programming.md
       - english.md
       - posts.md
