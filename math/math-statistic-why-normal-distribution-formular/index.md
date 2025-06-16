@@ -5,7 +5,7 @@ lightbox: false
 description: Your post description
 author:
   - name: Your name
-    url: https://your.personal.website
+    url: https://kimhungbui.github.io
     affiliation: Maybe your workplace?
     affiliation-url: https://your.workplace.website
 date: 2024-09-11

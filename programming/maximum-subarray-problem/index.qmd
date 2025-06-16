@@ -5,7 +5,7 @@ lightbox: false
 description: Problem in computer science
 author:
   - name: Hung
-    url: https://your.personal.website
+    url: https://kimhungbui.github.io
     affiliation: Leetcode
     affiliation-url: https://www.wikiwand.com/en/articles/Maximum_subarray_problem
 date: 2025-06-02

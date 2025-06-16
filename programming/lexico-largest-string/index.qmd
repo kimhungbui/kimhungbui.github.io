@@ -4,7 +4,7 @@ lightbox: false
 description: Your post description
 author:
   - name: Hung
-    url: https://your.personal.website
+    url: https://kimhungbui.github.io
     affiliation: Leetcode
     affiliation-url: https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/solutions/6798488/find-the-lexicographically-largest-string-from-the-box-i/?envType=daily-question&envId=2025-06-04
 date: 2025-06-04

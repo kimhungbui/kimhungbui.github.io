@@ -4,7 +4,7 @@ lightbox: false
 description: Essay template for IELTS
 author:
   - name: Your name
-    url: https://your.personal.website
+    url: https://kimhungbui.github.io
     affiliation: Maybe your workplace?
     affiliation-url: https://your.workplace.website
 date: 2025-06-16

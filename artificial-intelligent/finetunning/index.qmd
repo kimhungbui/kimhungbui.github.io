@@ -4,13 +4,12 @@ lightbox: false
 description: Your post description
 author:
   - name: Hung
-    url: https://your.personal.website
+    url: https://kimhungbui.github.io
     affiliation: Chip Huyen
     affiliation-url: AI Engineering
 date: 2025-05-30
 categories:
-  - leetcode
-  - programming
+  - AI
 draft: false
 ---
 

@@ -4,7 +4,7 @@ lightbox: false
 description: How to Structure a ‘Two Question’ Essay
 author:
   - name: Hung
-    url: https://your.personal.website
+    url: https://kimhungbui.github.io
     affiliation: How to do ielts
     affiliation-url: https://howtodoielts.com/ielts-writing-task-2-structure-two-question-essay/
 date: 2025-03-25
