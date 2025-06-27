@@ -25,16 +25,25 @@ In **IELTS Writing Task 1 (Academic)**, using a **range of sentence types** is c
 Here's a list of **sentence types you should use**, with **examples** tailored to data description:
 
 # Simple Sentences
-Used to state clear facts.
+Used to state clear facts. 
+Simple Sentences have one subject and one finite verb.
 - Structure: Subject + verb + object
 - Example:
 	- Internet access rose in all income groups.
 
 # Compound Sentences
 Connect two related ideas using coordinating conjunctions (and, but, or, so, yet).
+When two independent clauses are joined by __for, and, nor, but, or, yet, so__ (FANBOYS), we __must use a comma__ before the conjunction. Those clauses can be connected by a semi-colon (;)
 - Structure: Independent clause + conjunction + independent clause.
 - Example:
+	- She told a folk tale, __and__ we all listened to her.
+	- He does not speak our language, yet see seems to understand what we say.
 	- Low-income households saw growth, but they remained behind other groups.
+	- We moved to Florida in 1978; we stayed only five years __and__ then returned to Ohio.
+
+Compound sentences can be reduced by removing the subject and verb in the second clause if they are the same as in the first clause.
+	 We ask him now or (we) wait until tomorrow.
+	 He is sitting and (he is) listening to me.
 
 # Complex Sentences
 Used to show relationships such as cause, contrast, or time.
