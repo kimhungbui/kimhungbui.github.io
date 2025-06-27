@@ -28,14 +28,13 @@ draft: false
 
 Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary variety and precision. Ideal for all chart types: bar, pie, line, table, map, and process.
 
----
+
 
 ### Verbs for "Show" / "Display"
 | Common Word | Synonyms / Variants                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | show        | illustrate, depict, present, demonstrate, display, represent, exhibit, outline, provide information about, give data on, compare, highlight |
 
----
 
 ### 2. Nouns/Verbs for "Change"
 | Type     | Synonyms |
@@ -45,7 +44,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | decrease (noun) | drop, fall, decline, reduction, downturn, dip, decrease |
 | decrease (verb) | fall, drop, decline, decrease, plummet, go down, shrink, dip |
 
----
 
 ### 3. Synonyms for "Proportion / Percentage"
 | Common Word | Synonyms |
@@ -55,7 +53,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | small       | minor, limited, modest, negligible |
 | large       | major, significant, considerable, substantial |
 
----
 
 ### 4. Synonyms for "Types / Sources / Categories"
 | Common Word | Synonyms |
@@ -63,7 +60,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | sources     | types, kinds, categories, forms, classes, groups |
 | kinds       | categories, sorts, varieties, classifications |
 
----
 
 ### Synonyms for "People / Groups / Users"
 | Common Word | Synonyms |
@@ -73,7 +69,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | women       | females, female individuals |
 | users       | consumers, participants, clients, visitors |
 
----
 
 ### Synonyms for "Place / Region / Country"
 | Common Word | Synonyms |
@@ -81,7 +76,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | place       | area, region, location, zone, territory |
 | country     | nation, state |
 
----
 
 ### Verbs for Time & Trends
 | Phrase              | Alternatives |
@@ -91,7 +85,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | peaked              | reached a peak, hit the highest point, soared to a maximum |
 | bottomed out        | fell to a low point, reached the lowest level, dipped to its minimum |
 
----
 
 ### Describing Time Periods
 | Phrase               | Synonyms / Alternatives |
@@ -100,7 +93,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | between 2000 and 2020| from 2000 to 2020, over the 20-year period |
 | over time            | over the years, across the period, throughout the timeline |
 
----
 
 ### Synonyms for "Number / Amount / Quantity"
 | Common Word | Synonyms |
@@ -110,7 +102,6 @@ Use this dictionary while practicing IELTS Writing Task 1 to improve vocabulary 
 | a lot of    | many, numerous, a high number of, a significant number of |
 | a few       | some, several, a small number of, a limited amount of |
 
----
 
 ### Task-Specific Vocabulary
 
@@ -310,8 +301,6 @@ To express the upward seasonal trend of Dover tourism:
 To overview:
 	Overall, Dover experienced a steady increase in visitor numbers from spring to winter, while Troy attracted the most tourists during the summer and autumn seasons.
 
----
-
 _The pie charts below show enrollment in different fields of study at a particular university._
 
 _Summarise the information by selecting and reporting the main features, and make comparisons where relevant._
@@ -330,7 +319,6 @@ Or:
 	The two pie charts illustrate the percentage of male and female students enrolled in four academic fields - Social Sciences, Humanities, Education, and Engineering - at Clydesdale University.
 	Overall, male students showed a __strong preference__ for Engineering, while female students were __more inclined toward__ Humanities and education. Notably, Social science was the only field with __relatively balanced participation__ between genders.
 
----
 The table below shows the number of hours per week people of different ages spend using the internet for different types of activities.
 
 Summarize the information by selecting and reporting the main features, and make comparisons where relevant.
@@ -371,11 +359,10 @@ Other:
 
 “Moderate variation” → you could vary this with "slight fluctuation" or "subtle differences".
 
----
 Rockingham, transportation
 
-2005: work at home 10%, walk 5%, bicycle 5%, bus 15%, carpool 25%, car (alone) 50%.
-2015: work at home 15%, walk 5%, bicycle 10%, bus 15%, carpool 20%, car (alone) 50%.
+2005 work at home 10%, walk 5%, bicycle 5%, bus 15%, carpool 25%, car (alone) 50%.
+2015 work at home 15%, walk 5%, bicycle 10%, bus 15%, carpool 20%, car (alone) 50%.
 
 The pie chart illustrates the proportion of six types of transportation to work of employees in Rockingham in 2005 and 2015.
 Overall, although the decline in 2015, cars is still the highest proportion type of vehicle to work in two times, while bicycle and people work from home are likely increase.
@@ -389,11 +376,13 @@ Overall, although the decline in 2015, cars is still the highest proportion type
 | Clarity                | “the highest proportion type of vehicle”             | “**the most common mode of transportation**”                                            |
 | Expression             | “in two times” (unnatural)                           | “**in both years**”                                                                     |
 | Verb form              | “are likely increase”                                | “**increased**” or “**saw an increase**”                                                |
-Fix:
+
+Fix
+
 	The pie charts illustrate the proportion of six types of transportation method for commuting in Rockingham in 2005 and 2015.
 	Overall, although there was a decline in 2015, the use of cars remains the most common mode of transportation in both years. Meanwhile, the proportions of bicycle use and working from home increased. 
 
-Other:
+Other
 	The two pie charts illustrate how employees in Rockingham commuted to work using six different transport methods in 2005 and 2015.
 	Overall, although the proportion of people commuting by car alone remained the highest in both years, its usage declined slightly in 2015. At the same time, bicycle use and working from home became more common, while walking and bus usage remained stable.
 
@@ -405,7 +394,6 @@ Other:
 |Showing contrast|"While..." / "Although..." / "By contrast..."|
 |Highlight trend|"…remained the most popular" / "…saw a rise in…"|
 
----
 
 "The chart below shows the percentage of households in different income groups that had internet access in a European country between 2005 and 2020."
 
@@ -417,7 +405,7 @@ Other:
 |2020|60%|85%|98%|
 ![](Pasted%20image%2020250626225143.png)
 
-My write:
+My write
 The chart illustrates the proportion of households various income group that had access to internet in a European country in 3 categories between 2005 and 2020.
 Overall, all those income group saw a increase in internet access. Meanwhile, Low Income group still have relatively low percentage of internet access comparing to middle income and high income.
 
@@ -427,7 +415,6 @@ The percentage of middle income's internet access begin the period with 4 times 
 
 ## 🟩 **Overall Band Score: 6.0**
 
----
 
 ## 🟨 **Coherence and Cohesion: 6.0**
 
@@ -449,7 +436,6 @@ The percentage of middle income's internet access begin the period with 4 times 
 **Feedback:**  
 The response is logically organized, but transitions like “otherwise” and “meanwhile” are sometimes used awkwardly. Some comparisons are a bit unclear due to sentence structure.
 
----
 
 ## 🟨 **Lexical Resource: 6.0**
 
@@ -465,7 +451,6 @@ The response is logically organized, but transitions like “otherwise” and �
 **Feedback:**  
 Some vocabulary is appropriate (“proportion”, “income group”, “steadily”), but others are repetitive or awkward (“soared up to”, “rapidly growth” → should be "rapid growth"). Use more precise and formal words like _“saw a sharp rise”_ instead of “soared up”.
 
----
 
 ## 🟨 **Grammatical Range and Accuracy: 5.5**
 
@@ -492,7 +477,6 @@ The essay contains **numerous grammatical errors** that affect clarity:
 
 Use more complex sentence structures and correct verb tenses.
 
----
 
 ## 🟨 **Task Achievement: 6.0**
 
@@ -510,7 +494,6 @@ Use more complex sentence structures and correct verb tenses.
 **Feedback:**  
 The response covers all key points and compares groups, but some **comparisons lack clarity** and **phrasing is occasionally confusing**. Numbers are mostly used well, though a few sentences are hard to follow.
 
----
 
 ## 🔹 **Suggestions to Improve:**
 
@@ -533,7 +516,6 @@ The response covers all key points and compares groups, but some **comparisons l
     - “Over the period”
         
 
----
 
 ## ✅ **High-Band Vocabulary from This Topic:**
 
@@ -553,7 +535,6 @@ The response covers all key points and compares groups, but some **comparisons l
     
 - Closing gap between groups
 
----
 Better:
 The table illustrates the percentage of households with internet access across the income groups-low, middle, and high-in a European country from 2005 to 2020.
 
@@ -562,8 +543,6 @@ Overall, internet access increased in all income categories over the 15-year per
 In 2005, 80% of high-income households had internet access, compared to 35% of middle-income and only 5% of low-income households. By 2010, these figures rose to 92%, 55%, and 15% respectively, with the gap between groups still substantial.
 
 The most notable growth occurred between 2010 and 2020. High-income households saw a steady rise, reaching 99% by the end of the period. Middle-income homes increased from 55% to 82%, while the low-income group experienced the most dramatic rise-from just 15% in 2010 to 45% in 2020. Despite this improvement, internet access remained significantly lower for the lowest income group.
-
----
 
 The table shows the proportion of households with access to the internet across the income groups-low, middle, and high- in a European country from 2005 to 2020.
 
