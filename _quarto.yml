@@ -12,11 +12,16 @@ website:
         text: Home
       - href: cv.md
         text: Resume
-      - mathematic.md
-      - artificial-intelligent.md
-      - programming.md
-      - english.md
-      - posts.md
+      - href: mathematic.md
+        text: Mathematics
+      - href: artificial-intelligent.md
+        text: AI
+      - href: programming.md
+        text: Programming
+      - href: english.md
+        text: English
+      - href: posts.md
+        text: Posts
 
     right:
       - icon: rss
