@@ -1,9 +1,15 @@
 ---
-title: "Mathematic"
-listing: 
-  contents: math # all Quarto docs in the `posts` directory will be included on your listing page
-  type: default # or `default` or `table`; each type has its own set of yaml options to include
-  sort: "date desc" # can also sort on more than one field
-  categories: true # allows you to sort posts by assigned categories 
-  feed: true
+title: "Mathematics"
+format: html
 ---
+
+# Mathematics Book
+
+Explore the chapters below.
+
+## 📘 Chapters
+
+- [Linear Algebra](math/linear-algebra/index.qmd)
+- [Optimization](math/optimization/index.qmd)
+- [Probability](math/probability/index.qmd)
+- [Statistics](math/statistics/index.qmd)

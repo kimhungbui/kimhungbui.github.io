@@ -1,0 +1,7 @@
+---
+title: "Statistics"
+listing:
+  contents: "."
+  sort: "date asc"
+  type: table
+---

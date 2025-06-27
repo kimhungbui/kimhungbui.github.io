@@ -1,8 +1,8 @@
 ---
-title: Bernoulli Randome Variable
+title: Bernoulli Random Variable
 # image: 
 lightbox: false
-description: Bernoulli Randome Variable
+description: Bernoulli Random Variable
 author:
   - name: Kim Hung Bui
 

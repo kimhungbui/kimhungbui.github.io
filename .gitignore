@@ -2,7 +2,7 @@ _freeze/
 
 /.quarto/
 docs/
-
+.venv/
 /.idea/
 /.vscode/
 /.obsidian/
