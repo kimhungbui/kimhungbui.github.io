@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your name">
-<meta name="dcterms.date" content="2025-06-09">
-<meta name="description" content="Your post description">
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2024-09-11">
+<meta name="description" content="Bernoulli Random Variable">
 
-<title>Convex set – Kim Hung Bui</title>
+<title>Bernoulli Random Variable – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -216,9 +216,21 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#some-standard-convex-sets" id="toc-some-standard-convex-sets" class="nav-link active" data-scroll-target="#some-standard-convex-sets"><span class="header-section-number">1</span> Some standard convex sets</a>
+  <li><a href="#bernoulli-distribution" id="toc-bernoulli-distribution" class="nav-link active" data-scroll-target="#bernoulli-distribution">Bernoulli Distribution</a>
   <ul class="collapse">
-  <li><a href="#affine-sets" id="toc-affine-sets" class="nav-link" data-scroll-target="#affine-sets"><span class="header-section-number">1.1</span> Affine sets</a></li>
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">📌 1. Definition</a></li>
+  <li><a href="#properties-of-the-bernoulli-distribution" id="toc-properties-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</a>
+  <ul class="collapse">
+  <li><a href="#mean-expected-value" id="toc-mean-expected-value" class="nav-link" data-scroll-target="#mean-expected-value">🎯 Mean (Expected Value)</a></li>
+  <li><a href="#variance" id="toc-variance" class="nav-link" data-scroll-target="#variance">🎲 Variance</a></li>
+  <li><a href="#skewness" id="toc-skewness" class="nav-link" data-scroll-target="#skewness">📏 Skewness</a></li>
+  <li><a href="#kurtosis" id="toc-kurtosis" class="nav-link" data-scroll-target="#kurtosis">🛡️ Kurtosis</a></li>
+  <li><a href="#variance-of-the-estimator-hatp" id="toc-variance-of-the-estimator-hatp" class="nav-link" data-scroll-target="#variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></a></li>
+  </ul></li>
+  <li><a href="#key-characteristics" id="toc-key-characteristics" class="nav-link" data-scroll-target="#key-characteristics">📚 3. Key Characteristics</a></li>
+  <li><a href="#relationship-to-other-distributions" id="toc-relationship-to-other-distributions" class="nav-link" data-scroll-target="#relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</a></li>
+  <li><a href="#applications-of-the-bernoulli-distribution" id="toc-applications-of-the-bernoulli-distribution" class="nav-link" data-scroll-target="#applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</a></li>
+  <li><a href="#python-example-simulating-a-bernoulli-random-variable" id="toc-python-example-simulating-a-bernoulli-random-variable" class="nav-link" data-scroll-target="#python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -228,41 +240,33 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Convex set</h1>
+<h1 class="title">Bernoulli Random Variable</h1>
   <div class="quarto-categories">
     <div class="quarto-category">math</div>
+    <div class="quarto-category">statistic</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Your post description
+    Bernoulli Random Variable
   </div>
 </div>
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://kimhungbui.github.io">Your name</a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://your.workplace.website">
-            Maybe your workplace?
-            </a>
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kim Hung Bui </p>
+          </div>
+  </div>
+    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 9, 2025</p>
+      <p class="date">September 11, 2024</p>
     </div>
   </div>
   
@@ -274,115 +278,137 @@ window.Quarto = {
 </header>
 
 
-<section id="some-standard-convex-sets" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Some standard convex sets</h1>
-<section id="affine-sets" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="affine-sets"><span class="header-section-number">1.1</span> Affine sets</h2>
-<p>An affine set is one that contains the entire line through any two of its points. Concretely, if <span class="math inline">\(x_1,x_2\)</span> lie in an affine set <span class="math inline">\(S\)</span>, then for all $ hetaR$ the combination</p>
+<section id="bernoulli-distribution" class="level1">
+<h1>Bernoulli Distribution</h1>
+<p>The <strong>Bernoulli distribution</strong> is a discrete probability distribution that models the outcome of a single trial with two possible outcomes: success (1) and failure (0).</p>
+<hr>
+<section id="definition" class="level2">
+<h2 class="anchored" data-anchor-id="definition">📌 1. Definition</h2>
+<p>A <strong>Bernoulli random variable</strong> ( X ) takes the value: - ( X = 1 ) with probability ( p ) (success), - ( X = 0 ) with probability ( 1 - p ) (failure).</p>
+<p>Mathematically, the probability mass function (PMF) is given by: <span class="math display">\[
+P(X = x) = p^x (1 - p)^{1 - x}, \quad x \in \{0, 1\}, \ 0 \leq p \leq 1.
+\]</span></p>
+<hr>
+</section>
+<section id="properties-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-the-bernoulli-distribution">⚡ 2. Properties of the Bernoulli Distribution</h2>
+<section id="mean-expected-value" class="level3">
+<h3 class="anchored" data-anchor-id="mean-expected-value">🎯 Mean (Expected Value)</h3>
+<p>The mean represents the expected outcome of the random variable: <span class="math display">\[
+E[X] = p.
+\]</span></p>
+<p>We expected value <span class="math inline">\(E(x)\)</span> of a random variable <span class="math inline">\(X\)</span> is given by: <span class="math display">\[
+E(X) = \sigma x \dot P(X = x)
+\]</span> For a Bernoulli random variable: <span class="math display">\[
+E(X) = 1 \dot p + 0 \dot( 1 - p) = p
+\]</span></p>
+</section>
+<section id="variance" class="level3">
+<h3 class="anchored" data-anchor-id="variance">🎲 Variance</h3>
+<p>The variance measures how much the outcomes deviate from the mean: <span class="math display">\[
+\operatorname{Var}(X) = p(1 - p).
+\]</span> The variance of a random variable <span class="math inline">\(X\)</span> measures how much the values of <span class="math inline">\(X\)</span> deviate from its mean: <span class="math display">\[
+Var(X) = E[(X-E(X))^2]
+\]</span> expand this: <span class="math display">\[
+Var(X) = E(X^2 - 2pX + p^2)
+\]</span> Since <span class="math inline">\(p^2\)</span> is constant and <span class="math inline">\(E(X)= p\)</span>, we have: <span class="math display">\[
+Var(X) = E(X^2) - 2pE(X) + p^2
+\]</span></p>
+<p>For a Bernoulli variable, <span class="math inline">\(X^2 = X\)</span> (because <span class="math inline">\(1^2 = 1\)</span> and <span class="math inline">\(0^2=0\)</span>): <span class="math display">\[
+E(X^2) = E(X) = p
+\]</span> Substituting back, <span class="math display">\[
+Var(X) = p - 2p^2 + p = p - p^2 = p(1)
+\]</span> ### 📝 Standard Deviation The standard deviation is the square root of the variance: <span class="math display">\[
+\sigma = \sqrt{p(1 - p)}.
+\]</span></p>
+</section>
+<section id="skewness" class="level3">
+<h3 class="anchored" data-anchor-id="skewness">📏 Skewness</h3>
+<p>Skewness measures the asymmetry of the distribution: <span class="math display">\[
+\gamma_1 = \frac{1 - 2p}{\sqrt{p(1 - p)}}.
+\]</span></p>
+</section>
+<section id="kurtosis" class="level3">
+<h3 class="anchored" data-anchor-id="kurtosis">🛡️ Kurtosis</h3>
+<p>The kurtosis of the Bernoulli distribution is: <span class="math display">\[
+\gamma_2 = \frac{1 - 6p(1 - p)}{p(1 - p)}.
+\]</span></p>
+</section>
+<section id="variance-of-the-estimator-hatp" class="level3">
+<h3 class="anchored" data-anchor-id="variance-of-the-estimator-hatp">Variance of the Estimator <span class="math inline">\(\hat{p}\)</span></h3>
+<p>The estimator for <span class="math inline">\(p\)</span> based on <span class="math inline">\(n\)</span> independent observations <span class="math inline">\(X_1, X_2, \dots, X_n\)</span> is the <strong>sample mean</strong>:</p>
 <p><span class="math display">\[
-x(\theta) = \theta x_1 + (1-\theta) x_2
+\hat{p}_n = \frac{1}{n}\sigma^{n}_{i=1}X_i.
 \]</span></p>
-<p>also lies in <span class="math inline">\(S\)</span>. Special cases:</p>
-<p>For <span class="math inline">\(\theta \in[0,1]\)</span>, <span class="math inline">\(x(\theta)\)</span> traces the line segment between <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>.</p>
-<p>For <span class="math inline">\(\theta&lt;0\)</span> or <span class="math inline">\(\theta&gt;1\)</span>, it extends beyond the endpoints.</p>
-<div id="4136bfe4" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define two points x1 and x2</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x1 <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">2</span>])</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>x2 <span class="op">=</span> np.array([<span class="dv">4</span>, <span class="dv">0</span>])</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample theta values</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>thetas <span class="op">=</span> np.array([<span class="op">-</span><span class="fl">0.2</span>, <span class="fl">0.0</span>, <span class="fl">0.6</span>, <span class="fl">1.0</span>, <span class="fl">1.2</span>])</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>points <span class="op">=</span> [(theta <span class="op">*</span> x1 <span class="op">+</span> (<span class="dv">1</span> <span class="op">-</span> theta) <span class="op">*</span> x2) <span class="cf">for</span> theta <span class="kw">in</span> thetas]</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate full line between extended range of theta</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>theta_full <span class="op">=</span> np.linspace(<span class="op">-</span><span class="fl">0.4</span>, <span class="fl">1.4</span>, <span class="dv">100</span>)</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>line <span class="op">=</span> np.array([theta <span class="op">*</span> x1 <span class="op">+</span> (<span class="dv">1</span> <span class="op">-</span> theta) <span class="op">*</span> x2 <span class="cf">for</span> theta <span class="kw">in</span> theta_full])</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">4</span>))</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>plt.plot(line[:, <span class="dv">0</span>], line[:, <span class="dv">1</span>], <span class="st">'k-'</span>, label<span class="op">=</span><span class="st">'Line through x1 and x2'</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>plt.scatter(<span class="op">*</span>x1, color<span class="op">=</span><span class="st">'red'</span>, zorder<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>plt.text(x1[<span class="dv">0</span>]<span class="op">+</span><span class="fl">0.1</span>, x1[<span class="dv">1</span>]<span class="op">+</span><span class="fl">0.1</span>, <span class="st">'x1'</span>, fontsize<span class="op">=</span><span class="dv">9</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>plt.scatter(<span class="op">*</span>x2, color<span class="op">=</span><span class="st">'blue'</span>, zorder<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>plt.text(x2[<span class="dv">0</span>]<span class="op">+</span><span class="fl">0.1</span>, x2[<span class="dv">1</span>]<span class="op">-</span><span class="fl">0.3</span>, <span class="st">'x2'</span>, fontsize<span class="op">=</span><span class="dv">9</span>)</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot labeled theta points</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> theta, pt <span class="kw">in</span> <span class="bu">zip</span>(thetas, points):</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    plt.scatter(pt[<span class="dv">0</span>], pt[<span class="dv">1</span>], s<span class="op">=</span><span class="dv">40</span>)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    plt.text(pt[<span class="dv">0</span>]<span class="op">+</span><span class="fl">0.1</span>, pt[<span class="dv">1</span>]<span class="op">+</span><span class="fl">0.1</span>, <span class="ss">f'θ = </span><span class="sc">{</span>theta<span class="sc">}</span><span class="ss">'</span>, fontsize<span class="op">=</span><span class="dv">8</span>)</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Affine Set: Line through x1 and x2'</span>)</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'x'</span>)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'y'</span>)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-2-output-1.png" width="566" height="374" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<blockquote class="blockquote">
-<p>Example: The solution set of linear equation</p>
-</blockquote>
-<p><span class="math display">\[
-{x| Ax=b}
-\]</span></p>
-<p>is affine</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Every affine set is a solution set of linear equations">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Every affine set is a solution set of linear equations
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Every affine set <span class="math inline">\(S \subseteq \mathbb{R}^n\)</span> can be expressed as: <span class="math display">\[
-S = \{x \in \mathbb{R}^n \mid A x = b\}
-\]</span> for some matrix <span class="math inline">\(A \in \mathbb{R}^{m \times n}\)</span> and vector <span class="math inline">\(b \in \mathbb{R}^m\)</span>.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Proof sketch">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Proof sketch
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Let <span class="math inline">\(S\)</span> be an affine set. Pick any point <span class="math inline">\(x_0 \in S\)</span>, and define: <span class="math display">\[
-V = \{x - x_0 \mid x \in S\}
-\]</span></p>
-<p>This set <span class="math inline">\(V\)</span> is a vector subspace of <span class="math inline">\(\mathbb{R}^n\)</span>, because affine sets are closed under affine combinations, and subtraction cancels the translation offset.</p>
-<p>Since <span class="math inline">\(V\)</span> is a subspace, it can be written as the null space of some matrix <span class="math inline">\(A \in \mathbb{R}^{m \times n}\)</span>: <span class="math display">\[
-V = \{x \in \mathbb{R}^n \mid A x = 0\}
-\]</span></p>
-<p>Hence the original affine set is: <span class="math display">\[
-S = \{x \in \mathbb{R}^n \mid A(x - x_0) = 0\}
-= \{x \in \mathbb{R}^n \mid A x = A x_0\}
-\]</span></p>
-<p>Let <span class="math inline">\(b = A x_0\)</span>. Then: <span class="math display">\[
-S = \{x \in \mathbb{R}^n \mid A x = b\}
-\]</span></p>
-<p>So <span class="math inline">\(S\)</span> is the solution set of a system of linear equations.</p>
-<p>✅ Q.E.D.</p>
-</div>
-</div>
+</section>
+</section>
+<section id="key-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="key-characteristics">📚 3. Key Characteristics</h2>
+<ul>
+<li><strong>Domain:</strong> ( x {0, 1} ).</li>
+<li><strong>Parameter:</strong> Single parameter ( p ), where ( 0 p ).</li>
+<li><strong>Support:</strong> The distribution is defined on two points: 0 and 1.</li>
+<li><strong>Memoryless:</strong> The Bernoulli distribution is <strong>not</strong> memoryless.</li>
+<li><strong>Special Case:</strong>
+<ul>
+<li>If ( p = 0.5 ), the distribution is symmetric.</li>
+<li>If ( p ), the distribution is skewed.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="relationship-to-other-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-to-other-distributions">🔗 4. Relationship to Other Distributions</h2>
+<ul>
+<li><p><strong>Binomial Distribution:</strong><br>
+The Bernoulli distribution is a special case of the <strong>Binomial distribution</strong> with ( n = 1 ): <span class="math display">\[
+\text{Bernoulli}(p) = \text{Binomial}(n=1, p).
+\]</span></p></li>
+<li><p><strong>Geometric Distribution:</strong><br>
+A geometric random variable models the number of Bernoulli trials until the first success.</p></li>
+<li><p><strong>Beta Distribution (Conjugate Prior):</strong><br>
+In Bayesian statistics, the Beta distribution is the conjugate prior for the Bernoulli likelihood.</p></li>
+</ul>
+<hr>
+</section>
+<section id="applications-of-the-bernoulli-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="applications-of-the-bernoulli-distribution">🌐 5. Applications of the Bernoulli Distribution</h2>
+<ul>
+<li><strong>Modeling Binary Outcomes:</strong>
+<ul>
+<li>Coin flips (Heads/Tails)</li>
+<li>Pass/Fail tests</li>
+<li>Yes/No survey responses</li>
+<li>On/Off states in systems</li>
+</ul></li>
+<li><strong>Machine Learning:</strong>
+<ul>
+<li>Logistic regression for binary classification.</li>
+<li>Bernoulli Naive Bayes classifiers.</li>
+</ul></li>
+<li><strong>Statistical Inference:</strong>
+<ul>
+<li>Estimating proportions (e.g., percentage of people supporting a policy).</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="python-example-simulating-a-bernoulli-random-variable" class="level2">
+<h2 class="anchored" data-anchor-id="python-example-simulating-a-bernoulli-random-variable">💻 6. Python Example: Simulating a Bernoulli Random Variable</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.7</span>  <span class="co"># Probability of success</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">1000</span>  <span class="co"># Number of trials</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate Bernoulli trials</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.binomial(n<span class="op">=</span><span class="dv">1</span>, p<span class="op">=</span>p, size<span class="op">=</span>n)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Estimating p</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>p_estimate <span class="op">=</span> np.mean(data)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"True probability p: </span><span class="sc">{</span>p<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Estimated probability p̂: </span><span class="sc">{</span>p_estimate<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
