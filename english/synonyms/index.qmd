@@ -1,0 +1,92 @@
+---
+title: IELTS synonyms - phrases by topic
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-06-25
+categories:
+  - english
+  - speaking
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+
+## 1. People / Gender
+| Word      | Synonyms / Phrases                            |
+|-----------|-----------------------------------------------|
+| men       | males, male passengers, male visitors         |
+| women     | females, female passengers, female users      |
+| people    | individuals, users, participants, members of the public |
+| passengers| riders, commuters, travelers                  |
+
+---
+
+## 2. Time Expressions
+| Word           | Synonyms / Alternatives                     |
+|----------------|---------------------------------------------|
+| weekdays       | during the week, on working days            |
+| weekends       | Saturday and Sunday, non-working days       |
+| during the week| over the course of the week, on weekdays    |
+| spend time     | allocate time, dedicate time, devote time   |
+
+---
+
+## 3. Quantity / Number
+| Word           | Synonyms / Expressions                    |
+|----------------|-------------------------------------------|
+| the number of  | the amount of, the volume of, the total of |
+| how many       | the quantity of, the total number of       |
+| various        | different, diverse, a range of             |
+
+---
+
+## 4. Types / Categories
+| Word            | Synonyms / Phrases                       |
+|-----------------|------------------------------------------|
+| different types | various kinds, categories, groups        |
+| kind            | category, type, form, variation          |
+| area            | region, zone, sector, location, district |
+
+---
+
+## 5. Regions / Locations
+| Word      | Synonyms / Phrases                          |
+|-----------|---------------------------------------------|
+| region    | area, district, locality, zone              |
+| build     | construct, develop, establish               |
+| in 2/3/4/5| in second/third/fourth/fifth region/zone    |
+
+---
+
+## 6. Common Verbs for Data
+| Word       | Synonyms / IELTS usage                    |
+|------------|-------------------------------------------|
+| visit      | travel to, go to, attend                  |
+| use        | access, make use of, take advantage of    |
+| ride       | board, commute by, travel on              |
+| spend time | engage in, be involved in, dedicate time to |
+
+---
+
+## Grammar / Word Form Notes
+
+- **"The number of"** + plural noun → **singular verb**
+  - _The number of passengers **is** increasing._
+- **"A number of"** + plural noun → **plural verb**
+  - _A number of people **are** waiting._
+- Use **"during"** + noun phrase:
+  - _during the week_, _during the evening_, _during the morning rush hour_
+
+

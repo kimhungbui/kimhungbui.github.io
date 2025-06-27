@@ -1,0 +1,99 @@
+---
+title: Internet use among various age groups.
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-06-25
+categories:
+  - english
+  - speaking
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+The table below shows the number of hours per week people of different ages spend usin the internet for different types of activities.
+
+Summarize the information by selecting and reporting the main features, and make comparisons where relevant.
+
+Hours per week spent on the internet, by age
+
+|                    | teens | 20s | 30s | 40s | 50s | 60s+ |
+| ------------------ | ----- | --- | --- | --- | --- | ---- |
+| studying/working   | 15    | 50  | 45  | 40  | 40  | 17   |
+| leisure activities | 20    | 18  | 17  | 10  | 11  | 18   |
+
+
+The table displays the average number of hours per week that people across six age groups spend using the internet for two main purposes: studying/working and leisure activities.
+
+Overall, internet use for studying or working peaks in the 20s age group and gradually declines with age, while leisure-related usage remains more stable across age groups, with only moderate variation. Notably, teenagers spend more time online for leisure than for academic or work purposes, in contrast to all other age groups.
+
+Young adult in their 20s spend the most time using the internet for professional or educational purposes, averaging 50 hours per week. This figure slightly decreases among those in their 30s and 40s, to 45 and 40 hours respectively, and remains at the same level for users in their 50s. Teenagers, by contrast, spend only 15 hours weekly on study or work online, while the figure drops significantly to 17 hours for users aged 60 and above.
+
+In terms of leisure activities, teenagers report the highest usage at 20 hours per week. Adults in their 20s and 30s follow closely behind, with 18 and 17 hours, respectively.  Usage declines further among those in their 40s and 50s, reaching 10 and 11 hours. Interestingly, leisure usage increases again among seniors (60+), who spend 18 hours per week- more than any group except teenagers.
+
+# Vocabulary breakdown
+
+## Describing trends & patterns
+- Peaks in / peaks at
+	- "Internet use ... _peaks in_ the 20s age group"
+- Gradually declines
+	- "and _gradually declines_ with age"
+- Remain stable/ remains at the same level
+	- "... _remain at the same level_ for users in their 50s"
+- Moderate variation
+	- "with only _moderate variation_"
+## Comparative and Superlative Structures
+- The most time
+	- "... spend _the most time_ using the internet..."
+- Only moderate variation / slightly decrease
+	- "_slightly decreases_ among those in theirs 30s and 40s".
+- Highest usage / more than any group
+	- "who spend 18 hours per week - _more than any group_ except teenagers."
+## Task 1 - Specific Phrases
+- Averaging [x] hours per week
+"averaging 50 hour per week"
+- In terms of [category]
+"In terms of leisure activities, teenagers report the highest usage."
+- By contrast / interestingly
+Used to introduce comparison or a surprising point.
+- Report / spend / use
+Verbs appropriate for describing behavior.
+
+# Grammar notes
+## Tense use: Present simple
+Task 1 uses __present simple__ when the data is a general description (no time reference like "in 2010")
+	"Teenagers __spend__ more time..."
+	"Usage __declines__ among those ..."
+	"Adults __follow__ closely behind..."
+
+## Complex Sentences
+Use subordinate clauses with conjunctions for higher-level grammar:
+- "While" -> contrast:
+	"... _while_ the figure drops significantly for users aged 60 and above."
+- "in contrast to" -> comparision
+	"..._in contrast to_ all other age groups."
+
+## Noun Phrases for Precision
+"Internet use for studying or working"
+"users in their 50s"
+"those in their 30s and 40s"
+
+These help condense information and show grammatical control.
+
+## Passive & Abstract Construction
+While not used heavily in this task, phrases like:
+	"This figure __is observed to decline__"
+	"The trend __can be explained by__ ..."
+
+... can be used sparingly for variety if the data justifies it.

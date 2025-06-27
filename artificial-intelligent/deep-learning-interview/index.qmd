@@ -25,6 +25,11 @@ execute:
   warning: false
   error: false
   result: 'interactive'  # Ensures that the output is interactive
+comments:
+  hypothesis: 
+    theme: clean
+  giscus: 
+    repo: quarto-dev/quarto-docs
 ---
 
 # Introduction to Logistic Regression

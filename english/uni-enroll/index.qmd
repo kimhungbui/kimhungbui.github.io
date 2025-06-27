@@ -1,0 +1,36 @@
+---
+title: University Enrollment
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-06-25
+categories:
+  - english
+  - speaking
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+draft: false
+---
+_The pie charts below show enrollment in different fields of study at a particular university._
+
+_Summarise the information by selecting and reporting the main features, and make comparisons where relevant._
+![](Pasted%20image%2020250625100948.png)
+
+The two pie charts illustrate the percentage of male and female students enrolled in four academic fields - Social Sciences, Humanities, Education, and Engineering - at Clydesdale University.
+Overall, male students showed a strong preference for Engineering, while female students were more inclined toward Humanities and education. Social science was the only field with relatively balanced participation between genders.
+
+Engineering was the dominant choices for male students, comprising 45% of their total enrollment, more than twice the proportion of females in the same field (20%). In constrast, only 10% of men chose Humanities, while this subject attracted 30% of women - three times higher. Similarly, Education accounted for 35% of female enrollment, compared to just 20% for men.
+
+The only discipline where the gender gap was moderate was Social Sciences. While a quarter of men were enrolled in this field, women followed closely behind at 15%. Although a difference exists, this subject showed the least contrast in gender representation.

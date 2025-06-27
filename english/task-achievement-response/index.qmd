@@ -1,0 +1,31 @@
+---
+title: Task Achievement - Task Response
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-03-20
+categories:
+  - english
+  - speaking
+draft: false
+---
+
+# Academic writing task 1: Chart, Graphs, Tables
+
+> [!NOTE] 
+> Use only the information provided in the task. Do not include outside information or our own opinion.
+> Ask ourself question to focus on the task:
+> - What is this graphic about ?
+> - Which are the most important details ?
+
+## Determine the Topic
+
+In task 1, we will be asked to summarize the information on the graphic by _selecting_ and _reporting_ the main features. The main features will help we determine the details of the topic of the graphic.
+
+To identify the main details of the graphic, first read the task and identify the type of graphic. Second, read the title of the graphic and scan the features. To focus our thoughts, ask ourself _Who? What? When?_ and _Where?_.  Use this information to determine the details of the topic.
+
+

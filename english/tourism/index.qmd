@@ -1,0 +1,101 @@
+---
+title: Number of tourism in season
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-06-25
+categories:
+  - english
+  - speaking
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+draft: false
+---
+
+_The bar graph below show the number of tourists visiting two different cities by season. Summarize the information by selecting and reporting the main features, and make comparison where relevant._
+
+
+![](Pasted%20image%2020250625093819.png)
+The bar chart compares the number of tourists (in thousands) who visited two cities, Dover and Troy, across the four seasons: Spring, Summer, Autumn, and Winter.
+
+Overall, Dover saw a steady increase in tourist numbers throughout the year, peaking in winter, while Troy experienced the opposite trend, with numbers peaking in summer and then sharply declining by winter. The two cities demonstrated contrasting seasonal patterns in tourism. 
+
+In spring, both cities received a similar number of tourists, with Dover attracting 5,000 and Troy slightly fewer at 4,800. However, during the summer months, Troy saw a dramatic surge to 23,000 visitors, more than double Dover's figures of 10,000. In autumn, while Troy has a slight decrease to 20,000 visitors, Dover hosts increasingly to 15,000 visitors.
+
+In contrast, winter brought a complete reversal in patterns. Dover's tourist numbers peaked at 25,000, while Troy experienced a steep decline, drawing only 5,000 visitors - the lowest for the year. This stark contrast highlights Dover's strong winter appeal and Troy's reliance on summer tourism.
+
+# Vocabulary list for Task 1
+
+## 1. Describing Trends
+
+| Increasing      | Decreasing       | Stable / Fluctuating    |
+| --------------- | ---------------- | ----------------------- |
+| rise / increase | fall / decrease  | remain steady / stable  |
+| grow / climb    | drop / decline   | fluctuate               |
+| soar / surge    | plummet / plunge | level off / flatten out |
+| peak            | bottom out       | vary / shift slightly   |
+
+__Examples:__
+
+- The number __rose steadily__ from 10 to 25.
+- It __plummeted sharply__ in winter.
+- Figures __remained stable__ during spring.
+
+## 2. Comparative Language
+
+|Phrase|Example|
+|---|---|
+|more than double|Troy attracted **more than double** Dover’s tourists in summer.|
+|slightly higher/lower|Dover’s figure was **slightly higher** than Troy’s in spring.|
+|significantly greater|Troy had **significantly more** tourists in summer.|
+|nearly equal / similar|Both cities had **similar** numbers in spring.|
+|in contrast / whereas|Dover increased, **whereas** Troy declined.|
+## 3. Time & Sequence
+
+- In spring/summer/autumn/winter
+- Over the course of the year.
+- During the first/second half of the year.
+- From ... to ... / Between ... and ...
+
+## 4. Key nouns & Phrases
+- number of tourists
+- amount / proportion / percentage / figure / total
+- seasonal variation / opposite pattern / steady increase
+- city / destination / location
+- peak / low point / turning point
+
+# Grammar Tips for Task 1
+
+## 1. Use the  Correct Tense
+- Use __past simple__ if dates are in the past:
+"The number increased in 2020."
+- Use __present simple__ if there's __no time reference__ (e.g. in a bar chart without years):
+	"Dover receives more tourists in winter than Troy"
+
+## Passive Voice
+Use passive voice describing what the graph shows:
+- "The chart illustrates the number of tourists visiting two cities."
+- "A steady increase is observed in Dover".
+
+## Comparative and Superlative Forms
+- Troy had __more tourists__ than Dover.
+- Winter was the __the most popular__ season in Dover.
+
+## Vary Sentence Structures
+
+- Complex sentences: 
+	- "Although Troy peaked in summer, Dover reached its highest point in winter"
+- Compound sentences:
+	- "Troy saw a surge in summer, and this was followed by a sharp decline".

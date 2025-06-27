@@ -12,7 +12,7 @@ date: 2024-09-11
 categories:
   - template
   - any-category-you-want
-draft: false
+draft: true
 ---
 
 Just write more markdown here!

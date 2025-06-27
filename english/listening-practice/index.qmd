@@ -1,0 +1,176 @@
+---
+title: Listening practice - mistake log
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-06-25
+categories:
+  - english
+  - speaking
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 13 - listening test 3
+- Date: 27/06/2025
+- Total Score: 35/40
+
+## IELTS Listening Breakdown – Full Report
+
+### 📘 Table 1: Section 1 – Personal Information Inquiry
+
+| **Question Type**                        | **Correct** | **Incorrect** | **Skipped** | **Accuracy** | **Question Numbers**     |
+|------------------------------------------|-------------|----------------|-------------|---------------|---------------------------|
+| Note/Form Completion                     | 10          | 0              | 0           | 100.00%       | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 |
+| Asking for Information (Listening Theme) | 10          | 0              | 0           | 100.00%       | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 |
+| **Total**                                | **10**      | **0**          | **0**       | **100.00%**   | —                         |
+
+### 📗 Table 2: Section 2 – Public Speech & Directions
+
+| **Question Type**                          | **Correct** | **Incorrect** | **Skipped** | **Accuracy** | **Question Numbers**     |
+|--------------------------------------------|-------------|----------------|-------------|---------------|---------------------------|
+| Matching                                   | 6           | 0              | 0           | 100.00%       | 11, 12, 13, 14, 15, 16    |
+| Multiple Choice                            | 3           | 1              | 0           | 75.00%        | 17, 18, 19, 20            |
+| Giving a Speech at an Event (Listening Theme) | 9       | 1              | 0           | 90.00%        | 11–20                    |
+| **Total**                                  | **9**       | **1**          | **0**       | **90.00%**     | —                         |
+
+### 📙 Table 3: Section 3 – Academic Assignments
+
+| **Question Type**                          | **Correct** | **Incorrect** | **Skipped** | **Accuracy** | **Question Numbers**     |
+|--------------------------------------------|-------------|----------------|-------------|---------------|---------------------------|
+| Matching                                   | 4           | 2              | 0           | 66.67%        | 25, 26, 27, 28, 29, 30    |
+| Multiple Choice                            | 2           | 2              | 0           | 50.00%        | 21, 22, 23, 24            |
+| Assignments (Listening Theme)              | 6           | 4              | 0           | 60.00%        | 21–30                    |
+| **Total**                                  | **6**       | **4**          | **0**       | **60.00%**     | —                         |
+
+### 📕 Table 4: Section 4 – Academic Lecture on Animals
+
+| **Question Type**               | **Correct** | **Incorrect** | **Skipped** | **Accuracy** | **Question Numbers**     |
+|---------------------------------|-------------|----------------|-------------|---------------|---------------------------|
+| Note/Form Completion            | 10          | 0              | 0           | 100.00%       | 31–40                    |
+| Topic: Animals                  | 10          | 0              | 0           | 100.00%       | 31–40                    |
+| **Total**                       | **10**      | **0**          | **0**       | **100.00%**   | —                         |
+
+## Listening Test Breakdown
+
+| **Question Type**                             | **Correct Answers** | **Incorrect Answers** | **Skipped Questions** | **Accuracy Rate** | **Wrong Question Numbers** |
+| --------------------------------------------- | ------------------- | --------------------- | --------------------- | ----------------- | -------------------------- |
+| Multiple Choice                               | 5                   | 3                     | 0                     | 62.50%            | 18, 22, 23                 |
+| Note/Form Completion                          | 20                  | 0                     | 0                     | 100.00%           | 1–10, 31–40                |
+| Asking for Information (Listening Theme)      | 10                  | 0                     | 0                     | 100.00%           | 1–10                       |
+| Assignments (Listening Theme)                 | 6                   | 4                     | 0                     | 60.00%            | 22, 23, 28, 30             |
+| Animals (Topic-Based)                         | 10                  | 0                     | 0                     | 100.00%           | 31–40                      |
+| Matching                                      | 10                  | 2                     | 0                     | 83.33%            | 28, 30                     |
+| Giving a Speech at an Event (Listening Theme) | 9                   | 1                     | 0                     | 90.00%            | 18                         |
+## Mistake Log
+
+| Q#  | Your Answer                             | Correct Answer               | Why You Missed It (Distractor/Paraphrase/Speed/etc.)                                                                                                                                             | Transcript Phrase                                                                                                                                                                                                 |
+| --- | --------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 17  | C - too much effort                     | B - loss of confidence,      | You matched the idea of effort to the __first point__, but missed that the speaker is actually talking about __losing belief__ and __giving up hope__ — that's about confidence, not effort.<br> | “I think people lose interest when they __don't think they're making enough progress__. That's when they __give up hope__ and stop believing they'll ever achieve their goals.<br><br>                            |
+| 18  | E - feeling less successful than others | C - too much effort required | You misread the second part. The speaker says it takes “a lot of determination and hard work” – this clearly points to “too much effort”, not comparing oneself to others.                       | Also, what people sometimes don't realize when they __start is that it takes a lot of determination and hard work__ to keep training week after week, and lots of people __don't have that kind of commitment__.” |
+| 23  |                                         |                              |                                                                                                                                                                                                  |                                                                                                                                                                                                                   |
+| 28  |                                         |                              |                                                                                                                                                                                                  |                                                                                                                                                                                                                   |
+| 30  |                                         |                              |                                                                                                                                                                                                  |                                                                                                                                                                                                                   |
+|     |                                         |                              |                                                                                                                                                                                                  |                                                                                                                                                                                                                   |
+Q17 – “...when they don't think they're making enough progress...give up hope...stop believing...”
+- these phrases are all about __losing confidence or motivation__.
+- Correct answer: B - loss of confidence
+Q18 – “...takes a lot of determination and hard work...lots of people don't have that kind of commitment.”
+- this is about the __effort and long-term dedication__ needed.
+- Correct answer C - too much effort required.
+💡 Why You Missed It:
+
+- You swapped the ideas: You took “hard work” and applied it to Q17, but that part comes second.
+
+- In IELTS MCQs, the order of the ideas usually matches the order of the questions.
+
+- You may have guessed based on vocabulary, not on exact function and meaning.
+
+Loss of confidence - lose hope
+too much effort required - too hard to continue
+feeling less successful than others - comparing yourself to another
+
+### Common Paraphrases for Multiple-Choice Options
+
+#### 🅰️ A. Lack of Time  
+**🔑 Key Concept:** Not enough time available to do something regularly
+
+**🟢 Common Paraphrases in Listening:**
+- "Don't have time to…"
+- "Too busy with work/studies"
+- "Not enough hours in the day"
+- "Schedule is too full"
+- "No free time / hardly any time"
+- "It's hard to fit it into my routine"
+
+---
+
+#### 🅱️ B. Loss of Confidence  
+**🔑 Key Concept:** Losing belief in your ability to succeed
+
+**🟢 Common Paraphrases:**
+- "Don't believe they can do it anymore"
+- "Gave up hope"
+- "Think they'll never succeed"
+- "Felt like a failure"
+- "Didn't trust themselves"
+- "Started to doubt whether it was possible"
+
+---
+
+### 🅲 C. Too Much Effort Required  
+**🔑 Key Concept:** It's too hard or tiring to continue
+
+**🟢 Common Paraphrases:**
+- "Takes a lot of hard work"
+- "Physically demanding / exhausting"
+- "You have to push yourself every day"
+- "It's tough to keep going"
+- "Requires a lot of determination and discipline"
+- "People underestimate how much energy it takes"
+
+---
+
+### 🅳 D. High Costs  
+**🔑 Key Concept:** Too expensive to afford
+
+**🟢 Common Paraphrases:**
+- "It's quite pricey"
+- "Costs too much money"
+- "Couldn't afford it"
+- "Membership fees are high"
+- "Didn't have the budget for it"
+- "Financially, it wasn't sustainable"
+
+---
+
+### 🅴 E. Feeling Less Successful Than Others  
+**🔑 Key Concept:** Comparing yourself to others and feeling inadequate
+
+**🟢 Common Paraphrases:**
+- "Others were doing better"
+- "Felt like I was falling behind"
+- "Everyone else seemed more advanced"
+- "Compared myself to others"
+- "Didn't progress as quickly as my peers"
+- "I looked around and saw I wasn't improving like them"
+
+---
+
+### 🔁 Tip for Listening
+
+When you're preparing for multiple-choice questions:
+
+- Underline **keywords** in the options.
+- Anticipate the type of **language or emotion** they might use.
+- Remember they often **paraphrase the idea**—not the exact words.

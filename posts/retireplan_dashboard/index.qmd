@@ -7,6 +7,7 @@ execute:
   warning: false
   error: false
   result: 'interactive'  # Ensures that the output is interactive
+draft: true
 ---
 
 ```{python}

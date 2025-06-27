@@ -21,6 +21,7 @@ website:
     right:
       - icon: rss
         href: posts.xml
+  google-analytics: "G-R5TB4V4ZYS"
 
 
 

@@ -1,3 +1,13 @@
+---
+title: "Family Man Retires at 39"
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+draft: false
+---
+
 
 # Family Man Retires at 39 – Extreme Early Retirement | FIRE
 ![](https://i.ytimg.com/vi/8yNsKxbq0Ak/maxresdefault.jpg)
