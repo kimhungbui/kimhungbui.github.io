@@ -295,46 +295,10 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
   <media:content url="https://kimhungbui.github.io/posts/nextcloud-install/Statistical-Inference.png" medium="image" type="image/png"/>
 </item>
 <item>
-  <title>Post template</title>
-  <dc:creator>Your name</dc:creator>
-  <link>https://kimhungbui.github.io/posts/post_template/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Just write more markdown here!</p>
-<section id="this-is-a-section" class="level1">
-<h1>This is a section</h1>
-<p>Section text!</p>
-<section id="this-is-a-subsection" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-subsection">This is a subsection</h2>
-<p>Subsection text! You get it now I assume</p>
-<p>This is how you reference an image in your blog post</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://kimhungbui.github.io/posts/post_template/dundee.jpg" class="img-fluid figure-img"></p>
-<figcaption>This is just a photo I took last time I was in Dundee.</figcaption>
-</figure>
-</div>
-<p>That’s it! go for it!</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>template</category>
-  <category>any-category-you-want</category>
-  <guid>https://kimhungbui.github.io/posts/post_template/</guid>
-  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/posts/post_template/dundee.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title></title>
+  <title>Family Man Retires at 39</title>
   <link>https://kimhungbui.github.io/posts/extreme-early-retirement/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -426,15 +390,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 
  ]]></description>
   <guid>https://kimhungbui.github.io/posts/extreme-early-retirement/</guid>
-  <pubDate>Mon, 16 Jun 2025 12:19:44 GMT</pubDate>
-</item>
-<item>
-  <title></title>
-  <dc:creator>Gapminder Analytics Group</dc:creator>
-  <link>https://kimhungbui.github.io/posts/retireplan_dashboard/</link>
-  <description><![CDATA[ undefined ]]></description>
-  <guid>https://kimhungbui.github.io/posts/retireplan_dashboard/</guid>
-  <pubDate>Mon, 16 Jun 2025 12:19:44 GMT</pubDate>
+  <pubDate>Fri, 27 Jun 2025 09:50:56 GMT</pubDate>
 </item>
 </channel>
 </rss>
