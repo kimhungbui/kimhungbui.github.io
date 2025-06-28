@@ -29,6 +29,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install nbformat jupyter plotly pandas matplotlib scikit-learn
+      
+      - name: Install TinyTeX
+        run: quarto install tinytex --accept-license
 
       - name: Render all books
         run: |
