@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Convex Optimization",
+    "section": "",
+    "text": "Preface\nThis book introduces key ideas in convex analysis and optimization.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Convex Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "introduction/intro.html",
+    "href": "introduction/intro.html",
+    "title": "2  Convex optimization",
+    "section": "",
+    "text": "3 Define\nA convex optimization problem has the form\n\\[\n\\begin{aligned}\n& \\underset{x}{\\text{minimize}} & & f_0(x) \\\\\n& \\text{subject to} & & f_i(x) \\le 0,\\quad i=1,\\dots,m,\\\\\n& & & A x = b.\n\\end{aligned}\n\\]\n\nVariable: \\(x\\in\\mathbb R^n\\)\nEquality constraints: linear (\\(A x = b\\))\n\nInequality constraints: \\(f_1,\\dots,f_m\\) are convex functions\n\nA function \\(f\\) is convex if, for all \\(x,y\\) and \\(\\theta\\in[0,1]\\), \\[\nf\\bigl(\\theta x+(1-\\theta)y\\bigr)\\;\\le\\;\\theta\\,f(x)\\;+\\;(1-\\theta)\\,f(y),\n\\] i.e. it has non-negative (upward) curvature.```mermaid\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# convex function\nf = lambda t: t**2\n\n# pick x, y, theta\nx, y, theta = -1.0, 2.0, 0.4\nz = theta*x + (1-theta)*y\n\n# sample for curve\nt = np.linspace(x-0.5, y+0.5, 300)\nplt.plot(t, f(t), label=\"f(t) (convex curve)\")\n\n# points\nplt.scatter([x, y, z], [f(x), f(y), f(z)], zorder=5)\nplt.text(x, f(x), \"  (x, f(x))\", va=\"bottom\")\nplt.text(y, f(y), \"  (y, f(y))\", va=\"bottom\")\nplt.text(z, f(z), \"  (z, f(z))\", va=\"bottom\")\n\n# chord\nfx, fy = f(x), f(y)\nchord = lambda t: fx + (fy-fx)/(y-x)*(t-x)\nplt.plot([x, y], [fx, fy], '--', label=\"chord\")\n\nplt.legend()\nplt.xlabel(\"t\")\nplt.ylabel(\"f(t)\")\nplt.title(\"Convexity: f(z) ≤ θ f(x) + (1–θ) f(y)\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nWhen is an optimization problem hard to solve?\nClassically, people thought:\nLinear problems (zero curvature) are easy, and\nNonlinear problems (nonzero curvature) are hard.\nHowever, this view is too simplistic. The key distinction is actually convexity:\nConvex problems (nonnegative curvature) can be solved reliably in polynomial time using interior-point methods, gradient-based schemes with global convergence guarantees, and other efficient algorithms. The feasible set and objective have no ‘valleys’ that trap algorithms in suboptimal points.\nNonconvex problems (regions of negative curvature) are generally NP-hard. They can exhibit multiple local minima, saddle points, and complex landscape features, so finding the global minimum is computationally intractable in the worst case (unless P=NP).\nThus, the presence of negative curvature (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Define convex and nonconvex functions\nconvex = lambda x: x**2\nnonconvex = lambda x: x**2 + 5*np.sin(3*x)\n\n# Domain\nx = np.linspace(-3, 3, 500)\n\n# Plot both functions\nplt.figure()\nplt.plot(x, convex(x), label='Convex: $f(x)=x^2$')\nplt.plot(x, nonconvex(x), label='Nonconvex: $f(x)=x^2+5\\sin(3x)$')\n\n# Mark minima\n# For convex, minimum at x=0\nplt.scatter(0, convex(0), color='black', label='Convex minimum')\n# For nonconvex, approximate local minima\nd = nonconvex(x)\nidx = (np.diff(np.sign(np.diff(d))) &gt; 0).nonzero()[0] + 1\nplt.scatter(x[idx], d[idx], color='red', s=20, label='Nonconvex local minima')\n\nplt.title('Convex vs Nonconvex Landscapes')\nplt.xlabel('x')\nplt.ylabel('f(x)')\nplt.legend()\nplt.tight_layout()\n\n\n\n\n\n\n\n\n\nnegative curvature (nonconvexity) — not merely ‘nonlinearity’ — is what makes an optimization problem hard to solve.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Convex optimization</span>"
+    ]
+  },
+  {
+    "objectID": "convex-set/convex-set.html",
+    "href": "convex-set/convex-set.html",
+    "title": "3  Convex set",
+    "section": "",
+    "text": "4 Some standard convex sets",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Convex set</span>"
+    ]
+  },
+  {
+    "objectID": "convex-set/convex-set.html#affine-sets",
+    "href": "convex-set/convex-set.html#affine-sets",
+    "title": "3  Convex set",
+    "section": "4.1 Affine sets",
+    "text": "4.1 Affine sets\nAn affine set is one that contains the entire line through any two of its points. Concretely, if \\(x_1,x_2\\) lie in an affine set \\(S\\), then for all $ hetaR$ the combination\n\\[\nx(\\theta) = \\theta x_1 + (1-\\theta) x_2\n\\]\nalso lies in \\(S\\). Special cases:\nFor \\(\\theta \\in[0,1]\\), \\(x(\\theta)\\) traces the line segment between \\(x_1\\) and \\(x_2\\).\nFor \\(\\theta&lt;0\\) or \\(\\theta&gt;1\\), it extends beyond the endpoints.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Define two points x1 and x2\nx1 = np.array([1, 2])\nx2 = np.array([4, 0])\n\n# Sample theta values\nthetas = np.array([-0.2, 0.0, 0.6, 1.0, 1.2])\npoints = [(theta * x1 + (1 - theta) * x2) for theta in thetas]\n\n# Generate full line between extended range of theta\ntheta_full = np.linspace(-0.4, 1.4, 100)\nline = np.array([theta * x1 + (1 - theta) * x2 for theta in theta_full])\n\n# Plot\nplt.figure(figsize=(6, 4))\nplt.plot(line[:, 0], line[:, 1], 'k-', label='Line through x1 and x2')\nplt.scatter(*x1, color='red', zorder=5)\nplt.text(x1[0]+0.1, x1[1]+0.1, 'x1', fontsize=9)\nplt.scatter(*x2, color='blue', zorder=5)\nplt.text(x2[0]+0.1, x2[1]-0.3, 'x2', fontsize=9)\n\n# Plot labeled theta points\nfor theta, pt in zip(thetas, points):\n    plt.scatter(pt[0], pt[1], s=40)\n    plt.text(pt[0]+0.1, pt[1]+0.1, f'θ = {theta}', fontsize=8)\n\nplt.axis('equal')\nplt.grid(True, linestyle='--', alpha=0.5)\nplt.title('Affine Set: Line through x1 and x2')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\nExample: The solution set of linear equation\n\n\\[\n{x| Ax=b}\n\\]\nis affine\n\n\n\n\n\n\nEvery affine set is a solution set of linear equations\n\n\n\nEvery affine set \\(S \\subseteq \\mathbb{R}^n\\) can be expressed as: \\[\nS = \\{x \\in \\mathbb{R}^n \\mid A x = b\\}\n\\] for some matrix \\(A \\in \\mathbb{R}^{m \\times n}\\) and vector \\(b \\in \\mathbb{R}^m\\).\n\n\n\n\n\n\n\n\nProof sketch\n\n\n\nLet \\(S\\) be an affine set. Pick any point \\(x_0 \\in S\\), and define: \\[\nV = \\{x - x_0 \\mid x \\in S\\}\n\\]\nThis set \\(V\\) is a vector subspace of \\(\\mathbb{R}^n\\), because affine sets are closed under affine combinations, and subtraction cancels the translation offset.\nSince \\(V\\) is a subspace, it can be written as the null space of some matrix \\(A \\in \\mathbb{R}^{m \\times n}\\): \\[\nV = \\{x \\in \\mathbb{R}^n \\mid A x = 0\\}\n\\]\nHence the original affine set is: \\[\nS = \\{x \\in \\mathbb{R}^n \\mid A(x - x_0) = 0\\}\n= \\{x \\in \\mathbb{R}^n \\mid A x = A x_0\\}\n\\]\nLet \\(b = A x_0\\). Then: \\[\nS = \\{x \\in \\mathbb{R}^n \\mid A x = b\\}\n\\]\nSo \\(S\\) is the solution set of a system of linear equations.\n✅ Q.E.D.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Convex set</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "4  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]
