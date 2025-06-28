@@ -12,8 +12,8 @@
 <generator>quarto-1.5.57</generator>
 <lastBuildDate>Thu, 26 Jun 2025 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>Type of sentences in task 1</title>
-  <dc:creator>Hung </dc:creator>
+  <title>Type of sentences</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
   <link>https://kimhungbui.github.io/english/sentences-type/</link>
   <description><![CDATA[ 
 
@@ -22,32 +22,205 @@
 
 <p>In <strong>IELTS Writing Task 1 (Academic)</strong>, using a <strong>range of sentence types</strong> is crucial for achieving a <strong>Band 7 or higher</strong> in <strong>Grammatical Range and Accuracy</strong>.</p>
 <p>Here’s a list of <strong>sentence types you should use</strong>, with <strong>examples</strong> tailored to data description:</p>
-<section id="simple-sentences" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Simple Sentences</h1>
-<p>Used to state clear facts. Simple Sentences have one subject and one finite verb. - Structure: Subject + verb + object - Example: - Internet access rose in all income groups.</p>
+<section id="kinds-of-sentences-according-to-structure" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Kinds of sentences according to structure</h1>
+<section id="simple-sentences" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="simple-sentences"><span class="header-section-number">1.1</span> Simple Sentences</h2>
+<p>Used to state clear facts. Simple Sentences have one subject and one finite verb.</p>
+<ul>
+<li>Structure: Subject + verb + object</li>
+<li>Example:
+<ul>
+<li>Internet access rose in all income groups.</li>
+</ul></li>
+</ul>
 </section>
-<section id="compound-sentences" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Compound Sentences</h1>
-<p>Connect two related ideas using coordinating conjunctions (and, but, or, so, yet). When two independent clauses are joined by <strong>for, and, nor, but, or, yet, so</strong> (FANBOYS), we <strong>must use a comma</strong> before the conjunction. Those clauses can be connected by a semi-colon (;) - Structure: Independent clause + conjunction + independent clause. - Example: - She told a folk tale, <strong>and</strong> we all listened to her. - He does not speak our language, yet see seems to understand what we say. - Low-income households saw growth, but they remained behind other groups. - We moved to Florida in 1978; we stayed only five years <strong>and</strong> then returned to Ohio.</p>
-<p>Compound sentences can be reduced by removing the subject and verb in the second clause if they are the same as in the first clause. We ask him now or (we) wait until tomorrow. He is sitting and (he is) listening to me.</p>
+<section id="compound-sentences" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="compound-sentences"><span class="header-section-number">1.2</span> Compound Sentences</h2>
+<p>Connect two related ideas using coordinating conjunctions (and, but, or, so, yet). When two independent clauses are joined by <strong>for, and, nor, but, or, yet, so</strong> (FANBOYS), we <strong>must use a comma</strong> before the conjunction. Those clauses can be connected by a semicolon (;)</p>
+<ul>
+<li>Structure: Independent clause + conjunction + independent clause.</li>
+<li>Example:
+<ul>
+<li>She told a folk tale, <strong>and</strong> we all listened to her.</li>
+<li>He does not speak our language, yet see seems to understand what we say.</li>
+<li>Low-income households saw growth, but they remained behind other groups.</li>
+<li>We moved to Florida in 1978; we stayed only five years <strong>and</strong> then returned to Ohio.</li>
+</ul></li>
+</ul>
+<p>Compound sentences can be reduced by removing the subject and verb in the second clause if they are the same as in the first clause.</p>
+<ul>
+<li>We ask him now or (we) wait until tomorrow.</li>
+<li>He is sitting and (he is) listening to me.</li>
+</ul>
 </section>
-<section id="complex-sentences" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Complex Sentences</h1>
-<p>Used to show relationships such as cause, contrast, or time. - Structure: Independent clause + dependent clause (or vice versa) - Examples: - Although the figures increased, the gap between groups remained wide. - As time progressed, internet access became more common.</p>
+<section id="complex-sentences" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="complex-sentences"><span class="header-section-number">1.3</span> Complex Sentences</h2>
+<p>Used to show relationships such as cause, contrast, or time. A complex sentence is made up of: - One independent clause (main clause) - One or more dependent clauses (subordinate clauses)</p>
+<p>The main clause can stand alone as a complete sentence.</p>
+<p>The subordinate clause cannot stand alone-it depends on the main clause to complete its meaning.</p>
+<p>Structure:</p>
+<p>[Main Clause] + [Subordinate Clause]</p>
+<p>OR</p>
+<p>[Subordinate Clause], [Main Clause]</p>
+<ul>
+<li>Examples:
+<ul>
+<li>Because she was tired, she went to bed early.
+<ul>
+<li>“she went to bed early” = main clause</li>
+<li>“Because she was tired” = subordinate clause (reason)</li>
+</ul></li>
+<li>I stayed at home <strong>although</strong> it was sunny.
+<ul>
+<li>“I stay at home” = main clause</li>
+<li>“although it was sunny” = subordinate clause (contrast)</li>
+</ul></li>
+<li>When the movie ended, we left the cinema
+<ul>
+<li>“we left the cinema” = main clause</li>
+<li>“When the movie ended” = subordinate clause (time)</li>
+</ul></li>
+<li>Although the figures increased, the gap between groups remained wide.</li>
+<li>As time progressed, internet access became more common.</li>
+</ul></li>
+</ul>
+<section id="type-of-subordinate-clauses" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="type-of-subordinate-clauses"><span class="header-section-number">1.3.1</span> Type of Subordinate Clauses</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Function</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adverbial</td>
+<td>Shows time, reason, condition…</td>
+<td><em>If it rains</em>, we’ll cancel the picnic.</td>
+</tr>
+<tr class="even">
+<td>Adjective</td>
+<td>Modifies a noun</td>
+<td>The book <em>that you gave me</em> is interesting.</td>
+</tr>
+<tr class="odd">
+<td>Noun</td>
+<td>Acts as a subject/object</td>
+<td><em>What he said</em> surprised everyone.</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="passive-voice" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Passive Voice</h1>
-<p>Useful for focusing on what happened rather than who did it (common in process/task descriptions). - Example: - A steady increase was observed in all three income categories. # Comparative Sentences Used to highlight differences or similarities. - Example: - The high-income group had nearly twice the access as the middle-income group in 2005. - Internet usage in low-income households was much lower than in the other two groups. # Superlative Sentences Used to emphasize the highest or lowest point in the data. - Example: - The high-income group had the highest internet access throughout the period. - The smallest increase was seen in the middle-income group between 2015 and 2020. # Trend Description Sentences Used to describe change over time. - Examples: - The figure rose steadily from 35% to 82%. - There was a sharp increase in internet access between 2010 and 2015.</p>
+<section id="common-subordinating-conjunctions" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="common-subordinating-conjunctions"><span class="header-section-number">1.3.2</span> Common Subordinating Conjunctions</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Time</td>
+<td>when, while, after, before, until</td>
+</tr>
+<tr class="even">
+<td>Reason</td>
+<td>because, since, as</td>
+</tr>
+<tr class="odd">
+<td>Condition</td>
+<td>if, unless, provided that</td>
+</tr>
+<tr class="even">
+<td>Contrast</td>
+<td>although, even though, whereas</td>
+</tr>
+<tr class="odd">
+<td>Purpose</td>
+<td>so that, in order that</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Using comma
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Use a <strong>comma</strong> if the subordinate clause comes first.
+<ul>
+<li><em>Although it was late</em>, they continued working</li>
+</ul></li>
+<li>No comma if the main clause comes first:
+<ul>
+<li>They continued working _although it was late</li>
+</ul></li>
+</ul>
+</div>
+</div>
 </section>
-<section id="quantifying-and-grouping-sentences" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Quantifying and Grouping Sentences</h1>
-<p>Useful when describing portions of categories. - Examples: - Over half of the middle-income households had internet access by 2015. - Only a small fraction of low-income households were online in 2005.</p>
+</section>
+<section id="complex--compound-sentences" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="complex--compound-sentences"><span class="header-section-number">1.4</span> Complex- Compound Sentences</h2>
+</section>
+</section>
+<section id="passive-voice" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Passive Voice</h1>
+<p>Useful for focusing on what happened rather than who did it (common in process/task descriptions).</p>
+<ul>
+<li>Example:
+<ul>
+<li>A steady increase was observed in all three income categories. # Comparative Sentences Used to highlight differences or similarities.</li>
+</ul></li>
+<li>Example:
+<ul>
+<li>The high-income group had nearly twice the access as the middle-income group in 2005.</li>
+<li>Internet usage in low-income households was much lower than in the other two groups. # Superlative Sentences Used to emphasize the highest or lowest point in the data.</li>
+</ul></li>
+<li>Example:
+<ul>
+<li>The high-income group had the highest internet access throughout the period.</li>
+<li>The smallest increase was seen in the middle-income group between 2015 and 2020. # Trend Description Sentences Used to describe change over time.</li>
+</ul></li>
+<li>Examples:
+<ul>
+<li>The figure rose steadily from 35% to 82%.</li>
+<li>There was a sharp increase in internet access between 2010 and 2015.</li>
+</ul></li>
+</ul>
+</section>
+<section id="quantifying-and-grouping-sentences" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Quantifying and Grouping Sentences</h1>
+<p>Useful when describing portions of categories.</p>
+<ul>
+<li>Examples:
+<ul>
+<li>Over half of the middle-income households had internet access by 2015.</li>
+<li>Only a small fraction of low-income households were online in 2005.</li>
+</ul></li>
+</ul>
 
 
 </section>
 
  ]]></description>
   <category>english</category>
+  <category>grammar</category>
   <guid>https://kimhungbui.github.io/english/sentences-type/</guid>
   <pubDate>Thu, 26 Jun 2025 00:00:00 GMT</pubDate>
 </item>
