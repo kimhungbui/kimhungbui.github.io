@@ -1,28 +1,5 @@
----
-title: "Statistics"
-listing:
-  contents: "."
-  sort: "date asc"
-  type: table
----
+# Preface {.unnumbered}
 
+This is a Quarto book.
 
-This book introduces key ideas in descriptive and inferential statistics.
-
-## Curated Lessons
-
-- [Descriptive Statistics](descriptive.qmd)
-- [Probability Theory](probability.qmd)
-- [Distributions](distributions.qmd)
-- [Bayesian Thinking](bayesian.qmd)
-
-
-## Latest Lessons
-
-Below is an auto-updated list of all lessons in this chapter:
-
-````{.markdown}
-```{listing}
-contents: .
-type: table
-sort: date asc
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
