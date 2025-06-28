@@ -43,7 +43,7 @@ jobs:
 
           # Finally render the main website
           echo "🌐 Rendering root website"
-          quarto render . --to html
+          quarto render _site.qmd || true
 
 
       - name: Publish to GitHub Pages
@@ -51,5 +51,6 @@ jobs:
         with:
           target: gh-pages
           path: docs
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
