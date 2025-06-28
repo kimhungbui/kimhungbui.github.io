@@ -42,7 +42,8 @@ jobs:
           done
 
           # Finally render the main website
-          quarto render .
+          echo "🌐 Rendering root website"
+          quarto render . --to html
 
 
       - name: Publish to GitHub Pages

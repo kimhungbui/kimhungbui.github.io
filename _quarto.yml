@@ -6,20 +6,39 @@ website:
   title: "Kim Hung Bui"
   site-url: https://kimhungbui.github.io
   description: "My Personal Website"
+
   navbar:
     left:
       - href: index.md
         text: Home
       - href: cv.md
         text: Resume
-      - href: mathematic.md
-        text: Mathematics
-      - href: artificial-intelligent.md
-        text: AI
-      - href: programming.md
-        text: Programming
-      - href: english.md
-        text: English
+      - text: Mathematics
+        menu:
+          - text: Convex Optimization
+            href: math/convex-optimization/
+          - text: Probability
+            href: math/probability/
+          - text: Statistics
+            href: math/statistics/
+      - text: AI
+        menu:
+          - text: Machine Learning
+            href: ai/machine-learning/
+          - text: Deep Learning
+            href: ai/deep-learning/
+      - text: Programming
+        menu:
+          - text: Python
+            href: programming/python/
+          - text: JavaScript
+            href: programming/javascript/
+      - text: English
+        menu:
+          - text: Speaking
+            href: english/speaking/
+          - text: Writing
+            href: english/writing/
       - href: posts.md
         text: Posts
 

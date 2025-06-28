@@ -1,7 +1,7 @@
 project:
   type: book
   output-dir: ../../docs/math/convex-optimization
-
+  
 book:
   title: "Convex Optimization"
   author: "Kim Hung Bui"
@@ -17,12 +17,11 @@ bibliography: references.bib
 
 format:
   html:
-    toc: true
-    toc-location: left
-
     theme:
       - cosmo
       - brand
+  pdf:
+    documentclass: scrreprt
 
 
 
