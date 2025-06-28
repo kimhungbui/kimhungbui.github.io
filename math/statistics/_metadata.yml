@@ -1,16 +1,12 @@
 format:
   html:
-    theme: flatly
     toc: true
-    toc-location: left     # ← LEFT sidebar
+    toc-location: right
     number-sections: true
     number-depth: 3
     code-fold: true
+    theme: flatly
     highlight-style: a11y
-    sidebar:                # Enable structured navigation
-      style: "floating"     # or "docked", "overlay"
-      collapse-level: 2     # collapse lessons under chapters
-      pinned: true          # always visible
 
 execute:
   echo: true
