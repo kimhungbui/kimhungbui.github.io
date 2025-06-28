@@ -9,7 +9,8 @@ book:
   
   chapters:
     - index.qmd
-    - intro.qmd
+    - introduction/intro.qmd
+    - convex-set/convex-set.qmd
     - summary.qmd
     - references.qmd
 

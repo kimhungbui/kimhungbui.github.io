@@ -1,15 +1,8 @@
+---
+title: "Convex Optimization"
+---
+
 # Preface {.unnumbered}
 
+This book introduces key ideas in convex analysis and optimization.
 
-This book introduces key ideas in descriptive and inferential statistics.
-
-## Curated Lessons
-
-- [Introduction](introduction/intro.qmd)
-- [Convex Set](convex-set/convex-set.qmd)
-
-
-
-## Latest Lessons
-
-Below is an auto-updated list of all lessons in this chapter:
