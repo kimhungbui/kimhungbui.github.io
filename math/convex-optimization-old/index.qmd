@@ -1,4 +1,6 @@
-# Preface {.unnumbered}
+---
+title: "Convex Optimization"
+---
 
 
 This book introduces key ideas in descriptive and inferential statistics.
@@ -13,3 +15,4 @@ This book introduces key ideas in descriptive and inferential statistics.
 ## Latest Lessons
 
 Below is an auto-updated list of all lessons in this chapter:
+

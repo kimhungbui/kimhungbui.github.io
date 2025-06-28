@@ -1,0 +1,26 @@
+project:
+  type: book
+
+book:
+  title: "Convex Optimization"
+  author: "Kim Hung Bui"
+  date: "6/28/2025"
+  
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+
+
