@@ -32,6 +32,11 @@ jobs:
       
       - name: Render all books
         run: |
+
+          # render the main website
+          echo "🌐 Rendering root website"
+          quarto render . 
+          
           # Automatically find all book projects and render them
           find . -name "_quarto.yml" | while read qfile; do
             dir=$(dirname "$qfile")
@@ -41,9 +46,7 @@ jobs:
             fi
           done
 
-          # Finally render the main website
-          echo "🌐 Rendering root website"
-          quarto render _site.qmd || true
+
 
 
       - name: Publish to GitHub Pages
