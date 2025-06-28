@@ -1,6 +1,6 @@
 project:
   type: book
-
+  output-dir: ../../docs/math/convex-optimization
 book:
   title: "Convex Optimization"
   author: "Kim Hung Bui"
