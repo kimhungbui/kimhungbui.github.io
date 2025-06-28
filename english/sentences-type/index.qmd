@@ -1,15 +1,16 @@
 ---
-title: Type of sentences in task 1
+title: Type of sentences
 lightbox: false
-description: Your post description
+description: Revise sentences type in English
 author:
-  - name: Hung
+  - name: Kim Hung Bui
     url: https://kimhungbui.github.io
     affiliation: Barron's Writing for IELTS
     affiliation-url: 
 date: 2025-06-26
 categories:
   - english
+  - grammar
 format:
   html:
     toc: true
@@ -24,16 +25,19 @@ In **IELTS Writing Task 1 (Academic)**, using a **range of sentence types** is c
 
 Here's a list of **sentence types you should use**, with **examples** tailored to data description:
 
-# Simple Sentences
+# Kinds of sentences according to structure
+## Simple Sentences
 Used to state clear facts. 
 Simple Sentences have one subject and one finite verb.
+
 - Structure: Subject + verb + object
 - Example:
 	- Internet access rose in all income groups.
 
-# Compound Sentences
+## Compound Sentences
 Connect two related ideas using coordinating conjunctions (and, but, or, so, yet).
-When two independent clauses are joined by __for, and, nor, but, or, yet, so__ (FANBOYS), we __must use a comma__ before the conjunction. Those clauses can be connected by a semi-colon (;)
+When two independent clauses are joined by __for, and, nor, but, or, yet, so__ (FANBOYS), we __must use a comma__ before the conjunction. Those clauses can be connected by a semicolon (;)
+
 - Structure: Independent clause + conjunction + independent clause.
 - Example:
 	- She told a folk tale, __and__ we all listened to her.
@@ -42,38 +46,94 @@ When two independent clauses are joined by __for, and, nor, but, or, yet, so__ (
 	- We moved to Florida in 1978; we stayed only five years __and__ then returned to Ohio.
 
 Compound sentences can be reduced by removing the subject and verb in the second clause if they are the same as in the first clause.
-	 We ask him now or (we) wait until tomorrow.
-	 He is sitting and (he is) listening to me.
 
-# Complex Sentences
+- We ask him now or (we) wait until tomorrow.
+- He is sitting and (he is) listening to me.
+
+## Complex Sentences
 Used to show relationships such as cause, contrast, or time.
-- Structure: Independent clause + dependent clause (or vice versa)
+A complex sentence is made up of:
+- One independent clause (main clause)
+- One or more dependent clauses (subordinate clauses)
+
+The main clause can stand alone as a complete sentence.
+
+The subordinate clause cannot stand alone-it depends on the main clause to complete its meaning.
+
+Structure:
+
+[Main Clause] + [Subordinate Clause]
+
+OR
+
+[Subordinate Clause], [Main Clause]
+
 - Examples:
+	- Because she was tired, she went to bed early.
+		- "she went to bed early" = main clause
+		- "Because she was tired" = subordinate clause (reason)
+	- I stayed at home __although__ it was sunny.
+		- "I stay at home" = main clause
+		- "although it was sunny" = subordinate clause (contrast)
+	- When the movie ended, we left the cinema
+		- "we left the cinema" = main clause
+		- "When the movie ended" = subordinate clause (time)
 	- Although the figures increased, the gap between groups remained wide.
 	- As time progressed, internet access became more common.
 
+### Type of Subordinate Clauses
+|**Type**|**Function**|**Example**|
+|---|---|---|
+|Adverbial|Shows time, reason, condition…|_If it rains_, we’ll cancel the picnic.|
+|Adjective|Modifies a noun|The book _that you gave me_ is interesting.|
+|Noun|Acts as a subject/object|_What he said_ surprised everyone.|
+### Common Subordinating Conjunctions
+| **Type**  | **Examples**                      |
+| --------- | --------------------------------- |
+| Time      | when, while, after, before, until |
+| Reason    | because, since, as                |
+| Condition | if, unless, provided that         |
+| Contrast  | although, even though, whereas    |
+| Purpose   | so that, in order that            |
+
+::: {.callout-tip} 
+## Using comma
+ - Use a __comma__ if the subordinate clause comes first.
+ 	- _Although it was late_, they continued working
+- No comma if the main clause comes first:
+	- They continued working _although it was late
+:::
+
+
+## Complex- Compound Sentences
+
 # Passive Voice
 Useful for focusing on what happened rather than who did it (common in process/task descriptions).
+
 - Example:
 	- A steady increase was observed in all three income categories.
 # Comparative Sentences
 Used to highlight differences or similarities.
+
 - Example:
 	- The high-income group had nearly twice the access as the middle-income group in 2005.
 	- Internet usage in low-income households was much lower than in the other two groups.
 # Superlative Sentences
 Used to emphasize the highest or lowest point in the data.
+
 - Example:
 	- The high-income group had the highest internet access throughout the period.
 	- The smallest increase was seen in the middle-income group between 2015 and 2020.
 # Trend Description Sentences
 Used to describe change over time.
+
 - Examples:
 	- The figure rose steadily from 35% to 82%.
 	- There was a sharp increase in internet access between 2010 and 2015.
 
 # Quantifying and Grouping Sentences
 Useful when describing portions of categories.
+
 - Examples:
 	- Over half of the middle-income households had internet access by 2015.
 	- Only a small fraction of low-income households were online in 2005.

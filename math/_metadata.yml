@@ -1,0 +1,15 @@
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    theme: flatly
+    highlight-style: a11y
+
+execute:
+  echo: true
+  warning: false
+  error: false
+  results: 'interactive'
