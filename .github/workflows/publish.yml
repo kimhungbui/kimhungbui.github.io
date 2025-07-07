@@ -30,13 +30,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install nbformat jupyter plotly pandas matplotlib scikit-learn
       
-      - name: Render all books
+      - name: Render website and all books
         run: |
 
-          # render the main website
+          # render the main website first, because books will replaced
           echo "🌐 Rendering root website"
           quarto render . 
-          
+
           # Automatically find all book projects and render them
           find . -name "_quarto.yml" | while read qfile; do
             dir=$(dirname "$qfile")
