@@ -1,0 +1,168 @@
+---
+title: Building a PKM Website with Quarto and Multiple Books and public by Github Actions
+image: Statistical-Inference.png
+lightbox: false
+description: Personal Knowledge Management and Sharing
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Maybe your workplace?
+    affiliation-url: https://your.workplace.website
+date: 2025-02-28
+categories:
+  - Tutorial
+draft: false
+---
+
+If you're building a Personal Knowledge Management (PKM) system using Quarto, and you want to combine a central website with multiple structured books (like "Convex Optimization", "Statistics", etc.), this guide shows you the best practices to:
+
+Organize your folder structure
+
+Set up separate Quarto projects
+
+Render efficiently without duplication
+
+Publish to GitHub Pages using GitHub Actions
+
+You can use my PKM for easier to begin: 
+
+# PKM Structure Overview
+
+My knowledge system follow this hierarchy:
+
+
+Subject → Book → Chapter → Section
+
+For example:
+
+- Subject: Mathematics
+    - Book: Convex Optimization
+        - Chapter: Convex Sets
+            - Sections: Definitions, Examples, Properties
+
+
+# Create the PKM Project and Books
+
+## Create the root website
+
+```{bash}
+quarto create project website
+```
+
+write <yourname>.github.io for dir
+
+
+
+```{bash}
+cd <yourname>.github.io
+```
+
+It generates:
+
+```
+<yourname>.github.io/
+├── _quarto.yml
+├── index.qmd
+```
+
+## Create subject folders
+
+```{bash}
+mkdir -p math
+cd math
+quarto create project book
+```
+
+This generates:
+
+```
+math/convex-optimization/
+├── _quarto.yml
+├── index.qmd
+├── intro.qmd
+```
+
+## Define Book Structure
+
+Edit `math/convex-optimization/_quarto.yml`:
+
+```yaml
+project:
+  type: book
+  output-dir: ../../docs/math/convex-optimization
+
+book:
+  title: "Convex Optimization"
+  author: "<your name>"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - convex-set.qmd
+    - convex-func.qmd
+
+format:
+  html:
+    theme: cosmo
+```
+
+Each `.qmd` file is a **chapter**. Inside each chapter, use `##` and `###` for **sections**.
+
+## Connect Books from the Website
+
+Edit `<yourname>.github.io/_quarto.yml`:
+
+```yaml
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "<your name>'s PKM"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Mathematics
+        menu:
+          - text: Convex Optimization
+            href: math/convex-optimization/
+          - text: Statistics
+            href: math/statistics/
+      - text: English
+        menu:
+          - text: Speaking
+            href: english/speaking/
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+```
+
+## Preview and Render
+
+To preview a single book:
+
+```bash
+cd math/convex-optimization
+quarto preview
+```
+
+To preview the full site:
+
+```bash
+quarto preview
+```
+
+It will view book as website.
+
+If you want to preview full site with books, we will render site before, and after that, render book. So old file of website-books will be replaced by book file.
+
+## (Optional) Github-actions for Publishing
+
+---
+
+If you found this useful, feel free to fork or adapt for your own system.  
+Happy building your knowledge system!
