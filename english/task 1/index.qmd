@@ -1,0 +1,140 @@
+---
+title: task 1 - paragraphs
+lightbox: false
+description: Exercise to write paragraphs in task 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-02
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+I wrote:
+
+	The number of new residential constructions in the south and the west dropped steadily from 2006 to 2012. It declined considerably from 900000 and about 450 000 in 2006 to 450000 and 200000 in 2008, respectively with the south and the west. The period between 2008 and 2010 experienced a slight decrease to 300000 and 150 000 of new house built in the south and the west, before a mild climb to about 310000 and 160 000 in 2012.
+
+### Coherence & Cohesion (Band 5.5–6)
+
+❌ Confusing sentence structure: The second sentence is overly long and hard to follow.
+
+❌ Linking devices are basic or missing: Use clearer transitions like “This figure fell further in the following years…” or “However, a minor rise was seen in 2012…”
+
+✅ Attempts paragraphing and sequencing — but needs clearer flow.
+
+### Lexical Resource (Band 6)
+
+✅ Good use of terms like “steadily,” “considerably,” “slight decrease,” “mild climb.”
+
+❌ Repetition of words like “dropped” and “decreased” — try synonyms: declined, fell, dipped, reduced, diminished.
+
+❌ “Of new house built” → should be “in the number of new houses built.”
+
+### Grammatical Range and Accuracy (Band 5–5.5)
+
+❌ “450 000 and about 450 000 in 2006 to 450000 and 200000 in 2008, respectively with the south and the west” → very awkward and grammatically confusing.
+
+❌ Misuse of “respectively with” → it should be: “…450,000 and 200,000 in 2008, for the south and the west, respectively.”
+
+❌ “300000 and 150 000 of new house built” → ❌ incorrect structure. Should be:
+
+✅ “300,000 and 150,000 new houses built”
+
+# Rewritten Version (Band 7.5-8 model)
+
+The number of new residential constructions in the South and the West dropped steadily between 2006 and 2012. In 2006, approximately 900,000 new houses were built in the South, while the West recorded about 450,000. These figures fell significantly by 2008, reaching 450,000 and 200,000 respectively. Between 2008 and 2010, the decline continued, though more gradually, with the numbers dropping to 300,000 in the South and 150,000 in the West. However, by 2012, there was a slight increase, with around 310,00 homes constructed in the South and 160,000 in the West.
+
+# Higher band version
+
+Between 2006 and 2012, the number of new residential constructions in both the South and the West declined overall, though with minor fluctuations. In 2006, the South recorded approximately 900,000 new homes, while the West saw about half that figure at 450,000. By 2008, these numbers had dropped significantly to 450,000 in the South and 200,000 in the West. The downward trend continued more gradually over the next two years, reaching 300,000 and 150,00 respectively by 2010. However, 2012 saw a slight recovery, with new constructions rising modestly to around 310,000 in the South and 160,000 in the West.
+
+***
+The number of visitors to Dover increases overall throughout the year. In Spring, Dover recorded approximately 5,000 tourists. The Summer experiences a sharp climb to two times the figure of the before season. The upward trend continues more gradually over the next two seasons, reaching 15,000 in Autumn before having a peak at 25,000 in Winter.
+
+### Coherence & Cohesion (Band 5.5–6)
+
+✅ You attempt a logical sequence: Spring → Summer → Autumn → Winter.
+
+❌ However, some sentence transitions are unnatural or slightly unclear.
+
+❌ Use of linking phrases like “before having a peak” is awkward and unidiomatic.
+
+### Lexical Resource (Band 6)
+
+✅ Good attempt with words like “sharp climb,” “upward trend”
+
+❌ “two times the figure of the before season” → awkward and incorrect. Better:
+
+✅ “twice the number recorded in the previous season.”
+
+❌ “experiences a sharp climb” → Summer can't “experience” something.
+
+✅ Use: “There was a sharp rise in summer…” or “The number increased sharply in summer.”
+
+### Grammatical Range & Accuracy (Band 5–5.5)
+
+❌ “The Summer experiences” → incorrect article usage. Should be:
+
+✅ “In summer, the number rose sharply…”
+
+❌ “before having a peak” → ungrammatical. Try:
+
+✅ “before peaking at 25,000 in winter.”
+
+✅ You attempted complex structures, but several were awkward or incorrect.
+
+Sample:
+
+The number of visitors to Dover increased overall throughout the year. In Spring, the town welcomed approximately 5,000 tourists. This figure doubled in summer, rising sharply to 10,000. The upward trend continued at a more moderate pace, reaching 15,000 in autumn, before peaking at 25,000 in winter.
+
+***
+Engineering was the dominant choice for male students, comprising 45% of their total enrollment, more than twice the proportion of females in the same field (20%). In contrast, only 10% of men choose Humanities, while this subject attracted 30% of women, three times higher. Similarly, Education accounted for 35% of female enrollment, compared to just 20% of men.
+
+🔍 Detailed Analysis
+
+🟦 1. Task Achievement (Band 7–8)
+
+✅ You cover key features and specific numbers.
+
+✅ You make comparisons between male and female enrollment.
+
+❌ Minor inconsistency in the final sentence — it's Education that had 35% of women and 20% of men, which you got right, but the word “just” is too informal here.
+
+🟨 2. Coherence & Cohesion (Band 7)
+
+✅ Clear overall structure and logical flow: from Engineering → Humanities → Education.
+
+❌ “three times higher” is vague. It's better to say: “three times the proportion” or “threefold that of men.”
+
+❌ Avoid “similarly” unless the comparison is parallel — Education and Humanities are different in structure.
+
+🟥 3. Lexical Resource (Band 7)
+
+✅ Good use of: comprising, proportion, attracted, accounted for.
+
+❌ Could vary with more formal phrases like:
+
+“enrolled in” instead of “choose”
+
+“constituted” instead of “accounted for”
+
+🟩 4. Grammatical Range & Accuracy (Band 7)
+
+✅ Mostly correct grammar and comparatives.
+
+❌ “Choose” → should be past tense: chose (as you're describing a chart, not a general truth)
+
+❌ Minor article omission: “more than twice the proportion...”
+
+Rewrite:
+Engineering was the most popular subject among male students, accounting for 45% of their total enrollment, which was more than twice the proportion of females in the same field (20%). In contrast, only 10% of men chose Humanities, compared to 30% of women - three times the male figure. Likewise, Education attracted 35% of female students, while just 20% of male students enrolled in this subject.

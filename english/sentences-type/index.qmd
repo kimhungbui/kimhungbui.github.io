@@ -137,3 +137,10 @@ Useful when describing portions of categories.
 - Examples:
 	- Over half of the middle-income households had internet access by 2015.
 	- Only a small fraction of low-income households were online in 2005.
+
+# Exercise:
+
+1. Her father would not consent to her living a alone in a big city.
+   The phrase "her living a alone in a big city" is a gerund phrase acting as the __object__ of the verb "consent".
+   It's __not__ a separate clause with a subject and verb.
+2. 

@@ -1,0 +1,74 @@
+---
+title: gracious
+lightbox: false
+description: he word “gracious” is elegant and expressive, often used to describe politeness, kindness, and dignity
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-02
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Part of Speech:
+Adjective
+
+# Meaning
+## Kind, polite, and generous - especially towards others
+- Often used to describe someone who is __thoughtful and considerate__, especially in a dignified or formal way.
+- Example:
+	- She was __gracious__ in both victory and defeat.
+	- The host was extremely __gracious__, making sure every guest felt welcome.
+
+## Showing elegance or good taste
+- Used to describe actions, gestures, or language that is __refined and tasteful__
+- Example:
+	- He gave a __gracious__ acceptance speech after receiving the award.
+
+## (Exclamatory) Expressing surprise or mild shock
+(mainly British English, informal usage)
+Example:
+	Good __gracious__, look at the time
+
+# Synonyms
+- Courteous
+- Polite
+- Elegant
+- Kind-hearted
+- Considerate
+- Well-mannered
+- Civil
+
+# IELTS Sample Sentences
+
+## Speaking Part 1:
+My grandmother is the most __gracious__ person I know - she always treats everyone with kindness, no matter who they are.
+
+## Speaking Part 2:
+The man I met during the trip was incredibly __gracious__. Even though I was a stranger, he offered to help me find my hotel and even gave me a bottle of water.
+
+## Writing Task 2:
+In many cultures, being __gracious__ and respectful is seen as essential social behavior, especially when interacting with elders or guests.
+
+# Common Collocations
+
+| Phrase              | Example                                           |
+| ------------------- | ------------------------------------------------- |
+| gracious host       | They were gracious hosts and made us feel at home |
+| gracious acceptance | She made a gracious acceptance speech.            |
+| gracious behavior   | His gracious behavior left a lasting impression.  |
+| gracious declined   | He graciously decline the invitation.             |
+
+
+
+The number of new residential constructions in the south and the west dropped steadily from 2006 to 2012. It declined considerably from 900000 and about 450 000 in 2006 to 450000 and 200000 in 2008, respectively with the south and the west. The period between 2008 and 2010 experienced a slight decrease to 300000 and 150 000 of new house built in the south and the west, before a mild climb to about 310000 and 160 000 in 2012.

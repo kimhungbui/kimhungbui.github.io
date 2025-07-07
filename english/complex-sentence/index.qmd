@@ -1,0 +1,75 @@
+---
+title: Complex Sentence
+lightbox: false
+description: Practice complex sentence
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-04
+categories:
+  - english
+  - grammar
+  - writing
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Independent Clause & Subordinate Clause
+
+A __clause__ í a word group that contains a subject and a verb. If that clause can stand alone-in other words, if that clause is the same as a sentence-we call it an ___independent clause___.
+
+__independent clause__: She __held__ the scale
+
+__subordinate clause__: as she __held__ the scale
+
+::: {.callout-note}
+When we say that a clause is _subordinate_, we are not referring to its importance, but simply to its grammatical dependence on the independent clause.
+:::
+
+A complex sentence is a _sentence that contains at least one subordinate clause_.
+
+Subordinate clauses can be divided into three categories based on their function:
+- adjective clauses
+- adverb clauses
+- noun clauses
+
+Example:
+- Independent clause/sentence: _They_ __got__ into a station wagon. (has a subject and verb and can stand alone).
+- Subordinate clause/adverb: As _they_ __got__ into a station wagon. (has a subject and verb but cannot stand alone).
+- subordinate clause/adjective: _Which_ __was__ a station wagon. (has a subject and verb but cannot stand alone)
+- subordinate clause/noun: That _they_ __got__ into a station wagon.
+
+Example:
+1. A single sword is held aloft. (independent)
+2. After you left me. (subordinate)
+3. Because my uncle sat at the stone table. (subordinate)
+4. That a serpentine hair bangs over one ear. (subordinate)
+5. Which is a hidden pleasure. (subordinate)
+6. Who knew the rules and punishments. (subordinate)
+7. Why she chose to wear the hex on her forehead. (subordinate)
+8. You lose yourself in the cave of endless breath. (independent)
+
+# Subordinating Conjunctions
+
+An __adverbial subordinate clause__ begins with a __subordinating conjunction__.
+That list:
+- after, as if, as long as, as soon as, although, as, as if, because, before, even if, if, since, so that, though, till, unless, when, whenever, wherever, while.
+
+Let's take a complete sentence, add a word to that complete sentence, and get less than a complete sentence.
+
+- start with a complete sentence: _the sunset behind Lake Tahoe is spectacular_
+- add a word: _although_
+- get less than a complete sentence: _although the sunset behind lake Tahoe is spectacular_
+
+This is how adverb clauses are created.
+
+- a subordinating conjunction + a sentence = an adverb clause
+- _although_ + _the sunset behind Lake Tahoe is spectacular_ = an adverb clause

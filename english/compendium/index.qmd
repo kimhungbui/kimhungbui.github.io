@@ -1,0 +1,66 @@
+---
+title: compendium
+lightbox: false
+description: The word “compendium” is a formal and sophisticated term
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-02
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Part of Speech:
+Noun
+
+# Meaning
+
+A concise collection of detailed information about a particular subject
+- Often in book, report, or list form
+- Usually covers essential facts, summaries, or highlights
+
+## Synonyms
+- Summary
+- Digest
+- Overview
+- Compilation
+- Handbook
+- Guide
+
+# Examples in Sentences
+## General use:
+
+The museum published a __compendium__ of artifacts from ancient Egypt.
+
+This book is a useful __compendium__ of medical knowledge for new students.
+
+## Formal / Academic Use:
+
+The government released a __compendium__ of economic statistics for the past decade.
+
+His thesis began with a __compendium__ of theories related to social inequality.
+
+## Common collocations:
+
+
+| Collocation                    | Example                                                           |
+| ------------------------------ | ----------------------------------------------------------------- |
+| a compendium of facts          | The report offers a compendium of facts about childhood nutrition |
+| a valuable compendium          | This guide is a valuable compendium for language learners.        |
+| publish / compile a compendium | The agency compiled a compendium of safety regulations.           |
+
+
+## In Writing task 2
+While many students rely on online sources, a well-organized __compendium__ of academic materials can offer more structured and reliable content for research.
+
+The report functions as a __compendium__ of global climate change data, providing policymakers with a clear overview of the current challenges.
