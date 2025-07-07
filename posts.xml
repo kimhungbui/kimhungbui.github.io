@@ -10,7 +10,489 @@
 <atom:link href="https://kimhungbui.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 26 Feb 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 28 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Building a PKM Website with Quarto and Multiple Books and public by Github Actions</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/posts/pkm-quarto-books/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>If you’re building a Personal Knowledge Management (PKM) system using Quarto, and you want to combine a central website with multiple structured books (like “Convex Optimization”, “Statistics”, etc.), this guide shows you the best practices to:</p>
+<p>Organize your folder structure</p>
+<p>Set up separate Quarto projects</p>
+<p>Render efficiently without duplication</p>
+<p>Publish to GitHub Pages using GitHub Actions</p>
+<p>You can use my PKM for easier to begin:</p>
+<section id="pkm-structure-overview" class="level1">
+<h1>PKM Structure Overview</h1>
+<p>My knowledge system follow this hierarchy:</p>
+<p>Subject → Book → Chapter → Section</p>
+<p>For example:</p>
+<ul>
+<li>Subject: Mathematics
+<ul>
+<li>Book: Convex Optimization
+<ul>
+<li>Chapter: Convex Sets
+<ul>
+<li>Sections: Definitions, Examples, Properties</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="create-the-pkm-project-and-books" class="level1">
+<h1>Create the PKM Project and Books</h1>
+<section id="create-the-root-website" class="level2">
+<h2 class="anchored" data-anchor-id="create-the-root-website">Create the root website</h2>
+<pre class="{bash}"><code>quarto create project website</code></pre>
+<p>write <yourname>.github.io for dir</yourname></p>
+<pre class="{bash}"><code>cd &lt;yourname&gt;.github.io</code></pre>
+<p>It generates:</p>
+<pre><code>&lt;yourname&gt;.github.io/
+├── _quarto.yml
+├── index.qmd</code></pre>
+</section>
+<section id="create-subject-folders" class="level2">
+<h2 class="anchored" data-anchor-id="create-subject-folders">Create subject folders</h2>
+<pre class="{bash}"><code>mkdir -p math
+cd math
+quarto create project book</code></pre>
+<p>This generates:</p>
+<pre><code>math/convex-optimization/
+├── _quarto.yml
+├── index.qmd
+├── intro.qmd</code></pre>
+</section>
+<section id="define-book-structure" class="level2">
+<h2 class="anchored" data-anchor-id="define-book-structure">Define Book Structure</h2>
+<p>Edit <code>math/convex-optimization/_quarto.yml</code>:</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">project</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb6-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">type</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> book</span></span>
+<span id="cb6-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">output-dir</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> ../../docs/math/convex-optimization</span></span>
+<span id="cb6-4"></span>
+<span id="cb6-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">book</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb6-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">title</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Convex Optimization"</span></span>
+<span id="cb6-7"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">author</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;your name&gt;"</span></span>
+<span id="cb6-8"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">chapters</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb6-9"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> index.qmd</span></span>
+<span id="cb6-10"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> intro.qmd</span></span>
+<span id="cb6-11"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> convex-set.qmd</span></span>
+<span id="cb6-12"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> convex-func.qmd</span></span>
+<span id="cb6-13"></span>
+<span id="cb6-14"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb6-15"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb6-16"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> cosmo</span></span></code></pre></div>
+<p>Each <code>.qmd</code> file is a <strong>chapter</strong>. Inside each chapter, use <code>##</code> and <code>###</code> for <strong>sections</strong>.</p>
+</section>
+<section id="connect-books-from-the-website" class="level2">
+<h2 class="anchored" data-anchor-id="connect-books-from-the-website">Connect Books from the Website</h2>
+<p>Edit <code>&lt;yourname&gt;.github.io/_quarto.yml</code>:</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">project</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">type</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> website</span></span>
+<span id="cb7-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">output-dir</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> docs</span></span>
+<span id="cb7-4"></span>
+<span id="cb7-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">website</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">title</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"&lt;your name&gt;'s PKM"</span></span>
+<span id="cb7-7"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">navbar</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-8"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">left</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-9"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">href</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> index.qmd</span></span>
+<span id="cb7-10"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">        </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Home</span></span>
+<span id="cb7-11"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Mathematics</span></span>
+<span id="cb7-12"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">        </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">menu</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-13"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">          </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Convex Optimization</span></span>
+<span id="cb7-14"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">            </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">href</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> math/convex-optimization/</span></span>
+<span id="cb7-15"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">          </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Statistics</span></span>
+<span id="cb7-16"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">            </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">href</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> math/statistics/</span></span>
+<span id="cb7-17"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> English</span></span>
+<span id="cb7-18"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">        </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">menu</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-19"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">          </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">-</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">text</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> Speaking</span></span>
+<span id="cb7-20"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">            </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">href</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> english/speaking/</span></span>
+<span id="cb7-21"></span>
+<span id="cb7-22"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-23"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-24"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb7-25"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">light</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> flatly</span></span>
+<span id="cb7-26"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">      </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">dark</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> darkly</span></span>
+<span id="cb7-27"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toc</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">true</span></span></code></pre></div>
+</section>
+<section id="preview-and-render" class="level2">
+<h2 class="anchored" data-anchor-id="preview-and-render">Preview and Render</h2>
+<p>To preview a single book:</p>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">cd</span> math/convex-optimization</span>
+<span id="cb8-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">quarto</span> preview</span></code></pre></div>
+<p>To preview the full site:</p>
+<div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">quarto</span> preview</span></code></pre></div>
+<p>It will view book as website.</p>
+<p>If you want to preview full site with books, we will render site before, and after that, render book. So old file of website-books will be replaced by book file.</p>
+</section>
+<section id="optional-github-actions-for-publishing" class="level2">
+<h2 class="anchored" data-anchor-id="optional-github-actions-for-publishing">(Optional) Github-actions for Publishing</h2>
+<hr>
+<p>If you found this useful, feel free to fork or adapt for your own system.<br>
+Happy building your knowledge system!</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Tutorial</category>
+  <guid>https://kimhungbui.github.io/posts/pkm-quarto-books/</guid>
+  <pubDate>Fri, 28 Feb 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/posts/pkm-quarto-books/Statistical-Inference.png" medium="image" type="image/png"/>
+</item>
 <item>
   <title>Install Nextcloud in Ubuntu Server</title>
   <dc:creator>Your name</dc:creator>
@@ -390,7 +872,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 
  ]]></description>
   <guid>https://kimhungbui.github.io/posts/extreme-early-retirement/</guid>
-  <pubDate>Sat, 28 Jun 2025 09:42:02 GMT</pubDate>
+  <pubDate>Mon, 07 Jul 2025 08:20:56 GMT</pubDate>
 </item>
 </channel>
 </rss>

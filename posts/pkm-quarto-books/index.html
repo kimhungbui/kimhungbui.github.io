@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2025-02-28">
+<meta name="description" content="Personal Knowledge Management and Sharing">
 
-<title>Blog – Kim Hung Bui</title>
+<title>Building a PKM Website with Quarto and Multiple Books and public by Github Actions – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +105,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
 
 <script type="text/javascript">
@@ -109,46 +115,17 @@ gtag('js', new Date());
 gtag('config', 'G-R5TB4V4ZYS', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Kim Hung Bui" href="posts.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
@@ -159,11 +136,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -172,15 +149,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
         <li>
-    <a class="dropdown-item" href="./math/convex-optimization/">
+    <a class="dropdown-item" href="../../math/convex-optimization/">
  <span class="dropdown-text">Convex Optimization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/probability/">
+    <a class="dropdown-item" href="../../math/probability/">
  <span class="dropdown-text">Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/statistics/">
+    <a class="dropdown-item" href="../../math/statistics/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
@@ -191,11 +168,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-ai">    
         <li>
-    <a class="dropdown-item" href="./ai/machine-learning/">
+    <a class="dropdown-item" href="../../ai/machine-learning/">
  <span class="dropdown-text">Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./ai/deep-learning/">
+    <a class="dropdown-item" href="../../ai/deep-learning/">
  <span class="dropdown-text">Deep Learning</span></a>
   </li>  
     </ul>
@@ -206,11 +183,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-programming">    
         <li>
-    <a class="dropdown-item" href="./programming/python/">
+    <a class="dropdown-item" href="../../programming/python/">
  <span class="dropdown-text">Python</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./programming/javascript/">
+    <a class="dropdown-item" href="../../programming/javascript/">
  <span class="dropdown-text">JavaScript</span></a>
   </li>  
     </ul>
@@ -221,23 +198,23 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-english">    
         <li>
-    <a class="dropdown-item" href="./english/speaking/">
+    <a class="dropdown-item" href="../../english/speaking/">
  <span class="dropdown-text">Speaking</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./english/writing/">
+    <a class="dropdown-item" href="../../english/writing/">
  <span class="dropdown-text">Writing</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -250,139 +227,199 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Building a PKM Website with Quarto and Multiple Books and public by Github Actions</h1>
+                  <div>
+        <div class="description">
+          Personal Knowledge Management and Sharing
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Tutorial</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://your.workplace.website">
+              Maybe your workplace?
+              </a>
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 28, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Statistical">Statistical <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tutorial">Tutorial <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pkm-structure-overview" id="toc-pkm-structure-overview" class="nav-link active" data-scroll-target="#pkm-structure-overview">PKM Structure Overview</a></li>
+  <li><a href="#create-the-pkm-project-and-books" id="toc-create-the-pkm-project-and-books" class="nav-link" data-scroll-target="#create-the-pkm-project-and-books">Create the PKM Project and Books</a>
+  <ul class="collapse">
+  <li><a href="#create-the-root-website" id="toc-create-the-root-website" class="nav-link" data-scroll-target="#create-the-root-website">Create the root website</a></li>
+  <li><a href="#create-subject-folders" id="toc-create-subject-folders" class="nav-link" data-scroll-target="#create-subject-folders">Create subject folders</a></li>
+  <li><a href="#define-book-structure" id="toc-define-book-structure" class="nav-link" data-scroll-target="#define-book-structure">Define Book Structure</a></li>
+  <li><a href="#connect-books-from-the-website" id="toc-connect-books-from-the-website" class="nav-link" data-scroll-target="#connect-books-from-the-website">Connect Books from the Website</a></li>
+  <li><a href="#preview-and-render" id="toc-preview-and-render" class="nav-link" data-scroll-target="#preview-and-render">Preview and Render</a></li>
+  <li><a href="#optional-github-actions-for-publishing" id="toc-optional-github-actions-for-publishing" class="nav-link" data-scroll-target="#optional-github-actions-for-publishing">(Optional) Github-actions for Publishing</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1751876412970" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="thumbnail">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">Family Man Retires at 39</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">
-
-<p></p>
-<section id="early-retirement-journey-and-financial-strategies" class="level2">
-
+<p>If you’re building a Personal Knowledge Management (PKM) system using Quarto, and you want to combine a central website with multiple structured books (like “Convex Optimization”, “Statistics”, etc.), this guide shows you the best practices to:</p>
+<p>Organize your folder structure</p>
+<p>Set up separate Quarto projects</p>
+<p>Render efficiently without duplication</p>
+<p>Publish to GitHub Pages using GitHub Actions</p>
+<p>You can use my PKM for easier to begin:</p>
+<section id="pkm-structure-overview" class="level1">
+<h1>PKM Structure Overview</h1>
+<p>My knowledge system follow this hierarchy:</p>
+<p>Subject → Book → Chapter → Section</p>
+<p>For example:</p>
 <ul>
-<li>Tim, a man from Regina, Saskatchewan, Canada, retired from engineering at the age of 39, after 11 years of planning and working towards his goal of early retirement…</li><li></li><li></li><li></li></ul></section><section id="spending-reduction-and-financial-management" class="level2"><ul><li></li><li></li><li></li><li></li><li></li></ul></section><section id="investment-strategy-and-market-volatility" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="challenges-and-adaptation-in-early-retirement" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="family-life-and-financial-education-for-children" class="level2"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></section><section id="wifes-continued-work-and-financial-planning" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="housing-plans-and-government-benefits" class="level2"><ul><li></li><li></li><li></li></ul></section><section id="part-time-work-and-enhanced-work-life-balance" class="level2"><ul><li></li><li></li></ul></section><section id="resources-and-further-information" class="level2"><ul><li></li></ul></section></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Tutorial" data-listing-date-sort="1740700800000" data-listing-file-modified-sort="1751876412970" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="448">
-<div class="thumbnail">
-<p><a href="./posts/pkm-quarto-books/index.html" class="no-external"></a></p><a href="./posts/pkm-quarto-books/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/pkm-quarto-books/Statistical-Inference.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/pkm-quarto-books/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external">Building a PKM Website with Quarto and Multiple Books and public by Github Actions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Tutorial'); return false;">
-Tutorial
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external">Personal Knowledge Management and Sharing</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external">
-<div class="listing-date">
-Feb 28, 2025
-</div>
-<div class="listing-author">
-Kim Hung Bui
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Statistical" data-listing-date-sort="1740528000000" data-listing-file-modified-sort="1751876412970" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301">
-<div class="thumbnail">
-<p><a href="./posts/nextcloud-install/index.html" class="no-external"></a></p><a href="./posts/nextcloud-install/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/nextcloud-install/Statistical-Inference.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/nextcloud-install/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/nextcloud-install/index.html" class="no-external">Install Nextcloud in Ubuntu Server</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/nextcloud-install/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Statistical'); return false;">
-Statistical
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/nextcloud-install/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/nextcloud-install/index.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<li>Subject: Mathematics
+<ul>
+<li>Book: Convex Optimization
+<ul>
+<li>Chapter: Convex Sets
+<ul>
+<li>Sections: Definitions, Examples, Properties</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="create-the-pkm-project-and-books" class="level1">
+<h1>Create the PKM Project and Books</h1>
+<section id="create-the-root-website" class="level2">
+<h2 class="anchored" data-anchor-id="create-the-root-website">Create the root website</h2>
+<pre class="{bash}"><code>quarto create project website</code></pre>
+<p>write <yourname>.github.io for dir</yourname></p>
+<pre class="{bash}"><code>cd &lt;yourname&gt;.github.io</code></pre>
+<p>It generates:</p>
+<pre><code>&lt;yourname&gt;.github.io/
+├── _quarto.yml
+├── index.qmd</code></pre>
+</section>
+<section id="create-subject-folders" class="level2">
+<h2 class="anchored" data-anchor-id="create-subject-folders">Create subject folders</h2>
+<pre class="{bash}"><code>mkdir -p math
+cd math
+quarto create project book</code></pre>
+<p>This generates:</p>
+<pre><code>math/convex-optimization/
+├── _quarto.yml
+├── index.qmd
+├── intro.qmd</code></pre>
+</section>
+<section id="define-book-structure" class="level2">
+<h2 class="anchored" data-anchor-id="define-book-structure">Define Book Structure</h2>
+<p>Edit <code>math/convex-optimization/_quarto.yml</code>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> book</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> ../../docs/math/convex-optimization</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">book</span><span class="kw">:</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Convex Optimization"</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"&lt;your name&gt;"</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">chapters</span><span class="kw">:</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> index.qmd</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> intro.qmd</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> convex-set.qmd</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> convex-func.qmd</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Each <code>.qmd</code> file is a <strong>chapter</strong>. Inside each chapter, use <code>##</code> and <code>###</code> for <strong>sections</strong>.</p>
+</section>
+<section id="connect-books-from-the-website" class="level2">
+<h2 class="anchored" data-anchor-id="connect-books-from-the-website">Connect Books from the Website</h2>
+<p>Edit <code>&lt;yourname&gt;.github.io/_quarto.yml</code>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"&lt;your name&gt;'s PKM"</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Mathematics</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">menu</span><span class="kw">:</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Convex Optimization</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> math/convex-optimization/</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Statistics</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> math/statistics/</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> English</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">menu</span><span class="kw">:</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Speaking</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> english/speaking/</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">light</span><span class="kw">:</span><span class="at"> flatly</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> darkly</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="preview-and-render" class="level2">
+<h2 class="anchored" data-anchor-id="preview-and-render">Preview and Render</h2>
+<p>To preview a single book:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> math/convex-optimization</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To preview the full site:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>It will view book as website.</p>
+<p>If you want to preview full site with books, we will render site before, and after that, render book. So old file of website-books will be replaced by book file.</p>
+</section>
+<section id="optional-github-actions-for-publishing" class="level2">
+<h2 class="anchored" data-anchor-id="optional-github-actions-for-publishing">(Optional) Github-actions for Publishing</h2>
+<hr>
+<p>If you found this useful, feel free to fork or adapt for your own system.<br>
+Happy building your knowledge system!</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
