@@ -1,0 +1,407 @@
+---
+title: Complex Sentence
+lightbox: false
+description: Practice complex sentence
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-04
+categories:
+  - english
+  - grammar
+  - writing
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Independent Clause & Subordinate Clause
+
+A __clause__ í a word group that contains a subject and a verb. If that clause can stand alone-in other words, if that clause is the same as a sentence-we call it an ___independent clause___.
+
+__independent clause__: She __held__ the scale
+
+__subordinate clause__: as she __held__ the scale
+
+::: {.callout-note}
+When we say that a clause is _subordinate_, we are not referring to its importance, but simply to its grammatical dependence on the independent clause.
+:::
+
+A complex sentence is a _sentence that contains at least one subordinate clause_.
+
+Subordinate clauses can be divided into three categories based on their function:
+- adjective clauses
+- adverb clauses
+- noun clauses
+
+Example:
+- Independent clause/sentence: _They_ __got__ into a station wagon. (has a subject and verb and can stand alone).
+- Subordinate clause/adverb: As _they_ __got__ into a station wagon. (has a subject and verb but cannot stand alone).
+- subordinate clause/adjective: _Which_ __was__ a station wagon. (has a subject and verb but cannot stand alone)
+- subordinate clause/noun: That _they_ __got__ into a station wagon.
+
+Example:
+1. A single sword is held aloft. (independent)
+2. After you left me. (subordinate)
+3. Because my uncle sat at the stone table. (subordinate)
+4. That a serpentine hair bangs over one ear. (subordinate)
+5. Which is a hidden pleasure. (subordinate)
+6. Who knew the rules and punishments. (subordinate)
+7. Why she chose to wear the hex on her forehead. (subordinate)
+8. You lose yourself in the cave of endless breath. (independent)
+
+# Subordinating Conjunctions
+
+An __adverbial subordinate clause__ begins with a __subordinating conjunction__.
+That list:
+- after, as if, as long as, as soon as, although, as, as if, because, before, even if, if, since, so that, though, till, unless, when, whenever, wherever, while.
+
+Let's take a complete sentence, add a word to that complete sentence, and get less than a complete sentence.
+
+- start with a complete sentence: _the sunset behind Lake Tahoe is spectacular_
+- add a word: _although_
+- get less than a complete sentence: _although the sunset behind lake Tahoe is spectacular_
+
+This is how adverb clauses are created.
+
+- a subordinating conjunction + a sentence = an adverb clause
+- _although_ + _the sunset behind Lake Tahoe is spectacular_ = an adverb clause
+
+# Adverb Clauses: Two Patterns
+
+We must understand that the three-part formula and the two-part formula below are _two ways_ of saying the same thing.
+- 3-part formula: independent clause + subordinating conjunction + independent clause
+- 2-part formula: independent clause + subordinating clause
+
+A subordinate clause consists of a subordinating conjunction + an independent clause. From the previous lesson, we used this process to create a subordinate clause. Therefore, it helps to insert brackets into our 3-part formula so that we can see more clearly how the two formulas are really the same:
+- 3-part formula: independent clause + [subordinating conjunction + independent clause] = complex sentence
+- 2-part formula: independent clause + [subordinate clause] = complex sentence
+
+Example:
+- 3-part formula: you can try climbing on my back + [if + there is no ladder] = complex sentence
+- 2-part formula: you can try climbing on my back + [if there is no ladder] = complex sentence
+
+With complex sentences, the conjunctions can easily get hidden: they can disappear within the term _subordinate clause_. 
+We can solve that problem by keeping in mind that our conjunctions are inside our subordinate clauses—and in most cases, they serve as the first word of those clauses.
+
+## Pattern 1 and Pattern 2
+
+The two most common places where adverbial subordinate clauses can be placed are after an independent clause and before an independent clause - on the right side or on the left side.
+
+- (the left side) __independent clause__ (the right side)
+- (an adverbial subordinate clause can be placed here) independent clause
+(an adverbial subordinate clause can be placed here).
+
+Here are the two basic patterns:
+- __pattern 1__: independent clause + adverbial subordinate clause
+- __pattern 2__: adverbial subordinate clause + (,) + independent clause
+
+A __pattern 1__ sentence - with the adverbial subordinate clause to the right - looks like this:
+- He called me to the tannery [because it was Sunday]. (no comma)
+
+A __pattern 2__ sentence- with the adverbial subordinate clause to the left - looks like this:
+- [Because it was Sunday], he called me to the tannery. (note the comma).
+
+## Exercises
+Each of the following sentences follows pattern 1, as described above. You
+will be asked to identify independent clauses and adverbial subordinate
+clauses (adverb clauses for short). The independent clauses will be to the left.
+Remember that adverb clauses begin with subordinating conjunctions. In all
+of the examples below, the independent clause stops just before the
+subordinating conjunction; the adverb clause begins with the subordinating
+conjunction.
+Here are the subordinating conjunctions:
+after, as if, as long as, as soon as, although, as, as if, because, before,
+even if, if, since, so that, though, till, unless, until, when, whenever,
+wherever, while
+1. Identify the independent clause in this sentence: The parade is turning into
+our street because the other streets have been barricaded.
+-> The parade is turning into our street
+2. Identify the subordinate clause in this sentence: The parade is turning into
+our street because the other streets have been barricaded.
+-> because the other streets have been barricaded.
+3. Identify the independent clause: We will get back to doing little things for
+each other after we paste these stamps together to form a tiny train track.
+-> we will get back to doing little things for each other
+4. Identify the subordinate clause: We will get back to doing little things for
+each other after we paste these stamps together to form a tiny train track.
+-> after we paste these stamps together to form a tiny train track.
+5. Identify the independent clause: History cannot be erased although we can
+soothe ourselves by speculating about it.
+-> History cannot be erased.
+6. Identify the subordinate clause: History cannot be erased although we can
+soothe ourselves by speculating about it.
+-> although we can soothe ourselves by speculating about it.
+7. Identify the independent clause: A flock of minnows shivers awake as
+night closes in.
+-> A flock of minnows shivers awake
+8. Identify the subordinate clause: A flock of minnows shivers awake as
+night closes in.
+-> as night closes in.
+9. Identify the independent clause in this sentence: Sunlight drifts down and
+dulls and shatters before it hits the ground.
+-> Sunlight drifts down and dulls and shatters.
+10. Identify the subordinate clause in this sentence: Sunlight drifts down
+and dulls and shatters before it hits the ground.
+-> before it hits the ground.
+
+# Adverb Clauses: Pattern 2
+
+## Exercises
+The following sentences are all pattern 2 sentences. You will be asked to
+identify independent clauses and subordinate clauses. This time the
+subordinate clauses will be to the left. Use the commas to guide you.
+Remember that adverbial subordinate clauses begin with subordinating
+conjunctions, listed here:
+after, as if, as long as, as soon as, although, as, as if, because, before,
+even if, if, since, so that, though, till, unless, until, when, whenever,
+wherever, while
+1. Identify the independent clause in this sentence: Because I love cedar
+waxwings, I stare up into the sky too long.
+-> I stare up into the sky too long.
+2. Identify the subordinate clause in this sentence: Because I love cedar
+waxwings, I stare up into the sky too long.
+-> Because I love cedar waxing
+3. Identify the independent clause: If I were a lily, I think I would wait all
+day for the hummingbird’s green face.
+-> I think I would wait all day for the hummingbird's green face.
+4. Identify the subordinate clause: If I were a lily, I think I would wait all day
+for the hummingbird’s green face.
+-> If I were a lily.
+5. Identify the independent clause: So that Orpheus sings accurately, he
+practices from morning till noon.
+-> He practices from morning till noon.
+6. Identify the subordinate clause: So that Orpheus sings accurately, he
+practices from morning till noon.
+-> So that Orpheus sings accurately
+7. Identify the independent clause: Until only a child on a unicycle was left,
+the actors continually left the stage one-by-one.
+-> the actors continually left the stage one-by-one.
+8. Identify the subordinate clause: Until only a child on a unicycle was left,
+the actors continually left the stage one-by-one.
+-> Until only a child on a unicycle was left.
+9. Identify the independent clause: When loneliness comes stalking, you
+should go into the fields and consider the orderliness of the world.
+-> You should go into the fields and consider the orderliness of the world.
+10. Identify the subordinate clause: When loneliness comes stalking, you
+should go into the fields and consider the orderliness of the world.
+-> When loneliness comes stalking.
+
+# Subjects and Verbs in Sentences with Adverbial Subordinate Clauses
+
+I sojourn here [THOUGH the sedge has withered from the lake].
+Independent clause: I sojourn here
+Subordinate clause: THOUGH the sedge has withered from the lake
+
+The sentence above presents us with two sets of subjects and verbs: __I sojourn__ and __sedge has withered__. Because one subject-verb combination appears in the independent clause and the other in the subordinate clause, we can think of the two subject-verb combinations as primary and secondary.
+- primary: I sojourn
+- secondary: sedge has withered
+
+The primary subject-verb combination serves as the subject-verb of the complex sentences. When asked for _the subject_ and verb of a complex sentence, we respond with the primary subject-verb-- in this case, _I sojourn_. However, if we asked for a subject-verb in the sentence above, we can then point to either of the two subject-verb combinations.
+
+## What makes adverbial subordinate clauses adverbial?
+
+Within each adverbial subordinate clause lies a subject and a verb. The adverbial work done by an adverb clause is done upon the verb in the _independent clause_.
+
+- I __sojourn__ here through the sedge has withered from the lake.
+
+Here, the adverbial subordinate clause _through the sedge has withered from the lake_ describes the surprising nature of the verb _sojourn_. Normally, we assume that when the sedge starts withering, people quit their sojourning and get on with their lives. 
+
+As noted earlier, in complex sentences we find a hierarchy of subjects and verbs- a _primary_ subject-verb and a _secondary_ subject-verb.
+
+I sojourn here [THOUGH the sedge has withered from the lake].
+In this example, the primary subject-verb combination (I sojourn) is found in
+the left-hand, independent clause; the secondary subject-verb (sedge has
+withered) is found in the right-hand, subordinate clause.
+- primary base sentence: I sojourn
+- secondary base sentence: sedge has withered
+
+## Exercises
+
+Your task in this Your Turn is to identify the base sentences in each of the
+two clauses: one subject-verb combination in the independent clause and one
+in the subordinate clause.
+In the following eight sentences, all subordinate clauses begin with one of the
+following subordinating conjunctions:
+after, although, because, before, so that, when.
+PATTERN 1
+1. You begin when you are ready. [What is the primary base sentence? The
+secondary?]
+-primary base sentence: you begin
+-secondary base sentence: you are 
+2. The weathermen clomped four miles on snowshoes to get to their seats
+after they had thumped the vending machines empty. [What is the primary
+base sentence? The secondary?]
+-primary base sentence: the weathermen clomped
+-secondary base sentence: they had thumped
+3. The heart of youth is so light because on its hot brow the wind of promise
+blows. [What is the primary base sentence? The secondary?]
+-primary base sentence: heart is
+-secondary base sentence: wind blows
+4. The war was solved by isolating the two sections of the enemy’s navy so
+that the mainland could protect the smaller ships. [What is the primary
+base sentence? The secondary?]
+-primary base sentence: war was solved
+-secondary base sentence: mainland could protect
+PATTERN 2
+5. When you are ready, you begin. [What is the primary base sentence? The
+secondary?]
+-primary base sentence: you begin
+-secondary base sentence: you are 
+6. After they had thumped the vending machines empty, the weathermen
+clomped four miles on snowshoes to get to their seats. [What is the
+primary base sentence? The secondary?]
+-primary base sentence: heart is
+-secondary base sentence: wind blows
+7. Although the same words have been uttered, these questions have a
+different form. [What is the primary base sentence? The secondary?]
+-primary base sentence: these question have
+-secondary base sentence: the same words have been uttered
+8. Before we leave from this good high place, we must catch a view of the
+city. [What is the primary base sentence? The secondary?]
+-primary base sentence: we must catch
+-secondary base sentence: we leave
+
+# Adverb Clauses - Mixed Patterns
+
+We’ve been studying two sentence patterns:
+
+- **Pattern 1:** Independent clause + subordinate clause
+    
+- **Pattern 2:** Subordinate clause + comma + independent clause
+    
+
+In the last two lessons, we looked at these patterns separately. This time, they will be mixed together in the exercises.
+
+As we practice, we’ll focus on using the rules correctly. However, there’s one exception. Sometimes, you can use a **comma in pattern 1**, especially when the subordinate clause starts with words like **although, as (meaning because), since (meaning because), though**, or **while (meaning whereas).**
+
+So, the exception looks like this:  
+**Independent clause + comma + subordinate clause**
+
+Example:
+- He decided to take a break, although he still had work to do.
+- The roads were busy, as it was a holiday.
+- She enjoys outdoor sports, while her sister prefers reading.
+- I like the new plan, though it might be risky.
+
+## Exercises
+
+For each of the twelve sentences below, identify the two clauses.
+Which is the independent clause?
+Which is the adverbial subordinate clause?
+To do this, you will need to know whether the subordinate clause is on the
+left or the right. The presence or absence of a comma will give you the
+information you need. Is there a comma?
+yes—the subordinate clause is to the left
+no—the subordinate clause is to the right
+And here, once again, are the subordinating conjunctions:
+after, although, as, because, before, even if, if, since, so that, though, till,
+unless, until, when, whenever, wherever, while
+1. He gunned the engine till he had hauled it out. [Which is the independent
+clause? Which is the adverbial subordinate clause?]
+-independent clause: he gunned the engine
+-adverbial subordinate clause: till he had hauled it out.
+2. I had decided to maintain seven personalities because seven is a mystical number.
+-independent clause: I had decided to maintain seven personalities
+-adverbial subordinate clause: because seven is a mystical number
+number.
+3. Though his family was already on their way, he knelt and raked his bare
+hands through that mound of dirt.
+-independent clause: he knelt and raked ...
+-adverbial subordinate clause: though his family was already on their way.
+4. If I had wings, I would have opened them.
+   -independent clause:I would have opened them
+-adverbial subordinate clause: If i had wings.
+5. After I’d betrayed myself, I wish I had answered differently.
+   -independent clause: I wish I had answered differently.
+-adverbial subordinate clause: after I'd betrayed myself.
+6. Let me hoist you back up onto this Ship of Fools so that we might
+continue our search for the Fountain of Youth.
+-independent clause: let me hoist you back up onto this ship ...
+-adverbial subordinate clause: so that we might continue our search for the Fountain ....
+7. One must learn to be content with staying home since all places one
+cannot go are fabulous.
+-independent clause: One must learn to be content with staying home
+-adverbial subordinate clause: since all places one cannot go are fabulous.
+8. The registrar delivered her narrative while the voices crashed.
+   -independent clause: the registrar delivered her narrative
+-adverbial subordinate clause: while the voices crashed.
+9. Before she can remove her hand from the knob, the whole building will
+collapse.
+-independent clause: the whole building will collapse
+-adverbial subordinate clause: before she can remove her hand from the knob.
+10. Its steely gaze fixed on him as he chewed.
+    -independent clause: It's steely gaze fixed on him
+-adverbial subordinate clause: as he chewed.
+11. When the sky fell, the earth turned blue.
+    -independent clause: the earth turned blue
+-adverbial subordinate clause: when the sky fell.
+12. Unless they mistake us for burglars, we will be quite welcome to enter
+    -independent clause: we will be quite welcome to enter
+-adverbial subordinate clause: unless they mistake us for burglars.
+
+# Adverb Clauses - Focus on Although, Though, Until, and Till
+
+_Although_ and _though_ are two interchangeable words; _until_ and _till_ are also equal words. All we need to know is that both choices are available. Anytime we choose _although_, we could have chosen _though_; anytime we choose _until_, we could have choosen _till_.
+
+Examples:
+- He is too full of sleep to care, _although_ he knows his enemy is there.
+- He is too full of sleep to care, _though_ he knows his enemy is there.
+- The voice of La Muerte numbs them _until_ they leave wrinkled bodies of flowers withering on the stump.
+- The voice of La Muerte numbs them _till_ they leave wrinkled bodies of flowers withering on the stump.
+
+## Exercises
+
+Each of the four compound sentences below contains a blank. Where you see the blanks, substitute one of the following subordinating conjunctions:
+- although, though, till, until.
+Use each subordinating conjunction one time only.
+1. The summer is reluctant to go ,-although- the scythes hang in the apple trees.
+2. Though the scythes hang in the apple trees, the summer is reluctant to go.
+3. It was best to let Michael rest until he felt healthy and strong.
+4. Till he felt healthy and strong, it was best to let Michael rest.
+
+# Adverb Clauses - Focus on Since and So That
+
+## SINCE
+_Since_ has two meanings. One of it meanings is shared with _because_. _Because_, like _since_, is a subordinating conjunction; therefore, the two words can be interchangeable.
+
+Examples:
+- Alice cannot be in the poem _because_ she's only a metaphor.
+- Alice cannot be in the poem _since_ she's only a metaphor.
+
+_Since_ also means _from that time forward_. This is a meaning that _since_ does not share with any other subordinating conjunction.
+- It has been thirty years _since_ I wrote you a letter.
+
+## SO THAT
+The subordinating conjunction _so that_ is easily mistaken for the coordinating conjunction _so_.
+Examples:
+- The mother has given herself up as prey _so that_ her babies can escape.
+- The allosaurus fell heavily, _so_ the fossil he left was broken to bits.
+One way to distinguish between _so_ and _so that_ is to determine intention. We use _so that_ when the action taken in the independent clause is intentional; we use _so_ when the action is not intentional.
+
+In the examples above, the mother in the first example _intentionally_ gave herself up as prey; the allosaurus in the second example, however, did not fall intentionally. In both examples the content of the independent clause _causes_ the content of the subordinate clause; the difference is that the mother intended to cause the escape of her babies and the allosaurus did not intend to cause his broken skeleton.
+
+In addition to the difference in intention, notice also that when _so_ joins two clauses it is punctuated with a comma; when _so that_ joins two clauses (while sitting between the clauses) it is not punctuated with a comma.
+
+## Excercises
+Each of the four compound sentences below contains a blank. Where you see the blanks, substitute either:
+- comma + so [or]
+- so that
+1. I would turn down dinner invitations -so that- I could eat alone.
+2. Surprisingly, they have done me no injury -, so- I am happy and dance and
+sing.
+3. The photos are hard to see -,so- we ask if they can be blown up to a larger
+size.
+4. The doctors drugged the children -so that- they wouldn’t fuss.
+5. Their stingers have been removed-, so- I enter the swarm of yellow jackets
+without harm.
+6. Their stingers have been removed -so that- I can enter the swarm of yellow
+jackets without harm.
+

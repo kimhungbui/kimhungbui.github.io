@@ -1,0 +1,487 @@
+---
+title: Complex Sentence - Part 3
+lightbox: false
+description: Noun clauses
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-08
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+PART 3: NOUN CLAUSES.
+
+# Creating Noun Clauses
+
+## Review
+We began our study of complex sentences by learning that a complex sentence is an independent clause (a sentence) plus a subordinate clause. We learned that there are three types of subordinate clauses: adverb, adjective (the relative clause), and noun.
+
+We have covered subordinate clauses of the adverb and adjective variety. The adverbial clauses appear to the left or the right of independent clauses and begin with subordinating conjunctions:
+
+- _after, as if, as long as, as soon as, although, as, as if, because, before, even if, if, since, so that, though, till, unless, until, when, whenever, wherever, while_.
+
+The adjectival clauses are relative clauses. We focused on three key relative pronouns: _who, that,_ and _which_.
+
+This bring us to our final clause type-the __noun clause__.
+
+Like their cousins are adverbial and relative clauses, the noun clauses, too, begin with key words. We can call these key word __noun-clause markers__.
+
+Here is a list:
+
+- _that, if, whether_
+- {words that can be used to create question} _how, what, when, where, whom, why_
+- {the -ever words} _however, whatever, whenever, wherever, whichever, whoever, whomever_.
+
+If we take an independent clause (a sentence) and add a noun-clause marker to the front of it, we get a noun clause.
+
+- noun-clause marker + independent clause = noun clause
+
+Examples:
+
+__take a sentences__: _the foal was delivered by helicopter_
+
+__add a noun-clause marker__: _that_
+
+__get a noun clause__: _that the foal was delivered by helicopter_
+
+Once more:
+
+- take a sentence: the Shah wanted it delivered
+- add a noun-clause marker: whenever
+- get a noun clause: whenever the Shah wanted it delivered.
+
+When a noun clause get added to an independent clause, the result is a complex sentence. Study two examples:
+
+- example 1: _What the clown found so funny_ was a mystery. (complex sentence? no)
+- example 2: We did not understand _why George was twitching in the forsythias_ (complex sentence? yes)
+
+A complex sentence consists of an independent clause and at least one subordinate clause. Example 1 above consists of a noun clause plus a predicate (_was a mystery_) and, therefore, is not a complex sentence. In example 2, however, we do find one independent and one subordinate clause.
+
+- independent clause: we did not understand
+- subordinate clause: why George was twitching in the forsythias 
+
+## Exercises
+Decide which noun-clause markers from the bulleted list below can be attached to which of the following sentences. (Not all noun-clause markers will work with all sentences.)
+
+Keep in mind that you are creating noun clauses, not sentences. A noun clause is a type of subordinate clause and, therefore, cannot stand alone. In fact, the noun-clause marker you add is the word that converts what would have been an independent clause into a subordinate clause.
+
+ - noun-clause markers: that, if, whether, how, what, when, where, whom,
+why, however, whatever, whenever, wherever, whichever, whoever, whomever
+1. that the time was far away
+
+- that the time was far away
+
+2. the old woman had painted a picture of a dozen oranges
+
+- how the old woman had painted a picture of a dozen oranges
+
+3. truth is a mix of gold and silver
+
+- when truth is a mix of gold and silver
+
+4. the duck had spoken to the drake
+
+- whatever the duck had spoken to the drake
+
+5. the opposite of kite is yo-yo
+
+- that the opposite of kite is yo-yo
+
+6. the weatherman would stop to bow
+
+- whenever the weatherman would stop to blow
+
+# Noun Clauses in Sentences
+
+Complex sentences take this form:
+
+- independent clause + subordinate clause
+
+Noun clauses are one type of subordinate clause, so when we add noun clauses to sentences, we create complex sentences.
+
+Noun clauses function as nouns; consequently, wherever we can place a noun, we can also place a noun clause. And we can test for _nounness_ by using the key word __something, somewhere,__ and __someone__. Whatever can replace any of these three words is a noun.
+
+Examples:
+
+- We did not understand _something_.
+- We did not understand _why George was twitching in the forsythias_
+
+In this example, the noun clause _why George was twitching in the forsythias_ functions as a single noun.
+
+::: {.callout-note}
+When using noun clauses to create complex sentences, the number of forms such sentences can take is limited. The number of verbs can be used in the creation of complex sentences with noun clauses is also limited.
+:::
+
+Here is a list of verbs that can precede noun clauses:
+
+- _accept, admire, adore, appreciate, ask, catch, cherish, claim, comprehend, covet, decide, demand, desire, despise, detest, doubt, enjoy, feel, hate, have, hear, know, lack, like, love, make, miss, own, prefer, realize, recognize, require, see, smell, take, taste, understand, value, want, wonder._
+
+## Exercises
+
+Step 1: Turn the second independent clause into a noun clause by adding a noun-clause marker to the front of it.
+
+Step 2: Place the noun clause into the independent clause-simply replace the word _something_.
+
+Example:
+
+- first independent clause: you knew _something_
+- second independent clause: the time was far away
+
+Step 1: second independent clause + noun-clause marker = _that the time was far away_
+
+Step 2: Insert the result of step 1 into the first independent clause = you knew that the time was far away.
+
+Result? We have created a complex sentence containing a noun clause.
+
+__Number 1__:
+
+- first independent clause: she understands _something_
+- second independent clause: truth is a mix of gold and silver
+- noun clause-markers: that, if, whether, how, what, when, where, whom, why, however, whatever, whenever, wherever, whichever, whoever, whomever
+
+step 1: when truth is a mix of gold and silver
+
+step 2: she understands when truth is a mix of gold and silver.
+
+__Number 2__:
+
+- first independent clause: they did not comprehend _something_
+- second independent clause: the duck had spoken to the drake
+
+step 1: whenever the ducker had spoken to the drake
+
+step 2: they did not comprehend whenever the duck had spoken to the drake.
+
+
+__Number 3__:
+
+- first independent clause: we loved _something_
+- second independent clause: the weatherman would stop to bow
+
+step 1: if the weatherman would stop to bow
+
+step 2: we loved if the weatherman would stop to bow.
+
+
+# Subjects and Verbs in Complex Sentences with Noun Clauses.
+
+Clauses contain one or more subjects and one or more verbs; noun clauses are no exception.
+
+Here are two clauses with their subjects and verbs marked:
+
+- _how_ the _cat_ __got__ into the pantry
+- why _he_ __had slept__ so late
+
+And here are two independent clauses with their subjects and verbs maked:
+
+- _We_ __could__ not __tell__ something.
+- _Jameson_ __began__ to __explain__ something.
+
+By adding our noun clauses to the independent clauses, we get complex sentences consisting of one independent and one subordinate clause:
+
+- _We_ __could__ not __tell__ something
+- _We_ __could__ not __tell__ {how the _cat_ __got__ in to the pantry}.
+
+- _Jameson_ __began__ to explain something.
+- _Jameson_ __began__ to explain {why _he_ __had slept__ so late}.
+
+## Exercises
+
+For each of the following, identify the primary and secondary subjects and verbs. The secondary subject-verb combination will appear within the noun clause.
+
+- Example: I know THAT the hand of God is the mirror of my own.
+
+In this sentence, the primary subject-verb is I know and the secondary
+subject-verb (within the noun clause) is hand is.
+
+1. I dreamed THAT I went into a forest.
+
+In this sentence, the primary subject-verb is I dreamed and the secondary subject-verb (within the noun clause) is I went into.
+
+2. You saw WHY five old pieces of fish-line hung from his lower lip.
+
+In this sentence, the primary subject-verb is You saw and the secondary subject-verb is pieces hung.
+
+3. They will know WHETHER it is all happening in the only possible way.
+
+In this sentence, the primary subject-verb is They will know and the secondary subject-verb is it is.
+
+4. I am afraid WHENEVER I go with the Northern Army on the long march
+south.
+
+In this sentence, the primary subject-verb is I am afraid and the secondary subject-verb is I go
+
+
+# Review
+We have learned that a complex sentence consists of an independent clause (a sentence) and a dependent or subordinate clause. Once we understand this, we also understand that the study of complex sentences is really the study of subordinate clauses.
+
+We have studied each type of subordinate clause: the adverb clause, the adjective (relative) clause, and the noun clause.
+
+- __Adverb clauses begin with subordinating conjunctions__: _after, as if, as long as, as soon as, although, as, as if, because, before, even if, if, since, so that, though, till, unless, until, when, whenever, wherever, while_.
+- __Adjective (relative) clauses begin with relative pronouns__: _who, that, which_ (the three most commonly used).
+- __Noun clauses begin with noun-clause markers__: _that, if, whether, how, what, when, where, whom, why, however, whatever, whenever, wherever, whichever, whoever, whomever_.
+
+## _THAT_ THE NOUN-CLAUSE MARKER VS. _THAT_ THE RELATIVE PRONOUN
+But wait a minute. If a word _that_ can mark both relative clauses and noun clauses, how can we tell them apart?
+
+Let's do a comparison.
+
+- __relative clause__: The trout _that swim in the center of the river_ keep themselves safe.
+- __noun clause__: I know _that the hand of God is the mirror of my own_.
+
+Both examples contain a clause that begins with _that_. Let's let RC stand for _relative clause_ and NC stand for _noun clause_. There are three differences between these two clauses.
+
+### Difference 1: the part of speech
+
+#### RC:
+The relative clause, being an adjective, will describe a noun-in this case, the noun _trout_. What kind of trout? Trout _that swim in the center of the river_.
+
+#### NC:
+The noun clause, being a noun, will pass the _something_ test:
+
+- I know _something_.
+- I know _that the hand of God is the mirror of my own_.
+
+### Difference 2: the clause's subject
+
+#### RC
+The word _that_ serves as the subject of the clause: _<u>that</u> __swim__ in the center of the river_.
+
+#### NC
+The word _that_ does not serve as the subject of the clause. (The subject-verb of the noun clause is _hand is_).
+
+### Difference 3: the preceding word
+
+__RC__: The word preceding the clause (trout) is a noun.
+__NC__: The word preceding the clause (know) is a verb.
+
+## Exercises
+
+For each of the following complex sentences, identify the independent and the subordinate clause. For each subordinate clause, decide whether the clause is functioning as an adverb, an adjective, or a noun.
+
+The clause markers are listed here:
+
+- adverb clause markers (subordinating conjunctions): after, as if, as
+long as, as soon as, although, as, as if, because, before, even if, if, since,
+so that, though, till, unless, until, when, whenever, wherever, while
+
+- adjective (relative) clause markers (relative pronouns): who, that,
+which (the three most commonly used)
+
+- noun-clause markers: that, if, whether, how, what, when, where, whom,
+why, however, whatever, whenever, wherever, whichever, whoever,
+whomever
+
+Example:
+
+- AFTER he thumped the jammed vending machine, the trooper walked home in his snowshoes. (The independent clause consists of which words? The subordinate clause consists of which words? What kind of clause is the subordinate clause: adverb, adjective, or noun?)
+
+independent clause: the trooper walked home in his snowshoes
+
+subordinate clause: AFTER he thumped the jammed vending machine (adverb
+clause)
+
+1. I could not learn his mind because he never knew it himself. (The independent clause consists of which words? The subordinate clause consists of which words? What kind of clause is the subordinate clause: adverb, adjective, or noun?)
+
+- independent clause: I could not learn his mind
+- Subordinate clause: because he never knew it himself (adverb clause)
+
+2. I followed whatever it was that whispered of love. (The independent clause consists of which words? The subordinate clause consists of which words? What kind of clause is the subordinate clause: adverb, adjective, or noun?)
+
+- Independent clause: I followed
+- Subordinate clause: whatever it was that whispered of love. (noun-clause) (can pass something test)
+
+3. Imperfect stars create their reflections though the lake is mostly mud. 
+
+- Independent clause: Imperfect stars create their reflections
+- subordinate clause: though the lake is mostly mud (adverb clause) (not pass something test, not who, which, that)
+
+4. She wondered whether it was her heart or eyes that was faulty.
+
+- The independent clause of that sentence consists of 'She wondered'
+- The subordinate clause of that sentence consists of 'whether it was her heart or eyes that was faulty' (noun clause) (pass something test)
+
+5. We float messages to the refugees, who stand among the rubble of their flooded shelters
+
+- The independent clause of the above sentence consists of 'We float messages to the refugees'
+- The subordinate clause of the above sentence consists of 'who stand among the rubble of their flooded shelters'. We know it is an adjective clause because that clause begins with the word 'who'.
+
+6. We still hoped that they might get passage.
+
+- The independent clause of the above sentence consists of 'We still hoped'
+- The subordinate clause of the above sentence consists of 'that they might get passage', and we know it is a noun clause because it can pass the something test.
+
+7. You might still touch the lips that once spoke.
+
+- The independent clause of the above sentence consists of 'You might still touch the lips'.
+- The subordinate clause of the above sentence consists of 'that once spoke', and we know it is a relative clause-adjective clause because it cannot pass the something test, and after the word 'that', is a verb 'spoke'.
+
+8. Your heart, which has been mined by others, will not recover its lightning and thunder
+
+- The independent clause of the above sentence consists of 'Your heart will not recover its lightning and thunder'.
+- The subordinate clause of the above sentence consists of 'which has been minded by others', and we know it is an adjective clause-relative clause because it begins with the word 'which'.
+
+#  Mixed Clauses, Multiple Clauses
+
+The complex sentences we've been studying represent the complex sentence at its most basic level: an independent clause (a sentence) with one subordinate clause. But in fact, complex sentence can contain mixed clauses (such as an adverb clause and a relative clause) or multiple clauses (such as three adverb clauses)
+
+Here is an example of a complex sentence containing mixed clauses:
+
+- {when Arjuna threw down his bow}, the warriors, {who were his cousins and kin}, ceased their fighting.
+
+This example contains an independent clause and two subordinate clauses:
+- __independent clause__: the warriors ceased their fighting.
+- __adverb clause__: when Arjuna threw down his bow.
+- __relative clause__: who were his cousins and kin.
+
+Another example:
+- The crowd {that assembled on the sidewalks} would never understand {why he filled his conversation with so many foreign words}.
+
+This example also contains an independent clause and two subordinate clauses:
+
+- __independent clause__: the crowd would never understand.
+- __relative clause__: that assembled on the sidewalks
+- __noun clause__: why he filled his conversation with so many foreign words.
+
+Try out the next two examples independently. In the following example, see if we can identify an independent clause and _three_ adverb clauses:
+
+- When a teaspoonful of silkworm eggs endowed the church, when the letters of sacred testaments were unreeled in the coastal cities, when a bookworm conspired to enter the maze of empty roads, the rivers began flowing.
+
+The independent clause in that sentence is 'the rivers began flowing', and the three adverb clauses are: 'when a teaspoonful of silkworm eggs endowed the church', 'when the letters of sacred testaments were unreeled in the coastal cities', and 'when a bookworm conspired to enter the maze of empty roads'.
+
+And in this next example, identify an independent clause and _two_ relative clauses:
+
+- All this takes place on my lawn, which has nothing to do with the seasons that roll lightly by.
+
+In this sentence, the independent clause is “All this takes place on my lawn.”
+
+The relative clause “which has nothing to do with the seasons that roll lightly by” adds information about “my lawn.”
+
+Within that, “that roll lightly by” is a second relative clause, modifying “the seasons.”
+
+## Exercises
+
+For each of the following, identify the independent and subordinate clauses.
+
+For each subordinate clause, decide whether it’s an adverb clause, a relative clause (adjective), or a noun clause.
+
+Before you begin, however, here are the answers to the last two examples you tried out on your own:
+- [WHEN a teaspoonful of silkworm eggs endowed the church], [WHEN the letters of sacred testaments were unreeled in the coastal cities], [WHEN a bookworm conspired to enter the maze of empty roads], the rivers began flowing.
+
+independent: the rivers began flowing
+
+adverb clause: WHEN a teaspoonful of silkworm eggs endowed the church
+
+adverb clause: WHEN the letters of sacred testaments were unreeled in the coastal cities
+
+adverb clause: WHEN a bookworm conspired to enter the maze of empty roads
+
+- All this takes place on my lawn, [WHICH has nothing to do with the
+seasons] [THAT roll lightly by].
+
+independent: all this takes place on my lawn
+
+relative clause: WHICH has nothing to do with the seasons
+
+relative clause: THAT roll lightly by
+
+1. As the nails began to fly away, we wondered how we were to get any work done. (1 independent; 2 subordinate)
+
+- In this sentence, the independent clause is 'we wondered to get any work done', and the adverb clause is 'how we were' adds information about 'wondered', and the relative clause 'as the nails began to fly away' adds information about wondered.
+
+2. The busybody who lives next door understands that the bronze statues have been draped in towels. (1 independent; 2 subordinate)
+
+- In this sentence, the independent clause is 'the busybody understands', and the relative clause 'who lives next door' adds information about 'the busybody', and the noun clause is 'that the bronze statues have been draped in towels'.
+
+3. The donkey’s stance, which can be seen through the front window, will haunt you this day though you have left your shudders closed. (1 independent; 2 subordinate)
+
+- In this sentence, the independent clause is 'the donkey's stance will haunt you this day', and the relative clause 'which can be seen through the front window' adds information about 'the donkey's stance', and the adverb clause 'though you have left your shudders closed' adds information about 'haunt' (why haunt you this day).
+
+4. The poem begins when the poet stops, when the poet gets out of the way. (1 independent; 2 subordinate)
+
+- In this sentence, the independent clause is 'the poem begins', the adverb clauses are 'when the poet stops', and 'when the poet gets out of the way'.
+
+5. So that the speakers could still be heard from the steeple that graced our roof, we turned the knobs clockwise. (1 independent; 2 subordinate)
+
+- In this sentence, the independent clause is 'we turned the knobs clockwise', the relative clause is 'that graced our roof' adds information about 'the steeple' and the adverb clause 'so that the speakers could still be heard from the steeple' adds information about 'turned the knobs clockwise'.
+
+# Complex Vs. Compound Sentences
+
+Before concluded our study of complex sentences, let's see how the complex sentence compares with the compound sentence.
+
+- Compound sentence: The parade is turning into our street, _for_ the other streets have been barricaded.
+- complex sentence: The parade is turning into our street _because_ the other streets have been barricaded.
+
+By studying these two examples, we note two differences: the comma and the conjunction. While complex sentences (those containing adverb clauses) are created with subordinating conjunctions (_although, because, when, etc_). Compound sentences are created with coordinating conjunctions (_for, and, nor, but, or, yet, so).
+
+Stated this way, the difference between compound sentences and complex sentences seems light. And yet, they are treated as two different sentence categories. So that, really, is the difference between them?
+
+Here is the difference: _Subordinating conjunctions attach to the right-hand sentence; coordinating conjunctions do not_.
+
+Let's look at our two examples once again, except that this time we'll group the key components using bracket.
+
+- Compound sentence: 1{The parade is turning into our street}, 2{for} 3{the other streets have been barricaded}.
+- Complex sentence: 1{The parade is turning into our street} 2{because the other streets have been barricaded}.
+
+The compound sentence consists of three components: (1) an independent clause, (2) a coordinating conjunction, and (3) a second independent clause. In other words, the coordinating conjunction _for_ sits between the two clauses, independently and aloof.
+
+The complex sentence consists of two components: (1) an independent clause (2) a subordinate (adverbial) clause. Here, the subordinating conjunction _attaches itself_ to the subordinate clause.
+
+In summary, it pays to understand the types of conjunctions and to be familiar with the conjunction groups that create which sentence types. Much of the work of distinguishing between simple, compound, and complex sentences can be boiled down to understanding the work being done by the conjunctions.
+
+## Exercises
+
+Part 1: from Compound to Complex
+
+In numbers 1-3, convert the compound sentences to complex sentences. To do this, replace the comma + coordinating conjunction (marked with small caps) with a subordinating conjunction chosen from this list:
+
+- after, although, as, because, before, even if, if, since, so that, though, till, unless, until, when, whenever, wherever, while.
+
+1. The treasure could not be found, FOR the map had been drawn by a mad
+sea-captain.
+
+- The treasure could not be found because the map had been drawn by a mad sea-captain.
+
+2. We would hold our candles aloft in the rain, AND John Brown could see
+justice after all.
+
+- We would hold our candles aloft in the rain so that John Brown could see justice after all.
+
+3. They had been completely surrounded by cowboys, SO the sparkling noise
+of horses sounded in their ears.
+
+- They had been completely surrounded by cowboys while the sparkling noise of horses sounded in their ears.
+
+Part 2: from Complex to Compound
+
+This time we’ll convert complex sentences to compound sentences. In numbers 4-6, replace the subordinating conjunction (marked with small caps) with a comma + coordinating conjunction chosen from this list: for, and, nor, but, or, yet, so.
+
+1. The swift runners had begun WHILE the slow runners had gone to sleep.
+
+- The swift runners had begun, but the slow runners had gone to sleep.
+
+2. He had danced down the street’s center THOUGH the snow had continued to
+fall.
+
+- He had danced down the street's center, and the snow had continued to fall.
+
+3. You won’t hear the mourners’ song IF you are sobbing.
+
+- You won't hear the mourners' song, so you are sobbing.
+
+# Compound-Complex Sentences
+
+# Test Questions
+

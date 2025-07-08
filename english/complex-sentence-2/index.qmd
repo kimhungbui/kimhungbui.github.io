@@ -1,0 +1,499 @@
+---
+title: Complex Sentence - Part 2
+lightbox: false
+description: Relative Clauses
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-08
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+PART 2: ADJECTIVE CLAUSES
+# An Introduction to Relative Clauses
+
+## Review
+A complex sentence is a sentence that contains an independent clause and one or more subordinate clauses.
+
+Subordinate clauses can be classified as adverb clauses, __adjective clauses__, or noun clauses.
+
+Those subordinate clauses that function as adjectives are known as __relative clauses__.
+
+Relative clauses begin with one of the following __relative pronouns__.
+
+- _who, what, which, whom, whose, what, when, where, why_.
+We are going to focus on three that we use most often in our writing: _who, that_, and _which_.
+Examples:
+
+- I met a man {who had lost the ability to cry or sing}. (The independent clause _I met a man_ + the relative clause _who had lost the ability to cry or sing_).
+
+- There came a dream of hopes {that never yet had flushed his cheek}. (The independent clause _there came a dream of hopes_ + the relative clause _that never yet had flushed his cheek_).
+
+- The speaker spoke of youth, {which night and time have quenched forever}. (the independent clause _the speaker spoke of youth_ + the relative clause _which night and time have quenched forever_).
+
+## Exercises
+Identify the independent and relative clauses contained in the following complex sentences.
+
+1. The men of England plow for the lords who oppress them. [What is the
+relative clause in this sentence? Hint: it starts with who, that, or which.]
+-who oppress them
+
+2. The men of England plow for the lords who oppress them. [What is the
+independent clause in this sentence? Hint: it is all the words not contained
+in your previous answer.]
+-the men of England plow for the lords
+
+3. At last we understood the woe that had wasted him. [What is the relative
+clause in this sentence? Hint: it starts with who, that, or which.]
+-that had wasted him.
+
+4. At last we understood the woe that had wasted him. [What is the
+independent clause in this sentence? Hint: it is all the words not contained
+in your previous answer.]
+-At last we understood the woe
+
+5. Encircling ivy covered the halls, which the waterfalls willed with unfailing
+sound. [What is the relative clause in this sentence? Hint: it starts with
+who, that, or which.]
+-which the waterfalls willed with unfailing sound.
+
+6. Encircling ivy covered the halls, which the waterfalls willed with unfailing
+sound. [What is the independent clause in this sentence? Hint: it is all the
+words not contained in your previous answer.]
+-Encircling ivy covered the halls.
+
+# The Medial Position
+
+In the previous lesson, we took our first look at relative clauses. Each of the sentences contained in that lesson features a relative clause in the __terminal position__ (the position to the right of an independent clause):
+- Independent clause + relative clause.
+However, relative clauses may also appear in the __medial position__:
+The terms _introductory, medial,_ and _terminal_ help us to refer to key places within a sentence. Quite simply:
+
+- __introductory__ = at the beginning
+- __medial__ = in the middle
+- __terminal__ = at the end
+
+Here is an example of a relative clause in the medial position:
+
+- The man {who had lost the ability to cry or sing} __was sitting__ in the corner.
+Here, the relative clause _who had lost the ability to cry or sing_ sits in the medial position - between the subject _man_ and the verb _was sitting_.
+
+- The hopes {that never yet had flushed his cheek} __would__ soon __be realized__.
+Here, the relative clause _that never yet had flushed his cheek_ sits in the medial position - between the subject _hopes_ and the verb _would be realized_.
+
+- Youth, {which night and time have quenched forever}, cannot be recaptured.
+Here, the relative clause _which night and time have quenched forever_ sits in the medial position-between the subject _youth_ and the verb _can be recaptured_.
+
+## Exercises
+Identify the independent and relative clauses contained in the following complex sentences. In each case, the relative clause sits in the medial position —between the subject and verb of the independent clause.
+
+1. The living winds, WHICH flow like waves above the living waves below,
+are creating navigational difficulties for the nightingales. [What is the
+relative clause in this sentence? Hint: it starts with who, that, or which.]
+-which flow like waves above the living waves below
+
+2. The living winds, WHICH flow like waves above the living waves below,
+are creating navigational difficulties for the nightingales. [What is the
+independent clause in this sentence? Hint: it is all the words not contained
+in your previous answer.]
+-the living winds are creating navigational difficulties for the nightingales.
+
+3. The sounds THAT soothed her sleep came in through the open window.
+[What is the relative clause in this sentence? Hint: it starts with who, that,
+or which.]
+-that soothed her sleep
+
+4. The sounds THAT soothed her sleep came in through the open window.
+[What is the independent clause in this sentence? Hint: it is all the words
+not contained in your previous answer.]
+-the sound came in through the open window
+
+5. The people WHO are lost in stormy vision need our sympathy. [What is the
+relative clause in this sentence? Hint: it starts with who, that, or which.]
+-who are lost in stormy vision
+
+6. The people WHO are lost in stormy vision need our sympathy. [What is the
+independent clause in this sentence? Hint: it is all the words not contained
+in your previous answer.]
+-the people need our sympathy.
+
+# Subjects and Verbs in Sentences with Relative Clauses
+
+Relative clauses are clauses that function as adjectives. How so?
+Three __relative clauses__, with their subjects and verbs marked:
+
+- _who_ __fall__ in love
+
+- _that_ __sits__ in the center of the circle
+
+- _which_ __remained__ obscure in the mind of his listeners
+
+Each of these word groups is a clause because each contains a subject and a verb.
+Each is subordinate because each is unable to stand alone as its own independent sentence.
+
+To gain their status as clauses, these word groups cheat a bit: they use their own relative pronouns as subjects. They lack independence because their subject are not true subjects. The relative pronouns that serve as subjects (_who, that,_ and _which_) cannot exist without the __antecedents__ they point to.
+
+Let's take the three relative clauses from above and add them to some independent clauses.
+
+### Complex Sentence 1
+- People {_who_ __fall__ in love} __know__ the movement of time.
+
+In this example, the medial relative clause sits between the primary subject and verb.
+
+- primary subject-verb: _people know_
+- secondary subject-verb: who fall
+
+With the relative clause _who fall in love_, we find that the relative pronoun _who_ serves not only as the clause's first word, but also as its subject. Because _who_ is a pronoun, it exists courtesy of an __antecedent__ it can point to - which happens to be _people_, the subject of the independent clause. In this case, the subject of the relative clause is linked to the subject of the independent clause via pronoun-antecedent connection.
+
+### Complex Sentence 2
+- The _object_ {_that_ __sits__ in the center of the circle} __resembles__ a silver tear.
+In this example, the medial relative clause once again sits between the primary subject and verb.
+
+- primary subject-verb: object resembles
+
+- secondary subject-verb: that sits
+
+With the relative clause _that sits in the center of the circle_, we find that the relative pronoun _that_ serves not only as the clause's first word, but also as it subject. Because _that_ is a pronoun, it exists courtesy of an antecedent it can point to- which happens to be _object_, the subject of the independent clause. Once again, we find that the subject of the relative clause is linked to the subject of the independent clause.
+
+### Complex Sentence 3
+
+- The _chatterer_ __provided__ no details in support of his statement, {_which_ __remained__ obscure in the mind of his listeners}.
+In this example, the relative clause is not in the medial position, as it was in the two previous examples, but in the terminal position.
+
+- primary subject-verb: chatterer provided
+
+- secondary subject-verb: which remained
+
+With the relative clause _which sits in the center of the circle_, we find that the relative pronoun _which_ serves not only as the clause's first word, but also as its subject. Because _which_ is a pronoun, it exists courtesy of an antecedent it can point to, which happens to be the noun _statements_, not the subject _chatterer_. We see, then, that when relative clauses are moved to positions further from the primary subject, the subjects of the two clauses no longer maintain a pronoun-antecedent connection.
+
+## What makes relative clauses adjectival?
+We need to demonstrate that relative clauses do, in fact, function as adjectives.
+Let's use the three example sentences we saw earlier:
+
+- _People_ {_who_ __fall__ in love} __know__ the movement of time.
+Here, the relative clause _who fall in love_ is describing the noun _people_; thus it is functioning as an adjective.
+
+- The _object_ {_that_ __sits__ in the center of the circle} __resembles__ a silver tear.
+Here, the relative clause _that sits in the center of the circle_ is describing the noun _object_; thus it is functioning as an adjective.
+
+- The _chatterer_ __provided__ no details in support of his statement, {which __remained__ obscure in the mind of his listeners}.
+Here, the relative clause _which remained obscure in the mind of listeners_ is describing the noun _statements_; thus it is functioning as an adjective.
+
+::: {.callout-note}
+As a rule, relative clauses sit immediately next to the nouns they describe.
+:::
+
+## Exercises
+
+Here we will focus on the adjectival quality of relative clauses by identifying relative clauses and the nouns those clauses are describing.
+
+1. The rumormonger took the money from the safe, WHICH had been left
+unlocked. [What is the relative clause? This relative clause is functioning
+as an adjective because it is describing which noun?]
+
+- which had been left unlocked
+- the safe
+
+2. The savage, WHO wore a sassy leopard skin, defended his territory against
+all invaders. [What is the relative clause? Which noun it is describing?]
+
+- who wore a sassy leopard skin
+
+- the savage
+
+3. The shelter THAT was made of straw was blown down by the wolf. [What is
+the relative clause? Which noun it is describing?]
+
+- that was made of straw was blown down by the wolf
+
+- the shelter
+
+4. The trophy went to the sweeper WHO used the longest broom. [What is the
+relative clause? Which noun it is describing?]
+
+- who used the longest broom
+- the sweeper
+
+5. The toddler chose the diaper THAT had been hanging on the clothesline.
+[What is the relative clause? Which noun it is describing?]
+
+- that had been hanging on the clothesline
+- the diaper
+
+6. The toboggan, WHICH was painted magenta, raced down the icy hillside.
+[What is the relative clause? Which noun it is describing?]
+
+- which was painted magenta
+- the toboggan
+
+
+# Restrictive and Nonrestrictive Relative Clauses
+Some of the relative clauses have been punctuated with commas, some without. This is because relative clauses are either __restrictive__ or __nonrestrictive__.
+
+- __restrictive__ = no commas
+- __nonrestrictive__ = commas
+Here is the difference between the two: Often, restrictive clauses serve the purpose of narrowing the possibilities within a group; nonrestrictive clauses serve no such purpose.
+
+For example, suppose we have a group of actors. During rehearsal that day some actors attend rehearsal; some did not. By using a restrictive relative clause, we can reduce the larger group of _all_ actors to a smaller group - those who didn't attend rehearsal.
+
+- The actor {_who_ failed to attend rehearsal} were forgetting their lines.
+
+When we use relative clauses, we must be consciously aware of our purpose in using them: Are we restricting a larger group (restrictive clause)? Or are we just adding additional information (restrictive clause)? We must also be conscious of our punctuation choice: Are we restricting a large group? (If so, we don't use commas). Or are we just adding additional information? (If so, we do use commas.)
+
+## Exercises
+
+For each sentence below, first identify the relative clause; then determine whether that clause is restrictive or nonrestrictive.
+
+1. On every side now rose rocks, WHICH lifted their barren pinnacles in the light of evening. [What is the relative clause? Is it restrictive or nonrestrictive?]
+
+- Which lifted their barren pinnacles in the light of evening.
+- nonrestrictive - have commas, it does not restrict a group of rock from a larger group.
+
+2. The eagle, WHO can scale Heaven in a mighty flash, soars and screams round her empty nest. [What is the relative clause? Is it restrictive or nonrestrictive?]
+
+- Who can scale Heaven in a mighty flash
+- nonrestrictive, in that sentence, just has 1 eagle.
+
+3. The eddying waters rose, circling fast and dashing the roots of trees THAT stretched their arms in darkness. [What is the relative clause? Is it restrictive or nonrestrictive? What larger group of things is being restricted to a smaller group?]
+
+- THAT stretched their arms in darkness.
+- It is restrictive, the roots of trees are being restricted to a smaller group-just those that stretched their arms in the darkness.
+
+4. The great moon, WHICH suspended her mighty horn over the wide world,
+guided us safely home. [What is the relative clause? Is it restrictive or nonrestrictive?]
+
+- Which suspended her mighty horn over the wide world.
+- it is nonrestrictive, just one moon
+
+5. The sweet brook THAT rose from the secret springs of a dark fountain
+gurgled its way down the mountainside. [What is the relative clause? Is it restrictive or nonrestrictive? What larger group of things is being restricted to a smaller group?]
+
+- that rose from the secret springs of a dark fountain
+- restrictive-the larger group of brooks is being restricted to a smaller group-just the one that rose from the secret springs of the dark fountain.
+
+6. These were the famous Euganean hills, WHICH bear the likeness of a clump
+of islands. [What is the relative clause? Is it restrictive or nonrestrictive?]
+
+- which bear the likeness of a clump of islands
+- nonrestrictive
+
+7. They do not borrow their glory from men WHO make the world their prey.
+[What is the relative clause? Is it restrictive or nonrestrictive? What larger group of people is being restricted to a smaller group?]
+
+- who make the world their prey
+- restrictive-the larger group of men is being restricted to a smaller group-just those who make the world their prey
+
+8. We looked out upon the grass THAT trembled with the sense of an
+unaccustomed presence. [What is the relative clause? Is it restrictive or nonrestrictive? What larger group of things is being restricted to a smaller group?]
+
+- that trembled with the sense of an unaccustomed presence.
+- restrictive-the larger group of grass is being restricted to a smaller group-just the grass that trembled with the sense of an unaccustomed presence.
+
+# Focus on Relative Pronouns
+
+## Which Versus That
+With few exceptions, the relative pronoun _which_ is punctuated with commas while the relative pronoun _that_ is used without commas. In other words, _which_ is used to create nonrestrictive clauses and _that_ is used to create restrictive clauses.
+
+## Exercises
+For each of the following, first identify the relative clause. Then decide whether the sentence needs one comma, two commas, or none at all. Clauses formed from which need commas; clauses formed from that go without.
+
+1. Travelers crossing the water hear the bell that calls the maniacs from their cells.
+
+- relative clause: that calls the maniacs from their cells
+- without commas - because clauses formed from that.
+
+2. The city that gave you refuge calls for you to return.
+
+- that gave you refuge
+- without commas
+
+3. This wild spirit which moves everywhere is both a destroyer and a
+preserver.
+
+- which moves every where
+- rewrite: this wild spirit, which moves everywhere, is both a destroyer and a preserver.
+- use which, need 2 commas.
+
+3. And they dragged the cruel King to kiss their bloodied feet which threatened to trample him.
+
+- which threatened to trample him.
+- rewrite: And they dragged the cruel King to kiss their bloodied feet, which threatened to trample him.
+- use which, need 1 comma
+
+## Who Versus That
+With few exceptions, we use _who_ with people and we use _that_ with things. A common error occurs when we fail to notice that we have used _that_ when we should have used _who_.
+
+## Exercises
+Correct each of the following sentences by applying the rule use “who” with people and use “that” with things.
+5. Freedom remains with those that are truly free.
+
+- freedom -> human
+- Corrected: Freedom remains with those who are truly free.
+
+6. There yet remained a few that would not bow their spirits to the Conqueror.
+
+- their spirits to the Conqueror -> human
+- Corrected: There yet remained a few who would not bow their spirits to the Conqueror.
+
+7. The sleeping mother dreamed of the children that once roamed throughout her house.
+
+- the children -> human
+- Corrected: The sleeping mother dreamed of the children who once roamed throughout her house.
+
+8. This is the poet that can’t stop quoting haikus at his guests.
+
+- poet -> human
+- Corrected: This is the poet who can't stop quoting haikus at his guests.
+
+# Who Versus Whom 1
+
+## Subjective Versus Objectives Forms
+_Who_ and _Whom_ are actually two forms of the same word: _who_ is the __subjective__ form and while _whom_ is the __objective__ form.
+
+At this point, we could digress into an explanation of the subjective case and the objective case- but we won't. Instead, we'll take a shortcut by learning this general rule:
+
+- _Whom_ is followed by a noun or pronoun; _who_ is followed by a verb.
+Study these two examples:
+
+- This Earth has been peopled with the servants _whom_ __you require__.
+- I am the only man _who_ __writes in the margins__.
+
+In each example, the relative clause is boldfaced and the relative pronoun is italicized. Notice that _whom_ is followed by the pronoun _you_ and _who_ is followed by the verb _writes_.
+
+## Exercises
+Complete the sentences below by inserting who or whom in place of the blank. If the word after the blank is a verb, use who; if the word after the blank is a noun or pronoun, use whom.
+
+1. Such aggressive action reminded us of the owl ___ faces whatever she sees.
+
+- faces is a verb, use who
+- Rewrite: Such aggressive action reminded us of the owl who faces whatever she sees.
+
+2. That heavenly maiden ___ mortals call the Moon glides across the night sky.
+
+- mortals is a noun - use whom
+- Rewrite: That heavenly maiden whom mortals call the Moon glides across the night sky.
+
+3. The people ___ she loves move through the familiar rooms.
+
+- she is a noun -> use whom
+- Rewrite: The people whom she loves move through the familiar rooms.
+
+4. This was the massive father ___ lifted the boy high with one hand.
+
+- lifted is a verb -> use who
+- This was the massive father who lifted the boy high with one hand.
+
+5. This is the man ___ fame singled out as her favorite.
+
+- fame is a noun -> use whom
+- Rewrite: This is the man whom fame singled out as her favorite
+
+6. Today we would study the poet ___ wrote of the oval office.
+
+- wrote is a noun, so that we use who
+- Rewrite: Today we would study the poet who wrote of the oval office.
+
+# Who Versus Whom 2
+
+## A Writing Trick with _Whom_ As the Object of a Preposition
+Another function of the objective relative pronoun _whom_ is to serve as the object of a preposition. The preposition category includes such words as _at, below, by, for, from, in, of, on, through, to,_ and _with_.
+
+Using _whom_ as the object of a preposition allows us to perform the following trick. This trick can be performed with any relative clause that ends with a preposition.
+
+Example:
+
+- He was the kind of knight _whom_ ladies could be proud __of__.
+
+Now, we take the preposition (of) from the end of the relative clause and move it to the front of the relative clause:
+
+- He was the kind of knight __of__ _whom ladies could be proud_.
+
+One more example, with the relative clause in the medial position:
+
+- The people _whom you smiled __on___ were warmed to the heart. -becomes-
+- The people ___on__ whom you smiled_ were warmed to the heart.
+
+This simple trick can lend a more formal and stylish tone to our writing.
+
+## Exercises
+In each sentence below, move the preposition from the end of the relative clause to the front of the relative clause. Note the more elevated tone that results. For this one, you might try voicing your results out loud.
+1. I knew one like you whom this city gave welcome to.
+
+- Rewrite: I knew one like you to whom this city gave welcome.
+
+2. The people whom Percy argued with were the ones he most tried to avoid.
+
+- Rewrite: The people with whom Percy argued were the ones he most tried to avoid.
+
+3. We failed to recognize the shepherd whom wolves would flee from.
+
+- Rewrite: We failed to recognize the shepherd from whom wolves would flee.
+
+4. The sister whom you share your secrets with has written you a new song.
+
+- Rewrite: The sister with whom you share your secrets has written you a new song.
+
+5. We now have a list of the souls whom the bell tolls for.
+
+- Rewrite: We now have a list of the souls for whom the bell tolls.
+
+# Reduction of Relative Clauses
+
+We must also learn to pay heed to this word of caution:
+
+- It is often better to __reduce__ relative clauses to shorter phrases.
+
+We often find that perfectly good phrases are hiding inside relative clauses, waiting to be freed. We free them by removing the relative pronoun (_who, that, which_) and the _to be_ verb (_is, am, are, was, were_) that follows the relative pronoun.
+
+- Example 1: The mountain, __which was__ unconquered by those who scale it, cannot be mistaken for a molehill.
+
+Remove _which was_ we get: _The mountain, unconquered by those who scale it, cannot be mistaken for a molehill._
+
+- Example 2: The nation adores its hermits, __who are__ the preservers of solitude.
+
+Remove _who are_ and we get: _The nation adores its hermits, the preservers of solitude_
+
+- Example 3: The tree __that is__ growing in Eden embodies opposites in balance.
+
+Remove _that is_ and we get: _The tree growing in Eden embodies opposites in balance_.
+
+Relative pronouns are also deletable when they are objective pronouns.
+
+Examples:
+- The bed of flowers ~~that~~ she slept in ...
+- The children ~~whom~~ she once raised ...
+
+## Exercises
+Each of the sentences below contains a relative clause, and each relative clause contains a phrase in need of liberation. Liberate those phrases by deleting the relative pronoun (who, that, which) and the to be verb (is, am, are, was, were). Simply read the sentences to yourself without voicing the two deletable words.
+1. The billy goat, which is watching without judgment from behind his strange eyes, stands patient for two millennia.
+
+- Rewrite: The billy goat, watching without judgment from behind his strange eyes, stands patient for two millennia.
+
+2. I greeted the new ones, who were the frightened and longing ones.
+
+- Rewrite: I greeted the new ones, the frightened and longing ones.
+
+3. The flowering chestnuts, which are red and white in the morning light, drift above the watery pavement.
+
+- The flowering chestnuts, red and white in the morning light, drift above the watery pavement. 
+
+4. I cannot reach the handkerchief that is drying on the hook.
+
+- I cannot reach the handkerchief drying on the book.
+
+5. The husband and wife, who are like two scrappy parlor pets, share an established glee.
+
+The husband and wife, like two scrappy parlor pets, share an established glee.
