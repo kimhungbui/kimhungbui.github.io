@@ -1,0 +1,22 @@
+---
+title: IELTS Writing Task 1
+lightbox: false
+description: Begin Series How to write IELTS TASK 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-10
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
