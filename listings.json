@@ -1,27 +1,24 @@
 [
   {
-    "listing": "/programming.html",
+    "listing": "/posts.html",
     "items": [
-      "/programming/maximum-subarray-problem/index.html",
-      "/programming/leetcode-find-closest-node-given-2-nodes/index.html",
-      "/programming/leetcode-word-ladder/index.html",
-      "/programming/parallel-computing/chapter1.html",
-      "/programming/leetcode-count-good-triplets/index.html",
-      "/programming/leetcode-maximum-subarray/index.html",
-      "/programming/docker-intro/index.html",
-      "/programming/disjoint-set-union/index.html",
-      "/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
-      "/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html",
-      "/programming/program-parity-invariance/parity-invariance.html",
-      "/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html",
-      "/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html",
-      "/programming/leetcode-house-robber/house-robber.html",
-      "/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html"
+      "/posts/extreme-early-retirement/index.html",
+      "/posts/pkm-quarto-books/index.html",
+      "/posts/nextcloud-install/index.html"
+    ]
+  },
+  {
+    "listing": "/artificial-intelligent.html",
+    "items": [
+      "/artificial-intelligent/deep-learning-interview/index.html",
+      "/artificial-intelligent/finetunning/index.html",
+      "/artificial-intelligent/convolution/index.html"
     ]
   },
   {
     "listing": "/english.html",
     "items": [
+      "/english/compound-sentence/index.html",
       "/english/complex-sentence-2/index.html",
       "/english/complex-sentence-3/index.html",
       "/english/gracious/index.html",
@@ -61,19 +58,23 @@
     ]
   },
   {
-    "listing": "/artificial-intelligent.html",
+    "listing": "/programming.html",
     "items": [
-      "/artificial-intelligent/deep-learning-interview/index.html",
-      "/artificial-intelligent/finetunning/index.html",
-      "/artificial-intelligent/convolution/index.html"
-    ]
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/extreme-early-retirement/index.html",
-      "/posts/pkm-quarto-books/index.html",
-      "/posts/nextcloud-install/index.html"
+      "/programming/maximum-subarray-problem/index.html",
+      "/programming/leetcode-find-closest-node-given-2-nodes/index.html",
+      "/programming/leetcode-word-ladder/index.html",
+      "/programming/parallel-computing/chapter1.html",
+      "/programming/leetcode-count-good-triplets/index.html",
+      "/programming/leetcode-maximum-subarray/index.html",
+      "/programming/docker-intro/index.html",
+      "/programming/disjoint-set-union/index.html",
+      "/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
+      "/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html",
+      "/programming/program-parity-invariance/parity-invariance.html",
+      "/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html",
+      "/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html",
+      "/programming/leetcode-house-robber/house-robber.html",
+      "/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html"
     ]
   }
 ]
