@@ -21,24 +21,14 @@ website:
             href: math/probability/
           - text: Statistics
             href: math/statistics/
-      - text: AI
-        menu:
-          - text: Machine Learning
-            href: ai/machine-learning/
-          - text: Deep Learning
-            href: ai/deep-learning/
-      - text: Programming
-        menu:
-          - text: Python
-            href: programming/python/
-          - text: JavaScript
-            href: programming/javascript/
-      - text: English
-        menu:
-          - text: Speaking
-            href: english/speaking/
-          - text: Writing
-            href: english/writing/
+      - href: artificial-intelligent.md
+        text: AI
+
+      - href: programming.md
+        text: Programming
+
+      - href: english.md
+        text: English
       - href: posts.md
         text: Posts
 
