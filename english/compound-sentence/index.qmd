@@ -1,0 +1,137 @@
+---
+title: Compound sentence
+lightbox: false
+description: Quick Review Compound Sentence
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge Basic Grammar
+    affiliation-url: 
+date: 2025-07-09
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+A sentence can contain more than one sentence within it, for example:
+
+1. Jane put the glass vase on the table and her mother picked it up.
+
+This is an example of a compound sentence. It actually contain two sentences. The first is _Jane put the glass vase on the table_. Since a sentence within a sentence is called a clause, we can also say that sentence 1 contains two clauses. Just as a simple sentence must contain at least a subject and a verb phrase, each of the sentences (clauses) within a compound sentence must contain its own subject and verb phrase.
+
+Recall, conjunctions like _and, or, but_ join things. In fact, the two sentences within sentence 1 are joined by the conjunction _and_. Recall also that there are two kinds of conjunctions, coordinating and subordinating. The sentences in a compound sentence are joined together by a coordinating conjunction. There are three common coordinating conjunctions they are _and, or,_ and _but_. Four less common ones are _for, so, yet_, and _nor_. (FANBOYS)
+
+# Exercises
+Each of the sentences below is a compound sentence consisting of two sentences (clauses).
+Underline each of the sentences which is in the compound sentence.
+Sample: I felt restless after breakfast and I wandered around the house.
+
+
+1. <u>Andre pulled the car into the street</u>, and <u>Beth began reading the directions</u>.
+
+
+2. <u>She enjoyed shopping for food</u>, but <u>she especially enjoyed cooking</u>.
+
+
+3. <u>I can do this now</u>, or <u>I can do it later</u>.
+
+
+4. <u>Dan does not feel well</u>, yet<u> he wants to go in to work</u>.
+
+
+5. <u>We missed our flight</u>, so <u>we have to wait around the airport for the next available one</u>.
+
+
+6. <u>He does not like to change his mind</u>, nor <u>is he willing to compromise</u>.
+
+
+7. <u>You deserve your good fortune</u>, for <u>you have a heart of gold.</u>
+
+
+8. <u>The players are running onto the field</u>, and <u>then they are beginning to practice</u>.
+
+9. <u>Stephanie likes to go to concerts</u>, but <u>she will not see an opera</u>.
+
+10. <u>You can pay with cash</u>, or <u>you can take out a loan</u>.
+
+Decide if each sentence below is a simple sentence or a compound sentence. Remember that a
+simple sentence contains just one sentence (clause) while a compound sentence contains at least two sentences joined by a coordinating conjunction.
+Sample:Wallace stared at him in the grocery store. simple
+
+
+1. He can’t blame her for the problem. (simple)
+2. Beth left the library, and she headed straight home. (compound sentence)
+3. He was watching her, but she was pretending not to notice. (compound)
+4. We like him a lot. (simple)
+5. The coach wants to win, but he will be happy with a tie. (compound)
+6. It will be a sunny day. (simple)
+7. Jeremy likes his wife’s new dress. (simple)
+8. I will have a bowl of soup, but I don’t want salad. (compound)
+9. Sam called me at noon. (simple)
+10. He will be going to Penn State, or he’ll study at Temple University. (compound)
+
+*** 
+
+A compound sentence can contain more than two sentences:
+
+2. Nora was Zach's stepmother but she treated him like her other children and he trusted her completely.
+
+Here, the <u>three</u> sentences that make up this sentence are: (1) _Nora was Zach's stepmother_; (2) _she treated him like her other children_; (3) _he trusted her completely_. So the sentence _There was a glass vase on the table and Jane picked it up_ contains two sentences, or clauses. In fact, a compound sentence can contain any number of sentences, though we usually limit ourselves to just a few: 
+
+3. He turned his head away and he pretended to ignore her but he continued to listen to her and in fact he hung on her every word. (4 sentences or clauses)
+
+Keep in mind that you can't tell if a sentence is simple or compound by how long it is; you need to see if it contains one or more than one complete sentence within it. For example, the following sentence, although it is long, is just a simple sentence:
+
+4. The tall man with the violin case quickly climbed the stairs to the abandoned warehouse near the railroad tracks.
+
+This is a simple sentence because it has just one subject, _the tall man with the violin case_, and one verb phrase - notice that there is just one verb, _climbed_. (The sentence is just long because it contains a few preposition phrases.) And the following sentence, although it is short, is a compound sentence: _John laughed and Mary cried_. It's a compound sentence because it contains two sentences that can stand alone: _John laughed; Mary cried_. Each of these has its own subject and verb phrase.
+
+
+## Exercises
+
+Each sentence below is either a simple or compound sentence. Identify the number of clauses in each sentence. If there is more than one clause in the sentence, underline each clause.
+Sample:The bear watched his movements closely. 1
+
+1. Vicki was always looking at herself in the mirror, but MaryAnn was extremely self-confident, and she never gave herself a second glance. 3
+2. Her father was devoted to her. 1
+3. Our firm’s CEO will be flying to Chicago next week, but he’ll be returning the same day. 2
+4. The lady in the elegant blue dress entered the well-lit room with her perky little dog in her arms. 1
+5. Our boat was hit with strong winds, and we had to return to our cabins. 2
+6. We don’t have much time left in the zoo, but we should visit the bird cage, and we must see the monkeys, or we should at least feed the goats in the petting area, but I definitely want to take a look at the elephants. 5
+7. We can catch a movie, or we can visit a museum, but we won’t be seeing a Broadway show. 3
+8. Many people walk in the woods in autumn. 1
+9. The economy is getting worse, and many people are worried about their jobs. 2
+10. My car is getting old, and it’s pretty banged up, but I hope to get another year out of it. 3
+
+*** 
+
+Keep in mind that a compound <u>phrase</u> is not the same thing as a compound <u>sentence</u>. For example, the following sentence has a compound noun phrase.
+
+5. The teacher graded <u>the student's exam and their papers</u>.
+
+We've certainly got a coordinating conjunction, _and_, in sentence 5. However, the question is, what the _and_ joining? If we look at what's on each side of the _and_, we find the following: _The teacher graded the student's exams_, which is a sentence, and _their papers_; _their papers_ is not a sentence by itself. In this case, the conjunction _and_ is joining two noun phrases: _the students' exams_ and _their papers_. It's not joining two complete sentences, and so the sentences is not a compound sentence but is a simple sentence.
+
+## Exercises
+
+Decide if each sentence below is a simple or compound sentence. Remember that a compound sentence contains a complete sentence on either side of the conjunction.
+
+Sample: Kyle turned around and stared at the screen. simple
+
+1. It was a scene of joy but one thing spoiled the moment. (compound)
+2. The boxer fell to his knees but he managed to get back up. (compound)
+3. The designer and his assistants quickly brought order to the chaos. (simple)
+4. Matt was driving to NewYork with his kids and his neighbor’s son. (simple)
+5. I like to drink coffee or tea after dinner. (simple)
+6. The weather is already getting chilly, but I am not ready for winter just yet. (compound)
+7. His speech should be brief and to the point. (simple)
+8. You must get ready immediately or I’ll leave without you. (compound)
+9. The flight attendant offered me beef or chicken for the entree. (simple)
+10. She likes classical music but rarely goes to concerts. (compound)
