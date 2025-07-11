@@ -1,0 +1,380 @@
+---
+title: Coherence and cohesion problems in task 1
+lightbox: false
+description: Begin Series How to write IELTS TASK 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-10
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Are coherence and cohesion different in Task 1
+
+The following comment shows a problem with coherence and cohesion:
+
+'think I understand how CC works in task 2 … (thanks to your (Task 2) book I've learned to connect ideas …), but I have little idea how to do the same in task 1
+
+I’m having a hard time imagining what a main idea in task 1 look like.'
+
+Many people feel that because Task 1 is different, coherence and cohesion must also work differently here. There is some truth in this, which we can see by comparing this criterion in Task 1 and Task 2:
+
+![](Pasted%20image%2020250710170219.png)
+
+The green highlighting shows the similarities, and the yellow shows the one difference in Task 1: there is no requirement to have a 'clear central topic' and no mention of paragraphing. This may be why a lot of the answers either present all of the details in one body paragraph or have two paragraphs where the break appears to be chosen at random.
+
+If we read the criterion more carefully, we learn that a Band 8 candidate __uses paragraphing sufficiently and appropriately__, while band 9 candidate __skillfully manages paragraphing__. To reach band 6 or 7, we are told that we must __arrange information coherently__ (Band 6) or __logically__ (Band 7), and an examiner comment about a band 6.5 answer (IELTS 10, page 165) says the following: 'Referencing and substitution are well managed', __however, there are lapses in paragraphing__. All of which tell us that paragraphs are more important than many people realise.
+
+In task 1, we are not responding to or presenting an argument, so we do not need to think about the PEEL structure. However, we not found that any way to show a logical 'arrangement' of information __without__ using separate paragraphs, and making the 'main point' of each paragraph will clearly signal this arrangement to our examiner. Thus, although we do not need to think about paragraphs __in the same way__ as in Task 2, we should not ignore paragraphing altogether.
+
+::: {.callout-note} 
+Remember, your aim here is to pass a test .To do that, you need to signal very clearly that you are meeting the criteria being used to assess your answer. With Coherence and cohesion,
+clearly showing the logical organisation of your paragraphs is important if you want to score band 6 or above.
+:::
+
+## Are we practising band 3-5 coherence and cohesion?
+
+In Lesson 1, I made the point that it may be easier to achieve a low score in Task 1 than people realise, because many underestimate the importance of the task and try to answer hurriedly. As with Task achievement, doing so can result in Band 3-5 coherence and cohesion errors. The highlighted text in this table shows what these are:
+
+![](Pasted%20image%2020250710171155.png)
+
+As we can see, a lack of overall progression, repetition, and inaccurate use of cohesive devices can all lead to a lower score here. 
+
+## Using cohesive devices effectively (Band 6) and inaccurately (Band 5)
+
+People often think of Coherence and cohesion in terms of common cohesive devices, and then learn lists of these to use in their writing. Those lists can have headings such asL _Comparision, Contrast, Cause/effect, Emphasis, Addition_.
+
+Presenting linking words and phrases under one heading is a convenient way to start learning about them and such lists can be useful to post on a classroom wall as a helpful reminder to students. However, such devices are not always exactly synonyms of each other. For example, _however_ and _although_ are both used to show contrast, but they are not used in the same way, so we cannot just substitute one for another. Further more, learning lists like this tends to mean that these 'devices' are used mechanically, without an understanding of how they work. This is a little like using a screwdriver to hammer in a nail.
+
+## Cohesive devices
+
+The following extract is part of a sample answer based on a writing task question from Cambridge IELTS 7. The highlighted words and phrases show how people typically think of cohesive devices and cohesion between sentences:
+
+'<u>1_First</u>, chicken consumption stood at 150 grams for every person per week in 1979. <u>2After this</u>, it witnessed a slight rise in its value throughout the given period to reach 250 grams in 2004._
+
+<u>_3On contrary</u>, beef consumption, which recorded a high of just above 200 grams in 1979, showed a slight initial growth in its level in the following 10 years before declining significantly to end at approximately half its starting level by 2004. <u>4Likewise</u>, lamb which was consumed at an identical rate to chicken in 1979, showed a marked drop in its consumption throughout the next 25 years to hit a low of about 60 grams per week in 2004._
+
+<u>_5Also</u>, fish consumption, despite showing a minimal decrease in the first 5 years, it remained stable throughout the following 20 years to report a shy of 50 grams per second per week in 2004_'
+
+As we can see, there is a 'device' being used between each sentence, which gives the _appearance_ of cohesion. However, some of these words and phrases are being used mechanically. This is like picking up any tool we can find without thinking about how to use it. As a result, they are either inappropriate or inaccurate.
+
+### Exercises
+
+Look at the following list and match the highlighted words and phrases in the sample above (number 1 - 5) with the appropriate problem/s (A-D). You may use any letter more than once.
+
+A. It should not used in this context (it is inaccurate or inappropriate here)
+
+B. It can be too informal
+
+C. There is a collocation problem
+
+
+1. A (first use in process task)
+2. A (this is more likely to be used in a process task)
+3. A C, the right collocation is 'On the contrary' and this phrase is used to correct something. 'In contrast' should be used here.
+4. B This can be too informal when used at the beginning of a sentence. 'Similarly' is better here.
+5. B 'also'  is not used at the start of a sentence - doing so makes it seem like spoken language and so it too informal here
+
+
+This is a good example of band 6 use of cohesive devices, which ‘may be faulty or mechanical’. However, as most are being used inaccurately, this also shows some elements of Band 5 coherence and cohesion.
+
+Notice that many of these problems are similar to those with Lexical resource (collocation problems, too informal, the wrong meaning or use). This again shows that learning lists of words or phrases without understanding them fully is not a good idea
+
+# Coherence and cohesion between and within sentences
+
+Learning list of cohesive devices creates another problem: it puts the emphasis at the __beginning__ of a sentence and on sentence linkers. However, cohesion is being assessed both __between and within__ our sentences, so it is important to think about cohesive devices more broadly.
+
+Look at the highlighted words in the following sentence:
+
+_<span style="background:#fff88f">This</span> is like picking up any tool you can find without thinking about how to use <span style="background:#fff88f">it</span>._
+
+The highlighted pronouns are cohesive devices. We can see that <span style="background:#fff88f">'it'</span> refers to 'a tool' because it is __within__ the same sentence, but we do not know what <span style="background:#fff88f">'This'</span> refers to without looking at the previous sentence, so it is an example of cohesion __between__ sentences.
+
+Here is the complete graph with different colours showing which ideas are being connected:
+
+As you can see, there is <span style="background:#b1ffff">a 'device'</span> <span style="background:#40a9ff">being used between each sentence</span>, <span style="background:#40a9ff">which</span> <span style="background:#fff88f">gives the __appearance__ of cohesion</span>. <span style="background:#fff88f">However</span>, <span style="background:#b1ffff">some of these words and phrases</span> are <span style="background:#d3f8b6">being used rather mechanically</span>. <span style="background:#d3f8b6">This</span> is like picking up any <span style="background:#d4b106">tool</span> you can find without thinking about how to use <span style="background:#d4b106">it</span>. <span style="background:#d3f8b6">As a result</span>, <span style="background:#b1ffff">they</span> are <span style="background:#9254de">either</span> inappropriate <span style="background:#9254de">or</span> in accurate.
+
+### Exercises
+
+![](Pasted%20image%2020250710212107.png)
+
+Look at the numbered words and phrases (1-9) and match them to the following types of cohesive devices.
+
+A) linking words or phrases used between sentences.
+B) pronoun (it, this, they, these etc)
+C) relative pronouns (which, where, that, etc)
+D) conjunction (and, but, or, etc)
+E) substitution (both, some, each, neither + a synonym)
+
+1 C
+2 A
+3 E
+4 B
+5 B
+6 A
+7 B
+8 D
+9 D
+
+## Assessing Coherence and cohesion
+
+Looking back at our earlier sample, the highlighted areas below show the types of language our examiner is actually considering when assessing our use of cohesive devices within and between sentences:
+
+![](Pasted%20image%2020250710212539.png)
+
+Each of the highlighted words and phrases have an impact on how the information is connected and whether this is being done clearly and logically (so that we know what is being referred back to and understand how these ideas are connected). The red is used to show the inaccurate use of cohesive devices (we will go into this in more detail). Notice that many of the errors are due to the cohesive devices often learned in a list and used mechanically (or template style) at the beginning of sentences.
+
+## Using cohesive devices to avoid repetition
+
+Repetition is a particular problem in Task 1 because we are generally dealing with a single topic throughout, and often have to refer the same periods of time or the same type of products, goods, or services. Band 5 mentions that an answer may be repetitive because of a 'lack of referencing and substitution', and these are both important in reducing repetition in our answer.
+
+As this extract shows, the sample above manages this well:
+
+- In contrast, beef consumption, __which recorded__ a high of just above 200 grams in 1979, showed __a slight growth__ in __the following 10 years__ __before declining__ significantly to end at approximately __half its initial level__ by 2004.
+
+Without the use of cohesive devices, this is what the sentence would say:
+
+- In contrast, __beef consumption__ recorded a high of just __above 200 grams__ in __1979__ and __beef consumption__ grew to slightly __above 200 grams__ from __1979__ to 1989 then __beef consumption__ declined significantly to approximately half __beef's 1979__ level by 2004.
+
+### Exercises
+
+Because they have different uses and different meanings, not all connecting words and phrases are appropriate for the different Task 1 questions. The following exercises will help us think about when (or whether) a specific connector might be helpful in our writing and practise using them accurately. In the final task, we will correct some common errors in cohesive devices. If we find this too difficult, just make notes about any problems we can see. 
+
+#### Question 1
+
+1) Fill in the gap in the sentence by choosing the correct word from the list.
+2) When we have finished, decide which of these words we would use for: a process task; a bar chart or graph.
+
+List: 
+
+
+|       |           |         |          |                 |       |         |      |           |           |
+| ----- | --------- | ------- | -------- | --------------- | ----- | ------- | ---- | --------- | --------- |
+| First | Meanwhile | Besides | Likewise | On the contrary | While | However | Also | Initially | Similarly |
+
+
+In contrast
+First
+Meanwhile
+Besides
+Likewise 
+On the contrary
+While
+However
+Also
+Initially
+Similarly
+In comparison
+Although
+Furthermore
+
+
+|     |                                                                                                                                                         |     |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+|     | is used to show contrast between two ideas or sentences and highlights this contrast.                                                                   | 1   |
+|     | is used to show contrast within a sentence but does not highlight the contrast.                                                                         | 2   |
+|     | is used in a similar way to although.                                                                                                                   | 3   |
+|     | is used to add new information that is even more important than the previous information.                                                               | 4   |
+|     | is used within a sentence to add new information that is similar to the previously mentioned information                                                | 5   |
+|     | is used to introduce the first step in a process.                                                                                                       | 6   |
+|     | is used to show you are talking about what happened at the start of something and later changed.                                                        | 7   |
+|     | is used to show that something followed a similar pattern or trend to something else.                                                                   | 8   |
+|     | is used to show you are talking about the difference between two things.                                                                                | 9   |
+|     | is used to show you are comparing two things.                                                                                                           | 10  |
+|     | is used to show something happened, or happens, at the same time as something else, or to say what happened while waiting for something else to happen. | 11  |
+
+
+|                 |                                                                                                                                                         |     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| In contrast     | is used to show contrast between two ideas or sentences and highlights this contrast.                                                                   | 1   |
+| Meanwhile       | is used to show contrast within a sentence but does not highlight the contrast.                                                                         | 2   |
+| However         | is used in a similar way to although.                                                                                                                   | 3   |
+| Furthermore     | is used to add new information that is even more important than the previous information.                                                               | 4   |
+| Besides         | is used within a sentence to add new information that is similar to the previously mentioned information                                                | 5   |
+| First           | is used to introduce the first step in a process.                                                                                                       | 6   |
+| Initialy        | is used to show you are talking about what happened at the start of something and later changed.                                                        | 7   |
+| Similarly       | is used to show that something followed a similar pattern or trend to something else.                                                                   | 8   |
+| On the contrary | is used to show you are talking about the difference between two things.                                                                                | 9   |
+| In comparison   | is used to show you are comparing two things.                                                                                                           | 10  |
+| While           | is used to show something happened, or happens, at the same time as something else, or to say what happened while waiting for something else to happen. | 11  |
+
+Corrected:
+
+|     | Linking words  | How to use                                                                                                                                              |
+| --- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | However        | is used to show contrast between two ideas or sentences and highlights this contrast.                                                                   |
+| 2   | Although       | is used to show contrast within a sentence but does not highlight the contrast.                                                                         |
+| 3   | While          | is used in a similar way to although.                                                                                                                   |
+| 4   | Furthermore    | is used to add new information that is even more important than the previous information.                                                               |
+| 5   | Also           | is used within a sentence to add new information that is similar to the previously mentioned information                                                |
+| 6   | First          | is used to introduce the first step in a process.                                                                                                       |
+| 7   | Initially      | is used to show you are talking about what happened at the start of something and later changed.                                                        |
+| 8   | Similarly      | is used to show that something followed a similar pattern or trend to something else.                                                                   |
+| 9   | In contrast    | is used to show you are talking about the difference between two things.                                                                                |
+| 10  | In comparision | is used to show you are comparing two things.                                                                                                           |
+| 11  | Meanwhile      | is used to show something happened, or happens, at the same time as something else, or to say what happened while waiting for something else to happen. |
+
+'However, Although, also, Similarly, In contrast, In comparison, and while' could all be used in any type of task 1.
+
+'First' and 'Initially' are more suitable for process tasks.
+
+'Meanwhile' is only suitable for a process task if it is very clear two things are happening at the same time. It could be used when describing a table (or similar chart). For example, a table giving a snapshot of 2 or more areas in one particular year, or with no time element.
+
+'Furthermore' should only be used if it is clear that the new information is more important.
+
+#### Question 2
+
+Fill in the gaps in the sentences below using one of the words or phrases from exercise 1. NB You need to use some of the words more than once.
+
+Possible words:
+although, also, furthermore, first, however, in comparison, in contrast, initially, meanwhile, similarly, while
+
+1) <u>Initially</u>, the number of male students increased each year. <u>However</u>, in 1990, this figure began to fail. (1990 began to fail, previous time it increased each year, so the first sentence can begin with first, initially)
+2) <u>Although/While</u> the number of male students increased steadily in the first decade, from 1990 onwards the trend was reversed. (from 1990 it have another trend -> contrast ^ in one sentence -> although or while).
+
+- This is a classic complex sentence structure: [Subordinate clause (contrast)] + [Main clause]
+
+
+3) Chicken consumption rose slowly in the first twenty years then increased rapidly. Lamb consumption <u>also</u> followed this trend up until 1990.
+
+- If use similarly: Chicken consumption rose slowly in the first twenty years then increased rapidly. <u>Similarly</u>, lamb consumption followed this trend up until 1990.
+
+4) Chicken consumption rose slowly in the first twenty years then increased rapidly. <u>Similarly</u>, lamb consumption rose steadily then more rapidly. <u>However</u>, it remained at a relatively low level <u>in comparison</u> to chicken.
+
+- Rewrite: Chicken consumption rose slowly in the first twenty years, and then increased rapidly. Similarly, lamb consumption grew steadily and then more sharply. However, it remained at a relatively low level compared to chicken throughout the period.
+  
+- "then" needs a comma before it
+- 'in comparison to chicken' is correct but could be more natural
+
+5) Chicken consumption rose slowly in the first twenty years then increased rapidly, <u>while</u>, beef consumption fell almost continually throughout this period.
+6) <u>First</u>, the raw materials are delivered to the factory.
+
+::: {.callout-tip}
+## Note on First and Initially
+- “First” → for Process Descriptions (Step-by-step)
+
+- Use it when:
+
+You are describing stages or steps in a process
+
+You want to list actions in a sequence
+- Structure:
+
+First, + [passive verb] + [what happens].
+
+- Example:
+
+First, the raw materials are delivered to the factory.
+
+Next, they are mixed and heated.
+
+Finally, the product is packaged.
+
+
+- “Initially” → for Trends Over Time (Line graph, bar chart, table, etc.)
+
+- Use it when:
+
+You're describing a trend or pattern that changes later
+
+You want to show the starting condition or behaviour
+
+- Structure:
+
+Initially, + [subject] + [verb/action that later changes].
+
+- Example:
+
+Initially, the number of male students increased each year.
+
+However, in 1990, this figure began to decline.
+
+Initially, car sales remained steady, but after 2010, they dropped significantly.
+
+- Summary table:
+
+|Phrase|Use in Task 1 Writing|Example|
+|---|---|---|
+|**First**|Used in **process diagrams** to describe steps|_First, the ingredients are mixed in a large bowl._|
+|**Initially**|Used in **line/bar charts** to describe trends that changed later|_Initially, sales increased steadily, but then declined after 2015._|
+
+:::
+
+#### Question 3
+
+Each of these sentences has a common mistake with different types of cohesive devices. Decide what the mistake is and then try to correct it if you can. 
+
+1. Lamb which was consumed at an identical rate to chicken in 1979, showed a marked drop in ~~its~~ consumption throughout the next 25 years. (that use which to refer lamb, not use its anymore)
+2. Looking at the information in more detail, at 6:00am the proportion of radio listeners was about 8% ~~and~~ -> but/while no one watched television at that time. (There is a contrast here so we need to use 'but' or 'while' instead of 'and')
+3. Turkey was the least popular destination which had only 3 million visitors. -> Turkey, which had only 3 million visitors, was the least popular destination.
+   
+   This is a misuse of the relative clause "which..." it's _unclear_ or _misleading_. The phrase "which have only 3 millions visitor" is directly connected to "destination", but it interrupts the focus and sounds unnatural.
+4. In the case of spending on research of development, developing countries saw a downward trend. However, in industrialised countries, expenditure on research and development continued to rise. ->
+   
+   In the case of spending on research of development, developing countries saw a downward trend. However, in industrialised countries, ~~expenditure on research and development~~ such expenditure // this type of expenditure continued to rise. 
+   
+   We need to use substitution here to avoid repetition.
+5. Two groups of houses will be built on either side of the reception area, which they are connected by footpaths.
+   ->
+   
+   Two groups of house, which are connected by footpaths, will be built on either side of the reception area.
+6. Fish consumption, despite showing a minimal decrease in the first 5 years, it remained stable throughout the following 20 year.
+   ->
+   
+   Fish consumption, despite showing a minimal decrease in the first 5 years, ~~it~~ remained stable throughout the following 20 year.
+   Can also write:
+   
+   Despite showing a minimal decrease in the first 5 tears, fish consumption remained stable throughout the following 20 years. (This order is more natural and is easier to read).
+7. Although this figure continued to rise until 2008, but it began to fall again in the following decade.
+   ->
+   
+   Although this figure continued to rise until 2008, ~~but~~ it began to fall again in the following decade.
+   (We do not need 'but' here - Although tells us there is a contrast within the two clauses in the sentence)
+8. However, the figure for TV fluctuated, but the trend was upward.
+   
+   ->
+   Although the figure for TV fluctuated, the trend was upward.
+   
+   ('However' shows contrast between sentences - 'although' is used to show contrast within the sentence, so we do not need 'but' here).
+
+# Lack of progression and clear organisation
+
+Without clear paragraphing there is often a lack of overall progression (Band 5) and lack of clear organization, which is needed for Band 7. The sample answer we saw earlier shows a common problem with it.
+
+This is what the paragraph in the complete answer looked like:
+
+![](Pasted%20image%2020250711155809.png)
+
+If we look at the first sentence in each body paragraph, we have no sense of the organization here. Why has one short paragraph been devoted to chicken? What is the main idea or purpose of the final paragraph?
+
+Another problem helps to show why we cannot easily fix the problems we saw with the inaccurate use of cohesive devices in this answer. These devices have been removed to show the individual sentences below.
+
+![](Pasted%20image%2020250711160037.png)
+
+Did we notice that every sentence follows almost exactly the same pattern? The writer presents a category (chicken, beef, lamb, or fish), then gives information about 1979, and finishes with information about 2004. If we tried to use this summary to sketch or recreate the graph, it would be very difficult to do so, which shows that it does not give us a clear picture of the information.
+
+While there is some logic to the organization (with each category in turn), it is repetitive and presents each piece of information one by one as though in a list. As we saw earlier, the attempts to link the sentences (using 'First, Likewise, etc') are not successful. Because of this, there is no overall sense of progression here.
+
+Doing this causes a bigger problem: discussing each category separately means that there is very little comparison here, which is one of the key requirements for the task. So, writing about the information in this way can create problems for both Task achievement and Coherence and cohesion. 
+
+::: {.callout-tip}
+If we organize the information in our summary in a 'list' this can lower our TA and CC score, because there is a lack of progression (CC) and we are less likely to make comparisions (TA).
+:::
+
+Now that we have identified the most important problems in Task 1.
+
+![](Pasted%20image%2020250711160753.png)
+
+![](Pasted%20image%2020250711160809.png)
+

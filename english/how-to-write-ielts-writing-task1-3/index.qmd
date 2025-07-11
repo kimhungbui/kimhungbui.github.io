@@ -1,0 +1,50 @@
+---
+title: Getting Started
+lightbox: false
+description: What to do when starting task 1.
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-11
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Step 1: Noticing details
+
+In this lesson, we will be looking at several examples of charts. The first two are not complete Writing Task 1 questions, as there is not enough information to write about. In the real test, some additional data would be provided.
+
+Although we will also see some complete examples, you should not try to write full answers to these just yet. We will return to them in later lessons when we focus on writing model answers.
+
+The purpose of this lesson is to show you what steps to take before you begin writing and to give you practice in applying those steps.
+
+## Using our time well
+
+As we learned in Lessons 1 and 2, one of the biggest mistakes in Task 1 is starting to write too quickly. This often leads to a lower score in both Task Achievement and Coherence and Cohesion, which can bring down your overall Writing Band Score. Poor time management is also a major problem — for example, if you choose to begin with Task 2 but spend more than 40 minutes on it, you may not have enough time to complete Task 1 properly. This could have serious effects on your final result.
+
+Because of the time pressure, it's important to practise the pre-writing stage regularly, so that you can do it quickly and confidently. In the actual test, aim to finish this stage in under 5 minutes. During practice, it's okay to take a bit longer so you can fully develop your planning skills. Just like in Task 2, spending more time thinking before you write will often make the writing itself faster and easier. With Task 1, a big advantage is that you can write your notes and planning directly on the question paper. To help you, I've included short videos in this lesson showing how this is done.
+
+As mentioned in Lesson 1, a Band 3 for Task Achievement means the task has __been completely misunderstood__. This often happens when a candidate jumps straight into writing without carefully analyzing the chart or data. Quick conclusions can lead to incorrect or misleading statements, which lower your score.
+
+To demonstrate this, take a quick look at the chart below. It shows the results of an experiment involving a balloon and either 1, 2, or 3 candles.
+
+
+
+# Step 2: Identifying key features
+
+
+
+
+# Step 3: Organizing information
+
+

@@ -20,3 +20,302 @@ format:
     highlight-style: a11y
 draft: true
 ---
+# Task achievement
+
+## Common problems in Task 1
+
+These problems have been selected because each of them will keep our Task 1 score at band 6 or lower.
+
+### Using the wrong materials
+
+An opinion:
+	'Task 1 in IELTS is a graph of some kind so we can practice even using a random infographic'.
+It's not correct.
+
+Materials used in the real test are carefully written and edited so that
+
+- they are not confusing
+- they don't require specialist of technical knowledge
+- they force us to use (and therefore practice) the skill we need to show in the test
+
+We will not find this in 'random infographics' we find online.
+
+### Task Achievement & Task Response
+
+In writing task 2, we are assessed on how we __respond__ to the task, while writing task 1, we extent to which we __achieve__ the task is being measured. This means that it is very important to follow the instruction we are given. These tell us what we need to:
+
+Summarise the information by selecting and reporting the main features, and make comparisions where relevant.
+Write at least 150 words.
+
+In spite of this, most of the band 6 answers are written as though the instructions tell us to:
+
+List all of the information you can see.
+
+This problem may stem from using practice materials that don't reflect the real test. 
+
+If we are using materials that are outdated or tasks that only show a limited amount of data, then we are likely to practice describing, or listing, everything we see. This means we are not __selecting__ or __summarising__, which are two of the main __requirements__ of this task.
+
+### Selecting information
+
+'Selecting the main features' is clearly important if we want to 'achieve' this task. However, for many people, this is easier said than done. It is particularly difficult if our education has focused on rote learning, copying texts, or writing according to a fixed formula.
+
+A comment:
+
+'Let me explain this from (my country's) perspective: here logical, analytical aspects in writing are mostly ignored. We never learned to look at a graph and write reports about it even in our native language. I think we not only lack the language competence, but we also lack the ability to analyse! I just figured it out in early adulthood: I wrote like a robot when I was in high school and such a mindset follows us well into IELTS when template-learning is the norm'.
+
+If this also applies to us, then we are probably making mistakes that will lower our Task achievement score. Looking at the band descriptors for Task achievement helps to see the impact of this:
+
+![](Pasted%20image%2020250710114558.png)
+
+As we can see, we will only reach band 7 in Task achievement if we 'cover __the requirements__ of the task' namely __summarising__ _the information by __selecting__ and reporting __the main features, and making comparisons__ where relevant_. To reach band 6, each of these needs to be __addressed__.
+
+::: {.callout-note}
+The verbs _to cover_ and _to address_ can both be used to mean _to deal with_. However, _covering the requirements_ suggests they are being done in a more complete way than _addressing_ them.
+:::
+
+The band descriptors give us more information about what we need to do in task 1:
+
+![](Pasted%20image%2020250710115118.png)
+
+This tells us that, when writing a summary, there are some important do's and don't
+
+::: {.callout-tip}
+## Do
+
+- select the main features
+- present and highlight the key features (Band 7)
+- make comparison (where relevant)
+- present a clear overview of main trends, differences, or stages (band 7
+:::
+
+::: {.callout-warning}
+## Don't
+- give details that are irrelevant, inappropriate, or inaccurate (Band 6)
+:::
+
+The Band 6 answers struggle with each of the 4 elements in the 'Do' list above, which tells that people often do now know how to select and highlight features, or present a clear overview.
+
+### Underestimating the task: _"I'm not worried about Task 1, it's easy"_.
+
+Conversely, people also tell that they are not worried about Writing Task 1 because it's 'easy'. Admittedly, it could be argued that Task 1 is 'easier' than writing Task 2 because we are given all of the information we need, and it is relatively short at only 150+ words. However, 'easier' is a relative term and is not the same as 'easy'.
+
+![](Pasted%20image%2020250710120134.png)
+
+IELTS aims to be a 'valid' test of our language skills. This means that the tasks used to assess our level are similar to those we might expected to carry out in a real-world situation. In a professional setting, Task 1 can be compared to writing about a new manufacturing process; the result sections of a company's annual report; or the results of a survey conducted by local government:
+![](Pasted%20image%2020250710120403.png)
+
+In an academic context, this task is closet to the results section in a scientific paper or university assignment. The following image is an extract from a student from her first year at university.
+![](Pasted%20image%2020250710120512.png)
+
+Although we are not being asked to produce an academic piece of writing, the elements we need to include are very similar to those listed above. The lessons in this book will show us how we achieve these in our own writing. This sample shows that, although Task 1 is a short task, it should definitely not be dismissed as an easy one. In fact, in Pauline Cullen's view, it may be easier to get a low score in Task 1 than in Task 2.
+
+## How and why we may be practising Band 3-5
+
+Many people fail to show some of the key aspects of Task Achievement in their Task 1 answers. This may occur because they want to spend as much time as possible on their Task 2 answer, effectively 'stealing' time from writing task 1.
+
+Looking at the lower bands, we can begin to see that writing too quickly could easily lower our score:
+
+![](Pasted%20image%2020250710151858.png)
+
+If we don't take time to select key features, then we are more likely to 'recount details mechanically'. Similarly, if we don't then analyse these key features to indentify the main trends, patterns, or stages, we will not be able to present a clear overview. Thus, Task achievement is linked to both time management and thinking before writing.
+
+::: { .callout-note}
+## KEY IDEA:
+We are likely to list or 'recount details mechanically' and lower our TA scores if we begin writng as quickly as possible, and/or we are unsure about:
+
+- the difference between details and key features
+- how to clearly present and highlight key features
+- how to give a clear overview
+- how to select information
+:::
+
+### Language issues - giving details that are inappropriate or inaccurate
+
+As we saw earlier, a feature of Band 6 writing is that candidates may
+
+_give details that are irrelevant, inappropriate, or inaccurate (Band 6)_
+
+Although presenting inaccurate details can come from writing the wrong information down (for example, writing 15% instead of 35%), at band 6 it is often the result of using words without an __awareness of style__, or it may even be the result of using the wrong tense or preposition. Because of this, accurate use of language will be a particular focus throughout the lesson in this book.
+
+### Flexibility and precision
+
+To reach Band 7 in Lexical resource, we need to:
+
+- use a sufficient range of vocabulary to allow some __flexibility and precision__
+- use less common lexical item __with some awareness of style and collocation__
+
+_Flexibility_ refers to our ability to explain something clearly even when we don't know exactly the right word to use. Nevertheless, the information and facts we give must be _accurate_, so even if we do not know exactly the right word, we still need to be precise.
+
+To demonstrate this, look at the following sentences describing changes to a hospital that include adding a footpath so that people can reach a new cafe:
+
+1. A new __pedestrian way__ will be added so that visitors can get to the cafe.
+2. A new __mall__ will be added so that visitors can go to the cafe.
+
+Although both candidates use the wrong words, the first candidate shows band 7 skills because they used the words they know with flexibility and enough precision for the reader to clearly understand what is being added. The second candidate had a similar issue but the result is an inaccurate detail because a mall is a large shopping centre, and is not the same as a footpath.
+
+If we think back to the real-world applications of this type of writing (writing up the results of research, summarising sales in an annual report, explaining how a new system words), we can see just how important this _precision_ is. This is another important distinction between Task 1 and Task 2 - the facts we present _have to be correct_ according to the date we are given.
+
+### Learning 'high-level' words
+
+Problems often occur when people try to use vocabulary to impress rather than to accurately convey meaning.
+
+'My teacher taught me this noun phrase "wild fluctuation". Is it wrong?'
+
+'I write 100-150 new words every day but I don't manage to learn all of them.'
+
+
+::: {.callout-note}
+## Vocabulary note
+To fluctuate means to frequently or continuously change levels or move up and down. Wild (adj.) = uncontrolled, violent, or extreme.
+
+NB. Although it is quite possible that the date we are given in a graph will fluctuate, it is highly unlikely that it will do so in a wild way.
+:::
+
+As these comments show, a great deal of emphasis is put on teaching and learning 'less common' vocabulary to prepare for IELTS. This may be because it is easier to focus on this than on developing writing skills, which are difficult to explain and to measure. There is also a psychological element: learning long lists of words makes people feel as though they are working hard: 'Looking how many words I learned this week!' But this way of thinking gives a false sense of achievement and progress.
+
+So, when learning vocabulary, don't be a magpie, collecting words without understanding their value. Instead, the best approach is to focus on fully understanding the words we already know - learning how and when to use them effectively - while also occasionally adding more to our vocabulary bank. 
+
+::: {.callout-warning}
+Learning words and phrases without thinking of their meaning or learning how and when it is appropriate to use them will keep us below band 7.
+
+:::
+
+### Synonyms and avoiding repetition
+
+A second cause of using words inaccurately in task 1 is trying to avoid repetition. Attempting to use as many synonyms as possible creates problems in this task because of the need to be accurate. If we are given statistics related to a specific group (e.g. teenagers), then we cannot use a more general synonym (e.g. young people). Similarly, a tiger is a type of cat, but if we are given data for 'tigers' we cannot apply this to 'cats' in general. Remember, there are often times when then simplest word is the most accurate - don't worry too much about using it several times in our answer.
+
+#### Exercises
+
+##### Task A
+
+Use problem word/s in sentences 1 - 5 and replace them with the more accurate word or phrase in the list below.
+
+More accurate words:
+- slight fluctuations
+- rose
+- reached
+- fell
+- increased by
+- dropped
+- falling
+
+1. The figure for motorcycles registered 50 thousand and underwent an increase of 20% over the next five years.
+
+- underwent an increase -> increased by
+
+2. In contrast, despite tiny ebbs and flows, the consumption of fish remained relatively stable.
+
+- tiny ebbs and flows -> slight fluctuations
+
+3. These two figures commenced at similar levels at around 150 grams but then chicken consumption fluctuated to 190 grams in 1989 and lamb consumption oscillated to 105 grams.
+
+- fluctuated -> rose
+- oscillated -> fell
+
+4. In spite of the slight declivitous trend in the first decade, calls generally increased over the period shown.
+
+- slight declivitous trend -> falling
+
+5. The figure plummeted from 6 percent to 5.8 percent between 1995 and 2000.
+
+- plummeted -> dropped
+
+##### Task B
+
+1. Which of these problems could affect the Task achievement score because the details are inaccurate? (2)
+2. Which sentences is presenting a minor detail and not a key feature and so should be rewritten or deleted from the answer ? (4)
+
+#### The answer:
+
+1. The figure for motorcycles _reached_ 50 thousand and _increased by_ 20% over the next five years.
+2. In contrast, despite _slight fluctuations_, the consumption of fish remained relatively stable.
+3. These two figures commenced at similar levels at around 150 grams but then chicken consumption rose/increased to 190 grams in 1989 and lamb consumptions fell/dropped to 105 grams.
+4. In spite of the slight _falling_ trend in the first decade, calls generally increased over the period shown.
+5. The figure _dropped/fell_ from 6 percent to 5.8 percent between 1995 and 2000.
+
+Task B:
+
+1. numbers 3 and 5 are more likely to affect the TA score as these give inaccurate details.
+2. Sentence 5 is a minor detail and so should be deleted or rewriten.
+##### Vocabulary notes
+
+1. A machine or measuring instrument can 'register' a number (show this number) but a 'figure' cannot do very much; we use 'undergo' with a negative experience - it is not appropriate for talking about a rise or fall in numbers.
+2. We only refer to 'ebbs and flows' when talking about a tide or perhaps when writing literature or poetry.
+3. To fluctuate means to go up and down repeatedly; to oscillate means to move or change repeatedly and is used with a needle on a dial (e.g. a speedometer)
+4. A declivity is a trough and is a very technical word, possibly only used in geography - declivitous does not exist.
+5. To plummet means to fall very steeply and sharply - this is in accurate here as the figure only fell very slightly.
+
+## Writing a conclusion in Task 1
+
+Having looked at why we may be giving details that are 'inaccurate' we also need to understand how or why we may be giving details that are __irrelevant or inappropriate__ (Band 6).
+
+### Irrelevant or inappropriate details
+
+The meaning of the term 'irrelevant details' is not as clear as it could be. The best way to understand it is in the context of the real-world examples. When writing the 'Results' section of a document, the information is presented as objectively as possible - without personal opinions. Any discussion of what the results __mean__ is presented in another part of the paper - the Discussion section - and so is __irrelevant__ here. This means that we should __not__ give any personal conclusions about the information in the task, for example:
+
+_The bar chart and the table show that when people eat more, they have a higher risk of developing diabetes. ~~This suggests that people should eat less to avoid diabetes~~_
+
+‘’The charts show the percentage of the British students, who are able to speak languages other than English, in 2000 and in 2010. In 2000, 20% of the British students were not able to speak another language. But in 2010 the number has decreased to 10%, which is good because it shows that more people have learned other languages well.’’
+
+The examiner makes the following comment:
+
+There
+
+is some repetition of information and some irrelevant
+
+and then tells us which part this refers to:
+
+( which is good because it shows that more people have learned other languages well)
+
+#### Exercises
+
+Look carefully at the language used in the following sentences and decide the sentences contain irrelevant details that should be deleted. To help, think about whether it is possible to show these details in visual information.
+
+1. In terms of the size of the railway system, London, for certain, has the largest underground railway system. -> OK to include
+2. The amount of energy used started to decrease in 2014, which is good because it shows that people were trying to save electricity. -> Contains irrelevant details
+3. The changes in emissions are probably connected to changes in economic development and better technology being available. -> Contains irrelevant details
+4. The size of the town center will increase and therefore the countryside will disappear. -> ~~contains irrelevant details~~ OK
+5. The use of sustainable energy sources is expected to remain relatively insignificant in the future. -> ~~contain~~ ok
+6. The increase in fridge and washing machine ownership is evidence of a rise in living standards and a trend to lifestyles based on comfort and convenience. -> contains
+7. The first step in this process is the most difficult because the animal skins have to be cut carefully -> contain
+
+corrected:
+
+1. This is a key feature that can be shown in a table or chart.
+
+2. We cannot show this detail in visual information: 'it shows that people were trying to save electricity'. Making statements like this: 'which because it shows that' is a sign that you are making a personal comment and you should not do this in task 1.
+
+3. The comment, 'are probably connected to changes in economic development and better technology being available.' is irrelevant here. words like 'probably' in Task 1, then you are making a personal comment about what the information shows and you should not do this.
+
+4. This is a key feature that can be shown visually on a map or plan.
+
+5. This is a future prediction that can be shown in a graph or chart.
+
+6. This is an irrelevant comment: 'is evidence of a rise in living standards and a trend to lifestyles based on comfort and convenience.' In task 1, if you say that something 'is evidence of' something else, then you are drawing a conclusion about what the information shows and you should not do this in task 1.
+
+7. Saying that a step in a process is 'the most difficult' means you are making a personal judgement about it and you must not do this in task 1.
+
+### An opinion that we need to give a conclusion to get a high score.
+
+That can cause problems if it is misunderstood. Many people understand the word conclusion to mean '_a final paragraph that sums up your ideas and makes your own position clear_'. As we saw above, writing a conclusion like this can lower our TA scores as our position or personal views are 'irrelevant' here. Task 1 is a brief summary and is quite different to the essay we will produce in Task 2. If our Task 1 answers look similar to our Task 2 essays then it is likely that we are not 'covering the requirements of the task' (Band 7).
+
+A summary is a piece of text that would normally be one part of a much longer document. As such, it does not need a conclusion. Some writers do prefer to 'conclude' their summary with an overview - this means that the overview statement comes at the end of their answer. However, this is not a 'conclusion' in the sense of a Task 2 essay - it is simply one way to 'conclude' or 'finish' the summary. We can see examples of this in sample answers produced by examiners in the most up-to-date Cambridge test books.
+
+Cambridge IELTS 9, page 164:
+
+'To sum up, although local fixed line calls were still the most popular in 2002, the gap between the three categories had narrowed considerably over the second half of the period in question'.
+
+In each case, what may look like a 'conclusion' is actually the overview.  We should not write 2 overviews, it creates more work to do and it is very hard to be done well under test conditions.
+
+Writing a clear overview is important to reach band 6 or band 7 in task 1, and this is why we should prioritise it and write it early in our answer. Furthermore, it is the convention in many academic papers to give a general overview before going into the details.
+
+It is very important to remember that we are preparing to take a test - a test where we know what the examiner is looking for. Our job, is to practise producing an answer that will meet the criteria for band 7 and above. We are not taking our time to produce clever answers to put in a book. This is we we will not find any 'conclusions' in models, which have all been assessed as being Band 9 answers.
+
+KEY IDEA : Remember, you are preparing for a test – a test where we know what the examiner looking for. Your job is to practise producing answers that will meet the criteria for band 7 and above. We are not trying to write clever answers, or show off special language we have learned.
+
+Look through your previous task 1 answers and use the following checklist to help you decide how well you ‘achieved’ the task. N.B. your answers based on the Cambridge IELTS books 9 onwards
+
+
+![](Pasted%20image%2020250710165523.png)
+
+How many boxes could you tick? If your answers are mostly No or boxes I am not sure, then your Task achievement score in these tasks is probably band 6 or lower. The boxs that are still clear show the skills you still need to develop.
