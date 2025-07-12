@@ -38,13 +38,423 @@ As mentioned in Lesson 1, a Band 3 for Task Achievement means the task has __bee
 
 To demonstrate this, take a quick look at the chart below. It shows the results of an experiment involving a balloon and either 1, 2, or 3 candles.
 
+![](Pasted%20image%2020250712060536.png)
 
+A candidate who looks at the information too quickly is likely to produce statements like this:
+
+_With each flight, using 1 candle was shown to be better than using 2 or 3 candles. When one candle was used, the balloon stayed in the air longer (between 14 and 15 seconds), while the flights with 3 candles were shorter, lasting an average of just over 10 seconds._
+
+![](Pasted%20image%2020250712061836.png)
+
+
+you can see, this experiment actually measured how long it took a small hot air balloon to reach a height of 20 cm using 1, 2, or 3 candles. When we take the time to process and understand all of the information we are given, we can see that the statements above misrepresent the information in the table.
+
+
+### Exercises
+
+#### Question 1
+
+Make changes so that it accurately represents this information
+
+_With each flight, using 1 candle was shown to be better than using 2 or 3 candles. When one candle was used, the balloon stayed in the air longer (between 14 and 15 seconds), while the flights with 3 candles were shorter, lasting an average of just over 10 seconds._
+
+->
+
+With each flight, using 2 or 3 candles was shown to be better than using 1 candle. When one candle was used, the ballon took longer time to reach 20cm (between 14 and 15 seconds), while the flights with 3 candles were faster, reaching 20 cm in just over 10 seconds.
+
+To avoid repetition, we can also write:
+
+"With each flight, using 3 candles was shown to be better than using 1 or 2 candles. When one candle was used, the ballon took longer to reach the required height (between 14 and 15 seconds), while the flight with 3 candles were faster, reaching 20cm in an average of just over 10 seconds"
+
+Or
+
+"With each flight, using 3 candles was shown to be better than using 1 or 2 candles. When one candle was used, the ballon took longer to reach 20cm (between 14 and 15 seconds), while the flights with 3 candles were faster, reaching this height in in an average of just over 10 seconds."
+
+#### Question 2
+
+Look carefully at the image and decide which sentence is the most accurate
+
+![](Pasted%20image%2020250712063051.png)
+
+-> The bar chart shows how much carbon dioxide is produced when we travel.
+
+## Noticing details
+
+Noticing small details like this (the number of travellers and what being measured) is very important as it means we can then write about it accurately. We should circle this information on the question paper, which help us to pay closer attention to it.
+
+### Exercises
+
+Spend no more than 30 seconds looking at the tables and noticing as many details as we can.
+
+![](Pasted%20image%2020250712063358.png)
+
+
+![](Pasted%20image%2020250712063545.png)
+
+#### Question 1
+
+Each writers below has misunderstood the information in the tables. Make notes about any problems we can see.
+
+1. Sweden earned the lowest amount of Euros from selling coffee in both years.
+2. Overall, while the total money earned from planting coffee in all countries increased, there were falls in the figures of bananas in Sweden and Denmark throughout the years.
+3. It is noticeable that how much money Switzerland got from bananas was consistently the highest in tables.
+4. Looking at the information in more detail, in 1999, the UK earned 1.5 millions Euros by selling coffee.
+
+The information in the tables tell us:
+
+- the value of 'sale' of fair-trade coffee and bananas in 5 countries in two years.
+- these products were grown by farmers in developing countries and the farmers were paid a fair price for their goods
+- we do not know who 'sold' the products
+- we do not know who 'earned' this money
+
+Problems:
+
+According to sentences 1, 3 and 4, the tables tell us about how much money each country 'earned' or 'got' from 'selling' coffee or bananas, which is not accurate.
+Sentence 2 suggests the coffee and bananas were grown in these countries, which is not accurate.
+
+More detail:
+
+The tables actually show:
+
+- The __values of sales__ of fair-trade coffee and bananas in five countries.
+- These products were __grown in developing countries__, __not__ in the five countries listed.
+- These products were __sold in five countries__, but we __don't know who earned__ the money (maybe companies, retailers, etc)
+- We __only know how much was sold__ in terms of value (in Euros).
+### **1. “Sweden earned the lowest amount of Euros from selling coffee in both years.”**
+
+**❌ What’s wrong:**
+
+- The word **“earned”** means Sweden made money from selling the coffee.
+    
+- But the tables don’t tell us **who earned the money** — it could be a company, a supermarket, or even someone outside of Sweden.
+    
+- Also, **Sweden didn’t grow or sell the coffee directly** — it only shows **sales inside Sweden**.
+    
+
+**✅ Correct version:**
+
+> Sweden had the lowest sales value for coffee in both years.
+
+### **2. “...the total money earned from planting coffee...”**
+
+**❌ What’s wrong:**
+
+- It says the countries **earned money from planting** coffee — but these countries (like Sweden, Denmark, etc.) are **not the ones growing coffee**.
+    
+- The coffee was **grown in developing countries**, and the money shown in the table is about **sales in Europe** — **not** farming or growing.
+    
+
+**✅ Correct version:**
+
+> While total sales of fair-trade coffee increased across all five countries, banana sales in Sweden and Denmark fell over the period.
+
+### **3. “...how much money Switzerland got from bananas...”**
+
+**❌ What’s wrong:**
+
+- The word **“got”** (like “earned”) suggests Switzerland **received the money**, which we don’t know.
+    
+- Again, the data shows **sales in Switzerland**, not profit or income for Switzerland.
+    
+
+**✅ Correct version:**
+
+> Switzerland had the highest sales figures for bananas in both years.
+
+### **4. “...the UK earned 1.5 million Euros by selling coffee.”**
+
+**❌ What’s wrong:**
+
+- We **do not know who sold** the coffee.
+    
+- Saying “the UK earned...” is inaccurate because **countries don’t sell coffee directly**.
+    
+- Also, this suggests the UK grew or exported the coffee — which is incorrect.
+    
+
+**✅ Correct version:**
+
+> In 1999, 1.5 million Euros worth of fair-trade coffee was sold in the UK.
+
+
+Summary:
+
+|❌ Incorrect Word|✅ Use Instead|Why|
+|---|---|---|
+|earned|sales / value|We don’t know who earned it|
+|got|sold / was sold|“Got” = someone received money|
+|planting|sold|These countries didn’t grow anything|
+
+
+Although noticing details like this __is__ important, it is not enough - if we only do this type of thinking before writing then we are likely to list all the information and __focus on details__ (Band 5 Task achievement). The next step is to prevent it.
 
 # Step 2: Identifying key features
 
+Writing task 1 begins with a sentence like this one:
+
+_The table below give information about sales of *Fairtrade-labelled coffee and bananas in 1999 and 2004 in five European countries._
+
+This information is necessary to ensure candidates know exactly what they are looking at. However, it is a mistake to think, 'this is ___all___ I need to know about the data'.
+
+As we saw in lesson 1, our task is to __summarise__ and __give an overview__ of the information, and we are told to do this by __selecting the main features__ and __making comparisons__. In our answer, we should explain that the information shows and __highlight key features__, and we cannot do this if we do not take the time to fully understand it, and make connections between the data.
+
+In lesson 2 we saw what happens when we do not take the time to do this: an answer where each piece of data is presented separately, with few or no connections made between them. Even more problematic is the fact that we may miss out or omit key features in our answer. This can result in a lower Task achievement score, because a Band 5 answer __presents__, __but inadequately cover, key features__.
+
+::: {.callout-tip}
+## Identifying key features
+
+Here is a reminder of the type of information to look for when identifying the key features and trends:
+
+- __Big changes in the data.__
+- __The highest and lowest point.__
+- __Any similarities__
+- __Anything that stayed the same__
+:::
+
+Are there some of the symbols we should use when making our notes:
+
+| Symbol                       | Use                                                                                                 |
+| ---------------------------- | --------------------------------------------------------------------------------------------------- |
+| }                            | to group similar information together                                                               |
+| *                            | to highlight important or information (such as a significant change or the highest or lowest point) |
+| !                            | to highlight something usual                                                                        |
+| $\uparrow$                   | Arrows are used to show in crease                                                                   |
+| $\downarrow$                 | decrease                                                                                            |
+| $\uparrow \uparrow \uparrow$ | or significant changes                                                                              |
+
+In the next exercise, we will practice
+
+- Identifying key features
+- Using symbols to highlight these on the question paper
+- Presenting some of these key features in a sentence
+
+### How to Take symbolic Notes in the IELTS Computer Test
+
+While we can't draw arrows or symbols like up, down, * !, directly, we can still:
+
+- Type equivalents in our notes area
+- Use clear shortcuts for arrows, highlights, and grouping.
+
+__Suggested Symbols We can Type__
+
+| Function            | Paper Symbol | Keyboard Symbol You Can Use |
+| ------------------- | ------------ | --------------------------- |
+| Group info          | `}`          | `Group:` or `>>`            |
+| Highlight important | `*`          | `*Important*` or `HIGHEST`  |
+| Highlight unusual   | `!`          | `UNUSUAL` or `!!`           |
+| Increase            | `↑`          | +                           |
+| Decrease            | `↓`          | -                           |
+| Sharp increase      | `↑↑↑`        | +++                         |
+| Sharp fall          | `↓↓↓`        | ---                         |
+
+### Exercises
+
+#### Question 1
+
+Look at the charts below and try to identify as many key as features as you can. Use the symbols we saw in the lesson to highlight these key these on the question paper.
+
+![](Pasted%20image%2020250712072241.png)
 
 
+![](Pasted%20image%2020250712072841.png)
+
+3 areas +/- 1/3
+
+Region 1:
+very low total 5% (lowest)
+most total come from growing crops (3.3%)
+tree removal = 0.2 % (lowest)
+farming animals 1.5% (lowest)
+
+
+Region 2:
+
+removing trees 9.8 % highest
+growing crops 7.7% highest
+total 23% highest
+
+region 3:
+
+growing crops 0 !!
+
+farming animals 11.3% highest -> total 13%
+
+#### Question 2
+
+_Region 2_ had the greatest proportion of degraded land overall.
+
+_Farming animals_ was the biggest cause of land degradation in Region 3.
+
+Region 1 had the least land degradation in each category except for _growing crops_.
+
+Logging was the greatest cause of soil degradation in _Region 2_ but least in _Region 1_.
+
+Globally, the biggest single cause of soil degradation is _logging / removing trees_.
+
+#### A Reminder of Points to notice
+
+##### The pie chart
+
+- In the pie chart, 'other' is circled to remind to mention this very briefly in answer. 
+- With the three main causes, her note here shows they are quite similar because they are all close to 1/3. Her use + / - to show this, but we might know other symbols we can use here.
+
+##### The table:
+
+- The table compares 3 regions (the rows), and we have 4 categories of data for each region (the columns). During step 2, her looked down each column and wrote (1) or (3) next to the highest and lowest figures of each category, which help her to see when a region was highest or lowest, and whether this happened in one region more often than the others.
+- In these notes, her have used three arrows to indicate 'the highest' or 'the lowest'.
+- She also used arrows to connect figures that she want to make a point in her writing (e.g. I could see that, in Region 1, almost all of the 'total land degradation' was due to 'growing crops', so she connected these with an arrow).
+- She used an exclamation mark to indicate an unusual figure - 0 in the 'growing crops' column for Region 3.
 
 # Step 3: Organizing information
 
+As we saw in lesson 2, our examiner is looking for clear organization within our answer, and clear paragraphing is a good way to show this. We also saw a common problem in the organization of Task 1 answer:
 
+![](Pasted%20image%2020250712080214.png)
+
+Sometimes, all of the information is put into one paragraph, but even when there are two clear body paragraph, the organizations is still unclear and appears to jump from one date to another. If we do not know how we have organized our information, this shows we have not taken the time to think about it, which is likely to lower our Coherence and cohesion score. So, the final step before we begin writing is deciding how to group information better for our paragraphs.
+
+Remember, in Coherence and Cohesion, the examiner is looking for signs that the information is organized logically (Band 7). Fortunately, the most logical way to organize our information is also often the easiest and fastest.
+
+::: {.callout-tip}
+In coherence and cohesion, the information must be organized 'logically'. If we don't take the time to think about how we will organize the information, then the organization will not be clear to the examiner. We do not need to be inventive or clever - the most obvious organisation is usually the most logical.
+:::
+
+With the Fairtrad goods task, the most logical way to organize the paragraphs is by writing about the sale of Fairtrade coffee in one paragraph, and the sales of Fairtrade bananas in another paragraph. She note this on her question paper too, before she start writing. This idea may seem to be a simple one, but nothing these ideas down reduces our mental load when we are writing and also helps to focus our thinking.
+
+The image below shows what all of her notes look like before she begin writing and after she have spent a few moments __noticing the details, identifying key features,__ and __grouping the information logically__.
+
+![](Pasted%20image%2020250712082653.png)
+
+::: {.callout-tip}
+## Thinking steps
+
+Following these three thinking steps __before we begin writing__ will help us meet the criteria for Task achievement and Coherence and cohesion:
+
+- Step 1: Noticing details
+- Step 2: Identifying key information
+- Step 3: Grouping information
+
+Making notes about this in the question paper reduces our mental load when we are writing and also helps to focus our writing.
+
+:::
+
+![](Pasted%20image%2020250712082905.png)
+
+### Exercises
+
+#### Question 1
+Thinking about our body paragraphs, what is the most logical way to organise the information in this task?
+
+![](Pasted%20image%2020250712083018.png)
+
+Region 1, Region 2 in 1 p
+
+Region 3 and overall pie char in 2 p
+
+->
+
+The easiest and most logical way to organise this information is write two body paragraphs summarising
+
+1. The pie chart
+2. The table
+
+#### Question 2
+Which of the following is the best way to organise this information into paragraphs ?
+![](Pasted%20image%2020250712083244.png)
+
+
+I think it can devide the West and the East for p1 and p2.
+
+But ->
+
+her said:
+
+P1: The island before development, P2: The island after development
+
+The other answers will be difficult to write about and will not help you to make comparision
+
+More detail:
+
+## 🧠 Your Idea:
+
+> "I think it can be divided into the **West and East** parts — P1 and P2."
+
+This makes sense because:
+
+- You are **organizing by location**, which seems logical.
+    
+- You notice different **features on the west and east sides**.
+    
+
+✅ This can work **if** the comparison is **balanced** — meaning both sides change in meaningful ways.
+
+---
+
+## 💬 Pauline Cullen’s Advice:
+
+> **P1: Before development**  
+> **P2: After development**
+
+This is the **recommended approach** because:
+
+- The **main task is comparison over time**.
+    
+- The first image is **very simple** — only two groups of trees and a beach.
+    
+- The second image has many changes: **buildings, roads, reception, pier, etc.**
+    
+
+👉 So, **grouping by time (before vs. after)** helps you:
+
+- Compare directly: _“The western trees were replaced by…”_
+    
+- Follow a clear IELTS pattern: **static (before) → developed (after)**
+    
+- Avoid forcing comparisons where the first picture has almost no detail
+
+
+| Method                   | Pros                                         | Cons                                    |
+| ------------------------ | -------------------------------------------- | --------------------------------------- |
+| ❌ West/East split        | May not balance info well; harder to compare | Before image too simple on both sides   |
+| ✅ Before/After structure | Easy to compare changes clearly              | Clear time-based logic — best for IELTS |
+
+::: {.callout-tip}
+Our paragraphs should serve a purpose: to help the reader by organizing the information logically.
+:::
+
+::: {.callout-note}
+Remember, the most logical choice has several benefits:
+
+- It is often the most obvious
+- It is the easiest to write about in a clear way
+- It will help improve your Coherence and Cohesion score
+- It may also increase your Task achievement score because it encourages you to make comparisons
+:::
+
+With the previous tasks, choosing the organization was relatively easy because there are two tables and two categories (Fairtrade coffee and Fairtrade bananas); a pie chart and a table; a map before and a map after the development of an island.
+
+Sometimes the organization is less obvious. For example, when we are given a line graph and a range of dates. In this situation, it helps to decide on two (or three) categories, so that you can __logically__ group the information in your paragraphs.
+
+There may be several ways to do this. For example, if you have a line graph showing changes in the number of men and women enrolled in 5 different university courses, you might write about the data for women in one paragraph, and the data for men in another. Alternatively, you might decide to group together the most popular courses and the leasts popular courses, and use these categories to organize your information. Occasionally, three paragraphs may be more appropriate. These is no correct answer, there just needs to be some logic to the organization you choose, and this should be clear in your answer. We will work on this in later lessons.
+
+### Practice
+
+Look back at one or two of our Task 1 answer based on charts or tables. Look at the information in the question/s first and practise the three steps we learned in this lesson:
+
+- Step 1: Noticing details
+- Step 2: Identifying key information
+- Step 3: Grouping information
+
+- Make notes on the question paper using the symbols we saw earlier, or use our symbols. Try to develop a habit of using the same symbols.
+
+##### Noticing details
+- Look at the answer you wrote. Did you misunderstand or misrepresent any part of the information in your answer?
+
+##### Identifying key information:
+
+- Did you miss out any of the key features you noticed?
+##### Grouping information:
+
+- How did you organize your information? Is it organised logically ? Did your organisation help you to make comparisons?
+
+- What changes could you make to your answer now to improve your TA and CC score?

@@ -1,0 +1,491 @@
+---
+title: Introductory sentences
+lightbox: false
+description: What to do when starting task 1.
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-12
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# The introductory sentence
+
+In lesson 3, we saw that is important to work as quickly as possible in task 1 and to use the limited time you have very well. When she is writing my answers, the first sentences is the one her spend the least amount of time on. This lesson will help us to write this sentence as quickly as possible, so that we can then concentrate on the more important elements of our answer.
+
+As we saw in lesson 3, our test questions begins with a sentence that very briefly introduces the information we are given. This sentence answers questions like this:
+
+- What
+- Who
+- Where
+- When
+
+Our introductory sentence will do the same. However, it is important to note that this is _not_ our overview.
+
+::: {.callout-tip}
+The introductory sentence explains what we are looking at and answers questions such at _what, whom where, when_. However, this is __NOT__ our overview.
+:::
+
+Introductory sentences are more complex than we may realize as they force us to include several pieces of information in one sentence. To demonstrate this, look back at our previous test question:
+
+_The table below give information about sales of *Fairtrade-labelled coffee and bananas in 1999 and 2004 in five European countries_.
+
+This sentence combines all of the following information:
+
+There are tables
+
+- The tables are below
+- The tables give information
+- The information is __about sales of Fairtrade-labelled coffee and bananas__.
+- The Fairtrade-labelled coffee and bananas were sold __in 1999 and 2004__.
+- The Fairtrade-labelled coffee and bananas were sold __in five European countries__.
+
+We can divide this information up like this:
+
+![](Pasted%20image%2020250712094345.png)
+
+## Points to notice:
+
+- To answer the question 'what are we looking at?' we need to say: the type of chart or diagram we are looking at + shows + details of what is being measured or shown.
+- This sentence will reflect the details you noticed in step 1 of your thinking process.
+![](Pasted%20image%2020250712094636.png)
+- The information about 'when' and 'where' can __sometimes__ be reversed:
+
+![](Pasted%20image%2020250712094812.png)
+
+- In some tasks, the information is about __who__, and there may not always be information about __when__ and __where__.
+- Combining different clauses like this often involves relative clauses, which creates even more complex sentence and raises new problems.
+
+
+### Exercises
+
+#### Question 1
+Complete the test questions below by choose the correct words and phrases.
+
+![](Pasted%20image%2020250712095317.png)
+
+![](Pasted%20image%2020250712095339.png)
+
+Task A: The charts below give information about the causes of land degradation world wide and in three regions of the world.
+
+Task B: The two maps show an island before and after the construction of some tourist facilities.
+
+#### Question 2
+
+Now do the same for this task. 
+
+![](Pasted%20image%2020250712102903.png)
+
+![](Pasted%20image%2020250712102918.png)
+
+The chart below show the percentage of people traveling to work by four means of transport in one European city in 1980, 1990, and 2000.
+
+# Paragraphing the test question
+
+In our answer, we should paraphrase the test question. If we copy large parts of it word the examiner cannot reward our use of grammar and vocabulary. If this happens too often in our answer, it will significantly lower our GRA and LR scores.
+
+However, although we need to introduce the data __in our own words__, we do not need to go too far when doing this, which is a problem often be seen in band 6 and below. People may do this out of concern that we '_cannot use more than two consecutive words from the question paper without being penalized_'. This advice is not very helpful because we do not have time to count words in this way, it is more likely to lead to errors, and there may well be topics where it is necessary to use more than two consecutive words.
+
+Instead of thinking like this, just make sure that we don't copy large chunks of language, or complete phrases from the test question. It can help to ask ourself the following questions:
+
+- __What being measured here?__
+- __What is this showing?__
+- ___What is this telling us about?___
+
+The following answers give us some ideas about how to paraphrase the information
+
+- ___This chart is showing how much / how many ...___
+- ___This diagram is showing the steps involve in ...___
+- ___These maps / plans are showing changes / how (something) changed ...___
+
+::: {.callout-tip}
+We don't need to make big changes to the information in the test question - just aim present it in a slightly different way.
+:::
+
+## The chart/s below
+
+Our test question will always begin by referring to _The charts / diagram / maps / plans below_. With charts, an easy way to paraphrase the information is to specify the type of chart. Use this exercise to practice if we are not sure what these are:
+
+![](IMG_1830.jpeg)
+
+1 a
+2 b
+3 d
+4 c
+5 e
+
+## Points to notice
+
+- If we are given maps, plans, or diagrams, use the same word in our introductory sentence don't try to think of a synonym.
+- Many people include the word 'below' in their introductory sentence. This word is needed in the test question to link this sentence to the visual. Our answer will appear _below_ the question, and so the chart/s or diagram/s will be _above_ our answer. Having said this, _we do not need to include it_ in our introduction - the examiner will know which charts we are writing about.
+- Some people refer to '_the __given__ chart_'. This may come from typical maths test questions where we are 'given' certain data and asked to use 'the given data' to calculate something else. She don't use it in her model answers as it feels unnatural to her.
+
+## Paraphrasing the word 'show'
+
+When it come to the main verb in this sentence, we will see in her model answer that she __almost always__ use 'show'. This is because it is often the most natural word to use, and her don't want to waste time thinking of different ways to write this when it is more important to 'achieve' the whole task and focus on the other parts of her answer. If the question says, '_The charts below show_' then writing '_The two pie charts show_' is different enough - we do not need to change this further.
+
+::: {.callout-warning}
+Don't make our task harder by trying to change every word in the question - this is more likely to lower our score.
+:::
+
+When people try to use a synonym for 'show' they often replace it with a word that is inaccurate. The following words are just some of the examples:
+
+![](Pasted%20image%2020250712105735.png)
+
+With numbers, figures, or charts, it is important to remember that they cannot 'do' very much. This is why many of the synonyms above are often used inaccurately and without __an awareness of style__.
+
+## Charts: Paraphrasing the details of what is being measured
+
+With charts, the test question will often present the information like this:
+
+_The chart shows/ gives information about ..._
+
+- the amount of ...
+- the number of ...
+- the percentage of ...
+- the proportion of ...
+
+Think back to the questions and answers we mentioned earlier:
+
+Q: What is being measured here? What is this the chart showing?
+A: This chart is showing how much / how many ...
+
+So, the easiest way to paraphrase this type of question is to make the following changes:
+
+__The bar chart shows ...__
+- ~~the amount of~~ __how much..._
+- ~~the number of~~ __how many ...__
+- ~~the percentage of~~ __the proportion of ...__
+- ~~the proportion of~~ __the percentage of ...__
+
+If a noun is used in the test question, this can be changed to a verb and verbs can be changed to or from passive. Alternatively, we can refer to 'changes in' something. But we should only do this if it is relevant to the data (e.g. if there are changes over time). For example:
+
+_The tables below give information about sales of Fairtrade bananas and coffee..._
+
+_The tables show changes in the sales of Fairtrade bananas and coffee..._
+
+A band 7.5 candidate wrote the following:
+
+_The tables illustrate how the sales of coffee and bananas with Fairtrade labels changed in five different countries in the years ~~of~~ 1999 and 2004._
+
+## Point to notice
+
+- The candidate rephrased the question by using a different grammatical structure, changing 'Fairtrade labelled coffee and bananas' to 'coffee and bananas with Fairtrade labels'.
+- The candidate used the word 'illustrate' instead of 'show', which works well here. Notice how this verb is being used - the sentence does not say 'the tables __illustrate__ the sales of ...' (which would be inaccurate), it says that 'the tables __illustrate how the sales changed__'. Used literally, the verb 'illustrate' means to add an image or drawing to a text. However, this candidate is showing an awareness of style by using it in an idiomatic way.
+
+![](Pasted%20image%2020250712111150.png)
+
+It's important to point out here that this candidate reached Band 7.5 (and later, Band 8) not by adding words like this, but because of the overall effect of their answer. He could have achieved the same score by writing:
+
+_The tables show how the sales of coffee and bananas with Fairtrade labels changed in five different countries in the years 1999 and 2004._
+
+## Relative clauses
+
+As we saw earlier, introductory sentences combine several clauses and explain why exactly what we are looking at. Combining clauses for this purpose often involves using a defining relative clause. There can occur in the test question too, so it helps to remember the following grammatical rules for defining relative clauses.
+
+### Defining relative clauses
+
+- The relative pronoun generally comes immediately after the noun being defined.
+- Are not separated by commas.
+- We __can__ omit the relative pronoun (what, who, where, etc) __if__ it is the __object__ of a verb.
+- We __cannot__ omit the relative pronoun __if__ it is the __subject__ of a verb,
+- Can be reduced to a participle.
+
+The final point is useful when paraphrasing because we may be able to reduce a clause in the question, or expand one that is reduced.
+
+### Exercises
+
+#### Question 1
+
+Match the sentences to the type of relative clause used.
+
+![](Pasted%20image%2020250712113547.png)
+
+1. The chart shows the number of men and women who attend a college in the UK in 2000 and 2010. (who -> men and women is the subject of the verb 'attend', so the pronoun cannot be left out (i.e. we cannot write: 'the number of men and women attend a college'))
+2. The line graph shows the amount of tea and coffee (which is) drunk each month in the UK in one year. (a reduced relative clause)
+3. The table shows the percentage of people who bought or rented accommodation in one year in four countries. (people is the subject of verb 'bought or rented', so the relative pronoun can not be left out - i.e. we cannot write: 'the percentage of people bought or rented')
+4. The pie charts show how adults in one country spend the money that they earn. (that -> the money is the object of verb 'spend' so we can omit the relative pronoun and write: 'how adults in one country spend the money they earn')
+5. The charts show the number of tourists visiting an island in 1990, 2000, and 2010. (a reduced relative clause)
+6. The bar chart below shows the percentage of Australian men and women in different age groups who did regular physical activity in 2010. (who -> men and women is the subject of the verb 'did regular physical activity', so the relative pronoun cannot be left out) (ie. we cannot write: 'men and women did regular physical activity').
+
+#### Question 2
+
+Now fill the gaps to expand or reduce the relative clauses.
+
+1. The line graph shows the amount of tea and coffee drunk each month in the UK in one year.
+   
+   EXPANDED CLAUSE:
+   The line graph shows the amount of tea and coffee (which/that was drunk) each month in the UK in one year.
+2. The charts show the number of tourists visiting an island in 1990, 2000, and 2010.
+   
+   EXPANDED CLAUSE:
+   The charts show the number of tourists <font color="#2DC26B">that visited / who visited</font> an island in 1990, 2000, and 2010.
+3. The chart shows the number of men and women who attended in a college in the UK in 2000 and 2010.
+   
+   REDUCED CLAUSE:
+   The chart shows the number of men and women <font color="#2DC26B">attending</font> in a college in the UK in 2000 and 2010.
+4. The bar chart below shows the percentage of Australian men and women in different age groups who did regular physical activity in 2010.
+   
+   REDUCED CLAUSE:
+   The bar chart below shows the percentage of Australian men and women in different age groups <font color="#2DC26B">doing</font> regular physical activity.
+5. The table shows the percentage of people who bought or rented accommodation in one year in four countries.
+   
+   REDUCED CLAUSE:
+   The table shows the percentage of people <font color="#2DC26B">buying or renting</font> accommodation in one year in four countries.
+
+## Paraphrasing where and when
+
+The information about where and when is often presented as follows:
+
+- In 1999 and 2004 in five European countries.
+- In England and Wales between 1918 and 2011.
+- In the UK, from 1995 to 2002.
+
+We can paraphrase this information by either changing the preposition, changing the order, or by using a synonym. We will not be expected to know the names and nationalities of all countries, but learning the most common ones can help us here. Look at following examples:
+
+
+| Original                                   | Ways to paraphrase                                                                          |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| in 1999 and 2004                           | 1. In the years 1999 and 2004<br>2. In two separate years.                                  |
+| in five European countries                 | 1. in five countries in Europe.<br>2. in the UK, Switzerland, Denmark, Belgium, and Sweden. |
+| in England and Wales between 1918 and 2011 | in two countries from 1918 to 2002                                                          |
+| in the UK, from 1995 to 2002.              | between 1995 and 2002 in the UK                                                             |
+
+## Using namely
+
+When paraphrasing the introduction, we can use the adverb 'namely' to show we are giving more details or being specific about something. For example, we can write: 
+
+_.. in five countries in Europe, __namely__ the UK, Switzerland, Denmark, Belgium and Sweden._
+
+Here, 'namely' tells the reader we are 'naming' the five countries. We can do the same with years:
+
+_... in three separate years, __namely__ 1990, 2000, and 2010_.
+
+Notice the position of the comma, which comes __before__ the adverb.
+
+## Preposition
+
+Prepositions are important here. Look at the following information then complete the exercise below.
+
+::: {.callout-tip}
+## Preposition used with place and time
+- We use __in__ with a specific country or region: __in__ Australia, __in__ the US, __in__ South America.
+- We use __in__ with a specific year. NB: '__in__ 1999 and 2004' tell us the information is only about these two years.
+- We use __from...to...__ and __between...and ...__ to give the start date and end date of a period of time: __from__ 1995 __to__ 2005; __between__ 1995 __and__ 2005.
+- We can use __over__ and __during__ with a length of time to say __when__ something happened: __over__ a ten-year period; __during__ a ten-year period.
+- We can also use __during__ and __in__ to say that something happened __within__ that time: sales rose __during__ the first ten years.
+- We use __for__ to say __how long__ something lasted: sales rose __for__ ten years.
+
+:::
+
+### Exercises
+
+Fill in the gaps with either between, during, for, from, in, or to.
+
+<font color="#2DC26B">For</font> the first six years, the level remained stable. (how long something lasted)
+
+<font color="#2DC26B">In / During</font> the first decade, the percentage increased several times but remained below 20%. (happen within that time)
+
+The line graph shows population changes <font color="#2DC26B">during / over</font> a fifty-year period.
+
+There were no changes in Switzerland <font color="#2DC26B">during</font> this time.
+
+The pie chart shows household expenditure <font color="#2DC26B">in</font> one country <font color="#2DC26B">in</font> 1992.
+
+The line graph shows population changes <font color="#2DC26B">from</font> 1950 to 2000.
+
+The line graph shows population changes <font color="#2DC26B">between</font> 1950 and 2000.
+
+In the UK, sales fell from 1990 <font color="#2DC26B">to</font> 2000 then increased steadily <font color="#2DC26B">for</font> a decade before beginning to fall again <font color="#2DC26B">in</font> 2010.
+
+# Introducing map and plan tasks
+
+## Paraphrasing the details of what is being shown in a map or plan
+
+With maps and plans, we are always shown at least two images that show what something is/was like before something happened and then after something happened. For example:
+
+- an island before and after the construction of some tourist facilities.
+- the layout of a university's sports centre now, and how it will look after redevelopment.
+- the number of visitors at Ashdown Museum during the year before and after it was refurbished.
+
+If we ask, 'What is this showing me?', our answer is '__The maps show changes that have occurred/ been made__' or '__The maps show what has changed__', which can again help us to paragraph the test question.
+
+An easy way to paraphrase the idea of '__before__' and '__after__' is to use '__prior to__' and '__following__'. However, they cannot be used in the same way grammatically:
+
+- __after__ / __before__ + doing x: __after building__ some facilities / __before building__ some facilities
+- __after__ / __before__ + noun: __after the construction of__ / __before the construction of__
+- __prior to__ and __following__ can only be used with a noun
+
+Synonyms can help here. For example, we can replace 'construction' with 'building':
+
+- __prior to the building of / following the building of__
+
+Again, we can change any nouns in the question to a verb (__the construction of__ => __were constructed__) or we can change a verb to a noun (__it was refurbished => the refurbishment of__). We can also change a grammatical structure used in the question. For example, if the question refers to '__tourist facilities__', we can change this to '__facilities for tourists__'.
+
+::: {.callout-tip}
+Grammatical knowledge can be useful when it comes to paraphrasing the test question  - if we focus on learning 'complex grammar', we may find this is less useful.
+:::
+
+### Exercises
+
+#### Question 1
+
+Fill in the blanks in the table with useful synonyms to use in map or plan tasks.
+
+| Verb         | Noun          | Meaning                                                                                             |
+| ------------ | ------------- | --------------------------------------------------------------------------------------------------- |
+| to build     | building      | make something using materials such as bricks or wood etc.                                          |
+| to construct | construction  | build something or put piece together                                                               |
+| to improve   | improvement   | make something better                                                                               |
+| to develop   | development   | change a (usually wild or untouched) place so that it becomes a more advanced / habitable / useable |
+| to refurbish | refurbishment | make a building look new again by painting, repairing, decorating, etc.                             |
+| to renovate  | renovation    | repair and improve something a building to make it 'new' again                                      |
+| to redevelop | redevelopment | change an area of a town by replacing old buildings with new ones.                                  |
+#### Question 2
+
+Paraphrase the following test question using the ideas from this lesson. 
+![](Pasted%20image%2020250712150822.png)
+
+The maps show an island _prior to_ and _following_ the building of some facilities for tourists.
+
+The maps show changes on an island following the building of some facilities for tourists.
+
+Method used:
+
+- Synonym replacement:
+	- show -> show changes
+	- before and after -> following
+	- construction -> building
+- Word reordering:
+	- 'tourist facilities' -> facilities for tourists
+
+The maps show changes made to an island after tourist facilities were constructed. 
+
+Method use:
+
+- Passive voice transformation:
+	- 'construction of facilities' -> facilities were constructed
+- Synonym replacement:
+	- 'before and after' -> after
+	- 'construction' -> were constructed
+	- 'show' -> show changes made to an island
+
+The maps show how an island changed after some tourist facilities were constructed (on it).
+
+Method use:
+
+- Change in sentence type:
+  From __noun phrase__ ("the construction of...") -> to __verb clause__ ("an island changed")
+- Passive construction: "facilities were constructed"
+- __"how" clause__ added for variety, with time reference maintained ("after...")
+
+## Giving too much information
+
+As we saw earlier, the introductory sentence should not be confused with our overview. Sometimes people add extra information or comments to this sentence. Look at the following example:
+
+_The two maps illustrate the development that has taken place on <font color="#ff0000">the</font> island <font color="#ff0000">in</font> <font color="#ff0000">terms of facilities for tourists that has turned a desolate place into one with several amenities for visitors.</font>_
+
+### Point to notice
+
+- This candidate has not introduced the information (we can only refer to '__the__ island' if it has already been mentioned).
+- They have also included a comment that might be useful later in their answer (that the island was __deserted__ and now has amenities for visitors), but this information does not answer any of the questions we asked earlier, namely __What, Who, Where, When__, and so it doesn't belong in the introductory sentence.
+- The word 'illustrate' works here - we can se that '__the maps illustrate the changes that have been made__' or '__the development that has taken place__'.
+- The word '__development__' is a nice one to include as it very accurately describes what has happened on the island. She would use it like this:
+
+_The maps show an island __prior to and following its development as a tourist destination__.
+
+![](Pasted%20image%2020250712153355.png)
+
+![](Pasted%20image%2020250712153542.png)
+
+Note:
+
+P1: coffee
+UK +++ 20 (highest)
+
+Switzerland +++ 2 times
+Belgium +++ (1.7 times)
+
+Denmark + (0.2)
+Sweden + (0.2)
+
+P2: bananas
+
+Switzerland > 3 times (highest 47)
+
+UK 5.5 times
+Belgum > 4 times
+
+Sweden -- 0.8
+Denmark --
+
+Answer:
+
+The two tables show the sales figure for Fairtrade-labelled coffee and bananas in 1999 and 2004 in five countries of Europe.
+
+Overall, the UK and Switzerland recorded the highest sales for coffee and bananas, respectively, in both years. Sales of Fairtrade products increased in most countries over the five-year period, with particularly sharp rises in the UK, Switzerland, and Belgium, while Sweden and Denmark showed little to no growth or even decline.
+
+In terms of coffee, the UK saw the most significant growth, rising from 1.5 million euros in 1999 to 20 million in 2004, making the top coffee market by 2004. Switzerland also experienced a doubling in sales, from 3 million to 6 million euros, while Belgum saw an increase of nearly 70%, reaching 1.7 million. Denmark and Sweden showed only modest increases, rising by 0.2 million each.
+
+For bananas, Switzerland remained the leading market, with sales increasing from 15 million euros to 47 million - more than three times higher. The UK and Belgium also saw substantial growth, from 1 million to 5.5 million and 0.6 million to 4 million euros, respectively. In contrast, Sweden and Denmark experienced a decline in banana sales, with Denmark dropping from 2 million to 0.9 million euros.
+
+
+### **Passive structure**
+
+> _"The two tables **illustrate** the sales figures..."_
+
+- Present simple passive for describing visuals.
+
+### **Complex sentences with linking phrases**
+
+> _"Sales of Fairtrade products increased in most countries over the five-year period, **with particularly sharp rises** in the UK, Switzerland, and Belgium..."_
+
+- _"with + noun phrase"_ for describing cause/result or added info
+    
+- Use of **relative clause**: “...countries **which** recorded sharp rises...”
+### **Superlative forms + modifiers**
+
+> _"...the UK saw the **most significant** growth..."_  
+> _"Switzerland remained the **leading market**..."_
+
+- Use **superlatives** to highlight comparisons.
+    
+- Phrases like **"remained the..."** show **consistency over time**.
+### **Quantitative comparison phrases**
+
+> _"...doubling in sales..."_  
+> _"...increased from 1 million to 5.5 million..."_  
+> _"...nearly 70%"_  
+> _"...more than three times higher..."_
+
+- Great for **data-specific comparisons**.
+    
+- Add **“from... to...”** or **“by...”** to show numerical change.
+### **Contrast linking words**
+
+> _"While Denmark and Sweden showed only modest increases..."_  
+> _"In contrast, Sweden and Denmark experienced a decline..."_
+
+- Use **“while”** and **“in contrast”** to highlight **opposing trends**.
+
+### Range of verbs for describing data
+
+| Action Verbs     | Used in the Sample                    |
+| ---------------- | ------------------------------------- |
+| increase         | "...sales increased..."               |
+| double           | "...Switzerland doubled in sales..."  |
+| rise             | "...rising from 1.5 to 20 million..." |
+| experience       | "...experienced a decline..."         |
+| remain           | "...remained the leading market..."   |
+| see (as subject) | _"The UK **saw** the most growth"_    |
