@@ -253,48 +253,6 @@ Kadane’s initialization of</p>
   <media:content url="https://kimhungbui.github.io/programming/maximum-subarray-problem/Pasted%20image%2020250602105019.png" medium="image" type="image/png"/>
 </item>
 <item>
-  <title>2359. Find Closest Node to Given Two Nodes</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-find-closest-node-given-2-nodes/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Topic: <code>Graph, Deep-First Search</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
-<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
-<p>Example 1:</p>
-<ul>
-<li>Input: <code>nums = [1,2,3,1]</code></li>
-<li>Output: <code>4</code></li>
-<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
-</ul>
-<p>Example 2:</p>
-<ul>
-<li>Input: <code>nums = [2,7,9,3,1]</code></li>
-<li>Output: <code>12</code></li>
-<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
-</ul>
-<p>Constraints:</p>
-<pre><code>1 &lt;= nums.length &lt;= 100
-0 &lt;= nums[i] &lt;= 400</code></pre>
-</section>
-<section id="approaches" class="level1">
-<h1>Approaches</h1>
-
-
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-find-closest-node-given-2-nodes/</guid>
-  <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>127. Word Ladder</title>
   <dc:creator>Hung </dc:creator>
   <link>https://kimhungbui.github.io/programming/leetcode-word-ladder/</link>
@@ -627,6 +585,48 @@ font-style: inherit;">0</span></span></code></pre></div>
   <category>leetcode</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-word-ladder/</guid>
+  <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>2359. Find Closest Node to Given Two Nodes</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-find-closest-node-given-2-nodes/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>Graph, Deep-First Search</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
+<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
+<p>Example 1:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,1]</code></li>
+<li>Output: <code>4</code></li>
+<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [2,7,9,3,1]</code></li>
+<li>Output: <code>12</code></li>
+<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
+</ul>
+<p>Constraints:</p>
+<pre><code>1 &lt;= nums.length &lt;= 100
+0 &lt;= nums[i] &lt;= 400</code></pre>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-find-closest-node-given-2-nodes/</guid>
   <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1065,7 +1065,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="73844109" class="cell" data-execution_count="1">
+<div id="24b44d4f" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
@@ -1142,188 +1142,6 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-maximum-subarray/</guid>
   <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Docker basics</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/docker-intro/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This chapter introduces containerization with Docker and relevant concepts such as image and volume. By the end of this chapter you are able to:</p>
-<ul>
-<li>Run containerized applications</li>
-<li>Containerize applications</li>
-<li>Utilize volumes to store data persistently outside of the containers.</li>
-<li>Use port mapping to enable access via TCP to containerized applications</li>
-<li>Share your own containers publicly</li>
-</ul>
-<section id="definitions-and-basic-concept" class="level1">
-<h1>Definitions and basic concept</h1>
-<section id="what-is-devops" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-devops">What is DevOps</h2>
-<p>The term itself consists of two parts <em>Dev</em> and <em>Ops</em>. Dev refers to the development of software and Ops to operations. Simple definition for DevOps would be that it means the release, configuring, and monitoring of software is in the hand people who develop it.</p>
-</section>
-<section id="what-is-docker" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-docker">What is Docker</h2>
-<blockquote class="blockquote">
-<p>“Docker&nbsp;is&nbsp;a&nbsp;set&nbsp;of&nbsp;platform&nbsp;as&nbsp;a&nbsp;service&nbsp;(PaaS)&nbsp;products&nbsp;that&nbsp;use&nbsp;OS-level&nbsp;virtualization&nbsp;to&nbsp;deliver&nbsp;software&nbsp;in&nbsp;packages&nbsp;called&nbsp;containers.”&nbsp;-&nbsp;<a href="https://en.wikipedia.org/wiki/Docker_(software)">from&nbsp;Wikipedia(opens&nbsp;in&nbsp;a&nbsp;new&nbsp;tab)</a>.</p>
-</blockquote>
-<p>So we get two definitions: 1. Docker is a set of tools to deliver software incontainers. 2. Containers are packages of software. <img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403152352.png" class="img-fluid"></p>
-<p>The above image illustrate how containers include the application and its dependencies. These containers are isolated so that they don’t interfere with each other or the software running outside of the containers. If we want to enable interactions between them, Docker offers tools to do so.</p>
-</section>
-<section id="benefits-from-containers" class="level2">
-<h2 class="anchored" data-anchor-id="benefits-from-containers">Benefits from containers</h2>
-<p>Containers package applications. In different scenarios: ### Scenario 1: Works on my machine</p>
-<p>Let’s first take a closer look into what happens in web development without containers following the chain above starting from “Plan”.</p>
-<p>First we plan an application. Then our team of 1-n developers create the software. It works on one’s computer. It may even go through a testing pipeline working perfectly. We send it to the server and it does not work.</p>
-<p>This&nbsp;is&nbsp;known&nbsp;as&nbsp;the&nbsp;<strong>“works&nbsp;on&nbsp;my&nbsp;machine”</strong>&nbsp;problem.&nbsp;The&nbsp;only&nbsp;way&nbsp;to&nbsp;solve&nbsp;this&nbsp;is&nbsp;by&nbsp;finding&nbsp;out&nbsp;what&nbsp;in&nbsp;tarnation&nbsp;the&nbsp;developer&nbsp;had&nbsp;installed&nbsp;on&nbsp;their&nbsp;machine&nbsp;that&nbsp;made&nbsp;the&nbsp;application&nbsp;work.</p>
-<p>Containers&nbsp;solve&nbsp;this&nbsp;problem&nbsp;by&nbsp;allowing&nbsp;the&nbsp;developer&nbsp;to&nbsp;personally&nbsp;run&nbsp;the&nbsp;application&nbsp;inside&nbsp;a&nbsp;container,&nbsp;which&nbsp;then&nbsp;includes&nbsp;all&nbsp;of&nbsp;the&nbsp;dependencies&nbsp;required&nbsp;for&nbsp;the&nbsp;app&nbsp;to&nbsp;work.</p>
-<ul>
-<li>You&nbsp;may&nbsp;still&nbsp;occasionally&nbsp;hear&nbsp;about&nbsp;“works&nbsp;in&nbsp;my&nbsp;<strong>container</strong>”&nbsp;issues&nbsp;-&nbsp;these&nbsp;are&nbsp;often&nbsp;just&nbsp;usage&nbsp;errors. ### Scenario 2: Isolated environments</li>
-</ul>
-<p>We have 5 different Python applications. We need to deploy them to a server that already has an application requiring Python 2.7 and of course none of our applications are 2.7. What do we do now?</p>
-<p>Since containers package the software with all of its dependencies, we package the existing app and all 5 new ones with their respective Python versions and that’s it.</p>
-<p>Sometimes&nbsp;different&nbsp;parts&nbsp;of&nbsp;a&nbsp;system&nbsp;may&nbsp;change&nbsp;over&nbsp;time,&nbsp;possibly&nbsp;leading&nbsp;to&nbsp;the&nbsp;application&nbsp;not&nbsp;working.&nbsp;These&nbsp;changes&nbsp;may&nbsp;be&nbsp;anything&nbsp;from&nbsp;an&nbsp;operating&nbsp;system&nbsp;update&nbsp;to&nbsp;changes&nbsp;in&nbsp;dependencies.</p>
-<section id="scenario-3-development" class="level3">
-<h3 class="anchored" data-anchor-id="scenario-3-development">Scenario 3: Development</h3>
-<p>We are brought into a dev team. They run a web app that uses other services when running: a Postgres database, MongoDB, Redis and a number of others. Simple enough, we install whatever is required to run the application and all of the applications that it depends on …</p>
-<p>What a headache to start installing and then managing the development databases on your own machine.</p>
-<p>Thankfully, by the time we are told to do that we are already a Docker expert. With one command we get an isolated application, like Postgres or Mongo, running in our machine.</p>
-</section>
-<section id="scenario-4-scaling" class="level3">
-<h3 class="anchored" data-anchor-id="scenario-4-scaling">Scenario 4: Scaling</h3>
-<p>Starting and stopping a Docker container has little overhead. But when we run our own Netflix or Facebook, we want to meet the changing demand. With some advanced tooling that we will learn about in parts 2 and 3, we can spin up multiple containers instantly and load balance traffic between them.</p>
-<p>Container orchestration will be discussed in parts 2 and 3. But the simplest example: what happens when one application dies? The orchestration system notices it, splits traffic between the working replicas, and spins up a new container to replace the dead one.</p>
-</section>
-</section>
-<section id="virtual-machines" class="level2">
-<h2 class="anchored" data-anchor-id="virtual-machines">Virtual machines</h2>
-<p><img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403154053.png" class="img-fluid"></p>
-<p>VM virtualizes the physical hardware. Each VM includes a full OS along with the necessary binaries and libraries, making them heavier and more resources-intensive. Containers, on the other hand, share the host OS kernel and only package the application and its dependencies, resulting in a more lightweight and efficient solution.</p>
-<p>VMs provide strong isolation and are suited for running multiple OS environments, but they have a performance overhead and longer startup times. Containers offer faster startup, better resource utilization, and high portability across different environments, though their isolation is at the process level, which may not be as robust as that of VMs. Overall, VMs could be used for scenarios needing complete OS environments, while containers excel in lightweight, efficient, and consistent application deployment.</p>
-<p>Docker relies on Linux kernels, which means that macOS and Windows cannot run Docker natively without some additional steps. Each operating system has its own solution for running docker.</p>
-</section>
-<section id="image-and-containers" class="level2">
-<h2 class="anchored" data-anchor-id="image-and-containers">Image and containers</h2>
-<p>Since we already know what containers are it’s easier to explain images through them: Containers are instances of images. A basic mistake is to confuse images and containers.</p>
-<p>Cooking metaphor:</p>
-<p>Think of a container as a ready-to-eat meal that we can simply heat up and consume. An image, on the other hand, is the recipe <em>and</em> the ingredients for that meal.</p>
-<p>So just like how we need a recipe and ingredients to make a meal, we need an image and a container runtime (Docker engine) to create a container. The image provides all the necessary instructions and dependencies for the container to run, just like a recipe provides the steps and ingredients to make a meal.</p>
-<p>In short, an image is like a blueprint or template and the building material, while a container is an instance of that blueprint or template.</p>
-<section id="image" class="level3">
-<h3 class="anchored" data-anchor-id="image">Image</h3>
-<p>A Docker image is a file. An image <em>never changes</em>; we cannot edit an existing file. Creating a new image happens by starting from a base image and adding new <strong>layers</strong> to it. We will talk about layers later, but we should think of images as <em>immutable</em>, they can not be changed after they are created.</p>
-<p>List all of ours image with <code>docker image ls</code></p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> docker image ls</span>
-<span id="cb1-2">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">REPOSITORY</span>      TAG      IMAGE ID       CREATED         SIZE</span>
-<span id="cb1-3">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">hello-world</span>     latest   d1165f221234   9 days ago      13.3kB</span></code></pre></div>
-<p>Containers are created from images, so when we ran hello-world twice we downloaded one <em>image</em> and created two of them from the single image.</p>
-<p>Well then, if images are used to create containers, where do images come from? This image file is built from an instructional file named <strong>Dockerfile</strong> that is parsed when we run <code>docker image build</code>.</p>
-<p>Dockerfile is a file that is by default called <em>Dockerfile</em>, that looks something like this</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb2-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">FROM</span> &lt;image&gt;:&lt;tag&gt;</span>
-<span id="cb2-2"></span>
-<span id="cb2-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">RUN</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span>install <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">some</span> dependencies<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span></span>
-<span id="cb2-4"></span>
-<span id="cb2-5"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">CMD</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span>command <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">that</span> is executed on <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">`</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">docker</span> container run<span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span></span></code></pre></div>
-<p>and is the instruction set for building an image. We will look into Dockerfiles later when we to build our own images.</p>
-<p>If we go back to the cooking metaphor, as Dockerfile provides the instructions needed to build an image we can think of that as the recipe for images. We’re now 2 recipes deep, as a Dockerfile is the recipe for an image and an image is the recipe for the container. The only difference is that Dockerfile is written by us, whereas image is written by our machine based on the Dockerfile.</p>
-</section>
-</section>
-<section id="container" class="level2">
-<h2 class="anchored" data-anchor-id="container">Container</h2>
-<p>Containers only contain what is required to execute an application; and we can start, stop and interact with them. They are <strong>isolated</strong> environments in the host machine with the ability to interact with each other and the host machine itself via defined method (TCP/UDP).</p>
-<p>List all of our containers with <code>docker container ls</code></p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> docker container ls</span>
-<span id="cb3-2">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">CONTAINER</span> ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES</span></code></pre></div>
-<p>Without <code>-a</code> flag it will only print running containers.</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">$</span> docker container ls <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">-a</span></span>
-<span id="cb4-2">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">CONTAINER</span> ID   IMAGE           COMMAND      CREATED          STATUS                      PORTS     NAMES</span>
-<span id="cb4-3">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">b7a53260b513</span>   hello-world     <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"/hello"</span>     5 minutes ago    Exited <span class="er" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">(</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">)</span> <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">5</span> minutes ago              brave_bhabha</span>
-<span id="cb4-4">  <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">1cd4cb01482d</span>   hello-world     <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"/hello"</span>     8 minutes ago    Exited <span class="er" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">(</span><span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">)</span> <span class="ex" style="color: null;
-background-color: null;
-font-style: inherit;">8</span> minutes ago              vibrant_bell</span></code></pre></div>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>programming</category>
-  <category>docker</category>
-  <guid>https://kimhungbui.github.io/programming/docker-intro/</guid>
-  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Disjoint Set Union</title>
@@ -1878,6 +1696,188 @@ si != ti</code></pre>
   <media:content url="https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>Docker basics</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/docker-intro/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This chapter introduces containerization with Docker and relevant concepts such as image and volume. By the end of this chapter you are able to:</p>
+<ul>
+<li>Run containerized applications</li>
+<li>Containerize applications</li>
+<li>Utilize volumes to store data persistently outside of the containers.</li>
+<li>Use port mapping to enable access via TCP to containerized applications</li>
+<li>Share your own containers publicly</li>
+</ul>
+<section id="definitions-and-basic-concept" class="level1">
+<h1>Definitions and basic concept</h1>
+<section id="what-is-devops" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-devops">What is DevOps</h2>
+<p>The term itself consists of two parts <em>Dev</em> and <em>Ops</em>. Dev refers to the development of software and Ops to operations. Simple definition for DevOps would be that it means the release, configuring, and monitoring of software is in the hand people who develop it.</p>
+</section>
+<section id="what-is-docker" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-docker">What is Docker</h2>
+<blockquote class="blockquote">
+<p>“Docker&nbsp;is&nbsp;a&nbsp;set&nbsp;of&nbsp;platform&nbsp;as&nbsp;a&nbsp;service&nbsp;(PaaS)&nbsp;products&nbsp;that&nbsp;use&nbsp;OS-level&nbsp;virtualization&nbsp;to&nbsp;deliver&nbsp;software&nbsp;in&nbsp;packages&nbsp;called&nbsp;containers.”&nbsp;-&nbsp;<a href="https://en.wikipedia.org/wiki/Docker_(software)">from&nbsp;Wikipedia(opens&nbsp;in&nbsp;a&nbsp;new&nbsp;tab)</a>.</p>
+</blockquote>
+<p>So we get two definitions: 1. Docker is a set of tools to deliver software incontainers. 2. Containers are packages of software. <img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403152352.png" class="img-fluid"></p>
+<p>The above image illustrate how containers include the application and its dependencies. These containers are isolated so that they don’t interfere with each other or the software running outside of the containers. If we want to enable interactions between them, Docker offers tools to do so.</p>
+</section>
+<section id="benefits-from-containers" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-from-containers">Benefits from containers</h2>
+<p>Containers package applications. In different scenarios: ### Scenario 1: Works on my machine</p>
+<p>Let’s first take a closer look into what happens in web development without containers following the chain above starting from “Plan”.</p>
+<p>First we plan an application. Then our team of 1-n developers create the software. It works on one’s computer. It may even go through a testing pipeline working perfectly. We send it to the server and it does not work.</p>
+<p>This&nbsp;is&nbsp;known&nbsp;as&nbsp;the&nbsp;<strong>“works&nbsp;on&nbsp;my&nbsp;machine”</strong>&nbsp;problem.&nbsp;The&nbsp;only&nbsp;way&nbsp;to&nbsp;solve&nbsp;this&nbsp;is&nbsp;by&nbsp;finding&nbsp;out&nbsp;what&nbsp;in&nbsp;tarnation&nbsp;the&nbsp;developer&nbsp;had&nbsp;installed&nbsp;on&nbsp;their&nbsp;machine&nbsp;that&nbsp;made&nbsp;the&nbsp;application&nbsp;work.</p>
+<p>Containers&nbsp;solve&nbsp;this&nbsp;problem&nbsp;by&nbsp;allowing&nbsp;the&nbsp;developer&nbsp;to&nbsp;personally&nbsp;run&nbsp;the&nbsp;application&nbsp;inside&nbsp;a&nbsp;container,&nbsp;which&nbsp;then&nbsp;includes&nbsp;all&nbsp;of&nbsp;the&nbsp;dependencies&nbsp;required&nbsp;for&nbsp;the&nbsp;app&nbsp;to&nbsp;work.</p>
+<ul>
+<li>You&nbsp;may&nbsp;still&nbsp;occasionally&nbsp;hear&nbsp;about&nbsp;“works&nbsp;in&nbsp;my&nbsp;<strong>container</strong>”&nbsp;issues&nbsp;-&nbsp;these&nbsp;are&nbsp;often&nbsp;just&nbsp;usage&nbsp;errors. ### Scenario 2: Isolated environments</li>
+</ul>
+<p>We have 5 different Python applications. We need to deploy them to a server that already has an application requiring Python 2.7 and of course none of our applications are 2.7. What do we do now?</p>
+<p>Since containers package the software with all of its dependencies, we package the existing app and all 5 new ones with their respective Python versions and that’s it.</p>
+<p>Sometimes&nbsp;different&nbsp;parts&nbsp;of&nbsp;a&nbsp;system&nbsp;may&nbsp;change&nbsp;over&nbsp;time,&nbsp;possibly&nbsp;leading&nbsp;to&nbsp;the&nbsp;application&nbsp;not&nbsp;working.&nbsp;These&nbsp;changes&nbsp;may&nbsp;be&nbsp;anything&nbsp;from&nbsp;an&nbsp;operating&nbsp;system&nbsp;update&nbsp;to&nbsp;changes&nbsp;in&nbsp;dependencies.</p>
+<section id="scenario-3-development" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-3-development">Scenario 3: Development</h3>
+<p>We are brought into a dev team. They run a web app that uses other services when running: a Postgres database, MongoDB, Redis and a number of others. Simple enough, we install whatever is required to run the application and all of the applications that it depends on …</p>
+<p>What a headache to start installing and then managing the development databases on your own machine.</p>
+<p>Thankfully, by the time we are told to do that we are already a Docker expert. With one command we get an isolated application, like Postgres or Mongo, running in our machine.</p>
+</section>
+<section id="scenario-4-scaling" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-4-scaling">Scenario 4: Scaling</h3>
+<p>Starting and stopping a Docker container has little overhead. But when we run our own Netflix or Facebook, we want to meet the changing demand. With some advanced tooling that we will learn about in parts 2 and 3, we can spin up multiple containers instantly and load balance traffic between them.</p>
+<p>Container orchestration will be discussed in parts 2 and 3. But the simplest example: what happens when one application dies? The orchestration system notices it, splits traffic between the working replicas, and spins up a new container to replace the dead one.</p>
+</section>
+</section>
+<section id="virtual-machines" class="level2">
+<h2 class="anchored" data-anchor-id="virtual-machines">Virtual machines</h2>
+<p><img src="https://kimhungbui.github.io/programming/docker-intro/Pasted image 20250403154053.png" class="img-fluid"></p>
+<p>VM virtualizes the physical hardware. Each VM includes a full OS along with the necessary binaries and libraries, making them heavier and more resources-intensive. Containers, on the other hand, share the host OS kernel and only package the application and its dependencies, resulting in a more lightweight and efficient solution.</p>
+<p>VMs provide strong isolation and are suited for running multiple OS environments, but they have a performance overhead and longer startup times. Containers offer faster startup, better resource utilization, and high portability across different environments, though their isolation is at the process level, which may not be as robust as that of VMs. Overall, VMs could be used for scenarios needing complete OS environments, while containers excel in lightweight, efficient, and consistent application deployment.</p>
+<p>Docker relies on Linux kernels, which means that macOS and Windows cannot run Docker natively without some additional steps. Each operating system has its own solution for running docker.</p>
+</section>
+<section id="image-and-containers" class="level2">
+<h2 class="anchored" data-anchor-id="image-and-containers">Image and containers</h2>
+<p>Since we already know what containers are it’s easier to explain images through them: Containers are instances of images. A basic mistake is to confuse images and containers.</p>
+<p>Cooking metaphor:</p>
+<p>Think of a container as a ready-to-eat meal that we can simply heat up and consume. An image, on the other hand, is the recipe <em>and</em> the ingredients for that meal.</p>
+<p>So just like how we need a recipe and ingredients to make a meal, we need an image and a container runtime (Docker engine) to create a container. The image provides all the necessary instructions and dependencies for the container to run, just like a recipe provides the steps and ingredients to make a meal.</p>
+<p>In short, an image is like a blueprint or template and the building material, while a container is an instance of that blueprint or template.</p>
+<section id="image" class="level3">
+<h3 class="anchored" data-anchor-id="image">Image</h3>
+<p>A Docker image is a file. An image <em>never changes</em>; we cannot edit an existing file. Creating a new image happens by starting from a base image and adding new <strong>layers</strong> to it. We will talk about layers later, but we should think of images as <em>immutable</em>, they can not be changed after they are created.</p>
+<p>List all of ours image with <code>docker image ls</code></p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> docker image ls</span>
+<span id="cb1-2">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">REPOSITORY</span>      TAG      IMAGE ID       CREATED         SIZE</span>
+<span id="cb1-3">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">hello-world</span>     latest   d1165f221234   9 days ago      13.3kB</span></code></pre></div>
+<p>Containers are created from images, so when we ran hello-world twice we downloaded one <em>image</em> and created two of them from the single image.</p>
+<p>Well then, if images are used to create containers, where do images come from? This image file is built from an instructional file named <strong>Dockerfile</strong> that is parsed when we run <code>docker image build</code>.</p>
+<p>Dockerfile is a file that is by default called <em>Dockerfile</em>, that looks something like this</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">FROM</span> &lt;image&gt;:&lt;tag&gt;</span>
+<span id="cb2-2"></span>
+<span id="cb2-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">RUN</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>install <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">some</span> dependencies<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">CMD</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>command <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">that</span> is executed on <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">`</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">docker</span> container run<span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div>
+<p>and is the instruction set for building an image. We will look into Dockerfiles later when we to build our own images.</p>
+<p>If we go back to the cooking metaphor, as Dockerfile provides the instructions needed to build an image we can think of that as the recipe for images. We’re now 2 recipes deep, as a Dockerfile is the recipe for an image and an image is the recipe for the container. The only difference is that Dockerfile is written by us, whereas image is written by our machine based on the Dockerfile.</p>
+</section>
+</section>
+<section id="container" class="level2">
+<h2 class="anchored" data-anchor-id="container">Container</h2>
+<p>Containers only contain what is required to execute an application; and we can start, stop and interact with them. They are <strong>isolated</strong> environments in the host machine with the ability to interact with each other and the host machine itself via defined method (TCP/UDP).</p>
+<p>List all of our containers with <code>docker container ls</code></p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> docker container ls</span>
+<span id="cb3-2">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">CONTAINER</span> ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES</span></code></pre></div>
+<p>Without <code>-a</code> flag it will only print running containers.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">$</span> docker container ls <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-a</span></span>
+<span id="cb4-2">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">CONTAINER</span> ID   IMAGE           COMMAND      CREATED          STATUS                      PORTS     NAMES</span>
+<span id="cb4-3">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">b7a53260b513</span>   hello-world     <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/hello"</span>     5 minutes ago    Exited <span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">5</span> minutes ago              brave_bhabha</span>
+<span id="cb4-4">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">1cd4cb01482d</span>   hello-world     <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/hello"</span>     8 minutes ago    Exited <span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">0</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">8</span> minutes ago              vibrant_bell</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>programming</category>
+  <category>docker</category>
+  <guid>https://kimhungbui.github.io/programming/docker-intro/</guid>
+  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
   <title>3191. Minimum Operations to Make Binary Array Elements Equal to One I</title>
   <dc:creator>Hung </dc:creator>
   <link>https://kimhungbui.github.io/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html</link>
@@ -2127,391 +2127,6 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</guid>
   <pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Divide Array Into Equal Pairs</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Topic: <code>array, hash table, bit manipulation, counting</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are given an integer array nums consisting of <code>2 * n</code> integers.</p>
-<p>You need to divide nums into n pairs such that:</p>
-<pre><code>Each element belongs to exactly one pair.
-The elements present in a pair are equal.</code></pre>
-<p>Return true if nums can be divided into n pairs, otherwise return false.</p>
-<p>Example 1:</p>
-<ul>
-<li><p>Input: <code>nums = [3,2,3,2,2,2]</code></p></li>
-<li><p>Output: <code>true</code></p></li>
-<li><p>Explanation: <code>There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.</code></p></li>
-</ul>
-<p>Example 2:</p>
-<ul>
-<li>Input: <code>nums = [1,2,3,4]</code></li>
-<li>Output: <code>false</code></li>
-<li>Explanation: <code>There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.</code></li>
-</ul>
-<p>Constraints:</p>
-<ul>
-<li><code>nums.length == 2 * n</code></li>
-<li><code>1 &lt;= n &lt;= 500</code></li>
-<li><code>1 &lt;= nums[i] &lt;= 500</code></li>
-</ul>
-</section>
-<section id="approaches" class="level1">
-<h1>Approaches</h1>
-<section id="count-array" class="level2">
-<h2 class="anchored" data-anchor-id="count-array">Count array</h2>
-<p><code>nums</code> that have 2 * n intenger</p>
-<p>divide <code>nums</code> into n pairs</p>
-<p>1 element in 1 pair</p>
-<p>elements in pair is equal</p>
-<p>return true if can devide to n pair,</p>
-<p>So, we can use count array</p>
-<pre><code>if all even \`return true\`
-
-else \`return false\`</code></pre>
-<p>TC: O(n)</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">class</span> Solution:</span>
-<span id="cb3-2">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb3-3">    ans <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span></span>
-<span id="cb3-4">    count_array <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">500</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb3-5">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums:</span>
-<span id="cb3-6">        count_array[num] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb3-7">    <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(count_array)</span>
-<span id="cb3-8">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> count_array:</span>
-<span id="cb3-9">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> num <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>:</span>
-<span id="cb3-10">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span></span>
-<span id="cb3-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> ans</span></code></pre></div>
-</section>
-<section id="map" class="level2">
-<h2 class="anchored" data-anchor-id="map">Map</h2>
-<p>like approach 1, we can use map for that (better code)</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb4-2">        frequency <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> Counter(nums)</span>
-<span id="cb4-3">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># check consecutive pairs in sorted array</span></span>
-<span id="cb4-4">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">all</span>(count <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> count <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> frequency.values())</span></code></pre></div>
-</section>
-<section id="bool-array" class="level2">
-<h2 class="anchored" data-anchor-id="bool-array">Bool array</h2>
-<p>an improve, use boolean array</p>
-<p>O(n)</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb5-2"></span>
-<span id="cb5-3">        max_num <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">max</span>(nums)</span>
-<span id="cb5-4"></span>
-<span id="cb5-5">        needs_pair <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> (max_num <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb5-6"></span>
-<span id="cb5-7">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums:</span>
-<span id="cb5-8">            needs_pair[num] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">not</span> needs_pair[num]</span>
-<span id="cb5-9"></span>
-<span id="cb5-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">not</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">any</span>(needs_pair[num] <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums)</span></code></pre></div>
-</section>
-<section id="sorted" class="level2">
-<h2 class="anchored" data-anchor-id="sorted">Sorted</h2>
-<p>sorted that can have TC: O(nlogn)</p>
-<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb6-2">        nums.sort()</span>
-<span id="cb6-3">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># check consecutive pairs in sorted array</span></span>
-<span id="cb6-4">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">all</span>(nums[i] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> nums[i<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span> (<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(nums), <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>))</span></code></pre></div>
-</section>
-<section id="hash-set" class="level2">
-<h2 class="anchored" data-anchor-id="hash-set">Hash set</h2>
-<p>we can store a element when first meet it, and even get it, we remote from set</p>
-<p>when retrieve all, if set have element.</p>
-<p>hash set have TC of lookup, addition, removal in constant time.</p>
-<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb7-2">        unpaired <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">set</span>()</span>
-<span id="cb7-3"></span>
-<span id="cb7-4">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> nums:</span>
-<span id="cb7-5">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> num <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> unpaired:</span>
-<span id="cb7-6">                unpaired.remove(num)</span>
-<span id="cb7-7">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">else</span>:</span>
-<span id="cb7-8">                unpaired.add(num)</span>
-<span id="cb7-9">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">not</span> unpaired</span></code></pre></div>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</guid>
-  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>House robber</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Topic: <code>array, dymanic programming</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
-<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
-<p>Example 1:</p>
-<ul>
-<li>Input: <code>nums = [1,2,3,1]</code></li>
-<li>Output: <code>4</code></li>
-<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
-</ul>
-<p>Example 2:</p>
-<ul>
-<li>Input: <code>nums = [2,7,9,3,1]</code></li>
-<li>Output: <code>12</code></li>
-<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
-</ul>
-<p>Constraints:</p>
-<pre><code>1 &lt;= nums.length &lt;= 100
-0 &lt;= nums[i] &lt;= 400</code></pre>
-</section>
-<section id="approaches" class="level1">
-<h1>Approaches</h1>
-
-
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</guid>
-  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>How to approach most DP problems</title>
@@ -2960,6 +2575,391 @@ font-style: inherit;">return</span> prev1</span></code></pre></div>
   <category>leetcode</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>House robber</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>array, dymanic programming</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.</p>
+<p>Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
+<p>Example 1:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,1]</code></li>
+<li>Output: <code>4</code></li>
+<li>Explanation: <code>Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.</code></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [2,7,9,3,1]</code></li>
+<li>Output: <code>12</code></li>
+<li>Explanation: <code>Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.</code></li>
+</ul>
+<p>Constraints:</p>
+<pre><code>1 &lt;= nums.length &lt;= 100
+0 &lt;= nums[i] &lt;= 400</code></pre>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-house-robber/house-robber.html</guid>
+  <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Divide Array Into Equal Pairs</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Topic: <code>array, hash table, bit manipulation, counting</code></p>
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>You are given an integer array nums consisting of <code>2 * n</code> integers.</p>
+<p>You need to divide nums into n pairs such that:</p>
+<pre><code>Each element belongs to exactly one pair.
+The elements present in a pair are equal.</code></pre>
+<p>Return true if nums can be divided into n pairs, otherwise return false.</p>
+<p>Example 1:</p>
+<ul>
+<li><p>Input: <code>nums = [3,2,3,2,2,2]</code></p></li>
+<li><p>Output: <code>true</code></p></li>
+<li><p>Explanation: <code>There are 6 elements in nums, so they should be divided into 6 / 2 = 3 pairs. If nums is divided into the pairs (2, 2), (3, 3), and (2, 2), it will satisfy all the conditions.</code></p></li>
+</ul>
+<p>Example 2:</p>
+<ul>
+<li>Input: <code>nums = [1,2,3,4]</code></li>
+<li>Output: <code>false</code></li>
+<li>Explanation: <code>There is no way to divide nums into 4 / 2 = 2 pairs such that the pairs satisfy every condition.</code></li>
+</ul>
+<p>Constraints:</p>
+<ul>
+<li><code>nums.length == 2 * n</code></li>
+<li><code>1 &lt;= n &lt;= 500</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 500</code></li>
+</ul>
+</section>
+<section id="approaches" class="level1">
+<h1>Approaches</h1>
+<section id="count-array" class="level2">
+<h2 class="anchored" data-anchor-id="count-array">Count array</h2>
+<p><code>nums</code> that have 2 * n intenger</p>
+<p>divide <code>nums</code> into n pairs</p>
+<p>1 element in 1 pair</p>
+<p>elements in pair is equal</p>
+<p>return true if can devide to n pair,</p>
+<p>So, we can use count array</p>
+<pre><code>if all even \`return true\`
+
+else \`return false\`</code></pre>
+<p>TC: O(n)</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb3-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb3-3">    ans <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb3-4">    count_array <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-5">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb3-6">        count_array[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-7">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(count_array)</span>
+<span id="cb3-8">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> count_array:</span>
+<span id="cb3-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-10">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> ans</span></code></pre></div>
+</section>
+<section id="map" class="level2">
+<h2 class="anchored" data-anchor-id="map">Map</h2>
+<p>like approach 1, we can use map for that (better code)</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb4-2">        frequency <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Counter(nums)</span>
+<span id="cb4-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb4-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(count <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> count <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> frequency.values())</span></code></pre></div>
+</section>
+<section id="bool-array" class="level2">
+<h2 class="anchored" data-anchor-id="bool-array">Bool array</h2>
+<p>an improve, use boolean array</p>
+<p>O(n)</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb5-2"></span>
+<span id="cb5-3">        max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(nums)</span>
+<span id="cb5-4"></span>
+<span id="cb5-5">        needs_pair <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> (max_num <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb5-6"></span>
+<span id="cb5-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb5-8">            needs_pair[num] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> needs_pair[num]</span>
+<span id="cb5-9"></span>
+<span id="cb5-10">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">any</span>(needs_pair[num] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums)</span></code></pre></div>
+</section>
+<section id="sorted" class="level2">
+<h2 class="anchored" data-anchor-id="sorted">Sorted</h2>
+<p>sorted that can have TC: O(nlogn)</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb6-2">        nums.sort()</span>
+<span id="cb6-3">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># check consecutive pairs in sorted array</span></span>
+<span id="cb6-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(nums[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> nums[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(nums), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>))</span></code></pre></div>
+</section>
+<section id="hash-set" class="level2">
+<h2 class="anchored" data-anchor-id="hash-set">Hash set</h2>
+<p>we can store a element when first meet it, and even get it, we remote from set</p>
+<p>when retrieve all, if set have element.</p>
+<p>hash set have TC of lookup, addition, removal in constant time.</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> divideArray(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb7-2">        unpaired <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>()</span>
+<span id="cb7-3"></span>
+<span id="cb7-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> nums:</span>
+<span id="cb7-5">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> num <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> unpaired:</span>
+<span id="cb7-6">                unpaired.remove(num)</span>
+<span id="cb7-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb7-8">                unpaired.add(num)</span>
+<span id="cb7-9">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> unpaired</span></code></pre></div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html</guid>
   <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
