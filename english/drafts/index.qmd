@@ -1,7 +1,7 @@
 ---
 title: Mistake Log
 lightbox: false
-description: 
+description: Mistake log
 author:
   - name: Hung
     url: https://kimhungbui.github.io
@@ -15,6 +15,6 @@ draft: false
 Correct sentence:
 The table illustrates car production figures for three major manufacturers between 2010 and 2015.
 
-- We cannot say --cars production--, cars is a plural noun, and here it should modify "production", but only singular noun modifiers work properly in this structure.
+- We cannot say ~~cars production~~, cars is a plural noun, and here it should modify "production", but only singular noun modifiers work properly in this structure.
   The correct noun phrase is: "car production figures" (not cars)
 - The preposition "by" is slightly awkward when use with "figures". We use figures with "for".
