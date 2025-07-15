@@ -22,13 +22,257 @@ draft: true
 ---
 # The overview
 
-In this lesson, we will focus again on chart or table task, producing our first complete model answer. First, we need to understand two elements of our answer that need to be very lear
+In this lesson, we will focus again on chart or table task, producing our first complete model answer. First, we need to understand two elements of our answer that need to be very clear: the overview and the key features. While these concepts are explained in this lesson, we may find that it will take several more lessons before we feel able to produce them effectively ourself, so we will continue to practice these throughout the book.
 
+We will be working on the homework task from lesson 4.
+![](Pasted%20image%2020250712160851.png)
 
+After writing our introductory sentence, the next part of the answer that we write is the overview. As we have seen, the overview and the key features are very important in Task achievement.
+
+![](Pasted%20image%2020250712160956.png)
+
+The above extracts make it clear that we cannot achieve band 6 if we do not include an overview and if we do not adequately cover the key features. We cannot achieve Band 7 unless our overview is '__a clear overview of the main trends, differences or stages__', and unless we __clearly highlight key features clearly__ (Band 8) and __develop our response fully__ (Band 9).
+
+It is important to remember that we cannot separate 'function' from the language needed to achieve this function. For example, if we want to 'make a comparison' we need to use the language of comparison. If we want to learn how to present an overview, we need to first think about the type of language needed to do this.
+
+## The function of an overview
+
+Our overview should present a brief summary of the key features (the main trends, difference or stages). 
+
+![](Pasted%20image%2020250712162006.png)
+
+As this definition shows, the information should be general and __should not contain any details__. The most common problems are overviews that are not 'clear' or that contain too much detail.
+
+## Language typically used in an overview
+
+The language we typically use when giving general information about trends includes:
+
+_Overall, generally, in general,_
+
+Although she sometimes use 'generally' or 'in general' in her overview, she __always__ begin with the word __overall__. This signals very clearly that she is about to give her overview. It is important to remember that it isn't enough to write this word at the beginning of our sentence - what follows must be an overview, __with no details__.
+
+::: {.callout-tip}
+Signal your overview very clearly by starting with the word ‘Overall,’. The most common problems are: overviews that are not ‘clear’ and overviews that do actually not give an overview because they include too many details
+:::
+
+## Collocation
+
+We can use the verbs __experience, see__ and __witness__ with the word 'trend', and the following adjectives can be used to describe a trend:
+
+_a __rising__ trend, a __falling__ trend, an __upward__ trend, a __downward__ trend, a __clear__ trend, a __global__ trend, the __opposite__ trend_
+
+:::{.callout-note}
+## Vocabulary note
+__A trend__ is an overall or general pattern. This means that, __a rising trend__ is one that rise overall (the final figure is larger than the first figure). It doesn't mean that the figures __always__ rose. Similarly, in __a falling trend__, the final figure is lower than the first figure, but may have risen at times during this period.
+:::
+
+When summing up figures, it is important to keep in mind what these represent. For example, if we are summarising something that represents an increase in value, such as 'sales', then we can refer to 'gains' or 'losses', but these words are not always appropriate (e.g. if the figures show changes in the use of energy). So we need to think about whether something is actually being 'gained' or 'lost'.
+
+When talking about 'sales' of goods, the following words and phrases can be useful:
+
+__marginal gains, significant gains, marginal losses, significant losses, mixed success, mixed results__
+
+So we might say:
+
+- _Several of these countries __experienced a rising trend__..._
+- _Book sales in most countries __saw a falling trend__..._
+- ___Only one of these countries witnessed a downward trend__..._
+- _Bananas sales __had mixed success___
+- _Sales of one product rose continually, while other __experienced the opposite trend___.
+
+:::{.callout-note}
+She avoid giving details through
+1. The use of determiners (several of these, most of these, only one of these, one ... the other) and
+2. The use of umbrella terms (countries, products)
+:::
+
+## Umbrella terms
+
+Umbrella terms are used to refer to a whole group. These can be very useful in an overview, especially when it comes to avoiding giving too much details.
+
+![](Pasted%20image%2020250712165041.png)
+
+### Exercises
+
+#### Question 1
+
+Match the umbrella terms at the top to the specific details
+
+![](Pasted%20image%2020250712172633.png)
+
+![](Pasted%20image%2020250712172705.png)
+
+types of energy: wind, solar, coal, oil.
+
+dairy products: cheese, milk, yogurt
+
+types of media: television, radio, podcast
+
+fields of study: education, psychology, architecture
+
+types of transport: bus, train, plane
+
+community services: hospitals, police, fire brigade
+
+amenities: shopping centre, restaurant, cinema
+
+different genders: male, female
+
+physical activities: cycling, swimming, running
+
+regions of the world: South Asia, Latin America, Oceania
 
 # Writing a clear overview
 
+An overview can be 'unclear' if there are language problems but also if it does not provide a __complete__ picture of the main __trends__. The most common problem is an overview that only mentions __one trend__. Most often, people only say who or what had 'the highest' or 'the lowest' figure, but this only gives a small part of the overall picture.
 
+If we think of this terms describing a book or film then an unclear overview of Harry Potter would be:
 
+_Harry Potter is a best-selling book about a boy called Harry Potter._
+
+This does not give us a complete or 'clear' picture of the book. A clearer overview would say:
+
+_Harry Potter is a best-selling book about a young wizard and his friends, who all attend a special school for wizards._
+
+## Common language problems
+
+Language problems that can affect our overview often concern vocabulary. For example, using adjectives that do not accurately reflect the information we are given, or perhaps making a personal comment such as referring to a trend as __worrying__, or __exciting__.
+
+Other common problems are connected to grammar. For example, not being clear about what exactly _who_ or _what_ experienced this trend, and _who_ or _what_ the trend was limited to. To do this, we need to use determiners like these:
+
+__all of, none of, some of, several of, only one of, not all of, every, each, both, neither__
+
+It is highly unlikely that all of the data we are given will behave in exactly the same way - if it did, there would be too little to write about. Thus, we will generally need to show contrast in our overview to explain how the trends were different. This means accurately using words and phrases such as these:
+
+__However, although, while, despite, in spite of__
+
+::: {.callout-tip}
+In our overview, make sure it is clear exactly what or who is affected by the trend we are describing. Be sure to give a 'clear' or complete picture of the main __trends__ - if we only mention one trend, this is a good indicator that we are missing something out.
+:::
+
+### Exercises
+#### Question 1
+Match the overview to the correct image
+
+![](Pasted%20image%2020250713074757.png)
+
+1. A
+2. C
+3. B
+
+## Deciding what to include in our overview
+
+When it comes to deciding what to include in our overview, we need to look back at the notes we made in Step 2 of the thinking stage. 
+
+![](Pasted%20image%2020250713075020.png)
+
+As we can see, she noticed that at least 6 key features here. Her overview will need to briefly summarise these to give a __clear__ picture of the overall trends.
+
+### Exercises
+#### Question 1
+Which one is a clear overview? 
+
+![](Pasted%20image%2020250713075339.png)
+
+![](Pasted%20image%2020250713075427.png)
+
+1. E - This answer only gives part of the picture (the highest figures) and so it not a clear overview.
+2. B - not correct - Fair trade bananas did rise in some countries.
+3. D - too detail
+4. A
+5. C - referencing is unclear - we do not always know what is being referred to (e.g. these countries; the former)
 
 # Presenting and highlighting key features
+
+Once we have our overview, we need to write our main paragraphs. While the overview gives a brief summary of the key features, our body paragraphs will present a more detailed picture. Notice that, in our notes, she already 'selected' the main features she is going to summarise, and decided how to organize these into paragraphs.
+
+![](Pasted%20image%2020250713080431.png)
+
+Now, she need to 'present' these and highlight them. The easiest way to do this is __by pointing out what she notice__ about them. Doing this means she is showing the examiner why these are key or important enough to mention.
+
+To demonstrate this, look at the following example:
+
+__With Fairtrade coffee, the UK had sales worth e1.5 million in 1990 and e20 million in 2004__.
+
+Although this question is factually correct, it is listing the information and presenting it like a minor detail. When reading band Band 6 Task 1 answers, the most common question is "_Why are you telling me this? Why is this important?_" This is because most people simply present the figures in the data instead of showing how the figures are important - why they are key features rather than minor details. This is the difference between __listing minor details__ and __presenting and highlight the key features__.
+
+To present and highlight the above fact as a key feature, we need to write:
+
+___The UK had by far the biggest increase in Fairtrade coffee sales, rising from 1.5 million euros in 1999 to 20 million euros in 2004.___
+
+In this sentence, it is clear to the reader that this is __an important point__ in the data. Effectively, we are making it clear that we a pointing this out for a reason (because this was a significant increase / the biggest increase etc)
+
+::: {.callout-tip}
+Don't just list the figures or numbers in the chart we are given. Instead, show the examiner why the figures we have selected are important - help them understand why we took the time to point this out. If we have nothing to point out or say about a piece of data, perhaps it is a minor detail that should be left out.
+:::
+
+## Making comparisons
+
+Notice that making a comparison helped me to highlight the key feature - remember, this is also part of the task instructions. This is why it is so important to make sure we are __making comparisons where relevant__. Here are the key features we want to explain in our body paragraphs - notice __the comparisons__.
+
+__Body paragraph 1__
+
+- Switzerland __was the biggest__ consumer of Fairtrade coffee in 1999 with e3 million in sales.
+- Swiss sales doubled in 2004, but the UK rose from e1.5 million to e20 and became the new leader.
+- The UK sales __were much higher than in any other country__.
+- __Sales in the other three countries also increased, but the increases were only small__ (between 0.2 and 0.7 million euros).
+
+__Body paragraph 2__
+
+- With Fairtrade bananas, Switzerland was the leader __in both 1999 and 2004__.
+- Swiss sales increased significantly from e15 million to e20 and to e47 million - this is a very big figure!
+- __Sales in the UK and Belgium were much lower__ but they also increased.
+- Sales in the UK and Belgium __increased by 5 times their 1999 figures__, reaching e5.5 and e4 million respectively.
+- Sales in Sweden and Denmark fell, and the 2004 figures (e1 million and e0.9 million) __were almost half of those of 1999__.
+- __This is different to the other sales figures__.
+
+::: {.callout-tip}
+We use __respectively__ to show we are referring back to something mentioned earlier and the new facts apply __in the same order__ as in the first mention.
+We use it to avoid repeating information. For example, instead of writing:
+
+_Sales <font color="#ff0000">in the UK and Belgium</font> increased by 5 times their 1999 figures, reaching e5.5 <font color="#ff0000">in the UK</font> and e4 million <font color="#ff0000">in Belgium</font>_.
+
+I can write:
+
+_Sales __in the UK and Belgium__ increased by 5 times their 1999 figures, reaching e5.5 and e4 million __respectively___
+:::
+
+## Do I have to give data for every point?
+
+The only mention of data is in the Band 5 Task achievement descriptor, which says: __there may be no data to support the description__. We are also told that Band 8 candidates 'present, highlight and __illustrate key features__'. As we have seen, 'illustrate' means to explain the truth of something by giving examples.
+
+![](Pasted%20image%2020250713090710.png)
+
+A skilled native-speaker may be able to 'illustrate key features' without giving data for __every__ point made. However, in the models in this book, she will support every point with the relevant piece of data. She have done this deliberately, to be sure to model the best way for us to write our own answers in the test and get the best score we can. I asked two examiners to assess her models to be sure that they meet the standards for Band 9.
+
+### Exercises
+
+#### Question 1
+
+The tables compare the sales figures for two Fairtrade products in the UK, Switzerland, Denmark, Belgium, and Sweden in two separate years. Overall, sales of Fairtrade coffee <font color="#00b050">increased in all five countries</font>, while <font color="#00b050">there was mixed success</font> for similar labelled bananas, and <font color="#00b050">the leading country</font> in each table had <font color="#00b050">significantly higher sales than the rest</font>.
+
+Sales of Fairtrade coffee were <font color="#00b050">relatively modest</font> in 1999, and Switzerland was <font color="#00b050">the largest consumer</font> with e3 million in sales. Despite this figure <font color="#00b050">doubling in 2004</font>, the UK <font color="#00b050">rose from third place</font> (with e1.5 million) to <font color="#00b050">lead the table</font> with e20 million worth of sales in the same year. A figure that was <font color="#00b050">considerable higher than in any other country</font>. Although the three remaining countries <font color="#00b050">also saw increases</font>, these were <font color="#00b050">marginal</font> with gains of between 0.2 and 0.7 million euros.
+
+With Fairtrade bananas, Switzerland <font color="#00b050">was again the leader</font> in 1999 and <font color="#00b050">dominated this table in both years</font> with sales increasing from e15 million to <font color="#00b050">a striking</font> e47 million. Although <font color="#00b050">considerably lower</font>, the UK and Belgium <font color="#00b050">was similar growths</font> in this category, increasing by <font color="#00b050">just over 5 times</font> their 1999 figures to reach e5.5 and e4 million respectively. In contrast, Sweden and Denmark <font color="#00b050">experienced a drop in sales</font>, with the 2004 figures (e1 million and e0.9 million) <font color="#00b050">almost half of those</font> of 5 years earlier.
+
+***
+The tables compare the sales figure _for two_ Fairtrade products _in the_ UK, Switzerland, Denmark, Belgium, and Sweden _in two_ separate years. Overall, _sales of_ Fairtrade coffee _increased in_ _all five_ countries, while _there was_ mixed success for similarly labelled bananas, and _the leading_ country _in each_ table _had significantly_ higher sales _than the_ rest.
+
+Sales of Fairtrade coffee _were relatively_ modest in 1999, and Switzerland was _the largest_ consumer with e3 million _in sales_. _Despite this_ figure doubling in 2004, the UK _rose from_ third place (with e3 million) to lead the table with e20 million _worth of_ sales in _the same_ year. A figure _that was_ considerably _higher than_ in _any other_ country. Although _the three_ remaining countries also saw increases, _there were_ marginal with gains _of between_ 0.2 and 0.7 million euros.
+
+With Fairtrade bananas, Switzerland _was again_ the leader in 1999 and dominated this table _in both_ years with sales _increasing from_ e15 million _to a_ striking e47 million. _Although considerably_ lower, the UK and Belgium _was similar_ growths _in this_ category, _increasing by_ just over 5 times their 1999 figures _to reach_ e5.5 and e4 million respectively. _In contrast_, Sweden and Denmark experienced _a drop_ in sales, with the 2004 figures (e1 million and e0.9 million) almost _half of_ those of 5 _years earlier_.
+
+## Point to notice
+
+- She signalled her overview very clearly by beginning with '__Overall__'.
+- In her overview, she did not include any details.
+- She presented and highlighted the key features and she gave specific details as evidence to support these points. Notice that she sometimes just gave the information in brackets.
+- She made the organisation of her paragraphs very clearly by beginning her paragraphs as follows:
+	- __Sales of Fairtrade coffee ...__
+	- __With Fairtrade bananas, ...__
+- As well as this clear signalling, she also made sure that she only discussed these topics within the two paragraphs.
+
+![](Pasted%20image%2020250713112851.png)
+![](Pasted%20image%2020250713112913.png)
+
+![](Pasted%20image%2020250713112945.png)
