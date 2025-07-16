@@ -99,7 +99,7 @@ As a beginner, one natural way to approach this is to **track the minimum number
 
 ### Visualization
 
-{{< video videos/JumpGameDPApproach2 >}}
+{{< video videos/JumpGameDPApproach2.mp4 >}}
 
 
 
