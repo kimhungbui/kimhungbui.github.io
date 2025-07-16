@@ -43,24 +43,9 @@
     ]
   },
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/extreme-early-retirement/index.html",
-      "/posts/pkm-quarto-books/index.html",
-      "/posts/nextcloud-install/index.html"
-    ]
-  },
-  {
-    "listing": "/artificial-intelligent.html",
-    "items": [
-      "/artificial-intelligent/deep-learning-interview/index.html",
-      "/artificial-intelligent/finetunning/index.html",
-      "/artificial-intelligent/convolution/index.html"
-    ]
-  },
-  {
     "listing": "/programming.html",
     "items": [
+      "/programming/project-euler-prime-digit-replacements/index.html",
       "/programming/leetcode-jump-game-2/index.html",
       "/programming/maximum-subarray-problem/index.html",
       "/programming/leetcode-word-ladder/index.html",
@@ -77,6 +62,22 @@
       "/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
       "/programming/leetcode-house-robber/house-robber.html",
       "/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html"
+    ]
+  },
+  {
+    "listing": "/artificial-intelligent.html",
+    "items": [
+      "/artificial-intelligent/deep-learning-interview/index.html",
+      "/artificial-intelligent/finetunning/index.html",
+      "/artificial-intelligent/convolution/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/extreme-early-retirement/index.html",
+      "/posts/pkm-quarto-books/index.html",
+      "/posts/nextcloud-install/index.html"
     ]
   }
 ]

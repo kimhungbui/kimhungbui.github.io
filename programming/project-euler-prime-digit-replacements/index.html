@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2025-07-16">
+<meta name="description" content="An interesting Prime problem">
+
+<title>Prime Digit Replacements – Kim Hung Bui</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-R5TB4V4ZYS', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Kim Hung Bui</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mathematics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Mathematics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
+        <li>
+    <a class="dropdown-item" href="../../math/convex-optimization/">
+ <span class="dropdown-text">Convex Optimization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../math/probability/">
+ <span class="dropdown-text">Probability</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../math/statistics/">
+ <span class="dropdown-text">Statistics</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
+<span class="menu-text">AI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../programming.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../english.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem"><span class="header-section-number">1</span> Problem</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis"><span class="header-section-number">2</span> Analysis</a>
+  <ul class="collapse">
+  <li><a href="#why-the-solution-space-is-finite" id="toc-why-the-solution-space-is-finite" class="nav-link" data-scroll-target="#why-the-solution-space-is-finite"><span class="header-section-number">2.0.1</span> Why the Solution Space Is Finite</a></li>
+  <li><a href="#constraints-that-help-reduce-the-search" id="toc-constraints-that-help-reduce-the-search" class="nav-link" data-scroll-target="#constraints-that-help-reduce-the-search"><span class="header-section-number">2.0.2</span> Constraints That Help Reduce the Search</a></li>
+  <li><a href="#strategy-summary" id="toc-strategy-summary" class="nav-link" data-scroll-target="#strategy-summary"><span class="header-section-number">2.0.3</span> Strategy Summary</a></li>
+  </ul></li>
+  <li><a href="#naive-approach---prime-digit-replacement-problem" id="toc-naive-approach---prime-digit-replacement-problem" class="nav-link" data-scroll-target="#naive-approach---prime-digit-replacement-problem"><span class="header-section-number">3</span> Naive Approach - Prime Digit Replacement Problem</a>
+  <ul class="collapse">
+  <li><a href="#problem-recap" id="toc-problem-recap" class="nav-link" data-scroll-target="#problem-recap"><span class="header-section-number">3.1</span> Problem Recap</a></li>
+  <li><a href="#naive-strategy" id="toc-naive-strategy" class="nav-link" data-scroll-target="#naive-strategy"><span class="header-section-number">3.2</span> Naive Strategy</a></li>
+  <li><a href="#pseudo-code" id="toc-pseudo-code" class="nav-link" data-scroll-target="#pseudo-code"><span class="header-section-number">3.3</span> Pseudo code</a></li>
+  <li><a href="#characteristics-of-naive-approach" id="toc-characteristics-of-naive-approach" class="nav-link" data-scroll-target="#characteristics-of-naive-approach"><span class="header-section-number">3.4</span> Characteristics of Naive Approach</a></li>
+  <li><a href="#complexity-rough-estimate" id="toc-complexity-rough-estimate" class="nav-link" data-scroll-target="#complexity-rough-estimate"><span class="header-section-number">3.5</span> Complexity (Rough Estimate)</a></li>
+  <li><a href="#problem-with-naive" id="toc-problem-with-naive" class="nav-link" data-scroll-target="#problem-with-naive"><span class="header-section-number">3.6</span> Problem with Naive</a></li>
+  </ul></li>
+  <li><a href="#structured-brute-force-approach" id="toc-structured-brute-force-approach" class="nav-link" data-scroll-target="#structured-brute-force-approach"><span class="header-section-number">4</span> Structured Brute Force Approach</a>
+  <ul class="collapse">
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><span class="header-section-number">4.1</span> Motivation</a></li>
+  <li><a href="#key-insights-over-naive-approach" id="toc-key-insights-over-naive-approach" class="nav-link" data-scroll-target="#key-insights-over-naive-approach"><span class="header-section-number">4.2</span> Key Insights Over Naive Approach</a></li>
+  <li><a href="#algorithm" id="toc-algorithm" class="nav-link" data-scroll-target="#algorithm"><span class="header-section-number">4.3</span> Algorithm</a>
+  <ul class="collapse">
+  <li><a href="#step-1-generate-all-primes-up-to-a-limit" id="toc-step-1-generate-all-primes-up-to-a-limit" class="nav-link" data-scroll-target="#step-1-generate-all-primes-up-to-a-limit"><span class="header-section-number">4.3.1</span> Step 1: Generate All Primes Up to a Limit</a></li>
+  <li><a href="#step-2-for-each-prime" id="toc-step-2-for-each-prime" class="nav-link" data-scroll-target="#step-2-for-each-prime"><span class="header-section-number">4.3.2</span> Step 2: For each Prime</a></li>
+  </ul></li>
+  <li><a href="#complexity" id="toc-complexity" class="nav-link" data-scroll-target="#complexity"><span class="header-section-number">4.4</span> Complexity</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">4.5</span> Summary</a></li>
+  </ul></li>
+  <li><a href="#formal-modeling-and-optimization" id="toc-formal-modeling-and-optimization" class="nav-link" data-scroll-target="#formal-modeling-and-optimization"><span class="header-section-number">5</span> Formal Modeling and Optimization</a>
+  <ul class="collapse">
+  <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal"><span class="header-section-number">5.1</span> Goal</a></li>
+  <li><a href="#step-1-abstract-the-problem-as-a-search-over-equivalence-classes" id="toc-step-1-abstract-the-problem-as-a-search-over-equivalence-classes" class="nav-link" data-scroll-target="#step-1-abstract-the-problem-as-a-search-over-equivalence-classes"><span class="header-section-number">5.2</span> Step 1: Abstract the Problem as a Search over Equivalence Classes</a></li>
+  <li><a href="#step-2-symbolic-representation-of-digit-replacements" id="toc-step-2-symbolic-representation-of-digit-replacements" class="nav-link" data-scroll-target="#step-2-symbolic-representation-of-digit-replacements"><span class="header-section-number">5.3</span> Step 2: Symbolic Representation of Digit Replacements</a></li>
+  <li><a href="#step-3-model-the-problem-as-an-optimization" id="toc-step-3-model-the-problem-as-an-optimization" class="nav-link" data-scroll-target="#step-3-model-the-problem-as-an-optimization"><span class="header-section-number">5.4</span> Step 3: Model the Problem as an Optimization</a></li>
+  <li><a href="#step-4-optimizations-based-on-number-theory" id="toc-step-4-optimizations-based-on-number-theory" class="nav-link" data-scroll-target="#step-4-optimizations-based-on-number-theory"><span class="header-section-number">5.5</span> Step 4: Optimizations Based on Number Theory</a></li>
+  <li><a href="#step-5-search-as-constrained-enumeration" id="toc-step-5-search-as-constrained-enumeration" class="nav-link" data-scroll-target="#step-5-search-as-constrained-enumeration"><span class="header-section-number">5.6</span> Step 5: Search as Constrained Enumeration</a></li>
+  <li><a href="#theoretical-complexity" id="toc-theoretical-complexity" class="nav-link" data-scroll-target="#theoretical-complexity"><span class="header-section-number">5.7</span> Theoretical Complexity</a></li>
+  <li><a href="#phd-level-interpretation" id="toc-phd-level-interpretation" class="nav-link" data-scroll-target="#phd-level-interpretation"><span class="header-section-number">5.8</span> PhD-Level Interpretation</a></li>
+  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1"><span class="header-section-number">5.9</span> Summary</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Prime Digit Replacements</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">leetcode</div>
+    <div class="quarto-category">programming</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    An interesting Prime problem
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://projecteuler.net/problem=51">
+            Project Euler
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 16, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="problem" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Problem</h1>
+<p>By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.</p>
+<p>By replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.</p>
+<p>Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/PrimeFamily2Digit.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/PrimeFamily56003.mp4"></video></div>
+</section>
+<section id="analysis" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Analysis</h1>
+<p>The problem asks for the <strong>smallest prime</strong> that belongs to an <strong>8-prime value family</strong>.</p>
+<p>This means: - Start with a prime number. - Replace one or more digits (not necessarily adjacent) that are the <em>same</em>, with a wildcard symbol like <code>*</code>. - Then, generate all possible numbers by replacing <code>*</code> with digits <code>0</code> through <code>9</code>. - Count how many of those are prime. - We want the <strong>first (smallest) such prime</strong> that produces <strong>at least 8 primes</strong> in this replacement process.</p>
+<section id="why-the-solution-space-is-finite" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="why-the-solution-space-is-finite"><span class="header-section-number">2.0.1</span> Why the Solution Space Is Finite</h3>
+<p>Although large, the space of numbers we need to search is <strong>finite</strong> because: - We’re looking for the <em>smallest</em> such prime. - The number of primes in each digit-length range is countable.</p>
+</section>
+<section id="constraints-that-help-reduce-the-search" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="constraints-that-help-reduce-the-search"><span class="header-section-number">2.0.2</span> Constraints That Help Reduce the Search</h3>
+<ol type="1">
+<li><p><strong>Only Repeated Digits Are Useful</strong><br>
+We only attempt digit replacements on digits that appear multiple times in the number. Replacing unique digits can’t generate families of size &gt;1.</p></li>
+<li><p><strong>Leading Zeros Are Invalid</strong><br>
+If replacing the first digit results in a leading zero (e.g., <code>0xxxx</code>), it’s not a valid number, so we skip that case.</p></li>
+<li><p><strong>We Only Consider Primes</strong><br>
+Instead of checking all natural numbers, we loop through <strong>only primes</strong> — the valid candidates for the answer.</p></li>
+</ol>
+</section>
+<section id="strategy-summary" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="strategy-summary"><span class="header-section-number">2.0.3</span> Strategy Summary</h3>
+<p>This is essentially a <strong>targeted brute-force</strong> solution: - Try each prime one by one. - For each repeated digit, try all subsets of its positions. - Replace those positions with digits <code>0</code> to <code>9</code>, checking for primality. - Keep track of how many primes are generated in that “family”. - As soon as we find a family with 8 or more primes, we return the smallest member.</p>
+<p>This systematic pruning makes the brute-force approach feasible.</p>
+</section>
+</section>
+<section id="naive-approach---prime-digit-replacement-problem" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Naive Approach - Prime Digit Replacement Problem</h1>
+<section id="problem-recap" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="problem-recap"><span class="header-section-number">3.1</span> Problem Recap</h2>
+<p>We want to find the <strong>smallest prime number</strong> that, by <strong>replacing part of its digits</strong> (not necessarily adjacent) with the same <strong>digit</strong>, produces <strong>at least eight primes</strong> among the 10 generated numbers.</p>
+</section>
+<section id="naive-strategy" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="naive-strategy"><span class="header-section-number">3.2</span> Naive Strategy</h2>
+<p>The problems explicitly mentions:</p>
+<p>“the 5-digits number 56003 is the first example having seven primes…”</p>
+<p>This tell us:</p>
+<ul>
+<li>Smaller numbers (1- to 4-digit) <strong>do not</strong> produce a 7-prime family</li>
+<li>So the <strong>search for 8-prime families must begin at least from 5-digit numbers</strong></li>
+</ul>
+<ol type="1">
+<li><p><strong>Loop through numbers starting from 10,000</strong> (since 5-digit numbers are known to be involved).</p></li>
+<li><p>For each number:</p></li>
+</ol>
+<ul>
+<li>Generate all combinations of digit positions to replace (1 or more digits).</li>
+<li>For each combination:
+<ul>
+<li>Replace those positions with digits 0 → 9, one at a time.</li>
+<li>Count how many of the resulting 10 numbers are prime.</li>
+</ul></li>
+<li>If ≥ 8 are prime → we’ve found our answer.</li>
+</ul>
+</section>
+<section id="pseudo-code" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="pseudo-code"><span class="header-section-number">3.3</span> Pseudo code</h2>
+<pre class="{pseudocode}"><code>for number in range(10000, 1000000):
+    if not is_prime(number):
+        continue
+
+    digits = str(number)
+    for mask in all possible combinations of positions:
+        family = []
+        for replacement_digit in '0123456789':
+            candidate_digits = digits with mask replaced by replacement_digit
+            if candidate starts with '0':
+                continue
+            if is_prime(candidate):
+                family.append(candidate)
+        if len(family) &gt;= 8:
+            return number
+</code></pre>
+</section>
+<section id="characteristics-of-naive-approach" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="characteristics-of-naive-approach"><span class="header-section-number">3.4</span> Characteristics of Naive Approach</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Brute-force</strong></td>
+<td>Tries every combination of positions and digits</td>
+</tr>
+<tr class="even">
+<td><strong>Inefficient</strong></td>
+<td>Loops over all numbers (not just primes)</td>
+</tr>
+<tr class="odd">
+<td><strong>No digit filtering</strong></td>
+<td>May replace digits that occur only once</td>
+</tr>
+<tr class="even">
+<td><strong>Replaces non-equal digits</strong></td>
+<td>Ignores structure of the problem</td>
+</tr>
+<tr class="odd">
+<td><strong>Slow</strong></td>
+<td>Explores huge space with many invalid candidates</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="complexity-rough-estimate" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="complexity-rough-estimate"><span class="header-section-number">3.5</span> Complexity (Rough Estimate)</h2>
+<p>Let <em>n</em> be the number of digits (5-6 digits):</p>
+<ul>
+<li>Combinations of digit positions: <span class="math inline">\(2^n-1\)</span></li>
+<li>Replacements: 10 per pattern</li>
+<li>Prime checks: up to <span class="math inline">\(10 \times (2^n - 1)\)</span> per number</li>
+</ul>
+<p><strong>Overall complexity</strong></p>
+<p><span class="math display">\[
+O(N\cdot2^n\cdot10\cdot\text{is\_prime})
+\]</span></p>
+<p>where <em>N</em> is the range of numbers tested (<span class="math inline">\(10^6\)</span>)</p>
+</section>
+<section id="problem-with-naive" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="problem-with-naive"><span class="header-section-number">3.6</span> Problem with Naive</h2>
+<ul>
+<li>Wastes time replacing digits that occur only once</li>
+<li>Replaces different digits at once (which isn’t allowed per the problem)</li>
+<li>Replaces digits even when they don’t repeat</li>
+<li>Explores non-primes too</li>
+</ul>
+</section>
+</section>
+<section id="structured-brute-force-approach" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Structured Brute Force Approach</h1>
+<section id="motivation" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="motivation"><span class="header-section-number">4.1</span> Motivation</h2>
+<p>The naive approach checks all numbers and all possible digit replacements. But this is very slow.</p>
+<p>A more efficient method is to:</p>
+<ul>
+<li>Check <strong>only primes</strong></li>
+<li>Replace only <strong>repeated digits</strong></li>
+<li>Ensure no replacements create invalid numbers (like leading zero)</li>
+<li>Stop early when we find the first family with 8 primes</li>
+</ul>
+<p>This gives us a <strong>structured brute-force solution</strong>.</p>
+</section>
+<section id="key-insights-over-naive-approach" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="key-insights-over-naive-approach"><span class="header-section-number">4.2</span> Key Insights Over Naive Approach</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Improvement</th>
+<th>Why It Helps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Only check <strong>primes</strong></td>
+<td>Non-primes can’t be part of the answer</td>
+</tr>
+<tr class="even">
+<td>Only replace <strong>repeated digits</strong></td>
+<td>You must replace the <strong>same digit</strong> (e.g.&nbsp;all <code>1</code>s or all <code>3</code>s)</td>
+</tr>
+<tr class="odd">
+<td>Replace <strong>some (not all)</strong> of the repeated digits</td>
+<td>Full replacement may cause invalid numbers (e.g.&nbsp;leading zero)</td>
+</tr>
+<tr class="even">
+<td>Avoid replacement that starts with <code>0</code></td>
+<td>Cannot have leading zero in base-10 integers</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="algorithm" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="algorithm"><span class="header-section-number">4.3</span> Algorithm</h2>
+<section id="step-1-generate-all-primes-up-to-a-limit" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="step-1-generate-all-primes-up-to-a-limit"><span class="header-section-number">4.3.1</span> Step 1: Generate All Primes Up to a Limit</h3>
+<p>Use a sieve to get all primes up to a reasonable upper bound (e.g., 1 million).</p>
+</section>
+<section id="step-2-for-each-prime" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="step-2-for-each-prime"><span class="header-section-number">4.3.2</span> Step 2: For each Prime</h3>
+<ol type="1">
+<li>Convert to String</li>
+<li>For each digit <code>d</code> (from <code>'0'</code> to <code>'9'</code>):</li>
+</ol>
+<ul>
+<li>Get positions where <code>d</code> appears more than once</li>
+<li>Generate all non-empty subsets of those positions</li>
+<li>Replace those positions with every digit <code>0–9</code></li>
+<li>For each subset:
+<ul>
+<li>Replace those digits with value <code>0-9</code></li>
+<li>Skip if the number starts with <code>'0'</code></li>
+<li>Count how many of the resulting numbers are prime</li>
+<li>If 8 or more primes found, return the original prime</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="complexity" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="complexity"><span class="header-section-number">4.4</span> Complexity</h2>
+<p>Let:</p>
+<ul>
+<li><span class="math inline">\(P\)</span>: number of primes (~ <span class="math inline">\(10^5\)</span>)</li>
+<li><span class="math inline">\(D\)</span>: number of distinct digits (10)</li>
+<li><span class="math inline">\(S\)</span>: number of non-empty subsets per digit (usually <span class="math inline">\(\leq 16\)</span>)</li>
+<li><span class="math inline">\(R\)</span>: replacements per subset (10 digits)</li>
+</ul>
+<p>Then:</p>
+<p><span class="math display">\[
+O(P\cdot D \cdot S \cdot R)
+\]</span></p>
+</section>
+<section id="summary" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.5</span> Summary</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Improves over naive</td>
+<td>Yes (skips non-primes, invalid cases)</td>
+</tr>
+<tr class="even">
+<td>Fast enough in practice</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Understandable</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Prepares for deeper ideas</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="formal-modeling-and-optimization" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Formal Modeling and Optimization</h1>
+<section id="goal" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="goal"><span class="header-section-number">5.1</span> Goal</h2>
+<p>Find the <strong>smallest prime</strong> <code>p</code> such that <strong>replacing a subset of its digits</strong> (not necessarily adjacent) with the <strong>same digit <code>d</code></strong>, yields a <strong>family of 8+ prime numbers</strong> out of the 10 possible values.</p>
+<p>We aim to go beyond brute-force by <strong>modeling</strong> the structure of this problem as a constrained optimization over symbolic patterns.</p>
+</section>
+<section id="step-1-abstract-the-problem-as-a-search-over-equivalence-classes" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="step-1-abstract-the-problem-as-a-search-over-equivalence-classes"><span class="header-section-number">5.2</span> Step 1: Abstract the Problem as a Search over Equivalence Classes</h2>
+<p>We define:</p>
+<ul>
+<li>A <strong>prime template</strong>: a pattern like <code>'56**3'</code> where <code>*</code> is a wildcard</li>
+<li>A <strong>family function</strong>: <span class="math display">\[
+F(t) = \{ \text{fill in } * \text{ in } t \text{ with digits } 0..9 \}
+\]</span></li>
+</ul>
+<p>We want:</p>
+<ul>
+<li><span class="math inline">\(|F(t) \cap \text{PRIMES}| \geq 8\)</span></li>
+<li>and to find the <strong>template</strong> <code>t</code> with smallest base value <code>min(F(t))</code> meeting the above</li>
+</ul>
+<hr>
+</section>
+<section id="step-2-symbolic-representation-of-digit-replacements" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="step-2-symbolic-representation-of-digit-replacements"><span class="header-section-number">5.3</span> Step 2: Symbolic Representation of Digit Replacements</h2>
+<p>Let each prime <code>p</code> be treated as a string <code>s</code>, and let <code>S ⊂ \text{positions}(s)</code>.</p>
+<p>We define a <strong>mask vector</strong> <code>m</code>:</p>
+<ul>
+<li><code>m[i] = 1</code> if index <code>i</code> is to be replaced</li>
+<li><code>m[i] = 0</code> otherwise</li>
+</ul>
+<p>Now define a <strong>pattern class</strong>: <span class="math display">\[
+T_{p,m} = \{ \text{replace } s[i] \text{ where } m[i]=1 \text{ with } d \in 0..9 \}
+\]</span></p>
+<p>So the family is generated by iterating over all <code>d ∈ [0,9]</code>.</p>
+<hr>
+</section>
+<section id="step-3-model-the-problem-as-an-optimization" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="step-3-model-the-problem-as-an-optimization"><span class="header-section-number">5.4</span> Step 3: Model the Problem as an Optimization</h2>
+<section id="variables" class="level4">
+<h4 class="anchored" data-anchor-id="variables">Variables:</h4>
+<ul>
+<li>Prime <code>p</code></li>
+<li>Digit mask <code>m</code></li>
+</ul>
+</section>
+<section id="constraints" class="level4">
+<h4 class="anchored" data-anchor-id="constraints">Constraints:</h4>
+<ul>
+<li>Positions masked must contain the <strong>same digit</strong></li>
+<li>Leading digit after replacement ≠ <code>0</code></li>
+<li>At least 8 of the 10 generated numbers are <strong>prime</strong></li>
+</ul>
+</section>
+<section id="objective" class="level4">
+<h4 class="anchored" data-anchor-id="objective">Objective:</h4>
+<ul>
+<li>Minimize <code>p</code> such that: <span class="math display">\[
+\left| F(p, m) \cap \text{PRIMES} \right| \geq 8
+\]</span></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="step-4-optimizations-based-on-number-theory" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="step-4-optimizations-based-on-number-theory"><span class="header-section-number">5.5</span> Step 4: Optimizations Based on Number Theory</h2>
+<section id="digit-frequency-filtering" class="level4">
+<h4 class="anchored" data-anchor-id="digit-frequency-filtering">1. <strong>Digit Frequency Filtering</strong></h4>
+<ul>
+<li>Only consider digits that repeat at least twice in the prime</li>
+<li>Avoid replacing rare digits</li>
+</ul>
+</section>
+<section id="modulo-pruning" class="level4">
+<h4 class="anchored" data-anchor-id="modulo-pruning">2. <strong>Modulo Pruning</strong></h4>
+<ul>
+<li>Skip candidates that will generate multiples of 2 or 5 in replacement</li>
+</ul>
+</section>
+<section id="avoid-unnecessary-masks" class="level4">
+<h4 class="anchored" data-anchor-id="avoid-unnecessary-masks">3. <strong>Avoid Unnecessary Masks</strong></h4>
+<ul>
+<li>Skip full replacements</li>
+<li>Skip replacements that break positional value (e.g., fixed ending <code>1</code>, <code>3</code>, <code>7</code>, <code>9</code> often more promising)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="step-5-search-as-constrained-enumeration" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="step-5-search-as-constrained-enumeration"><span class="header-section-number">5.6</span> Step 5: Search as Constrained Enumeration</h2>
+<p>We now enumerate over primes:</p>
+<ul>
+<li>For each prime, extract repeated digit positions</li>
+<li>For each digit <code>d</code>, generate all valid <code>mask</code> subsets where digit <code>d</code> occurs</li>
+<li>Build replacement families</li>
+<li>Use <strong>fast primality tests</strong>, and stop early if a mask yields ≥ 8 primes</li>
+</ul>
+<p>This avoids full combinatorial enumeration, and uses <strong>structure + constraint filtering</strong> to reduce search space.</p>
+<hr>
+</section>
+<section id="theoretical-complexity" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="theoretical-complexity"><span class="header-section-number">5.7</span> Theoretical Complexity</h2>
+<p>Compared to brute force:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 61%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Complexity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prime generation</td>
+<td><span class="math inline">\(O(n \log \log n)\)</span></td>
+</tr>
+<tr class="even">
+<td>Mask enumeration</td>
+<td>Reduced from <span class="math inline">\(2^k\)</span> to only valid repeated-digit subsets</td>
+</tr>
+<tr class="odd">
+<td>Replacement testing</td>
+<td><span class="math inline">\(10 \times k\)</span> per valid mask</td>
+</tr>
+<tr class="even">
+<td>Primality test</td>
+<td><span class="math inline">\(O(\sqrt{n})\)</span> or Miller–Rabin in <span class="math inline">\(O(\log^3 n)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>→ Net result: <strong>Much faster and scalable</strong>, with full mathematical transparency.</p>
+<hr>
+</section>
+<section id="phd-level-interpretation" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="phd-level-interpretation"><span class="header-section-number">5.8</span> PhD-Level Interpretation</h2>
+<p>This transforms the problem into:</p>
+<blockquote class="blockquote">
+<p>A <strong>symbolic family detection</strong> problem over the space of integers, using digit-based constraints and algebraic structure.</p>
+</blockquote>
+<p>Possible future work includes: - Pattern mining via SAT/SMT solvers - Probabilistic modeling of family distributions - Generalizing to <code>k</code>-prime families</p>
+<hr>
+</section>
+<section id="summary-1" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="summary-1"><span class="header-section-number">5.9</span> Summary</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>PhD Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abstraction</td>
+<td>Symbolic patterns over digits</td>
+</tr>
+<tr class="even">
+<td>Constraints</td>
+<td>Digit repetition, prime count, no leading 0</td>
+</tr>
+<tr class="odd">
+<td>Objective</td>
+<td>Minimize base prime <code>p</code></td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td>Digit masks, primality testing, search space pruning</td>
+</tr>
+<tr class="odd">
+<td>Outcome</td>
+<td>Structured, fast, extensible method</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>This approach not only solves the problem but provides a <strong>reusable framework</strong> for other “digit-replacement” or “prime-pattern” problems in computational number theory.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/kimhungbui\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
+
+
+
+
+</body></html>

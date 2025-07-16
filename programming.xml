@@ -12,6 +12,454 @@
 <generator>quarto-1.5.57</generator>
 <lastBuildDate>Wed, 16 Jul 2025 00:00:00 GMT</lastBuildDate>
 <item>
+  <title>Prime Digit Replacements</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/project-euler-prime-digit-replacements/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="problem" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Problem</h1>
+<p>By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.</p>
+<p>By replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.</p>
+<p>Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/PrimeFamily2Digit.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/PrimeFamily56003.mp4"></video></div>
+</section>
+<section id="analysis" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Analysis</h1>
+<p>The problem asks for the <strong>smallest prime</strong> that belongs to an <strong>8-prime value family</strong>.</p>
+<p>This means: - Start with a prime number. - Replace one or more digits (not necessarily adjacent) that are the <em>same</em>, with a wildcard symbol like <code>*</code>. - Then, generate all possible numbers by replacing <code>*</code> with digits <code>0</code> through <code>9</code>. - Count how many of those are prime. - We want the <strong>first (smallest) such prime</strong> that produces <strong>at least 8 primes</strong> in this replacement process.</p>
+<section id="why-the-solution-space-is-finite" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="why-the-solution-space-is-finite"><span class="header-section-number">2.0.1</span> Why the Solution Space Is Finite</h3>
+<p>Although large, the space of numbers we need to search is <strong>finite</strong> because: - We’re looking for the <em>smallest</em> such prime. - The number of primes in each digit-length range is countable.</p>
+</section>
+<section id="constraints-that-help-reduce-the-search" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="constraints-that-help-reduce-the-search"><span class="header-section-number">2.0.2</span> Constraints That Help Reduce the Search</h3>
+<ol type="1">
+<li><p><strong>Only Repeated Digits Are Useful</strong><br>
+We only attempt digit replacements on digits that appear multiple times in the number. Replacing unique digits can’t generate families of size &gt;1.</p></li>
+<li><p><strong>Leading Zeros Are Invalid</strong><br>
+If replacing the first digit results in a leading zero (e.g., <code>0xxxx</code>), it’s not a valid number, so we skip that case.</p></li>
+<li><p><strong>We Only Consider Primes</strong><br>
+Instead of checking all natural numbers, we loop through <strong>only primes</strong> — the valid candidates for the answer.</p></li>
+</ol>
+</section>
+<section id="strategy-summary" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="strategy-summary"><span class="header-section-number">2.0.3</span> Strategy Summary</h3>
+<p>This is essentially a <strong>targeted brute-force</strong> solution: - Try each prime one by one. - For each repeated digit, try all subsets of its positions. - Replace those positions with digits <code>0</code> to <code>9</code>, checking for primality. - Keep track of how many primes are generated in that “family”. - As soon as we find a family with 8 or more primes, we return the smallest member.</p>
+<p>This systematic pruning makes the brute-force approach feasible.</p>
+</section>
+</section>
+<section id="naive-approach---prime-digit-replacement-problem" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Naive Approach - Prime Digit Replacement Problem</h1>
+<section id="problem-recap" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="problem-recap"><span class="header-section-number">3.1</span> Problem Recap</h2>
+<p>We want to find the <strong>smallest prime number</strong> that, by <strong>replacing part of its digits</strong> (not necessarily adjacent) with the same <strong>digit</strong>, produces <strong>at least eight primes</strong> among the 10 generated numbers.</p>
+</section>
+<section id="naive-strategy" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="naive-strategy"><span class="header-section-number">3.2</span> Naive Strategy</h2>
+<p>The problems explicitly mentions:</p>
+<p>“the 5-digits number 56003 is the first example having seven primes…”</p>
+<p>This tell us:</p>
+<ul>
+<li>Smaller numbers (1- to 4-digit) <strong>do not</strong> produce a 7-prime family</li>
+<li>So the <strong>search for 8-prime families must begin at least from 5-digit numbers</strong></li>
+</ul>
+<ol type="1">
+<li><p><strong>Loop through numbers starting from 10,000</strong> (since 5-digit numbers are known to be involved).</p></li>
+<li><p>For each number:</p></li>
+</ol>
+<ul>
+<li>Generate all combinations of digit positions to replace (1 or more digits).</li>
+<li>For each combination:
+<ul>
+<li>Replace those positions with digits 0 → 9, one at a time.</li>
+<li>Count how many of the resulting 10 numbers are prime.</li>
+</ul></li>
+<li>If ≥ 8 are prime → we’ve found our answer.</li>
+</ul>
+</section>
+<section id="pseudo-code" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="pseudo-code"><span class="header-section-number">3.3</span> Pseudo code</h2>
+<pre class="{pseudocode}"><code>for number in range(10000, 1000000):
+    if not is_prime(number):
+        continue
+
+    digits = str(number)
+    for mask in all possible combinations of positions:
+        family = []
+        for replacement_digit in '0123456789':
+            candidate_digits = digits with mask replaced by replacement_digit
+            if candidate starts with '0':
+                continue
+            if is_prime(candidate):
+                family.append(candidate)
+        if len(family) &gt;= 8:
+            return number
+</code></pre>
+</section>
+<section id="characteristics-of-naive-approach" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="characteristics-of-naive-approach"><span class="header-section-number">3.4</span> Characteristics of Naive Approach</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Brute-force</strong></td>
+<td>Tries every combination of positions and digits</td>
+</tr>
+<tr class="even">
+<td><strong>Inefficient</strong></td>
+<td>Loops over all numbers (not just primes)</td>
+</tr>
+<tr class="odd">
+<td><strong>No digit filtering</strong></td>
+<td>May replace digits that occur only once</td>
+</tr>
+<tr class="even">
+<td><strong>Replaces non-equal digits</strong></td>
+<td>Ignores structure of the problem</td>
+</tr>
+<tr class="odd">
+<td><strong>Slow</strong></td>
+<td>Explores huge space with many invalid candidates</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="complexity-rough-estimate" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="complexity-rough-estimate"><span class="header-section-number">3.5</span> Complexity (Rough Estimate)</h2>
+<p>Let <em>n</em> be the number of digits (5-6 digits):</p>
+<ul>
+<li>Combinations of digit positions: <img src="https://latex.codecogs.com/png.latex?2%5En-1"></li>
+<li>Replacements: 10 per pattern</li>
+<li>Prime checks: up to <img src="https://latex.codecogs.com/png.latex?10%20%5Ctimes%20(2%5En%20-%201)"> per number</li>
+</ul>
+<p><strong>Overall complexity</strong></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AO(N%5Ccdot2%5En%5Ccdot10%5Ccdot%5Ctext%7Bis%5C_prime%7D)%0A"></p>
+<p>where <em>N</em> is the range of numbers tested (<img src="https://latex.codecogs.com/png.latex?10%5E6">)</p>
+</section>
+<section id="problem-with-naive" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="problem-with-naive"><span class="header-section-number">3.6</span> Problem with Naive</h2>
+<ul>
+<li>Wastes time replacing digits that occur only once</li>
+<li>Replaces different digits at once (which isn’t allowed per the problem)</li>
+<li>Replaces digits even when they don’t repeat</li>
+<li>Explores non-primes too</li>
+</ul>
+</section>
+</section>
+<section id="structured-brute-force-approach" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Structured Brute Force Approach</h1>
+<section id="motivation" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="motivation"><span class="header-section-number">4.1</span> Motivation</h2>
+<p>The naive approach checks all numbers and all possible digit replacements. But this is very slow.</p>
+<p>A more efficient method is to:</p>
+<ul>
+<li>Check <strong>only primes</strong></li>
+<li>Replace only <strong>repeated digits</strong></li>
+<li>Ensure no replacements create invalid numbers (like leading zero)</li>
+<li>Stop early when we find the first family with 8 primes</li>
+</ul>
+<p>This gives us a <strong>structured brute-force solution</strong>.</p>
+</section>
+<section id="key-insights-over-naive-approach" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="key-insights-over-naive-approach"><span class="header-section-number">4.2</span> Key Insights Over Naive Approach</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Improvement</th>
+<th>Why It Helps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Only check <strong>primes</strong></td>
+<td>Non-primes can’t be part of the answer</td>
+</tr>
+<tr class="even">
+<td>Only replace <strong>repeated digits</strong></td>
+<td>You must replace the <strong>same digit</strong> (e.g.&nbsp;all <code>1</code>s or all <code>3</code>s)</td>
+</tr>
+<tr class="odd">
+<td>Replace <strong>some (not all)</strong> of the repeated digits</td>
+<td>Full replacement may cause invalid numbers (e.g.&nbsp;leading zero)</td>
+</tr>
+<tr class="even">
+<td>Avoid replacement that starts with <code>0</code></td>
+<td>Cannot have leading zero in base-10 integers</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="algorithm" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="algorithm"><span class="header-section-number">4.3</span> Algorithm</h2>
+<section id="step-1-generate-all-primes-up-to-a-limit" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="step-1-generate-all-primes-up-to-a-limit"><span class="header-section-number">4.3.1</span> Step 1: Generate All Primes Up to a Limit</h3>
+<p>Use a sieve to get all primes up to a reasonable upper bound (e.g., 1 million).</p>
+</section>
+<section id="step-2-for-each-prime" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="step-2-for-each-prime"><span class="header-section-number">4.3.2</span> Step 2: For each Prime</h3>
+<ol type="1">
+<li>Convert to String</li>
+<li>For each digit <code>d</code> (from <code>'0'</code> to <code>'9'</code>):</li>
+</ol>
+<ul>
+<li>Get positions where <code>d</code> appears more than once</li>
+<li>Generate all non-empty subsets of those positions</li>
+<li>Replace those positions with every digit <code>0–9</code></li>
+<li>For each subset:
+<ul>
+<li>Replace those digits with value <code>0-9</code></li>
+<li>Skip if the number starts with <code>'0'</code></li>
+<li>Count how many of the resulting numbers are prime</li>
+<li>If 8 or more primes found, return the original prime</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="complexity" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="complexity"><span class="header-section-number">4.4</span> Complexity</h2>
+<p>Let:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?P">: number of primes (~ <img src="https://latex.codecogs.com/png.latex?10%5E5">)</li>
+<li><img src="https://latex.codecogs.com/png.latex?D">: number of distinct digits (10)</li>
+<li><img src="https://latex.codecogs.com/png.latex?S">: number of non-empty subsets per digit (usually <img src="https://latex.codecogs.com/png.latex?%5Cleq%2016">)</li>
+<li><img src="https://latex.codecogs.com/png.latex?R">: replacements per subset (10 digits)</li>
+</ul>
+<p>Then:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AO(P%5Ccdot%20D%20%5Ccdot%20S%20%5Ccdot%20R)%0A"></p>
+</section>
+<section id="summary" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.5</span> Summary</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Improves over naive</td>
+<td>Yes (skips non-primes, invalid cases)</td>
+</tr>
+<tr class="even">
+<td>Fast enough in practice</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Understandable</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Prepares for deeper ideas</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="formal-modeling-and-optimization" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Formal Modeling and Optimization</h1>
+<section id="goal" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="goal"><span class="header-section-number">5.1</span> Goal</h2>
+<p>Find the <strong>smallest prime</strong> <code>p</code> such that <strong>replacing a subset of its digits</strong> (not necessarily adjacent) with the <strong>same digit <code>d</code></strong>, yields a <strong>family of 8+ prime numbers</strong> out of the 10 possible values.</p>
+<p>We aim to go beyond brute-force by <strong>modeling</strong> the structure of this problem as a constrained optimization over symbolic patterns.</p>
+</section>
+<section id="step-1-abstract-the-problem-as-a-search-over-equivalence-classes" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="step-1-abstract-the-problem-as-a-search-over-equivalence-classes"><span class="header-section-number">5.2</span> Step 1: Abstract the Problem as a Search over Equivalence Classes</h2>
+<p>We define:</p>
+<ul>
+<li>A <strong>prime template</strong>: a pattern like <code>'56**3'</code> where <code>*</code> is a wildcard</li>
+<li>A <strong>family function</strong>: <img src="https://latex.codecogs.com/png.latex?%0AF(t)%20=%20%5C%7B%20%5Ctext%7Bfill%20in%20%7D%20*%20%5Ctext%7B%20in%20%7D%20t%20%5Ctext%7B%20with%20digits%20%7D%200..9%20%5C%7D%0A"></li>
+</ul>
+<p>We want:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%7CF(t)%20%5Ccap%20%5Ctext%7BPRIMES%7D%7C%20%5Cgeq%208"></li>
+<li>and to find the <strong>template</strong> <code>t</code> with smallest base value <code>min(F(t))</code> meeting the above</li>
+</ul>
+<hr>
+</section>
+<section id="step-2-symbolic-representation-of-digit-replacements" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="step-2-symbolic-representation-of-digit-replacements"><span class="header-section-number">5.3</span> Step 2: Symbolic Representation of Digit Replacements</h2>
+<p>Let each prime <code>p</code> be treated as a string <code>s</code>, and let <code>S ⊂ \text{positions}(s)</code>.</p>
+<p>We define a <strong>mask vector</strong> <code>m</code>:</p>
+<ul>
+<li><code>m[i] = 1</code> if index <code>i</code> is to be replaced</li>
+<li><code>m[i] = 0</code> otherwise</li>
+</ul>
+<p>Now define a <strong>pattern class</strong>: <img src="https://latex.codecogs.com/png.latex?%0AT_%7Bp,m%7D%20=%20%5C%7B%20%5Ctext%7Breplace%20%7D%20s%5Bi%5D%20%5Ctext%7B%20where%20%7D%20m%5Bi%5D=1%20%5Ctext%7B%20with%20%7D%20d%20%5Cin%200..9%20%5C%7D%0A"></p>
+<p>So the family is generated by iterating over all <code>d ∈ [0,9]</code>.</p>
+<hr>
+</section>
+<section id="step-3-model-the-problem-as-an-optimization" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="step-3-model-the-problem-as-an-optimization"><span class="header-section-number">5.4</span> Step 3: Model the Problem as an Optimization</h2>
+<section id="variables" class="level4">
+<h4 class="anchored" data-anchor-id="variables">Variables:</h4>
+<ul>
+<li>Prime <code>p</code></li>
+<li>Digit mask <code>m</code></li>
+</ul>
+</section>
+<section id="constraints" class="level4">
+<h4 class="anchored" data-anchor-id="constraints">Constraints:</h4>
+<ul>
+<li>Positions masked must contain the <strong>same digit</strong></li>
+<li>Leading digit after replacement ≠ <code>0</code></li>
+<li>At least 8 of the 10 generated numbers are <strong>prime</strong></li>
+</ul>
+</section>
+<section id="objective" class="level4">
+<h4 class="anchored" data-anchor-id="objective">Objective:</h4>
+<ul>
+<li>Minimize <code>p</code> such that: <img src="https://latex.codecogs.com/png.latex?%0A%5Cleft%7C%20F(p,%20m)%20%5Ccap%20%5Ctext%7BPRIMES%7D%20%5Cright%7C%20%5Cgeq%208%0A"></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="step-4-optimizations-based-on-number-theory" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="step-4-optimizations-based-on-number-theory"><span class="header-section-number">5.5</span> Step 4: Optimizations Based on Number Theory</h2>
+<section id="digit-frequency-filtering" class="level4">
+<h4 class="anchored" data-anchor-id="digit-frequency-filtering">1. <strong>Digit Frequency Filtering</strong></h4>
+<ul>
+<li>Only consider digits that repeat at least twice in the prime</li>
+<li>Avoid replacing rare digits</li>
+</ul>
+</section>
+<section id="modulo-pruning" class="level4">
+<h4 class="anchored" data-anchor-id="modulo-pruning">2. <strong>Modulo Pruning</strong></h4>
+<ul>
+<li>Skip candidates that will generate multiples of 2 or 5 in replacement</li>
+</ul>
+</section>
+<section id="avoid-unnecessary-masks" class="level4">
+<h4 class="anchored" data-anchor-id="avoid-unnecessary-masks">3. <strong>Avoid Unnecessary Masks</strong></h4>
+<ul>
+<li>Skip full replacements</li>
+<li>Skip replacements that break positional value (e.g., fixed ending <code>1</code>, <code>3</code>, <code>7</code>, <code>9</code> often more promising)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="step-5-search-as-constrained-enumeration" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="step-5-search-as-constrained-enumeration"><span class="header-section-number">5.6</span> Step 5: Search as Constrained Enumeration</h2>
+<p>We now enumerate over primes:</p>
+<ul>
+<li>For each prime, extract repeated digit positions</li>
+<li>For each digit <code>d</code>, generate all valid <code>mask</code> subsets where digit <code>d</code> occurs</li>
+<li>Build replacement families</li>
+<li>Use <strong>fast primality tests</strong>, and stop early if a mask yields ≥ 8 primes</li>
+</ul>
+<p>This avoids full combinatorial enumeration, and uses <strong>structure + constraint filtering</strong> to reduce search space.</p>
+<hr>
+</section>
+<section id="theoretical-complexity" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="theoretical-complexity"><span class="header-section-number">5.7</span> Theoretical Complexity</h2>
+<p>Compared to brute force:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 61%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Complexity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prime generation</td>
+<td><img src="https://latex.codecogs.com/png.latex?O(n%20%5Clog%20%5Clog%20n)"></td>
+</tr>
+<tr class="even">
+<td>Mask enumeration</td>
+<td>Reduced from <img src="https://latex.codecogs.com/png.latex?2%5Ek"> to only valid repeated-digit subsets</td>
+</tr>
+<tr class="odd">
+<td>Replacement testing</td>
+<td><img src="https://latex.codecogs.com/png.latex?10%20%5Ctimes%20k"> per valid mask</td>
+</tr>
+<tr class="even">
+<td>Primality test</td>
+<td><img src="https://latex.codecogs.com/png.latex?O(%5Csqrt%7Bn%7D)"> or Miller–Rabin in <img src="https://latex.codecogs.com/png.latex?O(%5Clog%5E3%20n)"></td>
+</tr>
+</tbody>
+</table>
+<p>→ Net result: <strong>Much faster and scalable</strong>, with full mathematical transparency.</p>
+<hr>
+</section>
+<section id="phd-level-interpretation" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="phd-level-interpretation"><span class="header-section-number">5.8</span> PhD-Level Interpretation</h2>
+<p>This transforms the problem into:</p>
+<blockquote class="blockquote">
+<p>A <strong>symbolic family detection</strong> problem over the space of integers, using digit-based constraints and algebraic structure.</p>
+</blockquote>
+<p>Possible future work includes: - Pattern mining via SAT/SMT solvers - Probabilistic modeling of family distributions - Generalizing to <code>k</code>-prime families</p>
+<hr>
+</section>
+<section id="summary-1" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="summary-1"><span class="header-section-number">5.9</span> Summary</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>PhD Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Abstraction</td>
+<td>Symbolic patterns over digits</td>
+</tr>
+<tr class="even">
+<td>Constraints</td>
+<td>Digit repetition, prime count, no leading 0</td>
+</tr>
+<tr class="odd">
+<td>Objective</td>
+<td>Minimize base prime <code>p</code></td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td>Digit masks, primality testing, search space pruning</td>
+</tr>
+<tr class="odd">
+<td>Outcome</td>
+<td>Structured, fast, extensible method</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>This approach not only solves the problem but provides a <strong>reusable framework</strong> for other “digit-replacement” or “prime-pattern” problems in computational number theory.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/project-euler-prime-digit-replacements/</guid>
+  <pubDate>Wed, 16 Jul 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
   <title>45. Jump Game II</title>
   <dc:creator>Hung </dc:creator>
   <link>https://kimhungbui.github.io/programming/leetcode-jump-game-2/</link>
@@ -1383,7 +1831,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="8f7242c1" class="cell" data-execution_count="1">
+<div id="508ed57d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
