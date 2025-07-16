@@ -1,0 +1,194 @@
+---
+title: 45. Jump Game II
+lightbox: false
+description: An interesting Greedy problem
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/jump-game-ii/description/
+date: 2025-07-16
+categories:
+  - leetcode
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+# Problem: Jump Game II
+
+You are given a **0-indexed** array of integers `nums` of length `n`. You are initially positioned at `nums[0]`.
+
+Each element `nums[i]` represents the **maximum length of a forward jump** from index `i`. In other words, if you are at `nums[i]`, you can jump to any `nums[i + j]` where:
+
+- `0 <= j <= nums[i]`, and  
+- `i + j < n`
+
+Return the **minimum number of jumps** to reach `nums[n - 1]`.
+
+The test cases are generated such that **you can reach `nums[n - 1]`**.
+
+---
+
+## Examples
+
+**Example 1:**
+
+```
+Input:  nums = [2, 3, 1, 1, 4]
+Output: 2
+Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
+```
+
+**Example 2:**
+
+```
+Input:  nums = [2, 3, 0, 1, 4]
+Output: 2
+```
+
+---
+
+## Constraints
+
+- `1 <= nums.length <= 10⁴`  
+- `0 <= nums[i] <= 1000`  
+- It is guaranteed that you can reach `nums[n - 1]`.
+
+
+# Approaches
+
+**Problem Summary:**
+
+You are given a 0-indexed array `nums` where each element represents the maximum jump length you can make from that position. Starting at index 0, your goal is to reach the last index with the **minimum number of jumps**.
+
+Example:
+
+```text
+Input:  nums = [2, 3, 1, 1, 4]
+Output: 2
+Explanation: Jump from 0 → 1, then from 1 → 4.
+```
+
+---
+
+## Initial Intuition (Dynamic Programming Approach)
+
+As a beginner, one natural way to approach this is to **track the minimum number of jumps** needed to reach each index. We can use an auxiliary array `min_step[]`, where:
+
+- `min_step[i]` = the **minimum number of steps** to reach index `i` from index `0`.
+
+### Pseudocode
+
+1. Initialize `min_step[0] = 0`, and others as 0 (we'll treat 0 as "unvisited").
+2. For each index `i`, simulate all possible forward jumps up to `nums[i]`.
+3. For each reachable index `i + step`, update `min_step[i + step]` if it hasn't been visited.
+
+### Visualization
+
+{{< video videos/JumpGameDPApproach2 >}}
+
+
+
+### Python Code
+
+```python
+from typing import List
+
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        n = len(nums)
+        min_step = [0] * n  # min_step[i]: min jumps to reach index i
+
+        for i in range(n):
+            steps = nums[i]
+            for step in range(1, steps + 1):
+                next_pos = i + step
+                if next_pos < n and min_step[next_pos] == 0: # bound and visited
+                    min_step[next_pos] = min_step[i] + 1
+
+        return min_step[n - 1]
+```
+
+---
+
+## Time & Space Complexity
+
+- **Time:** O(n²) in the worst case (if every `nums[i]` is large and we simulate many jumps).
+- **Space:** O(n) for the `min_step[]` array.
+
+### Pros
+- Can AC in leetcode.
+- Easy to understand and implement.
+- Helps build dynamic programming intuition.
+
+### Cons
+- Too slow for large arrays (e.g. `n = 10⁴`).
+- Redundant work — we revisit the same states multiple times.
+
+---
+
+## The Optimal Greedy Approach (O(n))
+
+Once you're comfortable with the basic idea, you can switch to a **greedy** strategy:
+
+1. Track the **farthest index** reachable in the current "jump".
+2. When you reach the end of the current jump range, increment your jump count and update the next jump range.
+3. Repeat until the end of the array is reachable.
+
+
+### Visualization
+
+{{< video videos/JumpGameGreedy.mp4 >}}
+
+### Optimal Code (Greedy)
+
+```python
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        jumps = 0
+        farthest = 0
+        current_end = 0
+
+        for i in range(len(nums) - 1):  # exclude last index
+            farthest = max(farthest, i + nums[i])
+            if i == current_end:
+                jumps += 1
+                current_end = farthest
+        
+        return jumps
+```
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+
+---
+
+## Takeaways
+
+- Your DP-style intuition is a great starting point for understanding how to model state transitions.
+- But always analyze the time complexity — for real-world coding problems, **efficiency matters**.
+- Learn to identify when a **greedy strategy** can replace DP in **minimum step problems**.
+
+---
+
+## Learning Tip
+
+Start by solving problems with a safe brute-force or DP mindset. Once you understand the pattern, look for greedy optimizations to reduce time complexity.
+
+Happy coding! 💻
+
+
