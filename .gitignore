@@ -10,3 +10,13 @@ docs/
 # Ignore Mac DS_Store files
 .DS_Store
 **/.DS_Store
+
+# Ignore Manim generated outputs inside manim/ folder
+manim/media/
+manim/__pycache__/
+manim/*.log
+manim/*.mp4
+manim/*.gif
+manim/*.webm
+
+
