@@ -1,0 +1,371 @@
+---
+title: Prime Digit Replacements
+lightbox: false
+description: An interesting Prime problem
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Project Euler
+    affiliation-url: https://projecteuler.net/problem=51
+date: 2025-07-16
+categories:
+  - leetcode
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+# Problem
+
+By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.
+
+By replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.
+
+Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family.
+
+{{< video videos/PrimeFamily2Digit.mp4 >}}
+
+
+{{< video videos/PrimeFamily56003.mp4 >}}
+
+# Analysis
+
+The problem asks for the **smallest prime** that belongs to an **8-prime value family**.
+
+This means:
+- Start with a prime number.
+- Replace one or more digits (not necessarily adjacent) that are the *same*, with a wildcard symbol like `*`.
+- Then, generate all possible numbers by replacing `*` with digits `0` through `9`.
+- Count how many of those are prime.
+- We want the **first (smallest) such prime** that produces **at least 8 primes** in this replacement process.
+
+### Why the Solution Space Is Finite
+
+Although large, the space of numbers we need to search is **finite** because:
+- We're looking for the *smallest* such prime.
+- The number of primes in each digit-length range is countable.
+
+
+### Constraints That Help Reduce the Search
+
+1. **Only Repeated Digits Are Useful**  
+   We only attempt digit replacements on digits that appear multiple times in the number. Replacing unique digits can't generate families of size >1.
+
+2. **Leading Zeros Are Invalid**  
+   If replacing the first digit results in a leading zero (e.g., `0xxxx`), it's not a valid number, so we skip that case.
+
+3. **We Only Consider Primes**  
+   Instead of checking all natural numbers, we loop through **only primes** — the valid candidates for the answer.
+
+### Strategy Summary
+
+This is essentially a **targeted brute-force** solution:
+- Try each prime one by one.
+- For each repeated digit, try all subsets of its positions.
+- Replace those positions with digits `0` to `9`, checking for primality.
+- Keep track of how many primes are generated in that “family”.
+- As soon as we find a family with 8 or more primes, we return the smallest member.
+
+This systematic pruning makes the brute-force approach feasible.
+
+# Naive Approach - Prime Digit Replacement Problem
+
+## Problem Recap
+
+We want to find the __smallest prime number__ that, by __replacing part of its digits__ (not necessarily adjacent) with the same __digit__, produces __at least eight primes__ among the 10 generated numbers.
+
+## Naive Strategy
+
+The problems explicitly mentions:
+
+"the 5-digits number 56003 is the first example having seven primes..."
+
+This tell us:
+
+- Smaller numbers (1- to 4-digit) __do not__ produce a 7-prime family
+- So the __search for 8-prime families must begin at least from 5-digit numbers__
+
+
+1. __Loop through numbers starting from 10,000__ (since 5-digit numbers are known to be involved).
+
+2. For each number:
+
+- Generate all combinations of digit positions to replace (1 or more digits).
+- For each combination:
+  - Replace those positions with digits 0 → 9, one at a time.
+  - Count how many of the resulting 10 numbers are prime.
+- If ≥ 8 are prime → we’ve found our answer.
+
+## Pseudo code
+
+
+``` {pseudocode}
+for number in range(10000, 1000000):
+    if not is_prime(number):
+        continue
+
+    digits = str(number)
+    for mask in all possible combinations of positions:
+        family = []
+        for replacement_digit in '0123456789':
+            candidate_digits = digits with mask replaced by replacement_digit
+            if candidate starts with '0':
+                continue
+            if is_prime(candidate):
+                family.append(candidate)
+        if len(family) >= 8:
+            return number
+
+```
+
+
+## Characteristics of Naive Approach
+
+| Property                      | Comment                                          |
+| ----------------------------- | ------------------------------------------------ |
+| **Brute-force**               | Tries every combination of positions and digits  |
+| **Inefficient**               | Loops over all numbers (not just primes)         |
+| **No digit filtering**        | May replace digits that occur only once          |
+| **Replaces non-equal digits** | Ignores structure of the problem                 |
+| **Slow**                      | Explores huge space with many invalid candidates |
+
+## Complexity (Rough Estimate)
+
+Let _n_ be the number of digits (5-6 digits):
+
+- Combinations of digit positions: $2^n-1$
+- Replacements: 10 per pattern
+- Prime checks: up to $10 \times (2^n - 1)$ per number
+
+__Overall complexity__
+
+$$
+O(N\cdot2^n\cdot10\cdot\text{is\_prime})
+$$
+
+where _N_ is the range of numbers tested ($10^6$)
+
+## Problem with Naive
+
+- Wastes time replacing digits that occur only once
+- Replaces different digits at once (which isn't allowed per the problem)
+- Replaces digits even when they don't repeat
+- Explores non-primes too
+
+# Structured Brute Force Approach
+
+## Motivation
+
+The naive approach checks all numbers and all possible digit replacements. But this is very slow.
+
+A more efficient method is to:
+
+- Check **only primes**
+- Replace only **repeated digits**
+- Ensure no replacements create invalid numbers (like leading zero)
+- Stop early when we find the first family with 8 primes
+
+This gives us a **structured brute-force solution**.
+
+## Key Insights Over Naive Approach
+
+| Improvement                                       | Why It Helps                                                    |
+| ------------------------------------------------- | --------------------------------------------------------------- |
+| Only check **primes**                             | Non-primes can’t be part of the answer                          |
+| Only replace **repeated digits**                  | You must replace the **same digit** (e.g. all `1`s or all `3`s) |
+| Replace **some (not all)** of the repeated digits | Full replacement may cause invalid numbers (e.g. leading zero)  |
+| Avoid replacement that starts with `0`            | Cannot have leading zero in base-10 integers                    |
+
+
+## Algorithm 
+
+### Step 1: Generate All Primes Up to a Limit
+
+Use a sieve to get all primes up to a reasonable upper bound (e.g., 1 million).
+
+### Step 2: For each Prime
+
+1. Convert to String
+2. For each digit `d` (from `'0'` to `'9'`):
+  - Get positions where `d` appears more than once
+  - Generate all non-empty subsets of those positions
+  - Replace those positions with every digit `0–9`
+  - For each subset:
+    - Replace those digits with value `0-9`
+    - Skip if the number starts with `'0'`
+    - Count how many of the resulting numbers are prime
+    - If 8 or more primes found, return the original prime
+
+
+## Complexity
+
+Let:
+
+- $P$: number of primes (~ $10^5$)
+- $D$: number of distinct digits (10)
+- $S$: number of non-empty subsets per digit (usually $\leq 16$)
+- $R$: replacements per subset (10 digits)
+
+Then:
+
+$$
+O(P\cdot D \cdot S \cdot R)
+$$
+
+## Summary
+
+| Feature                   | Value                                 |
+| ------------------------- | ------------------------------------- |
+| Improves over naive       | Yes (skips non-primes, invalid cases) |
+| Fast enough in practice   | Yes                                   |
+| Understandable            | Yes                                   |
+| Prepares for deeper ideas | Yes                                   |
+
+# Formal Modeling and Optimization
+
+## Goal
+
+Find the **smallest prime** `p` such that **replacing a subset of its digits** (not necessarily adjacent) with the **same digit `d`**, yields a **family of 8+ prime numbers** out of the 10 possible values.
+
+We aim to go beyond brute-force by **modeling** the structure of this problem as a constrained optimization over symbolic patterns.
+
+
+
+
+## Step 1: Abstract the Problem as a Search over Equivalence Classes
+
+We define:
+
+- A **prime template**: a pattern like `'56**3'` where `*` is a wildcard
+- A **family function**:
+  $$
+  F(t) = \{ \text{fill in } * \text{ in } t \text{ with digits } 0..9 \}
+  $$
+
+We want:
+
+- $|F(t) \cap \text{PRIMES}| \geq 8$
+- and to find the **template** `t` with smallest base value `min(F(t))` meeting the above
+
+---
+
+## Step 2: Symbolic Representation of Digit Replacements
+
+Let each prime `p` be treated as a string `s`, and let `S ⊂ \text{positions}(s)`.
+
+We define a **mask vector** `m`:
+
+- `m[i] = 1` if index `i` is to be replaced
+- `m[i] = 0` otherwise
+
+Now define a **pattern class**:
+$$
+T_{p,m} = \{ \text{replace } s[i] \text{ where } m[i]=1 \text{ with } d \in 0..9 \}
+$$
+
+So the family is generated by iterating over all `d ∈ [0,9]`.
+
+---
+
+## Step 3: Model the Problem as an Optimization
+
+#### Variables:
+- Prime `p`
+- Digit mask `m`
+
+#### Constraints:
+- Positions masked must contain the **same digit**
+- Leading digit after replacement ≠ `0`
+- At least 8 of the 10 generated numbers are **prime**
+
+#### Objective:
+- Minimize `p` such that:
+$$
+\left| F(p, m) \cap \text{PRIMES} \right| \geq 8
+$$
+
+---
+
+## Step 4: Optimizations Based on Number Theory
+
+#### 1. **Digit Frequency Filtering**
+- Only consider digits that repeat at least twice in the prime
+- Avoid replacing rare digits
+
+#### 2. **Modulo Pruning**
+- Skip candidates that will generate multiples of 2 or 5 in replacement
+
+#### 3. **Avoid Unnecessary Masks**
+- Skip full replacements
+- Skip replacements that break positional value (e.g., fixed ending `1`, `3`, `7`, `9` often more promising)
+
+---
+
+## Step 5: Search as Constrained Enumeration
+
+We now enumerate over primes:
+
+- For each prime, extract repeated digit positions
+- For each digit `d`, generate all valid `mask` subsets where digit `d` occurs
+- Build replacement families
+- Use **fast primality tests**, and stop early if a mask yields ≥ 8 primes
+
+This avoids full combinatorial enumeration, and uses **structure + constraint filtering** to reduce search space.
+
+---
+
+## Theoretical Complexity
+
+Compared to brute force:
+
+| Step              | Complexity |
+|-------------------|------------|
+| Prime generation  | $O(n \log \log n)$ |
+| Mask enumeration  | Reduced from $2^k$ to only valid repeated-digit subsets |
+| Replacement testing | $10 \times k$ per valid mask |
+| Primality test    | $O(\sqrt{n})$ or Miller–Rabin in $O(\log^3 n)$ |
+
+→ Net result: **Much faster and scalable**, with full mathematical transparency.
+
+---
+
+## PhD-Level Interpretation
+
+This transforms the problem into:
+
+> A **symbolic family detection** problem over the space of integers, using digit-based constraints and algebraic structure.
+
+Possible future work includes:
+- Pattern mining via SAT/SMT solvers
+- Probabilistic modeling of family distributions
+- Generalizing to `k`-prime families
+
+---
+
+## Summary
+
+| Feature | PhD Model |
+|--------|-----------|
+| Abstraction | Symbolic patterns over digits |
+| Constraints | Digit repetition, prime count, no leading 0 |
+| Objective | Minimize base prime `p` |
+| Tools | Digit masks, primality testing, search space pruning |
+| Outcome | Structured, fast, extensible method |
+
+---
+
+This approach not only solves the problem but provides a **reusable framework** for other "digit-replacement" or "prime-pattern" problems in computational number theory.
+
