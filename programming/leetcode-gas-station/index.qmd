@@ -1,0 +1,282 @@
+---
+title: Gas Station 
+lightbox: false
+description: Solving the Gas Station Problem Step-by-Step — From Naive to Greedy
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/gas-station/description/
+date: 2025-07-17
+categories:
+  - leetcode
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+# Introduction
+
+Imagine you're on a circular road trip with your car, visiting a series of gas stations. Each station provides a certain amount of gas, but it also costs you gas to drive to the next one. The question is: **Can you complete the entire loop starting at one of the stations, without ever running out of fuel?**
+
+This is the essence of the **Gas Station Problem**, a well-known greedy algorithm question that tests your ability to reason about cumulative gains and losses over a circular path.
+
+At first glance, this might seem like a brute-force problem—try every station as a starting point, simulate the journey, and check which one works. But with some smart observations, we can reduce the solution from **O(n²)** to **O(n)** using a **greedy strategy**.
+
+In this post, we’ll guide you step-by-step:
+- From a **naive brute-force solution**,
+- To discovering key **mathematical observations**, and
+- Finally building an **efficient greedy algorithm** with a visual explanation.
+
+Whether you're preparing for coding interviews, learning algorithms, or building animations with Manim, this deep dive will help you not only solve the problem but also **understand the "why" behind the solution**.
+
+# 🔍 Problem Statement
+
+You are given two integer arrays:
+
+- `gas[i]`: the amount of fuel available at station `i`
+- `cost[i]`: the amount of fuel it takes to travel from station `i` to station `(i + 1) % n`
+
+Your task is to determine the **starting gas station index** from which you can travel around the circuit once in the clockwise direction **without ever running out of gas**. If it's not possible, return `-1`.
+
+### Example
+
+```python
+gas  = [1, 2, 3, 4, 5]
+cost = [3, 4, 5, 1, 2]
+```
+
+### Contraints
+
+- The journey is __circular__, meaning after the last station, you return to the first.
+- You must start at a station and can only travel clockwise.
+- You must always have __non-negative fuel__ in your tank.
+
+# Naive Brute-Force Approach
+
+Before diving into optimization, let’s understand the **simplest possible way** to solve the problem.
+
+## Brute-Force Logic
+
+Try starting at **every station one by one**, and simulate the full circular trip:
+
+1. Initialize your fuel tank to 0.
+2. At each step, add `gas[i]` to your tank and subtract `cost[i]`.
+3. If at any point the tank drops below zero, the trip fails from this starting point.
+4. Repeat for all `n` starting points.
+
+### Example Code
+
+```python
+def can_complete_circuit_brute(gas, cost):
+    n = len(gas)
+    for start in range(n):
+        tank = 0
+        completed = True
+        for i in range(n):
+            idx = (start + i) % n
+            tank += gas[idx] - cost[idx]
+            if tank < 0:
+                completed = False
+                break
+        if completed:
+            return start
+    return -1
+```
+
+## Time Complexity
+
+- Times: $O(n^2)$
+- Why: For each station, we simulate a full loop through all stations.
+- Scalability: This is too slow for large inputs (n up to 10⁵ in interviews or contests).
+
+
+In the next section, we’ll explore how to observe patterns in the problem and develop a greedy linear-time solution.
+
+# Greedy Approach (Optimized O(n) Solution)
+
+Now, let's explore the **efficient** and **elegant** solution that solves the problem in **O(n)** time using greedy strategy.
+
+---
+
+## Key Observations
+
+1. Let’s define:
+   - `gain[i] = gas[i] - cost[i]` — net fuel at station `i`.
+   - `total_tank = sum(gain)` — if it's **negative**, no solution exists.
+
+2. If your **current tank (`curr_tank`) drops below 0** at station `i`, it means:
+   - Any station between your last start and `i` cannot be the correct starting point.
+   - So, you must **reset your start point** to `i + 1`.
+
+---
+
+## Step-by-Step Algorithm
+
+1. Initialize:
+   - `total_tank = 0`
+   - `curr_tank = 0`
+   - `start_index = 0`
+
+2. Loop through each station `i`:
+   - Compute `gain = gas[i] - cost[i]`
+   - Update tanks:
+     - `total_tank += gain`
+     - `curr_tank += gain`
+   - If `curr_tank < 0`, reset:
+     - `start_index = i + 1`
+     - `curr_tank = 0`
+
+3. After the loop:
+   - If `total_tank >= 0`, return `start_index`
+   - Else, return `-1`
+
+---
+
+## Why It Works
+
+- If the **total fuel** is not enough to cover the total cost, no path is possible — simple elimination.
+- The greedy reset ensures we skip all impossible start points in a single pass.
+- Only **1 loop**, so time complexity is **O(n)**.
+
+---
+
+## Code Implementation
+
+```python
+def can_complete_circuit(gas, cost):
+    total_tank = 0
+    curr_tank = 0
+    start_index = 0
+
+    for i in range(len(gas)):
+        gain = gas[i] - cost[i]
+        total_tank += gain
+        curr_tank += gain
+
+        if curr_tank < 0:
+            start_index = i + 1
+            curr_tank = 0
+
+    return start_index if total_tank >= 0 else -1
+```
+
+In the next section, we’ll visualize this approach step-by-step using a sample input and animation-style diagrams.
+
+# Visual Intuition with Step-by-Step Example
+
+Let’s walk through a **real example** to internalize how the greedy solution works.
+
+
+{{< video videos/GasStationGreedyScene.mp4 >}}
+
+# Interviewer Insight
+
+This is how we impress in an interview:
+
+- Start with brute force: "Try all start stations."
+- Then: "This is O(n²), we need better."
+- Key Insight: "We only care about total fuel and where the tank drops below zero."
+- Greedy Rule: "If the tank is ever negative, none of the stations before that can be the start."
+
+# Greedy Problem Solving Framework
+
+Greedy algorithms solve problems by **making locally optimal choices** at each step in the hope that they lead to a **globally optimal solution**. However, **not all problems can be solved greedily**. Here's a reliable framework to decide **when and how to apply** a greedy strategy.
+
+---
+
+## Problem Understanding
+
+- **Goal**: What is being optimized? (e.g., minimize cost, maximize profit)
+- **Constraints**: Do choices need to be irreversible or done in order?
+- **Input Size**: Is brute-force even feasible?
+
+---
+
+## Brute Force First
+
+- Try all possible paths/choices.
+- Ask: Why is this inefficient?
+- This helps reveal *structure* in the problem (e.g., repeated states, redundant decisions).
+
+---
+
+## Identify the "Greedy Choice"
+
+Ask:
+- What is the *best local decision* I can make at each step?
+- Can I prove that making this choice will *never hurt future decisions*?
+
+Common greedy choices:
+- **Max gain** per step
+- **Min cost** to reach the next step
+- **Earliest deadline**, **highest value per weight**, etc.
+
+---
+
+## Validate Greedy is Safe
+
+Test your greedy choice with:
+- **Counterexamples**: Try inputs where greedy may fail.
+- **Proof**: Can you prove "greedy choice" leads to an optimal solution?
+
+Techniques:
+- **Exchange Argument**
+- **Greedy Stays Ahead**
+
+---
+
+## Implement & Test
+
+- Use `O(n)` or `O(n log n)` greedy logic.
+- Track accumulative values (e.g., balance, remaining capacity).
+- Reset conditions if necessary (like in gas station).
+
+---
+
+## Common Greedy Patterns
+
+| Pattern                          | Example Problems                   |
+|----------------------------------|------------------------------------|
+| Interval Scheduling              | Activity selection, meeting rooms |
+| Resource Allocation              | Fractional knapsack                |
+| Accumulated Constraints          | Gas Station, Jump Game             |
+| Covering Problems                | Set cover approximations           |
+
+---
+
+## Mindset Summary
+
+> "Make the best local decision… but **prove** or **observe** that it's globally optimal."
+
+Use greedy when:
+- Future choices don't depend heavily on past ones
+- Local optimum leads to global optimum
+- Problem can be modeled with **monotonic constraints**
+
+---
+
+**Example**: In the gas station problem  
+- Greedy resets starting index when `curr_tank < 0`  
+- If `total_tank >= 0`, a valid start must exist  
+- Greedy eliminates bad candidates efficiently
+
+---
+
+Final Note:  
+Not all problems are greedy-solvable. When in doubt, try:
+- Dynamic Programming
+- Backtracking with pruning

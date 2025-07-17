@@ -1,0 +1,117 @@
+---
+title: Greedy Problem Solving Framework
+lightbox: false
+description: Greedy Problem Solving Framework
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+
+date: 2025-07-17
+categories:
+  - leetcode
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+# Greedy Problem Solving Framework
+
+Greedy algorithms solve problems by **making locally optimal choices** at each step in the hope that they lead to a **globally optimal solution**. However, **not all problems can be solved greedily**. Here's a reliable framework to decide **when and how to apply** a greedy strategy.
+
+---
+
+## Problem Understanding
+
+- **Goal**: What is being optimized? (e.g., minimize cost, maximize profit)
+- **Constraints**: Do choices need to be irreversible or done in order?
+- **Input Size**: Is brute-force even feasible?
+
+---
+
+## Brute Force First
+
+- Try all possible paths/choices.
+- Ask: Why is this inefficient?
+- This helps reveal *structure* in the problem (e.g., repeated states, redundant decisions).
+
+---
+
+## Identify the "Greedy Choice"
+
+Ask:
+- What is the *best local decision* I can make at each step?
+- Can I prove that making this choice will *never hurt future decisions*?
+
+Common greedy choices:
+- **Max gain** per step
+- **Min cost** to reach the next step
+- **Earliest deadline**, **highest value per weight**, etc.
+
+---
+
+## Validate Greedy is Safe
+
+Test your greedy choice with:
+- **Counterexamples**: Try inputs where greedy may fail.
+- **Proof**: Can you prove "greedy choice" leads to an optimal solution?
+
+Techniques:
+- **Exchange Argument**
+- **Greedy Stays Ahead**
+
+---
+
+## Implement & Test
+
+- Use `O(n)` or `O(n log n)` greedy logic.
+- Track accumulative values (e.g., balance, remaining capacity).
+- Reset conditions if necessary (like in gas station).
+
+---
+
+## Common Greedy Patterns
+
+| Pattern                          | Example Problems                   |
+|----------------------------------|------------------------------------|
+| Interval Scheduling              | Activity selection, meeting rooms |
+| Resource Allocation              | Fractional knapsack                |
+| Accumulated Constraints          | Gas Station, Jump Game             |
+| Covering Problems                | Set cover approximations           |
+
+---
+
+## Mindset Summary
+
+> "Make the best local decision… but **prove** or **observe** that it's globally optimal."
+
+Use greedy when:
+- Future choices don't depend heavily on past ones
+- Local optimum leads to global optimum
+- Problem can be modeled with **monotonic constraints**
+
+---
+
+**Example**: In the gas station problem  
+- Greedy resets starting index when `curr_tank < 0`  
+- If `total_tank >= 0`, a valid start must exist  
+- Greedy eliminates bad candidates efficiently
+
+---
+
+Final Note:  
+Not all problems are greedy-solvable. When in doubt, try:
+- Dynamic Programming
+- Backtracking with pruning
