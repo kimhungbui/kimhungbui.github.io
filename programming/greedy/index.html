@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2025-07-17">
+<meta name="description" content="Greedy Problem Solving Framework">
 
-<title>Artificial Intelligence – Kim Hung Bui</title>
+<title>Greedy Problem Solving Framework – Kim Hung Bui</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
 
 <script type="text/javascript">
@@ -109,37 +81,8 @@ gtag('js', new Date());
 gtag('config', 'G-R5TB4V4ZYS', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Kim Hung Bui" href="artificial-intelligent.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -148,7 +91,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung Bui</span>
     </a>
   </div>
@@ -159,11 +102,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -172,39 +115,39 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
         <li>
-    <a class="dropdown-item" href="./math/convex-optimization/">
+    <a class="dropdown-item" href="../../math/convex-optimization/">
  <span class="dropdown-text">Convex Optimization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/probability/">
+    <a class="dropdown-item" href="../../math/probability/">
  <span class="dropdown-text">Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/statistics/">
+    <a class="dropdown-item" href="../../math/statistics/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./artificial-intelligent.html" aria-current="page"> 
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
 <span class="menu-text">AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -221,21 +164,57 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="math">math <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#greedy-problem-solving-framework" id="toc-greedy-problem-solving-framework" class="nav-link active" data-scroll-target="#greedy-problem-solving-framework"><span class="header-section-number">1</span> Greedy Problem Solving Framework</a>
+  <ul class="collapse">
+  <li><a href="#problem-understanding" id="toc-problem-understanding" class="nav-link" data-scroll-target="#problem-understanding"><span class="header-section-number">1.1</span> Problem Understanding</a></li>
+  <li><a href="#brute-force-first" id="toc-brute-force-first" class="nav-link" data-scroll-target="#brute-force-first"><span class="header-section-number">1.2</span> Brute Force First</a></li>
+  <li><a href="#identify-the-greedy-choice" id="toc-identify-the-greedy-choice" class="nav-link" data-scroll-target="#identify-the-greedy-choice"><span class="header-section-number">1.3</span> Identify the “Greedy Choice”</a></li>
+  <li><a href="#validate-greedy-is-safe" id="toc-validate-greedy-is-safe" class="nav-link" data-scroll-target="#validate-greedy-is-safe"><span class="header-section-number">1.4</span> Validate Greedy is Safe</a></li>
+  <li><a href="#implement-test" id="toc-implement-test" class="nav-link" data-scroll-target="#implement-test"><span class="header-section-number">1.5</span> Implement &amp; Test</a></li>
+  <li><a href="#common-greedy-patterns" id="toc-common-greedy-patterns" class="nav-link" data-scroll-target="#common-greedy-patterns"><span class="header-section-number">1.6</span> Common Greedy Patterns</a></li>
+  <li><a href="#mindset-summary" id="toc-mindset-summary" class="nav-link" data-scroll-target="#mindset-summary"><span class="header-section-number">1.7</span> Mindset Summary</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Artificial Intelligence</h1>
-</div>
+<h1 class="title">Greedy Problem Solving Framework</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">leetcode</div>
+    <div class="quarto-category">programming</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Greedy Problem Solving Framework
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 17, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -245,108 +224,103 @@ window.Quarto = {
 </header>
 
 
+<section id="greedy-problem-solving-framework" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Greedy Problem Solving Framework</h1>
+<p>Greedy algorithms solve problems by <strong>making locally optimal choices</strong> at each step in the hope that they lead to a <strong>globally optimal solution</strong>. However, <strong>not all problems can be solved greedily</strong>. Here’s a reliable framework to decide <strong>when and how to apply</strong> a greedy strategy.</p>
+<hr>
+<section id="problem-understanding" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="problem-understanding"><span class="header-section-number">1.1</span> Problem Understanding</h2>
+<ul>
+<li><strong>Goal</strong>: What is being optimized? (e.g., minimize cost, maximize profit)</li>
+<li><strong>Constraints</strong>: Do choices need to be irreversible or done in order?</li>
+<li><strong>Input Size</strong>: Is brute-force even feasible?</li>
+</ul>
+<hr>
+</section>
+<section id="brute-force-first" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="brute-force-first"><span class="header-section-number">1.2</span> Brute Force First</h2>
+<ul>
+<li>Try all possible paths/choices.</li>
+<li>Ask: Why is this inefficient?</li>
+<li>This helps reveal <em>structure</em> in the problem (e.g., repeated states, redundant decisions).</li>
+</ul>
+<hr>
+</section>
+<section id="identify-the-greedy-choice" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="identify-the-greedy-choice"><span class="header-section-number">1.3</span> Identify the “Greedy Choice”</h2>
+<p>Ask: - What is the <em>best local decision</em> I can make at each step? - Can I prove that making this choice will <em>never hurt future decisions</em>?</p>
+<p>Common greedy choices: - <strong>Max gain</strong> per step - <strong>Min cost</strong> to reach the next step - <strong>Earliest deadline</strong>, <strong>highest value per weight</strong>, etc.</p>
+<hr>
+</section>
+<section id="validate-greedy-is-safe" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="validate-greedy-is-safe"><span class="header-section-number">1.4</span> Validate Greedy is Safe</h2>
+<p>Test your greedy choice with: - <strong>Counterexamples</strong>: Try inputs where greedy may fail. - <strong>Proof</strong>: Can you prove “greedy choice” leads to an optimal solution?</p>
+<p>Techniques: - <strong>Exchange Argument</strong> - <strong>Greedy Stays Ahead</strong></p>
+<hr>
+</section>
+<section id="implement-test" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="implement-test"><span class="header-section-number">1.5</span> Implement &amp; Test</h2>
+<ul>
+<li>Use <code>O(n)</code> or <code>O(n log n)</code> greedy logic.</li>
+<li>Track accumulative values (e.g., balance, remaining capacity).</li>
+<li>Reset conditions if necessary (like in gas station).</li>
+</ul>
+<hr>
+</section>
+<section id="common-greedy-patterns" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="common-greedy-patterns"><span class="header-section-number">1.6</span> Common Greedy Patterns</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Example Problems</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interval Scheduling</td>
+<td>Activity selection, meeting rooms</td>
+</tr>
+<tr class="even">
+<td>Resource Allocation</td>
+<td>Fractional knapsack</td>
+</tr>
+<tr class="odd">
+<td>Accumulated Constraints</td>
+<td>Gas Station, Jump Game</td>
+</tr>
+<tr class="even">
+<td>Covering Problems</td>
+<td>Set cover approximations</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="mindset-summary" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="mindset-summary"><span class="header-section-number">1.7</span> Mindset Summary</h2>
+<blockquote class="blockquote">
+<p>“Make the best local decision… but <strong>prove</strong> or <strong>observe</strong> that it’s globally optimal.”</p>
+</blockquote>
+<p>Use greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with <strong>monotonic constraints</strong></p>
+<hr>
+<p><strong>Example</strong>: In the gas station problem<br>
+- Greedy resets starting index when <code>curr_tank &lt; 0</code><br>
+- If <code>total_tank &gt;= 0</code>, a valid start must exist<br>
+- Greedy eliminates bad candidates efficiently</p>
+<hr>
+<p>Final Note:<br>
+Not all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning</p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="math" data-listing-date-sort="1749686400000" data-listing-file-modified-sort="1752750066310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6097">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Logistic regression</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
-math
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<div class="listing-date">
-Jun 12, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="AI" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1752750066310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p><a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Finetuning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-date">
-May 30, 2025
-</div>
-<div class="listing-author">
-Hung
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752750066310" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1575">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p><a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/convolution/Pasted image 20250327230513.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<div class="listing-date">
-Mar 21, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

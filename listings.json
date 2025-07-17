@@ -45,6 +45,8 @@
   {
     "listing": "/programming.html",
     "items": [
+      "/programming/greedy/index.html",
+      "/programming/leetcode-gas-station/index.html",
       "/programming/project-euler-prime-digit-replacements/index.html",
       "/programming/leetcode-jump-game-2/index.html",
       "/programming/maximum-subarray-problem/index.html",

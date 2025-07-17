@@ -10,7 +10,553 @@
 <atom:link href="https://kimhungbui.github.io/programming.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 16 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 17 Jul 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Greedy Problem Solving Framework</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/greedy/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="greedy-problem-solving-framework" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Greedy Problem Solving Framework</h1>
+<p>Greedy algorithms solve problems by <strong>making locally optimal choices</strong> at each step in the hope that they lead to a <strong>globally optimal solution</strong>. However, <strong>not all problems can be solved greedily</strong>. Here’s a reliable framework to decide <strong>when and how to apply</strong> a greedy strategy.</p>
+<hr>
+<section id="problem-understanding" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="problem-understanding"><span class="header-section-number">1.1</span> Problem Understanding</h2>
+<ul>
+<li><strong>Goal</strong>: What is being optimized? (e.g., minimize cost, maximize profit)</li>
+<li><strong>Constraints</strong>: Do choices need to be irreversible or done in order?</li>
+<li><strong>Input Size</strong>: Is brute-force even feasible?</li>
+</ul>
+<hr>
+</section>
+<section id="brute-force-first" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="brute-force-first"><span class="header-section-number">1.2</span> Brute Force First</h2>
+<ul>
+<li>Try all possible paths/choices.</li>
+<li>Ask: Why is this inefficient?</li>
+<li>This helps reveal <em>structure</em> in the problem (e.g., repeated states, redundant decisions).</li>
+</ul>
+<hr>
+</section>
+<section id="identify-the-greedy-choice" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="identify-the-greedy-choice"><span class="header-section-number">1.3</span> Identify the “Greedy Choice”</h2>
+<p>Ask: - What is the <em>best local decision</em> I can make at each step? - Can I prove that making this choice will <em>never hurt future decisions</em>?</p>
+<p>Common greedy choices: - <strong>Max gain</strong> per step - <strong>Min cost</strong> to reach the next step - <strong>Earliest deadline</strong>, <strong>highest value per weight</strong>, etc.</p>
+<hr>
+</section>
+<section id="validate-greedy-is-safe" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="validate-greedy-is-safe"><span class="header-section-number">1.4</span> Validate Greedy is Safe</h2>
+<p>Test your greedy choice with: - <strong>Counterexamples</strong>: Try inputs where greedy may fail. - <strong>Proof</strong>: Can you prove “greedy choice” leads to an optimal solution?</p>
+<p>Techniques: - <strong>Exchange Argument</strong> - <strong>Greedy Stays Ahead</strong></p>
+<hr>
+</section>
+<section id="implement-test" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="implement-test"><span class="header-section-number">1.5</span> Implement &amp; Test</h2>
+<ul>
+<li>Use <code>O(n)</code> or <code>O(n log n)</code> greedy logic.</li>
+<li>Track accumulative values (e.g., balance, remaining capacity).</li>
+<li>Reset conditions if necessary (like in gas station).</li>
+</ul>
+<hr>
+</section>
+<section id="common-greedy-patterns" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="common-greedy-patterns"><span class="header-section-number">1.6</span> Common Greedy Patterns</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Example Problems</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interval Scheduling</td>
+<td>Activity selection, meeting rooms</td>
+</tr>
+<tr class="even">
+<td>Resource Allocation</td>
+<td>Fractional knapsack</td>
+</tr>
+<tr class="odd">
+<td>Accumulated Constraints</td>
+<td>Gas Station, Jump Game</td>
+</tr>
+<tr class="even">
+<td>Covering Problems</td>
+<td>Set cover approximations</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="mindset-summary" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="mindset-summary"><span class="header-section-number">1.7</span> Mindset Summary</h2>
+<blockquote class="blockquote">
+<p>“Make the best local decision… but <strong>prove</strong> or <strong>observe</strong> that it’s globally optimal.”</p>
+</blockquote>
+<p>Use greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with <strong>monotonic constraints</strong></p>
+<hr>
+<p><strong>Example</strong>: In the gas station problem<br>
+- Greedy resets starting index when <code>curr_tank &lt; 0</code><br>
+- If <code>total_tank &gt;= 0</code>, a valid start must exist<br>
+- Greedy eliminates bad candidates efficiently</p>
+<hr>
+<p>Final Note:<br>
+Not all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/greedy/</guid>
+  <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Gas Station</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-gas-station/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>Imagine you’re on a circular road trip with your car, visiting a series of gas stations. Each station provides a certain amount of gas, but it also costs you gas to drive to the next one. The question is: <strong>Can you complete the entire loop starting at one of the stations, without ever running out of fuel?</strong></p>
+<p>This is the essence of the <strong>Gas Station Problem</strong>, a well-known greedy algorithm question that tests your ability to reason about cumulative gains and losses over a circular path.</p>
+<p>At first glance, this might seem like a brute-force problem—try every station as a starting point, simulate the journey, and check which one works. But with some smart observations, we can reduce the solution from <strong>O(n²)</strong> to <strong>O(n)</strong> using a <strong>greedy strategy</strong>.</p>
+<p>In this post, we’ll guide you step-by-step: - From a <strong>naive brute-force solution</strong>, - To discovering key <strong>mathematical observations</strong>, and - Finally building an <strong>efficient greedy algorithm</strong> with a visual explanation.</p>
+<p>Whether you’re preparing for coding interviews, learning algorithms, or building animations with Manim, this deep dive will help you not only solve the problem but also <strong>understand the “why” behind the solution</strong>.</p>
+</section>
+<section id="problem-statement" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 🔍 Problem Statement</h1>
+<p>You are given two integer arrays:</p>
+<ul>
+<li><code>gas[i]</code>: the amount of fuel available at station <code>i</code></li>
+<li><code>cost[i]</code>: the amount of fuel it takes to travel from station <code>i</code> to station <code>(i + 1) % n</code></li>
+</ul>
+<p>Your task is to determine the <strong>starting gas station index</strong> from which you can travel around the circuit once in the clockwise direction <strong>without ever running out of gas</strong>. If it’s not possible, return <code>-1</code>.</p>
+<section id="example" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="example"><span class="header-section-number">2.0.1</span> Example</h3>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">gas  <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>]</span>
+<span id="cb1-2">cost <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>]</span></code></pre></div>
+</section>
+<section id="contraints" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="contraints"><span class="header-section-number">2.0.2</span> Contraints</h3>
+<ul>
+<li>The journey is <strong>circular</strong>, meaning after the last station, you return to the first.</li>
+<li>You must start at a station and can only travel clockwise.</li>
+<li>You must always have <strong>non-negative fuel</strong> in your tank.</li>
+</ul>
+</section>
+</section>
+<section id="naive-brute-force-approach" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Naive Brute-Force Approach</h1>
+<p>Before diving into optimization, let’s understand the <strong>simplest possible way</strong> to solve the problem.</p>
+<section id="brute-force-logic" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="brute-force-logic"><span class="header-section-number">3.1</span> Brute-Force Logic</h2>
+<p>Try starting at <strong>every station one by one</strong>, and simulate the full circular trip:</p>
+<ol type="1">
+<li>Initialize your fuel tank to 0.</li>
+<li>At each step, add <code>gas[i]</code> to your tank and subtract <code>cost[i]</code>.</li>
+<li>If at any point the tank drops below zero, the trip fails from this starting point.</li>
+<li>Repeat for all <code>n</code> starting points.</li>
+</ol>
+<section id="example-code" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="example-code"><span class="header-section-number">3.1.1</span> Example Code</h3>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> can_complete_circuit_brute(gas, cost):</span>
+<span id="cb2-2">    n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(gas)</span>
+<span id="cb2-3">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> start <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(n):</span>
+<span id="cb2-4">        tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb2-5">        completed <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb2-6">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(n):</span>
+<span id="cb2-7">            idx <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (start <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> i) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> n</span>
+<span id="cb2-8">            tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> gas[idx] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> cost[idx]</span>
+<span id="cb2-9">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb2-10">                completed <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb2-11">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">break</span></span>
+<span id="cb2-12">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> completed:</span>
+<span id="cb2-13">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> start</span>
+<span id="cb2-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span></code></pre></div>
+</section>
+</section>
+<section id="time-complexity" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="time-complexity"><span class="header-section-number">3.2</span> Time Complexity</h2>
+<ul>
+<li>Times: <img src="https://latex.codecogs.com/png.latex?O(n%5E2)"></li>
+<li>Why: For each station, we simulate a full loop through all stations.</li>
+<li>Scalability: This is too slow for large inputs (n up to 10⁵ in interviews or contests).</li>
+</ul>
+<p>In the next section, we’ll explore how to observe patterns in the problem and develop a greedy linear-time solution.</p>
+</section>
+</section>
+<section id="greedy-approach-optimized-on-solution" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Greedy Approach (Optimized O(n) Solution)</h1>
+<p>Now, let’s explore the <strong>efficient</strong> and <strong>elegant</strong> solution that solves the problem in <strong>O(n)</strong> time using greedy strategy.</p>
+<hr>
+<section id="key-observations" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="key-observations"><span class="header-section-number">4.1</span> Key Observations</h2>
+<ol type="1">
+<li>Let’s define:
+<ul>
+<li><code>gain[i] = gas[i] - cost[i]</code> — net fuel at station <code>i</code>.</li>
+<li><code>total_tank = sum(gain)</code> — if it’s <strong>negative</strong>, no solution exists.</li>
+</ul></li>
+<li>If your <strong>current tank (<code>curr_tank</code>) drops below 0</strong> at station <code>i</code>, it means:
+<ul>
+<li>Any station between your last start and <code>i</code> cannot be the correct starting point.</li>
+<li>So, you must <strong>reset your start point</strong> to <code>i + 1</code>.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="step-by-step-algorithm" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="step-by-step-algorithm"><span class="header-section-number">4.2</span> Step-by-Step Algorithm</h2>
+<ol type="1">
+<li>Initialize:
+<ul>
+<li><code>total_tank = 0</code></li>
+<li><code>curr_tank = 0</code></li>
+<li><code>start_index = 0</code></li>
+</ul></li>
+<li>Loop through each station <code>i</code>:
+<ul>
+<li>Compute <code>gain = gas[i] - cost[i]</code></li>
+<li>Update tanks:
+<ul>
+<li><code>total_tank += gain</code></li>
+<li><code>curr_tank += gain</code></li>
+</ul></li>
+<li>If <code>curr_tank &lt; 0</code>, reset:
+<ul>
+<li><code>start_index = i + 1</code></li>
+<li><code>curr_tank = 0</code></li>
+</ul></li>
+</ul></li>
+<li>After the loop:
+<ul>
+<li>If <code>total_tank &gt;= 0</code>, return <code>start_index</code></li>
+<li>Else, return <code>-1</code></li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="why-it-works" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="why-it-works"><span class="header-section-number">4.3</span> Why It Works</h2>
+<ul>
+<li>If the <strong>total fuel</strong> is not enough to cover the total cost, no path is possible — simple elimination.</li>
+<li>The greedy reset ensures we skip all impossible start points in a single pass.</li>
+<li>Only <strong>1 loop</strong>, so time complexity is <strong>O(n)</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="code-implementation" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="code-implementation"><span class="header-section-number">4.4</span> Code Implementation</h2>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> can_complete_circuit(gas, cost):</span>
+<span id="cb3-2">    total_tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-3">    curr_tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-4">    start_index <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-5"></span>
+<span id="cb3-6">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(gas)):</span>
+<span id="cb3-7">        gain <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> gas[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> cost[i]</span>
+<span id="cb3-8">        total_tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> gain</span>
+<span id="cb3-9">        curr_tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> gain</span>
+<span id="cb3-10"></span>
+<span id="cb3-11">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> curr_tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-12">            start_index <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-13">            curr_tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb3-14"></span>
+<span id="cb3-15">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> start_index <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> total_tank <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span></code></pre></div>
+<p>In the next section, we’ll visualize this approach step-by-step using a sample input and animation-style diagrams.</p>
+</section>
+</section>
+<section id="visual-intuition-with-step-by-step-example" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Visual Intuition with Step-by-Step Example</h1>
+<p>Let’s walk through a <strong>real example</strong> to internalize how the greedy solution works.</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/GasStationGreedyScene.mp4"></video></div>
+</section>
+<section id="interviewer-insight" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Interviewer Insight</h1>
+<p>This is how we impress in an interview:</p>
+<ul>
+<li>Start with brute force: “Try all start stations.”</li>
+<li>Then: “This is O(n²), we need better.”</li>
+<li>Key Insight: “We only care about total fuel and where the tank drops below zero.”</li>
+<li>Greedy Rule: “If the tank is ever negative, none of the stations before that can be the start.”</li>
+</ul>
+</section>
+<section id="greedy-problem-solving-framework" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Greedy Problem Solving Framework</h1>
+<p>Greedy algorithms solve problems by <strong>making locally optimal choices</strong> at each step in the hope that they lead to a <strong>globally optimal solution</strong>. However, <strong>not all problems can be solved greedily</strong>. Here’s a reliable framework to decide <strong>when and how to apply</strong> a greedy strategy.</p>
+<hr>
+<section id="problem-understanding" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="problem-understanding"><span class="header-section-number">7.1</span> Problem Understanding</h2>
+<ul>
+<li><strong>Goal</strong>: What is being optimized? (e.g., minimize cost, maximize profit)</li>
+<li><strong>Constraints</strong>: Do choices need to be irreversible or done in order?</li>
+<li><strong>Input Size</strong>: Is brute-force even feasible?</li>
+</ul>
+<hr>
+</section>
+<section id="brute-force-first" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="brute-force-first"><span class="header-section-number">7.2</span> Brute Force First</h2>
+<ul>
+<li>Try all possible paths/choices.</li>
+<li>Ask: Why is this inefficient?</li>
+<li>This helps reveal <em>structure</em> in the problem (e.g., repeated states, redundant decisions).</li>
+</ul>
+<hr>
+</section>
+<section id="identify-the-greedy-choice" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="identify-the-greedy-choice"><span class="header-section-number">7.3</span> Identify the “Greedy Choice”</h2>
+<p>Ask: - What is the <em>best local decision</em> I can make at each step? - Can I prove that making this choice will <em>never hurt future decisions</em>?</p>
+<p>Common greedy choices: - <strong>Max gain</strong> per step - <strong>Min cost</strong> to reach the next step - <strong>Earliest deadline</strong>, <strong>highest value per weight</strong>, etc.</p>
+<hr>
+</section>
+<section id="validate-greedy-is-safe" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="validate-greedy-is-safe"><span class="header-section-number">7.4</span> Validate Greedy is Safe</h2>
+<p>Test your greedy choice with: - <strong>Counterexamples</strong>: Try inputs where greedy may fail. - <strong>Proof</strong>: Can you prove “greedy choice” leads to an optimal solution?</p>
+<p>Techniques: - <strong>Exchange Argument</strong> - <strong>Greedy Stays Ahead</strong></p>
+<hr>
+</section>
+<section id="implement-test" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="implement-test"><span class="header-section-number">7.5</span> Implement &amp; Test</h2>
+<ul>
+<li>Use <code>O(n)</code> or <code>O(n log n)</code> greedy logic.</li>
+<li>Track accumulative values (e.g., balance, remaining capacity).</li>
+<li>Reset conditions if necessary (like in gas station).</li>
+</ul>
+<hr>
+</section>
+<section id="common-greedy-patterns" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="common-greedy-patterns"><span class="header-section-number">7.6</span> Common Greedy Patterns</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Example Problems</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interval Scheduling</td>
+<td>Activity selection, meeting rooms</td>
+</tr>
+<tr class="even">
+<td>Resource Allocation</td>
+<td>Fractional knapsack</td>
+</tr>
+<tr class="odd">
+<td>Accumulated Constraints</td>
+<td>Gas Station, Jump Game</td>
+</tr>
+<tr class="even">
+<td>Covering Problems</td>
+<td>Set cover approximations</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="mindset-summary" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="mindset-summary"><span class="header-section-number">7.7</span> Mindset Summary</h2>
+<blockquote class="blockquote">
+<p>“Make the best local decision… but <strong>prove</strong> or <strong>observe</strong> that it’s globally optimal.”</p>
+</blockquote>
+<p>Use greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with <strong>monotonic constraints</strong></p>
+<hr>
+<p><strong>Example</strong>: In the gas station problem<br>
+- Greedy resets starting index when <code>curr_tank &lt; 0</code><br>
+- If <code>total_tank &gt;= 0</code>, a valid start must exist<br>
+- Greedy eliminates bad candidates efficiently</p>
+<hr>
+<p>Final Note:<br>
+Not all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-gas-station/</guid>
+  <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Prime Digit Replacements</title>
   <dc:creator>Kim Hung Bui</dc:creator>
@@ -1831,7 +2377,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="508ed57d" class="cell" data-execution_count="1">
+<div id="f09523ed" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;

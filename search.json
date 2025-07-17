@@ -259,11 +259,207 @@
     "text": "Final Remarks\n\nTime complexity: O(n), since each element is processed exactly once with O(1) work per element.\nSpace complexity: O(1) extra space if you only keep two scalars (current_max, global_max). (If you store the entire dp[] array, it’s O(n), but you don’t need to; you only ever use the “previous” value.)\n\nKadane’s algorithm is essentially a specialized form of dynamic programming that keeps track of a “running best suffix sum” and resets whenever that suffix sum would be negative. Once you grasp that the maximum-sum subarray ending at i is either “continue from i−1” or “start anew at i,” the rest follows naturally."
   },
   {
-    "objectID": "programming/program-parity-invariance/parity-invariance.html",
-    "href": "programming/program-parity-invariance/parity-invariance.html",
-    "title": "Parity invariance",
+    "objectID": "programming/disjoint-set-union/index.html",
+    "href": "programming/disjoint-set-union/index.html",
+    "title": "Disjoint Set Union",
     "section": "",
-    "text": "Parity invariance means that the number of times a position is flipped determines its final value. If a position is flipped an odd number of times, its value changes, but if it is flipped an even number of times, it stays the same.\nConsider the array [1, 0, 0, 1, 0, 1, 1]. We start by flipping three consecutive elements to try and transform all 0s into 1s. First, flipping the subarray [0, 0, 1] at indices 1..3 changes the array to [1, 1, 1, 0, 0, 1, 1]. Then, flipping [0, 0, 1] at indices [3..5] gives [1, 1, 1, 1, 1, 0, 1]. Finally, flipping [1, 0, 1] at indices [1, 0, 1] at indices 4..6 results in [1, 1, 1, 1, 1, 1, 0, 1, 0].\nAt this point, we see that the 0s at positions 4 and 6 remain, and there is no way to flip them without also flipping the other elements. Since we can only flip three elements at a time, we cannot isolate these 0s in a way that allow us to change them to 1s. This happens because these positions were flipped an even number of times, so they retain their original value. Because of this parity constraint, the transformation is impossible."
+    "text": "This data structure provides the following capabilities. We are given several elements, each of which is a separate set. A DSU will have an operation to combine any two sets, and it will be able to tell in which set a specific element is. The classical version also introduces a third operation, it can create a set from a new element.\nThus the basic interface of this data structure consists of only three operations: - make_set() - create a new set consisting of the new element v. - union_sets(a, b) - merges the two specified sets (the set in which the element a is located, and the set in which the element b is located). - find_set(v) - return the representative (also called leader) of the set that contains the element v. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after union_sets call). This representative can be used to check if two elements are part of the same set or not. a and b are exactly in the same set, if find_set(a) == find_set(b). Otherwise they are in different sets.\nAs described on more detail later, the data structure allows us to do each of these operations in almost \\(O(1)\\) time on average.\nAlso in one of the subsections an alternative structure of a DSU is explained, which achieves a slower average complexity of \\(O(\\log n)\\), but can be more powerful than the regular DSU structure."
+  },
+  {
+    "objectID": "programming/disjoint-set-union/index.html#naive-implementation",
+    "href": "programming/disjoint-set-union/index.html#naive-implementation",
+    "title": "Disjoint Set Union",
+    "section": "Naive implementation",
+    "text": "Naive implementation\nWe can already write the first implementation of the Disjoint Set Union data structure. It will be pretty inefficient at first, but later we can improve it using two optimizations, so that it will take nearly constant time for each function call.\nAs we said, all the information about the sets of elements will be kept in an array parent.\nTo create a new set (operation make_set(v)), we simply create a tree with root in the vertex x, meaning that it is its own ancestor.\nTo combine two sets (operation union_sets(a, b)), we first find the representative of the set in which a is located, and the representative of the set in which b is located. If the representatives are identical, that we have nothing to do, the sets are already merged. Otherwise, we can simply specify that one of the representatives is the parent of the other representative - thereby combining the two trees.\nFinally the implementation of the find representative function (operation find_set(v)): we simply climb the ancestors of the vertex v until we reach the root, i.e. a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively.\nvoid make_set(int v) {\n    parent[v] = v;\n}\n\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return find_set(parent[v]);\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b)\n        parent[b] = a;\n}\nHowever this implementation is inefficient. It is easy to construct an example, so that the trees degenerate into long chains. In that case each call find_set(v) can take \\(O(n)\\) time.\nThis is far away from the complexity that we want to have (nearly constant time). Therefore we will consider two optimizations that will allow to significantly accelerate the work."
+  },
+  {
+    "objectID": "programming/disjoint-set-union/index.html#path-compression-optimization",
+    "href": "programming/disjoint-set-union/index.html#path-compression-optimization",
+    "title": "Disjoint Set Union",
+    "section": "Path compression optimization",
+    "text": "Path compression optimization\nThis optimization is designed for speeding up find_set.\nIf we call find_set() for some vertex x, we actually find the representative p for all vertices that we visit on the path between v and the actually representative p. The trick is to make the paths for all those nodes shorter, by setting the parent of each visited vertex directly to p.\nWe can see the operation in the following image. On the left there is a tree, and on the right side there is the compressed tree after calling find_set(7), which shortens the paths for the visited node 7, 5, 3 and 2.\n![[DSU_path_compression.png]]\nThe new implementation of find_set is as follows:\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return parent[v] = find_set(parent[v]);\n}\nThe simple implementation does what was intended: first find the representative of the set (root vertex), and then in the process of stack unwinding the visited nodes are attached directly to the representative.\nThis simple modification of the operation already achieves the time complexity \\(O(\\log n)\\) per call on average (here without proof). There is a second modification, that will make it even faster."
+  },
+  {
+    "objectID": "programming/disjoint-set-union/index.html#union-by-size-rank",
+    "href": "programming/disjoint-set-union/index.html#union-by-size-rank",
+    "title": "Disjoint Set Union",
+    "section": "Union by size / rank",
+    "text": "Union by size / rank\nIn this optimization we will change the union_set operation. To be precise, we will change which tree gets attached to the other one. In the naive implementation the second tree always got attached to the first one. In practice that can lead to trees containing chains of length \\(O(n)\\). With this optimization we will avoid this by choosing very carefully which tree gets attached.\nThere are many possible heuristic that can be used. Most popular are the following two approaches: In the first approach we use the size of the trees as rank, and in the second one we use the depth of the tree (more precisely, the upper bound on the tree depth, because the depth will get smaller when applying path compression).\nIn both approaches the essence of the optimization is the same: we attach the tree with the lower rank to the one with the bigger rank.\nHere is the implementation of union by size:\nvoid make_set(int v) {\n    parent[v] = v;\n    size[v] = 1;\n}\n\nvoid union_sets(int a, int b){\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (size[a] &lt; size[b])\n            swap(a, b);\n        parent[b] = a;\n        size[a] += size[b];\n    }\n}\nand here is the implementation of union by rank based on the depth of the trees:\nvoid make_set(int v) {\n    parent[v] = v;\n    rank[v] = 0;\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (rank[a] &lt; rank[b])\n            swap(a, b);\n        parent[b] = a;\n        if (rank[a] == rank[b])\n            rank[a]++;\n    }\n}\nBoth optimizations are equivalent in terms of time and space complexity. So in practice we can use any of them."
+  },
+  {
+    "objectID": "programming/disjoint-set-union/index.html#time-complexity",
+    "href": "programming/disjoint-set-union/index.html#time-complexity",
+    "title": "Disjoint Set Union",
+    "section": "Time complexity",
+    "text": "Time complexity\nAs mentioned before, if we combine both optimizations - path compression with union by size / rank - we will reach nearly constant time queries. It turns out, that the final amortized complexity is \\(O(\\alpha(n))\\), where \\(\\alpha (n)\\) is the inverse Ackermann function, which grows very slowly. In fact it grows so lowly, that it doesn’t exceed 4 for all reasonable \\(n\\) (approximately \\(n&lt;10^{600}\\)).\nAmortized complexity is the total time per operation, evaluated over a sequence of multiple operations. The idea is to guarantee the total time of the entire sequence, while allowing single operations to be much slower than the amortized time. E.g. in our case a single call might take \\(O(\\log n)\\) in the worst case, but if we do \\(m\\) such calls back to back we will end up with an average time of \\(O(\\alpha (n))\\).\nWe will also not present a proof for this time complexity, since it is quite long and complicated.\nAlso, it’s worth mentioning that DSU with union by size / rank, but without path compression works in \\(O(\\log n)\\) time per query."
+  },
+  {
+    "objectID": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
+    "href": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
+    "title": "Disjoint Set Union",
+    "section": "Linking by index / coin-flip linking",
+    "text": "Linking by index / coin-flip linking\nBoth union by rank and union by size require that we store additional data for each set, and maintain these values during each union operation. There exist also a randomized algorithm, that simplifies the union operation a little bit: linking by index.\nWe assign each set a random value called the index, and we attach the set with the smaller index to the one with the larger one. It is likely that a bigger set will have a bigger than the smaller set, therefore this operation is closely related to union by size. In fact it can be proven, that this operation has the same time complexity as union by size. However in practice it is slightly slower than union by size."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html",
+    "href": "programming/project-euler-prime-digit-replacements/index.html",
+    "title": "Prime Digit Replacements",
+    "section": "",
+    "text": "By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.\nBy replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.\nFind the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#problem-recap",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#problem-recap",
+    "title": "Prime Digit Replacements",
+    "section": "3.1 Problem Recap",
+    "text": "3.1 Problem Recap\nWe want to find the smallest prime number that, by replacing part of its digits (not necessarily adjacent) with the same digit, produces at least eight primes among the 10 generated numbers."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#naive-strategy",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#naive-strategy",
+    "title": "Prime Digit Replacements",
+    "section": "3.2 Naive Strategy",
+    "text": "3.2 Naive Strategy\nThe problems explicitly mentions:\n“the 5-digits number 56003 is the first example having seven primes…”\nThis tell us:\n\nSmaller numbers (1- to 4-digit) do not produce a 7-prime family\nSo the search for 8-prime families must begin at least from 5-digit numbers\n\n\nLoop through numbers starting from 10,000 (since 5-digit numbers are known to be involved).\nFor each number:\n\n\nGenerate all combinations of digit positions to replace (1 or more digits).\nFor each combination:\n\nReplace those positions with digits 0 → 9, one at a time.\nCount how many of the resulting 10 numbers are prime.\n\nIf ≥ 8 are prime → we’ve found our answer."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#pseudo-code",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#pseudo-code",
+    "title": "Prime Digit Replacements",
+    "section": "3.3 Pseudo code",
+    "text": "3.3 Pseudo code\nfor number in range(10000, 1000000):\n    if not is_prime(number):\n        continue\n\n    digits = str(number)\n    for mask in all possible combinations of positions:\n        family = []\n        for replacement_digit in '0123456789':\n            candidate_digits = digits with mask replaced by replacement_digit\n            if candidate starts with '0':\n                continue\n            if is_prime(candidate):\n                family.append(candidate)\n        if len(family) &gt;= 8:\n            return number"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#characteristics-of-naive-approach",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#characteristics-of-naive-approach",
+    "title": "Prime Digit Replacements",
+    "section": "3.4 Characteristics of Naive Approach",
+    "text": "3.4 Characteristics of Naive Approach\n\n\n\n\n\n\n\nProperty\nComment\n\n\n\n\nBrute-force\nTries every combination of positions and digits\n\n\nInefficient\nLoops over all numbers (not just primes)\n\n\nNo digit filtering\nMay replace digits that occur only once\n\n\nReplaces non-equal digits\nIgnores structure of the problem\n\n\nSlow\nExplores huge space with many invalid candidates"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#complexity-rough-estimate",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#complexity-rough-estimate",
+    "title": "Prime Digit Replacements",
+    "section": "3.5 Complexity (Rough Estimate)",
+    "text": "3.5 Complexity (Rough Estimate)\nLet n be the number of digits (5-6 digits):\n\nCombinations of digit positions: \\(2^n-1\\)\nReplacements: 10 per pattern\nPrime checks: up to \\(10 \\times (2^n - 1)\\) per number\n\nOverall complexity\n\\[\nO(N\\cdot2^n\\cdot10\\cdot\\text{is\\_prime})\n\\]\nwhere N is the range of numbers tested (\\(10^6\\))"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#problem-with-naive",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#problem-with-naive",
+    "title": "Prime Digit Replacements",
+    "section": "3.6 Problem with Naive",
+    "text": "3.6 Problem with Naive\n\nWastes time replacing digits that occur only once\nReplaces different digits at once (which isn’t allowed per the problem)\nReplaces digits even when they don’t repeat\nExplores non-primes too"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#motivation",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#motivation",
+    "title": "Prime Digit Replacements",
+    "section": "4.1 Motivation",
+    "text": "4.1 Motivation\nThe naive approach checks all numbers and all possible digit replacements. But this is very slow.\nA more efficient method is to:\n\nCheck only primes\nReplace only repeated digits\nEnsure no replacements create invalid numbers (like leading zero)\nStop early when we find the first family with 8 primes\n\nThis gives us a structured brute-force solution."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#key-insights-over-naive-approach",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#key-insights-over-naive-approach",
+    "title": "Prime Digit Replacements",
+    "section": "4.2 Key Insights Over Naive Approach",
+    "text": "4.2 Key Insights Over Naive Approach\n\n\n\n\n\n\n\nImprovement\nWhy It Helps\n\n\n\n\nOnly check primes\nNon-primes can’t be part of the answer\n\n\nOnly replace repeated digits\nYou must replace the same digit (e.g. all 1s or all 3s)\n\n\nReplace some (not all) of the repeated digits\nFull replacement may cause invalid numbers (e.g. leading zero)\n\n\nAvoid replacement that starts with 0\nCannot have leading zero in base-10 integers"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#algorithm",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#algorithm",
+    "title": "Prime Digit Replacements",
+    "section": "4.3 Algorithm",
+    "text": "4.3 Algorithm\n\n4.3.1 Step 1: Generate All Primes Up to a Limit\nUse a sieve to get all primes up to a reasonable upper bound (e.g., 1 million).\n\n\n4.3.2 Step 2: For each Prime\n\nConvert to String\nFor each digit d (from '0' to '9'):\n\n\nGet positions where d appears more than once\nGenerate all non-empty subsets of those positions\nReplace those positions with every digit 0–9\nFor each subset:\n\nReplace those digits with value 0-9\nSkip if the number starts with '0'\nCount how many of the resulting numbers are prime\nIf 8 or more primes found, return the original prime"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#complexity",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#complexity",
+    "title": "Prime Digit Replacements",
+    "section": "4.4 Complexity",
+    "text": "4.4 Complexity\nLet:\n\n\\(P\\): number of primes (~ \\(10^5\\))\n\\(D\\): number of distinct digits (10)\n\\(S\\): number of non-empty subsets per digit (usually \\(\\leq 16\\))\n\\(R\\): replacements per subset (10 digits)\n\nThen:\n\\[\nO(P\\cdot D \\cdot S \\cdot R)\n\\]"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#summary",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#summary",
+    "title": "Prime Digit Replacements",
+    "section": "4.5 Summary",
+    "text": "4.5 Summary\n\n\n\nFeature\nValue\n\n\n\n\nImproves over naive\nYes (skips non-primes, invalid cases)\n\n\nFast enough in practice\nYes\n\n\nUnderstandable\nYes\n\n\nPrepares for deeper ideas\nYes"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#goal",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#goal",
+    "title": "Prime Digit Replacements",
+    "section": "5.1 Goal",
+    "text": "5.1 Goal\nFind the smallest prime p such that replacing a subset of its digits (not necessarily adjacent) with the same digit d, yields a family of 8+ prime numbers out of the 10 possible values.\nWe aim to go beyond brute-force by modeling the structure of this problem as a constrained optimization over symbolic patterns."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-1-abstract-the-problem-as-a-search-over-equivalence-classes",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#step-1-abstract-the-problem-as-a-search-over-equivalence-classes",
+    "title": "Prime Digit Replacements",
+    "section": "5.2 Step 1: Abstract the Problem as a Search over Equivalence Classes",
+    "text": "5.2 Step 1: Abstract the Problem as a Search over Equivalence Classes\nWe define:\n\nA prime template: a pattern like '56**3' where * is a wildcard\nA family function: \\[\nF(t) = \\{ \\text{fill in } * \\text{ in } t \\text{ with digits } 0..9 \\}\n\\]\n\nWe want:\n\n\\(|F(t) \\cap \\text{PRIMES}| \\geq 8\\)\nand to find the template t with smallest base value min(F(t)) meeting the above"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-2-symbolic-representation-of-digit-replacements",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#step-2-symbolic-representation-of-digit-replacements",
+    "title": "Prime Digit Replacements",
+    "section": "5.3 Step 2: Symbolic Representation of Digit Replacements",
+    "text": "5.3 Step 2: Symbolic Representation of Digit Replacements\nLet each prime p be treated as a string s, and let S ⊂ \\text{positions}(s).\nWe define a mask vector m:\n\nm[i] = 1 if index i is to be replaced\nm[i] = 0 otherwise\n\nNow define a pattern class: \\[\nT_{p,m} = \\{ \\text{replace } s[i] \\text{ where } m[i]=1 \\text{ with } d \\in 0..9 \\}\n\\]\nSo the family is generated by iterating over all d ∈ [0,9]."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-3-model-the-problem-as-an-optimization",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#step-3-model-the-problem-as-an-optimization",
+    "title": "Prime Digit Replacements",
+    "section": "5.4 Step 3: Model the Problem as an Optimization",
+    "text": "5.4 Step 3: Model the Problem as an Optimization\n\nVariables:\n\nPrime p\nDigit mask m\n\n\n\nConstraints:\n\nPositions masked must contain the same digit\nLeading digit after replacement ≠ 0\nAt least 8 of the 10 generated numbers are prime\n\n\n\nObjective:\n\nMinimize p such that: \\[\n\\left| F(p, m) \\cap \\text{PRIMES} \\right| \\geq 8\n\\]"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-4-optimizations-based-on-number-theory",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#step-4-optimizations-based-on-number-theory",
+    "title": "Prime Digit Replacements",
+    "section": "5.5 Step 4: Optimizations Based on Number Theory",
+    "text": "5.5 Step 4: Optimizations Based on Number Theory\n\n1. Digit Frequency Filtering\n\nOnly consider digits that repeat at least twice in the prime\nAvoid replacing rare digits\n\n\n\n2. Modulo Pruning\n\nSkip candidates that will generate multiples of 2 or 5 in replacement\n\n\n\n3. Avoid Unnecessary Masks\n\nSkip full replacements\nSkip replacements that break positional value (e.g., fixed ending 1, 3, 7, 9 often more promising)"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-5-search-as-constrained-enumeration",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#step-5-search-as-constrained-enumeration",
+    "title": "Prime Digit Replacements",
+    "section": "5.6 Step 5: Search as Constrained Enumeration",
+    "text": "5.6 Step 5: Search as Constrained Enumeration\nWe now enumerate over primes:\n\nFor each prime, extract repeated digit positions\nFor each digit d, generate all valid mask subsets where digit d occurs\nBuild replacement families\nUse fast primality tests, and stop early if a mask yields ≥ 8 primes\n\nThis avoids full combinatorial enumeration, and uses structure + constraint filtering to reduce search space."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#theoretical-complexity",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#theoretical-complexity",
+    "title": "Prime Digit Replacements",
+    "section": "5.7 Theoretical Complexity",
+    "text": "5.7 Theoretical Complexity\nCompared to brute force:\n\n\n\n\n\n\n\nStep\nComplexity\n\n\n\n\nPrime generation\n\\(O(n \\log \\log n)\\)\n\n\nMask enumeration\nReduced from \\(2^k\\) to only valid repeated-digit subsets\n\n\nReplacement testing\n\\(10 \\times k\\) per valid mask\n\n\nPrimality test\n\\(O(\\sqrt{n})\\) or Miller–Rabin in \\(O(\\log^3 n)\\)\n\n\n\n→ Net result: Much faster and scalable, with full mathematical transparency."
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#phd-level-interpretation",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#phd-level-interpretation",
+    "title": "Prime Digit Replacements",
+    "section": "5.8 PhD-Level Interpretation",
+    "text": "5.8 PhD-Level Interpretation\nThis transforms the problem into:\n\nA symbolic family detection problem over the space of integers, using digit-based constraints and algebraic structure.\n\nPossible future work includes: - Pattern mining via SAT/SMT solvers - Probabilistic modeling of family distributions - Generalizing to k-prime families"
+  },
+  {
+    "objectID": "programming/project-euler-prime-digit-replacements/index.html#summary-1",
+    "href": "programming/project-euler-prime-digit-replacements/index.html#summary-1",
+    "title": "Prime Digit Replacements",
+    "section": "5.9 Summary",
+    "text": "5.9 Summary\n\n\n\nFeature\nPhD Model\n\n\n\n\nAbstraction\nSymbolic patterns over digits\n\n\nConstraints\nDigit repetition, prime count, no leading 0\n\n\nObjective\nMinimize base prime p\n\n\nTools\nDigit masks, primality testing, search space pruning\n\n\nOutcome\nStructured, fast, extensible method\n\n\n\n\nThis approach not only solves the problem but provides a reusable framework for other “digit-replacement” or “prime-pattern” problems in computational number theory."
+  },
+  {
+    "objectID": "programming/leetcode-count-good-triplets/index.html",
+    "href": "programming/leetcode-count-good-triplets/index.html",
+    "title": "Count good triplets",
+    "section": "",
+    "text": "Given an array of integers arr, and three integers a, b and c. You need to find the number of good triplets.\nA triplet (arr[i], arr[j], arr[k]) is good if the following conditions are true:\n\n0 &lt;= i &lt; j &lt; k &lt; arr.length\n|arr[i] - arr[j]| &lt;= a\n|arr[j] - arr[k]| &lt;= b\n|arr[i] - arr[k]| &lt;= c\n\nWhere |x| denotes the absolute value of x.\nReturn the number of good triplets.\nExample 1:\nInput: arr = [3,0,1,1,9,7], a = 7, b = 2, c = 3 Output: 4 Explanation: There are 4 good triplets: [(3,0,1), (3,0,1), (3,1,1), (0,1,1)].\nExample 2:\nInput: arr = [1,1,2,2,3], a = 0, b = 0, c = 1 Output: 0 Explanation: No triplet satisfies all conditions.\nConstraints:\n\n3 &lt;= arr.length &lt;= 100\n0 &lt;= arr[i] &lt;= 1000\n0 &lt;= a, b, c &lt;= 1000"
+  },
+  {
+    "objectID": "programming/leetcode-count-good-triplets/index.html#approach-2-optimized-enumeration",
+    "href": "programming/leetcode-count-good-triplets/index.html#approach-2-optimized-enumeration",
+    "title": "Count good triplets",
+    "section": "Approach 2: Optimized enumeration",
+    "text": "Approach 2: Optimized enumeration\nWe need to eliminate one loop or make one of them constant-time.\nWe could try fixing (j,k) and then counting valid i &lt; j. That \\(O(n^2)\\) pairs, and if we can count the \\(i\\)s in \\(O(1)\\) each, we down to \\(O(n^2)\\) total.\n\nTranslate the \\(i\\)-constraints into an interval\nFor a given \\((j,k)\\), the condition on \\(i\\) are \\[|arr[i] - arr[j]| \\leq a\\] so, \\[arr[i] \\in [arr[j]-a, arr[j]+a]\\]\nand \\[|arr[i]-arr[k]|\\leq c\\] so, \\[arr[i]\\in[arr[k]-c, arr[k]+c]\\]\nTheir intersection is a single interval \\([l, r]\\). So we just need to count how many prior \\(i&lt;j\\) have \\(arr[i] \\in [l, r]\\).\n\n\nChoose a data structure for last range-count\nSince arr[i] is small-range, maintain a frequency array freq[0..M] for all seen indices \\(&lt;j\\), and its prefix sums sum[v] =\\(\\Sigma_{u=0}^v freq[u]\\)\nThen the count in \\([l, r]\\) is simply sum[r]-sum[l-1] in \\(O(1)\\).\n\n\nEnsure the \\(i&lt;j\\) ordering\nWe iterate \\(j\\) from 1 to \\(n\\). Before handling any \\((j, k)\\) pairs, our freq/sum reflects exact indices 1 through \\(j-1\\).\nFor each \\(k&gt;j\\), check \\(|arr[j] - arr[k]|\\leq b\\). If it passes, compute \\([l, r]\\) and do the \\(O(1)\\) range-sum query.\nAfter finishing all \\(k\\) for this \\(j\\), we insert \\(arr[j]\\) into freq (and update sum), before moving onto \\(j + 1\\).\nclass Solution:\n    def countGoodTriplets(self, arr: List[int], a: int, b: int, c: int) -&gt; int:\n        # ans: total count of valid (i,j,k)\n        ans = 0\n        \n        n = len(arr)\n        # total[v] will hold the prefix-sum of frequencies:\n        #   total[v] = number of i&lt;j with arr[i] ≤ v\n        # we assume arr[i] ∈ [0..1000], so we size total to 1001\n        total = [0] * 1001\n\n        # Move j from 0 to n-1\n        for j in range(n):\n            # Pair j with every k&gt;j\n            for k in range(j + 1, n):\n                # First check the |arr[j] - arr[k]| ≤ b constraint\n                if abs(arr[j] - arr[k]) &lt;= b:\n                    # Compute the interval of allowed arr[i] from j’s constraint\n                    lj, rj = arr[j] - a, arr[j] + a\n                    # Compute the interval of allowed arr[i] from k’s constraint\n                    lk, rk = arr[k] - c, arr[k] + c\n\n                    # Intersection [l..r] of the two intervals\n                    # also clamp to [0..1000] to stay in array bounds\n                    l = max(0, lj, lk)\n                    r = min(1000, rj, rk)\n\n                    # If the intersection is non-empty, count how many\n                    # prior i&lt;j have arr[i] in [l..r] via prefix sums\n                    if l &lt;= r:\n                        if l == 0:\n                            ans += total[r]\n                        else:\n                            ans += total[r] - total[l - 1]\n\n            # After processing all k for this j, we “add” arr[j] into our\n            # prefix-sum structure so that future iterations see it.\n            # We do this by incrementing total[v] for all v ≥ arr[j].\n            # That way total[v] remains = # of arr[i] ≤ v for i&lt;next j.\n            for v in range(arr[j], 1001):\n                total[v] += 1\n\n        return ans"
   },
   {
     "objectID": "programming/leetcode-word-ladder/index.html",
@@ -410,7 +606,7 @@
     "href": "programming.html",
     "title": "Programming",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJul 16, 2025\n\n\nPrime Digit Replacements\n\n\nKim Hung Bui\n\n\n\n\nJul 16, 2025\n\n\n45. Jump Game II\n\n\nHung \n\n\n\n\nJun 2, 2025\n\n\nMaximum subarray problem and Kadane’s algorithm\n\n\nHung \n\n\n\n\nMay 30, 2025\n\n\n127. Word Ladder\n\n\nHung \n\n\n\n\nMay 30, 2025\n\n\n2359. Find Closest Node to Given Two Nodes\n\n\nHung \n\n\n\n\nMay 7, 2025\n\n\nRole of Parallel Computing\n\n\nHung \n\n\n\n\nApr 15, 2025\n\n\nCount good triplets\n\n\nHung \n\n\n\n\nApr 4, 2025\n\n\nMaximum subarray\n\n\nHung \n\n\n\n\nMar 21, 2025\n\n\nDisjoint Set Union\n\n\nKim Hung Bui\n\n\n\n\nMar 21, 2025\n\n\nMinimum Cost Walk in Weighted Graph\n\n\nKim Hung Bui\n\n\n\n\nMar 21, 2025\n\n\nDocker basics\n\n\nKim Hung Bui\n\n\n\n\nMar 20, 2025\n\n\n3191. Minimum Operations to Make Binary Array Elements Equal to One I\n\n\nHung \n\n\n\n\nMar 20, 2025\n\n\nParity invariance\n\n\nHung \n\n\n\n\nMar 18, 2025\n\n\nleetcode-Longest-Nice-Subarray\n\n\nHung \n\n\n\n\nMar 17, 2025\n\n\nHow to approach most DP problems\n\n\nKim Hung Bui\n\n\n\n\nMar 17, 2025\n\n\nHouse robber\n\n\nHung \n\n\n\n\nMar 17, 2025\n\n\nDivide Array Into Equal Pairs\n\n\nHung \n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJul 17, 2025\n\n\nGreedy Problem Solving Framework\n\n\nKim Hung Bui\n\n\n\n\nJul 17, 2025\n\n\nGas Station\n\n\nKim Hung Bui\n\n\n\n\nJul 16, 2025\n\n\nPrime Digit Replacements\n\n\nKim Hung Bui\n\n\n\n\nJul 16, 2025\n\n\n45. Jump Game II\n\n\nHung \n\n\n\n\nJun 2, 2025\n\n\nMaximum subarray problem and Kadane’s algorithm\n\n\nHung \n\n\n\n\nMay 30, 2025\n\n\n127. Word Ladder\n\n\nHung \n\n\n\n\nMay 30, 2025\n\n\n2359. Find Closest Node to Given Two Nodes\n\n\nHung \n\n\n\n\nMay 7, 2025\n\n\nRole of Parallel Computing\n\n\nHung \n\n\n\n\nApr 15, 2025\n\n\nCount good triplets\n\n\nHung \n\n\n\n\nApr 4, 2025\n\n\nMaximum subarray\n\n\nHung \n\n\n\n\nMar 21, 2025\n\n\nDisjoint Set Union\n\n\nKim Hung Bui\n\n\n\n\nMar 21, 2025\n\n\nMinimum Cost Walk in Weighted Graph\n\n\nKim Hung Bui\n\n\n\n\nMar 21, 2025\n\n\nDocker basics\n\n\nKim Hung Bui\n\n\n\n\nMar 20, 2025\n\n\n3191. Minimum Operations to Make Binary Array Elements Equal to One I\n\n\nHung \n\n\n\n\nMar 20, 2025\n\n\nParity invariance\n\n\nHung \n\n\n\n\nMar 18, 2025\n\n\nleetcode-Longest-Nice-Subarray\n\n\nHung \n\n\n\n\nMar 17, 2025\n\n\nHow to approach most DP problems\n\n\nKim Hung Bui\n\n\n\n\nMar 17, 2025\n\n\nHouse robber\n\n\nHung \n\n\n\n\nMar 17, 2025\n\n\nDivide Array Into Equal Pairs\n\n\nHung \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "let things slide.html",
@@ -1925,207 +2121,165 @@
     "text": "You are given a\nnums.\nYou can do the following operation on the array any number of times (possibly zero):\nChoose any 3 consecutive elements from the array and flip all of them.\nFlipping an element means changing its value from 0 to 1, and from 1 to 0.\nReturn the minimum number of operations required to make all elements in nums equal to 1. If it is impossible, return -1.\nExample 1:\nInput: nums = [0,1,1,1,0,0]\nOutput: 3\nExplanation: We can do the following operations:\nChoose the elements at indices 0, 1 and 2. The resulting array is nums = [1,0,0,1,0,0].\nChoose the elements at indices 1, 2 and 3. The resulting array is nums = [1,1,1,0,0,0].\nChoose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,1,1,1].\nExample 2:\nInput: nums = [0,1,1,1]\nOutput: -1\nExplanation: It is impossible to make all elements equal to 1.\nConstraints:\n3 &lt;= nums.length &lt;= 105\n0 &lt;= nums[i] &lt;= 1\n\nAnalysis\nSince we can only flip three consecutive elements at a time, isolated 0s or certain patterns of 0s may prevent us from turning everything into 1. If the number of 0s in certain positions makes it impossible to fully eliminate them using groups of three, the transformation cannot be achieved."
   },
   {
-    "objectID": "programming/leetcode-count-good-triplets/index.html",
-    "href": "programming/leetcode-count-good-triplets/index.html",
-    "title": "Count good triplets",
+    "objectID": "programming/greedy/index.html",
+    "href": "programming/greedy/index.html",
+    "title": "Greedy Problem Solving Framework",
     "section": "",
-    "text": "Given an array of integers arr, and three integers a, b and c. You need to find the number of good triplets.\nA triplet (arr[i], arr[j], arr[k]) is good if the following conditions are true:\n\n0 &lt;= i &lt; j &lt; k &lt; arr.length\n|arr[i] - arr[j]| &lt;= a\n|arr[j] - arr[k]| &lt;= b\n|arr[i] - arr[k]| &lt;= c\n\nWhere |x| denotes the absolute value of x.\nReturn the number of good triplets.\nExample 1:\nInput: arr = [3,0,1,1,9,7], a = 7, b = 2, c = 3 Output: 4 Explanation: There are 4 good triplets: [(3,0,1), (3,0,1), (3,1,1), (0,1,1)].\nExample 2:\nInput: arr = [1,1,2,2,3], a = 0, b = 0, c = 1 Output: 0 Explanation: No triplet satisfies all conditions.\nConstraints:\n\n3 &lt;= arr.length &lt;= 100\n0 &lt;= arr[i] &lt;= 1000\n0 &lt;= a, b, c &lt;= 1000"
+    "text": "Greedy algorithms solve problems by making locally optimal choices at each step in the hope that they lead to a globally optimal solution. However, not all problems can be solved greedily. Here’s a reliable framework to decide when and how to apply a greedy strategy.\n\n\n\n\nGoal: What is being optimized? (e.g., minimize cost, maximize profit)\nConstraints: Do choices need to be irreversible or done in order?\nInput Size: Is brute-force even feasible?\n\n\n\n\n\n\nTry all possible paths/choices.\nAsk: Why is this inefficient?\nThis helps reveal structure in the problem (e.g., repeated states, redundant decisions).\n\n\n\n\n\nAsk: - What is the best local decision I can make at each step? - Can I prove that making this choice will never hurt future decisions?\nCommon greedy choices: - Max gain per step - Min cost to reach the next step - Earliest deadline, highest value per weight, etc.\n\n\n\n\nTest your greedy choice with: - Counterexamples: Try inputs where greedy may fail. - Proof: Can you prove “greedy choice” leads to an optimal solution?\nTechniques: - Exchange Argument - Greedy Stays Ahead\n\n\n\n\n\nUse O(n) or O(n log n) greedy logic.\nTrack accumulative values (e.g., balance, remaining capacity).\nReset conditions if necessary (like in gas station).\n\n\n\n\n\n\n\n\n\n\n\n\nPattern\nExample Problems\n\n\n\n\nInterval Scheduling\nActivity selection, meeting rooms\n\n\nResource Allocation\nFractional knapsack\n\n\nAccumulated Constraints\nGas Station, Jump Game\n\n\nCovering Problems\nSet cover approximations\n\n\n\n\n\n\n\n\n“Make the best local decision… but prove or observe that it’s globally optimal.”\n\nUse greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with monotonic constraints\n\nExample: In the gas station problem\n- Greedy resets starting index when curr_tank &lt; 0\n- If total_tank &gt;= 0, a valid start must exist\n- Greedy eliminates bad candidates efficiently\n\nFinal Note:\nNot all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning"
   },
   {
-    "objectID": "programming/leetcode-count-good-triplets/index.html#approach-2-optimized-enumeration",
-    "href": "programming/leetcode-count-good-triplets/index.html#approach-2-optimized-enumeration",
-    "title": "Count good triplets",
-    "section": "Approach 2: Optimized enumeration",
-    "text": "Approach 2: Optimized enumeration\nWe need to eliminate one loop or make one of them constant-time.\nWe could try fixing (j,k) and then counting valid i &lt; j. That \\(O(n^2)\\) pairs, and if we can count the \\(i\\)s in \\(O(1)\\) each, we down to \\(O(n^2)\\) total.\n\nTranslate the \\(i\\)-constraints into an interval\nFor a given \\((j,k)\\), the condition on \\(i\\) are \\[|arr[i] - arr[j]| \\leq a\\] so, \\[arr[i] \\in [arr[j]-a, arr[j]+a]\\]\nand \\[|arr[i]-arr[k]|\\leq c\\] so, \\[arr[i]\\in[arr[k]-c, arr[k]+c]\\]\nTheir intersection is a single interval \\([l, r]\\). So we just need to count how many prior \\(i&lt;j\\) have \\(arr[i] \\in [l, r]\\).\n\n\nChoose a data structure for last range-count\nSince arr[i] is small-range, maintain a frequency array freq[0..M] for all seen indices \\(&lt;j\\), and its prefix sums sum[v] =\\(\\Sigma_{u=0}^v freq[u]\\)\nThen the count in \\([l, r]\\) is simply sum[r]-sum[l-1] in \\(O(1)\\).\n\n\nEnsure the \\(i&lt;j\\) ordering\nWe iterate \\(j\\) from 1 to \\(n\\). Before handling any \\((j, k)\\) pairs, our freq/sum reflects exact indices 1 through \\(j-1\\).\nFor each \\(k&gt;j\\), check \\(|arr[j] - arr[k]|\\leq b\\). If it passes, compute \\([l, r]\\) and do the \\(O(1)\\) range-sum query.\nAfter finishing all \\(k\\) for this \\(j\\), we insert \\(arr[j]\\) into freq (and update sum), before moving onto \\(j + 1\\).\nclass Solution:\n    def countGoodTriplets(self, arr: List[int], a: int, b: int, c: int) -&gt; int:\n        # ans: total count of valid (i,j,k)\n        ans = 0\n        \n        n = len(arr)\n        # total[v] will hold the prefix-sum of frequencies:\n        #   total[v] = number of i&lt;j with arr[i] ≤ v\n        # we assume arr[i] ∈ [0..1000], so we size total to 1001\n        total = [0] * 1001\n\n        # Move j from 0 to n-1\n        for j in range(n):\n            # Pair j with every k&gt;j\n            for k in range(j + 1, n):\n                # First check the |arr[j] - arr[k]| ≤ b constraint\n                if abs(arr[j] - arr[k]) &lt;= b:\n                    # Compute the interval of allowed arr[i] from j’s constraint\n                    lj, rj = arr[j] - a, arr[j] + a\n                    # Compute the interval of allowed arr[i] from k’s constraint\n                    lk, rk = arr[k] - c, arr[k] + c\n\n                    # Intersection [l..r] of the two intervals\n                    # also clamp to [0..1000] to stay in array bounds\n                    l = max(0, lj, lk)\n                    r = min(1000, rj, rk)\n\n                    # If the intersection is non-empty, count how many\n                    # prior i&lt;j have arr[i] in [l..r] via prefix sums\n                    if l &lt;= r:\n                        if l == 0:\n                            ans += total[r]\n                        else:\n                            ans += total[r] - total[l - 1]\n\n            # After processing all k for this j, we “add” arr[j] into our\n            # prefix-sum structure so that future iterations see it.\n            # We do this by incrementing total[v] for all v ≥ arr[j].\n            # That way total[v] remains = # of arr[i] ≤ v for i&lt;next j.\n            for v in range(arr[j], 1001):\n                total[v] += 1\n\n        return ans"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html",
-    "href": "programming/project-euler-prime-digit-replacements/index.html",
-    "title": "Prime Digit Replacements",
+    "objectID": "programming/greedy/index.html#problem-understanding",
+    "href": "programming/greedy/index.html#problem-understanding",
+    "title": "Greedy Problem Solving Framework",
     "section": "",
-    "text": "By replacing the 1st digit of the 2-digit number *3, it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.\nBy replacing the 3rd and 4th digits of 56**3 with the same digit, this 5-digit number is the first example having seven primes among the ten generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. Consequently 56003, being the first member of this family, is the smallest prime with this property.\nFind the smallest prime which, by replacing part of the number (not necessarily adjacent digits) with the same digit, is part of an eight prime value family."
+    "text": "Goal: What is being optimized? (e.g., minimize cost, maximize profit)\nConstraints: Do choices need to be irreversible or done in order?\nInput Size: Is brute-force even feasible?"
   },
   {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#problem-recap",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#problem-recap",
-    "title": "Prime Digit Replacements",
-    "section": "3.1 Problem Recap",
-    "text": "3.1 Problem Recap\nWe want to find the smallest prime number that, by replacing part of its digits (not necessarily adjacent) with the same digit, produces at least eight primes among the 10 generated numbers."
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#naive-strategy",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#naive-strategy",
-    "title": "Prime Digit Replacements",
-    "section": "3.2 Naive Strategy",
-    "text": "3.2 Naive Strategy\nThe problems explicitly mentions:\n“the 5-digits number 56003 is the first example having seven primes…”\nThis tell us:\n\nSmaller numbers (1- to 4-digit) do not produce a 7-prime family\nSo the search for 8-prime families must begin at least from 5-digit numbers\n\n\nLoop through numbers starting from 10,000 (since 5-digit numbers are known to be involved).\nFor each number:\n\n\nGenerate all combinations of digit positions to replace (1 or more digits).\nFor each combination:\n\nReplace those positions with digits 0 → 9, one at a time.\nCount how many of the resulting 10 numbers are prime.\n\nIf ≥ 8 are prime → we’ve found our answer."
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#pseudo-code",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#pseudo-code",
-    "title": "Prime Digit Replacements",
-    "section": "3.3 Pseudo code",
-    "text": "3.3 Pseudo code\nfor number in range(10000, 1000000):\n    if not is_prime(number):\n        continue\n\n    digits = str(number)\n    for mask in all possible combinations of positions:\n        family = []\n        for replacement_digit in '0123456789':\n            candidate_digits = digits with mask replaced by replacement_digit\n            if candidate starts with '0':\n                continue\n            if is_prime(candidate):\n                family.append(candidate)\n        if len(family) &gt;= 8:\n            return number"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#characteristics-of-naive-approach",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#characteristics-of-naive-approach",
-    "title": "Prime Digit Replacements",
-    "section": "3.4 Characteristics of Naive Approach",
-    "text": "3.4 Characteristics of Naive Approach\n\n\n\n\n\n\n\nProperty\nComment\n\n\n\n\nBrute-force\nTries every combination of positions and digits\n\n\nInefficient\nLoops over all numbers (not just primes)\n\n\nNo digit filtering\nMay replace digits that occur only once\n\n\nReplaces non-equal digits\nIgnores structure of the problem\n\n\nSlow\nExplores huge space with many invalid candidates"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#complexity-rough-estimate",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#complexity-rough-estimate",
-    "title": "Prime Digit Replacements",
-    "section": "3.5 Complexity (Rough Estimate)",
-    "text": "3.5 Complexity (Rough Estimate)\nLet n be the number of digits (5-6 digits):\n\nCombinations of digit positions: \\(2^n-1\\)\nReplacements: 10 per pattern\nPrime checks: up to \\(10 \\times (2^n - 1)\\) per number\n\nOverall complexity\n\\[\nO(N\\cdot2^n\\cdot10\\cdot\\text{is\\_prime})\n\\]\nwhere N is the range of numbers tested (\\(10^6\\))"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#problem-with-naive",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#problem-with-naive",
-    "title": "Prime Digit Replacements",
-    "section": "3.6 Problem with Naive",
-    "text": "3.6 Problem with Naive\n\nWastes time replacing digits that occur only once\nReplaces different digits at once (which isn’t allowed per the problem)\nReplaces digits even when they don’t repeat\nExplores non-primes too"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#motivation",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#motivation",
-    "title": "Prime Digit Replacements",
-    "section": "4.1 Motivation",
-    "text": "4.1 Motivation\nThe naive approach checks all numbers and all possible digit replacements. But this is very slow.\nA more efficient method is to:\n\nCheck only primes\nReplace only repeated digits\nEnsure no replacements create invalid numbers (like leading zero)\nStop early when we find the first family with 8 primes\n\nThis gives us a structured brute-force solution."
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#key-insights-over-naive-approach",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#key-insights-over-naive-approach",
-    "title": "Prime Digit Replacements",
-    "section": "4.2 Key Insights Over Naive Approach",
-    "text": "4.2 Key Insights Over Naive Approach\n\n\n\n\n\n\n\nImprovement\nWhy It Helps\n\n\n\n\nOnly check primes\nNon-primes can’t be part of the answer\n\n\nOnly replace repeated digits\nYou must replace the same digit (e.g. all 1s or all 3s)\n\n\nReplace some (not all) of the repeated digits\nFull replacement may cause invalid numbers (e.g. leading zero)\n\n\nAvoid replacement that starts with 0\nCannot have leading zero in base-10 integers"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#algorithm",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#algorithm",
-    "title": "Prime Digit Replacements",
-    "section": "4.3 Algorithm",
-    "text": "4.3 Algorithm\n\n4.3.1 Step 1: Generate All Primes Up to a Limit\nUse a sieve to get all primes up to a reasonable upper bound (e.g., 1 million).\n\n\n4.3.2 Step 2: For each Prime\n\nConvert to String\nFor each digit d (from '0' to '9'):\n\n\nGet positions where d appears more than once\nGenerate all non-empty subsets of those positions\nReplace those positions with every digit 0–9\nFor each subset:\n\nReplace those digits with value 0-9\nSkip if the number starts with '0'\nCount how many of the resulting numbers are prime\nIf 8 or more primes found, return the original prime"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#complexity",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#complexity",
-    "title": "Prime Digit Replacements",
-    "section": "4.4 Complexity",
-    "text": "4.4 Complexity\nLet:\n\n\\(P\\): number of primes (~ \\(10^5\\))\n\\(D\\): number of distinct digits (10)\n\\(S\\): number of non-empty subsets per digit (usually \\(\\leq 16\\))\n\\(R\\): replacements per subset (10 digits)\n\nThen:\n\\[\nO(P\\cdot D \\cdot S \\cdot R)\n\\]"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#summary",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#summary",
-    "title": "Prime Digit Replacements",
-    "section": "4.5 Summary",
-    "text": "4.5 Summary\n\n\n\nFeature\nValue\n\n\n\n\nImproves over naive\nYes (skips non-primes, invalid cases)\n\n\nFast enough in practice\nYes\n\n\nUnderstandable\nYes\n\n\nPrepares for deeper ideas\nYes"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#goal",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#goal",
-    "title": "Prime Digit Replacements",
-    "section": "5.1 Goal",
-    "text": "5.1 Goal\nFind the smallest prime p such that replacing a subset of its digits (not necessarily adjacent) with the same digit d, yields a family of 8+ prime numbers out of the 10 possible values.\nWe aim to go beyond brute-force by modeling the structure of this problem as a constrained optimization over symbolic patterns."
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-1-abstract-the-problem-as-a-search-over-equivalence-classes",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#step-1-abstract-the-problem-as-a-search-over-equivalence-classes",
-    "title": "Prime Digit Replacements",
-    "section": "5.2 Step 1: Abstract the Problem as a Search over Equivalence Classes",
-    "text": "5.2 Step 1: Abstract the Problem as a Search over Equivalence Classes\nWe define:\n\nA prime template: a pattern like '56**3' where * is a wildcard\nA family function: \\[\nF(t) = \\{ \\text{fill in } * \\text{ in } t \\text{ with digits } 0..9 \\}\n\\]\n\nWe want:\n\n\\(|F(t) \\cap \\text{PRIMES}| \\geq 8\\)\nand to find the template t with smallest base value min(F(t)) meeting the above"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-2-symbolic-representation-of-digit-replacements",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#step-2-symbolic-representation-of-digit-replacements",
-    "title": "Prime Digit Replacements",
-    "section": "5.3 Step 2: Symbolic Representation of Digit Replacements",
-    "text": "5.3 Step 2: Symbolic Representation of Digit Replacements\nLet each prime p be treated as a string s, and let S ⊂ \\text{positions}(s).\nWe define a mask vector m:\n\nm[i] = 1 if index i is to be replaced\nm[i] = 0 otherwise\n\nNow define a pattern class: \\[\nT_{p,m} = \\{ \\text{replace } s[i] \\text{ where } m[i]=1 \\text{ with } d \\in 0..9 \\}\n\\]\nSo the family is generated by iterating over all d ∈ [0,9]."
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-3-model-the-problem-as-an-optimization",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#step-3-model-the-problem-as-an-optimization",
-    "title": "Prime Digit Replacements",
-    "section": "5.4 Step 3: Model the Problem as an Optimization",
-    "text": "5.4 Step 3: Model the Problem as an Optimization\n\nVariables:\n\nPrime p\nDigit mask m\n\n\n\nConstraints:\n\nPositions masked must contain the same digit\nLeading digit after replacement ≠ 0\nAt least 8 of the 10 generated numbers are prime\n\n\n\nObjective:\n\nMinimize p such that: \\[\n\\left| F(p, m) \\cap \\text{PRIMES} \\right| \\geq 8\n\\]"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-4-optimizations-based-on-number-theory",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#step-4-optimizations-based-on-number-theory",
-    "title": "Prime Digit Replacements",
-    "section": "5.5 Step 4: Optimizations Based on Number Theory",
-    "text": "5.5 Step 4: Optimizations Based on Number Theory\n\n1. Digit Frequency Filtering\n\nOnly consider digits that repeat at least twice in the prime\nAvoid replacing rare digits\n\n\n\n2. Modulo Pruning\n\nSkip candidates that will generate multiples of 2 or 5 in replacement\n\n\n\n3. Avoid Unnecessary Masks\n\nSkip full replacements\nSkip replacements that break positional value (e.g., fixed ending 1, 3, 7, 9 often more promising)"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#step-5-search-as-constrained-enumeration",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#step-5-search-as-constrained-enumeration",
-    "title": "Prime Digit Replacements",
-    "section": "5.6 Step 5: Search as Constrained Enumeration",
-    "text": "5.6 Step 5: Search as Constrained Enumeration\nWe now enumerate over primes:\n\nFor each prime, extract repeated digit positions\nFor each digit d, generate all valid mask subsets where digit d occurs\nBuild replacement families\nUse fast primality tests, and stop early if a mask yields ≥ 8 primes\n\nThis avoids full combinatorial enumeration, and uses structure + constraint filtering to reduce search space."
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#theoretical-complexity",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#theoretical-complexity",
-    "title": "Prime Digit Replacements",
-    "section": "5.7 Theoretical Complexity",
-    "text": "5.7 Theoretical Complexity\nCompared to brute force:\n\n\n\n\n\n\n\nStep\nComplexity\n\n\n\n\nPrime generation\n\\(O(n \\log \\log n)\\)\n\n\nMask enumeration\nReduced from \\(2^k\\) to only valid repeated-digit subsets\n\n\nReplacement testing\n\\(10 \\times k\\) per valid mask\n\n\nPrimality test\n\\(O(\\sqrt{n})\\) or Miller–Rabin in \\(O(\\log^3 n)\\)\n\n\n\n→ Net result: Much faster and scalable, with full mathematical transparency."
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#phd-level-interpretation",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#phd-level-interpretation",
-    "title": "Prime Digit Replacements",
-    "section": "5.8 PhD-Level Interpretation",
-    "text": "5.8 PhD-Level Interpretation\nThis transforms the problem into:\n\nA symbolic family detection problem over the space of integers, using digit-based constraints and algebraic structure.\n\nPossible future work includes: - Pattern mining via SAT/SMT solvers - Probabilistic modeling of family distributions - Generalizing to k-prime families"
-  },
-  {
-    "objectID": "programming/project-euler-prime-digit-replacements/index.html#summary-1",
-    "href": "programming/project-euler-prime-digit-replacements/index.html#summary-1",
-    "title": "Prime Digit Replacements",
-    "section": "5.9 Summary",
-    "text": "5.9 Summary\n\n\n\nFeature\nPhD Model\n\n\n\n\nAbstraction\nSymbolic patterns over digits\n\n\nConstraints\nDigit repetition, prime count, no leading 0\n\n\nObjective\nMinimize base prime p\n\n\nTools\nDigit masks, primality testing, search space pruning\n\n\nOutcome\nStructured, fast, extensible method\n\n\n\n\nThis approach not only solves the problem but provides a reusable framework for other “digit-replacement” or “prime-pattern” problems in computational number theory."
-  },
-  {
-    "objectID": "programming/disjoint-set-union/index.html",
-    "href": "programming/disjoint-set-union/index.html",
-    "title": "Disjoint Set Union",
+    "objectID": "programming/greedy/index.html#brute-force-first",
+    "href": "programming/greedy/index.html#brute-force-first",
+    "title": "Greedy Problem Solving Framework",
     "section": "",
-    "text": "This data structure provides the following capabilities. We are given several elements, each of which is a separate set. A DSU will have an operation to combine any two sets, and it will be able to tell in which set a specific element is. The classical version also introduces a third operation, it can create a set from a new element.\nThus the basic interface of this data structure consists of only three operations: - make_set() - create a new set consisting of the new element v. - union_sets(a, b) - merges the two specified sets (the set in which the element a is located, and the set in which the element b is located). - find_set(v) - return the representative (also called leader) of the set that contains the element v. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after union_sets call). This representative can be used to check if two elements are part of the same set or not. a and b are exactly in the same set, if find_set(a) == find_set(b). Otherwise they are in different sets.\nAs described on more detail later, the data structure allows us to do each of these operations in almost \\(O(1)\\) time on average.\nAlso in one of the subsections an alternative structure of a DSU is explained, which achieves a slower average complexity of \\(O(\\log n)\\), but can be more powerful than the regular DSU structure."
+    "text": "Try all possible paths/choices.\nAsk: Why is this inefficient?\nThis helps reveal structure in the problem (e.g., repeated states, redundant decisions)."
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#naive-implementation",
-    "href": "programming/disjoint-set-union/index.html#naive-implementation",
-    "title": "Disjoint Set Union",
-    "section": "Naive implementation",
-    "text": "Naive implementation\nWe can already write the first implementation of the Disjoint Set Union data structure. It will be pretty inefficient at first, but later we can improve it using two optimizations, so that it will take nearly constant time for each function call.\nAs we said, all the information about the sets of elements will be kept in an array parent.\nTo create a new set (operation make_set(v)), we simply create a tree with root in the vertex x, meaning that it is its own ancestor.\nTo combine two sets (operation union_sets(a, b)), we first find the representative of the set in which a is located, and the representative of the set in which b is located. If the representatives are identical, that we have nothing to do, the sets are already merged. Otherwise, we can simply specify that one of the representatives is the parent of the other representative - thereby combining the two trees.\nFinally the implementation of the find representative function (operation find_set(v)): we simply climb the ancestors of the vertex v until we reach the root, i.e. a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively.\nvoid make_set(int v) {\n    parent[v] = v;\n}\n\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return find_set(parent[v]);\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b)\n        parent[b] = a;\n}\nHowever this implementation is inefficient. It is easy to construct an example, so that the trees degenerate into long chains. In that case each call find_set(v) can take \\(O(n)\\) time.\nThis is far away from the complexity that we want to have (nearly constant time). Therefore we will consider two optimizations that will allow to significantly accelerate the work."
+    "objectID": "programming/greedy/index.html#identify-the-greedy-choice",
+    "href": "programming/greedy/index.html#identify-the-greedy-choice",
+    "title": "Greedy Problem Solving Framework",
+    "section": "",
+    "text": "Ask: - What is the best local decision I can make at each step? - Can I prove that making this choice will never hurt future decisions?\nCommon greedy choices: - Max gain per step - Min cost to reach the next step - Earliest deadline, highest value per weight, etc."
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#path-compression-optimization",
-    "href": "programming/disjoint-set-union/index.html#path-compression-optimization",
-    "title": "Disjoint Set Union",
-    "section": "Path compression optimization",
-    "text": "Path compression optimization\nThis optimization is designed for speeding up find_set.\nIf we call find_set() for some vertex x, we actually find the representative p for all vertices that we visit on the path between v and the actually representative p. The trick is to make the paths for all those nodes shorter, by setting the parent of each visited vertex directly to p.\nWe can see the operation in the following image. On the left there is a tree, and on the right side there is the compressed tree after calling find_set(7), which shortens the paths for the visited node 7, 5, 3 and 2.\n![[DSU_path_compression.png]]\nThe new implementation of find_set is as follows:\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return parent[v] = find_set(parent[v]);\n}\nThe simple implementation does what was intended: first find the representative of the set (root vertex), and then in the process of stack unwinding the visited nodes are attached directly to the representative.\nThis simple modification of the operation already achieves the time complexity \\(O(\\log n)\\) per call on average (here without proof). There is a second modification, that will make it even faster."
+    "objectID": "programming/greedy/index.html#validate-greedy-is-safe",
+    "href": "programming/greedy/index.html#validate-greedy-is-safe",
+    "title": "Greedy Problem Solving Framework",
+    "section": "",
+    "text": "Test your greedy choice with: - Counterexamples: Try inputs where greedy may fail. - Proof: Can you prove “greedy choice” leads to an optimal solution?\nTechniques: - Exchange Argument - Greedy Stays Ahead"
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#union-by-size-rank",
-    "href": "programming/disjoint-set-union/index.html#union-by-size-rank",
-    "title": "Disjoint Set Union",
-    "section": "Union by size / rank",
-    "text": "Union by size / rank\nIn this optimization we will change the union_set operation. To be precise, we will change which tree gets attached to the other one. In the naive implementation the second tree always got attached to the first one. In practice that can lead to trees containing chains of length \\(O(n)\\). With this optimization we will avoid this by choosing very carefully which tree gets attached.\nThere are many possible heuristic that can be used. Most popular are the following two approaches: In the first approach we use the size of the trees as rank, and in the second one we use the depth of the tree (more precisely, the upper bound on the tree depth, because the depth will get smaller when applying path compression).\nIn both approaches the essence of the optimization is the same: we attach the tree with the lower rank to the one with the bigger rank.\nHere is the implementation of union by size:\nvoid make_set(int v) {\n    parent[v] = v;\n    size[v] = 1;\n}\n\nvoid union_sets(int a, int b){\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (size[a] &lt; size[b])\n            swap(a, b);\n        parent[b] = a;\n        size[a] += size[b];\n    }\n}\nand here is the implementation of union by rank based on the depth of the trees:\nvoid make_set(int v) {\n    parent[v] = v;\n    rank[v] = 0;\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (rank[a] &lt; rank[b])\n            swap(a, b);\n        parent[b] = a;\n        if (rank[a] == rank[b])\n            rank[a]++;\n    }\n}\nBoth optimizations are equivalent in terms of time and space complexity. So in practice we can use any of them."
+    "objectID": "programming/greedy/index.html#implement-test",
+    "href": "programming/greedy/index.html#implement-test",
+    "title": "Greedy Problem Solving Framework",
+    "section": "",
+    "text": "Use O(n) or O(n log n) greedy logic.\nTrack accumulative values (e.g., balance, remaining capacity).\nReset conditions if necessary (like in gas station)."
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#time-complexity",
-    "href": "programming/disjoint-set-union/index.html#time-complexity",
-    "title": "Disjoint Set Union",
-    "section": "Time complexity",
-    "text": "Time complexity\nAs mentioned before, if we combine both optimizations - path compression with union by size / rank - we will reach nearly constant time queries. It turns out, that the final amortized complexity is \\(O(\\alpha(n))\\), where \\(\\alpha (n)\\) is the inverse Ackermann function, which grows very slowly. In fact it grows so lowly, that it doesn’t exceed 4 for all reasonable \\(n\\) (approximately \\(n&lt;10^{600}\\)).\nAmortized complexity is the total time per operation, evaluated over a sequence of multiple operations. The idea is to guarantee the total time of the entire sequence, while allowing single operations to be much slower than the amortized time. E.g. in our case a single call might take \\(O(\\log n)\\) in the worst case, but if we do \\(m\\) such calls back to back we will end up with an average time of \\(O(\\alpha (n))\\).\nWe will also not present a proof for this time complexity, since it is quite long and complicated.\nAlso, it’s worth mentioning that DSU with union by size / rank, but without path compression works in \\(O(\\log n)\\) time per query."
+    "objectID": "programming/greedy/index.html#common-greedy-patterns",
+    "href": "programming/greedy/index.html#common-greedy-patterns",
+    "title": "Greedy Problem Solving Framework",
+    "section": "",
+    "text": "Pattern\nExample Problems\n\n\n\n\nInterval Scheduling\nActivity selection, meeting rooms\n\n\nResource Allocation\nFractional knapsack\n\n\nAccumulated Constraints\nGas Station, Jump Game\n\n\nCovering Problems\nSet cover approximations"
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
-    "href": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
-    "title": "Disjoint Set Union",
-    "section": "Linking by index / coin-flip linking",
-    "text": "Linking by index / coin-flip linking\nBoth union by rank and union by size require that we store additional data for each set, and maintain these values during each union operation. There exist also a randomized algorithm, that simplifies the union operation a little bit: linking by index.\nWe assign each set a random value called the index, and we attach the set with the smaller index to the one with the larger one. It is likely that a bigger set will have a bigger than the smaller set, therefore this operation is closely related to union by size. In fact it can be proven, that this operation has the same time complexity as union by size. However in practice it is slightly slower than union by size."
+    "objectID": "programming/greedy/index.html#mindset-summary",
+    "href": "programming/greedy/index.html#mindset-summary",
+    "title": "Greedy Problem Solving Framework",
+    "section": "",
+    "text": "“Make the best local decision… but prove or observe that it’s globally optimal.”\n\nUse greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with monotonic constraints\n\nExample: In the gas station problem\n- Greedy resets starting index when curr_tank &lt; 0\n- If total_tank &gt;= 0, a valid start must exist\n- Greedy eliminates bad candidates efficiently\n\nFinal Note:\nNot all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning"
+  },
+  {
+    "objectID": "programming/program-parity-invariance/parity-invariance.html",
+    "href": "programming/program-parity-invariance/parity-invariance.html",
+    "title": "Parity invariance",
+    "section": "",
+    "text": "Parity invariance means that the number of times a position is flipped determines its final value. If a position is flipped an odd number of times, its value changes, but if it is flipped an even number of times, it stays the same.\nConsider the array [1, 0, 0, 1, 0, 1, 1]. We start by flipping three consecutive elements to try and transform all 0s into 1s. First, flipping the subarray [0, 0, 1] at indices 1..3 changes the array to [1, 1, 1, 0, 0, 1, 1]. Then, flipping [0, 0, 1] at indices [3..5] gives [1, 1, 1, 1, 1, 0, 1]. Finally, flipping [1, 0, 1] at indices [1, 0, 1] at indices 4..6 results in [1, 1, 1, 1, 1, 1, 0, 1, 0].\nAt this point, we see that the 0s at positions 4 and 6 remain, and there is no way to flip them without also flipping the other elements. Since we can only flip three elements at a time, we cannot isolate these 0s in a way that allow us to change them to 1s. This happens because these positions were flipped an even number of times, so they retain their original value. Because of this parity constraint, the transformation is impossible."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html",
+    "href": "programming/leetcode-gas-station/index.html",
+    "title": "Gas Station",
+    "section": "",
+    "text": "Imagine you’re on a circular road trip with your car, visiting a series of gas stations. Each station provides a certain amount of gas, but it also costs you gas to drive to the next one. The question is: Can you complete the entire loop starting at one of the stations, without ever running out of fuel?\nThis is the essence of the Gas Station Problem, a well-known greedy algorithm question that tests your ability to reason about cumulative gains and losses over a circular path.\nAt first glance, this might seem like a brute-force problem—try every station as a starting point, simulate the journey, and check which one works. But with some smart observations, we can reduce the solution from O(n²) to O(n) using a greedy strategy.\nIn this post, we’ll guide you step-by-step: - From a naive brute-force solution, - To discovering key mathematical observations, and - Finally building an efficient greedy algorithm with a visual explanation.\nWhether you’re preparing for coding interviews, learning algorithms, or building animations with Manim, this deep dive will help you not only solve the problem but also understand the “why” behind the solution."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#brute-force-logic",
+    "href": "programming/leetcode-gas-station/index.html#brute-force-logic",
+    "title": "Gas Station",
+    "section": "3.1 Brute-Force Logic",
+    "text": "3.1 Brute-Force Logic\nTry starting at every station one by one, and simulate the full circular trip:\n\nInitialize your fuel tank to 0.\nAt each step, add gas[i] to your tank and subtract cost[i].\nIf at any point the tank drops below zero, the trip fails from this starting point.\nRepeat for all n starting points.\n\n\n3.1.1 Example Code\ndef can_complete_circuit_brute(gas, cost):\n    n = len(gas)\n    for start in range(n):\n        tank = 0\n        completed = True\n        for i in range(n):\n            idx = (start + i) % n\n            tank += gas[idx] - cost[idx]\n            if tank &lt; 0:\n                completed = False\n                break\n        if completed:\n            return start\n    return -1"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#time-complexity",
+    "href": "programming/leetcode-gas-station/index.html#time-complexity",
+    "title": "Gas Station",
+    "section": "3.2 Time Complexity",
+    "text": "3.2 Time Complexity\n\nTimes: \\(O(n^2)\\)\nWhy: For each station, we simulate a full loop through all stations.\nScalability: This is too slow for large inputs (n up to 10⁵ in interviews or contests).\n\nIn the next section, we’ll explore how to observe patterns in the problem and develop a greedy linear-time solution."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#key-observations",
+    "href": "programming/leetcode-gas-station/index.html#key-observations",
+    "title": "Gas Station",
+    "section": "4.1 Key Observations",
+    "text": "4.1 Key Observations\n\nLet’s define:\n\ngain[i] = gas[i] - cost[i] — net fuel at station i.\ntotal_tank = sum(gain) — if it’s negative, no solution exists.\n\nIf your current tank (curr_tank) drops below 0 at station i, it means:\n\nAny station between your last start and i cannot be the correct starting point.\nSo, you must reset your start point to i + 1."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#step-by-step-algorithm",
+    "href": "programming/leetcode-gas-station/index.html#step-by-step-algorithm",
+    "title": "Gas Station",
+    "section": "4.2 Step-by-Step Algorithm",
+    "text": "4.2 Step-by-Step Algorithm\n\nInitialize:\n\ntotal_tank = 0\ncurr_tank = 0\nstart_index = 0\n\nLoop through each station i:\n\nCompute gain = gas[i] - cost[i]\nUpdate tanks:\n\ntotal_tank += gain\ncurr_tank += gain\n\nIf curr_tank &lt; 0, reset:\n\nstart_index = i + 1\ncurr_tank = 0\n\n\nAfter the loop:\n\nIf total_tank &gt;= 0, return start_index\nElse, return -1"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#why-it-works",
+    "href": "programming/leetcode-gas-station/index.html#why-it-works",
+    "title": "Gas Station",
+    "section": "4.3 Why It Works",
+    "text": "4.3 Why It Works\n\nIf the total fuel is not enough to cover the total cost, no path is possible — simple elimination.\nThe greedy reset ensures we skip all impossible start points in a single pass.\nOnly 1 loop, so time complexity is O(n)."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#code-implementation",
+    "href": "programming/leetcode-gas-station/index.html#code-implementation",
+    "title": "Gas Station",
+    "section": "4.4 Code Implementation",
+    "text": "4.4 Code Implementation\ndef can_complete_circuit(gas, cost):\n    total_tank = 0\n    curr_tank = 0\n    start_index = 0\n\n    for i in range(len(gas)):\n        gain = gas[i] - cost[i]\n        total_tank += gain\n        curr_tank += gain\n\n        if curr_tank &lt; 0:\n            start_index = i + 1\n            curr_tank = 0\n\n    return start_index if total_tank &gt;= 0 else -1\nIn the next section, we’ll visualize this approach step-by-step using a sample input and animation-style diagrams."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#problem-understanding",
+    "href": "programming/leetcode-gas-station/index.html#problem-understanding",
+    "title": "Gas Station",
+    "section": "7.1 Problem Understanding",
+    "text": "7.1 Problem Understanding\n\nGoal: What is being optimized? (e.g., minimize cost, maximize profit)\nConstraints: Do choices need to be irreversible or done in order?\nInput Size: Is brute-force even feasible?"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#brute-force-first",
+    "href": "programming/leetcode-gas-station/index.html#brute-force-first",
+    "title": "Gas Station",
+    "section": "7.2 Brute Force First",
+    "text": "7.2 Brute Force First\n\nTry all possible paths/choices.\nAsk: Why is this inefficient?\nThis helps reveal structure in the problem (e.g., repeated states, redundant decisions)."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#identify-the-greedy-choice",
+    "href": "programming/leetcode-gas-station/index.html#identify-the-greedy-choice",
+    "title": "Gas Station",
+    "section": "7.3 Identify the “Greedy Choice”",
+    "text": "7.3 Identify the “Greedy Choice”\nAsk: - What is the best local decision I can make at each step? - Can I prove that making this choice will never hurt future decisions?\nCommon greedy choices: - Max gain per step - Min cost to reach the next step - Earliest deadline, highest value per weight, etc."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#validate-greedy-is-safe",
+    "href": "programming/leetcode-gas-station/index.html#validate-greedy-is-safe",
+    "title": "Gas Station",
+    "section": "7.4 Validate Greedy is Safe",
+    "text": "7.4 Validate Greedy is Safe\nTest your greedy choice with: - Counterexamples: Try inputs where greedy may fail. - Proof: Can you prove “greedy choice” leads to an optimal solution?\nTechniques: - Exchange Argument - Greedy Stays Ahead"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#implement-test",
+    "href": "programming/leetcode-gas-station/index.html#implement-test",
+    "title": "Gas Station",
+    "section": "7.5 Implement & Test",
+    "text": "7.5 Implement & Test\n\nUse O(n) or O(n log n) greedy logic.\nTrack accumulative values (e.g., balance, remaining capacity).\nReset conditions if necessary (like in gas station)."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#common-greedy-patterns",
+    "href": "programming/leetcode-gas-station/index.html#common-greedy-patterns",
+    "title": "Gas Station",
+    "section": "7.6 Common Greedy Patterns",
+    "text": "7.6 Common Greedy Patterns\n\n\n\n\n\n\n\nPattern\nExample Problems\n\n\n\n\nInterval Scheduling\nActivity selection, meeting rooms\n\n\nResource Allocation\nFractional knapsack\n\n\nAccumulated Constraints\nGas Station, Jump Game\n\n\nCovering Problems\nSet cover approximations"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#mindset-summary",
+    "href": "programming/leetcode-gas-station/index.html#mindset-summary",
+    "title": "Gas Station",
+    "section": "7.7 Mindset Summary",
+    "text": "7.7 Mindset Summary\n\n“Make the best local decision… but prove or observe that it’s globally optimal.”\n\nUse greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with monotonic constraints\n\nExample: In the gas station problem\n- Greedy resets starting index when curr_tank &lt; 0\n- If total_tank &gt;= 0, a valid start must exist\n- Greedy eliminates bad candidates efficiently\n\nFinal Note:\nNot all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning"
   },
   {
     "objectID": "programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
