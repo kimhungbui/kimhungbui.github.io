@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -249,258 +249,696 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="leetcode,programming" data-listing-date-sort="1752710400000" data-listing-file-modified-sort="1752750112272" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="457">
+<div class="thumbnail">
+<p><a href="./programming/greedy/index.html" class="no-external"></a></p><a href="./programming/greedy/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/greedy/index.html" class="no-external"></a></p>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="leetcode,programming" data-listing-date-sort="1752710400000" data-listing-file-modified-sort="1752750066408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="457" data-listing-title-sort="Greedy Problem Solving Framework" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jul 17, 2025</span>
-</td>
-<td>
-<a href="./programming/greedy/index.html" class="title listing-title">Greedy Problem Solving Framework</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="leetcode,programming" data-listing-date-sort="1752710400000" data-listing-file-modified-sort="1752750066408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1487" data-listing-title-sort="Gas Station" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jul 17, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-gas-station/index.html" class="title listing-title">Gas Station</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="leetcode,programming" data-listing-date-sort="1752624000000" data-listing-file-modified-sort="1752750066431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2238" data-listing-title-sort="Prime Digit Replacements" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jul 16, 2025</span>
-</td>
-<td>
-<a href="./programming/project-euler-prime-digit-replacements/index.html" class="title listing-title">Prime Digit Replacements</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="3" data-categories="leetcode,programming" data-listing-date-sort="1752624000000" data-listing-file-modified-sort="1752750066422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="811" data-listing-title-sort="45. Jump Game II" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jul 16, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-jump-game-2/index.html" class="title listing-title">45. Jump Game II</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="4" data-categories="leetcode,programming" data-listing-date-sort="1748822400000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2227" data-listing-title-sort="Maximum subarray problem and Kadane's algorithm" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jun 2, 2025</span>
-</td>
-<td>
-<a href="./programming/maximum-subarray-problem/index.html" class="title listing-title">Maximum subarray problem and Kadane’s algorithm</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="5" data-categories="leetcode,programming" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1067" data-listing-title-sort="127. Word Ladder" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">May 30, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-word-ladder/index.html" class="title listing-title">127. Word Ladder</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="6" data-categories="leetcode,programming" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1752750066408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176" data-listing-title-sort="2359. Find Closest Node to Given Two Nodes" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">May 30, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="title listing-title">2359. Find Closest Node to Given Two Nodes</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="7" data-categories="parallel,programming" data-listing-date-sort="1746576000000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Role of Parallel Computing" data-listing-filename-sort="chapter1.qmd">
-<td>
-<span class="listing-date">May 7, 2025</span>
-</td>
-<td>
-<a href="./programming/parallel-computing/chapter1.html" class="title listing-title">Role of Parallel Computing</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="8" data-categories="leetcode,programming" data-listing-date-sort="1744675200000" data-listing-file-modified-sort="1752750066408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1247" data-listing-title-sort="Count good triplets" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Apr 15, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-count-good-triplets/index.html" class="title listing-title">Count good triplets</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="9" data-categories="leetcode,programming" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231" data-listing-title-sort="Maximum subarray" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Apr 4, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-maximum-subarray/index.html" class="title listing-title">Maximum subarray</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="10" data-categories="programming,data structure" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752750066407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1472" data-listing-title-sort="Disjoint Set Union" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Mar 21, 2025</span>
-</td>
-<td>
-<a href="./programming/disjoint-set-union/index.html" class="title listing-title">Disjoint Set Union</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="11" data-categories="programming,data structure,DSU" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="594" data-listing-title-sort="Minimum Cost Walk in Weighted Graph" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Mar 21, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="title listing-title">Minimum Cost Walk in Weighted Graph</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="12" data-categories="programming,docker" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752750066408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1321" data-listing-title-sort="Docker basics" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Mar 21, 2025</span>
-</td>
-<td>
-<a href="./programming/docker-intro/index.html" class="title listing-title">Docker basics</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="13" data-categories="leetcode,programming" data-listing-date-sort="1742428800000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218" data-listing-title-sort="3191. Minimum Operations to Make Binary Array Elements Equal to One I" data-listing-filename-sort="3191.qmd">
-<td>
-<span class="listing-date">Mar 20, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="title listing-title">3191. Minimum Operations to Make Binary Array Elements Equal to One I</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="14" data-categories="bit manipulation,programming" data-listing-date-sort="1742428800000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208" data-listing-title-sort="Parity invariance" data-listing-filename-sort="parity-invariance.qmd">
-<td>
-<span class="listing-date">Mar 20, 2025</span>
-</td>
-<td>
-<a href="./programming/program-parity-invariance/parity-invariance.html" class="title listing-title">Parity invariance</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="15" data-categories="leetcode,programming" data-listing-date-sort="1742256000000" data-listing-file-modified-sort="1752750066430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="557" data-listing-title-sort="leetcode-Longest-Nice-Subarray" data-listing-filename-sort="leetcode-Longest-Nice-Subarray.qmd">
-<td>
-<span class="listing-date">Mar 18, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="title listing-title">leetcode-Longest-Nice-Subarray</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="16" data-categories="leetcode,programming" data-listing-date-sort="1742169600000" data-listing-file-modified-sort="1752750066431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="650" data-listing-title-sort="How to approach most DP problems" data-listing-filename-sort="how-to-approach-most-dp-problems.qmd">
-<td>
-<span class="listing-date">Mar 17, 2025</span>
-</td>
-<td>
-<a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="title listing-title">How to approach most DP problems</a>
-</td>
-<td>
-<span class="listing-author">Kim Hung Bui</span>
-</td>
-</tr>
-<tr data-index="17" data-categories="leetcode,programming" data-listing-date-sort="1742169600000" data-listing-file-modified-sort="1752750066422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176" data-listing-title-sort="House robber" data-listing-filename-sort="house-robber.qmd">
-<td>
-<span class="listing-date">Mar 17, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-house-robber/house-robber.html" class="title listing-title">House robber</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-<tr data-index="18" data-categories="leetcode,programming" data-listing-date-sort="1742169600000" data-listing-file-modified-sort="1752750066408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="621" data-listing-title-sort="Divide Array Into Equal Pairs" data-listing-filename-sort="Leetcode-Divide-array-into-equal-pairs.qmd">
-<td>
-<span class="listing-date">Mar 17, 2025</span>
-</td>
-<td>
-<a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="title listing-title">Divide Array Into Equal Pairs</a>
-</td>
-<td>
-<span class="listing-author">Hung </span>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/greedy/index.html" class="no-external">Greedy Problem Solving Framework</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/greedy/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/greedy/index.html" class="no-external">Greedy Problem Solving Framework</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/greedy/index.html" class="no-external">
+<div class="listing-date">
+Jul 17, 2025
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="leetcode,programming" data-listing-date-sort="1752710400000" data-listing-file-modified-sort="1752750112272" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1487">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-gas-station/index.html" class="no-external"></a></p><a href="./programming/leetcode-gas-station/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-gas-station/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-gas-station/index.html" class="no-external">Gas Station</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-gas-station/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-gas-station/index.html" class="no-external">Solving the Gas Station Problem Step-by-Step — From Naive to Greedy</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-gas-station/index.html" class="no-external">
+<div class="listing-date">
+Jul 17, 2025
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="leetcode,programming" data-listing-date-sort="1752624000000" data-listing-file-modified-sort="1752750112294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2238">
+<div class="thumbnail">
+<p><a href="./programming/project-euler-prime-digit-replacements/index.html" class="no-external"></a></p><a href="./programming/project-euler-prime-digit-replacements/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/project-euler-prime-digit-replacements/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/project-euler-prime-digit-replacements/index.html" class="no-external">Prime Digit Replacements</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/project-euler-prime-digit-replacements/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/project-euler-prime-digit-replacements/index.html" class="no-external">An interesting Prime problem</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/project-euler-prime-digit-replacements/index.html" class="no-external">
+<div class="listing-date">
+Jul 16, 2025
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="leetcode,programming" data-listing-date-sort="1752624000000" data-listing-file-modified-sort="1752750112286" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="811">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-jump-game-2/index.html" class="no-external"></a></p><a href="./programming/leetcode-jump-game-2/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-jump-game-2/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-jump-game-2/index.html" class="no-external">45. Jump Game II</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-jump-game-2/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-jump-game-2/index.html" class="no-external">An interesting Greedy problem</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-jump-game-2/index.html" class="no-external">
+<div class="listing-date">
+Jul 16, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="leetcode,programming" data-listing-date-sort="1748822400000" data-listing-file-modified-sort="1752750112294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2227">
+<div class="thumbnail">
+<p><a href="./programming/maximum-subarray-problem/index.html" class="no-external"></a></p><a href="./programming/maximum-subarray-problem/index.html" class="no-external">
+<p><img loading="lazy" src="./programming/maximum-subarray-problem/Pasted image 20250602105019.png" class="thumbnail-image"></p>
+</a><p><a href="./programming/maximum-subarray-problem/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/maximum-subarray-problem/index.html" class="no-external">Maximum subarray problem and Kadane’s algorithm</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/maximum-subarray-problem/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/maximum-subarray-problem/index.html" class="no-external">Problem in computer science</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/maximum-subarray-problem/index.html" class="no-external">
+<div class="listing-date">
+Jun 2, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="leetcode,programming" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1752750112293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1067">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-word-ladder/index.html" class="no-external"></a></p><a href="./programming/leetcode-word-ladder/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-word-ladder/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-word-ladder/index.html" class="no-external">127. Word Ladder</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-word-ladder/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-word-ladder/index.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-word-ladder/index.html" class="no-external">
+<div class="listing-date">
+May 30, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="leetcode,programming" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1752750112272" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="no-external"></a></p><a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="no-external">2359. Find Closest Node to Given Two Nodes</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-find-closest-node-given-2-nodes/index.html" class="no-external">
+<div class="listing-date">
+May 30, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="parallel,programming" data-listing-date-sort="1746576000000" data-listing-file-modified-sort="1752750112294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail">
+<p><a href="./programming/parallel-computing/chapter1.html" class="no-external"></a></p><a href="./programming/parallel-computing/chapter1.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/parallel-computing/chapter1.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/parallel-computing/chapter1.html" class="no-external">Role of Parallel Computing</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/parallel-computing/chapter1.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('parallel'); return false;">
+parallel
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/parallel-computing/chapter1.html" class="no-external">introduction to parallel computing</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/parallel-computing/chapter1.html" class="no-external">
+<div class="listing-date">
+May 7, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="leetcode,programming" data-listing-date-sort="1744675200000" data-listing-file-modified-sort="1752750112272" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1247">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-count-good-triplets/index.html" class="no-external"></a></p><a href="./programming/leetcode-count-good-triplets/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-count-good-triplets/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-count-good-triplets/index.html" class="no-external">Count good triplets</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-count-good-triplets/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-count-good-triplets/index.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-count-good-triplets/index.html" class="no-external">
+<div class="listing-date">
+Apr 15, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="leetcode,programming" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1752750112293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-maximum-subarray/index.html" class="no-external"></a></p><a href="./programming/leetcode-maximum-subarray/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-maximum-subarray/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-maximum-subarray/index.html" class="no-external">Maximum subarray</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-maximum-subarray/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-maximum-subarray/index.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-maximum-subarray/index.html" class="no-external">
+<div class="listing-date">
+Apr 4, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="programming,data structure" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752750112271" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1472">
+<div class="thumbnail">
+<p><a href="./programming/disjoint-set-union/index.html" class="no-external"></a></p><a href="./programming/disjoint-set-union/index.html" class="no-external">
+<p><img loading="lazy" src="./programming/disjoint-set-union/dundee.jpg" class="thumbnail-image"></p>
+</a><p><a href="./programming/disjoint-set-union/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/disjoint-set-union/index.html" class="no-external">Disjoint Set Union</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/disjoint-set-union/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('data structure'); return false;">
+data structure
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/disjoint-set-union/index.html" class="no-external">This article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/disjoint-set-union/index.html" class="no-external">
+<div class="listing-date">
+Mar 21, 2025
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="programming,data structure,DSU" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752750112293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="594">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="no-external"></a></p><a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="no-external">
+<p><img loading="lazy" src="./programming/leetcode-minimum-cost-walk-in-weight-graph/dundee.jpg" class="thumbnail-image"></p>
+</a><p><a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="no-external">Minimum Cost Walk in Weighted Graph</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('data structure'); return false;">
+data structure
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DSU'); return false;">
+DSU
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="no-external">This article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-minimum-cost-walk-in-weight-graph/index.html" class="no-external">
+<div class="listing-date">
+Mar 21, 2025
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="programming,docker" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752750112271" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1321">
+<div class="thumbnail">
+<p><a href="./programming/docker-intro/index.html" class="no-external"></a></p><a href="./programming/docker-intro/index.html" class="no-external">
+<p class="card-img-top"><img src="programming/docker-intro/Pasted image 20250403152352.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./programming/docker-intro/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/docker-intro/index.html" class="no-external">Docker basics</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/docker-intro/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('docker'); return false;">
+docker
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/docker-intro/index.html" class="no-external">This chapter introduces containerization with Docker and relevant concepts such as image and volume.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/docker-intro/index.html" class="no-external">
+<div class="listing-date">
+Mar 21, 2025
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="leetcode,programming" data-listing-date-sort="1742428800000" data-listing-file-modified-sort="1752750112293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+<div class="thumbnail">
+<p><a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="no-external"></a></p><a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="no-external">3191. Minimum Operations to Make Binary Array Elements Equal to One I</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html" class="no-external">
+<div class="listing-date">
+Mar 20, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="bit manipulation,programming" data-listing-date-sort="1742428800000" data-listing-file-modified-sort="1752750112294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
+<div class="thumbnail">
+<p><a href="./programming/program-parity-invariance/parity-invariance.html" class="no-external"></a></p><a href="./programming/program-parity-invariance/parity-invariance.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/program-parity-invariance/parity-invariance.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/program-parity-invariance/parity-invariance.html" class="no-external">Parity invariance</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/program-parity-invariance/parity-invariance.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('bit manipulation'); return false;">
+bit manipulation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/program-parity-invariance/parity-invariance.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/program-parity-invariance/parity-invariance.html" class="no-external">
+<div class="listing-date">
+Mar 20, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="leetcode,programming" data-listing-date-sort="1742256000000" data-listing-file-modified-sort="1752750112293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="557">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="no-external"></a></p><a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="no-external">leetcode-Longest-Nice-Subarray</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html" class="no-external">
+<div class="listing-date">
+Mar 18, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="leetcode,programming" data-listing-date-sort="1742169600000" data-listing-file-modified-sort="1752750112294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="650">
+<div class="thumbnail">
+<p><a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="no-external"></a></p><a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="no-external">How to approach most DP problems</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="no-external">Approaches for DP problems</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html" class="no-external">
+<div class="listing-date">
+Mar 17, 2025
+</div>
+<div class="listing-author">
+Kim Hung Bui
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="leetcode,programming" data-listing-date-sort="1742169600000" data-listing-file-modified-sort="1752750112286" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="176">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-house-robber/house-robber.html" class="no-external"></a></p><a href="./programming/leetcode-house-robber/house-robber.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-house-robber/house-robber.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-house-robber/house-robber.html" class="no-external">House robber</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-house-robber/house-robber.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-house-robber/house-robber.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-house-robber/house-robber.html" class="no-external">
+<div class="listing-date">
+Mar 17, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="leetcode,programming" data-listing-date-sort="1742169600000" data-listing-file-modified-sort="1752750112272" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="621">
+<div class="thumbnail">
+<p><a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="no-external"></a></p><a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="no-external">Divide Array Into Equal Pairs</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('leetcode'); return false;">
+leetcode
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('programming'); return false;">
+programming
+</div>
+</div>
+<div class="listing-description">
+<a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="no-external">Your post description</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html" class="no-external">
+<div class="listing-date">
+Mar 17, 2025
+</div>
+<div class="listing-author">
+Hung
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
