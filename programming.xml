@@ -10,7 +10,322 @@
 <atom:link href="https://kimhungbui.github.io/programming.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Thu, 17 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 18 Jul 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>846. Hand of straights</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-hand-of-straights/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="question" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Question</h1>
+<p>Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.</p>
+<p>Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.</p>
+<p>Example 1:</p>
+<p>Input: <code>hand = [1,2,3,6,2,3,4,7,8], groupSize = 3</code></p>
+<p>Output: <code>true</code></p>
+<p>Explanation: <code>Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]</code></p>
+<p>Example 2:</p>
+<p>Input: <code>hand = [1,2,3,4,5], groupSize = 4</code></p>
+<p>Output: <code>false</code></p>
+<p>Explanation: <code>Alice's hand can not be rearranged into groups of 4.</code></p>
+<p>Constraints:</p>
+<ul>
+<li><code>1 &lt;= hand.length &lt;= 104</code></li>
+<li><code>0 &lt;= hand[i] &lt;= 109</code></li>
+<li><code>1 &lt;= groupSize &lt;= hand.length</code></li>
+</ul>
+</section>
+<section id="intuition" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Intuition</h1>
+<p>The goal is to divide the list of cards (hand) into groups of groupSize, where each group consists of <code>consecutive numbers</code>.</p>
+<p>A natural real-world analogy is playing cards — when we try to group our cards into sequences, we often:</p>
+<ul>
+<li>Start from the <code>smallest card</code>,</li>
+<li>Try to build a group of <code>groupSize</code> consecutive cards, like <code>[x, x+1, x+2, ...]</code>. So, the greedy strategy is:</li>
+</ul>
+<ol type="1">
+<li>Count the frequency of each card using <code>collections.Counter</code>.</li>
+<li>Sort the keys (or use a min-heap for efficient access to the smallest card).</li>
+<li>For each smallest available card, attempt to form a group starting from that card.</li>
+<li>For each card in the group, <strong>decrement its count</strong>.</li>
+</ol>
+<ul>
+<li>If any required card is missing or exhausted, return <code>False</code>.</li>
+</ul>
+<p>If all cards can be grouped successfully, return <code>True</code>.</p>
+</section>
+<section id="approach" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Approach</h1>
+<section id="understand-the-problem-by-simulation" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="understand-the-problem-by-simulation"><span class="header-section-number">3.1</span> Understand the Problem by Simulation</h2>
+<p>Try simulating small examples manually:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">hand <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>], groupSize <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span></span></code></pre></div>
+<p>Try to group them:</p>
+<ul>
+<li>Group 1: [1,2,3]</li>
+<li>Group 2: [2,3,4]</li>
+<li>Group 3: [6,7,8]</li>
+</ul>
+<p>We realize:</p>
+<ul>
+<li>We always start from the <strong>smallest number available</strong></li>
+<li>We try to form a <strong>consecutive group</strong> from that number</li>
+<li>We must <strong>consume one of each</strong> in the sequence <code>[x, x+1, ..., x+groupSize-1]</code></li>
+</ul>
+</section>
+<section id="greedy-choice-property" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="greedy-choice-property"><span class="header-section-number">3.2</span> Greedy Choice Property</h2>
+<p>Ask: “At each step, what is the best immediate move?”</p>
+<p>Answer:</p>
+<p>Always form a group starting from the <strong>smallest card available</strong>, because delaying it may block forming valid groups later.</p>
+<p>That’s greedy - always take the <strong>smallest ungrouped card</strong> and try to complete a group from it.</p>
+</section>
+<section id="track-resources" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="track-resources"><span class="header-section-number">3.3</span> Track Resources</h2>
+<p>We need:</p>
+<ul>
+<li>A count of how many times each card appears -&gt; use <code>Counter</code></li>
+<li>Efficient access to the smallest available card -&gt; use <code>Min-heap</code></li>
+</ul>
+</section>
+<section id="prove-it-locally" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="prove-it-locally"><span class="header-section-number">3.4</span> Prove it Locally</h2>
+<p>Try:</p>
+<ul>
+<li>Can I always remove <code>groupSize</code> consecutive numbers?</li>
+<li>If not, can I return early?</li>
+</ul>
+<p>We try to decrement counts and remove from the heap only when count becomes <code>0</code> to keep it consistent.</p>
+</section>
+<section id="edge-case-check" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="edge-case-check"><span class="header-section-number">3.5</span> Edge Case Check</h2>
+<p>Think:</p>
+<ul>
+<li>If one card has more copies than others, can it still be grouped?</li>
+<li>What if the total number of cards isn’t divisible</li>
+</ul>
+<p>Handle these early:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(hand) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> groupSize <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>: <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span></code></pre></div>
+</section>
+</section>
+<section id="visualization" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Visualization</h1>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/IsNStraightHandTrueLogic.mp4"></video></div>
+</section>
+<section id="complexity" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Complexity</h1>
+<section id="time-complexity" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="time-complexity"><span class="header-section-number">5.1</span> Time Complexity</h2>
+<p>Let:</p>
+<ul>
+<li><code>n = len(hand)</code> (total number of cards)</li>
+<li><code>k = number of unique cards in hand</code></li>
+</ul>
+<p>Breakdown:</p>
+<ul>
+<li>Building the frequency map: <code>O(n)</code></li>
+<li>Sorting keys or using a heap: <code>O(k log k)</code></li>
+<li>For each unique card, in worst case, we might scan up to <code>groupSize</code> consecutive numbers → total time in worst case: <code>O(n log k + n × groupSize)</code> But since the number of total operations across all groups is bounded by n (each card is used once), we simplify:</li>
+</ul>
+<p>Total Time Complexity: <code>O(n log k)</code></p>
+<p>(If we use a heap, the log factor applies to the number of unique cards.)</p>
+</section>
+<section id="space-complexity" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="space-complexity"><span class="header-section-number">5.2</span> Space Complexity</h2>
+<p><code>Counter</code>: stores up to <code>k</code> keys → <code>O(k)</code></p>
+<p>Optionally a heap: <code>O(k)</code></p>
+<p>No recursion or extra structures</p>
+<p>Total Space Complexity: <code>O(k)</code></p>
+</section>
+</section>
+<section id="code" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Code</h1>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> List</span>
+<span id="cb3-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> collections <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> Counter</span>
+<span id="cb3-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> heapq</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb3-6">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> isNStraightHand(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, hand: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>], groupSize: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb3-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(hand) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> groupSize <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-8">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb3-9"></span>
+<span id="cb3-10">        count <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Counter(hand)</span>
+<span id="cb3-11">        min_heap <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>(count.keys())</span>
+<span id="cb3-12">        heapq.heapify(min_heap)</span>
+<span id="cb3-13"></span>
+<span id="cb3-14">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span> min_heap:</span>
+<span id="cb3-15">            first <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> min_heap[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb3-16">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(groupSize):</span>
+<span id="cb3-17">                current <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> first <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> i</span>
+<span id="cb3-18">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> count[current] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-19">                    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb3-20">                count[current] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb3-21">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> count[current] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb3-22">                    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> current <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> min_heap[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]:</span>
+<span id="cb3-23">                        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb3-24">                    heapq.heappop(min_heap)</span>
+<span id="cb3-25">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span></code></pre></div>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-hand-of-straights/</guid>
+  <pubDate>Fri, 18 Jul 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Greedy Problem Solving Framework</title>
   <dc:creator>Kim Hung Bui</dc:creator>
@@ -2377,7 +2692,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="00b91ae8" class="cell" data-execution_count="1">
+<div id="c152ddd4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
