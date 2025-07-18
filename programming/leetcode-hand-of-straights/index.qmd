@@ -1,0 +1,209 @@
+---
+title: 846. Hand of straights
+lightbox: false
+description: Greedy Problem Solving Framework
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode - Hand of straights problem
+    affiliation-url:     https://leetcode.com/problems/hand-of-straights/
+
+date: 2025-07-18
+categories:
+  - leetcode
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+# Question
+
+Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.
+
+Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.
+
+ 
+Example 1:
+
+Input: `hand = [1,2,3,6,2,3,4,7,8], groupSize = 3`
+
+Output: `true`
+
+Explanation: `Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]`
+
+
+Example 2:
+
+Input: `hand = [1,2,3,4,5], groupSize = 4`
+
+Output: `false`
+
+Explanation: `Alice's hand can not be rearranged into groups of 4.`
+
+
+ 
+
+Constraints:
+
+- `1 <= hand.length <= 104`
+- `0 <= hand[i] <= 109`
+- `1 <= groupSize <= hand.length`
+
+# Intuition
+
+The goal is to divide the list of cards (hand) into groups of groupSize, where each group consists of `consecutive numbers`.
+
+A natural real-world analogy is playing cards — when we try to group our cards into sequences, we often:
+
+- Start from the `smallest card`,
+- Try to build a group of `groupSize` consecutive cards, like `[x, x+1, x+2, ...]`.
+So, the greedy strategy is:
+
+1. Count the frequency of each card using `collections.Counter`.
+2. Sort the keys (or use a min-heap for efficient access to the smallest card).
+3. For each smallest available card, attempt to form a group starting from that card.
+4. For each card in the group, __decrement its count__.
+  - If any required card is missing or exhausted, return `False`.
+
+If all cards can be grouped successfully, return `True`.
+
+# Approach
+
+## Understand the Problem by Simulation
+
+Try simulating small examples manually:
+
+``` python
+hand = [1,2,3,6,2,3,4,7,8], groupSize = 3
+```
+
+Try to group them:
+
+- Group 1: [1,2,3]
+- Group 2: [2,3,4]
+- Group 3: [6,7,8]
+
+We realize:
+
+- We always start from the __smallest number available__
+- We try to form a __consecutive group__ from that number
+- We must __consume one of each__ in the sequence `[x, x+1, ..., x+groupSize-1]`
+
+## Greedy Choice Property
+
+Ask: "At each step, what is the best immediate move?"
+
+Answer: 
+
+Always form a group starting from the __smallest card available__, because delaying it may block forming valid groups later.
+
+That's greedy - always take the __smallest ungrouped card__ and try to complete a group from it.
+
+## Track Resources
+
+We need: 
+
+- A count of how many times each card appears -> use `Counter`
+- Efficient access to the smallest available card -> use `Min-heap`
+
+## Prove it Locally
+
+Try:
+
+- Can I always remove `groupSize` consecutive numbers?
+- If not, can I return early?
+
+We try to decrement counts and remove from the heap only when count becomes `0` to keep it consistent.
+
+
+## Edge Case Check
+
+Think:
+
+- If one card has more copies than others, can it still be grouped?
+- What if the total number of cards isn't divisible
+
+Handle these early:
+
+``` python
+if len(hand) % groupSize != 0: return False
+```
+
+# Visualization
+
+{{< video videos/IsNStraightHandTrueLogic.mp4 >}}
+
+
+# Complexity
+
+## Time Complexity
+Let:
+
+- `n = len(hand)` (total number of cards)
+- `k = number of unique cards in hand`
+
+
+Breakdown:
+
+- Building the frequency map: `O(n)`
+- Sorting keys or using a heap: `O(k log k)`
+- For each unique card, in worst case, we might scan up to `groupSize` consecutive numbers → total time in worst case: `O(n log k + n × groupSize)`
+But since the number of total operations across all groups is bounded by n (each card is used once), we simplify:
+
+Total Time Complexity: `O(n log k)`
+
+(If we use a heap, the log factor applies to the number of unique cards.)
+
+## Space Complexity
+
+`Counter`: stores up to `k` keys → `O(k)`
+
+Optionally a heap: `O(k)`
+
+No recursion or extra structures
+
+Total Space Complexity: `O(k)`
+
+# Code
+
+
+``` python
+from typing import List
+from collections import Counter
+import heapq
+
+class Solution:
+    def isNStraightHand(self, hand: List[int], groupSize: int) -> bool:
+        if len(hand) % groupSize != 0:
+            return False
+
+        count = Counter(hand)
+        min_heap = list(count.keys())
+        heapq.heapify(min_heap)
+
+        while min_heap:
+            first = min_heap[0]
+            for i in range(groupSize):
+                current = first + i
+                if count[current] == 0:
+                    return False
+                count[current] -= 1
+                if count[current] == 0:
+                    if current != min_heap[0]:
+                        return False
+                    heapq.heappop(min_heap)
+        return True
+```
