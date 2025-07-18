@@ -1,0 +1,529 @@
+---
+title: Reading practice - mistake log
+lightbox: false
+description: Mistake log
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge ielts practice test
+    affiliation-url: 
+date: 2025-07-18
+categories:
+  - english
+  - reading
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+IELTS CAMBRIDGE 13 READING TEST 1
+
+35/40
+
+# PASSAGE 1
+
+Wrong answer
+
+| Question | My answer    | CORRECT       | ANALYSIS                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| -------- | ------------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 6        | ACCOMODATION | ACCOMMODATION |                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 10       | TRUE         | FALSE         | STATEMENT:  According to research, 26% of visitor satisfaction is related to their accommodation.<br><br>INCORRECT. The passage says: "...activities are the key driver of visitor satisfaction, contributing 74%, while transport and accommodation account for the remaining 26%."<br><br>-> This mean __accommodation is only part__ of that 26%, - not all of it. Therefore, it's __FALSE__ to say 26% is for accommodation alone. |
+| 11       | NOT GIVEN    | TRUE          | STATEMENT: Visitors to New Zealand like to become involved in the local culture.<br><br>The text clearly states: "...visitors enjoy cultural activities most when they are interactive..."<br><br>This directly confirms the statement. So the answer is __TRUE__                                                                                                                                                                      |
+
+At QUESTION 10. I  feels TRUE because the word 'related' , i think i can choose TRUE.
+
+When read the statement, I thought that: “Accommodation is **related** to 26% of satisfaction” → meaning it's **included** in that 26%.
+
+I saw the word __related to__, which seems close to __account for__, and I know __accommodation is part of__ that 26%.
+
+But the key logic problem:
+
+- The statement claims: all 26% is related to accommodation.
+- The text says: transport AND accommodation together account for 26%.
+
+So, accommodation is related.
+
+But not __all of the 26%__ is related to accommodation.
+
+::: {.callout-tip}
+If a statement __overstates__ or __exaggerates__ what's in the text - even a little - the answer is __FALSE__, not TRUE
+
+Trick:
+
+When a stement __splits combined data__ and __assigns it all to just one element__, it's __FALSE__.
+
+|Passage says:|Statement says:|Verdict|
+|---|---|---|
+|A + B = 26%|Only A = 26%|❌ FALSE|
+
+> “Is the statement giving **partial information** as if it were **complete**?”
+
+If **yes**, it’s likely **FALSE**.
+:::
+
+## Some statement to test the instinct:
+
+A recent study on international students found that **70% of them were satisfied with the quality of teaching**, while **30% mentioned issues with accommodation and cost of living.**  
+The report also highlighted that **students prefer studying in cities with strong public transport systems** and **cultural diversity**.
+
+**1.** 70% of international students were satisfied with both teaching and accommodation.  
+A. TRUE  
+B. FALSE  
+C. NOT GIVEN
+
+**2.** Cost of living is a concern for 30% of international students.  
+A. TRUE  
+B. FALSE  
+C. NOT GIVEN
+
+**3.** Students tend to avoid cities without good public transport.  
+A. TRUE  
+B. FALSE  
+C. NOT GIVEN
+
+
+1B, just teaching
+2B, in include accommodation
+3C, i dont see that information (it is assuming of the sentence ..)
+
+**Why:** The passage says students **“prefer cities with strong public transport”**, but that **doesn't mean** they _avoid_ places without it. IELTS needs **clear evidence**, not assumptions. So this is **NOT GIVEN**.
+
+# PASSAGE 3
+
+
+| QUESTION | ANSWER                                              | CORRECT                                      | ANALYSIS                                                                                                                                                                                |
+| -------- | --------------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 28       | D. It will lead to a deterioration in human ability | C. It undermines a fundamental human quality | Geraint Wiggins says, "They are worried that it is taking something special away from that it means to be human" -> That's __undermining a fundamental human quality__ like creativity. |
+| 31       | D. highlights the technical limitations             | A. achieves a particularly striking effect   | “...thanks to a technical glitch. This gives the work an _eerie, ghostlike quality_.” → This is **praise** for its visual effect, not criticism.                                        |
+
+At question 28
+
+You read that people were "worried" about computer art and assumed this was because **humans might become worse** at art or creativity — a _decline in human ability_.
+
+This is a **reasonable guess**, but IELTS doesn’t test guesses. You must match ideas _exactly_.
+
+> _“They are worried that it is taking something special away from what it means to be human.”_
+
+That “**something special**” is clearly **human creativity**, which is described as a **core human trait**. So the concern isn’t about becoming **worse** at art; it’s about **losing what makes us unique**.
+
+- **Option D** implies a **skill-level decline** — like artists becoming lazy or less creative.
+    
+- **Option C** talks about **existential value** — human creativity as a part of _our identity_.
+
+At question 31 
+
+The chair paintings are an example of computer art which...
+
+My Answer:
+
+**D.** highlights the technical limitations of the software
+
+ Correct Answer:
+
+**A.** achieves a particularly striking effect
+
+You saw the phrase “**technical glitch**” and thought it showed a **limitation**, which is logical on the surface.
+
+But...
+
+---
+
+### 🔍 What the Text Actually Says (Paragraph 4):
+
+> _“Some of the Painting Fool’s paintings of a chair came out in black and white, thanks to a technical glitch. **This gives the work an eerie, ghostlike quality.**”_
+
+That sentence **praises** the accidental result — it talks about **artistic effect** (eerie, ghostlike), not technical failure.
+
+***
+
+- Watch out for **emotional reactions** in the text → they help answer YES/NO and MCQs
+    
+- Don’t **overinterpret negatives** (e.g. glitches aren't always bad!)
+    
+- In MCQ, try **paraphrasing each option** and matching to the passage exactly
+    
+- Practice identifying the **writer’s tone and hidden opinion** (especially in paragraph 1 or conclusion)
+
+# Vocabulary list
+
+## Passage 1
+
+### General Vocabulary & Phrases
+
+| **Word/Phrase**              | **Meaning / Usage**                                                     | **Example Sentence**                                               |
+| ---------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| long-haul flight             | a flight that covers a long distance                                    | New Zealand requires a long-haul flight from most major countries. |
+| gross domestic product (GDP) | the total value of goods and services produced in a country             | Tourism contributes 9% to New Zealand's GDP.                       |
+| export sector                | industries that sell goods or services to other countries               | Tourism is New Zealand’s largest export sector.                    |
+| launch a campaign            | to start a planned group of activities to achieve a goal                | They launched a global marketing campaign.                         |
+| brand position               | the image or identity of a company or product in the minds of consumers | The campaign aimed to improve New Zealand's brand position.        |
+| single gateway               | a one-stop access point                                                 | The website served as a single gateway to tourist information.     |
+| tourism services operator    | a person or company that provides travel services                       | The database listed tourism services operators.                    |
+### Website / Technology Vocabulary
+
+| **Word/Phrase**        | **Meaning / Usage**                               | **Example Sentence**                                               |
+| ---------------------- | ------------------------------------------------- | ------------------------------------------------------------------ |
+| web presence           | being visible on the internet                     | Even small businesses could gain a web presence.                   |
+| update details         | modify or revise information regularly            | Businesses could update their details easily.                      |
+| independent evaluation | an external assessment                            | Companies underwent an independent evaluation.                     |
+| interactive journey    | a digital experience allowing user participation  | The website offered an interactive journey through film locations. |
+| customised itinerary   | a travel plan tailored to the visitor’s needs     | The Travel Planner helped build a customised itinerary.            |
+| bookmark (verb)        | to save a webpage or content for future reference | Visitors could bookmark attractions they were interested in.       |
+### Tourism & Cultural Vocabulary
+
+|**Word/Phrase**|**Meaning / Usage**|**Example Sentence**|
+|---|---|---|
+|scenic beauty|visually attractive natural landscapes|The campaign promoted New Zealand's scenic beauty.|
+|exhilarating|very exciting and enjoyable|Visitors can enjoy exhilarating outdoor activities.|
+|authentic|real, genuine|Tourists experienced authentic Maori culture.|
+|travel package|a combination of travel-related services sold together|Users could build their own travel package.|
+|cultural activity|events or experiences related to a specific culture|Visiting a marae is a popular cultural activity.|
+|visitor satisfaction|how happy or content tourists are with their experience|Activities were the main driver of visitor satisfaction.|
+
+### Academic & Data Vocabulary
+
+|**Word/Phrase**|**Meaning / Usage**|**Example Sentence**|
+|---|---|---|
+|expenditure|the act of spending money|Tourism expenditure increased annually.|
+|growth of tourism|increase in the number of tourists or revenue|The website contributed to the growth of tourism.|
+|average annual rate|the average amount of change per year|The UK’s visit rate grew at 13% annually.|
+|strategy|a plan to achieve long-term goals|The strategy focused on offering unique experiences.|
+
+### Useful Linking & Writing Phrase- **A key feature of...**
+    
+- **Another great thing about...**
+    
+- **To communicate the experience...**
+    
+- **This meant that...**
+    
+- **As part of this,...**
+    
+- **It has also been found that...**
+    
+- **It could be argued that...**
+    
+- **More importantly perhaps,...**
+
+## Passage 2
+### General Vocabulary
+
+| **Word / Phrase**       | **Meaning**                          | **Example Sentence**                                        |
+| ----------------------- | ------------------------------------ | ----------------------------------------------------------- |
+| **emotion**             | A strong feeling                     | Boredom is an emotion that is often misunderstood.          |
+| **define / definition** | Explain or describe clearly          | It is hard to define boredom precisely.                     |
+| **include**             | To have something as part of a whole | Boredom may include apathy and frustration.                 |
+| **motivate**            | To cause someone to act              | Disgust motivates people to avoid danger.                   |
+| **suggest**             | To put forward an idea or opinion    | He suggests boredom may serve a protective function.        |
+| **identify**            | Recognize or establish something     | Researchers identified five types of boredom.               |
+| **predict**             | Say in advance what might happen     | It is unclear whether personality can predict boredom type. |
+| **found / find**        | Discover something through research  | The study found that boredom can lead to creativity.        |
+| **conclude**            | To decide after consideration        | They concluded that boredom has positive effects.           |
+| **cause**               | To make something happen             | Failure to focus may cause boredom.                         |
+| **lead to**             | Result in                            | Boredom may lead to poor academic performance.              |
+| **associated with**     | Linked to or connected with          | Boredom is often associated with low motivation.            |
+| **research / study**    | Scientific investigation             | The study was conducted on teenagers.                       |
+| **negative / positive** | Harmful or helpful characteristics   | Some boredom types are more positive than others.           |
+| **approach / avoid**    | Deal with directly or stay away from | Some teenagers avoid boredom using social media.            |
+### Psychology & Emotions
+
+| **Word / Phrase**         | **Meaning in Context**                             | **IELTS Use Example**                                                   |
+| ------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------- |
+| **boredom**               | Mental state of disinterest or lack of stimulation | Boredom can have both negative and positive impacts.                    |
+| **apathy**                | Total lack of interest                             | Apathy is one form of boredom.                                          |
+| **indifference**          | Not caring one way or another                      | Emotional indifference may indicate a deeper issue.                     |
+| **frustration**           | Feeling of being annoyed or powerless              | Frustration often results from prolonged boredom.                       |
+| **disgust**               | A strong dislike or disapproval                    | Disgust and boredom may both serve evolutionary purposes.               |
+| **arousal**               | Psychological alertness or excitement              | Different boredom types vary in arousal levels.                         |
+| **reactant boredom**      | High-energy but unpleasant boredom                 | Reactant boredom may lead to risky behavior.                            |
+| **indifferent boredom**   | Passive boredom with calm feelings                 | Indifferent boredom is the least harmful type.                          |
+| **creative / creativity** | Ability to think of new ideas                      | Boredom might encourage creativity.                                     |
+| **mind-wandering**        | Letting thoughts drift without control             | Mind-wandering is said to enhance creativity.                           |
+| **attention system**      | The brain’s ability to focus                       | When the attention system fails, boredom increases.                     |
+| **personality traits**    | Stable aspects of a person’s character             | Curiosity helps people avoid boredom.                                   |
+| **boredom proneness**     | Tendency to get bored easily                       | High boredom proneness correlates with poor academic performance.       |
+| **threshold**             | The level before something changes or happens      | A high boredom threshold helps people endure dull situations.           |
+| **over-connected**        | Too digitally engaged                              | Over-connected lifestyles may lead to boredom.                          |
+| **engage meaningfully**   | Participate with purpose                           | People should engage more meaningfully instead of seeking distractions. |
+
+### High-level Vocabulary
+| **Word / Phrase**       | **Meaning / Use**                                                   | **IELTS Use**                                                                   |
+| ----------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **stimulating**         | Encouraging interest or enthusiasm                                  | A stimulating learning environment enhances focus.                              |
+| **boredom**             | The state of being bored (lack of interest)                         | Boredom may lead to creativity or disengagement, depending on how it’s handled. |
+| **apathy**              | Lack of interest or enthusiasm                                      | Voter apathy is a common issue in modern democracies.                           |
+| **indifference**        | Lack of interest, concern, or sympathy                              | Public indifference toward climate change remains problematic.                  |
+| **arousal**             | A physiological or psychological state of being alert or stimulated | High arousal can lead to stress or excitement.                                  |
+| **emotion**             | A strong feeling deriving from one's circumstances                  | Emotional control is essential in professional settings.                        |
+| **reactant**            | A type of boredom with high arousal and negative emotion            | Reactant boredom is associated with frustration and restlessness.               |
+| **indifferent**         | Not interested or concerned                                         | An indifferent attitude can limit personal development.                         |
+| **character traits**    | Aspects of a person’s behavior and attitudes                        | Curiosity and resilience are valuable character traits in academics.            |
+| **adaptive**            | Adjusting to new conditions                                         | Human behavior is often highly adaptive.                                        |
+| **fester**              | To become worse through neglect                                     | Letting boredom fester can damage mental well-being.                            |
+| **attention system**    | The brain's mechanism for focusing on tasks                         | A disengaged attention system can hinder productivity.                          |
+| **engage with**         | To become involved or interact with                                 | Students should actively engage with the topic.                                 |
+| **personality traits**  | Enduring characteristics that influence behavior                    | Introversion and openness are examples of personality traits.                   |
+| **threshold**           | A level or point at which something starts to happen                | Those with a high boredom threshold cope better with routine.                   |
+| **prone to**            | Likely to suffer from or experience something                       | Children are prone to distraction without structure.                            |
+| **alleviate**           | To reduce or relieve something (e.g. boredom, stress)               | Meditation can alleviate anxiety.                                               |
+| **avoid / approach**    | Strategy to handle difficult or unpleasant situations               | Approaching problems head-on builds resilience.                                 |
+| **overstimulation**     | Too much sensory or mental input                                    | Social media often leads to overstimulation.                                    |
+| **motivate**            | Inspire someone to take action                                      | Good teachers motivate their students to succeed.                               |
+| **engage meaningfully** | Interact in a thoughtful and purposeful way                         | Engaging meaningfully with culture enhances cross-cultural understanding.       |
+### Common Paraphrases 
+
+| **In Passage**                     | **Paraphrased As (in questions or speaking)**                        |
+| ---------------------------------- | -------------------------------------------------------------------- |
+| “attention system fails”           | “inability to focus” / “failure to engage”                           |
+| “boredom proneness”                | “people who bore easily”                                             |
+| “traits like curiosity”            | “personality traits associated with low boredom”                     |
+| “approach a boring situation”      | “face boredom directly” / “actively engage with boring situations”   |
+| “avoid boredom using social media” | “seek distraction” / “passively escape boredom”                      |
+| “over-connected lifestyles”        | “excessive digital stimulation” / “constant engagement with devices” |
+| “engage with the world”            | “interact meaningfully with surroundings”                            |
+### IELTS Phrases
+
+| **Phrase**                             | **Example Sentence**                                                            |
+| -------------------------------------- | ------------------------------------------------------------------------------- |
+| "X is turning out to be more [adj.]"   | Boredom is turning out to be more useful than previously thought.               |
+| "This raises the question of whether…" | This raises the question of whether boredom can, in fact, stimulate creativity. |
+| "…may motivate us to…"                 | Boredom may motivate us to seek more meaningful connections in life.            |
+| "…is associated with…"                 | High boredom proneness is associated with lower academic achievement.           |
+| "…plays a significant role in…"        | Personality plays a significant role in how individuals cope with boredom.      |
+## Passage 3
+
+### General Vocabulary
+
+| **Word / Phrase**                 | **Meaning / Usage**                                     | **Example Sentence**                                                |
+| --------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------- |
+| **possess creative talents**      | to have the ability to create art or ideas              | Some claim these programs possess creative talents.                 |
+| **sophisticated**                 | complex, advanced                                       | Humans are the only species to perform sophisticated creative acts. |
+| **break (something) down into**   | to divide something into smaller, understandable parts  | Researchers try to break creativity down into computer code.        |
+| **fundamental**                   | essential or central                                    | Creativity is a fundamental human quality.                          |
+| **impressive**                    | admirable or striking                                   | Aaron’s ability to paint independently is impressive.               |
+| **display a kind of imagination** | show signs of creative or original thinking             | The Painting Fool has begun to display a kind of imagination.       |
+| **double standards**              | applying different rules for different people or things | People have double standards for computer vs. human art.            |
+### Art and Creativity Vocabulary
+
+| **Word / Phrase**   | **Meaning / Usage**                          | **Example Sentence**                                          |
+| ------------------- | -------------------------------------------- | ------------------------------------------------------------- |
+| **artistic genres** | different styles or types of art             | Computer art has varied success in different artistic genres. |
+| **original work**   | an artwork that is not copied, newly created | It produced a series of original works.                       |
+| **eerie**           | strange and frightening                      | A software glitch gave the painting an eerie look.            |
+| **palette**         | a range of colors used in a painting         | The artist limited his palette to black and white.            |
+| **replica**         | a copy or reproduction of a work             | Critics said the computer only created replicas.              |
+| **subtle**          | delicate or not obvious                      | Software has yet to match the subtlety of human work.         |
+### Psychology & Perception Vocabulary
+
+| **Word / Phrase**        | **Meaning / Usage**                                 | **Example Sentence**                                                   |
+| ------------------------ | --------------------------------------------------- | ---------------------------------------------------------------------- |
+| **prejudice**            | an unfair and unreasonable opinion                  | People's prejudice affects how they view computer-generated art.       |
+| **irresistible essence** | a quality that cannot be ignored or replaced        | The human creative process gives art an irresistible essence.          |
+| **creative impulse**     | a spontaneous urge to make or create something      | Cope’s software was said to lack true creative impulse.                |
+| **objective**            | unbiased and based on facts                         | Even experts weren’t completely objective in judging the music.        |
+| **reaction / recoil**    | a sudden negative emotional response                | Audiences recoiled when they learned the composer was a machine.       |
+| **speculation**          | guessing or forming opinions without complete facts | With computer art, there’s less speculation about the artist's intent. |
+### Research and Technology Vocabulary
+
+|**Word / Phrase**|**Meaning / Usage**|**Example Sentence**|
+|---|---|---|
+|**computational creativity**|field of research exploring how computers can be creative|Colton is a leader in computational creativity.|
+|**software bug**|an error or flaw in a computer program|A bug caused the artwork to appear ghostlike.|
+|**technical glitch**|a temporary fault in a system|A glitch changed the colors in the computer’s painting.|
+|**vital database**|essential data files or systems|Cope destroyed EMI’s vital database.|
+|**user-friendly**|easy to use|Future computer art may become more user-friendly and meaningful.|
+
+### Useful Phrases for IELTS Writing / Speaking
+
+| **Phrase**                        | **Possible IELTS Usage**                    |
+| --------------------------------- | ------------------------------------------- |
+| “It could be argued that…”        | Useful for Task 2 essays                    |
+| “To some extent…”                 | Adds nuance to your opinion                 |
+| “What this suggests is that…”     | Good for explaining effects                 |
+| “This gives the work an…”         | Useful for describing effects in art/graphs |
+| “Unlike earlier artists such as…” | Helpful comparison structure                |
+| “People tend to…”                 | Introduces a general observation            |
+## Vocabulary from Question & Parahprases
+
+### Passage 1 Tourism New Zealand Website
+
+| **In the Passage**    | **In the Question**             | **Meaning / Usage**                                       |
+| --------------------- | ------------------------------- | --------------------------------------------------------- |
+| update                | provide (information) regularly | To keep something current                                 |
+| environment           | impact on the environment       | Natural surroundings affected by tourism                  |
+| captain               | former sports captain           | A leader in a sports team                                 |
+| films                 | locations used in films         | Movies – particularly blockbusters                        |
+| season                | varied depending on the season  | Time of year (summer, winter, etc.)                       |
+| accommodation         | local accommodation             | Places to stay                                            |
+| blog                  | their blog                      | Online personal story or travel journal                   |
+| create itineraries    | ready-made itineraries          | Schedule or travel plan                                   |
+| transport options     | public transport                | Buses, trains, etc.                                       |
+| activities            | experiences, attractions        | What tourists do (sightseeing, adventure, cultural, etc.) |
+| small businesses      | bed and breakfast, providers    | Locally owned businesses                                  |
+| independent travelers | individuals                     | Tourists not in a group                                   |
+| long-haul visitors    | international travelers         | Visitors who travel a long distance                       |
+### Passage 3: Artificial Artist ?
+
+| **In the Passage**         | **In the Question**                  | **Meaning / Paraphrased As**                               |
+| -------------------------- | ------------------------------------ | ---------------------------------------------------------- |
+| significant progress       | great deal of progress               | Important or large advancement                             |
+| undermine human creativity | take something special from humanity | Weaken or reduce something uniquely human                  |
+| source of subject matter   | the subject matter                   | Where the idea comes from (e.g., photos, memory, internet) |
+| different criteria         | judged differently                   | Different standards for evaluation                         |
+| eerie, ghostlike effect    | striking effect                      | Emotionally powerful or visually unique impact             |
+| inspired by social media   | meaningful themes for us             | Related to familiar and relevant human concerns            |
+| imagination                | creative thinking                    | The ability to create ideas beyond the obvious             |
+| creative impulse           | the act of imagination               | The motivation to produce new art                          |
+| pseudoscience              | not explained scientifically         | Lacking real scientific proof                              |
+| replicas                   | dependent on original ideas          | Copies, not original                                       |
+| prejudice                  | bias against computers               | Unfair judgment based on assumptions                       |
+| time and effort            | more effort needed                   | Used in judgments of artistic value                        |
+| aesthetic quality          | artistic merit or creativity         | How beautiful or valuable something appears                |
+| appreciation               | public acceptance or interest        | Liking or respecting art                                   |
+
+## IELTS Vocabulary
+
+| **Word / Phrase**  | **Meaning**                                                                    | **Example (Academic Context)**                                             |
+| ------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| **deterioration**  | A process of becoming worse or declining in quality                            | _The deterioration of air quality in urban areas is alarming._             |
+| **undermines**     | Weakens or reduces the effectiveness of something                              | _Overreliance on technology undermines traditional learning habits._       |
+| **supersede**      | To replace something older or less effective                                   | _Online platforms have largely superseded traditional advertising._        |
+| **pseudoscience**  | A claim, belief, or practice mistakenly regarded as based on scientific method | _Many critics dismissed the research as pseudoscience._                    |
+| **prejudice**      | Preconceived opinion not based on reason or actual experience                  | _Cultural prejudice can affect the perception of modern art._              |
+| **imagination**    | The ability to think of new and creative ideas                                 | _Imagination plays a crucial role in problem-solving._                     |
+| **essence**        | The intrinsic nature or indispensable quality of something                     | _The essence of creativity lies in originality and risk-taking._           |
+| **replica**        | An exact copy or imitation                                                     | _The museum displayed a replica of the ancient artifact._                  |
+| **authentic**      | Genuine; real and not fake                                                     | _Visitors prefer authentic cultural experiences over commercialized ones._ |
+| **fundamental**    | Basic and essential                                                            | _Freedom of expression is a fundamental human right._                      |
+| **original**       | New and not derived from something else                                        | _The composer was praised for his original style._                         |
+| **creativity**     | The use of imagination to produce something new                                | _The project encourages creativity and innovation among students._         |
+| **interaction**    | Communication or direct involvement with something or someone                  | _Learning is most effective through social interaction._                   |
+| **assessment**     | Evaluation or judgment                                                         | _The final grade will be based on continuous assessment._                  |
+| **objective**      | Based on facts rather than feelings or opinions                                | _Scientists aim to remain objective in their analysis._                    |
+| **impact**         | The effect or influence of something                                           | _Tourism has a strong economic and environmental impact._                  |
+| **evaluation**     | Judging or determining the value of something                                  | _The evaluation criteria must be clear and measurable._                    |
+| **highlight**      | To emphasize or make something stand out                                       | _The chart highlights the key differences between the two models._         |
+| **satisfaction**   | Contentment or pleasure from an experience                                     | _Customer satisfaction is a key performance indicator._                    |
+| **accessible**     | Easy to approach, reach, or understand                                         | _Online education makes learning more accessible._                         |
+| **interpretation** | Explanation or way of understanding something                                  | _The interpretation of abstract art varies widely._                        |
+
+### Collocations to Remember
+
+- **undermine trust / authority / creativity**
+    
+- **supersede a method / system / tradition**
+    
+- **suffer a deterioration in quality / performance**
+    
+- **show prejudice against / towards**
+    
+- **original and authentic**
+    
+- **fundamental difference / right / issue**
+    
+- **objective assessment / evaluation**
+    
+- **have a significant impact on**
+    
+- **high level of satisfaction**
+    
+- **highlight the importance of**
+
+# IELTS Speaking Test Simulation
+
+## Part 1: Introduction & Interview
+
+### Topic: Leisure & Free Time (linked to boredom & stimulation)
+
+#### Q1. What do you like to do in your free time?
+
+_In my spare time, I usually try to disconnect from digital distractions and engage in more meaningful activities, like journaling or reading. I've notice that when I'm bored, instead of resorting to overstimulation like social media, I try to embrace the boredom-it's surprisingly stimulating and often sparks creative ideas._
+
+#### Q2. Do you often feel bored?
+
+_Yes, I do from time to time. But I've learned that boredom, especially what psychologists call indifferent boredom, can be a gateway to creativity. Rather than seeing it as a negative state, I treat it as a signal that I need to re-engage with something mentally rewarding._
+
+#### Q3. What kind of things make people bored easily these days ?
+
+_Honestly, I think it's our over-connected lifestyle. There's so much passive consumption -videos, scrolling, noise - that it paradoxically leads to a lack of meaningful engagement. When activities feel purposeless or repetitive, people fall into a state of apathy of reactant boredom, which is quite destructive._
+
+### Topic: EDUCATION & LEARNING
+
+#### Q1. What subject did you enjoy most at school?
+
+_I really enjoyed ~~literature~~ mathematics because it allowed me to express my thoughts creatively. I found that when the class was engaging, I was less likely to feel bored or distracted. It's like what researchers say-when we feel meaningfully involved, boredom is less likely to set in._
+
+#### Q2. What kind of teacher do you prefer?
+
+_I prefer teachers who can make the subject come alive. Someone who sparks curiosity and encourages active learning rather than passive memorization. I think the worst thing is when a class becomes repetitive-it leads to apathy and disengagement._
+
+#### Q3. Do you prefer studying alone or with others?
+
+_That depends. For deep reading or writing, I prefer to study alone so I can concentrate. But for brainstorming or practicing speaking skills, studying with others can make the experience more dynamic and stimulating._
+
+## Part 2: INDIVIDUAL LONG TURN
+
+**Cue Card: Describe a creative activity you enjoy doing.**
+
+> You should say:
+> 
+> - What the activity is
+>     
+> - How you learned it
+>     
+> - Why you enjoy it
+>     
+> - And explain how it helps you express yourself
+
+_One creative activity I've come to enjoy deeply is writing short stories. I began doing it during university, especially during those quiet moments of indifferent boredom when I felt mentally under-stimulated. Strangely, boredom sparked my imagination, letting my mind wander freely. I believe creativity often flourishes in those conditions. Writing allows me to explore ideas and emotions I can't always express verbally. Sometimes I think of it like programming imagination into words, similar to how artificial intelligence tools like the Painting Fool are programmed to generate art. But unlike machines, my creativity stems from real emotional experiences. That personal input makes it fulfilling and cathartic._
+
+**Cue Card: Describe an educational experience that was especially important for you.**
+
+> You should say:
+> 
+> - What it was
+>     
+> - When it happened
+>     
+> - What you learned from it
+>     
+> - And explain why it was important to you
+
+_One of the most memorable educational experiences I've had was attending a creativity workshop during high school. It was organized to help students break away from rigid academic routines and think outside the box. We weren't given clear instructions- instead, we had to solve a real-world problem in teams. Initially, some of us felt a bit of 'calibrating boredom', unsure of what to do, but that actually pushed us to explore ideas more creatively. That session taught me that boredom isn't necessarily negative- it can push us to innovate when we're given freedom._
+ 
+## Part 3: Two-way discussion
+
+### Theme: Creativity & Technology 
+
+#### Q1. Do you think computers can be truly creative?
+
+_It's a fascinating question. Computers can simulate creativity through algorithms, like the Painting Fool or EMI composer program. But in my opinion, what they produce still lacks emotional depth. As one researcher put it, computer-generated art often lacks an irresistible essence because we know it wasn't born out of genuine human experience or emotion._
+
+#### Q2. Why do some people dislike art made by machines?
+
+_I think it's partly due to prejudice and partly because people value the effort and thought behind a piece. Studies show that when people think a human created the art, they perceive it as more meaningful. When the same art is labeled as machine-generated, the emotional connection is undermined._
+
+#### Q3. How important is creativity in education and work?
+
+_Extremely important. In education, fostering creativity helps students move beyond memorization and into real problem-solving. In the workplace, creative thinking leads to innovation. Ironically, even as machines become more advanced, it's our human creativity they still can't supersede. That remains our most valuable trait._
+
+### Theme: The Role of Education in Creativity and Motivation
+
+#### Q1. Do schools do enough to encourage creativity?
+
+_In many cases, no. Education systems still prioritize exam results and memorization. While that ensures standardization, it often neglects skills like problem-solving and imagination. To truly foster creativity, schools need to incorporate more open-ended tasks and allow room for failure._
+
+#### Q2. How can teachers keep students motivated in class?
+
+_Teachers can make learning more engaging by connecting topics to real-life applications. Also, varying teaching methods-such as using visuals, stories, or group activities- can help. Most importantly, they should encourage questions and curiosity rather than just delivering information._
+
+#### Q3. Is boredom always a bad thing in education?
+
+_Not necessarily. Some psychologists argue that indifferent boredom or low-stimulation moments can actually trigger imagination. If managed correctly, it can lead to new ideas. However, constant boredom caused by uninspiring lessons is definitely counterproductive._
+
+# IELTS WRITING
