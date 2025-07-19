@@ -1,0 +1,135 @@
+---
+title: Optimizing String Partitioning – LeetCode 763 Deep Dive
+lightbox: false
+description: Greedy approach
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode - 763. Partition labels
+    affiliation-url: https://leetcode.com/problems/partition-labels/description/
+date: 2025-07-19
+categories:
+  - leetcode
+  - programming
+  - greedy
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+
+
+# Intuition
+<!-- Describe your first thoughts on how to solve this problem. -->
+
+We are given a string `s`, and we need to partition it into as many parts as possible such that __each letter appears in at most one part__. This suggests a __greedy approach__, where we keep extending the current partition until we are sure no character in it appears later.
+
+Initially, I thought of tracking how many times each character appears and using that to decide when a character is "done" — this forms __Approach 1__.
+
+Later, I realized that we can optimize by __just tracking the last occurrence__ of each character and extending the partition greedily — this is __Approach 2__.
+
+# Approach
+<!-- Describe your approach to solving the problem. -->
+
+## Approach 1: Frequency-based Tracking (Counter)
+1. Use `Counter` to store total character frequency.
+
+2. As we iterate through `s`, maintain a `current_count` Counter.
+
+3. Whenever all counts in `current_count` match the ones in `total_count`, we can safely cut the partition.
+
+## Approach 2: Greedy with Last Occurrence
+
+1. Precompute a map of the __last index__ of every character.
+
+2. While iterating, keep track of the current partition’s end by updating to the farthest last index seen so far.
+
+3. When the current index equals the `end`, it means all characters in this partition are safely enclosed — we can cut here.
+
+# Complexity
+## Approach 1
+- Time complexity: $O(n\cdot a)$ where $a$ is the number of unique characters (<= 26)
+- Space complexity: $O(a)$ for `Counter`
+
+## Approach 2
+- Time complexity: $O(n)$
+- Space complexity: $O(a)$
+
+# Code
+``` python
+class Solution:
+    def partitionLabels(self, s: str) -> List[int]:
+        
+        # get a string
+
+        # part -> as many parts as possible
+        # 1 letter appears in at most 1 part.
+
+        # return the list of size of these parts
+        
+        # as many parts as possible 
+        # -> parts is as shorts as possible
+
+        # if we find a char, we want to find the lastest char for cut into a part
+
+        # if we have a count_chars array, 
+        # we can use that for end find char
+
+        #################
+
+        # # import counter class from collections module
+        # from collections import Counter
+
+        # total_count = Counter(s)
+
+        # ans = []
+        # current_count = Counter()
+        # start = 0
+        # for i, char in enumerate(s):
+        #     current_count[char] += 1
+        #     # check all char in part == that char in count_part -> cut it
+
+        #     if all(current_count[c] == total_count[c] for c in current_count):
+        #         ans.append(i - start + 1)
+        #         start = i + 1
+        #         current_count.clear()
+        
+        # return ans
+
+        ################################
+        # Ok
+
+        # but instead of store all char in current part, and recheck it (O(n^2))
+        # we just really concern about the last index of out current char
+        # (if we get char[a], we want to expand to the last index of [a])
+        # on the track of that, we can get new char,
+        # if that char have the last index > 'a'.
+        # we need to update that
+
+        # TC: O(n)
+
+        # Step 1: Record the last occurence of each character
+        last_index = {char: i for i, char in enumerate(s)}
+
+        result = []
+        start = 0
+        end = 0
+
+        # Step 2: Iterate and find partition points
+        for i, char in enumerate(s):
+            end = max(end, last_index[char]) # extend the partition to the last seen char
+            if i == end:
+                result.append(end - start + 1) # cut here
+                start = i + 1 # new partition
+        
+        return result
+```
