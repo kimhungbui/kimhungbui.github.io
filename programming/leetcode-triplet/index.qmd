@@ -1,0 +1,190 @@
+---
+title: Merge Triplets to Form Target Triplet
+lightbox: false
+description: Greedy Intuition and One-Pass Solution
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode
+    affiliation-url: https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/
+date: 2025-07-19
+categories:
+  - leetcode
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+# Intuition
+We aim to form the target triplet `[x, y, z]` by merging valid triplets using element-wise maximums. A key observation is that any triplet with a value exceeding the target in any dimension cannot be used. Therefore, we filter those out and search for triplets that can contribute exactly `x`, `y`, or `z` without exceeding the other target dimensions.
+
+# Approach
+1. Initialize three boolean flags: `found_x`, `found_y`, and `found_z` to track whether we have found triplets that can provide `x`, `y`, and `z` respectively.
+2. Iterate through each triplet:
+   - Skip the triplet if any of its elements exceed the target at the corresponding index.
+   - If the triplet is valid:
+     - If `triplet[0] == x`, mark `found_x = True`
+     - If `triplet[1] == y`, mark `found_y = True`
+     - If `triplet[2] == z`, mark `found_z = True`
+3. After iterating through all triplets, if all three flags are `True`, return `True`; otherwise, return `False`.
+
+This approach is greedy because we only care about finding at least one valid triplet that satisfies each coordinate condition individually.
+
+# Complexity
+- Time complexity:  
+$$O(n)$$  
+We iterate over the list of triplets once, performing constant-time operations per triplet.
+
+- Space complexity:  
+$$O(1)$$  
+We only use three boolean variables and no additional data structures.
+
+
+## Problem Summary: Merge Triplets to Form Target Triplet
+
+We are given:
+- A list of triplets: each is [a, b, c]
+- A target triplet: [x, y, z]
+
+Our task is to **merge** some of the triplets to form the target triplet, using this rule:
+
+### Merge Rule:
+Merging two triplets means taking the element-wise maximum:
+```
+[a1, b1, c1] + [a2, b2, c2] = [max(a1, a2), max(b1, b2), max(c1, c2)]
+```
+
+But we can **only use** a triplet if it satisfies:
+```
+triplet[i] ≤ target[i] for all i in {0, 1, 2}
+```
+
+We must decide if it's possible to form the target triplet through a sequence of such merges.
+
+---
+
+## Step-by-step Solution Strategy (Greedy)
+
+### Step 1: Filter Valid Triplets
+
+We first discard any triplet that has a value greater than the target at any position:
+```python
+if a > x or b > y or c > z:
+    skip this triplet
+```
+
+These triplets cannot be used in any valid merge.
+
+---
+
+### Step 2: Identify Building Blocks
+
+We are trying to "build" each of the three elements of the target.
+
+That means we must find at least one triplet that contributes to:
+- `a == x`
+- `b == y`
+- `c == z`
+
+For example:
+- A triplet like [x, ≤y, ≤z] helps construct the first coordinate
+- A triplet like [≤x, y, ≤z] helps the second
+- A triplet like [≤x, ≤y, z] helps the third
+
+We can mix triplets to form the full target.
+
+---
+
+### Step 3: Greedy Tracking
+
+We initialize flags:
+```python
+found_x = found_y = found_z = False
+```
+
+Then iterate through all **valid** triplets:
+```python
+for triplet in triplets:
+    if triplet[0] <= x and triplet[1] <= y and triplet[2] <= z:
+        if triplet[0] == x:
+            found_x = True
+        if triplet[1] == y:
+            found_y = True
+        if triplet[2] == z:
+            found_z = True
+```
+
+---
+
+### Step 4: Final Decision
+
+If all three components are found:
+```python
+if found_x and found_y and found_z:
+    return True
+else:
+    return False
+```
+
+---
+
+## Example
+
+Given:
+```python
+triplets = [[2,5,3], [1,8,4], [2,3,5]]
+target = [2,5,5]
+```
+
+- [2,5,3] is valid: helps with x=2 and y=5
+- [1,8,4] is invalid: 8 > 5
+- [2,3,5] is valid: helps with x=2 and z=5
+
+We found:
+- x: yes (from both)
+- y: yes (from [2,5,3])
+- z: yes (from [2,3,5])
+
+Return: `True`
+
+---
+
+## Why It Is a Greedy Problem
+
+We make **local greedy choices**:
+- If a triplet is valid and has the required value for one of the coordinates, we "take" it.
+- We do not need to backtrack or search combinations.
+- As long as we collect the three necessary components, merging them gives the target.
+
+This approach is optimal and efficient because each choice is independent and bounded by the target.
+
+
+# Source code
+
+``` python
+from typing import List
+
+class Solution:
+    def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
+        a, b, c = 0, 0, 0  # will simulate the merged triplet
+
+        for triplet in triplets:
+            # Only consider triplets where all elements are <= target
+            if triplet[0] <= target[0] and triplet[1] <= target[1] and triplet[2] <= target[2]:
+                a = max(a, triplet[0])
+                b = max(b, triplet[1])
+                c = max(c, triplet[2])
+
+        return [a, b, c] == target
+
+```

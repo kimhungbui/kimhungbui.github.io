@@ -29,7 +29,7 @@ execute:
 
 # Greedy Problem Solving Framework
 
-Greedy algorithms solve problems by **making locally optimal choices** at each step in the hope that they lead to a **globally optimal solution**. However, **not all problems can be solved greedily**. Here's a reliable framework to decide **when and how to apply** a greedy strategy.
+Greedy algorithms solve problems by **making locally optimal choices** at each step in the hope that they lead to a **globally optimal solution** without backtracking. However, **not all problems can be solved greedily**. Here's a reliable framework to decide **when and how to apply** a greedy strategy.
 
 ---
 

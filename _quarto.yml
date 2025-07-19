@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Kim Hung Bui"
+  title: "Kim Hung's ThinkStack"
   site-url: https://kimhungbui.github.io
   description: "My Personal Website"
 
