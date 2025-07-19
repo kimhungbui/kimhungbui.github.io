@@ -1,0 +1,118 @@
+---
+title: Line graphs
+lightbox: false
+description: How to write about Line Graphs
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-18
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Understanding line graphs
+
+In this lesson, we will apply what we have learned about charts to a line graph using the homework task from Lesson 5. We will also look at some Band 6 problems to help us review our own answer. We will return to this type of task 1 again in later lessons to discuss other problems when dealing with different types of charts.
+
+![](Pasted%20image%2020250713112945.png)
+
+This question based on a line graph, which gives information very differently to a table and so presents different challenges. The following points will help us to think about these
+
+## Point to notice
+
+- A line graph is used to show changes over time. While our previous task compared two specific years, line graphs cover either a much longer period of time, or they might show a shorter period of time broken down into short intervals, such as the 12 months of a year, or 24 hours in a day.
+- They tend to be more data points in a line graph, which means that there are more minor details to ignore, and we have to be more selective in choosing what to write about.
+- When we write about a line graph like this, it can help to think about the 'interval' (the gap between each year in the x-axis, the horizontal line along the bottom of the graph).
+- Unlike a table or a pie chart, we need to read the line graph to get the data ourselves. We may also need to estimate figures or dates.
+- Line graphs sometimes present predicted data for a time in the future - we will deal with these in later sessions.
+- Whenever there are issues with time, there are also issues with using the correct tense. If we are linking two different times, we need to think about whether to use a simple present / past tense (do / did) or perfect tense (have done / had done)
+
+::: {.callout-tip}
+With a line graph, we need to be very careful in our use of tenses. Line graphs generally also have more minor details, so we need to be more selective in choosing what to write about.
+:::
+
+## Estimating
+
+To show we are estimating (making a good guess), we can use the following words and phrases:
+
+_<span style="background:rgba(240, 200, 0, 0.2)">about, almost, approximately, around, close to, just under, just over, nearly, roughly</span>_
+
+## The past perfect
+
+A line graph like this one provides a nice opportunity to use the past perfect tense. We do not need to do this many times - once is enough to show a range of grammatical points and to vary the structure of our sentences. Here is a reminder of the main points about the past perfect:
+
+- <span style="background:rgba(240, 200, 0, 0.2)">_It is formed by using the past tense of had + the past participle (e.g. had done)_</span>
+- _<span style="background:rgba(240, 200, 0, 0.2)">It is used to show a link between two different times in the past</span>_
+- _<span style="background:rgba(240, 200, 0, 0.2)">It is often used with the preposition 'by' + a specific time (e.g. a year)</span>_
+
+Think about how to describe what happened with the consumption of beef between the two points (A and B) in the image below:
+
+![](Pasted%20image%2020250718112634.png)
+
+To describe this change, we can use the simple past:
+
+- _Beef consumption <font color="#0070c0">fell</font> from <font color="#0070c0">just under</font> 200 grams in 1994 to <font color="#0070c0">approximately</font> 120 grams in 2004._
+
+Or we can use the past perfect and write:
+
+- _Beef consumption began to fall in 1994 <font color="#c00000">and by 2004 it had fallen</font> from <font color="#0070c0">just under</font> 200 grams to <font color="#0070c0">approximately</font> 120 grams._
+
+We need to be careful to use this tense accurately. Can you correct the problems in this sentence?
+
+- Although the amount of lamb consumed weekly was <font color="#c00000">up to</font> 150 grams in the first year, <font color="#c00000">it had experienced</font> a dramatic drop, and <font color="#c00000">reached over</font> 50 grams in the final year.
+
+The main issue here is that the past perfect tense has been used (<font color="#c00000">had experienced</font>) but only one time is mentioned (<font color="#c00000">in the final year</font>), so this should be the simple past:
+
+- Although the amount of lamb consumed weekly was approximately 150 grams in the first year, <font color="#0070c0">it experienced a dramatic drop, and</font> <font color="#c00000">reached over</font> <font color="#0070c0">50 grams in the final year</font>.
+
+To use the past perfect, we would need to say:
+
+- Although the amount of lamb consumed weekly was approximately 150 grams in the first year, <font color="#0070c0">by the final year it had experienced</font> a dramatic drop, <font color="#0070c0">falling to close to</font> 50 grams.
+
+Notice the vocabulary changes she made to support this point (that is '_a dramatic drop_'). She used 'close to' instead of 'over' because 'over' suggests an increase, and she use 'fall' instead of 'reach' because 'reach' is generally used to mean that something ___reached a higher level___.
+
+The wrong sentence __only talks about two events__:
+
+- First year (past)
+- Final year (past)
+
+So we are just __comparing two simple past events__.
+
+We use __past perfect__ when we refer to __two past actions__, and one __happened before__ the other clearly.
+
+In this sentence, both events are already ordered by time: "first year" -> "final year" - no need for past perfect.
+
+In the right sentence:
+
+- "__By the final year__" shows clearly that the __drop happened before__ the final year - so __past perfect is correct here__.
+- "__Had experienced__" shows that the drops was already complete when the final year began.
+- "__Falling to close to 50 grams__" in more accurate than "__reached over 50__" because it's a __decrease__, not an increase.
+
+::: {.callout-tip}
+## Add "by + time" to justify using past perfect
+This is why this phrase helped:
+
+"__By the final year__" -> it shows a clear second time point for past perfect.
+:::
+
+## Exercises
+
+
+
+
+
+# Addressing Band 6 problems
+
+
+
+# Model Answer
