@@ -44,14 +44,6 @@
     ]
   },
   {
-    "listing": "/artificial-intelligent.html",
-    "items": [
-      "/artificial-intelligent/deep-learning-interview/index.html",
-      "/artificial-intelligent/finetunning/index.html",
-      "/artificial-intelligent/convolution/index.html"
-    ]
-  },
-  {
     "listing": "/posts.html",
     "items": [
       "/posts/extreme-early-retirement/index.html",
@@ -60,8 +52,18 @@
     ]
   },
   {
+    "listing": "/artificial-intelligent.html",
+    "items": [
+      "/artificial-intelligent/deep-learning-interview/index.html",
+      "/artificial-intelligent/finetunning/index.html",
+      "/artificial-intelligent/convolution/index.html"
+    ]
+  },
+  {
     "listing": "/programming.html",
     "items": [
+      "/programming/leetcode-triplet/index.html",
+      "/programming/project-euler-52/index.html",
       "/programming/leetcode-hand-of-straights/index.html",
       "/programming/greedy/index.html",
       "/programming/leetcode-gas-station/index.html",

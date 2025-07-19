@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2025-07-19">
+<meta name="description" content="Greedy Intuition and One-Pass Solution">
 
-<title>Artificial Intelligence – Kim Hung’s ThinkStack</title>
+<title>Merge Triplets to Form Target Triplet – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +105,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
 
 <script type="text/javascript">
@@ -139,7 +145,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Kim Hung's ThinkStack" href="artificial-intelligent.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -148,7 +154,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung’s ThinkStack</span>
     </a>
   </div>
@@ -159,11 +165,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -172,39 +178,39 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
         <li>
-    <a class="dropdown-item" href="./math/convex-optimization/">
+    <a class="dropdown-item" href="../../math/convex-optimization/">
  <span class="dropdown-text">Convex Optimization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/probability/">
+    <a class="dropdown-item" href="../../math/probability/">
  <span class="dropdown-text">Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/statistics/">
+    <a class="dropdown-item" href="../../math/statistics/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./artificial-intelligent.html" aria-current="page"> 
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
 <span class="menu-text">AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -221,21 +227,75 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="math">math <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#intuition" id="toc-intuition" class="nav-link active" data-scroll-target="#intuition"><span class="header-section-number">1</span> Intuition</a></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach"><span class="header-section-number">2</span> Approach</a></li>
+  <li><a href="#complexity" id="toc-complexity" class="nav-link" data-scroll-target="#complexity"><span class="header-section-number">3</span> Complexity</a>
+  <ul class="collapse">
+  <li><a href="#problem-summary-merge-triplets-to-form-target-triplet" id="toc-problem-summary-merge-triplets-to-form-target-triplet" class="nav-link" data-scroll-target="#problem-summary-merge-triplets-to-form-target-triplet"><span class="header-section-number">3.1</span> Problem Summary: Merge Triplets to Form Target Triplet</a>
+  <ul class="collapse">
+  <li><a href="#merge-rule" id="toc-merge-rule" class="nav-link" data-scroll-target="#merge-rule"><span class="header-section-number">3.1.1</span> Merge Rule:</a></li>
+  </ul></li>
+  <li><a href="#step-by-step-solution-strategy-greedy" id="toc-step-by-step-solution-strategy-greedy" class="nav-link" data-scroll-target="#step-by-step-solution-strategy-greedy"><span class="header-section-number">3.2</span> Step-by-step Solution Strategy (Greedy)</a>
+  <ul class="collapse">
+  <li><a href="#step-1-filter-valid-triplets" id="toc-step-1-filter-valid-triplets" class="nav-link" data-scroll-target="#step-1-filter-valid-triplets"><span class="header-section-number">3.2.1</span> Step 1: Filter Valid Triplets</a></li>
+  <li><a href="#step-2-identify-building-blocks" id="toc-step-2-identify-building-blocks" class="nav-link" data-scroll-target="#step-2-identify-building-blocks"><span class="header-section-number">3.2.2</span> Step 2: Identify Building Blocks</a></li>
+  <li><a href="#step-3-greedy-tracking" id="toc-step-3-greedy-tracking" class="nav-link" data-scroll-target="#step-3-greedy-tracking"><span class="header-section-number">3.2.3</span> Step 3: Greedy Tracking</a></li>
+  <li><a href="#step-4-final-decision" id="toc-step-4-final-decision" class="nav-link" data-scroll-target="#step-4-final-decision"><span class="header-section-number">3.2.4</span> Step 4: Final Decision</a></li>
+  </ul></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example"><span class="header-section-number">3.3</span> Example</a></li>
+  <li><a href="#why-it-is-a-greedy-problem" id="toc-why-it-is-a-greedy-problem" class="nav-link" data-scroll-target="#why-it-is-a-greedy-problem"><span class="header-section-number">3.4</span> Why It Is a Greedy Problem</a></li>
+  </ul></li>
+  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code"><span class="header-section-number">4</span> Source code</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Artificial Intelligence</h1>
+<h1 class="title">Merge Triplets to Form Target Triplet</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">leetcode</div>
+    <div class="quarto-category">programming</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Greedy Intuition and One-Pass Solution
+  </div>
 </div>
 
-
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/">
+            Leetcode
+            </a>
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 19, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -245,108 +305,136 @@ window.Quarto = {
 </header>
 
 
+<section id="intuition" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Intuition</h1>
+<p>We aim to form the target triplet <code>[x, y, z]</code> by merging valid triplets using element-wise maximums. A key observation is that any triplet with a value exceeding the target in any dimension cannot be used. Therefore, we filter those out and search for triplets that can contribute exactly <code>x</code>, <code>y</code>, or <code>z</code> without exceeding the other target dimensions.</p>
+</section>
+<section id="approach" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Approach</h1>
+<ol type="1">
+<li>Initialize three boolean flags: <code>found_x</code>, <code>found_y</code>, and <code>found_z</code> to track whether we have found triplets that can provide <code>x</code>, <code>y</code>, and <code>z</code> respectively.</li>
+<li>Iterate through each triplet:
+<ul>
+<li>Skip the triplet if any of its elements exceed the target at the corresponding index.</li>
+<li>If the triplet is valid:
+<ul>
+<li>If <code>triplet[0] == x</code>, mark <code>found_x = True</code></li>
+<li>If <code>triplet[1] == y</code>, mark <code>found_y = True</code></li>
+<li>If <code>triplet[2] == z</code>, mark <code>found_z = True</code></li>
+</ul></li>
+</ul></li>
+<li>After iterating through all triplets, if all three flags are <code>True</code>, return <code>True</code>; otherwise, return <code>False</code>.</li>
+</ol>
+<p>This approach is greedy because we only care about finding at least one valid triplet that satisfies each coordinate condition individually.</p>
+</section>
+<section id="complexity" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Complexity</h1>
+<ul>
+<li><p>Time complexity:<br>
+<span class="math display">\[O(n)\]</span><br>
+We iterate over the list of triplets once, performing constant-time operations per triplet.</p></li>
+<li><p>Space complexity:<br>
+<span class="math display">\[O(1)\]</span><br>
+We only use three boolean variables and no additional data structures.</p></li>
+</ul>
+<section id="problem-summary-merge-triplets-to-form-target-triplet" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="problem-summary-merge-triplets-to-form-target-triplet"><span class="header-section-number">3.1</span> Problem Summary: Merge Triplets to Form Target Triplet</h2>
+<p>We are given: - A list of triplets: each is [a, b, c] - A target triplet: [x, y, z]</p>
+<p>Our task is to <strong>merge</strong> some of the triplets to form the target triplet, using this rule:</p>
+<section id="merge-rule" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="merge-rule"><span class="header-section-number">3.1.1</span> Merge Rule:</h3>
+<p>Merging two triplets means taking the element-wise maximum:</p>
+<pre><code>[a1, b1, c1] + [a2, b2, c2] = [max(a1, a2), max(b1, b2), max(c1, c2)]</code></pre>
+<p>But we can <strong>only use</strong> a triplet if it satisfies:</p>
+<pre><code>triplet[i] ≤ target[i] for all i in {0, 1, 2}</code></pre>
+<p>We must decide if it’s possible to form the target triplet through a sequence of such merges.</p>
+<hr>
+</section>
+</section>
+<section id="step-by-step-solution-strategy-greedy" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="step-by-step-solution-strategy-greedy"><span class="header-section-number">3.2</span> Step-by-step Solution Strategy (Greedy)</h2>
+<section id="step-1-filter-valid-triplets" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="step-1-filter-valid-triplets"><span class="header-section-number">3.2.1</span> Step 1: Filter Valid Triplets</h3>
+<p>We first discard any triplet that has a value greater than the target at any position:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> a <span class="op">&gt;</span> x <span class="kw">or</span> b <span class="op">&gt;</span> y <span class="kw">or</span> c <span class="op">&gt;</span> z:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    skip this triplet</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>These triplets cannot be used in any valid merge.</p>
+<hr>
+</section>
+<section id="step-2-identify-building-blocks" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="step-2-identify-building-blocks"><span class="header-section-number">3.2.2</span> Step 2: Identify Building Blocks</h3>
+<p>We are trying to “build” each of the three elements of the target.</p>
+<p>That means we must find at least one triplet that contributes to: - <code>a == x</code> - <code>b == y</code> - <code>c == z</code></p>
+<p>For example: - A triplet like [x, ≤y, ≤z] helps construct the first coordinate - A triplet like [≤x, y, ≤z] helps the second - A triplet like [≤x, ≤y, z] helps the third</p>
+<p>We can mix triplets to form the full target.</p>
+<hr>
+</section>
+<section id="step-3-greedy-tracking" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="step-3-greedy-tracking"><span class="header-section-number">3.2.3</span> Step 3: Greedy Tracking</h3>
+<p>We initialize flags:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>found_x <span class="op">=</span> found_y <span class="op">=</span> found_z <span class="op">=</span> <span class="va">False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then iterate through all <strong>valid</strong> triplets:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> triplet <span class="kw">in</span> triplets:</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> triplet[<span class="dv">0</span>] <span class="op">&lt;=</span> x <span class="kw">and</span> triplet[<span class="dv">1</span>] <span class="op">&lt;=</span> y <span class="kw">and</span> triplet[<span class="dv">2</span>] <span class="op">&lt;=</span> z:</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> triplet[<span class="dv">0</span>] <span class="op">==</span> x:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>            found_x <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> triplet[<span class="dv">1</span>] <span class="op">==</span> y:</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>            found_y <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> triplet[<span class="dv">2</span>] <span class="op">==</span> z:</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>            found_z <span class="op">=</span> <span class="va">True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="step-4-final-decision" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="step-4-final-decision"><span class="header-section-number">3.2.4</span> Step 4: Final Decision</h3>
+<p>If all three components are found:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> found_x <span class="kw">and</span> found_y <span class="kw">and</span> found_z:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="example" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="example"><span class="header-section-number">3.3</span> Example</h2>
+<p>Given:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>triplets <span class="op">=</span> [[<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">3</span>], [<span class="dv">1</span>,<span class="dv">8</span>,<span class="dv">4</span>], [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">5</span>]]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> [<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>[2,5,3] is valid: helps with x=2 and y=5</li>
+<li>[1,8,4] is invalid: 8 &gt; 5</li>
+<li>[2,3,5] is valid: helps with x=2 and z=5</li>
+</ul>
+<p>We found: - x: yes (from both) - y: yes (from [2,5,3]) - z: yes (from [2,3,5])</p>
+<p>Return: <code>True</code></p>
+<hr>
+</section>
+<section id="why-it-is-a-greedy-problem" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="why-it-is-a-greedy-problem"><span class="header-section-number">3.4</span> Why It Is a Greedy Problem</h2>
+<p>We make <strong>local greedy choices</strong>: - If a triplet is valid and has the required value for one of the coordinates, we “take” it. - We do not need to backtrack or search combinations. - As long as we collect the three necessary components, merging them gives the target.</p>
+<p>This approach is optimal and efficient because each choice is independent and bounded by the target.</p>
+</section>
+</section>
+<section id="source-code" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Source code</h1>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution:</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> mergeTriplets(<span class="va">self</span>, triplets: List[List[<span class="bu">int</span>]], target: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        a, b, c <span class="op">=</span> <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>  <span class="co"># will simulate the merged triplet</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> triplet <span class="kw">in</span> triplets:</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Only consider triplets where all elements are &lt;= target</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> triplet[<span class="dv">0</span>] <span class="op">&lt;=</span> target[<span class="dv">0</span>] <span class="kw">and</span> triplet[<span class="dv">1</span>] <span class="op">&lt;=</span> target[<span class="dv">1</span>] <span class="kw">and</span> triplet[<span class="dv">2</span>] <span class="op">&lt;=</span> target[<span class="dv">2</span>]:</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                a <span class="op">=</span> <span class="bu">max</span>(a, triplet[<span class="dv">0</span>])</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>                b <span class="op">=</span> <span class="bu">max</span>(b, triplet[<span class="dv">1</span>])</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>                c <span class="op">=</span> <span class="bu">max</span>(c, triplet[<span class="dv">2</span>])</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> [a, b, c] <span class="op">==</span> target</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="math" data-listing-date-sort="1749686400000" data-listing-file-modified-sort="1752921099210" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6097">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Logistic regression</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
-math
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<div class="listing-date">
-Jun 12, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="AI" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1752921099210" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p><a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Finetuning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-date">
-May 30, 2025
-</div>
-<div class="listing-author">
-Hung
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1752921099209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1575">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p><a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/convolution/Pasted image 20250327230513.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<div class="listing-date">
-Mar 21, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
