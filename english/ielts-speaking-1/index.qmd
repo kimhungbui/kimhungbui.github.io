@@ -1,0 +1,84 @@
+---
+title: How Speaking is Assessed in IELTS
+lightbox: false
+description: Assess IELTS Speaking
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-19
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Myths and misunderstanding in IELTS Speaking
+
+## Mistaken ideas about the examiner's role
+
+Myths and misunderstandings often come from misinterpreting facts about lELTS, or reaching a faulty conclusion based on resources that don't reflect the real test. This includes questions shared after a test, which lead to a common belief that the examiner asks everyone the same questions. IELTS would not be a fair or reliable test if this was true. Imagine a candidate at Band 3 being asked the same questions as one at Band 9. Such a test would be unfair to both test takers, with questions that would either be impossible for the lower-level candidate or would not allow the high-level candidate to show their full potential.
+
+
+Another common source of confusion are the thousands of videos on platforms such as YouTube, many of which show 'mock interviews'. The table below shows some common features of these videos and the false impressions they can give.
+
+
+| Common features of mock speaking test videos:                                                                         | Mistaken conclusions viewers often reach:                                                                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| We are told the test taker's level before the test starts.                                                            | _'This test taker is 'Band 8', so this video must show a Band 8 level.'_                                                                                                                      |
+| The 'examiner' reads a question, the 'test taker' talks as much as possible, then the 'examiner' asks a new question. | _'The candidate should start talking when the question ends and just keep going for as long as possible - it doesn't matter what you say because the 'examiner' ignores the answers anyway.'_ |
+| Vocabulary is highlighted (especially idiomatic phrases) by showing words on the screen with a big green tick.        | _'The test taker got this high score because they used a lot of idiomatic phrases, so I need to do that too if I want to get the same score.'_                                                |
+
+### Point to notice
+
+- The score in these videos is usually based on the scored the candidate was awarded during a real test at some point in the past. This suggest that any person who has received Band 8 in a speaking test will always demonstrate this level when they talk. However, our IELTS certificate only shows the level we were able to reach in our test - it isn't a permanent stamp of authenticity. A sporting achievement is a useful analogy here. 
+
+::: {.callout-tip}
+If someone is awarded a Band 8 in Speaking, this shows they are capable of a very high level of speaking - it does not mean they are demonstrating the Band 8 speaking level whenever they talk.
+:::
+
+- The 'examiner' shown in the videos play a very passive role and doesn't appear to pay very much attention to the response of the 'candidate'. For example, they often ask a question that has already been answered, and never ask follow-up questions. In addition, the candidate is allowed to ramble on for as long as they want, often delivering mini lectures that appear to follow a '3-sentence' template. This gives a false impression of how an IELTS interview actually works.
+
+I have often said that receiving a high score in any test does not make you an expert in language assessment or in how you achieved that score. In IELTS Speaking, the most common assumption is that a high score is due to the vocabulary used, especially idiomatic phrases. This idea is then presented as a model for 'Band 8' in many videos, where the speaker is allowed to give long unnatural answers, featuring as many idiomatic phrases as possible. As such, these videos do not represent a real test and no longer show the level the test taker was awarded in their actual test, where their examiner played a much more important role than 'the reader of questions'.
+
+
+
+# How to think like an examiner
+
+## The role of examiner
+
+Real examiners have to undergo special training and standardization to ensure that each candidate is given the same opportunities to show their level. A key element of this training is understanding the interview process and the role of the examiner. Some of the key aspects of this role:
+
+### Managing the time well
+
+If too much time is spent on Part 1 or 2, a candidate will not have enough opportunities to show their higher-level skills in Part 3. To prevent this, examiners have to stick very strictly to the timings of the interview, and keep a discrete eye on the timer at all times.
+
+### Controlling the interaction
+
+Learned answers don't give any usable information and have to be ignored. To give every test taker the opportunity to show their _real_ value, examiners need to stop rehearsed speeches with a polite, '_Thank you_!' before asking a new question or moving on to the next part of the test.
+
+The interview must feel as close to a natural conversation as possible. This means that, although they are given a script for each test, examiners need to adapt the questions so that they are appropriate to the level of the candidate and follow on naturally from what the candidate has said. This is particularly important in Part 3.
+
+### Deciding on the Band score
+
+Examiners need to be very familiar with the Band descriptors so that they can accurately apply them in the test. Throughout an interview, they must listen carefully for evidence to match the descriptors in each criteria, and must always refer back to these descriptors when assigning a score.
+
+### Maintaining the standard
+
+The interview is recorded to check that examiners are following the right interview procedure and applying the Band descriptors accurately. Outside of the test, examiners are regularly tested to ensure the accuracy of their scoring.
+
+::: {.callout-tip}
+In many of the videos showing 'mock tests', the candidate doesn't reach their full potential because they are allowed to talk for as long as they want and give mini speeches, while the 'examiner' plays a rather passive role and never asks any follow-up questions. In the real test, your examiner will not sit passively, reading a list of questions - they will interact with you and respond to what you say.
+:::
+
+# Understanding the Band descriptors
+
+
+
