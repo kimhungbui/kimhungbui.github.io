@@ -512,7 +512,7 @@ font-style: inherit;">'123'</span></span></code></pre></div>
 <li><p>The loop is linear in x (but bounded by 6-digit numbers)</p></li>
 <li><p>Much faster than O(n²) since the search space is tightly controlled</p></li>
 </ul>
-<div id="87bd3292" class="cell" data-execution_count="1">
+<div id="499931f2" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="kw" style="color: #003B4F;
@@ -608,6 +608,494 @@ font-style: inherit;"># Output: 142857</span></span></code></pre></div>
   <category>project-euler</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/project-euler-52/</guid>
+  <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Valid Parenthesis String with Wildcards - A Greedy Stack Approach</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-678-valid-parenthesis-string/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="intuition" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Intuition</h1>
+<p>When reading the problem description of LeetCode 678 – <em>Valid Parenthesis String</em>, I immediately thought of the classic balanced parentheses problem. However, the wildcard character <code>*</code>, which can be treated as <code>'('</code>, <code>')'</code>, or an empty string, makes it more complex.</p>
+<p>My first instinct was to <strong>simulate a stack</strong> like how we handle simple parenthesis matching: - Push <code>'('</code> onto the stack. - Pop for every <code>')'</code>. - But now, we need to consider <code>'*'</code> flexibly. This led me to a <strong>one-stack idea</strong>, which failed because we need to preserve the order of matching.</p>
+<p>That realization pushed me to a <strong>two-stack greedy strategy</strong>: - One stack for <code>'('</code> indices. - One for <code>'*'</code> indices. Then try to match the remaining <code>'('</code> with any <code>'*'</code> that appears after it.</p>
+</section>
+<section id="approach" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Approach</h1>
+<p>We simulate the process using two stacks: - <code>stack_paren</code>: holds indices of <code>'('</code>. - <code>stack_star</code>: holds indices of <code>'*'</code>.</p>
+<p>As we iterate: - Push index into <code>stack_paren</code> for <code>'('</code>. - Push index into <code>stack_star</code> for <code>'*'</code>. - For <code>')'</code>, try to pop from <code>stack_paren</code> first (prefer real ‘(’), else from <code>stack_star</code>.</p>
+<p>Finally, for any unmatched <code>'('</code> left, we try to pair with <code>'*'</code> that occur <strong>after</strong> it. If a <code>'('</code> appears after any available <code>'*'</code>, it’s invalid.</p>
+</section>
+<section id="code" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Code</h1>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb1-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> checkValidString(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, s: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb1-3">        stack_paren <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># stores indices of '('</span></span>
+<span id="cb1-4">        stack_star <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> []   <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># stores indices of '*'</span></span>
+<span id="cb1-5"></span>
+<span id="cb1-6">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i, c <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">enumerate</span>(s):</span>
+<span id="cb1-7">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'('</span>:</span>
+<span id="cb1-8">                stack_paren.append(i)</span>
+<span id="cb1-9">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*'</span>:</span>
+<span id="cb1-10">                stack_star.append(i)</span>
+<span id="cb1-11">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">')'</span>:</span>
+<span id="cb1-12">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> stack_paren:</span>
+<span id="cb1-13">                    stack_paren.pop()</span>
+<span id="cb1-14">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> stack_star:</span>
+<span id="cb1-15">                    stack_star.pop()</span>
+<span id="cb1-16">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb1-17">                    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb1-18"></span>
+<span id="cb1-19">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Match remaining '(' with '*' appearing after it</span></span>
+<span id="cb1-20">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span> stack_paren <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> stack_star:</span>
+<span id="cb1-21">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> stack_paren[<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> stack_star[<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]:</span>
+<span id="cb1-22">                stack_paren.pop()</span>
+<span id="cb1-23">                stack_star.pop()</span>
+<span id="cb1-24">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb1-25">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span>
+<span id="cb1-26"></span>
+<span id="cb1-27">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">not</span> stack_paren</span></code></pre></div>
+<section id="complexity" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="complexity"><span class="header-section-number">3.1</span> Complexity</h2>
+<ul>
+<li><p>Time complexity: O(n) We traverse the string once and at most once more to match remaining parentheses.</p></li>
+<li><p>Space complexity: O(n) In the worst case, both stacks could hold all characters.</p></li>
+</ul>
+</section>
+</section>
+<section id="thought-process-dynamic-programming-approach" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Thought Process: Dynamic Programming Approach</h1>
+<p>Initially, before settling on the greedy stack method, we considered a <strong>dynamic programming (DP)</strong> solution.</p>
+<p>The idea was to define a 2D DP table:</p>
+<ul>
+<li>Let <code>dp[i][j]</code> be <code>True</code> if the substring <code>s[i][j]</code> can be a valid parenthesis string.</li>
+</ul>
+<p>This definition supports checking subintervals, including the role of <code>*</code>. Since <code>*</code> can represent <code>'('</code>, <code>')'</code>, or <code>''</code>, we need to explore all possibilities recursively or fill them iteratively.</p>
+<section id="base-cases" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="base-cases"><span class="header-section-number">4.1</span> Base Cases</h2>
+<ul>
+<li><p>Every <code>dp[i][i]</code> is <code>True</code> if <code>s[i] == '*'</code>, because <code>'*'</code> can represent an empty string.</p></li>
+<li><p>For length 2 substrings:</p>
+<ul>
+<li>Valid cases include <code>()</code>, <code>(*)</code>, <code>(*</code>, <code>*)</code>, and <code>**</code>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="transition" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="transition"><span class="header-section-number">4.2</span> Transition</h2>
+<p>To compute <code>dp[i][j]</code>, we iterate over all <code>k</code> such that <code>i &lt; k ≤ j</code>, and check:</p>
+<ul>
+<li>If <code>s[i] == '(' or '*'</code> <strong>and</strong> <code>s[k] == ')' or '*'</code><br>
+<strong>and</strong> <code>dp[i+1][k-1] == True</code> (i.e., the inner substring is valid)<br>
+<strong>and</strong> <code>dp[k+1][j] == True</code> (i.e., the remaining part is also valid)</li>
+</ul>
+<p>Then <code>dp[i][j] = True</code>.</p>
+<p>This leads to an <strong>O(n³)</strong> time complexity in the worst case due to 3 nested loops: - <code>i</code> from <code>n-1</code> to <code>0</code> - <code>j</code> from <code>i</code> to <code>n-1</code> - <code>k</code> from <code>i+1</code> to <code>j</code></p>
+<p>We may reduce to <strong>O(n²)</strong> using memoization and early stopping, but this still isn’t optimal for large <code>n</code>.</p>
+</section>
+<section id="why-we-switched-to-stack" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="why-we-switched-to-stack"><span class="header-section-number">4.3</span> Why We Switched to Stack</h2>
+<p>While the DP approach gives a rigorous solution, the memory and runtime costs are high for <code>n = 100</code>. This motivated us to find a <strong>greedy method</strong> — leading to the efficient two-stack approach which runs in linear time and works within the problem’s constraints.</p>
+</section>
+<section id="code-1" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="code-1"><span class="header-section-number">4.4</span> Code</h2>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb2-2">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> checkValidString(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, s: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb2-3">        n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(s)</span>
+<span id="cb2-4">        dp <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [[<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> n <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> _ <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(n)]</span>
+<span id="cb2-5"></span>
+<span id="cb2-6">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Base cases: single character</span></span>
+<span id="cb2-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(n):</span>
+<span id="cb2-8">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> s[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*'</span>:</span>
+<span id="cb2-9">                dp[i][i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb2-10"></span>
+<span id="cb2-11">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Base cases: two characters</span></span>
+<span id="cb2-12">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>):</span>
+<span id="cb2-13">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (s[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'('</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> s[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*'</span>) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> (s[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">')'</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> s[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*'</span>):</span>
+<span id="cb2-14">                dp[i][i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb2-15"></span>
+<span id="cb2-16">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Fill DP table</span></span>
+<span id="cb2-17">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> size <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, n):</span>
+<span id="cb2-18">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(n <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> size):</span>
+<span id="cb2-19">                j <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> size</span>
+<span id="cb2-20">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> s[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*'</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> dp[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>][j]:</span>
+<span id="cb2-21">                    dp[i][j] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb2-22">                    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">continue</span></span>
+<span id="cb2-23">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> k <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, j<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>):</span>
+<span id="cb2-24">                    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (s[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'('</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> s[i] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*'</span>) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> (s[k] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">')'</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> s[k] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'*'</span>):</span>
+<span id="cb2-25">                        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (k <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> dp[i<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>][k<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> (k <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> j <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> dp[k<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>][j]):</span>
+<span id="cb2-26">                            dp[i][j] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb2-27">                            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">break</span></span>
+<span id="cb2-28"></span>
+<span id="cb2-29">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> dp[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>][n<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]</span></code></pre></div>
+</section>
+</section>
+<section id="takeaway" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Takeaway</h1>
+<p>What seemed like a brute-force DP problem can actually be solved efficiently with a greedy strategy. The key was realizing that ’*’ can help balance ‘(’ only if it appears after ‘(’. Thinking step-by-step and simulating the process helped me discover this clean and optimal solution.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>project-euler</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-678-valid-parenthesis-string/</guid>
   <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -3565,7 +4053,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="700d5978" class="cell" data-execution_count="1">
+<div id="92bebbcd" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
@@ -4439,194 +4927,6 @@ Choose the elements at indices 3, 4 and 5. The resulting array is nums = [1,1,1,
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/program-parity-invariance/parity-invariance.html</guid>
   <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>leetcode-Longest-Nice-Subarray</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Topic: <code>array, bit manipulation, slide windown</code></p>
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>You are given an array <code>nums</code> consisting of <strong>positive</strong> integers.</p>
-<p>We call a subarray of <code>nums</code> <strong>nice</strong> if the bitwise <strong>AND</strong> of every pair of elements that are in <strong>different</strong> positions in the subarray is equal to <code>0</code>.</p>
-<p>Return <em>the length of the <strong>longest</strong> nice subarray</em>.</p>
-<p>A <strong>subarray</strong> is a <strong>contiguous</strong> part of an array.</p>
-<p><strong>Note</strong> that subarrays of length <code>1</code> are always considered nice.</p>
-<p>Example 1:</p>
-<p>Input: nums = [1,3,8,48,10] Output: 3 Explanation: The longest nice subarray is [3,8,48]. This subarray satisfies the conditions: - 3 AND 8 = 0. - 3 AND 48 = 0. - 8 AND 48 = 0. It can be proven that no longer nice subarray can be obtained, so we return 3.</p>
-<p>Example 2:</p>
-<p>Input: nums = [3,1,5,11,13] Output: 1 Explanation: The length of the longest nice subarray is 1. Any subarray of length 1 can be chosen.</p>
-<p>Constraints:</p>
-<pre><code>1 &lt;= nums.length &lt;= 105
-1 &lt;= nums[i] &lt;= 109</code></pre>
-</section>
-<section id="analysis" class="level1">
-<h1>Analysis</h1>
-<p>&nbsp; &nbsp; example 1:</p>
-<p>&nbsp; &nbsp; [1, 3, 8, 48, 10]</p>
-<p>&nbsp; &nbsp; 3 in bin: 0011</p>
-<p>&nbsp; &nbsp; 8 in bin: 1000</p>
-<p>&nbsp; &nbsp; 48d = 1100000</p>
-<p>&nbsp; &nbsp; 10d = 1010</p>
-<p>&nbsp; &nbsp; 0011 AND 1000 = 0</p>
-<p>&nbsp; &nbsp; 3, 8, 48 AND = 0</p>
-<p>&nbsp; &nbsp; 10 and 8 not = 0</p>
-<p>&nbsp; &nbsp; so, if pair AND = 0</p>
-<p>&nbsp; &nbsp; that pair have no common bit</p>
-<p>&nbsp; &nbsp; so, we store a bit array to check the state of bit</p>
-<p>&nbsp; &nbsp; and if, to better, we just need to store number of bit in that array instead.</p>
-<p>&nbsp; &nbsp; oh no, it wrong.</p>
-<p>&nbsp; &nbsp; so if we must store a array.</p>
-<p>&nbsp; &nbsp; no, we can use bitwise operator <code>&amp;</code> to check if <code>a AND b == 0</code> or not</p>
-<p>&nbsp; &nbsp; and <code>OR</code> for cumulative bit</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">&nbsp; &nbsp; x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span></span>
-<span id="cb2-2">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 101</span></span>
-<span id="cb2-3">&nbsp; &nbsp; x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span></span>
-<span id="cb2-4">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 3 == 011</span></span>
-<span id="cb2-5">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 101 |= 011 = 111</span></span>
-<span id="cb2-6">&nbsp; &nbsp; <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(x)</span>
-<span id="cb2-7">&nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 7</span></span></code></pre></div>
-<p>&nbsp; &nbsp; to search for longest (can use <code>i</code>, and <code>j</code>) for check all the begin and end</p>
-<p>&nbsp; &nbsp; improve it by two pointer to decrease TC from <code>O(n^2)</code> to <code>O(n)</code></p>
-<p>&nbsp; &nbsp; and now, how to get rid of num of left from cumulative bit in slide windown</p>
-<p>&nbsp; &nbsp; check that case: [011, 100]</p>
-<p>&nbsp; &nbsp; now, culmulative bit: 111</p>
-<p>&nbsp; &nbsp; we want it after left += 1, is 100</p>
-<p>&nbsp; &nbsp; in XOR: 111 XOR 011 == 100</p>
-<p>&nbsp; &nbsp; XOR parameter in python is <code>^=</code></p>
-</section>
-<section id="code" class="level1">
-<h1>Code</h1>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> longestNiceSubarray(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, nums: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>:</span>
-<span id="cb3-2"></span>
-<span id="cb3-3">&nbsp; &nbsp; &nbsp; &nbsp; cumulative_bit <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb3-4"></span>
-<span id="cb3-5">&nbsp; &nbsp; &nbsp; &nbsp; ans <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb3-6"></span>
-<span id="cb3-7">&nbsp; &nbsp; &nbsp; &nbsp; left <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb3-8"></span>
-<span id="cb3-9">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> right <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(nums)):</span>
-<span id="cb3-10"></span>
-<span id="cb3-11">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># when AND not ease</span></span>
-<span id="cb3-12"></span>
-<span id="cb3-13">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">while</span> cumulative_bit <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&amp;</span> nums[right] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">!=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>: <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># right can not cumulative, increase left until it can ease, use XOR for get rid of it</span></span>
-<span id="cb3-14"></span>
-<span id="cb3-15">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cumulative_bit <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">^=</span> nums[left]</span>
-<span id="cb3-16"></span>
-<span id="cb3-17">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; left <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb3-18"></span>
-<span id="cb3-19">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># until can AND</span></span>
-<span id="cb3-20"></span>
-<span id="cb3-21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># use OR to cumulative it</span></span>
-<span id="cb3-22"></span>
-<span id="cb3-23">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cumulative_bit <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|=</span> nums[right]</span>
-<span id="cb3-24"></span>
-<span id="cb3-25">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ans <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">max</span>(ans, right <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> left <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>)</span>
-<span id="cb3-26"></span>
-<span id="cb3-27">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> ans</span></code></pre></div>
-
-
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html</guid>
-  <pubDate>Tue, 18 Mar 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -44,10 +44,27 @@
     ]
   },
   {
+    "listing": "/artificial-intelligent.html",
+    "items": [
+      "/artificial-intelligent/deep-learning-interview/index.html",
+      "/artificial-intelligent/finetunning/index.html",
+      "/artificial-intelligent/convolution/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/extreme-early-retirement/index.html",
+      "/posts/pkm-quarto-books/index.html",
+      "/posts/nextcloud-install/index.html"
+    ]
+  },
+  {
     "listing": "/programming.html",
     "items": [
       "/programming/leetcode-triplet/index.html",
       "/programming/project-euler-52/index.html",
+      "/programming/leetcode-678-valid-parenthesis-string/index.html",
       "/programming/leetcode-/index.html",
       "/programming/leetcode-hand-of-straights/index.html",
       "/programming/greedy/index.html",
@@ -69,22 +86,6 @@
       "/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
       "/programming/leetcode-house-robber/house-robber.html",
       "/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html"
-    ]
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/extreme-early-retirement/index.html",
-      "/posts/pkm-quarto-books/index.html",
-      "/posts/nextcloud-install/index.html"
-    ]
-  },
-  {
-    "listing": "/artificial-intelligent.html",
-    "items": [
-      "/artificial-intelligent/deep-learning-interview/index.html",
-      "/artificial-intelligent/finetunning/index.html",
-      "/artificial-intelligent/convolution/index.html"
     ]
   }
 ]
