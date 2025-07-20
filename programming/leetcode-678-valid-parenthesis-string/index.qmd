@@ -1,0 +1,173 @@
+---
+title: Valid Parenthesis String with Wildcards - A Greedy Stack Approach
+lightbox: false
+description: Many approaches
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode - 678. Valid Parenthesis String
+    affiliation-url: https://leetcode.com/problems/valid-parenthesis-string/description/
+date: 2025-07-19
+categories:
+  - project-euler
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+
+
+# Intuition
+
+When reading the problem description of LeetCode 678 – *Valid Parenthesis String*, I immediately thought of the classic balanced parentheses problem. However, the wildcard character `*`, which can be treated as `'('`, `')'`, or an empty string, makes it more complex.
+
+My first instinct was to **simulate a stack** like how we handle simple parenthesis matching:
+- Push `'('` onto the stack.
+- Pop for every `')'`.
+- But now, we need to consider `'*'` flexibly. This led me to a **one-stack idea**, which failed because we need to preserve the order of matching.
+
+That realization pushed me to a **two-stack greedy strategy**:
+- One stack for `'('` indices.
+- One for `'*'` indices.
+Then try to match the remaining `'('` with any `'*'` that appears after it.
+
+# Approach
+
+We simulate the process using two stacks:
+- `stack_paren`: holds indices of `'('`.
+- `stack_star`: holds indices of `'*'`.
+
+As we iterate:
+- Push index into `stack_paren` for `'('`.
+- Push index into `stack_star` for `'*'`.
+- For `')'`, try to pop from `stack_paren` first (prefer real '('), else from `stack_star`.
+
+Finally, for any unmatched `'('` left, we try to pair with `'*'` that occur **after** it. If a `'('` appears after any available `'*'`, it's invalid.
+
+# Code
+
+```python
+class Solution:
+    def checkValidString(self, s: str) -> bool:
+        stack_paren = []  # stores indices of '('
+        stack_star = []   # stores indices of '*'
+
+        for i, c in enumerate(s):
+            if c == '(':
+                stack_paren.append(i)
+            elif c == '*':
+                stack_star.append(i)
+            elif c == ')':
+                if stack_paren:
+                    stack_paren.pop()
+                elif stack_star:
+                    stack_star.pop()
+                else:
+                    return False
+
+        # Match remaining '(' with '*' appearing after it
+        while stack_paren and stack_star:
+            if stack_paren[-1] < stack_star[-1]:
+                stack_paren.pop()
+                stack_star.pop()
+            else:
+                return False
+
+        return not stack_paren
+```
+
+
+## Complexity
+- Time complexity: O(n)
+We traverse the string once and at most once more to match remaining parentheses.
+
+- Space complexity: O(n)
+In the worst case, both stacks could hold all characters.
+
+# Thought Process: Dynamic Programming Approach
+
+Initially, before settling on the greedy stack method, we considered a **dynamic programming (DP)** solution.
+
+The idea was to define a 2D DP table:
+
+- Let `dp[i][j]` be `True` if the substring `s[i][j]` can be a valid parenthesis string.
+
+This definition supports checking subintervals, including the role of `*`. Since `*` can represent `'('`, `')'`, or `''`, we need to explore all possibilities recursively or fill them iteratively.
+
+## Base Cases
+
+- Every `dp[i][i]` is `True` if `s[i] == '*'`, because `'*'` can represent an empty string.
+
+- For length 2 substrings:
+  - Valid cases include `()`, `(*)`, `(*`, `*)`, and `**`.
+
+## Transition
+
+To compute `dp[i][j]`, we iterate over all `k` such that `i < k ≤ j`, and check:
+
+- If `s[i] == '(' or '*'` **and** `s[k] == ')' or '*'`  
+  **and** `dp[i+1][k-1] == True` (i.e., the inner substring is valid)  
+  **and** `dp[k+1][j] == True` (i.e., the remaining part is also valid)
+
+Then `dp[i][j] = True`.
+
+This leads to an **O(n³)** time complexity in the worst case due to 3 nested loops:
+- `i` from `n-1` to `0`
+- `j` from `i` to `n-1`
+- `k` from `i+1` to `j`
+
+We may reduce to **O(n²)** using memoization and early stopping, but this still isn't optimal for large `n`.
+
+
+## Why We Switched to Stack
+
+While the DP approach gives a rigorous solution, the memory and runtime costs are high for `n = 100`. This motivated us to find a **greedy method** — leading to the efficient two-stack approach which runs in linear time and works within the problem’s constraints.
+
+## Code
+
+```python
+class Solution:
+    def checkValidString(self, s: str) -> bool:
+        n = len(s)
+        dp = [[False] * n for _ in range(n)]
+
+        # Base cases: single character
+        for i in range(n):
+            if s[i] == '*':
+                dp[i][i] = True
+
+        # Base cases: two characters
+        for i in range(n - 1):
+            if (s[i] == '(' or s[i] == '*') and (s[i+1] == ')' or s[i+1] == '*'):
+                dp[i][i+1] = True
+
+        # Fill DP table
+        for size in range(2, n):
+            for i in range(n - size):
+                j = i + size
+                if s[i] == '*' and dp[i+1][j]:
+                    dp[i][j] = True
+                    continue
+                for k in range(i+1, j+1):
+                    if (s[i] == '(' or s[i] == '*') and (s[k] == ')' or s[k] == '*'):
+                        if (k == i+1 or dp[i+1][k-1]) and (k == j or dp[k+1][j]):
+                            dp[i][j] = True
+                            break
+
+        return dp[0][n-1]
+```
+
+
+# Takeaway
+What seemed like a brute-force DP problem can actually be solved efficiently with a greedy strategy. The key was realizing that '*' can help balance '(' only if it appears after '('. Thinking step-by-step and simulating the process helped me discover this clean and optimal solution.
+
