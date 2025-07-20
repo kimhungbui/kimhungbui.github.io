@@ -215,7 +215,17 @@ gtag('config', 'G-R5TB4V4ZYS', { 'anonymize_ip': true});
   <li><a href="#why-we-switched-to-stack" id="toc-why-we-switched-to-stack" class="nav-link" data-scroll-target="#why-we-switched-to-stack"><span class="header-section-number">4.3</span> Why We Switched to Stack</a></li>
   <li><a href="#code-1" id="toc-code-1" class="nav-link" data-scroll-target="#code-1"><span class="header-section-number">4.4</span> Code</a></li>
   </ul></li>
-  <li><a href="#takeaway" id="toc-takeaway" class="nav-link" data-scroll-target="#takeaway"><span class="header-section-number">5</span> Takeaway</a></li>
+  <li><a href="#takeaway" id="toc-takeaway" class="nav-link" data-scroll-target="#takeaway"><span class="header-section-number">5</span> Takeaway</a>
+  <ul class="collapse">
+  <li><a href="#why-the-two-stack-approach-is-greedy" id="toc-why-the-two-stack-approach-is-greedy" class="nav-link" data-scroll-target="#why-the-two-stack-approach-is-greedy"><span class="header-section-number">5.1</span> Why the Two-Stack Approach Is Greedy</a>
+  <ul class="collapse">
+  <li><a href="#immediate-matching" id="toc-immediate-matching" class="nav-link" data-scroll-target="#immediate-matching"><span class="header-section-number">5.1.1</span> Immediate Matching</a></li>
+  <li><a href="#post-processing-for" id="toc-post-processing-for" class="nav-link" data-scroll-target="#post-processing-for"><span class="header-section-number">5.1.2</span> Post-Processing for <code>'('</code></a></li>
+  <li><a href="#no-backtracking-or-multiple-scenarios" id="toc-no-backtracking-or-multiple-scenarios" class="nav-link" data-scroll-target="#no-backtracking-or-multiple-scenarios"><span class="header-section-number">5.1.3</span> No Backtracking or Multiple Scenarios</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">5.1.4</span> Summary Table</a></li>
+  <li><a href="#why-greedy-works-here" id="toc-why-greedy-works-here" class="nav-link" data-scroll-target="#why-greedy-works-here"><span class="header-section-number">5.1.5</span> Why Greedy Works Here</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -390,8 +400,77 @@ gtag('config', 'G-R5TB4V4ZYS', { 'anonymize_ip': true});
 <section id="takeaway" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Takeaway</h1>
 <p>What seemed like a brute-force DP problem can actually be solved efficiently with a greedy strategy. The key was realizing that ’*’ can help balance ‘(’ only if it appears after ‘(’. Thinking step-by-step and simulating the process helped me discover this clean and optimal solution.</p>
+<section id="why-the-two-stack-approach-is-greedy" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="why-the-two-stack-approach-is-greedy"><span class="header-section-number">5.1</span> Why the Two-Stack Approach Is Greedy</h2>
+<p>We call the <strong>two-stack approach</strong> to Leetcode 678 a <strong>greedy algorithm</strong> because it makes <strong>locally optimal decisions</strong> at each step, aiming to resolve mismatches immediately without exploring all possibilities.</p>
+<section id="immediate-matching" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="immediate-matching"><span class="header-section-number">5.1.1</span> Immediate Matching</h3>
+<ul>
+<li>When encountering a <code>')'</code>, we:
+<ul>
+<li>First try to match it with a <code>'('</code> (if available),</li>
+<li>If not, try to match it with a <code>'*'</code> (interpreted as <code>'('</code>).</li>
+</ul></li>
+<li>If neither is available, return <code>False</code> immediately.</li>
+</ul>
+<blockquote class="blockquote">
+<p>This is a greedy decision: match now rather than wait for a possibly better match later.</p>
+</blockquote>
+</section>
+<section id="post-processing-for" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="post-processing-for"><span class="header-section-number">5.1.2</span> Post-Processing for <code>'('</code></h3>
+<ul>
+<li>After scanning the string, some <code>'('</code> may remain.</li>
+<li>We greedily match each <code>'('</code> with a later <code>'*'</code> (interpreted as <code>')'</code>).</li>
+<li>This match must happen in order: <code>'('</code> must appear <strong>before</strong> <code>'*'</code>.</li>
+</ul>
+</section>
+<section id="no-backtracking-or-multiple-scenarios" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="no-backtracking-or-multiple-scenarios"><span class="header-section-number">5.1.3</span> No Backtracking or Multiple Scenarios</h3>
+<ul>
+<li>The algorithm never revisits decisions.</li>
+<li>Unlike dynamic programming (which explores all valid ways to interpret <code>'*'</code>), the greedy approach only considers matches that help <strong>balance the parentheses immediately</strong>.</li>
+</ul>
+</section>
+<section id="summary-table" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">5.1.4</span> Summary Table</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Character</th>
+<th>Greedy Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>')'</code></td>
+<td>Match immediately with <code>'('</code> or <code>'*'</code></td>
+</tr>
+<tr class="even">
+<td><code>'('</code></td>
+<td>Saved in stack for future match</td>
+</tr>
+<tr class="odd">
+<td><code>'*'</code></td>
+<td>Stored to match later as <code>'('</code> or <code>')'</code></td>
+</tr>
+<tr class="even">
+<td>Remaining <code>'('</code></td>
+<td>Matched with later <code>'*'</code> greedily</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="why-greedy-works-here" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="why-greedy-works-here"><span class="header-section-number">5.1.5</span> Why Greedy Works Here</h3>
+<p>This problem permits multiple interpretations of <code>'*'</code>, but the greedy strategy works because: - We never allow unmatched <code>')'</code>. - Every <code>'('</code> must eventually be matched, and greedy ensures we try the best-case option first.</p>
+<blockquote class="blockquote">
+<p>Greedy is valid in this problem due to the constraints and structure of balanced parentheses.</p>
+</blockquote>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
