@@ -171,3 +171,39 @@ class Solution:
 # Takeaway
 What seemed like a brute-force DP problem can actually be solved efficiently with a greedy strategy. The key was realizing that '*' can help balance '(' only if it appears after '('. Thinking step-by-step and simulating the process helped me discover this clean and optimal solution.
 
+## Why the Two-Stack Approach Is Greedy
+
+We call the **two-stack approach** to Leetcode 678 a **greedy algorithm** because it makes **locally optimal decisions** at each step, aiming to resolve mismatches immediately without exploring all possibilities.
+
+### Immediate Matching
+- When encountering a `')'`, we:
+  - First try to match it with a `'('` (if available),
+  - If not, try to match it with a `'*'` (interpreted as `'('`).
+- If neither is available, return `False` immediately.
+
+> This is a greedy decision: match now rather than wait for a possibly better match later.
+
+### Post-Processing for `'('`
+- After scanning the string, some `'('` may remain.
+- We greedily match each `'('` with a later `'*'` (interpreted as `')'`).
+- This match must happen in order: `'('` must appear **before** `'*'`.
+
+### No Backtracking or Multiple Scenarios
+- The algorithm never revisits decisions.
+- Unlike dynamic programming (which explores all valid ways to interpret `'*'`), the greedy approach only considers matches that help **balance the parentheses immediately**.
+
+### Summary Table
+
+| Character | Greedy Behavior |
+|----------|------------------|
+| `')'`    | Match immediately with `'('` or `'*'` |
+| `'('`    | Saved in stack for future match |
+| `'*'`    | Stored to match later as `'('` or `')'` |
+| Remaining `'('` | Matched with later `'*'` greedily |
+
+### Why Greedy Works Here
+This problem permits multiple interpretations of `'*'`, but the greedy strategy works because:
+- We never allow unmatched `')'`.
+- Every `'('` must eventually be matched, and greedy ensures we try the best-case option first.
+
+> Greedy is valid in this problem due to the constraints and structure of balanced parentheses.
