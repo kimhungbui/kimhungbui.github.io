@@ -1,0 +1,83 @@
+---
+title: The Silence Before Dawn
+lightbox: false
+description: Fragments of the Future
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+
+date: 2025-07-19
+categories:
+  - fiction
+
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+
+🎯 Theme:
+Loneliness and perseverance at the start of the journey.
+A quiet morning. The main character begins another study day while carrying the weight of emotional wounds.
+
+🪟 Section 1: Opening Scene
+Mood: Stillness, quiet, slight anxiety
+Place: Tiny rented room in a big city (maybe HCMC), early morning
+
+The alarm buzzes at 5:30 AM.
+
+He sits up on a thin mattress. His desk is full of papers.
+
+The sun hasn't risen. The city is still asleep.
+
+Coffee boils in a small metal pot. The sound is the only thing breaking the silence.
+
+(Possible line)
+“Outside, the world slept. Inside, he fought another silent battle — one more morning, one more step.”
+
+🕰️ Section 2: Flashback or Reflection
+He sees the photo of his girlfriend and him on the phone.
+
+Thinks about the last time he truly laughed — maybe when she was beside him.
+
+
+That moment of hope when he first opened a textbook on AI and believed in a better future.
+
+“Love was warm. But it faded. Study was hard. But it stayed.”
+
+✉️ Section 3: Small Action or Event
+He checks his phone: one academic rejection email.
+
+Then, a message from an old friend: “You still trying that PhD thing?”
+
+He sighs. But then, he opens the GRE prep book anyway.
+
+Chooses a difficult passage to read aloud in English.
+
+🧠 Section 4: Internal Growth or Setback
+He almost breaks down reading aloud, but he doesn’t.
+
+Recalls his ex’s words: “You’re emotionally too soft for academia.”
+
+He clenches his fist. He writes a quote on a post-it:
+“Strong is quiet. Brave is small. But still continues.”
+
+Pins it to the wall.
+
+🌫️ Section 5: Chapter Close
+He opens the window. Fog outside.
+
+The sky turns a pale orange.
+
+He whispers: “One day… one day I’ll make it.”
+
+The city begins to wake up. But for him, it already began.

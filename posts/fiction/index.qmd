@@ -1,0 +1,455 @@
+---
+title: The Silence Before Dawn
+lightbox: false
+description: Fragments of the Future
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+
+date: 2025-07-19
+categories:
+  - fiction
+
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+The alarm buzzed at 5:30 AM, its shrill tone slicing through the heavy stillness like a razor across silk.
+
+His eyes opened immediately — not with urgency, but as if the body simply knew its cue. He lay motionless for a few seconds, staring at the ceiling with the faint outline of a water stain slowly coming into focus. In the dim light, it looked like a cracked map — a world he didn’t recognize, a world he didn’t belong to.
+
+The mattress beneath him groaned as he sat up, its foam already flattened from months of use. It wasn’t a bed, really — just layers of fabric and compromise. Cold air brushed his ankles. He instinctively reached for the old hoodie crumpled at the foot of the bed, pulling it over his thin T-shirt.
+
+The room around him remained hushed.  
+Just 12 square meters. No decoration. No luxury. Just purpose.
+
+The desk dominated one wall — a battlefield of papers, pens, books in English and Vietnamese, sticky notes curled at the corners. One notebook lay open with a sentence written five times over, the ink pressure weakening at the final repetition:
+
+> _“I will reach my future.”_
+
+Beside the notebook was a photo frame, turned face-down.
+
+He stood slowly, stretching with the careful control of someone trying not to wake a sleeping world. A small, steel pot sat on the single-burner gas stove. The same one his father had used when working construction far from home. He filled it with water, hands moving on habit, and struck a match. The gas hissed, then bloomed into a trembling flame.
+
+He listened to the soft crackling of the fire beneath the kettle, its rhythm grounding. That sound — that modest ritual — was the anchor of his mornings.
+
+Outside the window, the city was still in slumber. Motorbikes hadn’t yet started their impatient chorus. Street vendors hadn’t called out their breakfast offers. Even the sky felt distant — still inked in predawn gray.
+
+He poured in two spoonfuls of coarse Vietnamese coffee into the metal filter. It hissed faintly as the water passed through, dripping slow and dark into a chipped enamel mug. The bitter scent rose quickly, filling the room, warm and familiar like an old friend who never asked questions.
+
+He took a seat at the desk, hands cupped around the mug for heat. Steam rose, soft and ghostly, curling upward and disappearing into the shadows near the ceiling.
+
+He didn’t check his phone. He didn’t open his laptop.  
+He just sat — drinking in silence, drinking in stillness.
+
+A voice echoed in his mind — his own voice, recorded days ago and played back over and over:
+
+> _“Improve your emotions. Control your mind. That’s how you win in both love and research.”_
+
+He sipped.
+
+> _“Outside, the world slept. Inside, he fought another silent battle — one more morning, one more step.”_
+
+He pulled a notebook close and uncapped a pen.  
+Today, he would revise two math lectures, solve three GRE quant problems, read one research paper on medical AI.  
+Today, he would not talk about sadness. He would fold it into equations.
+
+The clock ticked softly.  
+It was 5:47 AM.
+
+The city would wake soon.  
+But for now —  
+this hour was his alone.
+
+***
+
+The glow of the phone screen pierced the dim light of the room.
+
+He hadn’t meant to look at it. He just wanted to check the time. But there she was—framed in a memory.
+
+A photo from last year: the two of them sitting on the rooftop of her dorm, a bowl of instant noodles between them, steam rising like a soft cloud in the night air. She was laughing, her eyes crinkled in that way that always made his chest feel like it had too much inside.
+
+He hadn’t laughed like that in a long time. Not from the chest. Not the kind of laugh that felt like breathing again after holding it too long.
+
+The silence of the present closed in tighter.
+
+He set the phone down beside him, carefully, like it might break. Or maybe like _he_ might.
+
+Love had been real—so real it colored the days in bright, foolish light. In those early months, he thought they could beat everything: stress, family pressure, burnout, even the creeping doubt that sometimes bloomed behind his quiet smile.
+
+But the days grew longer. Work harder. Rejections heavier.
+
+Still, he remembered something.  
+The day he opened his first AI textbook.
+
+It wasn’t in class. It was late at night, on his laptop, sitting cross-legged on the cold tiled floor of a rented room just like this one. A YouTube lecture had introduced him to neural nets, and something clicked.
+
+For a few hours, the world made sense. Not perfectly—but enough to believe that learning could _mean_ something. That understanding could give shape to a chaotic life.
+
+In that moment, ambition was born—not as arrogance, but as hope.
+
+He want to be rich. Or famous.
+
+He just wanted to be _capable_.  
+Capable enough to earn respect.  
+Capable enough to take care of her.  
+Capable enough to build something that might one day help someone else like him.
+
+That night, he whispered to himself like a vow:
+
+> "I’ll keep going. Even if it’s just me."
+
+
+He rose from the mattress, stretched, and stood barefoot on the cold tile. The kettle hissed. Coffee would be ready soon.
+
+He walked to the desk—cluttered with scribbled notes, research printouts, half-read papers. In the corner of the table sat a worn-out notebook. Spiral-bound, the first few pages curled from use.
+
+He opened it slowly.
+
+The handwriting was messier back then. The first page:  
+**“Study Plan: Deep Learning – 6 Months.”**  
+Written in neat boxes, optimistic bullets.  
+A line underneath:  
+**"If I don’t give up, something will change."**
+
+He smiled. Not a happy smile—something softer, tinged with nostalgia and a little pity.
+
+Back then, everything had seemed clearer. Simpler.  
+Study, love, sleep. Repeat.  
+Even when the world around him felt uncertain, he believed he could will his future into existence with enough effort.
+
+And he wasn’t alone.
+
+She used to sit beside him in coffee shops, studying her own books.  
+She once said:
+
+> “You look cute when you’re focused… like you’re trying to save the world with math.”
+
+He didn’t answer then—too shy maybe. But he’d never forgotten that line.
+
+Because for a moment, someone _saw_ him—not for what he lacked, but for what he could become.
+
+He turned another page.
+
+A rough sketch of a neural net. Then a heart drawn next to it, her doodle. Tiny letters beside it:
+
+> “Your brain is full of wires, but your heart is still soft.”
+
+That version of her—playful, loving, a little chaotic—felt distant now.
+
+Work had changed her. And him.  
+Deadlines stretched her thin. His own studies turned inward.  
+Calls became shorter. Messages slower.  
+Yet the ache remained constant, like phantom warmth on a cold bed.
+
+He sat down and let the notebook rest on his lap. The past wasn’t painful because it was gone. It was painful because it was _beautiful_.
+
+And because beauty, once tasted, is hard to live without.
+
+He took a sip of coffee. Bitter. No sugar—just how he liked it now.  
+Somewhere along the way, he had stopped sweetening things. Drinks. Words. Feelings.
+
+He stared at the wall, blank except for a single printed quote he’d taped months ago:
+
+> “Pursue what is meaningful, not what is expedient.” — Jordan B. Peterson.
+
+He remembered printing it after a fight with her.  
+A stupid fight. About time, about attention, about promises made and slowly broken by exhaustion.
+
+Back then, he thought that pursuing meaning meant pushing harder—more study, more knowledge, more progress.  
+But now… he wondered if meaning had slipped quietly out of the room when he chose books over soft conversations.
+
+Love, he realized, didn’t vanish in a day.  
+It faded. Like a photograph left in sunlight.  
+Slowly. Softly. Until you’re not sure whether it’s still there or just the memory of it.
+
+She never said, “I don’t love you anymore.”  
+But her silences had grown longer. Her eyes dimmer when they met his.  
+And he—so obsessed with building a future—forgot to share the present.
+
+He tapped the screen of his phone. That photo of them—her hand curled into his hoodie sleeve, his head leaning on hers. It was still there.  
+Still glowing.  
+Still warm.
+
+But like all light, it came from the past.
+
+He took a deep breath, then reached for his pen.
+
+At the bottom of the notebook page, beneath the heart and the wires, he wrote:
+
+> “Maybe study stayed not because it was easier—  
+> but because it never stopped needing me.”
+
+Then he closed the notebook, slowly. Deliberately.  
+And turned back to the desk.
+
+Outside, the city began to wake.  
+Inside, he returned to his war — no longer for love or even ambition,  
+but for something quieter: understanding. Clarity. Peace.
+
+And perhaps, one day, a new kind of connection.
+
+---
+
+The phone buzzed again.  
+He turned it over slowly—almost lazily—as if stalling would soften whatever was waiting on the other side.
+
+Subject: **“Application Update — Regretfully…”**  
+He didn’t open it.  
+He didn’t need to.  
+The first words told enough.
+
+A sigh escaped him—not frustration, not sorrow—something in between. A tiredness that had long since fused with his bones.
+
+His thumb slid across the screen, flicking the email away like swatting a fly.  
+But just as he reached to set the phone down, another message popped up.  
+A notification from someone he hadn’t heard from in over a year:
+
+> _“Yo bro. You still trying that PhD thing?”_
+
+No punctuation. No judgment in the words.  
+But somehow, he could feel it.  
+Like a smirk hidden behind the screen.  
+Or maybe, he just imagined it. Maybe his own doubt turned that sentence into a sting.
+
+His eyes stayed fixed on the message for a long moment.  
+He thought about replying. A joke, a shrug, maybe even a proud “Yeah.”  
+But his fingers didn’t move.
+
+Instead, he locked the screen.
+
+And stood up.
+
+In the corner of his room, a thin GRE prep book leaned sideways on the shelf—creased, scuffed, and opened too many times to count.  
+He took it, dropped it onto the desk with a soft thud, and opened to a random page.
+
+Reading comprehension. Dense academic language.  
+A paragraph about evolutionary biology and signal theory.  
+Exactly the kind of thing that had made his brain knot up when he started months ago.
+
+But this time, he didn’t hesitate.
+
+He sat up straighter.  
+And began to read aloud.
+
+> “In animal behavior, a signal is any act or structure that alters the behavior of another organism…”
+
+His accent was thick. Some words stuck like stones in his throat.
+
+He stumbled over “intraspecific.” Mispronounced “evolutionary.”  
+Paused. Then started again.  
+Slower. Clearer.
+
+There was no audience here. No teacher to correct him.  
+Just the empty room and the rhythm of quiet effort.
+
+And still—he kept going.
+
+> “These signals, whether visual, auditory, or chemical, serve as evolutionary tools of survival and selection…”
+
+His voice cracked near the end of the sentence.  
+He stopped—not because of a mistake, but because something in his chest tightened.
+
+He looked down at the page.  
+The black print blurred slightly.  
+He blinked hard, rubbed at his eyes. No use.  
+The ache wasn’t in the eyes—it was deeper.
+
+He leaned back. Stared at the peeling ceiling of the tiny room.  
+Somewhere, a neighbor’s kettle whistled.  
+A dog barked once in the alleyway below.  
+And everything inside him was quiet.
+
+Not peaceful.  
+Just… heavy.
+
+He wasn’t crying.  
+But he wasn’t far from it.
+
+A familiar voice echoed in his head.  
+Clearer than anything else in that room.
+
+> _“You’re too emotional for this path. Academia… it’s for people with tougher skin.”_
+
+She hadn’t meant it cruelly when she said it.  
+But it had stayed with him.  
+Strangely, it stuck even more than _“I love you.”_
+
+His hands clenched the edge of the table.  
+The silence returned. This time, heavier.
+
+He didn’t scream. Didn’t throw the book.  
+But his eyes moved to the wall—where old sticky notes, scribbled formulas, and quotes were scattered.
+
+And suddenly, he reached for a pen.
+
+In the corner of a blue post-it, he wrote in sharp black ink:
+
+> _“Strong is quiet. Brave is small. But still continues.”_
+
+He pinned it to the wall.  
+Between “GRE word list #3” and “Machine Learning derivation notes.”
+
+He stared at it.  
+Then sat back down.
+
+And turned the page.
+
+The next passage was even harder.
+
+Dense academic vocabulary.  
+Passive voice. Long, winding clauses.  
+Exactly the kind of English that made his brain stall, twist, freeze.
+
+He hesitated.  
+Then — one breath.  
+And another.
+
+His voice was quiet but steady now.
+
+> “The complexity of social cognition in non-human primates suggests an evolutionary substrate for human empathy…”
+
+Each word landed like a footstep across ice.  
+Delicate. Intentional. Uncertain, but forward.
+
+The sentence ended.
+
+He looked up again.
+
+No applause.  
+No reward.  
+But something inside him… didn’t sink this time.
+
+He glanced at the post-it note again.
+
+> “Still continues.”
+
+The room still felt small.  
+Still felt quiet.  
+Still smelled like instant coffee and faded paper.
+
+But he had moved.
+
+Not far. Not fast.  
+But he had moved.
+
+And maybe, in this kind of life — in the slow becoming of something — that was enough.
+
+***
+
+The room was still.
+
+He sat quietly, his eyes drifting between the books in front of him and the words now echoing in his mind.
+
+Not from a professor.  
+Not from a textbook.  
+But from her.
+
+> “You’re emotionally too soft for academia.”
+
+She hadn’t said it to hurt him.  
+Not exactly.
+
+It was in one of those long conversations — the kind that turn into arguments without anyone meaning to.
+
+She had been tired.  
+He had been defensive.  
+And somewhere between caring and frustration, she let it slip.
+
+But words like that don’t just _slip away_.  
+They stay.
+
+He closed his eyes. He could still see her face that day.  
+The furrow in her brow.  
+The worry behind the anger.
+
+She didn’t say it because she hated him.
+
+She said it because she didn’t think he would survive the world he wanted to step into.
+
+And maybe… maybe part of him believed it, too.
+
+He leaned back in his chair, letting the weight of her voice settle into the quiet.
+
+Outside, the city was waking up slowly — a distant motorbike, the clatter of someone unlocking a gate.
+
+But inside, it was still just him… and that sentence.
+
+> “You’re emotionally too soft for academia.”
+
+He had replayed it too many times.  
+Like a scar he couldn’t stop touching.  
+Like a mirror that only showed what was broken.
+
+He wasn’t the loudest in seminars.  
+He wasn’t quick with comebacks.  
+When the first professor scoffed at his statement during a journal club, he just sat there — flushed, hands shaking, voice too dry to speak.
+
+And now, he wondered…  
+Had she seen it before he did?  
+That maybe, deep down, he wasn’t made for this?
+
+But then —  
+Something sparked.  
+Something small.
+
+His eyes caught the edge of a bright yellow post-it note on the shelf.  
+A scrap he’d written in the haze of one long night when he wanted to quit but didn’t.
+
+He reached for it.
+
+Bent edges. Slanted ink. But still readable.
+
+> “Strong is quiet. Brave is small. But still continues.”
+
+He held it.  
+Read it again.  
+And again.
+
+Like a vow whispered only to himself.
+
+***
+
+The metal latch clicked softly as he slid the window open.
+
+A breath of cool air drifted in, carrying the scent of wet concrete and faraway exhaust — the unmistakable perfume of early morning in the city.
+
+Outside, the buildings stood like silent sentinels in the fog.  
+They were gray. Distant. Almost weightless in the mist.
+
+From his tiny room, the world looked… blurred.  
+But not empty.
+
+He rested his hands on the windowsill, elbows slightly trembling, either from the chill or the hours he hadn’t slept. His breath left a small cloud on the glass.
+
+For a moment, there were no books.  
+No rejections.  
+No comparisons.  
+No her.
+
+Just him.  
+And the city, stretching beyond reach.
+
+He looked at the horizon, where the fog thinned.  
+A faint line of orange appeared — not quite sunrise, not yet.
+
+And he whispered to the morning air:
+
+> “One day… one day I’ll make it.”
+
+The vow wasn’t loud.  
+It didn’t need to be.
+
+It wasn’t for anyone else.  
+It was for the version of him that still believed.  
+The one buried beneath the tired eyes, the slow progress, the heartbreak.
