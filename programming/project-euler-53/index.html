@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2025-07-19">
+<meta name="description" content="Some simple observations">
 
-<title>Blog – Kim Hung’s ThinkStack</title>
+<title>Combinatoric Selections – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
 
 <script type="text/javascript">
@@ -139,7 +111,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Kim Hung's ThinkStack" href="posts.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -148,7 +120,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung’s ThinkStack</span>
     </a>
   </div>
@@ -159,11 +131,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -172,39 +144,39 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
         <li>
-    <a class="dropdown-item" href="./math/convex-optimization/">
+    <a class="dropdown-item" href="../../math/convex-optimization/">
  <span class="dropdown-text">Convex Optimization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/probability/">
+    <a class="dropdown-item" href="../../math/probability/">
  <span class="dropdown-text">Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/statistics/">
+    <a class="dropdown-item" href="../../math/statistics/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./artificial-intelligent.html"> 
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
 <span class="menu-text">AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -221,21 +193,57 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Statistical">Statistical <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tutorial">Tutorial <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem"><span class="header-section-number">1</span> Problem</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Combinatoric Selections</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">project-euler</div>
+    <div class="quarto-category">programming</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Some simple observations
+  </div>
 </div>
 
-
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://projecteuler.net/problem=53">
+            Project Euler - 53. Combinatoric Selections
+            </a>
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 19, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -245,111 +253,31 @@ window.Quarto = {
 </header>
 
 
+<section id="problem" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Problem</h1>
+<p>
+There are exactly ten ways of selecting three from five, 12345:
+</p>
+<p class="center">
+123, 124, 125, 134, 135, 145, 234, 235, 245, and 345
+</p>
+<p>
+In combinatorics, we use the notation, <span class="math inline">\(\displaystyle \binom 5 3 = 10\)</span>.
+</p>
+<p>
+In general, <span class="math inline">\(\displaystyle \binom n r = \dfrac{n!}{r!(n-r)!}\)</span>, where <span class="math inline">\(r \le n\)</span>, <span class="math inline">\(n! = n \times (n-1) \times ... \times 3 \times 2 \times 1\)</span>, and <span class="math inline">\(0! = 1\)</span>.
+</p>
+<p>
+It is not until <span class="math inline">\(n = 23\)</span>, that a value exceeds one-million: <span class="math inline">\(\displaystyle \binom {23} {10} = 1144066\)</span>.
+</p>
+<p>
+How many, not necessarily distinct, values of <span class="math inline">\(\displaystyle \binom n r\)</span> for <span class="math inline">\(1 \le n \le 100\)</span>, are greater than one-million?
+</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1752987315946" data-listing-reading-time-sort="6" data-listing-word-count-sort="1121">
-<div class="thumbnail">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">Family Man Retires at 39</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/extreme-early-retirement/index.html" class="no-external">
-
-<p></p>
-<section id="early-retirement-journey-and-financial-strategies" class="level2">
-
-<ul>
-<li>Tim, a man from Regina, Saskatchewan, Canada, retired from engineering at the age of 39, after 11 years of planning and working towards his goal of early retirement…</li><li></li><li></li><li></li></ul></section><section id="spending-reduction-and-financial-management" class="level2"><ul><li></li><li></li><li></li><li></li><li></li></ul></section><section id="investment-strategy-and-market-volatility" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="challenges-and-adaptation-in-early-retirement" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="family-life-and-financial-education-for-children" class="level2"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></section><section id="wifes-continued-work-and-financial-planning" class="level2"><ul><li></li><li></li><li></li><li></li></ul></section><section id="housing-plans-and-government-benefits" class="level2"><ul><li></li><li></li><li></li></ul></section><section id="part-time-work-and-enhanced-work-life-balance" class="level2"><ul><li></li><li></li></ul></section><section id="resources-and-further-information" class="level2"><ul><li></li></ul></section></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/extreme-early-retirement/index.html" class="no-external"></a></p><a href="./posts/extreme-early-retirement/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Tutorial" data-listing-date-sort="1740700800000" data-listing-file-modified-sort="1752987315947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="448">
-<div class="thumbnail">
-<p><a href="./posts/pkm-quarto-books/index.html" class="no-external"></a></p><a href="./posts/pkm-quarto-books/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/pkm-quarto-books/Statistical-Inference.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/pkm-quarto-books/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external">Building a PKM Website with Quarto and Multiple Books and public by Github Actions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Tutorial'); return false;">
-Tutorial
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external">Personal Knowledge Management and Sharing</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/pkm-quarto-books/index.html" class="no-external">
-<div class="listing-date">
-Feb 28, 2025
-</div>
-<div class="listing-author">
-Kim Hung Bui
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Statistical" data-listing-date-sort="1740528000000" data-listing-file-modified-sort="1752987315947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301">
-<div class="thumbnail">
-<p><a href="./posts/nextcloud-install/index.html" class="no-external"></a></p><a href="./posts/nextcloud-install/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/nextcloud-install/Statistical-Inference.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/nextcloud-install/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/nextcloud-install/index.html" class="no-external">Install Nextcloud in Ubuntu Server</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/nextcloud-install/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Statistical'); return false;">
-Statistical
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/nextcloud-install/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/nextcloud-install/index.html" class="no-external">
-<div class="listing-date">
-Feb 26, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
