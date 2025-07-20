@@ -77,6 +77,8 @@
     "listing": "/posts.html",
     "items": [
       "/posts/extreme-early-retirement/index.html",
+      "/posts/fiction-draft/index.html",
+      "/posts/fiction/index.html",
       "/posts/pkm-quarto-books/index.html",
       "/posts/nextcloud-install/index.html"
     ]
