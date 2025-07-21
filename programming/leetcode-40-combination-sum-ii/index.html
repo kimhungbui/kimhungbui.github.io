@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kim Hung Bui">
-<meta name="dcterms.date" content="2025-07-19">
-<meta name="description" content="Some simple observations">
+<meta name="dcterms.date" content="2025-07-21">
+<meta name="description" content="Backtracking with Duplicate Skipping — Clean Solution to Combination Sum II">
 
-<title>Merge Triplets to Form Target Triplet – Kim Hung’s ThinkStack</title>
+<title>Backtracking with Duplicate Skipping — Clean Solution to Combination Sum II – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -231,12 +231,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#brute-force-idea-on2-or-worse" id="toc-brute-force-idea-on2-or-worse" class="nav-link active" data-scroll-target="#brute-force-idea-on2-or-worse"><span class="header-section-number">1</span> Brute Force Idea (<span class="math inline">\(O(n^2)\)</span> or worse)</a></li>
-  <li><a href="#key-observations-to-reduce-the-search-space" id="toc-key-observations-to-reduce-the-search-space" class="nav-link" data-scroll-target="#key-observations-to-reduce-the-search-space"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</a>
-  <ul class="collapse">
-  <li><a href="#same-number-of-digits" id="toc-same-number-of-digits" class="nav-link" data-scroll-target="#same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</a></li>
-  <li><a href="#digit-permutation-check" id="toc-digit-permutation-check" class="nav-link" data-scroll-target="#digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</a></li>
-  </ul></li>
+  <li><a href="#intuition" id="toc-intuition" class="nav-link active" data-scroll-target="#intuition"><span class="header-section-number">1</span> Intuition</a></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach"><span class="header-section-number">2</span> Approach</a></li>
+  <li><a href="#complexity" id="toc-complexity" class="nav-link" data-scroll-target="#complexity"><span class="header-section-number">3</span> Complexity</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code"><span class="header-section-number">4</span> Code</a></li>
   </ul>
 </nav>
     </div>
@@ -245,16 +243,17 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Merge Triplets to Form Target Triplet</h1>
+<h1 class="title">Backtracking with Duplicate Skipping — Clean Solution to Combination Sum II</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">project-euler</div>
+    <div class="quarto-category">backtracking</div>
+    <div class="quarto-category">leetcode</div>
     <div class="quarto-category">programming</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Some simple observations
+    Backtracking with Duplicate Skipping — Clean Solution to Combination Sum II
   </div>
 </div>
 
@@ -267,8 +266,8 @@ window.Quarto = {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://projecteuler.net/problem=52">
-            Project Euler - 52. Permuted Multiples
+            <a href="https://leetcode.com/problems/combination-sum-ii/description/">
+            Leetcode - 40. Combination Sum 2
             </a>
           </p>
       </div>
@@ -280,7 +279,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 19, 2025</p>
+      <p class="date">July 21, 2025</p>
     </div>
   </div>
   
@@ -292,79 +291,69 @@ window.Quarto = {
 </header>
 
 
-<p>
-It can be seen that the number, <span class="math inline">\(125874\)</span>, and its double, <span class="math inline">\(251748\)</span>, contain exactly the same digits, but in a different order.
-</p>
-<p>
-Find the smallest positive integer, <span class="math inline">\(x\)</span>, such that <span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>, <span class="math inline">\(5x\)</span>, and <span class="math inline">\(6x\)</span>, contain the same digits.
-</p>
-<section id="brute-force-idea-on2-or-worse" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Brute Force Idea (<span class="math inline">\(O(n^2)\)</span> or worse)</h1>
-<p>Test each number <code>x</code> starting from 1, and check if <code>2x, ..., 6x</code> are permutations of <code>x</code>. While that works, it’s not efficient if we don’t restrict the search space.</p>
+<section id="intuition" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Intuition</h1>
+<p>The problem asks us to find <strong>unique combination</strong> that sum to a garget, but <strong>each number can be used only once</strong>. This immediately suggests a <strong>backtracking</strong> appoach - we explore combinations recursively and prune paths that exceed the target.</p>
+<p>Because there may be <strong>duplicate numbers</strong> in the input, we need to <strong>skip duplicates at the same depth</strong> to avoid generating repeated combinations.</p>
 </section>
-<section id="key-observations-to-reduce-the-search-space" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</h1>
-<section id="same-number-of-digits" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</h2>
-<p>If <code>x</code> has <code>d</code> digits, <code>6x</code> must not have more digits than <code>x</code>, or they can’t be permutations.</p>
-<p>So</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(x) <span class="op">==</span> <span class="bu">len</span>(<span class="dv">6</span><span class="er">x</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Example: If <code>x = 100</code>, then <code>6x = 600</code>, same digit count (3). But <code>x = 200</code>, then <code>6x = 1200</code> (4 digits), not possible.</p>
-<p>That gives <strong>a range to search in</strong>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span><span class="op">**</span>(d<span class="op">-</span><span class="dv">1</span>), <span class="dv">10</span><span class="op">**</span>d):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="approach" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Approach</h1>
+<ol type="1">
+<li><p>Sort the input to bring duplicates together and allow early stopping.</p></li>
+<li><p>Use a backtracking finction to explore choices:</p>
+<ul>
+<li>Include current number</li>
+<li>Recurse with the next index (i+1) to prevent resuing the same element</li>
+</ul></li>
+<li><p>At each rescursive call:</p>
+<ul>
+<li>if <code>total == target</code>, we’ve found a valid path - store it</li>
+<li>if <code>total &gt; target</code>, stop this path</li>
+<li>Skip current element if it’s a duplicate at the same recursion level.</li>
+</ul></li>
+</ol>
 </section>
-<section id="digit-permutation-check" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</h2>
-<p>Instead of sorting each time (<span class="math inline">\(O(n\log n)\)</span>), use:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> canonical(n):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">''</span>.join(<span class="bu">sorted</span>(<span class="bu">str</span>(n)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>then</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> canonical(x)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">all</span>(c <span class="op">==</span> canonical(i <span class="op">*</span> x) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This function is creating a canonical (standardized) form of any number:</p>
+<section id="complexity" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Complexity</h1>
 <ul>
-<li><p><code>str(n)</code> converts the number to a string (e.g., <code>123</code> → <code>'123'</code>)</p></li>
-<li><p><code>sorted(...)</code> puts the digits in ascending order (e.g., <code>'321'</code> → <code>['1','2','3']</code>)</p></li>
-<li><p><code>''.join(...)</code> joins them back to a single string (e.g., <code>['1','2','3']</code> → <code>'123'</code>)</p></li>
+<li><p>Time complexity: <span class="math inline">\(O(2^n)\)</span> in the worst case, due to the number of combinations we exlore (through pruning and skipping duplicates improve this).</p></li>
+<li><p>Space complexity: <span class="math inline">\(O(n)\)</span> for the rescursion call stack and current path.</p></li>
 </ul>
-<p>So:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">123</span>) <span class="op">==</span> <span class="st">'123'</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">231</span>) <span class="op">==</span> <span class="st">'123'</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">312</span>) <span class="op">==</span> <span class="st">'123'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>All are permutations of the same digits ⇒ same canonical form</p>
-<p>Time Complexity</p>
-<ul>
-<li><p>Each check is ~O(1) due to short digit lengths</p></li>
-<li><p>The loop is linear in x (but bounded by 6-digit numbers)</p></li>
-<li><p>Much faster than O(n²) since the search space is tightly controlled</p></li>
-</ul>
-<div id="d39f56ce" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> canonical(n):</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">''</span>.join(<span class="bu">sorted</span>(<span class="bu">str</span>(n)))</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> has_same_digits(x):</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> canonical(x)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">all</span>(canonical(x <span class="op">*</span> i) <span class="op">==</span> c <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>))</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> find_smallest_permuted_multiple():</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">100000</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> has_same_digits(x):</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> x</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        x <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(find_smallest_permuted_multiple())  <span class="co"># Output: 142857</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>142857</code></pre>
-</div>
-</div>
+</section>
+<section id="code" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Code</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> combinationSum2(<span class="va">self</span>, candidates: List[<span class="bu">int</span>], target: <span class="bu">int</span>) <span class="op">-&gt;</span> List[List[<span class="bu">int</span>]]:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    candidates.sort()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> []</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> backtrack(start: <span class="bu">int</span>, path: List[<span class="bu">int</span>], total: <span class="bu">int</span>):</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> total <span class="op">==</span> target:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            result.append(path[:])</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> total <span class="op">&gt;</span> target:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(start, <span class="bu">len</span>(candidates)):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>            cur <span class="op">=</span> candidates[i]</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            <span class="co"># skip duplicates at the same depth level</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> cur <span class="op">==</span> prev:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                <span class="cf">continue</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> total <span class="op">+</span> cur <span class="op">&gt;</span> target:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                <span class="cf">break</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>            path.append(cur)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>            backtrack(i <span class="op">+</span> <span class="dv">1</span>, path, total <span class="op">+</span> cur)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>            path.pop()</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>            prev <span class="op">=</span> cur</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    backtrack(<span class="dv">0</span>, [], <span class="dv">0</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

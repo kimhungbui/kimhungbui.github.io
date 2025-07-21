@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kim Hung Bui">
-<meta name="dcterms.date" content="2025-07-19">
-<meta name="description" content="Some simple observations">
+<meta name="dcterms.date" content="2025-07-21">
+<meta name="description" content="An interesting Prime problem">
 
-<title>Merge Triplets to Form Target Triplet – Kim Hung’s ThinkStack</title>
+<title>Project Euler Problem 54- Poker Hands – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -231,12 +231,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#brute-force-idea-on2-or-worse" id="toc-brute-force-idea-on2-or-worse" class="nav-link active" data-scroll-target="#brute-force-idea-on2-or-worse"><span class="header-section-number">1</span> Brute Force Idea (<span class="math inline">\(O(n^2)\)</span> or worse)</a></li>
-  <li><a href="#key-observations-to-reduce-the-search-space" id="toc-key-observations-to-reduce-the-search-space" class="nav-link" data-scroll-target="#key-observations-to-reduce-the-search-space"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</a>
-  <ul class="collapse">
-  <li><a href="#same-number-of-digits" id="toc-same-number-of-digits" class="nav-link" data-scroll-target="#same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</a></li>
-  <li><a href="#digit-permutation-check" id="toc-digit-permutation-check" class="nav-link" data-scroll-target="#digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</a></li>
-  </ul></li>
+  <li><a href="#problem-overview" id="toc-problem-overview" class="nav-link active" data-scroll-target="#problem-overview"><span class="header-section-number">1</span> Problem Overview</a></li>
+  <li><a href="#intuition" id="toc-intuition" class="nav-link" data-scroll-target="#intuition"><span class="header-section-number">2</span> Intuition</a></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach"><span class="header-section-number">3</span> Approach</a></li>
+  <li><a href="#full-python-implementation" id="toc-full-python-implementation" class="nav-link" data-scroll-target="#full-python-implementation"><span class="header-section-number">4</span> Full Python Implementation</a></li>
+  <li><a href="#complexity" id="toc-complexity" class="nav-link" data-scroll-target="#complexity"><span class="header-section-number">5</span> Complexity</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">6</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -245,16 +245,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Merge Triplets to Form Target Triplet</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">project-euler</div>
-    <div class="quarto-category">programming</div>
-  </div>
-  </div>
+<h1 class="title">Project Euler Problem 54- Poker Hands</h1>
+</div>
 
 <div>
   <div class="description">
-    Some simple observations
+    An interesting Prime problem
   </div>
 </div>
 
@@ -267,8 +263,8 @@ window.Quarto = {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://projecteuler.net/problem=52">
-            Project Euler - 52. Permuted Multiples
+            <a href="https://projecteuler.net/problem=54">
+            Project Euler
             </a>
           </p>
       </div>
@@ -280,7 +276,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 19, 2025</p>
+      <p class="date">July 21, 2025</p>
     </div>
   </div>
   
@@ -292,79 +288,112 @@ window.Quarto = {
 </header>
 
 
-<p>
-It can be seen that the number, <span class="math inline">\(125874\)</span>, and its double, <span class="math inline">\(251748\)</span>, contain exactly the same digits, but in a different order.
-</p>
-<p>
-Find the smallest positive integer, <span class="math inline">\(x\)</span>, such that <span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>, <span class="math inline">\(5x\)</span>, and <span class="math inline">\(6x\)</span>, contain the same digits.
-</p>
-<section id="brute-force-idea-on2-or-worse" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Brute Force Idea (<span class="math inline">\(O(n^2)\)</span> or worse)</h1>
-<p>Test each number <code>x</code> starting from 1, and check if <code>2x, ..., 6x</code> are permutations of <code>x</code>. While that works, it’s not efficient if we don’t restrict the search space.</p>
+<section id="problem-overview" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Problem Overview</h1>
+<p>In poker, hands are ranked from lowest to highest as follows:</p>
+<ol type="1">
+<li>High Card<br>
+</li>
+<li>One Pair<br>
+</li>
+<li>Two Pairs<br>
+</li>
+<li>Three of a Kind<br>
+</li>
+<li>Straight<br>
+</li>
+<li>Flush<br>
+</li>
+<li>Full House<br>
+</li>
+<li>Four of a Kind<br>
+</li>
+<li>Straight Flush<br>
+</li>
+<li>Royal Flush</li>
+</ol>
+<p>If both players have the same rank, then the highest card is used to break ties.</p>
+<p>We are given a file <code>poker.txt</code> containing 1,000 hands. Each line has 10 cards (5 for Player 1 and 5 for Player 2). The task is to determine <strong>how many times Player 1 wins</strong>.</p>
 </section>
-<section id="key-observations-to-reduce-the-search-space" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</h1>
-<section id="same-number-of-digits" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</h2>
-<p>If <code>x</code> has <code>d</code> digits, <code>6x</code> must not have more digits than <code>x</code>, or they can’t be permutations.</p>
-<p>So</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(x) <span class="op">==</span> <span class="bu">len</span>(<span class="dv">6</span><span class="er">x</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Example: If <code>x = 100</code>, then <code>6x = 600</code>, same digit count (3). But <code>x = 200</code>, then <code>6x = 1200</code> (4 digits), not possible.</p>
-<p>That gives <strong>a range to search in</strong>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span><span class="op">**</span>(d<span class="op">-</span><span class="dv">1</span>), <span class="dv">10</span><span class="op">**</span>d):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="intuition" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Intuition</h1>
+<p>To solve this, we must: - Parse the file and separate the cards. - Evaluate the rank of each player’s hand. - Compare both hands. - Count the number of times Player 1 wins.</p>
 </section>
-<section id="digit-permutation-check" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</h2>
-<p>Instead of sorting each time (<span class="math inline">\(O(n\log n)\)</span>), use:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> canonical(n):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">''</span>.join(<span class="bu">sorted</span>(<span class="bu">str</span>(n)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>then</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> canonical(x)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">all</span>(c <span class="op">==</span> canonical(i <span class="op">*</span> x) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This function is creating a canonical (standardized) form of any number:</p>
+<section id="approach" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Approach</h1>
+<p>We will: 1. Create a value mapping for cards from <code>'2'</code> to <code>'A'</code>. 2. Implement a hand evaluation function that returns a tuple containing: - A numeric rank code (higher is better), - A tie-breaker list of card values. 3. Read the file line-by-line, split the hands, and apply the evaluation. 4. Use tuple comparison to determine the winner.</p>
+</section>
+<section id="full-python-implementation" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Full Python Implementation</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Value mapping</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>CARD_VALUES <span class="op">=</span> {<span class="st">'2'</span>: <span class="dv">2</span>, <span class="st">'3'</span>: <span class="dv">3</span>, <span class="st">'4'</span>: <span class="dv">4</span>, <span class="st">'5'</span>: <span class="dv">5</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>               <span class="st">'6'</span>: <span class="dv">6</span>, <span class="st">'7'</span>: <span class="dv">7</span>, <span class="st">'8'</span>: <span class="dv">8</span>, <span class="st">'9'</span>: <span class="dv">9</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>               <span class="st">'T'</span>: <span class="dv">10</span>, <span class="st">'J'</span>: <span class="dv">11</span>, <span class="st">'Q'</span>: <span class="dv">12</span>, <span class="st">'K'</span>: <span class="dv">13</span>, <span class="st">'A'</span>: <span class="dv">14</span>}</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Evaluate hand</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hand_rank(hand):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    values <span class="op">=</span> <span class="bu">sorted</span>([CARD_VALUES[c[<span class="dv">0</span>]] <span class="cf">for</span> c <span class="kw">in</span> hand], reverse<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    suits <span class="op">=</span> [c[<span class="dv">1</span>] <span class="cf">for</span> c <span class="kw">in</span> hand]</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    counts <span class="op">=</span> Counter(values)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    count_vals <span class="op">=</span> <span class="bu">sorted</span>(counts.items(), key<span class="op">=</span><span class="kw">lambda</span> x: (<span class="op">-</span>x[<span class="dv">1</span>], <span class="op">-</span>x[<span class="dv">0</span>]))</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    ordered_values <span class="op">=</span> [val <span class="cf">for</span> val, cnt <span class="kw">in</span> count_vals]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    is_flush <span class="op">=</span> <span class="bu">len</span>(<span class="bu">set</span>(suits)) <span class="op">==</span> <span class="dv">1</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    is_straight <span class="op">=</span> values <span class="op">==</span> <span class="bu">list</span>(<span class="bu">range</span>(values[<span class="dv">0</span>], values[<span class="dv">0</span>]<span class="op">-</span><span class="dv">5</span>, <span class="op">-</span><span class="dv">1</span>))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> is_straight <span class="kw">and</span> is_flush:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">8</span>, values)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> count_vals[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">==</span> <span class="dv">4</span>:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">7</span>, ordered_values)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> count_vals[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">==</span> <span class="dv">3</span> <span class="kw">and</span> count_vals[<span class="dv">1</span>][<span class="dv">1</span>] <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">6</span>, ordered_values)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> is_flush:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">5</span>, values)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> is_straight:</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">4</span>, values)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> count_vals[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">==</span> <span class="dv">3</span>:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">3</span>, ordered_values)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> count_vals[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">==</span> <span class="dv">2</span> <span class="kw">and</span> count_vals[<span class="dv">1</span>][<span class="dv">1</span>] <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">2</span>, ordered_values)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> count_vals[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">1</span>, ordered_values)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">0</span>, values)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3: Compare two hands</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> player1_wins(hand1, hand2):</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> hand_rank(hand1) <span class="op">&gt;</span> hand_rank(hand2)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 4: Process file</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_player1_wins(filename<span class="op">=</span><span class="st">'poker.txt'</span>):</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(filename) <span class="im">as</span> f:</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> line <span class="kw">in</span> f:</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>            cards <span class="op">=</span> line.strip().split()</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>            hand1 <span class="op">=</span> cards[:<span class="dv">5</span>]</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>            hand2 <span class="op">=</span> cards[<span class="dv">5</span>:]</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> player1_wins(hand1, hand2):</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>                count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 5: Output result</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(count_player1_wins())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="complexity" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Complexity</h1>
 <ul>
-<li><p><code>str(n)</code> converts the number to a string (e.g., <code>123</code> → <code>'123'</code>)</p></li>
-<li><p><code>sorted(...)</code> puts the digits in ascending order (e.g., <code>'321'</code> → <code>['1','2','3']</code>)</p></li>
-<li><p><code>''.join(...)</code> joins them back to a single string (e.g., <code>['1','2','3']</code> → <code>'123'</code>)</p></li>
+<li><p>Time Complexity: <span class="math inline">\(N(N\log N)\)</span> per hand due to sorting, where <span class="math inline">\(N=5\)</span>. Since it’s constant-sized, it is effectively <span class="math inline">\(O(1)\)</span> per hand. Processing 1,000 hands is <span class="math inline">\(O(1,000)\)</span> total.</p></li>
+<li><p>Space Complexity: Also <span class="math inline">\(O(1)\)</span> per hand due to fixed size.</p></li>
 </ul>
-<p>So:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">123</span>) <span class="op">==</span> <span class="st">'123'</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">231</span>) <span class="op">==</span> <span class="st">'123'</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">312</span>) <span class="op">==</span> <span class="st">'123'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>All are permutations of the same digits ⇒ same canonical form</p>
-<p>Time Complexity</p>
-<ul>
-<li><p>Each check is ~O(1) due to short digit lengths</p></li>
-<li><p>The loop is linear in x (but bounded by 6-digit numbers)</p></li>
-<li><p>Much faster than O(n²) since the search space is tightly controlled</p></li>
-</ul>
-<div id="d39f56ce" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> canonical(n):</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">''</span>.join(<span class="bu">sorted</span>(<span class="bu">str</span>(n)))</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> has_same_digits(x):</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> canonical(x)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">all</span>(canonical(x <span class="op">*</span> i) <span class="op">==</span> c <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>))</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> find_smallest_permuted_multiple():</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">100000</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> has_same_digits(x):</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> x</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        x <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(find_smallest_permuted_multiple())  <span class="co"># Output: 142857</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>142857</code></pre>
-</div>
-</div>
+</section>
+<section id="conclusion" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Conclusion</h1>
+<p>This problem combines string parsing, sorting, and custom rule-based comparison logic. It’s an excellent example of how domain-specific logic (poker hand rules) can be embedded into structured programmatic comparisons.</p>
+<p>You can adapt this solution to simulate poker games, build bots, or explore probability distributions of poker hands.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

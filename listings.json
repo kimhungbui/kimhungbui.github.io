@@ -46,6 +46,8 @@
   {
     "listing": "/programming.html",
     "items": [
+      "/programming/project-euler-54-poker-hands/index.html",
+      "/programming/leetcode-40-combination-sum-ii/index.html",
       "/programming/project-euler-53/index.html",
       "/programming/leetcode-triplet/index.html",
       "/programming/project-euler-52/index.html",

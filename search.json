@@ -182,172 +182,249 @@
     "text": "Hash set\nwe can store a element when first meet it, and even get it, we remote from set\nwhen retrieve all, if set have element.\nhash set have TC of lookup, addition, removal in constant time.\n    def divideArray(self, nums: List[int]) -&gt; bool:\n        unpaired = set()\n\n        for num in nums:\n            if num in unpaired:\n                unpaired.remove(num)\n            else:\n                unpaired.add(num)\n        return not unpaired"
   },
   {
-    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html",
-    "href": "programming/leetcode-678-valid-parenthesis-string/index.html",
-    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
+    "objectID": "programming/leetcode-house-robber/house-robber.html",
+    "href": "programming/leetcode-house-robber/house-robber.html",
+    "title": "House robber",
     "section": "",
-    "text": "When reading the problem description of LeetCode 678 – Valid Parenthesis String, I immediately thought of the classic balanced parentheses problem. However, the wildcard character *, which can be treated as '(', ')', or an empty string, makes it more complex.\nMy first instinct was to simulate a stack like how we handle simple parenthesis matching: - Push '(' onto the stack. - Pop for every ')'. - But now, we need to consider '*' flexibly. This led me to a one-stack idea, which failed because we need to preserve the order of matching.\nThat realization pushed me to a two-stack greedy strategy: - One stack for '(' indices. - One for '*' indices. Then try to match the remaining '(' with any '*' that appears after it."
+    "text": "Topic: array, dymanic programming\n\nQuestion\nYou are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.\nGiven an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.\nExample 1:\n\nInput: nums = [1,2,3,1]\nOutput: 4\nExplanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.\n\nExample 2:\n\nInput: nums = [2,7,9,3,1]\nOutput: 12\nExplanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.\n\nConstraints:\n1 &lt;= nums.length &lt;= 100\n0 &lt;= nums[i] &lt;= 400\n\n\nApproaches"
   },
   {
-    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#complexity",
-    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#complexity",
-    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
-    "section": "3.1 Complexity",
-    "text": "3.1 Complexity\n\nTime complexity: O(n) We traverse the string once and at most once more to match remaining parentheses.\nSpace complexity: O(n) In the worst case, both stacks could hold all characters."
-  },
-  {
-    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#base-cases",
-    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#base-cases",
-    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
-    "section": "4.1 Base Cases",
-    "text": "4.1 Base Cases\n\nEvery dp[i][i] is True if s[i] == '*', because '*' can represent an empty string.\nFor length 2 substrings:\n\nValid cases include (), (*), (*, *), and **."
-  },
-  {
-    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#transition",
-    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#transition",
-    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
-    "section": "4.2 Transition",
-    "text": "4.2 Transition\nTo compute dp[i][j], we iterate over all k such that i &lt; k ≤ j, and check:\n\nIf s[i] == '(' or '*' and s[k] == ')' or '*'\nand dp[i+1][k-1] == True (i.e., the inner substring is valid)\nand dp[k+1][j] == True (i.e., the remaining part is also valid)\n\nThen dp[i][j] = True.\nThis leads to an O(n³) time complexity in the worst case due to 3 nested loops: - i from n-1 to 0 - j from i to n-1 - k from i+1 to j\nWe may reduce to O(n²) using memoization and early stopping, but this still isn’t optimal for large n."
-  },
-  {
-    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#why-we-switched-to-stack",
-    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#why-we-switched-to-stack",
-    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
-    "section": "4.3 Why We Switched to Stack",
-    "text": "4.3 Why We Switched to Stack\nWhile the DP approach gives a rigorous solution, the memory and runtime costs are high for n = 100. This motivated us to find a greedy method — leading to the efficient two-stack approach which runs in linear time and works within the problem’s constraints."
-  },
-  {
-    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#code-1",
-    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#code-1",
-    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
-    "section": "4.4 Code",
-    "text": "4.4 Code\nclass Solution:\n    def checkValidString(self, s: str) -&gt; bool:\n        n = len(s)\n        dp = [[False] * n for _ in range(n)]\n\n        # Base cases: single character\n        for i in range(n):\n            if s[i] == '*':\n                dp[i][i] = True\n\n        # Base cases: two characters\n        for i in range(n - 1):\n            if (s[i] == '(' or s[i] == '*') and (s[i+1] == ')' or s[i+1] == '*'):\n                dp[i][i+1] = True\n\n        # Fill DP table\n        for size in range(2, n):\n            for i in range(n - size):\n                j = i + size\n                if s[i] == '*' and dp[i+1][j]:\n                    dp[i][j] = True\n                    continue\n                for k in range(i+1, j+1):\n                    if (s[i] == '(' or s[i] == '*') and (s[k] == ')' or s[k] == '*'):\n                        if (k == i+1 or dp[i+1][k-1]) and (k == j or dp[k+1][j]):\n                            dp[i][j] = True\n                            break\n\n        return dp[0][n-1]"
-  },
-  {
-    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#why-the-two-stack-approach-is-greedy",
-    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#why-the-two-stack-approach-is-greedy",
-    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
-    "section": "5.1 Why the Two-Stack Approach Is Greedy",
-    "text": "5.1 Why the Two-Stack Approach Is Greedy\nWe call the two-stack approach to Leetcode 678 a greedy algorithm because it makes locally optimal decisions at each step, aiming to resolve mismatches immediately without exploring all possibilities.\n\n5.1.1 Immediate Matching\n\nWhen encountering a ')', we:\n\nFirst try to match it with a '(' (if available),\nIf not, try to match it with a '*' (interpreted as '(').\n\nIf neither is available, return False immediately.\n\n\nThis is a greedy decision: match now rather than wait for a possibly better match later.\n\n\n\n5.1.2 Post-Processing for '('\n\nAfter scanning the string, some '(' may remain.\nWe greedily match each '(' with a later '*' (interpreted as ')').\nThis match must happen in order: '(' must appear before '*'.\n\n\n\n5.1.3 No Backtracking or Multiple Scenarios\n\nThe algorithm never revisits decisions.\nUnlike dynamic programming (which explores all valid ways to interpret '*'), the greedy approach only considers matches that help balance the parentheses immediately.\n\n\n\n5.1.4 Summary Table\n\n\n\nCharacter\nGreedy Behavior\n\n\n\n\n')'\nMatch immediately with '(' or '*'\n\n\n'('\nSaved in stack for future match\n\n\n'*'\nStored to match later as '(' or ')'\n\n\nRemaining '('\nMatched with later '*' greedily\n\n\n\n\n\n5.1.5 Why Greedy Works Here\nThis problem permits multiple interpretations of '*', but the greedy strategy works because: - We never allow unmatched ')'. - Every '(' must eventually be matched, and greedy ensures we try the best-case option first.\n\nGreedy is valid in this problem due to the constraints and structure of balanced parentheses."
-  },
-  {
-    "objectID": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
-    "href": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
-    "title": "How to approach most DP problems",
+    "objectID": "programming/leetcode-jump-game-2/index.html",
+    "href": "programming/leetcode-jump-game-2/index.html",
+    "title": "45. Jump Game II",
     "section": "",
-    "text": "To solve a dp problem: https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems/\nThis particular problem can be approached using the following sequence:"
+    "text": "You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0].\nEach element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j] where:\n\n0 &lt;= j &lt;= nums[i], and\n\ni + j &lt; n\n\nReturn the minimum number of jumps to reach nums[n - 1].\nThe test cases are generated such that you can reach nums[n - 1].\n\n\n\nExample 1:\nInput:  nums = [2, 3, 1, 1, 4]\nOutput: 2\nExplanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.\nExample 2:\nInput:  nums = [2, 3, 0, 1, 4]\nOutput: 2\n\n\n\n\n\n1 &lt;= nums.length &lt;= 10⁴\n\n0 &lt;= nums[i] &lt;= 1000\n\nIt is guaranteed that you can reach nums[n - 1]."
   },
   {
-    "objectID": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html#step-5-iterative-2-variables-bottom-up",
-    "href": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html#step-5-iterative-2-variables-bottom-up",
-    "title": "How to approach most DP problems",
-    "section": "Step 5: Iterative + 2 variables (bottom-up)",
-    "text": "Step 5: Iterative + 2 variables (bottom-up)\nIn the previous step, we use only memo[i] and memo[i-1], so going just 2 step back. We can hold them in 2 variables instead. This optimization is met in Fibonacci sequence creation and some other problems [[Optimize Fibonacci]]\n    def rob(self, nums: List[int]) -&gt; int:\n        if len(nums) == 0:\n            return 0\n        prev1, prev2 = 0, 0\n        for num in nums:\n            temp = prev1\n            prev1 = max(prev2 + num, prev1)\n            prev2 = temp\n        return prev1"
-  },
-  {
-    "objectID": "programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
-    "href": "programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
-    "title": "Minimum Cost Walk in Weighted Graph",
+    "objectID": "programming/leetcode-jump-game-2/index.html#examples",
+    "href": "programming/leetcode-jump-game-2/index.html#examples",
+    "title": "45. Jump Game II",
     "section": "",
-    "text": "Question\nThere is an undirected weighted graph with n vertices labeled from 0 to n - 1.\nYou are given the integer n and an array edges, where edges[i] = [ui, vi, wi] indicates that there is an edge between vertices ui and vi with a weight of wi.\nA walk on a graph is a sequence of vertices and edges. The walk starts and ends with a vertex, and each edge connects the vertex that comes before it and the vertex that comes after it. It’s important to note that a walk may visit the same edge or vertex more than once.\nThe cost of a walk starting at node u and ending at node v is defined as the bitwise AND of the weights of the edges traversed during the walk. In other words, if the sequence of edge weights encountered during the walk is w0, w1, w2, …, wk, then the cost is calculated as w0 & w1 & w2 & … & wk, where & denotes the bitwise AND operator.\nYou are also given a 2D array query, where query[i] = [si, ti]. For each query, you need to find the minimum cost of the walk starting at vertex si and ending at vertex ti. If there exists no such walk, the answer is -1.\nReturn the array answer, where answer[i] denotes the minimum cost of a walk for query i.\nExample 1:\nInput: n = 5, edges = [[0,1,7],[1,3,7],[1,2,1]], query = [[0,3],[3,4]]\nOutput: [1,-1]\nExplanation:\nTo achieve the cost of 1 in the first query, we need to move on the following edges: 0-&gt;1 (weight 7), 1-&gt;2 (weight 1), 2-&gt;1 (weight 1), 1-&gt;3 (weight 7).\nIn the second query, there is no walk between nodes 3 and 4, so the answer is -1.\nExample 2:\nInput: n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]\nOutput: [0]\nExplanation:\nTo achieve the cost of 0 in the first query, we need to move on the following edges: 1-&gt;2 (weight 1), 2-&gt;1 (weight 6), 1-&gt;2 (weight 1).\nConstraints:\n2 &lt;= n &lt;= 105\n0 &lt;= edges.length &lt;= 105\nedges[i].length == 3\n0 &lt;= ui, vi &lt;= n - 1\nui != vi\n0 &lt;= wi &lt;= 105\n1 &lt;= query.length &lt;= 105\nquery[i].length == 2\n0 &lt;= si, ti &lt;= n - 1\nsi != ti\n\n\nAnalysis\nLet’s determine when the answer to a query is -1. This happens when no walk exists between the two nodes, meaning they belong to different connected components.\nNow, suppose the two nodes belong to the same connected component. What is the minimum cost of a walk connecting them? As mentioned, the optimal walk includes as many edges as possible. Since revisiting an edge does not affect the total score, we can freely traverse the edges of the component, meaning that we can move back and forth to reach all of them. Therefore, the best way to achieve the lowest cost is to visit every edge in the component.\nTo efficiently find and process the connected components of the graph, we use the Disjoint Set (Union-Find) data structure. When we Union two nodes, we merge their entire groups, as now a path exists between every node in one group and every node in the other. To maintain efficiency, the root of the larger group is chosen as the representative of the merge group. This minimizes the time needed for future Find operations by reducing the number of steps required to reach the current representative."
+    "text": "Example 1:\nInput:  nums = [2, 3, 1, 1, 4]\nOutput: 2\nExplanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.\nExample 2:\nInput:  nums = [2, 3, 0, 1, 4]\nOutput: 2"
   },
   {
-    "objectID": "programming/leetcode-hand-of-straights/index.html",
-    "href": "programming/leetcode-hand-of-straights/index.html",
-    "title": "846. Hand of straights",
+    "objectID": "programming/leetcode-jump-game-2/index.html#constraints",
+    "href": "programming/leetcode-jump-game-2/index.html#constraints",
+    "title": "45. Jump Game II",
     "section": "",
-    "text": "Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.\nGiven an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.\nExample 1:\nInput: hand = [1,2,3,6,2,3,4,7,8], groupSize = 3\nOutput: true\nExplanation: Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]\nExample 2:\nInput: hand = [1,2,3,4,5], groupSize = 4\nOutput: false\nExplanation: Alice's hand can not be rearranged into groups of 4.\nConstraints:\n\n1 &lt;= hand.length &lt;= 104\n0 &lt;= hand[i] &lt;= 109\n1 &lt;= groupSize &lt;= hand.length"
+    "text": "1 &lt;= nums.length &lt;= 10⁴\n\n0 &lt;= nums[i] &lt;= 1000\n\nIt is guaranteed that you can reach nums[n - 1]."
   },
   {
-    "objectID": "programming/leetcode-hand-of-straights/index.html#understand-the-problem-by-simulation",
-    "href": "programming/leetcode-hand-of-straights/index.html#understand-the-problem-by-simulation",
-    "title": "846. Hand of straights",
-    "section": "3.1 Understand the Problem by Simulation",
-    "text": "3.1 Understand the Problem by Simulation\nTry simulating small examples manually:\nhand = [1,2,3,6,2,3,4,7,8], groupSize = 3\nTry to group them:\n\nGroup 1: [1,2,3]\nGroup 2: [2,3,4]\nGroup 3: [6,7,8]\n\nWe realize:\n\nWe always start from the smallest number available\nWe try to form a consecutive group from that number\nWe must consume one of each in the sequence [x, x+1, ..., x+groupSize-1]"
+    "objectID": "programming/leetcode-jump-game-2/index.html#initial-intuition-dynamic-programming-approach",
+    "href": "programming/leetcode-jump-game-2/index.html#initial-intuition-dynamic-programming-approach",
+    "title": "45. Jump Game II",
+    "section": "2.1 Initial Intuition (Dynamic Programming Approach)",
+    "text": "2.1 Initial Intuition (Dynamic Programming Approach)\nAs a beginner, one natural way to approach this is to track the minimum number of jumps needed to reach each index. We can use an auxiliary array min_step[], where:\n\nmin_step[i] = the minimum number of steps to reach index i from index 0.\n\n\n2.1.1 Pseudocode\n\nInitialize min_step[0] = 0, and others as 0 (we’ll treat 0 as “unvisited”).\nFor each index i, simulate all possible forward jumps up to nums[i].\nFor each reachable index i + step, update min_step[i + step] if it hasn’t been visited.\n\n\n\n2.1.2 Visualization\n\n\n\n2.1.3 Python Code\nfrom typing import List\n\nclass Solution:\n    def jump(self, nums: List[int]) -&gt; int:\n        n = len(nums)\n        min_step = [0] * n  # min_step[i]: min jumps to reach index i\n\n        for i in range(n):\n            steps = nums[i]\n            for step in range(1, steps + 1):\n                next_pos = i + step\n                if next_pos &lt; n and min_step[next_pos] == 0: # bound and visited\n                    min_step[next_pos] = min_step[i] + 1\n\n        return min_step[n - 1]"
   },
   {
-    "objectID": "programming/leetcode-hand-of-straights/index.html#greedy-choice-property",
-    "href": "programming/leetcode-hand-of-straights/index.html#greedy-choice-property",
-    "title": "846. Hand of straights",
-    "section": "3.2 Greedy Choice Property",
-    "text": "3.2 Greedy Choice Property\nAsk: “At each step, what is the best immediate move?”\nAnswer:\nAlways form a group starting from the smallest card available, because delaying it may block forming valid groups later.\nThat’s greedy - always take the smallest ungrouped card and try to complete a group from it."
+    "objectID": "programming/leetcode-jump-game-2/index.html#time-space-complexity",
+    "href": "programming/leetcode-jump-game-2/index.html#time-space-complexity",
+    "title": "45. Jump Game II",
+    "section": "2.2 Time & Space Complexity",
+    "text": "2.2 Time & Space Complexity\n\nTime: O(n²) in the worst case (if every nums[i] is large and we simulate many jumps).\nSpace: O(n) for the min_step[] array.\n\n\n2.2.1 Pros\n\nCan AC in leetcode.\nEasy to understand and implement.\nHelps build dynamic programming intuition.\n\n\n\n2.2.2 Cons\n\nToo slow for large arrays (e.g. n = 10⁴).\nRedundant work — we revisit the same states multiple times."
   },
   {
-    "objectID": "programming/leetcode-hand-of-straights/index.html#track-resources",
-    "href": "programming/leetcode-hand-of-straights/index.html#track-resources",
-    "title": "846. Hand of straights",
-    "section": "3.3 Track Resources",
-    "text": "3.3 Track Resources\nWe need:\n\nA count of how many times each card appears -&gt; use Counter\nEfficient access to the smallest available card -&gt; use Min-heap"
+    "objectID": "programming/leetcode-jump-game-2/index.html#the-optimal-greedy-approach-on",
+    "href": "programming/leetcode-jump-game-2/index.html#the-optimal-greedy-approach-on",
+    "title": "45. Jump Game II",
+    "section": "2.3 The Optimal Greedy Approach (O(n))",
+    "text": "2.3 The Optimal Greedy Approach (O(n))\nOnce you’re comfortable with the basic idea, you can switch to a greedy strategy:\n\nTrack the farthest index reachable in the current “jump”.\nWhen you reach the end of the current jump range, increment your jump count and update the next jump range.\nRepeat until the end of the array is reachable.\n\n\n2.3.1 Visualization\n\n\n\n2.3.2 Optimal Code (Greedy)\nclass Solution:\n    def jump(self, nums: List[int]) -&gt; int:\n        jumps = 0\n        farthest = 0\n        current_end = 0\n\n        for i in range(len(nums) - 1):  # exclude last index\n            farthest = max(farthest, i + nums[i])\n            if i == current_end:\n                jumps += 1\n                current_end = farthest\n        \n        return jumps\n\nTime Complexity: O(n)\nSpace Complexity: O(1)"
   },
   {
-    "objectID": "programming/leetcode-hand-of-straights/index.html#prove-it-locally",
-    "href": "programming/leetcode-hand-of-straights/index.html#prove-it-locally",
-    "title": "846. Hand of straights",
-    "section": "3.4 Prove it Locally",
-    "text": "3.4 Prove it Locally\nTry:\n\nCan I always remove groupSize consecutive numbers?\nIf not, can I return early?\n\nWe try to decrement counts and remove from the heap only when count becomes 0 to keep it consistent."
+    "objectID": "programming/leetcode-jump-game-2/index.html#takeaways",
+    "href": "programming/leetcode-jump-game-2/index.html#takeaways",
+    "title": "45. Jump Game II",
+    "section": "2.4 Takeaways",
+    "text": "2.4 Takeaways\n\nYour DP-style intuition is a great starting point for understanding how to model state transitions.\nBut always analyze the time complexity — for real-world coding problems, efficiency matters.\nLearn to identify when a greedy strategy can replace DP in minimum step problems."
   },
   {
-    "objectID": "programming/leetcode-hand-of-straights/index.html#edge-case-check",
-    "href": "programming/leetcode-hand-of-straights/index.html#edge-case-check",
-    "title": "846. Hand of straights",
-    "section": "3.5 Edge Case Check",
-    "text": "3.5 Edge Case Check\nThink:\n\nIf one card has more copies than others, can it still be grouped?\nWhat if the total number of cards isn’t divisible\n\nHandle these early:\nif len(hand) % groupSize != 0: return False"
+    "objectID": "programming/leetcode-jump-game-2/index.html#learning-tip",
+    "href": "programming/leetcode-jump-game-2/index.html#learning-tip",
+    "title": "45. Jump Game II",
+    "section": "2.5 Learning Tip",
+    "text": "2.5 Learning Tip\nStart by solving problems with a safe brute-force or DP mindset. Once you understand the pattern, look for greedy optimizations to reduce time complexity.\nHappy coding! 💻"
   },
   {
-    "objectID": "programming/leetcode-hand-of-straights/index.html#time-complexity",
-    "href": "programming/leetcode-hand-of-straights/index.html#time-complexity",
-    "title": "846. Hand of straights",
-    "section": "5.1 Time Complexity",
-    "text": "5.1 Time Complexity\nLet:\n\nn = len(hand) (total number of cards)\nk = number of unique cards in hand\n\nBreakdown:\n\nBuilding the frequency map: O(n)\nSorting keys or using a heap: O(k log k)\nFor each unique card, in worst case, we might scan up to groupSize consecutive numbers → total time in worst case: O(n log k + n × groupSize) But since the number of total operations across all groups is bounded by n (each card is used once), we simplify:\n\nTotal Time Complexity: O(n log k)\n(If we use a heap, the log factor applies to the number of unique cards.)"
-  },
-  {
-    "objectID": "programming/leetcode-hand-of-straights/index.html#space-complexity",
-    "href": "programming/leetcode-hand-of-straights/index.html#space-complexity",
-    "title": "846. Hand of straights",
-    "section": "5.2 Space Complexity",
-    "text": "5.2 Space Complexity\nCounter: stores up to k keys → O(k)\nOptionally a heap: O(k)\nNo recursion or extra structures\nTotal Space Complexity: O(k)"
-  },
-  {
-    "objectID": "programming/disjoint-set-union/index.html",
-    "href": "programming/disjoint-set-union/index.html",
-    "title": "Disjoint Set Union",
+    "objectID": "programming/project-euler-52/index.html",
+    "href": "programming/project-euler-52/index.html",
+    "title": "Merge Triplets to Form Target Triplet",
     "section": "",
-    "text": "This data structure provides the following capabilities. We are given several elements, each of which is a separate set. A DSU will have an operation to combine any two sets, and it will be able to tell in which set a specific element is. The classical version also introduces a third operation, it can create a set from a new element.\nThus the basic interface of this data structure consists of only three operations: - make_set() - create a new set consisting of the new element v. - union_sets(a, b) - merges the two specified sets (the set in which the element a is located, and the set in which the element b is located). - find_set(v) - return the representative (also called leader) of the set that contains the element v. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after union_sets call). This representative can be used to check if two elements are part of the same set or not. a and b are exactly in the same set, if find_set(a) == find_set(b). Otherwise they are in different sets.\nAs described on more detail later, the data structure allows us to do each of these operations in almost \\(O(1)\\) time on average.\nAlso in one of the subsections an alternative structure of a DSU is explained, which achieves a slower average complexity of \\(O(\\log n)\\), but can be more powerful than the regular DSU structure."
+    "text": "It can be seen that the number, \\(125874\\), and its double, \\(251748\\), contain exactly the same digits, but in a different order.\nFind the smallest positive integer, \\(x\\), such that \\(2x\\), \\(3x\\), \\(4x\\), \\(5x\\), and \\(6x\\), contain the same digits."
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#naive-implementation",
-    "href": "programming/disjoint-set-union/index.html#naive-implementation",
-    "title": "Disjoint Set Union",
-    "section": "Naive implementation",
-    "text": "Naive implementation\nWe can already write the first implementation of the Disjoint Set Union data structure. It will be pretty inefficient at first, but later we can improve it using two optimizations, so that it will take nearly constant time for each function call.\nAs we said, all the information about the sets of elements will be kept in an array parent.\nTo create a new set (operation make_set(v)), we simply create a tree with root in the vertex x, meaning that it is its own ancestor.\nTo combine two sets (operation union_sets(a, b)), we first find the representative of the set in which a is located, and the representative of the set in which b is located. If the representatives are identical, that we have nothing to do, the sets are already merged. Otherwise, we can simply specify that one of the representatives is the parent of the other representative - thereby combining the two trees.\nFinally the implementation of the find representative function (operation find_set(v)): we simply climb the ancestors of the vertex v until we reach the root, i.e. a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively.\nvoid make_set(int v) {\n    parent[v] = v;\n}\n\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return find_set(parent[v]);\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b)\n        parent[b] = a;\n}\nHowever this implementation is inefficient. It is easy to construct an example, so that the trees degenerate into long chains. In that case each call find_set(v) can take \\(O(n)\\) time.\nThis is far away from the complexity that we want to have (nearly constant time). Therefore we will consider two optimizations that will allow to significantly accelerate the work."
+    "objectID": "programming/project-euler-52/index.html#same-number-of-digits",
+    "href": "programming/project-euler-52/index.html#same-number-of-digits",
+    "title": "Merge Triplets to Form Target Triplet",
+    "section": "2.1 Same number of digits:",
+    "text": "2.1 Same number of digits:\nIf x has d digits, 6x must not have more digits than x, or they can’t be permutations.\nSo\nlen(x) == len(6x)\nExample: If x = 100, then 6x = 600, same digit count (3). But x = 200, then 6x = 1200 (4 digits), not possible.\nThat gives a range to search in:\nfor x in range(10**(d-1), 10**d):\n    ..."
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#path-compression-optimization",
-    "href": "programming/disjoint-set-union/index.html#path-compression-optimization",
-    "title": "Disjoint Set Union",
-    "section": "Path compression optimization",
-    "text": "Path compression optimization\nThis optimization is designed for speeding up find_set.\nIf we call find_set() for some vertex x, we actually find the representative p for all vertices that we visit on the path between v and the actually representative p. The trick is to make the paths for all those nodes shorter, by setting the parent of each visited vertex directly to p.\nWe can see the operation in the following image. On the left there is a tree, and on the right side there is the compressed tree after calling find_set(7), which shortens the paths for the visited node 7, 5, 3 and 2.\n![[DSU_path_compression.png]]\nThe new implementation of find_set is as follows:\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return parent[v] = find_set(parent[v]);\n}\nThe simple implementation does what was intended: first find the representative of the set (root vertex), and then in the process of stack unwinding the visited nodes are attached directly to the representative.\nThis simple modification of the operation already achieves the time complexity \\(O(\\log n)\\) per call on average (here without proof). There is a second modification, that will make it even faster."
+    "objectID": "programming/project-euler-52/index.html#digit-permutation-check",
+    "href": "programming/project-euler-52/index.html#digit-permutation-check",
+    "title": "Merge Triplets to Form Target Triplet",
+    "section": "2.2 Digit permutation check:",
+    "text": "2.2 Digit permutation check:\nInstead of sorting each time (\\(O(n\\log n)\\)), use:\ndef canonical(n):\n    return ''.join(sorted(str(n)))\nthen\nc = canonical(x)\nall(c == canonical(i * x) for i in range(2, 7))\nThis function is creating a canonical (standardized) form of any number:\n\nstr(n) converts the number to a string (e.g., 123 → '123')\nsorted(...) puts the digits in ascending order (e.g., '321' → ['1','2','3'])\n''.join(...) joins them back to a single string (e.g., ['1','2','3'] → '123')\n\nSo:\ncanonical(123) == '123'\ncanonical(231) == '123'\ncanonical(312) == '123'\nAll are permutations of the same digits ⇒ same canonical form\nTime Complexity\n\nEach check is ~O(1) due to short digit lengths\nThe loop is linear in x (but bounded by 6-digit numbers)\nMuch faster than O(n²) since the search space is tightly controlled\n\n\n\nCode\ndef canonical(n):\n    return ''.join(sorted(str(n)))\n\ndef has_same_digits(x):\n    c = canonical(x)\n    return all(canonical(x * i) == c for i in range(2, 7))\n\ndef find_smallest_permuted_multiple():\n    x = 100000\n    while True:\n        if has_same_digits(x):\n            return x\n        x += 1\n\nprint(find_smallest_permuted_multiple())  # Output: 142857\n\n\n142857"
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#union-by-size-rank",
-    "href": "programming/disjoint-set-union/index.html#union-by-size-rank",
-    "title": "Disjoint Set Union",
-    "section": "Union by size / rank",
-    "text": "Union by size / rank\nIn this optimization we will change the union_set operation. To be precise, we will change which tree gets attached to the other one. In the naive implementation the second tree always got attached to the first one. In practice that can lead to trees containing chains of length \\(O(n)\\). With this optimization we will avoid this by choosing very carefully which tree gets attached.\nThere are many possible heuristic that can be used. Most popular are the following two approaches: In the first approach we use the size of the trees as rank, and in the second one we use the depth of the tree (more precisely, the upper bound on the tree depth, because the depth will get smaller when applying path compression).\nIn both approaches the essence of the optimization is the same: we attach the tree with the lower rank to the one with the bigger rank.\nHere is the implementation of union by size:\nvoid make_set(int v) {\n    parent[v] = v;\n    size[v] = 1;\n}\n\nvoid union_sets(int a, int b){\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (size[a] &lt; size[b])\n            swap(a, b);\n        parent[b] = a;\n        size[a] += size[b];\n    }\n}\nand here is the implementation of union by rank based on the depth of the trees:\nvoid make_set(int v) {\n    parent[v] = v;\n    rank[v] = 0;\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (rank[a] &lt; rank[b])\n            swap(a, b);\n        parent[b] = a;\n        if (rank[a] == rank[b])\n            rank[a]++;\n    }\n}\nBoth optimizations are equivalent in terms of time and space complexity. So in practice we can use any of them."
+    "objectID": "programming/maximum-subarray-problem/index.html",
+    "href": "programming/maximum-subarray-problem/index.html",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "",
+    "text": "In computer science, the maximum sum subarray problem, also known as the maximum segment sum problem, is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array A[1...n] of numbers. It can be solved in \\(O(n)\\) time and \\(O(1)\\) space.\nFormally, the task is to find indices \\(i\\) and \\(j\\) with \\(1\\leq i \\leq j \\leq n\\) such that the sum \\[\n\\Sigma^j_{x=i}A[x]\n\\] is as large as possible"
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#time-complexity",
-    "href": "programming/disjoint-set-union/index.html#time-complexity",
-    "title": "Disjoint Set Union",
-    "section": "Time complexity",
-    "text": "Time complexity\nAs mentioned before, if we combine both optimizations - path compression with union by size / rank - we will reach nearly constant time queries. It turns out, that the final amortized complexity is \\(O(\\alpha(n))\\), where \\(\\alpha (n)\\) is the inverse Ackermann function, which grows very slowly. In fact it grows so lowly, that it doesn’t exceed 4 for all reasonable \\(n\\) (approximately \\(n&lt;10^{600}\\)).\nAmortized complexity is the total time per operation, evaluated over a sequence of multiple operations. The idea is to guarantee the total time of the entire sequence, while allowing single operations to be much slower than the amortized time. E.g. in our case a single call might take \\(O(\\log n)\\) in the worst case, but if we do \\(m\\) such calls back to back we will end up with an average time of \\(O(\\alpha (n))\\).\nWe will also not present a proof for this time complexity, since it is quite long and complicated.\nAlso, it’s worth mentioning that DSU with union by size / rank, but without path compression works in \\(O(\\log n)\\) time per query."
+    "objectID": "programming/maximum-subarray-problem/index.html#brute-force-thoughts",
+    "href": "programming/maximum-subarray-problem/index.html#brute-force-thoughts",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "Brute-Force Thoughts",
+    "text": "Brute-Force Thoughts\nA naive way to find the maximum subarray is:\n\nEnumerate all pairs of indices (i, j) with 0 ≤ i ≤ j &lt; n.\nCompute the sum of array[i..j].\nTrack the largest sum seen.\n\nThat requires \\(O(n^2)\\) subarrays and, if we sum each subarray from scratch, up to \\(O(n)\\) per sum, yielding \\(O(n^3)\\) time. We can improve one factor to \\(O(n^2)\\) by keeping a running sum when extending the end index, but that’s still too slow when n is large.\nWe want something like \\(O(n)\\) time."
   },
   {
-    "objectID": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
-    "href": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
-    "title": "Disjoint Set Union",
-    "section": "Linking by index / coin-flip linking",
-    "text": "Linking by index / coin-flip linking\nBoth union by rank and union by size require that we store additional data for each set, and maintain these values during each union operation. There exist also a randomized algorithm, that simplifies the union operation a little bit: linking by index.\nWe assign each set a random value called the index, and we attach the set with the smaller index to the one with the larger one. It is likely that a bigger set will have a bigger than the smaller set, therefore this operation is closely related to union by size. In fact it can be proven, that this operation has the same time complexity as union by size. However in practice it is slightly slower than union by size."
+    "objectID": "programming/maximum-subarray-problem/index.html#key-observation-intuition",
+    "href": "programming/maximum-subarray-problem/index.html#key-observation-intuition",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "Key Observation (Intuition)",
+    "text": "Key Observation (Intuition)\n\nObservation: Suppose you want to know “What is the maximum-sum subarray that ends exactly at index i?” Once you know that, you could check all i and pick the best among them.\n\n\nDefine\n\\[dp[i] = \\text{the maximum subarray sum among all subarrays that end at index }i.\\] Our ultimate answer (global max) will be\n\\[\n  \\max_{0 \\le k &lt; n} dp[k].\n\\]\nHow do we compute dp[i] if we already know dp[i–1]? Consider any subarray that ends at i. It either:\n\nIs just the single element array[i] (i.e., we “start fresh” at i), or\n\nIs some subarray that ended at i−1 plus array[i] (i.e., we extend the best ending at i−1).\n\nIn other words: \\[\n  dp[i] \\;=\\; \\max\\bigl(\\; array[i],\\; dp[i-1] + array[i] \\bigr).\n\\]\n\nIf dp[i-1] (the best ending at i−1) is negative, then we’re better off “dropping” it and taking array[i] alone.\nIf dp[i-1] is positive (or zero), then extending it by adding array[i] only makes the sum larger.\n\n\nThat recurrence is exactly Kadane’s idea."
+  },
+  {
+    "objectID": "programming/maximum-subarray-problem/index.html#deriving-kadanes-recurrence",
+    "href": "programming/maximum-subarray-problem/index.html#deriving-kadanes-recurrence",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "Deriving Kadane’s Recurrence",
+    "text": "Deriving Kadane’s Recurrence\n\nDefine\n\\[dp[i] = \\text{max subarray sum ending exactly at index }i.\\]\nBase case:\n\\[dp[0] = array[0].\\]\nTransition: For each (i ), consider two possibilities for the subarray that ends at (i):\n\nStart a new subarray at (i). Its sum is (array[i]).\n\nExtend the best subarray ending at (i-1) by including the element at (i). Its sum is (dp[i-1] + array[i]).\n\nTherefore: \\[\n  dp[i] = \\max\\bigl(array[i],\\, dp[i-1] + array[i]\\bigr).\n\\]\nGlobal answer: As you fill these in from (i = 0) up to (n-1), keep track of \\[\n  \\text{global\\_max} = \\max_{0 \\le k &lt; n} dp[k].\n\\] That is the maximum sum among all possible ending-at-k subarrays, which necessarily includes the overall best subarray.\n\nBecause computing each dp[i] takes O(1) time, the entire process is O(n)."
+  },
+  {
+    "objectID": "programming/maximum-subarray-problem/index.html#intuitive-explanation",
+    "href": "programming/maximum-subarray-problem/index.html#intuitive-explanation",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "Intuitive Explanation",
+    "text": "Intuitive Explanation\n\nAs you sweep from left to right, maintain two values:\n\ncurrent_max = “best subarray sum ending exactly at the current position.”\nglobal_max = “best subarray sum seen so far anywhere.”\n\nWhen you arrive at a new element x = array[i], ask yourself:\n&gt; “If I want to pick a subarray that ends at i, is it better to (a) start fresh at i (just take x), or (b) stick with the best contiguous sum I had ending at i−1 and add x to it?”\n\nIf the best sum ending at i−1 was negative, adding x would only make it worse than just taking x alone.\n\nIf the best sum ending at i−1 was positive, adding x can only help (or at least not make it smaller than x).\n\nConcretely:\ncurrent_max = max(x, current_max + x)\nglobal_max  = max(global_max, current_max)\n\nand then move on to i+1.\nThink of it like this: whenever the running sum (best-ending-here) dips below zero, you toss it away and start over at the next index, because any prefix with negative sum would only drag down whatever comes after.\nfunction Kadane(array):\n    if array is empty:\n        return 0   // or some convention (e.g. negative infinity) depending on the problem\n\n    current_max = array[0]\n    global_max  = array[0]\n\n    for i from 1 to (n - 1):\n        x = array[i]\n        // Either extend the previous best subarray, or start new at i\n        current_max = max(x, current_max + x)\n\n        // Update global answer if needed\n        global_max = max(global_max, current_max)\n\n    return global_max\nInitialization: We set both current_max and global_max to array[0]. That handles the case where all numbers might be negative: the answer is the single largest element.\nLoop: At each step, update current_max using the recurrence. Then, if the new current_max is higher than any global_max we’ve seen so far, update global_max.\nReturn: By the end, global_max holds the largest sum of any contiguous subarray in the whole array."
+  },
+  {
+    "objectID": "programming/maximum-subarray-problem/index.html#worked-example",
+    "href": "programming/maximum-subarray-problem/index.html#worked-example",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "Worked Example",
+    "text": "Worked Example\nTake the array [-2, 1, -3, 4, -1, 2, 1, -5, 4]. Walk through Kadane’s steps:\n\n\n\n\n\n\n\n\n\n\ni\narray[i]\ncurrent_max (before)\ncurrent_max (after) = max(array[i], current_max₍i−1₎ + array[i])\nglobal_max\n\n\n\n\n0\n−2\n(init) −2\nmax(−2, —) = −2\n−2\n\n\n1\n+1\n−2\nmax( 1, (−2 + 1) = −1 ) = 1\n1\n\n\n2\n−3\n1\nmax(−3, (1 + (−3)) = −2 ) = −2\n1\n\n\n3\n+4\n−2\nmax( 4, (−2 + 4) = 2 ) = 4\n4\n\n\n4\n−1\n4\nmax(−1, (4 + (−1)) = 3 ) = 3\n4\n\n\n5\n+2\n3\nmax( 2, (3 + 2) = 5 ) = 5\n5\n\n\n6\n+1\n5\nmax( 1, (5 + 1) = 6 ) = 6\n6\n\n\n7\n−5\n6\nmax(−5, (6 + (−5)) = 1 ) = 1\n6\n\n\n8\n+4\n1\nmax( 4, (1 + 4) = 5 ) = 5\n6\n\n\n\nAt index 6, current_max becomes 6, and that’s the largest sum observed. Indeed, subarray [4, −1, 2, 1] ends at i=6 and has sum 6.\nBy index 7, adding −5 would drop the running sum to 1, but since 1 is still ≥ −5 itself, Kadane chooses 1 (i.e., “extend” rather than “start new”).\nBy index 8, it’s better to start new at 8 or to extend the 1? We compare:\n\n“Start new” at 8: sum = 4\n“Extend previous” (which was 1): sum = 1 + 4 = 5\n\n→ so we pick 5. However, 5 &lt; global_max = 6, so global_max remains 6."
+  },
+  {
+    "objectID": "programming/maximum-subarray-problem/index.html#handling-all-negative-arrays",
+    "href": "programming/maximum-subarray-problem/index.html#handling-all-negative-arrays",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "Handling All-Negative Arrays",
+    "text": "Handling All-Negative Arrays\nA common question: “What if the array is entirely negative, e.g. [-5, -3, -8]?”\nKadane’s initialization of\ncurrent_max = global_max = array[0]\nautomatically handles that. We never zero out a running sum unless it’s worse than starting fresh. So if all numbers are negative, every time you consider a new element x, you compute\ncurrent_max = max(x, current_max + x)\nSince current_max + x is even more negative than x alone, the recurrence forces current_max to be the largest single negative element encountered so far. Thus the global max ends up being the least-negative (i.e., the “largest”) element of the array."
+  },
+  {
+    "objectID": "programming/maximum-subarray-problem/index.html#final-remarks",
+    "href": "programming/maximum-subarray-problem/index.html#final-remarks",
+    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "section": "Final Remarks",
+    "text": "Final Remarks\n\nTime complexity: O(n), since each element is processed exactly once with O(1) work per element.\nSpace complexity: O(1) extra space if you only keep two scalars (current_max, global_max). (If you store the entire dp[] array, it’s O(n), but you don’t need to; you only ever use the “previous” value.)\n\nKadane’s algorithm is essentially a specialized form of dynamic programming that keeps track of a “running best suffix sum” and resets whenever that suffix sum would be negative. Once you grasp that the maximum-sum subarray ending at i is either “continue from i−1” or “start anew at i,” the rest follows naturally."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html",
+    "href": "programming/leetcode-gas-station/index.html",
+    "title": "Gas Station",
+    "section": "",
+    "text": "Imagine you’re on a circular road trip with your car, visiting a series of gas stations. Each station provides a certain amount of gas, but it also costs you gas to drive to the next one. The question is: Can you complete the entire loop starting at one of the stations, without ever running out of fuel?\nThis is the essence of the Gas Station Problem, a well-known greedy algorithm question that tests your ability to reason about cumulative gains and losses over a circular path.\nAt first glance, this might seem like a brute-force problem—try every station as a starting point, simulate the journey, and check which one works. But with some smart observations, we can reduce the solution from O(n²) to O(n) using a greedy strategy.\nIn this post, we’ll guide you step-by-step: - From a naive brute-force solution, - To discovering key mathematical observations, and - Finally building an efficient greedy algorithm with a visual explanation.\nWhether you’re preparing for coding interviews, learning algorithms, or building animations with Manim, this deep dive will help you not only solve the problem but also understand the “why” behind the solution."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#brute-force-logic",
+    "href": "programming/leetcode-gas-station/index.html#brute-force-logic",
+    "title": "Gas Station",
+    "section": "3.1 Brute-Force Logic",
+    "text": "3.1 Brute-Force Logic\nTry starting at every station one by one, and simulate the full circular trip:\n\nInitialize your fuel tank to 0.\nAt each step, add gas[i] to your tank and subtract cost[i].\nIf at any point the tank drops below zero, the trip fails from this starting point.\nRepeat for all n starting points.\n\n\n3.1.1 Example Code\ndef can_complete_circuit_brute(gas, cost):\n    n = len(gas)\n    for start in range(n):\n        tank = 0\n        completed = True\n        for i in range(n):\n            idx = (start + i) % n\n            tank += gas[idx] - cost[idx]\n            if tank &lt; 0:\n                completed = False\n                break\n        if completed:\n            return start\n    return -1"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#time-complexity",
+    "href": "programming/leetcode-gas-station/index.html#time-complexity",
+    "title": "Gas Station",
+    "section": "3.2 Time Complexity",
+    "text": "3.2 Time Complexity\n\nTimes: \\(O(n^2)\\)\nWhy: For each station, we simulate a full loop through all stations.\nScalability: This is too slow for large inputs (n up to 10⁵ in interviews or contests).\n\nIn the next section, we’ll explore how to observe patterns in the problem and develop a greedy linear-time solution."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#key-observations",
+    "href": "programming/leetcode-gas-station/index.html#key-observations",
+    "title": "Gas Station",
+    "section": "4.1 Key Observations",
+    "text": "4.1 Key Observations\n\nLet’s define:\n\ngain[i] = gas[i] - cost[i] — net fuel at station i.\ntotal_tank = sum(gain) — if it’s negative, no solution exists.\n\nIf your current tank (curr_tank) drops below 0 at station i, it means:\n\nAny station between your last start and i cannot be the correct starting point.\nSo, you must reset your start point to i + 1."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#step-by-step-algorithm",
+    "href": "programming/leetcode-gas-station/index.html#step-by-step-algorithm",
+    "title": "Gas Station",
+    "section": "4.2 Step-by-Step Algorithm",
+    "text": "4.2 Step-by-Step Algorithm\n\nInitialize:\n\ntotal_tank = 0\ncurr_tank = 0\nstart_index = 0\n\nLoop through each station i:\n\nCompute gain = gas[i] - cost[i]\nUpdate tanks:\n\ntotal_tank += gain\ncurr_tank += gain\n\nIf curr_tank &lt; 0, reset:\n\nstart_index = i + 1\ncurr_tank = 0\n\n\nAfter the loop:\n\nIf total_tank &gt;= 0, return start_index\nElse, return -1"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#why-it-works",
+    "href": "programming/leetcode-gas-station/index.html#why-it-works",
+    "title": "Gas Station",
+    "section": "4.3 Why It Works",
+    "text": "4.3 Why It Works\n\nIf the total fuel is not enough to cover the total cost, no path is possible — simple elimination.\nThe greedy reset ensures we skip all impossible start points in a single pass.\nOnly 1 loop, so time complexity is O(n)."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#code-implementation",
+    "href": "programming/leetcode-gas-station/index.html#code-implementation",
+    "title": "Gas Station",
+    "section": "4.4 Code Implementation",
+    "text": "4.4 Code Implementation\ndef can_complete_circuit(gas, cost):\n    total_tank = 0\n    curr_tank = 0\n    start_index = 0\n\n    for i in range(len(gas)):\n        gain = gas[i] - cost[i]\n        total_tank += gain\n        curr_tank += gain\n\n        if curr_tank &lt; 0:\n            start_index = i + 1\n            curr_tank = 0\n\n    return start_index if total_tank &gt;= 0 else -1\nIn the next section, we’ll visualize this approach step-by-step using a sample input and animation-style diagrams."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#problem-understanding",
+    "href": "programming/leetcode-gas-station/index.html#problem-understanding",
+    "title": "Gas Station",
+    "section": "7.1 Problem Understanding",
+    "text": "7.1 Problem Understanding\n\nGoal: What is being optimized? (e.g., minimize cost, maximize profit)\nConstraints: Do choices need to be irreversible or done in order?\nInput Size: Is brute-force even feasible?"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#brute-force-first",
+    "href": "programming/leetcode-gas-station/index.html#brute-force-first",
+    "title": "Gas Station",
+    "section": "7.2 Brute Force First",
+    "text": "7.2 Brute Force First\n\nTry all possible paths/choices.\nAsk: Why is this inefficient?\nThis helps reveal structure in the problem (e.g., repeated states, redundant decisions)."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#identify-the-greedy-choice",
+    "href": "programming/leetcode-gas-station/index.html#identify-the-greedy-choice",
+    "title": "Gas Station",
+    "section": "7.3 Identify the “Greedy Choice”",
+    "text": "7.3 Identify the “Greedy Choice”\nAsk: - What is the best local decision I can make at each step? - Can I prove that making this choice will never hurt future decisions?\nCommon greedy choices: - Max gain per step - Min cost to reach the next step - Earliest deadline, highest value per weight, etc."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#validate-greedy-is-safe",
+    "href": "programming/leetcode-gas-station/index.html#validate-greedy-is-safe",
+    "title": "Gas Station",
+    "section": "7.4 Validate Greedy is Safe",
+    "text": "7.4 Validate Greedy is Safe\nTest your greedy choice with: - Counterexamples: Try inputs where greedy may fail. - Proof: Can you prove “greedy choice” leads to an optimal solution?\nTechniques: - Exchange Argument - Greedy Stays Ahead"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#implement-test",
+    "href": "programming/leetcode-gas-station/index.html#implement-test",
+    "title": "Gas Station",
+    "section": "7.5 Implement & Test",
+    "text": "7.5 Implement & Test\n\nUse O(n) or O(n log n) greedy logic.\nTrack accumulative values (e.g., balance, remaining capacity).\nReset conditions if necessary (like in gas station)."
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#common-greedy-patterns",
+    "href": "programming/leetcode-gas-station/index.html#common-greedy-patterns",
+    "title": "Gas Station",
+    "section": "7.6 Common Greedy Patterns",
+    "text": "7.6 Common Greedy Patterns\n\n\n\n\n\n\n\nPattern\nExample Problems\n\n\n\n\nInterval Scheduling\nActivity selection, meeting rooms\n\n\nResource Allocation\nFractional knapsack\n\n\nAccumulated Constraints\nGas Station, Jump Game\n\n\nCovering Problems\nSet cover approximations"
+  },
+  {
+    "objectID": "programming/leetcode-gas-station/index.html#mindset-summary",
+    "href": "programming/leetcode-gas-station/index.html#mindset-summary",
+    "title": "Gas Station",
+    "section": "7.7 Mindset Summary",
+    "text": "7.7 Mindset Summary\n\n“Make the best local decision… but prove or observe that it’s globally optimal.”\n\nUse greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with monotonic constraints\n\nExample: In the gas station problem\n- Greedy resets starting index when curr_tank &lt; 0\n- If total_tank &gt;= 0, a valid start must exist\n- Greedy eliminates bad candidates efficiently\n\nFinal Note:\nNot all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning"
+  },
+  {
+    "objectID": "programming/project-euler-54-poker-hands/index.html",
+    "href": "programming/project-euler-54-poker-hands/index.html",
+    "title": "Project Euler Problem 54- Poker Hands",
+    "section": "",
+    "text": "1 Problem Overview\nIn poker, hands are ranked from lowest to highest as follows:\n\nHigh Card\n\nOne Pair\n\nTwo Pairs\n\nThree of a Kind\n\nStraight\n\nFlush\n\nFull House\n\nFour of a Kind\n\nStraight Flush\n\nRoyal Flush\n\nIf both players have the same rank, then the highest card is used to break ties.\nWe are given a file poker.txt containing 1,000 hands. Each line has 10 cards (5 for Player 1 and 5 for Player 2). The task is to determine how many times Player 1 wins.\n\n\n2 Intuition\nTo solve this, we must: - Parse the file and separate the cards. - Evaluate the rank of each player’s hand. - Compare both hands. - Count the number of times Player 1 wins.\n\n\n3 Approach\nWe will: 1. Create a value mapping for cards from '2' to 'A'. 2. Implement a hand evaluation function that returns a tuple containing: - A numeric rank code (higher is better), - A tie-breaker list of card values. 3. Read the file line-by-line, split the hands, and apply the evaluation. 4. Use tuple comparison to determine the winner.\n\n\n4 Full Python Implementation\nfrom collections import Counter\n\n# Step 1: Value mapping\nCARD_VALUES = {'2': 2, '3': 3, '4': 4, '5': 5,\n               '6': 6, '7': 7, '8': 8, '9': 9,\n               'T': 10, 'J': 11, 'Q': 12, 'K': 13, 'A': 14}\n\n# Step 2: Evaluate hand\ndef hand_rank(hand):\n    values = sorted([CARD_VALUES[c[0]] for c in hand], reverse=True)\n    suits = [c[1] for c in hand]\n    counts = Counter(values)\n    count_vals = sorted(counts.items(), key=lambda x: (-x[1], -x[0]))\n    ordered_values = [val for val, cnt in count_vals]\n\n    is_flush = len(set(suits)) == 1\n    is_straight = values == list(range(values[0], values[0]-5, -1))\n\n    if is_straight and is_flush:\n        return (8, values)\n    elif count_vals[0][1] == 4:\n        return (7, ordered_values)\n    elif count_vals[0][1] == 3 and count_vals[1][1] == 2:\n        return (6, ordered_values)\n    elif is_flush:\n        return (5, values)\n    elif is_straight:\n        return (4, values)\n    elif count_vals[0][1] == 3:\n        return (3, ordered_values)\n    elif count_vals[0][1] == 2 and count_vals[1][1] == 2:\n        return (2, ordered_values)\n    elif count_vals[0][1] == 2:\n        return (1, ordered_values)\n    else:\n        return (0, values)\n\n# Step 3: Compare two hands\ndef player1_wins(hand1, hand2):\n    return hand_rank(hand1) &gt; hand_rank(hand2)\n\n# Step 4: Process file\ndef count_player1_wins(filename='poker.txt'):\n    count = 0\n    with open(filename) as f:\n        for line in f:\n            cards = line.strip().split()\n            hand1 = cards[:5]\n            hand2 = cards[5:]\n            if player1_wins(hand1, hand2):\n                count += 1\n    return count\n\n# Step 5: Output result\nprint(count_player1_wins())\n\n\n5 Complexity\n\nTime Complexity: \\(N(N\\log N)\\) per hand due to sorting, where \\(N=5\\). Since it’s constant-sized, it is effectively \\(O(1)\\) per hand. Processing 1,000 hands is \\(O(1,000)\\) total.\nSpace Complexity: Also \\(O(1)\\) per hand due to fixed size.\n\n\n\n6 Conclusion\nThis problem combines string parsing, sorting, and custom rule-based comparison logic. It’s an excellent example of how domain-specific logic (poker hand rules) can be embedded into structured programmatic comparisons.\nYou can adapt this solution to simulate poker games, build bots, or explore probability distributions of poker hands."
   },
   {
     "objectID": "programming/project-euler-prime-digit-replacements/index.html",
@@ -823,7 +900,7 @@
     "href": "programming.html",
     "title": "Programming",
     "section": "",
-    "text": "Combinatoric Selections\n\n\n\n\n\n\nproject-euler\n\n\nprogramming\n\n\n\nSome simple observations\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nMerge Triplets to Form Target Triplet\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nGreedy Intuition and One-Pass Solution\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nMerge Triplets to Form Target Triplet\n\n\n\n\n\n\nproject-euler\n\n\nprogramming\n\n\n\nSome simple observations\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nValid Parenthesis String with Wildcards - A Greedy Stack Approach\n\n\n\n\n\n\nproject-euler\n\n\nprogramming\n\n\n\nMany approaches\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nOptimizing String Partitioning – LeetCode 763 Deep Dive\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\ngreedy\n\n\n\nGreedy approach\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\n846. Hand of straights\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nGreedy Problem Solving Framework\n\n\n\n\n\nJul 18, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nGreedy Problem Solving Framework\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nGreedy Problem Solving Framework\n\n\n\n\n\nJul 17, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nGas Station\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nSolving the Gas Station Problem Step-by-Step — From Naive to Greedy\n\n\n\n\n\nJul 17, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nPrime Digit Replacements\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nAn interesting Prime problem\n\n\n\n\n\nJul 16, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\n45. Jump Game II\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nAn interesting Greedy problem\n\n\n\n\n\nJul 16, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nMaximum subarray problem and Kadane’s algorithm\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nProblem in computer science\n\n\n\n\n\nJun 2, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\n127. Word Ladder\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMay 30, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\n2359. Find Closest Node to Given Two Nodes\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMay 30, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nRole of Parallel Computing\n\n\n\n\n\n\nparallel\n\n\nprogramming\n\n\n\nintroduction to parallel computing\n\n\n\n\n\nMay 7, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nCount good triplets\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nApr 15, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nMaximum subarray\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nApr 4, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nDisjoint Set Union\n\n\n\n\n\n\nprogramming\n\n\ndata structure\n\n\n\nThis article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.\n\n\n\n\n\nMar 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nMinimum Cost Walk in Weighted Graph\n\n\n\n\n\n\nprogramming\n\n\ndata structure\n\n\nDSU\n\n\n\nThis article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.\n\n\n\n\n\nMar 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nDocker basics\n\n\n\n\n\n\nprogramming\n\n\ndocker\n\n\n\nThis chapter introduces containerization with Docker and relevant concepts such as image and volume.\n\n\n\n\n\nMar 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\n3191. Minimum Operations to Make Binary Array Elements Equal to One I\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 20, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nParity invariance\n\n\n\n\n\n\nbit manipulation\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 20, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nleetcode-Longest-Nice-Subarray\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 18, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nHow to approach most DP problems\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nApproaches for DP problems\n\n\n\n\n\nMar 17, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nHouse robber\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 17, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nDivide Array Into Equal Pairs\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 17, 2025\n\n\nHung\n\n\n\n\n\n\nNo matching items"
+    "text": "Project Euler Problem 54- Poker Hands\n\n\n\n\n\nAn interesting Prime problem\n\n\n\n\n\nJul 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nBacktracking with Duplicate Skipping — Clean Solution to Combination Sum II\n\n\n\n\n\n\nbacktracking\n\n\nleetcode\n\n\nprogramming\n\n\n\nBacktracking with Duplicate Skipping — Clean Solution to Combination Sum II\n\n\n\n\n\nJul 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nCombinatoric Selections\n\n\n\n\n\n\nproject-euler\n\n\nprogramming\n\n\n\nSome simple observations\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nMerge Triplets to Form Target Triplet\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nGreedy Intuition and One-Pass Solution\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nMerge Triplets to Form Target Triplet\n\n\n\n\n\n\nproject-euler\n\n\nprogramming\n\n\n\nSome simple observations\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nValid Parenthesis String with Wildcards - A Greedy Stack Approach\n\n\n\n\n\n\nproject-euler\n\n\nprogramming\n\n\n\nMany approaches\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nOptimizing String Partitioning – LeetCode 763 Deep Dive\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\ngreedy\n\n\n\nGreedy approach\n\n\n\n\n\nJul 19, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\n846. Hand of straights\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nGreedy Problem Solving Framework\n\n\n\n\n\nJul 18, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nGreedy Problem Solving Framework\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nGreedy Problem Solving Framework\n\n\n\n\n\nJul 17, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nGas Station\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nSolving the Gas Station Problem Step-by-Step — From Naive to Greedy\n\n\n\n\n\nJul 17, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nPrime Digit Replacements\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nAn interesting Prime problem\n\n\n\n\n\nJul 16, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\n45. Jump Game II\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nAn interesting Greedy problem\n\n\n\n\n\nJul 16, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nMaximum subarray problem and Kadane’s algorithm\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nProblem in computer science\n\n\n\n\n\nJun 2, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\n127. Word Ladder\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMay 30, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\n2359. Find Closest Node to Given Two Nodes\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMay 30, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nRole of Parallel Computing\n\n\n\n\n\n\nparallel\n\n\nprogramming\n\n\n\nintroduction to parallel computing\n\n\n\n\n\nMay 7, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nCount good triplets\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nApr 15, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nMaximum subarray\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nApr 4, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nDisjoint Set Union\n\n\n\n\n\n\nprogramming\n\n\ndata structure\n\n\n\nThis article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.\n\n\n\n\n\nMar 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nMinimum Cost Walk in Weighted Graph\n\n\n\n\n\n\nprogramming\n\n\ndata structure\n\n\nDSU\n\n\n\nThis article discusses the data structure Disjoint Set Union or DSU. Often it is also called Union Find because of its two main operations.\n\n\n\n\n\nMar 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nDocker basics\n\n\n\n\n\n\nprogramming\n\n\ndocker\n\n\n\nThis chapter introduces containerization with Docker and relevant concepts such as image and volume.\n\n\n\n\n\nMar 21, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\n3191. Minimum Operations to Make Binary Array Elements Equal to One I\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 20, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nParity invariance\n\n\n\n\n\n\nbit manipulation\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 20, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nleetcode-Longest-Nice-Subarray\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 18, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nHow to approach most DP problems\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nApproaches for DP problems\n\n\n\n\n\nMar 17, 2025\n\n\nKim Hung Bui\n\n\n\n\n\n\n\n\n\n\n\n\nHouse robber\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 17, 2025\n\n\nHung\n\n\n\n\n\n\n\n\n\n\n\n\nDivide Array Into Equal Pairs\n\n\n\n\n\n\nleetcode\n\n\nprogramming\n\n\n\nYour post description\n\n\n\n\n\nMar 17, 2025\n\n\nHung\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "let things slide.html",
@@ -2380,242 +2457,179 @@
     "text": "Parity invariance means that the number of times a position is flipped determines its final value. If a position is flipped an odd number of times, its value changes, but if it is flipped an even number of times, it stays the same.\nConsider the array [1, 0, 0, 1, 0, 1, 1]. We start by flipping three consecutive elements to try and transform all 0s into 1s. First, flipping the subarray [0, 0, 1] at indices 1..3 changes the array to [1, 1, 1, 0, 0, 1, 1]. Then, flipping [0, 0, 1] at indices [3..5] gives [1, 1, 1, 1, 1, 0, 1]. Finally, flipping [1, 0, 1] at indices [1, 0, 1] at indices 4..6 results in [1, 1, 1, 1, 1, 1, 0, 1, 0].\nAt this point, we see that the 0s at positions 4 and 6 remain, and there is no way to flip them without also flipping the other elements. Since we can only flip three elements at a time, we cannot isolate these 0s in a way that allow us to change them to 1s. This happens because these positions were flipped an even number of times, so they retain their original value. Because of this parity constraint, the transformation is impossible."
   },
   {
-    "objectID": "programming/leetcode-gas-station/index.html",
-    "href": "programming/leetcode-gas-station/index.html",
-    "title": "Gas Station",
+    "objectID": "programming/disjoint-set-union/index.html",
+    "href": "programming/disjoint-set-union/index.html",
+    "title": "Disjoint Set Union",
     "section": "",
-    "text": "Imagine you’re on a circular road trip with your car, visiting a series of gas stations. Each station provides a certain amount of gas, but it also costs you gas to drive to the next one. The question is: Can you complete the entire loop starting at one of the stations, without ever running out of fuel?\nThis is the essence of the Gas Station Problem, a well-known greedy algorithm question that tests your ability to reason about cumulative gains and losses over a circular path.\nAt first glance, this might seem like a brute-force problem—try every station as a starting point, simulate the journey, and check which one works. But with some smart observations, we can reduce the solution from O(n²) to O(n) using a greedy strategy.\nIn this post, we’ll guide you step-by-step: - From a naive brute-force solution, - To discovering key mathematical observations, and - Finally building an efficient greedy algorithm with a visual explanation.\nWhether you’re preparing for coding interviews, learning algorithms, or building animations with Manim, this deep dive will help you not only solve the problem but also understand the “why” behind the solution."
+    "text": "This data structure provides the following capabilities. We are given several elements, each of which is a separate set. A DSU will have an operation to combine any two sets, and it will be able to tell in which set a specific element is. The classical version also introduces a third operation, it can create a set from a new element.\nThus the basic interface of this data structure consists of only three operations: - make_set() - create a new set consisting of the new element v. - union_sets(a, b) - merges the two specified sets (the set in which the element a is located, and the set in which the element b is located). - find_set(v) - return the representative (also called leader) of the set that contains the element v. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after union_sets call). This representative can be used to check if two elements are part of the same set or not. a and b are exactly in the same set, if find_set(a) == find_set(b). Otherwise they are in different sets.\nAs described on more detail later, the data structure allows us to do each of these operations in almost \\(O(1)\\) time on average.\nAlso in one of the subsections an alternative structure of a DSU is explained, which achieves a slower average complexity of \\(O(\\log n)\\), but can be more powerful than the regular DSU structure."
   },
   {
-    "objectID": "programming/leetcode-gas-station/index.html#brute-force-logic",
-    "href": "programming/leetcode-gas-station/index.html#brute-force-logic",
-    "title": "Gas Station",
-    "section": "3.1 Brute-Force Logic",
-    "text": "3.1 Brute-Force Logic\nTry starting at every station one by one, and simulate the full circular trip:\n\nInitialize your fuel tank to 0.\nAt each step, add gas[i] to your tank and subtract cost[i].\nIf at any point the tank drops below zero, the trip fails from this starting point.\nRepeat for all n starting points.\n\n\n3.1.1 Example Code\ndef can_complete_circuit_brute(gas, cost):\n    n = len(gas)\n    for start in range(n):\n        tank = 0\n        completed = True\n        for i in range(n):\n            idx = (start + i) % n\n            tank += gas[idx] - cost[idx]\n            if tank &lt; 0:\n                completed = False\n                break\n        if completed:\n            return start\n    return -1"
+    "objectID": "programming/disjoint-set-union/index.html#naive-implementation",
+    "href": "programming/disjoint-set-union/index.html#naive-implementation",
+    "title": "Disjoint Set Union",
+    "section": "Naive implementation",
+    "text": "Naive implementation\nWe can already write the first implementation of the Disjoint Set Union data structure. It will be pretty inefficient at first, but later we can improve it using two optimizations, so that it will take nearly constant time for each function call.\nAs we said, all the information about the sets of elements will be kept in an array parent.\nTo create a new set (operation make_set(v)), we simply create a tree with root in the vertex x, meaning that it is its own ancestor.\nTo combine two sets (operation union_sets(a, b)), we first find the representative of the set in which a is located, and the representative of the set in which b is located. If the representatives are identical, that we have nothing to do, the sets are already merged. Otherwise, we can simply specify that one of the representatives is the parent of the other representative - thereby combining the two trees.\nFinally the implementation of the find representative function (operation find_set(v)): we simply climb the ancestors of the vertex v until we reach the root, i.e. a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively.\nvoid make_set(int v) {\n    parent[v] = v;\n}\n\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return find_set(parent[v]);\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b)\n        parent[b] = a;\n}\nHowever this implementation is inefficient. It is easy to construct an example, so that the trees degenerate into long chains. In that case each call find_set(v) can take \\(O(n)\\) time.\nThis is far away from the complexity that we want to have (nearly constant time). Therefore we will consider two optimizations that will allow to significantly accelerate the work."
   },
   {
-    "objectID": "programming/leetcode-gas-station/index.html#time-complexity",
-    "href": "programming/leetcode-gas-station/index.html#time-complexity",
-    "title": "Gas Station",
-    "section": "3.2 Time Complexity",
-    "text": "3.2 Time Complexity\n\nTimes: \\(O(n^2)\\)\nWhy: For each station, we simulate a full loop through all stations.\nScalability: This is too slow for large inputs (n up to 10⁵ in interviews or contests).\n\nIn the next section, we’ll explore how to observe patterns in the problem and develop a greedy linear-time solution."
+    "objectID": "programming/disjoint-set-union/index.html#path-compression-optimization",
+    "href": "programming/disjoint-set-union/index.html#path-compression-optimization",
+    "title": "Disjoint Set Union",
+    "section": "Path compression optimization",
+    "text": "Path compression optimization\nThis optimization is designed for speeding up find_set.\nIf we call find_set() for some vertex x, we actually find the representative p for all vertices that we visit on the path between v and the actually representative p. The trick is to make the paths for all those nodes shorter, by setting the parent of each visited vertex directly to p.\nWe can see the operation in the following image. On the left there is a tree, and on the right side there is the compressed tree after calling find_set(7), which shortens the paths for the visited node 7, 5, 3 and 2.\n![[DSU_path_compression.png]]\nThe new implementation of find_set is as follows:\nint find_set(int v) {\n    if (v == parent[v])\n        return v;\n    return parent[v] = find_set(parent[v]);\n}\nThe simple implementation does what was intended: first find the representative of the set (root vertex), and then in the process of stack unwinding the visited nodes are attached directly to the representative.\nThis simple modification of the operation already achieves the time complexity \\(O(\\log n)\\) per call on average (here without proof). There is a second modification, that will make it even faster."
   },
   {
-    "objectID": "programming/leetcode-gas-station/index.html#key-observations",
-    "href": "programming/leetcode-gas-station/index.html#key-observations",
-    "title": "Gas Station",
-    "section": "4.1 Key Observations",
-    "text": "4.1 Key Observations\n\nLet’s define:\n\ngain[i] = gas[i] - cost[i] — net fuel at station i.\ntotal_tank = sum(gain) — if it’s negative, no solution exists.\n\nIf your current tank (curr_tank) drops below 0 at station i, it means:\n\nAny station between your last start and i cannot be the correct starting point.\nSo, you must reset your start point to i + 1."
+    "objectID": "programming/disjoint-set-union/index.html#union-by-size-rank",
+    "href": "programming/disjoint-set-union/index.html#union-by-size-rank",
+    "title": "Disjoint Set Union",
+    "section": "Union by size / rank",
+    "text": "Union by size / rank\nIn this optimization we will change the union_set operation. To be precise, we will change which tree gets attached to the other one. In the naive implementation the second tree always got attached to the first one. In practice that can lead to trees containing chains of length \\(O(n)\\). With this optimization we will avoid this by choosing very carefully which tree gets attached.\nThere are many possible heuristic that can be used. Most popular are the following two approaches: In the first approach we use the size of the trees as rank, and in the second one we use the depth of the tree (more precisely, the upper bound on the tree depth, because the depth will get smaller when applying path compression).\nIn both approaches the essence of the optimization is the same: we attach the tree with the lower rank to the one with the bigger rank.\nHere is the implementation of union by size:\nvoid make_set(int v) {\n    parent[v] = v;\n    size[v] = 1;\n}\n\nvoid union_sets(int a, int b){\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (size[a] &lt; size[b])\n            swap(a, b);\n        parent[b] = a;\n        size[a] += size[b];\n    }\n}\nand here is the implementation of union by rank based on the depth of the trees:\nvoid make_set(int v) {\n    parent[v] = v;\n    rank[v] = 0;\n}\n\nvoid union_sets(int a, int b) {\n    a = find_set(a);\n    b = find_set(b);\n    if (a != b) {\n        if (rank[a] &lt; rank[b])\n            swap(a, b);\n        parent[b] = a;\n        if (rank[a] == rank[b])\n            rank[a]++;\n    }\n}\nBoth optimizations are equivalent in terms of time and space complexity. So in practice we can use any of them."
   },
   {
-    "objectID": "programming/leetcode-gas-station/index.html#step-by-step-algorithm",
-    "href": "programming/leetcode-gas-station/index.html#step-by-step-algorithm",
-    "title": "Gas Station",
-    "section": "4.2 Step-by-Step Algorithm",
-    "text": "4.2 Step-by-Step Algorithm\n\nInitialize:\n\ntotal_tank = 0\ncurr_tank = 0\nstart_index = 0\n\nLoop through each station i:\n\nCompute gain = gas[i] - cost[i]\nUpdate tanks:\n\ntotal_tank += gain\ncurr_tank += gain\n\nIf curr_tank &lt; 0, reset:\n\nstart_index = i + 1\ncurr_tank = 0\n\n\nAfter the loop:\n\nIf total_tank &gt;= 0, return start_index\nElse, return -1"
+    "objectID": "programming/disjoint-set-union/index.html#time-complexity",
+    "href": "programming/disjoint-set-union/index.html#time-complexity",
+    "title": "Disjoint Set Union",
+    "section": "Time complexity",
+    "text": "Time complexity\nAs mentioned before, if we combine both optimizations - path compression with union by size / rank - we will reach nearly constant time queries. It turns out, that the final amortized complexity is \\(O(\\alpha(n))\\), where \\(\\alpha (n)\\) is the inverse Ackermann function, which grows very slowly. In fact it grows so lowly, that it doesn’t exceed 4 for all reasonable \\(n\\) (approximately \\(n&lt;10^{600}\\)).\nAmortized complexity is the total time per operation, evaluated over a sequence of multiple operations. The idea is to guarantee the total time of the entire sequence, while allowing single operations to be much slower than the amortized time. E.g. in our case a single call might take \\(O(\\log n)\\) in the worst case, but if we do \\(m\\) such calls back to back we will end up with an average time of \\(O(\\alpha (n))\\).\nWe will also not present a proof for this time complexity, since it is quite long and complicated.\nAlso, it’s worth mentioning that DSU with union by size / rank, but without path compression works in \\(O(\\log n)\\) time per query."
   },
   {
-    "objectID": "programming/leetcode-gas-station/index.html#why-it-works",
-    "href": "programming/leetcode-gas-station/index.html#why-it-works",
-    "title": "Gas Station",
-    "section": "4.3 Why It Works",
-    "text": "4.3 Why It Works\n\nIf the total fuel is not enough to cover the total cost, no path is possible — simple elimination.\nThe greedy reset ensures we skip all impossible start points in a single pass.\nOnly 1 loop, so time complexity is O(n)."
+    "objectID": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
+    "href": "programming/disjoint-set-union/index.html#linking-by-index-coin-flip-linking",
+    "title": "Disjoint Set Union",
+    "section": "Linking by index / coin-flip linking",
+    "text": "Linking by index / coin-flip linking\nBoth union by rank and union by size require that we store additional data for each set, and maintain these values during each union operation. There exist also a randomized algorithm, that simplifies the union operation a little bit: linking by index.\nWe assign each set a random value called the index, and we attach the set with the smaller index to the one with the larger one. It is likely that a bigger set will have a bigger than the smaller set, therefore this operation is closely related to union by size. In fact it can be proven, that this operation has the same time complexity as union by size. However in practice it is slightly slower than union by size."
   },
   {
-    "objectID": "programming/leetcode-gas-station/index.html#code-implementation",
-    "href": "programming/leetcode-gas-station/index.html#code-implementation",
-    "title": "Gas Station",
-    "section": "4.4 Code Implementation",
-    "text": "4.4 Code Implementation\ndef can_complete_circuit(gas, cost):\n    total_tank = 0\n    curr_tank = 0\n    start_index = 0\n\n    for i in range(len(gas)):\n        gain = gas[i] - cost[i]\n        total_tank += gain\n        curr_tank += gain\n\n        if curr_tank &lt; 0:\n            start_index = i + 1\n            curr_tank = 0\n\n    return start_index if total_tank &gt;= 0 else -1\nIn the next section, we’ll visualize this approach step-by-step using a sample input and animation-style diagrams."
-  },
-  {
-    "objectID": "programming/leetcode-gas-station/index.html#problem-understanding",
-    "href": "programming/leetcode-gas-station/index.html#problem-understanding",
-    "title": "Gas Station",
-    "section": "7.1 Problem Understanding",
-    "text": "7.1 Problem Understanding\n\nGoal: What is being optimized? (e.g., minimize cost, maximize profit)\nConstraints: Do choices need to be irreversible or done in order?\nInput Size: Is brute-force even feasible?"
-  },
-  {
-    "objectID": "programming/leetcode-gas-station/index.html#brute-force-first",
-    "href": "programming/leetcode-gas-station/index.html#brute-force-first",
-    "title": "Gas Station",
-    "section": "7.2 Brute Force First",
-    "text": "7.2 Brute Force First\n\nTry all possible paths/choices.\nAsk: Why is this inefficient?\nThis helps reveal structure in the problem (e.g., repeated states, redundant decisions)."
-  },
-  {
-    "objectID": "programming/leetcode-gas-station/index.html#identify-the-greedy-choice",
-    "href": "programming/leetcode-gas-station/index.html#identify-the-greedy-choice",
-    "title": "Gas Station",
-    "section": "7.3 Identify the “Greedy Choice”",
-    "text": "7.3 Identify the “Greedy Choice”\nAsk: - What is the best local decision I can make at each step? - Can I prove that making this choice will never hurt future decisions?\nCommon greedy choices: - Max gain per step - Min cost to reach the next step - Earliest deadline, highest value per weight, etc."
-  },
-  {
-    "objectID": "programming/leetcode-gas-station/index.html#validate-greedy-is-safe",
-    "href": "programming/leetcode-gas-station/index.html#validate-greedy-is-safe",
-    "title": "Gas Station",
-    "section": "7.4 Validate Greedy is Safe",
-    "text": "7.4 Validate Greedy is Safe\nTest your greedy choice with: - Counterexamples: Try inputs where greedy may fail. - Proof: Can you prove “greedy choice” leads to an optimal solution?\nTechniques: - Exchange Argument - Greedy Stays Ahead"
-  },
-  {
-    "objectID": "programming/leetcode-gas-station/index.html#implement-test",
-    "href": "programming/leetcode-gas-station/index.html#implement-test",
-    "title": "Gas Station",
-    "section": "7.5 Implement & Test",
-    "text": "7.5 Implement & Test\n\nUse O(n) or O(n log n) greedy logic.\nTrack accumulative values (e.g., balance, remaining capacity).\nReset conditions if necessary (like in gas station)."
-  },
-  {
-    "objectID": "programming/leetcode-gas-station/index.html#common-greedy-patterns",
-    "href": "programming/leetcode-gas-station/index.html#common-greedy-patterns",
-    "title": "Gas Station",
-    "section": "7.6 Common Greedy Patterns",
-    "text": "7.6 Common Greedy Patterns\n\n\n\n\n\n\n\nPattern\nExample Problems\n\n\n\n\nInterval Scheduling\nActivity selection, meeting rooms\n\n\nResource Allocation\nFractional knapsack\n\n\nAccumulated Constraints\nGas Station, Jump Game\n\n\nCovering Problems\nSet cover approximations"
-  },
-  {
-    "objectID": "programming/leetcode-gas-station/index.html#mindset-summary",
-    "href": "programming/leetcode-gas-station/index.html#mindset-summary",
-    "title": "Gas Station",
-    "section": "7.7 Mindset Summary",
-    "text": "7.7 Mindset Summary\n\n“Make the best local decision… but prove or observe that it’s globally optimal.”\n\nUse greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with monotonic constraints\n\nExample: In the gas station problem\n- Greedy resets starting index when curr_tank &lt; 0\n- If total_tank &gt;= 0, a valid start must exist\n- Greedy eliminates bad candidates efficiently\n\nFinal Note:\nNot all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning"
-  },
-  {
-    "objectID": "programming/maximum-subarray-problem/index.html",
-    "href": "programming/maximum-subarray-problem/index.html",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
+    "objectID": "programming/leetcode-hand-of-straights/index.html",
+    "href": "programming/leetcode-hand-of-straights/index.html",
+    "title": "846. Hand of straights",
     "section": "",
-    "text": "In computer science, the maximum sum subarray problem, also known as the maximum segment sum problem, is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array A[1...n] of numbers. It can be solved in \\(O(n)\\) time and \\(O(1)\\) space.\nFormally, the task is to find indices \\(i\\) and \\(j\\) with \\(1\\leq i \\leq j \\leq n\\) such that the sum \\[\n\\Sigma^j_{x=i}A[x]\n\\] is as large as possible"
+    "text": "Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.\nGiven an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.\nExample 1:\nInput: hand = [1,2,3,6,2,3,4,7,8], groupSize = 3\nOutput: true\nExplanation: Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]\nExample 2:\nInput: hand = [1,2,3,4,5], groupSize = 4\nOutput: false\nExplanation: Alice's hand can not be rearranged into groups of 4.\nConstraints:\n\n1 &lt;= hand.length &lt;= 104\n0 &lt;= hand[i] &lt;= 109\n1 &lt;= groupSize &lt;= hand.length"
   },
   {
-    "objectID": "programming/maximum-subarray-problem/index.html#brute-force-thoughts",
-    "href": "programming/maximum-subarray-problem/index.html#brute-force-thoughts",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
-    "section": "Brute-Force Thoughts",
-    "text": "Brute-Force Thoughts\nA naive way to find the maximum subarray is:\n\nEnumerate all pairs of indices (i, j) with 0 ≤ i ≤ j &lt; n.\nCompute the sum of array[i..j].\nTrack the largest sum seen.\n\nThat requires \\(O(n^2)\\) subarrays and, if we sum each subarray from scratch, up to \\(O(n)\\) per sum, yielding \\(O(n^3)\\) time. We can improve one factor to \\(O(n^2)\\) by keeping a running sum when extending the end index, but that’s still too slow when n is large.\nWe want something like \\(O(n)\\) time."
+    "objectID": "programming/leetcode-hand-of-straights/index.html#understand-the-problem-by-simulation",
+    "href": "programming/leetcode-hand-of-straights/index.html#understand-the-problem-by-simulation",
+    "title": "846. Hand of straights",
+    "section": "3.1 Understand the Problem by Simulation",
+    "text": "3.1 Understand the Problem by Simulation\nTry simulating small examples manually:\nhand = [1,2,3,6,2,3,4,7,8], groupSize = 3\nTry to group them:\n\nGroup 1: [1,2,3]\nGroup 2: [2,3,4]\nGroup 3: [6,7,8]\n\nWe realize:\n\nWe always start from the smallest number available\nWe try to form a consecutive group from that number\nWe must consume one of each in the sequence [x, x+1, ..., x+groupSize-1]"
   },
   {
-    "objectID": "programming/maximum-subarray-problem/index.html#key-observation-intuition",
-    "href": "programming/maximum-subarray-problem/index.html#key-observation-intuition",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
-    "section": "Key Observation (Intuition)",
-    "text": "Key Observation (Intuition)\n\nObservation: Suppose you want to know “What is the maximum-sum subarray that ends exactly at index i?” Once you know that, you could check all i and pick the best among them.\n\n\nDefine\n\\[dp[i] = \\text{the maximum subarray sum among all subarrays that end at index }i.\\] Our ultimate answer (global max) will be\n\\[\n  \\max_{0 \\le k &lt; n} dp[k].\n\\]\nHow do we compute dp[i] if we already know dp[i–1]? Consider any subarray that ends at i. It either:\n\nIs just the single element array[i] (i.e., we “start fresh” at i), or\n\nIs some subarray that ended at i−1 plus array[i] (i.e., we extend the best ending at i−1).\n\nIn other words: \\[\n  dp[i] \\;=\\; \\max\\bigl(\\; array[i],\\; dp[i-1] + array[i] \\bigr).\n\\]\n\nIf dp[i-1] (the best ending at i−1) is negative, then we’re better off “dropping” it and taking array[i] alone.\nIf dp[i-1] is positive (or zero), then extending it by adding array[i] only makes the sum larger.\n\n\nThat recurrence is exactly Kadane’s idea."
+    "objectID": "programming/leetcode-hand-of-straights/index.html#greedy-choice-property",
+    "href": "programming/leetcode-hand-of-straights/index.html#greedy-choice-property",
+    "title": "846. Hand of straights",
+    "section": "3.2 Greedy Choice Property",
+    "text": "3.2 Greedy Choice Property\nAsk: “At each step, what is the best immediate move?”\nAnswer:\nAlways form a group starting from the smallest card available, because delaying it may block forming valid groups later.\nThat’s greedy - always take the smallest ungrouped card and try to complete a group from it."
   },
   {
-    "objectID": "programming/maximum-subarray-problem/index.html#deriving-kadanes-recurrence",
-    "href": "programming/maximum-subarray-problem/index.html#deriving-kadanes-recurrence",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
-    "section": "Deriving Kadane’s Recurrence",
-    "text": "Deriving Kadane’s Recurrence\n\nDefine\n\\[dp[i] = \\text{max subarray sum ending exactly at index }i.\\]\nBase case:\n\\[dp[0] = array[0].\\]\nTransition: For each (i ), consider two possibilities for the subarray that ends at (i):\n\nStart a new subarray at (i). Its sum is (array[i]).\n\nExtend the best subarray ending at (i-1) by including the element at (i). Its sum is (dp[i-1] + array[i]).\n\nTherefore: \\[\n  dp[i] = \\max\\bigl(array[i],\\, dp[i-1] + array[i]\\bigr).\n\\]\nGlobal answer: As you fill these in from (i = 0) up to (n-1), keep track of \\[\n  \\text{global\\_max} = \\max_{0 \\le k &lt; n} dp[k].\n\\] That is the maximum sum among all possible ending-at-k subarrays, which necessarily includes the overall best subarray.\n\nBecause computing each dp[i] takes O(1) time, the entire process is O(n)."
+    "objectID": "programming/leetcode-hand-of-straights/index.html#track-resources",
+    "href": "programming/leetcode-hand-of-straights/index.html#track-resources",
+    "title": "846. Hand of straights",
+    "section": "3.3 Track Resources",
+    "text": "3.3 Track Resources\nWe need:\n\nA count of how many times each card appears -&gt; use Counter\nEfficient access to the smallest available card -&gt; use Min-heap"
   },
   {
-    "objectID": "programming/maximum-subarray-problem/index.html#intuitive-explanation",
-    "href": "programming/maximum-subarray-problem/index.html#intuitive-explanation",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
-    "section": "Intuitive Explanation",
-    "text": "Intuitive Explanation\n\nAs you sweep from left to right, maintain two values:\n\ncurrent_max = “best subarray sum ending exactly at the current position.”\nglobal_max = “best subarray sum seen so far anywhere.”\n\nWhen you arrive at a new element x = array[i], ask yourself:\n&gt; “If I want to pick a subarray that ends at i, is it better to (a) start fresh at i (just take x), or (b) stick with the best contiguous sum I had ending at i−1 and add x to it?”\n\nIf the best sum ending at i−1 was negative, adding x would only make it worse than just taking x alone.\n\nIf the best sum ending at i−1 was positive, adding x can only help (or at least not make it smaller than x).\n\nConcretely:\ncurrent_max = max(x, current_max + x)\nglobal_max  = max(global_max, current_max)\n\nand then move on to i+1.\nThink of it like this: whenever the running sum (best-ending-here) dips below zero, you toss it away and start over at the next index, because any prefix with negative sum would only drag down whatever comes after.\nfunction Kadane(array):\n    if array is empty:\n        return 0   // or some convention (e.g. negative infinity) depending on the problem\n\n    current_max = array[0]\n    global_max  = array[0]\n\n    for i from 1 to (n - 1):\n        x = array[i]\n        // Either extend the previous best subarray, or start new at i\n        current_max = max(x, current_max + x)\n\n        // Update global answer if needed\n        global_max = max(global_max, current_max)\n\n    return global_max\nInitialization: We set both current_max and global_max to array[0]. That handles the case where all numbers might be negative: the answer is the single largest element.\nLoop: At each step, update current_max using the recurrence. Then, if the new current_max is higher than any global_max we’ve seen so far, update global_max.\nReturn: By the end, global_max holds the largest sum of any contiguous subarray in the whole array."
+    "objectID": "programming/leetcode-hand-of-straights/index.html#prove-it-locally",
+    "href": "programming/leetcode-hand-of-straights/index.html#prove-it-locally",
+    "title": "846. Hand of straights",
+    "section": "3.4 Prove it Locally",
+    "text": "3.4 Prove it Locally\nTry:\n\nCan I always remove groupSize consecutive numbers?\nIf not, can I return early?\n\nWe try to decrement counts and remove from the heap only when count becomes 0 to keep it consistent."
   },
   {
-    "objectID": "programming/maximum-subarray-problem/index.html#worked-example",
-    "href": "programming/maximum-subarray-problem/index.html#worked-example",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
-    "section": "Worked Example",
-    "text": "Worked Example\nTake the array [-2, 1, -3, 4, -1, 2, 1, -5, 4]. Walk through Kadane’s steps:\n\n\n\n\n\n\n\n\n\n\ni\narray[i]\ncurrent_max (before)\ncurrent_max (after) = max(array[i], current_max₍i−1₎ + array[i])\nglobal_max\n\n\n\n\n0\n−2\n(init) −2\nmax(−2, —) = −2\n−2\n\n\n1\n+1\n−2\nmax( 1, (−2 + 1) = −1 ) = 1\n1\n\n\n2\n−3\n1\nmax(−3, (1 + (−3)) = −2 ) = −2\n1\n\n\n3\n+4\n−2\nmax( 4, (−2 + 4) = 2 ) = 4\n4\n\n\n4\n−1\n4\nmax(−1, (4 + (−1)) = 3 ) = 3\n4\n\n\n5\n+2\n3\nmax( 2, (3 + 2) = 5 ) = 5\n5\n\n\n6\n+1\n5\nmax( 1, (5 + 1) = 6 ) = 6\n6\n\n\n7\n−5\n6\nmax(−5, (6 + (−5)) = 1 ) = 1\n6\n\n\n8\n+4\n1\nmax( 4, (1 + 4) = 5 ) = 5\n6\n\n\n\nAt index 6, current_max becomes 6, and that’s the largest sum observed. Indeed, subarray [4, −1, 2, 1] ends at i=6 and has sum 6.\nBy index 7, adding −5 would drop the running sum to 1, but since 1 is still ≥ −5 itself, Kadane chooses 1 (i.e., “extend” rather than “start new”).\nBy index 8, it’s better to start new at 8 or to extend the 1? We compare:\n\n“Start new” at 8: sum = 4\n“Extend previous” (which was 1): sum = 1 + 4 = 5\n\n→ so we pick 5. However, 5 &lt; global_max = 6, so global_max remains 6."
+    "objectID": "programming/leetcode-hand-of-straights/index.html#edge-case-check",
+    "href": "programming/leetcode-hand-of-straights/index.html#edge-case-check",
+    "title": "846. Hand of straights",
+    "section": "3.5 Edge Case Check",
+    "text": "3.5 Edge Case Check\nThink:\n\nIf one card has more copies than others, can it still be grouped?\nWhat if the total number of cards isn’t divisible\n\nHandle these early:\nif len(hand) % groupSize != 0: return False"
   },
   {
-    "objectID": "programming/maximum-subarray-problem/index.html#handling-all-negative-arrays",
-    "href": "programming/maximum-subarray-problem/index.html#handling-all-negative-arrays",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
-    "section": "Handling All-Negative Arrays",
-    "text": "Handling All-Negative Arrays\nA common question: “What if the array is entirely negative, e.g. [-5, -3, -8]?”\nKadane’s initialization of\ncurrent_max = global_max = array[0]\nautomatically handles that. We never zero out a running sum unless it’s worse than starting fresh. So if all numbers are negative, every time you consider a new element x, you compute\ncurrent_max = max(x, current_max + x)\nSince current_max + x is even more negative than x alone, the recurrence forces current_max to be the largest single negative element encountered so far. Thus the global max ends up being the least-negative (i.e., the “largest”) element of the array."
+    "objectID": "programming/leetcode-hand-of-straights/index.html#time-complexity",
+    "href": "programming/leetcode-hand-of-straights/index.html#time-complexity",
+    "title": "846. Hand of straights",
+    "section": "5.1 Time Complexity",
+    "text": "5.1 Time Complexity\nLet:\n\nn = len(hand) (total number of cards)\nk = number of unique cards in hand\n\nBreakdown:\n\nBuilding the frequency map: O(n)\nSorting keys or using a heap: O(k log k)\nFor each unique card, in worst case, we might scan up to groupSize consecutive numbers → total time in worst case: O(n log k + n × groupSize) But since the number of total operations across all groups is bounded by n (each card is used once), we simplify:\n\nTotal Time Complexity: O(n log k)\n(If we use a heap, the log factor applies to the number of unique cards.)"
   },
   {
-    "objectID": "programming/maximum-subarray-problem/index.html#final-remarks",
-    "href": "programming/maximum-subarray-problem/index.html#final-remarks",
-    "title": "Maximum subarray problem and Kadane’s algorithm",
-    "section": "Final Remarks",
-    "text": "Final Remarks\n\nTime complexity: O(n), since each element is processed exactly once with O(1) work per element.\nSpace complexity: O(1) extra space if you only keep two scalars (current_max, global_max). (If you store the entire dp[] array, it’s O(n), but you don’t need to; you only ever use the “previous” value.)\n\nKadane’s algorithm is essentially a specialized form of dynamic programming that keeps track of a “running best suffix sum” and resets whenever that suffix sum would be negative. Once you grasp that the maximum-sum subarray ending at i is either “continue from i−1” or “start anew at i,” the rest follows naturally."
+    "objectID": "programming/leetcode-hand-of-straights/index.html#space-complexity",
+    "href": "programming/leetcode-hand-of-straights/index.html#space-complexity",
+    "title": "846. Hand of straights",
+    "section": "5.2 Space Complexity",
+    "text": "5.2 Space Complexity\nCounter: stores up to k keys → O(k)\nOptionally a heap: O(k)\nNo recursion or extra structures\nTotal Space Complexity: O(k)"
   },
   {
-    "objectID": "programming/project-euler-52/index.html",
-    "href": "programming/project-euler-52/index.html",
-    "title": "Merge Triplets to Form Target Triplet",
+    "objectID": "programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
+    "href": "programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
+    "title": "Minimum Cost Walk in Weighted Graph",
     "section": "",
-    "text": "It can be seen that the number, \\(125874\\), and its double, \\(251748\\), contain exactly the same digits, but in a different order.\nFind the smallest positive integer, \\(x\\), such that \\(2x\\), \\(3x\\), \\(4x\\), \\(5x\\), and \\(6x\\), contain the same digits."
+    "text": "Question\nThere is an undirected weighted graph with n vertices labeled from 0 to n - 1.\nYou are given the integer n and an array edges, where edges[i] = [ui, vi, wi] indicates that there is an edge between vertices ui and vi with a weight of wi.\nA walk on a graph is a sequence of vertices and edges. The walk starts and ends with a vertex, and each edge connects the vertex that comes before it and the vertex that comes after it. It’s important to note that a walk may visit the same edge or vertex more than once.\nThe cost of a walk starting at node u and ending at node v is defined as the bitwise AND of the weights of the edges traversed during the walk. In other words, if the sequence of edge weights encountered during the walk is w0, w1, w2, …, wk, then the cost is calculated as w0 & w1 & w2 & … & wk, where & denotes the bitwise AND operator.\nYou are also given a 2D array query, where query[i] = [si, ti]. For each query, you need to find the minimum cost of the walk starting at vertex si and ending at vertex ti. If there exists no such walk, the answer is -1.\nReturn the array answer, where answer[i] denotes the minimum cost of a walk for query i.\nExample 1:\nInput: n = 5, edges = [[0,1,7],[1,3,7],[1,2,1]], query = [[0,3],[3,4]]\nOutput: [1,-1]\nExplanation:\nTo achieve the cost of 1 in the first query, we need to move on the following edges: 0-&gt;1 (weight 7), 1-&gt;2 (weight 1), 2-&gt;1 (weight 1), 1-&gt;3 (weight 7).\nIn the second query, there is no walk between nodes 3 and 4, so the answer is -1.\nExample 2:\nInput: n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]\nOutput: [0]\nExplanation:\nTo achieve the cost of 0 in the first query, we need to move on the following edges: 1-&gt;2 (weight 1), 2-&gt;1 (weight 6), 1-&gt;2 (weight 1).\nConstraints:\n2 &lt;= n &lt;= 105\n0 &lt;= edges.length &lt;= 105\nedges[i].length == 3\n0 &lt;= ui, vi &lt;= n - 1\nui != vi\n0 &lt;= wi &lt;= 105\n1 &lt;= query.length &lt;= 105\nquery[i].length == 2\n0 &lt;= si, ti &lt;= n - 1\nsi != ti\n\n\nAnalysis\nLet’s determine when the answer to a query is -1. This happens when no walk exists between the two nodes, meaning they belong to different connected components.\nNow, suppose the two nodes belong to the same connected component. What is the minimum cost of a walk connecting them? As mentioned, the optimal walk includes as many edges as possible. Since revisiting an edge does not affect the total score, we can freely traverse the edges of the component, meaning that we can move back and forth to reach all of them. Therefore, the best way to achieve the lowest cost is to visit every edge in the component.\nTo efficiently find and process the connected components of the graph, we use the Disjoint Set (Union-Find) data structure. When we Union two nodes, we merge their entire groups, as now a path exists between every node in one group and every node in the other. To maintain efficiency, the root of the larger group is chosen as the representative of the merge group. This minimizes the time needed for future Find operations by reducing the number of steps required to reach the current representative."
   },
   {
-    "objectID": "programming/project-euler-52/index.html#same-number-of-digits",
-    "href": "programming/project-euler-52/index.html#same-number-of-digits",
-    "title": "Merge Triplets to Form Target Triplet",
-    "section": "2.1 Same number of digits:",
-    "text": "2.1 Same number of digits:\nIf x has d digits, 6x must not have more digits than x, or they can’t be permutations.\nSo\nlen(x) == len(6x)\nExample: If x = 100, then 6x = 600, same digit count (3). But x = 200, then 6x = 1200 (4 digits), not possible.\nThat gives a range to search in:\nfor x in range(10**(d-1), 10**d):\n    ..."
-  },
-  {
-    "objectID": "programming/project-euler-52/index.html#digit-permutation-check",
-    "href": "programming/project-euler-52/index.html#digit-permutation-check",
-    "title": "Merge Triplets to Form Target Triplet",
-    "section": "2.2 Digit permutation check:",
-    "text": "2.2 Digit permutation check:\nInstead of sorting each time (\\(O(n\\log n)\\)), use:\ndef canonical(n):\n    return ''.join(sorted(str(n)))\nthen\nc = canonical(x)\nall(c == canonical(i * x) for i in range(2, 7))\nThis function is creating a canonical (standardized) form of any number:\n\nstr(n) converts the number to a string (e.g., 123 → '123')\nsorted(...) puts the digits in ascending order (e.g., '321' → ['1','2','3'])\n''.join(...) joins them back to a single string (e.g., ['1','2','3'] → '123')\n\nSo:\ncanonical(123) == '123'\ncanonical(231) == '123'\ncanonical(312) == '123'\nAll are permutations of the same digits ⇒ same canonical form\nTime Complexity\n\nEach check is ~O(1) due to short digit lengths\nThe loop is linear in x (but bounded by 6-digit numbers)\nMuch faster than O(n²) since the search space is tightly controlled\n\n\n\nCode\ndef canonical(n):\n    return ''.join(sorted(str(n)))\n\ndef has_same_digits(x):\n    c = canonical(x)\n    return all(canonical(x * i) == c for i in range(2, 7))\n\ndef find_smallest_permuted_multiple():\n    x = 100000\n    while True:\n        if has_same_digits(x):\n            return x\n        x += 1\n\nprint(find_smallest_permuted_multiple())  # Output: 142857\n\n\n142857"
-  },
-  {
-    "objectID": "programming/leetcode-jump-game-2/index.html",
-    "href": "programming/leetcode-jump-game-2/index.html",
-    "title": "45. Jump Game II",
+    "objectID": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
+    "href": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
+    "title": "How to approach most DP problems",
     "section": "",
-    "text": "You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0].\nEach element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j] where:\n\n0 &lt;= j &lt;= nums[i], and\n\ni + j &lt; n\n\nReturn the minimum number of jumps to reach nums[n - 1].\nThe test cases are generated such that you can reach nums[n - 1].\n\n\n\nExample 1:\nInput:  nums = [2, 3, 1, 1, 4]\nOutput: 2\nExplanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.\nExample 2:\nInput:  nums = [2, 3, 0, 1, 4]\nOutput: 2\n\n\n\n\n\n1 &lt;= nums.length &lt;= 10⁴\n\n0 &lt;= nums[i] &lt;= 1000\n\nIt is guaranteed that you can reach nums[n - 1]."
+    "text": "To solve a dp problem: https://leetcode.com/problems/house-robber/solutions/156523/from-good-to-great-how-to-approach-most-of-dp-problems/\nThis particular problem can be approached using the following sequence:"
   },
   {
-    "objectID": "programming/leetcode-jump-game-2/index.html#examples",
-    "href": "programming/leetcode-jump-game-2/index.html#examples",
-    "title": "45. Jump Game II",
+    "objectID": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html#step-5-iterative-2-variables-bottom-up",
+    "href": "programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html#step-5-iterative-2-variables-bottom-up",
+    "title": "How to approach most DP problems",
+    "section": "Step 5: Iterative + 2 variables (bottom-up)",
+    "text": "Step 5: Iterative + 2 variables (bottom-up)\nIn the previous step, we use only memo[i] and memo[i-1], so going just 2 step back. We can hold them in 2 variables instead. This optimization is met in Fibonacci sequence creation and some other problems [[Optimize Fibonacci]]\n    def rob(self, nums: List[int]) -&gt; int:\n        if len(nums) == 0:\n            return 0\n        prev1, prev2 = 0, 0\n        for num in nums:\n            temp = prev1\n            prev1 = max(prev2 + num, prev1)\n            prev2 = temp\n        return prev1"
+  },
+  {
+    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html",
+    "href": "programming/leetcode-678-valid-parenthesis-string/index.html",
+    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
     "section": "",
-    "text": "Example 1:\nInput:  nums = [2, 3, 1, 1, 4]\nOutput: 2\nExplanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.\nExample 2:\nInput:  nums = [2, 3, 0, 1, 4]\nOutput: 2"
+    "text": "When reading the problem description of LeetCode 678 – Valid Parenthesis String, I immediately thought of the classic balanced parentheses problem. However, the wildcard character *, which can be treated as '(', ')', or an empty string, makes it more complex.\nMy first instinct was to simulate a stack like how we handle simple parenthesis matching: - Push '(' onto the stack. - Pop for every ')'. - But now, we need to consider '*' flexibly. This led me to a one-stack idea, which failed because we need to preserve the order of matching.\nThat realization pushed me to a two-stack greedy strategy: - One stack for '(' indices. - One for '*' indices. Then try to match the remaining '(' with any '*' that appears after it."
   },
   {
-    "objectID": "programming/leetcode-jump-game-2/index.html#constraints",
-    "href": "programming/leetcode-jump-game-2/index.html#constraints",
-    "title": "45. Jump Game II",
+    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#complexity",
+    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#complexity",
+    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
+    "section": "3.1 Complexity",
+    "text": "3.1 Complexity\n\nTime complexity: O(n) We traverse the string once and at most once more to match remaining parentheses.\nSpace complexity: O(n) In the worst case, both stacks could hold all characters."
+  },
+  {
+    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#base-cases",
+    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#base-cases",
+    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
+    "section": "4.1 Base Cases",
+    "text": "4.1 Base Cases\n\nEvery dp[i][i] is True if s[i] == '*', because '*' can represent an empty string.\nFor length 2 substrings:\n\nValid cases include (), (*), (*, *), and **."
+  },
+  {
+    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#transition",
+    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#transition",
+    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
+    "section": "4.2 Transition",
+    "text": "4.2 Transition\nTo compute dp[i][j], we iterate over all k such that i &lt; k ≤ j, and check:\n\nIf s[i] == '(' or '*' and s[k] == ')' or '*'\nand dp[i+1][k-1] == True (i.e., the inner substring is valid)\nand dp[k+1][j] == True (i.e., the remaining part is also valid)\n\nThen dp[i][j] = True.\nThis leads to an O(n³) time complexity in the worst case due to 3 nested loops: - i from n-1 to 0 - j from i to n-1 - k from i+1 to j\nWe may reduce to O(n²) using memoization and early stopping, but this still isn’t optimal for large n."
+  },
+  {
+    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#why-we-switched-to-stack",
+    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#why-we-switched-to-stack",
+    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
+    "section": "4.3 Why We Switched to Stack",
+    "text": "4.3 Why We Switched to Stack\nWhile the DP approach gives a rigorous solution, the memory and runtime costs are high for n = 100. This motivated us to find a greedy method — leading to the efficient two-stack approach which runs in linear time and works within the problem’s constraints."
+  },
+  {
+    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#code-1",
+    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#code-1",
+    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
+    "section": "4.4 Code",
+    "text": "4.4 Code\nclass Solution:\n    def checkValidString(self, s: str) -&gt; bool:\n        n = len(s)\n        dp = [[False] * n for _ in range(n)]\n\n        # Base cases: single character\n        for i in range(n):\n            if s[i] == '*':\n                dp[i][i] = True\n\n        # Base cases: two characters\n        for i in range(n - 1):\n            if (s[i] == '(' or s[i] == '*') and (s[i+1] == ')' or s[i+1] == '*'):\n                dp[i][i+1] = True\n\n        # Fill DP table\n        for size in range(2, n):\n            for i in range(n - size):\n                j = i + size\n                if s[i] == '*' and dp[i+1][j]:\n                    dp[i][j] = True\n                    continue\n                for k in range(i+1, j+1):\n                    if (s[i] == '(' or s[i] == '*') and (s[k] == ')' or s[k] == '*'):\n                        if (k == i+1 or dp[i+1][k-1]) and (k == j or dp[k+1][j]):\n                            dp[i][j] = True\n                            break\n\n        return dp[0][n-1]"
+  },
+  {
+    "objectID": "programming/leetcode-678-valid-parenthesis-string/index.html#why-the-two-stack-approach-is-greedy",
+    "href": "programming/leetcode-678-valid-parenthesis-string/index.html#why-the-two-stack-approach-is-greedy",
+    "title": "Valid Parenthesis String with Wildcards - A Greedy Stack Approach",
+    "section": "5.1 Why the Two-Stack Approach Is Greedy",
+    "text": "5.1 Why the Two-Stack Approach Is Greedy\nWe call the two-stack approach to Leetcode 678 a greedy algorithm because it makes locally optimal decisions at each step, aiming to resolve mismatches immediately without exploring all possibilities.\n\n5.1.1 Immediate Matching\n\nWhen encountering a ')', we:\n\nFirst try to match it with a '(' (if available),\nIf not, try to match it with a '*' (interpreted as '(').\n\nIf neither is available, return False immediately.\n\n\nThis is a greedy decision: match now rather than wait for a possibly better match later.\n\n\n\n5.1.2 Post-Processing for '('\n\nAfter scanning the string, some '(' may remain.\nWe greedily match each '(' with a later '*' (interpreted as ')').\nThis match must happen in order: '(' must appear before '*'.\n\n\n\n5.1.3 No Backtracking or Multiple Scenarios\n\nThe algorithm never revisits decisions.\nUnlike dynamic programming (which explores all valid ways to interpret '*'), the greedy approach only considers matches that help balance the parentheses immediately.\n\n\n\n5.1.4 Summary Table\n\n\n\nCharacter\nGreedy Behavior\n\n\n\n\n')'\nMatch immediately with '(' or '*'\n\n\n'('\nSaved in stack for future match\n\n\n'*'\nStored to match later as '(' or ')'\n\n\nRemaining '('\nMatched with later '*' greedily\n\n\n\n\n\n5.1.5 Why Greedy Works Here\nThis problem permits multiple interpretations of '*', but the greedy strategy works because: - We never allow unmatched ')'. - Every '(' must eventually be matched, and greedy ensures we try the best-case option first.\n\nGreedy is valid in this problem due to the constraints and structure of balanced parentheses."
+  },
+  {
+    "objectID": "programming/leetcode-40-combination-sum-ii/index.html",
+    "href": "programming/leetcode-40-combination-sum-ii/index.html",
+    "title": "Backtracking with Duplicate Skipping — Clean Solution to Combination Sum II",
     "section": "",
-    "text": "1 &lt;= nums.length &lt;= 10⁴\n\n0 &lt;= nums[i] &lt;= 1000\n\nIt is guaranteed that you can reach nums[n - 1]."
-  },
-  {
-    "objectID": "programming/leetcode-jump-game-2/index.html#initial-intuition-dynamic-programming-approach",
-    "href": "programming/leetcode-jump-game-2/index.html#initial-intuition-dynamic-programming-approach",
-    "title": "45. Jump Game II",
-    "section": "2.1 Initial Intuition (Dynamic Programming Approach)",
-    "text": "2.1 Initial Intuition (Dynamic Programming Approach)\nAs a beginner, one natural way to approach this is to track the minimum number of jumps needed to reach each index. We can use an auxiliary array min_step[], where:\n\nmin_step[i] = the minimum number of steps to reach index i from index 0.\n\n\n2.1.1 Pseudocode\n\nInitialize min_step[0] = 0, and others as 0 (we’ll treat 0 as “unvisited”).\nFor each index i, simulate all possible forward jumps up to nums[i].\nFor each reachable index i + step, update min_step[i + step] if it hasn’t been visited.\n\n\n\n2.1.2 Visualization\n\n\n\n2.1.3 Python Code\nfrom typing import List\n\nclass Solution:\n    def jump(self, nums: List[int]) -&gt; int:\n        n = len(nums)\n        min_step = [0] * n  # min_step[i]: min jumps to reach index i\n\n        for i in range(n):\n            steps = nums[i]\n            for step in range(1, steps + 1):\n                next_pos = i + step\n                if next_pos &lt; n and min_step[next_pos] == 0: # bound and visited\n                    min_step[next_pos] = min_step[i] + 1\n\n        return min_step[n - 1]"
-  },
-  {
-    "objectID": "programming/leetcode-jump-game-2/index.html#time-space-complexity",
-    "href": "programming/leetcode-jump-game-2/index.html#time-space-complexity",
-    "title": "45. Jump Game II",
-    "section": "2.2 Time & Space Complexity",
-    "text": "2.2 Time & Space Complexity\n\nTime: O(n²) in the worst case (if every nums[i] is large and we simulate many jumps).\nSpace: O(n) for the min_step[] array.\n\n\n2.2.1 Pros\n\nCan AC in leetcode.\nEasy to understand and implement.\nHelps build dynamic programming intuition.\n\n\n\n2.2.2 Cons\n\nToo slow for large arrays (e.g. n = 10⁴).\nRedundant work — we revisit the same states multiple times."
-  },
-  {
-    "objectID": "programming/leetcode-jump-game-2/index.html#the-optimal-greedy-approach-on",
-    "href": "programming/leetcode-jump-game-2/index.html#the-optimal-greedy-approach-on",
-    "title": "45. Jump Game II",
-    "section": "2.3 The Optimal Greedy Approach (O(n))",
-    "text": "2.3 The Optimal Greedy Approach (O(n))\nOnce you’re comfortable with the basic idea, you can switch to a greedy strategy:\n\nTrack the farthest index reachable in the current “jump”.\nWhen you reach the end of the current jump range, increment your jump count and update the next jump range.\nRepeat until the end of the array is reachable.\n\n\n2.3.1 Visualization\n\n\n\n2.3.2 Optimal Code (Greedy)\nclass Solution:\n    def jump(self, nums: List[int]) -&gt; int:\n        jumps = 0\n        farthest = 0\n        current_end = 0\n\n        for i in range(len(nums) - 1):  # exclude last index\n            farthest = max(farthest, i + nums[i])\n            if i == current_end:\n                jumps += 1\n                current_end = farthest\n        \n        return jumps\n\nTime Complexity: O(n)\nSpace Complexity: O(1)"
-  },
-  {
-    "objectID": "programming/leetcode-jump-game-2/index.html#takeaways",
-    "href": "programming/leetcode-jump-game-2/index.html#takeaways",
-    "title": "45. Jump Game II",
-    "section": "2.4 Takeaways",
-    "text": "2.4 Takeaways\n\nYour DP-style intuition is a great starting point for understanding how to model state transitions.\nBut always analyze the time complexity — for real-world coding problems, efficiency matters.\nLearn to identify when a greedy strategy can replace DP in minimum step problems."
-  },
-  {
-    "objectID": "programming/leetcode-jump-game-2/index.html#learning-tip",
-    "href": "programming/leetcode-jump-game-2/index.html#learning-tip",
-    "title": "45. Jump Game II",
-    "section": "2.5 Learning Tip",
-    "text": "2.5 Learning Tip\nStart by solving problems with a safe brute-force or DP mindset. Once you understand the pattern, look for greedy optimizations to reduce time complexity.\nHappy coding! 💻"
-  },
-  {
-    "objectID": "programming/leetcode-house-robber/house-robber.html",
-    "href": "programming/leetcode-house-robber/house-robber.html",
-    "title": "House robber",
-    "section": "",
-    "text": "Topic: array, dymanic programming\n\nQuestion\nYou are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.\nGiven an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.\nExample 1:\n\nInput: nums = [1,2,3,1]\nOutput: 4\nExplanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.\n\nExample 2:\n\nInput: nums = [2,7,9,3,1]\nOutput: 12\nExplanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.\n\nConstraints:\n1 &lt;= nums.length &lt;= 100\n0 &lt;= nums[i] &lt;= 400\n\n\nApproaches"
+    "text": "1 Intuition\nThe problem asks us to find unique combination that sum to a garget, but each number can be used only once. This immediately suggests a backtracking appoach - we explore combinations recursively and prune paths that exceed the target.\nBecause there may be duplicate numbers in the input, we need to skip duplicates at the same depth to avoid generating repeated combinations.\n\n\n2 Approach\n\nSort the input to bring duplicates together and allow early stopping.\nUse a backtracking finction to explore choices:\n\nInclude current number\nRecurse with the next index (i+1) to prevent resuing the same element\n\nAt each rescursive call:\n\nif total == target, we’ve found a valid path - store it\nif total &gt; target, stop this path\nSkip current element if it’s a duplicate at the same recursion level.\n\n\n\n\n3 Complexity\n\nTime complexity: \\(O(2^n)\\) in the worst case, due to the number of combinations we exlore (through pruning and skipping duplicates improve this).\nSpace complexity: \\(O(n)\\) for the rescursion call stack and current path.\n\n\n\n4 Code\nfrom typing import List\n\nclass Solution:\n    def combinationSum2(self, candidates: List[int], target: int) -&gt; List[List[int]]:\n    candidates.sort()\n\n    result = []\n    def backtrack(start: int, path: List[int], total: int):\n        if total == target:\n            result.append(path[:])\n            return\n        if total &gt; target:\n            return\n\n        for i in range(start, len(candidates)):\n            cur = candidates[i]\n\n            # skip duplicates at the same depth level\n            if cur == prev:\n                continue\n            if total + cur &gt; target:\n                break\n\n            path.append(cur)\n            backtrack(i + 1, path, total + cur)\n            path.pop()\n            prev = cur\n\n    backtrack(0, [], 0)\n    return result"
   },
   {
     "objectID": "programming/leetcode-find-closest-node-given-2-nodes/index.html",
