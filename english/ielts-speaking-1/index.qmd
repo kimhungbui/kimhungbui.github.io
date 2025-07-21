@@ -49,7 +49,6 @@ If someone is awarded a Band 8 in Speaking, this shows they are capable of a ver
 I have often said that receiving a high score in any test does not make you an expert in language assessment or in how you achieved that score. In IELTS Speaking, the most common assumption is that a high score is due to the vocabulary used, especially idiomatic phrases. This idea is then presented as a model for 'Band 8' in many videos, where the speaker is allowed to give long unnatural answers, featuring as many idiomatic phrases as possible. As such, these videos do not represent a real test and no longer show the level the test taker was awarded in their actual test, where their examiner played a much more important role than 'the reader of questions'.
 
 
-
 # How to think like an examiner
 
 ## The role of examiner
@@ -78,7 +77,137 @@ The interview is recorded to check that examiners are following the right interv
 In many of the videos showing 'mock tests', the candidate doesn't reach their full potential because they are allowed to talk for as long as they want and give mini speeches, while the 'examiner' plays a rather passive role and never asks any follow-up questions. In the real test, your examiner will not sit passively, reading a list of questions - they will interact with you and respond to what you say.
 :::
 
+## Authentic examples of IELTS interviews
+
+To see the difference between an authentic interview and those we often see on Youtube, compare the following extracts. The first is from a typical mock 'Band 8 interview' and the second is from an authentic interview shared on the IDP Youtube channel
+
+### Mock 'Band 8' interview on Youtube
+
+_Interviewer: How do people kepe awake when they are tired?_
+
+_Candidate: Well, I think it goes without saying that the best defence against excessive sleepiness is definitely caffeine. This is a substance most commonly found in tea and coffee and it's said to have ... to make you more aware and give you a heightened sense of alertness to your surroundings. If you want to wake up feeling energized, then I think a cup of caffeeinated beverage is your go-to choice._
+
+_Interviewer: Okay. Who do people feel tired a lot nowadays?_
+
+_Candidate: Generally speaking, chronic fatigue is the result of enduring .. enduring lack of sleep and other physical and psychological factors. Some people suffer from a persistent sleeping disorder either genetically or from stress, so in this fast-paced world, people working longer hours and bite off more than they can chew, and that leaves little room for rest. This explains why some people show up at work looking all drained and weary._
+
+### Extract form an authentic Band 8 interview
+
+_Examiner: What are the advantages and disadvantages of being famous?_
+
+_Candidate: Okay the advantages is that ... {the candidate explains the advantages}. The disadvantages is uh that you have to be diplomatically correct. At times, if there are certain things which are incorrect, still you have to go ahead and do that, which doesn't make sense because a lot of political leaders they ... they are into corruption er back in India and, er, well at times year there are some things which are wrongs, but they have to do it._
+
+_Examiner: Why do they have to do it?_
+
+_Candidate: Because there's a lot of political pressure and if they don't do it the political party
+ would not support them and in the end they have to resign._
+
+_Examiner: Do you think the media plays a role in that? What is the media's approach to reporting famous people?_
+
+_Candidate: Well, the media plays an important role. At times ..._
+
+## Point to notice
+
+- In the IDP interview, the Band 8 candidate directly answers each question:
+
+Examiner: What are the advantages and disadvantages ...
+
+Candidate: The advantages are ...
+
+The experienced, trained examiner listens carefully to each answer and responds with a follow-up question, creating a more natural exchange of ideas:
+
+Candidate: ... at times year there are more some things are wrong,<u> but they have to do it.</u>
+
+Examiner: <u>Why do they have to do it?</u>
+
+- In contrast, in the first video, the 'test taker' does __not__ answer the specific question they are asked. Instead, they give unnatural, lecture-style responses, often using a 3-sentence pattern or template:
+
+![](Pasted%20image%2020250720162610.png)
+This may explain the belief that '_your ideas don't matter. so just say anything you like and talk for as long as you can_'.
+
+- The person playing the 'examiner' role allows the 'candidate' to talk for as long as they want and doesn't engage with the responses: when the candidate finishes speaking, they simply ask a new question. In a real test (to encourage a more natural response and help the candidate show their real speaking ability) the examiner would have interrupted these speeches.
+
+![](Pasted%20image%2020250720162826.png)
+
+As the candidate mentioned '_physical and psychological factors_', the examiner could even have asked:
+
+_What sort of physical and psychological factors might cause tiredness?_
+
+This is the type of shared test question that can lead others to conclude that the examiner sometimes asks 'complicated' or 'tricky' questions. This also shows the problem with using as many 'high-level' words and phrases as possible: doing so can introduce complex ideas that you may struggle to discuss further.
+
+:::{.callout-tip}
+The examiner can easily spot learned answers and will interrupt long, unnatural speeches by asking a new question or a follow-up question. Don't introduce ideas that you cannot discuss in more detail simply to show off 'high-level' vocabulary.
+:::
+
+## How the examiner decides on our score
+
+Throughout our test, the examiner is considering the different aspects of our spoken language and reaching a decision based on the Band descriptors. This means that our examiner is thinking about our level __at every stage of the test__.
+
+Typically, an examiner will begin by setting a benchmark based on how you respond to the early test questions. So, after one or two questions, the examiner may be thinking. 'This candidate is at least a Band 6. At the end of Part 1, the examiner may have decided, 'Actually, this candidate could potentially be Band 7 or more Then, throughout your test, the examiner will look for confirmation of this level (as well as any possible indicators of an even higher (or lower) score) so that they can reach a firm decision by the end of the interview. Contrary to popular belief, your examiner wants to give you the highest score they can and is always looking for evidence to support this.
+
+:::{.callout-tip}
+The examiner is reaching a decision about our score at every point in the test. Our examiner wants to give us the highest score they can and they will continually look for evidence to support this.
+:::
+
+Different parts of the test can be useful in focusing on certain criteria. For example, in Part 1, your examiner may think more about pronunciation. Your responses in Part 2 provide more evidence of your Fluency and Coherence, Lexical Resource, and Grammatical Range and Accuracy, while Part 3 can help confirm whether all of these scores are accurate or should be even higher.
+
+From the test-taker point of view, it might help to compare each of your answers to hitting a strength-testing machine with a hammer. Every response is a chance to register as high a score as possible on the scale. Unfortunately, many candidates waste these opportunities by giving prepared answers that the examiner has to ignore. This is like taking the hammer and hitting the sign, so no score registers:
+
+![](Pasted%20image%2020250720164003.png)
+
+If the examiner notices a particular problem (such as a grammatical mistake) they will listen to see if this is a systematic (repeated) error, or just a slip. If they notice a positive feature (such as good use of intonation or vocabulary) again they will listen to see if this is maintained. While some test takers can maintain a consistent level throughout, for others, their level may fluctuate - this is a sign that a candidate is on the way to the next level, but not quite there yet. 
+
+Your overall score is not decided by the highest (or lowest) 'hits', as the image below shows, it is the consistency of your level that matters.
+
+![](Pasted%20image%2020250720164100.png)
+
 # Understanding the Band descriptors
 
+Another important part of being an examiner is learning how to apply the different Band descriptors. Trainee examiners often begin with preconceived ideas of each Band and have to adiust these to become accredited. Similarv. teachers and test takers need to be sure that their own beliefs about the different levels are accurate have to adjust these to become accredited. Similarly, teachers and test takers need to be sure that their own beliefs about the different levels are accurate.
 
+:::{.callout-tip}
+The band descriptors can help you understand now to improve your score. However, it is important to check that your beliefs about the critical levels and criteria are accurate.
+:::
+
+## Applying the Band descriptors
+ 
+ The examiner assesses your speaking performance in four criteria:
+
+- Fluency and Coherence (F&C)
+- Lexical Resource (LR)
+- Grammatical Range and Accuracy (GRA)
+- Pronunciation (P)
+
+Many online sources reduce these criteria to the following oversimplified ideas:
+
+- speaking quickly and without stopping, and giving long answers
+- using high-level words and idiomatic language
+- using a range of tenses
+- having a native-speaker accent
+
+If we use more reliable sources (e.g. the official IELTS Band descriptors and authentic interviews from the IDP YouTube channel), we can get a more detailed view of what the examiner is looking for in each criterion, and set key goals to help improve your score.
+
+::: {.callout.tip}
+We can use the Band descriptors to set key goals to improve your score. However, it's important to note that they describe both positive and negative features, so they are not all goals you should aim for.
+:::
+
+## Discrimination
+
+In language assessment, the words 'discrimination' and 'discriminate' are used to mean '_judging the quality of something based on what makes it different from something else_'. It is extremely important for examiners to be able to discriminate between speech at different Bands. In other words, to understand the qualities that make Band 7 different from Band 6 and so on. Below, I have explained the elements that allow the examiner to discriminate between different Bands in each criterion.
+
+## Understand Fluency and Coherence
+
+The points in the Fluency and Coherence band descriptors are organised into 1) elements of Fluency (e.g. hesitation and the ability to keep talking) and 2) Coherence (relevance, comprehensibility, and linking of ideas). 
+
+I have summarised the main points at each level in the table below:
+
+![](Pasted%20image%2020250720164735.png)
+
+### The difference between Fluency and Coherence
+
+A useful way to think of fluency is <u>how easy it is for the speaker to express their ideas at length</u> on different topics, while coherence refers to <u>how easy it is for the listener to understand what you are saying</u>, and how well your ideas are connected. If you came out of your test thinking, 'I gave really long answers', and are confused why your F&C score was only Band 6, this should tell you that the examiner may not have always been able to follow your ideas or the connections between your ideas. If you struggled to keep going at times, the strategies you used to help you can have an impact on this score. For example, relying too much on repetition, self-correction, and fillers can lower your F&C score. 
+
+Look at the following example from a video on the IDP YouTube channel, where a Band 6 candidate is talking about famous people in the past:
+
+![](Pasted%20image%2020250720165532.png)
 
