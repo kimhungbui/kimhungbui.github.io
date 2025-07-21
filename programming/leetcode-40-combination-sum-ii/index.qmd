@@ -1,0 +1,90 @@
+---
+title: Backtracking with Duplicate Skipping — Clean Solution to Combination Sum II
+lightbox: false
+description: Backtracking with Duplicate Skipping — Clean Solution to Combination Sum II
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Leetcode - 40. Combination Sum 2
+    affiliation-url: https://leetcode.com/problems/combination-sum-ii/description/
+date: 2025-07-21
+categories:
+  - backtracking
+  - leetcode
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+
+# Intuition
+
+The problem asks us to find __unique combination__ that sum to a garget, but __each number can be used only once__. This immediately suggests a __backtracking__ appoach - we explore combinations recursively and prune paths that exceed the target.
+
+Because there may be __duplicate numbers__ in the input, we need to __skip duplicates at the same depth__ to avoid generating repeated combinations.
+
+# Approach
+
+1. Sort the input to bring duplicates together and allow early stopping.
+
+2. Use a backtracking finction to explore choices:
+
+    - Include current number
+    - Recurse with the next index (i+1) to prevent resuing the same element
+
+3. At each rescursive call:
+    - if `total == target`, we've found a valid path - store it
+    - if `total > target`, stop this path
+    - Skip current element if it's a duplicate at the same recursion level.
+
+# Complexity
+
+- Time complexity: $O(2^n)$
+in the worst case, due to the number of combinations we exlore (through pruning and skipping duplicates improve this).
+
+- Space complexity: $O(n)$
+for the rescursion call stack and current path.
+
+# Code
+``` python
+from typing import List
+
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+    candidates.sort()
+
+    result = []
+    def backtrack(start: int, path: List[int], total: int):
+        if total == target:
+            result.append(path[:])
+            return
+        if total > target:
+            return
+
+        for i in range(start, len(candidates)):
+            cur = candidates[i]
+
+            # skip duplicates at the same depth level
+            if cur == prev:
+                continue
+            if total + cur > target:
+                break
+
+            path.append(cur)
+            backtrack(i + 1, path, total + cur)
+            path.pop()
+            prev = cur
+
+    backtrack(0, [], 0)
+    return result
+```
