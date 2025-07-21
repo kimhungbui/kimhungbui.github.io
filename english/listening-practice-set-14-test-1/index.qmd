@@ -1,0 +1,385 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 14 listening test 1
+lightbox: false
+description: IELTS Practice Set 14 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-21
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 14 - listening test 1
+- Date: 21/07/2025
+- Total Score: 35/40
+
+# Performance Summary
+
+| **Category**                                 | ✅ **Correct** | ❌ **Wrong** | 🚫 **Skipped** | 🎯 **Accuracy** |
+| -------------------------------------------- | ------------- | ----------- | -------------- | --------------- |
+| **[Listening] Multiple Choice**              | 7             | 2           | 0              | **77.78%**      |
+| **[Listening Theme] Orientation Course**     | 8             | 2           | 0              | **80.00%**      |
+| **[Listening Theme] Tutorial Presentations** | 9             | 1           | 0              | **90.00%**      |
+| **[Listening Theme] Reporting a Problem**    | 9             | 1           | 0              | **90.00%**      |
+| **[Topic] Science & Technology**             | 9             | 1           | 0              | **90.00%**      |
+| **[Listening] Matching**                     | 10            | 1           | 0              | **90.91%**      |
+| **[Listening] Note/Form Completion**         | 18            | 2           | 0              | **90.00%**      |
+# Recording 1
+
+| Question | My answer | Corrected | ISSUE                             |
+| -------- | --------- | --------- | --------------------------------- |
+| 9        | BLONE     | BLOND(E)  | __Spelling mistake__ / Mishearing |
+Likely a **phonetic error** — I heard the pronunciation correctly but guessed the wrong spelling.
+
+- **“Blond(e)”** refers to **hair color** and is commonly used in listening tasks that describe people’s **appearance**.
+    
+- **BLOND** = traditionally used for **males**
+    
+- **BLONDE** = traditionally used for **females**
+    
+- In IELTS, **both are accepted**, so it's often written as **“BLOND(E)”**.
+
+# Recording 2
+
+| Question | My answer                       | Corrected                  | ISSUE                                                                                                                                |
+| -------- | ------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 11       | E enjoy new challenges          | E - enjoy new challenges   | ❌ **Misinterpretation** – The speaker mentions challenges but doesn’t advise “enjoying” them. No advice to enjoy anything was given. |
+| 12       | A get to know colleagues        | A -                        | ✅ **Correct** – The speaker explicitly says to talk to people and make new friends.                                                  |
+| 17       | B - There are some restrictions | C - it is against the rule |                                                                                                                                      |
+I miss the word: 'check with someone ...'
+
+### **Correct Option A: get to know colleagues**
+
+> **“make an effort to talk to as many people as possible about their work – you'll make some new friends and find out lots of useful information.”**
+
+That clearly advises you to **talk to people** and **make friends** → This is **getting to know colleagues**.
+
+---
+
+### ✅ **Correct Option C: ask lots of questions**
+
+> **“check with someone if you're not sure what to do – your supervisor is approachable and won’t mind explaining things”**
+
+That is clear advice to **ask questions** if unsure. So, C is correct.
+
+### ❌ **Why Option E (enjoy new challenges) is wrong**
+
+You chose:
+
+> **E: enjoy new challenges**
+
+This sounds like good advice, but it **wasn’t actually said**.
+
+Here’s the relevant part:
+
+> **“Most of you have very little or no experience... and the first week may be quite challenging...”**
+
+She **acknowledges** that it may be challenging — but she **never says** “Enjoy it!” or “embrace challenges.” She actually says:
+
+> **“Don't worry too much... check with someone...”**
+
+So she's saying the first week may be hard, but she’s not giving the **advice** to _enjoy_ the challenge. So **E is an interpretation**, **not actual advice**.
+- Only choose answers that are **directly supported by the exact wording** in the audio.
+    
+- Do **not infer advice** unless the speaker clearly gives it as advice.
+    
+- Watch out for choices that are **logically good** but **not actually said**.
+
+Q17: _Booking Holidays_
+
+"... we ask that you __don't book any holidays until after your six-month apprenticeship has finished__. Time off should only be taken if you are unwell."
+
+### ✅ Correct Answer: **C – It is against the rules**
+
+#### Why?
+
+- The manager clearly **asks apprentices NOT to book any holidays during the six-month apprenticeship.**
+    
+- The only exception is **sick leave**.
+    
+- This isn’t just a “restriction” — it’s a **firm rule** for everyone during that time.
+    
+
+---
+
+### ❌ Why your answer B (There are some restrictions) is incorrect:
+
+- “Restrictions” would imply **some flexibility** — that holidays are **allowed but with limits.**
+    
+- But in this case, **they are not allowed at all**, unless you're sick.
+
+### 🔁 Re-examining the line:
+
+> “...**we ask that you don't book any holidays until after your six-month apprenticeship has finished**. Time off should only be taken if you are unwell.”
+
+---
+
+### 🔍 Your logic:
+
+> Since holidays are possible **after** 6 months, that feels like a _restriction_, not a full ban. So maybe it's **B**?
+
+Totally understandable — **but here’s the key** in IELTS logic:
+
+---
+
+### ❗ In IELTS, **questions refer only to the time period given** — in this case:
+
+> **“Company policy for apprentices”**
+
+So, the phrase **“Booking holidays”** in this question is specifically asking about **during the apprenticeship** (i.e., the 6 months).
+
+---
+
+### So the manager’s meaning is:
+
+> ❌ No holidays are allowed **at all** during your apprenticeship.  
+> ✅ Only if you are **unwell** can you take time off.
+
+That’s a **ban during the apprenticeship** — not a restriction, but a **prohibition**. Therefore:
+
+---
+
+### ✅ Correct = **C (It is against the rules)**
+
+Because:
+
+- Booking holidays during the apprenticeship = not allowed.
+    
+- After the apprenticeship = irrelevant to the question.
+    
+
+---
+
+### 🔑 IELTS Tip:
+
+Always consider:
+
+> “Does the question refer to now, or after a period?”  
+> If the policy is **temporarily prohibited**, that’s still **“against the rules”** for the period in question.
+
+
+# Recording 3
+
+### ✅ Correct Answer: **A. may bring pollution to the cities**
+
+### ❌ Your Answer: **B. may reduce the land available for agriculture**
+
+---
+
+### 📌 Let’s break it down:
+
+#### 🔈 What Rob actually says:
+
+> "Agriculture and industry tend to spread further inland along the rivers... and so agriculture moves even further inland... **more and more pollutants are discharged into the rivers**."
+> 
+> "So these are **brought downstream to the cities**?"
+
+#### 🔍 What does this mean?
+
+- As **agriculture and industry expand**, they pollute the river.
+    
+- That **pollution flows downstream** (with the river) **to the coastal cities**.
+    
+- 💡 That’s **pollution reaching cities**, not a lack of agricultural land.
+    
+
+---
+
+### ❗ Why is **B** wrong?
+
+You chose:
+
+> **B. may reduce the land available for agriculture**
+
+But:
+
+- Rob never says that **land for agriculture is reduced**.
+    
+- He says **agriculture is spreading further** — not less, but more.
+    
+- The **problem is pollution**, not land use.
+    
+
+---
+
+### 🧠 IELTS Listening Tip:
+
+Always ask: **"What is the problem?"**
+
+- If the speaker says **“a problem”**, that’s a **clue**.
+    
+- In this case: **"pollutants are discharged into rivers → brought to cities"**.
+    
+
+---
+
+### 🗣 Practice Paraphrasing:
+
+Try paraphrasing the key point yourself:
+
+> _"Pollution from inland farming and industry flows down rivers into coastal cities."_
+
+That’s what **Answer A** says!
+
+# Recording 4
+
+### 🔎 Let’s examine your answer:
+
+- **Your answer:** `gate`
+    
+- **Correct answer:** `gates`
+    
+
+I don't hear clearly gate or gates, but I miss the word 'are', so it's the mistake.
+
+---
+
+### 📍 What did the speaker say?
+
+> “**Gates** in the breakwater ___are___ opened.”
+
+This is clearly **plural** — they said **“gates”**, not just **“a gate.”**
+
+---
+
+### 🧠 Why it matters:
+
+In IELTS Listening:
+
+- If the word is **plural** in the recording, and you write the **singular form**, it's **marked wrong**.
+    
+- Even one letter like **“s”** matters!
+    
+
+---
+
+### ✅ How to avoid this mistake:
+
+1. **Listen carefully for plural endings** like **"s", "z", "es", "en"** (e.g. _children_).
+    
+2. Look for **clues in the sentence**:
+    
+    - “Gates **are** opened” → plural verb = plural subject.
+        
+
+---
+
+### 🔁 Quick Grammar Check:
+
+- ❌ _Gate are opened_ → wrong
+    
+- ✅ _Gates are opened_ → correct ✅
+    
+
+---
+
+### 💡 IELTS Tip:
+
+When checking your answers before transferring, always:
+
+- Go back and check **singular/plural**
+    
+- Re-listen if possible and confirm articles like _a/an_ or _some_, which hint at number
+
+|Type|Question|Wrong Answer|Correct Answer|Why You Missed It|Vocabulary/Structure|
+|---|---|---|---|---|---|
+
+# Vocabulary and phrases list
+
+# Speaking
+
+# Writing
+
+## 🎧 **Effective Listening Practice Process (Full-Skill Integration)**
+
+### ✅ 1. **Take 2 Listening Tests per Week (Full 40 Questions)**
+
+- Simulate real exam conditions (headphones, timing).
+    
+- Use **Cambridge IELTS books 10–18** for authentic practice.
+    
+- After finishing, **log your mistakes**, and do a **deep error analysis**.
+    
+
+### 📝 2. **Error Log Analysis System**
+
+For every mistake (even close ones), record:
+
+|Type|Question|Wrong Answer|Correct Answer|Why You Missed It|Vocabulary/Structure|
+|---|---|---|---|---|---|
+
+This helps improve:
+
+- Vocabulary
+    
+- Grammar
+    
+- Distractor recognition (very important)
+    
+- Paraphrasing skills for Reading and Writing
+    
+
+---
+
+## 🔄 3. **Shadowing & Dictation (Listening → Speaking & Writing)**
+
+Do this with 1 test per week (after checking answers).
+
+### Step-by-step:
+
+1. **Dictation** – write down the full recording transcript for 1 section.
+    
+2. **Underline synonyms/paraphrased phrases**.
+    
+3. **Shadow** (repeat aloud with same intonation and rhythm).
+    
+4. **Summarize the section** in your own words.
+    
+5. **Record yourself** and evaluate fluency & coherence (like Speaking Part 3).
+    
+
+✅ This improves:
+
+- **Listening accuracy**
+    
+- **Speaking fluency**
+    
+- **Lexical resource** & complex sentence structure (Writing & Speaking)
+    
+
+---
+
+## 📚 4. **Create Vocabulary Banks from Listening**
+
+Each test contains **academic + conversational vocabulary**. Create a table:
+
+|Word/Phrase|Meaning|Example from Listening|My Own Sentence|
+|---|---|---|---|
+|Subsidised|Supported financially|"A heavily subsidised canteen"|My workplace provides subsidised meals.|
+
+✅ Apply these to Writing & Speaking tasks.
+
+---
+
+## 💬 5. **Write & Speak from Listening Topics**
+
+Take themes from Listening (e.g. environment, education, employment):
+
+- **Write** a Task 2 essay on a related question.
+    
+- **Practice** a Speaking Part 2 & 3 answer on the same topic.
+    
+
+This builds content **cohesion between skills**, which is how top scorers learn faster.
