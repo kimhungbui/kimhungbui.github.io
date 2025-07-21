@@ -1,0 +1,143 @@
+---
+title: Project Euler Problem 54- Poker Hands
+lightbox: false
+description: An interesting Prime problem
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Project Euler
+    affiliation-url: https://projecteuler.net/problem=54
+date: 2025-07-21
+
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    # theme: journal  # or journal, flatly, litera, etc.
+    highlight-style: a11y  # or "monokai", "github", etc.
+    # css: styles.css  # Optional: add your own tweaks
+execute:
+  echo: true  # Ensures code is executed when rendering
+  warning: false
+  error: false
+  result: 'interactive'  # Ensures that the output is interactive
+---
+
+# Problem Overview
+
+In poker, hands are ranked from lowest to highest as follows:
+
+1. High Card  
+2. One Pair  
+3. Two Pairs  
+4. Three of a Kind  
+5. Straight  
+6. Flush  
+7. Full House  
+8. Four of a Kind  
+9. Straight Flush  
+10. Royal Flush  
+
+If both players have the same rank, then the highest card is used to break ties.
+
+We are given a file `poker.txt` containing 1,000 hands. Each line has 10 cards (5 for Player 1 and 5 for Player 2). The task is to determine **how many times Player 1 wins**.
+
+# Intuition
+
+To solve this, we must:
+- Parse the file and separate the cards.
+- Evaluate the rank of each player’s hand.
+- Compare both hands.
+- Count the number of times Player 1 wins.
+
+# Approach
+
+We will:
+1. Create a value mapping for cards from `'2'` to `'A'`.
+2. Implement a hand evaluation function that returns a tuple containing:
+   - A numeric rank code (higher is better),
+   - A tie-breaker list of card values.
+3. Read the file line-by-line, split the hands, and apply the evaluation.
+4. Use tuple comparison to determine the winner.
+
+# Full Python Implementation
+
+```python
+from collections import Counter
+
+# Step 1: Value mapping
+CARD_VALUES = {'2': 2, '3': 3, '4': 4, '5': 5,
+               '6': 6, '7': 7, '8': 8, '9': 9,
+               'T': 10, 'J': 11, 'Q': 12, 'K': 13, 'A': 14}
+
+# Step 2: Evaluate hand
+def hand_rank(hand):
+    values = sorted([CARD_VALUES[c[0]] for c in hand], reverse=True)
+    suits = [c[1] for c in hand]
+    counts = Counter(values)
+    count_vals = sorted(counts.items(), key=lambda x: (-x[1], -x[0]))
+    ordered_values = [val for val, cnt in count_vals]
+
+    is_flush = len(set(suits)) == 1
+    is_straight = values == list(range(values[0], values[0]-5, -1))
+
+    if is_straight and is_flush:
+        return (8, values)
+    elif count_vals[0][1] == 4:
+        return (7, ordered_values)
+    elif count_vals[0][1] == 3 and count_vals[1][1] == 2:
+        return (6, ordered_values)
+    elif is_flush:
+        return (5, values)
+    elif is_straight:
+        return (4, values)
+    elif count_vals[0][1] == 3:
+        return (3, ordered_values)
+    elif count_vals[0][1] == 2 and count_vals[1][1] == 2:
+        return (2, ordered_values)
+    elif count_vals[0][1] == 2:
+        return (1, ordered_values)
+    else:
+        return (0, values)
+
+# Step 3: Compare two hands
+def player1_wins(hand1, hand2):
+    return hand_rank(hand1) > hand_rank(hand2)
+
+# Step 4: Process file
+def count_player1_wins(filename='poker.txt'):
+    count = 0
+    with open(filename) as f:
+        for line in f:
+            cards = line.strip().split()
+            hand1 = cards[:5]
+            hand2 = cards[5:]
+            if player1_wins(hand1, hand2):
+                count += 1
+    return count
+
+# Step 5: Output result
+print(count_player1_wins())
+```
+
+# Complexity
+
+- Time Complexity:
+$N(N\log N)$ per hand due to sorting, where $N=5$. Since it's constant-sized, it is effectively $O(1)$ per hand. Processing 1,000 hands is $O(1,000)$ total.
+
+- Space Complexity:
+Also $O(1)$ per hand due to fixed size.
+
+# Conclusion
+
+This problem combines string parsing, sorting, and custom rule-based comparison logic. It's an excellent example of how domain-specific logic (poker hand rules) can be embedded into structured programmatic comparisons.
+
+You can adapt this solution to simulate poker games, build bots, or explore probability distributions of poker hands.
+
+
+
+
+
