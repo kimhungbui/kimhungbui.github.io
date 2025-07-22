@@ -1,0 +1,26 @@
+---
+title: STUDY 4 PRACTICE
+lightbox: false
+description: Your post description
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-07-22
+categories:
+  - english
+  - grammar
+draft: false
+---
+
+
+- Practice Set = bộ Cam
+
+- BC = Road to IELTS
+
+- IELTS Plus = IELTS Practice Test Plus
+
+- Recent Actual Test = Bộ đề thi thật,
+
+- Simulation = IELTS Simulation Test
+
+Cam < Recent Actual Test < IELTS Plus = BC = Simulation

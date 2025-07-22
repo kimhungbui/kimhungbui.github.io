@@ -1,0 +1,667 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 14 listening test 2
+lightbox: false
+description: IELTS Practice Set 14 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-22
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 14 - listening test 2
+- Date: 22/07/2025
+- Total Score: 30/40
+
+# Performance Summary
+
+| **Category**                          | ✅ **Correct** | ❌ **Incorrect** | ⏳ **Skipped** | 🎯 **Accuracy** |
+| ------------------------------------- | ------------- | --------------- | ------------- | --------------- |
+| **[Topic] Environment**               | 4             | 6               | 0             | **40.00%**      |
+| **[Topic] Science & Technology**      | 4             | 6               | 0             | **40.00%**      |
+| **[Listening] Matching**              | 6             | 0               | 0             | **100.00%**     |
+| **[Listening] Note/Form Completion**  | 13            | 7               | 0             | **65.00%**      |
+| **[Listening] Map/Plan/Diagram**      | 4             | 1               | 0             | **80.00%**      |
+| **[Listening] Multiple Choice**       | 7             | 2               | 0             | **77.78%**      |
+| **[Theme] Listening to a Tour Guide** | 8             | 2               | 0             | **80.00%**      |
+| **[Theme] Giving Tutorial Present.**  | 9             | 1               | 0             | **90.00%**      |
+| **[Theme] Reporting a Problem**       | 9             | 1               | 0             | **90.00%**      |
+
+# Recording 1
+
+| Question | My answer | Corrected | ISSUE                                                                        |
+| -------- | --------- | --------- | ---------------------------------------------------------------------------- |
+| 8        | SWIMMING  | RUNNING   | Caught the first sport mentioned ("swimming") and wrote it down too quickly. |
+
+> **JULIE:** _And do you do any other types of exercise?_
+
+> **CARL:** _Yeah, I **sometimes do a little swimming**, but usually just when I’m on vacation. But normally I go **running a few times a week**, maybe three or four times._
+
+
+### Keyword in the Question:
+
+> _“… goes **regularly**…”_
+
+- **"Sometimes"** and **"just when I'm on vacation"** = **NOT REGULAR** ⇒ ❌ _swimming_
+    
+- **"Go running a few times a week, maybe three or four times"** = ✅ **regular** ⇒ _running_
+- 
+- You may have **caught the first sport mentioned** (“swimming”) and wrote it down too quickly.
+    
+- This is a **common trap in IELTS Listening** – they give a **distractor (swimming)** before the **real answer (running)**.
+    
+- It tests your ability to **listen for the full context** and **understand frequency words** like “sometimes” vs “regularly”.
+
+- Always **listen until the speaker finishes their full idea**.
+    
+- Be careful with contrast words like:  
+    ➤ _but_, _however_, _actually_, _normally_, _usually_
+    
+- Practice listening for **frequency adverbs** (always, often, sometimes, rarely, etc.).
+
+
+# Recording 2
+![](Pasted%20image%2020250722152839.png)
+
+| Question | My answer                                | Corrected                                  | ISSUE                                                                      |
+| -------- | ---------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------- |
+| 11       | C - a fire damaged part of the main hall | B - a new building was constructed for her | Miss the time reference                                                    |
+| 17       | G                                        | E                                          | hear 'past' and think it is go through the bridge and choose wrong answer. |
+Q11:
+Before Queen Elizabeth I visited the castle in 1576,
+
+  
+A. repairs were carried out to the quest rooms.
+
+B. a new building was constructed for her.
+
+C. a fire damaged part of the main hall.
+
+transcript:
+
+_"...it was beginning to look a bit run down, and it was decided that rather than repair the guest rooms, they’d make a new house for her out of wood next to the main hall."_  
+_"...She stayed there for four nights... unfortunately it was destroyed a few years later by fire."_
+
+- The fire happened after her visit, not before
+- The option talks about __timing__, and IELTS tests this detail often.
+
+- "...they'd make a new house for her ..." clearly matches "__a new building was constructed for her___".
+
+:::{.callout-tip}
+## Look out for __time references__:
+- "before", "after", "by the time", "later", etc
+They are __critical__ in eliminating distractors like C here.
+:::
+
+Q17: Bow and arrow display - where is it?
+
+My confusion: I thought "__past__" = "__across the bridge__", but that's a common listening trap.
+
+#### Transcript:
+
+> _"...take the first left after the main entrance and follow the path past the bridge, then you’ll see it in front of you at the end."_
+
+#### Why mistake happens:
+
+- “**past the bridge**” = go **along the path** and **pass by** the bridge.
+    
+- It does **not mean cross the bridge**.
+
+Words like **past**, **next to**, **near**, and **beyond** are **visual direction words**.  
+Always **pause** to ask:
+
+> 🔹 “Is the speaker saying go _over_ the bridge or just go _past_ it?”
+
+### Words that Usually mean "GO OVER the Bridge"
+
+| Phrase                                   | Meaning                                   |
+| ---------------------------------------- | ----------------------------------------- |
+| **Cross the bridge**                     | Walk/go over the bridge to the other side |
+| **Go over the bridge**                   | Same — you're physically crossing it      |
+| **Walk across the bridge**               | Same as above                             |
+| **Head to the other side of the bridge** | Move across it completely                 |
+| **Continue across the bridge**           | Emphasizes completing the crossing        |
+| **Take the bridge**                      | Implies using it to go to the other side  |
+| **Follow the path over the bridge**      | Path includes crossing the bridge         |
+Examples:
+
+- "Go over the bridge and you’ll see the stage on your right."
+    
+- "Continue across the bridge and turn left at the gate."
+### Words That Mean "Go PAST the Bridge" (but do NOT cross it)
+
+| Phrase                                           | Meaning                                         |
+| ------------------------------------------------ | ----------------------------------------------- |
+| **Go past the bridge**                           | Walk near it, but stay on the same side         |
+| **Walk alongside the bridge**                    | Stay next to it, not crossing                   |
+| **Follow the path past the bridge**              | Continue in the same direction without crossing |
+| **Go down the path beyond the bridge**           | Keep going, but still don’t cross               |
+| **Before the bridge** / **Just past the bridge** | Still on the same side, near it                 |
+| **Next to the bridge**                           | Located beside, not over it                     |
+**Examples:**
+
+- "Follow the path past the bridge and you’ll see the café at the end."
+    
+- "Don’t go over the bridge — the museum is just beside it."
+
+They **may say both** in the same sentence:
+
+> “Take the first left, follow the path **past the bridge**, and then **go over the small footbridge** on your right.”
+
+✅ So always slow down when you hear **bridge**, and listen for clues:
+
+- _“over”_, _“across”_, _“cross”_ → ❗Cross the bridge
+    
+- _“past”_, _“beside”_, _“along”_ → 🚫 Do NOT cross
+
+# Recording 3
+
+| Question | My answer                                | Corrected                         | ISSUE                              |
+| -------- | ---------------------------------------- | --------------------------------- | ---------------------------------- |
+| 23       | B. spread from the island to other areas | A. became isolated on the island. | Choose the answer too soon. (miss) |
+
+other animals like bears were able to roam around the whole area.I think it mean speard, (oh not, the answer is 'spread from the __island__ to other areas'.
+
+> “...St Paul’s Island wasn’t an island, it was connected to the mainland...  
+> ...the climate warmed up and the sea level began to rise, and the island got cut off from the mainland.  
+> So those mammoths on the island **couldn’t escape**; **they had to stay on the island**.”
+
+🟢 **That’s a clear definition of becoming _isolated_.**
+
+You chose:
+
+> **B. Spread from the island to other areas.**
+
+🔻 But the script says:
+
+> “...they _had to stay_ on the island.”
+
+They were **trapped**, not spreading.
+
+### Paraphrased meaning in this example
+
+| Transcript Phrase | Paraphrased in Option |
+| ----------------- | --------------------- |
+| “...got cut off”  | “became isolated” ✅   |
+| “had to stay”     | “became isolated” ✅   |
+| “couldn’t escape” | “became isolated” ✅   |
+## Vocabulary & Phrases from this Transcript
+
+| Phrase                  | Meaning                        |
+| ----------------------- | ------------------------------ |
+| climate warmed up       | climate change began           |
+| sea level began to rise | result of warming              |
+| got cut off             | became separated               |
+| couldn’t escape         | became trapped                 |
+| roam around             | move freely                    |
+| extinct                 | no longer exist                |
+| prehistoric extinction  | species death in ancient times |
+| animated diagram        | moving visual explanation      |
+| chronological pattern   | arranged by time order         |
+| overrun (time)          | exceed the time limit          |
+
+# Recording 4
+
+| Q#  | Correct Answer  | Your Answer | Mistake Type        | Why It Was Marked Wrong                                                                 |
+| --- | --------------- | ----------- | ------------------- | --------------------------------------------------------------------------------------- |
+| 31  | **dances**      | dancing     | **Form**            | You used the _-ing_ form. But only **noun (plural)** is accepted here.                  |
+| 32  | **survival**    | survive     | **Word form**       | “Survive” is a verb. The sentence needs a noun: “ensure their survival.”                |
+| 35  | **comets**      | cosmic      | **Wrong word**      | You guessed a related word, but the speaker said “comets” (a type of celestial object). |
+| 37  | **instruments** | instrument  | **Singular/plural** | The plural **"instruments"** is correct as it refers to **multiple inventions**.        |
+| 38  | **thermometer** | demometer   | **Spelling**        | Likely a hearing/spelling error. “Demometer” is not a word.                             |
+| 39  | **storms**      | storm       | **Singular/plural** | The sentence uses **"storms"** in general. Plural is needed.                            |
+
+| Word/Phrase        | Meaning                                      |
+| ------------------ | -------------------------------------------- |
+| **weather gods**   | deities believed to control weather          |
+| **rites / dances** | traditional ceremonies for worship or belief |
+| **survival**       | continuing to live or exist                  |
+| **phenomena**      | observable facts or events                   |
+| **halo / haloes**  | rings of light around sun/moon               |
+| **comets**         | icy space objects with tails                 |
+| **proverbs**       | traditional sayings that express truth       |
+| **instruments**    | tools used for measuring (e.g., barometer)   |
+| **thermometer**    | tool to measure temperature                  |
+| **barometer**      | tool to measure air pressure                 |
+| **storms**         | severe weather events (rain, thunder)        |
+| **telegraph**      | device for sending messages electronically   |
+|                    |                                              |
+### Always check **grammatical form**:
+
+> Look **before and after the gap**.  
+> If the sentence says:  
+> “to ensure their ___”  
+> You know it requires a **noun**.
+
+### Train yourself to recognize **plural forms**:
+
+Words like:
+
+- **storms**, **festivals**, **dances**, **instruments**  
+    are often required in general statements.
+
+### Spelling matters!
+
+You can lose marks even with small spelling mistakes. Practice dictation and listen to endings like:
+
+- **/s/** for plurals
+    
+- **/əd/** or **/t/** past participles
+    
+- Watch for soft vs. hard **c** and **t** sounds.
+
+
+# Vocabulary and phrases list
+
+## Recording 1
+
+| **Useful Vocabulary**    | **Synonyms or Natural Alternatives**            |
+| ------------------------ | ----------------------------------------------- |
+| Theft                    | Robbery, stealing, burglary                     |
+| Report a theft           | File a report, make a report                    |
+| Quite a bit of cash      | A large amount of money, considerable money     |
+| Realised I'd been robbed | Discovered I was a victim of theft              |
+| Group of young boys      | A bunch of kids, several boys                   |
+| Asking the time          | Pretending to need the time, distraction tactic |
+| Didn't take the keys     | Thankfully, the keys were still there           |
+| A week old phone         | Recently purchased phone                        |
+
+|💬 **Common IELTS Expressions**|💡 **Function / Usage**|
+|---|---|
+|_“I'm here for two months.”_|Stating duration|
+|_“I come over most summers on business.”_|Habitual action (present simple for repeated past)|
+|_“I've had a really good trip this year.”_|Present perfect for life experience|
+|_“I had my backpack on.”_|Past simple for sequence of actions|
+|_“At first I thought…”_|Describing sequence of realization|
+|_“That's when I realized…”_|Transition marker for realization|
+|_“Fortunately, I don't keep my credit cards…”_|Linking word to express relief|
+|_“Anyway…”_|Transitioning between ideas|
+|_“Can you remember anything about them?”_|Common question structure|
+## Recording 2
+
+### Workplace & Apprenticeship
+
+- **apprenticeship**
+    
+- **human resources manager**
+    
+- **supervisor / mentor**
+    
+- **departments**
+    
+- **company policy**
+    
+- **probationary period**
+    
+- **statutory public holidays**
+    
+- **overtime**
+    
+- **personal circumstances**
+    
+- **eligible for flexible working**
+
+- “take in new information”
+    
+- “don't worry too much”
+    
+- “make the most of that opportunity”
+    
+- “make an effort to talk to…”
+    
+- “helping you to identify areas for improvement”
+    
+- “meet with them on a weekly basis”
+    
+- “you’re here to learn”
+    
+- “run through a few company policies”
+
+### Everyday English for Office Communication
+
+- “don’t use it for personal use”
+    
+- “speak to your supervisor”
+    
+- “don’t assume you’ll automatically be permitted”
+    
+- “we understand that people do have commitments”
+    
+- “as long as they’re practical”
+
+### PART 1/2 – Possible Questions to Practice
+
+**Q: Describe a company or organisation you know.**
+
+- Use vocabulary: "departments," "supervisor," "casual clothes policy," "overtime"
+    
+
+**Q: Describe a rule in your school or workplace you agree or disagree with.**
+
+- Use: “don’t use the internet for personal use,” “no packed lunch policy,” “overtime is not required but recommended”
+    
+
+**Q: Describe a mentor or a person who guided you.**
+
+- “My mentor supported me weekly and helped me set goals and identify areas for improvement…”
+### Grammar Structures
+
+|Grammar / Function|Example from Script|
+|---|---|
+|**Imperatives** (for advice/instruction)|“Check with someone”, “Talk to people”, “Don’t use it for personal use”|
+|**Future Simple** (policy, plans)|“You’ll be expected to work a 40-hour week.”|
+|**Conditional**|“If you’re not sure what to do…” / “If this is a problem…”|
+|**Modals** for advice/possibility|“You should make the most of the opportunity.” / “You can also discuss…”|
+|**Relative clauses**|“...someone who’s recently completed an apprenticeship.”|
+## Recording 3
+
+### Urban Planning & Geography
+
+- **urban planning**
+    
+- **coastal cities**
+    
+- **river estuary**
+    
+- **wetlands**
+    
+- **coastal erosion**
+    
+- **inland**
+    
+- **downstream**
+    
+- **sea level**
+    
+- **drainage channels**
+    
+- **ecosystem**
+    
+- **flood prevention**
+    
+- **global warming**
+    
+- **waste disposal**
+
+- international cooperation
+
+### Speaking/Presentation Vocabulary
+
+- “presentation structure”
+    
+- “general historical background”
+    
+- “case study”
+    
+- “geographical factors”
+    
+- “maps of different cities”
+    
+- “slides everyone can see”
+    
+- “audience involvement”
+    
+- “past mistakes”
+    
+- “current action”
+    
+- “future risks”
+    
+- “international implications”
+
+### Useful Academic Verbs
+
+- **establish** (e.g. why coastal cities were established)
+    
+- **expand** (e.g. as the city expands)
+    
+- **discharge** (e.g. pollutants are discharged)
+    
+- **protect against** (e.g. protect against flooding)
+    
+- **replace** (e.g. replace the drainage channels)
+    
+- **deal with** (e.g. deal with the problems)
+    
+- **act together**
+    
+- **abide by** (e.g. abide by environmental principles)
+
+### Collocations / Natural Phrases
+
+| Phrase                                                    | Context                                 |
+| --------------------------------------------------------- | --------------------------------------- |
+| “talk about the structure of your presentation”           | IELTS Speaking Part 3                   |
+| “get stuck in anyway”                                     | Informal, shows determination (Reading) |
+| “sounds sensible”                                         | Reacting to an idea (Speaking Part 3)   |
+| “they built the drainage channels too close to sea level” | Cause & effect – useful in Task 1 & 2   |
+| “protect against flooding”                                | Common environmental collocation        |
+| “work together to some extent”                            | Useful for balanced argument writing    |
+| “a long time before countries come to a decision”         | For Task 2 disagreement or delay topics |
+### Grammar & Structure
+
+|Structure|Example|
+|---|---|
+|**Passive voice**|“were actually built by the sea”; “channels were built”|
+|**Conditional (Type 2)**|“If there’s a lot of rain, the water can’t run away”|
+|**Modals**|“They should be able to work together”; “We could ask people”|
+|**Cause and effect**|“It means more pollutants are discharged”|
+|**Contrast**|“That won’t help with flood prevention now, will it?”|
+|**Cleft structure**|“What they didn’t take into account was global warming”|
+
+### IELTS SPEAKING IDEAS
+
+#### PART 2: Describe a City You Know
+
+Use:
+
+- "It’s a coastal city built where a river meets the sea."
+    
+- "It has drainage channels, but due to rising sea levels, flooding is now a real concern."
+    
+
+#### PART 3: Environment & Urban Development
+
+**Q: What are the biggest challenges cities face today?**  
+→ “One major issue coastal cities face is climate-related flooding. Many were built near sea level, and older infrastructure like drainage channels are now ineffective.”
+
+**Q: Should countries work together to tackle environmental issues?**  
+→ “Absolutely. Cities can’t deal with these problems in isolation — international collaboration is key.”
+
+### IELTS WRITING TASK 2 CONNECTIONS
+
+#### Example Prompt:
+
+**Some people believe that governments should spend money on protecting cities from climate change. Others think they should focus on economic development. Discuss both views and give your own opinion.**
+
+Use points from the transcript:
+
+- Coastal cities suffer from drainage/flooding issues.
+    
+- Long-term solutions require international cooperation.
+    
+- Balancing infrastructure upgrades vs. investment in economy
+## Recording 4
+
+### Topic specific
+
+|Word/Phrase|Meaning / Use|
+|---|---|
+|**renewable sources**|sustainable energy like sun, wind, water|
+|**harness the movement**|use or control energy|
+|**generate electricity**|produce power|
+|**erratic**|irregular or unpredictable|
+|**sediment**|small particles like sand or soil|
+|**environmental problems**|issues harming nature|
+|**tidal lagoon**|man-made area to control tides for energy|
+|**breakwater**|structure to protect shore or lagoon|
+|**greenhouse gas emissions**|pollution causing climate change|
+|**relatively cheap**|low in cost compared to others|
+|**boost to the local economy**|increase jobs and growth in the area|
+|**migration patterns**|natural movement of birds/fish|
+|**build-up of silt**|accumulation of sediment in water|
+|**ecosystems**|interdependent life systems in nature|
+
+### Academic Verbs
+
+- **derive** energy from...
+    
+- **construct** a lagoon
+    
+- **activate** turbines
+    
+- **create** components
+    
+- **disturb** migration patterns
+    
+- **affect** ecosystems
+    
+- **estimate** job creation
+
+### IELTS WRITING & SPEAKING STRUCTURES
+
+#### 🔸 Cause & Effect
+
+- “Burning fossil fuels **damages the environment** and they'll eventually **run out**.”
+    
+- “This **leads to** environmental problems.”
+    
+- “Rising tides **mean** the lagoon produces electricity **multiple times** a day.”
+    
+
+#### 🔸 Contrast / Comparison
+
+- “Unlike solar and wind energy, **tidal energy doesn't depend on the weather**.”
+    
+- “The source is constant, **but** the waves are erratic.”
+    
+
+#### 🔸 Data / Facts (great for Task 1 and Speaking Part 3)
+
+- “Two high tides a day → electricity generated 4 times daily”
+    
+- “Enough for over 150,000 homes”
+    
+- “More than 2,000 jobs created”
+
+### IELTS LISTENING SKILLS IMPROVED
+
+|Skill|Example|
+|---|---|
+|**Understanding technical terms**|breakwater, hydro turbines, lagoon|
+|**Following complex descriptions**|step-by-step process of water movement in tidal lagoon|
+|**Recognizing paraphrasing**|“cause environmental problems” = “disturb migration”, “build-up of silt”|
+|**Spotting numbers & figures**|“5 meters”, “14 hours per day”, “2,000 jobs”, “150,000 homes”|
+
+## IELTS WRITING TASK 2 (Possible Use)
+
+**Question Example:**
+
+> _Some people believe that alternative energy sources should replace fossil fuels completely. To what extent do you agree?_
+
+**Use in Argument:**
+
+- "Marine renewable energy like wave and tidal energy is constant and reliable."
+    
+- "Unlike fossil fuels, they produce no greenhouse gases."
+    
+- "Although some may disturb wildlife, careful planning can minimize harm."
+
+
+# Speaking
+
+# Writing
+
+## 🎧 **Effective Listening Practice Process (Full-Skill Integration)**
+
+### ✅ 1. **Take 2 Listening Tests per Week (Full 40 Questions)**
+
+- Simulate real exam conditions (headphones, timing).
+    
+- Use **Cambridge IELTS books 10–18** for authentic practice.
+    
+- After finishing, **log your mistakes**, and do a **deep error analysis**.
+    
+
+### 📝 2. **Error Log Analysis System**
+
+For every mistake (even close ones), record:
+
+|Type|Question|Wrong Answer|Correct Answer|Why You Missed It|Vocabulary/Structure|
+|---|---|---|---|---|---|
+
+This helps improve:
+
+- Vocabulary
+    
+- Grammar
+    
+- Distractor recognition (very important)
+    
+- Paraphrasing skills for Reading and Writing
+    
+
+---
+
+## 🔄 3. **Shadowing & Dictation (Listening → Speaking & Writing)**
+
+Do this with 1 test per week (after checking answers).
+
+### Step-by-step:
+
+1. **Dictation** – write down the full recording transcript for 1 section.
+    
+2. **Underline synonyms/paraphrased phrases**.
+    
+3. **Shadow** (repeat aloud with same intonation and rhythm).
+    
+4. **Summarize the section** in your own words.
+    
+5. **Record yourself** and evaluate fluency & coherence (like Speaking Part 3).
+    
+
+✅ This improves:
+
+- **Listening accuracy**
+    
+- **Speaking fluency**
+    
+- **Lexical resource** & complex sentence structure (Writing & Speaking)
+    
+
+---
+
+## 📚 4. **Create Vocabulary Banks from Listening**
+
+Each test contains **academic + conversational vocabulary**. Create a table:
+
+|Word/Phrase|Meaning|Example from Listening|My Own Sentence|
+|---|---|---|---|
+|Subsidised|Supported financially|"A heavily subsidised canteen"|My workplace provides subsidised meals.|
+
+✅ Apply these to Writing & Speaking tasks.
+
+---
+
+## 💬 5. **Write & Speak from Listening Topics**
+
+Take themes from Listening (e.g. environment, education, employment):
+
+- **Write** a Task 2 essay on a related question.
+    
+- **Practice** a Speaking Part 2 & 3 answer on the same topic.
+    
+
+This builds content **cohesion between skills**, which is how top scorers learn faster.
