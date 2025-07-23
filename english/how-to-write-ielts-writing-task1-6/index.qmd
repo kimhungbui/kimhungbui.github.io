@@ -107,12 +107,438 @@ This is why this phrase helped:
 
 ## Exercises
 
+Look at the image below and think about how you would refer to different point, A - G
+![](Pasted%20image%2020250723100656.png)
+
+How would you describe the key points (A - E) below ?
+![](Pasted%20image%2020250723100735.png)
+
+It can be helpful to draw lines across the graph to help us estimate data more accurately
+
+![](Pasted%20image%2020250723101913.png)
+
+#### Question 1
+
+![](Pasted%20image%2020250723100816.png)
+
+A: approximately 220 grams
+B: just under 200 grams
+C: 250 grams
+D: about 130 grams
+E: below 50 grams
+F: the late 1990s
+G: the early 1980s
+
+#### Question 2
+
+Choose:
+
+although there was a slight increase in 1994, the downward trend continued
+
+despite falling in the early 1990s, by 2004 it had reached 250 grams
+
+within 20 years it had fallen to almost 50 grams per week
+
+it fell sharply initially then briefly recovered
+
+the figures remained relatively stable, despite slight fluctuations
+
+![](Pasted%20image%2020250723101429.png)
+
+A: it fell sharply initially then briefly recorved 
+
+B: despite falling in the early 1990s, by 2004 it had reached 250 grams
+
+C: although there was a slight increase in 1994, the downward trend continued
+
+D: within 20 years it had fallen to almost 50 grams per week
+
+E: the figures remained relatively stable, despite slight fluctuations
 
 
+![](Pasted%20image%2020250723101818.png)
 
+![](Pasted%20image%2020250723101825.png)
+
+
+## Use the information in the question
+
+Many people see the opening sentence in the question like this: '_That's the sentence I need to paraphrase at the start of my answer_.' As a result, they often miss important information and even help in terms of language, such as whether or not we need to use 'the' with the specific country.
+
+The test question says:
+
+- __The graph below shows the consumption of fish and different kinds of meet in a European country between 1979 and 2004___.
+
+Can we see a problem in the following extracts from answers?
+
+- _Overall, <font color="#c00000">the lowest consumption of meat was fish...</font>_
+- _Chicken was the only <font color="#c00000">one</font> that was eaten more in 2004 than in 1979 <font color="#c00000">among four types of meat</font>._
+
+The test question refers to '__fish and three kinds of meat__'. This tells us that fish _is not a kind of meat_, so 'meat' can't be used as an umbrella term here.
+
+- What change did the writer or the second extract make to help in paraphrasing the word 'consumption'?
+- What umbrella term/s could be used here?
+
+A further problem with these sentences is that they are looking at the highest and lowest figures instead of describing the trends. With a line graph, very important to describe the overall trends in your overview.
+
+:::{.callout-tip}
+With a line graph, it is very important to describe the trends in our overview - don't just look at the biggest or smallest data. 
+:::
+
+### Exercises
+
+#### Question 1
+
+"Chicken was the only one that was eaten more in 2004 than in 1979 among four types of meat."
+
+1. What change did this writer make to help in paraphrasing the word 'consumption'?
+2. What umbrella term/s could be used here instead of 'meat'?
+
+They use 'was eaten' instead of consumption
+
+Kind of food ??
+
+->
+Answer:
+1) The writer changed the noun form (consumption) to a verb and then used a synonym (eat -> eaten)
+2) Suitable umbrella terms would be: categories, foods, types of food, animal proteins.
+
+#### Question 2
+
+Complete the overview sentence, use those words:
+
+chicken, one, the, experienced, consumed, this, fish, foods, meat, least, the, consistently, upward, among, food, trend, downward, listed, an period
+
+Overall, of _the_ four <font color="#c00000">_foods_ _listed_</font>, _chicken_ was _the_ only _one_ that <font color="#c00000">experienced an upward trend</font> over <font color="#c00000">this period</font>, and the <font color="#c00000">food</font> that was <font color="#c00000">consistently consumed</font> the <font color="#c00000">least</font> was <font color="#c00000">fish</font>.
+
+## Common problems with overview:
+
+Look at the following overviews from sample answers to this question. Which do you think it the best (the clearest and most complete) overview? Can you identify any problems in the others?
+
+1. Overall, people consumed chicken and beef more than lamb and fish during the 25-year period.
+
+2. Overall, although beef was the most popular type of meat at the beginning, it was overtaken by chicken in the first half of this period. Moreover, the consumption of lamb and fish decreased over this time.
+
+3. To sum up, while the residents of this country relied mainly on red meats initially, they preferred chicken more compared to other items at the end of this period.
+
+4. Overall , it is clear that Chicken is the only food that experienced an increase in its administration over the whole time frame.
+
+I think 2 is the best.
+
+Answer:
+
+1) ALthough this is accurate, this overview is incomplete. It does not mention any of the trends (i.e. that beef and lamb fell while chicken rose), which is crucial in a line graph.
+2) This is a good Band 7 overview, although some changes are needed (beef's declining trend is not mentioned, and the word 'Moreover' is not used appropriately here).
+3) This was a conclusion presented at the end of the answer containing overview number 2. The candidate had watched a video stating that "you must give a conclusion to reach a high band." This is not true - notice the language problems it created as the candidate had to try not to repeat the same language as in number 2. Doing this introduced several problems (we cannot accurately say that they 'relied on' or 'preferred' any of these foods - this information is not given in the data), so this sentence contains inaccurate or irrelevant information. Rather than 'boosting' their score, adding this sentence at the end of their answer is likely to lower it.
+4) Although this overview does mention a clear trend, there is only one mentioned and so it does not give a complete or clear picture of the main trends in the graph. The word 'administration' also causes confusion here - it is not an accurate synonym for 'consumption'.
+
+Overall, the best overview here is number 2, so it is a pity that this person also included number 3 in their answer.
 
 # Addressing Band 6 problems
 
+Read through the following sample answer. I have highlighted the language problems, try to identify the error and think of a correction if you can.
+
+![](Pasted%20image%2020250723105656.png)
+
+## Introduction
+
+_The line graph (1) demonstrates the average weekly consumption of fish and meat in a European country from 1979 to 2004. Overall, people (2) consumed chicken and beef more than lambs (3) and fish during the 25-year period._
+
+:::{.callout-note}
+## Introduction notes
+1. A line graph can't 'demonstrate' (review this in lesson 4).
+2. This would need to be 'consumed chicken and beef more often...' which is not accurate - we are told 'how much', not 'how often'.
+3. Using 'and' suggests these are eaten together, 'or' is better here.
+:::
+
+## Body Paragraph 1
+
+_(4) Prior to 1989, (5) citizens ingested beef (6) the most among all, (7) starting from 220 grams in 1979 and (7) finishing at (8) 200 grams, whereas fish was (9) the least welcome (10) with a slight (corresponding) decrease from 60 grams in 1979 to 50 grams in 1989. The consumption of chicken and lamb changed (11) in opposite ways. (12) These two figures commenced at similar (13) quantities around 150 grams, (14) with chicken consumption (15) fluctuating to 190 grams in 1989 (14) and lamb consumption (15) oscillating to 105 grams. _
+
+:::{.callout-note}
+## Body paragraph 1 notes
+4. This sentence combines too much information and is organized in a confusing way (Why begin with 1989?). Split the information into two sentences.
+5. 'Citizens' is only used when we are talking about government. 'Ingested' would be appropriate in the context of a biology assignment.
+6. How do we compare one thing to all of the other things?
+7. 'starting' and 'finishing' are reduced relative clauses here, but the subject is 'The people' (bot beef) What verb can be used instead of 'start' and 'finish'?
+8. We need to specify that this is 'per week', especially as this is the first mention.
+9. The meaning of 'the least welcome' is unclear - if it means 'the least popular', then we cannot accurately say this (people may have eaten fish less because it was very expensive - we do not know.)
+10. We can only say that there was 'a slight decrease' in one year (or one point of time). To refer to a decrease in numbers between two time periods, we need to say 'it decreased/ fell/ dropped slightly from 60 grams to 50 grams between 1979 and 1989.' However, this does not accurately explain what happened with fish between these dates. The word corresponding should not be in brackets but also does not fit here.
+11. There is a collocation problem here (we can say 'different ways' but not 'opposite ways').
+12. The reference is confusing - it is referring back to 'chicken and lamb', but no figures have been given.
+13. 'of' is missing here
+14. We can only use 'with' if it is adding extra information (e.g. 'Both commenced at similar levels with chicken starting at 150 grams and ...'). Here, the writer is making a new point about what happened after this, and we need to know this is a new contrasting point.
+15. These words are not being used accurately - the meaning is wrong - don't try to use high-level words, use the right words to match your meaning.
+:::
+
+## Body Paragraph 2
+
+_After 1989, the (16) tendency of these four food intakes (17) remained. The amount of chicken being eaten (18) increased to 250 grams in 2004 (19) as opposed to the (20) dwindling beef ingestion of 110 grams (18) in 2004. Although (21) the figure of lamb (22) saw few increments during this period, (23) it fell to 60 grams in 2004. Meanwhile, (24) after (25) tiny ebbs and flows, the consumption of fish (26) remained stable._
+
+:::{.callout-note}
+16. Again, the word 'tendency' and 'intake' are not accurate here.
+17. The statement is not complete at the moment - we need more information following the verb 'remain' (e.g. 'remained steady', 'remained the same' etc.) Or we can use 'continues'. NB is this true?
+18. This does not accurately describe the data - the figures did not increase in 2004 - they reached this level over a period of time. Can you see a past perfect tense here and avoid repeating 2004?
+19. 'as opposed to' is not appropriate here (review this in lesson 2)
+20. again the words 'dwindling' and 'ingestion' are not being used accurately.
+21. We need the plural of 'figures' as there is more than one figure within this period of time. Of is incorrect.
+22. 'Saw few increments' does not collocate but also does not accurately reflect the data.
+23. The reference is unclear. We need to be clear what the subject of the verb 'fell' is - if we write 'they' (to refer back to the 'figures') the meaning is not clear - these figures did not fall, the consumption fell.
+24. 'after' is not accurate - the fluctuations were _throughout_ the period.
+25. only a tide (e.g. the ocean tide) can 'ebb and flow' - these are slight fluctuations.
+26. As there were fluctuations (changes) throughout, we cannot say this is 'stable'. Adding 'relatively' helps as it shows we are comparing fish to the 3 meats, which all changed considerably.
+::: 
+
+## Pauline Cullen's version
+
+Now look at her version of the corrections and think about the problems that still remain. Look at the areas in red and think about: the overview and the organization of information.
+
+_The line graph <span style="background:#affad1">shows</span> the average weekly consumption of fish and meat in a European country from 1979 to 2004. Overall, people <span style="background:#affad1">consumed more chicken</span> <span style="background:rgba(255, 183, 139, 0.55)">and beef</span> than lamb <span style="background:#affad1">or</span> fish during the 25-year period._
+
+_<span style="background:#affad1">From 1979 to 1989, people in this country ate more</span> beef <span style="background:#affad1">than any of the other foods listed</span>, <span style="background:#affad1">consuming</span> 220 grams <span style="background:#affad1">per week</span>, <span style="background:rgba(255, 183, 139, 0.55)">whereas fish was consumed the least at only 60 grams</span>. <span style="background:#affad1">However, beef consumption fell from 1989 onwards.</span> The consumption of chicken and lamb <span style="background:#affad1">experienced trends that were almost the exact opposite of each other</span>. <span style="background:#affad1">Both</span> commenced at similar quantities <span style="background:#affad1">of</span> around 150 grams, <span style="background:#affad1">but</span> chicken consumption <span style="background:#affad1">increased to</span> 190 grams in 1989, <span style="background:#affad1">while</span> lamb consumption <span style="background:#affad1">fell to</span> 105 grams._
+
+_After 1989, the <span style="background:#affad1">trends in the consumption of these four foods generally continued</span>. The amount of chicken being eaten <span style="background:#affad1">had reached 250 grams by 2004</span>, <span style="background:#affad1">while beef consumption had fallen to 110 grams</span>. Although <span style="background:#affad1">the figures for</span> lamb <span style="background:#affad1">increased several times</span> during this period, consumption fell to 60 grams in 2004. Meanwhile, <span style="background:#affad1">despite slight fluctuations</span>, the consumption of fish <span style="background:#affad1">remained relatively stable</span>._
+
+:::{.callout-tip}
+Remember, don't use 'high-level' vocabulary to try to boost our score - doing that will keep us stuck at band 6. Instead, choose a word because it will help to make our meaning very clear.
+:::
+
+## Comments
+
+### The overview
+
+Combining chicken and beef is not a good idea as they followed very different trends - this overview does not clearly describe the main trends and should include the idea that the data changed over time.
+
+### Organization
+
+The writer has organized the information into the following paragraphs:
+
+- BP 1 1979 to 1989 (in the original sample this was 1989 to 1979)
+- BP 2 1989 to 2004
+
+There is no clear or logical reason for this - at the beginning of the second body paragraph, the writer states that 'the trends' just continued in the same way (NB, she aded 'generally' here to show that this was not always the case).
+
+Organizing the information in this way has led to several problems:
+
+1. It has meant the writer did not make many comparisons.
+2. It has forced the writer to mention what happened in each category from 1979 to 1989 - this led to a confusing opening sentence - why include details about 'fish' here? The point about fish being consistently the lowest in the graph is a key feature, but it is more logical to discuss fish separately as it followed a completely different trend to the others.
+3. If 'the trends' are the same in the second body paragraph, then the same ideas will be repeated, making the writing repetitive.
+
+Notice that the problems that remain (especially with organization) are more difficult to fix __after__ the answer is written. This shows the importance of thinking about our overview and how to logically organize our answer __before__ we begin writing.
+
+:::{.callout-tip}
+Before we begin writing, think about:
+- The key trends so that we can summarise them __all__ in our overview.
+- How to organize our ideas logically.
+:::
+
+# Producing a Model Answer
+Make notes now using the three steps from lesson 3. You can make your notes directly on the image below:
+![](Pasted%20image%2020250723150555.png)
+
+3 steps are:
+
+- Step 1: Noticing details
+- Step 2: Identifying key information
+- Step 3: Grouping information
+
+Step 1:
+
+What: Fish and meat consumption
+How: Grams / person / week
+Step: 5 years
+
+Step 2:
+
+Highest - begin: Beef
+Highest - end: Chicken
+Lowest: fish
+
+Chicken +++
+Beef ---
+Lamb --
+Fish ==
+
+Step 3:
+
+Chicken Beef p1
+Lamb fish p2
 
 
-# Model Answer
+## Step 1 - Noticing details
+
+There are the details she noticed:
+
+![](Pasted%20image%2020250723151214.png)
+
+She noted that the amounts are measured in grams per person per week. Another way to say 'per week' is 'a week', 'each week', or 'weekly'. She also noticed that the interval between the years in the X axis (the horizontal one) was 5 years. Sometimes this can be useful when writing our answer.
+
+## Step 2 - Identifying key features
+
+There are the key features she noticed about each of the categories. As we look at the images, try to think about how we might write about the key features she noticed.
+
+### Chicken
+
+![](Pasted%20image%2020250723151452.png)
+
+Go from (3) to (1)
+
+### Beef
+
+This is what she noticed about beef:
+
+![](Pasted%20image%2020250723151529.png)
+
+from (1) to (2) ---.
+
+2 fluctuation ages
+
+### Lamb
+
+And she notice that lamb followed a very similar pattern to beef:
+
+![](Pasted%20image%2020250723151629.png)
+
+from (2) to (3) --
+
+2 fluctuation ages
+
+Notice that, in spite of some increases, these are both __downward trend__ because the end point is lower than the beginning point.
+
+### Fish
+
+This is what she noticed about fish:
+
+![](Pasted%20image%2020250723151740.png)
+
+
+(4) to (4), -
+
+## Step 3 - Organizing information
+
+She decided that three body paragraphs would be better for her answer. This is how she decided to organize the information
+
+![](Pasted%20image%2020250723151904.png)
+
+### Exercises
+
+Listen to the recording of my model answer. You can use the recording and the exercises to help you practise in several ways:
+Listen and read the model at the same time.
+Listen and fill in the gaps to practise grammar and vocabulary.
+Listen and write – do this in stages, pausing the recording as often as you need to.
+
+
+
+Read through the model answer then complete the listening task below:
+
+The line graph shows variations in the weekly consumption of fish and three types of meat in one European country from 1979 to 2004. Although there were fluctuations, overall, people in this country consistently ate more meat than fish, and the general trend was to move away from beef and lamb as chicken became the dominant food in this category.
+
+In the first decade, beef was consumed in significantly higher quantities than the other foods listed. Despite an initial sharp fall to approximately 175 grams, it then recovered reaching a high of close to 240 grams per week. However, from 1989 onwards, beef consumption fell almost continually, and by 2004 had almost halved. Lamb almost exactly mirrored this fluctuating trend, falling from second highest initially (at 150 grams) to approximately 60 grams per week by the end of the period.
+
+In contrast, chicken climbed from less than 150 grams in 1979 and took the lead from around 1990 onwards. Interestingly, the increases in chicken corresponded with the declines in beef and lamb, and by 2002 chicken consumption had exceeded all previous rates, reaching approximately 260 grams a week, although this peak was not maintained.
+
+Fish was consistently eaten the least, beginning at around 60 grams per week then dropping to below 50 grams. While it was the lowest, it remained relatively stable for the majority of the period.
+
+
+
+![](The-line-graph.mp3)
+
+
+<audio controls>
+  <source src="The-line-graph.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+{{< /embed >}}
+
+     <audio controls>
+       <source src="your_audio_file.mp3" type="audio/mpeg">
+       Your browser does not support the audio element.
+     </audio>
+
+Now listen and try to fill in as many of the gaps below as we can.
+
+The <font color="#c00000">line graph</font> shows <font color="#c00000">variations in</font> the weekly consumption of fish and three <font color="#c00000">types of</font> meat in one European country from 1979 to 2004. Although there <font color="#c00000">were fluctuations</font>, overall, people in this country <font color="#c00000">consistently eat</font> more meat <font color="#c00000">than fish</font>, and the <font color="#c00000">general trend</font> was to
+move <font color="#c00000">away from</font> beef and lamb as chicken became <font color="#c00000">the dominant</font> food in this category.
+
+In the first decade, beef was consumed in <font color="#c00000">significantly higher</font> quantities than <font color="#c00000">the other</font> foods listed. Despite an <font color="#c00000">initial sharp</font> fall to approximately 175 grams, it then <font color="#c00000">recovered reaching</font> a high of close to 240 grams per week. However, from 1989 onwards, beef consumption fell <font color="#c00000">almost continuely</font>, and by 2004 <font color="#c00000">had almost</font> halved. Lamb <font color="#c00000">almost exactly</font> mirrored this fluctuating trend, falling from second highest initially (at 150 gams) to <font color="#c00000">approximately 60</font> grams per week by the end of <font color="#c00000">the period</font>.
+
+In contrast, chicken <font color="#c00000">climbed from</font> less than 150 grams in 1979 and took <font color="#c00000">the lead</font> from around <font color="#c00000">1990 onwards</font>. Interestingly, the <font color="#c00000"> increasing in</font> in chicken <font color="#c00000">corresponding with</font> the declines in beef and lamb, and by 2002 chicken consumption all <font color="#c00000">had exceeded</font> previous rates, reaching approximately 260 grams a week, although <font color="#c00000">this peak</font> was <font color="#c00000">not maintained</font>.
+
+Fish was <font color="#c00000">consistently eaten</font> the least, beginning at around 60 grams per week then <font color="#c00000">dropping to </font> below 50 grams. While it was the lowest, it remained <font color="#c00000">relatively stable</font> for the <font color="#c00000">majority of</font> the period.
+
+## Points to notice
+
+- In her overview, she included the following trends: 1. there were fluctuations, 2. the people in this country consistently ate more meat than fish, 3. the general trend was to move away from beef and lamb and towards chicken, 4. chicken became the dominant food in this category. See her further comments on this below.
+- In her organization, she grouped beef and lamb together because they followed similar declining trends. She began with these because they were the highest at the beginning of the graph - this allowed her to describe the information in "chronological order, which is the easiest to write about and is also the most logical (and clearest)".
+- She wrote about chicken and fish in separate paragraphs. She chose to do this because their trends were very different from the others.
+- Notice that each paragraph only contains one main topic (e.g. She only wrote about beef and lamb in her first body paragraph, only chicken in her second body paragraph, and only fish in her final paragraph)
+- She referred to 'grams per week' the first time she gave a specific figure, but she did not need to repeat this each time.
+- She mentioned each category but she did not mention every detail - she only selected the main features and included these, making comparisons where relevant.
+- Notice the way that she used the words 'mirrored' and 'corresponded'.
+
+:::{.callout-note}
+__Chronological order__ means in the same order in which they happened. This is the most logical order to use and is also the easiest to write about.
+:::
+
+:::{.callout-tip}
+With a line graph, group similar categories together to organize the information in our paragraphs and be sure to write about the information chronologically.
+:::
+
+## Her overview
+
+Initially, she would write an overview and then use that to write a shorter version. Here is the first version of her overview.
+
+_Although there were fluctuations, overall, lamb and beef experienced a declining trend, while chicken rose considerably overtaking beef to become by far the most consumed of these foods by the end of this period; fish declined somewhat though remained the lowest in terms of consumption throughout_.
+
+As we can see, it is much longer. She used this first version to think again about these trends and find a simpler and more concise way to express these ideas. Compare this to the second version.
+
+_Although there were fluctuations, overall, people in this country consistently ate more meat than fish, and the general trend was to move away from beef and lamb as chicken become the dominant food in this category_.
+
+The benefit of producing a broader picture like this is that she is now less likely to repeat the key features in her body paragraphs. While we are practicing, try doing this ourselves. However, don't worry if we do not have time (either now or in our test), or if we feel we do not have the skills to do this yet. Both overviews above are band 9. Remember, we are not aiming for a polished 'invisible band 10', we are aiming to do enough to reach the highest score possible in the test.
+
+:::{.callout-tip}
+In our practice, it can help to write an overview of the main trends and then think about how to say this in a broader, more concise way.
+:::
+
+### Extra practice
+
+Look back at the answer you wrote to this question and think about the following:
+
+__The overview:__
+
+- Did you refer to trends or did you focus on the highest lowest figures? 
+- Did you include all of the main trends or only one?
+- What changes can you now make to improve your overview?
+
+__Your body paragraphs__
+
+- How did you organise your body paragraphs? Was there a logic to your organisation? 
+- Did you write about the information in chronological order?
+
+__Key features__
+
+- Did you write about key features or did you mention minor details?
+
+- Are there any key features that you missed? (compare the features you wrote about to those in my answer). You may have mentioned different features – just be sure they are key (important) and worth pointing out – how did you make this clear?
+
+- Did you support each point with the relevant data?
+
+- Did you make any errors in your data?
+
+__Language (grammar and vocabulary)__
+
+- Read your answer aloud – do you think you used a range of grammatical structures or it is repetitive at times?
+- Did you only use the simple past or did you use a past perfect tense? (If not, try to rewrite one or two sentences to practise using the past perfect tense). 
+- Did you use the past perfect accurately? (e.g. with ‘by + year) Can you make any changes to improve your grammatical range?
+- Did you use vocabulary with an awareness of style (i.e. knowing this is the correct word to use in this context)?
+- Did you make it clear that your figures were estimates?
+- What changes can you make to improve the language in your answer?
+
+### Homework
+
+The two maps show an island before and after the construction of some tourist facilities.
+Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+Write an answer to the following question
+
+![](Pasted%20image%2020250723164446.png)
