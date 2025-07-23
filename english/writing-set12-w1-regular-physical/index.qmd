@@ -21,3 +21,187 @@ format:
     highlight-style: a11y
 draft: false
 ---
+**_The bar chart below shows the percentage of Australian men and women in different age groups who did regular physical activity in 2010._**
+
+**_Summarise the information by selecting and reporting the main features_**
+![](Pasted%20image%2020250723170736.png)
+- Step 1: Noticing details
+- Step 2: Identifying key information
+- Step 3: Grouping information
+
+1
+What Percentage
+men and women
+regular physical activity
+
+6 age groups (9 year step)
+
+year -> 2010
+
+unit percentage
+
+bar chart, group by gender and age
+
+2
+
+now ask __what are the main trends or contrasts?
+
+men are more active only in the 15-24 group
+
+from 25-64 women consistently have higher activity rates
+
+greatest gender gap is in 25-34 and 35-44
+
+the oldest group (65+) shows very similar levels (almost equal)
+
+3
+
+p1 15-24
+p2 25-64
+p3 65+
+
+
+# Model answer
+
+Overall, women were generally more physically active than men across most age groups, with the exception of those aged 15 to 24. While male participation increased with age, female activity levels remained relatively stable and consistently higher throughout adulthood. The gender gap was most pronounced in the 25 to 34 age group but narrowed again among those aged 65 and over.
+
+In the youngest age category (15 to 24), a higher percentage of males (52.8%) participated in regular physical activity compared to females (47.7%). This was the only age group where men were more active than women, indicating a reversal of the general trend observed in the other age groups.
+
+From age 25 onwards, female participation in physical activity consistently exceeded that of males. The most significant difference was seen in the 35 to 44 group, where only 39.5% of men exercised regularly compared to 52.5% of women - a gap of over 13 percentage points. As men grew older, their activity levels gradually increased, reaching 45.1% by the 55 to 64 group. However, they still lagged behind women, whose activity levels remained steady at around 52-53%.
+
+Among those aged 65 and above, the gender gap in physical activity levels almost disappeared. Approximately 47.1% of women and 46.7% of men reported being physically active, making this the only age group where the figures for both genders were nearly equal.
+
+# Useful Vocabulary (High-band Words-Phrases)
+
+| **Expression**                      | **Why it's useful / Band 7+ alternative**                   |
+| ----------------------------------- | ----------------------------------------------------------- |
+| **proportion of**                   | Formal way to say “number of” or “percentage of”            |
+| **engaged in**                      | More academic than “did” or “took part in”                  |
+| **across six different age groups** | Shows range and variety clearly                             |
+| **Overall**                         | Excellent linking word for the **overview paragraph**       |
+| **more physically active than**     | Clear comparison phrase                                     |
+| **remained relatively stable**      | Strong phrase to describe consistent trend                  |
+| **consistently higher**             | Emphasizes ongoing trend                                    |
+| **gender gap**                      | Concise phrase for the difference between males and females |
+| **pronounced**                      | Strong adjective to describe a **significant difference**   |
+| **reversal of the general trend**   | Good phrase to show **exception** to pattern                |
+| **lagged behind**                   | Idiomatic phrase to describe lower performance              |
+| **gradually increased**             | Clear, accurate **trend description**                       |
+| **figures were nearly equal**       | Clear comparison for **converging data**                    |
+
+# Grammatical Structures & Sentence Patterns
+
+### ➤ **Complex Sentences (Band 7+)**
+
+- **“While male participation increased with age, female activity levels remained relatively stable…”**  
+    → Contrast within one sentence using **"while"**.
+    
+- **“The gender gap was most pronounced in the 25 to 34 age group but narrowed again…”**  
+    → Uses **"but"** to show contrast + passive voice **“was pronounced”**.
+    
+- **“This was the only age group where men were more active than women…”**  
+    → Relative clause: **“where men were more active…”**
+    
+
+---
+
+### ➤ **Passive Voice**
+
+- **“…the bar chart provides data on…”**
+    
+- **“…the figures were nearly equal…”**
+    
+
+Using **passive voice** is common and appropriate for Task 1 descriptions.
+
+---
+
+### ➤ **Comparative Structures**
+
+- **“…a higher percentage of males…”**
+    
+- **“…more active than women…”**
+    
+- **“…significant difference…”**
+    
+- **“…lagged behind women…”**
+    
+- **“…nearly equal…”**
+    
+
+These are key for **highlighting contrasts and comparisons**, essential in Task 1.
+
+---
+
+**"From age 25 onwards, female participation in physical activity consistently exceeded that of males."**
+
+is a **complex sentence** and is an excellent example of high-band IELTS Writing grammar and structure.
+
+
+|Part|Type|Function|
+|---|---|---|
+|**"From age 25 onwards"**|Prepositional phrase (time expression)|Acts as an adverbial phrase of time; sets the time frame|
+|**"female participation in physical activity"**|Noun phrase (subject)|The subject of the sentence|
+|**"consistently exceeded"**|Verb phrase|Main verb; past tense with adverb|
+|**"that of males"**|Comparative noun phrase|Avoids repetition by replacing “male participation” with “that of males”|
+
+
+
+### ➤ **Time Phrases and Sequencing**
+
+- **“In the youngest age category…”**
+    
+- **“From age 25 onwards…”**
+    
+- **“Among those aged 65 and above…”**
+    
+
+Shows **chronological awareness**—important when grouping or comparing age-related data.
+
+---
+
+## **Suggestions for Practice**
+
+Try writing **your own versions** of sentences using:
+
+1. **“remained relatively stable”** →  
+    _e.g., The number of users remained relatively stable from 2015 to 2018._
+    
+2. **“lagged behind”** →  
+    _e.g., Exports lagged behind imports for most of the year._
+    
+3. **“was the only age group where…”** →  
+    _e.g., This was the only region where sales declined._
+
+## Band 7 Sample Answer
+
+The bar chart shows the percentage of men and women in Australia who did regular physical activity in 2010. The data is divided into six different age groups.
+
+Overall, women were more active than men in most age groups, except for the youngest group. The biggest difference between genders can be seen in people aged 25 to 34, while the activity levels for older people were more similar.
+
+In the 15 to 24 age group, men were slightly more active than women, with 52.8% of males doing regular physical activity compared to 47.7% of females. This was the only age group where men were more active than women, indicating a reversal of the general trend observed in the other age groups.
+
+From age 25 onwards, female participation in physical activity consistent exceeded that of males. Among those aged 35 to 44,
+
+
+In the oldest group, aged 65 and over, the figures were almost the same: 46.7% for men and 47.1% for women. This was the only age category where the gender gap almost disappeared.
+
+# Band 8 essay (TA, CC 9)
+
+
+The bar chart shows the proportion of Australian males and females across six age groups who engaged in regular activity in 2010.
+
+Overall, women tended to be more physically active than men in most age groups, except among the youngest group, where males had a slightly higher participation rate. From age 25 onwards, female participation in physical activity consistently exceeded that of males.
+
+Among 15 to 24-year-olds, approximately 52.8% of men were physically active, slightly more than the 47.7% of women in the same age range. This is the only age group in which male activity rates were higher than female rates.
+
+From age 25 to 64, women were consistently more active than men. The most notable difference occurred in the 25 to 34 age group, where nearly half of the women (48.9%) were active compared to only 42.2% of men. This gender gap remained relatively steady in the following age brackets, with female activity rates hovering around 52%-53%, while male figures gradually increased from 39.5% (age 35-44) to 45.1% (age 55-64).
+
+In the oldest age group (65 and over), the activity levels of men and women were nearly identical, with 46.7% of males and 47.1% of females participating in regular physical activity, showing minimal gender difference by this stage of life.
+
+| **IELTS Criteria**               | **Score** | **Reason**                                                                 |
+| -------------------------------- | --------- | -------------------------------------------------------------------------- |
+| **Task Achievement**             | **9**     | Fully addresses all parts of the task with clear comparisons and data.     |
+| **Coherence & Cohesion**         | **9**     | Logical organization, clear overview, and effective paragraph structure.   |
+| **Lexical Resource**             | **7**     | Uses a variety of precise vocabulary (“participation,” “consistent gap”)   |
+| **Grammatical Range & Accuracy** | **7**     | Includes complex sentences and correct tense, but could vary more in form. |
