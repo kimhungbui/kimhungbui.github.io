@@ -330,3 +330,46 @@ In the first decade, beef consumption was the highest in the food categories lis
 In contrast, chicken began the period at below 150 grams in 1979, to took the lead from around 1989 onwards. Especially, the rise in chicken corresponds to the decline of beef and lamb, and by 2002, it hit a peak of about 260 grams before slightly dropping to 250 grams in 2004.
 
 Fish was consistently eaten the least, beginning at around 60 grams per week, then dropping to below 50 grams. While it was the lowest, it remained relatively stable for the majority of the period.
+
+- improve phrasing like:
+
+"to took the lead from around 1989 onwards" -> "and overtook the other meats and fish in consumption from around 1989"
+
+- Avoid vague or incorrect causal links:
+
+"especially, the rise in chicken corresponds ..." -> "Notably, the increase in chicken consumption coincided with a decline in both beef and lamb."
+
+->
+
+_Chicken consumption, which started below 150 grams per person per week in 1979, steadily increased and surpassed all other meats by 1989._
+
+_Meanwhile, fish remained the least consumed protein throughout the entire period, showing minimal fluctuation._
+
+not: "minority of food consumption came from fish"
+
+->: "Fish accounted for the smallest proportion of consumption."
+
+not: "hit a peak of about 260 grams"
+
+-> "peaked at approximately 260 grams per person per week."
+
+_Lamb followed a similar declining trajectory to beef, although its figures were consistently lower._
+
+_Chicken consumption rose steadily, eventually surpassing all other meat types._
+
+
+- ❌ _"to took the lead..."_ (tense and structure error)
+    
+- ❌ _"Falling from the second-highest number..."_ → This is a sentence fragment.
+    
+- ❌ _"Especially, the rise in chicken corresponds..."_ → Misuse of the adverb
+
+Fragments like: _"Falling from the second-highest number at 150 grams..."_ must be restructured:
+
+"_Lamb consumption, which started at 150 grams, fell steadily throughout the period._"
+
+Work on __tense consistency__:
+
+- Past simple or past perfect is preferred for trends over time.
+- e.g. "had fallen to", "peaked at"
+

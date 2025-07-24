@@ -1,0 +1,259 @@
+---
+title: Map Tasks
+lightbox: false
+description: How to write about Maps Task
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-24
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# How map tasks are different
+
+## Language
+
+### Tenses
+
+With chart tasks, we often use verbs actively, and there are few occasions when we can use the passive. For example, we could have written:
+
+_In 1999 more Fairtrade coffee __was sold__ in Switzerland than in any of the other countries in the table._
+
+However, with map and plan tasks, the passive can be more common. This means that we might describe what __was done__, or what __has been done__.
+
+### Vocabulary
+
+There are also changes in the type of vocabulary we are likely to need. Our current task shows an island, but we may also be shown planned changes to a small building. This means we may need to write about:
+
+:::{.callout-tip}
+## Common topics in map tasks
+- Natural features
+- Types of Buildings or structures
+- Parts of a Building
+- Indoor spaces or areas
+- Outdoor spaces or areas
+- Facilities
+- Transport
+- Furniture
+- Building materials
+:::
+
+The terms in the list above can be useful to use as umbrella terms in our overview, or when we want to highlight a key feature. For example:
+
+E.g.:
+_"Several changes were made to the __outdoor areas__, such as the addition of parking spaces."_
+
+Here, an umbrella term (<font color="#0070c0">outdoor areas</font>) is used to make a point about a detail the writer noticed (parking spaces were added).
+
+### Exercises
+
+#### Question 1
+
+Group the words together under the correct umbrella term
+
+![](Pasted%20image%2020250724221913.png)
+
+shed(v): to rid oneself of temporarily or permanently as superfluous or unwanted
+shed(n): a simple roofed structure, typically made of wood or metal, used as a storage space.
+
+![](Pasted%20image%2020250724222143.png)
+
+
+BUILDING MATERIALS: concrete, stone, glass, wood
+
+FURNITURE: cupboard, table, chair, desk
+
+PARTS OF A BUILDING: stairway, roof, corridor, entrance
+
+EXTERNAL FEATURES OF A BUILDING: driveway, garden, car park, footpath
+
+FACILITIES: cafe, toilets, changing rooms, restaurant
+
+TYPES OF BUILDING: shed, block of flats, hut
+
+NATURAL FEATURES: vegetation, beach, lake, cliff, 
+
+
+## Step 1 Noticing details
+
+There are also different types of details to notice with a map task. Here are the details she notice:
+
+![](Pasted%20image%2020250724223340.png)
+
+As we can see, she noticed details in the question, which tells us that:
+
+1. This is an island
+2. The construction was done to provide tourist facilities
+
+Map tasks also often have a __key__, which is a box explaining the meaning of any special drawings or marks on the map. Here, a dotted line ------ is used to indicate a footpath, and a thicker, solid line shows where vehicle tracks have been created.
+
+There is also a scale, which tell us the approximately size of the island. It tells us that this present 100 meter
+
+We can use this to get an estimate of the size of the island, like this:
+
+![](Pasted%20image%2020250724223645.png)
+
+There is also a compass shown on the map, which we can use to explain the position or location of something. 
+
+## Step 2 Key feature
+
+Another difference with a map or plan task involves the key features. In a chart, numbers or data can __increase, decrease,__ or __remain the same__. These same ideas can be applied to a map task, but there are also some new features to look for: something being __added__ or __removed__.
+
+This means that, with a chart, we need to look for:
+
+- big changes in the data
+- the highest and lowest points
+- any similarities
+- anything that stayed the same
+
+And with a plan or map task, we need to look for:
+
+:::{.callout-tip}
+## Key features to look for in a map tasks
+- Key changes in the structures or features indicated on the map or plan
+- Anything that __has been made__ bigger
+- Anything that __has been made__ smaller
+- Anything that __has been improved__ or changed in some other way
+- Anything that __has been removed__
+- Anything that __has been replaced__ with something new
+- Anything new that __has been added__
+- Any similarities - what __has been kept__ the same?
+:::
+
+Notice the passive structures she has used in this list.
+
+:::{.callout-note}
+When describing a chart, your verbs will mainly be active, explaining when and by how much figures increased, decreased, or remained stable . However, in map or plan tasks you also need to think about the passive, as you may need to describe what __was done__ or what __has been done__.
+:::
+
+Our current task is a little unusual because, before the development took place, the island had no buildings on it at all, so there is relatively little to 'remain the same'. Nevertheless, there are some features worth noting. Below are her initial notes on this. She looked at the natural features and vegetation on the island before any work was done and then looked at the second map to see if any parts had remained the same:
+
+![](Pasted%20image%2020250724224443.png)
+
+Next, she looked at the new development, and she could see that it can be divided into several key areas: amenities and accommodations ...
+
+![](Pasted%20image%2020250724224524.png)
+
+... and leisure facilities, and access:
+
+![](Pasted%20image%2020250724224555.png)
+
+## Step 3 - Organization
+
+In lesson 3 we decided that the best way to organize paragraphs for a task like this is to have one paragraph about the island 'Before' and a second paragraph 'After' or following the construction work. As these images show, there is not a great deal to write about the island before construction. Because of this, in her answer, she decided to also mention what has been retained in this paragraph.
+
+As we saw earlier, the umbrella terms above (__accommodation, amenities, leisure facilities,__ and __access__) can be useful for our overview, allowing us to show the main changes without mentioning any specific details. They can also be useful for highlighting a point and when it comes to the logical organization of the information __within__ our paragraphs.
+
+In some answers, candidates divide the map or plan into North, South, East and West and then use this for their organization. However, this creates list-like description of what the island looks like rather than a summary of a main features, so it is not something she recommend.
+
+# Common problems in map tasks
+
+## There is/ There are
+
+We use __there + to be__ when we are saying that something exists. It can be singular or plural and can be used in any tense. There are some examples:
+
+- __There is, there are__
+- __There was, there were__
+- __There has been, there have been__
+
+In our answer, we need to show that what we are pointing out is a key feature and not a minor detail. This issue can occur when people present the details they noticed as though they are describing a picture. Comparing the following examples:
+
+- __A: There were some trees on the island.__
+- __B: Before the development, there were only trees on the island. However, following construction ...__
+
+In example A, candidate is simply listing details - describing what they can see. In example B, we understand the context for this detail (__Before the development__), and we can see that it is important to include in a summary of the key changes that have been made (__there were only trees on the island__ but this later changed).
+
+:::{.callout-tip}
+In map or plan tasks, don’t just list the things you can see in each diagram. Help the reader to see that the things you are pointing out are key features and worth noting.
+:::
+
+## The passive
+
+As we saw earlier, the passive is more common in map tasks. The passive is formed by the verb __to be + the past participle__ of a verb (is done/ was done etc). We use the passive to omit the subject of the verb and focus on the object. Compare the following:
+
+- Active: <font color="#c00000">They</font> <font color="#245bdb">built</font> <font color="#00b050">a restaurant</font>. (subject, active verb, object)
+- Passive: <font color="#00b050">A restaurant</font> <font color="#0070c0">was built</font>. (subject, passive verb)
+
+Notice the word order - in the passive, the object comes __before__ the verb. When we need to change the tense, we only change the auxiliary verb (the verb __to be__):
+
+- A restaurant is being built
+- A restaurant was built
+- A restaurant has been built
+
+:::{.callout-tip}
+In map tasks, if we are using the subject pronoun '_they..._' (e.g. _they built_) this is a good sign that we need to use the passive.
+:::
+
+A common problem with the passive is missing out the auxiliary verb. If it is used with '_there is / there are_', word order can also cause problems. Correct the mistake in the following extract:
+
+_There has built a restaurant in the centre of the island._
+
+-> 'The restaurant has bene built ...'
+
+## Tense - showing a range
+
+A further common problem with map or plan tasks is using only one tense. Doing this means we are not showing a range of structures, which may lower our Grammatical range and accuracy score (Band 5 'uses only a limited range of structures'). This problem often occurs when a candidate describes the features that can be seen in the first map, and then the features that can been seen in the second map. Look at the following example:
+
+:::{.callout-note}
+The first map shows an island before development. There are some trees here and there, and there is a beach on the west coast.
+
+The second map shows the island after development. There are two blocks of accommodation and there is a reception and a restaurant between them. The restaurant is connected to a pier by a vehicle track.
+:::
+
+Although there are not grammatical mistakes here, there is also no range (everything is in the simple present tense). A further problem is that this answer describes each map and detail separately, as though there is no connection between them. This means that the writer is not summarising the main changes, highlighting the key features, and making comparisons where relevant, which lowers the Task achievement score as well as the Grammatical range and accuracy score.
+
+:::{.callout-tip}
+Don't describe each diagram separately - summarise the changes that these maps are helping to illustrate. Making comparisons and using a range of tenses can help us to do this.
+:::
+
+Notice the changes she have made below and how they help to highlight and summarise the main changes:
+
+:::{.callout-note}
+## Before
+The first map shows an island before <u>development</u>. <u>There are</u> some trees here and there, and <u>there is</u> a beach on the west coast.
+
+The second map shows the island after development. <u>There are</u> two blocks of accommodation and <u>there is</u> a reception and a restaurant between them. The restaurant <u>is connected</u> to a pier by a vehicle track.
+:::
+
+:::{.callout-note}
+## After
+The first map shows an island before it <u>was developed</u>. There <u>were</u> no structures on the island, only trees, and there <u>was</u> a beach on the west coast.
+
+The second map shows the island after development. Two blocks of accommodation <u>have been built</u> so that tourists <u>can now stay</u> on the island, and there is also a reception and a restaurant for them to use. The restaurant is connected to a pier by a vehicle track, making the building more accessible.
+:::
+
+Notice that she did not need to add lots of 'high-level' structures to improve the score here. Doing this does not help our reader and often makes language complicated and difficult to follow - it is enough to __vary__ our structures.
+
+If our map task answers mainly use the simple present, we need to change the thinking that we do in step 2, when we are identifying the key features. Using only the simple present is a sign that we are describing what we can see instead of thinking about what has changed. The questions below can help with this:
+
+:::{.callout-tip}
+## Ask ourself questions this to help vary our tenses:
+
+- What __did__ it look like before?
+- What __does__ it look like now?
+- What __has changed__?
+- What __has stayed__ the same?
+- What __has been added__?
+- What __has been removed__?
+- What __has been extended / made__ bigger?
+:::
+
+Notice the __different tenses__ in the question.
+
+:::{.callout-tip}
+Remember, writing is thinking we can see. If our map task answers mainly use the simple present, this reflects our thinking - change our thinking to change our writing.
+
+Change from '__What can I see__?' to '__What has changed? What has been done?__'
+:::
+# Model answer
