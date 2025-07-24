@@ -1,0 +1,25 @@
+---
+title: Grammar for Writing
+lightbox: false
+description: Note down some structures for easier to write
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: ChatGPT
+    affiliation-url: 
+date: 2025-07-24
+categories:
+  - english
+  - writing
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+zxc

@@ -1,0 +1,992 @@
+---
+title: Grammar for Writing
+lightbox: false
+description: Note down some structures for easier to write
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: ChatGPT
+    affiliation-url: 
+date: 2025-07-24
+categories:
+  - english
+  - writing
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+# Overview/Trend Statements
+
+In __IELTS Academic Writing Task 1__, the __overview paragraph__ is a __summary of the most noticeable features__ or __overall trends__ in the visual data (chart, graph, table, map, process, etc.).
+
+It usually comes after the introduction and should:
+
+- Highlight general patterns
+
+- Avoid specific data (no numbers!)
+
+- Use academic and formal language
+
+Focus on what stands out or changes clearly
+
+# Comparative Structures
+
+Used to:
+
+- Compare countries, categories, years, or items
+
+- Highlight differences or similarities between data points
+
+- Achieve a high score in Coherence & Cohesion + Grammatical Range
+
+Comparative structures allow you to describe how one value is higher, lower, more, or less than another.
+
+This is essential in IELTS Writing Task 1, where you must compare numerical data across:
+
+Countries
+
+Years
+
+Age groups
+
+Product categories
+
+Sectors or industries
+
+Using accurate and varied comparative grammar helps you score Band 7+ in both Task Achievement and Grammatical Range.
+
+## Common Comparative Grammar Structures
+
+| Structure                                    | Example                                                                    |
+| -------------------------------------------- | -------------------------------------------------------------------------- |
+| **X is higher/lower than Y**                 | _The number of graduates in Canada was higher than in France._             |
+| **X-er than Y** (one-syllable adj)           | _Men worked longer hours than women._                                      |
+| **more/less + adj + than**                   | _Online sales were more significant than in-store purchases._              |
+| **as + adj + as**                            | _The usage of mobile phones was **as common as** laptops in 2015._         |
+| **not as + adj + as**                        | _Tablet sales were **not as high as** smartphone sales._                   |
+| **twice / three times + as + adj + as**      | _Company A produced **twice as much** electricity as Company B._           |
+| **X accounted for ... compared to Y**        | _Energy from coal accounted for 40%, **compared to** just 10% from solar._ |
+| **Whereas / While + clause**                 | _While Japan saw a rise in exports, China experienced a decline._          |
+| **In contrast / On the other hand + clause** | _In contrast, the UK maintained stable figures throughout the period._     |
+
+
+
+# Time Phrases and Tenses
+
+Describing when changes occurred using __past tense__ and __time expressions__:
+
+- From 1967 to 2007 ...
+- Between 1967 and 1977 ...
+- Over the following decade ...
+- By the end of the period ...
+- Throughout the 40-year span ...
+
+E.g.: _By the end of the period, Portugal's figures had nearly matched Sweden's._
+
+
+# Passive Voice & Formal Style
+
+Use this for objectivity and variation:
+
+- Emissions were recorded at ...
+- The data was collected over a 40-year period.
+- An increase was seen in ...
+
+E.g.: _A sharp decline was seen in Sweden after 1977_.
+
+
+# Complex Sentences in IELTS
+
+## Cause and Effect Sentences
+
+- **Task 1 (W1)**: Common
+    
+- **Task 2 (W2)**: Very common and essentialessential
+
+A cause and effect sentence shows the reason something happened (the cause) and the result (the effect). These sentences allow you to explain data (in Task 1) or support arguments and ideas logically (in Task 2), which is crucial for achieving Band 8+ in Task Achievement and Coherence.
+
+| Task   | Why They're Useful                                                                                   |
+| ------ | ---------------------------------------------------------------------------------------------------- |
+| **W1** | To **explain trends or changes** in data (e.g., why sales dropped or increased)                      |
+| **W2** | To **support your arguments with logic**, give reasons for opinions, or show consequences of actions |
+
+### Sentence Structure Patterns
+
+| Pattern                                         | Example                                                              |
+| ----------------------------------------------- | -------------------------------------------------------------------- |
+| **[Effect] + because + [Cause]**                | _Sales dropped **because** prices increased._                        |
+| **[Because] + [Cause], [Effect]**               | _Because the policy failed, the crime rate rose._                    |
+| **Due to / Owing to + [noun/gerund], [Effect]** | _Due to rising fuel costs, travel became more expensive._            |
+| **[Effect] + as a result of + [noun/gerund]**   | _Traffic congestion worsened **as a result of** poor city planning._ |
+| **[Cause]. Therefore, [Effect]**                | _The company reduced staff. **Therefore**, productivity decreased._  |
+
+### Examples in IELTS Writing
+
+#### Task 1 Examples
+
+- CO2 emissions increased between 2005 and 2010 due to rapid industrialization.
+- The number of tourists dropped in 2009 because of the global financial crisis.
+- Because oil prices rose dramatically, petrol consumption declined.
+
+These show __not just what happened, but why__ - adding explanation and depth to our data description.
+
+#### Task 2 Examples
+
+- __Because__ fast food is cheap and convenient, many people choose it over healthier options.
+- Lack of physical activity is a major concern. __As a result__, obesity rates have increased.
+- __Due to__ rising housing costs, many young adults are unable to afford their own homes.
+
+In Task 2, you must present clear, logical ideas and support them. Cause-effect structures show relationships, reasoning, and coherence—key elements for Band 9 in Task Response.
+
+#### Tips for Using Cause and Effect Sentences Naturally
+
+##### Vary the structure
+
+Use the different patterns to avoid repetition:
+
+- Because + clause
+- Due to + noun
+- As a result + noun
+- Therefore + result
+
+##### Avoid Overuse
+
+Use 2-3 cause-and-effect sentences per paragraph if appropriate, but __balance__ them with other sentences types.
+
+##### Be Specific with Causes
+
+Instead of vague reasons like:
+
+not-> ...because of problems
+
+Try:
+
+... because of declining investment in public infrastructure
+
+__Combine with Data (W1)__
+
+_Sales declined by 30% in Q3, __largely due to__ to loss of a major client_.
+## Contrast or Concession Sentences
+
+- Task 1 (W1): Occasionally (for comparing data)
+
+- Task 2 (W2): Very common (for discussing opposing ideas or balancing arguments)
+
+__Contrast sentences__ show __differences__ between two or more ideas, groups, trends, or viewpoints.
+
+__Concession sentences__ recognize __opposing views__ or __unexpected outcomes__, often starting with words like _although_, _even though_, or _while_.
+
+| Task       | Why They're Useful                                                                                   |
+| ---------- | ---------------------------------------------------------------------------------------------------- |
+| **Task 1** | To **compare and contrast data categories**, such as trends in different years, countries, or groups |
+| **Task 2** | To **present two sides of an argument**, or to show a more nuanced or sophisticated position         |
+
+### Sentence Structure Patterns
+
+| Pattern                                                   | Example Sentence                                                        |
+| --------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Although / Even though + clause, main clause**          | _Although public transport is cheap, many people still prefer driving._ |
+| **While / Whereas + clause, clause**                      | _While exports increased, imports fell steadily._                       |
+| **In contrast / On the other hand, + independent clause** | _In contrast, rural areas showed no change._                            |
+| **Despite / In spite of + noun/gerund, main clause**      | _Despite the rise in prices, demand remained high._                     |
+
+### Examples in IELTS Writing
+
+#### Task 1: Comparing Data
+
+These structures are helpful for __comparing trends, categories, or years__.
+
+- While the number of male students increased steadily, the number of female students remained stable.
+- Although car ownership rose in urban areas, it declined in rural regions.
+- In contrast to the upward trend in electronics sales, clothing sales fell throughout the period.
+- Despite fluctuations in oil prices, energy consumption stayed constant.
+
+Task 1 requires more than listing numbers - we must __highlight relationships and contrasts__ to score higher band.
+
+#### Task 2: Present Balanced Arguments
+
+In opinion, discussion, and problem-solving essays, contrast/concession sentences show that:
+
+- We can __see both sides of an issue__.
+- We understand __complexity__.
+- We write __logically and maturely__.
+
+Examples:
+
+- Although some believe that education should be free, others argue it may reduce quality.
+- While social media improves communication, it also contributes to shorter attention spans.
+- In contrast to popular belief, not all screen time is harmful.
+- Despite government efforts, pollution levels continue to rise.
+
+### Tips for Using Contrast/Concession Sentences Effectively
+
+#### Use variety
+
+Avoid using "although" repeatedly - try "while," "whereas," "in contrast," "despite, " etc.
+
+#### Connect ideas logically
+
+Make sure the ideas __really contrast__. Don't use "although" when the ideas are not truly opposing.
+
+Not -> _Although technology is important, it is useful._
+
+Yes -> _Although technology is convenient, it can reduce face-to-face interaction._
+
+### IELTS Sample Sentences
+
+#### Task 1 (Data Comparison)
+
+While the number of international students in Canada rose significantly, the figure for the UK __remained unchanged__ over the same period.
+
+In contrast to the steady rise in smartphone use, landline phone subcriptions declined.
+
+#### Task 2 (Balanced Argument)
+
+Although public healthcare is available in many countries, access and quality often vary greatly.
+
+Despite widespread concern about climate change, individual action remains limited.
+
+Some believe exams are the best measure of learning, whereas others argue that coursework offers a more accurate evaluation.
+
+### Summary: When to use Contrast/ Concession
+
+| IELTS Task | Use It When…                                                                                              |
+| ---------- | --------------------------------------------------------------------------------------------------------- |
+| **Task 1** | Comparing **two or more trends**, **categories**, **groups**, or **time periods**                         |
+| **Task 2** | Presenting **two sides of an argument**, **addressing counterarguments**, or **qualifying your position** |
+
+## Conditional Sentences
+
+- Task 1 (W1): ❌ Rarely used — mostly avoided
+
+- Task 2 (W2): ✅ Common and highly effective
+
+__Conditional sentences__ describe situations that are:
+
+- __Possible__ (real conditions)
+
+- __Imagined or hypothetical__ (unreal conditions)
+
+- __Impossible or past regrets__
+
+These structures show a __cause-effect relationship under certain conditions__ — perfect for __argumentation__, __prediction__, and __analysis__ in Task 2.
+
+Using conditional sentences demonstrates:
+
+- Logical thinking
+
+- Hypothetical reasoning
+
+- Ability to argue and evaluate future or past outcomes
+
+### Types of Conditional Sentences (IELTS-appropriate)
+
+| Type                   | When It's Used                                   | Structure                                                     | IELTS Example                                                                     |
+| ---------------------- | ------------------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Zero Conditional**   | General truths or rules                          | If + present, present                                         | _If water is heated, it boils._                                                   |
+| **First Conditional**  | Real future possibilities                        | If + present, will/can/may                                    | _If governments invest more in solar energy, emissions will decrease._            |
+| **Second Conditional** | Unreal/hypothetical present or future            | If + past, would/could/might + base verb                      | _If more people worked remotely, traffic congestion would be reduced._            |
+| **Third Conditional**  | Past hypothetical (regret or missed opportunity) | If + past perfect, would/could/might + have + past participle | _If stricter laws had been enforced earlier, the crisis could have been avoided._ |
+
+### Conditional Use in IELTS Writing Task 2 Essay Types
+
+| Essay Type                   | How to Use Conditionals                                                                     |
+| ---------------------------- | ------------------------------------------------------------------------------------------- |
+| **Opinion**                  | _If schools focused more on creativity, students would be better prepared for modern jobs._ |
+| **Discussion**               | _If both sides agreed to compromise, a more effective solution could be found._             |
+| **Problem-Solution**         | _If the government introduced subsidies, green energy use would rise._                      |
+| **Advantages/Disadvantages** | _If online learning continues to expand, traditional education may lose its appeal._        |
+### Tips for Writing Higher band Conditionals
+
+#### Use realistic and relevant ideas
+
+If the public were more aware of environmental issues, recycling rates would likely increase.
+
+#### Combine with modal verbs for nuance
+
+If children __could__ choose their subjects, they __might__ perform better academically.
+
+#### Use third conditionals sparingly
+
+Only use them when reflecting on __past missed opportunities__ or __unrealistic scenarios__
+
+If fossil fuel regulations __had been__ introduced earlier, global warming __might have been__ less severe.
+
+### Avoid mixing condition types
+
+No-> _If we will ban cars, pollution would go down._
+Yes-> _If we ban cars, pollution __will__ go down_. (First conditional - real future)
+
+### Sample Sentences
+
+If parents monitored their children's screen time more closely, issues like digital addiction would be less common.
+
+If environmental education were made compulsory, future generations might be more eco-conscious.
+
+Had the government implement the policy sooner, thousands of jobs could have been saved.
+
+### Sentence Starters for IELTS Conditionals
+
+| Situation             | Sentence Starter                                                        |
+| --------------------- | ----------------------------------------------------------------------- |
+| Present/Future (real) | _If this trend continues…_ / _If action is not taken…_                  |
+| Hypothetical present  | _If society placed more value on…_ / _If people had more access to…_    |
+| Hypothetical past     | _If the law had been passed earlier…_ / _Had schools provided support…_ |
+
+### Why Conditionals Are Not Used in Task 1
+
+Task 1 requires factual, objective description of charts, graphs, or data.
+
+Speculation or hypothetical language (like "If sales had risen…") is not appropriate.
+
+Use only past/simple present and avoid guessing why something happened.
+
+✅ Sales rose in 2010 and remained stable.
+
+❌ If the economy had improved, sales would have increased.
+
+
+### Summary: When and How to use Conditionals
+
+| Task       | Use It? | Purpose                                   |
+| ---------- | ------- | ----------------------------------------- |
+| **Task 1** | ❌ No    | Avoid speculation; stay factual           |
+| **Task 2** | ✅ Yes   | Hypothesize, argue, predict, and persuade |
+
+## Relative Clause Sentences
+
+- **Task 1 (W1)**: ✔️ _Common and useful_
+    
+- **Task 2 (W2)**: ✔️ _Common and effective_
+
+A __relative clause__ (also called an __adjective clause__) gives __extra information__ about a __noun__ in the sentence. It starts with a __relative pronoun__ such as:
+
+- _who_ (for people)
+
+- _which_ (for things or ideas)
+
+- _that_ (for people or things – less formal)
+
+- _whose_ (possessive)
+
+- _where_ (for places)
+
+- _when_ (for time)
+
+These clauses help you __combine ideas__, reduce repetition, and __add precision and complexity__ to your writing.
+
+### Why Relative Clauses Matter in IELTS
+
+| Task       | Purpose of Relative Clauses                                                                            |
+| ---------- | ------------------------------------------------------------------------------------------------------ |
+| **Task 1** | To describe categories, locations, years, or items shown in graphs more clearly and fluently           |
+| **Task 2** | To define or add detail to people, groups, ideas, policies, or problems in a more formal, academic way |
+
+### Sentence Structure Patterns
+
+| Relative Pronoun | Example Sentence                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------- |
+| **who**          | _Children **who grow up in rural areas** may have limited access to education._       |
+| **which**        | _The country **which experienced the highest growth** was China._                     |
+| **that**         | _The method **that was used** was highly effective._                                  |
+| **where**        | _Cities **where public transport is efficient** tend to have lower pollution levels._ |
+| **when**         | _The period **when industrialisation began** saw major social changes._               |
+| **whose**        | _Students **whose families are well-educated** tend to perform better academically._  |
+
+### Examples in IELTS Writing
+
+#### Task 1: Academic Descriptions
+
+- The chart shows data for five countries, __there of which__ saw a steady rise in exports.
+- Germany, __which had the lowest carbon emissions in 2010__, showed only a slight increase.
+- The figure for Company A, __whose sales doubled over the period__, surpassed all competitors.
+
+💡 Why it helps: Instead of writing multiple simple sentences, you can combine ideas clearly and fluently, improving cohesion and grammar range.
+
+#### Task 2: Academic Essay Writing
+
+- Governments __that invest heavily in healthcare__ often have healthier populations.
+- Social media, __which has become a dominant force in communication__, also raises concerns about privacy.
+- There are people __whose opinions differ__ based on cultural background.
+- Urban areas __where housing costs are high__ often experience population decline.
+
+💡 Why it helps: These structures allow you to develop ideas more precisely and sound more academic and formal — key to a Band 8+ in Task Response and Lexical Resource.
+
+### Tips for Using Relative Clauses Correctly
+
+#### Choose the right pronoun
+
+- Use __who__ for people: _Teacher __who are well-trained___
+- Use __which/that__ for things: _A law __which bans smoking___ 
+- Use __whose__ for possession: _Student __whose parents are educated___
+- Use __where/when__ for place/time references
+
+#### Avoid comma mistakes
+
+- Defining relative clause (essential info): _The country __that led to market__ was China_.
+- Non-defining clause (extra info): _China, __which led the market__, showed strong growth_.
+
+#### Use variety in position and structure
+
+The number of people __who used the internet__ rose steadily.
+
+People's dependence on technology, __which is growing rapidly__, may lead to reduced social skills.
+
+### Sample Sentences
+
+#### Task 1
+
+The chart shows five countries, __three of which__ experienced a decline in energy consumption.
+
+Mobile phone usage, __which was minimal in 2000__, grew rapidly in the following decade.
+
+#### Task 2
+
+Children __who are taught digital skills at school__ are more likely to succeed in modern careers.
+
+Public transport systems, __which are often underfunded__, require urgent investment.
+
+### Common Errors to Avoid
+
+| Error                                          | Correction                                                                |
+| ---------------------------------------------- | ------------------------------------------------------------------------- |
+| _A policy who helps students..._               | ❌ "who" → ✅ _A policy **that** helps students..._                         |
+| _The city, that is known for its clean air..._ | ❌ No comma needed for defining clause → ✅ _The city **that** is known..._ |
+| _People which believe in climate change..._    | ❌ "which" → ✅ _People **who** believe..._                                 |
+
+### Summary: Relative Clauses in IELTS
+
+| **Used in** | **Function**                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------- |
+| **Task 1**  | Add detail to **years, countries, items** or **categories** in the data                     |
+| **Task 2**  | Describe or explain **people, policies, problems**, or **places** more clearly and fluently |
+
+## Time-based Sentences
+
+- Task 1 (W1): ✔️ Very common and essential
+
+- Task 2 (W2): ✔️ Occasionally useful in examples or background information
+
+__Time-based sentences__ include __time clauses__ to show __when__, __how long__, or __in what sequence__ something happens. They use time-related conjunctions or phrases like:
+
+- when, while, before, after, until, since, as soon as, by the time, once, during, over the period, throughout
+
+These sentences help IELTS candidates describe:
+
+- Trends over time (W1)
+
+- Event sequences, cause-effect timelines, or historical context (W2)
+
+| Task       | Purpose                                                                                                                      |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Task 1** | To **clearly describe changes or trends** over a period using accurate tense and logical sequencing                          |
+| **Task 2** | To provide **context** or **realistic examples**, especially when explaining changes in habits, policies, or social patterns |
+Using time-based clauses accurately demonstrates your control of grammar and tense.
+
+### Sentence Structure Patterns
+
+| Conjunction / Phrase    | Example Sentence                                                         |
+| ----------------------- | ------------------------------------------------------------------------ |
+| **When**                | _When internet access became widespread, online shopping began to grow._ |
+| **While**               | _While mobile phone use increased, landline subscriptions declined._     |
+| **Before / After**      | _After 2010, renewable energy use started rising._                       |
+| **Since**               | _Energy consumption has declined **since** 2015._                        |
+| **During / Throughout** | _Sales remained stable **throughout** the decade._                       |
+| **By the time**         | _By the time the law was implemented, the damage had already been done._ |
+| **Once / As soon as**   | _Once electric vehicles became affordable, demand surged._               |
+
+### Examples in IELTS Writing
+
+#### Task 1: Describing Data Trends
+
+Task 1 often involves graphs or charts that show data over time, so __time-based language is critical__.
+
+- _After 2005, car ownership in Europe increased sharply_.
+- _While the number of graduates rose in the UK, it remained stable in Canada._
+- _By 2020, the unemployment rate had dropped significantly._
+- _During the first decade, the figures fluctuated slightly._
+
+These phrases help __sequence events__, describe __parallel trends__, and show __cause-effect relationships__ over time.
+
+#### Task 2: Background, Examples, or Context
+
+Time clause are __not the focus__ of Task 2, but they __strengthen examples and explanations__.
+
+- _Since the rise of social media, communication habits have changed dramatically._
+- _Before smartphones, people relied on face-to-face interaction._
+- _As soon as restrictions were lifted, tourism began to recover._
+- _By the time children reach adolescence, they are already familiar with digital tools._
+
+This adds realism and sophistication to your arguments or explanations.
+
+### Time Expressions to Use in IELTS
+
+| Type                 | Examples                                                      |
+| -------------------- | ------------------------------------------------------------- |
+| **Points in time**   | in 2010, at the beginning of the period, by 2020, before 2005 |
+| **Duration**         | over the 10-year period, during the decade, from 2010 to 2020 |
+| **Sequence / Order** | after, before, when, once, as soon as, by the time, until     |
+
+### Tense Choice: Critical for Time Clauses
+
+| Time Expression         | Tense Commonly Used                                               |
+| ----------------------- | ----------------------------------------------------------------- |
+| **After / Before**      | Past Simple or Past Perfect                                       |
+| **Since**               | Present Perfect                                                   |
+| **By the time**         | Past Perfect (for earlier action), Past Simple (for later action) |
+| **During / Throughout** | Past Simple or Present Perfect                                    |
+Example:
+
+_By the time the chart ends, sales __had risen__ by 60%_.
+
+_Since 2010, the number of users __has doubled___.
+
+### Samples Sentences
+
+#### Task 1
+
+_After 2008, the number of internet users in developing countries rose dramatically, overtaking those in developed nations by 2012._
+
+_Throughout the period, employment rates remained relatively stable, with only minor fluctuations_
+
+#### Task 2
+
+_Since environmental awareness has increased in developing countries rose dramatically, more individuals are adopting sustainable habits._
+
+_Once children are exposed to screens at an early ages, their social skills may be affected._
+
+### Tips for Using Time Clauses Effectively
+
+#### Combine with other sentence types
+
+_While industrial output declined, renewable energy use began to rise, indicating a shift in production priorities._
+
+#### Be precise with time references
+
+Instead of:
+_After some time, sales increased._
+
+Try:
+_After 2005, sales increased sharply, reaching a peak in 2018._
+
+#### Vary time phrases
+
+Use alternatives to avoid repetition.
+
+- Instead of always saying "_after 2010_", try:
+	- _From 2010 onwards_
+	- _Following 2010_
+	- _In the years after 2010_
+
+### Summary
+| **Used in** | **Function**                               | **Why Important**                                    |
+| ----------- | ------------------------------------------ | ---------------------------------------------------- |
+| **Task 1**  | Describe sequences, trends, or time frames | Helps organize data clearly and accurately           |
+| **Task 2**  | Provide context or realistic examples      | Adds depth to explanations and supports logical flow |
+# Linking Devices / Discourse Markers
+
+## Contrast & Comparison Linking Devices
+
+| **Linking Word / Phrase** | **Meaning / Use**                                                                     | **Example Sentence**                                                     |
+| ------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **However**               | Shows contrast between two ideas or sentences.                                        | _Sweden’s CO₂ output declined; however, Portugal’s rose steadily._       |
+| **Whereas**               | Contrasts two clauses within a sentence.                                              | _Italy’s emissions increased, whereas Sweden’s decreased._               |
+| **While**                 | Indicates simultaneous contrast or differing trends.                                  | _While the UK remained stable, Portugal showed rapid growth._            |
+| **Although**              | Introduces a surprising contrast in a single sentence.                                | _Although Sweden started higher, it was overtaken by Italy._             |
+| **On the other hand**     | Introduces an alternative or opposite point of view.                                  | _The UK’s emissions dropped. On the other hand, Portugal’s doubled._     |
+| **In contrast**           | Highlights a direct and strong difference; often used at the beginning of a sentence. | _In contrast, female activity rose steadily._                            |
+| **By contrast**           | More formal version of "in contrast", often used to compare two ideas or groups.      | _By contrast, men remained less active than women._                      |
+| **On the contrary**       | Strongly opposes or corrects a previous idea or belief.                               | _It might seem emissions fell. On the contrary, they rose sharply._      |
+| **Similarly**             | Points out a similar trend or pattern.                                                | _Similarly, Portugal’s figures also rose gradually._                     |
+| **Likewise**              | Adds a similar point, often in a more formal tone.                                    | _Italy’s CO₂ increased steadily; likewise, Portugal experienced growth._ |
+| **Just as**               | Draws a parallel between two situations.                                              | _Just as the UK peaked in 1977, Sweden reached its high in 1975._        |
+| **In the same way**       | Highlights identical or parallel patterns.                                            | _In the same way, Italy and Portugal both showed upward trends._         |
+| **In comparison**         | Compares two things to highlight differences or similarities.                         | _In comparison to 1980, figures in 2000 were significantly lower._       |
+| **Unlike**                | Shows contrast by negating similarity between two subjects.                           | _Unlike Sweden, the UK maintained high emission levels._                 |
+
+## Cause & Effect Linking Devices
+
+|**Linking Word / Phrase**|**Meaning / Use**|**Example Sentence**|
+|---|---|---|
+|**Because**|Introduces a reason or explanation.|_CO₂ levels dropped because of new policies._|
+|**Due to**|A formal way to introduce a reason or cause.|_Emissions fell due to stricter environmental laws._|
+|**As a result**|Introduces a direct consequence of a previous statement.|_As a result, Portugal’s levels tripled over the period._|
+|**Therefore**|Shows logical result or outcome of a previous cause.|_The UK invested in clean energy; therefore, emissions declined._|
+|**Consequently**|Formal and academic way of showing result.|_There was a fall in emissions; consequently, pollution was reduced._|
+|**Hence**|Slightly more formal; indicates logical consequence.|_Energy was conserved; hence, the figures dropped._|
+|**Thus**|Very formal, often used in academic writing.|_The reforms were effective; thus, emissions decreased._|
+|**So**|Informal connector showing cause and effect.|_There was little investment, so the figures remained low._|
+
+## Addition / Emphasis Linking Devices
+
+| **Linking Word / Phrase** | **Meaning / Use**                                                            | **Example Sentence**                                               |
+| ------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Furthermore**           | Adds a new and often **more important** point.                               | _Furthermore, Sweden’s levels were always higher than Portugal’s._ |
+| **Moreover**              | Adds emphasis to a previous statement. Often more formal than "also".        | _Moreover, Portugal’s increase was the most consistent._           |
+| **In addition**           | Adds another point related to the one just mentioned.                        | _In addition, Italy’s emissions rose significantly in 1987._       |
+| **Also**                  | Adds information in a neutral way.                                           | _Italy also showed a steady rise in emissions._                    |
+| **Besides**               | Adds **supporting or reinforcing** information. Often used in informal tone. | _Besides, the emissions were already low._                         |
+| **What’s more**           | Informal expression to highlight a surprising or impressive addition.        | _What’s more, the figures doubled in just five years._             |
+| **Notably**               | Draws attention to a **key or striking** detail.                             | _Notably, Sweden’s figures halved by the end of the period._       |
+| **In particular**         | Focuses on a **specific and important** example.                             | _In particular, Portugal had the lowest starting point._           |
+| **Especially**            | Emphasizes one item or group more than others.                               | _This was especially true for emissions in Italy._                 |
+| **Significantly**         | Highlights the **importance or magnitude** of a change or point.             | _Significantly, emissions in the UK remained the highest._         |
+
+## Time / Sequence Linking Devices
+
+|**Linking Word / Phrase**|**Meaning / Use**|**Example Sentence**|
+|---|---|---|
+|**First / Firstly**|Introduces the **first point** in a sequence or list.|_First, the UK had the highest emissions in 1967._|
+|**Next**|Indicates the **next step or event** in a sequence.|_Next, Sweden’s levels started to fall gradually._|
+|**Then**|Continues a sequence; shows **what happened after**a previous point.|_Emissions peaked in 1980, then began to decline._|
+|**After that**|Indicates something happened **following a previously mentioned event**.|_After that, Italy overtook Sweden in CO₂ emissions._|
+|**Thereafter**|A formal alternative to “after that”; used for **subsequent trends**.|_Emissions rose until 1980. Thereafter, they remained stable._|
+|**Subsequently**|Another formal alternative for **“later on”** or “after that”.|_Subsequently, emissions in Italy reached a plateau._|
+|**Over the following years**|Describes a **progression** or trend over time.|_Over the following years, Portugal’s levels increased consistently._|
+|**Eventually**|Used to indicate the **final outcome** after a series of events.|_Eventually, all four countries saw emission levels converge._|
+|**Finally**|Introduces the **last point or step** in a sequence.|_Finally, emissions in the UK fell below 9 tonnes._|
+|**At the beginning**|Refers to the **starting point** of a process or timeline.|_At the beginning of the period, Sweden had the second highest rate._|
+|**Initially**|Describes the **initial stage** of a trend or process that later changes.|_Initially, emissions in Portugal were the lowest._|
+|**By [year]**|Indicates a specific time by which something has occurred.|_By 2007, Sweden’s CO₂ output had dropped significantly._|
+
+## Summary / Generalization
+
+| **Linking Word / Phrase** | **Meaning / Use**                                                               | **Example Sentence**                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Overall**               | Used in overviews or conclusions to express a **general trend or big picture**. | _Overall, CO₂ emissions in the UK declined, while Italy’s increased steadily._        |
+| **In general**            | States a **broad trend or common pattern**, possibly with some exceptions.      | _In general, men were less active than women across most age groups._                 |
+| **In summary**            | Used to **sum up key points** at the end of a paragraph or report.              | _In summary, the data reveals contrasting trends among the four countries._           |
+| **To sum up**             | Informal equivalent of “in summary,” often used to **restate main findings**.   | _To sum up, Sweden’s emissions halved, while Portugal’s tripled over 40 years._       |
+| **On the whole**          | Indicates a generalisation, **including possible exceptions**.                  | _On the whole, female participation in physical activity remained consistently high._ |
+| **By and large**          | Less common, semi-formal way to **express a generalisation or overview**.       | _By and large, developed countries saw declining emission levels._                    |
+| **Altogether**            | Used to **sum up or conclude**, especially with figures or data totals.         | _Altogether, the trends suggest a move toward cleaner energy use._                    |
+| **All in all**            | Informal phrase used to **summarize or conclude**overall patterns or results.   | _All in all, female activity levels were consistently higher than males’._            |
+## Condition / Exception
+
+| **Linking Word / Phrase** | **Meaning / Use**                                                                            | **Example Sentence**                                                                |
+| ------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Unless**                | Introduces a **condition** that would change the result. Similar to “if… not”.               | _Emissions will not decrease **unless** new policies are introduced._               |
+| **Even though**           | Used to show a **strong contrast** or **unexpected result**. Stronger than “although”.       | _Even though Sweden had high emissions in 1967, they declined significantly later._ |
+| **Although**              | Expresses **contrast** or **exception** within the same sentence.                            | _Although Italy started lower, its emissions eventually surpassed Sweden's._        |
+| **While**                 | Can express **contrast** or simultaneous events; sometimes implies a soft exception.         | _While Portugal’s figures increased, the UK’s remained stable._                     |
+| **In spite of**           | Introduces **something surprising** or **contrasting**with the main clause.                  | _In spite of increased investment, emissions continued to rise._                    |
+| **Despite**               | Similar to “in spite of”; introduces **contradictory**information.                           | _Despite stricter laws, CO₂ levels remained high in Italy._                         |
+| **Except (for)**          | Used to mention an **exception**.                                                            | _All countries showed growth **except for** the UK._                                |
+| **Apart from**            | Similar to “except for”; can mean **in addition to** or **excluding**, depending on context. | _Apart from Sweden, every country’s emissions rose._                                |
+## Emphasis
+
+|**Linking Word / Phrase**|**Meaning / Use**|**Example Sentence**|
+|---|---|---|
+|**Notably**|Draws attention to a particularly **important or remarkable** detail.|_Notably, Sweden’s emissions were nearly halved over the period._|
+|**In particular**|Emphasizes a **specific case** or example within a larger group.|_In particular, Italy saw the sharpest increase after 1980._|
+|**Especially**|Highlights something **more significant** or **more relevant** than others.|_Portugal’s rise was especially notable in the final decade._|
+|**Significantly**|Indicates a **marked or meaningful change or trend**.|_Significantly, all countries except Sweden showed upward trends._|
+|**Indeed**|Adds **strong confirmation** or emphasis to a statement.|_The increase was substantial — indeed, it nearly doubled in 20 years._|
+|**Clearly**|Emphasizes that something is **obvious or evident**.|_Clearly, the UK had the highest CO₂ output at the start of the period._|
+|**Undoubtedly**|Expresses **strong certainty or emphasis**.|_Undoubtedly, the most consistent growth occurred in Portugal._|
+|**It is worth noting that**|Used to **draw special attention** to a noteworthy point.|_It is worth noting that Portugal began with the lowest emission levels._|
+
+## Illustration / Example
+
+|**Linking Word / Phrase**|**Meaning / Use**|**Example Sentence**|
+|---|---|---|
+|**For example**|Introduces a **specific instance** to illustrate a general point.|_Several countries reduced their emissions. For example, Sweden’s rate halved._|
+|**For instance**|Similar to “for example”, used to **give a concrete case**.|_Some figures showed a dramatic rise. For instance, Italy's doubled by 2000._|
+|**Such as**|Used within a sentence to **list examples**.|_Countries such as Italy and Portugal showed upward trends._|
+|**Namely**|Used to **specify exactly** what you just mentioned.|_Two countries, namely the UK and Sweden, experienced a decline._|
+|**To illustrate**|Emphasizes that an example will be given to **clarify or support an idea**.|_To illustrate this trend, Portugal’s data shows a consistent increase._|
+|**Including**|Adds an **example or list** as part of a larger group.|_Several nations, including Italy and Sweden, made notable changes._|
+|**In particular**|Focuses on a **specific detail or example** that is especially relevant.|_In particular, the UK’s emissions fell by over 4 tonnes._|
+
+# Quantifiers and Data Language
+
+## Specific Numbers and Units
+
+Used when the chart provides exact figures/
+
+|**Expression**|**Example**|
+|---|---|
+|**a total of**|A total of **65%** of people preferred…|
+|**just under**|Just under **3 million tonnes** were…|
+|**approximately**|Approximately **40%** chose this option.|
+|**exactly**|Exactly **300 students** participated.|
+|**around**|Around **7.5 tonnes** of CO₂ were…|
+|**roughly**|Roughly **half** of the respondents…|
+|**nearly**|Nearly **two-thirds** supported the idea.|
+
+## Fractions and Proportions
+
+Useful for describing parts of a whole.
+
+|**Expression**|**Example**|
+|---|---|
+|**a quarter**|A quarter of the emissions came from…|
+|**one-third / a third**|One-third of people were unemployed.|
+|**half**|Half the students preferred reading.|
+|**three-quarters**|Three-quarters of adults owned smartphones.|
+|**the majority**|The majority of respondents agreed.|
+|**a minority**|A minority of cases were successful.|
+
+## Percentages
+
+Essential in Task 1 when discussing data with percentages.
+
+|**Expression**|**Example**|
+|---|---|
+|**X percent / X%**|45% of males were physically active.|
+|**a high/low percentage**|A high percentage of users…|
+|**the percentage of…**|The percentage of CO₂ emissions dropped.|
+
+## Change over Time
+
+Used to describe trends in dynamic graphs
+
+### Verbs for Upward Trends
+
+Use these to describe increases.
+
+| **Expression**     | **Meaning / Use**                 | **Example Sentence**                                 |
+| ------------------ | --------------------------------- | ---------------------------------------------------- |
+| **rose to**        | Reached a higher point            | The figure **rose to** 60% in 2007.                  |
+| **increased**      | Became greater in number/amount   | The rate **increased** by 15% over the period.       |
+| **grew / grew to** | Expanded or became larger         | The population **grew to** nearly 5 million.         |
+| **climbed**        | Suggests a steady or gradual rise | CO₂ emissions **climbed** steadily during the 1980s. |
+| **surged**         | A sudden or sharp increase        | Profits **surged** in the final quarter.             |
+| **soared**         | A very fast or dramatic rise      | Mobile phone usage **soared** after 2010.            |
+
+📌 **Tip**: Pair with adverbs like "dramatically", "significantly", "gradually" for nuance.
+
+### Verbs for Downward Trends
+
+Use these for describe decreases.
+
+|**Expression**|**Meaning / Use**|**Example Sentence**|
+|---|---|---|
+|**fell / fell to**|Became lower|Emissions **fell to** just 4 tonnes in 2007.|
+|**declined**|Formal way of saying "fell"|The percentage **declined** by 10% in 1995.|
+|**dropped by**|Indicates the amount decreased|The number **dropped by** 20 units between 1990 and 2000.|
+|**decreased**|Neutral term for reduction|Participation **decreased** gradually after 2005.|
+|**plunged**|A very sudden or dramatic fall|Sales **plunged** in 2008 during the crisis.|
+|**plummeted**|An even stronger version of “plunged”|Oil prices **plummeted** in 2014.|
+📌 **Note**: Use “to” for the **end value**, and “by” for the **amount of change**.
+
+### Describing Stability
+
+In **IELTS Academic Writing Task 1**, when a data trend **shows no significant change**, we describe it as being **stable**, **unchanged**, or **constant**. This is especially important when analyzing **line graphs, bar charts, or tables** where numbers do not move up or down much over time.
+
+|**Expression**|**Meaning**|**Use in IELTS**|**Example Sentence**|
+|---|---|---|---|
+|**remained stable**|No noticeable increase or decrease|Use when data points change very little over time|_The population of the city **remained stable** at around 1 million from 2000 to 2010._|
+|**stayed constant**|Synonym of "remained stable"|Use interchangeably to avoid repetition|_The unemployment rate **stayed constant** at 5% throughout the decade._|
+|**levelled off**|Data rises or falls, then flattens|Use this after a period of growth or decline|_After a sharp increase in sales in 2012, the figures **levelled off** by 2014._|
+|**stagnated**|No development or growth (more formal)|Use in contexts like economy, production, investment|_Industrial output **stagnated** between 1995 and 2000, showing no signs of growth._|
+
+#### Example Sentences (IELTS Style)
+
+1. Line Graph:
+
+- The number of visitors to the museum remained stable between 2015 and 2018.
+
+- After a sharp rise in 2005, the figures levelled off in the following years.
+
+2. Bar Chart:
+
+- The percentage of energy consumption from solar power stayed constant at around 5% throughout the decade.
+
+3. Table:
+
+- The production of steel stagnated at 2 million tonnes from 1990 to 1995.
+
+#### How to Structure Our Sentences
+
+When describing __stability__, it's important to:
+
+- __Include time reference__: "from ... to ...", "over the period", "in the following years"
+- __Be precise with the data__: mention actual numbers or percentages if possible
+
+Sentence Structure Example:
+
+"From 2000 to 2010, the unemployment rate __remained stable__ at approximately 6%, showing no significant fluctuations".
+
+#### Synonyms and Alternatives
+| **Common Phrase**   | **High-Level Alternatives**                                                     | **Usage Notes & IELTS Context**                                                                                                                  | **Example Sentence**                                                                                   |
+| ------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Remained stable** | - Stayed steady - Maintained a consistent level - Showed little to no variation | Use when a value **does not change significantly** over a specific period. Especially useful with line graphs and tables.                        | _The birth rate **maintained a consistent level** at around 14 per 1000 throughout the decade._        |
+| **Stayed constant** | - Was unchanged - Exhibited stability - Remained consistent                     | Use when the **same number or percentage** is repeated in the chart. Slightly more formal in tone than "remained stable."                        | _The market share of Company A **exhibited stability**, staying at exactly 25% between 2010 and 2015._ |
+| **Levelled off**    | - Flattened out - Became steady - Stabilised - Reached a plateau                | Use **after** a clear upward or downward trend. It signals that growth or decline has **stopped** and the figures **flattened**.                 | _Following a sharp increase, oil prices **flattened out** in the second half of the year._             |
+| **Stagnated**       | - Plateaued (informal) - Showed no progress - Experienced no growth             | More formal and often **negative** in tone; use in contexts such as **economy, production, industrial output** where lack of growth is relevant. | _The construction sector **stagnated** from 2008 to 2012 due to the economic downturn._                |
+#### When to Use Stability Phrases in IELTS
+
+Use stability phrases when:
+
+- A line on a graph is flat over a period
+
+- A bar shows no change over two or more years
+
+- A table shows the same number repeated for a category
+
+- A previous trend ends and becomes stable
+
+#### Sample High-Band Description
+
+"Between 1995 and 2000, the number of overseas students enrolling in Australian universities __remained relatively stable__, fluctuating only slightly around 20,000. However, this was in sharp contrast to the domestic enrolment figures, which __levelled off__ after peaking in 1997."
+
+### Describing Fluctuations
+
+Use these for up-and-down movements.
+
+|**Expression**|**Meaning / Use**|**Example Sentence**|
+|---|---|---|
+|**Fluctuated**|Changed up and down in a noticeable way|_The price of gas **fluctuated** between $1.20 and $1.60 per litre from 2000 to 2010._|
+|**Varied**|Changed in a softer or more irregular way|_Temperatures **varied** slightly throughout the month, between 19°C and 23°C._|
+|**Was erratic**|Changed unpredictably, with no clear pattern|_The share price **was erratic**, spiking one week and dropping the next._|
+|**Showed volatility**|Formal term for unstable, irregular movement|_The housing market **showed considerable volatility** during the recession._|
+#### Useful synonyms and Alternatives
+
+|**Common Phrase**|**High-Band Alternatives**|**Contextual Notes & Proper Usage**|
+|---|---|---|
+|**Fluctuated**|- Oscillated - Shifted irregularly - Moved up and down|Use “fluctuated” as a **neutral, standard** term. ✅ _Oscillated_ = Use in **formal or scientific contexts**, e.g., temperatures, frequencies. ⚠ _Shifted irregularly_ works when changes are **frequent but not extreme**.|
+|**Varied**|- Displayed variation - Was inconsistent - Showed irregularity|Use “varied” when changes are **mild or scattered**. ✅ _Displayed variation_ = Good for formal reports, especially **tables or comparisons**. ⚠ _Was inconsistent_ implies **lack of reliability or pattern** – useful for performance or quality descriptions.|
+|**Was erratic**|- Lacked a clear pattern - Changed unpredictably - Was unstable|Use when data **changes randomly** with **no clear upward/downward trend**. ✅ Useful for **financial trends**, **demand**, or **weather** patterns. ⚠ Avoid in contexts where data is relatively steady.|
+|**Showed volatility**|- Was highly unstable - Experienced frequent swings - Was turbulent|Use in **formal, economic, or political data contexts**. ✅ Especially effective in **task 1 reports** related to prices, stock markets, or exports. ⚠ Use “volatility” to suggest **intensity + unpredictability**, not mild fluctuation.|
+
+1. Let the Graph or Data Shape Your Language
+
+Don't just swap "fluctuated" for "oscillated" because it sounds fancier—look at the pattern:
+
+- If the graph shows regular, wave-like movement (e.g., every year it rises and falls):
+
+👉 Use oscillated
+
+“Temperatures oscillated between 10°C and 20°C during the spring months.”
+
+- If the movement is jagged, random, unpredictable:
+
+👉 Use was erratic
+
+“Demand for the product was erratic, peaking unexpectedly in June and plummeting in July.”
+
+- If values change slightly with no dramatic jumps:
+
+👉 Use varied slightly or displayed mild variation
+
+“Water consumption displayed slight variation throughout the year.”
+
+2. Adapt to Formality & Tone
+
+| Informal/Descriptive | More Formal Equivalent |
+| -------------------- | ---------------------- |
+| Moved up and down    | Fluctuated             |
+| Was unpredictable    | Was erratic            |
+| Went crazy           | Showed volatility      |
+| Changed a bit        | Varied slightly        |
+
+#### How to Describe Fluctuations Accurately
+
+##### Use Specific Time References
+
+Always state __when__ the fluctuation occured:
+
+- _From 2005 to 2010, oil prices __fluctuated sharply__, ranging from $40 to $100 per barrel_.
+
+##### Quantify the Range
+
+Use numbers or percentages to explain __how much__ the change occurred:
+
+- _Sales __varied__ between 10,000 and 18,000 units during the first quarter._
+
+##### Add Adverbs or Adjectives for Precision
+
+- sharply fluctuated
+
+- slightly varied
+
+- highly erratic
+
+- extremely volatile
+
+Examples:
+
+	The number of users fluctuated sharply in the second half of the year.
+
+	The pattern was extremely erratic, especially between April and July.
+
+##### Advanced Sentence Structures
+
+To achieve high cohesion and grammar scores, combine fluctuation vocabulary with complex structures:
+
+✔ Cause and Effect:
+
+Due to changes in government policy, the market showed volatility throughout the fiscal year.
+
+✔ Contrast:
+
+While exports rose steadily, import figures remained erratic over the same period.
+
+✔ Sequencing:
+
+Initially, the number of patients varied slightly, but later became highly unstable.
+
+##### Sample
+
+"_Between 2000 and 2015, the average price of crude oil __fluctuated significantly__ ranging from $25 to over $100 per barrel. The data reveals that while prices were relatively stable in the early years, they __became increasingly volatile__ after 2007, likely due to geopolitical tensions and shifts in global demand. Notably, in 2008, oil prices __rose steeply__, only to __plummet__ the following year, highlighting a period of __marked instability__. _"
+
+### Describing Peaks and Troughs
+
+These expressions are used to **describe the highest or lowest point** in a trend. You’ll often see them in charts that show **fluctuating data** over time.
+
+#### PEAKS - Describing the Highest Point
+
+|**Expression**|**Meaning / Use**|**Example Sentence**|**Notes**|
+|---|---|---|---|
+|**peaked at**|Describes the **highest value** reached in a trend. Often followed by a number or year.|_The CO₂ output **peaked at** 8 tonnes in 1990._|Use with upward trends that reach a maximum before falling again.|
+|**reached a high of**|More descriptive and formal than “peaked at”. Often used to give a **specific value**.|_Mobile subscriptions **reached a high of** 10 million in 2015._|Slightly more narrative than “peaked at”; good for variety.|
+|**hit a peak of**|Slightly informal alternative to “peaked at”. Shows the **climax point** in the data.|_Sales **hit a peak of** $12 billion in Q2 2022._|Common in speech and informal writing, but can be used for IELTS too.|
+|**climbed to a peak of**|Emphasises a steady increase **before** the highest point is reached.|_Figures **climbed to a peak of**75% in 2001._|Useful if you are describing a **process** that leads to a peak.|
+
+### TROUGHS - Describing the Lowest Point
+
+|**Expression**|**Meaning / Use**|**Example Sentence**|**Notes**|
+|---|---|---|---|
+|**bottomed out**|Indicates that the trend **hit the lowest point and started to recover**|_The market **bottomed out** in 2009 before starting to recover._|Use this only when a **rise follows** the low point.|
+|**hit a low of**|Means the data reached its **minimum value** during the period|_Unemployment **hit a low of** 2% in 1983._|Slightly informal but very clear and useful.|
+|**fell to a low of**|Emphasises the **downward movement**leading to the lowest point|_Sales **fell to a low of** 3 million units in 1999._|Good for combining movement and final value.|
+|**reached a low of**|Similar to “hit a low of,” but more neutral/formal|_The figures **reached a low of** just 1.2 tonnes in 2004._|Common in reports and formal descriptions.|
+
+#### Grammar Structure
+
+|**Pattern**|**Example**|
+|---|---|
+|Subject + verb + **at** + value|_Sales **peaked at** 12 million in 1995._|
+|Subject + verb + **to a high/low of** + value|_The figure **climbed to a high of** 75%. / It **fell to a low of** 3%.|
+|Subject + verb (past simple)|_Profits **bottomed out** in 2010._|
+
+Instead of repeating:
+
+"_The figure peaked in 1990. It peaked again in 2005."
+
+Try this:
+
+"_The figure __peaked at__ 10 tonnes in 1990 and later __reached a high of__ 12 tonnes in 2005_".
+
+
+
+## Comparisons
+
+Used to highlight similarities and differences
+
+|**Expression**|**Example**|
+|---|---|
+|**higher than**|Female rates were higher than male rates.|
+|**the same as**|Italy’s rate was the same as Sweden’s.|
+|**similar to**|Portugal had figures similar to Italy’s.|
+|**lower than**|Sweden had lower emissions than the UK.|
+
+

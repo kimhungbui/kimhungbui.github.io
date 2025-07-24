@@ -276,3 +276,57 @@ With Fairtrade bananas, Switzerland _was again_ the leader in 1999 and dominated
 ![](Pasted%20image%2020250713112913.png)
 
 ![](Pasted%20image%2020250713112945.png)
+
+Write:
+
+
+- Step 1: Noticing details
+- Step 2: Identifying key information
+- Step 3: Grouping information
+
+1
+
+What: fish and meat consumption
+When: 1979 - 2004, 25-year period (step 5 year)
+Where: an European country
+How: grams per person / week (each week, )
+Categories: 4 type: fish, lamb, beef, chicken
+
+2
+chicken: 
+from below 150 (3) to about 250 (1) +++
+overcome beef in 1989
+overcome lamb right after 1979
+
+beef:
+from abow 210 (1) to ~ 120 (2) ---
+fluctuate periods 1982 - 1986, and 1994
+
+lamb:
+from 150 (2) to ~ 60 (3) --
+2 fluctuate time: ~ 1987 and 1998
+pattern like beef
+
+fish:
+above 50 (4) to below 50 (4) -
+relative stable decrease
+
+
+3
+
+p1: beef, lamb
+p2: chicken
+p3: fish
+
+
+Write:
+
+The line graph shows the consumption of fish and three types of meat by each person in a European country over a 25-year period from 1979 to 2004.
+
+Overall, it is clear that the minority of food consumption came from fish throughout the period, and the general trend was to move away from beef and lamb as chicken became the dominant meat source of this category.
+
+In the first decade, beef consumption was the highest in the food categories listed. Despite reaching a low of about 150 grams, it then recovered to reach a high of about 230 grams per week. However, after 1988, beef consumption fell almost continuously, and by 2004 had almost 120 grams. Lamb almost exactly mirrored the fluctuation pattern of beef. Falling from the second-highest number at 150 grams in 1979 to approximately 60 grams per week by the end of the period.
+
+In contrast, chicken began the period at below 150 grams in 1979, to took the lead from around 1989 onwards. Especially, the rise in chicken corresponds to the decline of beef and lamb, and by 2002, it hit a peak of about 260 grams before slightly dropping to 250 grams in 2004.
+
+Fish was consistently eaten the least, beginning at around 60 grams per week, then dropping to below 50 grams. While it was the lowest, it remained relatively stable for the majority of the period.
