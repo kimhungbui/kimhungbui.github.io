@@ -86,14 +86,6 @@
     ]
   },
   {
-    "listing": "/artificial-intelligent.html",
-    "items": [
-      "/artificial-intelligent/deep-learning-interview/index.html",
-      "/artificial-intelligent/finetunning/index.html",
-      "/artificial-intelligent/convolution/index.html"
-    ]
-  },
-  {
     "listing": "/posts.html",
     "items": [
       "/posts/extreme-early-retirement/index.html",
@@ -101,6 +93,14 @@
       "/posts/fiction/index.html",
       "/posts/pkm-quarto-books/index.html",
       "/posts/nextcloud-install/index.html"
+    ]
+  },
+  {
+    "listing": "/artificial-intelligent.html",
+    "items": [
+      "/artificial-intelligent/deep-learning-interview/index.html",
+      "/artificial-intelligent/finetunning/index.html",
+      "/artificial-intelligent/convolution/index.html"
     ]
   }
 ]
