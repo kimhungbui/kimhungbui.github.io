@@ -1,0 +1,3069 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hung">
+<meta name="dcterms.date" content="2025-07-24">
+<meta name="description" content="Note down some structures for easier to write">
+
+<title>Grammar for Writing – Kim Hung’s ThinkStack</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-R5TB4V4ZYS', { 'anonymize_ip': true});
+</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Kim Hung’s ThinkStack</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mathematics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Mathematics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
+        <li>
+    <a class="dropdown-item" href="../../math/convex-optimization/">
+ <span class="dropdown-text">Convex Optimization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../math/probability/">
+ <span class="dropdown-text">Probability</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../math/statistics/">
+ <span class="dropdown-text">Statistics</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
+<span class="menu-text">AI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../programming.html"> 
+<span class="menu-text">Programming</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../english.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overviewtrend-statements" id="toc-overviewtrend-statements" class="nav-link active" data-scroll-target="#overviewtrend-statements"><span class="header-section-number">1</span> Overview/Trend Statements</a></li>
+  <li><a href="#comparative-structures" id="toc-comparative-structures" class="nav-link" data-scroll-target="#comparative-structures"><span class="header-section-number">2</span> Comparative Structures</a>
+  <ul class="collapse">
+  <li><a href="#common-comparative-grammar-structures" id="toc-common-comparative-grammar-structures" class="nav-link" data-scroll-target="#common-comparative-grammar-structures"><span class="header-section-number">2.1</span> Common Comparative Grammar Structures</a></li>
+  </ul></li>
+  <li><a href="#time-phrases-and-tenses" id="toc-time-phrases-and-tenses" class="nav-link" data-scroll-target="#time-phrases-and-tenses"><span class="header-section-number">3</span> Time Phrases and Tenses</a></li>
+  <li><a href="#passive-voice-formal-style" id="toc-passive-voice-formal-style" class="nav-link" data-scroll-target="#passive-voice-formal-style"><span class="header-section-number">4</span> Passive Voice &amp; Formal Style</a></li>
+  <li><a href="#complex-sentences-in-ielts" id="toc-complex-sentences-in-ielts" class="nav-link" data-scroll-target="#complex-sentences-in-ielts"><span class="header-section-number">5</span> Complex Sentences in IELTS</a>
+  <ul class="collapse">
+  <li><a href="#cause-and-effect-sentences" id="toc-cause-and-effect-sentences" class="nav-link" data-scroll-target="#cause-and-effect-sentences"><span class="header-section-number">5.1</span> Cause and Effect Sentences</a>
+  <ul class="collapse">
+  <li><a href="#sentence-structure-patterns" id="toc-sentence-structure-patterns" class="nav-link" data-scroll-target="#sentence-structure-patterns"><span class="header-section-number">5.1.1</span> Sentence Structure Patterns</a></li>
+  <li><a href="#examples-in-ielts-writing" id="toc-examples-in-ielts-writing" class="nav-link" data-scroll-target="#examples-in-ielts-writing"><span class="header-section-number">5.1.2</span> Examples in IELTS Writing</a></li>
+  <li><a href="#sentence-structure-patterns-1" id="toc-sentence-structure-patterns-1" class="nav-link" data-scroll-target="#sentence-structure-patterns-1"><span class="header-section-number">5.1.3</span> Sentence Structure Patterns</a></li>
+  <li><a href="#examples-in-ielts-writing-1" id="toc-examples-in-ielts-writing-1" class="nav-link" data-scroll-target="#examples-in-ielts-writing-1"><span class="header-section-number">5.1.4</span> Examples in IELTS Writing</a></li>
+  <li><a href="#tips-for-using-contrastconcession-sentences-effectively" id="toc-tips-for-using-contrastconcession-sentences-effectively" class="nav-link" data-scroll-target="#tips-for-using-contrastconcession-sentences-effectively"><span class="header-section-number">5.1.5</span> Tips for Using Contrast/Concession Sentences Effectively</a></li>
+  <li><a href="#ielts-sample-sentences" id="toc-ielts-sample-sentences" class="nav-link" data-scroll-target="#ielts-sample-sentences"><span class="header-section-number">5.1.6</span> IELTS Sample Sentences</a></li>
+  <li><a href="#summary-when-to-use-contrast-concession" id="toc-summary-when-to-use-contrast-concession" class="nav-link" data-scroll-target="#summary-when-to-use-contrast-concession"><span class="header-section-number">5.1.7</span> Summary: When to use Contrast/ Concession</a></li>
+  </ul></li>
+  <li><a href="#conditional-sentences" id="toc-conditional-sentences" class="nav-link" data-scroll-target="#conditional-sentences"><span class="header-section-number">5.2</span> Conditional Sentences</a>
+  <ul class="collapse">
+  <li><a href="#types-of-conditional-sentences-ielts-appropriate" id="toc-types-of-conditional-sentences-ielts-appropriate" class="nav-link" data-scroll-target="#types-of-conditional-sentences-ielts-appropriate"><span class="header-section-number">5.2.1</span> Types of Conditional Sentences (IELTS-appropriate)</a></li>
+  <li><a href="#conditional-use-in-ielts-writing-task-2-essay-types" id="toc-conditional-use-in-ielts-writing-task-2-essay-types" class="nav-link" data-scroll-target="#conditional-use-in-ielts-writing-task-2-essay-types"><span class="header-section-number">5.2.2</span> Conditional Use in IELTS Writing Task 2 Essay Types</a></li>
+  <li><a href="#tips-for-writing-higher-band-conditionals" id="toc-tips-for-writing-higher-band-conditionals" class="nav-link" data-scroll-target="#tips-for-writing-higher-band-conditionals"><span class="header-section-number">5.2.3</span> Tips for Writing Higher band Conditionals</a></li>
+  <li><a href="#avoid-mixing-condition-types" id="toc-avoid-mixing-condition-types" class="nav-link" data-scroll-target="#avoid-mixing-condition-types"><span class="header-section-number">5.2.4</span> Avoid mixing condition types</a></li>
+  <li><a href="#sample-sentences" id="toc-sample-sentences" class="nav-link" data-scroll-target="#sample-sentences"><span class="header-section-number">5.2.5</span> Sample Sentences</a></li>
+  <li><a href="#sentence-starters-for-ielts-conditionals" id="toc-sentence-starters-for-ielts-conditionals" class="nav-link" data-scroll-target="#sentence-starters-for-ielts-conditionals"><span class="header-section-number">5.2.6</span> Sentence Starters for IELTS Conditionals</a></li>
+  <li><a href="#why-conditionals-are-not-used-in-task-1" id="toc-why-conditionals-are-not-used-in-task-1" class="nav-link" data-scroll-target="#why-conditionals-are-not-used-in-task-1"><span class="header-section-number">5.2.7</span> Why Conditionals Are Not Used in Task 1</a></li>
+  <li><a href="#summary-when-and-how-to-use-conditionals" id="toc-summary-when-and-how-to-use-conditionals" class="nav-link" data-scroll-target="#summary-when-and-how-to-use-conditionals"><span class="header-section-number">5.2.8</span> Summary: When and How to use Conditionals</a></li>
+  </ul></li>
+  <li><a href="#relative-clause-sentences" id="toc-relative-clause-sentences" class="nav-link" data-scroll-target="#relative-clause-sentences"><span class="header-section-number">5.3</span> Relative Clause Sentences</a>
+  <ul class="collapse">
+  <li><a href="#why-relative-clauses-matter-in-ielts" id="toc-why-relative-clauses-matter-in-ielts" class="nav-link" data-scroll-target="#why-relative-clauses-matter-in-ielts"><span class="header-section-number">5.3.1</span> Why Relative Clauses Matter in IELTS</a></li>
+  <li><a href="#sentence-structure-patterns-2" id="toc-sentence-structure-patterns-2" class="nav-link" data-scroll-target="#sentence-structure-patterns-2"><span class="header-section-number">5.3.2</span> Sentence Structure Patterns</a></li>
+  <li><a href="#examples-in-ielts-writing-2" id="toc-examples-in-ielts-writing-2" class="nav-link" data-scroll-target="#examples-in-ielts-writing-2"><span class="header-section-number">5.3.3</span> Examples in IELTS Writing</a></li>
+  <li><a href="#tips-for-using-relative-clauses-correctly" id="toc-tips-for-using-relative-clauses-correctly" class="nav-link" data-scroll-target="#tips-for-using-relative-clauses-correctly"><span class="header-section-number">5.3.4</span> Tips for Using Relative Clauses Correctly</a></li>
+  <li><a href="#sample-sentences-1" id="toc-sample-sentences-1" class="nav-link" data-scroll-target="#sample-sentences-1"><span class="header-section-number">5.3.5</span> Sample Sentences</a></li>
+  <li><a href="#common-errors-to-avoid" id="toc-common-errors-to-avoid" class="nav-link" data-scroll-target="#common-errors-to-avoid"><span class="header-section-number">5.3.6</span> Common Errors to Avoid</a></li>
+  <li><a href="#summary-relative-clauses-in-ielts" id="toc-summary-relative-clauses-in-ielts" class="nav-link" data-scroll-target="#summary-relative-clauses-in-ielts"><span class="header-section-number">5.3.7</span> Summary: Relative Clauses in IELTS</a></li>
+  </ul></li>
+  <li><a href="#time-based-sentences" id="toc-time-based-sentences" class="nav-link" data-scroll-target="#time-based-sentences"><span class="header-section-number">5.4</span> Time-based Sentences</a>
+  <ul class="collapse">
+  <li><a href="#sentence-structure-patterns-3" id="toc-sentence-structure-patterns-3" class="nav-link" data-scroll-target="#sentence-structure-patterns-3"><span class="header-section-number">5.4.1</span> Sentence Structure Patterns</a></li>
+  <li><a href="#examples-in-ielts-writing-3" id="toc-examples-in-ielts-writing-3" class="nav-link" data-scroll-target="#examples-in-ielts-writing-3"><span class="header-section-number">5.4.2</span> Examples in IELTS Writing</a></li>
+  <li><a href="#time-expressions-to-use-in-ielts" id="toc-time-expressions-to-use-in-ielts" class="nav-link" data-scroll-target="#time-expressions-to-use-in-ielts"><span class="header-section-number">5.4.3</span> Time Expressions to Use in IELTS</a></li>
+  <li><a href="#tense-choice-critical-for-time-clauses" id="toc-tense-choice-critical-for-time-clauses" class="nav-link" data-scroll-target="#tense-choice-critical-for-time-clauses"><span class="header-section-number">5.4.4</span> Tense Choice: Critical for Time Clauses</a></li>
+  <li><a href="#samples-sentences" id="toc-samples-sentences" class="nav-link" data-scroll-target="#samples-sentences"><span class="header-section-number">5.4.5</span> Samples Sentences</a></li>
+  <li><a href="#tips-for-using-time-clauses-effectively" id="toc-tips-for-using-time-clauses-effectively" class="nav-link" data-scroll-target="#tips-for-using-time-clauses-effectively"><span class="header-section-number">5.4.6</span> Tips for Using Time Clauses Effectively</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">5.4.7</span> Summary</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#linking-devices-discourse-markers" id="toc-linking-devices-discourse-markers" class="nav-link" data-scroll-target="#linking-devices-discourse-markers"><span class="header-section-number">6</span> Linking Devices / Discourse Markers</a>
+  <ul class="collapse">
+  <li><a href="#contrast-comparison-linking-devices" id="toc-contrast-comparison-linking-devices" class="nav-link" data-scroll-target="#contrast-comparison-linking-devices"><span class="header-section-number">6.1</span> Contrast &amp; Comparison Linking Devices</a></li>
+  <li><a href="#cause-effect-linking-devices" id="toc-cause-effect-linking-devices" class="nav-link" data-scroll-target="#cause-effect-linking-devices"><span class="header-section-number">6.2</span> Cause &amp; Effect Linking Devices</a></li>
+  <li><a href="#addition-emphasis-linking-devices" id="toc-addition-emphasis-linking-devices" class="nav-link" data-scroll-target="#addition-emphasis-linking-devices"><span class="header-section-number">6.3</span> Addition / Emphasis Linking Devices</a></li>
+  <li><a href="#time-sequence-linking-devices" id="toc-time-sequence-linking-devices" class="nav-link" data-scroll-target="#time-sequence-linking-devices"><span class="header-section-number">6.4</span> Time / Sequence Linking Devices</a></li>
+  <li><a href="#summary-generalization" id="toc-summary-generalization" class="nav-link" data-scroll-target="#summary-generalization"><span class="header-section-number">6.5</span> Summary / Generalization</a></li>
+  <li><a href="#condition-exception" id="toc-condition-exception" class="nav-link" data-scroll-target="#condition-exception"><span class="header-section-number">6.6</span> Condition / Exception</a></li>
+  <li><a href="#emphasis" id="toc-emphasis" class="nav-link" data-scroll-target="#emphasis"><span class="header-section-number">6.7</span> Emphasis</a></li>
+  <li><a href="#illustration-example" id="toc-illustration-example" class="nav-link" data-scroll-target="#illustration-example"><span class="header-section-number">6.8</span> Illustration / Example</a></li>
+  </ul></li>
+  <li><a href="#quantifiers-and-data-language" id="toc-quantifiers-and-data-language" class="nav-link" data-scroll-target="#quantifiers-and-data-language"><span class="header-section-number">7</span> Quantifiers and Data Language</a>
+  <ul class="collapse">
+  <li><a href="#specific-numbers-and-units" id="toc-specific-numbers-and-units" class="nav-link" data-scroll-target="#specific-numbers-and-units"><span class="header-section-number">7.1</span> Specific Numbers and Units</a></li>
+  <li><a href="#fractions-and-proportions" id="toc-fractions-and-proportions" class="nav-link" data-scroll-target="#fractions-and-proportions"><span class="header-section-number">7.2</span> Fractions and Proportions</a></li>
+  <li><a href="#percentages" id="toc-percentages" class="nav-link" data-scroll-target="#percentages"><span class="header-section-number">7.3</span> Percentages</a></li>
+  <li><a href="#change-over-time" id="toc-change-over-time" class="nav-link" data-scroll-target="#change-over-time"><span class="header-section-number">7.4</span> Change over Time</a>
+  <ul class="collapse">
+  <li><a href="#verbs-for-upward-trends" id="toc-verbs-for-upward-trends" class="nav-link" data-scroll-target="#verbs-for-upward-trends"><span class="header-section-number">7.4.1</span> Verbs for Upward Trends</a></li>
+  <li><a href="#verbs-for-downward-trends" id="toc-verbs-for-downward-trends" class="nav-link" data-scroll-target="#verbs-for-downward-trends"><span class="header-section-number">7.4.2</span> Verbs for Downward Trends</a></li>
+  <li><a href="#describing-stability" id="toc-describing-stability" class="nav-link" data-scroll-target="#describing-stability"><span class="header-section-number">7.4.3</span> Describing Stability</a></li>
+  <li><a href="#describing-fluctuations" id="toc-describing-fluctuations" class="nav-link" data-scroll-target="#describing-fluctuations"><span class="header-section-number">7.4.4</span> Describing Fluctuations</a></li>
+  <li><a href="#describing-peaks-and-troughs" id="toc-describing-peaks-and-troughs" class="nav-link" data-scroll-target="#describing-peaks-and-troughs"><span class="header-section-number">7.4.5</span> Describing Peaks and Troughs</a></li>
+  <li><a href="#troughs---describing-the-lowest-point" id="toc-troughs---describing-the-lowest-point" class="nav-link" data-scroll-target="#troughs---describing-the-lowest-point"><span class="header-section-number">7.4.6</span> TROUGHS - Describing the Lowest Point</a></li>
+  </ul></li>
+  <li><a href="#comparisons" id="toc-comparisons" class="nav-link" data-scroll-target="#comparisons"><span class="header-section-number">7.5</span> Comparisons</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Grammar for Writing</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">english</div>
+    <div class="quarto-category">writing</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Note down some structures for easier to write
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://kimhungbui.github.io">Hung</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            ChatGPT
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 24, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overviewtrend-statements" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Overview/Trend Statements</h1>
+<p>In <strong>IELTS Academic Writing Task 1</strong>, the <strong>overview paragraph</strong> is a <strong>summary of the most noticeable features</strong> or <strong>overall trends</strong> in the visual data (chart, graph, table, map, process, etc.).</p>
+<p>It usually comes after the introduction and should:</p>
+<ul>
+<li><p>Highlight general patterns</p></li>
+<li><p>Avoid specific data (no numbers!)</p></li>
+<li><p>Use academic and formal language</p></li>
+</ul>
+<p>Focus on what stands out or changes clearly</p>
+</section>
+<section id="comparative-structures" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Comparative Structures</h1>
+<p>Used to:</p>
+<ul>
+<li><p>Compare countries, categories, years, or items</p></li>
+<li><p>Highlight differences or similarities between data points</p></li>
+<li><p>Achieve a high score in Coherence &amp; Cohesion + Grammatical Range</p></li>
+</ul>
+<p>Comparative structures allow you to describe how one value is higher, lower, more, or less than another.</p>
+<p>This is essential in IELTS Writing Task 1, where you must compare numerical data across:</p>
+<p>Countries</p>
+<p>Years</p>
+<p>Age groups</p>
+<p>Product categories</p>
+<p>Sectors or industries</p>
+<p>Using accurate and varied comparative grammar helps you score Band 7+ in both Task Achievement and Grammatical Range.</p>
+<section id="common-comparative-grammar-structures" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="common-comparative-grammar-structures"><span class="header-section-number">2.1</span> Common Comparative Grammar Structures</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Structure</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>X is higher/lower than Y</strong></td>
+<td><em>The number of graduates in Canada was higher than in France.</em></td>
+</tr>
+<tr class="even">
+<td><strong>X-er than Y</strong> (one-syllable adj)</td>
+<td><em>Men worked longer hours than women.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>more/less + adj + than</strong></td>
+<td><em>Online sales were more significant than in-store purchases.</em></td>
+</tr>
+<tr class="even">
+<td><strong>as + adj + as</strong></td>
+<td><em>The usage of mobile phones was <strong>as common as</strong> laptops in 2015.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>not as + adj + as</strong></td>
+<td><em>Tablet sales were <strong>not as high as</strong> smartphone sales.</em></td>
+</tr>
+<tr class="even">
+<td><strong>twice / three times + as + adj + as</strong></td>
+<td><em>Company A produced <strong>twice as much</strong> electricity as Company B.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>X accounted for … compared to Y</strong></td>
+<td><em>Energy from coal accounted for 40%, <strong>compared to</strong> just 10% from solar.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Whereas / While + clause</strong></td>
+<td><em>While Japan saw a rise in exports, China experienced a decline.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>In contrast / On the other hand + clause</strong></td>
+<td><em>In contrast, the UK maintained stable figures throughout the period.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="time-phrases-and-tenses" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Time Phrases and Tenses</h1>
+<p>Describing when changes occurred using <strong>past tense</strong> and <strong>time expressions</strong>:</p>
+<ul>
+<li>From 1967 to 2007 …</li>
+<li>Between 1967 and 1977 …</li>
+<li>Over the following decade …</li>
+<li>By the end of the period …</li>
+<li>Throughout the 40-year span …</li>
+</ul>
+<p>E.g.: <em>By the end of the period, Portugal’s figures had nearly matched Sweden’s.</em></p>
+</section>
+<section id="passive-voice-formal-style" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Passive Voice &amp; Formal Style</h1>
+<p>Use this for objectivity and variation:</p>
+<ul>
+<li>Emissions were recorded at …</li>
+<li>The data was collected over a 40-year period.</li>
+<li>An increase was seen in …</li>
+</ul>
+<p>E.g.: <em>A sharp decline was seen in Sweden after 1977</em>.</p>
+</section>
+<section id="complex-sentences-in-ielts" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Complex Sentences in IELTS</h1>
+<section id="cause-and-effect-sentences" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="cause-and-effect-sentences"><span class="header-section-number">5.1</span> Cause and Effect Sentences</h2>
+<ul>
+<li><p><strong>Task 1 (W1)</strong>: Common</p></li>
+<li><p><strong>Task 2 (W2)</strong>: Very common and essentialessential</p></li>
+</ul>
+<p>A cause and effect sentence shows the reason something happened (the cause) and the result (the effect). These sentences allow you to explain data (in Task 1) or support arguments and ideas logically (in Task 2), which is crucial for achieving Band 8+ in Task Achievement and Coherence.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 94%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Why They’re Useful</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>W1</strong></td>
+<td>To <strong>explain trends or changes</strong> in data (e.g., why sales dropped or increased)</td>
+</tr>
+<tr class="even">
+<td><strong>W2</strong></td>
+<td>To <strong>support your arguments with logic</strong>, give reasons for opinions, or show consequences of actions</td>
+</tr>
+</tbody>
+</table>
+<section id="sentence-structure-patterns" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="sentence-structure-patterns"><span class="header-section-number">5.1.1</span> Sentence Structure Patterns</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>[Effect] + because + [Cause]</strong></td>
+<td><em>Sales dropped <strong>because</strong> prices increased.</em></td>
+</tr>
+<tr class="even">
+<td><strong>[Because] + [Cause], [Effect]</strong></td>
+<td><em>Because the policy failed, the crime rate rose.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Due to / Owing to + [noun/gerund], [Effect]</strong></td>
+<td><em>Due to rising fuel costs, travel became more expensive.</em></td>
+</tr>
+<tr class="even">
+<td><strong>[Effect] + as a result of + [noun/gerund]</strong></td>
+<td><em>Traffic congestion worsened <strong>as a result of</strong> poor city planning.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>[Cause]. Therefore, [Effect]</strong></td>
+<td><em>The company reduced staff. <strong>Therefore</strong>, productivity decreased.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples-in-ielts-writing" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="examples-in-ielts-writing"><span class="header-section-number">5.1.2</span> Examples in IELTS Writing</h3>
+<section id="task-1-examples" class="level4">
+<h4 class="anchored" data-anchor-id="task-1-examples">Task 1 Examples</h4>
+<ul>
+<li>CO2 emissions increased between 2005 and 2010 due to rapid industrialization.</li>
+<li>The number of tourists dropped in 2009 because of the global financial crisis.</li>
+<li>Because oil prices rose dramatically, petrol consumption declined.</li>
+</ul>
+<p>These show <strong>not just what happened, but why</strong> - adding explanation and depth to our data description.</p>
+</section>
+<section id="task-2-examples" class="level4">
+<h4 class="anchored" data-anchor-id="task-2-examples">Task 2 Examples</h4>
+<ul>
+<li><strong>Because</strong> fast food is cheap and convenient, many people choose it over healthier options.</li>
+<li>Lack of physical activity is a major concern. <strong>As a result</strong>, obesity rates have increased.</li>
+<li><strong>Due to</strong> rising housing costs, many young adults are unable to afford their own homes.</li>
+</ul>
+<p>In Task 2, you must present clear, logical ideas and support them. Cause-effect structures show relationships, reasoning, and coherence—key elements for Band 9 in Task Response.</p>
+</section>
+<section id="tips-for-using-cause-and-effect-sentences-naturally" class="level4">
+<h4 class="anchored" data-anchor-id="tips-for-using-cause-and-effect-sentences-naturally">Tips for Using Cause and Effect Sentences Naturally</h4>
+<section id="vary-the-structure" class="level5">
+<h5 class="anchored" data-anchor-id="vary-the-structure">Vary the structure</h5>
+<p>Use the different patterns to avoid repetition:</p>
+<ul>
+<li>Because + clause</li>
+<li>Due to + noun</li>
+<li>As a result + noun</li>
+<li>Therefore + result</li>
+</ul>
+</section>
+<section id="avoid-overuse" class="level5">
+<h5 class="anchored" data-anchor-id="avoid-overuse">Avoid Overuse</h5>
+<p>Use 2-3 cause-and-effect sentences per paragraph if appropriate, but <strong>balance</strong> them with other sentences types.</p>
+</section>
+<section id="be-specific-with-causes" class="level5">
+<h5 class="anchored" data-anchor-id="be-specific-with-causes">Be Specific with Causes</h5>
+<p>Instead of vague reasons like:</p>
+<p>not-&gt; …because of problems</p>
+<p>Try:</p>
+<p>… because of declining investment in public infrastructure</p>
+<p><strong>Combine with Data (W1)</strong></p>
+<p><em>Sales declined by 30% in Q3, <strong>largely due to</strong> to loss of a major client</em>. ## Contrast or Concession Sentences</p>
+<ul>
+<li><p>Task 1 (W1): Occasionally (for comparing data)</p></li>
+<li><p>Task 2 (W2): Very common (for discussing opposing ideas or balancing arguments)</p></li>
+</ul>
+<p><strong>Contrast sentences</strong> show <strong>differences</strong> between two or more ideas, groups, trends, or viewpoints.</p>
+<p><strong>Concession sentences</strong> recognize <strong>opposing views</strong> or <strong>unexpected outcomes</strong>, often starting with words like <em>although</em>, <em>even though</em>, or <em>while</em>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 90%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Why They’re Useful</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task 1</strong></td>
+<td>To <strong>compare and contrast data categories</strong>, such as trends in different years, countries, or groups</td>
+</tr>
+<tr class="even">
+<td><strong>Task 2</strong></td>
+<td>To <strong>present two sides of an argument</strong>, or to show a more nuanced or sophisticated position</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="sentence-structure-patterns-1" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="sentence-structure-patterns-1"><span class="header-section-number">5.1.3</span> Sentence Structure Patterns</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Example Sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Although / Even though + clause, main clause</strong></td>
+<td><em>Although public transport is cheap, many people still prefer driving.</em></td>
+</tr>
+<tr class="even">
+<td><strong>While / Whereas + clause, clause</strong></td>
+<td><em>While exports increased, imports fell steadily.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>In contrast / On the other hand, + independent clause</strong></td>
+<td><em>In contrast, rural areas showed no change.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Despite / In spite of + noun/gerund, main clause</strong></td>
+<td><em>Despite the rise in prices, demand remained high.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples-in-ielts-writing-1" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="examples-in-ielts-writing-1"><span class="header-section-number">5.1.4</span> Examples in IELTS Writing</h3>
+<section id="task-1-comparing-data" class="level4">
+<h4 class="anchored" data-anchor-id="task-1-comparing-data">Task 1: Comparing Data</h4>
+<p>These structures are helpful for <strong>comparing trends, categories, or years</strong>.</p>
+<ul>
+<li>While the number of male students increased steadily, the number of female students remained stable.</li>
+<li>Although car ownership rose in urban areas, it declined in rural regions.</li>
+<li>In contrast to the upward trend in electronics sales, clothing sales fell throughout the period.</li>
+<li>Despite fluctuations in oil prices, energy consumption stayed constant.</li>
+</ul>
+<p>Task 1 requires more than listing numbers - we must <strong>highlight relationships and contrasts</strong> to score higher band.</p>
+</section>
+<section id="task-2-present-balanced-arguments" class="level4">
+<h4 class="anchored" data-anchor-id="task-2-present-balanced-arguments">Task 2: Present Balanced Arguments</h4>
+<p>In opinion, discussion, and problem-solving essays, contrast/concession sentences show that:</p>
+<ul>
+<li>We can <strong>see both sides of an issue</strong>.</li>
+<li>We understand <strong>complexity</strong>.</li>
+<li>We write <strong>logically and maturely</strong>.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Although some believe that education should be free, others argue it may reduce quality.</li>
+<li>While social media improves communication, it also contributes to shorter attention spans.</li>
+<li>In contrast to popular belief, not all screen time is harmful.</li>
+<li>Despite government efforts, pollution levels continue to rise.</li>
+</ul>
+</section>
+</section>
+<section id="tips-for-using-contrastconcession-sentences-effectively" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="tips-for-using-contrastconcession-sentences-effectively"><span class="header-section-number">5.1.5</span> Tips for Using Contrast/Concession Sentences Effectively</h3>
+<section id="use-variety" class="level4">
+<h4 class="anchored" data-anchor-id="use-variety">Use variety</h4>
+<p>Avoid using “although” repeatedly - try “while,” “whereas,” “in contrast,” “despite,” etc.</p>
+</section>
+<section id="connect-ideas-logically" class="level4">
+<h4 class="anchored" data-anchor-id="connect-ideas-logically">Connect ideas logically</h4>
+<p>Make sure the ideas <strong>really contrast</strong>. Don’t use “although” when the ideas are not truly opposing.</p>
+<p>Not -&gt; <em>Although technology is important, it is useful.</em></p>
+<p>Yes -&gt; <em>Although technology is convenient, it can reduce face-to-face interaction.</em></p>
+</section>
+</section>
+<section id="ielts-sample-sentences" class="level3" data-number="5.1.6">
+<h3 data-number="5.1.6" class="anchored" data-anchor-id="ielts-sample-sentences"><span class="header-section-number">5.1.6</span> IELTS Sample Sentences</h3>
+<section id="task-1-data-comparison" class="level4">
+<h4 class="anchored" data-anchor-id="task-1-data-comparison">Task 1 (Data Comparison)</h4>
+<p>While the number of international students in Canada rose significantly, the figure for the UK <strong>remained unchanged</strong> over the same period.</p>
+<p>In contrast to the steady rise in smartphone use, landline phone subcriptions declined.</p>
+</section>
+<section id="task-2-balanced-argument" class="level4">
+<h4 class="anchored" data-anchor-id="task-2-balanced-argument">Task 2 (Balanced Argument)</h4>
+<p>Although public healthcare is available in many countries, access and quality often vary greatly.</p>
+<p>Despite widespread concern about climate change, individual action remains limited.</p>
+<p>Some believe exams are the best measure of learning, whereas others argue that coursework offers a more accurate evaluation.</p>
+</section>
+</section>
+<section id="summary-when-to-use-contrast-concession" class="level3" data-number="5.1.7">
+<h3 data-number="5.1.7" class="anchored" data-anchor-id="summary-when-to-use-contrast-concession"><span class="header-section-number">5.1.7</span> Summary: When to use Contrast/ Concession</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 91%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>IELTS Task</th>
+<th>Use It When…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task 1</strong></td>
+<td>Comparing <strong>two or more trends</strong>, <strong>categories</strong>, <strong>groups</strong>, or <strong>time periods</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Task 2</strong></td>
+<td>Presenting <strong>two sides of an argument</strong>, <strong>addressing counterarguments</strong>, or <strong>qualifying your position</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="conditional-sentences" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="conditional-sentences"><span class="header-section-number">5.2</span> Conditional Sentences</h2>
+<ul>
+<li><p>Task 1 (W1): ❌ Rarely used — mostly avoided</p></li>
+<li><p>Task 2 (W2): ✅ Common and highly effective</p></li>
+</ul>
+<p><strong>Conditional sentences</strong> describe situations that are:</p>
+<ul>
+<li><p><strong>Possible</strong> (real conditions)</p></li>
+<li><p><strong>Imagined or hypothetical</strong> (unreal conditions)</p></li>
+<li><p><strong>Impossible or past regrets</strong></p></li>
+</ul>
+<p>These structures show a <strong>cause-effect relationship under certain conditions</strong> — perfect for <strong>argumentation</strong>, <strong>prediction</strong>, and <strong>analysis</strong> in Task 2.</p>
+<p>Using conditional sentences demonstrates:</p>
+<ul>
+<li><p>Logical thinking</p></li>
+<li><p>Hypothetical reasoning</p></li>
+<li><p>Ability to argue and evaluate future or past outcomes</p></li>
+</ul>
+<section id="types-of-conditional-sentences-ielts-appropriate" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="types-of-conditional-sentences-ielts-appropriate"><span class="header-section-number">5.2.1</span> Types of Conditional Sentences (IELTS-appropriate)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 22%">
+<col style="width: 28%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>When It’s Used</th>
+<th>Structure</th>
+<th>IELTS Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Zero Conditional</strong></td>
+<td>General truths or rules</td>
+<td>If + present, present</td>
+<td><em>If water is heated, it boils.</em></td>
+</tr>
+<tr class="even">
+<td><strong>First Conditional</strong></td>
+<td>Real future possibilities</td>
+<td>If + present, will/can/may</td>
+<td><em>If governments invest more in solar energy, emissions will decrease.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Second Conditional</strong></td>
+<td>Unreal/hypothetical present or future</td>
+<td>If + past, would/could/might + base verb</td>
+<td><em>If more people worked remotely, traffic congestion would be reduced.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Third Conditional</strong></td>
+<td>Past hypothetical (regret or missed opportunity)</td>
+<td>If + past perfect, would/could/might + have + past participle</td>
+<td><em>If stricter laws had been enforced earlier, the crisis could have been avoided.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="conditional-use-in-ielts-writing-task-2-essay-types" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="conditional-use-in-ielts-writing-task-2-essay-types"><span class="header-section-number">5.2.2</span> Conditional Use in IELTS Writing Task 2 Essay Types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Essay Type</th>
+<th>How to Use Conditionals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Opinion</strong></td>
+<td><em>If schools focused more on creativity, students would be better prepared for modern jobs.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Discussion</strong></td>
+<td><em>If both sides agreed to compromise, a more effective solution could be found.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Problem-Solution</strong></td>
+<td><em>If the government introduced subsidies, green energy use would rise.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Advantages/Disadvantages</strong></td>
+<td><em>If online learning continues to expand, traditional education may lose its appeal.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tips-for-writing-higher-band-conditionals" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="tips-for-writing-higher-band-conditionals"><span class="header-section-number">5.2.3</span> Tips for Writing Higher band Conditionals</h3>
+<section id="use-realistic-and-relevant-ideas" class="level4">
+<h4 class="anchored" data-anchor-id="use-realistic-and-relevant-ideas">Use realistic and relevant ideas</h4>
+<p>If the public were more aware of environmental issues, recycling rates would likely increase.</p>
+</section>
+<section id="combine-with-modal-verbs-for-nuance" class="level4">
+<h4 class="anchored" data-anchor-id="combine-with-modal-verbs-for-nuance">Combine with modal verbs for nuance</h4>
+<p>If children <strong>could</strong> choose their subjects, they <strong>might</strong> perform better academically.</p>
+</section>
+<section id="use-third-conditionals-sparingly" class="level4">
+<h4 class="anchored" data-anchor-id="use-third-conditionals-sparingly">Use third conditionals sparingly</h4>
+<p>Only use them when reflecting on <strong>past missed opportunities</strong> or <strong>unrealistic scenarios</strong></p>
+<p>If fossil fuel regulations <strong>had been</strong> introduced earlier, global warming <strong>might have been</strong> less severe.</p>
+</section>
+</section>
+<section id="avoid-mixing-condition-types" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="avoid-mixing-condition-types"><span class="header-section-number">5.2.4</span> Avoid mixing condition types</h3>
+<p>No-&gt; <em>If we will ban cars, pollution would go down.</em> Yes-&gt; <em>If we ban cars, pollution <strong>will</strong> go down</em>. (First conditional - real future)</p>
+</section>
+<section id="sample-sentences" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="sample-sentences"><span class="header-section-number">5.2.5</span> Sample Sentences</h3>
+<p>If parents monitored their children’s screen time more closely, issues like digital addiction would be less common.</p>
+<p>If environmental education were made compulsory, future generations might be more eco-conscious.</p>
+<p>Had the government implement the policy sooner, thousands of jobs could have been saved.</p>
+</section>
+<section id="sentence-starters-for-ielts-conditionals" class="level3" data-number="5.2.6">
+<h3 data-number="5.2.6" class="anchored" data-anchor-id="sentence-starters-for-ielts-conditionals"><span class="header-section-number">5.2.6</span> Sentence Starters for IELTS Conditionals</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 77%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Sentence Starter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Present/Future (real)</td>
+<td><em>If this trend continues…</em> / <em>If action is not taken…</em></td>
+</tr>
+<tr class="even">
+<td>Hypothetical present</td>
+<td><em>If society placed more value on…</em> / <em>If people had more access to…</em></td>
+</tr>
+<tr class="odd">
+<td>Hypothetical past</td>
+<td><em>If the law had been passed earlier…</em> / <em>Had schools provided support…</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="why-conditionals-are-not-used-in-task-1" class="level3" data-number="5.2.7">
+<h3 data-number="5.2.7" class="anchored" data-anchor-id="why-conditionals-are-not-used-in-task-1"><span class="header-section-number">5.2.7</span> Why Conditionals Are Not Used in Task 1</h3>
+<p>Task 1 requires factual, objective description of charts, graphs, or data.</p>
+<p>Speculation or hypothetical language (like “If sales had risen…”) is not appropriate.</p>
+<p>Use only past/simple present and avoid guessing why something happened.</p>
+<p>✅ Sales rose in 2010 and remained stable.</p>
+<p>❌ If the economy had improved, sales would have increased.</p>
+</section>
+<section id="summary-when-and-how-to-use-conditionals" class="level3" data-number="5.2.8">
+<h3 data-number="5.2.8" class="anchored" data-anchor-id="summary-when-and-how-to-use-conditionals"><span class="header-section-number">5.2.8</span> Summary: When and How to use Conditionals</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Use It?</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task 1</strong></td>
+<td>❌ No</td>
+<td>Avoid speculation; stay factual</td>
+</tr>
+<tr class="even">
+<td><strong>Task 2</strong></td>
+<td>✅ Yes</td>
+<td>Hypothesize, argue, predict, and persuade</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="relative-clause-sentences" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="relative-clause-sentences"><span class="header-section-number">5.3</span> Relative Clause Sentences</h2>
+<ul>
+<li><p><strong>Task 1 (W1)</strong>: ✔️ <em>Common and useful</em></p></li>
+<li><p><strong>Task 2 (W2)</strong>: ✔️ <em>Common and effective</em></p></li>
+</ul>
+<p>A <strong>relative clause</strong> (also called an <strong>adjective clause</strong>) gives <strong>extra information</strong> about a <strong>noun</strong> in the sentence. It starts with a <strong>relative pronoun</strong> such as:</p>
+<ul>
+<li><p><em>who</em> (for people)</p></li>
+<li><p><em>which</em> (for things or ideas)</p></li>
+<li><p><em>that</em> (for people or things – less formal)</p></li>
+<li><p><em>whose</em> (possessive)</p></li>
+<li><p><em>where</em> (for places)</p></li>
+<li><p><em>when</em> (for time)</p></li>
+</ul>
+<p>These clauses help you <strong>combine ideas</strong>, reduce repetition, and <strong>add precision and complexity</strong> to your writing.</p>
+<section id="why-relative-clauses-matter-in-ielts" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="why-relative-clauses-matter-in-ielts"><span class="header-section-number">5.3.1</span> Why Relative Clauses Matter in IELTS</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 91%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Purpose of Relative Clauses</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task 1</strong></td>
+<td>To describe categories, locations, years, or items shown in graphs more clearly and fluently</td>
+</tr>
+<tr class="even">
+<td><strong>Task 2</strong></td>
+<td>To define or add detail to people, groups, ideas, policies, or problems in a more formal, academic way</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sentence-structure-patterns-2" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="sentence-structure-patterns-2"><span class="header-section-number">5.3.2</span> Sentence Structure Patterns</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 84%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Relative Pronoun</th>
+<th>Example Sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>who</strong></td>
+<td><em>Children <strong>who grow up in rural areas</strong> may have limited access to education.</em></td>
+</tr>
+<tr class="even">
+<td><strong>which</strong></td>
+<td><em>The country <strong>which experienced the highest growth</strong> was China.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>that</strong></td>
+<td><em>The method <strong>that was used</strong> was highly effective.</em></td>
+</tr>
+<tr class="even">
+<td><strong>where</strong></td>
+<td><em>Cities <strong>where public transport is efficient</strong> tend to have lower pollution levels.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>when</strong></td>
+<td><em>The period <strong>when industrialisation began</strong> saw major social changes.</em></td>
+</tr>
+<tr class="even">
+<td><strong>whose</strong></td>
+<td><em>Students <strong>whose families are well-educated</strong> tend to perform better academically.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples-in-ielts-writing-2" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="examples-in-ielts-writing-2"><span class="header-section-number">5.3.3</span> Examples in IELTS Writing</h3>
+<section id="task-1-academic-descriptions" class="level4">
+<h4 class="anchored" data-anchor-id="task-1-academic-descriptions">Task 1: Academic Descriptions</h4>
+<ul>
+<li>The chart shows data for five countries, <strong>there of which</strong> saw a steady rise in exports.</li>
+<li>Germany, <strong>which had the lowest carbon emissions in 2010</strong>, showed only a slight increase.</li>
+<li>The figure for Company A, <strong>whose sales doubled over the period</strong>, surpassed all competitors.</li>
+</ul>
+<p>💡 Why it helps: Instead of writing multiple simple sentences, you can combine ideas clearly and fluently, improving cohesion and grammar range.</p>
+</section>
+<section id="task-2-academic-essay-writing" class="level4">
+<h4 class="anchored" data-anchor-id="task-2-academic-essay-writing">Task 2: Academic Essay Writing</h4>
+<ul>
+<li>Governments <strong>that invest heavily in healthcare</strong> often have healthier populations.</li>
+<li>Social media, <strong>which has become a dominant force in communication</strong>, also raises concerns about privacy.</li>
+<li>There are people <strong>whose opinions differ</strong> based on cultural background.</li>
+<li>Urban areas <strong>where housing costs are high</strong> often experience population decline.</li>
+</ul>
+<p>💡 Why it helps: These structures allow you to develop ideas more precisely and sound more academic and formal — key to a Band 8+ in Task Response and Lexical Resource.</p>
+</section>
+</section>
+<section id="tips-for-using-relative-clauses-correctly" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="tips-for-using-relative-clauses-correctly"><span class="header-section-number">5.3.4</span> Tips for Using Relative Clauses Correctly</h3>
+<section id="choose-the-right-pronoun" class="level4">
+<h4 class="anchored" data-anchor-id="choose-the-right-pronoun">Choose the right pronoun</h4>
+<ul>
+<li>Use <strong>who</strong> for people: <em>Teacher <strong>who are well-trained</strong></em></li>
+<li>Use <strong>which/that</strong> for things: <em>A law <strong>which bans smoking</strong></em></li>
+<li>Use <strong>whose</strong> for possession: <em>Student <strong>whose parents are educated</strong></em></li>
+<li>Use <strong>where/when</strong> for place/time references</li>
+</ul>
+</section>
+<section id="avoid-comma-mistakes" class="level4">
+<h4 class="anchored" data-anchor-id="avoid-comma-mistakes">Avoid comma mistakes</h4>
+<ul>
+<li>Defining relative clause (essential info): <em>The country <strong>that led to market</strong> was China</em>.</li>
+<li>Non-defining clause (extra info): <em>China, <strong>which led the market</strong>, showed strong growth</em>.</li>
+</ul>
+</section>
+<section id="use-variety-in-position-and-structure" class="level4">
+<h4 class="anchored" data-anchor-id="use-variety-in-position-and-structure">Use variety in position and structure</h4>
+<p>The number of people <strong>who used the internet</strong> rose steadily.</p>
+<p>People’s dependence on technology, <strong>which is growing rapidly</strong>, may lead to reduced social skills.</p>
+</section>
+</section>
+<section id="sample-sentences-1" class="level3" data-number="5.3.5">
+<h3 data-number="5.3.5" class="anchored" data-anchor-id="sample-sentences-1"><span class="header-section-number">5.3.5</span> Sample Sentences</h3>
+<section id="task-1" class="level4">
+<h4 class="anchored" data-anchor-id="task-1">Task 1</h4>
+<p>The chart shows five countries, <strong>three of which</strong> experienced a decline in energy consumption.</p>
+<p>Mobile phone usage, <strong>which was minimal in 2000</strong>, grew rapidly in the following decade.</p>
+</section>
+<section id="task-2" class="level4">
+<h4 class="anchored" data-anchor-id="task-2">Task 2</h4>
+<p>Children <strong>who are taught digital skills at school</strong> are more likely to succeed in modern careers.</p>
+<p>Public transport systems, <strong>which are often underfunded</strong>, require urgent investment.</p>
+</section>
+</section>
+<section id="common-errors-to-avoid" class="level3" data-number="5.3.6">
+<h3 data-number="5.3.6" class="anchored" data-anchor-id="common-errors-to-avoid"><span class="header-section-number">5.3.6</span> Common Errors to Avoid</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Error</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>A policy who helps students…</em></td>
+<td>❌ “who” → ✅ <em>A policy <strong>that</strong> helps students…</em></td>
+</tr>
+<tr class="even">
+<td><em>The city, that is known for its clean air…</em></td>
+<td>❌ No comma needed for defining clause → ✅ <em>The city <strong>that</strong> is known…</em></td>
+</tr>
+<tr class="odd">
+<td><em>People which believe in climate change…</em></td>
+<td>❌ “which” → ✅ <em>People <strong>who</strong> believe…</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="summary-relative-clauses-in-ielts" class="level3" data-number="5.3.7">
+<h3 data-number="5.3.7" class="anchored" data-anchor-id="summary-relative-clauses-in-ielts"><span class="header-section-number">5.3.7</span> Summary: Relative Clauses in IELTS</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 89%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Used in</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task 1</strong></td>
+<td>Add detail to <strong>years, countries, items</strong> or <strong>categories</strong> in the data</td>
+</tr>
+<tr class="even">
+<td><strong>Task 2</strong></td>
+<td>Describe or explain <strong>people, policies, problems</strong>, or <strong>places</strong> more clearly and fluently</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="time-based-sentences" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="time-based-sentences"><span class="header-section-number">5.4</span> Time-based Sentences</h2>
+<ul>
+<li><p>Task 1 (W1): ✔️ Very common and essential</p></li>
+<li><p>Task 2 (W2): ✔️ Occasionally useful in examples or background information</p></li>
+</ul>
+<p><strong>Time-based sentences</strong> include <strong>time clauses</strong> to show <strong>when</strong>, <strong>how long</strong>, or <strong>in what sequence</strong> something happens. They use time-related conjunctions or phrases like:</p>
+<ul>
+<li>when, while, before, after, until, since, as soon as, by the time, once, during, over the period, throughout</li>
+</ul>
+<p>These sentences help IELTS candidates describe:</p>
+<ul>
+<li><p>Trends over time (W1)</p></li>
+<li><p>Event sequences, cause-effect timelines, or historical context (W2)</p></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 92%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task 1</strong></td>
+<td>To <strong>clearly describe changes or trends</strong> over a period using accurate tense and logical sequencing</td>
+</tr>
+<tr class="even">
+<td><strong>Task 2</strong></td>
+<td>To provide <strong>context</strong> or <strong>realistic examples</strong>, especially when explaining changes in habits, policies, or social patterns</td>
+</tr>
+</tbody>
+</table>
+<p>Using time-based clauses accurately demonstrates your control of grammar and tense.</p>
+<section id="sentence-structure-patterns-3" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="sentence-structure-patterns-3"><span class="header-section-number">5.4.1</span> Sentence Structure Patterns</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Conjunction / Phrase</th>
+<th>Example Sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>When</strong></td>
+<td><em>When internet access became widespread, online shopping began to grow.</em></td>
+</tr>
+<tr class="even">
+<td><strong>While</strong></td>
+<td><em>While mobile phone use increased, landline subscriptions declined.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Before / After</strong></td>
+<td><em>After 2010, renewable energy use started rising.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Since</strong></td>
+<td><em>Energy consumption has declined <strong>since</strong> 2015.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>During / Throughout</strong></td>
+<td><em>Sales remained stable <strong>throughout</strong> the decade.</em></td>
+</tr>
+<tr class="even">
+<td><strong>By the time</strong></td>
+<td><em>By the time the law was implemented, the damage had already been done.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Once / As soon as</strong></td>
+<td><em>Once electric vehicles became affordable, demand surged.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples-in-ielts-writing-3" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="examples-in-ielts-writing-3"><span class="header-section-number">5.4.2</span> Examples in IELTS Writing</h3>
+<section id="task-1-describing-data-trends" class="level4">
+<h4 class="anchored" data-anchor-id="task-1-describing-data-trends">Task 1: Describing Data Trends</h4>
+<p>Task 1 often involves graphs or charts that show data over time, so <strong>time-based language is critical</strong>.</p>
+<ul>
+<li><em>After 2005, car ownership in Europe increased sharply</em>.</li>
+<li><em>While the number of graduates rose in the UK, it remained stable in Canada.</em></li>
+<li><em>By 2020, the unemployment rate had dropped significantly.</em></li>
+<li><em>During the first decade, the figures fluctuated slightly.</em></li>
+</ul>
+<p>These phrases help <strong>sequence events</strong>, describe <strong>parallel trends</strong>, and show <strong>cause-effect relationships</strong> over time.</p>
+</section>
+<section id="task-2-background-examples-or-context" class="level4">
+<h4 class="anchored" data-anchor-id="task-2-background-examples-or-context">Task 2: Background, Examples, or Context</h4>
+<p>Time clause are <strong>not the focus</strong> of Task 2, but they <strong>strengthen examples and explanations</strong>.</p>
+<ul>
+<li><em>Since the rise of social media, communication habits have changed dramatically.</em></li>
+<li><em>Before smartphones, people relied on face-to-face interaction.</em></li>
+<li><em>As soon as restrictions were lifted, tourism began to recover.</em></li>
+<li><em>By the time children reach adolescence, they are already familiar with digital tools.</em></li>
+</ul>
+<p>This adds realism and sophistication to your arguments or explanations.</p>
+</section>
+</section>
+<section id="time-expressions-to-use-in-ielts" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="time-expressions-to-use-in-ielts"><span class="header-section-number">5.4.3</span> Time Expressions to Use in IELTS</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Points in time</strong></td>
+<td>in 2010, at the beginning of the period, by 2020, before 2005</td>
+</tr>
+<tr class="even">
+<td><strong>Duration</strong></td>
+<td>over the 10-year period, during the decade, from 2010 to 2020</td>
+</tr>
+<tr class="odd">
+<td><strong>Sequence / Order</strong></td>
+<td>after, before, when, once, as soon as, by the time, until</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tense-choice-critical-for-time-clauses" class="level3" data-number="5.4.4">
+<h3 data-number="5.4.4" class="anchored" data-anchor-id="tense-choice-critical-for-time-clauses"><span class="header-section-number">5.4.4</span> Tense Choice: Critical for Time Clauses</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time Expression</th>
+<th>Tense Commonly Used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>After / Before</strong></td>
+<td>Past Simple or Past Perfect</td>
+</tr>
+<tr class="even">
+<td><strong>Since</strong></td>
+<td>Present Perfect</td>
+</tr>
+<tr class="odd">
+<td><strong>By the time</strong></td>
+<td>Past Perfect (for earlier action), Past Simple (for later action)</td>
+</tr>
+<tr class="even">
+<td><strong>During / Throughout</strong></td>
+<td>Past Simple or Present Perfect</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<p><em>By the time the chart ends, sales <strong>had risen</strong> by 60%</em>.</p>
+<p><em>Since 2010, the number of users <strong>has doubled</strong></em>.</p>
+</section>
+<section id="samples-sentences" class="level3" data-number="5.4.5">
+<h3 data-number="5.4.5" class="anchored" data-anchor-id="samples-sentences"><span class="header-section-number">5.4.5</span> Samples Sentences</h3>
+<section id="task-1-1" class="level4">
+<h4 class="anchored" data-anchor-id="task-1-1">Task 1</h4>
+<p><em>After 2008, the number of internet users in developing countries rose dramatically, overtaking those in developed nations by 2012.</em></p>
+<p><em>Throughout the period, employment rates remained relatively stable, with only minor fluctuations</em></p>
+</section>
+<section id="task-2-1" class="level4">
+<h4 class="anchored" data-anchor-id="task-2-1">Task 2</h4>
+<p><em>Since environmental awareness has increased in developing countries rose dramatically, more individuals are adopting sustainable habits.</em></p>
+<p><em>Once children are exposed to screens at an early ages, their social skills may be affected.</em></p>
+</section>
+</section>
+<section id="tips-for-using-time-clauses-effectively" class="level3" data-number="5.4.6">
+<h3 data-number="5.4.6" class="anchored" data-anchor-id="tips-for-using-time-clauses-effectively"><span class="header-section-number">5.4.6</span> Tips for Using Time Clauses Effectively</h3>
+<section id="combine-with-other-sentence-types" class="level4">
+<h4 class="anchored" data-anchor-id="combine-with-other-sentence-types">Combine with other sentence types</h4>
+<p><em>While industrial output declined, renewable energy use began to rise, indicating a shift in production priorities.</em></p>
+</section>
+<section id="be-precise-with-time-references" class="level4">
+<h4 class="anchored" data-anchor-id="be-precise-with-time-references">Be precise with time references</h4>
+<p>Instead of: <em>After some time, sales increased.</em></p>
+<p>Try: <em>After 2005, sales increased sharply, reaching a peak in 2018.</em></p>
+</section>
+<section id="vary-time-phrases" class="level4">
+<h4 class="anchored" data-anchor-id="vary-time-phrases">Vary time phrases</h4>
+<p>Use alternatives to avoid repetition.</p>
+<ul>
+<li>Instead of always saying “<em>after 2010</em>”, try:
+<ul>
+<li><em>From 2010 onwards</em></li>
+<li><em>Following 2010</em></li>
+<li><em>In the years after 2010</em></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="summary" class="level3" data-number="5.4.7">
+<h3 data-number="5.4.7" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.4.7</span> Summary</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 40%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Used in</strong></th>
+<th><strong>Function</strong></th>
+<th><strong>Why Important</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Task 1</strong></td>
+<td>Describe sequences, trends, or time frames</td>
+<td>Helps organize data clearly and accurately</td>
+</tr>
+<tr class="even">
+<td><strong>Task 2</strong></td>
+<td>Provide context or realistic examples</td>
+<td>Adds depth to explanations and supports logical flow</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="linking-devices-discourse-markers" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Linking Devices / Discourse Markers</h1>
+<section id="contrast-comparison-linking-devices" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="contrast-comparison-linking-devices"><span class="header-section-number">6.1</span> Contrast &amp; Comparison Linking Devices</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 46%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>However</strong></td>
+<td>Shows contrast between two ideas or sentences.</td>
+<td><em>Sweden’s CO₂ output declined; however, Portugal’s rose steadily.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Whereas</strong></td>
+<td>Contrasts two clauses within a sentence.</td>
+<td><em>Italy’s emissions increased, whereas Sweden’s decreased.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>While</strong></td>
+<td>Indicates simultaneous contrast or differing trends.</td>
+<td><em>While the UK remained stable, Portugal showed rapid growth.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Although</strong></td>
+<td>Introduces a surprising contrast in a single sentence.</td>
+<td><em>Although Sweden started higher, it was overtaken by Italy.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>On the other hand</strong></td>
+<td>Introduces an alternative or opposite point of view.</td>
+<td><em>The UK’s emissions dropped. On the other hand, Portugal’s doubled.</em></td>
+</tr>
+<tr class="even">
+<td><strong>In contrast</strong></td>
+<td>Highlights a direct and strong difference; often used at the beginning of a sentence.</td>
+<td><em>In contrast, female activity rose steadily.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>By contrast</strong></td>
+<td>More formal version of “in contrast”, often used to compare two ideas or groups.</td>
+<td><em>By contrast, men remained less active than women.</em></td>
+</tr>
+<tr class="even">
+<td><strong>On the contrary</strong></td>
+<td>Strongly opposes or corrects a previous idea or belief.</td>
+<td><em>It might seem emissions fell. On the contrary, they rose sharply.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Similarly</strong></td>
+<td>Points out a similar trend or pattern.</td>
+<td><em>Similarly, Portugal’s figures also rose gradually.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Likewise</strong></td>
+<td>Adds a similar point, often in a more formal tone.</td>
+<td><em>Italy’s CO₂ increased steadily; likewise, Portugal experienced growth.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Just as</strong></td>
+<td>Draws a parallel between two situations.</td>
+<td><em>Just as the UK peaked in 1977, Sweden reached its high in 1975.</em></td>
+</tr>
+<tr class="even">
+<td><strong>In the same way</strong></td>
+<td>Highlights identical or parallel patterns.</td>
+<td><em>In the same way, Italy and Portugal both showed upward trends.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>In comparison</strong></td>
+<td>Compares two things to highlight differences or similarities.</td>
+<td><em>In comparison to 1980, figures in 2000 were significantly lower.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Unlike</strong></td>
+<td>Shows contrast by negating similarity between two subjects.</td>
+<td><em>Unlike Sweden, the UK maintained high emission levels.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cause-effect-linking-devices" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="cause-effect-linking-devices"><span class="header-section-number">6.2</span> Cause &amp; Effect Linking Devices</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Because</strong></td>
+<td>Introduces a reason or explanation.</td>
+<td><em>CO₂ levels dropped because of new policies.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Due to</strong></td>
+<td>A formal way to introduce a reason or cause.</td>
+<td><em>Emissions fell due to stricter environmental laws.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>As a result</strong></td>
+<td>Introduces a direct consequence of a previous statement.</td>
+<td><em>As a result, Portugal’s levels tripled over the period.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Therefore</strong></td>
+<td>Shows logical result or outcome of a previous cause.</td>
+<td><em>The UK invested in clean energy; therefore, emissions declined.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Consequently</strong></td>
+<td>Formal and academic way of showing result.</td>
+<td><em>There was a fall in emissions; consequently, pollution was reduced.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Hence</strong></td>
+<td>Slightly more formal; indicates logical consequence.</td>
+<td><em>Energy was conserved; hence, the figures dropped.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Thus</strong></td>
+<td>Very formal, often used in academic writing.</td>
+<td><em>The reforms were effective; thus, emissions decreased.</em></td>
+</tr>
+<tr class="even">
+<td><strong>So</strong></td>
+<td>Informal connector showing cause and effect.</td>
+<td><em>There was little investment, so the figures remained low.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="addition-emphasis-linking-devices" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="addition-emphasis-linking-devices"><span class="header-section-number">6.3</span> Addition / Emphasis Linking Devices</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 45%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Furthermore</strong></td>
+<td>Adds a new and often&nbsp;<strong>more important</strong>&nbsp;point.</td>
+<td><em>Furthermore, Sweden’s levels were always higher than Portugal’s.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Moreover</strong></td>
+<td>Adds emphasis to a previous statement. Often more formal than “also”.</td>
+<td><em>Moreover, Portugal’s increase was the most consistent.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>In addition</strong></td>
+<td>Adds another point related to the one just mentioned.</td>
+<td><em>In addition, Italy’s emissions rose significantly in 1987.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Also</strong></td>
+<td>Adds information in a neutral way.</td>
+<td><em>Italy also showed a steady rise in emissions.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Besides</strong></td>
+<td>Adds&nbsp;<strong>supporting or reinforcing</strong>&nbsp;information. Often used in informal tone.</td>
+<td><em>Besides, the emissions were already low.</em></td>
+</tr>
+<tr class="even">
+<td><strong>What’s more</strong></td>
+<td>Informal expression to highlight a surprising or impressive addition.</td>
+<td><em>What’s more, the figures doubled in just five years.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Notably</strong></td>
+<td>Draws attention to a&nbsp;<strong>key or striking</strong>&nbsp;detail.</td>
+<td><em>Notably, Sweden’s figures halved by the end of the period.</em></td>
+</tr>
+<tr class="even">
+<td><strong>In particular</strong></td>
+<td>Focuses on a&nbsp;<strong>specific and important</strong>&nbsp;example.</td>
+<td><em>In particular, Portugal had the lowest starting point.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Especially</strong></td>
+<td>Emphasizes one item or group more than others.</td>
+<td><em>This was especially true for emissions in Italy.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Significantly</strong></td>
+<td>Highlights the&nbsp;<strong>importance or magnitude</strong>&nbsp;of a change or point.</td>
+<td><em>Significantly, emissions in the UK remained the highest.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="time-sequence-linking-devices" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="time-sequence-linking-devices"><span class="header-section-number">6.4</span> Time / Sequence Linking Devices</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>First / Firstly</strong></td>
+<td>Introduces the&nbsp;<strong>first point</strong>&nbsp;in a sequence or list.</td>
+<td><em>First, the UK had the highest emissions in 1967.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Next</strong></td>
+<td>Indicates the&nbsp;<strong>next step or event</strong>&nbsp;in a sequence.</td>
+<td><em>Next, Sweden’s levels started to fall gradually.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Then</strong></td>
+<td>Continues a sequence; shows&nbsp;<strong>what happened after</strong>a previous point.</td>
+<td><em>Emissions peaked in 1980, then began to decline.</em></td>
+</tr>
+<tr class="even">
+<td><strong>After that</strong></td>
+<td>Indicates something happened&nbsp;<strong>following a previously mentioned event</strong>.</td>
+<td><em>After that, Italy overtook Sweden in CO₂ emissions.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Thereafter</strong></td>
+<td>A formal alternative to “after that”; used for&nbsp;<strong>subsequent trends</strong>.</td>
+<td><em>Emissions rose until 1980. Thereafter, they remained stable.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Subsequently</strong></td>
+<td>Another formal alternative for&nbsp;<strong>“later on”</strong>&nbsp;or “after that”.</td>
+<td><em>Subsequently, emissions in Italy reached a plateau.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Over the following years</strong></td>
+<td>Describes a&nbsp;<strong>progression</strong>&nbsp;or trend over time.</td>
+<td><em>Over the following years, Portugal’s levels increased consistently.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Eventually</strong></td>
+<td>Used to indicate the&nbsp;<strong>final outcome</strong>&nbsp;after a series of events.</td>
+<td><em>Eventually, all four countries saw emission levels converge.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Finally</strong></td>
+<td>Introduces the&nbsp;<strong>last point or step</strong>&nbsp;in a sequence.</td>
+<td><em>Finally, emissions in the UK fell below 9 tonnes.</em></td>
+</tr>
+<tr class="even">
+<td><strong>At the beginning</strong></td>
+<td>Refers to the&nbsp;<strong>starting point</strong>&nbsp;of a process or timeline.</td>
+<td><em>At the beginning of the period, Sweden had the second highest rate.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Initially</strong></td>
+<td>Describes the&nbsp;<strong>initial stage</strong>&nbsp;of a trend or process that later changes.</td>
+<td><em>Initially, emissions in Portugal were the lowest.</em></td>
+</tr>
+<tr class="even">
+<td><strong>By [year]</strong></td>
+<td>Indicates a specific time by which something has occurred.</td>
+<td><em>By 2007, Sweden’s CO₂ output had dropped significantly.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="summary-generalization" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="summary-generalization"><span class="header-section-number">6.5</span> Summary / Generalization</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 41%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Overall</strong></td>
+<td>Used in overviews or conclusions to express a&nbsp;<strong>general trend or big picture</strong>.</td>
+<td><em>Overall, CO₂ emissions in the UK declined, while Italy’s increased steadily.</em></td>
+</tr>
+<tr class="even">
+<td><strong>In general</strong></td>
+<td>States a&nbsp;<strong>broad trend or common pattern</strong>, possibly with some exceptions.</td>
+<td><em>In general, men were less active than women across most age groups.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>In summary</strong></td>
+<td>Used to&nbsp;<strong>sum up key points</strong>&nbsp;at the end of a paragraph or report.</td>
+<td><em>In summary, the data reveals contrasting trends among the four countries.</em></td>
+</tr>
+<tr class="even">
+<td><strong>To sum up</strong></td>
+<td>Informal equivalent of “in summary,” often used to&nbsp;<strong>restate main findings</strong>.</td>
+<td><em>To sum up, Sweden’s emissions halved, while Portugal’s tripled over 40 years.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>On the whole</strong></td>
+<td>Indicates a generalisation,&nbsp;<strong>including possible exceptions</strong>.</td>
+<td><em>On the whole, female participation in physical activity remained consistently high.</em></td>
+</tr>
+<tr class="even">
+<td><strong>By and large</strong></td>
+<td>Less common, semi-formal way to&nbsp;<strong>express a generalisation or overview</strong>.</td>
+<td><em>By and large, developed countries saw declining emission levels.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Altogether</strong></td>
+<td>Used to&nbsp;<strong>sum up or conclude</strong>, especially with figures or data totals.</td>
+<td><em>Altogether, the trends suggest a move toward cleaner energy use.</em></td>
+</tr>
+<tr class="even">
+<td><strong>All in all</strong></td>
+<td>Informal phrase used to&nbsp;<strong>summarize or conclude</strong>overall patterns or results.</td>
+<td><em>All in all, female activity levels were consistently higher than males’.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="condition-exception" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="condition-exception"><span class="header-section-number">6.6</span> Condition / Exception</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 46%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Unless</strong></td>
+<td>Introduces a&nbsp;<strong>condition</strong>&nbsp;that would change the result. Similar to “if… not”.</td>
+<td><em>Emissions will not decrease&nbsp;<strong>unless</strong>&nbsp;new policies are introduced.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Even though</strong></td>
+<td>Used to show a&nbsp;<strong>strong contrast</strong>&nbsp;or&nbsp;<strong>unexpected result</strong>. Stronger than “although”.</td>
+<td><em>Even though Sweden had high emissions in 1967, they declined significantly later.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Although</strong></td>
+<td>Expresses&nbsp;<strong>contrast</strong>&nbsp;or&nbsp;<strong>exception</strong>&nbsp;within the same sentence.</td>
+<td><em>Although Italy started lower, its emissions eventually surpassed Sweden’s.</em></td>
+</tr>
+<tr class="even">
+<td><strong>While</strong></td>
+<td>Can express&nbsp;<strong>contrast</strong>&nbsp;or simultaneous events; sometimes implies a soft exception.</td>
+<td><em>While Portugal’s figures increased, the UK’s remained stable.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>In spite of</strong></td>
+<td>Introduces&nbsp;<strong>something surprising</strong>&nbsp;or&nbsp;<strong>contrasting</strong>with the main clause.</td>
+<td><em>In spite of increased investment, emissions continued to rise.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Despite</strong></td>
+<td>Similar to “in spite of”; introduces&nbsp;<strong>contradictory</strong>information.</td>
+<td><em>Despite stricter laws, CO₂ levels remained high in Italy.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Except (for)</strong></td>
+<td>Used to mention an&nbsp;<strong>exception</strong>.</td>
+<td><em>All countries showed growth&nbsp;<strong>except for</strong>&nbsp;the UK.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Apart from</strong></td>
+<td>Similar to “except for”; can mean&nbsp;<strong>in addition to</strong>&nbsp;or&nbsp;<strong>excluding</strong>, depending on context.</td>
+<td><em>Apart from Sweden, every country’s emissions rose.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="emphasis" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="emphasis"><span class="header-section-number">6.7</span> Emphasis</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Notably</strong></td>
+<td>Draws attention to a particularly&nbsp;<strong>important or remarkable</strong>&nbsp;detail.</td>
+<td><em>Notably, Sweden’s emissions were nearly halved over the period.</em></td>
+</tr>
+<tr class="even">
+<td><strong>In particular</strong></td>
+<td>Emphasizes a&nbsp;<strong>specific case</strong>&nbsp;or example within a larger group.</td>
+<td><em>In particular, Italy saw the sharpest increase after 1980.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Especially</strong></td>
+<td>Highlights something&nbsp;<strong>more significant</strong>&nbsp;or&nbsp;<strong>more relevant</strong>&nbsp;than others.</td>
+<td><em>Portugal’s rise was especially notable in the final decade.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Significantly</strong></td>
+<td>Indicates a&nbsp;<strong>marked or meaningful change or trend</strong>.</td>
+<td><em>Significantly, all countries except Sweden showed upward trends.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Indeed</strong></td>
+<td>Adds&nbsp;<strong>strong confirmation</strong>&nbsp;or emphasis to a statement.</td>
+<td><em>The increase was substantial — indeed, it nearly doubled in 20 years.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Clearly</strong></td>
+<td>Emphasizes that something is&nbsp;<strong>obvious or evident</strong>.</td>
+<td><em>Clearly, the UK had the highest CO₂ output at the start of the period.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Undoubtedly</strong></td>
+<td>Expresses&nbsp;<strong>strong certainty or emphasis</strong>.</td>
+<td><em>Undoubtedly, the most consistent growth occurred in Portugal.</em></td>
+</tr>
+<tr class="even">
+<td><strong>It is worth noting that</strong></td>
+<td>Used to&nbsp;<strong>draw special attention</strong>&nbsp;to a noteworthy point.</td>
+<td><em>It is worth noting that Portugal began with the lowest emission levels.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="illustration-example" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="illustration-example"><span class="header-section-number">6.8</span> Illustration / Example</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Linking Word / Phrase</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>For example</strong></td>
+<td>Introduces a&nbsp;<strong>specific instance</strong>&nbsp;to illustrate a general point.</td>
+<td><em>Several countries reduced their emissions. For example, Sweden’s rate halved.</em></td>
+</tr>
+<tr class="even">
+<td><strong>For instance</strong></td>
+<td>Similar to “for example”, used to&nbsp;<strong>give a concrete case</strong>.</td>
+<td><em>Some figures showed a dramatic rise. For instance, Italy’s doubled by 2000.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Such as</strong></td>
+<td>Used within a sentence to&nbsp;<strong>list examples</strong>.</td>
+<td><em>Countries such as Italy and Portugal showed upward trends.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Namely</strong></td>
+<td>Used to&nbsp;<strong>specify exactly</strong>&nbsp;what you just mentioned.</td>
+<td><em>Two countries, namely the UK and Sweden, experienced a decline.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>To illustrate</strong></td>
+<td>Emphasizes that an example will be given to&nbsp;<strong>clarify or support an idea</strong>.</td>
+<td><em>To illustrate this trend, Portugal’s data shows a consistent increase.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Including</strong></td>
+<td>Adds an&nbsp;<strong>example or list</strong>&nbsp;as part of a larger group.</td>
+<td><em>Several nations, including Italy and Sweden, made notable changes.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>In particular</strong></td>
+<td>Focuses on a&nbsp;<strong>specific detail or example</strong>&nbsp;that is especially relevant.</td>
+<td><em>In particular, the UK’s emissions fell by over 4 tonnes.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="quantifiers-and-data-language" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Quantifiers and Data Language</h1>
+<section id="specific-numbers-and-units" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="specific-numbers-and-units"><span class="header-section-number">7.1</span> Specific Numbers and Units</h2>
+<p>Used when the chart provides exact figures/</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>a total of</strong></td>
+<td>A total of&nbsp;<strong>65%</strong>&nbsp;of people preferred…</td>
+</tr>
+<tr class="even">
+<td><strong>just under</strong></td>
+<td>Just under&nbsp;<strong>3 million tonnes</strong>&nbsp;were…</td>
+</tr>
+<tr class="odd">
+<td><strong>approximately</strong></td>
+<td>Approximately&nbsp;<strong>40%</strong>&nbsp;chose this option.</td>
+</tr>
+<tr class="even">
+<td><strong>exactly</strong></td>
+<td>Exactly&nbsp;<strong>300 students</strong>&nbsp;participated.</td>
+</tr>
+<tr class="odd">
+<td><strong>around</strong></td>
+<td>Around&nbsp;<strong>7.5 tonnes</strong>&nbsp;of CO₂ were…</td>
+</tr>
+<tr class="even">
+<td><strong>roughly</strong></td>
+<td>Roughly&nbsp;<strong>half</strong>&nbsp;of the respondents…</td>
+</tr>
+<tr class="odd">
+<td><strong>nearly</strong></td>
+<td>Nearly&nbsp;<strong>two-thirds</strong>&nbsp;supported the idea.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fractions-and-proportions" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="fractions-and-proportions"><span class="header-section-number">7.2</span> Fractions and Proportions</h2>
+<p>Useful for describing parts of a whole.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>a quarter</strong></td>
+<td>A quarter of the emissions came from…</td>
+</tr>
+<tr class="even">
+<td><strong>one-third / a third</strong></td>
+<td>One-third of people were unemployed.</td>
+</tr>
+<tr class="odd">
+<td><strong>half</strong></td>
+<td>Half the students preferred reading.</td>
+</tr>
+<tr class="even">
+<td><strong>three-quarters</strong></td>
+<td>Three-quarters of adults owned smartphones.</td>
+</tr>
+<tr class="odd">
+<td><strong>the majority</strong></td>
+<td>The majority of respondents agreed.</td>
+</tr>
+<tr class="even">
+<td><strong>a minority</strong></td>
+<td>A minority of cases were successful.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="percentages" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="percentages"><span class="header-section-number">7.3</span> Percentages</h2>
+<p>Essential in Task 1 when discussing data with percentages.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>X percent / X%</strong></td>
+<td>45% of males were physically active.</td>
+</tr>
+<tr class="even">
+<td><strong>a high/low percentage</strong></td>
+<td>A high percentage of users…</td>
+</tr>
+<tr class="odd">
+<td><strong>the percentage of…</strong></td>
+<td>The percentage of CO₂ emissions dropped.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="change-over-time" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="change-over-time"><span class="header-section-number">7.4</span> Change over Time</h2>
+<p>Used to describe trends in dynamic graphs</p>
+<section id="verbs-for-upward-trends" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="verbs-for-upward-trends"><span class="header-section-number">7.4.1</span> Verbs for Upward Trends</h3>
+<p>Use these to describe increases.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 32%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>rose to</strong></td>
+<td>Reached a higher point</td>
+<td>The figure&nbsp;<strong>rose to</strong>&nbsp;60% in 2007.</td>
+</tr>
+<tr class="even">
+<td><strong>increased</strong></td>
+<td>Became greater in number/amount</td>
+<td>The rate&nbsp;<strong>increased</strong>&nbsp;by 15% over the period.</td>
+</tr>
+<tr class="odd">
+<td><strong>grew / grew to</strong></td>
+<td>Expanded or became larger</td>
+<td>The population&nbsp;<strong>grew to</strong>&nbsp;nearly 5 million.</td>
+</tr>
+<tr class="even">
+<td><strong>climbed</strong></td>
+<td>Suggests a steady or gradual rise</td>
+<td>CO₂ emissions&nbsp;<strong>climbed</strong>&nbsp;steadily during the 1980s.</td>
+</tr>
+<tr class="odd">
+<td><strong>surged</strong></td>
+<td>A sudden or sharp increase</td>
+<td>Profits&nbsp;<strong>surged</strong>&nbsp;in the final quarter.</td>
+</tr>
+<tr class="even">
+<td><strong>soared</strong></td>
+<td>A very fast or dramatic rise</td>
+<td>Mobile phone usage&nbsp;<strong>soared</strong>&nbsp;after 2010.</td>
+</tr>
+</tbody>
+</table>
+<p>📌&nbsp;<strong>Tip</strong>: Pair with adverbs like “dramatically”, “significantly”, “gradually” for nuance.</p>
+</section>
+<section id="verbs-for-downward-trends" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="verbs-for-downward-trends"><span class="header-section-number">7.4.2</span> Verbs for Downward Trends</h3>
+<p>Use these for describe decreases.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>fell / fell to</strong></td>
+<td>Became lower</td>
+<td>Emissions&nbsp;<strong>fell to</strong>&nbsp;just 4 tonnes in 2007.</td>
+</tr>
+<tr class="even">
+<td><strong>declined</strong></td>
+<td>Formal way of saying “fell”</td>
+<td>The percentage&nbsp;<strong>declined</strong>&nbsp;by 10% in 1995.</td>
+</tr>
+<tr class="odd">
+<td><strong>dropped by</strong></td>
+<td>Indicates the amount decreased</td>
+<td>The number&nbsp;<strong>dropped by</strong>&nbsp;20 units between 1990 and 2000.</td>
+</tr>
+<tr class="even">
+<td><strong>decreased</strong></td>
+<td>Neutral term for reduction</td>
+<td>Participation&nbsp;<strong>decreased</strong>&nbsp;gradually after 2005.</td>
+</tr>
+<tr class="odd">
+<td><strong>plunged</strong></td>
+<td>A very sudden or dramatic fall</td>
+<td>Sales&nbsp;<strong>plunged</strong>&nbsp;in 2008 during the crisis.</td>
+</tr>
+<tr class="even">
+<td><strong>plummeted</strong></td>
+<td>An even stronger version of “plunged”</td>
+<td>Oil prices&nbsp;<strong>plummeted</strong>&nbsp;in 2014.</td>
+</tr>
+</tbody>
+</table>
+<p>📌&nbsp;<strong>Note</strong>: Use “to” for the&nbsp;<strong>end value</strong>, and “by” for the&nbsp;<strong>amount of change</strong>.</p>
+</section>
+<section id="describing-stability" class="level3" data-number="7.4.3">
+<h3 data-number="7.4.3" class="anchored" data-anchor-id="describing-stability"><span class="header-section-number">7.4.3</span> Describing Stability</h3>
+<p>In <strong>IELTS Academic Writing Task 1</strong>, when a data trend <strong>shows no significant change</strong>, we describe it as being <strong>stable</strong>, <strong>unchanged</strong>, or <strong>constant</strong>. This is especially important when analyzing <strong>line graphs, bar charts, or tables</strong> where numbers do not move up or down much over time.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Meaning</strong></th>
+<th><strong>Use in IELTS</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>remained stable</strong></td>
+<td>No noticeable increase or decrease</td>
+<td>Use when data points change very little over time</td>
+<td><em>The population of the city <strong>remained stable</strong> at around 1 million from 2000 to 2010.</em></td>
+</tr>
+<tr class="even">
+<td><strong>stayed constant</strong></td>
+<td>Synonym of “remained stable”</td>
+<td>Use interchangeably to avoid repetition</td>
+<td><em>The unemployment rate <strong>stayed constant</strong> at 5% throughout the decade.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>levelled off</strong></td>
+<td>Data rises or falls, then flattens</td>
+<td>Use this after a period of growth or decline</td>
+<td><em>After a sharp increase in sales in 2012, the figures <strong>levelled off</strong> by 2014.</em></td>
+</tr>
+<tr class="even">
+<td><strong>stagnated</strong></td>
+<td>No development or growth (more formal)</td>
+<td>Use in contexts like economy, production, investment</td>
+<td><em>Industrial output <strong>stagnated</strong> between 1995 and 2000, showing no signs of growth.</em></td>
+</tr>
+</tbody>
+</table>
+<section id="example-sentences-ielts-style" class="level4">
+<h4 class="anchored" data-anchor-id="example-sentences-ielts-style">Example Sentences (IELTS Style)</h4>
+<ol type="1">
+<li>Line Graph:</li>
+</ol>
+<ul>
+<li><p>The number of visitors to the museum remained stable between 2015 and 2018.</p></li>
+<li><p>After a sharp rise in 2005, the figures levelled off in the following years.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Bar Chart:</li>
+</ol>
+<ul>
+<li>The percentage of energy consumption from solar power stayed constant at around 5% throughout the decade.</li>
+</ul>
+<ol start="3" type="1">
+<li>Table:</li>
+</ol>
+<ul>
+<li>The production of steel stagnated at 2 million tonnes from 1990 to 1995.</li>
+</ul>
+</section>
+<section id="how-to-structure-our-sentences" class="level4">
+<h4 class="anchored" data-anchor-id="how-to-structure-our-sentences">How to Structure Our Sentences</h4>
+<p>When describing <strong>stability</strong>, it’s important to:</p>
+<ul>
+<li><strong>Include time reference</strong>: “from … to …”, “over the period”, “in the following years”</li>
+<li><strong>Be precise with the data</strong>: mention actual numbers or percentages if possible</li>
+</ul>
+<p>Sentence Structure Example:</p>
+<p>“From 2000 to 2010, the unemployment rate <strong>remained stable</strong> at approximately 6%, showing no significant fluctuations”.</p>
+</section>
+<section id="synonyms-and-alternatives" class="level4">
+<h4 class="anchored" data-anchor-id="synonyms-and-alternatives">Synonyms and Alternatives</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 22%">
+<col style="width: 41%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Common Phrase</strong></th>
+<th><strong>High-Level Alternatives</strong></th>
+<th><strong>Usage Notes &amp; IELTS Context</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Remained stable</strong></td>
+<td>- Stayed steady - Maintained a consistent level - Showed little to no variation</td>
+<td>Use when a value <strong>does not change significantly</strong> over a specific period. Especially useful with line graphs and tables.</td>
+<td><em>The birth rate <strong>maintained a consistent level</strong> at around 14 per 1000 throughout the decade.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Stayed constant</strong></td>
+<td>- Was unchanged - Exhibited stability - Remained consistent</td>
+<td>Use when the <strong>same number or percentage</strong> is repeated in the chart. Slightly more formal in tone than “remained stable.”</td>
+<td><em>The market share of Company A <strong>exhibited stability</strong>, staying at exactly 25% between 2010 and 2015.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Levelled off</strong></td>
+<td>- Flattened out - Became steady - Stabilised - Reached a plateau</td>
+<td>Use <strong>after</strong> a clear upward or downward trend. It signals that growth or decline has <strong>stopped</strong> and the figures <strong>flattened</strong>.</td>
+<td><em>Following a sharp increase, oil prices <strong>flattened out</strong> in the second half of the year.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Stagnated</strong></td>
+<td>- Plateaued (informal) - Showed no progress - Experienced no growth</td>
+<td>More formal and often <strong>negative</strong> in tone; use in contexts such as <strong>economy, production, industrial output</strong> where lack of growth is relevant.</td>
+<td><em>The construction sector <strong>stagnated</strong> from 2008 to 2012 due to the economic downturn.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="when-to-use-stability-phrases-in-ielts" class="level4">
+<h4 class="anchored" data-anchor-id="when-to-use-stability-phrases-in-ielts">When to Use Stability Phrases in IELTS</h4>
+<p>Use stability phrases when:</p>
+<ul>
+<li><p>A line on a graph is flat over a period</p></li>
+<li><p>A bar shows no change over two or more years</p></li>
+<li><p>A table shows the same number repeated for a category</p></li>
+<li><p>A previous trend ends and becomes stable</p></li>
+</ul>
+</section>
+<section id="sample-high-band-description" class="level4">
+<h4 class="anchored" data-anchor-id="sample-high-band-description">Sample High-Band Description</h4>
+<p>“Between 1995 and 2000, the number of overseas students enrolling in Australian universities <strong>remained relatively stable</strong>, fluctuating only slightly around 20,000. However, this was in sharp contrast to the domestic enrolment figures, which <strong>levelled off</strong> after peaking in 1997.”</p>
+</section>
+</section>
+<section id="describing-fluctuations" class="level3" data-number="7.4.4">
+<h3 data-number="7.4.4" class="anchored" data-anchor-id="describing-fluctuations"><span class="header-section-number">7.4.4</span> Describing Fluctuations</h3>
+<p>Use these for up-and-down movements.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fluctuated</strong></td>
+<td>Changed up and down in a noticeable way</td>
+<td><em>The price of gas <strong>fluctuated</strong> between $1.20 and $1.60 per litre from 2000 to 2010.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Varied</strong></td>
+<td>Changed in a softer or more irregular way</td>
+<td><em>Temperatures <strong>varied</strong> slightly throughout the month, between 19°C and 23°C.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Was erratic</strong></td>
+<td>Changed unpredictably, with no clear pattern</td>
+<td><em>The share price <strong>was erratic</strong>, spiking one week and dropping the next.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Showed volatility</strong></td>
+<td>Formal term for unstable, irregular movement</td>
+<td><em>The housing market <strong>showed considerable volatility</strong> during the recession.</em></td>
+</tr>
+</tbody>
+</table>
+<section id="useful-synonyms-and-alternatives" class="level4">
+<h4 class="anchored" data-anchor-id="useful-synonyms-and-alternatives">Useful synonyms and Alternatives</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Common Phrase</strong></th>
+<th><strong>High-Band Alternatives</strong></th>
+<th><strong>Contextual Notes &amp; Proper Usage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fluctuated</strong></td>
+<td>- Oscillated - Shifted irregularly - Moved up and down</td>
+<td>Use “fluctuated” as a <strong>neutral, standard</strong> term. ✅ <em>Oscillated</em> = Use in <strong>formal or scientific contexts</strong>, e.g., temperatures, frequencies. ⚠ <em>Shifted irregularly</em> works when changes are <strong>frequent but not extreme</strong>.</td>
+</tr>
+<tr class="even">
+<td><strong>Varied</strong></td>
+<td>- Displayed variation - Was inconsistent - Showed irregularity</td>
+<td>Use “varied” when changes are <strong>mild or scattered</strong>. ✅ <em>Displayed variation</em> = Good for formal reports, especially <strong>tables or comparisons</strong>. ⚠ <em>Was inconsistent</em> implies <strong>lack of reliability or pattern</strong> – useful for performance or quality descriptions.</td>
+</tr>
+<tr class="odd">
+<td><strong>Was erratic</strong></td>
+<td>- Lacked a clear pattern - Changed unpredictably - Was unstable</td>
+<td>Use when data <strong>changes randomly</strong> with <strong>no clear upward/downward trend</strong>. ✅ Useful for <strong>financial trends</strong>, <strong>demand</strong>, or <strong>weather</strong> patterns. ⚠ Avoid in contexts where data is relatively steady.</td>
+</tr>
+<tr class="even">
+<td><strong>Showed volatility</strong></td>
+<td>- Was highly unstable - Experienced frequent swings - Was turbulent</td>
+<td>Use in <strong>formal, economic, or political data contexts</strong>. ✅ Especially effective in <strong>task 1 reports</strong> related to prices, stock markets, or exports. ⚠ Use “volatility” to suggest <strong>intensity + unpredictability</strong>, not mild fluctuation.</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Let the Graph or Data Shape Your Language</li>
+</ol>
+<p>Don’t just swap “fluctuated” for “oscillated” because it sounds fancier—look at the pattern:</p>
+<ul>
+<li>If the graph shows regular, wave-like movement (e.g., every year it rises and falls):</li>
+</ul>
+<p>👉 Use oscillated</p>
+<p>“Temperatures oscillated between 10°C and 20°C during the spring months.”</p>
+<ul>
+<li>If the movement is jagged, random, unpredictable:</li>
+</ul>
+<p>👉 Use was erratic</p>
+<p>“Demand for the product was erratic, peaking unexpectedly in June and plummeting in July.”</p>
+<ul>
+<li>If values change slightly with no dramatic jumps:</li>
+</ul>
+<p>👉 Use varied slightly or displayed mild variation</p>
+<p>“Water consumption displayed slight variation throughout the year.”</p>
+<ol start="2" type="1">
+<li>Adapt to Formality &amp; Tone</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Informal/Descriptive</th>
+<th>More Formal Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Moved up and down</td>
+<td>Fluctuated</td>
+</tr>
+<tr class="even">
+<td>Was unpredictable</td>
+<td>Was erratic</td>
+</tr>
+<tr class="odd">
+<td>Went crazy</td>
+<td>Showed volatility</td>
+</tr>
+<tr class="even">
+<td>Changed a bit</td>
+<td>Varied slightly</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-describe-fluctuations-accurately" class="level4">
+<h4 class="anchored" data-anchor-id="how-to-describe-fluctuations-accurately">How to Describe Fluctuations Accurately</h4>
+<section id="use-specific-time-references" class="level5">
+<h5 class="anchored" data-anchor-id="use-specific-time-references">Use Specific Time References</h5>
+<p>Always state <strong>when</strong> the fluctuation occured:</p>
+<ul>
+<li><em>From 2005 to 2010, oil prices <strong>fluctuated sharply</strong>, ranging from $40 to $100 per barrel</em>.</li>
+</ul>
+</section>
+<section id="quantify-the-range" class="level5">
+<h5 class="anchored" data-anchor-id="quantify-the-range">Quantify the Range</h5>
+<p>Use numbers or percentages to explain <strong>how much</strong> the change occurred:</p>
+<ul>
+<li><em>Sales <strong>varied</strong> between 10,000 and 18,000 units during the first quarter.</em></li>
+</ul>
+</section>
+<section id="add-adverbs-or-adjectives-for-precision" class="level5">
+<h5 class="anchored" data-anchor-id="add-adverbs-or-adjectives-for-precision">Add Adverbs or Adjectives for Precision</h5>
+<ul>
+<li><p>sharply fluctuated</p></li>
+<li><p>slightly varied</p></li>
+<li><p>highly erratic</p></li>
+<li><p>extremely volatile</p></li>
+</ul>
+<p>Examples:</p>
+<pre><code>The number of users fluctuated sharply in the second half of the year.
+
+The pattern was extremely erratic, especially between April and July.</code></pre>
+</section>
+<section id="advanced-sentence-structures" class="level5">
+<h5 class="anchored" data-anchor-id="advanced-sentence-structures">Advanced Sentence Structures</h5>
+<p>To achieve high cohesion and grammar scores, combine fluctuation vocabulary with complex structures:</p>
+<p>✔ Cause and Effect:</p>
+<p>Due to changes in government policy, the market showed volatility throughout the fiscal year.</p>
+<p>✔ Contrast:</p>
+<p>While exports rose steadily, import figures remained erratic over the same period.</p>
+<p>✔ Sequencing:</p>
+<p>Initially, the number of patients varied slightly, but later became highly unstable.</p>
+</section>
+<section id="sample" class="level5">
+<h5 class="anchored" data-anchor-id="sample">Sample</h5>
+<p>“<em>Between 2000 and 2015, the average price of crude oil <strong>fluctuated significantly</strong> ranging from $25 to over $100 per barrel. The data reveals that while prices were relatively stable in the early years, they <strong>became increasingly volatile</strong> after 2007, likely due to geopolitical tensions and shifts in global demand. Notably, in 2008, oil prices <strong>rose steeply</strong>, only to <strong>plummet</strong> the following year, highlighting a period of <strong>marked instability</strong>. </em>”</p>
+</section>
+</section>
+</section>
+<section id="describing-peaks-and-troughs" class="level3" data-number="7.4.5">
+<h3 data-number="7.4.5" class="anchored" data-anchor-id="describing-peaks-and-troughs"><span class="header-section-number">7.4.5</span> Describing Peaks and Troughs</h3>
+<p>These expressions are used to&nbsp;<strong>describe the highest or lowest point</strong>&nbsp;in a trend. You’ll often see them in charts that show&nbsp;<strong>fluctuating data</strong>&nbsp;over time.</p>
+<section id="peaks---describing-the-highest-point" class="level4">
+<h4 class="anchored" data-anchor-id="peaks---describing-the-highest-point">PEAKS - Describing the Highest Point</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+<th><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>peaked at</strong></td>
+<td>Describes the&nbsp;<strong>highest value</strong>&nbsp;reached in a trend. Often followed by a number or year.</td>
+<td><em>The CO₂ output&nbsp;<strong>peaked at</strong>&nbsp;8 tonnes in 1990.</em></td>
+<td>Use with upward trends that reach a maximum before falling again.</td>
+</tr>
+<tr class="even">
+<td><strong>reached a high of</strong></td>
+<td>More descriptive and formal than “peaked at”. Often used to give a&nbsp;<strong>specific value</strong>.</td>
+<td><em>Mobile subscriptions&nbsp;<strong>reached a high of</strong>&nbsp;10 million in 2015.</em></td>
+<td>Slightly more narrative than “peaked at”; good for variety.</td>
+</tr>
+<tr class="odd">
+<td><strong>hit a peak of</strong></td>
+<td>Slightly informal alternative to “peaked at”. Shows the&nbsp;<strong>climax point</strong>&nbsp;in the data.</td>
+<td><em>Sales&nbsp;<strong>hit a peak of</strong>&nbsp;$12 billion in Q2 2022.</em></td>
+<td>Common in speech and informal writing, but can be used for IELTS too.</td>
+</tr>
+<tr class="even">
+<td><strong>climbed to a peak of</strong></td>
+<td>Emphasises a steady increase&nbsp;<strong>before</strong>&nbsp;the highest point is reached.</td>
+<td><em>Figures&nbsp;<strong>climbed to a peak of</strong>75% in 2001.</em></td>
+<td>Useful if you are describing a&nbsp;<strong>process</strong>&nbsp;that leads to a peak.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="troughs---describing-the-lowest-point" class="level3" data-number="7.4.6">
+<h3 data-number="7.4.6" class="anchored" data-anchor-id="troughs---describing-the-lowest-point"><span class="header-section-number">7.4.6</span> TROUGHS - Describing the Lowest Point</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Meaning / Use</strong></th>
+<th><strong>Example Sentence</strong></th>
+<th><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>bottomed out</strong></td>
+<td>Indicates that the trend&nbsp;<strong>hit the lowest point and started to recover</strong></td>
+<td><em>The market&nbsp;<strong>bottomed out</strong>&nbsp;in 2009 before starting to recover.</em></td>
+<td>Use this only when a&nbsp;<strong>rise follows</strong>&nbsp;the low point.</td>
+</tr>
+<tr class="even">
+<td><strong>hit a low of</strong></td>
+<td>Means the data reached its&nbsp;<strong>minimum value</strong>&nbsp;during the period</td>
+<td><em>Unemployment&nbsp;<strong>hit a low of</strong>&nbsp;2% in 1983.</em></td>
+<td>Slightly informal but very clear and useful.</td>
+</tr>
+<tr class="odd">
+<td><strong>fell to a low of</strong></td>
+<td>Emphasises the&nbsp;<strong>downward movement</strong>leading to the lowest point</td>
+<td><em>Sales&nbsp;<strong>fell to a low of</strong>&nbsp;3 million units in 1999.</em></td>
+<td>Good for combining movement and final value.</td>
+</tr>
+<tr class="even">
+<td><strong>reached a low of</strong></td>
+<td>Similar to “hit a low of,” but more neutral/formal</td>
+<td><em>The figures&nbsp;<strong>reached a low of</strong>&nbsp;just 1.2 tonnes in 2004.</em></td>
+<td>Common in reports and formal descriptions.</td>
+</tr>
+</tbody>
+</table>
+<section id="grammar-structure" class="level4">
+<h4 class="anchored" data-anchor-id="grammar-structure">Grammar Structure</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Pattern</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Subject + verb +&nbsp;<strong>at</strong>&nbsp;+ value</td>
+<td><em>Sales&nbsp;<strong>peaked at</strong>&nbsp;12 million in 1995.</em></td>
+</tr>
+<tr class="even">
+<td>Subject + verb +&nbsp;<strong>to a high/low of</strong>&nbsp;+ value</td>
+<td>_The figure&nbsp;<strong>climbed to a high of</strong>&nbsp;75%. / It&nbsp;<strong>fell to a low of</strong>&nbsp;3%.</td>
+</tr>
+<tr class="odd">
+<td>Subject + verb (past simple)</td>
+<td><em>Profits&nbsp;<strong>bottomed out</strong>&nbsp;in 2010.</em></td>
+</tr>
+</tbody>
+</table>
+<p>Instead of repeating:</p>
+<p>“_The figure peaked in 1990. It peaked again in 2005.”</p>
+<p>Try this:</p>
+<p>“<em>The figure <strong>peaked at</strong> 10 tonnes in 1990 and later <strong>reached a high of</strong> 12 tonnes in 2005</em>”.</p>
+</section>
+</section>
+</section>
+<section id="comparisons" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="comparisons"><span class="header-section-number">7.5</span> Comparisons</h2>
+<p>Used to highlight similarities and differences</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Expression</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>higher than</strong></td>
+<td>Female rates were higher than male rates.</td>
+</tr>
+<tr class="even">
+<td><strong>the same as</strong></td>
+<td>Italy’s rate was the same as Sweden’s.</td>
+</tr>
+<tr class="odd">
+<td><strong>similar to</strong></td>
+<td>Portugal had figures similar to Italy’s.</td>
+</tr>
+<tr class="even">
+<td><strong>lower than</strong></td>
+<td>Sweden had lower emissions than the UK.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/kimhungbui\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
