@@ -1,0 +1,79 @@
+---
+title: "Kim Hung Bui personal page"
+about:
+    template: solana
+    image: images/yourphoto.png
+    links:
+        - icon: envelope
+          text: hungbk1100@gmail.com
+          href: mailto:hungbk1100@gmail.com
+        - icon: github
+          href: https://github.com/kimhungbui
+        - icon: linkedin
+          href: https://www.linkedin.com/in/hung-bui-kim-38a347239/
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+
+# 👋 Hi, I'm Kim Hung Bui
+
+I'm a computer science graduate with a deep interest in **machine learning**, **mathematics**, and **educational content creation**. 
+
+I use Quarto + Manim + YouTube to **learn deeply, explain clearly, and share openly**.
+
+---
+
+## 📺 YouTube & Content Creation
+
+I create videos to:
+- Build intuition for **math & machine learning**
+- Help others who self-study like me
+
+> “Teach others to teach yourself.” — Feynman
+
+---
+
+## 📬 Contact Me
+
+Feel free to connect via [email](mailto:hungbk1100@gmail.com), [GitHub](https://github.com/kimhungbui), or [LinkedIn](https://www.linkedin.com/in/hung-bui-kim-38a347239/).
+
+Here are the latest updates across all notes:
+
+```{python}
+import frontmatter
+from pathlib import Path
+from datetime import datetime
+
+# Recursively find all .qmd files
+files = list(Path(".").rglob("*.qmd"))
+
+posts = []
+
+for f in files:
+    if "index.qmd" in str(f):  # skip index pages
+        continue
+    try:
+        post = frontmatter.load(f)
+        date_str = post.get("date", None)
+        title = post.get("title", f.stem)
+        if date_str:
+            date = datetime.fromisoformat(str(date_str))
+            posts.append((date, title, f.as_posix()))
+    except Exception as e:
+        continue  # skip broken files
+
+# Sort by date descending
+posts.sort(reverse=True)
+
+# Show only the newest 5
+for date, title, path in posts[:5]:
+    print(f"- [{title}]({path}) ({date.date()})")
+
+```
