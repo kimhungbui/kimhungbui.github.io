@@ -6,7 +6,6 @@ website:
   title: "Kim Hung's ThinkStack"
   site-url: https://kimhungbui.github.io
   description: "My Personal Website"
-
   navbar:
     left:
       - href: index.md
@@ -43,4 +42,14 @@ format:
     theme:
       light: flatly
       dark: darkly
+    css: styles.css
     toc: true
+    footnotes-hover: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    link-external-icon: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    include-in-header: "files/includes/_academic.qmd"
