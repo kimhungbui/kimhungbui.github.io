@@ -40,7 +40,7 @@
 <h2 data-number="2.1" class="anchored" data-anchor-id="problem-1-increase-observation"><span class="header-section-number">2.1</span> Problem 1: Increase observation</h2>
 <p><em>True or False:</em> For a fixed number of observations in a data set, introducing more variables normally generates a model that has a better fit to the data. What may be the drawback of such a model fitting strategy?</p>
 <p>Example:</p>
-<div id="09510fd1" class="cell" data-execution_count="1">
+<div id="06fd75af" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
@@ -720,7 +720,7 @@ This definition essentially demonstrates that <strong>odds can take the form of 
 </tr>
 </tbody>
 </table>
-<div id="7f6918f6" class="cell" data-execution_count="2">
+<div id="8f3d6447" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
@@ -967,7 +967,7 @@ Normalization:     [0.64516129 0.32258065 0.03225806]</code></pre>
 <section id="python-code-illustration" class="level3" data-number="2.7.2">
 <h3 data-number="2.7.2" class="anchored" data-anchor-id="python-code-illustration"><span class="header-section-number">2.7.2</span> Python Code Illustration</h3>
 <p>Below is an example comparing NLL for different predicted probabilities of the correct class:</p>
-<div id="5cfb8273" class="cell" data-execution_count="3">
+<div id="3d5b2473" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
@@ -1063,7 +1063,7 @@ font-style: inherit;">True</span>)</span>
 </section>
 <section id="code" class="level4">
 <h4 class="anchored" data-anchor-id="code">Code:</h4>
-<div id="729d4b0a" class="cell" data-execution_count="4">
+<div id="ee145b02" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">predicted_probs <span class="op" style="color: #5E5E5E;
@@ -1087,7 +1087,7 @@ font-style: inherit;"># Predicted probability for the correct class</span></span
 <pre><code>[0.9, 0.7, 0.5, 0.3, 0.1]</code></pre>
 </div>
 </div>
-<div id="c05fe1a2" class="cell" data-execution_count="5">
+<div id="53ba0d12" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><span class="im" style="color: #00769E;
@@ -1140,7 +1140,7 @@ font-style: inherit;">"</span>)</span></code></pre></div>
 0.1 → 2.3026</code></pre>
 </div>
 </div>
-<div id="6a771607" class="cell" data-execution_count="6">
+<div id="e0155052" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><span class="im" style="color: #00769E;
@@ -1339,7 +1339,7 @@ font-style: inherit;">True</span>)</span>
 </tbody>
 </table>
 <p><strong>Log-odds give models a mathematically stable and interpretable way to reason about binary outcomes</strong> — especially for logistic regression.</p>
-<div id="386a2a2e" class="cell" data-execution_count="7">
+<div id="61315a2d" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><span class="im" style="color: #00769E;
@@ -1579,7 +1579,7 @@ font-style: inherit;">True</span>)</span>
 <section id="problem-10" class="level2" data-number="2.10">
 <h2 data-number="2.10" class="anchored" data-anchor-id="problem-10"><span class="header-section-number">2.10</span> Problem 10:</h2>
 <p>Draw a graph of odds to probabilities, mapping the entire range of probabilities to their respective odds.</p>
-<div id="cef13e47" class="cell" data-execution_count="8">
+<div id="416b8954" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><span class="im" style="color: #00769E;
@@ -1809,7 +1809,7 @@ font-style: inherit;"># limit to see behavior better near p=1</span></span>
 </tbody>
 </table>
 <p>This setup applies logistic regression to real-world audio-based classification.</p>
-<div id="73c77342" class="cell" data-execution_count="9">
+<div id="1ebb0eed" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><span class="im" style="color: #00769E;
