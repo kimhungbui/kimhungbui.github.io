@@ -5,9 +5,9 @@ description: Practice maps
 author:
   - name: Hung
     url: https://kimhungbui.github.io
-    affiliation: Barron's Writing for IELTS
+    affiliation: Cambridge IELTS Set 13
     affiliation-url: 
-date: 2025-07-24
+date: 2025-07-25
 categories:
   - english
   - writing
