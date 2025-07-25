@@ -109,6 +109,26 @@ gtag('js', new Date());
 gtag('config', 'G-R5TB4V4ZYS', { 'anonymize_ip': true});
 </script>
 
+<!-- 
+Load Academicons v1: https://jpswalsh.github.io/academicons/
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<!---
+The following code are needed to show dimension citation and altmetrics.
+https://api.altmetric.com/embeds.html
+https://badge.dimensions.ai/
+--->
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -139,6 +159,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 <link rel="alternate" type="application/rss+xml" title="Kim Hung's ThinkStack" href="artificial-intelligent.xml" data-external="1"></head>
 
 <body class="nav-fixed">
@@ -251,7 +272,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="math" data-listing-date-sort="1749686400000" data-listing-file-modified-sort="1753377348660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6097">
+<div class="quarto-post image-right" data-index="0" data-categories="math" data-listing-date-sort="1749686400000" data-listing-file-modified-sort="1753413613480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6097">
 <div class="thumbnail">
 <p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
 <p class="card-img-top"><img src="artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
@@ -284,7 +305,7 @@ Your name
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="AI" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1753377348660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
+<div class="quarto-post image-right" data-index="1" data-categories="AI" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1753413613480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
 <div class="thumbnail">
 <p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p><a href="./artificial-intelligent/finetunning/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -317,7 +338,7 @@ Hung
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1753377348660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1575">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1753413613480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1575">
 <div class="thumbnail">
 <p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p><a href="./artificial-intelligent/convolution/index.html" class="no-external">
 <p class="card-img-top"><img src="artificial-intelligent/convolution/Pasted image 20250327230513.png"  class="thumbnail-image card-img"/></p>
@@ -597,6 +618,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
