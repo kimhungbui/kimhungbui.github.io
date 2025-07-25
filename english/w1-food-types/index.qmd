@@ -25,6 +25,8 @@ draft: false
 ---
 ![](Pasted%20image%2020250713112945.png)
 
+<!-- ![](english/w1-food-types/Pasted%20image%2020250713112945.png) -->
+
 Write:
 
 
