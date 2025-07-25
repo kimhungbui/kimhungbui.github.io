@@ -36,6 +36,10 @@ It usually comes after the introduction and should:
 
 Focus on what stands out or changes clearly
 
+
+Use umbrella terms for not too specific or detailed.
+
+Do not include personal opinion, avoid using more extreme adjectives such as amazing, drastic, fascinating, remarkable, ....
 # Comparative Structures
 
 Used to:
@@ -76,7 +80,28 @@ Using accurate and varied comparative grammar helps you score Band 7+ in both Ta
 | **Whereas / While + clause**                 | _While Japan saw a rise in exports, China experienced a decline._          |
 | **In contrast / On the other hand + clause** | _In contrast, the UK maintained stable figures throughout the period._     |
 
+## For map
 
+| Definitions                                               | Word / Phrases          |
+| --------------------------------------------------------- | ----------------------- |
+| a place tourists to go                                    | a _tourist destination_ |
+| unchanged                                                 | in its _natural state_  |
+| in the west                                               | _western_               |
+| in the east                                               | _eastern_               |
+| in the centre                                             | _central_               |
+| before                                                    | _prior to_              |
+| no one was living there                                   | _uninhabited_           |
+| features produced by nature                               | _natural features_      |
+| plants and greenery                                       | _vegetation_<br>        |
+| close together, thick                                     | _dense_                 |
+| already there                                             | _existing_              |
+| showing an understanding of                               | _sympathetic_           |
+| having one storey or level                                | _single-storey_         |
+| having two storeys or level                               | _two-storey_            |
+| building                                                  | _structure_             |
+| restricted                                                | _limited_               |
+| connecting                                                | _linking_               |
+| a structure linking the land and sea where boats can land | a _pier_                |
 
 # Time Phrases and Tenses
 

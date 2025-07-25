@@ -1,7 +1,7 @@
 ---
-title: Grammar for Writing
+title: Vocabulary for IELTS themes
 lightbox: false
-description: Note down some structures for easier to write
+description: Vocabulary for IELTS themes
 author:
   - name: Hung
     url: https://kimhungbui.github.io
@@ -21,5 +21,106 @@ format:
     highlight-style: a11y
 draft: false
 ---
+# General Academic Verbs (Passive / Descriptive)
 
-zxc
+| Word/Phrase                          | Use in IELTS                                                 |
+| ------------------------------------ | ------------------------------------------------------------ |
+| **show**                             | Describes what visual data illustrates (_The maps show…_)    |
+| **developed**                        | Used in passive: _was developed_ – common in process/maps    |
+| **took place**                       | Describes when/where changes happened                        |
+| **have been built**                  | Present perfect passive for recent developments              |
+| **has been left**                    | Passive form for something unchanged                         |
+| **was** / **has been**               | Accurate use of tenses for past vs present state             |
+| **retained** / **has been retained** | To show preservation of features                             |
+| **fitting**                          | Describes how construction fits with environment             |
+| **is** / **are**                     | Describes current state (used in present tense descriptions) |
+| **stay** / **can stay**              | Modal verb use: options available for tourists               |
+| **have been created**                | Present perfect passive (recent developments)                |
+| **allows for**                       | Describes function or purpose (e.g., sailing access)         |
+| **has been made**                    | Passive structure indicating change or improvement           |
+
+| Word                                 | Why It’s Good                                        |
+| ------------------------------------ | ---------------------------------------------------- |
+| **sympathetic** (to the environment) | Precise, advanced word to show alignment with nature |
+| **grouped**                          | Describes spatial arrangement                        |
+| **linking**                          | Functional verb for describing pathways              |
+| **reaching / made easier**           | Phrasal structure describing improved access         |
+# Custom and Culture
+
+
+# Crime
+
+| **Word**                 | **Backslide** _(verb)_                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Definition**           | To return to a worse condition or a previous bad habit after making progress or improvement                                                                                                                                                                                                                                                                                                                                                                    |
+| **Part of Speech**       | Verb (irregular: backslide – backslid – backslid/backslidden)                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Common IELTS Themes**  | Environment, Society, Health, Education, Crime                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **IELTS-Level Synonyms** | regress, relapse, deteriorate, decline                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| __Example Sentences__    | - _Despite years of progress, the country has recently begun to __backslide__ in its efforts to reduce pollution._<br>- _Some argue that strict policies are needed to prevent society from __backsliding__ into inequality and unrest._<br>- _Patients who lack support are more likely to __backslide__ into unhealthy eating habits._                                                                                                                       |
+| __Band 7 - 9 Usage__     | - Use "backslide" in __Task 2 essays__ when talking about setbacks in areas such as education reform, social equality, or environmental protection.<br>- Best used in formal writing when describing __negative trends__ or __reversal of progress__.<br><br>Use this word especially when writing about policies that have failed, declining social values, or countries returning to outdated practices. It adds a nuanced, high-level tone to your writing. |
+# Government
+
+# Advertising
+
+# Transport
+
+# Globalization
+
+# Environment
+
+not: _vegetarian_ -> This is a __vocabulary mistake__.
+  correct word: __vegetation__ (meaning plants/trees, not people who don't eat meat!)
+
+
+# Family
+
+# Gender
+
+# Health
+
+| **Word**                      | **Bear** _(verb)_                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Definition(s)**             | 1. To carry or support a weight or responsibility<br><br>2. To endure or tolerate something difficult or unpleasant<br><br>3. (In finance) To cause or experience a loss or burden<br><br>4. To give birth to (less common in IELTS)                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Part of Speech**            | Verb _(irregular: bear – bore – borne)_                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| __Common IELTS Themes__       | Society, Economy, Environment, Health, Education                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| __IELTS-Level Synonyms__      | endure, tolerate, accept, support, handle, shoulder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| __Example Sentences__         | Social / Economic<br>- _Citizens should not be forced to __bear the financial burden__ of corporate negligence._<br>- _Low-income families bear the brunt of rising housing costs._<br><br>Health / Environment<br>_- Developing countries often __bear the consequences__ of climate change, despite contributing less to the problem._<br>_- Patients with chronic illness may find it difficult to __bear__ prolonged treatment without proper support._<br><br>Education / Work<br>- Teachers __bear a significant responsibility__ in shaping children's moral development.<br>- Students may struggle to __bear the pressure__ of high-stakes exams. |
+| __Common IELTS Collocations__ | **bear the burden** - Carry responsibility or pressure<br>**bear the consequences** - Suffer the results of something<br>**bear in mind** - Remember or consider<br>**bear the cost** - Pay or absorb an expense<br>**bear the brunt** - Suffer the worst of something negative                                                                                                                                                                                                                                                                                                                                                                            |
+# Science
+
+# Shopping
+
+# Sport
+
+# Technology
+
+# Tourism
+
+# Urbanization - City Life
+
+# Housing - Building
+
+| Phrase                                   | Example in Use                                  |
+| ---------------------------------------- | ----------------------------------------------- |
+| **tourist destination**                  | Describes development purpose                   |
+| **development took place**               | Formal way to say “changes happened”            |
+| **tourist amenities**                    | Facilities built for visitors                   |
+| **natural state**                        | Describes untouched or preserved area           |
+| **natural features**                     | General description of the environment          |
+| **vegetation**                           | Natural plant life                              |
+| **building work**                        | General phrase for construction                 |
+| **style of the buildings**               | Descriptive comparison of structure type        |
+| **single-storey / two-storey buildings** | Clear architectural descriptors                 |
+| **hut-style accommodation**              | Good topic-specific vocabulary                  |
+| **main structures**                      | Used to summarise key buildings                 |
+| **footpaths / tracks**                   | Infrastructure vocabulary (important in maps)   |
+| **swimming beach**                       | A specific tourist facility                     |
+| **pier**                                 | Useful in transport or access-related map tasks |
+
+# Water
+
+# Work
+
+# People and Personal Experience
+
+# Education

@@ -256,4 +256,386 @@ Remember, writing is thinking we can see. If our map task answers mainly use the
 
 Change from '__What can I see__?' to '__What has changed? What has been done?__'
 :::
+
+## Vocabulary problems and irrelevant information
+
+In lesson 1, we saw that we must not give our own personal thoughts or conclusions in Task 1. With map or plan tasks, this means that we need to be careful about the adjectives we use to describe any changes.
+
+Look at the following extract and try to spot any language that shows the writer personal opinion. What changes need to be made here to ensure we only present the facts?
+
+_After the advanced development, the island became well established and well civilized. The remarkable number of buildings, restaurants, reception, pier, accommodations, beach and greeneries have enhanced the island's beauty in very enormous ways. It could be said that these facilities will amuse the tourists. They must enjoy sailing and delight in eating in the restaurant as well as swimming._
+
+-> advanced,
+
+well established and well civilized
+
+remarkable
+
+enhanced the island's beauty in very enormous ways
+
+will amuse
+
+must enjoy
+
+delight in
+
+Change to make the language accurate and objective:
+
+1. After the development, the island became a tourist destination.
+2. The new buildings, which include a restaurant, a reception, a pier, and accommodation, have changed the island significantly.
+3. Tourists visiting the island can now go sailing, eat in the restaurant, or go swimming.
+
+![](Pasted%20image%2020250725103222.png)
+
+The parts in red are examples of the writer's personal opinion rather than objective facts shown on the maps. Making subjective comments like this will significantly lower our Task achievement score. We need to be particularly careful of this in our overview statement. Avoid using more extreme adjectives such as <font color="#ff0000">amazing, drastic, fascinating, remarkable</font>.
+
+## The overview
+
+The paragraph above was originally an overview paragraph from a sample answer. Although the sentences are now accurate and could be used within an answer, they are too detailed to be part of an overview, which is why she separated them in her answer. As with all task 1 answers, it is important not to include details in our overview.
+
+- _Overall, it is evident that more houses <font color="#ff0000">have been built, and a restaurant with reception added around the center of the town. A Pier has also been added connecting from the yatch to the restaurant. At the western area, the beach has been modified to include a swimming pool</font>._
+
+- _Overall, it is clear that <font color="#ff0000">a restaurant and houses were built along with footpath and vehicle track</font> to provide food, accommodation and easy access for visitors._ 
+
+Remember, using umbrella terms can help us avoid this:
+
+- _Overall, it is clear that <font color="#245bdb">changes that have been made to the island</font> to provide food, accommodation and easy access for visitors._
+
+
+## Coherence and Cohesion problems
+
+In lesson 2 we saw that we need to be careful in our choice of connecting words and phrases.
+
+She have corrected the language errors in the following sample answer. What problem can you identify with the cohesion devices in red? Can you spot any of the other problems we have discussed?
+
+_<u>Firstly</u>, they preserved all of the trees on the island. <u>On the contrary</u> , they built a new beautiful pier where ships can land. A vehicle path runs from the pier to the reception which is located centrally. A huge pretty restaurant lies behind the reception. Houses are wonderfully constructed to the right and left of the reception with a footpath connecting them. <u>Lastly</u>, there is a spectacular beach with a safe swimming area._
+
+
+(A) _<u>Firstly</u>, 1) they preserved all of the trees on the island. (B) <u>On the contrary</u> , (2) they built a new (3) beautiful pier where ships can land. (4) A vehicle path runs from the pier to the reception which is located centrally.  A (5) huge pretty restaurant (6) lies behind the reception. Houses (7) are wonderfully constructed to the right and left of the reception with a footpath connecting them. (C) <u>Lastly</u>, there is a (8) spectacular beach with a (9) safe swimming area._
+
+
+
+(firstly -> first)
+
+(On the contrary) is use to contrast the before pargraph -> by contrast
+
+(new beautiful ) -> opinion
+
+(pretty restaurant)
+
+(spectacular)
+
+Answer:
+
+Cohesive devices:
+
+A. This is used to describe the first step in a process and is not appropriate here
+
+B. This is used to correct a mistaken idea and is not appropriate here.
+
+C. This is used the present the final step in a process and is not appropriate here.
+
+There is an under-use of cohesive devices in the remaining sentences - it is not clear how these sentences are all linked.
+
+Vocabulary problems:
+
+1 This is not accurate, some trees have been removed.
+
+2 The passive is needed here
+
+3 The world 'beautiful' is inappropriate (this is a personal comment and cannot be seen on the map)
+
+4 and 6 - these are presented as minor details - it is not clear why they are being mentioned here - what is the key feature? (e.g. that facilities have been added)
+
+5, 7, 8, 9 the words huge, pretty, wonderfully, spectacular, and safe are personal comments and are not shown in the map
+
+
+:::{.callout-tip}
+Don't use a template for paragraph writing. Like the combination "Firstly, ... On the contrary, ... Lastly, ..."
+:::
+
 # Model answer
+
+We will use her model answer to focus on vocabulary and verb tenses. It is important to note that, although we can use the passive in map and plan tasks, we do not need to use it for every verb - we show a range of structures by varying the tenses that we use. In her model, she haved used the simple past, the simple present, and the present perfect, and she have used the passive form five times. Before we begin working on her model, think about when and why she might have used each of these different tenses.
+
+simple past for before map, simple present for after map, present perfect for compare before with present map.
+
+The following exercises focus on building your vocabulary and using a range of tenses accurately. In the first exercise, you will fill in the gaps in her model with the correct tense of the verbs given in brackets as well as any adverbs. Make sure to think about:
+
+1) whether you need to use the active or the passive
+
+2) the tense that is needed
+
+3) whether you need to add ‘there’ (i.e. there is / there are)
+
+4) verb subject agreement
+
+## Exercises
+
+The two maps show an island both before and after it __developed__ (to develop) as a tourist destination. Overall, most development took place (to take place) on the western and central areas of the island, where a small number of tourist amenities were build (to build), while the eastern coast was left (to leave) in its natural state.
+
+Prior to development, this relatively small island was uninhabited. In terms of its natural features, there is (to be) a beach area on the west coast, and some vegetarian, which is (to be) more dense on the eastern part of the island. As part of the development programme, this vegetation was retained largely (to retain, largely), with some building work fitting around existing trees.
+
+Following construction, although the island was (to be) now more developed, the style of the buildings are generally (to be, generally) sympathetic to the natural environment, with relatively simple, single-storey accommodation and only two larger, two-storey buildings. The main structures are (to be) a central reception building and a restaurant just north of this. Visitors stay (to stay) in hut-style accommodation, which is grouped on either side of the reception. In terms of access, while tracks are created (to create) for vehicles, these are limited to the main buildings. However, there are (to be) footpaths linking the accommodation to the swimming beach and other facilities. Reaching the island is made (to make) easier with the addition of a pier on the south coast, which also allows for sailing.
+
+
+The answer:
+
+The two maps show an island both before and after it ~~__developed__~~ _was developed_ (to develop) as a tourist destination. Overall, most development _took place_ (to take place) on the western and central areas of the island, where a small number of tourist amenities were built / _have been built_ (to build), while the eastern coast _was left / has been left_ (to leave) in its natural state.
+
+Prior to development, this relatively small island was uninhabited. In terms of its natural features, _there ~~is~~ was_ (to be) a beach area on the west coast, and some vegetarian, which ~~is~~ _was_ (to be) more dense on the eastern part of the island. As part of the development programme, this vegetation ~~was retained largely~~ _has largely been retained / has been largely retained_ (to retain, largely), with some building work fitting around existing trees.
+
+Following construction, although the island ~~was~~ _is_(to be) now more developed, the style of the buildings ~~are~~ _is generally_ (to be, generally) sympathetic to the natural environment, with relatively simple, single-storey accommodation and only two larger, two-storey buildings. The main structures _are_ (to be) a central reception building and a restaurant just north of this. Visitors _can stay / stay_ (to stay) in hut-style accommodation, which is grouped on either side of the reception. In terms of access, while tracks ~~are created~~ _have been created_ (to create) for vehicles, these are limited to the main buildings. However, _there are_ (to be) footpaths linking the accommodation to the swimming beach and other facilities. Reaching the ~~island is made~~ has been made (to make) easier with the addition of a pier on the south coast, which also allows for sailing.
+
+
+### Grammar & Usage Corrections
+
+#### Introduction
+
+The two maps show an island both before and after it ~~__developed__~~ _was developed_ (to develop) as a tourist destination.
+
+Correct Explanation:
+
+- not _developed_ -> wrong voice (active)
+- right -> _was developed_: use __passive voice__ here because the island __did not develop it self; some one developed it__.
+
+#### Overview
+
+Overall, most development _took place_ (to take place) on the western and central areas of the island, where a small number of tourist amenities were built / _have been built_ (to build), while the eastern coast _was left / has been left_ (to leave) in its natural state.
+
+
+Both __past simple__ (were built, was left) and __present perfect__ (have been built, has been left) are grammatically correct.
+
+##### What's the difference?
+
+- _Past simple_ (were built, was left) focuses on the __completed actions in the past__.
+- _Present perfect_ (have been built, has been left) links __past actions to the present__, which fits slightly better if we're describing the current state of the island.
+
+Best choice:
+
+_... where tourist amenities __have been built__, while the eastern coast __has been left__ in its natural state_.
+
+#### Paragraph 2 - Before Development
+
+Prior to development, this relatively small island was uninhabited. In terms of its natural features, _there ~~is~~ was_ (to be) a beach area on the west coast, and some vegetarian, which ~~is~~ _was_ (to be) more dense on the eastern part of the island.
+
+##### Correction Explanation
+
+- not: _there is_ -> Use __past tense__ here because we're describing what was __before development__.
+- not: _vegetarian_ -> This is a __vocabulary mistake__.
+  correct word: __vegetation__ (meaning plants/trees, not people who don't eat meat!)
+- not: _which is more dense_ -> Should be __past tense__: _which __was__ more dense..._
+
+Corrected sentence:
+
+_There __was__ a beach on the west coast, and some __vegetation__, which was denser in the eastern part of the island._
+***
+As part of the development programme, this vegetation ~~was retained largely~~ _has largely been retained / has been largely retained_ (to retain, largely), with some building work fitting around existing trees.
+
+##### Correction Explanation
+
+- not: _was retain largely_ -> Awkward word order.
+- right: Adverb _largely_ goes __between "has" and "been"__
+  -> _has largely been retained_
+  OR
+  -> _has been largely retained_ (both fine)
+
+Final version:
+
+_This vegetation __has largely been retained__, with some building work fitting around existing trees._
+
+#### Paragraph 3 - After Development
+
+Following construction, although the island ~~was~~ _is_(to be) now more developed, the style of the buildings ~~are~~ _is generally_ (to be, generally) sympathetic to the natural environment ...
+
+##### Correction Explanation
+
+- not: _was now more developed_ -> Conflict of __past + now__
+  
+  Use __present__: _the island __is now__ more developed_
+- not: _the style of the building are_ -> __Subject-verb agreement__
+  
+  _style_ is singular -> _the style __is__ sympathetic_
+
+Final:
+
+_Although the island __is now__ more developed, the style of the buildings __is generally__ sympathetic..._
+
+***
+with relatively simple, single-storey accommodation and only two larger, two-storey buildings. The main structures _are_ (to be) a central reception building and a restaurant just north of this. 
+
+No issues here -- good use of __present tense__ for current description.
+
+Visitors _can stay / stay_ (to stay) in hut-style accommodation, which is grouped on either side of the reception.
+
+Both are correct:
+
+- _can stay_ -> more formal/neutral (best in IELTS)
+- _stay_ -> a bit too direct (less formal)
+
+Use: _can stay_
+
+In terms of access, while tracks ~~are created~~ _have been created_ (to create) for vehicles, these are limited to the main buildings. However, _there are_ (to be) footpaths linking the accommodation to the swimming beach and other facilities. Reaching the ~~island is made~~ has been made (to make) easier with the addition of a pier on the south coast, which also allows for sailing.
+
+##### Correction Explanation
+- not: _are created_ -> Present simple is not ideal here for describing __completed changes__.
+- use: _have been created_ -> __Present perfect__ shows recent construction with current result.
+
+- not: _is made easier_ -> Simple present tense is wrong here because the pier is __already built__.
+- use: _has been made easier_ -> Present perfect fits well for __recent change + current effect__.
+
+#### Summary of My Mistakes
+
+|Type of Mistake|Explanation|Example|
+|---|---|---|
+|❌ Tense mismatch|You used present where past/perfect is needed|_"was now developed" → "is now developed"_|
+|❌ Passive voice errors|You used active when passive was required|_"developed" → "was developed"_|
+|❌ Word choice|Used wrong vocabulary|_"vegetarian" → "vegetation"_|
+|❌ Word order (adverb)|Adverb placed incorrectly|_"was retained largely" → "has largely been retained"_|
+|❌ Subject–verb agreement|Used plural verb with singular subject|_"style of buildings are" → "style ... is"_|
+|❌ Article / minor grammar|Missing words or extra|_"by person" → "per person" / "it’s" → "its"_|
+
+
+#### Complete Model:
+
+The two maps show an island both before and after it was developed as a tourist destination. Overall, most development took place on the western and central areas of the island, where a small number of tourist amenities have been built, while the eastern coast has been left in its natural state.
+
+Prior to development, this relatively small island was uninhabited. In terms of its natural features, there was a beach area on the west coast, and some vegetation, which was more dense on the eastern part of the island. As part of the development programme, this vegetation has already largely been retained, with some building work fitting around existing trees.
+
+Following construction, although the island is now more developed, the style of the buildings is generally sympathetic to the natural environment, with relatively simple, single-storey accommodation and only two larger, two-storey buildings. The main structures are a central reception building and a restaurant just north of it. Visitors can stay in hut-style accommodation, which is grouped on either side of the reception. In terms of access, while tracks have been created for vehicles, these are limited to the main buildings. However, there are footpaths linking the accommodation to the swimming beach and other facilities. Reaching the island has been made easier with the addition of a pier on the south coast, which also allows for sailing.
+
+### Question 2
+
+Find a word in the model that means the same as the definitions
+
+
+| Definitions                                               | Word / Phrases          |
+| --------------------------------------------------------- | ----------------------- |
+| a place tourists to go                                    | a _tourist destination_ |
+| unchanged                                                 | in its _natural state_  |
+| in the west                                               | _western_               |
+| in the east                                               | _eastern_               |
+| in the centre                                             | _central_               |
+| before                                                    | _prior to_              |
+| no one was living there                                   | _uninhabited_           |
+| features produced by nature                               | _natural features_      |
+| plants and greenery                                       | _vegetation_<br>        |
+| close together, thick                                     | _dense_                 |
+| already there                                             | _existing_              |
+| showing an understanding of                               | _sympathetic_           |
+| having one storey or level                                | _single-storey_         |
+| having two storeys or level                               | _two-storey_            |
+| building                                                  | _structure_             |
+| restricted                                                | _limited_               |
+| connecting                                                | _linking_               |
+| a structure linking the land and sea where boats can land | a _pier_                |
+
+### Question 3
+
+Fill in the gaps with the appropriate word or phrase.
+
+The two maps show an island both before and after it was developed as a _tourist destination_. Overall, most development took place on the _western_ and _central_ areas of the island, where a small number of tourist _amenities_ have been built, while the _eastern_ coast has been left in it _natural state_.
+
+_Prior to_ development, this relatively small is land was _uninhabited_. In terms of its _natural features_, there was a beach area on the west coast, and some _vegetation_, which was more _dense_ on the _eastern_ part of the island. As part of the development program, this _vegetation_ has largely been retained, with some building work fitting around _existing_ trees.
+
+Following construction, although the island is now more developed, the style of the buildings is generally _sympathetic_ to the natural environment, with relatively simple, _single-storey_ accommodation and only two larger, _two-storey_ buildings. The main _structures_ are a _central_ reception building and a restaurant just north of it. Visitors can stay in hut-style accommodation, which is grouped on _either side_ of the reception. In terms of _access_, while tracks have been created for vehicles, these are _limited_ to the main buildings. However, there are footpaths _linking_ the accommodation to the swimming beach and other facilities. Reaching the island has been made easier with the addition of a _pier_ on the south coast, which also allows for sailing.
+
+
+## Point to notice
+
+1. There are no dates given in this task. She decided to see the second map as 'the island as it is now'. This meant using perfect tenses at times. If we decided to use the simple past instead, that is fine. If the map task had dates showing that these changes were made in the past, then she would need to use the simple past and / or past perfect in her answer.
+2. She used a range of tenses in her answer. We can break these different tenses down as follows:
+
+:::{.callout-tip}
+__The simple Past - used to describe the island before development__
+- _Overall, most development __took place__ on ...
+- _Prior to the development, this relatively small island __was__ uninhabited._
+- _In terms of its natural features, __there was__ a beach area_
+- _... some vegetation, which __was__ more dense on the eastern part of the island._
+
+__Perfect tense - linking the past to the present__
+
+- _... a small number of tourist amenities <span style="background:#b1ffff">have been built</span>, while the eastern path <span style="background:#b1ffff">has been left</span> in its natural state._
+- _... this vegetation <span style="background:#b1ffff">has largely been retained</span>_
+- _while tracks <span style="background:#b1ffff">have been created</span> for vehicles, <span style="background:#fff88f">these are</span> limited_
+- _Access to the island <span style="background:#b1ffff">has been made easier</span> with the addition of a pier_
+
+__The simple present - used to describe the island as it is now__
+
+- _Following construction, the island <span style="background:#fff88f">is</span> now ..._
+- _... the building style <span style="background:#fff88f">is</span> generally sympathetic to..._
+- _the main structures <span style="background:#fff88f">are</span> a central reception building ..._
+- _Visitors <span style="background:#fff88f">can stay</span> in hut-style accommodation_
+- _However, <span style="background:#fff88f">there are</span> footpaths linking ..._
+- _... which also <span style="background:#fff88f">allows</span> for sailing._
+:::
+
+Notice that the tenses were used because they fitted what she wanted to write about - she didn't choose a tense she wanted to use then write a sentence. Trying to force a specific grammar point into our writing often does not work.
+
+3. Notice the different phrases she used to show the logical organization of the information and to help the reader follow any changes in topic or focus:
+
+:::{.callout-tip}
+- The two maps ...
+- Overall, ...
+- Prior to development, ...
+- As part of the development program, ...
+- Following construction
+- In terms of access, ...
+:::
+
+:::{.callout-tip}
+Use phrases such as "__In terms of ...__" + umbrella terms to  signal a change in topic in Task 1.
+
+For example:
+
+- In terms of accommodation ...
+- In terms of transport ...
+- In terms of leisure facilities...
+:::
+
+
+## Extra 
+
+Look back at the answer you wrote to this question and think about the following: The overview:
+
+- Did you refer to the main changes to the island?
+
+- Did you leave out the minor details?
+
+- What changes can you now make to improve your overview – e.g. can you replace any minor (or specific) details with an umbrella term?
+
+Your body paragraphs
+
+- How did you organise your body paragraphs?
+
+- Is this organisation clear? Which phrases in your answer show this?
+
+- How did you connect your sentences? Did you use the appropriate cohesive devices? How did you signal a change in topic or focus?
+
+- What changes can you make now to help the reader to follow your ideas and improve your Coherence and cohesion score? (E.g. can you add ' In terms of. ..' + an umbrella term?)
+
+Key features - Did you only describe what you can see in the maps or did you make the key changes
+
+clear?
+
+- Are there any key features that you missed? (compare the features you wrote about to those in my answer). You may have mentioned different features – just be sure they are key (important) and worth pointing out – how did you make this clear?
+
+Language (grammar and vocabulary) Underline or circle each of the verbs you used and think about the following: - Did you use a range of tenses?
+
+- Did you have a good reason to use each tense? (e.g. using the simple past to describe the island before etc.)
+
+- Did you use any passives? Can you change any of your verbs to the passive (e.g. to remove ‘they’)
+
+- Did you mainly use the simple present? If so, think again about the key features using the question in lesson 7.2 and then write your answer again using a range of tenses.
+
+- Did you use vocabulary accurately and appropriately or did you make personal comments?
+
+- What changes can you make to improve the language in your answer?
+
+## Homework
+
+In the next lesson, we will look at a plan task. For homework, write an answer to the following question, which
+
+is adapted from Cambridge IELTS 13 (page 94):
+
+![](Pasted%20image%2020250725174009.png)
