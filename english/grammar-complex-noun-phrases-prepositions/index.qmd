@@ -1,0 +1,160 @@
+---
+title: Complex noun phrases and complex prepositions
+lightbox: false
+description: Do exercises and extend
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge Advance Grammar in Use
+    affiliation-url: 
+date: 2025-07-26
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Complex noun phrases 
+
+Long, complex noun phrases are typical of academic writing, allowing a lot of information to be included within one sentence element. They can make up ^[🔍 *"make up"* means to **form**, **constitute**, or **compose**.  
+Used in: *They can make up substantial parts of academic texts* → *They form a large part of...*] substantial parts of academic texts as subjects, objects, and complements. The complex noun phrases in this extract are in italics with the main noun in each phrase in bold.
+
+::: {.column-margin}
+**🔍 "make up" (phrasal verb)**  
+Means:  
+- **form**  
+- **constitute**  
+- **compose**
+
+📘 Example meaning:  
+> Complex noun phrases **make up** (= form) large parts of academic writing.
+:::
+
+The __changes__ in map data collection and representation that have arisen with the introduction of computers and digital techniques are remarkable. __Information__ that used to be collected manually from surveys and ground observations can now be collected almost instantaneously by orbiting __satellites__ that send data to Earth at the speed of light. __Maps__ that were once hand-drawn can now be produced on a computer and printed out in a relatively short __amount__ of time.
+
+Note the word order in complex noun phrases -
+
+- The most common elements _before_ the main noun in a complex noun phrase are: determiners (e.g. _a, the_), and adjectives (_e.g. orbiting_)
+- The most common elements _after_ the main noun are: relative clauses (_e.g.: that were once hand-drawn_), and adjectives (_e.g. orbiting_)
+- After the main noun in particular, elements are often embedded within others. For example, the relative clause _that have arisen with the introduction of computers_ includes the prepositional phrase _with the introduction of computers_ which in turn includes the prepositional phrase of _computers_.
+
+
+In academic writing we tend to use nouns to talk about _actions_ and _processes_ (more typically associated with verbs), and _qualities_ (more typically associated with adjectives). This use of a noun to convey a meaning usually expressed with a word from another class is referred to as _nominalization_, and this process often results in a complex noun phrase. Compare the noun phrases in these two texts:
+
+(i) Organizations have reported that __the number of people volunteering has decreased rapidly__ in recent years. At the same time, __more opportunities to volunteer have become available__.
+
+(ii) __An extremely rapid decrease in volunteering__ has been reported in recent years. At the same time, __the availability of opportunities to volunteer has increased__.
+
+Where (i) uses a verb (_has decreased_) and adjective (_available_), (ii), more typical of academic writing, uses nouns (_decrease, availability_).
+
+#  Complex prepositions
+
+Complex prepositions comprise two, three or four words. Some of these occur more frequently in academic writing than in general use. For example:
+
+- __As for__ the future, demand for electricity is expected to grow at a rate of 5% per annum. (= regarding)
+- The final chapter considers inequalities in health __with reference to__ race and gender. (= what it is about)
+- Monthly average temperatures were higher than average __with the exception of__ June. (= not including)
+
+:::{.collum-margin}
+Also: __as a result of, as distinct from, as opposed to, depending on, in comparison with, in line with, in the case of, irrespective of, on the part of, prior to, regardless of__
+:::
+
+Note that four-word prepositions usually end in _of_ and include an article.
+
+Complex prepositions often occur as part of complex noun phrases:
+
+- This essay has discussed _class identity_ __with reference to__ _gender differences_.
+- The study found a _less positive attitude_ __in the case of__ _customers exposed_ to _advertising and marketing communications_.
+
+# Exercises
+
+## Build more complex noun phrases by adding the information in brackets to the noun phrase(s) in appropriate positions in each sentence. The main nouns in each complex noun phrase are in bold.
+
+1. The/ __decrease__ in price for the country's / exports began in mid 2015.
+(_the decrease was considerable_) (_the decrease was in mineral exports_)
+
+-> The considerable decrease in price for the country's mineral exports began in mid 2015.
+
+2. A __study__ published in 2007 predicted a __peak__ in the population of 9.2 billion.
+
+(_the study predicted a global peak_) (_The peak will be reached in 2050_).
+
+-> A __study__ published in 2007 predicted a global __peak__ in the population of 9.2 billion in 2050.
+
+OR
+
+A study published in 2007 predicted a peak in the global population in 2050 of 9.2 billion.
+
+3. One __influence__ that affects the character of a society is the __process__ of communication. 
+
+(_the influence is particularly important_) (_the influence is cultural_) (_the influence also affects the speed of change of a society._)
+
+-> One particularly important cultural influence that affects the character of a society is the speed process of communication. NO
+
+Right -> One particularly important cultural influence that affects the character and speed of change of a society is the process of communication.
+
+4. A __factor__ in the rise of today's free market economy was the __growth__ of trade in Asia in the 16th century.
+
+(_the factor was key_) (_today's free market economy is globalized_) (_the trade was in commodities_)
+
+-> A _key_ factor in the rise of today's _globalized_ free market economy was the growth of trade _in commodities_ in Asia in the 16th century.
+
+5. The government's __policies__ after World War II were influenced by the __ideas__ of John Maynard Keynes.
+
+(_this refers to the British goverment_) (_the policies related to economics_) (_John Maynard Keynes was an economist_) (_Keynes lived from 1883 to 1946_)
+
+-> The _British_ government's _economic_ policies after World War II were influenced by the ideas of  an economist who lived from 1883 to 1946 John Maynard. NOT
+
+Right -> The _British_ government's _economic_ policies immediately after World War II were influenced by the ideas of the economist John Maynard Keynes (_1883-1946_) / _who lived from 1883 to 1946._
+
+
+## Reword the italicized part of the sentence using a noun phrase with a noun + preposition. The noun should be related to the verb or adjective in bold.
+
+1. Harris (2012) points out _how __important__ public transport is_ in economic development.
+   
+   -> Harris (2012) points out <font color="#00b050">the importance of public transport</font> in economic development.
+2.  Measuring _how similar two documents are_ is an important process in automatically marking essays.
+
+	-> Measuring <font color="#00b050">the similarity between/of two documents</font> is an important process in automatically marking essays.
+3. Recent investment from overseas has resulted in _200,000 jobs being __created___.
+   
+    -> Recent investment from overseas has resulted in <font color="#00b050">the creation of 200,000 jobs</font>.
+4. Expansion of tourism in the region was used to ___justify___ building the new airport.
+   
+    -> Expansion of tourism in the region was used <font color="#00b050">as a justification for</font> building the new airport.
+5. The study found _that the reading habits of 6 year old girls and boys were greatly __different___.
+   
+    -> The study found <font color="#00b050">a great difference</font> ~~of~~ <font color="#00b050">in/between the reading habits of 6 year old girls and boys</font>.
+
+## Complete the sentences with a complex preposition from (i) and a word phrase from (ii)
+
+| (i)                                                                 | (ii)                                            |
+| ------------------------------------------------------------------- | ----------------------------------------------- |
+| as opposed to, on the part of, prior to, regardless, in the case of | ability, human error, marketing, plants, reader |
+1. <font color="#00b050">In the case of plants</font>, endangered species can be put into seed banks.
+2. It is unreasonable to expect that all side-effects of a drug are identified <font color="#00b050">prior to marketing</font>.
+3. Musical activities are encouraged among all children at school <font color="#00b050">regardless ability</font>.
+4. The book assumes considerable prior knowledge of biology <font color="#00b050">on the part of reader</font>.
+5. The mistakes were the result of software faults <font color="#00b050">as opposed to human error</font>.
+6. Many people had already left the region <font color="#00b050">as a result of</font> several years of drought.
+7. <font color="#00b050">According to</font> Chirstie (2006), three main approaches to the teaching of reading can be identified.
+8. The idea of "the humanities", <font color="#00b050">as distinct from/ as opposed to</font> the sciences, grew up in the 19th centuty.
+9. These results are <font color="#00b050">in line with</font> to those reported in Slobin (2008) and Hilleras (2019).
+10. 82% of the respondents lived in their own property. <font color="#00b050">As for / in case of</font> the rest, 12% lived in a rented property and 6% lived with a relative.
+
+:::{.margin-note}
+in sentence 9, we do not use "are depending on"
+
+❌ Incorrect tense and verb choice
+
+✅ Should be: “depend on” or “are based on” if you mean origin
+
+❌ But in your sentence, you're not comparing cause — you're comparing difference, so this phrase isn't needed at all.
+:::

@@ -1,0 +1,71 @@
+---
+title: "Expressing and reporting opinions: it-clauses"
+lightbox: false
+description: Do exercises and extend
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge Advance Grammar in Use
+    affiliation-url: 
+date: 2025-07-27
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Expressing opinions impersonally
+
+In academic communication, we tend to be impersonal, focusing more on actions, we effects of actions, and the things affected by actions rather than the people performing the actions. We often use _it-_ clauses to express opinions impersonally in academic writing and speaking. Common patterns here:
+
+___it_ + be (adverb) + adjective + _to-_ infinitive__
+
+e.g. __It is extremely difficult to evaluate__ the role of tourism in urban renewal.
+
+:::{.column-margin}
+_Other adjectives_ commonly used in this pattern: __(in)convenient, easy, hard, important, (im)possible, interesting, (un)necessary, (un)reasonable, (in)sufficient, useful__
+:::
+
+___it_ + be + (adverb) + adjective + _that___
+
+__It is quite possible that__ a larger sample size would have shown different results.
+
+:::{.column-margin}
+_Other adjectives_ commonly used in this pattern: __apparent, (un)clear, (in)conveivable, doubtful, essential, evident, important, (un)likely, obvious, probable, true__
+:::
+
+Note that not all adverbs and adjectives in these patterns can combine. For example, we commonly use __quite + possible/ clear__, nut rarely __quite + doubtful/ essential__
+
+We often use a passive verb form in an __it- clause__ with __that__ when we report another person's opinion. Notice that we usually include a reference to the other person's work, often immediately after the reporting verb or at the end of the sentences:
+
+__It has been reported__ (Crane, 2015) __that__ prolonged periods sitting in front of a computer may have significant health risks.
+
+:::{.column-margin}
+Verbs commonly used in this pattern:  
+**argue&#42;**, **claim&#42;**, **contend&#42;**, **demonstrate**, **estimate**, **maintain&#42;**, **note**, **propose&#42;**, **report&#42;**, **show**, **suggest&#42;**
+:::
+
+# Distancing yourself from a point of view
+We often use an __it-clause__ when we want to distance ourselves from an earlier point of view, perhaps because it is now disputed, or because we feel there was some limitation or problem with the earlier work:
+
+__It has been claimed that__ cheese intake is associated with high cholesterol levels (Zemel, 2001), but more recent studies have found that cheese may even have a cholesterol lowering effect (Hamedi, 2018; Allen, 2019)
+
+__It is often suggested that__ air pollutants from traffic, such as nitrogen oxide (NO2) and suspended particulate matter have a negative impact on child health (e.g. Janssen, 2004, Knape 2012). However, relatively few studies so far have looked at the health of children living near busy roads.
+
+The reporting verbs mark * in Above margin note are often used in this way.
+
+# Disagreeing
+In academic contexts we often begin a disagreement by acknowledging that some part of the opposing position is true. _Its-clauses_ are often used for this in academic writing and also in spoken academic contexts (presentation, seminars, etc.)
+
+__It is sometimes argued that__ it is important for students to outline their essays before beginning writing (e.g. Cotton, 2004). While __it is quite correct that__ much of an essay can be planned in advanced, __it must also be noted that__ the act of writing itself facilities thought and shapes ideas.
+
+__It's often assumed that__ environmental sustainability and poverty reduction can go hand-in-hand. Although __it's certainly possible to find__ a small number of examples where this happens, in most cases in the literature __it is reported that__ the costs of environmental improvement fall on the poor rather than the wealthy.
+
+However, in less formal spoken contexts we sometimes prefer more personal forms. For example: __We often assume that ..., ... you can certainly find ...__.
