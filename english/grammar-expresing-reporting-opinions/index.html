@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hung">
-<meta name="dcterms.date" content="2025-04-04">
-<meta name="description" content="Your post description">
+<meta name="dcterms.date" content="2025-07-27">
+<meta name="description" content="Do exercises and extend">
 
-<title>Maximum subarray – Kim Hung’s ThinkStack</title>
+<title>Expressing and reporting opinions: it-clauses – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -223,29 +189,27 @@ https://badge.dimensions.ai/
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question">Question</a></li>
-  <li><a href="#answer" id="toc-answer" class="nav-link" data-scroll-target="#answer">Answer:</a>
-  <ul class="collapse">
-  <li><a href="#brute-force" id="toc-brute-force" class="nav-link" data-scroll-target="#brute-force">Brute force</a></li>
-  </ul></li>
+  <li><a href="#expressing-opinions-impersonally" id="toc-expressing-opinions-impersonally" class="nav-link active" data-scroll-target="#expressing-opinions-impersonally"><span class="header-section-number">1</span> Expressing opinions impersonally</a></li>
+  <li><a href="#distancing-yourself-from-a-point-of-view" id="toc-distancing-yourself-from-a-point-of-view" class="nav-link" data-scroll-target="#distancing-yourself-from-a-point-of-view"><span class="header-section-number">2</span> Distancing yourself from a point of view</a></li>
+  <li><a href="#disagreeing" id="toc-disagreeing" class="nav-link" data-scroll-target="#disagreeing"><span class="header-section-number">3</span> Disagreeing</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Maximum subarray</h1>
+<h1 class="title">Expressing and reporting opinions: it-clauses</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">leetcode</div>
-    <div class="quarto-category">programming</div>
+    <div class="quarto-category">english</div>
+    <div class="quarto-category">grammar</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Your post description
+    Do exercises and extend
   </div>
 </div>
 
@@ -258,9 +222,7 @@ https://badge.dimensions.ai/
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://leetcode.com/problems/maximum-subarray/">
-            Leetcode
-            </a>
+            Cambridge Advance Grammar in Use
           </p>
       </div>
   </div>
@@ -271,7 +233,7 @@ https://badge.dimensions.ai/
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 4, 2025</p>
+      <p class="date">July 27, 2025</p>
     </div>
   </div>
   
@@ -283,43 +245,42 @@ https://badge.dimensions.ai/
 </header>
 
 
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>Given an integer array nums, find the subarray with the largest sum, and return its sum.</p>
-<p>Example 1:</p>
-<p>Input: nums = <code>[-2,1,-3,4,-1,2,1,-5,4]</code> Output: 6 Explanation: The subarray <code>[4,-1,2,1]</code> has the largest sum 6. Example 2:</p>
-<p>Input: nums = <code>[1]</code> Output: 1 Explanation: The subarray <code>[1]</code> has the largest sum 1. Example 3:</p>
-<p>Input: <code>nums = [5,4,-1,7,8]</code> Output: 23 Explanation: The subarray <code>[5,4,-1,7,8]</code> has the largest sum 23.</p>
-<p>Constraints:</p>
-<p><code>1 &lt;= nums.length &lt;= 105</code> <code>-104 &lt;= nums[i] &lt;= 104</code></p>
-<p>Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>
+<section id="expressing-opinions-impersonally" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Expressing opinions impersonally</h1>
+<p>In academic communication, we tend to be impersonal, focusing more on actions, we effects of actions, and the things affected by actions rather than the people performing the actions. We often use <em>it-</em> clauses to express opinions impersonally in academic writing and speaking. Common patterns here:</p>
+<p><strong><em>it</em> + be (adverb) + adjective + <em>to-</em> infinitive</strong></p>
+<p>e.g.&nbsp;<strong>It is extremely difficult to evaluate</strong> the role of tourism in urban renewal.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><em>Other adjectives</em> commonly used in this pattern: <strong>(in)convenient, easy, hard, important, (im)possible, interesting, (un)necessary, (un)reasonable, (in)sufficient, useful</strong></p>
+</div></div><p><strong><em>it</em> + be + (adverb) + adjective + <em>that</em></strong></p>
+<p><strong>It is quite possible that</strong> a larger sample size would have shown different results.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><em>Other adjectives</em> commonly used in this pattern: <strong>apparent, (un)clear, (in)conveivable, doubtful, essential, evident, important, (un)likely, obvious, probable, true</strong></p>
+</div></div><p>Note that not all adverbs and adjectives in these patterns can combine. For example, we commonly use <strong>quite + possible/ clear</strong>, nut rarely <strong>quite + doubtful/ essential</strong></p>
+<p>We often use a passive verb form in an <strong>it- clause</strong> with <strong>that</strong> when we report another person’s opinion. Notice that we usually include a reference to the other person’s work, often immediately after the reporting verb or at the end of the sentences:</p>
+<p><strong>It has been reported</strong> (Crane, 2015) <strong>that</strong> prolonged periods sitting in front of a computer may have significant health risks.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Verbs commonly used in this pattern:<br>
+<strong>argue*</strong>, <strong>claim*</strong>, <strong>contend*</strong>, <strong>demonstrate</strong>, <strong>estimate</strong>, <strong>maintain*</strong>, <strong>note</strong>, <strong>propose*</strong>, <strong>report*</strong>, <strong>show</strong>, <strong>suggest*</strong></p>
+</div></div></section>
+<section id="distancing-yourself-from-a-point-of-view" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Distancing yourself from a point of view</h1>
+<p>We often use an <strong>it-clause</strong> when we want to distance ourselves from an earlier point of view, perhaps because it is now disputed, or because we feel there was some limitation or problem with the earlier work:</p>
+<p><strong>It has been claimed that</strong> cheese intake is associated with high cholesterol levels (Zemel, 2001), but more recent studies have found that cheese may even have a cholesterol lowering effect (Hamedi, 2018; Allen, 2019)</p>
+<p><strong>It is often suggested that</strong> air pollutants from traffic, such as nitrogen oxide (NO2) and suspended particulate matter have a negative impact on child health (e.g.&nbsp;Janssen, 2004, Knape 2012). However, relatively few studies so far have looked at the health of children living near busy roads.</p>
+<p>The reporting verbs mark * in Above margin note are often used in this way.</p>
 </section>
-<section id="answer" class="level1">
-<h1>Answer:</h1>
-<section id="brute-force" class="level2">
-<h2 class="anchored" data-anchor-id="brute-force">Brute force</h2>
-<pre><code>    # brute force approach
-
-    # find all left, and right 
-    # cal sum of each
-    # return max
-    # T.C: O(n^2)</code></pre>
-<div id="e954036c" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maxSubArray(<span class="va">self</span>, nums: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    left, ans <span class="op">=</span> <span class="dv">0</span>, nums[<span class="dv">0</span>]</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> left <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(nums)):</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        cur <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> right <span class="kw">in</span> <span class="bu">range</span>(left, <span class="bu">len</span>(nums)):</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            cur <span class="op">+=</span> nums[right]</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            ans <span class="op">=</span> <span class="bu">max</span>(ans, cur)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ans</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>it will TLE.</p>
+<section id="disagreeing" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Disagreeing</h1>
+<p>In academic contexts we often begin a disagreement by acknowledging that some part of the opposing position is true. <em>Its-clauses</em> are often used for this in academic writing and also in spoken academic contexts (presentation, seminars, etc.)</p>
+<p><strong>It is sometimes argued that</strong> it is important for students to outline their essays before beginning writing (e.g.&nbsp;Cotton, 2004). While <strong>it is quite correct that</strong> much of an essay can be planned in advanced, <strong>it must also be noted that</strong> the act of writing itself facilities thought and shapes ideas.</p>
+<p><strong>It’s often assumed that</strong> environmental sustainability and poverty reduction can go hand-in-hand. Although <strong>it’s certainly possible to find</strong> a small number of examples where this happens, in most cases in the literature <strong>it is reported that</strong> the costs of environmental improvement fall on the poor rather than the wealthy.</p>
+<p>However, in less formal spoken contexts we sometimes prefer more personal forms. For example: <strong>We often assume that …, … you can certainly find …</strong>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
