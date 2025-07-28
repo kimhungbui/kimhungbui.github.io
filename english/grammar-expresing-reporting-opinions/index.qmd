@@ -69,3 +69,48 @@ __It is sometimes argued that__ it is important for students to outline their es
 __It's often assumed that__ environmental sustainability and poverty reduction can go hand-in-hand. Although __it's certainly possible to find__ a small number of examples where this happens, in most cases in the literature __it is reported that__ the costs of environmental improvement fall on the poor rather than the wealthy.
 
 However, in less formal spoken contexts we sometimes prefer more personal forms. For example: __We often assume that ..., ... you can certainly find ...__.
+
+# Exercises
+
+## Complete the sentences using an impersonal it-clause starting with a phrase from (i), that or a to-infinitive from (ii), and an ending from (iii). For questions 5 and 6 use your own ideas to complete the sentences
+
+| (i)              | (ii)              | (iii)                                                       |
+| ---------------- | ----------------- | ----------------------------------------------------------- |
+| it is likely     | that              | a number of other approaches are possible.                  |
+| it is doubtful   | that              | human activity is the cause.                                |
+| it is important  | that              | it is missing from the school curriculum in many countries. |
+| it is easy       | to tell           |                                                             |
+| it is impossible | to see            | why homeowners are concerned with energy efficiency.<br>    |
+| it is surprising | to recognize that |                                                             |
+1. Given the high cost of electricity and gas, <font color="#00b050">it is easy to see why homeowners are concerned with energy efficiency</font>.
+2. The general views is that the Earth's climate is warming, and <font color="#00b050">it is likely that human activity is the cause</font>.
+3. Educationalists have been advocating the importance of critical thinking for many years, so <font color="#00b050">it is surprising that it is missing from the school curriculum in many countries</font>. 
+4. Although the approach outlined above will be used in this research, <font color="#00b050">it is important to recognize that a number of other approaches are possible</font>.
+5. Because little research has so far been done on the new drug, <font color="#00b050">it is impossible to tell how effective it will be in treating hearth disease</font>.
+6. The report recommends diverting more state funding from roads to railways, but it is doubtful that it is enough for the project. / but it is doubtful that the present government would be willing to do this.
+
+## Complete each example using a quotation from the box. Begin your answer with an it-clause and a reporting verb in the passive. Choose from the reporting verbs marked * in the box in section A opposite.
+
+"Aromatherapy can cure recurring headaches." (Majid, 2016)
+"Domestic technology has decreased the amount of time spent on housework." (Hill, 2010)
+"Research output can be measured by number of papers published". (Hirsch, 2018)
+"Voting in general elections should be made compulsory." (Chen, 2005)
+"Plants have intelligence." (Glass, 2018)
+
+1. I<font color="#00b050">t has been proposed that voting in general elections should be made compulsory (Chen, 2005)</font>. There would, however, be considerable public opposition to this move.
+2. <font color="#00b050">It has been ~~claimed~~ -> contend that plants have intelligence (Glass, 2018)</font>, although as they do not have a nervous system, they cannot form thoughts.
+3. <font color="#00b050">It has been claimed that domestic technology has decreased the amount of time spent on housework (Hill, 2010)</font>, but as Burr (2014) points out, this is true only in the most developed countries.
+4. <font color="#00b050">It has been reported that aromatherapy can cure recurring headaches (Majid, 2016)</font>. Nevertheless, there is little evidence that the treatment works in the long term.
+5. <font color="#00b050">It has been argued by Hirsch (2018) that research output can be measured by number of papers published</font>. However, this does not take into account co-authorship of research articles.
+
+## Use it-clauses and the phrases in the box below to comple the extract from an academic presentation, following the pattern in section C opposite.
+
+<font color="#00b050">It's sometimes maintained</font> that a top-down management style is preferable because it allows clear goals and expectations to be set. <font color="#00b050">It is undoubtedly true</font> that in this type of organization, employees are not distracted from their work by participating in the decision-making process. However, <font color="#00b050">it's important to recognize</font> that many innovations start at the grassroot level in companies rather than at management level.
+
+Some possible ways of making the it-clauses less impersonal:
+
+It is sometimes maintained that ... - Some people say/ think that ...
+
+It is undoubtedly true that ... - I agree/ accept that ...
+
+It is important to recognize ... - We also need to accept that ...
