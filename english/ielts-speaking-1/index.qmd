@@ -220,3 +220,78 @@ An important distinction between Band 6 and Bands 7+ is that we can always under
 :::
 
 ### Points to notice about Lexical
+
+- This criterion assesses whether you have sufficient language to be able to discuss a range of topics without needing to repeat the same words.
+- At the lower levels (Band 3 / 4) test takers only have enough language to talk about the most familiar topics, errors are frequent, and they will repeat words rather than paraphrasing.
+- By band 6, a test taker has enough language to be able to __attempt__ to discuss unfamiliar topics. However, they are not always successful when it comes to parahprase.
+- To reach Bands 7 and above, test takers must show they have enough language to discuss any topic at length, use paraphrase effectively (so that they are not always repeating their own or the examiner's words), and show some ability to use less common and idiomatic language with an awareness of style and collocation. This is more accurate, skillful, and precise at Band 8, and more sustained at Band 9.
+- Problems in vocabulary can affect our Fluency and Coherence if we:
+	- Need to pause to think of the right word (reducing fluency)
+	- Use as many idiomatic phrases as we can (reducing coherence)
+
+:::{.callout-tip}
+Idiomatic and less common language will be rewarded __if__ it is appropriate, accurate, and helps to make our meaning clear when discussing a specific topic.
+:::
+
+# Understanding Grammatical Range and Accuracy
+
+Grammar is a very important element in creating meaning. Again, it helps to see this criteria in terms of the impact it has on the listener. In the Band descriptors, the points describe (1) the range of structured used, (2) the accuracy of structures used, and (3) the impact any errors have on meaning or comprehensibility.
+
+![](Pasted%20image%2020250729145657.png)
+
+### Points to notice about Grammatical and Accuracy
+
+At lowest level (Bands 3-4), complex structures are not attempted. This has an impact on fluency because it means that test takers are only able to give short answers. At Bands 5 and 6, although there are attempts at more complex structures (though longer answers), these are generally limited to the same repeated structures, and errors are frequent. We can see this in the Band 5.5 extract we saw earlier:
+
+![](Pasted%20image%2020250729155323.png)
+
+- At Bands 5 and 6, candidates may need to stop and correct a grammatical point or think about how to formulate language, which can interfere with Fluency and coherence. Coherence problems also occur if candidates try to follow that is often called the 'PPF' templates (answering using the present, past, and future tenses).
+- The link between the length of an answer and complexity of grammar shows that 'complex structures' will naturally occur when we given a en explanation, expand on idea, or explain how different ideas are connected. At band 7 - 9, test takers will use a range of structures to do this, with few (Band 7) or rare errors (Bands 8 - 9).
+
+# Understanding Pronunciation
+
+The pronunciation descriptors highlight (1) the range of features we use, (2) whether these features are sustained or not, and (3) how easy it is for the listener to understand what we are saying. Thus, as with the other criteria, pronunciation is assessed based on range, accuracy, and the impact it has on the listener.
+
+The following specific pronunciation features are mentioned: _rhythm, stress, intonation, chunking, stress-timing,_ and _pronunciation of individual sounds._ Importantly, the majority of these features describe ___connected speech___ rather than in individual words. Our accent is only mentioned in connection with its impact on the different pronunciation features.
+
+![](Pasted%20image%2020250729155951.png)
+
+## Points to notice about Pronunciation
+
+- Although many people try to speak quickly to improve their fluency, speed often causes issues in pronunciation and is mentioned at Band 6.
+- Individual sounds can be a problem from Bands 1 to 6, so these are important address. However, we cannot reach Bands 7-9 unless we also develop skills related to rhythm, stress, intonation, chunking, and stress-timing (all aspects of connected speech).
+- Higher level candidates vary their use of stress and intonation to help convey precise meaning.
+- As with LR and GRA, there is some overlap between Pronunciation and Fluency and Coherence
+
+# Summary: deciding on our score
+
+To arrive at an appropriate Band score, throughout our test, the examiner is thinking about:
+
+:::{.callout-tip}
+## The language we produce
+- How easy (or difficult) it is for us to answer fully
+- Whether we can discuss only limited topics or a variety of topics
+- Whether the language we produce is limited (and repetitive) or varied.
+- Whether the language we produce has frequent noticeable errors or is largely accurate.
+:::
+
+:::{.callout-tip}
+## The impact of our language has on the listener
+- How much effort is needed by the listener to understand our language and follow our ideas.
+- Whether our use of grammar/ vocabulary/ pronunciation makes our ideas easier or more difficult to understand.
+- Whether our use of grammar/ vocabulary/ pronunciation makes our meaning more or less clear and precise
+:::
+
+# What did we learn?
+
+
+|     |                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                         |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | In speaking, your ideas don't matter, so just say anything you like and talk for as long as you can.                                                              | You are not being assessed on your knowledge or how good your ideas are. However, it is not true that what you say in response to the questions doesn't matter. To be coherent, your answers must be relevant and logically connected to the question.                                                                                  |
+| 2   | Speaking more quickly will increase your fluency score                                                                                                            | Speaking too quickly wil lower your Fluency and coherence score.                                                                                                                                                                                                                                                                        |
+| 3   | Part 1 is quite easy, so it doesn't really count is easy to answer your answers for this part.                                                                    | Part 1 is relatively easy, but your answers do matter - they set a benchmark for your score and help the examiner get to know you. If you prepare answers, we examiner cannot assess your responses and the conversation will be unnatural.                                                                                             |
+| 4   | Pare 2 where the examner decides vous                                                                                                                             | The examiner is deciding your score throughout the test                                                                                                                                                                                                                                                                                 |
+| 5   | In Part 3, you often get complicated questions. Ask the examiner to repeat the question to buy yourself more time, and talk for about 1 minute for each question. | If you believe this, you are probably relying on questions shared after a test. In Part 3, the questions are more general but they will not be 'complicated' or 'strange' - they will reflect what you have spoken about different words to help you understand it or ask a new question. Don't use this as a strategy or tactic to buy |
+| 6   | In Parts 1 and 3, you should answer withs 3 sentences - one sentence to answer, then add two more sentences to expand your answer and keep taking.                | Speaking does not work like this - you are learning model answers that consist of complete sentences or paragraphs,  you are practicing reading and writing, not speaking. We will work on this idea in Lesson 4.                                                                                                                       |
+| 7   | Use as many idiomatic phrases as you can to increase your score.                                                                                                  | We do use idiomatic language more in speaking than in writing, but it is unnatural to use a lot of idiomatic phrases. Using phrases like this inappropriately will not increase your score.                                                                                                                                             |
+| 8   | in your answers. use PPF (Past, Present Future) to increase your grammar score                                                                                    | Although you do need to show a range of grammatical structures, doing this in a formulaic way results in strange responses that will lower your coherence score. We will see examples of this in Lesson 4, The tenses you use should match the question asked.                                                                          |

@@ -1,0 +1,111 @@
+---
+title: Addressing Pronunciation Problems
+lightbox: false
+description: Assess IELTS Speaking
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-29
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Pronunciation of individual sounds
+
+Pronunciation was a key problem in the recordings, so we should need to get a breakdown to check if this is a weak area.
+
+## Why the pronunciation of individual sounds matters
+
+An important aspect of our speaking is how easy (or difficult) it is for the listener to understand what we say. Our pronunciation of individual sounds plays an important role in this. If certain sounds are not consistently clear when we speak, the listener has to work harder to understand us, and there is a greater chance of our words being misunderstood.
+
+Loos of understanding can be seen as the feature which separates the middle Bands (Bands 5 and 6) from the upper bands (Bands 7 to 9). At band 6, the listener may need to use context clues to help understand certain words.
+
+:::{.callout-tip}
+If understanding the words you say requires effort from the listener (your examiner) and causes confusion at times, this will put an upper limit on your Pronunciation score. The amount of effort (or confusion) and how often this occurs will determine whether that upper limit is Band 6 or lower.
+:::
+
+## Common pronunciation problems
+
+The main cause of pronunciation problems is the difference between the sounds made in English and those in our own language, and we are likely to struggle most with sounds that don't exist in our L1. Because of this, there is no 'one-size-fits-all' approach to pronunciation. Nevertheless, there are some common problems. Think about whether we share any of the problem in the list below.
+
+:::{.callout-note}
+## Common pronunciation problems:
+- replacing a difficult sound with a sound you find easier to say (e.g. _zen_ instead _'then'_, 'sink' instead of '_think_')
+- not pronouncing certain sounds (e.g. '_prolem_' instead of 'problem', '_i think_ instead of '_i think_')
+- adding an extra sound between consonants (e.g. '_sipoon_' instead of '_spoon_')
+- overpronouncing sounds (e.g. wo-man instead of _wom**a**n_.)
+:::
+
+## The link between speaking and listening
+
+Our ability to make a sound can be linked to our ability to hear it. When listening, the reverse is also true: we may misinterpret what we hear due to the way that we say the words ourselves. 
+
+![](Pasted%20image%2020250729204904.png)
+
+The employee heard the phrase 'ham and cheese' as 'how much is...?', probably reflecting grammar and pronunciation problems in his own speech.
+
+This shows that being able to hear the difference between two sounds is as important as being able to say them.
+
+## Vowel sounds
+There are only 5 vowels sound in the English alphabet (_a, e, i, o, u_) but there are 20 vowel _sounds_, which are a common cause of problems. The phonetic chart:
+![](Pasted%20image%2020250729205044.png)
+
+## Practice
+
+Minimal pairs (two words with only one sound that is different) are a useful way to identify and specific problems we may have.
+
+1. Look at the following list and record yourself saying the pairs of words
+2. Listen back (or ask a friend to listen). Can you hear the difference between the words in you recording ?
+3. If you identify any problems, listen and copy the problem sounds
+4. Although we can use context to help us understand individual words, it is important to be able to say words clearly, so that there is no doubt about what you mean. Practice saying these sentences aloud. If possible, dictate them to a friend and check they have written down the underline words:
+
+snacks, snakes
+
+match, march -> car, march/ cat, match
+
+pull, pool -> foot, pull/ moon, pool
+
+coast, cost
+
+dare, there -> 
+
+walkers, workers -> talk, walk / bird, work
+
+woman, women -> foot, woman / sit, women
+
+load, road -> boat, load / road
+
+your, jaw -> yor/ jo
+
+:::{.callout-tip}
+1. _Is there any reason the bread hasn't risen?_
+2. We were on our way to see the band but we didn't see the bend in the road.
+3. We don't have any gas for the barbecue so I guess we'll have to eat out.
+4. At snack time, our teacher gave us jelly snakes as a special treat.
+5. After the long march we asked for a match to light the fire.
+6. You need to pull the lever to open the door to the pool.
+7. How much will it cost to travel to the coast?
+8. The women in charge gave the tickets to the women at the door.
+9. The truck was carrying a very wide load as it travelled along the narrow road.
+10. I don't think it will fit in the sink.
+:::
+
+
+
+
+# Word stress - strong and weak sounds
+
+
+
+
+# Moving from one sound to another

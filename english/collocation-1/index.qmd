@@ -1,0 +1,147 @@
+---
+title: What is a collocation ?
+lightbox: false
+description: Do exercises and extend
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge Advance Grammar in Use
+    affiliation-url: 
+date: 2025-07-29
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+__A collocation is a natural combination of words that native speakers commonly used together__
+
+| We Say (Correct)  | ❌ Not Natural     |
+| ----------------- | ----------------- |
+| fast food         | quick food        |
+| a quick glance    | a fast glance     |
+| make a mistake    | do a mistake      |
+| powerful engine   | strong engine     |
+| ancient monuments | antique monuments |
+| make an effort    | do an effort      |
+Even if the “wrong” version is understandable, it sounds unnatural to native speakers.
+
+## Why Are Collocations Important (Especially for IELTS)?
+
+Learning collocations helps us:
+
+### Speak and write more naturally
+
+- “Smoking is **strictly forbidden**”  
+    ❌ Not “strongly forbidden”
+    
+
+### Be more expressive and precise
+
+- “It was **bitterly cold** and **pitch dark**”  
+    ❌ Not “very cold and very dark”
+    
+
+### Improve writing style and variety
+
+-  “Poverty **breeds** crime”  
+    ❌ Not “Poverty causes crime”
+    
+- “A **substantial** meal”  
+    ❌ Not “a big meal”
+    
+
+## Type of Collocations
+
+|Type|Example|
+|---|---|
+|Verb + Noun|**make a mistake**, take notes|
+|Adjective + Noun|**strong coffee**, heavy traffic|
+|Noun + Noun|**a surge of anger**|
+|Adverb + Adjective|**deeply disappointed**|
+|Verb + Preposition|**depend on**, suffer from|
+
+## Collocations vs Compounds vs Idioms
+
+| Term            | Meaning                                                                                | Example                         |
+| --------------- | -------------------------------------------------------------------------------------- | ------------------------------- |
+| **Collocation** | Natural word combinations                                                              | make an effort, fast food       |
+| **Compound**    | Two+ words that form one meaning (can be written as one word, hyphenated, or separate) | car park, teapot, narrow-minded |
+| **Idiom**       | A fixed phrase whose meaning is not literal                                            | pass the buck, hit the sack     |
+
+- In **IELTS Writing Task 2**, use **formal collocations** for precision and sophistication:
+    
+    > _Government policies should **tackle unemployment** and **reduce poverty**_.
+    
+- In **IELTS Speaking**, natural collocations boost fluency:
+    
+    > _I always try to **keep in touch** with my old classmates._
+    
+- Avoid overusing basic combinations like “very + adj” (e.g., _very big_, _very cold_). Use high-level collocations:
+    
+    > _A **considerable amount** of money_  
+    > _A **heated debate** over the topic_
+
+# Exercises
+
+## Answer these question
+
+1. Which of these words does _fast_ collocate with: _car, food, glance, meal_
+   
+   fast car and fast food, quick glance and quick meal
+2. Which of these are compounds: _computer, narrow-minded, teapot, ancient monument, car park_
+   
+   -> narrow-minded, ancient monument, car park, teapot
+3. What do we call expressions like _pass the buck_ and _be over the moon_?
+
+## Make ten collocations from the words in the box
+
+![](Pasted%20image%2020250729114310.png)
+
+an effort ancient bitterly make breakfast cold dark engine forbidden mistakes have make meal monument pitch powerful strictly substantial TV watch
+
+
+MAKE AN EFFORT
+
+watch TV
+
+powerful engine
+
+have breakfast
+
+pitch dark
+
+bitterly cold
+
+substantial meal
+
+ancient monument
+
+made mistakes
+
+strictly forbidden
+
+## Put the expressions from the box into the correct category in the table below
+
+![](Pasted%20image%2020250729114620.png)
+
+| compound   | collocation           | idiom                |
+| ---------- | --------------------- | -------------------- |
+| live music | make a mistake        | a storm in a tea cup |
+| checkpoint | heavy snow            |                      |
+| key ring   | valid passport        | pull somebody's leg  |
+| teapot     | bitterly disappointed |                      |
+
+## Underline the collocations in this text
+
+When I left university I __made a decision__ to take up a profession in which I could be creative. I could play the guitar, but I’d never written any songs. Nonetheless, I decided to become a singer-songwriter. I made some recordings but I had a __rather heavy cold__, so they didn’t __sound good__. I made some more, and sent them to a __record company__ and waited
+for them to reply.
+So, while I was waiting to become famous, I got a job in a __fastfood__ restaurant. That was five years ago. 
+I’m still doing the same job.
