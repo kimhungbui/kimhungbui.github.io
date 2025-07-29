@@ -2,6 +2,9 @@
   {
     "listing": "/english.html",
     "items": [
+      "/english/grammar-academic-discussion-lead-in-phrases/index.html",
+      "/english/grammar-referring-to-work-sections/index.html",
+      "/english/grammar-linking-ideas/index.html",
       "/english/grammar-expresing-reporting-opinions/index.html",
       "/english/grammar-complex-noun-phrases-prepositions/index.html",
       "/english/writing-set13-w1-hospital/index.html",
@@ -99,6 +102,9 @@
       "/math/statistics/references.html",
       "/math/convex-optimization/summary.html",
       "/math/statistics/summary.html",
+      "/english/grammar-academic-discussion-lead-in-phrases/index.html",
+      "/english/grammar-linking-ideas/index.html",
+      "/english/grammar-referring-to-work-sections/index.html",
       "/english/grammar-expresing-reporting-opinions/index.html",
       "/english/grammar-complex-noun-phrases-prepositions/index.html",
       "/english/writing-set13-w1-hospital/index.html",
@@ -190,14 +196,6 @@
     ]
   },
   {
-    "listing": "/artificial-intelligent.html",
-    "items": [
-      "/artificial-intelligent/deep-learning-interview/index.html",
-      "/artificial-intelligent/finetunning/index.html",
-      "/artificial-intelligent/convolution/index.html"
-    ]
-  },
-  {
     "listing": "/posts.html",
     "items": [
       "/posts/extreme-early-retirement/index.html",
@@ -205,6 +203,14 @@
       "/posts/fiction/index.html",
       "/posts/pkm-quarto-books/index.html",
       "/posts/nextcloud-install/index.html"
+    ]
+  },
+  {
+    "listing": "/artificial-intelligent.html",
+    "items": [
+      "/artificial-intelligent/deep-learning-interview/index.html",
+      "/artificial-intelligent/finetunning/index.html",
+      "/artificial-intelligent/convolution/index.html"
     ]
   }
 ]
