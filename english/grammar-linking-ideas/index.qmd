@@ -1,0 +1,223 @@
+---
+title: Linking ideas in academic writing and speech
+lightbox: false
+description: Do exercises and extend
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge Advance Grammar in Use
+    affiliation-url: 
+date: 2025-07-28
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# A
+_Sentence connectors, conjunctions_ and _pro-forms_ are used to link ideas in academic writing and speaking in a number of ways.
+ 
+- _Sentence connectors_ link sentences. There is usually a full stop at the end of the first sentence, and the sentence connector often comes at the start of the next.
+- _Conjunctions_ link clauses within sentences. A comma often separates the clauses. Most conjunctions come at the start of their clause.
+- _Pro-forms_ are general words or phrases that refer back to more specific words or phrases, avoiding repetition.
+
+__Examples:__
+
+__In sum__^[sentence connector (introducing a short summary of the main points)], temperature is an important factor determining the shelf life of a food product __in that__^[conjunction (giving a reason)] variations in temperature can result in the growth of microorganisms which can cause the product the spoil. __Furthermore__^[sentence connector (adding information)], incorrect freezing can damage the proteins of meat or other products. __Given that__^[conjuntion (meaning 'when these things are considered')] the maintenance of the correct temperature over a long period is essential, it is necessary to use time temperature indicators. Studies have shown that these indicators reduce food waste considerably. __As well__^[sentence connector (adding information)], they reduce the number of foodborne illnesses.
+
+
+Sociology researchers use two types of information: primary data and secondary data. __The former__^[pro-form (meaning 'the first thing mentioned)] is collected by the researcher themselves, __whereas__^[conjunction (contrasting two facts)] secondary data already exists in some form, such as documents or previous research. Collecting primary data can be time-consuming and expensive, and __as such__^[pro-form (meaning 'because something is as it was previously described')], undergraduate researchers often prefer to use secondary data.
+
+# B - In Speaking
+
+Some sentence connectors, conjunctions and pro-forms used in writing have equivalent words or phrases which are more common in speaking. Compare these extracts from a spoken presentation with the text in A:
+
+__To put it briefly__, temperature is an important factor ...
+
+__The reason for this is that__ variations in temperature can result in ...
+
+__On top of that__, incorrect freezing can damage ...
+
+__Taking into account that__ the maintenance of the correct temperature ...
+
+__Also__, they reduce the number ...
+
+Here are more examples of formal linking words and phrases. Possible informal alternatives are given in brackets, although these will not substitute for the more formal linking word or phrase in every context.
+
+|                        |                                                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Sentence connector<br> | __in addition, as well__ (also); __first, firstly__ (first of all) [etc]                                              |
+| Conjunction            | __albeit__ (but); __considering, given that, in the light of __(bearing in mind that, taking into account that) [etc] |
+| Pro-forms              | __as follows__ (in this way); __as such__ (because of this) [etc]                                                     |
+
+# Exercises
+
+## Choose appropriate sentence connectors, conjunctions or pro-forms from those in the box to complete these extracts from academic writing.
+
+__albeit, as such, given that, moreover, namely, thereby__
+
+1. Their study found that women were excluded by men from decision-making groups such as senior management teams. <font color="#00b050">Moreover</font>, their views tended not to be as highly regarded as those of men.
+2. The peace treaty ended the fighting in 1987, <font color="#00b050">albeit</font> temporarily.
+3. Pollen is one of the most widespread and longest lasting organic materials. <font color="#00b050">As such</font>, pollen analysis is the most commonly used technique for investigating past environments.
+4. The manufacturing process was simplified, <font color="#00b050">thereby</font> reducing labour costs.
+5. More than half of patients reported a side-effect of the drug, <font color="#00b050">namely</font>^[used when you want to give more detail or be more exact about something you have just said] severe headaches.
+6. The children's lack of awareness of what constitutes a good diet was surprising, <font color="#00b050">given that </font>they had all taken classes in nutrition and cooking.
+
+## Complete each sentence with the more appropriate item from the pairs of words and phrases in brackets. The first sentence in each pair is from an academic text and the second from a spoken presentation.
+
+1. The research shows that cost of food is a more significant factor than its origin <font color="#00b050">insofar as</font>^[to the degree that] the general public are concerned. (where - ~~insofar as~~)
+2. "About 20% of the respondents said they skipped breakfast as least one a week. <font color="#00b050">Also</font>, 15% of these didn't eat lunch on those days either." (~~also~~ - further) ^["Also" = addition of related fact or statistic, "Further" = an additional argument or point in a disscussion, not another data point.]
+3. The photographs were in superb condition, <font color="#00b050">considering</font> that they were taken over a century ago. (_considering - bearing in mind_)^[in writing, bearing in mind is not formal]
+4. "The surface temperature of the star Betelgeuse is around 3.500 degrees Kelvin. <font color="#00b050">To put it another way</font>, it's about half the temperature of the Sun." (_to put it another way - that is to say_)^[that is to say is more formal, technical clarification]
+5. The study has several limitations. <font color="#00b050">Firstly</font>, the sample size was relatively small. (_firstly - first of all_)^[firstly, in writing, first of all in speaking]
+6. "The financial markets have been hit badly by the effects of the virus, but usually they rebound quickly from <font color="#00b050">situations like this</font>". (_such situations - situations like this_)
+7. The compulsory wearing of seat belts was introduced in 1983. <font color="#00b050">Subsequently</font>, the number of head injuries in car crashes reduced dramatically. (_after that - subsequently_)
+8. "Have a look at <font color="#00b050">these</font> examples that I've taken from the textbook for the course. The first one shows..." (_these - the following_)
+
+## Look at the linking language in this extract from an academic text, and suggest alternatives to make it sound more like a spoken presentation.
+
+'Biodiversity' is the abbreviated word for 'biological diversity'. __The latter__ -> <font color="#00b050">The last / the second</font> term appears to have come into use in the early 1980s, when Bruce Wilcox defined it __as follows__-> <font color="#00b050">in this way/ like this</font>: "the variety of life forms ... at all levels of biological systems - molecular, organismic, population species and ecosystem". __Hitherto__ -> <font color="#00b050">Before this/ that</font>, the terms 'species diversity' or 'species richness' were used. So the term 'biological diversity' - __subsequently__-> <font color="#00b050">after that</font> 'biodiversity' is relatively new. __That said__ -> Having said that, philosophers and scientists have studied many aspects of biodiversity over hundreds of years. Even Aristotle, working nearly two and a half thousand years ago, studied biodiversity __in that__-> <font color="#00b050">because</font> he looked for similar patterns in organisms so that he could group them together.
+
+
+
+__Also and Further__: 
+
+"Also" = addition of a related fact or statistic
+
+It's used here to add another data point about the same group (those who skipped breakfast).
+
+It shows that skipping lunch is an additional behaviour from the same participants.
+
+"Also, 15% of these..." = In addition to skipping breakfast, they also skipped lunch.
+
+❌ Why not “further”?
+
+“Further” is more formal and usually used to:
+
+Introduce an additional argument or point in a discussion, not another data point.
+
+Often appears in Task 2 essays (not typically Task 1).
+
+✅ Example of correct use of “further”:
+
+Further research is needed to understand the long-term effects of this trend.
+
+So in IELTS Writing Task 1, where you're presenting facts and data, “also” is usually more appropriate for connecting related statistics.
+
+When to use:
+
+| Connector                 | Use When...                                         | Example                                           |
+| ------------------------- | --------------------------------------------------- | ------------------------------------------------- |
+| **Also**                  | Adding **another fact/data point**                  | _20% skipped breakfast. Also, 15% skipped lunch._ |
+| **In addition**           | More formal alternative to "also"                   | _In addition, 15% missed lunch._                  |
+| **Furthermore / Further** | Adding **a new point or argument** (esp. in Task 2) | _Furthermore, this may lead to health issues._    |
+
+'Considering' and 'Bearing in mind'
+
+The photographs were in superb condition, ___ they were taken over a century ago.
+
+✅ Correct answer (from the book): considering
+
+✅ Why “considering” is the better answer here:
+
+1. Grammatical Structure – Short, Integrated Clause
+
+“Considering” can be used without “that” and still form a natural, concise clause:
+
+...considering they were taken over a century ago. ✅
+
+✅ This flows smoothly within the sentence.
+
+“Bearing in mind” often sounds heavier, and more natural when followed by “that” or used in separate clauses:
+
+...bearing in mind that they were taken...
+
+✅ Correct, but wordier and less idiomatic in this kind of sentence.
+
+2. Tone and Register – Concise Descriptive Language
+
+In this context, you're describing a surprising or notable fact, and "considering" is the most natural and idiomatic choice.
+
+“Bearing in mind” feels more reflective or argumentative, and is better suited for conclusions or commentary, such as:
+
+Bearing in mind the results, we can conclude that...
+
+✅ Used more in academic or spoken reasoning, not as clean in description.
+
+3. Common Usage in Writing
+
+Native speakers and academic writers frequently use “considering” in descriptive clauses:
+
+It's surprisingly warm, considering it's still February.
+
+She did well, considering how little time she had.
+
+✅ This structure is frequent and natural in written English.
+
+📘 Summary
+
+| Phrase              | Use in sentence                         | Suitable?                                                                                  |
+| ------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Considering**     | _...considering they were taken..._     | Natural, concise, descriptive                                                              |
+| **Bearing in mind** | _...bearing in mind they were taken..._ | Grammatically OK, but **less idiomatic** and slightly awkward in this descriptive sentence |
+
+To put in another way and That is to say
+
+| Phrase                      | Meaning                                          | Tone                                          | Use                                                        |
+| --------------------------- | ------------------------------------------------ | --------------------------------------------- | ---------------------------------------------------------- |
+| ✅ **To put it another way** | Rephrases or simplifies for better understanding | Conversational, natural in **spoken English** | Best for presentations, speeches, IELTS Speaking           |
+| ❌ **That is to say**        | More formal, technical clarification             | Academic, stiff                               | More common in **written English**, less natural in speech |
+Example in Spoken IELTS:
+
+The star Betelgeuse is cooler than the Sun — around 3,500 Kelvin. To put it another way, it's only about half as hot as our Sun.
+
+❌ Less Natural for Speaking:
+
+That is to say, it is about half the temperature of the Sun.
+
+→ Feels too formal or mechanical in a spoken explanation.
+
+🧠 Tip for IELTS Speaking:
+
+Use "to put it another way" when:
+
+You want to simplify a fact
+
+Make a comparison more relatable
+
+Show communicative fluency and coherence
+
+
+Firstly and First of all
+
+|Phrase|Use|Register|Best For|
+|---|---|---|---|
+|✅ **Firstly**|Used to **introduce the first point** in a formal list or structured argument|Formal, academic|**Academic writing (IELTS W2, reports, essays)**|
+|❌ **First of all**|More informal or conversational; often used in speech|Neutral/informal|**Spoken English** or informal writing|
+
+Example in Academic Context (IELTS Writing Task 2):
+
+There are several problems with this policy. Firstly, it may discourage innovation. Secondly, it lacks transparency.
+
+❌ Less Appropriate:
+
+The study has several limitations. First of all, the sample size was small.
+
+→ Sounds slightly too informal for IELTS academic writing.
+
+🧠 Band 8+ Writing Tip:
+
+When organizing ideas in IELTS Writing Task 2 (or Task 1 GT letters), prefer:
+
+Firstly, Secondly, Finally
+
+In addition, Moreover, Furthermore
+
+On the one hand, On the other hand

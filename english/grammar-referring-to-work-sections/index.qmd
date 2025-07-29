@@ -1,0 +1,138 @@
+---
+title: Referring to other work and sections in academic writing and speaking
+lightbox: false
+description: Do exercises and extend
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge Advance Grammar in Use
+    affiliation-url: 
+date: 2025-07-28
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Referring to other work: as + passive / past participle
+
+In academic writing and speaking we can make references to other people's work using a clause with __as + passive__
+
+The first approach should be discarded as it makes wrong predictions about word order, __as is argued__ in Frascarelli and Hinter (2007).
+
+Past usage experience had a major impact on consumer decision behaviour, __as has been shown__ in a number of recent studies.
+
+:::{.callout-tip}
+Note that we don't use _it_ in this type of clause. (_not_ ... as it is argued by ... _or_ as it has been shown ...)
+:::
+
+More commonly we use a reduced passive form - __as + past participle__:
+
+__As noted__ by Kerr (2004) these figures were a significant underestimate.
+
+Both temperature and moisture were important in explaining the abundance of fungi, __as demonstrated__ in previous studies (e.g. Lam, 2002; Rich at al., 2014)
+
+:::{.callout-tip}
+_Also:_ __as + argued, described, discussed, illustrated, indicated, mentioned, pointed out, shown, suggested_
+:::
+
+Using a passive or reduced passive to refer to the work of others often indicates, in an impersonal way, that we agree with them:
+
+- The basic communicative goal of scientific research articles, __as suggested by Bird (2009)__, is to convey the results of scientific inquiry.
+
+Using an active verb is more neutral and may be followed either by agreement or disagreement:
+
+- __Bird (2009) suggests__ that the basic communicative goal of scientific research articles is to convey the results of scientific inquiry.
+
+# Referring to other parts of a written text: as + past participle
+
+__As + past participle__ is also commonly used by writers to refer to tables and figures in their own texts, and is referred to more personal forms:
+
+- __As (is) seen in the following chart__, interest rates are lower now than in the last 30 years. (_rather than_ As you see in the following chart ...)
+- During her first 32 weeks of talking, Keren acquired 337 words, __as shown in Figure 2-2__.
+
+:::{.callout-tip}
+_Also:_ __demonstrated, depicted, described, discussed, explained, given, illustrated, indicated, outlined__
+:::
+
+__As + past participle__ is also used to refer to other sections of a text with adverbs such as __above__:
+
+__As discussed above__, exploration of the Moon will provide insights into the formation of the Solar System
+
+:::{.callout-tip}
+_Also:_ __earlier, previously; below, later, next; elsewhere__ (= in another part of the text)
+:::
+
+# Referring to other parts of a spoken presentation
+
+When we refer to other parts of a presentation we are giving, we tend to use time adverbs, not location adverbs:
+
+- As I said __before__, ... (_not_ As I said above ...)
+- ... as I'll come back to __later on__. (_not_ ... as I'll come back to below)
+
+:::{.column-margin}
+_Also:_ __already, earlier, previous; next__
+:::
+
+Other grammatical structures commonly used in referring backwards and forwards in spoken presentations include __what-clauses__ and __-ing-clauses__. Examples are highlighted in these extracts from a presentation:
+
+__Coming back to the earliest development of language__, it's been estimated that it originated around 40,000 years ago ... __What I want to go on to next__ is the development of written language ... Language gave people the ability to think and plan, __as I pointed out previously ... Returning to my point about__ the development of written language ... __What we'll do next weeks is__ begin to look at non-verbal communication... 
+
+# Exercises
+
+## Match a sentence from (i) with a sentence from (ii) and combine them into one sentence beginning As + past participle _or_ As + passive form.
+
+
+| (i) |                                                                                | (ii) |                                                                                             |
+| --- | ------------------------------------------------------------------------------ | ---- | ------------------------------------------------------------------------------------------- |
+| 1   | The use of neonicotinoid insecticides has led to a decline in bee populations. | a    | this opportunity has been suggested by writers such as Eli (2015) and Koros (2017)          |
+| 2   | Globalization is associated with more efficient food production                | b    | This advantage was shown in research by Connors (2019).                                     |
+| 3   | The Moon may be a source of materials for use on Earth.                        | c    | This problem was first identified by Cortez in 1998.                                        |
+| 4   | Small group learning can reduce motivation.                                    | d    | This tendency has been noted in many recent studies, including Hale (2020) and Kim (2021).  |
+| 5   | The number of people adopting a vegan diet has increased rapidly since 2015.   | e    | This improvement has been reported in a number of studies. (e.g. Manuel, 2015; Reith, 2018) |
+
+1(+ c) As first identified by Cortez (1988), the use of neonicotinoid insecticides has led to a decline in bee populations.
+
+2(+ e) As (has been) reported in a number of studies (e.g. Manuel, 2015; Reith, 2018), globalization is associated with more efficient food production.
+
+3(+ a) As (has been) suggested by writers such as Eli (2015) and Koros (2017), the moon may be source of materials for use on Earth.
+
+4(+ b) As (has been) showed in research by Connors (2019), small group learning can reduce motivation.
+
+5(+ d) As has been noted in many recent studies, include Hale (2020) and Kim (2021), the number of people adopting a vegan diet has increased rapidly since 2015.
+
+Reflection: Look at an example of your own academic writing. Where you have referred to other work or other parts of your text, have you used an as + past participle or as + passive form? If not, can you express yourself better by using one?
+
+## If necessary, suggest corrections or improvements to these extracts from academic writing and spoken presentations
+
+1. Radioactive decay can be plotted in a linear form, as outlined <font color="#00b050">in</font> Figure 3.
+2. Many friendships were formed between students on the same course, ~~as you can see~~ <font color="#00b050">as (can be) seen</font> in the following table.^[in academic writing, unusual to address the reader as 'you', But in some textbook, we can see that because the reader is likely to be a student and the writer/ teacher adoptsa more personal tone.]
+3. <font color="#00b050">As was noted above</font>, the majority of graduates do not go on to work in the area in which they were trained.
+4. "It's essential nuclear power is expanded, and I'll be explaining why that is ~~below~~ <font color="#00b050">later</font>"^[In speech, location adverbs are avoided for referring forward]
+5. ~~As I have already explained~~ <font color="#00b050">As previously explained</font>^[Academic writers tend to avoid referring to themselves with 'I' and instead use an impersonal form], institutions like the World Bank are crucial in global governance.
+6. "As I've indicated ~~elsewhere~~ <font color="#00b050">already/ earlier/ previously</font> ^['elsewhere', meaning in another part of the presentation, is unlikely here. If it means 'earlier in the presentation'], most of the teachers involved in online education responded."
+7. Public health education may be organized at local, community or national level, ~~as it was outlined previously~~ <font color="#00b050">as (was) outlined previously</font>.
+8. "As I pointed out ~~above~~ <font color="#00b050">previously/ earlier/ before</font> ^[In speech, location adverbs are avoided for referring back], without a brand name a company can't distinguish its products."
+
+## Reword the bracketed parts of this presentation, including an as-, -ing- or what-clause in each answer
+
+[1 I said earlier that] there are many factors affecting the health of a community, include physical, social and cutural factors.[2 In this talk I plan to] consider physical and social factors, and then in the next one look at cultural factors.
+
+[3 I have already pointed out that] a community's health is directly influenced by its climate...
+[4 I will now turn to social factors. There arise] from the interaction between individuals and groups in the community. To illustrate, [5 I am going to] show you a short video..
+[6 I will now come back to other social factors. It is clear that] the economy is an important influence on the prevision of health care and social services...
+
+1 As I said earlier,
+2 What I plan to do in this talk is (to)
+3 As I've already pointed out 
+4 Turning now to social factors, these arise
+5 What I'm going to to is
+6 Coming back now to other social factors, it is clear that 
+

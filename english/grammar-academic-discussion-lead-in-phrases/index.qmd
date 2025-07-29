@@ -1,0 +1,140 @@
+---
+title: "Academic discussion: Lead-in phrases"
+lightbox: false
+description: Do exercises and extend
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Cambridge Advance Grammar in Use
+    affiliation-url: 
+date: 2025-07-28
+categories:
+  - english
+  - grammar
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Many lead-in phrases are used to structure academic discussion: to introduce ideas cautiously, challenge ideas, invite opinions, etc. Some of these make use of reporting structures.
+
+# Reporting structures to introduce ideas cautiously and challenge ideas
+
+In academic discussion we tend to introduce an idea or opinion cautiously, as it often just one point of view, not an objective fact. One way to do this to preface the idea with a reporting clause. For example:
+
+- __I should/ would think that__ we'll still be using fossil fuels in 20 years time.
+
+- __I shoundn't/ wouldn't think that__ anyone would object to the decision.
+
+Even more cautiously we can use __I should(n't)/ would(n't) have thought that__:
+
+__I should/ would have thought that__ there wouldn't be any danger to animals. Or
+
+__I shouldn't/ wouldn't have thought that__ there would be any danger to animals.
+
+Note that we avoid using two negatives. (_not_ I wouldn't/ shouldn't have thought there wouldn't be any danger to animals.)
+
+In some contexts we can use the same patterns to politely challenge what another speaker has said:
+
+A: I'll be targeting 40 to 60 year olds in the experiment.
+
+B: Well, __I shouldn't have thought__ the age of the subjects would make any difference. (= I don't think that)
+
+# Reporting structures to invite opinions
+
+One way to invite another speaker to present an idea or opinion or to expand on one already presented is by using a __wh-clause__ with certain reporting verbs:
+
+A: The results show a preference for self-service over personal service in stories.
+
+B: __Why do you think (that)__ self-services is so popular?
+
+A: I'll live stream the lecture to students off campus.
+B: __Where do you intend to__ position the camera?
+
+:::{.callout-note}
+Other verbs used in this way include: __anticipate, feel, imagine, reckon, recommend, suggest, suppose__ (may be followed by _that_); __consider, expect, propose, want__ (usually followed by a _to_-infinitive)
+:::
+
+# Other lead-in phrases
+
+Many other lead-in phrases are used to structure academic discussion:
+
+A: __In a way__, the Internet has completely changed the way we communicate. (reducing the force of the statement)
+
+B: __So you mean__ that it has improved communication? (asking for clarification)
+
+A: Not necessarily, no. __What I'm saying is__ that ... (clarifying an opinion)
+
+Here are some more examples:
+
+
+|                                                                 |                                                                                     |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| _speculating_                                                   | __I'd have thought...; I imagine...__                                               |
+| _being direct_                                                  | __To be honest...; Frankly, ...__                                                   |
+| _clarifying_                                                    | __What I mean is (that) ...; I suppose I'm trying to say (that) ...__               |
+| _inviting an opinion/ asking for confirmation or clarification_ | __So you mean that ...; So what you're saying is ...; So you're saying (that) ...__ |
+| _introducing a problem or disadvantage_                         | __The (only) thing/ problem/ trouble is ...; For one thing ...__                    |
+| _giving an opinion with limited evidence_                       | __As far as I can see/ tell/ judge ...__                                            |
+# Exercises
+
+## Choose an item from (i) and an item from (ii) to complete the discussion extracts. Use a different answer in each question.
+
+
+| (i)                                | (ii)                |
+| ---------------------------------- | ------------------- |
+| would, wouldn't, should, shouldn't | think, have thought |
+
+1 A: I <font color="#00b050">would think/ should think/ would/should have thought</font> that it would be difficult to enforce a ban on political donations.
+B: I agree. Very complicated indeed.
+
+2 A: The data appears to show that the 30 to 40 age group has more back pain than the 50 to 60 year olds.
+
+B: <font color="#00b050">I would think/ should think/ would have thought/ should have thought</font> that the opposite was more likely.
+
+3 A: Difficulty in getting flights has put back the start of my fieldwork.
+
+B: I <font color="#00b050">wouldn't think/ shouldn't think/ wouldn't have thought/ shouldn't have thought</font> a delay of a couple of weeks would be a problem.
+
+4 A: I <font color="#00b050">wouldn't have thought/ ...</font> that I'd have any difficulty in getting volunteers.
+
+B: Well, that wasn't my experience.
+
+5 A: The majority of the students had a very positive reaction to problem-solving in groups.
+
+B: I <font color="#00b050">would think that</font> many students would react quite negatively.
+
+## Complete each sentence with a wh- clause made up of a word or phrase from the box and the verb in brackets. In some cases more than one answer is possible
+
+How, How long, What, When, Where, Which, Who, Why
+
+1 <font color="#00b050">What do you imagine</font> the response rate to the questionnaire will be?
+2 <font color="#00b050">How/ When do you expect to</font> deal with the problem of analysing such huge amount of data? (expect)
+3 <font color="#00b050">How long/ when/ why do you suggest (that)</font> we keep the specimens refrigerated? (suggest)
+4 <font color="#00b050">Why/ how long do you recommend (that)</font> people taking this medication should avoid driving? (recommend)
+5 <font color="#00b050">When do you anticipate (that)</font> patients will know the results of their tests? (anticipate)
+6 <font color="#00b050">Who do you reckon</font> was responsible for the fault in the equipment? (reckon) ^[Who do you think was responsible for ... (reckon is informal)]
+7 <font color="#00b050">Where/ When do you propose to/ we should</font> hold the seminar? (propose)
+8 <font color="#00b050">What/ Which do you consider to</font> be the best option: A or B? (consider)
+
+##  A group of students are discussing whether crewed or robotic missions should take priority in space exploration. Choose the most likely lead-in phrase
+
+As far as I can see, For one thing, I take your point, So what you're saying is, That's not to say, To be honest, What I mean is
+
+Ana: I've been doing some reading on this. (1) As far as I can see, NASA plan to prioritize crewed rather than robotic missions, and I think that's right. Humans can respond to problems in a way that computers never can. Take Apollo 13, for instace.
+
+Beto: (2) I take your point, but robotic missions can go on for years in a way that crewed missions can't.
+
+Carla: Yes, I agree. There are so many disadvantages of a crewed over a robotic mission. (3) For one thing, it's so much more expensive, and then there's the risk the lives of the astronauts.
+
+Ana: (4) So what you're saying is that we should never send people into space?
+
+Beto: No. (5) What I mean is that it's a better use of money - and much safer - to use robotic missions. (6) That's not to say that a robotic mission can do everything a crewed mission can, but robotic missions should take priority.
+
+Dan: (7) To be honest, I've no idea which is better. There are so many pros and cons of each.
+
