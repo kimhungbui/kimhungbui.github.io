@@ -1,0 +1,70 @@
+---
+title: Singular or Plural?
+lightbox: false
+description: When plural
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-29
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Tick the correct sentence in each pair.
+1. a There are several problem with this idea.
+   b There are several problems with this idea.
+   -> b
+2. a Many charity organizations provide a great deal of help
+   b Many charity organization provides a great deal of help
+   ->a
+
+If we use a plural noun, we must use a plural verb. The verb must 'agree' with the noun:
+
+_In my country, __there are__ very few __cars__ that use leaded petrol._ (plural verb + plural noun)
+
+_I like studying during the day but __my friend prefers__ studying at night._ (singular noun + singular verb)
+
+We use a plural noun with:
+- plural verbs: _are, were, have, do, play, etc._: There are a lot of books on the table.
+- numbers greater than one: 30 cars, 100 students
+- _many_: It is annoying that so __many buses drive__ fast because they __are__ full.
+- _the number of_: __The number of buses__ on our roads __has__ increased each year.
+
+Note that we use a plural noun but a singular verb after _the number of_
+
+We use a singular noun with:
+- singular verbs: _is, was, has, does, plays, etc._: There is only one bedroom in the flat.
+- _a/an_ or _one_: a car, one student
+
+Note that some nouns can look plural but are singular (_news, mathematics_) and some nouns have a different form in the plural (_children, men, women, people_)
+
+# Correct the mistake below
+
+The number of woman studying science increased dramatically last year.
+
+The number of women studying science increased dramatically last year.
+
+# Underline the correct word in each sentence.
+
+1. The children are playing in the street.
+2. The number of men studying science has decreased.
+3. There are a lot of people in my class.
+4. I enjoyed studying mathematics a lot; I found it very interesting
+5. The news was very upsetting.
+6. How many classes do you have today?
+7. A person I really admire is my uncle.
+8. My father watches a lot of sport on TV.
+
+# Which nouns don't have a plural form?
+
+## Tick the correct sentence in each pair

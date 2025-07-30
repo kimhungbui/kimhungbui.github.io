@@ -1,0 +1,61 @@
+---
+title: Are there any special times I should use the?
+lightbox: false
+description: Using the word the
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-29
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Tick the correct sentence in each pair
+
+1. a In the USA this situation is totally different
+   b In USA this situation is totally different
+   -> a is correct
+   
+2. a The table shows number of people working in Britain in 1976.
+   b The table shows the number of people working in Britain in 1976.
+   -> b
+
+We use _the_
+- with countries or places where the name refers to a group of islands or states: <font color="#00b050">the United States, the Middle East, the United Arab Emirates, the UK.</font>
+- with superlatives: <font color="#00b050">the best, the longest, the highest</font>
+- with cardinal numbers: <font color="#00b050">the first, the second, the third</font>
+- when there is only one in the world: <font color="#00b050">the environment, the internet, the sun</font>
+- to refer to the only one in this particular are: <font color="#00b050">the government, the police, the river</font>
+- in the phrase: <font color="#00b050">the same as</font>
+
+We don't use _the_
+- With the single country or place: <font color="#00b050">America, England, China</font>
+- to talk about something in general. We use the plural if we are talking about something in general; we use _the_ to identify one specific example. Compare:
+  People with reading difficulties often have problem with numbers.
+  The number eight is considered lucky in some countries.
+
+# Correct the mistake below
+
+Your hairstyle is not same as mine ->
+
+Your hairstyle is not the same as mine.
+
+# Complete the sentences below using the words in brackets. Decide whether or not to use the, or whether to use the plural.
+1. The main advantage of _the internet_ is that it gives us access to information from all over the world. (internet)
+2. My father has fished in rivers all over Australia. (river)
+3. Life in America is very different from life in my country. (America)
+4. According to the graph, the number of people moving into the city each year has more than doubled. 
+5. The total figure for 1976 was the same as the total figure for 1982.
+6. Obesity is much more common in the USA than in my country.
+7. The graph shows that the greatest increase occurred in 1999.
+8. The moon travels around the earth at a speed of 3,700 kilometers per hour. (moon, earth)
