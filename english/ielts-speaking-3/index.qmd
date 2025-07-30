@@ -1,0 +1,34 @@
+---
+title: Developing Advanced Pronunciation Skills
+lightbox: false
+description: Assess IELTS Speaking
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-30
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Connected speech
+
+## Pronunciation problems in connected speech
+
+When we speak, we don't use individual sounds or words
+
+
+# Adding extra sounds
+
+
+
+# Chunking and rhythm

@@ -1,0 +1,93 @@
+---
+title: What skills do you need to shows?
+lightbox: false
+description: Begin Series How to write IELTS TASK 2
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-30
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Task response and Coherence and cohesion
+
+The most common problems in sample answers are connected to Task response and C and C. In fact, many of the essays that claim to be IELTS band 9 actually show band 6 in these areas. 
+
+The band descriptors for Task response tell us that the key problems at band 6 are:
+
+:::{.callout-note}
+- Not addressing all parts of the task equally (__addresses all parts of the task though some parts may be more fully covered than others__)
+- Not making your position clear (__position is clear throughout__ from band 7), and not making conclusions clear (__the conclusions may be unclear or repetitive__)
+- Not developing and explaining your main ideas (__some may be inadequately developed or unclear__)
+:::
+
+In Coherence and cohesion, a comparison of bands 6 and 7 shows that the main problems are
+
+:::{.callout-note}
+- Arranging the information coherently (band 6), but without a clear progression throughout (band 7)
+- Cohesion and referencing (band 6 cohesion within and between sentences may be fautly and referencing is not used clearly)
+- A lack of a clear central topic in each paragraph (this is present from band 7 onwards)
+:::
+
+# Understanding the task
+
+Writing task 2 is a formal discursive essay, in which we must '_present a fully developed position_' in response to the issue raised in the question (band 9 Task response). This means clearly explaining our own thoughts and ideas about the issue, and organizing them so that they present a clear argument.
+
+The word 'argument' has a very particular meaning here. In the context of a discursive essay, it means: the reasons you believe something to be true. In IELTS, our argument will explain the reasons why we hold the position we claim to hold. 
+
+This may mean:
+
+:::{.callout-tip}
+- __Explaining the reasons__ why you agree or disagree with an idea
+- __Explaining the reasons__ why you believe the advantages of something outweigh its disadvantages
+- __Explaining the reasons why__ something is a problem and __what you believe could be__ a good solution
+- __Explaining the reasons why__ you believe that certain effects make a development positive or negative
+- __Explaining why__ you believe a proposed solution is, or is not, __the best or only way__ to deal with a problem.
+:::
+
+The words in bold show the elements that are often left undeveloped, or that remain unclear in a typical band 6 essay. As we will see in later lessons, candidates below band 7 often attempt to explain their reasons, but these explanations are not always clearly connected to the position they claim to hold, or not always relevant to the issue in the question.
+
+## Why Planning and Critical thinking are important for IELTS
+
+By Pauline Cullen, the issues related to Task response are due to a lack of thinking and planning. She suspects that some people believe that once their language level is high enough, they no longer need to plan, or barely need to plan at all. The reality is that humans don't think in clear, coherent paragraphs or arguments. Our thoughts are not always logical, and they don't always connect logically together. This is why no one can simply sit down and write a clear, coherent discursive essay; you must always engage in __critical thinking__ to sort through your ideas, and plan out your argument first. Without doing this, the writing you produce will be confusing and unclear to your reader, no matter what your spoken language level is. 
+
+:::{.column-margin}
+Vocabulary note: The word 'critical' often has a negative meaning - it can mean finding faults or problems in something. 'Critical thinking' is not a negative idea, it is about evaluating and judging ideas, it is not about finding errors.
+:::
+
+## I don't have time to plan like that
+
+In the test, thinking and planning are often done quickly in order to begin writing as soon as possible. If you do this, although you may gather some evidence, you will miss out a very important step: without evaluating this evidence, you cannot see which ideas should be left out, where more explanation is needed, or how to use these ideas to construct an argument. When candidates plan quickly, they tend to present 'evidence' that does not support their argument, or they present an argument with little or no evidence at all. In other words, they produce a band 6 answer, where 'conclusions remain unclear' and 'some ideas are inadequately developed.' If you believe that you cannot afford to spend more time planning, then you need to be sure you can afford to keep retaking the test.
+
+:::{.callout-tip}
+If you don't apply critical thinking to writing task 2, you will not achieve band 7. If you believe that you cannot afford to spend more time thinking and planning, then you need to be sure you can afford to keep retaking the test.
+:::
+
+## Development and Progression
+
+The Task response criterion tells us that, to score band 6, a candidates essay must '_present a relevant position_', although there might be some '_inadequately developed_' or '_unclear_' main ideas. To reach band 7, candidates' answers must '_present a clear position throughout_', and for bands 8 and 9, a '_well-developed_' or '_fully developed_' response must be produced. In terms of Coherence and cohesion, to score band 6, there must be '_a clear overall sense of progression_' that is missing in band 5. But to reach bands 7 or above, this progression must be '_clear throughout_' your essay.
+
+These ideas of progression and development are connected to your argument. Progression refers to the way that your argument progresses from one main idea to the next; it can be seen through the way that you organize and connect your individual ideas to create one complete (or fully developed) argument. A common problem I see is a good introduction and first body paragraph, then a confusing or problematic second body paragraph, and a very brief conclusion. The overall effect of these elements is judge in Task response.
+
+The Coherence and cohesion criterion is used to assess how clearly the different elements of your essay are connected and organized. If you fail to clearly show the connections between your ideas, then you are unlikely to reach above band 6 in Task response or Coherence and cohesion. The criteria make this very clear, yet, when she points out such problems in people's essays, they often resist her advice. Their comments and reasoning may help show why these problems are so difficult to address.
+
+:::{.callout-tip}
+'It is impossible for anyone to begin to learn that which he thinks he already knows.' Ancient Greek philosopher, Epictetus
+:::
+
+
+
+# How and why you may be practising band 6 coherence and cohesion
+
+# Under-use of cohesive devices
