@@ -1,0 +1,84 @@
+---
+title: "IELTS Reading: Advice and techniques"
+lightbox: false
+description: Assess IELTS reading
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-30
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+Ive published this lesson before, but I think it's worth repeating it for people who have been asking me for reading tips. Here's my list of advice and techniques for TELTS reading: 
+1. Don't read the whole text: you haven't got enough time. Just go straight to the questions. 
+2. 'Paragraph questions are much easier if you do them last. Do other sections first. 
+3. The answers to most questions should be in the correct order in the text, so you don't need to go back to the beginning to start looking for the next answer. 
+4. Read all instructions carefully. 
+5. Look for "keywords'. There are usually words in the questions that are similar to words you need to find in the text. For example, if the text contains the word "global", the question might use the word "international". If you find the similar words, you have probably found the answer. 
+6. You must get to the end and answer every question. If you don't finish, you might miss some easy points. 
+7. Some questions are difficult because their aim is to separate band 8 and band 9. Don't waste time on difficult questions. Miss them, finish the exam, and return to them at the end
+
+# IELTS Reading: 6 tips How can you improve your reading? Here are 6 tips: 
+1. If you want to improve your reading, the first thing to do is read a lot. There are no shortcuts or secret techniques; you will only improve with time and practice. 
+2. Anything you read in English is good practice, so read about subjects that interest you. Try to enjoy reading in English. 
+3. English is the most used language on the Internet. Whenever you search for information on the net, try searching in English first. 
+4. Remember that "understanding is not the same as using". Keep a notebook with useful words and phrases that you find when you're reading, and try using them in your own sentences. 
+5. Apart from reading things that interest you, you also need to read lots of IELTS passages. If you've done all of the tests in the Cambridge books, read the passages again without doing the questions. Use a dictionary, take notes, and try to fully understand each passage. 
+6. Another way to use the Cambridge tests is to look at the correct answers to each question first. Then, your task is to find out why those answers are correct by analysing the passage carefully and finding the "keywords'. I'm sure you can think of other suggestions. Be creative with your reading practice, try to enjoy the learning process, and trust that you will improve if you persist.
+
+# IELTS Reading: 3 study tips Here are 3 tips to help you prepare for IELTS reading 
+
+Materials
+First, for test practice I only recommend the official Cambridge IELTS books. These contain real exam papers from previous years, so you can trust that the difficulty level will be accurate. Second, for advice, techniques and quick exercises, use the lessons here on the blog. Finally, read as much English as you can (in newspapers, books, on the Internet etc.) and write new or useful vocabulary in a notebook. 
+
+Method
+
+There are just two things that you need to do in the reading test: find and understand. First, you need to find where the answer is in the passage. Then you need to read and understand that part of the passage in order to get the right answer. Look through my lessons here on the blog to find more advice about the "keyword technique". I've also explained the keyword technique in this video and in all of the reading lessons on my video course website. 
+
+Improving your score
+To improve your score, you need to work on two things: exam technique and your overall knowledge of the English language. With practice, you'll get better at using the "keyword technique" to find answers. However, if you don't understand the passage, you'll find it very hard to get the right answers. To improve your overall language knowledge, read as much English as you can, and write new or useful vocabulary in a notebook.
+
+# IELTS Reading: which paragraph contains..? 
+
+"Which paragraph contains the following information?" This type of question is not the same as "match the headings to the paragraphs." Here are some tips for "which paragraph contains?" questions:
+- Instead of looking for the main idea of each paragraph, you need to find one piece of information.
+- Some paragraphs might not contain any answers.
+- The same paragraph might contain more than one answer.
+- It's not usually difficult to understand the question or answer, but it is difficult to find the answer.
+- Do these questions last. By doing other questions first, you will become familiar with the passage, and you might remember where some of the answers are.
+- Look for the easiest information first: questions that contain names, numbers or big/unusual words might be easier to find.
+
+# IELTS Reading: how to do multiple choice 
+Try following these steps when doing multiple choice questions: 
+1. Read the question and underline the "keywords" - these are the words that you will try to find in the passage (the main words that give the meaning of the question). 
+2. Read the choices and underline one or two keywords for each one. Focus on words that make the difference between each choice. 
+3. Go to the passage and look for the keywords from the question. 
+4. When you have found the right part of the passage, look for keywords from the choices. 
+5. Read the relevant part of the passage carefully, comparing it to each choice. 
+6. To be sure you have the right answer, you should be able to show that the other answer choices are wrong.
+
+# IELTS Reading: how 'deeply' do you read? 
+There are various different ways to read a text. If you're just gathering information, you might scan several articles or books quickly: perhaps you might choose to quickly skim the beginning and end of an article if you only need to get a general idea of what it's about. When surfing the Internet, we skim, scan, click on hyperlinks, and jump around reading bits of text from here and there. 
+However, if your aim is to learn a new language, you'll need to slow down and do some 'deep' reading. 
+Here are some deep reading tips: 
+- Choose one article per day. If you don't have much time, it should be a very short text, or you could choose to read only part of the article. 
+- Remove all other distractions. If you've chosen an online article, it might be better to print it, or at least copy it onto a Word document. 
+- Read the article through once at normal speed, and then see if you can write a summary of it in five sentences or less. 
+- Read the article a second time, and note down both the 'facts' and the 'opinions' that it contains. Is the writer of the article expressing an opinion or trying to persuade you to think in a certain way? 
+- Next, look at the vocabulary used in the article. Write any useful phrases in your notebook. Remember: knowing the meaning of a word is easy - the difficult thing is knowing how to use words correctly to express ideas. So focus on the way words are used together in collocations and phrases.
+- If you have time to go deeper, you could look at sentence construction: the length of each sentence, the connectives (linking words) that are used, and the order of elements in each sentence. 
+- You could do the same for paragraphs: how does the writer maintain coherence between sentences, how are arguments developed or details added? 
+- You could then analyse grammar more closely: nouns, verbs, tenses, articles etc. 
+
+It's fine to do quick, 'superficial reading too, but you should consider adding at least 15 minutes of focused, deliberate 'deep' reading to your daily study schedule.
