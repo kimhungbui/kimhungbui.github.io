@@ -1,0 +1,31 @@
+---
+title: A One-sentence Argument
+lightbox: false
+description: Begin Series How to write IELTS TASK 2
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-07-31
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# One conclusion or many conclusions?
+
+
+
+# What makes a conclusion or an idea unclear?
+
+
+
+# Language problems

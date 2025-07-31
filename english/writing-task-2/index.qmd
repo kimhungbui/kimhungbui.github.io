@@ -86,8 +86,168 @@ The Coherence and cohesion criterion is used to assess how clearly the different
 'It is impossible for anyone to begin to learn that which he thinks he already knows.' Ancient Greek philosopher, Epictetus
 :::
 
-
-
 # How and why you may be practising band 6 coherence and cohesion
 
+## 'But I know that a paragraph can have implied of inferred main idea'
+
+This response shows that some people aim to write in a way that forces the reader (your examiner) to infer their main ideas rather than stating them clearly and directly. If we are writing in this way, then we are not meeting the criteria that the examiner will use to assess our level. Any time there is a lack of a clear central idea in our paragraphs, we are practising staying at band 6 for Coherence and cohesion.
+
+## 'I want to produce writing like the academic reading passages'
+
+However, these are not discursive essays - the aim and the style of writing are different from those which we must produce in writing task 2. In a reading test, the passages are chosen because they are good resources for assessing high-level reading skills, such as understanding inference. Look at this paragraph from a section 3 reading passage in Cambridge IELTS 9 (p25).
+
+_You might wonder how we can tell whether fossil animals lived on land or in water, especially if only fragments are found. Sometimes it’s obvious. Ichythosaurs were reptilian contemporaries of the dinosaurs, with fins and streamlined bodies. The fossils look like dolphins and they surely lived like dolphins, in the water. With turtles, it is a little less obvious._
+
+Now reading the following version. What do you notice?
+
+_You might wonder how we can tell whether fossil animals lived on land or in water, especially if only fragments are found. Sometimes it's obvious. __For example__, Ichythosaurs, which were reptilian contemporaries of dinosaurs, __had__ fins and streamlined bodies. __Their__ fossils look like dolphins and they surely lived like dolphins, in the water. __However__, with turtles, it is a little less obivious._
+
+In the second version, it is added cohesive devices that make it much easier for the reader to follow the main idea. These were not deleted by the test writers to increase the reading difficulty - it is a stylistic feature of the original article and represents a common style of writing.
+
+Using authentic passages like this is a large part of what makes the IELTS reading test valid. However, while this form of clear signposting reduces the difficulty of a reading passage, it does not reduce the level of writing - the second version is still band 9. When we are testing reading, we are assessing our ability to understand complex texts, not modelling the type of writing we should produce in a discursive essay. If we are copying this style of writing, rather than showing our ability to connect our ideas, we are setting a reading test for the examiner.
+
+## 'But aren't words like 'Firstly, secondly, in addtion' just unnecessary fillers or cliches?
+
+Avoiding cohesive devices like "the latter", "firstly", or "on the one hand" out of fear they are clichés is misguided and may weaken coherence in academic writing, including IELTS essays.
+
+❗ Some IELTS candidates resist using clear linking words due to misinformation or fear of sounding repetitive.
+
+✅ In reality, explicit signposting (e.g. “Firstly,” “However,” “In contrast”) is essential for clear communication in writing.
+
+🎓 Even PhD supervisors and journal editors complain about poor cohesion in academic papers due to a lack of such phrases.
+
+🔗 The issue extends beyond IELTS – it's a common academic problem.
+
+⚠️ One website wrongly labelled useful cohesive devices as “language fillers”:
+
+❌ Incorrect: "From my perception", "I guess", "in recent days" (informal or vague)
+
+✅ Correct: "First of all", "Nowadays", "Some people believe" (valid academic cohesion tools)
+
+🔍 Key Reminder: Always use trusted sources for writing advice.
+
+|Do ✅|Don’t ❌|
+|---|---|
+|Use linking devices to **guide the reader** through your argument|Avoid them based on the myth they are “clichés”|
+|Choose cohesive words carefully for clarity and tone|Follow random internet lists without context|
+|Understand that **clarity > complexity** in IELTS Writing|Assume academic-sounding = better (it's not always true)|
+
+:::{.callout-tip}
+The language that we learn forms an essential toolkit for our writing. Deciding that some of these tools should be avoided like a master builder declaring, '_I'd never use a hammer to hit a nail, everyone does that, it's such a cliche_'. A master builder would always use the right tool for the job. In IELTS, we must do the same to show that we have mastered the skill of writing.
+:::
 # Under-use of cohesive devices
+
+
+When writing for the IELTS exam, especially in **Task 2**, many candidates misunderstand how **linking devices** and **cohesion** work in high-band responses. This blog post explains the **importance of linking** ideas clearly and how **under-using** cohesive devices can harm both your *Coherence and Cohesion* and *Task Response* scores.
+
+
+## ✅ Implicit vs. Explicit Cohesion
+
+Native speakers do **not always** use conjunctions or adverbial linking phrases. Sometimes, the connection between sentences must be **inferred** by the reader.
+
+**Example:**
+
+> "When native speakers write, they do not always use conjunctions and adverbial linking words and phrases to clearly indicate how ideas are connected. This link must sometimes be inferred by the reader."
+
+In the second sentence, *"This link"* refers back to *"how ideas are connected."* Here, referencing is used instead of an explicit connector.
+
+📌 **Takeaway:** Even without a linking phrase, cohesion exists if the reference is **clear and meaningful**.
+
+
+
+## 🔍 Why Explicit Linking Still Matters
+
+Using linking words like **"As a result," "Therefore,"** or **"Consequently"** can make your argument easier to follow, especially when:
+- You're explaining **complex ideas**
+- The connection between sentences is **not obvious**
+- You're moving across **several points or paragraphs**
+
+These cohesive devices serve as **signposts** that guide your reader through your reasoning.
+
+
+
+## 🚫 When Cohesion Fails: A Bad Example
+
+> "People are working longer hours than ever before. In addition, they have more job pressures. People willingly place themselves under these unfavourable conditions. The workforce is a competitive domain."
+
+❌ Problem: The last two sentences are **not clearly connected** to the first two. The **reader cannot infer** the logical link.
+
+### Consequences:
+- **Cohesion breaks down**
+- **Ideas are not developed**
+- **No explanation or evidence** connects the points
+
+
+## 🧭 IELTS Band Descriptors & Implications
+
+### Coherence and Cohesion – **Band 7**
+> *"Uses a range of cohesive devices appropriately, although there may be some under-use."*
+
+- **Under-use** is a **negative point**, not a strategy to **aim for**.
+- Not using connectors does **not earn you Band 7** — it simply means *you still used them*, but *less effectively*.
+
+### Task Response – **Band 6**
+> *"Presents relevant main ideas but some may be inadequately developed/unclear."*
+
+- Missing cohesion often results in:
+  - Unclear logic
+  - Poor development of ideas
+  - Lack of support or explanation
+
+
+## ✍️ Practical Tips for IELTS Writing
+
+- ✅ Use **linking words** when the relationship between ideas isn't immediately clear.
+- ✅ Use **referencing** (e.g., "this," "such a point," "these issues") only when the link is already obvious.
+- ✅ Make sure every idea is **fully developed** — don’t just list them.
+- ✅ Maintain a **logical progression** across all paragraphs.
+
+
+
+By using clear, accurate, and varied cohesive devices, you’ll not only improve the readability of your essay but also your band score in **both Coherence and Cohesion** and **Task Response**.
+
+
+## Why do native speakers sometimes live out connecting words and phrases
+
+- To **avoid repetition**
+- To **stay within word limits** in long documents
+- Because they are skilled at using:
+  - **Referencing** (e.g., using "this idea" instead of repeating it)
+  - **Synonyms**
+  - **Contextual clues** to maintain cohesion
+
+## ⚠️ The Real Risk in IELTS Writing
+
+It's also possible that:
+- The **writer has not learned** how to use linking phrases effectively
+- They are **unintentionally** omitting useful cohesive devices
+
+
+
+## 🗝️ KEY IDEA
+
+> ❗ If you omit clear **signposting words and phrases**, you are **forcing the examiner to work harder** to follow your argument and ideas.
+
+### 📉 Consequence:
+- This can lead to a **lower band score** in **Coherence and Cohesion**
+- Specifically, it can result in a **Band 6** with the descriptor:
+  > *"uses cohesive devices but cohesion may be faulty or mechanical."*
+
+
+
+## 🚫 Don't Set a Reading Test for the Examiner
+
+IELTS is a **writing test**, not a **puzzle**. Clear structure, logical flow, and easily traceable connections are **essential** for achieving higher scores.
+
+
+
+## 📝 Takeaway for IELTS Candidates
+
+- ✅ Always aim for **clarity over subtlety** when linking ideas
+- ✅ Use a range of cohesive devices:
+  - *However, therefore, as a result, in contrast, for example...*
+- ✅ Make sure your ideas are easy to **follow, connect, and develop**
+
+
+
+

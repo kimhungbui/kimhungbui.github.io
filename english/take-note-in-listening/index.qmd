@@ -1,0 +1,134 @@
+---
+title: "IELTS Listening: Note-Taking Strategy (IDP-Style, Real Test Method)"
+lightbox: false
+description: How to take note in IELTS listening
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-31
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Why it Matters
+
+The IELTS Listening test does not give you a second chance — you hear it once only. Effective note-taking bridges the gap between what you hear and what you need to write, especially when:
+
+- The answer is paraphrased
+
+- You forget a detail by the time you get to the gap
+
+- You need to choose from multiple options
+
+# Full Step-by-Step Method: For Real Test Use
+
+## Before Recording Starts
+
+Step 1: Underline Keywords
+
+- Read all questions in the section (you have 30-60 seconds).
+- Underline 1 - 2 key words in each question:
+	- Nouns, numbers, verbs
+	- Signal words like "before", "after", "because", "although"
+
+
+✅ Example:
+
+Q11: The band has approximately ___ members.
+
+→ underline: band, approximately, members
+
+## While Listening
+
+Step 2: Takes Notes Quickly
+
+- Don't write full sentences. Use:
+
+	- Abbreviations: e.g. "gov" = government, "↓" = decrease
+
+	- Symbols: e.g. → (cause), ~ (related), ≠ (opposite)
+
+	- Short forms: “env. prob.” = environmental problem
+
+✅ Use These Formats:
+
+- Mind-map style: great for summaries or processes
+
+- Columns: ideal for conversations (e.g. Speaker A | Speaker B)
+
+- Numbered list: good for lectures or instructions
+
+✅ Key Focus:
+
+- Listen for paraphrasing (not exact match)
+
+- Pay attention to signpost words:
+
+- “Next,” “Then,” “However,” “In contrast,” “Finally”
+
+## After the Recording
+
+Step 3: Transfer Notes to Answers
+
+Use the 30 seconds after each part to:
+
+Read back your notes
+
+Match meaning, not just words
+
+Confirm singular/plural, spelling, grammar
+
+Eliminate distractors if it's multiple choice
+
+# Key Tips from IDP
+
+|Tip|How to Use It|
+|---|---|
+|🎯 **Summarize, don’t transcribe**|Only write what helps you answer – no full sentences|
+|✍️ **Use your own language (if needed)**|To grab meaning fast, you can jot quick notes in your native language|
+|📌 **Avoid overwriting**|Don’t write everything — it will confuse you and slow you down|
+|🔡 **Watch spelling in answers**|Especially for words you guessed phonetically|
+|🔄 **Review with purpose**|Use final review time to fill missed gaps or fix tenses, not stare at notes|
+# Common Pitfalls to Avoid 
+
+| Mistake                       | Why It Hurts                                                 |
+| ----------------------------- | ------------------------------------------------------------ |
+| Writing too much              | You miss key words or answers while writing unnecessary info |
+| Using too many shortcuts      | You forget what they mean when you read them                 |
+| Not predicting question types | You won't know what to listen for                            |
+| Ignoring transitions          | You may miss the structure or order of answers               |
+
+# Example: How It Looks in Practice
+
+Question: Why was the school band invited to the carnival?
+
+🎧 Audio: “The town council's organising a carnival, and the band's been invited to perform. But honestly, they aren't quite ready yet...”
+
+✍️ Note:
+
+→ council: carnival perf. (not rdy)
+
+📝 Answer: carnival
+
+## Bonus: Use Note-Taking to Boost Score
+
+| Section                | Why Note-Taking Helps                         |
+| ---------------------- | --------------------------------------------- |
+| Part 1 (everyday info) | Avoid number/date/capital traps               |
+| Part 2 (monologue)     | Capture structure (e.g. features, facilities) |
+| Part 3 (discussion)    | Keep track of speaker differences             |
+| Part 4 (lecture)       | Helps build outline with headings/keywords    |
+![](Pasted%20image%2020250731164204.png)
+
+![](Pasted%20image%2020250731164217.png)

@@ -1,0 +1,140 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 14 listening test 3
+lightbox: false
+description: IELTS Practice Set 14 listening test 3
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-07-31
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 14 - listening test 3
+- Date: 31/07/2025
+- Total Score: 30/40
+
+| Type of question                              | Corrects | Wrongs | Accuracy | Wrong answer        |
+| --------------------------------------------- | -------- | ------ | -------- | ------------------- |
+| [Listening] Multiple Choice                   | 3        | 1      | 75.00%   | 11                  |
+| [Listening theme] Asking for information      | 7        | 3      | 70.00%   | 21 22 24            |
+| [Listening theme] Giving a speech at an event | 7        | 3      | 70.00%   | 11 15 16            |
+| [Listening] Matching                          | 8        | 2      | 80.00%   | 15 16               |
+| [Listening] Note/Form Completion              | 19       | 7      | 73.08%   | 2 10 21 22 24 32 40 |
+| [Listening theme] Renting a room/flat         | 8        | 2      | 80.00%   | 2 10                |
+| [Topic] Art                                   | 8        | 2      | 80.00%   | 32 40               |
+
+# Recording 1
+
+| Q       | ❌ Your Answer | ✅ Correct Answer | Why You Missed It                                                                                                                                                                              | How to Avoid                                                                                                                                                    |
+| ------- | ------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Q2**  | **sound**     | **microphone**   | You understood the general **idea** (something related to sound), but not the **specific item** they said. The man asked specifically: “How about a microphone?” — this was answered directly. | 🔄 **Strategy**: If you hear a general topic (e.g. sound), listen for a specific **equipment name** that follows. Repeat Qs in your head: “Do they have a ___?” |
+| **Q10** | **club**      | **clubs**        | This was a **plural mistake**. The speaker said: “... one of the **clubs** in the area — there are a great many to choose from.” The word “many” confirms it's plural.                         | 🔄 **Strategy**: Always check if they mention **numbers** or words like _“many,” “a few,” “several”_, which mean the answer should be **plural**.               |
+
+# Recording 2
+
+| Your answers                    | ✅ Correct answers                     | Notes |
+| ------------------------------- | ------------------------------------- | ----- |
+| **D** Shopping **A** Decorating | ✅ **A. Decorating**✅ **E. Childcare** |       |
+You got A (decorating) correct – mentioned as: “do some painting or wallpapering.”
+
+You chose D (shopping) — not quite correct. Shopping is suggested in the line:
+
+“...recommend how to plan their budget or how to shop sensibly…”
+
+But that's only giving advice, not actually shopping.
+
+You missed E (childcare) — mentioned as:
+
+“...do some babysitting so that parents can go out...”
+
+This is direct childcare.
+
+🟨 Common trap: Hearing a keyword (like “shop”) without checking if it's the actual activity done by the volunteer.
+
+|Q|Volunteer|Your Answer|✅ Correct|Why|
+|---|---|---|---|---|
+|**15**|Habib|**A**|✅ **F** (Remember past times)|He takes elderly people to sing-alongs that _“take the listeners back to their youth.”_|
+|**16**|Consuela|**B**|✅ **A** (Overcome physical difficulties)|_“She has difficulty walking herself”_ and helps others with walking.|
+|**17**|Minh|✅ **E**|✅|Helps isolated man go out again — clearly about _escaping isolation_.|
+|**18**|Tanya|✅ **G**|✅|Elderly woman picks up **toy-making** as a _new hobby_.|
+|**19**|Alexei|✅ **D**|✅|Helps family _solve problems themselves_ = independence.|
+|**20**|Juba|✅ **C**|✅|Teen girl now _“far better at expressing herself”_ — communication.|
+
+🔹 Q15: Habib → F (Remember past times)
+
+You chose A: Overcome physical difficulties — which is not the case. It was about music triggering memories, not about any physical help.
+
+✅ What to listen for:
+
+"Songs take them back to their youth" → keyword: “remember”, not “recover physically”
+
+🔹 Q16: Consuela → A (Overcome physical difficulties)
+
+You chose B: Rediscover skills not used — but she wasn't helping them recover a skill like cooking or crafting.
+
+Instead, it was walking — she inspires mobility by example.
+
+✅ Tip: Listen for physical movement = “overcome physical difficulties”
+
+
+| Q     | Volunteer                 | ✅ Correct Match | ❌ Your Answer | Mistake Type                                    |
+| ----- | ------------------------- | --------------- | ------------- | ----------------------------------------------- |
+| 11–12 | Activities                | A & E           | A & D         | Misidentified activity (shopping = advice only) |
+| 15    | Habib                     | F               | A             | Confused emotional vs physical outcome          |
+| 16    | Consuela                  | A               | B             | Misread “walking” as skill recovery             |
+| 17–20 | Minh, Tanya, Alexei, Juba | ✅               | ✅             | Good comprehension                              |
+
+# Recording 3
+
+|Q|❌ Your Answer|✅ Correct Answer|Explanation|
+|---|---|---|---|
+|**21**|**15**|✅ **50** (or **fifty**)|Joe says: *“there are about *_50 of them altogether.”_ You may have misheard or confused with "under 20" (his previous experience). Always focus on **what is said now**, not past comparison.|
+|**22**|**NATIONAL**|✅ **REGIONAL**|Joe says: _“They aren't really good enough to enter **national** band competitions, but they're in a **regional** one later in the term.”_ “Regional” is correct; “national” is a **trap word**.|
+|**23**|✅ **CARNIVAL**|✅ **CARNIVAL**|Correct. He clearly says: _“the town council’s organising a **carnival** in the summer.”_|
+|**24**|**DRAMA**|✅ **DRUMMER**|Joe says: _“I played a recording… of a **drummer** talking about how playing in a band had changed his life.”_ You misheard **“drummer”** as **“drama”** — a common pronunciation trap.|
+
+|Question|Your Answer|Correct?|Mistake Type|
+|---|---|---|---|
+|Q21|15|❌|Misheard number (possibly confused with earlier info)|
+|Q22|NATIONAL|❌|Chose a **trap word** (national ≠ regional)|
+|Q23|CARNIVAL|✅|–|
+|Q24|DRAMA|❌|Misheard word (drummer)|
+
+Tips to Fix These Mistakes
+
+🔹 Q21 – Mishearing Numbers
+
+Practice listening to quantities with context, especially when they contrast past and present:
+
+“I used to teach bands of 20, this one has about 50.”
+
+✅ Fix: Pause & mentally label the number with "current size".
+
+🔹 Q22 – Trap Words
+
+This is a classic IELTS trick: mention a wrong option first (national), then correct it (regional).
+
+“Not national… but regional.”
+
+✅ Fix: Focus on what they finally decide, not the first idea.
+
+🔹 Q24 – Drummer vs Drama
+
+"Drummer" and "Drama" are close in sound, but context helps:
+
+"...playing in a band changed his life" → clearly a musician, not an actor.
+
+✅ Fix: Listen for context clues. Ask: who is talking, what’s the story about?
+
