@@ -22,10 +22,144 @@ draft: false
 ---
 # One conclusion or many conclusions?
 
+A typical IELTS essay consists of an **introduction**, **several body paragraphs**, and a **conclusion**. The final conclusion at the end of the essay summarises your **overall argument** and **final position**, thus completing the essay.
+
+However, the **body paragraphs** of your essay also include a different kind of **conclusion**.
+
+## Understanding the Word "Argument"
+
+An **argument** is defined as a **reason (or set of reasons)** given in support of an idea or position. This definition helps clarify a key concept in IELTS writing:
+
+- Your essay should present **one overall argument**
+- This overall argument is made up of **several shorter arguments** (also known as **main ideas**)
+
+Each of these shorter arguments should be:
+
+- Clearly explained
+- Well-organised
+- Logically linked to the rest of the essay
+
+Together, these create **unity and coherence**.
+
+If any of your main ideas are unclear or weak, it affects:
+
+- The **progression** of your essay
+- The **clarity** of your position
+- Your score in **Coherence and Cohesion** and **Task Response**
+
+## Main Ideas as Arguments and Conclusions
+
+Each **main idea** in your body paragraphs should be structured as an **argument**. This means it should:
+
+- Present a **conclusion** (what you believe)
+- Provide a **reason** (why you believe it)
+
+This structure is often seen in the **first and last sentences** of a paragraph, but it can appear in other forms as well. Whenever you state your opinion or present a point, you are effectively **making an argument** and offering a **conclusion**.
+
+This is directly connected to the **Task Response** criterion in the IELTS Band Descriptors. For example:
+
+> Band 6: "The conclusions may become unclear."
+
+This happens when the points in your body paragraphs are:
+
+- Not well supported
+- Poorly explained
+- Disconnected from the overall argument
+
+## Key Idea
+
+An **argument** is a **statement provided as evidence** to show that another statement — the **conclusion** — is true. The **main ideas** or **points** in your body paragraphs should always be structured this way to form a strong, logical essay.
+
+In later lessons, these paragraph-level arguments will be referred to as **points** or **main ideas**, but it's important to understand that each one must function as an argument: a reasoned statement that leads to a clear conclusion.
+
+## A one-sentence argument
+
+Although our main ideas will generally be explained over several sentences within a paragraph, we'll begin by looking at a simple one-sentence argument:
+
+_Fruit contains vitamin C, which helps keep us healthy, so the government should encourage everyone to eat more fruit._
+
+To demonstrate that this is an argument, we can seperate it into a conclusion and the reasons given for believing it.
+
+:::{.callout-note}
+Conclusion: The government should encourage everyone to eat more fruit.
+
+Reason 1) fruit contains vitamin C
+
+Reason 2) vitamin C helps to keep us healthy
+:::
+
+## Point to notice:
+
+1 The conclusion does not always come after the reasons. This means that we can also write:
+
+_The government should encourage everyone to eat more fruit because it contains vitamin C, which is good for health._
+
+Even though the order has changed, the conclusion remains the same: the government should encourage everyone to eat more fruit.
+
+2 Each reason in this argument is called a '__premise__', which means a claim being made by the writer. The writer is asking the reader to accept these claims (that fruit contains vitamin C, and vitamin C helps keep us healthy) are true, and that they are good enough reasons to conclude that the government should encourage everyone to eat more fruit. When we are writing, we need to make sure that our claims are true (or at least believable), and that they know the reader that our conclusions are reasonable.
+
+3 We are giving our position every time we make an argument like this one. This mean that we do not need to write _I believe; I think; In my view_ to make our position clear; whether our position remains clear or not will depend on the language we use, and the reasons we provide to support it. Even more importantly, simply writing _In my view_ at the beginning and end of our essay, and within our body paragraphs, is not enough to make our position clear throughout. Only the language and reasoning in our argument can do that.
+
+:::{.callout-tip}
+You are giving your position every time you make an argument or claim. Whether your position remains clear or not will depend on the language you use and the reasons you provide to support it. Writing 'In my view' (etc.) at the beginning and end of your essay and within your body paragraphs is not enough to make your position clear throughout - only the language and reasoning in your argument can do that.
+:::
+
+Every task 2 question presents an argument or a claim that we need to respond to with our own argument.
 
 
 # What makes a conclusion or an idea unclear?
 
+# IELTS Writing: Reasoning Problems in Argument Structure
+
+In IELTS essays, an argument or idea can remain **unclear** even if the **language used is accurate**. This happens when the **reasoning** behind the idea is weak or confusing.
+
+In fact, a large portion of **band 6 writing** contains **unclear or invalid arguments**, rather than language errors. Understanding how to structure logical and persuasive reasoning is essential for higher scores.
+
+## Common Causes of Reasoning Problems
+
+### 1. Making a Point Without a Reason
+
+Stating a conclusion without explaining why you believe it leads to weak writing.
+
+**Example:**
+> The government should encourage everyone to eat more fruit.
+
+This is a conclusion, but it lacks a reason. The reader is left wondering:
+- Why should the government do this?
+- What benefit does this have?
+
+### 2. Giving a Reason That Doesn't Support the Conclusion
+
+Sometimes a writer includes a reason or example, but it does not **logically support** the conclusion.
+
+**Example:**
+> The government should encourage everyone to eat more fruit.  
+> For example, a BBC documentary showed that 85% of people eat fruit.
+
+This fact (even if true) **does not explain** or **support** the conclusion. It fails to show **why** the government should promote fruit consumption. In many cases, the example is also **clearly invented** and adds confusion instead of clarity.
+
+These types of errors are **very common** in student essays and are a key reason for a **band 6 score in Task Response**.
+
+## What Makes an Argument Clear and Valid
+
+In a **clear, valid argument**:
+
+- The **reason is directly related** to the conclusion.
+- The **example or evidence** helps to explain **why the conclusion is correct**.
+- The reader is persuaded because the logic is sound.
+
+**Strong Example:**
+> The government should encourage everyone to eat more fruit  
+> because increased fruit consumption can reduce national healthcare costs by lowering the rates of heart disease and diabetes.
+
+Here, the **reason logically supports** the conclusion. The reader understands **why** the statement is made and can follow the writer’s reasoning.
+
+## Summary
+
+- Clear language alone is not enough for a high band score.
+- You must also ensure that your **reasoning is logical** and that each **point is clearly explained and supported**.
+- Avoid invented or irrelevant examples.
+- Always ask yourself: **Does this reason help to prove my point?**
 
 
 # Language problems
