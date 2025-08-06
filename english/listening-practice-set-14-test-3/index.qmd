@@ -138,3 +138,78 @@ This is a classic IELTS trick: mention a wrong option first (national), then cor
 
 ✅ Fix: Listen for context clues. Ask: who is talking, what’s the story about?
 
+# Recording 4
+
+| Question | Your Answer | Correct Answer | Type of Error                  | Explanation                                                              |
+| -------- | ----------- | -------------- | ------------------------------ | ------------------------------------------------------------------------ |
+| 32       | vibrant     | energy         | Word type/grammar error        | Used adjective instead of correct noun that fits “a great deal of”       |
+| 40       | Olympic     | Olympics       | Word form (noun vs. adjective) | Used adjective instead of correct noun; didn’t match grammar of sentence |
+
+Question 32
+
+You wrote: VIBRANT
+
+Correct answer: ENERGY
+
+Transcript:
+
+“Liza Lim's compositions are vibrant and full of energy...”
+
+Why this is wrong:
+
+The question says:
+
+“compositions show a great deal of _____”
+
+→ So you need a noun that matches "a great deal of".
+
+"A great deal of" cannot be followed by adjectives like "vibrant".
+
+"Vibrant" describes the style, but the answer must be a specific noun, and that noun is "energy".
+
+:::{.callout-tip}
+- Pay close attention to grammatical structures in the question.
+
+- Look for exact matches between the question's collocations (like "a great deal of") and the noun in the audio.
+
+- Words near the answer (like "vibrant") can mislead you — IELTS often puts distractors nearby to test your focus on function, not just vocabulary.
+:::
+
+Question 40
+
+You wrote: OLYMPIC
+
+Correct answer: OLYMPICS
+
+Transcript:
+
+“...his music for the flag hand-over ceremony of the Olympics held in 1996.”
+
+Why this is wrong:
+
+The word "Olympic" is an adjective (e.g. Olympic Games, Olympic athlete).
+
+The blank in the sentence requires a noun to complete the phrase:
+
+“festival will include his music for the 1996 ________”
+
+So the correct noun is Olympics, referring to the global sports event.
+
+Tip:
+
+Always match the word form (noun/verb/adjective) to the grammar of the sentence.
+
+Listen for plural endings — “Olympics” is clearly plural in pronunciation.
+
+Review common proper nouns and event names like "the Olympics", "the World Cup", etc.
+
+:::{.callout.note}
+## How to improve
+1. Check the grammar of the sentence before choosing your answer — think: Does this need a noun? An adjective? A plural?
+
+2. Underline key phrases in the question, such as “a great deal of,” “consists of,” “includes,” etc.
+
+3. Practice identifying distractors — words that appear in the audio but are not correct answers.
+
+4. Improve your listening for plurals and noun forms, especially for names of events or measurements.
+:::

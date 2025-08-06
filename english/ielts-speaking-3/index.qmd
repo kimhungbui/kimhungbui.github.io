@@ -24,7 +24,24 @@ draft: true
 
 ## Pronunciation problems in connected speech
 
-When we speak, we don't use individual sounds or words
+When we speak, we don't use individual sounds or words. Instead, we run words together, producing continuous stream of sounds. If a speaker is unable to do this skillfully, it can be difficult to identify when one word ends and another begins, and there can be a delay in understanding as the listener 'decodes' some parts of the response (dividing a chunk of continue). The greater the difficulty in decoding the words, the more impact this will have on the pronunciation score. 
+
+Connected speech results in more complex pronunciation problems than those we saw in Lesson 2, some of the rules we learned need to be broken: a sound may need to be dropped, may be changed, or an extra sound may need to be added.
+
+:::{.callout-tip}
+In connected speech, some pronunciation 'rules' are broken. It is important to understand and practice in pronunciation that occur when giving longer responses.
+:::
+
+## Dropping sounds
+
+Dropping certain sounds when we speak is often called 'elision'. We may have seen '_dunno_' (don't know), '_gonna_' (going to), and '_wanna_' (want to) as examples of this. However, there are very informal and should be avoided in our test, while elision is a natural feature of even formal speech. To practice this, try saying these phrases:
+
+- most men
+- sweet potato
+
+in connected speech, it is more natural to omit the final /t/ sound and run the words together /mosmen/. Similarly, we don't pronounce the /t/ at the end of _sweet_ in 'sweet potato'. If you __do__ say this sound, it should be very brief and almost imperceptible. If you __don't__ drop this sound, your speech will sound unnatural because you either need to add an extra sound in between: (most-e-men, sweet-er-potato), or leave a space in between each word (most - men). These are both seen as rhythm problems, which we will cover later in the lesson.
+
+
 
 
 # Adding extra sounds

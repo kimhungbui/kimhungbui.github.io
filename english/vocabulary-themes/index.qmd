@@ -45,7 +45,18 @@ draft: false
 | **grouped**                          | Describes spatial arrangement                        |
 | **linking**                          | Functional verb for describing pathways              |
 | **reaching / made easier**           | Phrasal structure describing improved access         |
-# Custom and Culture
+# Custom and Culture and Art
+
+| **Prompt**           | **Transcript Phrase**                         | **Paraphrase / Notes**                            |
+| -------------------- | --------------------------------------------- | ------------------------------------------------- |
+| expressive music     | “Her music is very expressive”                | Music that shows emotion or strong feeling        |
+| complex music        | “Although it is complex, it connects…”        | Describes intricate composition                   |
+| vibrant compositions | “compositions are vibrant and full of energy” | Strong, lively sound                              |
+| public performances  | “These will be public performances”           | Cultural event open to general audience           |
+| celebrated diversity | “a celebration of the diversity of cultures”  | Respecting different ethnic and cultural elements |
+| composed for dance   | “became prominent… as a composer for dance”   | Composed music to accompany choreography          |
+| semi-staged opera    | “a semi-staged performance of The Oresteia”   | A minimalist opera performance                    |
+
 
 
 # Crime
@@ -71,6 +82,10 @@ draft: false
 not: _vegetarian_ -> This is a __vocabulary mistake__.
   correct word: __vegetation__ (meaning plants/trees, not people who don't eat meat!)
 
+|**Question/Prompt**|**Transcript Phrase**|**Paraphrase / Notes**|
+|---|---|---|
+|inspired by nature|“inspiration… came from nature, sitting in the dry bed of a creek…”|How nature influenced creativity|
+|bird call model|“he had subconsciously modelled its opening phrase on a bird call”|Nature as an indirect influence in composing|
 
 # Family
 
@@ -86,12 +101,42 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | __IELTS-Level Synonyms__      | endure, tolerate, accept, support, handle, shoulder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | __Example Sentences__         | Social / Economic<br>- _Citizens should not be forced to __bear the financial burden__ of corporate negligence._<br>- _Low-income families bear the brunt of rising housing costs._<br><br>Health / Environment<br>_- Developing countries often __bear the consequences__ of climate change, despite contributing less to the problem._<br>_- Patients with chronic illness may find it difficult to __bear__ prolonged treatment without proper support._<br><br>Education / Work<br>- Teachers __bear a significant responsibility__ in shaping children's moral development.<br>- Students may struggle to __bear the pressure__ of high-stakes exams. |
 | __Common IELTS Collocations__ | **bear the burden** - Carry responsibility or pressure<br>**bear the consequences** - Suffer the results of something<br>**bear in mind** - Remember or consider<br>**bear the cost** - Pay or absorb an expense<br>**bear the brunt** - Suffer the worst of something negative                                                                                                                                                                                                                                                                                                                                                                            |
+|                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
 # Science
 
 # Shopping
 
 # Sport
 
+| Word/Phrase             | Part of Speech | Meaning                                                      | Example Sentence                                                          |
+| ----------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| Olympic                 | adj            | Related to the Olympic Games                                 | _She trained for years to qualify as an Olympic athlete._                 |
+| Olympics                | noun           | The international multi-sport event                          | _Sydney hosted the Olympics in 2000._                                     |
+| vibrant                 | adj            | Full of energy and life                                      | _The music was vibrant and exciting to watch live._                       |
+| energy                  | noun           | Strength or vitality in performance or expression            | _Her compositions are full of energy and movement._                       |
+| complex                 | adj            | Not simple; having many parts                                | _The symphony was complex but rewarding to listen to._                    |
+| expressive              | adj            | Showing emotions or feelings clearly                         | _The violin solo was deeply expressive._                                  |
+| diversity               | noun           | A range of different types or variety                        | _Australia celebrates the diversity of its cultural heritage._            |
+| inspired                | adj/verb       | Influenced to create or feel something                       | _The piece was inspired by the sounds of the rainforest._                 |
+| commission              | noun/verb      | A request/order to create a specific work, often for payment | _The orchestra gave her a commission to write a new piece._               |
+| performance             | noun           | The act of presenting music or art to an audience            | _They gave a powerful performance at the festival._                       |
+| score                   | noun           | The written form of a piece of music                         | _He wrote the score for a ballet production._                             |
+| composition             | noun           | A piece of music created by a composer                       | _Her composition was chosen for the international music contest._         |
+| cornet                  | noun           | A brass instrument similar to the trumpet                    | _He began playing the cornet at age five._                                |
+| clarinet                | noun           | A woodwind instrument with a single reed                     | _The clarinet solo added warmth to the piece._                            |
+| didgeridoo              | noun           | An Aboriginal Australian wind instrument                     | _The piece featured the traditional sound of the didgeridoo._             |
+| trilogy                 | noun           | A group of three related works (books, plays, operas)        | _The opera was based on a Greek trilogy._                                 |
+| disturbing              | adj            | Causing worry or emotional discomfort                        | _The sounds were intentionally disturbing to reflect the story._          |
+| orchestra               | noun           | A group of musicians who play together                       | _The orchestra played music by both British and Australian composers._    |
+| celebratory             | adj            | Expressing praise or happiness                               | _It was a celebratory piece marking the end of the festival._             |
+| conservatorium          | noun           | A school for advanced music education (esp. in Australia)    | _He studied composition at the Sydney Conservatorium of Music._           |
+| referencing             | noun           | The act of referring to something previously mentioned       | _She creates cohesion by referencing earlier themes._                     |
+| phrase                  | noun           | A short group of words or musical notes                      | _The opening phrase of the music was inspired by a bird call._            |
+| flag hand-over ceremony | noun phrase    | A formal ritual in the Olympic closing/opening ceremony      | _He composed music for the flag hand-over ceremony of the 1996 Olympics._ |
+| global audience         | noun phrase    | People around the world watching or listening                | _The piece was broadcast to a global audience during the ceremony._       |
+| ceremonial music        | noun phrase    | Music written for formal or official events                  | _The orchestral piece was composed as ceremonial music for the event._    |
+  
 # Technology
 
 # Tourism
@@ -124,3 +169,9 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 # People and Personal Experience
 
 # Education
+
+| **Question/Prompt**      | **Transcript Phrase**                                       | **Paraphrase / Notes**                    |
+| ------------------------ | ----------------------------------------------------------- | ----------------------------------------- |
+| studied piano and violin | “originally learned to play the piano… and also the violin” | Instruments learned; shows early training |
+| studied physics          | “went to university to study physics”                       | Academic path before switching to music   |
+| studied at university    | “studied at the Sydney Conservatorium of Music”             | Education background                      |
