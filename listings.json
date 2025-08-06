@@ -28,6 +28,7 @@
       "/english/compound-sentence/index.html",
       "/english/complex-sentence-2/index.html",
       "/english/complex-sentence-3/index.html",
+      "/english/listening-practice-set-15-test-1/index.html",
       "/english/gracious/index.html",
       "/english/compendium/index.html",
       "/english/task 1/index.html",
@@ -149,6 +150,7 @@
       "/english/compound-sentence/index.html",
       "/english/complex-sentence-2/index.html",
       "/english/complex-sentence-3/index.html",
+      "/english/listening-practice-set-15-test-1/index.html",
       "/english/compendium/index.html",
       "/english/gracious/index.html",
       "/english/task 1/index.html",
@@ -210,14 +212,6 @@
     ]
   },
   {
-    "listing": "/artificial-intelligent.html",
-    "items": [
-      "/artificial-intelligent/deep-learning-interview/index.html",
-      "/artificial-intelligent/finetunning/index.html",
-      "/artificial-intelligent/convolution/index.html"
-    ]
-  },
-  {
     "listing": "/posts.html",
     "items": [
       "/posts/extreme-early-retirement/index.html",
@@ -225,6 +219,14 @@
       "/posts/fiction/index.html",
       "/posts/pkm-quarto-books/index.html",
       "/posts/nextcloud-install/index.html"
+    ]
+  },
+  {
+    "listing": "/artificial-intelligent.html",
+    "items": [
+      "/artificial-intelligent/deep-learning-interview/index.html",
+      "/artificial-intelligent/finetunning/index.html",
+      "/artificial-intelligent/convolution/index.html"
     ]
   }
 ]
