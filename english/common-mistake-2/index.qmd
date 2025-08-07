@@ -67,4 +67,37 @@ The number of women studying science increased dramatically last year.
 
 # Which nouns don't have a plural form?
 
+Tick the correct sentence in each pair
+
+1 a I don't have many time to complete my assignment
+b I don't have much time to complete my assignment 
+
+-> a 
+
+2 a When I did a search on my computer, I could only find a few informations about the topic.
+
+b When I did a search on my computer, I could only find a little information about the topic.
+
+-> b
+
+Some nouns in English are 'uncountable'. This means they do not have a plural form. Some common uncountable nouns are: _advice, advertising, food, furniture, garbage, information, knowledge, money, shopping, time, traffic, travel_
+
+With uncountable nouns, you must see:
+
+- the singular form: _food, information, money_
+- _a little / amount of / much / some_: How <font color="#00b050">much money</font> do you have?
+  The <font color="#00b050">amount of traffic</font> on the roads is increasing each year.
+- a singular verb: There <font color="#00b050">was</font> already a little <font color="#00b050">furniture</font> in the flat.
+
+If a noun is uncountable, you cannot use:
+
+-  a plural form: ~~advices, furnitures, garbages, informations, knowledges ~~
+- a/an: ~~an advice, a garbage, a knowledge~~
+- a few / many / number of: ~~a few shopping, many traffie, the number of knowledge~~
+- a number: ~~three travels, four furniture~~
+- a plural verb: ~~There were a little furniture in the flat.~~
+
+If we want to add a number to an uncountable noun, we can use _a piece of / some / a few pieces of_: <font color="#00b050">a piece of advice, three pieces of furniture, a few pieces of garbage</font>
+
+
 ## Tick the correct sentence in each pair
