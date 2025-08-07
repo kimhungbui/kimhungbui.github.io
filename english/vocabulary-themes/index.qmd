@@ -73,6 +73,8 @@ draft: false
 
 Notice that _tall, short, high_ and _low_ do not have a specific noun form (when we measure the _height_ of something, it may be _all, short, high, or low_) and _tall_ and _high_ do not have a specific verb form (the verb 'to heighten' means 'to increase the amount of something' and is used with abstract ideas (e.g. <font color="#0070c0">to heighten awareness, to heighten tension</font>))
 
+'opposite' has a different meaning when it is used like this - it refers to the characteristics of someone or something (e.g. 'My sister likes parties but I am the exact opposite.') With location, we can say that something is 'directly opposite' something else.
+
 
 # Custom and Culture and Art
 
