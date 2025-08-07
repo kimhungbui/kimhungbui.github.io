@@ -1,0 +1,229 @@
+---
+title: Being precise in map and plan tasks
+lightbox: false
+description: Being precise in map and plan tasks
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-08-07
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+# Common language problems
+
+In this lesson, we will focus on being precise with our language when describing a map or plan, and writing about the future. We will also work on a band 6.5 sample answer and turn it into a band 8+ sample before looking at her answer.
+
+Our question:
+
+![](Pasted%20image%2020250807160458.png)
+
+## Talking about the future plans
+
+Our writing task makes it clear that the changes have not been made yet, so this is our first task where we need to write about the future. This means we need to compare the sports centre now with the sports center in the future, and write about changes that __will take place__ or that __will be carried out__.
+
+As we saw in Lesson 7, if we are using the passive, only the verb __to be__ need to change.
+
+- _The sports center __is going to be made__ bigger_
+- _The sports center __will be made__ bigger_
+- _The sports center __will be expanded___
+
+Be careful when talking about __'future plan'__. We use this phrase when asking about someone's 'plans for the future' (e.g. __What are your future plans?__). Look at the following example:
+
+_The __maps illustrate__ the __present scheme__ of a university's sport complex and __its future plans for renovation__._
+
+I task 1, we are presented with current or existing plans - it is the __renovation__ or __redevelopment__ that will occur in the future. So this should say:
+
+_The __plans__ show the present __layout__ of a university's sports complex and __plans for its future renovation__._
+
+At first glance, this looks okay, but it's redundant and slightly awkward. Why?
+
+🔎 Problem:
+
+“Future plans” is repetitive — plans are always about the future.
+
+Saying “future plans for renovation” is like saying “plans that will happen in the future” — it's a bit wordy and unnecessary in formal writing.
+
+Also, “scheme” is a bit outdated or too technical. In IELTS, “layout” is a more natural, accurate word when describing maps.
+
+✅ Correct and Clear Version:
+
+“The plans show the present layout of a university's sports complex and plans for its future renovation.”
+
+🔍 Why this is better:
+
+“Plans” is already a map-based word used for showing designs or layouts.
+
+“Layout” is the clearest word for physical arrangement of a place.
+
+“Plans for its future renovation” is clear and concise. It avoids redundancy.
+## Writing about location: When, Why
+
+In many task 1 answer based on maps and plans, candidates describe the exact location of almost every detail they mention. Effectively, this highlights the location in a way that can seem odd. Look at the following examples:
+
+1. <font color="#ff0000">A leisure pool will be constructed to the left of the changing room, on the left of the sports center</font>.
+2. <font color="#ff0000">A cafe and a sports shop are going to be built next to the east and west of the changing room</font>.
+
+Remember, we should __select__ key information to include in our summary. Mentioning the precise location for every element not only makes our writing repetitive, but also makes it difficult to separate the key information from the minor details. Notice also that these details are not presented logically. The changing rooms mentioned in the first example only exist because there is a pool and users of the pool will need one, so it is more logical to say that '_some changing rooms have been built next to the pool_'. The referencing in this sentence is also unclear - we do not know what is '_on the left of the sports center_.' - does this refer to the changing room or the leisure pool?
+
+Similarly, sentence number 2 suggests the location of these changing rooms is linked to the cafe and sports shop in some way. Problems like this occur when we describe the plans as though they are a picture rather than thinking about what the images actually represent. Thinking about how people will use this space can help us to be more logical in our summary of it - we can see an example of this in 8.2
+
+:::{.callout-tip}
+With a map or plan task, think about what the images in the diagram represent and how the different parts work together, or how people might use this space. This will help us to write about it in a more logical way.
+:::
+
+Remember, we don't need to give the precise location of every detail - only do this if we can see a reason for it. For example, if it helps to highlight a change (that a new facility has been built in the same location as something that has now been removed), or explain a change of location.
+
+## How to write about location
+
+There are several ways to explain the location of something. Here are some examples:
+
+- _Explain the location in relation to something else: __there is a changing room <font color="#0070c0">next to</font> the pool___
+- _Use the compass. __The outdoor courts <font color="#0070c0">on the east and west</font> of the building have been removed__._
+- _Refer to parts of the plan or the building: __the entrance is at <font color="#0070c0">the front of</font> the building___.
+
+### Exercises
+
+Look at the plan below and try to think of a short sentence using the following words and phrases:
+
+_at the front of, at the back of, behind, between, in front of, opposite, next to, on the right of_
+
+![](Pasted%20image%2020250807163526.png)
+
+
+The reception is _at the front of_ the building.
+
+The sports shop is _opposite / in front of_ the leisure pool
+
+The cafe is _opposite / in front of_ the sports hall.
+
+The seating area is _between_ the pool and the sports hall.
+
+The gym is _behind_ the pool
+
+The gym is _at the back of_ the building.
+
+The dance studio is _next to_ the gym.
+
+The dance studios are _to the right of / on the right_ of the sports hall.
+
+
+:::{.callout-tip}
+## Vocabulary note
+Notice that we say __X is opposite Y__ (__not__ X is opposite ~~to~~ Y).
+:::
+
+## Some do's and don'ts
+
+- Only explain the location of one element at a time. (i.e. don't say: <font color="#ff0000">to the left of the changing room, on the left of the sports centre</font>).
+- Only use the points of a compass to refer to larger areas (for example, __the northern side of the building; on the east coast__) and only use words with an awareness of their style. Look at the following example:
+  
+  _The gym will be expanded <font color="#ff0000">to the east, in the neighborhood of which</font> two dance studios will be built._
+
+It is true that the gym will be expanded (made bigger), but adding '<font color="#ff0000">to the east</font>' is odd here for a relatively small space within a building. The phrase '<font color="#ff0000">in the neighborhood of</font>' can be used literally to mean 'in a specific area of the town/city', but she think this writer was trying to use this phrase with its idiomatic meaning of '_close to_' or '_about_'. For example, '_I was hoping to pay in the neighborhood of $250,0000 for the house_'. However, this is a little too informal for a writing test, and we should aim to be <font color="#0070c0">literal</font> when giving precise details of location, so the style and meaning are not appropriate here.
+
+The verb form of the adjective '_long_' can be useful here: <font color="#0070c0">to lengthen</font>. 
+
+_The gym <font color="#0070c0">will be lengthened</font> and two dance studios will be built._
+
+Here are some other useful verbs like this
+
+
+| Adjective | Noun                                | Verb                                                                                                   |
+| --------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| deep      | <font color="#0070c0">depth</font>  | To <font color="#0070c0">deepen</font> / to make something deeper                                      |
+| long      | <font color="#0070c0">length</font> | To <font color="#0070c0">lengthen</font> something / to make something longer                          |
+| wide      | <font color="#0070c0">width</font>  | To <font color="#0070c0">widen</font> something / to make something wider                              |
+| tall      | <font color="#0070c0">height</font> | To <font color="#0070c0">make something taller</font>                                                  |
+| short     |                                     | To <font color="#0070c0">shorten</font> something / to make something shorter                          |
+| high      |                                     | To <font color="#0070c0">make something higher</font>                                                  |
+| low       |                                     | To <font color="#0070c0">lower</font> something / to <font color="#0070c0">make something lower</font> |
+
+Notice that _tall, short, high_ and _low_ do not have a specific noun form (when we measure the _height_ of something, it may be _all, short, high, or low_) and _tall_ and _high_ do not have a specific verb form (the verb 'to heighten' means 'to increase the amount of something' and is used with abstract ideas (e.g. <font color="#0070c0">to heighten awareness, to heighten tension</font>))
+
+### Exercises
+
+#### Question 1
+
+Change the following sentences from active to passive and replace the verbs with a verb from this lesson
+
+Active: They have made the pool deeper
+
+Passive: The pool has been deepened.
+
+Active: They will make the gym longer
+
+Passive: The gym will be lengthened
+
+Active: They made the entrance wider.
+
+Passive: The entrance has been widened.
+
+Active: They have made the bridge lower.
+
+Passive: The bridge has been lowered.
+
+Active: They are going to make the road shorter.
+
+Passive: The road is going to be shortened
+
+#### Question 2
+Review the language from lesson 4
+Fill in the blanks in the table useful synonyms to use in map or plan tasks.
+
+
+| Verb         | Noun          | Meaning                                                                                          |
+| ------------ | ------------- | ------------------------------------------------------------------------------------------------ |
+| to build     | building      | make something using materials such as bricks or wood etc.                                       |
+| to construct | construction  | build something or put pieces together                                                           |
+| to improve   | improvement   | make something better                                                                            |
+| to develop   | development   | change a (usually wild or untouched) place so that it becomes more advance / habitable / useable |
+| to refurbish | refurbishment | make a building look new again by painting, repairing, decorating, etc                           |
+| to renovate  | renovation    | repair and improve something a building to make it 'new' again                                   |
+| to redevelop | redeveopment  | change an area of a town by replacing old buildings with new ones                                |
+
+
+# Addressing band 6 problems
+
+Below is a band 6.5 sample answer to this question. We will address the language problems first then go on to fix any problems with Coherence and cohesion, then Task achievement.
+
+Read the sample answer and see if you can find any language problems. think about:
+
+- Vocabulary
+- how to describe location
+- the use of articles
+
+The two plans illustrate the main changes which will take place in a university sports center.
+
+Overall, although the central area will be largely retained, the total area of the sports centre will be extended, and more facilities will be added.
+
+In the current plan, the sports centre's functions are limited. Within the building, there are two main sports facilities, one of which is the 25-meter pool in the center, and another is the gym in the north of the area. To serve their functions well, the changing room is constructed in the west of them, and the auditorium is on the eastern of the construction. As for the reception, it is the exact opposite of the entrance. In terms of the outdoor areas, courts are on either side of the building. 
+
+According to the future plans, sports centre will become versatile after some changes. Courts in the open space will be removed, while much more facilities will be added, from recreational facilities such as cafe on the right of the entrance, and the sports shops on the left, to the sports facilities, like leisure pool in the western areas, and two dance studios on the northeast corner of the building. Existing facilities are also going to be expanded including the gym, seating area, changing room and reception. The swimming pool is the only one which will remain the same in the future.
+
+Think about how to correct the highlighted language problems in red.
+
+![](Pasted%20image%2020250807171104.png)
+
+:::{.callout-note}
+## Language problems
+
+1. This is a defining relative clause, so 'that' can also be used here. We can't leave it out because this is the subject of the verbs 'to take place' and 'remain' (in the final sentence). She find 'which' is often overused, so she have changed it to 'that' in later versions.
+2. We know about the sports centers facilities, but we don't know in functions.
+3. The direct article (the) is used to refer to something already mentioned, but this is the first mention, so we need the indefinite article (a)
+4. 'in the north of' and (below) 'in the west of' would be used with a larger area (e.g. in the north of the island). Think about how to describe where the gym and the changing rooms are located - NB, they are located within the building not 'the area'.
+5. There is a vocabulary problem here - why use the verb 'constructed'? The changing room 'is located' there now and 'was constructed' at some time in the past. Similarly with 'construction' below ('the building' is better)
+
+:::
+
+# Model Answer

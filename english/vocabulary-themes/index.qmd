@@ -21,6 +21,31 @@ format:
     highlight-style: a11y
 draft: false
 ---
+# Task 1
+
+## Maps & Plan
+
+| Verb         | Noun          | Meaning                                                                                          |
+| ------------ | ------------- | ------------------------------------------------------------------------------------------------ |
+| to build     | building      | make something using materials such as bricks or wood etc.                                       |
+| to construct | construction  | build something or put pieces together                                                           |
+| to improve   | improvement   | make something better                                                                            |
+| to develop   | development   | change a (usually wild or untouched) place so that it becomes more advance / habitable / useable |
+| to refurbish | refurbishment | make a building look new again by painting, repairing, decorating, etc                           |
+| to renovate  | renovation    | repair and improve something a building to make it 'new' again                                   |
+| to redevelop | redeveopment  | change an area of a town by replacing old buildings with new ones                                |
+
+| Adjective | Noun                                | Verb                                                                                                   |
+| --------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| deep      | <font color="#0070c0">depth</font>  | To <font color="#0070c0">deepen</font> / to make something deeper                                      |
+| long      | <font color="#0070c0">length</font> | To <font color="#0070c0">lengthen</font> something / to make something longer                          |
+| wide      | <font color="#0070c0">width</font>  | To <font color="#0070c0">widen</font> something / to make something wider                              |
+| tall      | <font color="#0070c0">height</font> | To <font color="#0070c0">make something taller</font>                                                  |
+| short     |                                     | To <font color="#0070c0">shorten</font> something / to make something shorter                          |
+| high      |                                     | To <font color="#0070c0">make something higher</font>                                                  |
+| low       |                                     | To <font color="#0070c0">lower</font> something / to <font color="#0070c0">make something lower</font> |
+
+
 # General Academic Verbs (Passive / Descriptive)
 
 | Word/Phrase                          | Use in IELTS                                                 |
@@ -46,7 +71,7 @@ draft: false
 | **linking**                          | Functional verb for describing pathways              |
 | **reaching / made easier**           | Phrasal structure describing improved access         |
 
-
+Notice that _tall, short, high_ and _low_ do not have a specific noun form (when we measure the _height_ of something, it may be _all, short, high, or low_) and _tall_ and _high_ do not have a specific verb form (the verb 'to heighten' means 'to increase the amount of something' and is used with abstract ideas (e.g. <font color="#0070c0">to heighten awareness, to heighten tension</font>))
 
 
 # Custom and Culture and Art
