@@ -45,6 +45,10 @@ draft: false
 | **grouped**                          | Describes spatial arrangement                        |
 | **linking**                          | Functional verb for describing pathways              |
 | **reaching / made easier**           | Phrasal structure describing improved access         |
+
+
+
+
 # Custom and Culture and Art
 
 | **Prompt**           | **Transcript Phrase**                         | **Paraphrase / Notes**                            |
@@ -144,29 +148,75 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 # Urbanization - City Life
 
 # Housing - Building
-
-| Phrase                                   | Example in Use                                  |
-| ---------------------------------------- | ----------------------------------------------- |
-| **tourist destination**                  | Describes development purpose                   |
-| **development took place**               | Formal way to say “changes happened”            |
-| **tourist amenities**                    | Facilities built for visitors                   |
-| **natural state**                        | Describes untouched or preserved area           |
-| **natural features**                     | General description of the environment          |
-| **vegetation**                           | Natural plant life                              |
-| **building work**                        | General phrase for construction                 |
-| **style of the buildings**               | Descriptive comparison of structure type        |
-| **single-storey / two-storey buildings** | Clear architectural descriptors                 |
-| **hut-style accommodation**              | Good topic-specific vocabulary                  |
-| **main structures**                      | Used to summarise key buildings                 |
-| **footpaths / tracks**                   | Infrastructure vocabulary (important in maps)   |
-| **swimming beach**                       | A specific tourist facility                     |
-| **pier**                                 | Useful in transport or access-related map tasks |
+| Phrase                                   | Example in Use                                  | Example Sentence                                                                 |
+|-----------------------------------------|-------------------------------------------------|----------------------------------------------------------------------------------|
+| **tourist destination**                  | Describes development purpose                   | Bali has become a popular tourist destination in recent decades.                 |
+| **development took place**               | Formal way to say “changes happened”            | Major development took place along the coastline between 2000 and 2010.          |
+| **tourist amenities**                    | Facilities built for visitors                   | The resort added several tourist amenities, including cafés and souvenir shops.  |
+| **natural state**                        | Describes untouched or preserved area           | The northern part of the island remained in its natural state.                   |
+| **natural features**                     | General description of the environment          | The park's natural features include lakes, hills, and forests.                   |
+| **vegetation**                           | Natural plant life                              | Much of the original vegetation was cleared to build hotels.                     |
+| **building work**                        | General phrase for construction                 | Extensive building work began in the western zone in 2005.                       |
+| **style of the buildings**               | Descriptive comparison of structure type        | The style of the buildings changed from traditional huts to modern apartments.   |
+| **single-storey / two-storey buildings** | Clear architectural descriptors                 | The old village had only single-storey buildings, but two-storey hotels were later added. |
+| **hut-style accommodation**              | Good topic-specific vocabulary                  | Tourists used to stay in basic hut-style accommodation near the beach.           |
+| **main structures**                      | Used to summarise key buildings                 | The main structures included a reception area and three guest lodges.            |
+| **footpaths / tracks**                   | Infrastructure vocabulary (important in maps)   | Several new footpaths and bicycle tracks were added around the island.           |
+| **swimming beach**                       | A specific tourist facility                     | A swimming beach was created by clearing rocks and adding sand.                  |
+| **pier**                                 | Useful in transport or access-related map tasks | A new pier was built to allow boats to dock on the south side of the island.     |
 
 # Water
 
 # Work
 
 # People and Personal Experience
+| Word / Phrase             | Meaning / Use Case                               | Example Sentence                                                                 |
+|--------------------------|--------------------------------------------------|----------------------------------------------------------------------------------|
+| **birth order**           | the order in which children are born in a family | Some researchers believe that birth order affects personality development.       |
+| **only child**            | a child without siblings                         | As an only child, she was used to having her parents’ full attention.            |
+| **sibling**               | a brother or sister                              | I have two siblings: one brother and one sister.                                 |
+| **twin**                  | one of two children born at the same time        | My twin and I have completely different interests.                               |
+| **middle child**          | a child born between older and younger siblings  | The middle child often plays the role of the peacemaker in the family.           |
+| **eldest / oldest child** | firstborn child in a family                      | The oldest child is usually expected to be more responsible.                     |
+| **youngest child**        | the last-born sibling                            | The youngest child often receives the most attention from parents.               |
+| **personality traits**    | characteristics of a person's behaviour          | Honesty and kindness are valuable personality traits.                            |
+| **sibling rivalry**       | competition between brothers and sisters         | Sibling rivalry can lead to jealousy and arguments in childhood.                 |
+| **nurturing**             | caring and encouraging growth                    | The teacher had a nurturing approach that helped students feel confident.        |
+| **independent**           | self-reliant; not depending on others            | Living abroad made her more independent and self-sufficient.                     |
+| **introverted**           | shy or reserved in social settings               | Although he’s introverted, he’s very thoughtful and observant.                   |
+| **co-operative**          | willing to help or work with others              | The team was successful because everyone was co-operative and respectful.        |
+| **attention-seeking**     | behaving in a way to attract notice              | His loud behavior in class was clearly attention-seeking.                        |
+
+
+|Transcript Phrase|Synonym / Paraphrase Used / Suggested|
+|---|---|
+|“nurturing”|caring|
+|“eager to please”|helpful, co-operative|
+|“made friends easily”|sociable, outgoing|
+|“shy”|introverted|
+|“loners who think the world revolves around them”|selfish|
+|“do basic things for themselves”|independent|
+|“defend myself”|stand up for oneself|
+|“put up with each other”|tolerate each other|
+|“found it hard to engage with other kids”|socially withdrawn, shy|
+|“benefit from being teachers for younger siblings”|gain academic skills through teaching|
+
+
+| Word               | Part of Speech | Definition                                              | Example Sentence                                                                 |
+|--------------------|----------------|----------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Stereotype**      | noun           | A widely held but oversimplified idea                    | It's a common stereotype that all only children are selfish.                     |
+| **Trait**           | noun           | A characteristic or quality                              | Honesty is an important personality trait.                                       |
+| **Well-adjusted**   | adjective      | Emotionally stable and socially normal                   | Despite a difficult childhood, she grew up to be a well-adjusted adult.          |
+| **Empirical evidence** | noun       | Information gained through observation                   | There is no empirical evidence to support that claim.                            |
+| **Resentful**       | adjective      | Feeling bitter about something                           | He felt resentful when his younger sister got more attention.                    |
+| **Marginally**      | adverb         | Slightly                                                 | The second candidate was only marginally better in the interview.                |
+| **Verbalise**       | verb           | To put thoughts into words                               | Young children often struggle to verbalise their emotions.                       |
+| **Interpersonal**   | adjective      | Relating to relationships between people                 | Good interpersonal skills are essential for teamwork.                            |
+| **Dominant**        | adjective      | Having control or influence over others                  | In group discussions, she tends to take a dominant role.                         |
+| **Self-centred**    | adjective      | Preoccupied with oneself                                 | He was too self-centred to consider how others felt.                             |
+
+
+
 
 # Education
 
