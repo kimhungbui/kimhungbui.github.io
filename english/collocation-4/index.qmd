@@ -1,5 +1,5 @@
 ---
-title: Finding, recording and learning collocations
+title: Type of collocations
 lightbox: false
 description: Do exercises and extend
 author:
@@ -7,7 +7,7 @@ author:
     url: https://kimhungbui.github.io
     affiliation: Cambridge Advance Grammar in Use
     affiliation-url: 
-date: 2025-08-07
+date: 2025-08-08
 categories:
   - english
 format:
@@ -20,190 +20,35 @@ format:
     highlight-style: a11y
 draft: false
 ---
+There are many different types of collocation. Here are some examples
 
-# Finding collocations
+# Adjectives and nouns
 
-There are two main ways in which we can find collocations
+Notice adjectives that are typically used with particular nouns.
 
-- We can train ourselves to notice them whenever we read or listen to anything in English.
+Emma always wears red or yellow or some other __bright color__.
 
-Look at the collocations that are worth learning from this short text in English.
+We had a __brief chat__ about the exams but didn't have time to discuss them properly.
 
-_After __giving__ Mark a __lift__ to the airport, Julie __made her way__ home. What an exciting __life__ he __led__! At times Julie felt __desperately jealous__ of him. She __spent her time__ doing little more than __taking care of__ him and the children. Now her sister was __getting divorced__ and would doubtless be making demands on her too. Julie had promised to __give__ her sister __a call__ as soon as she got home but she decided to __run__ herself a __bath__ first. She had a __sharp pain__ in her side and hoped that a hot bath might __ease the pain__._
+Unemployment is a __major problem__ for the government at the moment.
 
-:::{.callout-tip}
-Get into the habit of making a note of any good collocations you come across in any English text you read.
-:::
+Improving the health service is another __key issue__ for government.
 
-- We can find them in any good learner's dictionary.
-For example, if we look up the word _sharp_ we will find some of these collocations
+# Nouns and Verbs
 
-a sharp pain
+Notice how nouns and verbs often go together. The examples below are all to do with economics and business.
 
-a sharp bend/turn
+The economy boomed in the 1990s. (the economy was very strong)
 
-a sharp contrast/difference/distinction
+The company has grown and now employs 50 more people than last year.
 
-a sharp rise/increase/drop
+The company has expanded and now has branches in most major cities.
 
-:::{.callout-tip}
-When you look up a new word, make a point of noting it down in several different collocations.
-:::
+The two companies merged in 2013 and now form one very large corporation.
 
+The company launched the product in 2012.
 
-# Recording collocations
+The price increase __poses a problem__ for us.
 
-The best way to record a collocation is in a phrase or a sentence showing how it is used. Highlight the collocation by underlining it or by using a highlight pen.
+The internet has created opportunities for our business.
 
-For example: I don't <u>have access to</u> that kind of secret information.
-
-Or: Jim gave me a very useful <span style="background:#fff88f">piece of advice</span>.
-
-# Learning collocations
-
-Learning collocations is not so different from learning any vocabulary item. The key things are to:
-
-- regularly revise what we want to learn
-- practice using what we want to learn in contexts that are meaningful for us personality
-- learn collocations in groups to help us fix them in our memory. We might group together collocations relating to the same topic. Or we might group collocations based on the same word, for example:
-  
-I must __find a way__ to help him.
-
-Can you __find your way__ back to my house?
-
-I __learnt the hard way__ that Jack can't be trusted.
-
-Please tell me if I'm __getting in your way__.
-
-You must __give way to__ traffic from the left.
-
-I've __tried every possible way__ to get him to change his mind.
-  
-
-# Exercises
-
-## Underline 11 collocations in this text
-
-My friend Abigail is <u>desperately worried</u> about her son at the moment. He wants to <u>enroll on a course</u> of some sort but just can't <u>make a decision</u> about what to study. I <u>gave Abigail a ring</u> and we <u>had a long chat</u> about it last night. She said he'd like to study for a degree but is afraid he won't <u>meet the requirements</u> for university entry. Abigail thinks he should <u>do a course</u> in Management because he'd like to <u>set up</u> his <u>own business</u> in the future. I agreed that that would be a <u>wise choice</u>.
-
-
-## Match the beginning of each sentence on the left with its ending on the right
-
-1. She's having a party.
-2. She's taking an exam.
-3. She's giving a lecture
-4. She's making good progress
-5. She's doing her duty
-
-## Correct the eight collocation errors in this text. Use a dictionary to help you if necessary
-
-In the morning I made some work in the garden, then I spent a rest for about an hour before going out to have some shopping in town. It was my sister's birthday and I wanted to do a special effort to cook a nice meal for her. I gave a look at a new Thai cookery book in the bookshop and decided to buy it. It has some totally easy recipes and I managed to do a good impression with my very first Thai meal. I think my sister utterly enjoyed her birthday.
-
-->
-In the morning I __did__ some work in the garden, then I had a rest for about an hour before going to __do__ shopping in town. It was my sister's birthday and I want to __make__ a special effort to cook a nice meal for her. I __had__ a look at a new Thai cookery book in the bookshop and decided to buy it. It has some __really__ easy recipes and I managed to __make__ a good impression with my very first Thai meal. I think my sister __thoroughly enjoy__ her birthday.
-
-### Corrections Summary:
-
-1. **made some work** → **did some work**
-    
-2. **spent a rest** → **had a rest**
-    
-3. **have some shopping** → **do some shopping**
-    
-4. **do a special effort** → **make a special effort**
-    
-5. **gave a look** → **had a look**
-    
-6. **totally easy recipes** → **really easy recipes**
-    
-7. **do a good impression** → **make a good impression**
-    
-8. **utterly enjoyed** → **thoroughly enjoyed**
-
-## Look at this entry for the verb _lead_ in the Cambridge Advanced Learner's Dictionary.
-
-![](CleanShot%202025-08-07%20at%2023.01.06@2x.png)
-
-### **Collocations from the entry** (underlined):
-
-1. <u>lead the expedition</u>
-    
-2. <u>lead the discussion</u>
-    
-3. <u>lead the inquiry</u>
-    
-4. <u>lead someone by the nose</u> (idiom/informal)
-
-### New sentences using each collocation
-
-1. _Dr. Nguyen was chosen to __lead the expedition__ to Antarctica next summer._
-2. Could you lead the discussion during tomorrow's team meeting on climate policy?
-3. An independent panel will lead the inquiry into the recent data breach.
-4. He always lets his manager lead him by the nose, never questioning her decisions.
-
-## Use a dictionary to find three or four other good collocations for each of these words: 
-
-desperately pain wise run 
-
-Write the collocations you find in an appropriate way in your vocabulary notebook.
-
-### **1. desperately** (adverb – used to emphasize strong feelings or actions)
-
-- **desperately need**  
-    _Many families **desperately need** financial support after the flood._
-    
-- **desperately want**  
-    _She **desperately wants** to travel abroad and study._
-    
-- **desperately try**  
-    _He **desperately tried** to save the relationship._
-    
-- **desperately unhappy**  
-    _After the divorce, he was **desperately unhappy** for months._
-    
-
-### **2. pain** (noun – physical or emotional suffering)
-
-- **feel pain**  
-    _You may **feel some pain** after the operation._
-    
-- **ease the pain**  
-    _The medication helped to **ease the pain** in her joints._
-    
-- **in great pain**  
-    _He was clearly **in great pain** after the accident._
-    
-- **relieve pain**  
-    _Doctors prescribed morphine to **relieve the pain**._
-    
-
-
-### **3. wise** (adjective – showing good judgment)
-
-- **a wise decision**  
-    _Choosing to save money early was **a wise decision**._
-    
-- **a wise choice**  
-    _Studying computer science turned out to be **a wise choice**._
-    
-- **wise advice**  
-    _She gave me **wise advice** about handling pressure._
-    
-- **wise investment**  
-    _Buying that property was **a wise investment**._
-    
-
-
-### **4. run** (verb – many meanings; focus on common collocations)
-
-- **run a business**  
-    _He has been **running a business** since he was 22._
-    
-- **run smoothly**  
-    _Everything **ran smoothly** during the wedding ceremony._
-    
-- **run away**  
-    _The child **ran away** from home but returned the next day._
-    
-- **run a risk**  
-    _If you skip insurance, you **run a risk** of losing everything._
