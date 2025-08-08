@@ -1,0 +1,116 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 15 listening test 2
+lightbox: false
+description: IELTS Practice Set 15 listening test 2
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-08
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 14 - listening test 1
+- Total Score: 40/40
+- Date: 08/08/2025
+
+First 40 hehe
+
+![](Pasted%20image%2020250808112550.png)
+
+
+# Performance Summary
+
+
+# Recording 1
+
+
+# Recording 2
+
+
+
+# Recording 3
+
+# Recording 4
+
+# Speaking
+## Topic: Literature
+
+IELTS Speaking Part 2 – Cue Card Sample
+
+❓Describe an exhibition or display you have seen that left an impression on you.
+
+You should say:
+
+What the exhibition was about
+
+Where you saw it
+
+What was on display
+
+And explain why it left an impression on you
+
+Last year, I went to a university open day, and there was a very interesting exhibition about British literature in the 19th century, focusing on Charles Dickens. It was prepared by students from the English department, and it showed how Dickens's novels were connected to life in that time.
+
+The display had big posters with summaries of some of his books like Oliver Twist, Bleak House, and Nicholas Nickleby. Each book had a theme. For example, Oliver Twist was used to show poverty and how poor children didn't go to school. Nicholas Nickleby had some parts about entertainment, because it mentioned a group of actors. There were also quotes from the books and short explanations about social problems.
+
+What impressed me was how literature could help people learn about the past. I always thought novels were just stories, but this exhibition showed me that they can also talk about important social issues, like education, justice, and even women's lives. I think it was a very creative and meaningful way to present history.
+
+Do you think literature can still influence society today?
+
+Band 7 Answer:
+
+Yes, I think so. Literature helps people see the problems in society. Even today, many writers talk about topics like racism, poverty, or climate change. These books make people think, and maybe change their opinions. Like in the past, Dickens used his novels to show people how poor families lived, and some authors do similar things today.
+
+❓Why do some authors choose to write about social issues?
+
+Band 7 Answer:
+
+I believe they want to help or teach people. Some writers care about problems in society, so they use their books to talk about them. It's a way to send a message, and maybe make people care more. For example, Dickens wanted people to know about the bad conditions for poor people, and that's why he showed those things in his books.
+
+❓Do you think historical literature is still relevant today?
+
+Band 7 Answer:
+
+Yes, I think old books still have value. Even if the language is old, the ideas are similar. Many stories talk about things we still see today, like unfair laws, rich and poor people, or family problems. Also, reading historical books can help us understand the culture and life in the past.
+
+## Topic: Rural Development & Sustainability
+
+__Question 1: What are the biggest challenges facing rural areas in developing countries?__
+
+Band 7 Answer:
+
+I think one of the main challenges is the lack of water. In dry or arid areas, people can't grow enough crops because there's no dependable water supply. Another problem is transportation. Farmers sometimes grow produce, but they can't get it to the market, so it gets spoiled. Also, I think there are not enough jobs, so people rely too much on natural resources like forests, for example cutting trees to make charcoal, which is not sustainable.
+
+OR
+
+One major challenge is definitely access to water, especially in regions that are dry and arid. Without a dependable water supply, it's incredibly difficult to support agriculture, which is often the main source of income. Another issue is the lack of infrastructure — things like roads and transport systems — which makes it hard for farmers to get their produce to market. As a result, a lot of food ends up being spoiled. I'd also say that over-reliance on natural resources, like cutting down trees for charcoal, leads to environmental degradation, which is not sustainable in the long run
+
+
+__Question 2: What kinds of development programmes are most effective in rural communities?__
+
+Programmes that support agriculture are really useful. For example, if there is a river nearby, they can build irrigation systems to help with farming. I also think helping people learn new techniques like food preservation or fish farming can make a big difference. It's better when the community is involved and provides labour because that makes them feel responsible.
+
+
+Programs that focus on sustainable farming practices tend to be the most effective. For instance, setting up irrigation systems using nearby rivers can make a huge difference in crop production. It's also important to involve the local community directly. When people contribute their own labour or make suggestions — like introducing beekeeping or fish farming — they're more invested in the success of the project. I think combining technical support with community engagement creates the best outcomes.
+
+__Question 3: Do you think governments or local communities should take the lead in rural development?__
+
+Band 7 Answer:
+
+Both should work together. Governments can give funding and support, but local people know their land and what works. For example, in one case, local farmers suggested starting bee colonies, which wasn't in the original plan, but it worked well. So, community ideas should be listened to.
+
+
+I believe both have important roles to play. Governments can provide funding, training, and help with the design and long-term planning of development programmes. But local communities know their environment best and often come up with creative, practical solutions that outsiders might overlook. For example, in one case, farmers suggested starting bee colonies, which weren't part of the original plan, but ended up becoming a valuable source of income. So collaboration between both sides is key.
+

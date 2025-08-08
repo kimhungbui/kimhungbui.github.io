@@ -88,6 +88,16 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | composed for dance   | “became prominent… as a composer for dance”   | Composed music to accompany choreography          |
 | semi-staged opera    | “a semi-staged performance of The Oresteia”   | A minimalist opera performance                    |
 
+| Word/Phrase                           | Meaning / Context                                | Synonyms / Related Terms                  |
+| ------------------------------------- | ------------------------------------------------ | ----------------------------------------- |
+| **novelist**                          | Author of novels                                 | fiction writer                            |
+| **well-known**                        | Familiar to many people                          | famous, widely recognized                 |
+| **lead-in to life in his time**       | Introduction to the historical period            | starting point for exploring history      |
+| **show the awful conditions**         | Depict poor living standards                     | portray hardships, expose suffering       |
+| **shock people into doing something** | Inspire change through strong emotional reaction | provoke action, raise awareness           |
+| **social reform**                     | Changes to improve society                       | public policy improvement, social justice |
+| **satire of the legal system**        | Humorous or critical portrayal of law            | criticism, mockery                        |
+| **adapted for the theatre**           | Turned into a stage play                         | dramatized, converted into a play         |
 
 
 # Crime
@@ -102,9 +112,22 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | __Band 7 - 9 Usage__     | - Use "backslide" in __Task 2 essays__ when talking about setbacks in areas such as education reform, social equality, or environmental protection.<br>- Best used in formal writing when describing __negative trends__ or __reversal of progress__.<br><br>Use this word especially when writing about policies that have failed, declining social values, or countries returning to outdated practices. It adds a nuanced, high-level tone to your writing. |
 # Government
 
+| Word/Phrase             | Meaning / Context                      | Synonyms / Related Terms |
+| ----------------------- | -------------------------------------- | ------------------------ |
+| **realistic timelines** | Feasible schedule for programme stages | achievable deadlines     |
+| **design phase**        | The planning part of a programme       | project proposal stage   |
+| **implementation**      | Putting plans into action              | execution, rollout       |
+| **monitored carefully** | Observed closely to track progress     | evaluated, overseen      |
+
 # Advertising
 
 # Transport
+
+| Word/Phrase                 | Meaning / Context                | Synonyms / Related Terms           |
+| --------------------------- | -------------------------------- | ---------------------------------- |
+| **transport**               | Moving produce to markets        | logistics, delivery system         |
+| **preservation techniques** | Ways to prevent spoilage of food | food storage, conservation methods |
+| **produce**                 | Grown food ready for use or sale | harvest, crops                     |
 
 # Globalization
 
@@ -117,6 +140,21 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 |---|---|---|
 |inspired by nature|“inspiration… came from nature, sitting in the dry bed of a creek…”|How nature influenced creativity|
 |bird call model|“he had subconsciously modelled its opening phrase on a bird call”|Nature as an indirect influence in composing|
+
+
+| Word/Phrase                | Meaning / Context                            | Synonyms / Related Terms               |
+| -------------------------- | -------------------------------------------- | -------------------------------------- |
+| **case study**             | Detailed analysis of a specific situation    | project review, example, pilot project |
+| **programme**              | Organised plan of action for development     | initiative, scheme, project            |
+| **rural populations**      | People living in the countryside             | villagers, agricultural communities    |
+| **sustainable**            | Can continue long-term without damage        | long-lasting, eco-friendly, viable     |
+| **charcoal**               | A fuel made from burning wood without oxygen | fuel wood                              |
+| **resource**               | Something valuable and usable (e.g. forest)  | asset, supply                          |
+| **agriculture**            | Farming or crop production                   | cultivation, farming                   |
+| **crops**                  | Plants grown for food                        | produce, harvest                       |
+| **livestock breeding**     | Raising animals for food or farming          | animal husbandry                       |
+| **food security**          | Reliable access to enough food               | nutritional stability                  |
+| **vegetables and cereals** | Common edible crops in farming               | grains and greens                      |
 
 # Family
 
@@ -174,28 +212,74 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 
 # Urbanization - City Life
 
-# Housing - Building
-| Phrase                                   | Example in Use                                  | Example Sentence                                                                 |
-|-----------------------------------------|-------------------------------------------------|----------------------------------------------------------------------------------|
-| **tourist destination**                  | Describes development purpose                   | Bali has become a popular tourist destination in recent decades.                 |
-| **development took place**               | Formal way to say “changes happened”            | Major development took place along the coastline between 2000 and 2010.          |
-| **tourist amenities**                    | Facilities built for visitors                   | The resort added several tourist amenities, including cafés and souvenir shops.  |
-| **natural state**                        | Describes untouched or preserved area           | The northern part of the island remained in its natural state.                   |
-| **natural features**                     | General description of the environment          | The park's natural features include lakes, hills, and forests.                   |
-| **vegetation**                           | Natural plant life                              | Much of the original vegetation was cleared to build hotels.                     |
-| **building work**                        | General phrase for construction                 | Extensive building work began in the western zone in 2005.                       |
-| **style of the buildings**               | Descriptive comparison of structure type        | The style of the buildings changed from traditional huts to modern apartments.   |
+| Word/Phrase                            | Meaning / Context                           | Example Sentence                                                                 |
+|----------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------|
+| **recent transformation**              | A formal way to describe recent changes     | The park has undergone a recent transformation, including new paths and seating.|
+| **feature of the city**                | A notable part of the city’s landscape      | The clock tower is a well-known feature of the city.                            |
+| **origin of the park**                 | Background or how it was started            | The origin of the park dates back to the late 1800s.                            |
+| **took possession of**                 | Became the legal owner                      | The council took possession of the land in 1912.                                |
+| **waste land**                         | Unused, undeveloped land                    | What is now a beautiful park was once just waste land.                          |
+| **densely populated residential area** | Heavily inhabited area with housing         | The park is located in a densely populated residential area.                    |
+| **plans for transforming**             | Ideas or proposals for making major changes | The city released plans for transforming the old industrial site into a park.   |
+| **finished on schedule**               | Completed at the planned time               | Despite the weather delays, the renovation was finished on schedule.            |
+
+|Word/Phrase|Meaning / Use Case|
+|---|---|
+|**organised petitions and demonstrations**|Actions taken by the public to oppose a decision|
+|**change its mind about the future of the land**|Decision-making in local councils|
+
+
+
+# Housing - Building - Materials - Infrastructure
+
+| Phrase                                   | Example in Use                                  | Example Sentence                                                                          |
+| ---------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **tourist destination**                  | Describes development purpose                   | Bali has become a popular tourist destination in recent decades.                          |
+| **development took place**               | Formal way to say “changes happened”            | Major development took place along the coastline between 2000 and 2010.                   |
+| **tourist amenities**                    | Facilities built for visitors                   | The resort added several tourist amenities, including cafés and souvenir shops.           |
+| **natural state**                        | Describes untouched or preserved area           | The northern part of the island remained in its natural state.                            |
+| **natural features**                     | General description of the environment          | The park's natural features include lakes, hills, and forests.                            |
+| **vegetation**                           | Natural plant life                              | Much of the original vegetation was cleared to build hotels.                              |
+| **building work**                        | General phrase for construction                 | Extensive building work began in the western zone in 2005.                                |
+| **style of the buildings**               | Descriptive comparison of structure type        | The style of the buildings changed from traditional huts to modern apartments.            |
 | **single-storey / two-storey buildings** | Clear architectural descriptors                 | The old village had only single-storey buildings, but two-storey hotels were later added. |
-| **hut-style accommodation**              | Good topic-specific vocabulary                  | Tourists used to stay in basic hut-style accommodation near the beach.           |
-| **main structures**                      | Used to summarise key buildings                 | The main structures included a reception area and three guest lodges.            |
-| **footpaths / tracks**                   | Infrastructure vocabulary (important in maps)   | Several new footpaths and bicycle tracks were added around the island.           |
-| **swimming beach**                       | A specific tourist facility                     | A swimming beach was created by clearing rocks and adding sand.                  |
-| **pier**                                 | Useful in transport or access-related map tasks | A new pier was built to allow boats to dock on the south side of the island.     |
+| **hut-style accommodation**              | Good topic-specific vocabulary                  | Tourists used to stay in basic hut-style accommodation near the beach.                    |
+| **main structures**                      | Used to summarise key buildings                 | The main structures included a reception area and three guest lodges.                     |
+| **footpaths / tracks**                   | Infrastructure vocabulary (important in maps)   | Several new footpaths and bicycle tracks were added around the island.                    |
+| **swimming beach**                       | A specific tourist facility                     | A swimming beach was created by clearing rocks and adding sand.                           |
+| **pier**                                 | Useful in transport or access-related map tasks | A new pier was built to allow boats to dock on the south side of the island.              |
+| __distill__                              |                                                 |                                                                                           |
+
+| Word/Phrase           | Meaning / Context               | Synonyms / Related Terms |
+| --------------------- | ------------------------------- | ------------------------ |
+| **wire** (for fences) | Metal thread for enclosing land | fencing material         |
+| **posts**             | Upright supports for fences     | stakes, poles            |
+| **fenced-off areas**  | Enclosed land to protect crops  | protected plots          |
 
 # Water
 
+|Word/Phrase|Meaning / Context|Synonyms / Related Terms|
+|---|---|---|
+|**irrigation**|Artificial water supply to land or crops|watering system, water management|
+|**dependable water supply**|Consistent water access for farming|reliable source, steady flow|
+|**pumps**|Devices for moving water|water extractors|
+|**pipes**|Tubes used to carry water|tubing|
+
 # Work
 
+| Word/Phrase                   | Meaning / Context                          | Synonyms / Related Terms         |
+| ----------------------------- | ------------------------------------------ | -------------------------------- |
+| **farmers’ associations**     | Groups of local farmers for planning       | cooperatives, farming committees |
+| **majority of the workforce** | Most of the people doing the work          | main labour force                |
+| **labour provided by locals** | Work done by the community themselves      | community effort                 |
+| **women**                     | Main contributors to the agricultural work | female workforce                 |
+
+| Word/Phrase          | Meaning / Context                | Synonyms / Related Terms  |
+| -------------------- | -------------------------------- | ------------------------- |
+| **breeding fish**    | Raising fish for food or sale    | aquaculture, fish farming |
+| **protein source**   | Nutritional value from fish/meat | dietary protein           |
+| **colonies of bees** | Groupings for producing honey    | beekeeping, apiaries      |
+| **honey**            | Natural sweetener from bees      | bee product               |
 # People and Personal Experience
 | Word / Phrase             | Meaning / Use Case                               | Example Sentence                                                                 |
 |--------------------------|--------------------------------------------------|----------------------------------------------------------------------------------|
@@ -252,3 +336,25 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | studied piano and violin | “originally learned to play the piano… and also the violin” | Instruments learned; shows early training |
 | studied physics          | “went to university to study physics”                       | Academic path before switching to music   |
 | studied at university    | “studied at the Sydney Conservatorium of Music”             | Education background                      |
+
+| Word/Phrase                        | Meaning / Context                                 | Synonyms / Related Terms                |
+| ---------------------------------- | ------------------------------------------------- | --------------------------------------- |
+| **open day**                       | An event to showcase the university to the public | information day, campus visit           |
+| **raise the university's profile** | Improve public awareness or reputation            | increase visibility, enhance reputation |
+| **potential new students**         | People considering applying                       | prospective students, applicants        |
+| **included in the information**    | Part of the promotional material                  | featured in the brochure                |
+| **current students and lecturers** | People already part of the institution            | existing students and academic staff    |
+
+# Map-Related Vocabulary (Useful for Task 1)
+
+| Phrase                               | Use / Map Description Context                       |
+| ------------------------------------ | --------------------------------------------------- |
+| **statue was moved**                 | Indicates relocation of a structure                 |
+| **immediately to the north of**      | Accurate directional phrase                         |
+| **almost in the centre of the park** | Approximate location phrase                         |
+| **wooden sculptures**                | Specific feature — adds vocabulary variety          |
+| **sharp bend**                       | Describes the shape or path direction               |
+| **between the river and the path**   | Spatial location useful in writing map descriptions |
+| **circular series of paths**         | Describing design/layout in a maze                  |
+| **low hedges**                       | Details in describing physical structures           |
+| **a right-angle bend in the path**   | Geometric description for precise positioning       |
