@@ -1,5 +1,5 @@
 ---
-title: Finding, recording and learning collocations
+title: Using your dictionary
 lightbox: false
 description: Do exercises and extend
 author:
@@ -7,7 +7,7 @@ author:
     url: https://kimhungbui.github.io
     affiliation: Cambridge Advance Grammar in Use
     affiliation-url: 
-date: 2025-08-07
+date: 2025-08-08
 categories:
   - english
 format:
@@ -20,190 +20,90 @@ format:
     highlight-style: a11y
 draft: false
 ---
+# Answer these questions about collocations and dictionaries.
 
-# Finding collocations
+1 How does the Cambridge Advanced Learner’s Dictionary show collocations?
 
-There are two main ways in which we can find collocations
+2 Which five collocations can you see in the top box on the opposite page?
 
-- We can train ourselves to notice them whenever we read or listen to anything in English.
+3 Why is an online dictionary particularly useful?
 
-Look at the collocations that are worth learning from this short text in English.
+4 What information does the online Thesaurus usually show?
 
-_After __giving__ Mark a __lift__ to the airport, Julie __made her way__ home. What an exciting __life__ he __led__! At times Julie felt __desperately jealous__ of him. She __spent her time__ doing little more than __taking care of__ him and the children. Now her sister was __getting divorced__ and would doubtless be making demands on her too. Julie had promised to __give__ her sister __a call__ as soon as she got home but she decided to __run__ herself a __bath__ first. She had a __sharp pain__ in her side and hoped that a hot bath might __ease the pain__._
+5 How does the Cambridge Advanced Learner’s Dictionary indicate that a collocation is informal?
 
-:::{.callout-tip}
-Get into the habit of making a note of any good collocations you come across in any English text you read.
-:::
+6 Look at the dictionary that you normally use. Does it indicate collocations? If so, how?
 
-- We can find them in any good learner's dictionary.
-For example, if we look up the word _sharp_ we will find some of these collocations
+7 Look up pain in your own dictionary. Which of the collocations on the left-hand page does it either highlight or illustrate in example sentences?
 
-a sharp pain
+![](CleanShot%202025-08-08%20at%2022.34.12@2x.png)
 
-a sharp bend/turn
+8 Look up the noun offer in your own dictionary. What collocations can you find? Does the dictionary indicate whether the collocations are formal or informal? If so, how?
 
-a sharp contrast/difference/distinction
+they use the word informal
 
-a sharp rise/increase/drop
+# Put the expressions from the box into the correct category in the table below?
 
-:::{.callout-tip}
-When you look up a new word, make a point of noting it down in several different collocations.
-:::
-
-
-# Recording collocations
-
-The best way to record a collocation is in a phrase or a sentence showing how it is used. Highlight the collocation by underlining it or by using a highlight pen.
-
-For example: I don't <u>have access to</u> that kind of secret information.
-
-Or: Jim gave me a very useful <span style="background:#fff88f">piece of advice</span>.
-
-# Learning collocations
-
-Learning collocations is not so different from learning any vocabulary item. The key things are to:
-
-- regularly revise what we want to learn
-- practice using what we want to learn in contexts that are meaningful for us personality
-- learn collocations in groups to help us fix them in our memory. We might group together collocations relating to the same topic. Or we might group collocations based on the same word, for example:
-  
-I must __find a way__ to help him.
-
-Can you __find your way__ back to my house?
-
-I __learnt the hard way__ that Jack can't be trusted.
-
-Please tell me if I'm __getting in your way__.
-
-You must __give way to__ traffic from the left.
-
-I've __tried every possible way__ to get him to change his mind.
-  
-
-# Exercises
-
-## Underline 11 collocations in this text
-
-My friend Abigail is <u>desperately worried</u> about her son at the moment. He wants to <u>enroll on a course</u> of some sort but just can't <u>make a decision</u> about what to study. I <u>gave Abigail a ring</u> and we <u>had a long chat</u> about it last night. She said he'd like to study for a degree but is afraid he won't <u>meet the requirements</u> for university entry. Abigail thinks he should <u>do a course</u> in Management because he'd like to <u>set up</u> his <u>own business</u> in the future. I agreed that that would be a <u>wise choice</u>.
+to alleviate pain    to cause pain     to complain of pain  
+to ease pain         to experience pain            to feel pain         to inflict pain 
+to lessen pain 
+to be racked with pain 
+to relieve pain 
+to soothe pain 
+pain subsides 
+to suffer pain
 
 
-## Match the beginning of each sentence on the left with its ending on the right
+| making others experience pain | the experience of being in pain | making pain go away |
+| ----------------------------- | ------------------------------- | ------------------- |
+| to cause pain                 | to experience pain              | to alleviate pain   |
+| to complain of pain           | to feel pain                    | to ease pain        |
+| to inflict pain               | to be racked with pain          | to lessen pain      |
+|                               | to suffer pain                  | to relieve pain     |
+|                               |                                 | to soothe pain      |
+|                               |                                 | pain subsides       |
 
-1. She's having a party.
-2. She's taking an exam.
-3. She's giving a lecture
-4. She's making good progress
-5. She's doing her duty
+# Look in a good learner's dictionary. What collocations do you find there for the word ache?
 
-## Correct the eight collocation errors in this text. Use a dictionary to help you if necessary
+As a noun:
 
-In the morning I made some work in the garden, then I spent a rest for about an hour before going out to have some shopping in town. It was my sister's birthday and I wanted to do a special effort to cook a nice meal for her. I gave a look at a new Thai cookery book in the bookshop and decided to buy it. It has some totally easy recipes and I managed to do a good impression with my very first Thai meal. I think my sister utterly enjoyed her birthday.
+- dull ache
+_She felt a dull ache in her lower back_
 
-->
-In the morning I __did__ some work in the garden, then I had a rest for about an hour before going to __do__ shopping in town. It was my sister's birthday and I want to __make__ a special effort to cook a nice meal for her. I __had__ a look at a new Thai cookery book in the bookshop and decided to buy it. It has some __really__ easy recipes and I managed to __make__ a good impression with my very first Thai meal. I think my sister __thoroughly enjoy__ her birthday.
+- nagging ache
 
-### Corrections Summary:
+A nagging ache in his shoulder kept him up all night.
 
-1. **made some work** → **did some work**
-    
-2. **spent a rest** → **had a rest**
-    
-3. **have some shopping** → **do some shopping**
-    
-4. **do a special effort** → **make a special effort**
-    
-5. **gave a look** → **had a look**
-    
-6. **totally easy recipes** → **really easy recipes**
-    
-7. **do a good impression** → **make a good impression**
-    
-8. **utterly enjoyed** → **thoroughly enjoyed**
+- constant ache
 
-## Look at this entry for the verb _lead_ in the Cambridge Advanced Learner's Dictionary.
-
-![](CleanShot%202025-08-07%20at%2023.01.06@2x.png)
-
-### **Collocations from the entry** (underlined):
-
-1. <u>lead the expedition</u>
-    
-2. <u>lead the discussion</u>
-    
-3. <u>lead the inquiry</u>
-    
-4. <u>lead someone by the nose</u> (idiom/informal)
-
-### New sentences using each collocation
-
-1. _Dr. Nguyen was chosen to __lead the expedition__ to Antarctica next summer._
-2. Could you lead the discussion during tomorrow's team meeting on climate policy?
-3. An independent panel will lead the inquiry into the recent data breach.
-4. He always lets his manager lead him by the nose, never questioning her decisions.
-
-## Use a dictionary to find three or four other good collocations for each of these words: 
-
-desperately pain wise run 
-
-Write the collocations you find in an appropriate way in your vocabulary notebook.
-
-### **1. desperately** (adverb – used to emphasize strong feelings or actions)
-
-- **desperately need**  
-    _Many families **desperately need** financial support after the flood._
-    
-- **desperately want**  
-    _She **desperately wants** to travel abroad and study._
-    
-- **desperately try**  
-    _He **desperately tried** to save the relationship._
-    
-- **desperately unhappy**  
-    _After the divorce, he was **desperately unhappy** for months._
-    
-
-### **2. pain** (noun – physical or emotional suffering)
-
-- **feel pain**  
-    _You may **feel some pain** after the operation._
-    
-- **ease the pain**  
-    _The medication helped to **ease the pain** in her joints._
-    
-- **in great pain**  
-    _He was clearly **in great pain** after the accident._
-    
-- **relieve pain**  
-    _Doctors prescribed morphine to **relieve the pain**._
-    
+_He lived with a constant ache in his knees._
 
 
-### **3. wise** (adjective – showing good judgment)
+- aches and pains (idiom - general physical discomfort)
 
-- **a wise decision**  
-    _Choosing to save money early was **a wise decision**._
-    
-- **a wise choice**  
-    _Studying computer science turned out to be **a wise choice**._
-    
-- **wise advice**  
-    _She gave me **wise advice** about handling pressure._
-    
-- **wise investment**  
-    _Buying that property was **a wise investment**._
-    
+_Elderly people often complain about every day aches and pains._
 
 
-### **4. run** (verb – many meanings; focus on common collocations)
+As a verb:
 
-- **run a business**  
-    _He has been **running a business** since he was 22._
-    
-- **run smoothly**  
-    _Everything **ran smoothly** during the wedding ceremony._
-    
-- **run away**  
-    _The child **ran away** from home but returned the next day._
-    
-- **run a risk**  
-    _If you skip insurance, you **run a risk** of losing everything._
+- my body aches
+
+_After the hike, my whole body ached._
+
+- ache with hunger/loss/loneliness (figurative)
+
+_She ached with loneliness after moving to a new city._
+
+
+1. Pursue (verb)
+
+- pursue a goal
+- pursue a career
+- pursue an interest
+- pursue further studies
+
+Example: _She decided to pursue a career in biomedical engineering._
+
+2. Evidence
+
+Example: _The researchers presented strong evidence to support their hyothesis._
