@@ -99,7 +99,14 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | **satire of the legal system**        | Humorous or critical portrayal of law            | criticism, mockery                        |
 | **adapted for the theatre**           | Turned into a stage play                         | dramatized, converted into a play         |
 
+# Opinion & Attitudes
 
+| Word / Phrase      | Meaning                                 | Synonyms / Paraphrases |
+| ------------------ | --------------------------------------- | ---------------------- |
+| inform the public  | give people information                 | educate, update        |
+| to persuade        | make someone believe or do something    | convince, influence    |
+| fear / controversy | strong negative emotion or disagreement | dispute, uproar        |
+| avoid (a topic)    | not choose or deal with it              | steer clear of, skip   |
 # Crime
 
 | **Word**                 | **Backslide** _(verb)_                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -110,6 +117,15 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | **IELTS-Level Synonyms** | regress, relapse, deteriorate, decline                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | __Example Sentences__    | - _Despite years of progress, the country has recently begun to __backslide__ in its efforts to reduce pollution._<br>- _Some argue that strict policies are needed to prevent society from __backsliding__ into inequality and unrest._<br>- _Patients who lack support are more likely to __backslide__ into unhealthy eating habits._                                                                                                                       |
 | __Band 7 - 9 Usage__     | - Use "backslide" in __Task 2 essays__ when talking about setbacks in areas such as education reform, social equality, or environmental protection.<br>- Best used in formal writing when describing __negative trends__ or __reversal of progress__.<br><br>Use this word especially when writing about policies that have failed, declining social values, or countries returning to outdated practices. It adds a nuanced, high-level tone to your writing. |
+
+# Lifestyle & Leisure
+
+| Word / Phrase                             | Meaning                                 | Synonyms / Paraphrases                                  |
+| ----------------------------------------- | --------------------------------------- | ------------------------------------------------------- |
+| **safe outdoor play**                         | Playing outside in a secure environment | protected outdoor activities, secure outdoor recreation |
+| **staring at a computer screen**              | Looking at a computer for a long time   | prolonged screen time, fixed gaze on a monitor          |
+| **not doing anything particularly energetic** | Being physically inactive               | sedentary, low-energy activity                          |
+
 # Government
 
 | Word/Phrase             | Meaning / Context                      | Synonyms / Related Terms |
@@ -119,17 +135,53 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | **implementation**      | Putting plans into action              | execution, rollout       |
 | **monitored carefully** | Observed closely to track progress     | evaluated, overseen      |
 
-# Advertising
+# Economic & Business & Advertising
 
+| Word / Phrase                         | Meaning                                       | Synonyms / Paraphrases                          |
+| ------------------------------------- | --------------------------------------------- | ----------------------------------------------- |
+| **sales in the shops went up**        | The amount of goods sold in stores increased  | increase in retail sales, higher store revenue  |
+| **more shoppers**                     | A larger number of people buying goods        | increased customer numbers, higher foot traffic |
+| **fewer people out shopping**         | A smaller number of people going to buy goods | reduced shoppers, decline in customer turnout   |
+| **established craft**                 | well-known skilled work                       | traditional trade                               |
+| **guarded trade secrets**             | kept production methods secret                | protected know-how                              |
+| **large-scale commercial soapmaking** | mass production for sale                      | industrial soapmaking                           |
+| **inexpensive soda ash**              | cheap chemical ingredient                     | affordable material                             |
+| **heavily taxed**                     | high tax rate                                 | subject to high duty                            |
+| **tax removal**                       | ending of tax                                 | abolition of duty                               |
 # Transport
 
-| Word/Phrase                 | Meaning / Context                | Synonyms / Related Terms           |
-| --------------------------- | -------------------------------- | ---------------------------------- |
-| **transport**               | Moving produce to markets        | logistics, delivery system         |
-| **preservation techniques** | Ways to prevent spoilage of food | food storage, conservation methods |
-| **produce**                 | Grown food ready for use or sale | harvest, crops                     |
-
+| Word/Phrase                                 | Meaning / Context                                     | Synonyms / Related Terms                            |
+| ------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- |
+| **transport**                               | Moving produce to markets                             | logistics, delivery system                          |
+| **preservation techniques**                 | Ways to prevent spoilage of food                      | food storage, conservation methods                  |
+| **produce**                                 | Grown food ready for use or sale                      | harvest, crops                                      |
+| **closing off their street**                | Preventing vehicles from entering the street          | sealing off, restricting access                     |
+| **block off our road**                      | Physically stopping cars from using the road          | barricade, cordon off                               |
+| **special signs**                           | Signs made for a specific purpose                     | customised signs, dedicated signage                 |
+| **motorists**                               | People driving cars                                   | drivers, vehicle users                              |
+| **council**                                 | Local government authority                            | municipal authority, local administration           |
+| **police involved**                         | Police participation or intervention                  | law enforcement engaged, police assistance          |
+| **completely closed**                       | No entry allowed                                      | fully shut, entirely blocked                        |
+| **residents' cars**                         | Vehicles owned by people living in the area           | local vehicles, inhabitants’ cars                   |
+| **drive at under 20 kilometres per hour**   | Travel at a speed less than 20 km/h                   | slow driving, low-speed driving                     |
+| **through traffic**                         | Vehicles passing through without stopping in the area | transit traffic, passing vehicles                   |
+| **busy roads**                              | Roads with a lot of traffic                           | congested streets, high-traffic roads               |
+| **reduce the traffic**                      | Decrease the number of vehicles                       | cut traffic, lessen congestion                      |
+| **busiest main road**                       | The most crowded central road                         | most congested major road, heaviest traffic route   |
+| **persuading people not to use their cars** | Convincing people to avoid driving                    | encouraging less driving, promoting car-free travel |
+| **making people pay more for parking**      | Increasing parking fees                               | raising parking charges, higher parking costs       |
+| **stopped people from parking**             | Prevented vehicles from being parked                  | banned parking, prohibited parking                  |
+| **buses still running**                     | Bus services continuing despite changes               | public transport operating, buses in service        |
 # Globalization
+
+# Geography
+
+| Vocabulary / Collocation | Meaning / Notes | Synonyms |
+| ------------------------ | --------------- | -------- |
+| **River Tiber**          | river in Rome   | —        |
+| **Europe**               | continent       | —        |
+| **France**               | country         | —        |
+| **Germany / Gaul**       | regions         | —        |
 
 # Environment
 
@@ -142,20 +194,39 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 |bird call model|“he had subconsciously modelled its opening phrase on a bird call”|Nature as an indirect influence in composing|
 
 
-| Word/Phrase                | Meaning / Context                            | Synonyms / Related Terms               |
-| -------------------------- | -------------------------------------------- | -------------------------------------- |
-| **case study**             | Detailed analysis of a specific situation    | project review, example, pilot project |
-| **programme**              | Organised plan of action for development     | initiative, scheme, project            |
-| **rural populations**      | People living in the countryside             | villagers, agricultural communities    |
-| **sustainable**            | Can continue long-term without damage        | long-lasting, eco-friendly, viable     |
-| **charcoal**               | A fuel made from burning wood without oxygen | fuel wood                              |
-| **resource**               | Something valuable and usable (e.g. forest)  | asset, supply                          |
-| **agriculture**            | Farming or crop production                   | cultivation, farming                   |
-| **crops**                  | Plants grown for food                        | produce, harvest                       |
-| **livestock breeding**     | Raising animals for food or farming          | animal husbandry                       |
-| **food security**          | Reliable access to enough food               | nutritional stability                  |
-| **vegetables and cereals** | Common edible crops in farming               | grains and greens                      |
+| Word/Phrase                 | Meaning / Context                            | Synonyms / Related Terms                       |
+| --------------------------- | -------------------------------------------- | ---------------------------------------------- |
+| **case study**              | Detailed analysis of a specific situation    | project review, example, pilot project         |
+| **programme**               | Organised plan of action for development     | initiative, scheme, project                    |
+| **rural populations**       | People living in the countryside             | villagers, agricultural communities            |
+| **sustainable**             | Can continue long-term without damage        | long-lasting, eco-friendly, viable             |
+| **charcoal**                | A fuel made from burning wood without oxygen | fuel wood                                      |
+| **resource**                | Something valuable and usable (e.g. forest)  | asset, supply                                  |
+| **agriculture**             | Farming or crop production                   | cultivation, farming                           |
+| **crops**                   | Plants grown for food                        | produce, harvest                               |
+| **livestock breeding**      | Raising animals for food or farming          | animal husbandry                               |
+| **food security**           | Reliable access to enough food               | nutritional stability                          |
+| **vegetables and cereals**  | Common edible crops in farming               | grains and greens                              |
+| **fresh air**               | Clean air from outdoors                      | unpolluted air, pure air                       |
+| **air quality**             | How clean or polluted the air is             | atmospheric condition, cleanliness of the air  |
+| **less air pollution**      | Reduced harmful substances in the air        | decreased emissions, cleaner air               |
+| **more relaxed atmosphere** | Calmer and less stressful environment        | peaceful setting, laid-back mood               |
+| **less noise pollution**    | Reduced unwanted or harmful sound            | quieter environment, reduced sound disturbance |
+| **quieter**                 | Having less noise                            | more silent, less noisy                        |
 
+# History
+
+| Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
+| --------------------------------------------- | ---------------------------------- | -------------------------------- |
+| **prehistoric times**                         | period before written records      | ancient era, early human history |
+| **earliest people**                           | first humans                       | early humans, ancient peoples    |
+| **excavation of ancient Babylon**             | digging to find remains            | archaeological dig               |
+| **evidence was found**                        | proof discovered                   | proof, findings                  |
+| **inscriptions**                              | words carved/written on surface    | engravings, carvings             |
+| **ancient Greeks / Romans / Germans / Gauls** | historical peoples                 | early civilizations              |
+| **Mount Sapo**                                | legendary Roman location           | —                                |
+| **fall of Rome**                              | collapse of Roman Empire           | decline, downfall                |
+| **Middle Ages**                               | medieval period (5th–15th century) | medieval era                     |
 # Family
 
 # Gender
@@ -172,10 +243,38 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | __Common IELTS Collocations__ | **bear the burden** - Carry responsibility or pressure<br>**bear the consequences** - Suffer the results of something<br>**bear in mind** - Remember or consider<br>**bear the cost** - Pay or absorb an expense<br>**bear the brunt** - Suffer the worst of something negative                                                                                                                                                                                                                                                                                                                                                                            |
 |                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-# Science
+| Vocabulary / Collocation         | Meaning / Notes          | Synonyms          |
+| -------------------------------- | ------------------------ | ----------------- |
+| **personal cleanliness**         | keeping the body clean   | hygiene           |
+| **public health**                | health of a community    | community health  |
+| **unsanitary living conditions** | unclean environments     | unhygienic, dirty |
+| **outbreaks of disease**         | sudden spread of illness | epidemics         |
+| **Black Death**                  | plague of 14th century   | bubonic plague    |
+| **cleaning purposes**            | for hygiene use          | cleansing         |
+|                                  |                          |                   |
+# Science & Technology
+
+| Vocabulary / Collocation                             | Meaning / Notes                    | Synonyms                        |
+| ---------------------------------------------------- | ---------------------------------- | ------------------------------- |
+| **soapmaking**                                       | process of producing soap          | soap production, saponification |
+| **fats boiled with ashes**                           | early method of soap               | combining oils with alkali      |
+| **soda ash (sodium carbonate)**                      | alkali chemical from salt          | washing soda                    |
+| **patented a process**                               | registered invention officially    | secured a patent                |
+| **chemical nature**                                  | scientific composition             | molecular makeup                |
+| **relationship of fats, glycerine, and fatty acids** | chemical connections in soap       | —                               |
+| **soapmaking became a science**                      | systematic, research-based process | scientific discipline           |
+| **manufacture**                                      | produce in large quantities        | produce, mass-produce           |
 
 # Shopping
 
+# Process
+
+| Vocabulary / Collocation           | Meaning / Notes         | Synonyms       |
+| ---------------------------------- | ----------------------- | -------------- |
+| **turning salt into soda ash**     | chemical transformation | conversion     |
+| **combines with fat to form soap** | reaction to create soap | saponification |
+| **adding perfume**                 | incorporating fragrance | scenting       |
+| **varieties of soap**              | different kinds         | types, forms   |
 # Sport
 
 | Word/Phrase             | Part of Speech | Meaning                                                      | Example Sentence                                                          |
@@ -210,24 +309,56 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 
 # Tourism
 
-# Urbanization - City Life
+# Urbanization - City Life - Community - Society
 
-| Word/Phrase                            | Meaning / Context                           | Example Sentence                                                                 |
-|----------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------|
-| **recent transformation**              | A formal way to describe recent changes     | The park has undergone a recent transformation, including new paths and seating.|
-| **feature of the city**                | A notable part of the city’s landscape      | The clock tower is a well-known feature of the city.                            |
-| **origin of the park**                 | Background or how it was started            | The origin of the park dates back to the late 1800s.                            |
-| **took possession of**                 | Became the legal owner                      | The council took possession of the land in 1912.                                |
-| **waste land**                         | Unused, undeveloped land                    | What is now a beautiful park was once just waste land.                          |
-| **densely populated residential area** | Heavily inhabited area with housing         | The park is located in a densely populated residential area.                    |
-| **plans for transforming**             | Ideas or proposals for making major changes | The city released plans for transforming the old industrial site into a park.   |
-| **finished on schedule**               | Completed at the planned time               | Despite the weather delays, the renovation was finished on schedule.            |
+| Word/Phrase                            | Meaning / Context                                | Example Sentence                                                                 |
+| -------------------------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------- |
+| **recent transformation**              | A formal way to describe recent changes          | The park has undergone a recent transformation, including new paths and seating. |
+| **feature of the city**                | A notable part of the city’s landscape           | The clock tower is a well-known feature of the city.                             |
+| **origin of the park**                 | Background or how it was started                 | The origin of the park dates back to the late 1800s.                             |
+| **took possession of**                 | Became the legal owner                           | The council took possession of the land in 1912.                                 |
+| **waste land**                         | Unused, undeveloped land                         | What is now a beautiful park was once just waste land.                           |
+| **densely populated residential area** | Heavily inhabited area with housing              | The park is located in a densely populated residential area.                     |
+| **plans for transforming**             | Ideas or proposals for making major changes      | The city released plans for transforming the old industrial site into a park.    |
+| **finished on schedule**               | Completed at the planned time                    | Despite the weather delays, the renovation was finished on schedule.             |
+| **national politics**                  | government and political issues within a country | domestic politics                                                                |
+| **international politics**             | political issues between countries               | global politics                                                                  |
+| **broader picture**                    | bigger context beyond immediate facts            | overall situation, wider perspective                                             |
+| **emotional story**                    | narrative that triggers feelings                 | touching account                                                                 |
+| **strangers**                          | people you don’t know                            | unknown individuals                                                              |
+| **aesthetic reasons**                  | for beauty                                       | decorative purposes                                                              |
+| **luxury item**                        | expensive, special thing                         | high-end product                                                                 |
+| **everyday necessity**                 | daily essential                                  | basic need                                                                       |
+| **affordable to ordinary people**      | within people’s budget                           | cheap enough, accessible                                                         |
+| **popularity of bathing**              | widespread bathing habit                         | trend of bathing                                                                 |
 
 |Word/Phrase|Meaning / Use Case|
 |---|---|
 |**organised petitions and demonstrations**|Actions taken by the public to oppose a decision|
 |**change its mind about the future of the land**|Decision-making in local councils|
 
+| Word / Phrase                       | Meaning                                                         | Synonyms / Paraphrases                       |
+| ----------------------------------- | --------------------------------------------------------------- | -------------------------------------------- |
+| **guest on the show**                   | A person invited to speak on a program (radio, TV, podcast)     | interviewee, special guest                   |
+| **local residents**                     | People who live in a specific area                              | community members, inhabitants, locals       |
+| **chance to play in the street safely** | An opportunity for children to play without danger from traffic | safe play opportunity, secure street play    |
+| **caught on**                           | Became popular or accepted                                      | gained popularity, became trendy, spread     |
+| **campaign / campaigning**              | Organised activities to achieve a goal                          | drive, movement, advocacy                    |
+| **up and running**                      | Operating successfully                                          | in operation, active, functioning            |
+| **working on it**                       | Trying to complete or improve something                         | developing, in progress                      |
+| **volunteer wardens**                   | People who help control or supervise an area without pay        | unpaid supervisors, community helpers        |
+| **all kids in the city**                | Every child living in the city                                  | all urban children, every city child         |
+| **supportive**                          | Showing approval or encouragement                               | encouraging, helpful, in favour of           |
+| **tiny minority**                       | A very small number of people                                   | small fraction, handful, very few            |
+| **big extended family**                 | A large group of relatives or close community members           | close-knit community, large family group     |
+| **confidence in themselves**            | Belief in one’s own abilities                                   | self-assurance, self-belief                  |
+| **supervised by parents**               | Watched over by parents                                         | monitored, overseen, under parental guidance |
+| **access to parks**                     | The ability to use parks                                        | availability of parks, park facilities       |
+| **large gardens**                       | Big private outdoor spaces                                      | spacious yards, big backyards                |
+| **suburbs**                             | Residential areas outside a city centre                         | outskirts, suburban neighbourhoods           |
+| **theme of the festival**               | The main subject or focus of a festival                         | festival topic, central idea                 |
+| **unpopular**                           | Not liked or approved of by many people                         | disliked, unfavorable                        |
+| **felt safer**                          | Had a greater sense of security                                 | perceived more safety, more secure           |
 
 
 # Housing - Building - Materials - Infrastructure
@@ -249,6 +380,17 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **swimming beach**                       | A specific tourist facility                     | A swimming beach was created by clearing rocks and adding sand.                           |
 | **pier**                                 | Useful in transport or access-related map tasks | A new pier was built to allow boats to dock on the south side of the island.              |
 | __distill__                              |                                                 |                                                                                           |
+| **water**                                | liquid for washing                              | —                                                                                         |
+| **mud**                                  | wet earth                                       | dirt, clay                                                                                |
+| **clay cylinders**                       | hollow objects made from clay                   | —                                                                                         |
+| **sand / pumice / ashes**                | materials for scrubbing                         | abrasive materials                                                                        |
+| **oil mixed with ashes**                 | cleaning substance                              | —                                                                                         |
+| **animal fat**                           | fat from animals                                | tallow                                                                                    |
+| **vegetable oils**                       | oils from plants                                | plant-based oils                                                                          |
+| **perfume**                              | scented substance                               | fragrance                                                                                 |
+| **salt**                                 | sodium chloride                                 | —                                                                                         |
+| **alkali**                               | base substance that reacts with acid            | —                                                                                         |
+|                                          |                                                 |                                                                                           |
 
 | Word/Phrase           | Meaning / Context               | Synonyms / Related Terms |
 | --------------------- | ------------------------------- | ------------------------ |
@@ -326,7 +468,30 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **Dominant**        | adjective      | Having control or influence over others                  | In group discussions, she tends to take a dominant role.                         |
 | **Self-centred**    | adjective      | Preoccupied with oneself                                 | He was too self-centred to consider how others felt.                             |
 
+# Media & Communication
 
+| Word / Phrase                 | Meaning                                                   | Synonyms / Paraphrases                    |
+| ----------------------------- | --------------------------------------------------------- | ----------------------------------------- |
+| media studies                 | academic subject about mass communication, news, film, TV | journalism studies, communication studies |
+| assignment                    | a task given as part of study                             | project, coursework                       |
+| coverage of a story           | the way media reports a particular event                  | reporting, news story presentation        |
+| range of newspapers           | variety of publications                                   | multiple papers, different news sources   |
+| page of the newspaper         | location of the article                                   | placement, section                        |
+| front page                    | first page of a newspaper, main news                      | lead page                                 |
+| column inches                 | amount of space in newspaper                              | article length                            |
+| headline                      | title of a news story                                     | news heading                              |
+| graphics                      | pictures, diagrams, or visuals                            | images, photos, illustrations             |
+| structure (of the item)       | how the article is organised                              | organisation, layout                      |
+| writer's purpose              | the aim of writing                                        | intention, goal, objective                |
+| create fear / controversy     | provoke strong reactions                                  | stir emotions, spark debate               |
+| make somebody look ridiculous | portray someone negatively                                | mock, belittle                            |
+| assumptions about the reader  | what the writer presumes readers know or think            | presuppositions, expectations             |
+| national news item            | article about country-wide events                         | domestic news                             |
+| editorial                     | opinion piece by newspaper editors                        | leader article                            |
+| human interest story          | emotionally engaging story about people                   | personal story, heartwarming story        |
+| arts topic                    | story about cultural events                               | entertainment news, culture coverage      |
+| review (of a film)            | evaluation or critique                                    | assessment, appraisal                     |
+| funding for the arts          | financial support for cultural projects                   | cultural grants, arts subsidies           |
 
 
 # Education
@@ -344,7 +509,19 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **potential new students**         | People considering applying                       | prospective students, applicants        |
 | **included in the information**    | Part of the promotional material                  | featured in the brochure                |
 | **current students and lecturers** | People already part of the institution            | existing students and academic staff    |
+| **first assignment**                   | first academic task                               | initial project                         |
+| **go about (it)**                      | approach or method for doing something            | tackle, handle                          |
+| **compare**                            | look at similarities/differences                  | contrast, evaluate                      |
+| **analyse**                            | examine in detail                                 | break down, study                       |
+| **topic**                              | subject of study                                  | theme, focus                            |
 
+# Cause & Effect Expression
+
+| Vocabulary / Collocation                    | Meaning / Notes                   | Synonyms                     |
+| ------------------------------------------- | --------------------------------- | ---------------------------- |
+| **decline in bathing contributed to**       | less bathing caused               | reduction in hygiene led to  |
+| **removal of tax led to affordability**     | tax cut caused price drop         | duty removal → accessibility |
+| **invention led to large-scale production** | discovery enabled mass production | development → expansion      |
 # Map-Related Vocabulary (Useful for Task 1)
 
 | Phrase                               | Use / Map Description Context                       |
