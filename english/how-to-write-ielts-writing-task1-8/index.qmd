@@ -228,8 +228,60 @@ Think about how to correct the highlighted language problems in red.
 8. We omit the article when we are referring to something in general or 'all' (e.g. all people, all courts etc.). We need an article (e.g. a/the) or determiner here (Some courts, two courts etc.)
 9. We need a comparative here (e.g. it will become more versatile)
 10. There is a vocabulary problem here - it is better to refer to these as 'The two outdoor courts' or 'The two courts on the outside of the building'
-11. 
-
+11. 'much' is used with uncountable nouns ('how much sugars?' etc.) 'many' is used with countable nouns (e.g. facilities). 
+12. 'like' is too informal - 'such as' or 'including' are better here
+13. It isn't clear what these 'areas' are - 'side' is better and we need more information ('the western side' of what?)
+14. This should be 'in' the corner ('on the corner' is used for outside (e.g. on the corner of  a street))
 :::
+
+## Addressing Coherence and cohesion problems
+
+The language is changed in blue. Coherence and cohesion are generally managed well in this answer. She has highlighted five problems areas where the ideas are difficult to follow, where referencing is not clear, or where the information could be more logically organized. Can we identify the problems and suggest a way to fix them?
+
+
+The two plans illustrate the main changes <font color="#0070c0">that</font> will take place in a university sports center.
+
+Overall, although the central area will be largely retained, the total area of the sports center will be extended, and more facilities will be added.
+
+In the current plan, the sports center's <font color="#245bdb">facilities</font> are limited. Within the building, there are two main facilities, one of which is <font color="#245bdb">a</font> 25-meter pool in the center, and another is <font color="#245bdb">a</font> gym <font color="#245bdb">at the back of the building</font>. <span style="background:#b1ffff">(1) To serve their functions well</span>, a changing room <font color="#245bdb">is located on the left</font>  (2) <span style="background:#b1ffff">of them</span>, and <font color="#245bdb">a seating area</font> on the eastern side of the <font color="#245bdb">building</font>. (3) <span style="background:#b1ffff">As for the reception</span>, <font color="#245bdb">it is directly opposite</font> the entrance. In terms of the outdoor areas, <font color="#245bdb">there are</font> courts on either side of the building.
+
+According to the future plans, <font color="#245bdb">the</font> sports center will become <font color="#245bdb">more</font> versatile after some changes <font color="#245bdb">are made</font>. (4) <span style="background:#b1ffff"><font color="#245bdb">The outdoor</font> courts will be removed, while <font color="#245bdb">many</font> more facilities will be added, from recreational facilities such as <font color="#245bdb">a</font> cafe on the right of the entrance, and <font color="#245bdb">a</font> sports <font color="#245bdb">shop</font> on the left, to sports facilities, <font color="#245bdb">including a</font> leisure pool on the <font color="#245bdb">western side of the center</font>, and two dance studios in the northeast corner of the building.</span> <font color="#245bdb">The</font> existing facilities are also going to be expanded including the gym, seating area, changing room and reception. The swimming pool is the only (5) <span style="background:#b1ffff">one</span> <font color="#245bdb">that</font> will remain the same in the future.
+
+:::{.callout-note}
+1. This is difficult to follow and appears to be going too far and making a comment not supported by the data (to + the infinitive tell us the reason something was done - but we have no idea why the current plan is organized like this). It would be better to think about the people who will use these facilities and begin: "Visitors have access to ..."
+2. the reference is not clear here - on the left of what? This is too far away from the mention of the pool and the gym.
+3. 'As for the reception' suggests that we have already had some information about the reception and are returning to this topic. We don't need a change in topic as this is still explaining what is 'Within the building', and the next sentence nicely changes the topic to what is outside the building ('In terms of the outdoor areas ...'). This sentence would just introduce the current reception: 'There is a ...'
+4. There is too much information included in this sentence, which makes it difficult to follow. The order of the information is not as logical as it could be - it often helps the reader if you mirror the order of information in the first paragraph. The writer has tried to separate the information into 'recreation facilities' and 'sports facilities', but it does seem that at all of these facilities are 'recreational'. Can you think of another umbrella term to use instead of 'recreational facilities'?
+5. Again, the reference here is a little unclear 'one of' what? (Think about what this refers back to)
+:::
+
+## Task achievement problems
+
+Now read through the answer after most of these changes have been made and consider Task achievement. Think to particular about the following:
+
+- Does the sample present a clear overview of the main changes (Band 7)?
+- Does it present and highlight the key features (the main changes) (Band 7)?
+- Does it 'cover the requirements of the task' (summarising the information by selecting and reporting the main features, and making comparisons where relevant) (Band 7)
+- Are there any key features missing? Are there details that are inaccurate? (Band 6)
+- What improvements can you suggest to improve this answer?
+
+***
+The two plans illustrate the main changes that will take place in a university sports center.
+
+Overall, although the central area will be largely retained, the total area of the sports center will be extended, and more facilities will be added.
+
+In the current plan, the sports center's facilities are limited. Within the building, there are two main facilities, one of which is a 25-meter pool in the center, and another is a gym at the back of the building. <font color="#245bdb">Visitors have access to</font> a changing room located on the left <font color="#245bdb">of the swimming pool</font> and a seating area on the eastern side of the building. <font color="#245bdb">There is a reception</font> directly opposite the entrance. In terms of the outdoor areas, there are courts on either side of the building.
+
+According to the future plans, the sports center will become more versatile after some changes are made. The outdoor courts will be removed, while many more facilities will be added, from recreational facilities such as a cafe on the right of the entrance, and a sports shop on the left, to sports facilities, including a leisure pool on the western side of the center, and two dance studios in the northeast corner of the building. The existing facilities are also going to be expanded including the gym, seating area, changing room and reception. The swimming pool is the only <font color="#245bdb">facility</font> that will remain the same in the future.
+***
+
+One of the main problems in this answer is that the first body paragraph looks in detail at the current plan, and the second body paragraph seems to rush through and list the main changes, which means they are not highlighted. As our task is to highlight the main changes, logically, there should be more information about the second plan than the first.
+
+:::{.callout-tip}
+Our second paragraph should work together with our first paragraph to present a clear picture of the main changes. Don't see them as completely separate. This is particularly true for map and plan tasks.
+:::
+
+
+
 
 # Model Answer
