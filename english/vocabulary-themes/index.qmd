@@ -21,6 +21,19 @@ format:
     highlight-style: a11y
 draft: false
 ---
+# Spelling trap
+
+| Trap Type                            | Example from IELTS Listening | Common Confusion / Risk                      | Strategy to Avoid Mistake                                                |
+| ------------------------------------ | ---------------------------- | -------------------------------------------- | ------------------------------------------------------------------------ |
+| **Silent letters**                   | Knight, Island               | Hearing sound that isn’t written             | Visualise common silent letters (kn-, -gh, -mb, etc.) when writing       |
+| **Unusual vowel combinations**       | Staunfirth                   | “au” can sound like “o” or “aw”              | Write vowel sounds phonetically first, then match to possible spellings  |
+| **Double vs single consonants**      | Traveller / Traveler         | Over/under-adding letters                    | Listen for length of sound, but check spelling rules for British English |
+| **Uncommon endings**                 | Firth, Borough               | Sounds like “first” or “burro”               | Memorise common British place-name endings (-firth, -borough, -cester)   |
+| **Homophones**                       | Write / Right, Sail / Sale   | Same sound, different meaning                | Use context of question to decide correct meaning & spelling             |
+| **Foreign-origin names**             | Staunfirth, Chamonix         | Sound doesn’t match typical English spelling | Pay attention when speaker spells it out; note letter by letter          |
+| **Compound names**                   | Newtown, Southport           | May sound like two separate words            | Check if it’s one word or two; context often hints at place names        |
+| **Extra letters in British English** | Jewellery, Manoeuvre         | Extra vowels compared to US spelling         | Remember British spelling rules for IELTS                                |
+
 # Task 1
 
 ## Maps & Plan
@@ -137,41 +150,83 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 
 # Economic & Business & Advertising
 
-| Word / Phrase                         | Meaning                                       | Synonyms / Paraphrases                          |
-| ------------------------------------- | --------------------------------------------- | ----------------------------------------------- |
-| **sales in the shops went up**        | The amount of goods sold in stores increased  | increase in retail sales, higher store revenue  |
-| **more shoppers**                     | A larger number of people buying goods        | increased customer numbers, higher foot traffic |
-| **fewer people out shopping**         | A smaller number of people going to buy goods | reduced shoppers, decline in customer turnout   |
-| **established craft**                 | well-known skilled work                       | traditional trade                               |
-| **guarded trade secrets**             | kept production methods secret                | protected know-how                              |
-| **large-scale commercial soapmaking** | mass production for sale                      | industrial soapmaking                           |
-| **inexpensive soda ash**              | cheap chemical ingredient                     | affordable material                             |
-| **heavily taxed**                     | high tax rate                                 | subject to high duty                            |
-| **tax removal**                       | ending of tax                                 | abolition of duty                               |
+| Word / Phrase                            | Meaning                                                   | Synonyms / Paraphrases                             |
+| ---------------------------------------- | --------------------------------------------------------- | -------------------------------------------------- |
+| **sales in the shops went up**           | The amount of goods sold in stores increased              | increase in retail sales, higher store revenue     |
+| **more shoppers**                        | A larger number of people buying goods                    | increased customer numbers, higher foot traffic    |
+| **fewer people out shopping**            | A smaller number of people going to buy goods             | reduced shoppers, decline in customer turnout      |
+| **established craft**                    | well-known skilled work                                   | traditional trade                                  |
+| **guarded trade secrets**                | kept production methods secret                            | protected know-how                                 |
+| **large-scale commercial soapmaking**    | mass production for sale                                  | industrial soapmaking                              |
+| **inexpensive soda ash**                 | cheap chemical ingredient                                 | affordable material                                |
+| **heavily taxed**                        | high tax rate                                             | subject to high duty                               |
+| **tax removal**                          | ending of tax                                             | abolition of duty                                  |
+| **Value for money**                      | Worth the amount paid; good quality for the cost          | Cost-effective, economical, worthwhile purchase    |
+| **Too much for a journey**               | Service is overpriced for the distance or time taken      | Overpriced, excessive cost, poor value             |
+| **Cheaper if you buy a week in advance** | Price is lower when booked early                          | Early booking discount, advance purchase saving    |
+| **Discount**                             | Reduction in price                                        | Price cut, rebate, markdown, concession            |
+| **Save 20%**                             | Pay 20% less than the original cost                       | Get 20% off, 20% reduction, percentage savings     |
+| **Amount of information provided**       | Quantity of details given to users or passengers          | Volume of details, extent of information           |
+| **Clear information**                    | Easy-to-understand instructions or details                | Explicit information, well-explained details       |
+| **Board**                                | Display screen showing train times or other announcements | Noticeboard, timetable display, electronic display |
+| **Frustrating**                          | Causing annoyance or disappointment                       | Irritating, annoying, exasperating                 |
+| **Feedback**                             | Response or opinion given about a service                 | Review, comments, evaluation                       |
+| **Occupation**                           | Job or profession                                         | Employment, trade, vocation                        |
+| **Journalist**                           | Person who writes/reports news                            | Reporter, correspondent, news writer               |
+| **Day off**                              | Day not spent working                                     | Rest day, holiday, break                           |
+| **Came here for work**                   | Visiting a place for job-related purposes                 | Business trip, work visit                          |
+| **Shopping**                             | Buying goods for personal use                             | Purchasing, retail buying, going to the shops      |
+| **Value for money**                          |                                                           | worth the cost, cost-effective                     |
+| **Plan ahead**                               |                                                           | prepare in advance                                 |
+
 # Transport
 
-| Word/Phrase                                 | Meaning / Context                                     | Synonyms / Related Terms                            |
-| ------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- |
-| **transport**                               | Moving produce to markets                             | logistics, delivery system                          |
-| **preservation techniques**                 | Ways to prevent spoilage of food                      | food storage, conservation methods                  |
-| **produce**                                 | Grown food ready for use or sale                      | harvest, crops                                      |
-| **closing off their street**                | Preventing vehicles from entering the street          | sealing off, restricting access                     |
-| **block off our road**                      | Physically stopping cars from using the road          | barricade, cordon off                               |
-| **special signs**                           | Signs made for a specific purpose                     | customised signs, dedicated signage                 |
-| **motorists**                               | People driving cars                                   | drivers, vehicle users                              |
-| **council**                                 | Local government authority                            | municipal authority, local administration           |
-| **police involved**                         | Police participation or intervention                  | law enforcement engaged, police assistance          |
-| **completely closed**                       | No entry allowed                                      | fully shut, entirely blocked                        |
-| **residents' cars**                         | Vehicles owned by people living in the area           | local vehicles, inhabitants’ cars                   |
-| **drive at under 20 kilometres per hour**   | Travel at a speed less than 20 km/h                   | slow driving, low-speed driving                     |
-| **through traffic**                         | Vehicles passing through without stopping in the area | transit traffic, passing vehicles                   |
-| **busy roads**                              | Roads with a lot of traffic                           | congested streets, high-traffic roads               |
-| **reduce the traffic**                      | Decrease the number of vehicles                       | cut traffic, lessen congestion                      |
-| **busiest main road**                       | The most crowded central road                         | most congested major road, heaviest traffic route   |
-| **persuading people not to use their cars** | Convincing people to avoid driving                    | encouraging less driving, promoting car-free travel |
-| **making people pay more for parking**      | Increasing parking fees                               | raising parking charges, higher parking costs       |
-| **stopped people from parking**             | Prevented vehicles from being parked                  | banned parking, prohibited parking                  |
-| **buses still running**                     | Bus services continuing despite changes               | public transport operating, buses in service        |
+| Word/Phrase                                 | Meaning / Context                                                        | Synonyms / Related Terms                            |
+| ------------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------- |
+| **transport**                               | Moving produce to markets                                                | logistics, delivery system                          |
+| **preservation techniques**                 | Ways to prevent spoilage of food                                         | food storage, conservation methods                  |
+| **produce**                                 | Grown food ready for use or sale                                         | harvest, crops                                      |
+| **closing off their street**                | Preventing vehicles from entering the street                             | sealing off, restricting access                     |
+| **block off our road**                      | Physically stopping cars from using the road                             | barricade, cordon off                               |
+| **special signs**                           | Signs made for a specific purpose                                        | customised signs, dedicated signage                 |
+| **motorists**                               | People driving cars                                                      | drivers, vehicle users                              |
+| **council**                                 | Local government authority                                               | municipal authority, local administration           |
+| **police involved**                         | Police participation or intervention                                     | law enforcement engaged, police assistance          |
+| **completely closed**                       | No entry allowed                                                         | fully shut, entirely blocked                        |
+| **residents' cars**                         | Vehicles owned by people living in the area                              | local vehicles, inhabitants’ cars                   |
+| **drive at under 20 kilometres per hour**   | Travel at a speed less than 20 km/h                                      | slow driving, low-speed driving                     |
+| **through traffic**                         | Vehicles passing through without stopping in the area                    | transit traffic, passing vehicles                   |
+| **busy roads**                              | Roads with a lot of traffic                                              | congested streets, high-traffic roads               |
+| **reduce the traffic**                      | Decrease the number of vehicles                                          | cut traffic, lessen congestion                      |
+| **busiest main road**                       | The most crowded central road                                            | most congested major road, heaviest traffic route   |
+| **persuading people not to use their cars** | Convincing people to avoid driving                                       | encouraging less driving, promoting car-free travel |
+| **making people pay more for parking**      | Increasing parking fees                                                  | raising parking charges, higher parking costs       |
+| **stopped people from parking**             | Prevented vehicles from being parked                                     | banned parking, prohibited parking                  |
+| **buses still running**                     | Bus services continuing despite changes                                  | public transport operating, buses in service        |
+| **Day trip**                                | Short journey to a place and back in one day                             | excursion, short outing                             |
+| **Station**                                 | Railway station                                                          | train stop, terminal                                |
+| **Travelling back to**                      | Returning to a location                                                  | going back to, returning to                         |
+| **Season ticket**                           | Ticket valid for multiple trips over a period                            | travel pass, commuter ticket                        |
+| **Normal return ticket**                    | Ticket for a journey to and from a place                                 | standard return, round-trip ticket                  |
+| **Full price**                              | Standard price without discount                                          | regular rate, undiscounted price                    |
+| **Rail card**                               | Discount card for train travel                                           | travel discount card, rail pass                     |
+| **Plan ahead**                              | Organise in advance                                                      | prepare in advance, make arrangements early         |
+| **E-ticket**                                | Digital/online ticket                                                    | electronic ticket, online booking confirmation      |
+| **On time / reliable trains**               | Punctual and dependable service                                          | prompt trains, consistent service                   |
+| **Delay**                                   | Train arrives late                                                       | holdup, lateness, setback                           |
+| **Behind schedule**                         | Not on time                                                              | delayed, running late                               |
+| **Aqueducts**                               | Structure carrying water over long distances (historical/infrastructure) | water bridge, water channel                         |
+| **Customer satisfaction survey**                | Research to measure users’ opinions and experience                       | Feedback survey, user satisfaction study            |
+| **Ticket office**                               | Place at a station where tickets are sold                                | Booking office, ticket counter                      |
+| **Open for longer hours**                       | Operating for an extended period each day                                | Extended opening times, longer operating hours      |
+| **Queue**                                       | Line of people waiting                                                   | Line, waiting line, column                          |
+| **Out of order**                                | Not working or broken                                                    | Malfunctioning, faulty, inoperative                 |
+| **Wifi on the train**                           | Wireless internet service available during the train journey             | Onboard wifi, train internet access                 |
+| **Facilities**                                  | Services and equipment provided in a place                               | Amenities, provisions, infrastructure               |
+| **Seating**                                     | Chairs or benches for passengers to sit on                               | Seats, benches, sitting area                        |
+| **Platform**                                    | Area beside the railway track for passengers to board trains             | Train platform, boarding area                       |
+| **Parking at the station**                      | Car parking area for passengers at a train station                       | Station car park, vehicle parking facility          |
+
 # Globalization
 
 # Geography

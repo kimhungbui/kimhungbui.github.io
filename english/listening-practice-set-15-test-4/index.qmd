@@ -1,0 +1,296 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 15 listening test 4
+lightbox: false
+description: IELTS Practice Set 15 listening test 4
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-13
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 15 - listening test 4
+- Total Score: 36/40
+- Date: 12/08/2025
+
+
+
+# Performance Summary
+
+| Category                                            | Correct | Wrong | Accuracy (%) |
+| --------------------------------------------------- | ------- | ----- | ------------ |
+| **[Listening] Map/Plan/Diagram Labelling**          | 6       | 0     | 100.00       |
+| **[Listening theme] Giving a speech at an event**   | 10      | 0     | 100.00       |
+| **[Topic] History**                                 | 7       | 3     | 70.00        |
+| **[Listening] Matching**                            | 5       | 1     | 83.33        |
+| **[Listening theme] Giving tutorial presentations** | 8       | 2     | 80.00        |
+| **[Listening] Multiple Choice**                     | 7       | 1     | 87.50        |
+| **[Listening] Note/Form Completion**                | 16      | 4     | 80.00        |
+| **[Listening theme] Asking for information**        | 9       | 1     | 90.00        |
+
+# Recording 1
+
+| Question | Your Answer | Correct Answer | Error Type | Reason                                 | Fix                                              |
+| -------- | ----------- | -------------- | ---------- | -------------------------------------- | ------------------------------------------------ |
+| Q3       | STEUNFIRTS  | STAUNFIRTH     | Spelling   | Misheard "AU" as "EU" and "TH" as "TS" | Write letters exactly as spelled, re-check order |
+
+1. Nature of the mistake
+
+You wrote "STEUNFIRTS" instead of "STAUNFIRTH".
+
+This is a spelling accuracy issue in a Listening Form Completion question.
+
+The audio clearly spelled it out: S-T-A-U-N-F-I-R-T-H.
+
+You transposed letters ("E" instead of "A" and "S" instead of "H").
+
+2. Why it happened
+
+Spelling under pressure: In IELTS Listening, names—especially unusual ones—often trip people up because they're not in everyday vocabulary.
+
+Letter confusion:
+
+"AU" sound in “Staun-” might have sounded like "EU" to you.
+
+Final “-th” might have sounded like “-ts” due to accent or fast pronunciation.
+
+Not actively writing while hearing the spelling: If you only listen without visualising the word in your head letter-by-letter, errors creep in.
+
+No quick check: Since the speaker spelled it, you could have matched your writing to the audio in real time.
+
+3. Skills involved
+
+Spelling unusual words (especially names and place names)
+
+Listening to letter sequences accurately
+
+Linking sounds to correct English letter combinations (AU, TH, etc.)
+
+4. How to avoid in future
+
+When a word is spelled in the audio:
+
+Write each letter as you hear it—don't try to write the whole word from memory first.
+
+Say the letters in your head as you write (S…T…A…U…N…).
+
+Check letter order before moving on.
+
+Practice listening to spelled words:
+
+Names: towns, people, brands
+
+Especially with British accents, since “A” might sound like “eh” and “U” like “yoo” or “uh”.
+
+Know common UK place name patterns:
+
+“-th” endings, “AU” in “Staun-”, “-firth” meaning estuary.
+# Recording 2
+
+
+# Recording 3
+
+## Q21
+
+**Question:** What did Annie discover from reading about icehouses?  
+**Correct:** **B. how the ice was kept frozen**
+
+**Transcript cue:**
+
+> “But I **didn’t realise** that **insulating the blocks with straw or sawdust** meant they didn’t melt for months.”
+
+- She already **knew** where they were built (location), so **C** is out.
+    
+- She didn’t talk about why they were first created, so **A** is out.
+    
+- Her **new discovery** = the **method** of keeping ice frozen → **B**.
+    
+
+## Q25
+
+**Question:** Who will research **the goods that are refrigerated**?  
+**Correct:** **A. Annie**  
+(You put B = Jack.)
+
+**Transcript cues (assignment language):**
+
+> **Annie:** “How about starting with … the **range of goods that are refrigerated** nowadays? … **I could do that**, unless you particularly want to.”  
+> **Jack:** “**That’s fine by me**.”
+
+- “**I could do that**” → Annie volunteers.
+    
+- “**That’s fine by me**” → Jack **doesn’t** take it.  
+    ⇒ Topic **stays with Annie** → **A**.
+    
+
+---
+
+## Patterns behind the mistakes
+
+- **Q21 (detail meaning):** You chose the **topic around it** (location/creation) rather than the **new information** signaled by “**didn’t realise**”. In IELTS Listening, phrases like _didn’t realise / I learned / I found out_ point to the **answerable discovery**.
+    
+- **Q25 (speaker assignment):** It’s an **ownership** trap. The test uses soft language: _“I could do that… unless…”_ + acceptance _“That’s fine by me.”_ → That confirms the first speaker **keeps** the task.
+    
+
+---
+
+## Quick fix strategies
+
+1. **Underline “discovery verbs”:** didn’t realise / found out / discovered → answer is what follows.
+    
+2. **Map assignments live:** Draw A / B columns. When someone says “**I’ll do that / I could do that**,” put a tick for that topic under their name; when the other says “**fine by me / OK / leave it to me**,” confirm the tick.
+    
+3. **Beware topic switches:** After Q25, they immediately **change topic** to **health**. Don’t let the new topic overwrite the **previous assignment**.
+    
+
+---
+
+## Mini drill (1‑line practice)
+
+Who owns the task?
+
+1. “I can cover the **case studies** if you like.” – “Perfect, thanks.” → **First speaker**
+    
+2. “Do you want the **budget section**?” – “Not really.” – “OK, **I’ll take it**.” → **Second speaker** (final line)
+    
+3. “I’ll start the **timeline**, **unless** you’d prefer to.” – “No, go ahead.” → **First speaker**
+
+## **1. Signal phrases for assignment**
+
+These are grouped by who **ends up** with the task.
+
+### **A. First speaker keeps the task**
+
+- _I could do that (unless you want to)._
+    
+- _I’ll take that one._
+    
+- _I don’t mind doing it._
+    
+- _I’ll cover that._
+    
+- _I can handle that._
+    
+- _I’m happy to do it._
+    
+- _Go ahead and leave it with me._
+    
+
+**Confirming responses from second speaker:**
+
+- _That’s fine by me._
+    
+- _Sure, thanks._
+    
+- _OK._
+    
+- _Yes, you do that._
+    
+
+---
+
+### **B. Second speaker takes the task**
+
+- _Do you want to do that?_ – _Sure, I’ll do it._
+    
+- _Would you like to take that on?_ – _Yes, I’ll handle it._
+    
+- _If you’d like, you can do that._ – _OK, I will._
+    
+- _I’d rather not, could you?_ – _Yeah, I’ll do it._
+    
+
+---
+
+### **C. Watch for switches**
+
+Sometimes they _start_ with “I could do it” but then _switch_ when the other says “Actually, I’d prefer to.”  
+➡ Whoever **verbally accepts last** ends up with it.
+
+---
+
+## **2. 5 mini practice questions**
+
+**Example 1**  
+S1: _I can do the background research if you want._  
+S2: _Thanks, that’d be great._  
+
+**Example 2**  
+S1: _Do you want to write the introduction?_  
+S2: _Yes, I’ll do it._  
+
+**Example 3**  
+S1: _I could handle the graphs unless you’d prefer to._  
+S2: _No, you go ahead._  
+
+**Example 4**  
+S1: _I’m not too keen on covering the statistics._  
+S2: _OK, I’ll take it._  
+
+**Example 5**  
+S1: _I’ll start the budget analysis._  
+S2: _Actually, I’d like to do that._  
+
+1
+✅ **Answer:** First speaker
+2
+✅ **Answer:** Second speaker
+3
+✅ **Answer:** First speaker
+4
+✅ **Answer:** Second speaker
+5
+✅ **Answer:** Second speaker (because of the switch)
+
+
+
+# Recording 4
+
+
+1) Exact evidence from the transcript
+
+The sentence reads:
+
+“A major step toward large‑scale commercial soapmaking occurred in 1791, when a French chemist, Nicholas Leblanc, patented a process for turning salt into soda ash (Q38), or sodium carbonate.”
+
+So the speaker explicitly says “turning salt into soda ash.” The word you must fill is SALT.
+
+2) Why your answer “SOAPS” is wrong
+
+Doesn't match the spoken phrase. The speaker mentions soap several times elsewhere, which can be a distractor, but here the verb phrase is “turning ___ into …” — the thing being turned into soda ash is salt, not soap.
+
+Makes no logical sense in context. Soda ash (sodium carbonate) is an alkali used to make soap; you don't make soda ash from soap. The passage later explains that soda ash combines with fat to form soap — so soap comes after, not before.
+
+Grammatical fit. The notes ask “making soda ash from ___” so the missing word is a raw material (a substance): salt fits perfectly.
+
+3) How this mistake likely happened
+
+You heard nearby words like soap / soapmaking and jumped to that as the answer (a common trap).
+
+You may have missed the short but crucial phrase “turning salt into…”, or mis-copied during note-taking.
+
+4) How to avoid this in future (practical tips)
+
+Pre‑read the question and predict the type of word needed (here: a substance/noun).
+
+Listen for connecting words like into / from / by — they show transformation or source. (“turning X into Y” → X is the source).
+
+Underline nearby keywords in the transcript while listening (e.g., turning…into, soda ash).
+
+Don't be fooled by repeated topic words (e.g., soap). Check the exact sentence for the answer.
+
+Take minimal notes (1–2 letters) of the key word when you hear it — faster than trying to write the whole word immediately.
+
+If you're unsure, use logic: ask whether the proposed answer makes sense in the sequence described (what comes before and after).

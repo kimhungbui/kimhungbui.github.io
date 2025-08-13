@@ -324,6 +324,38 @@ Our body paragraphs work together to present a clear picture - don't see them as
 :::
 
 
-
-
 # Model Answer
+
+Look at her model answer and think about:
+
+- Her overview
+- The organization - how do the paragraphs work together?
+- Vocabulary (are there any special words she used that we need to learn?)
+
+***
+The plans show a university sports center as it is now and the new layout following its redevelopment. Overall, while some outdoor facilities will be lost, the new center will be significantly larger and will cater for a wider range of sports.
+
+The sports center currently consists of a relatively small central building with an outdoor court on each side. The building houses a 25-meter pool, with a seating area and changing room, and there is a gym to the rear and a reception area to the front.
+
+Following the renovations, only the central pool and its facilities will remain the same. The building will be expanded to the east and west, removing the outdoor courts and making way for more indoor facilities. These include a leisure pool on the western side, which will be slightly larger than the existing one and will have its own changing room, and on the eastern side, a new sports hall, and two dance studios. The current gym will be lengthened so that it is double its current size. The reception area will also be widened, making it more spacious. On arrival, visitors to the new center will benefit from a third changing room, a sports shop and a cafe, all located around the reception area.
+***
+
+:::{.callout-tip}
+## Vocabulary note
+- to house = to provide space for something (NB the pronunciation is different to the noun - the final sound is 'z' not 's'.)
+- to cater for = to provide for (e.g. to provide food for / to provide facilities for)
+- more spacious = having more space
+- the rear = the back
+:::
+
+
+## Exercises
+
+Read
+
+The plans show a university sports center as it is now and the new layout following its redevelopment. Overall, while some outdoor facilities will be list. The new center will be significantly larger and will cater for a wide range of sports.
+
+
+The sports center currently consists of a relatively small central building with an outdoor court on each side. The building houses a 25-meter pool, with a seating area and changing room, and there is a gym to the rear and a reception area to the front.
+
+Following the renovations, only the central pool and its facilities remain the same. The building will be expanded to the east and west, removing outdoor courts and making way for more indoor facilities. These include a leisure pool on the western side, which will be slightly larger than the existing one, and will have its own changing room, and on the eastern side, a new sports hall, and two dance studios. The current gym will be lengthened so that it is double its current size. The reception area will also be widened, making it more spacious. On arrival, the visitors to the new center will benefit from a third changing room, a sports shop and a cafe, all located around the reception area.

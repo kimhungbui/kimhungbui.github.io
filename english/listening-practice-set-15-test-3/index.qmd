@@ -1,13 +1,13 @@
 ---
-title: Listening practice - mistake log IELTS Practice Set 15 listening test 2
+title: Listening practice - mistake log IELTS Practice Set 15 listening test 3
 lightbox: false
-description: IELTS Practice Set 15 listening test 2
+description: IELTS Practice Set 15 listening test 3
 author:
   - name: Hung
     url: https://kimhungbui.github.io
     affiliation: Barron's Writing for IELTS
     affiliation-url: 
-date: 2025-08-08
+date: 2025-08-12
 categories:
   - english
   - listening
@@ -21,7 +21,7 @@ format:
     highlight-style: a11y
 draft: false
 ---
-# Cambridge IELTS 15 - listening test 2
+# Cambridge IELTS 15 - listening test 3
 - Total Score: 36/40
 - Date: 12/08/2025
 
