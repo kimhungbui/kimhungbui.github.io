@@ -133,52 +133,61 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 
 # Lifestyle & Leisure
 
-| Word / Phrase                             | Meaning                                 | Synonyms / Paraphrases                                  |
-| ----------------------------------------- | --------------------------------------- | ------------------------------------------------------- |
+| Word / Phrase                                 | Meaning                                 | Synonyms / Paraphrases                                  |
+| --------------------------------------------- | --------------------------------------- | ------------------------------------------------------- |
 | **safe outdoor play**                         | Playing outside in a secure environment | protected outdoor activities, secure outdoor recreation |
 | **staring at a computer screen**              | Looking at a computer for a long time   | prolonged screen time, fixed gaze on a monitor          |
 | **not doing anything particularly energetic** | Being physically inactive               | sedentary, low-energy activity                          |
-
+| **Domestic fridges**                              | Refrigerators used in homes             | household refrigerators, home fridges                   |
+| **19th- and 20th-century fridges**                | Refrigerators from the 1800s and 1900s  | historical refrigerators, vintage fridges               |
+| **What's available these days**                   | Current products on the market          | modern options, contemporary models                     |
 # Government
 
-| Word/Phrase             | Meaning / Context                      | Synonyms / Related Terms |
-| ----------------------- | -------------------------------------- | ------------------------ |
-| **realistic timelines** | Feasible schedule for programme stages | achievable deadlines     |
-| **design phase**        | The planning part of a programme       | project proposal stage   |
-| **implementation**      | Putting plans into action              | execution, rollout       |
-| **monitored carefully** | Observed closely to track progress     | evaluated, overseen      |
-
+| Word/Phrase             | Meaning / Context                                   | Synonyms / Related Terms                                            |
+| ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------- |
+| **realistic timelines** | Feasible schedule for programme stages              | achievable deadlines                                                |
+| **design phase**        | The planning part of a programme                    | project proposal stage                                              |
+| **implementation**      | Putting plans into action                           | execution, rollout                                                  |
+| **monitored carefully** | Observed closely to track progress                  | evaluated, overseen                                                 |
+| **Food producers**          | People or companies that grow or make food          | farmers, food manufacturers                                         |
+| **Export produce**          | Send agricultural goods to another country for sale | ship goods abroad, overseas trade of crops                          |
+| **Developed countries**     | Nations with advanced economies and infrastructure  | industrialised nations, high-income countries                       |
+| **Poorer countries**        | Nations with low economic development               | less economically developed countries (LEDCs), low-income countries |
 # Economic & Business & Advertising
 
-| Word / Phrase                            | Meaning                                                   | Synonyms / Paraphrases                             |
-| ---------------------------------------- | --------------------------------------------------------- | -------------------------------------------------- |
-| **sales in the shops went up**           | The amount of goods sold in stores increased              | increase in retail sales, higher store revenue     |
-| **more shoppers**                        | A larger number of people buying goods                    | increased customer numbers, higher foot traffic    |
-| **fewer people out shopping**            | A smaller number of people going to buy goods             | reduced shoppers, decline in customer turnout      |
-| **established craft**                    | well-known skilled work                                   | traditional trade                                  |
-| **guarded trade secrets**                | kept production methods secret                            | protected know-how                                 |
-| **large-scale commercial soapmaking**    | mass production for sale                                  | industrial soapmaking                              |
-| **inexpensive soda ash**                 | cheap chemical ingredient                                 | affordable material                                |
-| **heavily taxed**                        | high tax rate                                             | subject to high duty                               |
-| **tax removal**                          | ending of tax                                             | abolition of duty                                  |
-| **Value for money**                      | Worth the amount paid; good quality for the cost          | Cost-effective, economical, worthwhile purchase    |
-| **Too much for a journey**               | Service is overpriced for the distance or time taken      | Overpriced, excessive cost, poor value             |
-| **Cheaper if you buy a week in advance** | Price is lower when booked early                          | Early booking discount, advance purchase saving    |
-| **Discount**                             | Reduction in price                                        | Price cut, rebate, markdown, concession            |
-| **Save 20%**                             | Pay 20% less than the original cost                       | Get 20% off, 20% reduction, percentage savings     |
-| **Amount of information provided**       | Quantity of details given to users or passengers          | Volume of details, extent of information           |
-| **Clear information**                    | Easy-to-understand instructions or details                | Explicit information, well-explained details       |
-| **Board**                                | Display screen showing train times or other announcements | Noticeboard, timetable display, electronic display |
-| **Frustrating**                          | Causing annoyance or disappointment                       | Irritating, annoying, exasperating                 |
-| **Feedback**                             | Response or opinion given about a service                 | Review, comments, evaluation                       |
-| **Occupation**                           | Job or profession                                         | Employment, trade, vocation                        |
-| **Journalist**                           | Person who writes/reports news                            | Reporter, correspondent, news writer               |
-| **Day off**                              | Day not spent working                                     | Rest day, holiday, break                           |
-| **Came here for work**                   | Visiting a place for job-related purposes                 | Business trip, work visit                          |
-| **Shopping**                             | Buying goods for personal use                             | Purchasing, retail buying, going to the shops      |
-| **Value for money**                          |                                                           | worth the cost, cost-effective                     |
-| **Plan ahead**                               |                                                           | prepare in advance                                 |
-
+| Word / Phrase                                  | Meaning                                                   | Synonyms / Paraphrases                             |
+| ---------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------- |
+| **sales in the shops went up**                 | The amount of goods sold in stores increased              | increase in retail sales, higher store revenue     |
+| **more shoppers**                              | A larger number of people buying goods                    | increased customer numbers, higher foot traffic    |
+| **fewer people out shopping**                  | A smaller number of people going to buy goods             | reduced shoppers, decline in customer turnout      |
+| **established craft**                          | well-known skilled work                                   | traditional trade                                  |
+| **guarded trade secrets**                      | kept production methods secret                            | protected know-how                                 |
+| **large-scale commercial soapmaking**          | mass production for sale                                  | industrial soapmaking                              |
+| **inexpensive soda ash**                       | cheap chemical ingredient                                 | affordable material                                |
+| **heavily taxed**                              | high tax rate                                             | subject to high duty                               |
+| **tax removal**                                | ending of tax                                             | abolition of duty                                  |
+| **Value for money**                            | Worth the amount paid; good quality for the cost          | Cost-effective, economical, worthwhile purchase    |
+| **Too much for a journey**                     | Service is overpriced for the distance or time taken      | Overpriced, excessive cost, poor value             |
+| **Cheaper if you buy a week in advance**       | Price is lower when booked early                          | Early booking discount, advance purchase saving    |
+| **Discount**                                   | Reduction in price                                        | Price cut, rebate, markdown, concession            |
+| **Save 20%**                                   | Pay 20% less than the original cost                       | Get 20% off, 20% reduction, percentage savings     |
+| **Amount of information provided**             | Quantity of details given to users or passengers          | Volume of details, extent of information           |
+| **Clear information**                          | Easy-to-understand instructions or details                | Explicit information, well-explained details       |
+| **Board**                                      | Display screen showing train times or other announcements | Noticeboard, timetable display, electronic display |
+| **Frustrating**                                | Causing annoyance or disappointment                       | Irritating, annoying, exasperating                 |
+| **Feedback**                                   | Response or opinion given about a service                 | Review, comments, evaluation                       |
+| **Occupation**                                 | Job or profession                                         | Employment, trade, vocation                        |
+| **Journalist**                                 | Person who writes/reports news                            | Reporter, correspondent, news writer               |
+| **Day off**                                    | Day not spent working                                     | Rest day, holiday, break                           |
+| **Came here for work**                         | Visiting a place for job-related purposes                 | Business trip, work visit                          |
+| **Shopping**                                   | Buying goods for personal use                             | Purchasing, retail buying, going to the shops      |
+| **Value for money**                            |                                                           | worth the cost, cost-effective                     |
+| **Plan ahead**                                 |                                                           | prepare in advance                                 |
+| **Cost by the number of years**                | Calculating price spread over usage time                  | cost amortisation, long-term value calculation     |
+| **Good value for money**                       | Worth the amount spent                                    | cost-effective, worth the price                    |
+| **Encourage people to spend more**             | Motivate consumers to purchase                            | stimulate buying, promote spending                 |
+| **Choice of colours and designs**              | Variety of product appearance                             | product range, style options                       |
+| **Manufacturers differentiate their products** | Make products stand out from competitors                  | competitive positioning, product distinction       |
 # Transport
 
 | Word/Phrase                                 | Meaning / Context                                                        | Synonyms / Related Terms                            |
@@ -216,28 +225,32 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | **Delay**                                   | Train arrives late                                                       | holdup, lateness, setback                           |
 | **Behind schedule**                         | Not on time                                                              | delayed, running late                               |
 | **Aqueducts**                               | Structure carrying water over long distances (historical/infrastructure) | water bridge, water channel                         |
-| **Customer satisfaction survey**                | Research to measure users’ opinions and experience                       | Feedback survey, user satisfaction study            |
-| **Ticket office**                               | Place at a station where tickets are sold                                | Booking office, ticket counter                      |
-| **Open for longer hours**                       | Operating for an extended period each day                                | Extended opening times, longer operating hours      |
-| **Queue**                                       | Line of people waiting                                                   | Line, waiting line, column                          |
-| **Out of order**                                | Not working or broken                                                    | Malfunctioning, faulty, inoperative                 |
-| **Wifi on the train**                           | Wireless internet service available during the train journey             | Onboard wifi, train internet access                 |
-| **Facilities**                                  | Services and equipment provided in a place                               | Amenities, provisions, infrastructure               |
-| **Seating**                                     | Chairs or benches for passengers to sit on                               | Seats, benches, sitting area                        |
-| **Platform**                                    | Area beside the railway track for passengers to board trains             | Train platform, boarding area                       |
-| **Parking at the station**                      | Car parking area for passengers at a train station                       | Station car park, vehicle parking facility          |
-
+| **Customer satisfaction survey**            | Research to measure users’ opinions and experience                       | Feedback survey, user satisfaction study            |
+| **Ticket office**                           | Place at a station where tickets are sold                                | Booking office, ticket counter                      |
+| **Open for longer hours**                   | Operating for an extended period each day                                | Extended opening times, longer operating hours      |
+| **Queue**                                   | Line of people waiting                                                   | Line, waiting line, column                          |
+| **Out of order**                            | Not working or broken                                                    | Malfunctioning, faulty, inoperative                 |
+| **Wifi on the train**                       | Wireless internet service available during the train journey             | Onboard wifi, train internet access                 |
+| **Facilities**                              | Services and equipment provided in a place                               | Amenities, provisions, infrastructure               |
+| **Seating**                                 | Chairs or benches for passengers to sit on                               | Seats, benches, sitting area                        |
+| **Platform**                                | Area beside the railway track for passengers to board trains             | Train platform, boarding area                       |
+| **Parking at the station**                  | Car parking area for passengers at a train station                       | Station car park, vehicle parking facility          |
+| **Refrigerated trucks**                         | Vehicles equipped with cooling systems to transport perishable goods     | temperature-controlled trucks, chilled lorries      |
+| **Transported in refrigerated railroad cars**   | Moving goods in train carriages with cooling systems                     | cold-chain rail transport, chilled train freight    |
+| **Since the 1840s**                             | Referring to a historical starting point in the 19th century             | dating back to the 1840s, from the mid-19th century |
 # Globalization
 
 # Geography
 
-| Vocabulary / Collocation | Meaning / Notes | Synonyms |
-| ------------------------ | --------------- | -------- |
-| **River Tiber**          | river in Rome   | —        |
-| **Europe**               | continent       | —        |
-| **France**               | country         | —        |
-| **Germany / Gaul**       | regions         | —        |
-
+| Vocabulary / Collocation             | Meaning / Notes                                               | Synonyms                                            |
+| ------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------- |
+| **River Tiber**                      | river in Rome                                                 | —                                                   |
+| **Europe**                           | continent                                                     | —                                                   |
+| **France**                           | country                                                       | —                                                   |
+| **Germany / Gaul**                   | regions                                                       | —                                                   |
+| **Helped whole cities**                  | Contributed to the development or functioning of urban areas  | supported urban growth, boosted city development    |
+| **Couldn't exist without refrigeration** | Fully reliant on cooling technology for survival or operation | dependent on refrigeration, reliant on cold storage |
+| **Middle of a desert**                   | Located in an arid and remote area                            | desert location, arid-zone setting                  |
 # Environment
 
 not: _vegetarian_ -> This is a __vocabulary mistake__.
@@ -249,26 +262,31 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 |bird call model|“he had subconsciously modelled its opening phrase on a bird call”|Nature as an indirect influence in composing|
 
 
-| Word/Phrase                 | Meaning / Context                            | Synonyms / Related Terms                       |
-| --------------------------- | -------------------------------------------- | ---------------------------------------------- |
-| **case study**              | Detailed analysis of a specific situation    | project review, example, pilot project         |
-| **programme**               | Organised plan of action for development     | initiative, scheme, project                    |
-| **rural populations**       | People living in the countryside             | villagers, agricultural communities            |
-| **sustainable**             | Can continue long-term without damage        | long-lasting, eco-friendly, viable             |
-| **charcoal**                | A fuel made from burning wood without oxygen | fuel wood                                      |
-| **resource**                | Something valuable and usable (e.g. forest)  | asset, supply                                  |
-| **agriculture**             | Farming or crop production                   | cultivation, farming                           |
-| **crops**                   | Plants grown for food                        | produce, harvest                               |
-| **livestock breeding**      | Raising animals for food or farming          | animal husbandry                               |
-| **food security**           | Reliable access to enough food               | nutritional stability                          |
-| **vegetables and cereals**  | Common edible crops in farming               | grains and greens                              |
-| **fresh air**               | Clean air from outdoors                      | unpolluted air, pure air                       |
-| **air quality**             | How clean or polluted the air is             | atmospheric condition, cleanliness of the air  |
-| **less air pollution**      | Reduced harmful substances in the air        | decreased emissions, cleaner air               |
-| **more relaxed atmosphere** | Calmer and less stressful environment        | peaceful setting, laid-back mood               |
-| **less noise pollution**    | Reduced unwanted or harmful sound            | quieter environment, reduced sound disturbance |
-| **quieter**                 | Having less noise                            | more silent, less noisy                        |
-
+| Word/Phrase                             | Meaning / Context                                 | Synonyms / Related Terms                          |
+| --------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| **case study**                          | Detailed analysis of a specific situation         | project review, example, pilot project            |
+| **programme**                           | Organised plan of action for development          | initiative, scheme, project                       |
+| **rural populations**                   | People living in the countryside                  | villagers, agricultural communities               |
+| **sustainable**                         | Can continue long-term without damage             | long-lasting, eco-friendly, viable                |
+| **charcoal**                            | A fuel made from burning wood without oxygen      | fuel wood                                         |
+| **resource**                            | Something valuable and usable (e.g. forest)       | asset, supply                                     |
+| **agriculture**                         | Farming or crop production                        | cultivation, farming                              |
+| **crops**                               | Plants grown for food                             | produce, harvest                                  |
+| **livestock breeding**                  | Raising animals for food or farming               | animal husbandry                                  |
+| **food security**                       | Reliable access to enough food                    | nutritional stability                             |
+| **vegetables and cereals**              | Common edible crops in farming                    | grains and greens                                 |
+| **fresh air**                           | Clean air from outdoors                           | unpolluted air, pure air                          |
+| **air quality**                         | How clean or polluted the air is                  | atmospheric condition, cleanliness of the air     |
+| **less air pollution**                  | Reduced harmful substances in the air             | decreased emissions, cleaner air                  |
+| **more relaxed atmosphere**             | Calmer and less stressful environment             | peaceful setting, laid-back mood                  |
+| **less noise pollution**                | Reduced unwanted or harmful sound                 | quieter environment, reduced sound disturbance    |
+| **quieter**                             | Having less noise                                 | more silent, less noisy                           |
+| **Harmful for the environment**         | Causing damage to nature or ecosystems            | environmentally damaging, ecologically harmful    |
+| **Recycle components safely**           | Process and reuse parts without causing harm      | safe material recovery, eco-friendly reprocessing |
+| **Disposed of irresponsibly**           | Got rid of waste in an improper way               | improper waste management, careless disposal      |
+| **Dump old fridges in the countryside** | Throw away refrigerators in rural areas illegally | illegal dumping, fly-tipping                      |
+| **Stop them (unfortunately)**           | Difficulty in preventing harmful actions          | hard to prevent, challenging to control           |
+|                                         |                                                   |                                                   |
 # History
 
 | Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
@@ -298,28 +316,37 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | __Common IELTS Collocations__ | **bear the burden** - Carry responsibility or pressure<br>**bear the consequences** - Suffer the results of something<br>**bear in mind** - Remember or consider<br>**bear the cost** - Pay or absorb an expense<br>**bear the brunt** - Suffer the worst of something negative                                                                                                                                                                                                                                                                                                                                                                            |
 |                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-| Vocabulary / Collocation         | Meaning / Notes          | Synonyms          |
-| -------------------------------- | ------------------------ | ----------------- |
-| **personal cleanliness**         | keeping the body clean   | hygiene           |
-| **public health**                | health of a community    | community health  |
-| **unsanitary living conditions** | unclean environments     | unhygienic, dirty |
-| **outbreaks of disease**         | sudden spread of illness | epidemics         |
-| **Black Death**                  | plague of 14th century   | bubonic plague    |
-| **cleaning purposes**            | for hygiene use          | cleansing         |
-|                                  |                          |                   |
+| Vocabulary / Collocation         | Meaning / Notes                                       | Synonyms                                                  |
+| -------------------------------- | ----------------------------------------------------- | --------------------------------------------------------- |
+| **personal cleanliness**         | keeping the body clean                                | hygiene                                                   |
+| **public health**                | health of a community                                 | community health                                          |
+| **unsanitary living conditions** | unclean environments                                  | unhygienic, dirty                                         |
+| **outbreaks of disease**         | sudden spread of illness                              | epidemics                                                 |
+| **Black Death**                  | plague of 14th century                                | bubonic plague                                            |
+| **cleaning purposes**            | for hygiene use                                       | cleansing                                                 |
+| **Chemicals were harmful**           | Substances that cause damage to health or environment | toxic substances, dangerous chemicals                     |
+| **Access to fresh food**             | Ability to obtain unspoiled, recently produced food   | availability of fresh produce, supply of non-spoiled food |
+| **Benefits to health**               | Positive effects on physical well-being               | health advantages, wellness benefits                      |
 # Science & Technology
 
-| Vocabulary / Collocation                             | Meaning / Notes                    | Synonyms                        |
-| ---------------------------------------------------- | ---------------------------------- | ------------------------------- |
-| **soapmaking**                                       | process of producing soap          | soap production, saponification |
-| **fats boiled with ashes**                           | early method of soap               | combining oils with alkali      |
-| **soda ash (sodium carbonate)**                      | alkali chemical from salt          | washing soda                    |
-| **patented a process**                               | registered invention officially    | secured a patent                |
-| **chemical nature**                                  | scientific composition             | molecular makeup                |
-| **relationship of fats, glycerine, and fatty acids** | chemical connections in soap       | —                               |
-| **soapmaking became a science**                      | systematic, research-based process | scientific discipline           |
-| **manufacture**                                      | produce in large quantities        | produce, mass-produce           |
-
+| Vocabulary / Collocation                             | Meaning / Notes                                                  | Synonyms                                           |
+| ---------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------- |
+| **soapmaking**                                       | process of producing soap                                        | soap production, saponification                    |
+| **fats boiled with ashes**                           | early method of soap                                             | combining oils with alkali                         |
+| **soda ash (sodium carbonate)**                      | alkali chemical from salt                                        | washing soda                                       |
+| **patented a process**                               | registered invention officially                                  | secured a patent                                   |
+| **chemical nature**                                  | scientific composition                                           | molecular makeup                                   |
+| **relationship of fats, glycerine, and fatty acids** | chemical connections in soap                                     | —                                                  |
+| **soapmaking became a science**                      | systematic, research-based process                               | scientific discipline                              |
+| **manufacture**                                      | produce in large quantities                                      | produce, mass-produce                              |
+| **Icehouses**                                            | Historic buildings used to store ice before modern refrigeration | ice storage buildings, cold storage huts           |
+| **Insulating the blocks**                                | Protecting ice by covering it to reduce heat transfer            | thermal protection, heat-proof covering            |
+| **Straw or sawdust**                                     | Natural materials used to keep ice from melting                  | natural insulators, organic packing material       |
+| **Ancient Romans**                                       | People from the historical Roman civilisation                    | Roman Empire citizens, classical Romans            |
+| **Pits dug in the ground**                               | Holes excavated for storage purposes                             | storage pits, underground chambers                 |
+| **Imported from the mountains**                          | Brought from higher altitudes over long distances                | transported from uplands, brought from highlands   |
+| **Commercial business**                                  | Activity aimed at making a profit                                | for-profit enterprise, trade venture               |
+| **Technologies are used**                                | Various methods or systems are applied                           | techniques employed, technological methods adopted |
 # Shopping
 
 # Process
@@ -360,7 +387,7 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | global audience         | noun phrase    | People around the world watching or listening                | _The piece was broadcast to a global audience during the ceremony._       |
 | ceremonial music        | noun phrase    | Music written for formal or official events                  | _The orchestral piece was composed as ceremonial music for the event._    |
   
-# Technology
+
 
 # Tourism
 
