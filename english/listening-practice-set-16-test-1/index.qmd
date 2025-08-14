@@ -1,0 +1,277 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 16 listening test 1
+lightbox: false
+description: IELTS Practice Set 16 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-14
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 16 - listening test 1
+- Total Score: 37/40
+- Date: 14/08/2025
+
+
+
+# Performance Summary
+
+All my mistakes in that test were related to singular/plural prediction.
+
+# Recording 1
+
+It looks like your mistake in **Q8** (“WEDNESDAY” vs. “WEDNESDAYS”) comes down to a common IELTS listening trap — **plural vs. singular forms**.
+
+  
+
+Here’s why:
+
+1. **Exact wording in the audio**
+    
+    Sarah says:
+    
+    > “…so we moved them to **Wednesdays**.”
+    
+    > She’s talking about the _recurring schedule_, meaning _every Wednesday_, so the plural form is grammatically correct.
+    
+2. **Why singular “Wednesday” is wrong**
+    
+    IELTS marking is strict — the answer must match exactly what’s said in the recording (spelling and plurality included).
+    
+    Even though “Wednesday” might make sense to you as a day, it’s not what the speaker said, so it’s marked wrong.
+    
+3. **Key listening clue**
+    
+    When you hear a **day of the week** in plural form, it usually means a repeated weekly event:
+    
+    - “Classes are on Mondays.” (every Monday)
+        
+    - “Meetings take place on Fridays.” (every Friday)
+        
+    
+4. **Tip to avoid this mistake**
+    
+    - When listening, always pay attention to **-s** endings on days, months, and nouns.
+        
+    - In notes completion tasks, write _exactly_ what you hear, even if you think the singular sounds more natural.
+
+In natural English, that final /s/ is often very soft or blended into the next word, so it’s almost invisible unless you train your ear.
+
+  
+
+Here’s how you can _predict_ plural vs. singular even when you don’t hear the sound clearly:
+
+---
+
+### **Use grammar logic**
+
+  
+
+Look at the sentence structure and the verb form.
+
+- **Plural** → often with plural verbs:
+    
+    “We moved them to **Wednesdays**.” → _them_ = many classes → must be plural days.
+    
+- **Singular** → often with “this” or “next”:
+    
+    “It’s on **Wednesday** next week.” (one time only)
+    
+
+---
+
+### **Listen for context**
+
+  
+
+Ask yourself:
+
+- Is this talking about a **regular schedule**? → plural.
+    
+- Is it a **single event**? → singular.
+    
+
+  
+
+In Q8’s case, they were talking about the _regular weekly class_, so “Wednesdays” fits.
+
+---
+
+### **Watch for connecting sounds**
+
+  
+
+Native speakers link words:
+
+- “on Wednesdays at ten” might sound like **“on Wenzdaysat ten”**.
+    
+- The /s/ merges into the “at” sound, so you don’t hear it as a separate hiss.
+    
+
+  
+
+You can train your ear by slowing down recordings (0.75x speed) and replaying just the day-of-week phrases.
+
+---
+
+### **4. Use prediction before the audio**
+
+  
+
+Before listening, scan the notes:
+
+If you see “Held on (8) ______ from 10 am to 11 am” and the topic is weekly workshops → 80% chance it’s plural.
+
+---
+
+## **Step 1 - Know the "plural day" sound patterns**
+
+When native speakers say them quickly:
+
+| **Word**   | **Fast speech sounds like** | **Example sentence**                       |
+| ---------- | --------------------------- | ------------------------------------------ |
+| Mondays    | **Mundez** /ˈmʌn.deɪz/      | “Classes are on **Mundez** at nine.”       |
+| Tuesdays   | **Choos-dez** /ˈtʃuːz.deɪz/ | “We meet on **Choos-dez** in the lab.”     |
+| Wednesdays | **Wenz-dez** /ˈwenz.deɪz/   | “It’s on **Wenz-dez** mornings.”           |
+| Thursdays  | **Thurz-dez** /ˈθɜːrz.deɪz/ | “Workshops are **Thurz-dez** after lunch.” |
+| Fridays    | **Fry-dez** /ˈfraɪ.deɪz/    | “We play football on **Fry-dez**.”         |
+| Saturdays  | **Sat-uh-dez** /ˈsætə.deɪz/ | “We open on **Sat-uh-dez** only.”          |
+| Sundays    | **Sun-dez** /ˈsʌn.deɪz/     | “The market’s on **Sun-dez**.”             |
+
+
+Notice the final **/z/** sound merges with the next word.
+
+---
+
+
+
+## **Step 2 – Context prediction**
+
+  
+
+Plural → for repeated weekly events:
+
+- “We moved them to **Wednesdays**.”
+    
+- “It’s always on **Fridays**.”
+    
+
+  
+
+Singular → for one-off or fixed date:
+
+- “It’s on **Wednesday** next week.”
+    
+- “The event is this **Friday**.”
+    
+
+---
+
+## **Step 3 – Listening drill**
+
+  
+
+I’ll give you pairs. Your job: decide **SINGULAR** or **PLURAL**.
+
+1. “The meetings are on **Wenz-dez** mornings at ten.”
+    
+2. “We’ll see you this **Thursday** at the park.”
+    
+3. “Classes run on **Choos-dez** all month.”
+    
+4. “The exam is on **Monday** the 14th.”
+    
+5. “Our practice sessions are always on **Fry-dez**.”
+# Recording 2
+
+
+# Recording 3
+
+
+# Recording 4
+
+I'm wrong in 39 and 40, both in plural/singular prediction.
+## **Q39 – “opportunity” vs “opportunities”**
+
+  
+
+**Transcript:**
+
+  
+
+> Stoics teach turning obstacles into opportunity.
+
+  
+
+- Here the word is **singular** (“opportunity”) because it’s talking about the general idea of **seeing challenges as a single type of positive outcome**, not listing multiple separate chances.
+    
+- In IELTS listening, when the speaker uses **into opportunity** (no “an” or “the”), it’s usually uncountable or general — same as “into gold” or “into power.”
+    
+- If it were plural, you’d hear a clearer “opportunities,” with a small /z/ sound at the end.
+    
+
+  
+
+**Tip:**
+
+If the word follows **“into”** and is used conceptually, lean towards singular.
+
+---
+
+## **Q40 – “practice” vs “practices”**
+
+  
+
+**Transcript:**
+
+  
+
+> This is not as easy as it sounds and will require considerable practice.
+
+  
+
+- Here it’s **uncountable** — meaning “a lot of doing something to improve a skill,” not “different methods” (which would be “practices”).
+    
+- In IELTS listening, **considerable** often precedes uncountable nouns like “time,” “effort,” “practice,” “work.”
+    
+- Plural “practices” would refer to “customs” or “ways of doing things” — different meaning.
+    
+
+  
+
+**Tip:**
+
+If preceded by **a lot of**, **considerable**, **much**, **little**, or **some**, the noun is likely uncountable and singular.
+
+---
+
+## **Quick** **Plural/Singular Prediction** **Signals for IELTS Listening**
+
+|**Signal in Audio**|**Likely Form**|**Example**|
+|---|---|---|
+|After “a lot of”, “much”, “considerable”|Uncountable (singular)|considerable practice|
+|After “many”, “several”, “a number of”|Plural|several opportunities|
+|Following “into” in a figurative sense|Singular|turn problems into opportunity|
+|Talking about types/kinds|Plural|business practices|
+|General concept or quality|Singular|seek happiness, show courage|
+
+
+**Tip:**
+
+If the word follows **“into”** and is used conceptually, lean towards singular.
+
+
+If preceded by **a lot of**, **considerable**, **much**, **little**, or **some**, the noun is likely uncountable and singular.
