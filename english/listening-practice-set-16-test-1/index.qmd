@@ -201,10 +201,289 @@ I’ll give you pairs. Your job: decide **SINGULAR** or **PLURAL**.
 5. “Our practice sessions are always on **Fry-dez**.”
 # Recording 2
 
+## **Multiple‑choice traps (Q11–Q14)**
+
+- **Q11 – Founded year**
+    
+    - Dates flying around: **1923** (entered steel industry), **1924** (started planning), **1926** (**founded**).
+        
+    - **Trap:** picking the _earlier_ dates that sound important.
+        
+    - **Answer logic:** “He **set up this company** … **in 1926**.”
+        
+    
+- **Q12 – Original products**
+    
+    - Long‑term plan: machine tools + automotive.
+        
+    - **But** a 5‑year **delay** to make goods for **hospitals/healthcare**.
+        
+    - **Trap:** choosing what was _planned_ instead of what actually **happened first**.
+        
+    - **Answer logic:** Healthcare.
+        
+    
+- **Q13 – Premises (move vs refurbish)**
+    
+    - “Site is big enough, so **moving … has never been necessary**,” and they **intend to refurbish**.
+        
+    - **Trap:** hearing “major refurbishment” and assuming **moving**.
+        
+    - **Answer logic:** **No plans to move** (refurbish current site).
+        
+    
+- **Q14 – Programme content**
+    
+    - “Most mornings you’ll have a **presentation** from a **manager**.”
+        
+    - Teacher visit **not** this year; no time allocated for independent research.
+        
+    - **Trap:** picking “meetings with a teacher” or “time to do research.”
+        
+    - **Answer logic:** **Talks by staff**.
+        
+    
+
+  
+
+## **Map‑label traps (Q15–Q20)**
+
+  
+
+General map strategy:
+
+- **Fix your orientation**: Reception as starting point; note **left/right**, **facing you**, **far side**, **past**, **at the end**.
+    
+- **Windows/views help**: “looks out onto the **main road** / **trees** / **courtyard**” = placement clues.
+    
+- **Road access**: Lorries, turning area → **warehouse** side.
+    
+
+  
+
+Item‑by‑item cues:
+
+- **Q15 – Coffee room**
+    
+    - “Corridor **left** from reception → door **facing you** at the **end**.”
+        
+    - “Looks out onto **main road** (one side) and **trees** (other).”
+        
+    - **Traps:** confusing “facing you” with left/right doors; ignoring view clues.
+        
+    
+- **Q16 – Warehouse**
+    
+    - “Next to factory.”
+        
+    - “Accessed by lorries … **turning area** at the end.”
+        
+    - “Cross to **far side** of courtyard → **door on your right**.”
+        
+    - **Traps:** picking the factory instead; mixing up near‑side vs far‑side.
+        
+    
+- **Q17 – Staff canteen**
+    
+    - “**Right next to reception**.”
+        
+    - Views are **poor** (corridor/courtyard or access road).
+        
+    - **Trap:** choosing a room with nice view; forgetting the “next to reception” anchor.
+        
+    
+- **Q18 – Meeting room**
+    
+    - “Walk along corridor **to the left of the courtyard** → **to the end** → **last on the right**.”
+        
+    - “**No natural daylight**.”
+        
+    - **Trap:** selecting any right‑hand room; missing “**last** on the right.”
+        
+    
+- **Q19 – Human Resources**
+    
+    - “At the **front** of this building.”
+        
+    - “From reception, go **left**; it’s the **second room** you come to.”
+        
+    - “Looks out onto the **main road**.”
+        
+    - **Trap:** picking the first room; ignoring the “front/main road” view.
+        
+    
+- **Q20 – Boardroom**
+    
+    - “Go along the corridor **past the courtyard**, **right to the end**.”
+        
+    - “On the **left**, **next to the factory**; view of the **trees**.”
+        
+    - **Traps:** choosing a right‑hand room at the end; ignoring adjacency to the factory.
+        
+    
+
+  
+
+# **Paraphrases & signal words that hide answers**
+
+- **Founded/set up** = established.
+    
+- **Went into production** ≠ founded.
+    
+- **Premises** = buildings/site; **layout far from ideal** → refurbishment, not relocation.
+    
+- **Carry out major refurbishment** = upgrade the same site.
+    
+- **Accessed by lorries / turning area** = warehouse zone.
+    
+- **Facing you / at the end / far side** = orientation markers.
+    
+- **Looks out onto** (main road/trees/courtyard) = view anchor.
+    
+
+  
+
+# **Micro‑listening tips for maps**
+
+- **Underline directionals** while reading: left / right / at the end / past / next to / on your right.
+    
+- **Circle view nouns**: main road / trees / courtyard / access road.
+    
+- **Sketch quick arrows** from reception to each target as they speak.
+    
+- **Pause prediction**: before the location noun, predict likely zone (e.g., warehouse near lorry access).
+    
+
+  
+
+# **Quick practice prompts (self‑check)**
+
+- “Door **facing you** at the **end**” → Which letter is directly ahead, not left/right?
+    
+- “**Second room** on the left from reception; **front** of building; **main road** view” → Which letter matches all three?
+    
+- “**Next to** factory; view of **trees**” → Boardroom, not warehouse.
 
 # Recording 3
 
+## **Q21–Q22: Introductory stage – useful parts**
 
+  
+
+**Theme:** _Introductory stage activities_
+
+  
+
+**Key details:**
+
+- **Handouts with research sources**: Jess says _“I was put off, but the more I read, the more interested I got”_ → useful.
+    
+- **Natural History Museum**: Both agree _“much more use than Bird Park”_ → useful.
+    
+- **Bird Park visit**: Disappointment, so **not** chosen.
+    
+- **Workshop sessions**: Only Tom attended; Jess missed them → not both.
+    
+- **Projects from previous years**: They _wish_ they had them, but didn’t → not useful.
+    
+
+  
+
+**Traps:**
+
+- Mention of **Bird Park** first might make you tick it; but their reaction is negative.
+    
+- Workshop sessions are praised, but only one attended → wrong for “both agree.”
+    
+
+  
+
+**Answers:** **E** (handouts) + **C** (Natural History Museum).
+
+---
+
+## **Q23–Q24: Proposal changes**
+
+  
+
+**Theme:** _Adjustments to proposals_
+
+  
+
+**Key details:**
+
+- Tom: notes are only descriptions, needs to **evaluate** → Jess: _“I’ll have to look at that too”_ → **E** (more evaluative notes).
+    
+- Jess: _“Best not to be too precise about actual outcome”_ → Tom: _“OK, I’ll change that too”_ → **B** (less specific about outcome).
+    
+- **Rationale for action plans**: Only Jess did it, Tom will add → **not** both.
+    
+- **Video diary presentation**: Tom already did, Jess didn’t say she will → **not** both.
+    
+- **Timeline/mind map**: Both already did → not a **change**.
+    
+
+  
+
+**Traps:**
+
+- They talk about several tasks in one go; but question is only about **changes** they’ll make now.
+    
+- Some items are **already done**, so irrelevant.
+    
+
+  
+
+**Answers:** **E** + **B**.
+
+---
+
+## **Q25–Q30: Personal meanings**
+
+  
+
+**Theme:** _Interpreting art pieces personally_
+
+  
+
+**Key mapping:**
+
+| **Q#** | **Artwork**                    | **Key words in dialogue**                                 | **Answer** |
+| ------ | ------------------------------ | --------------------------------------------------------- | ---------- |
+| 25     | Falcon (Landseer)              | _“staring straight at you” → “possible danger suggested”_ | **D**      |
+| 26     | Fish hawk (Audubon)            | _“swooping” → “rapid motion”_                             | **C**      |
+| 27     | Kingfisher (Van Gogh)          | _“saw a real one as a child with my grandfather”_         | **A**      |
+| 28     | Portrait of William Wells      | _“ambiguous about exploiting nature”_                     | **H**      |
+| 29     | Vairumati (Gauguin)            | _“reference to never-ending cycle of existence”_          | **F**      |
+| 30     | Portrait of Giovanni de Medici | _“holding it carefully so he doesn’t hurt it”_            | **G**      |
+
+**Traps:**
+
+- Some answers are implied by **paraphrase**, not exact word:
+    
+    - “Possible danger” → **potential threat**.
+        
+    - “Never-ending cycle” → **continuity of life**.
+        
+    - “Holding carefully” → **protection of nature**.
+        
+    
+- The box has distractors (**B**, **E**) that are never mentioned.
+    
+
+---
+
+## **General listening traps for Part 3**
+
+1. **Mutual agreement filter** – If question says “both agree,” check that both speakers confirm it (even briefly).
+    
+2. **Change vs already done** – For proposal questions, “change” means new modification, not something they completed earlier.
+    
+3. **Personal meaning** – Often requires **inference** from description rather than direct label in audio.
+    
+4. **Negative vs positive opinion** – Don’t tick something just because it’s discussed early; listen for positive or negative reaction.
+    
+5. **Paraphrasing** – IELTS will rephrase the answer, so match meaning, not exact words.
 # Recording 4
 
 I'm wrong in 39 and 40, both in plural/singular prediction.
