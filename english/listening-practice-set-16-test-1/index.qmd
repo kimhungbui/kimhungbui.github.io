@@ -31,6 +31,10 @@ draft: false
 
 All my mistakes in that test were related to singular/plural prediction.
 
+Today i get 37/40 ielts, all wrong in plural/singular, I can learn the acceptance/decline type question in task 3 of the previous test, and do the test correctly
+
+I think maps in listening is my advantage, i can look at the map and easier to think and hear.
+
 # Recording 1
 
 It looks like your mistake in **Q8** (“WEDNESDAY” vs. “WEDNESDAYS”) comes down to a common IELTS listening trap — **plural vs. singular forms**.
@@ -204,6 +208,80 @@ I’ll give you pairs. Your job: decide **SINGULAR** or **PLURAL**.
 # Recording 4
 
 I'm wrong in 39 and 40, both in plural/singular prediction.
+
+
+☑️ In business, people benefit from Stoicism by identifying obstacles as **(39)** ……………………….. .  
+  
+**Relevance of Stoicism**  
+☑️ It requires a lot of **(40)** ……………………….. but Stoicism can help people to lead a good life.
+
+
+Let’s break down why **Q39** and **Q40** were _singular_ despite your prediction:
+
+---
+
+### **Q39: Obstacles → opportunity**
+
+  
+
+> “…Stoics teach **turning obstacles into opportunity**.”
+
+  
+
+- **Why singular?**
+    
+    “Opportunity” here is an _uncountable concept_ — like “freedom” or “happiness.”
+    
+    The idea is that _all obstacles together_ can be transformed into _the general idea of opportunity_, not multiple individual opportunities.
+    
+- **Plural trap:**
+    
+    The plural “obstacles” nearby makes our brain want symmetry (“opportunities”), but grammar meaning overrules symmetry here.
+    
+
+---
+
+### **Q40: A lot of → practice**
+
+  
+
+> “It requires a lot of practice, but Stoicism can help people…”
+
+  
+
+- **Why singular?**
+    
+    “Practice” here is uncountable (meaning _the act of practising_).
+    
+    Uncountable nouns don’t take plural even after “a lot of.”
+    
+    Compare:
+    
+    - “a lot of work” ✅ (uncountable)
+        
+    - “a lot of books” ✅ (countable plural)
+        
+    
+- **Plural trap:**
+    
+    We’re trained to think “a lot of” = plural, but it only does that with countable nouns.
+### **The takeaway skill**
+
+  
+
+When predicting plural/singular in listening:
+
+1. **Check the noun type** in your head:
+    
+    - **Countable →** can be plural (“opportunities”) or singular (“opportunity”).
+        
+    - **Uncountable →** always singular form (“practice”).
+        
+    
+2. **Don’t be misled by nearby plurals** — they don’t force the answer to match.
+    
+3. **Listen for context meaning**: Are they talking about _a general idea_ or _individual items_?
+
 ## **Q39 – “opportunity” vs “opportunities”**
 
   
@@ -275,3 +353,8 @@ If the word follows **“into”** and is used conceptually, lean towards singul
 
 
 If preceded by **a lot of**, **considerable**, **much**, **little**, or **some**, the noun is likely uncountable and singular.
+
+1. - Is it a _general concept_? → singular.
+        
+    - Is it _individual items_? → plural.
+
