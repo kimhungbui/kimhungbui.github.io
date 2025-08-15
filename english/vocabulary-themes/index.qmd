@@ -176,6 +176,22 @@ flock to the growing number of = go in large numbers to new places
 | to persuade        | make someone believe or do something    | convince, influence    |
 | fear / controversy | strong negative emotion or disagreement | dispute, uproar        |
 | avoid (a topic)    | not choose or deal with it              | steer clear of, skip   |
+
+# Monument
+
+| **Word / Phrase**     | **Synonyms**                      | **Collocations**                            |
+| --------------------- | --------------------------------- | ------------------------------------------- |
+| monuments             | memorials, landmarks, structures  | ancient monuments, cultural monuments       |
+| tribute to the memory | commemoration, honor, homage      | tribute to the memory of kings              |
+| tombs                 | burial places, graves, sepulchres | royal tombs, ancient tombs                  |
+| burial chamber        | grave room, mortuary chamber      | royal burial chamber                        |
+| underground passages  | subterranean corridors, tunnels   | underground passageways, hidden passages    |
+| stone slabs           | large flat stones, flagstones     | limestone slabs, granite slabs              |
+| false doors           | dummy doors, decorative doors     | carved false doors                          |
+| excavated             | unearthed, dug up, uncovered      | excavated site, excavated remains           |
+| grave robbers         | tomb raiders, looters             | ancient grave robbers, modern grave robbers |
+| artefacts             | objects, relics, antiquities      | rare artefacts, archaeological artefacts    |
+
 # Crime
 
 | **Word**                 | **Backslide** _(verb)_                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -220,6 +236,16 @@ flock to the growing number of = go in large numbers to new places
 | collaboration     | cooperation, teamwork        | require collaboration                   |
 | interaction       | communication, engagement    | encourage interaction                   |
 | isolation         | loneliness, solitude         | reduce isolation; suffer from isolation |
+|                   |                              |                                         |
+
+| **Word/Phrase**         | **Synonyms / Related Terms**         | **Collocations / Usage**          |
+| ----------------------- | ------------------------------------ | --------------------------------- |
+| problem-solving ability | reasoning skill, analytical skill    | display problem-solving ability   |
+| manipulate environment  | alter surroundings, use tools        | manipulate objects/environment    |
+| tool                    | implement, instrument                | use a tool                        |
+| game                    | play, recreational activity          | similar to a game                 |
+| conscious manipulation  | deliberate handling, intentional use | conscious manipulation of objects |
+| creativity              | inventiveness, imagination           | show creativity                   |
 
 # Government
 
@@ -233,6 +259,18 @@ flock to the growing number of = go in large numbers to new places
 | **Export produce**          | Send agricultural goods to another country for sale | ship goods abroad, overseas trade of crops                          |
 | **Developed countries**     | Nations with advanced economies and infrastructure  | industrialised nations, high-income countries                       |
 | **Poorer countries**        | Nations with low economic development               | less economically developed countries (LEDCs), low-income countries |
+
+# Work & Employment
+
+| **Word / Phrase**                | **Synonyms & Related Phrases**                | **Common Collocations**                        |
+| -------------------------------- | --------------------------------------------- | ---------------------------------------------- |
+| global workforce                 | worldwide labour force, international workers | size of the workforce, global employment       |
+| switch to a different occupation | change careers, career transition             | occupational change, job switch                |
+| occupational boundaries          | job role limits, professional demarcations    | cross occupational boundaries, blur boundaries |
+| retraining                       | upskilling, reskilling                        | retraining programme, workforce retraining     |
+| redundancy                       | layoff, job loss                              | voluntary redundancy, redundancy package       |
+| job security                     | employment stability, secure work             | guarantee job security, lack of job security   |
+
 # Economic & Business & Advertising
 
 | Word / Phrase                                  | Meaning                                                   | Synonyms / Paraphrases                              |
@@ -279,6 +317,20 @@ flock to the growing number of = go in large numbers to new places
 | -------------------------------------------------------- | ------------------------------ | ----------------------------- |
 | £50                                                      | fifty pounds, cost of fifty    | pay £50, costs £50            |
 | no payment required (Tiny Engineers was free? – implied) | free of charge, complimentary  | completely free, without cost |
+
+| **Word / Phrase**             | **Synonyms & Related Phrases**                        | **Common Collocations**                                   |
+| ----------------------------- | ----------------------------------------------------- | --------------------------------------------------------- |
+| enhance productivity          | increase efficiency, boost output                     | productivity enhancement, enhanced workforce productivity |
+| reduce costs                  | cut expenses, lower overheads                         | cost reduction, reduced operational costs                 |
+| market intelligence           | business insight, competitive knowledge               | gather market intelligence, analyse market intelligence   |
+| personal contact with clients | face-to-face communication, direct client interaction | maintain personal contact, regular contact with clients   |
+
+| **Word / Phrase**          | **Synonyms & Related Phrases**                 | **Common Collocations**                                  |
+| -------------------------- | ---------------------------------------------- | -------------------------------------------------------- |
+| economic democracy         | fair economy, equitable market system          | promote economic democracy                               |
+| multistage employment life | career with multiple stages, phased career     | plan a multistage career, adapt to multistage employment |
+| full employment            | zero unemployment, complete labour utilisation | guarantee full employment                                |
+
 # Time & Scheduling
 
 | **Word/Phrase**          | **Synonyms / Similar Phrases**                | **Common Collocations**             |
@@ -415,6 +467,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **Dump old fridges in the countryside** | Throw away refrigerators in rural areas illegally | illegal dumping, fly-tipping                      |
 | **Stop them (unfortunately)**           | Difficulty in preventing harmful actions          | hard to prevent, challenging to control           |
 |                                         |                                                   |                                                   |
+
+| **Word/Phrase**             | **Synonyms / Related Terms**         | **Collocations / Usage**                                 |
+| --------------------------- | ------------------------------------ | -------------------------------------------------------- |
+| climate change              | global warming, environmental change | effects/impact of climate change, address climate change |
+| Arctic Circle               | polar region, high latitudes         | extreme conditions of the Arctic Circle                  |
+| temperature can reach -40°C | freezing cold, severe cold           | survive temperatures of -40°C                            |
+| extreme conditions          | harsh environment, severe climate    | adapted to extreme conditions                            |
+| extinction                  | disappearance, die out               | lead to extinction, prevent extinction                   |
+| conservation efforts        | preservation work, protection        | support conservation efforts                             |
 # History
 
 | Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
@@ -428,6 +489,16 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **Mount Sapo**                                | legendary Roman location           | —                                |
 | **fall of Rome**                              | collapse of Roman Empire           | decline, downfall                |
 | **Middle Ages**                               | medieval period (5th–15th century) | medieval era                     |
+
+| **Word / Phrase** | **Synonyms**                    | **Collocations**                               |
+| ----------------- | ------------------------------- | ---------------------------------------------- |
+| predecessors      | forerunners, ancestors          | royal predecessors, architectural predecessors |
+| reign             | rule, leadership, sovereignty   | long reign, during his reign                   |
+| tradition         | custom, practice                | break with tradition, maintain tradition       |
+| inscriptions      | carvings, engravings, lettering | stone inscriptions, ancient inscriptions       |
+| vessels           | containers, jars, pots          | stone vessels, ceremonial vessels              |
+| dynasty           | royal family line, succession   | ruling dynasty, ancient dynasty                |
+
 # Family
 
 # Gender
@@ -480,6 +551,13 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | calories                           | kilocalories, energy units                   | burn calories; calorie intake       |
 | high-intensity workouts            | vigorous exercise                            | do high-intensity workouts          |
 
+| **Word/Phrase**       | **Synonyms / Related Terms** | **Collocations / Usage**     |
+| --------------------- | ---------------------------- | ---------------------------- |
+| adipose tissue        | body fat, fatty tissue       | excess adipose tissue        |
+| bad cholesterol (LDL) | low-density lipoprotein      | reduce LDL levels            |
+| heart disease         | cardiovascular disease       | risk of heart disease        |
+| bedridden             | confined to bed              | bedridden patients           |
+| astronaut             | space traveller              | astronauts in space missions |
 ## Psychology / Cognitive Skills
 
 | **Word / Phrase**      | **Synonym(s)**                     | **Collocation(s)**                             |
@@ -498,6 +576,16 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | aerobic workout   | cardio exercise           | do an aerobic workout; aerobic training |
 | step aerobics     | cardio step class         | practice step aerobics                  |
 | kickboxing        | martial arts workout      | do kickboxing                           |
+
+# Emotions & Social Interaction
+
+| **Word/Phrase** | **Synonyms / Related Terms** | **Collocations / Usage** |
+| --------------- | ---------------------------- | ------------------------ |
+| frustration     | annoyance, irritation        | show frustration         |
+| relationship    | bond, connection             | form a relationship with |
+| play with       | engage with, interact        | play with dogs           |
+| majestic        | grand, impressive            | majestic animal          |
+| intelligent     | smart, clever                | intelligent species      |
 
 # Science & Technology
 
@@ -529,6 +617,28 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | animation software | motion graphics program, cartoon-making software | create animation, animation tools                  |
 | humanoid robot     | human-shaped robot, android                      | build a humanoid, program a humanoid robot         |
 | metal supports     | structural supports, framework                   | steel supports, aluminium supports                 |
+
+| **Word / Phrase**                  | **Synonyms & Related Phrases**                 | **Common Collocations**                             |
+| ---------------------------------- | ---------------------------------------------- | --------------------------------------------------- |
+| automation                         | mechanisation, computerisation                 | process automation, industrial automation           |
+| embodied AI                        | physical artificial intelligence, robotics     | embodied agent, embodied system                     |
+| disembodied AI                     | software AI, virtual AI                        | disembodied agent, disembodied system               |
+| algorithmication of jobs           | AI integration into work, algorithm-based work | job algorithmication, algorithm-driven process      |
+| perfect information                | complete data, flawless data set               | access to perfect information                       |
+| keeper of knowledge                | information holder, data custodian             | act as the keeper of knowledge                      |
+| feed the algorithm with false data | input incorrect information, data manipulation | deliberately feed false data                        |
+| transparent AI                     | explainable AI, open algorithms                | ensure AI transparency, transparent decision-making |
+
+| **Word/Phrase**   | **Synonyms / Related Terms**         | **Collocations / Usage**            |
+| ----------------- | ------------------------------------ | ----------------------------------- |
+| genetic structure | DNA composition, genome              | compare genetic structures          |
+| gene              | hereditary unit, DNA segment         | discover a gene, mutation in a gene |
+| mutation          | genetic change, alteration           | mutation of a gene                  |
+| study model       | research model, experimental example | use as a study model                |
+| osteoporosis      | bone loss, brittle bones             | treatment of osteoporosis           |
+| bone density      | bone mass, bone strength             | increase/maintain bone density      |
+| bone remodelling  | bone renewal, bone restructuring     | mechanism of bone remodelling       |
+| physiologist      | scientist, biology researcher        | physiologist discovered/found       |
 # Shopping
 
 # Process
@@ -662,7 +772,18 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **posts**             | Upright supports for fences     | stakes, poles            |
 | **fenced-off areas**  | Enclosed land to protect crops  | protected plots          |
 
+| **Word / Phrase**             | **Synonyms**                       | **Collocations**                        |
+| ----------------------------- | ---------------------------------- | --------------------------------------- |
+| rectangular monuments         | four-sided structures              | rectangular stone structures            |
+| stacking                      | piling, layering                   | stacking stone slabs                    |
+| construction                  | building, development              | construction process, construction site |
+| inward incline                | slant, tilt                        | inward incline of walls                 |
+| complex                       | compound, site, facility           | temple complex, palace complex          |
+| enclosed by a wall            | surrounded, fenced in              | enclosed by a high wall                 |
+| trench                        | ditch, channel                     | defensive trench, deep trench           |
+| tallest structure of its time | highest building, tallest monument | record-breaking height phrases          |
 # Water
+
 
 |Word/Phrase|Meaning / Context|Synonyms / Related Terms|
 |---|---|---|
@@ -825,6 +946,11 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | evidence suggests | research indicates, proof shows           | strong evidence suggests |
 | participants      | subjects, respondents                     | recruit participants     |
 
+| **Word / Phrase**                   | **Synonyms & Related Phrases**                   | **Common Collocations**                       |
+| ----------------------------------- | ------------------------------------------------ | --------------------------------------------- |
+| legitimate peripheral participation | learning by observation, apprenticeship learning | engage in legitimate peripheral participation |
+| human instinct                      | intuition, gut feeling                           | rely on human instinct, follow instinct       |
+| innovation                          | creativity, breakthrough                         | foster innovation, encourage                  |
 # Cause & Effect Expression
 
 | Vocabulary / Collocation                    | Meaning / Notes                   | Synonyms                     |
@@ -845,3 +971,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **circular series of paths**         | Describing design/layout in a maze                  |
 | **low hedges**                       | Details in describing physical structures           |
 | **a right-angle bend in the path**   | Geometric description for precise positioning       |
+
+
+# Writing task 2
+
+| **Word / Phrase**                | **Synonyms**                                   | **Collocations**                                | **Notes**                   |
+| -------------------------------- | ---------------------------------------------- | ----------------------------------------------- | --------------------------- |
+| for reasons which remain unclear | for unknown reasons, for reasons still debated | formal uncertainty phrase                       |                             |
+| milestone                        | landmark, turning point                        | milestone in architecture, milestone in history | Strong positive marker word |
+| revolutionary advance            | radical progress, groundbreaking innovation    | revolutionary advance in design                 | Strong for Task 2 essays    |
+| archetype                        | model, prototype                               | architectural archetype, design archetype       | Academic noun               |
+| significant                      | important, notable                             | significant monument, significant change        | Core academic adjective     |
+| astonish and amaze               | surprise greatly, impress deeply               | astonished researchers, amazed visitors         | More for descriptive tone   |
