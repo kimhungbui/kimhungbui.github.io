@@ -119,8 +119,8 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 
 'opposite' has a different meaning when it is used like this - it refers to the characteristics of someone or something (e.g. 'My sister likes parties but I am the exact opposite.') With location, we can say that something is 'directly opposite' something else.
 
-| Word/Phrase           | Synonyms                                   | IELTS/Academic Collocations                                          |
-| --------------------- | ------------------------------------------ | -------------------------------------------------------------------- |
+| Word/Phrase               | Synonyms                                   | IELTS/Academic Collocations                                          |
+| ------------------------- | ------------------------------------------ | -------------------------------------------------------------------- |
 | **Industrial Revolution** | period of industrialisation                | during the Industrial Revolution, onset of the Industrial Revolution |
 | **consumerism**           | mass consumption, buying culture           | growth of consumerism, fuelled by consumerism                        |
 | **possessions**           | belongings, property, assets               | personal possessions, material possessions                           |
@@ -162,6 +162,12 @@ flock to the growing number of = go in large numbers to new places
 | **satire of the legal system**        | Humorous or critical portrayal of law            | criticism, mockery                        |
 | **adapted for the theatre**           | Turned into a stage play                         | dramatized, converted into a play         |
 
+| **Word / Phrase**  | **Synonym(s)**      | **Collocation(s)**                 |
+| ------------------ | ------------------- | ---------------------------------- |
+| predict the future | foresee, foretell   | dream predicts the future          |
+| coincidence        | chance event, fluke | mere coincidence; pure coincidence |
+| segmented sleeping | biphasic sleep      | practice segmented sleeping        |
+
 # Opinion & Attitudes
 
 | Word / Phrase      | Meaning                                 | Synonyms / Paraphrases |
@@ -181,7 +187,7 @@ flock to the growing number of = go in large numbers to new places
 | __Example Sentences__    | - _Despite years of progress, the country has recently begun to __backslide__ in its efforts to reduce pollution._<br>- _Some argue that strict policies are needed to prevent society from __backsliding__ into inequality and unrest._<br>- _Patients who lack support are more likely to __backslide__ into unhealthy eating habits._                                                                                                                       |
 | __Band 7 - 9 Usage__     | - Use "backslide" in __Task 2 essays__ when talking about setbacks in areas such as education reform, social equality, or environmental protection.<br>- Best used in formal writing when describing __negative trends__ or __reversal of progress__.<br><br>Use this word especially when writing about policies that have failed, declining social values, or countries returning to outdated practices. It adds a nuanced, high-level tone to your writing. |
 
-# Lifestyle & Leisure
+# Lifestyle & Leisure & Human Behaviour
 
 | Word / Phrase                                 | Meaning                                 | Synonyms / Paraphrases                                  |
 | --------------------------------------------- | --------------------------------------- | ------------------------------------------------------- |
@@ -191,6 +197,30 @@ flock to the growing number of = go in large numbers to new places
 | **Domestic fridges**                              | Refrigerators used in homes             | household refrigerators, home fridges                   |
 | **19th- and 20th-century fridges**                | Refrigerators from the 1800s and 1900s  | historical refrigerators, vintage fridges               |
 | **What's available these days**                   | Current products on the market          | modern options, contemporary models                     |
+
+| **Word / Phrase**         | **Synonym(s)**         | **Collocation(s)**                     |
+| ------------------------- | ---------------------- | -------------------------------------- |
+| forget most of our dreams | lose memory of dreams  | forget dreams quickly; dreams fade     |
+| get mixed up about        | confuse                | get mixed up about what happened       |
+| protection (for memory)   | safeguard, defense     | act as a protection against confusion  |
+| creative                  | imaginative, inventive | be more creative; boost creativity     |
+| unnecessary stress        | avoidable pressure     | cause stress; keep stress to a minimum |
+
+| **Word / Phrase**    | **Synonym(s)**                        | **Collocation(s)**                   |
+| -------------------- | ------------------------------------- | ------------------------------------ |
+| motivation           | drive, determination                  | increase motivation; lack motivation |
+| habit                | routine, practice                     | develop a habit; break a habit       |
+| active lifestyle     | physically engaged life               | lead an active lifestyle             |
+| gardening            | yard work, horticulture               | do gardening                         |
+| walking to the shops | daily walking, short-distance walking | walk to the park; walk to the shops  |
+
+| **Word / Phrase** | **Synonym(s)**               | **Collocation(s)**                      |
+| ----------------- | ---------------------------- | --------------------------------------- |
+| sociable activity | social event, group activity | enjoy sociable activities               |
+| collaboration     | cooperation, teamwork        | require collaboration                   |
+| interaction       | communication, engagement    | encourage interaction                   |
+| isolation         | loneliness, solitude         | reduce isolation; suffer from isolation |
+
 # Government
 
 | Word/Phrase             | Meaning / Context                                   | Synonyms / Related Terms                                            |
@@ -434,6 +464,41 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **Chemicals were harmful**           | Substances that cause damage to health or environment | toxic substances, dangerous chemicals                     |
 | **Access to fresh food**             | Ability to obtain unspoiled, recently produced food   | availability of fresh produce, supply of non-spoiled food |
 | **Benefits to health**               | Positive effects on physical well-being               | health advantages, wellness benefits                      |
+
+| **Word / Phrase** | **Synonym(s)** | **Collocation(s)**      |
+| ----------------- | -------------- | ----------------------- |
+| short nap         | brief rest     | have a nap; daytime nap |
+
+| **Word / Phrase**                  | **Synonym(s)**                               | **Collocation(s)**                  |
+| ---------------------------------- | -------------------------------------------- | ----------------------------------- |
+| hormones associated with happiness | mood-enhancing chemicals, feel-good hormones | release hormones; produce hormones  |
+| stress or anxiety                  | tension, worry                               | reduce stress; lower anxiety        |
+| mental health problems             | psychological issues                         | suffer from mental health problems  |
+| therapy                            | treatment, rehabilitation                    | prescribe therapy; therapy session  |
+| heart disease                      | cardiovascular disease                       | reduce risk of heart disease        |
+| obesity                            | overweight, excess body fat                  | suffer from obesity; obesity levels |
+| calories                           | kilocalories, energy units                   | burn calories; calorie intake       |
+| high-intensity workouts            | vigorous exercise                            | do high-intensity workouts          |
+
+## Psychology / Cognitive Skills
+
+| **Word / Phrase**      | **Synonym(s)**                     | **Collocation(s)**                             |
+| ---------------------- | ---------------------------------- | ---------------------------------------------- |
+| creativity             | inventiveness, imagination         | boost creativity; encourage creativity         |
+| brain function         | cognitive function, mental ability | improve brain function; brain processing speed |
+| process things quickly | think fast, rapid cognition        | brain processes quickly                        |
+| retain information     | remember, store                    | retain more information                        |
+
+## Fitness / Physical Activity
+
+| **Word / Phrase** | **Synonym(s)**            | **Collocation(s)**                      |
+| ----------------- | ------------------------- | --------------------------------------- |
+| fitness           | physical condition, shape | low level of fitness; improve fitness   |
+| balance           | stability, coordination   | improve balance; lose balance           |
+| aerobic workout   | cardio exercise           | do an aerobic workout; aerobic training |
+| step aerobics     | cardio step class         | practice step aerobics                  |
+| kickboxing        | martial arts workout      | do kickboxing                           |
+
 # Science & Technology
 
 | Vocabulary / Collocation                             | Meaning / Notes                                                  | Synonyms                                           |
@@ -722,6 +787,44 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | learning all the time | continuous learning, constant improvement | promote learning, learning experience                |
 | program (v)           | code, set up                              | program a robot, program software                    |
 | special software      | customised software, specific program     | install software, design software                    |
+
+| **Word / Phrase**   | **Synonym(s)**                      | **Collocation(s)**                            |
+| ------------------- | ----------------------------------- | --------------------------------------------- |
+| methodology         | research method, procedure          | appropriate methodology; research methodology |
+| self-assessment     | self-evaluation, self-review        | do a self-assessment; self-assessment score   |
+| action plan         | plan of action, strategy            | develop an action plan; implement action plan |
+| research question   | study question, investigation focus | decide on research question                   |
+| psychology students | students of psychology              | recruit psychology students                   |
+| history department  | faculty of history                  | from the history department                   |
+| evaluate            | assess, appraise                    | evaluate the research; evaluate results       |
+
+
+|**Word / Phrase**|**Synonym(s)**|**Collocation(s)**|
+|---|---|---|
+|self-reporting|self-recording, self-declaration|use self-reporting method|
+|paper (questionnaire)|printed form|answer on paper; paper survey|
+
+| **Word / Phrase**  | **Synonym(s)**                     | **Collocation(s)**                          |
+| ------------------ | ---------------------------------- | ------------------------------------------- |
+| ethical guidelines | moral regulations, research ethics | follow ethical guidelines; check guidelines |
+| humans             | people, participants               | work with humans; human subjects            |
+| risk assessment    | hazard evaluation                  | conduct a risk assessment                   |
+
+| **Word / Phrase** | **Synonym(s)**                | **Collocation(s)**                          |
+| ----------------- | ----------------------------- | ------------------------------------------- |
+| obvious patterns  | clear trends                  | show obvious patterns; reveal patterns      |
+| analyse data      | evaluate data, interpret data | analyse results; data analysis              |
+| correlation       | relationship, connection      | calculate correlation; positive correlation |
+| graph             | chart, diagram                | present in a graph; line graph              |
+
+
+| **Word / Phrase** | **Synonym(s)**                            | **Collocation(s)**       |
+| ----------------- | ----------------------------------------- | ------------------------ |
+| experiment        | trial, test                               | conduct an experiment    |
+| study found       | research discovered, investigation showed | a study found that…      |
+| evidence suggests | research indicates, proof shows           | strong evidence suggests |
+| participants      | subjects, respondents                     | recruit participants     |
+
 # Cause & Effect Expression
 
 | Vocabulary / Collocation                    | Meaning / Notes                   | Synonyms                     |

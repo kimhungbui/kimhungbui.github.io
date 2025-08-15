@@ -1,0 +1,280 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 16 listening test 1
+lightbox: false
+description: IELTS Practice Set 16 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-14
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 16 - listening test 1
+- Total Score: 36/40
+- Date: 15/08/2025
+
+
+
+# Performance Summary
+
+| **Q#** | **Error Type**        | **Weakness**                         | **Fix**                                   |
+| ------ | --------------------- | ------------------------------------ | ----------------------------------------- |
+| 11     | MCQ distractor        | Matching keywords instead of meaning | Pre-mark differences, focus on paraphrase |
+| 12     | MCQ distractor        | Lost context from Q11                | Mentally lock each answer before moving   |
+| 16     | Matching decision     | Not catching final choice            | Listen for decision signals               |
+| 27     | Flow chart completion | Missed plural, predicted wrong form  | Train plural prediction + endings         |
+
+## **Q11 & Q12 – Likely Listening Part 2**
+
+  
+
+**Type:** Multiple choice (details about a talk / instructions)
+
+**Skills tested:**
+
+- Recognising paraphrase in distractors
+    
+- Listening for _specific details_ rather than topic words
+    
+- Maintaining focus during fast option switches
+    
+
+  
+
+**Common reasons for mistakes:**
+
+- **Distractor trap:** The speaker may mention _all_ the options, but only one is true for the context.
+    
+- **Over-reliance on key words:** You may have matched words in the audio directly to the option rather than the meaning.
+    
+- **Losing track in double-question format:** When 2 MCQs come together (like Q11–12), if you miss one small detail for Q11, it can throw off Q12 as well.
+    
+
+  
+
+**Fix:**
+
+1. Train to **underline key differences** between options before audio starts.
+    
+2. Expect _paraphrase_ — options often use synonyms (e.g., “easy to reach” = “accessible”).
+    
+3. Pause after each answer in practice to mentally “lock” it before moving on.
+    
+
+---
+
+## **Q16 – Likely Listening Part 2 or 3**
+
+  
+
+**Type:** Matching / table completion (short answer)
+
+**Skills tested:**
+
+- Mapping speakers’ ideas to given categories
+    
+- Distinguishing between similar-sounding items
+    
+- Understanding **speaker opinion** vs. factual description
+    
+
+  
+
+**Common reasons for mistakes:**
+
+- **Misidentifying speaker’s final decision** — they may consider an option, reject it, then choose another.
+    
+- **Following the wrong speaker** in a multi-speaker part.
+    
+- Hearing _two possible answers_ but not catching the conclusion phrase like _“OK, let’s do that”_.
+    
+
+  
+
+**Fix:**
+
+- Listen for **decision signals**: “Let’s go with…”, “We’ve decided on…”, “Forget that idea…”.
+    
+- In practice, cover the script and re-listen only for _final decisions_.
+    
+
+---
+
+## **Q27 – Listening Part 3 Flow Chart**
+
+  
+
+**Question:** “Check ethical guidelines for working with (27) …” → Correct answer: **humans/people**
+
+  
+
+**Likely reason for mistake:**
+
+- **Plural/singular issue** — you said earlier you tend to miss plural endings in fast speech.
+    
+- Possibly misheard as “human research” or “human testing” and didn’t think of the base form “humans.”
+    
+- You might have expected a **field/area** (like “psychology” or “participants”) instead of the subject of the research.
+    
+
+  
+
+**Fix:**
+
+1. For plural prediction:
+    
+    - After “working with…”, ask: _Are they referring to a countable group?_ If yes → expect plural (humans, students, patients).
+        
+    
+2. In listening, watch for **/z/ or /s/** endings even when very soft.
+    
+3. Do “plural ending dictation” drills — play 1–2 second clips, write only the last word, mark plural/singular.
+
+
+# Recording 1
+
+
+# Recording 2
+
+| Q   | I choose | Correct                               | **Why the correct one wins**                                                                                                                                                                                                                                                                       | **Classic trap words**                                      |
+| --- | -------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| 11  | B        | **C** (local council building)        | Text says: _“…intended as his family home,_ **_but_** _he died… His heir sold it to the local council,_ **_who turned it into offices_**_. A later plan to convert it into a tourist info centre_ **_didn’t happen_**_.”_ → What it **used to be** before becoming a school = **council offices**. | intended, plan, didn’t come about, instead                  |
+| 12  | C        | **B** (lower school site → new homes) | _“The lower school will move to_ **_new buildings on the main site_**_. Developers will_ **_construct houses on the existing lower school site_**_.”_ → New school buildings aren’t on the lower site; they’re on the **main** site.                                                               | site names (main vs lower), will move to, will construct on |
+| 16  | **C**    | **D** (daily change)                  | _“World Adventures…_ **_a different country’s cuisine each day_**_… menus_ **_planned for a week_**_.”_ “Planned for a week” ≠ “changes weekly.” The **change is daily**; the **plan** is weekly.                                                                                                  | each day vs planned for a week                              |
+
+## **What to listen for (and how not to get faked out)**
+
+1. **Timeline pivots**
+    
+    - _intended/planned to_ = idea only, not reality.
+        
+    - _didn’t come about/instead/but_ = negates the tempting option and points to the real one.
+        
+    
+2. **Location precision**
+    
+    - Map the nouns: **main site** ≠ **lower school site**. When you hear construction/moving, anchor **what is moving** and **to/from which site**.
+        
+    
+3. **Frequency decoder**
+    
+    - _each/every day_ → **daily**.
+        
+    - _each/every week_ → **weekly**.
+        
+    - _planned for a week_ → schedule visibility, **not** frequency of change.
+        
+    
+
+  
+
+## **Micro-drills (train your ear)**
+
+- “It was **meant to be** a museum, **but** it **became** a library.” → **Used to be**: library.
+    
+- “Menus are **planned weekly**, with a **different cuisine each day**.” → Frequency: **daily** change.
+    
+- “The annex **will move to** the north campus; the old annex site **will become housing**.” → Housing on **old annex site**, not north campus.
+    
+
+  
+
+## **Mini checklist for Part 2 MCQ**
+
+- Underline negators: **but / however / instead / didn’t happen**.
+    
+- Circle place words: **main / lower / north / south**.
+    
+- Box frequency words: **each day / weekly / planned for a week**.
+    
+- Ask: “Are they stating a **past intention** or a **past reality**?”
+
+# Recording 3
+
+
+### **What happened on Q27**
+
+- **Audio line:** “because our experiment involves **humans**, so there are special regulations.”
+    
+- **Question stem:** “Check ethical guidelines for **working with (27) ____**”
+    
+- **Your answer:** human (singular)
+    
+- **Required form:** humans (plural) — people is also accepted.
+    
+
+  
+
+### **Why your answer was marked wrong**
+
+- **Grammar cue:** The preposition **with** + a **countable noun** describing participants almost always takes the **plural** in this context: _with humans / with people / with participants_.
+    
+- **Echoing rule (IELTS Listening):** For gap‑fills, you must write **the word(s) you hear**. The speaker clearly says **humans**. Even if you miss the final /z/ sound, the stem “working **with** …” strongly signals a plural head noun.
+    
+
+  
+
+### **How to avoid this mistake next time**
+
+1. **Track number in the audio.** If you hear _humans/people/participants_, write the plural.
+    
+2. **Use the stem as a safety net.** After **with**, ask: “Would singular sound natural?” → _with human_ ❌, _with humans_ ✅.
+    
+3. **Listen for plural markers around the blank:**
+    
+    - Earlier sentence: “our experiment **involves humans**” → primes a plural repeat.
+        
+    
+4. **Don’t ‘correct’ the audio.** IELTS isn’t testing synonyms here; it’s testing recall of the heard word(s) in correct form.
+    
+
+  
+
+### **Micro‑drill (10 seconds)**
+
+  
+
+Fill the blank with singular/plural you’d expect from the stem (answers below):
+
+1. guidelines for working with < >______
+    
+2. consent from the ______ < > guardian
+    
+3. data from ______< > participant
+    
+4. risks to ______ < > subjects
+    
+5. interviews with ______ <> student
+    
+
+1 humans
+
+2 legal
+
+3 each
+
+4 human (adj)
+
+5 each 
+
+
+
+**Answers:** 1) **humans/people** (plural) 2) **legal** (adj) 3) **each** (singular cue) 4) **human** (adj before noun) **subjects** (plural) 5) **each** (singular cue) **student**
+
+  
+
+> Notice how **with + people** tends to be plural, while **human** before a noun is often an **adjective** (e.g., _human subjects_), which flips the number decision to the noun (_subjects_ → plural).
+
+# Recording 4
