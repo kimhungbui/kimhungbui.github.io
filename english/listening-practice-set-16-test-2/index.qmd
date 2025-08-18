@@ -1,13 +1,13 @@
 ---
-title: Listening practice - mistake log IELTS Practice Set 16 listening test 1
+title: Listening practice - mistake log IELTS Practice Set 16 listening test 2
 lightbox: false
-description: IELTS Practice Set 16 listening test 1
+description: IELTS Practice Set 16 listening test 2
 author:
   - name: Hung
     url: https://kimhungbui.github.io
     affiliation: Barron's Writing for IELTS
     affiliation-url: 
-date: 2025-08-14
+date: 2025-08-15
 categories:
   - english
   - listening
@@ -21,7 +21,7 @@ format:
     highlight-style: a11y
 draft: false
 ---
-# Cambridge IELTS 16 - listening test 1
+# Cambridge IELTS 16 - listening test 2
 - Total Score: 36/40
 - Date: 15/08/2025
 

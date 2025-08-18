@@ -247,6 +247,13 @@ flock to the growing number of = go in large numbers to new places
 | conscious manipulation  | deliberate handling, intentional use | conscious manipulation of objects |
 | creativity              | inventiveness, imagination           | show creativity                   |
 
+| **Word/Phrase**   | **Synonyms / Related**           | **Collocations**                               |
+| ----------------- | -------------------------------- | ---------------------------------------------- |
+| economic hardship | financial difficulty, poverty    | suffer economic hardship, during hardship      |
+| equipment         | tools, apparatus, kit            | knitting equipment, buy equipment              |
+| basic skills      | simple skills, elementary skills | require basic skills, teach basic skills       |
+| financial outlay  | spending, cost, expense          | minimal outlay, initial outlay                 |
+| rewarding         | satisfying, fulfilling           | find something rewarding, personally rewarding |
 # Government
 
 | Word/Phrase             | Meaning / Context                                   | Synonyms / Related Terms                                            |
@@ -468,14 +475,24 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **Stop them (unfortunately)**           | Difficulty in preventing harmful actions          | hard to prevent, challenging to control           |
 |                                         |                                                   |                                                   |
 
-| **Word/Phrase**             | **Synonyms / Related Terms**         | **Collocations / Usage**                                 |
-| --------------------------- | ------------------------------------ | -------------------------------------------------------- |
-| climate change              | global warming, environmental change | effects/impact of climate change, address climate change |
-| Arctic Circle               | polar region, high latitudes         | extreme conditions of the Arctic Circle                  |
-| temperature can reach -40°C | freezing cold, severe cold           | survive temperatures of -40°C                            |
-| extreme conditions          | harsh environment, severe climate    | adapted to extreme conditions                            |
-| extinction                  | disappearance, die out               | lead to extinction, prevent extinction                   |
-| conservation efforts        | preservation work, protection        | support conservation efforts                             |
+| **Word/Phrase**                      | **Synonyms / Related Terms**                    | **Collocations / Usage**                                 |
+| ------------------------------------ | ----------------------------------------------- | -------------------------------------------------------- |
+| climate change                       | global warming, environmental change            | effects/impact of climate change, address climate change |
+| Arctic Circle                        | polar region, high latitudes                    | extreme conditions of the Arctic Circle                  |
+| temperature can reach -40°C          | freezing cold, severe cold                      | survive temperatures of -40°C                            |
+| extreme conditions                   | harsh environment, severe climate               | adapted to extreme conditions                            |
+| extinction                           | disappearance, die out                          | lead to extinction, prevent extinction                   |
+| conservation efforts                 | preservation work, protection                   | support conservation efforts                             |
+| agriculture and horticulture sectors | farming, gardening industries                   | work in agriculture / horticulture careers               |
+| fresh food production                | food cultivation, crop growing                  | large-scale food production                              |
+| crop nutrition                       | soil enrichment, fertiliser application         | improve crop nutrition                                   |
+| pest protection                      | insect control, crop defense                    | pest protection measures                                 |
+| legislation on farming               | agricultural regulations, farming laws          | comply with legislation                                  |
+| forestry and conservation work       | woodland management, environmental preservation | carry out conservation work                              |
+| crop sowing and harvesting           | planting and gathering crops                    | annual harvest, crop cycle                               |
+| animal care                          | livestock management, animal husbandry          | provide animal care                                      |
+| rural setting                        | countryside environment                         | live/work in a rural area                                |
+| remote areas                         | isolated places, rural locations                | work in a remote area                                    |
 # History
 
 | Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
@@ -551,13 +568,38 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | calories                           | kilocalories, energy units                   | burn calories; calorie intake       |
 | high-intensity workouts            | vigorous exercise                            | do high-intensity workouts          |
 
-| **Word/Phrase**       | **Synonyms / Related Terms** | **Collocations / Usage**     |
-| --------------------- | ---------------------------- | ---------------------------- |
-| adipose tissue        | body fat, fatty tissue       | excess adipose tissue        |
-| bad cholesterol (LDL) | low-density lipoprotein      | reduce LDL levels            |
-| heart disease         | cardiovascular disease       | risk of heart disease        |
-| bedridden             | confined to bed              | bedridden patients           |
-| astronaut             | space traveller              | astronauts in space missions |
+| **Word/Phrase**                     | **Synonyms / Related Terms**                | **Collocations / Usage**       |
+| ----------------------------------- | ------------------------------------------- | ------------------------------ |
+| adipose tissue                      | body fat, fatty tissue                      | excess adipose tissue          |
+| bad cholesterol (LDL)               | low-density lipoprotein                     | reduce LDL levels              |
+| heart disease                       | cardiovascular disease                      | risk of heart disease          |
+| bedridden                           | confined to bed                             | bedridden patients             |
+| astronaut                           | space traveller                             | astronauts in space missions   |
+| health benefits                     | wellbeing advantages, physical benefits     | enjoy health benefits          |
+| sitting all day looking at a screen | sedentary lifestyle                         | avoid a desk job               |
+| safety procedures                   | protective measures, safety protocols       | training in safety procedures  |
+| clean driving licence               | valid licence, no driving penalties         | must have a clean licence      |
+| appropriate training course         | relevant qualification, professional course | complete an appropriate course |
+| machine maintenance                 | equipment servicing, machinery upkeep       | maintain farm machinery        |
+
+| **Word / Phrase**               | **Synonym / Paraphrase**    | **Collocation / Usage**            |
+| ------------------------------- | --------------------------- | ---------------------------------- |
+| helping people lose weight      | weight reduction            | strategies to combat obesity       |
+| low-calorie items               | diet foods                  | low-calorie menu options           |
+| menu order influences choice    | primacy & recency effect    | items at the start / end of a menu |
+| calorie counts on the label     | nutritional labeling        | confusing / misleading labels      |
+| on purpose                      | deliberately, intentionally | done on purpose                    |
+| high-calorie food tastes better | more palatable, appealing   | preference for calorie-dense food  |
+
+| **Word / Phrase**      | **Synonym / Paraphrase**    | **Collocation / Usage**           |
+| ---------------------- | --------------------------- | --------------------------------- |
+| recommended guidelines | advised standards           | follow government guidelines      |
+| brisk walking          | fast-paced walking          | 30 minutes of brisk walking       |
+| motion sensors         | activity trackers           | measure with sensors              |
+| obesity is growing     | rising overweight levels    | increasing obesity rate           |
+| unconscious process    | automatic, not deliberate   | unconscious influence on behavior |
+| practical changes      | environmental modifications | make practical changes            |
+
 ## Psychology / Cognitive Skills
 
 | **Word / Phrase**      | **Synonym(s)**                     | **Collocation(s)**                             |
@@ -772,16 +814,31 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **posts**             | Upright supports for fences     | stakes, poles            |
 | **fenced-off areas**  | Enclosed land to protect crops  | protected plots          |
 
-| **Word / Phrase**             | **Synonyms**                       | **Collocations**                        |
-| ----------------------------- | ---------------------------------- | --------------------------------------- |
-| rectangular monuments         | four-sided structures              | rectangular stone structures            |
-| stacking                      | piling, layering                   | stacking stone slabs                    |
-| construction                  | building, development              | construction process, construction site |
-| inward incline                | slant, tilt                        | inward incline of walls                 |
-| complex                       | compound, site, facility           | temple complex, palace complex          |
-| enclosed by a wall            | surrounded, fenced in              | enclosed by a high wall                 |
-| trench                        | ditch, channel                     | defensive trench, deep trench           |
-| tallest structure of its time | highest building, tallest monument | record-breaking height phrases          |
+| **Word / Phrase**             | **Synonyms**                          | **Collocations**                            |
+| ----------------------------- | ------------------------------------- | ------------------------------------------- |
+| rectangular monuments         | four-sided structures                 | rectangular stone structures                |
+| stacking                      | piling, layering                      | stacking stone slabs                        |
+| construction                  | building, development                 | construction process, construction site     |
+| inward incline                | slant, tilt                           | inward incline of walls                     |
+| complex                       | compound, site, facility              | temple complex, palace complex              |
+| enclosed by a wall            | surrounded, fenced in                 | enclosed by a high wall                     |
+| trench                        | ditch, channel                        | defensive trench, deep trench               |
+| tallest structure of its time | highest building, tallest monument    | record-breaking height phrases              |
+| renting a small cottage       | housing option, on-site accommodation | rent accommodation                          |
+| garden and park maintenance   | landscaping, groundskeeping           | maintenance work / public parks maintenance |
+| customer service              | client care, consumer assistance      | high levels of customer service             |
+| remote areas                  | isolated places                       | live in a remote area                       |
+
+| **Word/Phrase**     | **Synonyms / Related**     | **Collocations**                    |
+| ------------------- | -------------------------- | ----------------------------------- |
+| garment             | piece of clothing, apparel | knit garments, traditional garments |
+| handicraft          | craft, handmade work       | handicraft skills, local handicraft |
+| yarn                | thread, fibre, wool        | yarn made of cotton/wool, spin yarn |
+| spinning wheel      | loom (related tool)        | use a spinning wheel                |
+| wool                | fleece, fibre              | wool industry, warm wool            |
+| rough (to touch)    | coarse, harsh              | rough texture, rough surface        |
+| needles (wood/bone) | knitting sticks, pins      | knitting needles, steel needles     |
+
 # Water
 
 
@@ -951,6 +1008,34 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | legitimate peripheral participation | learning by observation, apprenticeship learning | engage in legitimate peripheral participation |
 | human instinct                      | intuition, gut feeling                           | rely on human instinct, follow instinct       |
 | innovation                          | creativity, breakthrough                         | foster innovation, encourage                  |
+
+| **Word / Phrase**                  | **Synonym / Paraphrase**     | **Collocation / Usage**                     |
+| ---------------------------------- | ---------------------------- | ------------------------------------------- |
+| experiment                         | trial, test, study           | conduct / carry out an experiment           |
+| artificial sweetener               | sugar substitute             | distinguish between sugar and sweeteners    |
+| keep a proper record               | maintain accurate notes      | keep records / keep track of results        |
+| sample of people                   | group of participants        | a large / representative sample             |
+| subjects unaware                   | blind test, not informed     | keep subjects unaware / blind study         |
+| problematic results                | flawed, unreliable           | problematic findings / inconclusive results |
+| measuring fat content              | testing nutritional value    | fat content measurement                     |
+| scales not accurate enough         | imprecise weighing equipment | accuracy of scales                          |
+| nutritional information on package | food label data              | check / compare with packaging info         |
+
+# Work & Careers
+
+| **Word / Phrase**                   | **Synonyms / Paraphrases**               | **Collocations**                   |
+| ----------------------------------- | ---------------------------------------- | ---------------------------------- |
+| recruitment consultant              | hiring advisor, job placement officer    | work as a recruitment consultant   |
+| career opportunities                | job prospects, employment options        | exciting career opportunities      |
+| juggle work with responsibilities   | balance work and family                  | juggle childcare and work          |
+| fast-paced environment              | dynamic workplace, high-pressure setting | thrive in a fast-paced environment |
+| low profit margins                  | tight profits, narrow earnings           | operate on low margins             |
+| sociable personality                | outgoing, extroverted                    | have a sociable personality        |
+| make one’s way up the career ladder | get promoted, career progression         | rapid career advancement           |
+| maternity cover contract            | temporary job, fixed-term post           | provide maternity cover            |
+| competitive salary                  | attractive pay, above-average wage       | earn a competitive salary          |
+| perks of the job                    | job benefits, employment advantages      | perks include …                    |
+
 # Cause & Effect Expression
 
 | Vocabulary / Collocation                    | Meaning / Notes                   | Synonyms                     |
@@ -983,3 +1068,43 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | archetype                        | model, prototype                               | architectural archetype, design archetype       | Academic noun               |
 | significant                      | important, notable                             | significant monument, significant change        | Core academic adjective     |
 | astonish and amaze               | surprise greatly, impress deeply               | astonished researchers, amazed visitors         | More for descriptive tone   |
+
+
+
+# **📝 IELTS Grammar Trap Cheat Sheet**
+
+  
+
+## **1. ❌ Uncountable Nouns (no plural form)**
+
+  
+
+👉 Always use **singular** form, even if the meaning is “many.”
+
+Examples from IELTS themes (Education, Business, Environment, Daily life):
+
+| **Theme**     | **Uncountable Nouns**                                                                       | **Collocations**                                  |
+| ------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Education     | homework, research, knowledge, information                                                  | do homework, conduct research, gain knowledge     |
+| Business/Econ | equipment, furniture, luggage, advertising, money                                           | buy equipment, piece of furniture, spend money    |
+| Science/Tech  | evidence, data (can be plural in formal, but IELTS usually uncountable), progress, software | scientific evidence, reliable data, make progress |
+| Society/Media | advice, news, traffic, clothing, work                                                       | give advice, latest news, heavy traffic           |
+| Nature/Env    | pollution, weather, scenery, rubbish                                                        | air pollution, bad weather, beautiful scenery     |
+
+## **2. ❌ Irregular Plurals (same form in singular & plural, or special forms)**
+
+  
+
+👉 Never add **s** unless the word changes in an irregular way.
+
+| **Word**  | **Singular**   | **Plural**    | **Notes**                                      |
+| --------- | -------------- | ------------- | ---------------------------------------------- |
+| sheep     | sheep          | sheep         | Your Q40 mistake!                              |
+| deer      | deer           | deer          | Common in environment topics                   |
+| fish      | fish           | fish / fishes | “fishes” = species, but IELTS usually “fish”   |
+| species   | species        | species       | Biology texts                                  |
+| series    | series         | series        | “TV series,” “lecture series”                  |
+| offspring | offspring      | offspring     | Academic readings                              |
+| aircraft  | aircraft       | aircraft      | Transport/aviation topics                      |
+| means     | means          | means         | “a means of transport” / “many means”          |
+| data*     | datum (formal) | data          | BUT IELTS usually treats “data” as uncountable |

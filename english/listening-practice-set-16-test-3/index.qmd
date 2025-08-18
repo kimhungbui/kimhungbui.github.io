@@ -1,0 +1,552 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 16 listening test 3
+lightbox: false
+description: IELTS Practice Set 16 listening test 3
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-18
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 16 - listening test 1
+- Total Score: 34/40
+- Date: 18/08/2025
+
+
+
+# Performance Summary
+
+### **✅ Recording 1 – Cycle Camp**
+
+- **Result:** 10/10, no mistakes.
+    
+- **Strengths:** Careful with everyday details (colours, numbers, places). Excellent concentration.
+    
+- **What to Learn:** Trap signals like _“first… then… actually”_. Review singular/plural in daily items.
+    
+
+---
+
+### **⚠️ Recording 2 – Agriculture & Horticulture Jobs**
+
+- **Mistakes:** Q14, Q17, Q19, Q20.
+    
+- **Problem Areas:**
+    
+    - Misinterpreted disadvantages vs requirements.
+        
+    - Confused _training_ vs _experience_.
+        
+    - Didn’t catch _contrast phrases_ clearly.
+        
+    
+- **Theme to Study:** Employment vocabulary (contract, promotion, training course, accommodation, overtime).
+    
+- **Key Learning:** Watch for “not… but…” / “instead of…” signals.
+    
+
+---
+
+### **⚠️ Recording 3 – Calories & Nutrition**
+
+- **Mistakes (you told me earlier):** Q11, Q12, Q16, Q27.
+    
+- **Problem Areas:**
+    
+    - Misheard numbers/details about calorie calculations.
+        
+    - Distracted by fast speech and lost focus on key data.
+        
+    
+- **Theme to Study:** Food, health, measurements (calorie, portion, intake, nutrients, balanced diet).
+    
+- **Key Learning:** Practice listening for **numbers + units** carefully (kcal, grams, percentages).
+    
+
+---
+
+### **⚠️ Recording 4 – Hand Knitting**
+
+- **Mistakes:** Q33 (_equipment_ not _equipments_), Q40 (_sheep_ not _sheeps_).
+    
+- **Problem Areas:** Grammar slips with uncountable nouns and irregular plurals.
+    
+- **Theme to Study:** History & crafts (garment, yarn, wool, technique, tradition).
+    
+- **Key Learning:** Revise common uncountable nouns + irregular plurals list.
+    
+
+---
+
+# **📌 Overall Pattern Today**
+
+- **Strengths:** You can follow lectures and everyday dialogues well. You catch main ideas and sequences.
+    
+- **Weaknesses:**
+    
+    1. **Plural vs singular forms** (equipments, sheeps).
+        
+    2. **Numbers & details** (nutrition test).
+        
+    3. **Traps with contrast** (job test).
+        
+    
+
+---
+
+# **🎯 Next Steps**
+
+1. **Daily Grammar Fix:** Drill 10 uncountable nouns + 10 irregular plurals.
+    
+2. **Numbers Practice:** Do 5 “mini listening” clips where you only write down numbers/units.
+    
+3. **Trap Training:** Highlight _but, however, instead, rather than_ during practice and pause to predict the change.
+    
+4. **Vocabulary Notebook:** Split by IELTS themes (Work, Health, History, Daily Life). Add 5 new collocations each day.
+# Recording 1
+## **🔎 Common IELTS traps in this passage**
+
+| **Q**          | **Trap**                                                                                                                             | **Why it’s tricky**                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| 1 (park)       | They first mention “on the site here” → but then correct: “first they’re taken to the park.”                                         | IELTS loves “false starts” – you must wait for the correction.                         |
+| 2 (blue)       | 3 different shirt colors: supervisors (red), instructors (blue), Jake (not mentioned directly).                                      | They try to confuse by layering details. Must focus only on the group in the question. |
+| 3 (reference)  | Could sound like “qualification,” “certificate,” but it’s specifically a **reference** from someone who saw them work with children. | Vocabulary trap – must write exact word.                                               |
+| 4 (story)      | Distractor: “quiet times” → options include story or game. Both mentioned, but question asks **one example** (story first).          | Need to notice which comes first.                                                      |
+| 5 (rain)       | Some might expect “cancelled” → but they continue even in rain.                                                                      | Common sense trap: don’t assume.                                                       |
+| 6 (snack)      | Woman asks about “a drink” → but Jake says drink is provided.                                                                        | This is a classic misdirection Q.                                                      |
+| 7 (medication) | Easy to confuse with “snack” or “clothes.”                                                                                           | Need to follow parent’s concern carefully.                                             |
+| 8 (helmet)     | Many kids bring clothes, shoes, etc. → but **helmet check** is the focus.                                                            | Detail listening needed.                                                               |
+| 9 (tent)       | Could think “classroom” → but they say “meet up in the tent, you can’t miss it.”                                                     | Visual distraction trap.                                                               |
+| 10 (199)       | They mention last year’s cost: 190 → then correct it to “199.”                                                                       | IELTS often compares “last year vs this year” to trick you.                            |
+
+
+## **📘 What you should learn from this recording**
+
+1. **Be careful with corrections & false starts**
+    
+    – IELTS speakers often say one thing, then correct or add new info. Always wait.
+    
+2. **Watch for distractors**
+    
+    – They throw in multiple items (red shirts vs blue shirts, snack vs drink, 190 vs 199).
+    
+    – You must match exactly to the question.
+    
+3. **Numbers are dangerous**
+    
+    – They like to mention a number, then another number → only the final one is correct.
+    
+4. **Exact wording matters**
+    
+    – “Reference” ≠ “certificate.” “Story” ≠ “game.” Always take the first correct match.
+    
+5. **IELTS loves practical detail**
+    
+    – Equipment, clothing, times, costs → everyday details are often tested.
+    
+
+---
+
+👉 So, even though you got all correct, the _lesson_ here is:
+
+- Don’t answer too quickly.
+    
+- Wait to see if the speaker **changes, corrects, or contrasts** the detail.
+    
+- When two possible answers appear, IELTS usually wants the **first one mentioned that matches the question**.
+
+# Recording 2
+
+### **❌ Q14 – Disadvantages of working outdoors**
+
+- **Your answer:** A (the increasing risk of accidents)
+    
+- **Correct answer:** B + C (quiet/remote location + difficult weather)
+    
+- **Transcript clue:**
+    
+    > “It’s fine in summer, but can be extremely unpleasant when it’s cold and windy (weather). … But if you like a lively city environment … these jobs are probably not for you – they’re often in pretty remote areas (quiet location). … Standards of health and safety are much higher now … so fewer work-related accidents.”
+    
+- **Trap:** You picked “accidents” because it _looked logical_ with outdoor jobs. But the speaker explicitly said **accidents are fewer now**, so that eliminated A.
+    
+
+---
+
+### **❌ Q17 – Fresh produce buyer**
+
+- **Your answer:** E (chance to earn more through overtime)
+    
+- **Correct answer:** A (not a permanent job)
+    
+- **Transcript clue:**
+    
+    > “A leading supermarket is looking for a fresh produce buyer who is available for a **12-month maternity cover contract**.”
+    
+- **Trap:** “Competitive salary” misled you into thinking about money (E). But the **key detail** was “12-month maternity cover” = not permanent.
+    
+
+---
+
+### **❌ Q19 – Tree technician**
+
+- **Your answer:** G (accommodation available)
+    
+- **Correct answer:** C (experience not essential)
+    
+- **Transcript clue:**
+    
+    > “A year’s experience would be preferred but the company **might be prepared to consider someone who has just completed an appropriate training course**.”
+    
+- **Trap:** You overlooked the “experience not essential” phrase. Accommodation (G) appeared elsewhere (farm worker, Q20), so maybe you mis-assigned answers.
+    
+🔎 **Transcript line:**
+
+  
+
+> “A year’s experience would be preferred but the company **might be prepared to consider someone who has just completed an appropriate training course**.”
+
+---
+
+### **Why**  **“completed training course” ≠ experience**
+
+- **Experience** = practical work done in real jobs (on-site, real tasks).
+    
+- **Training course** = education, not real-world job experience.
+    
+- The clue is in **contrast**:
+    
+    - “A year’s experience would be preferred” (real work)
+        
+    - “but… might consider training course” (no experience, only training).
+        
+    
+- So IELTS wants you to hear that **experience is not essential**.
+    
+
+---
+
+### **Why you thought it was experience**
+
+- The word **“completed”** misleads. It _feels like_ you “did” something, which is close to work.
+    
+- But in IELTS logic: completing a course = **qualification**, not **experience**.
+    
+
+---
+
+### **IELTS trick here**
+
+  
+
+They want to see if candidates can **distinguish between “preferred but not essential” vs. “required”**.
+
+So the correct label = **C (experience not essential)**.
+---
+
+### **❌ Q20 – Farm worker**
+
+- **Your answer:** B (involves leading a team)
+    
+- **Correct answer:** G (accommodation available)
+    
+- **Transcript clue:**
+    
+    > “Perks of the job include the **possibility of renting a small cottage on the estate**, and the chance to earn a competitive salary.”
+    
+- **Trap:** Maybe rushed here and confused it with “manager roles” that involve leading a team (B). The key signal word: “cottage on the estate” → accommodation.
+    
+
+I didn't know the cottage words i a small house, so i missed it.
+
+small cottage on the estate
+
+---
+
+✅ **Pattern in your mistakes:**
+
+1. You sometimes **default to common-sense answers** (e.g. accidents, money, leadership) instead of anchoring to the transcript.
+    
+2. You may **misplace answers** — using a keyword from one job (farm worker) and applying it to another (tree technician).
+    
+3. You sometimes **stop listening after the first clue** (“competitive salary”) instead of listening for the whole detail.
+    
+
+---
+
+👉 Suggestion for next time:
+
+- Always **underline the unique job detail**: maternity cover = not permanent, cottage = accommodation.
+    
+- For disadvantages/advantages, **watch for contrasts** (e.g. “health and safety are much higher now” kills option A).
+    
+- Use **process of elimination** — ask yourself: “Did she actually say this, or am I assuming?”
+# Recording 3
+
+## **Why your Q26 was wrong**
+
+  
+
+**Question type:** “What do the students _agree_ about…?”
+
+You must hear **both speakers** endorse the same idea.
+
+  
+
+## **What the audio actually says**
+
+- **Rosie:** “…calorie counts… are sometimes really **confusing** and I suspect they do it **on purpose**.”
+    
+- **Adam:** “**Yeah**…” (clear agreement)
+    
+
+  
+
+→ Paraphrase: **manufacturers deliberately make calorie counts hard to understand.**
+
+✅ Correct: **A**
+
+  
+
+## **Why B & C are wrong**
+
+- **B. fail to provide accurate calorie counts**
+    
+    No one says the numbers are **inaccurate**—only **confusing** (clarity ≠ accuracy).
+    
+- **C. use ineffective methods to reduce calories**
+    
+    They don’t talk about manufacturers **reducing** calories at all—only **labelling**.
+    
+
+  
+
+## **Signal words to lock it in next time**
+
+- **Deliberately** = _on purpose, intentionally_
+    
+- **Hard to understand** = _confusing, unclear, not straightforward_
+    
+- **Agreement cues**: “yeah”, “exactly”, “right”, “I know”, “that’s true”.
+    
+
+  
+
+## **Mini tip**
+
+  
+
+When a “**agree**” question appears:
+
+1. Find the **claim** (Rosie).
+    
+2. Wait for **explicit uptake** (Adam’s “Yeah/Exactly/Right”).
+    
+3. Match to the **closest paraphrase**; avoid options introducing **new ideas** (accuracy / calorie reduction).
+
+## **🎯 IELTS Listening Traps in Recording 3**
+
+---
+
+## **🧪 Experiments & Research**
+
+- **Trap (Q21–22)**:
+    
+    - Adam: _“It was hard to keep track… I had so many people… had to make sure I kept a proper record”_
+        
+    - The distractor = “simple to set up” (B) → ❌ BUT he said it was _hard_.
+        
+    - Correct answers = **C (large sample)** + **D (subjects unaware)**.
+        
+    
+
+  
+
+🔑 **Tip**: If speaker says _“hard / difficult”_, never choose “easy / simple”.
+
+---
+
+- **Trap (Q23–24)**:
+    
+    - Rosie: _“results problematic… seemed lower than package… probably I didn’t grind enough… scales not accurate enough.”_
+        
+    - Distractor = “package info was incorrect” → ❌ She rejects that idea (“I reckon package info was right”).
+        
+    - Correct = **C (not grind finely enough)** + **E (scales unsuitable)**.
+        
+    
+
+  
+
+🔑 **Tip**: Watch for phrases like _“I think probably / I suspect / but actually I believe”_ → these show what the **real answer is**, not the first statement.
+
+---
+
+## **🍔 Obesity & Nutrition**
+
+- **Trap (Q26)**:
+    
+    - Rosie: _“labels sometimes really confusing… I suspect they do it on purpose.”_
+        
+    - Correct = **A (make calorie counts hard to understand)**.
+        
+    - Distractors:
+        
+        - “fail to provide accurate counts” ❌ (she never said they were false, just confusing).
+            
+        - “use ineffective methods to reduce calories” ❌ (not mentioned).
+            
+        
+    
+
+  
+
+🔑 **Tip**: Confusing ≠ inaccurate. IELTS loves this distinction.
+
+---
+
+- **Trap (Q25)**:
+    
+    - Adam: _“Items at start/end of menu more likely to be chosen → put low-calorie items there → people will go for them.”_
+        
+    - Correct = **C (organised in a particular way)**.
+        
+    - Distractors: “fewer options” (not said), “more low-calorie foods” (not said).
+        
+    
+
+  
+
+🔑 **Tip**: When they talk about _positioning / structure / arrangement_, the answer is about **organisation**, not quantity.
+
+---
+
+## **🏃 Exercise & Health**
+
+- **Trap (Q27)**:
+    
+    - Rosie: _“40% men say they do… but actually only 6% do. 30% women say… only 4% do.”_
+        
+    - Correct = **B (Most people overestimate how much they do)**.
+        
+    - Distractor = “recommended too low” ❌ (she never said that).
+        
+    - Distractor = “women now exercise more” ❌ (not mentioned).
+        
+    
+
+  
+
+🔑 **Tip**: Look for contrast markers (_“say… but actually”_). The real answer is always after the contrast.
+
+---
+
+- **Trap (Q29)**:
+    
+    - Adam: _“Not sure if we should include exercise… our tutor said focus on nutrition… that will be simpler.”_
+        
+    - Correct = **A (probably leave it out)**.
+        
+    - Distractors:
+        
+        - “need to do more research” ❌ (they didn’t say they lacked research).
+            
+        - “should discuss with tutor” ❌ (they didn’t mention asking tutor again).
+            
+        
+    
+
+  
+
+🔑 **Tip**: When they conclude “that will be simpler,” it means **decision is made**.
+
+---
+
+✅ So your main mistakes (Q26 earlier) happened because:
+
+- You mixed up _confusing_ vs _inaccurate_.
+    
+- You trusted the **first idea mentioned**, but IELTS hides the answer in the **clarification or contrast**.
+# Recording 4
+
+## **❌ Q33 – “People are buying more (33) ……… for knitting nowadays.”**
+
+- You wrote: **equipments**
+    
+- Correct answer: **equipment**
+    
+
+  
+
+📌 Why?
+
+- In English, **“equipment” is uncountable** → ❌ no plural “equipments.”
+    
+- The speaker said: _“…we’re also seeing an increase in the sales figures for knitting_ **_equipment_**_.”_
+    
+- IELTS listening tests your **grammar awareness**: even if you hear “equipmentS” in your head, you must know the correct word form.
+    
+
+  
+
+👉 **Trap**: They test if you know that some nouns don’t take “s” (e.g. furniture, information, advice, luggage, equipment).
+
+  
+
+**How to avoid next time:**
+
+- If you hear a word that could be uncountable, write it in singular form unless you are 100% sure plural is correct.
+    
+
+---
+
+## **❌ Q40 – “Everyday tasks like looking after (40) ……… were done while knitting.”**
+
+- You wrote: **sheeps**
+    
+- Correct answer: **sheep**
+    
+
+  
+
+📌 Why?
+
+- “Sheep” is **irregular plural** → both singular & plural form is the same.
+    
+- The speaker said: _“…men, women and children took every opportunity to knit, for example, while watching over_ **_sheep_**_.”_
+    
+- IELTS loves to check if you know irregular plurals (sheep, deer, fish, species, etc.).
+    
+
+  
+
+👉 **Trap**: You heard the plural idea (many sheep), so you added **s** by instinct. But the rule is: **no “s” for sheep** in plural.
+
+  
+
+**How to avoid next time:**
+
+- Revise **irregular plurals**: sheep, deer, fish, series, species, offspring, aircraft.
+    
+- When in doubt, trust grammar rules — IELTS will never break them.
+    
+
+---
+
+✅ So both mistakes were not about **listening** but about **word form & grammar**.
+
+- Q33 = uncountable noun rule.
+    
+- Q40 = irregular plural rule.
