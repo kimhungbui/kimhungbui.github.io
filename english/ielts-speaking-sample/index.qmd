@@ -1,0 +1,81 @@
+---
+title: Sample answer ielts speaking
+lightbox: false
+description: Assess IELTS Speaking
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-08-19
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+# Hometown
+
+## Can you tell me about your hometown?
+
+My hometown is Nha Trang, a coastal city in central Vietnam. It's famous for its beautiful beaches, fresh seafood, and relaxed lifestyle. What I like most is the ocean view, because it makes the city feel peaceful even when it's busy.
+
+
+## What do you like most about your hometown?
+
+What I like most about Nha Trang is the beach. It's only a few minutes away from most parts of the city, so people can swim or walk along the shore almost every day. For me the sea breeze and the sound of the waves make life there very relaxing.
+
+## How has your hometown changed in recent years?
+
+In recent years, Nha Trang has developed a lot, especially with tourism. There are many new hotels, resorts, and shopping centers, which make the city look more modern. However, sometimes I feel it has become more crowded and noisy compared to before.
+
+## Is your hometown a good place for young people?
+
+Yes, I think Nha Trang is a good place for young people. There are many outdoor activities like swimming, diving, or just hanging out by the beach, which are fun and healthy. At the same time, the city is growing, so there are more cafes and entertainment spots where young people can spend time together.
+
+## Would you like to live in your hometown in the future?
+
+I would like to return to Nha Trang in the future, but maybe not permanently. It's a beautiful place to relax and enjoy the beach, but I think bigger cities offer more career opportunities. So I imagine myself working elsewhere and coming back to Nha Trang for holiday.
+
+# Daily Routines
+
+## What time do you usually wake up on weekdays? 
+
+On weekdays I usually wake up around 6:30 in the morning. I like starting my day early because it gives me more time to prepare for studying. Waking up early also makes me feel more productive and focused.
+
+# Movies
+
+## What kind of movies do you enjoy watching?
+
+I'm really into documentaries, especially ones about successfully entrepreneurs. There's a great one about Steve Jobs that I found really inspiring. It talks about his journey building Apple, his innovation ideas, and how he overcame challenges. It made me realize the importance of perseverance and believing in your vision.
+
+Oh!, I'm absolutely fascinated by documentaries, especially those about visionary entrepreneurs. The one on Steve Jobs was truly captivating. It really delved into his relentless drive, his groundbreaking ideas, and how he powered through setbacks. It left me feeling so inspired. Like anything is possible if you're passionate enough.
+
+
+## Do you usually watch movies at home or in the cinema?
+
+I usually watch movies at home with my girlfriend. We love having movie nights where we can relax on the couch, enjoy some snacks, and just unwind after a long day. It's also great because we have a lot more control over what we watch and can pause whenever we want for bathroom breaks or to grab more popcorn.
+
+
+## Who do you usually watch movies with?
+
+I usually watch movies with my girlfriend. We both enjoy going to the cinema when a new horror film is released, but most of the time we watch movies at home because it feels more comfortable and relaxing. It's a nice way for us to spend time together and share our opinions about the story afterwards.
+
+## What was the last movie you watched? Did you enjoy it?
+
+The last movie I watched was Dune. I really enjoyed it because the visuals were stunning and the atmosphere felt very unique. I also liked how the story mixed science fiction with political themes, which made it more thought-provoking than an ordinary action film.
+
+## How often do you watch movies?
+
+I usually watch movies about once or twice a week. It depends on how busy I am with my studies, but I try to make time because it helps me relax. Watching a good film is like a short break that keeps me refreshed.
+
+
+
+
