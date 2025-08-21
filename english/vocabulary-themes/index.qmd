@@ -21,6 +21,19 @@ format:
     highlight-style: a11y
 draft: false
 ---
+# Spelling trap
+
+| Trap Type                            | Example from IELTS Listening | Common Confusion / Risk                      | Strategy to Avoid Mistake                                                |
+| ------------------------------------ | ---------------------------- | -------------------------------------------- | ------------------------------------------------------------------------ |
+| **Silent letters**                   | Knight, Island               | Hearing sound that isn’t written             | Visualise common silent letters (kn-, -gh, -mb, etc.) when writing       |
+| **Unusual vowel combinations**       | Staunfirth                   | “au” can sound like “o” or “aw”              | Write vowel sounds phonetically first, then match to possible spellings  |
+| **Double vs single consonants**      | Traveller / Traveler         | Over/under-adding letters                    | Listen for length of sound, but check spelling rules for British English |
+| **Uncommon endings**                 | Firth, Borough               | Sounds like “first” or “burro”               | Memorise common British place-name endings (-firth, -borough, -cester)   |
+| **Homophones**                       | Write / Right, Sail / Sale   | Same sound, different meaning                | Use context of question to decide correct meaning & spelling             |
+| **Foreign-origin names**             | Staunfirth, Chamonix         | Sound doesn’t match typical English spelling | Pay attention when speaker spells it out; note letter by letter          |
+| **Compound names**                   | Newtown, Southport           | May sound like two separate words            | Check if it’s one word or two; context often hints at place names        |
+| **Extra letters in British English** | Jewellery, Manoeuvre         | Extra vowels compared to US spelling         | Remember British spelling rules for IELTS                                |
+
 # Task 1
 
 ## Maps & Plan
@@ -46,6 +59,37 @@ draft: false
 | low       |                                     | To <font color="#0070c0">lower</font> something / to <font color="#0070c0">make something lower</font> |
 
 
+| Word/Phrase                     | Synonym(s) / Related Expressions                               |
+| ------------------------------- | -------------------------------------------------------------- |
+| Town council subcommittee       | local government group, municipal committee                    |
+| Park facilities                 | park amenities, recreational infrastructure                    |
+| Bring you up to date            | update, inform                                                 |
+| General overview                | summary, outline                                               |
+| Basic arrangement               | layout, structure                                              |
+| Gate                            | entrance, access point                                         |
+| Lake                            | pond, body of water                                            |
+| Assortment of drinks and snacks | variety of refreshments, selection of beverages and light food |
+| Out of the way                  | remote, inconveniently located                                 |
+| Adventure playground            | children’s play area, recreational playground                  |
+| Formal gardens                  | landscaped gardens, ornamental gardens                         |
+| Park boundary                   | perimeter, outer edge of park                                  |
+| Outdoor gym                     | fitness area, exercise space                                   |
+| Glass houses                    | greenhouses, conservatories                                    |
+| Hidden in the trees             | concealed among trees, tucked away                             |
+| Skateboard ramp                 | skate ramp, skateboarding structure                            |
+| Main path                       | primary walkway, main track                                    |
+| Bend in the path                | curve in the walkway, turning point                            |
+| Wild flowers                    | native flowers, uncultivated plants                            |
+| Let off steam                   | release energy, unwind                                         |
+| Open year-round                 | available all year, operates continuously                      |
+| Close early                     | shut sooner, reduced hours                                     |
+| Entrance is completely free     | no charge, admission free                                      |
+| Keep an eye on                  | supervise, watch closely                                       |
+| Disastrous fire                 | devastating blaze, catastrophic fire                           |
+| Metal supports                  | structural frames, steel framework                             |
+| Contributing time and money     | donating effort and funds, volunteering and funding            |
+| Extend opening to the weekend   | increase hours, broaden schedule                               |
+|                                 |                                                                |
 # General Academic Verbs (Passive / Descriptive)
 
 | Word/Phrase                          | Use in IELTS                                                 |
@@ -75,7 +119,26 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 
 'opposite' has a different meaning when it is used like this - it refers to the characteristics of someone or something (e.g. 'My sister likes parties but I am the exact opposite.') With location, we can say that something is 'directly opposite' something else.
 
+| Word/Phrase               | Synonyms                                   | IELTS/Academic Collocations                                          |
+| ------------------------- | ------------------------------------------ | -------------------------------------------------------------------- |
+| **Industrial Revolution** | period of industrialisation                | during the Industrial Revolution, onset of the Industrial Revolution |
+| **consumerism**           | mass consumption, buying culture           | growth of consumerism, fuelled by consumerism                        |
+| **possessions**           | belongings, property, assets               | personal possessions, material possessions                           |
+| **wealth**                | prosperity, affluence                      | measure of wealth, distribution of wealth                            |
+| **technology**            | technical innovation, engineering          | advances in technology, technology development                       |
+| **social changes**        | societal shifts, transformation of society | bring about social changes, undergo social changes                   |
 
+measure of the wealth = indicator of prosperity
+
+triggered massive social changes = caused large-scale transformation
+
+became widely available = accessible to many people
+
+migrated from villages into towns = moved from rural to urban areas
+
+distribution becoming far more efficient = more effective delivery of goods
+
+flock to the growing number of = go in large numbers to new places
 # Custom and Culture and Art
 
 | **Prompt**           | **Transcript Phrase**                         | **Paraphrase / Notes**                            |
@@ -99,6 +162,35 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | **satire of the legal system**        | Humorous or critical portrayal of law            | criticism, mockery                        |
 | **adapted for the theatre**           | Turned into a stage play                         | dramatized, converted into a play         |
 
+| **Word / Phrase**  | **Synonym(s)**      | **Collocation(s)**                 |
+| ------------------ | ------------------- | ---------------------------------- |
+| predict the future | foresee, foretell   | dream predicts the future          |
+| coincidence        | chance event, fluke | mere coincidence; pure coincidence |
+| segmented sleeping | biphasic sleep      | practice segmented sleeping        |
+
+# Opinion & Attitudes
+
+| Word / Phrase      | Meaning                                 | Synonyms / Paraphrases |
+| ------------------ | --------------------------------------- | ---------------------- |
+| inform the public  | give people information                 | educate, update        |
+| to persuade        | make someone believe or do something    | convince, influence    |
+| fear / controversy | strong negative emotion or disagreement | dispute, uproar        |
+| avoid (a topic)    | not choose or deal with it              | steer clear of, skip   |
+
+# Monument
+
+| **Word / Phrase**     | **Synonyms**                      | **Collocations**                            |
+| --------------------- | --------------------------------- | ------------------------------------------- |
+| monuments             | memorials, landmarks, structures  | ancient monuments, cultural monuments       |
+| tribute to the memory | commemoration, honor, homage      | tribute to the memory of kings              |
+| tombs                 | burial places, graves, sepulchres | royal tombs, ancient tombs                  |
+| burial chamber        | grave room, mortuary chamber      | royal burial chamber                        |
+| underground passages  | subterranean corridors, tunnels   | underground passageways, hidden passages    |
+| stone slabs           | large flat stones, flagstones     | limestone slabs, granite slabs              |
+| false doors           | dummy doors, decorative doors     | carved false doors                          |
+| excavated             | unearthed, dug up, uncovered      | excavated site, excavated remains           |
+| grave robbers         | tomb raiders, looters             | ancient grave robbers, modern grave robbers |
+| artefacts             | objects, relics, antiquities      | rare artefacts, archaeological artefacts    |
 
 # Crime
 
@@ -110,26 +202,241 @@ Notice that _tall, short, high_ and _low_ do not have a specific noun form (when
 | **IELTS-Level Synonyms** | regress, relapse, deteriorate, decline                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | __Example Sentences__    | - _Despite years of progress, the country has recently begun to __backslide__ in its efforts to reduce pollution._<br>- _Some argue that strict policies are needed to prevent society from __backsliding__ into inequality and unrest._<br>- _Patients who lack support are more likely to __backslide__ into unhealthy eating habits._                                                                                                                       |
 | __Band 7 - 9 Usage__     | - Use "backslide" in __Task 2 essays__ when talking about setbacks in areas such as education reform, social equality, or environmental protection.<br>- Best used in formal writing when describing __negative trends__ or __reversal of progress__.<br><br>Use this word especially when writing about policies that have failed, declining social values, or countries returning to outdated practices. It adds a nuanced, high-level tone to your writing. |
+
+# Lifestyle & Leisure & Human Behaviour
+
+| Word / Phrase                                 | Meaning                                 | Synonyms / Paraphrases                                  |
+| --------------------------------------------- | --------------------------------------- | ------------------------------------------------------- |
+| **safe outdoor play**                         | Playing outside in a secure environment | protected outdoor activities, secure outdoor recreation |
+| **staring at a computer screen**              | Looking at a computer for a long time   | prolonged screen time, fixed gaze on a monitor          |
+| **not doing anything particularly energetic** | Being physically inactive               | sedentary, low-energy activity                          |
+| **Domestic fridges**                              | Refrigerators used in homes             | household refrigerators, home fridges                   |
+| **19th- and 20th-century fridges**                | Refrigerators from the 1800s and 1900s  | historical refrigerators, vintage fridges               |
+| **What's available these days**                   | Current products on the market          | modern options, contemporary models                     |
+
+| **Word / Phrase**         | **Synonym(s)**         | **Collocation(s)**                     |
+| ------------------------- | ---------------------- | -------------------------------------- |
+| forget most of our dreams | lose memory of dreams  | forget dreams quickly; dreams fade     |
+| get mixed up about        | confuse                | get mixed up about what happened       |
+| protection (for memory)   | safeguard, defense     | act as a protection against confusion  |
+| creative                  | imaginative, inventive | be more creative; boost creativity     |
+| unnecessary stress        | avoidable pressure     | cause stress; keep stress to a minimum |
+
+| **Word / Phrase**    | **Synonym(s)**                        | **Collocation(s)**                   |
+| -------------------- | ------------------------------------- | ------------------------------------ |
+| motivation           | drive, determination                  | increase motivation; lack motivation |
+| habit                | routine, practice                     | develop a habit; break a habit       |
+| active lifestyle     | physically engaged life               | lead an active lifestyle             |
+| gardening            | yard work, horticulture               | do gardening                         |
+| walking to the shops | daily walking, short-distance walking | walk to the park; walk to the shops  |
+
+| **Word / Phrase** | **Synonym(s)**               | **Collocation(s)**                      |
+| ----------------- | ---------------------------- | --------------------------------------- |
+| sociable activity | social event, group activity | enjoy sociable activities               |
+| collaboration     | cooperation, teamwork        | require collaboration                   |
+| interaction       | communication, engagement    | encourage interaction                   |
+| isolation         | loneliness, solitude         | reduce isolation; suffer from isolation |
+|                   |                              |                                         |
+
+| **Word/Phrase**         | **Synonyms / Related Terms**         | **Collocations / Usage**          |
+| ----------------------- | ------------------------------------ | --------------------------------- |
+| problem-solving ability | reasoning skill, analytical skill    | display problem-solving ability   |
+| manipulate environment  | alter surroundings, use tools        | manipulate objects/environment    |
+| tool                    | implement, instrument                | use a tool                        |
+| game                    | play, recreational activity          | similar to a game                 |
+| conscious manipulation  | deliberate handling, intentional use | conscious manipulation of objects |
+| creativity              | inventiveness, imagination           | show creativity                   |
+
+| **Word/Phrase**   | **Synonyms / Related**           | **Collocations**                               |
+| ----------------- | -------------------------------- | ---------------------------------------------- |
+| economic hardship | financial difficulty, poverty    | suffer economic hardship, during hardship      |
+| equipment         | tools, apparatus, kit            | knitting equipment, buy equipment              |
+| basic skills      | simple skills, elementary skills | require basic skills, teach basic skills       |
+| financial outlay  | spending, cost, expense          | minimal outlay, initial outlay                 |
+| rewarding         | satisfying, fulfilling           | find something rewarding, personally rewarding |
 # Government
 
-| Word/Phrase             | Meaning / Context                      | Synonyms / Related Terms |
-| ----------------------- | -------------------------------------- | ------------------------ |
-| **realistic timelines** | Feasible schedule for programme stages | achievable deadlines     |
-| **design phase**        | The planning part of a programme       | project proposal stage   |
-| **implementation**      | Putting plans into action              | execution, rollout       |
-| **monitored carefully** | Observed closely to track progress     | evaluated, overseen      |
+| Word/Phrase             | Meaning / Context                                   | Synonyms / Related Terms                                            |
+| ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------- |
+| **realistic timelines** | Feasible schedule for programme stages              | achievable deadlines                                                |
+| **design phase**        | The planning part of a programme                    | project proposal stage                                              |
+| **implementation**      | Putting plans into action                           | execution, rollout                                                  |
+| **monitored carefully** | Observed closely to track progress                  | evaluated, overseen                                                 |
+| **Food producers**          | People or companies that grow or make food          | farmers, food manufacturers                                         |
+| **Export produce**          | Send agricultural goods to another country for sale | ship goods abroad, overseas trade of crops                          |
+| **Developed countries**     | Nations with advanced economies and infrastructure  | industrialised nations, high-income countries                       |
+| **Poorer countries**        | Nations with low economic development               | less economically developed countries (LEDCs), low-income countries |
 
-# Advertising
+# Work & Employment
+
+| **Word / Phrase**                | **Synonyms & Related Phrases**                | **Common Collocations**                        |
+| -------------------------------- | --------------------------------------------- | ---------------------------------------------- |
+| global workforce                 | worldwide labour force, international workers | size of the workforce, global employment       |
+| switch to a different occupation | change careers, career transition             | occupational change, job switch                |
+| occupational boundaries          | job role limits, professional demarcations    | cross occupational boundaries, blur boundaries |
+| retraining                       | upskilling, reskilling                        | retraining programme, workforce retraining     |
+| redundancy                       | layoff, job loss                              | voluntary redundancy, redundancy package       |
+| job security                     | employment stability, secure work             | guarantee job security, lack of job security   |
+
+# Economic & Business & Advertising
+
+| Word / Phrase                                  | Meaning                                                   | Synonyms / Paraphrases                              |
+| ---------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------- |
+| **sales in the shops went up**                 | The amount of goods sold in stores increased              | increase in retail sales, higher store revenue      |
+| **more shoppers**                              | A larger number of people buying goods                    | increased customer numbers, higher foot traffic     |
+| **fewer people out shopping**                  | A smaller number of people going to buy goods             | reduced shoppers, decline in customer turnout       |
+| **established craft**                          | well-known skilled work                                   | traditional trade                                   |
+| **guarded trade secrets**                      | kept production methods secret                            | protected know-how                                  |
+| **large-scale commercial soapmaking**          | mass production for sale                                  | industrial soapmaking                               |
+| **inexpensive soda ash**                       | cheap chemical ingredient                                 | affordable material                                 |
+| **heavily taxed**                              | high tax rate                                             | subject to high duty                                |
+| **tax removal**                                | ending of tax                                             | abolition of duty                                   |
+| **Value for money**                            | Worth the amount paid; good quality for the cost          | Cost-effective, economical, worthwhile purchase     |
+| **Too much for a journey**                     | Service is overpriced for the distance or time taken      | Overpriced, excessive cost, poor value              |
+| **Cheaper if you buy a week in advance**       | Price is lower when booked early                          | Early booking discount, advance purchase saving     |
+| **Discount**                                   | Reduction in price                                        | Price cut, rebate, markdown, concession             |
+| **Save 20%**                                   | Pay 20% less than the original cost                       | Get 20% off, 20% reduction, percentage savings      |
+| **Amount of information provided**             | Quantity of details given to users or passengers          | Volume of details, extent of information            |
+| **Clear information**                          | Easy-to-understand instructions or details                | Explicit information, well-explained details        |
+| **Board**                                      | Display screen showing train times or other announcements | Noticeboard, timetable display, electronic display  |
+| **Frustrating**                                | Causing annoyance or disappointment                       | Irritating, annoying, exasperating                  |
+| **Feedback**                                   | Response or opinion given about a service                 | Review, comments, evaluation                        |
+| **Occupation**                                 | Job or profession                                         | Employment, trade, vocation                         |
+| **Journalist**                                 | Person who writes/reports news                            | Reporter, correspondent, news writer                |
+| **Day off**                                    | Day not spent working                                     | Rest day, holiday, break                            |
+| **Came here for work**                         | Visiting a place for job-related purposes                 | Business trip, work visit                           |
+| **Shopping**                                   | Buying goods for personal use                             | Purchasing, retail buying, going to the shops       |
+| **Value for money**                            |                                                           | worth the cost, cost-effective                      |
+| **Plan ahead**                                 |                                                           | prepare in advance                                  |
+| **Cost by the number of years**                | Calculating price spread over usage time                  | cost amortisation, long-term value calculation      |
+| **Good value for money**                       | Worth the amount spent                                    | cost-effective, worth the price                     |
+| **Encourage people to spend more**             | Motivate consumers to purchase                            | stimulate buying, promote spending                  |
+| **Choice of colours and designs**              | Variety of product appearance                             | product range, style options                        |
+| **Manufacturers differentiate their products** | Make products stand out from competitors                  | competitive positioning, product distinction        |
+| **department stores**                              | large retail outlets, multi-section stores                | open a department store, shop at department stores  |
+| **entrepreneurs**                                  | business founders, start-up owners                        | successful entrepreneurs, young entrepreneurs       |
+| **lighting**                                       | illumination, electric lights                             | improve lighting, lighting system                   |
+| **plate glass**                                    | large glass panes, clear glass                            | plate glass windows                                 |
+| **windows**                                        | shop windows, display panes                               | large windows, window displays                      |
+| **advertising**                                    | marketing, promotion                                      | launch advertising campaign, persuasive advertising |
+
+| **Word/Phrase**                                          | **Synonyms / Similar Phrases** | **Common Collocations**       |
+| -------------------------------------------------------- | ------------------------------ | ----------------------------- |
+| £50                                                      | fifty pounds, cost of fifty    | pay £50, costs £50            |
+| no payment required (Tiny Engineers was free? – implied) | free of charge, complimentary  | completely free, without cost |
+
+| **Word / Phrase**             | **Synonyms & Related Phrases**                        | **Common Collocations**                                   |
+| ----------------------------- | ----------------------------------------------------- | --------------------------------------------------------- |
+| enhance productivity          | increase efficiency, boost output                     | productivity enhancement, enhanced workforce productivity |
+| reduce costs                  | cut expenses, lower overheads                         | cost reduction, reduced operational costs                 |
+| market intelligence           | business insight, competitive knowledge               | gather market intelligence, analyse market intelligence   |
+| personal contact with clients | face-to-face communication, direct client interaction | maintain personal contact, regular contact with clients   |
+
+| **Word / Phrase**          | **Synonyms & Related Phrases**                 | **Common Collocations**                                  |
+| -------------------------- | ---------------------------------------------- | -------------------------------------------------------- |
+| economic democracy         | fair economy, equitable market system          | promote economic democracy                               |
+| multistage employment life | career with multiple stages, phased career     | plan a multistage career, adapt to multistage employment |
+| full employment            | zero unemployment, complete labour utilisation | guarantee full employment                                |
+
+# Time & Scheduling
+
+| **Word/Phrase**          | **Synonyms / Similar Phrases**                | **Common Collocations**             |
+| ------------------------ | --------------------------------------------- | ----------------------------------- |
+| from 10 am to 11 am      | between 10 and 11, one-hour session           | runs from, takes place from         |
+| five-week block          | five-week session, five-week course           | enrol for a block, complete a block |
+| moved them to Wednesdays | rescheduled to Wednesdays, shifted to midweek | change to, switch to                |
 
 # Transport
 
-| Word/Phrase                 | Meaning / Context                | Synonyms / Related Terms           |
-| --------------------------- | -------------------------------- | ---------------------------------- |
-| **transport**               | Moving produce to markets        | logistics, delivery system         |
-| **preservation techniques** | Ways to prevent spoilage of food | food storage, conservation methods |
-| **produce**                 | Grown food ready for use or sale | harvest, crops                     |
+| Word/Phrase                                   | Meaning / Context                                                        | Synonyms / Related Terms                            |
+| --------------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------- |
+| **transport**                                 | Moving produce to markets                                                | logistics, delivery system                          |
+| **preservation techniques**                   | Ways to prevent spoilage of food                                         | food storage, conservation methods                  |
+| **produce**                                   | Grown food ready for use or sale                                         | harvest, crops                                      |
+| **closing off their street**                  | Preventing vehicles from entering the street                             | sealing off, restricting access                     |
+| **block off our road**                        | Physically stopping cars from using the road                             | barricade, cordon off                               |
+| **special signs**                             | Signs made for a specific purpose                                        | customised signs, dedicated signage                 |
+| **motorists**                                 | People driving cars                                                      | drivers, vehicle users                              |
+| **council**                                   | Local government authority                                               | municipal authority, local administration           |
+| **police involved**                           | Police participation or intervention                                     | law enforcement engaged, police assistance          |
+| **completely closed**                         | No entry allowed                                                         | fully shut, entirely blocked                        |
+| **residents' cars**                           | Vehicles owned by people living in the area                              | local vehicles, inhabitants’ cars                   |
+| **drive at under 20 kilometres per hour**     | Travel at a speed less than 20 km/h                                      | slow driving, low-speed driving                     |
+| **through traffic**                           | Vehicles passing through without stopping in the area                    | transit traffic, passing vehicles                   |
+| **busy roads**                                | Roads with a lot of traffic                                              | congested streets, high-traffic roads               |
+| **reduce the traffic**                        | Decrease the number of vehicles                                          | cut traffic, lessen congestion                      |
+| **busiest main road**                         | The most crowded central road                                            | most congested major road, heaviest traffic route   |
+| **persuading people not to use their cars**   | Convincing people to avoid driving                                       | encouraging less driving, promoting car-free travel |
+| **making people pay more for parking**        | Increasing parking fees                                                  | raising parking charges, higher parking costs       |
+| **stopped people from parking**               | Prevented vehicles from being parked                                     | banned parking, prohibited parking                  |
+| **buses still running**                       | Bus services continuing despite changes                                  | public transport operating, buses in service        |
+| **Day trip**                                  | Short journey to a place and back in one day                             | excursion, short outing                             |
+| **Station**                                   | Railway station                                                          | train stop, terminal                                |
+| **Travelling back to**                        | Returning to a location                                                  | going back to, returning to                         |
+| **Season ticket**                             | Ticket valid for multiple trips over a period                            | travel pass, commuter ticket                        |
+| **Normal return ticket**                      | Ticket for a journey to and from a place                                 | standard return, round-trip ticket                  |
+| **Full price**                                | Standard price without discount                                          | regular rate, undiscounted price                    |
+| **Rail card**                                 | Discount card for train travel                                           | travel discount card, rail pass                     |
+| **Plan ahead**                                | Organise in advance                                                      | prepare in advance, make arrangements early         |
+| **E-ticket**                                  | Digital/online ticket                                                    | electronic ticket, online booking confirmation      |
+| **On time / reliable trains**                 | Punctual and dependable service                                          | prompt trains, consistent service                   |
+| **Delay**                                     | Train arrives late                                                       | holdup, lateness, setback                           |
+| **Behind schedule**                           | Not on time                                                              | delayed, running late                               |
+| **Aqueducts**                                 | Structure carrying water over long distances (historical/infrastructure) | water bridge, water channel                         |
+| **Customer satisfaction survey**              | Research to measure users’ opinions and experience                       | Feedback survey, user satisfaction study            |
+| **Ticket office**                             | Place at a station where tickets are sold                                | Booking office, ticket counter                      |
+| **Open for longer hours**                     | Operating for an extended period each day                                | Extended opening times, longer operating hours      |
+| **Queue**                                     | Line of people waiting                                                   | Line, waiting line, column                          |
+| **Out of order**                              | Not working or broken                                                    | Malfunctioning, faulty, inoperative                 |
+| **Wifi on the train**                         | Wireless internet service available during the train journey             | Onboard wifi, train internet access                 |
+| **Facilities**                                | Services and equipment provided in a place                               | Amenities, provisions, infrastructure               |
+| **Seating**                                   | Chairs or benches for passengers to sit on                               | Seats, benches, sitting area                        |
+| **Platform**                                  | Area beside the railway track for passengers to board trains             | Train platform, boarding area                       |
+| **Parking at the station**                    | Car parking area for passengers at a train station                       | Station car park, vehicle parking facility          |
+| **Refrigerated trucks**                       | Vehicles equipped with cooling systems to transport perishable goods     | temperature-controlled trucks, chilled lorries      |
+| **Transported in refrigerated railroad cars** | Moving goods in train carriages with cooling systems                     | cold-chain rail transport, chilled train freight    |
+| **Since the 1840s**                           | Referring to a historical starting point in the 19th century             | dating back to the 1840s, from the mid-19th century |
+| **stagecoaches**                                  | horse-drawn coaches, carriage                                            | travel by stagecoach                                |
+| **carts**                                         | wagons, drays                                                            | wooden carts, goods carts                           |
+| **poorly surfaced roads**                         | badly maintained roads                                                   | uneven roads, unpaved roads                         |
+| **canals**                                        | waterways, man-made channels                                             | canal network, transport by canal                   |
+| **railways**                                      | train systems, railway network                                           | expand railways, railway transport                  |
+| **newspapers**                                    | press, printed media                                                     | national newspapers, local newspapers               |
+| **local market**                                  | nearby market, domestic market                                           | sell in local markets                               |
+
+# Manufacturing
+
+| Word/Phrase      | Synonyms                                    | IELTS/Academic Collocations                              |
+| ---------------- | ------------------------------------------- | -------------------------------------------------------- |
+| steam engines    | steam-powered machinery                     | invention of the steam engine                            |
+| coal             | fossil fuel                                 | coal mining, coal-fired                                  |
+| sources of power | energy supply, power generation             | renewable sources of power, alternative sources of power |
+| textiles         | fabrics, cloth industry                     | textile production, textile industry                     |
+| lace and ribbons | decorative fabrics                          | lace-making industry                                     |
+| machines         | equipment, apparatus                        | operate machines, industrial machines                    |
+| factories        | manufacturing plants, production facilities | build factories, factory work                            |
+| workshops        | studios, small manufacturing spaces         | home workshops, craft workshops                          |
 
 # Globalization
+
+# Geography
+
+| Vocabulary / Collocation             | Meaning / Notes                                               | Synonyms                                            |
+| ------------------------------------ | ------------------------------------------------------------- | --------------------------------------------------- |
+| **River Tiber**                      | river in Rome                                                 | —                                                   |
+| **Europe**                           | continent                                                     | —                                                   |
+| **France**                           | country                                                       | —                                                   |
+| **Germany / Gaul**                   | regions                                                       | —                                                   |
+| **Helped whole cities**                  | Contributed to the development or functioning of urban areas  | supported urban growth, boosted city development    |
+| **Couldn't exist without refrigeration** | Fully reliant on cooling technology for survival or operation | dependent on refrigeration, reliant on cold storage |
+| **Middle of a desert**                   | Located in an arid and remote area                            | desert location, arid-zone setting                  |
+
+| **Word/Phrase**   | **Synonyms / Similar Phrases** | **Common Collocations**         |
+| ----------------- | ------------------------------ | ------------------------------- |
+| building 10A      | unit 10A, block 10A            | located in building, in unit    |
+| industrial estate | business park, factory zone    | on an industrial estate         |
+| parking           | car park, parking area         | free parking, plenty of parking |
+| big sign          | large notice, large board      | display a sign, put up a sign   |
 
 # Environment
 
@@ -142,23 +449,85 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 |bird call model|“he had subconsciously modelled its opening phrase on a bird call”|Nature as an indirect influence in composing|
 
 
-| Word/Phrase                | Meaning / Context                            | Synonyms / Related Terms               |
-| -------------------------- | -------------------------------------------- | -------------------------------------- |
-| **case study**             | Detailed analysis of a specific situation    | project review, example, pilot project |
-| **programme**              | Organised plan of action for development     | initiative, scheme, project            |
-| **rural populations**      | People living in the countryside             | villagers, agricultural communities    |
-| **sustainable**            | Can continue long-term without damage        | long-lasting, eco-friendly, viable     |
-| **charcoal**               | A fuel made from burning wood without oxygen | fuel wood                              |
-| **resource**               | Something valuable and usable (e.g. forest)  | asset, supply                          |
-| **agriculture**            | Farming or crop production                   | cultivation, farming                   |
-| **crops**                  | Plants grown for food                        | produce, harvest                       |
-| **livestock breeding**     | Raising animals for food or farming          | animal husbandry                       |
-| **food security**          | Reliable access to enough food               | nutritional stability                  |
-| **vegetables and cereals** | Common edible crops in farming               | grains and greens                      |
+| Word/Phrase                             | Meaning / Context                                 | Synonyms / Related Terms                          |
+| --------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| **case study**                          | Detailed analysis of a specific situation         | project review, example, pilot project            |
+| **programme**                           | Organised plan of action for development          | initiative, scheme, project                       |
+| **rural populations**                   | People living in the countryside                  | villagers, agricultural communities               |
+| **sustainable**                         | Can continue long-term without damage             | long-lasting, eco-friendly, viable                |
+| **charcoal**                            | A fuel made from burning wood without oxygen      | fuel wood                                         |
+| **resource**                            | Something valuable and usable (e.g. forest)       | asset, supply                                     |
+| **agriculture**                         | Farming or crop production                        | cultivation, farming                              |
+| **crops**                               | Plants grown for food                             | produce, harvest                                  |
+| **livestock breeding**                  | Raising animals for food or farming               | animal husbandry                                  |
+| **food security**                       | Reliable access to enough food                    | nutritional stability                             |
+| **vegetables and cereals**              | Common edible crops in farming                    | grains and greens                                 |
+| **fresh air**                           | Clean air from outdoors                           | unpolluted air, pure air                          |
+| **air quality**                         | How clean or polluted the air is                  | atmospheric condition, cleanliness of the air     |
+| **less air pollution**                  | Reduced harmful substances in the air             | decreased emissions, cleaner air                  |
+| **more relaxed atmosphere**             | Calmer and less stressful environment             | peaceful setting, laid-back mood                  |
+| **less noise pollution**                | Reduced unwanted or harmful sound                 | quieter environment, reduced sound disturbance    |
+| **quieter**                             | Having less noise                                 | more silent, less noisy                           |
+| **Harmful for the environment**         | Causing damage to nature or ecosystems            | environmentally damaging, ecologically harmful    |
+| **Recycle components safely**           | Process and reuse parts without causing harm      | safe material recovery, eco-friendly reprocessing |
+| **Disposed of irresponsibly**           | Got rid of waste in an improper way               | improper waste management, careless disposal      |
+| **Dump old fridges in the countryside** | Throw away refrigerators in rural areas illegally | illegal dumping, fly-tipping                      |
+| **Stop them (unfortunately)**           | Difficulty in preventing harmful actions          | hard to prevent, challenging to control           |
+|                                         |                                                   |                                                   |
+
+| **Word/Phrase**                      | **Synonyms / Related Terms**                    | **Collocations / Usage**                                 |
+| ------------------------------------ | ----------------------------------------------- | -------------------------------------------------------- |
+| climate change                       | global warming, environmental change            | effects/impact of climate change, address climate change |
+| Arctic Circle                        | polar region, high latitudes                    | extreme conditions of the Arctic Circle                  |
+| temperature can reach -40°C          | freezing cold, severe cold                      | survive temperatures of -40°C                            |
+| extreme conditions                   | harsh environment, severe climate               | adapted to extreme conditions                            |
+| extinction                           | disappearance, die out                          | lead to extinction, prevent extinction                   |
+| conservation efforts                 | preservation work, protection                   | support conservation efforts                             |
+| agriculture and horticulture sectors | farming, gardening industries                   | work in agriculture / horticulture careers               |
+| fresh food production                | food cultivation, crop growing                  | large-scale food production                              |
+| crop nutrition                       | soil enrichment, fertiliser application         | improve crop nutrition                                   |
+| pest protection                      | insect control, crop defense                    | pest protection measures                                 |
+| legislation on farming               | agricultural regulations, farming laws          | comply with legislation                                  |
+| forestry and conservation work       | woodland management, environmental preservation | carry out conservation work                              |
+| crop sowing and harvesting           | planting and gathering crops                    | annual harvest, crop cycle                               |
+| animal care                          | livestock management, animal husbandry          | provide animal care                                      |
+| rural setting                        | countryside environment                         | live/work in a rural area                                |
+| remote areas                         | isolated places, rural locations                | work in a remote area                                    |
+# History
+
+| Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
+| --------------------------------------------- | ---------------------------------- | -------------------------------- |
+| **prehistoric times**                         | period before written records      | ancient era, early human history |
+| **earliest people**                           | first humans                       | early humans, ancient peoples    |
+| **excavation of ancient Babylon**             | digging to find remains            | archaeological dig               |
+| **evidence was found**                        | proof discovered                   | proof, findings                  |
+| **inscriptions**                              | words carved/written on surface    | engravings, carvings             |
+| **ancient Greeks / Romans / Germans / Gauls** | historical peoples                 | early civilizations              |
+| **Mount Sapo**                                | legendary Roman location           | —                                |
+| **fall of Rome**                              | collapse of Roman Empire           | decline, downfall                |
+| **Middle Ages**                               | medieval period (5th–15th century) | medieval era                     |
+
+| **Word / Phrase** | **Synonyms**                    | **Collocations**                               |
+| ----------------- | ------------------------------- | ---------------------------------------------- |
+| predecessors      | forerunners, ancestors          | royal predecessors, architectural predecessors |
+| reign             | rule, leadership, sovereignty   | long reign, during his reign                   |
+| tradition         | custom, practice                | break with tradition, maintain tradition       |
+| inscriptions      | carvings, engravings, lettering | stone inscriptions, ancient inscriptions       |
+| vessels           | containers, jars, pots          | stone vessels, ceremonial vessels              |
+| dynasty           | royal family line, succession   | ruling dynasty, ancient dynasty                |
 
 # Family
 
 # Gender
+
+# Competitions & Challenges
+
+| **Word/Phrase** | **Synonyms / Similar Phrases**    | **Common Collocations**                     |
+| --------------- | --------------------------------- | ------------------------------------------- |
+| competition     | contest, challenge                | enter a competition, organise a competition |
+| tallest tower   | highest structure, vertical build | build a tall tower, tower-building contest  |
+| longest bridge  | extended bridge, maximum span     | construct a bridge, bridge design           |
+| prize           | award, reward                     | win a prize, receive a prize                |
 
 # Health
 
@@ -172,10 +541,156 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | __Common IELTS Collocations__ | **bear the burden** - Carry responsibility or pressure<br>**bear the consequences** - Suffer the results of something<br>**bear in mind** - Remember or consider<br>**bear the cost** - Pay or absorb an expense<br>**bear the brunt** - Suffer the worst of something negative                                                                                                                                                                                                                                                                                                                                                                            |
 |                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-# Science
+| Vocabulary / Collocation         | Meaning / Notes                                       | Synonyms                                                  |
+| -------------------------------- | ----------------------------------------------------- | --------------------------------------------------------- |
+| **personal cleanliness**         | keeping the body clean                                | hygiene                                                   |
+| **public health**                | health of a community                                 | community health                                          |
+| **unsanitary living conditions** | unclean environments                                  | unhygienic, dirty                                         |
+| **outbreaks of disease**         | sudden spread of illness                              | epidemics                                                 |
+| **Black Death**                  | plague of 14th century                                | bubonic plague                                            |
+| **cleaning purposes**            | for hygiene use                                       | cleansing                                                 |
+| **Chemicals were harmful**           | Substances that cause damage to health or environment | toxic substances, dangerous chemicals                     |
+| **Access to fresh food**             | Ability to obtain unspoiled, recently produced food   | availability of fresh produce, supply of non-spoiled food |
+| **Benefits to health**               | Positive effects on physical well-being               | health advantages, wellness benefits                      |
 
+| **Word / Phrase** | **Synonym(s)** | **Collocation(s)**      |
+| ----------------- | -------------- | ----------------------- |
+| short nap         | brief rest     | have a nap; daytime nap |
+
+| **Word / Phrase**                  | **Synonym(s)**                               | **Collocation(s)**                  |
+| ---------------------------------- | -------------------------------------------- | ----------------------------------- |
+| hormones associated with happiness | mood-enhancing chemicals, feel-good hormones | release hormones; produce hormones  |
+| stress or anxiety                  | tension, worry                               | reduce stress; lower anxiety        |
+| mental health problems             | psychological issues                         | suffer from mental health problems  |
+| therapy                            | treatment, rehabilitation                    | prescribe therapy; therapy session  |
+| heart disease                      | cardiovascular disease                       | reduce risk of heart disease        |
+| obesity                            | overweight, excess body fat                  | suffer from obesity; obesity levels |
+| calories                           | kilocalories, energy units                   | burn calories; calorie intake       |
+| high-intensity workouts            | vigorous exercise                            | do high-intensity workouts          |
+
+| **Word/Phrase**                     | **Synonyms / Related Terms**                | **Collocations / Usage**       |
+| ----------------------------------- | ------------------------------------------- | ------------------------------ |
+| adipose tissue                      | body fat, fatty tissue                      | excess adipose tissue          |
+| bad cholesterol (LDL)               | low-density lipoprotein                     | reduce LDL levels              |
+| heart disease                       | cardiovascular disease                      | risk of heart disease          |
+| bedridden                           | confined to bed                             | bedridden patients             |
+| astronaut                           | space traveller                             | astronauts in space missions   |
+| health benefits                     | wellbeing advantages, physical benefits     | enjoy health benefits          |
+| sitting all day looking at a screen | sedentary lifestyle                         | avoid a desk job               |
+| safety procedures                   | protective measures, safety protocols       | training in safety procedures  |
+| clean driving licence               | valid licence, no driving penalties         | must have a clean licence      |
+| appropriate training course         | relevant qualification, professional course | complete an appropriate course |
+| machine maintenance                 | equipment servicing, machinery upkeep       | maintain farm machinery        |
+
+| **Word / Phrase**               | **Synonym / Paraphrase**    | **Collocation / Usage**            |
+| ------------------------------- | --------------------------- | ---------------------------------- |
+| helping people lose weight      | weight reduction            | strategies to combat obesity       |
+| low-calorie items               | diet foods                  | low-calorie menu options           |
+| menu order influences choice    | primacy & recency effect    | items at the start / end of a menu |
+| calorie counts on the label     | nutritional labeling        | confusing / misleading labels      |
+| on purpose                      | deliberately, intentionally | done on purpose                    |
+| high-calorie food tastes better | more palatable, appealing   | preference for calorie-dense food  |
+
+| **Word / Phrase**      | **Synonym / Paraphrase**    | **Collocation / Usage**           |
+| ---------------------- | --------------------------- | --------------------------------- |
+| recommended guidelines | advised standards           | follow government guidelines      |
+| brisk walking          | fast-paced walking          | 30 minutes of brisk walking       |
+| motion sensors         | activity trackers           | measure with sensors              |
+| obesity is growing     | rising overweight levels    | increasing obesity rate           |
+| unconscious process    | automatic, not deliberate   | unconscious influence on behavior |
+| practical changes      | environmental modifications | make practical changes            |
+
+## Psychology / Cognitive Skills
+
+| **Word / Phrase**      | **Synonym(s)**                     | **Collocation(s)**                             |
+| ---------------------- | ---------------------------------- | ---------------------------------------------- |
+| creativity             | inventiveness, imagination         | boost creativity; encourage creativity         |
+| brain function         | cognitive function, mental ability | improve brain function; brain processing speed |
+| process things quickly | think fast, rapid cognition        | brain processes quickly                        |
+| retain information     | remember, store                    | retain more information                        |
+
+## Fitness / Physical Activity
+
+| **Word / Phrase** | **Synonym(s)**            | **Collocation(s)**                      |
+| ----------------- | ------------------------- | --------------------------------------- |
+| fitness           | physical condition, shape | low level of fitness; improve fitness   |
+| balance           | stability, coordination   | improve balance; lose balance           |
+| aerobic workout   | cardio exercise           | do an aerobic workout; aerobic training |
+| step aerobics     | cardio step class         | practice step aerobics                  |
+| kickboxing        | martial arts workout      | do kickboxing                           |
+
+# Emotions & Social Interaction
+
+| **Word/Phrase** | **Synonyms / Related Terms** | **Collocations / Usage** |
+| --------------- | ---------------------------- | ------------------------ |
+| frustration     | annoyance, irritation        | show frustration         |
+| relationship    | bond, connection             | form a relationship with |
+| play with       | engage with, interact        | play with dogs           |
+| majestic        | grand, impressive            | majestic animal          |
+| intelligent     | smart, clever                | intelligent species      |
+
+# Science & Technology
+
+| Vocabulary / Collocation                             | Meaning / Notes                                                  | Synonyms                                           |
+| ---------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------- |
+| **soapmaking**                                       | process of producing soap                                        | soap production, saponification                    |
+| **fats boiled with ashes**                           | early method of soap                                             | combining oils with alkali                         |
+| **soda ash (sodium carbonate)**                      | alkali chemical from salt                                        | washing soda                                       |
+| **patented a process**                               | registered invention officially                                  | secured a patent                                   |
+| **chemical nature**                                  | scientific composition                                           | molecular makeup                                   |
+| **relationship of fats, glycerine, and fatty acids** | chemical connections in soap                                     | —                                                  |
+| **soapmaking became a science**                      | systematic, research-based process                               | scientific discipline                              |
+| **manufacture**                                      | produce in large quantities                                      | produce, mass-produce                              |
+| **Icehouses**                                            | Historic buildings used to store ice before modern refrigeration | ice storage buildings, cold storage huts           |
+| **Insulating the blocks**                                | Protecting ice by covering it to reduce heat transfer            | thermal protection, heat-proof covering            |
+| **Straw or sawdust**                                     | Natural materials used to keep ice from melting                  | natural insulators, organic packing material       |
+| **Ancient Romans**                                       | People from the historical Roman civilisation                    | Roman Empire citizens, classical Romans            |
+| **Pits dug in the ground**                               | Holes excavated for storage purposes                             | storage pits, underground chambers                 |
+| **Imported from the mountains**                          | Brought from higher altitudes over long distances                | transported from uplands, brought from highlands   |
+| **Commercial business**                                  | Activity aimed at making a profit                                | for-profit enterprise, trade venture               |
+| **Technologies are used**                                | Various methods or systems are applied                           | techniques employed, technological methods adopted |
+
+| **Word/Phrase**    | **Synonyms / Similar Phrases**                   | **Common Collocations**                            |
+| ------------------ | ------------------------------------------------ | -------------------------------------------------- |
+| design             | plan, create, devise                             | design a cover, design a car                       |
+| construct          | build, assemble, make                            | construct animals, construct models                |
+| model vehicles     | miniature cars, small-scale transport            | build model vehicles, design model cars            |
+| recycled materials | repurposed materials, reused items               | use recycled materials, collect recycled materials |
+| animation software | motion graphics program, cartoon-making software | create animation, animation tools                  |
+| humanoid robot     | human-shaped robot, android                      | build a humanoid, program a humanoid robot         |
+| metal supports     | structural supports, framework                   | steel supports, aluminium supports                 |
+
+| **Word / Phrase**                  | **Synonyms & Related Phrases**                 | **Common Collocations**                             |
+| ---------------------------------- | ---------------------------------------------- | --------------------------------------------------- |
+| automation                         | mechanisation, computerisation                 | process automation, industrial automation           |
+| embodied AI                        | physical artificial intelligence, robotics     | embodied agent, embodied system                     |
+| disembodied AI                     | software AI, virtual AI                        | disembodied agent, disembodied system               |
+| algorithmication of jobs           | AI integration into work, algorithm-based work | job algorithmication, algorithm-driven process      |
+| perfect information                | complete data, flawless data set               | access to perfect information                       |
+| keeper of knowledge                | information holder, data custodian             | act as the keeper of knowledge                      |
+| feed the algorithm with false data | input incorrect information, data manipulation | deliberately feed false data                        |
+| transparent AI                     | explainable AI, open algorithms                | ensure AI transparency, transparent decision-making |
+
+| **Word/Phrase**   | **Synonyms / Related Terms**         | **Collocations / Usage**            |
+| ----------------- | ------------------------------------ | ----------------------------------- |
+| genetic structure | DNA composition, genome              | compare genetic structures          |
+| gene              | hereditary unit, DNA segment         | discover a gene, mutation in a gene |
+| mutation          | genetic change, alteration           | mutation of a gene                  |
+| study model       | research model, experimental example | use as a study model                |
+| osteoporosis      | bone loss, brittle bones             | treatment of osteoporosis           |
+| bone density      | bone mass, bone strength             | increase/maintain bone density      |
+| bone remodelling  | bone renewal, bone restructuring     | mechanism of bone remodelling       |
+| physiologist      | scientist, biology researcher        | physiologist discovered/found       |
 # Shopping
 
+# Process
+
+| Vocabulary / Collocation           | Meaning / Notes         | Synonyms       |
+| ---------------------------------- | ----------------------- | -------------- |
+| **turning salt into soda ash**     | chemical transformation | conversion     |
+| **combines with fat to form soap** | reaction to create soap | saponification |
+| **adding perfume**                 | incorporating fragrance | scenting       |
+| **varieties of soap**              | different kinds         | types, forms   |
 # Sport
 
 | Word/Phrase             | Part of Speech | Meaning                                                      | Example Sentence                                                          |
@@ -206,28 +721,60 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | global audience         | noun phrase    | People around the world watching or listening                | _The piece was broadcast to a global audience during the ceremony._       |
 | ceremonial music        | noun phrase    | Music written for formal or official events                  | _The orchestral piece was composed as ceremonial music for the event._    |
   
-# Technology
+
 
 # Tourism
 
-# Urbanization - City Life
+# Urbanization - City Life - Community - Society
 
-| Word/Phrase                            | Meaning / Context                           | Example Sentence                                                                 |
-|----------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------|
-| **recent transformation**              | A formal way to describe recent changes     | The park has undergone a recent transformation, including new paths and seating.|
-| **feature of the city**                | A notable part of the city’s landscape      | The clock tower is a well-known feature of the city.                            |
-| **origin of the park**                 | Background or how it was started            | The origin of the park dates back to the late 1800s.                            |
-| **took possession of**                 | Became the legal owner                      | The council took possession of the land in 1912.                                |
-| **waste land**                         | Unused, undeveloped land                    | What is now a beautiful park was once just waste land.                          |
-| **densely populated residential area** | Heavily inhabited area with housing         | The park is located in a densely populated residential area.                    |
-| **plans for transforming**             | Ideas or proposals for making major changes | The city released plans for transforming the old industrial site into a park.   |
-| **finished on schedule**               | Completed at the planned time               | Despite the weather delays, the renovation was finished on schedule.            |
+| Word/Phrase                            | Meaning / Context                                | Example Sentence                                                                 |
+| -------------------------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------- |
+| **recent transformation**              | A formal way to describe recent changes          | The park has undergone a recent transformation, including new paths and seating. |
+| **feature of the city**                | A notable part of the city’s landscape           | The clock tower is a well-known feature of the city.                             |
+| **origin of the park**                 | Background or how it was started                 | The origin of the park dates back to the late 1800s.                             |
+| **took possession of**                 | Became the legal owner                           | The council took possession of the land in 1912.                                 |
+| **waste land**                         | Unused, undeveloped land                         | What is now a beautiful park was once just waste land.                           |
+| **densely populated residential area** | Heavily inhabited area with housing              | The park is located in a densely populated residential area.                     |
+| **plans for transforming**             | Ideas or proposals for making major changes      | The city released plans for transforming the old industrial site into a park.    |
+| **finished on schedule**               | Completed at the planned time                    | Despite the weather delays, the renovation was finished on schedule.             |
+| **national politics**                  | government and political issues within a country | domestic politics                                                                |
+| **international politics**             | political issues between countries               | global politics                                                                  |
+| **broader picture**                    | bigger context beyond immediate facts            | overall situation, wider perspective                                             |
+| **emotional story**                    | narrative that triggers feelings                 | touching account                                                                 |
+| **strangers**                          | people you don’t know                            | unknown individuals                                                              |
+| **aesthetic reasons**                  | for beauty                                       | decorative purposes                                                              |
+| **luxury item**                        | expensive, special thing                         | high-end product                                                                 |
+| **everyday necessity**                 | daily essential                                  | basic need                                                                       |
+| **affordable to ordinary people**      | within people’s budget                           | cheap enough, accessible                                                         |
+| **popularity of bathing**              | widespread bathing habit                         | trend of bathing                                                                 |
 
 |Word/Phrase|Meaning / Use Case|
 |---|---|
 |**organised petitions and demonstrations**|Actions taken by the public to oppose a decision|
 |**change its mind about the future of the land**|Decision-making in local councils|
 
+| Word / Phrase                       | Meaning                                                         | Synonyms / Paraphrases                       |
+| ----------------------------------- | --------------------------------------------------------------- | -------------------------------------------- |
+| **guest on the show**                   | A person invited to speak on a program (radio, TV, podcast)     | interviewee, special guest                   |
+| **local residents**                     | People who live in a specific area                              | community members, inhabitants, locals       |
+| **chance to play in the street safely** | An opportunity for children to play without danger from traffic | safe play opportunity, secure street play    |
+| **caught on**                           | Became popular or accepted                                      | gained popularity, became trendy, spread     |
+| **campaign / campaigning**              | Organised activities to achieve a goal                          | drive, movement, advocacy                    |
+| **up and running**                      | Operating successfully                                          | in operation, active, functioning            |
+| **working on it**                       | Trying to complete or improve something                         | developing, in progress                      |
+| **volunteer wardens**                   | People who help control or supervise an area without pay        | unpaid supervisors, community helpers        |
+| **all kids in the city**                | Every child living in the city                                  | all urban children, every city child         |
+| **supportive**                          | Showing approval or encouragement                               | encouraging, helpful, in favour of           |
+| **tiny minority**                       | A very small number of people                                   | small fraction, handful, very few            |
+| **big extended family**                 | A large group of relatives or close community members           | close-knit community, large family group     |
+| **confidence in themselves**            | Belief in one’s own abilities                                   | self-assurance, self-belief                  |
+| **supervised by parents**               | Watched over by parents                                         | monitored, overseen, under parental guidance |
+| **access to parks**                     | The ability to use parks                                        | availability of parks, park facilities       |
+| **large gardens**                       | Big private outdoor spaces                                      | spacious yards, big backyards                |
+| **suburbs**                             | Residential areas outside a city centre                         | outskirts, suburban neighbourhoods           |
+| **theme of the festival**               | The main subject or focus of a festival                         | festival topic, central idea                 |
+| **unpopular**                           | Not liked or approved of by many people                         | disliked, unfavorable                        |
+| **felt safer**                          | Had a greater sense of security                                 | perceived more safety, more secure           |
 
 
 # Housing - Building - Materials - Infrastructure
@@ -249,6 +796,17 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **swimming beach**                       | A specific tourist facility                     | A swimming beach was created by clearing rocks and adding sand.                           |
 | **pier**                                 | Useful in transport or access-related map tasks | A new pier was built to allow boats to dock on the south side of the island.              |
 | __distill__                              |                                                 |                                                                                           |
+| **water**                                | liquid for washing                              | —                                                                                         |
+| **mud**                                  | wet earth                                       | dirt, clay                                                                                |
+| **clay cylinders**                       | hollow objects made from clay                   | —                                                                                         |
+| **sand / pumice / ashes**                | materials for scrubbing                         | abrasive materials                                                                        |
+| **oil mixed with ashes**                 | cleaning substance                              | —                                                                                         |
+| **animal fat**                           | fat from animals                                | tallow                                                                                    |
+| **vegetable oils**                       | oils from plants                                | plant-based oils                                                                          |
+| **perfume**                              | scented substance                               | fragrance                                                                                 |
+| **salt**                                 | sodium chloride                                 | —                                                                                         |
+| **alkali**                               | base substance that reacts with acid            | —                                                                                         |
+|                                          |                                                 |                                                                                           |
 
 | Word/Phrase           | Meaning / Context               | Synonyms / Related Terms |
 | --------------------- | ------------------------------- | ------------------------ |
@@ -256,7 +814,33 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **posts**             | Upright supports for fences     | stakes, poles            |
 | **fenced-off areas**  | Enclosed land to protect crops  | protected plots          |
 
+| **Word / Phrase**             | **Synonyms**                          | **Collocations**                            |
+| ----------------------------- | ------------------------------------- | ------------------------------------------- |
+| rectangular monuments         | four-sided structures                 | rectangular stone structures                |
+| stacking                      | piling, layering                      | stacking stone slabs                        |
+| construction                  | building, development                 | construction process, construction site     |
+| inward incline                | slant, tilt                           | inward incline of walls                     |
+| complex                       | compound, site, facility              | temple complex, palace complex              |
+| enclosed by a wall            | surrounded, fenced in                 | enclosed by a high wall                     |
+| trench                        | ditch, channel                        | defensive trench, deep trench               |
+| tallest structure of its time | highest building, tallest monument    | record-breaking height phrases              |
+| renting a small cottage       | housing option, on-site accommodation | rent accommodation                          |
+| garden and park maintenance   | landscaping, groundskeeping           | maintenance work / public parks maintenance |
+| customer service              | client care, consumer assistance      | high levels of customer service             |
+| remote areas                  | isolated places                       | live in a remote area                       |
+
+| **Word/Phrase**     | **Synonyms / Related**     | **Collocations**                    |
+| ------------------- | -------------------------- | ----------------------------------- |
+| garment             | piece of clothing, apparel | knit garments, traditional garments |
+| handicraft          | craft, handmade work       | handicraft skills, local handicraft |
+| yarn                | thread, fibre, wool        | yarn made of cotton/wool, spin yarn |
+| spinning wheel      | loom (related tool)        | use a spinning wheel                |
+| wool                | fleece, fibre              | wool industry, warm wool            |
+| rough (to touch)    | coarse, harsh              | rough texture, rough surface        |
+| needles (wood/bone) | knitting sticks, pins      | knitting needles, steel needles     |
+
 # Water
+
 
 |Word/Phrase|Meaning / Context|Synonyms / Related Terms|
 |---|---|---|
@@ -326,7 +910,30 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **Dominant**        | adjective      | Having control or influence over others                  | In group discussions, she tends to take a dominant role.                         |
 | **Self-centred**    | adjective      | Preoccupied with oneself                                 | He was too self-centred to consider how others felt.                             |
 
+# Media & Communication
 
+| Word / Phrase                 | Meaning                                                   | Synonyms / Paraphrases                    |
+| ----------------------------- | --------------------------------------------------------- | ----------------------------------------- |
+| media studies                 | academic subject about mass communication, news, film, TV | journalism studies, communication studies |
+| assignment                    | a task given as part of study                             | project, coursework                       |
+| coverage of a story           | the way media reports a particular event                  | reporting, news story presentation        |
+| range of newspapers           | variety of publications                                   | multiple papers, different news sources   |
+| page of the newspaper         | location of the article                                   | placement, section                        |
+| front page                    | first page of a newspaper, main news                      | lead page                                 |
+| column inches                 | amount of space in newspaper                              | article length                            |
+| headline                      | title of a news story                                     | news heading                              |
+| graphics                      | pictures, diagrams, or visuals                            | images, photos, illustrations             |
+| structure (of the item)       | how the article is organised                              | organisation, layout                      |
+| writer's purpose              | the aim of writing                                        | intention, goal, objective                |
+| create fear / controversy     | provoke strong reactions                                  | stir emotions, spark debate               |
+| make somebody look ridiculous | portray someone negatively                                | mock, belittle                            |
+| assumptions about the reader  | what the writer presumes readers know or think            | presuppositions, expectations             |
+| national news item            | article about country-wide events                         | domestic news                             |
+| editorial                     | opinion piece by newspaper editors                        | leader article                            |
+| human interest story          | emotionally engaging story about people                   | personal story, heartwarming story        |
+| arts topic                    | story about cultural events                               | entertainment news, culture coverage      |
+| review (of a film)            | evaluation or critique                                    | assessment, appraisal                     |
+| funding for the arts          | financial support for cultural projects                   | cultural grants, arts subsidies           |
 
 
 # Education
@@ -344,7 +951,98 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **potential new students**         | People considering applying                       | prospective students, applicants        |
 | **included in the information**    | Part of the promotional material                  | featured in the brochure                |
 | **current students and lecturers** | People already part of the institution            | existing students and academic staff    |
+| **first assignment**                   | first academic task                               | initial project                         |
+| **go about (it)**                      | approach or method for doing something            | tackle, handle                          |
+| **compare**                            | look at similarities/differences                  | contrast, evaluate                      |
+| **analyse**                            | examine in detail                                 | break down, study                       |
+| **topic**                              | subject of study                                  | theme, focus                            |
 
+| **Word/Phrase**       | **Synonyms / Similar Phrases**            | **Common Collocations**                              |
+| --------------------- | ----------------------------------------- | ---------------------------------------------------- |
+| workshop              | training session, course, seminar         | attend a workshop, run a workshop, hands-on workshop |
+| school holidays       | vacation, break                           | during the holidays, holiday period                  |
+| activities            | tasks, exercises, projects                | fun activities, extracurricular activities           |
+| learning all the time | continuous learning, constant improvement | promote learning, learning experience                |
+| program (v)           | code, set up                              | program a robot, program software                    |
+| special software      | customised software, specific program     | install software, design software                    |
+
+| **Word / Phrase**   | **Synonym(s)**                      | **Collocation(s)**                            |
+| ------------------- | ----------------------------------- | --------------------------------------------- |
+| methodology         | research method, procedure          | appropriate methodology; research methodology |
+| self-assessment     | self-evaluation, self-review        | do a self-assessment; self-assessment score   |
+| action plan         | plan of action, strategy            | develop an action plan; implement action plan |
+| research question   | study question, investigation focus | decide on research question                   |
+| psychology students | students of psychology              | recruit psychology students                   |
+| history department  | faculty of history                  | from the history department                   |
+| evaluate            | assess, appraise                    | evaluate the research; evaluate results       |
+
+
+|**Word / Phrase**|**Synonym(s)**|**Collocation(s)**|
+|---|---|---|
+|self-reporting|self-recording, self-declaration|use self-reporting method|
+|paper (questionnaire)|printed form|answer on paper; paper survey|
+
+| **Word / Phrase**  | **Synonym(s)**                     | **Collocation(s)**                          |
+| ------------------ | ---------------------------------- | ------------------------------------------- |
+| ethical guidelines | moral regulations, research ethics | follow ethical guidelines; check guidelines |
+| humans             | people, participants               | work with humans; human subjects            |
+| risk assessment    | hazard evaluation                  | conduct a risk assessment                   |
+
+| **Word / Phrase** | **Synonym(s)**                | **Collocation(s)**                          |
+| ----------------- | ----------------------------- | ------------------------------------------- |
+| obvious patterns  | clear trends                  | show obvious patterns; reveal patterns      |
+| analyse data      | evaluate data, interpret data | analyse results; data analysis              |
+| correlation       | relationship, connection      | calculate correlation; positive correlation |
+| graph             | chart, diagram                | present in a graph; line graph              |
+
+
+| **Word / Phrase** | **Synonym(s)**                            | **Collocation(s)**       |
+| ----------------- | ----------------------------------------- | ------------------------ |
+| experiment        | trial, test                               | conduct an experiment    |
+| study found       | research discovered, investigation showed | a study found that…      |
+| evidence suggests | research indicates, proof shows           | strong evidence suggests |
+| participants      | subjects, respondents                     | recruit participants     |
+
+| **Word / Phrase**                   | **Synonyms & Related Phrases**                   | **Common Collocations**                       |
+| ----------------------------------- | ------------------------------------------------ | --------------------------------------------- |
+| legitimate peripheral participation | learning by observation, apprenticeship learning | engage in legitimate peripheral participation |
+| human instinct                      | intuition, gut feeling                           | rely on human instinct, follow instinct       |
+| innovation                          | creativity, breakthrough                         | foster innovation, encourage                  |
+
+| **Word / Phrase**                  | **Synonym / Paraphrase**     | **Collocation / Usage**                     |
+| ---------------------------------- | ---------------------------- | ------------------------------------------- |
+| experiment                         | trial, test, study           | conduct / carry out an experiment           |
+| artificial sweetener               | sugar substitute             | distinguish between sugar and sweeteners    |
+| keep a proper record               | maintain accurate notes      | keep records / keep track of results        |
+| sample of people                   | group of participants        | a large / representative sample             |
+| subjects unaware                   | blind test, not informed     | keep subjects unaware / blind study         |
+| problematic results                | flawed, unreliable           | problematic findings / inconclusive results |
+| measuring fat content              | testing nutritional value    | fat content measurement                     |
+| scales not accurate enough         | imprecise weighing equipment | accuracy of scales                          |
+| nutritional information on package | food label data              | check / compare with packaging info         |
+
+# Work & Careers
+
+| **Word / Phrase**                   | **Synonyms / Paraphrases**               | **Collocations**                   |
+| ----------------------------------- | ---------------------------------------- | ---------------------------------- |
+| recruitment consultant              | hiring advisor, job placement officer    | work as a recruitment consultant   |
+| career opportunities                | job prospects, employment options        | exciting career opportunities      |
+| juggle work with responsibilities   | balance work and family                  | juggle childcare and work          |
+| fast-paced environment              | dynamic workplace, high-pressure setting | thrive in a fast-paced environment |
+| low profit margins                  | tight profits, narrow earnings           | operate on low margins             |
+| sociable personality                | outgoing, extroverted                    | have a sociable personality        |
+| make one’s way up the career ladder | get promoted, career progression         | rapid career advancement           |
+| maternity cover contract            | temporary job, fixed-term post           | provide maternity cover            |
+| competitive salary                  | attractive pay, above-average wage       | earn a competitive salary          |
+| perks of the job                    | job benefits, employment advantages      | perks include …                    |
+
+# Cause & Effect Expression
+
+| Vocabulary / Collocation                    | Meaning / Notes                   | Synonyms                     |
+| ------------------------------------------- | --------------------------------- | ---------------------------- |
+| **decline in bathing contributed to**       | less bathing caused               | reduction in hygiene led to  |
+| **removal of tax led to affordability**     | tax cut caused price drop         | duty removal → accessibility |
+| **invention led to large-scale production** | discovery enabled mass production | development → expansion      |
 # Map-Related Vocabulary (Useful for Task 1)
 
 | Phrase                               | Use / Map Description Context                       |
@@ -358,3 +1056,55 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **circular series of paths**         | Describing design/layout in a maze                  |
 | **low hedges**                       | Details in describing physical structures           |
 | **a right-angle bend in the path**   | Geometric description for precise positioning       |
+
+
+# Writing task 2
+
+| **Word / Phrase**                | **Synonyms**                                   | **Collocations**                                | **Notes**                   |
+| -------------------------------- | ---------------------------------------------- | ----------------------------------------------- | --------------------------- |
+| for reasons which remain unclear | for unknown reasons, for reasons still debated | formal uncertainty phrase                       |                             |
+| milestone                        | landmark, turning point                        | milestone in architecture, milestone in history | Strong positive marker word |
+| revolutionary advance            | radical progress, groundbreaking innovation    | revolutionary advance in design                 | Strong for Task 2 essays    |
+| archetype                        | model, prototype                               | architectural archetype, design archetype       | Academic noun               |
+| significant                      | important, notable                             | significant monument, significant change        | Core academic adjective     |
+| astonish and amaze               | surprise greatly, impress deeply               | astonished researchers, amazed visitors         | More for descriptive tone   |
+
+
+
+# **📝 IELTS Grammar Trap Cheat Sheet**
+
+  
+
+## **1. ❌ Uncountable Nouns (no plural form)**
+
+  
+
+👉 Always use **singular** form, even if the meaning is “many.”
+
+Examples from IELTS themes (Education, Business, Environment, Daily life):
+
+| **Theme**     | **Uncountable Nouns**                                                                       | **Collocations**                                  |
+| ------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Education     | homework, research, knowledge, information                                                  | do homework, conduct research, gain knowledge     |
+| Business/Econ | equipment, furniture, luggage, advertising, money                                           | buy equipment, piece of furniture, spend money    |
+| Science/Tech  | evidence, data (can be plural in formal, but IELTS usually uncountable), progress, software | scientific evidence, reliable data, make progress |
+| Society/Media | advice, news, traffic, clothing, work                                                       | give advice, latest news, heavy traffic           |
+| Nature/Env    | pollution, weather, scenery, rubbish                                                        | air pollution, bad weather, beautiful scenery     |
+
+## **2. ❌ Irregular Plurals (same form in singular & plural, or special forms)**
+
+  
+
+👉 Never add **s** unless the word changes in an irregular way.
+
+| **Word**  | **Singular**   | **Plural**    | **Notes**                                      |
+| --------- | -------------- | ------------- | ---------------------------------------------- |
+| sheep     | sheep          | sheep         | Your Q40 mistake!                              |
+| deer      | deer           | deer          | Common in environment topics                   |
+| fish      | fish           | fish / fishes | “fishes” = species, but IELTS usually “fish”   |
+| species   | species        | species       | Biology texts                                  |
+| series    | series         | series        | “TV series,” “lecture series”                  |
+| offspring | offspring      | offspring     | Academic readings                              |
+| aircraft  | aircraft       | aircraft      | Transport/aviation topics                      |
+| means     | means          | means         | “a means of transport” / “many means”          |
+| data*     | datum (formal) | data          | BUT IELTS usually treats “data” as uncountable |

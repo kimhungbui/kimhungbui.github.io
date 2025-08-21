@@ -1,0 +1,188 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 15 listening test 3
+lightbox: false
+description: IELTS Practice Set 15 listening test 3
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-12
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 15 - listening test 3
+- Total Score: 36/40
+- Date: 12/08/2025
+
+
+
+# Performance Summary
+
+| Category                                      | Correct Answers | Wrong Answers | Accuracy    |
+| --------------------------------------------- | --------------- | ------------- | ----------- |
+| [Listening] Matching                          | 4               | 0             | **100.00%** |
+| [Listening theme] Assignments                 | 8               | 2             | **80.00%**  |
+| [Listening] Multiple Choice                   | 9               | 1             | **90.00%**  |
+| [Listening] Note/Form Completion              | 22              | 4             | **84.62%**  |
+| [Listening theme] Asking for information      | 9               | 1             | **90.00%**  |
+| [Listening theme] Giving a speech at an event | 9               | 1             | **90.00%**  |
+| [Topic] Health                                | 9               | 1             | **90.00%**  |
+| [Topic] History                               | 9               | 1             | **90.00%**  |
+# Recording 1
+
+
+# Recording 2
+
+Q15:
+
+Alice says:
+
+“Absolutely – we want to include all kids in the city – especially those who live on busy roads. It's here that demand is greatest. Obviously, there isn't such demand in wealthier areas... or in the suburbs where there are usually more places for children to play outside.”
+
+Key phrases: “busy roads” and “demand is greatest.”
+
+Interpretation: “most needed” (question wording) = where demand is greatest → that is areas with heavy traffic = option C.
+
+Why the other options are wrong
+
+A (wealthy areas) — contradicted directly: “there isn't such demand in wealthier areas…”
+
+B (quiet suburban areas) — contradicted directly: suburbs usually have more places for children to play, so demand is lower, not highest.
+
+3) Likely reasons you chose the wrong answer
+
+You may have misheard “busy roads” (it's easy to miss short phrases).
+
+You may have focused on the nearby mention of “wealthier areas” or “suburbs” and confused the meaning (these are comparisons, not the location where demand is greatest).
+
+You may not have linked the paraphrase: “demand is greatest” ↔ “most needed.”
+
+4) How to avoid this kind of mistake (practical tips)
+
+Read question + options BEFORE the audio — underline key words: most needed, wealthy, suburbs, heavy traffic.
+
+Predict: think what type of place/word you expect to hear (here: a place where children lack play spaces).
+
+Listen for signal words: especially, it's here that…, there isn't… — they show emphasis/contrast.
+
+Map paraphrases: match “busy roads” → “areas with heavy traffic”; “demand is greatest” → “most needed.”
+
+Eliminate contradictions: if the speaker immediately says “there isn't such demand…”, cross that option out.
+
+Take a tiny note (one or two words) at the moment you hear the key phrase — e.g., write “busy roads / demand ↑”.
+
+Don't get distracted by other nearby details — check the exact sentence containing the answer.
+
+
+I miss the word ''isn't such", i hear that demand is greatest ....- > wealthier areas
+
+busy road -> heavy traffic
+# Recording 3
+
+Firstly, i choose STRUCTURE, i fix it to HOOK, i think the word 'PROMINENT' is like the hook ?
+
+Quick transcript evidence (exact lines)
+
+For Q24: Tom says “you'll need to look at how the item is put together: what structure is it given? Bear in mind that not many people read beyond the first paragraph, so what has the journalist put at the beginning? And if, say, three are conflicting opinions… does one appear near the end…”
+
+For Q25: Tom says “what's the writer's purpose, or at least the most important one... It may seem to be to inform the public, but often it's that they want to create fear, or controversy, or to make somebody look ridiculous.”
+
+Why Q24 = STRUCTURE, not HOOK
+
+What the question asked: “the 24 … of the item, e.g. what's made prominent” → this is about how the article is organised (order, emphasis, placement).
+
+Tom's exact word was structure (“how the item is put together”). That matches the required answer.
+
+Why HOOK is wrong: a hook is only the attention‑grabbing opening/lead. The question is broader — it asks about the whole organisation/layout (where things are placed, what's prominent), not just the opening line.
+
+Takeaway: if the speaker talks about beginning / where opinions appear / what is prominent, the intended word is structure (organising principle), not just hook.
+
+Why Q25 = PURPOSE, not OPINION
+
+What Tom asked you to find: “what's the writer's purpose… It may seem to be to inform… often it's that they want to create fear, or controversy…” — these are intentions/aims (to inform, to upset, to ridicule). That's purpose.
+
+Why OPINION is wrong: Opinion = the writer's view or stance on the subject (what they think). This is related but different: purpose = why they wrote it; opinion = what they think.
+
+Tip: Listen for verbs/phrases like “to inform”, “to create fear”, “to make somebody look…” — these signal purpose/aim, not merely opinion.
+
+Practical listening tips to avoid these mistakes
+
+Listen for the exact phrasing. Exam writers often use the same word (e.g., structure, purpose). If you hear it, use it.
+
+Map categories, not single features. Decide whether the speaker talks about organisation (structure), intention (purpose), viewpoint (opinion) or technique/device (hook/headline/graphic).
+
+Spot signal words:
+
+Structure → put together, beginning, end, first paragraph, prominent, what is made prominent
+
+Purpose → to inform, to persuade, to create fear/controversy, want to…
+
+Opinion → believes, thinks, argues, suggests
+
+Hook → attention, grab, lead, opening line
+
+Predict the word type before listening (noun/adjective/plural). That helps you choose between similar options.
+
+Underline/mark the question phrase (e.g., “what … of the item”) so you know whether it asks for organisation, intention, or content.
+
+Small practice (quick drill)
+
+Read these short cues and say which label fits: STRUCTURE / PURPOSE / OPINION / HOOK
+
+“They put the critical detail in paragraph five, where few read.” → STRUCTURE
+
+“The article seems designed to alarm readers about rising costs.” → PURPOSE
+
+“The journalist argues that schools are underfunded.” → OPINION
+
+“The opening sentence uses a shocking fact to grab attention.” → HOOK
+
+# Recording 4
+
+
+1) Exact evidence from the transcript
+
+The sentence reads:
+
+“A major step toward large‑scale commercial soapmaking occurred in 1791, when a French chemist, Nicholas Leblanc, patented a process for turning salt into soda ash (Q38), or sodium carbonate.”
+
+So the speaker explicitly says “turning salt into soda ash.” The word you must fill is SALT.
+
+2) Why your answer “SOAPS” is wrong
+
+Doesn't match the spoken phrase. The speaker mentions soap several times elsewhere, which can be a distractor, but here the verb phrase is “turning ___ into …” — the thing being turned into soda ash is salt, not soap.
+
+Makes no logical sense in context. Soda ash (sodium carbonate) is an alkali used to make soap; you don't make soda ash from soap. The passage later explains that soda ash combines with fat to form soap — so soap comes after, not before.
+
+Grammatical fit. The notes ask “making soda ash from ___” so the missing word is a raw material (a substance): salt fits perfectly.
+
+3) How this mistake likely happened
+
+You heard nearby words like soap / soapmaking and jumped to that as the answer (a common trap).
+
+You may have missed the short but crucial phrase “turning salt into…”, or mis-copied during note-taking.
+
+4) How to avoid this in future (practical tips)
+
+Pre‑read the question and predict the type of word needed (here: a substance/noun).
+
+Listen for connecting words like into / from / by — they show transformation or source. (“turning X into Y” → X is the source).
+
+Underline nearby keywords in the transcript while listening (e.g., turning…into, soda ash).
+
+Don't be fooled by repeated topic words (e.g., soap). Check the exact sentence for the answer.
+
+Take minimal notes (1–2 letters) of the key word when you hear it — faster than trying to write the whole word immediately.
+
+If you're unsure, use logic: ask whether the proposed answer makes sense in the sequence described (what comes before and after).

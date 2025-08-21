@@ -228,8 +228,134 @@ Think about how to correct the highlighted language problems in red.
 8. We omit the article when we are referring to something in general or 'all' (e.g. all people, all courts etc.). We need an article (e.g. a/the) or determiner here (Some courts, two courts etc.)
 9. We need a comparative here (e.g. it will become more versatile)
 10. There is a vocabulary problem here - it is better to refer to these as 'The two outdoor courts' or 'The two courts on the outside of the building'
-11. 
-
+11. 'much' is used with uncountable nouns ('how much sugars?' etc.) 'many' is used with countable nouns (e.g. facilities). 
+12. 'like' is too informal - 'such as' or 'including' are better here
+13. It isn't clear what these 'areas' are - 'side' is better and we need more information ('the western side' of what?)
+14. This should be 'in' the corner ('on the corner' is used for outside (e.g. on the corner of  a street))
 :::
 
+## Addressing Coherence and cohesion problems
+
+The language is changed in blue. Coherence and cohesion are generally managed well in this answer. She has highlighted five problems areas where the ideas are difficult to follow, where referencing is not clear, or where the information could be more logically organized. Can we identify the problems and suggest a way to fix them?
+
+
+The two plans illustrate the main changes <font color="#0070c0">that</font> will take place in a university sports center.
+
+Overall, although the central area will be largely retained, the total area of the sports center will be extended, and more facilities will be added.
+
+In the current plan, the sports center's <font color="#245bdb">facilities</font> are limited. Within the building, there are two main facilities, one of which is <font color="#245bdb">a</font> 25-meter pool in the center, and another is <font color="#245bdb">a</font> gym <font color="#245bdb">at the back of the building</font>. <span style="background:#b1ffff">(1) To serve their functions well</span>, a changing room <font color="#245bdb">is located on the left</font>  (2) <span style="background:#b1ffff">of them</span>, and <font color="#245bdb">a seating area</font> on the eastern side of the <font color="#245bdb">building</font>. (3) <span style="background:#b1ffff">As for the reception</span>, <font color="#245bdb">it is directly opposite</font> the entrance. In terms of the outdoor areas, <font color="#245bdb">there are</font> courts on either side of the building.
+
+According to the future plans, <font color="#245bdb">the</font> sports center will become <font color="#245bdb">more</font> versatile after some changes <font color="#245bdb">are made</font>. (4) <span style="background:#b1ffff"><font color="#245bdb">The outdoor</font> courts will be removed, while <font color="#245bdb">many</font> more facilities will be added, from recreational facilities such as <font color="#245bdb">a</font> cafe on the right of the entrance, and <font color="#245bdb">a</font> sports <font color="#245bdb">shop</font> on the left, to sports facilities, <font color="#245bdb">including a</font> leisure pool on the <font color="#245bdb">western side of the center</font>, and two dance studios in the northeast corner of the building.</span> <font color="#245bdb">The</font> existing facilities are also going to be expanded including the gym, seating area, changing room and reception. The swimming pool is the only (5) <span style="background:#b1ffff">one</span> <font color="#245bdb">that</font> will remain the same in the future.
+
+:::{.callout-note}
+1. This is difficult to follow and appears to be going too far and making a comment not supported by the data (to + the infinitive tell us the reason something was done - but we have no idea why the current plan is organized like this). It would be better to think about the people who will use these facilities and begin: "Visitors have access to ..."
+2. the reference is not clear here - on the left of what? This is too far away from the mention of the pool and the gym.
+3. 'As for the reception' suggests that we have already had some information about the reception and are returning to this topic. We don't need a change in topic as this is still explaining what is 'Within the building', and the next sentence nicely changes the topic to what is outside the building ('In terms of the outdoor areas ...'). This sentence would just introduce the current reception: 'There is a ...'
+4. There is too much information included in this sentence, which makes it difficult to follow. The order of the information is not as logical as it could be - it often helps the reader if you mirror the order of information in the first paragraph. The writer has tried to separate the information into 'recreation facilities' and 'sports facilities', but it does seem that at all of these facilities are 'recreational'. Can you think of another umbrella term to use instead of 'recreational facilities'?
+5. Again, the reference here is a little unclear 'one of' what? (Think about what this refers back to)
+:::
+
+## Task achievement problems
+
+Now read through the answer after most of these changes have been made and consider Task achievement. Think to particular about the following:
+
+- Does the sample present a clear overview of the main changes (Band 7)?
+- Does it present and highlight the key features (the main changes) (Band 7)?
+- Does it 'cover the requirements of the task' (summarising the information by selecting and reporting the main features, and making comparisons where relevant) (Band 7)
+- Are there any key features missing? Are there details that are inaccurate? (Band 6)
+- What improvements can you suggest to improve this answer?
+
+***
+The two plans illustrate the main changes that will take place in a university sports center.
+
+Overall, although the central area will be largely retained, the total area of the sports center will be extended, and more facilities will be added.
+
+In the current plan, the sports center's facilities are limited. Within the building, there are two main facilities, one of which is a 25-meter pool in the center, and another is a gym at the back of the building. <font color="#245bdb">Visitors have access to</font> a changing room located on the left <font color="#245bdb">of the swimming pool</font> and a seating area on the eastern side of the building. <font color="#245bdb">There is a reception</font> directly opposite the entrance. In terms of the outdoor areas, there are courts on either side of the building.
+
+According to the future plans, the sports center will become more versatile after some changes are made. The outdoor courts will be removed, while many more facilities will be added, from recreational facilities such as a cafe on the right of the entrance, and a sports shop on the left, to sports facilities, including a leisure pool on the western side of the center, and two dance studios in the northeast corner of the building. The existing facilities are also going to be expanded including the gym, seating area, changing room and reception. The swimming pool is the only <font color="#245bdb">facility</font> that will remain the same in the future.
+***
+
+One of the main problems in this answer is that the first body paragraph looks in detail at the current plan, and the second body paragraph seems to rush through and list the main changes, which means they are not highlighted. As our task is to highlight the main changes, logically, there should be more information about the second plan than the first.
+
+:::{.callout-tip}
+Our second paragraph should work together with our first paragraph to present a clear picture of the main changes. Don't see them as completely separate. This is particularly true for map and plan tasks.
+:::
+
+Use these questions to think about how to improve the Task achivement score in this answer:
+
+![](Pasted%20image%2020250812194953.png)
+![](Pasted%20image%2020250807160458.png)
+
+
+When making your changes, think about the logical organization of the information as well as how to move to a new topic.
+
+We can see the changes her made below in blue:
+
+***
+The two plans illustrate the main changes that will take place in a university sports center.
+
+Overall, although the central area will be largely retained, the total area of the sports center will be extended, <font color="#245bdb">replacing the outdoor facilities, and more indoor facilities will be added</font>.
+
+In the current plan, the sports center's facilities are <font color="#245bdb">quite</font> limited. Within the building, there are two main facilities: <font color="#245bdb">a 25-meter pool in the center and a gym at the back of the building</font>. <font color="#245bdb">Visitors have access to a changing room and a seating area near the swimming pool</font>. There is a <font color="#245bdb">small reception near the entrance</font>. In terms of the outdoor areas, there are courts on either side of the building.
+
+According to the future plans, the outdoor courts will be removed and the central building will be expanded. More indoor sports facilities will be added, such as a new leisure pool on the western side of the center, a sports hall on the eastern side, and two dance studios in the northeast corner of the building. With the existing facilities, the gym is going to be made longer, but the swimming pool and other facilities will remain the same. In terms of the other amenities, the reception area will be in the same place but it will be wider than at present, and visitors to the new center will be able to make use of a cafe and a sports shop, which will be located near the entrance.
+
+## Point to notice
+
+- The overview now contains all of the key information. With this question, the main changes needed for a clear overview are:
+	1. The new center will be bigger
+	2. it will have more / a wider range of facilities
+	3. the outdoor facilities will be gone
+
+- Notice the order of information. In the first paragraph, this writer logically began by describing the sports facilities (this is a sports center so naturally these are the main facilities here.) It is helpful to the reader and more logical to use the same order in the second paragraph.
+- In rewriting some of the sentences, she thought about how people will use the facility (the visitors). Doing this gave her a new way to write about the changes and helped her to avoid repetition.
+- She added more comparisons in the second body paragraph to highlight the main changes that will take place - remember, this is our task here.
+
+:::{.callout-tip}
+Remember, our task is to highlight the main changes that will take place, so it is important to make comparisons to show these changes.
+:::
+
+- This answer could still be improved - it is now quite long (246 words). This is because she had to add a reference to the location of the entrance and reception in paragraph 2 so that the same detail in the first paragraph makes sense of seems relevant. This shows that the information we include in our first paragraph has an effect on the information in our second paragraph - don't see them as separate - like the two plans we are given, they work together to present a clear picture of the changes.
+- Changing the first paragraph so that the <font color="#245bdb">location</font> of the reception is not highlighted (or made to seem important) helps:
+![](Pasted%20image%2020250812200944.png)
+
+:::{.callout-tip}
+Our body paragraphs work together to present a clear picture - don't see them as separate. This is particularly true for map and plan tasks.
+:::
+
+
 # Model Answer
+
+Look at her model answer and think about:
+
+- Her overview
+- The organization - how do the paragraphs work together?
+- Vocabulary (are there any special words she used that we need to learn?)
+
+***
+The plans show a university sports center as it is now and the new layout following its redevelopment. Overall, while some outdoor facilities will be lost, the new center will be significantly larger and will cater for a wider range of sports.
+
+The sports center currently consists of a relatively small central building with an outdoor court on each side. The building houses a 25-meter pool, with a seating area and changing room, and there is a gym to the rear and a reception area to the front.
+
+Following the renovations, only the central pool and its facilities will remain the same. The building will be expanded to the east and west, removing the outdoor courts and making way for more indoor facilities. These include a leisure pool on the western side, which will be slightly larger than the existing one and will have its own changing room, and on the eastern side, a new sports hall, and two dance studios. The current gym will be lengthened so that it is double its current size. The reception area will also be widened, making it more spacious. On arrival, visitors to the new center will benefit from a third changing room, a sports shop and a cafe, all located around the reception area.
+***
+
+:::{.callout-tip}
+## Vocabulary note
+- to house = to provide space for something (NB the pronunciation is different to the noun - the final sound is 'z' not 's'.)
+- to cater for = to provide for (e.g. to provide food for / to provide facilities for)
+- more spacious = having more space
+- the rear = the back
+:::
+
+
+## Exercises
+
+Read
+
+The plans show a university sports center as it is now and the new layout following its redevelopment. Overall, while some outdoor facilities will be list. The new center will be significantly larger and will cater for a wide range of sports.
+
+
+The sports center currently consists of a relatively small central building with an outdoor court on each side. The building houses a 25-meter pool, with a seating area and changing room, and there is a gym to the rear and a reception area to the front.
+
+Following the renovations, only the central pool and its facilities remain the same. The building will be expanded to the east and west, removing outdoor courts and making way for more indoor facilities. These include a leisure pool on the western side, which will be slightly larger than the existing one, and will have its own changing room, and on the eastern side, a new sports hall, and two dance studios. The current gym will be lengthened so that it is double its current size. The reception area will also be widened, making it more spacious. On arrival, the visitors to the new center will benefit from a third changing room, a sports shop and a cafe, all located around the reception area.

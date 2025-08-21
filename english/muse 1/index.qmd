@@ -1,0 +1,89 @@
+---
+title: IELTS WRiting
+lightbox: false
+description: “Muse” and “musing” are elegant and expressive words, often used in reflective or literary English.
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-06-25
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+## **Dễ dàng xử lý Writing Task 2 với lộ trình này ![👇](https://static.xx.fbcdn.net/images/emoji.php/v9/tc7/2/20/1f447.png)** 
+
+_(Chia sẻ của một người đạt 7.5 Writing)_
+
+Hồi mới học Writing, mình rất chật vật: đọc đề là bí ý, ngồi hàng tiếng mới viết xong một bài. Lý do là mình học khá thụ động - có đề thì mới bắt đầu nghĩ ý, không nghĩ ra thì lên mạng tìm. Mà hôm nào mất mạng thì coi như… bế tắc hoàn toàn.
+
+Sau khi nhận ra cách học đó không hiệu quả, mình chuyển sang học Writing chủ động hơn, chia Writing Task 2 thành 3 yếu tố chính: cấu trúc bài, phát triển ý và từ vựng. Đây là cách mình đã áp dụng:
+
+## 1. Cấu trúc bài
+
+Đây là “xương sống” của mọi bài Writing. Không nắm cấu trúc từng dạng (opinion, discussion, pros-cons,…) thì rất khó đi đúng hướng và đạt điểm tốt.  
+![👉](https://static.xx.fbcdn.net/images/emoji.php/v9/tf0/2/16/1f449.png) Mình hệ thống lại toàn bộ các dạng Task 2 và học cấu trúc bài cho riêng từng dạng.
+
+Sau đó, mình luôn tìm ít nhất một bài mẫu để so sánh với cấu trúc đã học. Nhờ vậy, mình vừa học lý thuyết, vừa đối chiếu ngay với bài viết thực tế.
+
+Mình học **cấu trúc cho tất tần tất các dạng đề Writing** trong khoá writing của Study4, thầy dạy rất kỹ và dễ hiểu, giúp mình có hướng tiếp cận đơn giản hơn rất nhiều với writing, mọi người có thể tham khảo nha:
+
+[](https://l.facebook.com/l.php?u=https%3A%2F%2Fstudy4.com%2Fl%2FSi1OXGvE6Ig%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRjBCcEQ2bUIxTFhCZnRRYwEeFoXYhrJyfUX4OL9hZub_TgStHYr9iJQJC_XM37hmFRVmSD5-AdMfif1cCKk_aem__HVjUymHJMt5Ich91G4KbQ&h=AT0-nVXO4OB6Xdi9dvsfgLaLEE6T4QKK9oA1ZZpQUZQDwOYPpllv66GBxYB6eKvKWSM9iob2GH4IocTHPDNOi2HP1WjsyVbYlZmEIRy7vJcOCh26XfuK4_nocSTHcSeXq0Oi_24a6Q&__tn__=-UK*F&c[0]=AT0QUxL1lRCYr-BRjqLHVsUD92Lz7SCceovpryuGDmu8q7k5PlEa6G7KdMIEkiLTSNIu5B1l7g1qQmfP0GqY2gqJicvXOZUfbes3ypQ787A7UfARijviO0EmmdmQMsohbmok-DWeFu3pEoiOkF5IBeyPLLvnmUxu88TxVTTX7HNnZUMc2ons6fv6ufwxyxoJWS5TLrK0lBZboHt-tOeO3HOVQJZu-eaWmxAO)[](https://l.facebook.com/l.php?u=https%3A%2F%2Fstudy4.com%2Fl%2FSi1OXGvE6Ig%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRjBCcEQ2bUIxTFhCZnRRYwEeAHBhLN8IQO0otUqXy16NvpWcfsT9Bw-y6FeeMW1PS6VoMCE7g0f3VI7sYuo_aem_1V-1Y9UT6G_B8fPifIMNXQ&h=AT0-nVXO4OB6Xdi9dvsfgLaLEE6T4QKK9oA1ZZpQUZQDwOYPpllv66GBxYB6eKvKWSM9iob2GH4IocTHPDNOi2HP1WjsyVbYlZmEIRy7vJcOCh26XfuK4_nocSTHcSeXq0Oi_24a6Q&__tn__=-U-UK*F&c[0]=AT0QUxL1lRCYr-BRjqLHVsUD92Lz7SCceovpryuGDmu8q7k5PlEa6G7KdMIEkiLTSNIu5B1l7g1qQmfP0GqY2gqJicvXOZUfbes3ypQ787A7UfARijviO0EmmdmQMsohbmok-DWeFu3pEoiOkF5IBeyPLLvnmUxu88TxVTTX7HNnZUMc2ons6fv6ufwxyxoJWS5TLrK0lBZboHt-tOeO3HOVQJZu-eaWmxAO)[https://study4.com/l/Si1OXGvE6Ig/](https://study4.com/l/Si1OXGvE6Ig/?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExRjBCcEQ2bUIxTFhCZnRRYwEeFoXYhrJyfUX4OL9hZub_TgStHYr9iJQJC_XM37hmFRVmSD5-AdMfif1cCKk_aem__HVjUymHJMt5Ich91G4KbQ)
+
+Khoá này cũng khá rẻ nữa mà chất lượng ngoài mong đợi, mình nghĩ đây là 1 option rất đáng cân nhắc á.
+
+## 2. Phát triển ý
+
+Đây là phần mình gặp khó khăn nhất. Trước kia mình hay “bí ý” vì không biết cách tư duy. Sau đó, mình tập trung rèn kỹ năng brainstorm với 3 kỹ thuật:
+
+- Bulleting: liệt kê toàn bộ ý tưởng từ keyword, sau đó chọn lọc những ý có thể phát triển.
+    
+
+- Clustering: gom ý tưởng thành cụm, kết nối chúng để tạo main idea.
+    
+
+- The Journalistic Questions: khai thác ý bằng cách đặt câu hỏi theo 5W1H (What, Why, When, Where, Who, How).
+    
+
+Trong 3 kỹ thuật này, mình thích nhất là Bulleting vì nó giúp brainstorm tự do, không bị giới hạn. Sau khi liệt kê, mình gạch bỏ ý không liên quan và kết nối phần còn lại để ra outline hoàn chỉnh.
+
+Ví dụ với đề _“Some people think governments should invest more in public transportation instead of building more roads. To what extent do you agree or disagree?”_:
+
+- Từ keyword “public transportation”: giảm ùn tắc giao thông, bảo vệ môi trường, chi phí thấp hơn cho người dân.
+    
+
+- Từ keyword “building more roads”: giúp lưu thông nhanh hơn, hỗ trợ phát triển kinh tế, nhưng có thể gây ô nhiễm và tốn kém ngân sách.
+    
+
+Sau khi lọc, outline sẽ là:
+
+- Agree: đầu tư giao thông công cộng giảm ùn tắc, thân thiện với môi trường.
+    
+
+- Disagree: xây thêm đường giúp phát triển kinh tế, kết nối nhiều khu vực.
+    
+
+ ![👉](https://static.xx.fbcdn.net/images/emoji.php/v9/tf0/2/16/1f449.png) Ngoài brainstorm, mình duy trì thói quen đọc báo 30 phút mỗi ngày. Vì đề IELTS thường xoay quanh các vấn đề xã hội nên đây là nguồn ý tưởng cực kỳ hữu ích.
+
+## 3. Từ vựng academic cho writing
+
+Mình học từ vựng cho writing qua các bài mẫu (samples), chủ yếu từ samples trên Study4. Ở đây, bài mẫu được chia theo dạng đề (opinion, discussion,…) và theo chủ đề (education, history, city,…), tất cả đều là sample band 8.0+ trở lên. Nhờ vậy, mình vừa học từ vựng trong ngữ cảnh, vừa tham khảo thêm ideas và cách lập luận của band cao.
+
+Mình học từ vựng writing qua samples band 8.0+ ở đây nha:
+
+[](https://l.facebook.com/l.php?u=https%3A%2F%2Fstudy4.com%2Fl%2Ffz8P7VOmnHw%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRjBCcEQ2bUIxTFhCZnRRYwEewGxtfuk1kNR1ZwaduaEb8U-8RIvbTKT5CPjJJ340ozoDHwdyjwSaivgWDzI_aem_CcWeLYpg2xaaDp2nlx6P9A&h=AT0LMW743fg4KDbFig6_OMcf7K93t_1G-KyV3WC675XlUaCA9lKdRQ27uaHjgAVIt35ddSYWXa2TWFjlB_25jHJybrkO2VDO7FsEvP5TORemrfbb8ok2OyvRzTsQnBusViBJCsC4kQ&__tn__=-UK*F&c[0]=AT0QUxL1lRCYr-BRjqLHVsUD92Lz7SCceovpryuGDmu8q7k5PlEa6G7KdMIEkiLTSNIu5B1l7g1qQmfP0GqY2gqJicvXOZUfbes3ypQ787A7UfARijviO0EmmdmQMsohbmok-DWeFu3pEoiOkF5IBeyPLLvnmUxu88TxVTTX7HNnZUMc2ons6fv6ufwxyxoJWS5TLrK0lBZboHt-tOeO3HOVQJZu-eaWmxAO)[](https://l.facebook.com/l.php?u=https%3A%2F%2Fstudy4.com%2Fl%2Ffz8P7VOmnHw%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRjBCcEQ2bUIxTFhCZnRRYwEeZoe1kccqmBMb-1dxR_OAIXPZrcO-1kbiLefZYARVgisgSKCgEloTDALK5Vw_aem_D1t77XNA4ZOLTazWlkrU6w&h=AT0LMW743fg4KDbFig6_OMcf7K93t_1G-KyV3WC675XlUaCA9lKdRQ27uaHjgAVIt35ddSYWXa2TWFjlB_25jHJybrkO2VDO7FsEvP5TORemrfbb8ok2OyvRzTsQnBusViBJCsC4kQ&__tn__=-U-UK*F&c[0]=AT0QUxL1lRCYr-BRjqLHVsUD92Lz7SCceovpryuGDmu8q7k5PlEa6G7KdMIEkiLTSNIu5B1l7g1qQmfP0GqY2gqJicvXOZUfbes3ypQ787A7UfARijviO0EmmdmQMsohbmok-DWeFu3pEoiOkF5IBeyPLLvnmUxu88TxVTTX7HNnZUMc2ons6fv6ufwxyxoJWS5TLrK0lBZboHt-tOeO3HOVQJZu-eaWmxAO)[https://study4.com/l/fz8P7VOmnHw/](https://study4.com/l/fz8P7VOmnHw/?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExRjBCcEQ2bUIxTFhCZnRRYwEeAHBhLN8IQO0otUqXy16NvpWcfsT9Bw-y6FeeMW1PS6VoMCE7g0f3VI7sYuo_aem_1V-1Y9UT6G_B8fPifIMNXQ)
+
+Sau khi áp dụng cách học này, mình thấy Writing dễ thở hơn hẳn: brainstorm nhanh hơn, có nhiều từ vựng để triển khai, và mình tự tin hơn khi làm bài rất nhiều ![😗](https://static.xx.fbcdn.net/images/emoji.php/v9/t93/2/16/1f617.png) 
+
+Chúc mọi người ôn thi hiệu quả!
+
+Cre: Trang Anh

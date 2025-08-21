@@ -1,0 +1,639 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 16 listening test 1
+lightbox: false
+description: IELTS Practice Set 16 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-14
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 16 - listening test 1
+- Total Score: 37/40
+- Date: 14/08/2025
+
+
+
+# Performance Summary
+
+All my mistakes in that test were related to singular/plural prediction.
+
+Today i get 37/40 ielts, all wrong in plural/singular, I can learn the acceptance/decline type question in task 3 of the previous test, and do the test correctly
+
+I think maps in listening is my advantage, i can look at the map and easier to think and hear.
+
+# Recording 1
+
+It looks like your mistake in **Q8** (“WEDNESDAY” vs. “WEDNESDAYS”) comes down to a common IELTS listening trap — **plural vs. singular forms**.
+
+  
+
+Here’s why:
+
+1. **Exact wording in the audio**
+    
+    Sarah says:
+    
+    > “…so we moved them to **Wednesdays**.”
+    
+    > She’s talking about the _recurring schedule_, meaning _every Wednesday_, so the plural form is grammatically correct.
+    
+2. **Why singular “Wednesday” is wrong**
+    
+    IELTS marking is strict — the answer must match exactly what’s said in the recording (spelling and plurality included).
+    
+    Even though “Wednesday” might make sense to you as a day, it’s not what the speaker said, so it’s marked wrong.
+    
+3. **Key listening clue**
+    
+    When you hear a **day of the week** in plural form, it usually means a repeated weekly event:
+    
+    - “Classes are on Mondays.” (every Monday)
+        
+    - “Meetings take place on Fridays.” (every Friday)
+        
+    
+4. **Tip to avoid this mistake**
+    
+    - When listening, always pay attention to **-s** endings on days, months, and nouns.
+        
+    - In notes completion tasks, write _exactly_ what you hear, even if you think the singular sounds more natural.
+
+In natural English, that final /s/ is often very soft or blended into the next word, so it’s almost invisible unless you train your ear.
+
+  
+
+Here’s how you can _predict_ plural vs. singular even when you don’t hear the sound clearly:
+
+---
+
+### **Use grammar logic**
+
+  
+
+Look at the sentence structure and the verb form.
+
+- **Plural** → often with plural verbs:
+    
+    “We moved them to **Wednesdays**.” → _them_ = many classes → must be plural days.
+    
+- **Singular** → often with “this” or “next”:
+    
+    “It’s on **Wednesday** next week.” (one time only)
+    
+
+---
+
+### **Listen for context**
+
+  
+
+Ask yourself:
+
+- Is this talking about a **regular schedule**? → plural.
+    
+- Is it a **single event**? → singular.
+    
+
+  
+
+In Q8’s case, they were talking about the _regular weekly class_, so “Wednesdays” fits.
+
+---
+
+### **Watch for connecting sounds**
+
+  
+
+Native speakers link words:
+
+- “on Wednesdays at ten” might sound like **“on Wenzdaysat ten”**.
+    
+- The /s/ merges into the “at” sound, so you don’t hear it as a separate hiss.
+    
+
+  
+
+You can train your ear by slowing down recordings (0.75x speed) and replaying just the day-of-week phrases.
+
+---
+
+### **4. Use prediction before the audio**
+
+  
+
+Before listening, scan the notes:
+
+If you see “Held on (8) ______ from 10 am to 11 am” and the topic is weekly workshops → 80% chance it’s plural.
+
+---
+
+## **Step 1 - Know the "plural day" sound patterns**
+
+When native speakers say them quickly:
+
+| **Word**   | **Fast speech sounds like** | **Example sentence**                       |
+| ---------- | --------------------------- | ------------------------------------------ |
+| Mondays    | **Mundez** /ˈmʌn.deɪz/      | “Classes are on **Mundez** at nine.”       |
+| Tuesdays   | **Choos-dez** /ˈtʃuːz.deɪz/ | “We meet on **Choos-dez** in the lab.”     |
+| Wednesdays | **Wenz-dez** /ˈwenz.deɪz/   | “It’s on **Wenz-dez** mornings.”           |
+| Thursdays  | **Thurz-dez** /ˈθɜːrz.deɪz/ | “Workshops are **Thurz-dez** after lunch.” |
+| Fridays    | **Fry-dez** /ˈfraɪ.deɪz/    | “We play football on **Fry-dez**.”         |
+| Saturdays  | **Sat-uh-dez** /ˈsætə.deɪz/ | “We open on **Sat-uh-dez** only.”          |
+| Sundays    | **Sun-dez** /ˈsʌn.deɪz/     | “The market’s on **Sun-dez**.”             |
+
+
+Notice the final **/z/** sound merges with the next word.
+
+---
+
+
+
+## **Step 2 – Context prediction**
+
+  
+
+Plural → for repeated weekly events:
+
+- “We moved them to **Wednesdays**.”
+    
+- “It’s always on **Fridays**.”
+    
+
+  
+
+Singular → for one-off or fixed date:
+
+- “It’s on **Wednesday** next week.”
+    
+- “The event is this **Friday**.”
+    
+
+---
+
+## **Step 3 – Listening drill**
+
+  
+
+I’ll give you pairs. Your job: decide **SINGULAR** or **PLURAL**.
+
+1. “The meetings are on **Wenz-dez** mornings at ten.”
+    
+2. “We’ll see you this **Thursday** at the park.”
+    
+3. “Classes run on **Choos-dez** all month.”
+    
+4. “The exam is on **Monday** the 14th.”
+    
+5. “Our practice sessions are always on **Fry-dez**.”
+# Recording 2
+
+## **Multiple‑choice traps (Q11–Q14)**
+
+- **Q11 – Founded year**
+    
+    - Dates flying around: **1923** (entered steel industry), **1924** (started planning), **1926** (**founded**).
+        
+    - **Trap:** picking the _earlier_ dates that sound important.
+        
+    - **Answer logic:** “He **set up this company** … **in 1926**.”
+        
+    
+- **Q12 – Original products**
+    
+    - Long‑term plan: machine tools + automotive.
+        
+    - **But** a 5‑year **delay** to make goods for **hospitals/healthcare**.
+        
+    - **Trap:** choosing what was _planned_ instead of what actually **happened first**.
+        
+    - **Answer logic:** Healthcare.
+        
+    
+- **Q13 – Premises (move vs refurbish)**
+    
+    - “Site is big enough, so **moving … has never been necessary**,” and they **intend to refurbish**.
+        
+    - **Trap:** hearing “major refurbishment” and assuming **moving**.
+        
+    - **Answer logic:** **No plans to move** (refurbish current site).
+        
+    
+- **Q14 – Programme content**
+    
+    - “Most mornings you’ll have a **presentation** from a **manager**.”
+        
+    - Teacher visit **not** this year; no time allocated for independent research.
+        
+    - **Trap:** picking “meetings with a teacher” or “time to do research.”
+        
+    - **Answer logic:** **Talks by staff**.
+        
+    
+
+  
+
+## **Map‑label traps (Q15–Q20)**
+
+  
+
+General map strategy:
+
+- **Fix your orientation**: Reception as starting point; note **left/right**, **facing you**, **far side**, **past**, **at the end**.
+    
+- **Windows/views help**: “looks out onto the **main road** / **trees** / **courtyard**” = placement clues.
+    
+- **Road access**: Lorries, turning area → **warehouse** side.
+    
+
+  
+
+Item‑by‑item cues:
+
+- **Q15 – Coffee room**
+    
+    - “Corridor **left** from reception → door **facing you** at the **end**.”
+        
+    - “Looks out onto **main road** (one side) and **trees** (other).”
+        
+    - **Traps:** confusing “facing you” with left/right doors; ignoring view clues.
+        
+    
+- **Q16 – Warehouse**
+    
+    - “Next to factory.”
+        
+    - “Accessed by lorries … **turning area** at the end.”
+        
+    - “Cross to **far side** of courtyard → **door on your right**.”
+        
+    - **Traps:** picking the factory instead; mixing up near‑side vs far‑side.
+        
+    
+- **Q17 – Staff canteen**
+    
+    - “**Right next to reception**.”
+        
+    - Views are **poor** (corridor/courtyard or access road).
+        
+    - **Trap:** choosing a room with nice view; forgetting the “next to reception” anchor.
+        
+    
+- **Q18 – Meeting room**
+    
+    - “Walk along corridor **to the left of the courtyard** → **to the end** → **last on the right**.”
+        
+    - “**No natural daylight**.”
+        
+    - **Trap:** selecting any right‑hand room; missing “**last** on the right.”
+        
+    
+- **Q19 – Human Resources**
+    
+    - “At the **front** of this building.”
+        
+    - “From reception, go **left**; it’s the **second room** you come to.”
+        
+    - “Looks out onto the **main road**.”
+        
+    - **Trap:** picking the first room; ignoring the “front/main road” view.
+        
+    
+- **Q20 – Boardroom**
+    
+    - “Go along the corridor **past the courtyard**, **right to the end**.”
+        
+    - “On the **left**, **next to the factory**; view of the **trees**.”
+        
+    - **Traps:** choosing a right‑hand room at the end; ignoring adjacency to the factory.
+        
+    
+
+  
+
+# **Paraphrases & signal words that hide answers**
+
+- **Founded/set up** = established.
+    
+- **Went into production** ≠ founded.
+    
+- **Premises** = buildings/site; **layout far from ideal** → refurbishment, not relocation.
+    
+- **Carry out major refurbishment** = upgrade the same site.
+    
+- **Accessed by lorries / turning area** = warehouse zone.
+    
+- **Facing you / at the end / far side** = orientation markers.
+    
+- **Looks out onto** (main road/trees/courtyard) = view anchor.
+    
+
+  
+
+# **Micro‑listening tips for maps**
+
+- **Underline directionals** while reading: left / right / at the end / past / next to / on your right.
+    
+- **Circle view nouns**: main road / trees / courtyard / access road.
+    
+- **Sketch quick arrows** from reception to each target as they speak.
+    
+- **Pause prediction**: before the location noun, predict likely zone (e.g., warehouse near lorry access).
+    
+
+  
+
+# **Quick practice prompts (self‑check)**
+
+- “Door **facing you** at the **end**” → Which letter is directly ahead, not left/right?
+    
+- “**Second room** on the left from reception; **front** of building; **main road** view” → Which letter matches all three?
+    
+- “**Next to** factory; view of **trees**” → Boardroom, not warehouse.
+
+# Recording 3
+
+## **Q21–Q22: Introductory stage – useful parts**
+
+  
+
+**Theme:** _Introductory stage activities_
+
+  
+
+**Key details:**
+
+- **Handouts with research sources**: Jess says _“I was put off, but the more I read, the more interested I got”_ → useful.
+    
+- **Natural History Museum**: Both agree _“much more use than Bird Park”_ → useful.
+    
+- **Bird Park visit**: Disappointment, so **not** chosen.
+    
+- **Workshop sessions**: Only Tom attended; Jess missed them → not both.
+    
+- **Projects from previous years**: They _wish_ they had them, but didn’t → not useful.
+    
+
+  
+
+**Traps:**
+
+- Mention of **Bird Park** first might make you tick it; but their reaction is negative.
+    
+- Workshop sessions are praised, but only one attended → wrong for “both agree.”
+    
+
+  
+
+**Answers:** **E** (handouts) + **C** (Natural History Museum).
+
+---
+
+## **Q23–Q24: Proposal changes**
+
+  
+
+**Theme:** _Adjustments to proposals_
+
+  
+
+**Key details:**
+
+- Tom: notes are only descriptions, needs to **evaluate** → Jess: _“I’ll have to look at that too”_ → **E** (more evaluative notes).
+    
+- Jess: _“Best not to be too precise about actual outcome”_ → Tom: _“OK, I’ll change that too”_ → **B** (less specific about outcome).
+    
+- **Rationale for action plans**: Only Jess did it, Tom will add → **not** both.
+    
+- **Video diary presentation**: Tom already did, Jess didn’t say she will → **not** both.
+    
+- **Timeline/mind map**: Both already did → not a **change**.
+    
+
+  
+
+**Traps:**
+
+- They talk about several tasks in one go; but question is only about **changes** they’ll make now.
+    
+- Some items are **already done**, so irrelevant.
+    
+
+  
+
+**Answers:** **E** + **B**.
+
+---
+
+## **Q25–Q30: Personal meanings**
+
+  
+
+**Theme:** _Interpreting art pieces personally_
+
+  
+
+**Key mapping:**
+
+| **Q#** | **Artwork**                    | **Key words in dialogue**                                 | **Answer** |
+| ------ | ------------------------------ | --------------------------------------------------------- | ---------- |
+| 25     | Falcon (Landseer)              | _“staring straight at you” → “possible danger suggested”_ | **D**      |
+| 26     | Fish hawk (Audubon)            | _“swooping” → “rapid motion”_                             | **C**      |
+| 27     | Kingfisher (Van Gogh)          | _“saw a real one as a child with my grandfather”_         | **A**      |
+| 28     | Portrait of William Wells      | _“ambiguous about exploiting nature”_                     | **H**      |
+| 29     | Vairumati (Gauguin)            | _“reference to never-ending cycle of existence”_          | **F**      |
+| 30     | Portrait of Giovanni de Medici | _“holding it carefully so he doesn’t hurt it”_            | **G**      |
+
+**Traps:**
+
+- Some answers are implied by **paraphrase**, not exact word:
+    
+    - “Possible danger” → **potential threat**.
+        
+    - “Never-ending cycle” → **continuity of life**.
+        
+    - “Holding carefully” → **protection of nature**.
+        
+    
+- The box has distractors (**B**, **E**) that are never mentioned.
+    
+
+---
+
+## **General listening traps for Part 3**
+
+1. **Mutual agreement filter** – If question says “both agree,” check that both speakers confirm it (even briefly).
+    
+2. **Change vs already done** – For proposal questions, “change” means new modification, not something they completed earlier.
+    
+3. **Personal meaning** – Often requires **inference** from description rather than direct label in audio.
+    
+4. **Negative vs positive opinion** – Don’t tick something just because it’s discussed early; listen for positive or negative reaction.
+    
+5. **Paraphrasing** – IELTS will rephrase the answer, so match meaning, not exact words.
+# Recording 4
+
+I'm wrong in 39 and 40, both in plural/singular prediction.
+
+
+☑️ In business, people benefit from Stoicism by identifying obstacles as **(39)** ……………………….. .  
+  
+**Relevance of Stoicism**  
+☑️ It requires a lot of **(40)** ……………………….. but Stoicism can help people to lead a good life.
+
+
+Let’s break down why **Q39** and **Q40** were _singular_ despite your prediction:
+
+---
+
+### **Q39: Obstacles → opportunity**
+
+  
+
+> “…Stoics teach **turning obstacles into opportunity**.”
+
+  
+
+- **Why singular?**
+    
+    “Opportunity” here is an _uncountable concept_ — like “freedom” or “happiness.”
+    
+    The idea is that _all obstacles together_ can be transformed into _the general idea of opportunity_, not multiple individual opportunities.
+    
+- **Plural trap:**
+    
+    The plural “obstacles” nearby makes our brain want symmetry (“opportunities”), but grammar meaning overrules symmetry here.
+    
+
+---
+
+### **Q40: A lot of → practice**
+
+  
+
+> “It requires a lot of practice, but Stoicism can help people…”
+
+  
+
+- **Why singular?**
+    
+    “Practice” here is uncountable (meaning _the act of practising_).
+    
+    Uncountable nouns don’t take plural even after “a lot of.”
+    
+    Compare:
+    
+    - “a lot of work” ✅ (uncountable)
+        
+    - “a lot of books” ✅ (countable plural)
+        
+    
+- **Plural trap:**
+    
+    We’re trained to think “a lot of” = plural, but it only does that with countable nouns.
+### **The takeaway skill**
+
+  
+
+When predicting plural/singular in listening:
+
+1. **Check the noun type** in your head:
+    
+    - **Countable →** can be plural (“opportunities”) or singular (“opportunity”).
+        
+    - **Uncountable →** always singular form (“practice”).
+        
+    
+2. **Don’t be misled by nearby plurals** — they don’t force the answer to match.
+    
+3. **Listen for context meaning**: Are they talking about _a general idea_ or _individual items_?
+
+## **Q39 – “opportunity” vs “opportunities”**
+
+  
+
+**Transcript:**
+
+  
+
+> Stoics teach turning obstacles into opportunity.
+
+  
+
+- Here the word is **singular** (“opportunity”) because it’s talking about the general idea of **seeing challenges as a single type of positive outcome**, not listing multiple separate chances.
+    
+- In IELTS listening, when the speaker uses **into opportunity** (no “an” or “the”), it’s usually uncountable or general — same as “into gold” or “into power.”
+    
+- If it were plural, you’d hear a clearer “opportunities,” with a small /z/ sound at the end.
+    
+
+  
+
+**Tip:**
+
+If the word follows **“into”** and is used conceptually, lean towards singular.
+
+---
+
+## **Q40 – “practice” vs “practices”**
+
+  
+
+**Transcript:**
+
+  
+
+> This is not as easy as it sounds and will require considerable practice.
+
+  
+
+- Here it’s **uncountable** — meaning “a lot of doing something to improve a skill,” not “different methods” (which would be “practices”).
+    
+- In IELTS listening, **considerable** often precedes uncountable nouns like “time,” “effort,” “practice,” “work.”
+    
+- Plural “practices” would refer to “customs” or “ways of doing things” — different meaning.
+    
+
+  
+
+**Tip:**
+
+If preceded by **a lot of**, **considerable**, **much**, **little**, or **some**, the noun is likely uncountable and singular.
+
+---
+
+## **Quick** **Plural/Singular Prediction** **Signals for IELTS Listening**
+
+|**Signal in Audio**|**Likely Form**|**Example**|
+|---|---|---|
+|After “a lot of”, “much”, “considerable”|Uncountable (singular)|considerable practice|
+|After “many”, “several”, “a number of”|Plural|several opportunities|
+|Following “into” in a figurative sense|Singular|turn problems into opportunity|
+|Talking about types/kinds|Plural|business practices|
+|General concept or quality|Singular|seek happiness, show courage|
+
+
+**Tip:**
+
+If the word follows **“into”** and is used conceptually, lean towards singular.
+
+
+If preceded by **a lot of**, **considerable**, **much**, **little**, or **some**, the noun is likely uncountable and singular.
+
+1. - Is it a _general concept_? → singular.
+        
+    - Is it _individual items_? → plural.
+

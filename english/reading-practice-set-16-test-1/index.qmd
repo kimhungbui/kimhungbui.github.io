@@ -1,0 +1,760 @@
+---
+title: Reading practice - mistake log IELTS Practice Set 16 listening test 1
+lightbox: false
+description: IELTS Practice Set 16 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-15
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 16 - listening test 1
+- Total Score: 34/40
+- Date: 15/08/2025
+
+
+
+# Performance Summary
+
+**Part 1 – Why We Need to Protect Polar Bears**
+
+- **Accuracy:** 13/13 correct.
+    
+- **Strengths:** Perfect performance in TRUE/FALSE/NOT GIVEN and ONE WORD ONLY tasks. Excellent trap recognition and precise detail matching.
+    
+- **Comment:** Section mastered — no need to adjust approach.
+    
+
+---
+
+**Part 2 – The Step Pyramid of Djoser**
+
+- **Accuracy:** 5/7 correct — wrong on Q14, Q16, Q20 (_Matching Headings_).
+    
+- **Error Pattern:** Chose headings based on interesting details rather than the main focus of the paragraph.
+    
+- **Strengths:** Strong in factual detail scanning — all gap-fill and multiple-choice correct.
+    
+- **Next Step:**
+    
+    - Summarise paragraph in 3–5 words before looking at heading options.
+        
+    - Ignore eye-catching details if they are not the paragraph’s central theme.
+        
+    
+
+---
+
+**Part 3 – The Future of Work**
+
+- **Accuracy:** Missed Q27, Q29 (matching opinions) and Q38 (detail).
+    
+- **Q27 & Q29:** Mistakes came from assuming a viewpoint matched a keyword in the text without confirming the _speaker_.
+    
+- **Q38:** Selected a number mentioned near the topic but not actually answering the question.
+    
+- **Strengths:** Good understanding of main arguments and vocabulary — errors were precision-related, not comprehension-related.
+    
+- **Next Step:**
+    
+    - For matching opinions: underline the _speaker’s name_ and scan for synonyms of their view, not just keywords from the question.
+        
+    - For figures: re-check the exact question demand (time period, category, or scope) before selecting.
+        
+    
+
+---
+
+**Overall Reading Estimate:** ~34/40 → Band 8.0.
+
+- **Strengths:** Detail scanning, strong vocabulary comprehension, accurate in TFNG.
+    
+- **Weaknesses:** Matching Headings (Part 2) and attribution for opinions (Part 3), plus occasional number/date misreads.
+    
+- **Improvement Plan:**
+    
+    - 10-min daily drill: 4–5 matching headings + 4–5 matching opinions mixed.
+        
+    - Weekly “trap review” of number/date questions.
+
+If you **force yourself after each part** to:
+
+1. **Locate the cue** — highlight or underline the exact sentence/phrase in the passage that justifies your answer.
+    
+2. **Check it matches the question’s scope** — time frame, subject, and perspective all match.
+    
+3. **Check you didn’t use background knowledge** — only the text.
+    
+
+  
+
+This “cue verification” step will:
+
+- Stop heading mistakes (because you’ll see if your heading matches the _whole_ paragraph, not just a detail).
+    
+- Stop opinion mix-ups (you’ll confirm the cue is linked to the right person).
+    
+- Stop number/date errors (you’ll double-check it’s the one the question asked for).
+    
+
+  
+
+It might add **2–3 minutes per section** in practice now, but by test day it will be automatic.
+
+# Part 1
+
+## **True / False / Not Given (Questions 1–7) — analysis & traps**
+
+  
+
+**Q1.** _Polar bears suffer from various health problems due to the build-up of fat under their skin._ — **FALSE**
+
+- **Why:** Passage says humans with similar fat would be obese and get diabetes/heart disease **but** “the polar bear experiences no such consequences.” That directly contradicts the statement.
+    
+- **Trap:** The text compares humans → distracts you into thinking fat = illness. Always check who the comparison refers to.
+    
+
+  
+
+**Q2.** _The study done by Liu and his colleagues compared different groups of polar bears._ — **FALSE**
+
+- **Why:** The study compared **polar bears with brown bears** (their relatives in warmer climates), not different groups of polar bears.
+    
+- **Trap:** The word _compared_ appears — setters try to trick you by changing the comparison object (groups of polar bears vs. polar vs. brown).
+    
+
+  
+
+**Q3.** _Liu and colleagues were the first researchers to compare polar bears and brown bears genetically._ — **NOT GIVEN**
+
+- **Why:** The passage reports the study and its findings but **does not say** whether they were the first to do such a comparison. No info = NOT GIVEN.
+    
+- **Trap:** “First” is a strong claim — absence of explicit wording = NOT GIVEN.
+    
+
+  
+
+**Q4.** _Polar bears are able to control their levels of bad cholesterol by genetic means._ — **TRUE**
+
+- **Why:** Liu et al. found a gene (APoB) in polar bears that reduces LDL (“bad” cholesterol). The statement paraphrases that genetic basis.
+    
+- **Trap:** Watch words like _control_ — here it’s acceptable because the passage attributes the LDL reduction to a gene.
+    
+
+  
+
+**Q5.** _Female polar bears are able to survive for about six months without food._ — **TRUE**
+
+- **Why:** The passage explicitly describes ~six months of fasting in maternity dens. That matches “survive…without food.”
+    
+- **Trap:** None big — exact phrase appears.
+    
+
+  
+
+**Q6.** _It was found that the bones of female polar bears were very weak when they came out of their dens in spring._ — **FALSE**
+
+- **Why:** The study found **no evidence of significant loss of bone density** when they emerged. The statement says the opposite.
+    
+- **Trap:** Be careful with negative wording (“no evidence” vs “very weak”) — they flip meaning.
+    
+
+  
+
+**Q7.** _The polar bear’s mechanism for increasing bone density could also be used by people one day._ — **TRUE**
+
+- **Why:** The passage: _“If the mechanism … can be understood, many bedridden humans, and even astronauts, could potentially benefit.”_ That directly supports the statement.
+    
+- **Trap:** “Could be used” is hypothetical — passage uses the same conditional; therefore TRUE.
+    
+
+---
+
+## **Table completion (Questions 8–13) — exact-word justification & distractors**
+
+  
+
+You answered: **8 VIOLENT, 9 TOOL, 10 MEAT, 11 PHOTOGRAPHER, 12 GAME, 13 FRUSTRATION.** All correct. Here’s why and what to watch for.
+
+- **Q8 VIOLENT**
+    
+    - **Where:** “Bears… seem to be perceived as stupid and in many cases violent.”
+        
+    - **Trap:** Passage also uses _stupid_ — the question asks for the contrasting perception, so **violent** is the precise word.
+        
+    
+- **Q9 TOOL**
+    
+    - **Where:** Tennoji Zoo — “used a tree branch on multiple occasions to dislodge a piece of meat…” → branch used as a **tool**.
+        
+    - **Trap:** Could be tempted by synonyms like “instrument” — but the exam demands the word used in the text (TOOL).
+        
+    
+- **Q10 MEAT**
+    
+    - **Where:** The branch was used “to dislodge a piece of **meat** hung out of his reach.”
+        
+    - **Trap:** “Food” or “prey” are possible distractors, but MEAT is the exact word used.
+        
+    
+- **Q11 PHOTOGRAPHER**
+    
+    - **Where:** Wild bear “ran and jumped onto barrels in an attempt to get to a **photographer** standing on a platform four metres high.”
+        
+    - **Trap:** Don’t pick “platform” — the question asks who was on the platform (photographer).
+        
+    
+- **Q12 GAME**
+    
+    - **Where:** Annes observed bears “putting objects in piles and then knocking them over in what appeared to be a **game**.”
+        
+    - **Trap:** “Play” is tempting, but the passage says **game** — and the instruction required ONE WORD ONLY.
+        
+    
+- **Q13 FRUSTRATION**
+    
+    - **Where:** “They may make movements suggesting **frustration** if disappointed when hunting.”
+        
+    - **Trap:** “Anger” or “aggression” could seem plausible, but **frustration** is the explicit emotion named.
+        
+    
+
+---
+
+# **Test strategy reminders & why you didn’t fall for traps**
+
+1. **Find the exact sentence that relates to the statement** — you did this well. TFNG requires reference-level precision, not general sense.
+    
+2. **Watch comparisons carefully** (Q1, Q2). The passage often compares species or humans — note exactly who the comparison applies to.
+    
+3. **Be wary of “first / always / never / all”** claims — these often lead to NOT GIVEN or FALSE unless explicitly stated.
+    
+4. **Use the passage wording for table completions.** The exam usually expects the exact word or an obvious synonym used in the text; because you used the words actually in the passage, you were correct.
+    
+5. **Single-word answers:** follow the instructions strictly — ONE WORD ONLY, correct form. (e.g., GAME not “playing”.)
+
+# Part 2
+
+## **Quick summary — correct headings (A–G)**
+
+- A → **IV** (A single certainty among other less definite facts)
+    
+- B → **VII** (An idea for changing the design of burial structures)
+    
+- C → **II** (A difficult task for those involved)
+    
+- D → **V** (An overview of the external buildings and areas)
+    
+- E → **I** (The areas and artefacts within the pyramid itself)
+    
+- F → **VIII** (An incredible experience despite the few remains)
+    
+- G → **VI** (A pyramid design that others copied)
+    
+
+---
+
+## **Q14 — Paragraph A**
+
+  
+
+**You chose:** VI (pyramid design others copied) — **Wrong**
+
+**Correct:** IV
+
+  
+
+**Why IV?**
+
+Paragraph A is saying: “There’s long debate about pyramid evolution, but _one_ certain fact remains — it began with this single monument designed by one architect.” That is literally _one certainty among other less definite facts_.
+
+  
+
+**Key cue:** _“However, there is no question that… it began with one monument … designed by one brilliant architect.”_ → main idea = a single certainty.
+
+  
+
+**Why VI is tempting but wrong:** VI (others copied the design) is true for the passage overall, but Paragraph A is not about later pyramids copying Djoser’s — it’s about the _certainty that the pyramid story begins here_. The “copy” idea is stated later (paragraph G).
+
+---
+
+## **Q16 — Paragraph C**
+
+  
+
+**You chose:** IV — **Wrong**
+
+**Correct:** II (A difficult task for those involved)
+
+  
+
+**Why II?**
+
+Paragraph C describes _experimentation_ and _construction challenges_: multiple plans, weight issues, inward inclines to prevent collapse. The emphasis is on the **builders’ challenge** and difficulty.
+
+  
+
+**Key cue:** _“Much experimentation was involved… The weight of the enormous mass was a challenge for the builders…”_ → main idea = difficulty of the task.
+
+  
+
+**Why IV was tempting but wrong:** Paragraph C discusses construction stages, but the focus is the **practical difficulty**, not a “single certainty” like paragraph A. So II fits better.
+
+---
+
+## **Q20 — Paragraph G**
+
+  
+
+**You chose:** II — **Wrong**
+
+**Correct:** VI (A pyramid design that others copied)
+
+  
+
+**Why VI?**
+
+Paragraph G explicitly states the Step Pyramid’s _revolutionary_ role and that it became the **archetype** other pyramid builders followed.
+
+  
+
+**Key cue:** _“this pyramid complex constitutes a milestone… The Step Pyramid was a revolutionary advance … became the archetype which all the other great pyramid builders of Egypt would follow.”_ → main idea = copied/imitated design.
+
+  
+
+**Why II was tempting but wrong:** Paragraph G praises importance and influence; it doesn’t emphasise difficulty. The “challenge” language was in paragraph C.
+
+---
+
+## **Quick rules to avoid these mistakes (Matching Headings)**
+
+1. **Read the paragraph before looking at headings.**
+    
+    Form a 3–5 word summary of the _main idea_ (not details).
+    
+2. **Check the topic sentence (first or last sentence).**
+    
+    IELTS paragraphs often signal the main idea there.
+    
+3. **Match meaning, not words.**
+    
+    Headings use paraphrase. Look for synonyms and concept-level matches.
+    
+4. **Compare scope.**
+    
+    Headings that sound correct but are _too narrow_ (detail) or _too broad_ can be rejected.
+    
+5. **Eliminate distractors that match only one example.**
+    
+    If a heading matches just one sentence or example, it’s likely a trap.
+    
+6. **Use process of elimination.**
+    
+    If two headings seem possible, prefer the one that covers the _entire_ paragraph.
+    
+
+---
+
+## **4‑step method to practice (10–15 mins per day)**
+
+1. Cover the heading list. Read each paragraph and write your own 3-word title.
+    
+2. Uncover headings and pick the one that matches your 3‑word title.
+    
+3. If stuck between two, ask: _“Does this heading summarise the whole paragraph?”_
+    
+4. Time yourself: aim 1–1.5 minutes per paragraph.
+
+
+# Part 3
+
+| **Q#** | **Mistake Type**     | **Cause**                                             | **Fix**                                          |
+| ------ | -------------------- | ----------------------------------------------------- | ------------------------------------------------ |
+| 27     | Main idea vs example | Got distracted by side detail                         | Summarise paragraph in 5 words before options    |
+| 29     | Action detail        | Matched general behaviour, missed active manipulation | Focus on verbs showing exact action              |
+| 38     | Scope mismatch       | Picked narrow focus instead of broad                  | Check if scope in text matches scope in question |
+## **Q27 – You chose D → Correct answer: B**
+
+  
+
+**Question:** The first paragraph tells us about…
+
+  
+
+**Why wrong:**
+
+- You were distracted by the mention of _embodied AI_ vs _disembodied AI_ in the paragraph, which matches option **D** superficially.
+    
+- The real focus of the first paragraph was **how AI will alter the nature of work** — global workforce adaptation, job switching, evolving occupations — not the differences between AI types.
+    
+- Mention of embodied vs disembodied AI was an _example_, not the main message.
+    
+
+  
+
+**Lesson:**
+
+- **Look for the main idea of the paragraph, not interesting side points.** In IELTS, side points often match wrong options perfectly (distractor trap).
+    
+- Strategy: Before looking at the options, summarise the paragraph in **5 words** in your head, then match the option that fits.
+    
+
+---
+
+## **Q29 – You chose D → Correct answer: C**
+
+  
+
+**Question:** What did Pachidi observe at the telecommunications company?
+
+  
+
+**Why wrong:**
+
+- You probably saw that staff were “dependent” on the algorithm and linked it to “allowing AI to carry out tasks they ought to do themselves” (D).
+    
+- But the key detail in the passage: _“workers feed the algorithm with false data to reach their targets”_ — this is actively **manipulating the AI** to get the result they want → **C**.
+    
+- D is too passive; the staff were active in _making sure AI produced desired results_.
+    
+
+  
+
+**Lesson:**
+
+- In “what did they observe” questions, **focus on the concrete action** observed, not the general behaviour.
+    
+- Strategy: Underline verbs showing action in the text — that’s usually what the correct answer will reflect.
+    
+
+---
+
+## **Q38 – You chose C → Correct answer: A**
+
+  
+
+**Question:** It is important to be aware of the range of problems that AI causes.
+
+  
+
+**Why wrong:**
+
+- C (Ewan McGaughey) talks about policy and social reform, but **awareness of problems** was actually from Pachidi’s perspective: “We need to make sure we fully understand the dilemmas that this new world raises…”
+    
+- You may have been matching the idea of “problems” with “unemployment” in McGaughey’s section, but that’s too narrow.
+    
+- The original statement is broader — “dilemmas” = a _range_ of potential problems.
+    
+
+  
+
+**Lesson:**
+
+- When matching researchers, look for the _scope_ of the statement: if the question says “range of problems”, check whether the person talks broadly or narrowly.
+    
+- Strategy: Mark in the margin the “theme” each researcher covers, so you can match later without rereading everything.
+    
+
+**Overall:**
+
+Your mistakes come from **picking the tempting partial match** instead of the _most complete match to the main idea_.
+
+This is **classic for Band 8–8.5 readers** — the jump to Band 9 means getting ruthless about:
+
+- Main idea extraction
+    
+- Exact action identification
+    
+- Scope matching
+
+Here’s your **IELTS Reading “Distractor Filter” checklist** — built specifically to stop the kind of errors you made in Q27, Q29, and Q38.
+
+---
+
+## **IELTS Reading Distractor Filter**
+
+  
+
+**Use this in your head before finalising any answer**
+
+---
+
+### **Step 1 – Main Idea Check**
+
+### **(Avoid Q27-type mistakes)**
+
+- ✅ Summarise the sentence/paragraph in **5 words** before looking at options.
+    
+- 🚫 Don’t get distracted by examples or side details — if it’s only one sentence in the paragraph, it’s probably not the main point.
+    
+- **Question to self:** Does this option describe the **central message** or just an interesting detail? If detail → reject.
+    
+
+---
+
+### **Step 2 – Action Match**
+
+### **(Avoid Q29-type mistakes)**
+
+- ✅ Underline **verbs and actions** in the text.
+    
+- ✅ Ask: “What exactly did they DO?”
+    
+- 🚫 Don’t choose an option that describes a general behaviour if the passage gives a **specific, concrete action**.
+    
+- **Example:** “Feeding false data” ≠ “Letting AI do their work”.
+    
+
+---
+
+### **Step 3 – Scope Match**
+
+### **(Avoid Q38-type mistakes)**
+
+- ✅ Look at the **range** of the statement: is it broad or narrow?
+    
+- ✅ Match with a passage section that talks about the same scope.
+    
+- 🚫 Avoid answers that cover only part of the idea — IELTS loves to trap you with “true but incomplete” options.
+    
+- **Example:** “Range of problems” = broad → needs a paragraph about _all dilemmas_, not just unemployment.
+    
+
+---
+
+### **Step 4 – Exact Wording Test**
+
+- ✅ Replace keywords in the question with **synonyms** and scan the text for them.
+    
+- 🚫 Don’t match only one or two keywords — check if the full meaning fits.
+    
+- If 70% fits but 30% changes the meaning → reject.
+    
+
+---
+
+### **Step 5 – Temptation Check**
+
+- 🚫 If an option jumped out at you immediately **before reading carefully**, treat it as _suspicious_.
+    
+- ✅ Ask: “Am I choosing this because it’s in my memory… or because it truly matches the text?”
+    
+
+---
+
+**Mini Note:**
+
+Apply this in **10 seconds per question** — it’s not slow once it becomes habit.
+
+It’s basically your “anti-trap radar” to push you from Band 8 accuracy (occasional careless mistakes) → Band 9 accuracy.
+
+
+
+## **🎯 IELTS Matching Headings – Quick Attack Plan**
+
+  
+
+### **1️⃣ First: Read Paragraph → Summarise in 3–5 Words**
+
+- Ignore the heading list at first.
+    
+- Boil the paragraph to a **mini-title** in your own words.
+    
+- Example: Paragraph A = “One certain origin fact”.
+    
+
+---
+
+### **2️⃣ Find the** 
+
+### **Main Idea**
+
+- **Topic sentence** (often 1st or last sentence) gives the main idea.
+    
+- Supporting details are traps — don’t base your heading on them.
+    
+
+---
+
+### **3️⃣ Match Meaning, Not Words**
+
+- Headings use **synonyms/paraphrases**.
+    
+- E.g., “copied by others” = “archetype others followed”.
+    
+- Avoid picking a heading just because you see the same words in the text.
+    
+
+---
+
+### **4️⃣ Scope Check**
+
+- **Too broad?** Reject (covers more than your paragraph).
+    
+- **Too narrow?** Reject (matches only one example).
+    
+
+---
+
+### **5️⃣ Eliminate Distractors**
+
+- If heading matches **just one detail**, it’s a trap.
+    
+- The whole paragraph must fit.
+    
+
+---
+
+### **6️⃣ Watch for These Common Heading Traps**
+| **Trap**                  | **How it Tricks You**                                      | **How to Spot**                                    |
+| ------------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
+| **Keyword copy**          | Same word appears in both text + heading                   | Check if meaning is actually the same              |
+| **Detail over main idea** | Heading matches an interesting fact, not the central theme | Ask: does the rest of paragraph support it?        |
+| **Chronology confusion**  | You choose the heading from later effects                  | Stick to paragraph’s own focus, not later outcomes |
+| **Multiple matches**      | Two headings partly fit                                    | Pick the one matching **entire** paragraph         |
+### **7️⃣ Quick Signals in Wording**
+
+- **Certainty**: “no question”, “undisputed”, “only one” → heading about certainty.
+    
+- **Difficulty**: “challenge”, “problem”, “experiment” → heading about difficulty.
+    
+- **Influence**: “model for”, “copied”, “followed” → heading about design copied.
+    
+- **Content description**: lots of objects/artefacts listed → heading about areas/artefacts.
+    
+- **Results despite loss**: “few remains but amazing” → heading about experience despite few remains.
+    
+
+---
+
+### **8️⃣ Rapid Elimination Flow**
+
+1. Read para → 3–5 word summary.
+    
+2. Scan heading list → shortlist 2–3.
+    
+3. Remove ones that:
+    
+    - Are too narrow/broad
+        
+    - Match only a small detail
+        
+    - Refer to something not in paragraph
+        
+    
+4. Choose the one covering _all_ sentences.
+    
+
+---
+
+**Mini-mantra to remember in exam:**
+
+  
+
+> _“Summary first, match meaning, reject details.”_
+
+
+You can try it under timed conditions (about 6 minutes).
+
+---
+
+## **Mini IELTS Matching Headings Drill**
+
+  
+
+### **List of Headings**
+
+  
+
+i. An innovation that inspired others
+
+ii. A place designed to protect its contents
+
+iii. Uncertain origins of a custom
+
+iv. A leader who valued his adviser
+
+v. Details of a difficult construction process
+
+vi. A discovery that raised further questions
+
+vii. A project completed despite loss
+
+viii. Why a design choice was made
+
+ix. Description of surrounding buildings
+
+x. A plan changed multiple times
+
+---
+
+### **Paragraphs**
+
+  
+
+**Paragraph A**
+
+Although its exact beginnings are debated, many believe the practice of carving stone animals began in this region over 2,000 years ago. Others claim it started elsewhere and was imported by travelling merchants.
+
+iii
+
+**Paragraph B**
+
+The main temple is surrounded by courtyards, gardens, and ceremonial halls. Nearby are the living quarters of the high priests, with tall walls separating the inner sanctum from the outer city.
+
+ix
+  
+
+**Paragraph C**
+
+The architect initially proposed a round structure, but later changed it to a square base for stability. Several more alterations followed before the final, striking form was approved.
+
+  x
+
+**Paragraph D**
+
+Built on an island and ringed with high walls, the fortress was accessible only through a narrow bridge. Hidden chambers and false passageways made it even harder for intruders to reach the treasure room.
+
+  ii
+
+**Paragraph E**
+
+The king was so impressed by the design that he insisted his adviser’s name be engraved on the main gate alongside his own — an unusual break from tradition.
+
+iv
+
+**Paragraph F**
+
+Although the central statue had been stolen long ago, the intricate mosaics and painted ceilings still amazed archaeologists who explored the ruined palace.
+
+  i -> vii
+
+**Paragraph G**
+
+After months of trial and error, the builders finally found a way to balance the massive roof slabs without them collapsing under their own weight.
+
+  v
+
+**Paragraph H**
+
+During excavation, researchers found dozens of clay jars with inscriptions they could not decipher. The jars’ purpose remains a mystery, and experts still debate their meaning today.
+
+vi
+
+---
+
+💡 **Your Task**: Match each paragraph (A–H) with one heading (i–x).
+
+**Note**: You will not use all the headings — some are distractors.

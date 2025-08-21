@@ -1,0 +1,356 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 15 listening test 4
+lightbox: false
+description: IELTS Practice Set 15 listening test 4
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url: 
+date: 2025-08-13
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 15 - listening test 4
+- Total Score: 36/40
+- Date: 13/08/2025
+
+
+
+# Performance Summary
+
+| Category                                            | Correct | Wrong | Accuracy (%) |
+| --------------------------------------------------- | ------- | ----- | ------------ |
+| **[Listening] Map/Plan/Diagram Labelling**          | 6       | 0     | 100.00       |
+| **[Listening theme] Giving a speech at an event**   | 10      | 0     | 100.00       |
+| **[Topic] History**                                 | 7       | 3     | 70.00        |
+| **[Listening] Matching**                            | 5       | 1     | 83.33        |
+| **[Listening theme] Giving tutorial presentations** | 8       | 2     | 80.00        |
+| **[Listening] Multiple Choice**                     | 7       | 1     | 87.50        |
+| **[Listening] Note/Form Completion**                | 16      | 4     | 80.00        |
+| **[Listening theme] Asking for information**        | 9       | 1     | 90.00        |
+
+# Recording 1
+
+| Question | Your Answer | Correct Answer | Error Type | Reason                                 | Fix                                              |
+| -------- | ----------- | -------------- | ---------- | -------------------------------------- | ------------------------------------------------ |
+| Q3       | STEUNFIRTS  | STAUNFIRTH     | Spelling   | Misheard "AU" as "EU" and "TH" as "TS" | Write letters exactly as spelled, re-check order |
+
+1. Nature of the mistake
+
+You wrote "STEUNFIRTS" instead of "STAUNFIRTH".
+
+This is a spelling accuracy issue in a Listening Form Completion question.
+
+The audio clearly spelled it out: S-T-A-U-N-F-I-R-T-H.
+
+You transposed letters ("E" instead of "A" and "S" instead of "H").
+
+2. Why it happened
+
+Spelling under pressure: In IELTS Listening, names—especially unusual ones—often trip people up because they're not in everyday vocabulary.
+
+Letter confusion:
+
+"AU" sound in “Staun-” might have sounded like "EU" to you.
+
+Final “-th” might have sounded like “-ts” due to accent or fast pronunciation.
+
+Not actively writing while hearing the spelling: If you only listen without visualising the word in your head letter-by-letter, errors creep in.
+
+No quick check: Since the speaker spelled it, you could have matched your writing to the audio in real time.
+
+3. Skills involved
+
+Spelling unusual words (especially names and place names)
+
+Listening to letter sequences accurately
+
+Linking sounds to correct English letter combinations (AU, TH, etc.)
+
+4. How to avoid in future
+
+When a word is spelled in the audio:
+
+Write each letter as you hear it—don't try to write the whole word from memory first.
+
+Say the letters in your head as you write (S…T…A…U…N…).
+
+Check letter order before moving on.
+
+Practice listening to spelled words:
+
+Names: towns, people, brands
+
+Especially with British accents, since “A” might sound like “eh” and “U” like “yoo” or “uh”.
+
+Know common UK place name patterns:
+
+“-th” endings, “AU” in “Staun-”, “-firth” meaning estuary.
+# Recording 2
+
+
+# Recording 3
+
+## Q21
+
+**Question:** What did Annie discover from reading about icehouses?  
+**Correct:** **B. how the ice was kept frozen**
+
+**Transcript cue:**
+
+> “But I **didn’t realise** that **insulating the blocks with straw or sawdust** meant they didn’t melt for months.”
+
+- She already **knew** where they were built (location), so **C** is out.
+    
+- She didn’t talk about why they were first created, so **A** is out.
+    
+- Her **new discovery** = the **method** of keeping ice frozen → **B**.
+    
+
+## Q25
+
+**Question:** Who will research **the goods that are refrigerated**?  
+**Correct:** **A. Annie**  
+(You put B = Jack.)
+
+**Transcript cues (assignment language):**
+
+> **Annie:** “How about starting with … the **range of goods that are refrigerated** nowadays? … **I could do that**, unless you particularly want to.”  
+> **Jack:** “**That’s fine by me**.”
+
+- “**I could do that**” → Annie volunteers.
+    
+- “**That’s fine by me**” → Jack **doesn’t** take it.  
+    ⇒ Topic **stays with Annie** → **A**.
+    
+
+---
+
+## Patterns behind the mistakes
+
+- **Q21 (detail meaning):** You chose the **topic around it** (location/creation) rather than the **new information** signaled by “**didn’t realise**”. In IELTS Listening, phrases like _didn’t realise / I learned / I found out_ point to the **answerable discovery**.
+    
+- **Q25 (speaker assignment):** It’s an **ownership** trap. The test uses soft language: _“I could do that… unless…”_ + acceptance _“That’s fine by me.”_ → That confirms the first speaker **keeps** the task.
+    
+
+---
+
+## Quick fix strategies
+
+1. **Underline “discovery verbs”:** didn’t realise / found out / discovered → answer is what follows.
+    
+2. **Map assignments live:** Draw A / B columns. When someone says “**I’ll do that / I could do that**,” put a tick for that topic under their name; when the other says “**fine by me / OK / leave it to me**,” confirm the tick.
+    
+3. **Beware topic switches:** After Q25, they immediately **change topic** to **health**. Don’t let the new topic overwrite the **previous assignment**.
+    
+
+---
+
+## Mini drill (1‑line practice)
+
+Who owns the task?
+
+1. “I can cover the **case studies** if you like.” – “Perfect, thanks.” → **First speaker**
+    
+2. “Do you want the **budget section**?” – “Not really.” – “OK, **I’ll take it**.” → **Second speaker** (final line)
+    
+3. “I’ll start the **timeline**, **unless** you’d prefer to.” – “No, go ahead.” → **First speaker**
+
+## **1. Signal phrases for assignment**
+
+These are grouped by who **ends up** with the task.
+
+### **A. First speaker keeps the task**
+
+- _I could do that (unless you want to)._
+    
+- _I’ll take that one._
+    
+- _I don’t mind doing it._
+    
+- _I’ll cover that._
+    
+- _I can handle that._
+    
+- _I’m happy to do it._
+    
+- _Go ahead and leave it with me._
+    
+
+**Confirming responses from second speaker:**
+
+- _That’s fine by me._
+    
+- _Sure, thanks._
+    
+- _OK._
+    
+- _Yes, you do that._
+    
+
+---
+
+### **B. Second speaker takes the task**
+
+- _Do you want to do that?_ – _Sure, I’ll do it._
+    
+- _Would you like to take that on?_ – _Yes, I’ll handle it._
+    
+- _If you’d like, you can do that._ – _OK, I will._
+    
+- _I’d rather not, could you?_ – _Yeah, I’ll do it._
+    
+
+---
+
+### **C. Watch for switches**
+
+Sometimes they _start_ with “I could do it” but then _switch_ when the other says “Actually, I’d prefer to.”  
+➡ Whoever **verbally accepts last** ends up with it.
+
+---
+
+## **2. 5 mini practice questions**
+
+**Example 1**  
+S1: _I can do the background research if you want._  
+S2: _Thanks, that’d be great._  
+
+**Example 2**  
+S1: _Do you want to write the introduction?_  
+S2: _Yes, I’ll do it._  
+
+**Example 3**  
+S1: _I could handle the graphs unless you’d prefer to._  
+S2: _No, you go ahead._  
+
+**Example 4**  
+S1: _I’m not too keen on covering the statistics._  
+S2: _OK, I’ll take it._  
+
+**Example 5**  
+S1: _I’ll start the budget analysis._  
+S2: _Actually, I’d like to do that._  
+
+1
+✅ **Answer:** First speaker
+2
+✅ **Answer:** Second speaker
+3
+✅ **Answer:** First speaker
+4
+✅ **Answer:** Second speaker
+5
+✅ **Answer:** Second speaker (because of the switch)
+
+
+
+# Recording 4
+
+| Q   | Task (paraphrase)                                               | Your answer   | Correct        | Why yours is wrong                                                                                                                                             | Transcript cue(s)                                                                                                                                                                     | Quick fix                                                                                                                                               |
+| --- | --------------------------------------------------------------- | ------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 35  | “New ___ made factories necessary …”                            | **MACHINE**   | **MACHINES**   | **Number mismatch**. The audio says **“enormous new machines were now being created … so large factories were built.”** Plural subject required.               | “**enormous new machines were now being created** that could produce the goods faster… **So large factories were built** …”                                                           | When the audio uses **were / these / they**, expect **plural** in the blank. Check verb agreement before you write.                                     |
+| 36  | “Greater access to ___ made people more aware …”                | **NEWSPAPER** | **NEWSPAPERS** | **Plural required**. The trains “**included newspapers**,” so the noun remains plural in the note line.                                                        | “the goods they moved … **significantly, they included newspapers**, which meant that thousands of people were … more knowledgeable … and could also read about what was available …” | Listen for **list/quantity** cues (e.g., “included”), which usually take **plural**. Pair it with **access to + plural count noun**.                    |
+| 38  | “Inside stores, goods were more visible because of better ___.” | **SALE**      | **LIGHTING**   | You picked a word about _transactions_, but the text talks about **improved lighting** making goods more visible. This is about **illumination**, not selling. | “…to attract customers: for instance, **improved lighting inside greatly increased the visibility of the goods for sale**.”                                                           | Listen for **cause-effect**: “because of better ___” → focus on what physically improves visibility (_lighting_), not the fact that goods are for sale. |
+
+
+Patterns behind these mistakes (and how to fix them fast)
+
+1) Plurals in Note Completion
+
+Cues for plural: were / include(d) / many / a number of / large numbers of.
+
+Grammar check: If the clause around the blank has plural verbs/pronouns, your answer should likely be plural.
+
+Collocations: access to newspapers (plural), new machines (plural).
+
+Micro-drill (plural or singular?)
+
+“There were several ___ installed last year.” → machines
+
+“The rail network included ___ that carried adverts.” → newspapers
+
+38
+
+Why this happened
+
+The phrase “goods for sale” appears right next to “improved lighting” in the audio. Your brain probably latched onto sale as the keyword, but the note's blank is asking for the cause (improved lighting), not the object (goods).
+
+This is a classic IELTS distractor — they place the correct word just before or after another tempting one.
+
+Identify the blank's role before listening — here it's a cause in a “because of better ___” structure.
+
+Mark function words in your notes: “better ___” → adjective + noun = likely a thing or quality, not an action.
+
+Separate main idea from examples — “improved lighting” (main cause) … “goods for sale” (example).
+
+
+35 – “New 35 … made factories necessary…”
+
+Clue: “New ___ made factories necessary” → The verb made is plural-form agreement?
+
+Not exactly — here, the sentence subject is “New ___” which could be singular or plural.
+
+Logic clue: The text talks about “enormous new machines” (plural) producing goods faster. This isn't one single invention, it's a category of inventions.
+
+Prediction: Likely plural because they're talking about many different machines, not a single machine.
+
+Plural signal: “Factories” (plural) + “people moved into towns” = scale effect → multiple pieces of machinery.
+
+✅ Correct form: machines
+
+36 – “… greater access to 36 ___ made people more aware…”
+
+Clue: “greater access to ___ made people more aware” — here, access to usually takes an uncountable or plural countable noun.
+
+Logic clue: They're talking about railways transporting “newspapers” (plural) so thousands of people could read them.
+
+Plural signal: “Greater access” suggests many copies/items, not a single publication. One newspaper wouldn't reach “thousands” → must be plural.
+
+✅ Correct form: newspapers
+
+General Tips to Predict Plural in IELTS Listening
+
+Look at the article/determiner before the blank:
+
+“a/an” → singular
+
+“the” / no article → could be plural or uncountable
+
+“these / those / many / several” → plural
+
+Check verb agreement if the blank is the subject:
+
+Plural noun → plural verb (“are”, “make”)
+
+Ask: Is it one thing or a category?
+
+Broad concepts or lists → often plural.
+
+Listen for plural -s / -z sound in the audio. Train your ear for it — IELTS often hides it in fast speech.
+
+Think about realism: If the statement is about widespread change, plural is more logical.
+
+
+## Extra high‑value phrases from the passage (useful for IELTS Writing/Speaking)
+
+enormous new machines (Band 7 collocation)
+
+distribution became far more efficient
+
+goods sold all over the country (range/scale)
+
+improved lighting / larger windows (plate glass) (retail lexis)
+
+explosion in advertising (trend/intensity)
