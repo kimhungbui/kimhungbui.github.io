@@ -1,0 +1,106 @@
+---
+title: Languages die out
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-21
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Every year, several languages die out. Some people think that this is not important because life will be easier if there are fewer languages in the world.
+
+To what extent do you agree or disagree with this opinion?
+
+
+It is helpful to turn the statement in the task into a question. In this case, we could see this as two separate questions:
+
+1. Is it important that languages are dying out every year?
+2. Does having fewer languages make it easier?
+
+- To answer these question, we will need to discuss the impact that the loss of languages has. Clearly, it will affect the people whose language is dying out. However, the opinion in the question is about the impact this has on the world in general : _'life will be easier (for everyone) if there are fewer languages in the world'_. Therefore, the focus in this question is on both one specific group (the people losing their language) and the world at large (everyone else).
+
+- The ideas we have for this task are more likely to be based on abstract themes. Concrete themes, such as _money, food, or socializing_ are often easier to write or talk about. More abstract ideas, such as 'life', 'society', and 'culture' are more difficult to discuss, which adds another level of difficulty to this task. If we have an abstract topic, visualization techniques can help us to see more concrete ideas within the topic that then will help us to write about it. 
+- The question tells us that, 'Some people think that (the loss of language) is not important'. In other words, we are being told about an attitude or reaction to something, and we will need to discuss this attitude in our essay. We are also told these people think that 'life will be easier' without these language, so they are also commenting on the effect or impact that this will have. Thus, again, we need to consider cause and effect in this essay.
+
+
+# Planner
+
+Introduction
+General topic Disappearing language
+
+Focus: people in remote areas + people in general
+
+Issue to discuss: is it important that languages are dying out? Does it make life easier?
+
+My initial position: I completely disagree - yes, it is important
+
+Themes:  Language, culture, changing world, people, communication
+
+Side A: Life is easier / the loss is unimportant
+
+Main topic of this paragraph:
+How life is made easier (benefits of loss)
+
+1 Language - use it every day - business communication and travel -> transactions easier if people understand each other + problems can be solved faster
+
+2 culture - can understand the culture  -> x
+
+3 Changing world = 
+
+changes to language are inevitable (more travel, more international business -> need to communicate more)
+
+4 people - easier for business people and travellers
+
+What did i show or prove? link to the question?
+Easier for certain people / situations - loss is inevitable
+
+Side B: The loss is important
+
+Main topic of this paragraph
+
+The negative effects of this loss
+
+1 Language - Yes, business is easier, BUT language is used for more than this e.g. express feelings + culture + history
+
+2 Culture - language used to express culture (poems, literature, history = adds variety / makes the world richer)
+
+= part of identity of individuals and community
+
+3 People - -> for the people involved this is a big loss
++ for the world, this is a big loss
+
+What prove
+
+Some people are far more affected by the loss than others
+
+Conclusion - Summary of my main points:
+
+Yes, it makes business easier but language adds variety and makes the world richer.
+
+Question to answer: To what extent do you agree / disagree?
+
+My final position: I completely disagree
+
+
+In some parts of the world, native languages are being lost as societies develop and evolve. Some believe that this is unimportant and even see it as an advantage. This essay will discuss whether the loss of such languages should be cause for concern.
+
+It is true that many aspects of modern day life are made easier through sharing a common language. First and foremost, business transactions are much simpler when the two parties concerned can understand each other well. Travel problems can also be dealt with much faster when there is mutual understanding. Thanks to globalization, these types of communication are increasing, and this could be seen as largely responsible for the disappearance of languages in more remote areas. If people in those areas work in tourism, or international trade, they must adopt the more widely used languages of the world. Thus, with each new generation, their native tongue becomes both less useful and less used. Sadly, the desire to make life simpler makes the loss of some languages inevitable.
+
+Nevertheless, this inevitability does not mean the loss is insignificant. Language has a multitude of uses that go far beyond tourism and business communication. Our native tongue is used to express our deepest feelings and emotions, which are much more difficult to convey when using a second language. Language also plays an important part in our culture and identity, uniting us as a community. Thus, when a language is lost, part of the community and culture also disappears. This must be an enormous loss for the people concerned.
+
+In conclusion, while it is true that having fewer languages benefits the world of business, and makes transactions easier, I completely disagree with the view that the continued loss of languages is unimportant. The variety of native languages and cultures is what makes the world a richer place, and any loss of this kind should not be dismissed lightly.
+
+
