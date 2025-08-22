@@ -22,100 +22,11 @@ format:
 draft: false
 ---
 # Cambridge IELTS 17 - listening test 1
-- Total Score: 34/40
-- Date: 18/08/2025
+
 
 
 
 # Performance Summary
-
-### **✅ Recording 1 – Cycle Camp**
-
-- **Result:** 10/10, no mistakes.
-    
-- **Strengths:** Careful with everyday details (colours, numbers, places). Excellent concentration.
-    
-- **What to Learn:** Trap signals like _“first… then… actually”_. Review singular/plural in daily items.
-    
-
----
-
-### **⚠️ Recording 2 – Agriculture & Horticulture Jobs**
-
-- **Mistakes:** Q14, Q17, Q19, Q20.
-    
-- **Problem Areas:**
-    
-    - Misinterpreted disadvantages vs requirements.
-        
-    - Confused _training_ vs _experience_.
-        
-    - Didn’t catch _contrast phrases_ clearly.
-        
-    
-- **Theme to Study:** Employment vocabulary (contract, promotion, training course, accommodation, overtime).
-    
-- **Key Learning:** Watch for “not… but…” / “instead of…” signals.
-    
-
----
-
-### **⚠️ Recording 3 – Calories & Nutrition**
-
-- **Mistakes (you told me earlier):** Q11, Q12, Q16, Q27.
-    
-- **Problem Areas:**
-    
-    - Misheard numbers/details about calorie calculations.
-        
-    - Distracted by fast speech and lost focus on key data.
-        
-    
-- **Theme to Study:** Food, health, measurements (calorie, portion, intake, nutrients, balanced diet).
-    
-- **Key Learning:** Practice listening for **numbers + units** carefully (kcal, grams, percentages).
-    
-
----
-
-### **⚠️ Recording 4 – Hand Knitting**
-
-- **Mistakes:** Q33 (_equipment_ not _equipments_), Q40 (_sheep_ not _sheeps_).
-    
-- **Problem Areas:** Grammar slips with uncountable nouns and irregular plurals.
-    
-- **Theme to Study:** History & crafts (garment, yarn, wool, technique, tradition).
-    
-- **Key Learning:** Revise common uncountable nouns + irregular plurals list.
-    
-
----
-
-# **📌 Overall Pattern Today**
-
-- **Strengths:** You can follow lectures and everyday dialogues well. You catch main ideas and sequences.
-    
-- **Weaknesses:**
-    
-    1. **Plural vs singular forms** (equipments, sheeps).
-        
-    2. **Numbers & details** (nutrition test).
-        
-    3. **Traps with contrast** (job test).
-        
-    
-
----
-
-# **🎯 Next Steps**
-
-1. **Daily Grammar Fix:** Drill 10 uncountable nouns + 10 irregular plurals.
-    
-2. **Numbers Practice:** Do 5 “mini listening” clips where you only write down numbers/units.
-    
-3. **Trap Training:** Highlight _but, however, instead, rather than_ during practice and pause to predict the change.
-    
-4. **Vocabulary Notebook:** Split by IELTS themes (Work, Health, History, Daily Life). Add 5 new collocations each day.
 
 
 # Recording 1

@@ -1,0 +1,467 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 17 listening test 2
+lightbox: false
+description: IELTS Practice Set 17 listening test 2
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-22
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 17 - listening test 2
+
+
+
+
+# Performance Summary
+
+
+# Recording 1
+
+## **Q2 —** **records** **(you wrote “record”)**
+
+- In the audio Jane says: “**the records that we keep** of the books we’re given, and those we borrow…” → clear **plural**.
+    
+- Tip: after verbs like **keep/maintain/update**, IELTS often expects a plural noun when tracking multiple items (e.g., _keep_ **_records_** _of books_, _keep_ **_lists_** _of names_).
+    
+- Sound cue: listen for the /z/ at the end: **record** /ˈrekɔːd/ vs **records** /ˈrekɔːdz/.
+    
+- Quick fix drill: say the phrase aloud 5× — “keep **records** of the books”.
+    
+
+  
+
+## **Q8 —** **quiz****(you wrote “quizz”)**
+
+- The event is “a **quiz**” (singular). Spelling: **quiz** (one _z_).
+    
+- Only the **plural** doubles the z: **quizzes** (quiz → quizzes).
+    
+- Tip: If the article is **a/an**, think _singular form_. If it’s after a number or plural context, think _plural form and spelling change_.
+    
+
+---
+
+## **Mini pre-submit checklist (Listening gaps)**
+
+1. Does the speaker add an **-s / -z** sound? → write plural.
+    
+2. Does the note use **a/an**? → singular (e.g., _a quiz_).
+    
+3. Common collocations: **keep records**, **take notes**, **check tickets**.
+    
+4. Spelling traps: **quiz/quizzes**, **library**, **reference**, **ticket(s)**.
+
+
+# Recording 2
+
+## **✅ Quick fix on your wrong one**
+
+- **Q19 (shed)** → The audio says: _“Outside the shed … you can_ **_climb into a horse‑drawn carriage_** _for a tour.”_
+    
+    → That’s **starting a trip** (**E**), not _using farming tools_ (those were in the **large barn**, Q16).
+    
+
+---
+
+## **🎯 Traps & Signals (what the test tried to trick you with)**
+
+- **Building vs. Activity**:
+    
+    - _Large barn_ = tools (C); _Small barn_ = grooming animals (G); _Stables_ = shop (A); _Shed_ = start carriage tour (E).
+        
+    
+- **“No longer / Until recently / Now”**:
+    
+    - _Dairy_ **used to** make cheese → **now** food & drink (D).
+        
+    - _Horses no longer live in the stables_ → stables = **shop** (A).
+        
+    
+- **“Latest addition”** = new for kids → **mini tractors** (B) for Q14.
+    
+- **Role of owners**: “left their mark by **adding rooms or demolishing others**” → changes to the **house** (Q11 = B).
+    
+- **Paraphrase traps**:
+    
+    - “Hosted painters and poets” → **a place for artists and writers** (Q12 = C).
+        
+    - “Volunteers dressed as servants” → **people in costume** (Q13 = C).
+        
+    - “Types of cattle and sheep that are hardly ever found” → **rare breeds** (Q20 = F).
+
+# Recording 3
+
+### **Q29****– Watching** **Romeo and Juliet** **in another language**
+
+  
+
+🔑 Transcript:
+
+- _Gemma_: “Really interesting. I expected it to be more challenging, but I could follow pretty well.”
+    
+- _Ed_: “I stopped worrying about not understanding every word and focused on expressions. **The ending was pretty powerful.**”
+    
+- _Gemma_: “Yes, that somehow **intensified the emotion** for me.”
+    
+
+  
+
+✅ This shows the experience was **emotionally strong** → **C. moving**.
+
+❌ Not “frustrating” (they didn’t complain) and not “demanding” (Gemma even said it was _easier than expected_).
+
+---
+
+### **Q30****– Shakespeare’s international appeal**
+
+  
+
+🔑 Transcript:
+
+- _Ed_: “His plays are about **basic themes people everywhere are familiar with**.”
+    
+- _Gemma_: “Yeah, and they can also be **understood on different levels**. The characters have depth.”
+    
+- _Ed_: “…which allows directors to experiment and **find new angles**.”
+    
+
+  
+
+✅ The key is: _can be interpreted in many ways_ → **C**.
+
+❌ Not “exciting stories” (A) and not just “recognisable characters” (B).
+
+
+# Recording 4
+
+**Q34 – SMARTPHONES**
+
+- **Your answer:** SMARTPHONE (singular)
+    
+- **Correct answer:** SMARTPHONES (plural)
+    
+- **Reason:** The passage says:
+    
+    > “Think about smartphones. They didn’t even exist until comparatively recently, but today young people use them all the time…”
+    
+    > The plural form is required because the speaker refers to the widespread use of many devices, not just one.
+    
+
+  
+
+**Q36 – PLAYGROUND**
+
+- **Your answer:** CONVERSATION
+    
+- **Correct answer:** PLAYGROUND
+    
+- **Reason:** The passage says:
+    
+    > “teachers have found that playground conversations in Icelandic secondary schools can be conducted entirely in English…”
+    
+    > The notes require the **location** where discussions occur, not the activity itself. So “playground” (location) is correct rather than “conversation” (activity).
+    
+
+  
+
+The key is to match what the notes are asking for—**context/location vs. action** and **plural vs. singular**.
+
+
+
+- Tip: after verbs like **keep/maintain/update**, IELTS often expects a plural noun when tracking multiple items (e.g., _keep_ **_records_** _of books_, _keep_ **_lists_** _of names_).
+
+
+### **Part 1 – Introduction & Interview (4–5 minutes)**
+
+  
+
+**Topic: Education & Learning**
+
+1. Can you tell me about your current studies or job?
+    
+    - _Well, I’m currently studying computer science at university. I find the curriculum quite challenging, but I enjoy acquiring new knowledge and developing my skills. Sometimes it’s difficult to grasp some concepts, but I try to focus and catch up with extra readings._
+        
+    
+2. Do you enjoy learning new things?
+    
+    - _Yes, definitely. I’m particularly interested in subjects that are practical and help me master real-world skills. Of course, sometimes it feels a bit overwhelming, but overall it’s very rewarding._
+
+**Topic: Technology / Digital Life**
+
+3. How often do you use digital devices like smartphones or computers?
+    
+    - _I use my smartphone and laptop every day. Smartphones are especially useful for reading news, watching videos, or even accessing online courses. Digital technology has really transformed the way we communicate and learn._
+        
+    
+4. Do you think technology has changed the way people learn?
+    
+    - _Absolutely. Online resources make education more accessible, and apps allow students to practice and revise at their own pace. But sometimes people rely too much on technology instead of thinking critically themselves._
+
+### **Part 2 – Long Turn (3–4 minutes)**
+
+  
+
+**Task:** Describe a memorable trip you recently had. You should say:
+
+- Where it was
+    
+- What you did there
+    
+- What you saw
+    
+- And explain why it left an impression on you
+    
+
+  
+
+**Sample Band 7 Answer:**
+
+  
+
+_Last summer, I visited a historical city in Europe. The city was very multicultural, with tourists from different countries. I spent most of my time exploring the old streets and museums, which were fascinating._
+
+_One day, I walked along a river and discovered a small garden with traditional architecture. I also learned about local customs and crafts, which I found quite impressive. The whole experience felt calming, almost meditative, because I could just immerse myself in the environment. It left a strong impression on me because it reminded me of the importance of cultural heritage and how traveling can broaden one’s perspective._
+
+---
+
+### **Part 3 – Discussion (4–5 minutes)**
+
+  
+
+**Topic: Society, Environment, and Career**
+
+1. How can education help people in modern society?
+    
+    - _Education is essential because it prepares individuals for their profession and increases employability. It also helps people develop problem-solving skills and acquire knowledge that is useful in everyday life._
+        
+    
+2. Why is it important to protect the environment?
+    
+    - _Protecting the environment is crucial to ensure sustainability and reduce pollution. If we ignore this, natural resources could be exhausted, affecting future generations._
+        
+    
+3. Do you think technology is beneficial for work and learning?
+    
+    - _Yes, technology is very innovative. Digital tools allow us to research topics, communicate efficiently, and manage tasks. But I think people need to be careful not to become too dependent on it._
+        
+    
+4. How do traditional cultures survive in a modern, multicultural society?
+    
+    - _Traditions survive mainly through education, community activities, and tourism. Younger generations need to learn about their heritage, and sometimes combining traditional practices with modern lifestyles helps maintain them._
+
+
+### **Part 1 – Introduction & Interview (4–5 minutes)**
+
+  
+
+**Topic: Education & Learning**
+
+1. Can you tell me about your current studies or work?
+    
+    - _I’m currently pursuing a Master’s in Computer Science. The coursework is intensive, but I find it intellectually stimulating. It challenges me to think critically and apply theory in practical scenarios, which I really enjoy. Occasionally, I struggle with some advanced concepts, but supplementary readings and online tutorials help me keep pace._
+        
+    
+2. Do you enjoy learning new things?
+    
+    - _Absolutely. I think continuous learning is essential, not only academically but also personally. I enjoy exploring subjects that expand my perspective, though sometimes it can feel a bit overwhelming when deadlines pile up._
+        
+    
+
+  
+
+**Topic: Technology / Digital Life**
+
+3. How often do you use digital devices like smartphones or laptops?
+    
+    - _I use them daily, sometimes almost constantly. Smartphones are incredibly versatile—they allow me to access news, watch educational videos, and connect with colleagues or friends. Laptops, of course, are essential for research and assignments._
+        
+    
+4. Do you think technology has changed the way people learn?
+    
+    - _Yes, profoundly. Digital platforms make learning far more accessible and interactive. Students can engage with multimedia content and online courses at their own pace. However, there’s a risk that people may rely too heavily on technology instead of cultivating independent critical thinking._
+        
+    
+
+---
+
+### **Part 2 – Long Turn (3–4 minutes)**
+
+  
+
+**Task:** Describe a memorable trip you recently had. You should say:
+
+- Where it was
+    
+- What you did there
+    
+- What you saw
+    
+- And explain why it left an impression on you
+    
+
+  
+
+**Sample Band 7.5 Answer:**
+
+  
+
+_Recently, I visited a coastal town renowned for its historical landmarks and natural beauty. I spent most of my time wandering through old streets and exploring local museums, which were exceptionally well-preserved. One day, I stumbled upon a serene riverside garden, where the architecture was traditional yet elegant. I also observed some local artisans practicing their crafts, which gave me a sense of how deeply culture is embedded in daily life. The experience was profoundly moving because it allowed me to appreciate the intersection of history, art, and nature. I left feeling both inspired and reflective, as it reminded me of the value of preserving cultural heritage while embracing modernity._
+
+---
+
+### **Part 3 – Discussion (4–5 minutes)**
+
+  
+
+**Topic: Society, Environment, and Career**
+
+1. How can education help people in modern society?
+    
+    - _Education equips individuals with critical thinking and problem-solving skills, which are vital in a rapidly evolving world. It also enhances career prospects and empowers people to contribute meaningfully to society._
+        
+    
+2. Why is it important to protect the environment?
+    
+    - _Environmental protection ensures the sustainability of our natural resources and maintains biodiversity. Neglecting it could have severe consequences for both the economy and public health, particularly for future generations._
+        
+    
+3. Do you think technology is beneficial for work and learning?
+    
+    - _Undoubtedly. Digital tools facilitate research, communication, and task management efficiently. However, there’s a fine balance; excessive reliance on technology might hinder independent learning and creativity._
+        
+    
+4. How do traditional cultures survive in a modern, multicultural society?
+    
+    - _Traditions persist mainly through education, community initiatives, and active cultural promotion. When younger generations engage with heritage activities and incorporate traditional practices into contemporary life, these cultures are more likely to endure._
+
+## **IELTS Speaking Sample – Band 7**
+
+  
+
+### **Part 2 – Long Turn (3–4 minutes)**
+
+  
+
+**Cue Card:** Describe a performance of a play or film that you recently watched. You should say:
+
+- What it was
+    
+- What you liked and disliked about it
+    
+- How it made you feel
+    
+- And explain why it was memorable
+    
+
+  
+
+**Sample Answer:**
+
+  
+
+_I recently watched a production of Romeo and Juliet at The Emporium Theatre. I had read the play before, but watching it live was very different. The set was really impressive and probably the most memorable part. The lighting helped create the mood in many scenes, although some parts were quite dark and hard to see. The costumes were modern, which I didn’t expect, but I think it worked. I liked the music at the start, but later it didn’t have much effect. One thing I didn’t like was that some actors spoke too fast or quietly, so I couldn’t always understand them. Overall, the performance was emotional and made me think about the story and the characters. It was a very interesting experience, and I could see why Shakespeare’s plays are still popular today._
+
+---
+
+### **Part 3 – Discussion (4–5 minutes)**
+
+  
+
+**Topic: Theatre, Culture, and Literature**
+
+1. Why do people still perform classic plays?
+    
+    - _I think it’s because the story and themes are still relevant. Family problems, love, and conflicts are things everyone can understand, even now._
+        
+    
+2. How important is the director in a play?
+    
+    - _The director is very important. They decide how the actors move, how the stage looks, and how the play is shown to the audience. This can make a big difference to how much people enjoy it._
+        
+    
+3. What makes a performance memorable?
+    
+    - _Good acting, interesting sets, and music can make it memorable. Also, if the audience can feel the emotions of the characters, it is more likely to stay in their minds._
+        
+    
+4. Does watching a play in another language change the experience?
+    
+    - _Yes, it can be harder to understand, but watching the actors and their expressions helps. Sometimes, the feelings come through even if you don’t understand every word._
+        
+    
+5. Why are Shakespeare’s plays famous around the world?
+    
+    - _They can be interpreted in many ways. Directors can change the time or place of the story, and the characters are complex, so people everywhere can relate to them._
+
+## **IELTS Speaking Sample – Band 7.5**
+
+  
+
+### **Part 2 – Long Turn (3–4 minutes)**
+
+  
+
+**Cue Card:** Describe a performance of a play or film that you recently watched. You should say:
+
+- What it was
+    
+- What you liked and disliked about it
+    
+- How it made you feel
+    
+- And explain why it was memorable
+    
+
+  
+
+**Sample Answer:**
+
+  
+
+_Recently, I watched a production of Romeo and Juliet at The Emporium Theatre. I had read the play before, but seeing it performed live was a completely different experience. The set design was visually stunning and probably the most memorable aspect of the performance. The lighting created the right atmosphere for different scenes, though some moments were a bit dim and hard to follow. The costumes were contemporary, which surprised me initially, but ultimately I thought it worked well and added a fresh perspective. The music at the start was brilliant, though it didn’t have much impact later in Acts 2 and 3, which was a little disappointing. One aspect that I think could have been improved was the actors’ delivery of lines. Some spoke too quickly, while others weren’t loud enough, which made it difficult to catch every word. Overall, the performance had a powerful emotional effect on me, particularly the ending, which intensified the drama. I found it a very engaging and thought-provoking experience, and it reminded me why Shakespeare’s works remain so relevant today._
+
+---
+
+### **Part 3 – Discussion (4–5 minutes)**
+
+  
+
+**Topic: Theatre, Culture, and Literature**
+
+1. Why do you think classic plays like _Romeo and Juliet_ are still performed today?
+    
+    - _I think it’s because the themes are universal and timeless. Issues such as family tension, love, and conflict are still very relatable. Even though society has changed a lot since Shakespeare’s time, these basic human experiences remain relevant._
+        
+    
+2. How important is the role of the director in a theatre production?
+    
+    - _The director plays a crucial role in interpreting the text and deciding how to use the theatre space, lighting, and music to create the desired emotional impact. A skilled director can make a familiar story feel fresh and engaging._
+        
+    
+3. What makes a performance memorable for the audience?
+    
+    - _A combination of factors: compelling acting, imaginative set and costume design, and an emotional connection. If the audience can relate to the characters or feel the tension and drama, it leaves a lasting impression._
+        
+    
+4. Do you think watching plays in translation affects your understanding?
+    
+    - _It can initially be challenging, but expressions, gestures, and acting often convey the meaning effectively. I found that focusing on non-verbal cues helped me appreciate the performance even if I didn’t understand every word._
+        
+    
+5. Why are Shakespeare’s plays so popular internationally?
+    
+    - _They’re versatile and can be interpreted in many ways. Directors can experiment with different settings, costumes, or time periods while keeping the story’s essence intact. Also, the characters are complex, which allows audiences across cultures to connect with them._

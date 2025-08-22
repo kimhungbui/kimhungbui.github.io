@@ -90,6 +90,24 @@ draft: false
 | Contributing time and money     | donating effort and funds, volunteering and funding            |
 | Extend opening to the weekend   | increase hours, broaden schedule                               |
 |                                 |                                                                |
+
+## Activities & Verb (useful for Process/Map)
+
+| **Verb / Phrase**    | **Paraphrase**      | **Example in audio**                |
+| -------------------- | ------------------- | ----------------------------------- |
+| **date back to**     | originate in        | dates back to the 14th century      |
+| **leave their mark** | make changes        | owners added/demolished rooms       |
+| **step back into**   | experience the past | step back into an agricultural past |
+| **climb into**       | get on              | climb into a horse‑drawn carriage   |
+| **preserve**         | conserve            | preserve rare breeds                |
+
+# Time / Change Markers
+
+| **Marker**               | **Function**     | **Example**                 |
+| ------------------------ | ---------------- | --------------------------- |
+| **until recently / now** | old vs new use   | dairy now a café            |
+| **no longer**            | discontinued use | horses no longer in stables |
+| **latest addition**      | new facility     | child‑sized tractors        |
 # General Academic Verbs (Passive / Descriptive)
 
 | Word/Phrase                          | Use in IELTS                                                 |
@@ -139,6 +157,15 @@ migrated from villages into towns = moved from rural to urban areas
 distribution becoming far more efficient = more effective delivery of goods
 
 flock to the growing number of = go in large numbers to new places
+
+
+- **historic estate / landscaped parkland / rare breeds**
+    
+- **host meetings / break off contact / leave their mark**
+    
+- **preserve heritage / replace the audio guide / step back into the past**
+    
+- **dominate the landscape / start a carriage tour / latest addition**
 # Custom and Culture and Art
 
 | **Prompt**           | **Transcript Phrase**                         | **Paraphrase / Notes**                            |
@@ -168,6 +195,30 @@ flock to the growing number of = go in large numbers to new places
 | coincidence        | chance event, fluke | mere coincidence; pure coincidence |
 | segmented sleeping | biphasic sleep      | practice segmented sleeping        |
 
+| **Term**                         | **Synonym**        | **Collocations**              |
+| -------------------------------- | ------------------ | ----------------------------- |
+| **host** (verb)                  | receive, entertain | host meetings of artists      |
+| **creative and literary people** | painters, poets    | break off contact with allies |
+| **political allies**             | colleagues         | escape from politics          |
+
+| **Words / Phrases** | **Synonyms / Collocations** | **Example**                                                |
+| ------------------- | --------------------------- | ---------------------------------------------------------- |
+| tradition           | custom, heritage            | Diwali is an important **tradition** in India.             |
+| preserve            | maintain, safeguard         | We must **preserve** cultural heritage.                    |
+| multicultural       | diverse, inclusive          | London is a **multicultural** city.                        |
+| social issues       | community problems          | Poverty is one of the major **social issues**.             |
+| pass down           | transmit, hand on           | Stories are **passed down** from generation to generation. |
+# Theatre & Performance
+
+| **Word/Phrase** | **Synonyms / Related Terms** | **Collocations**                               |
+| --------------- | ---------------------------- | ---------------------------------------------- |
+| perform         | act, play, present           | perform a role, perform on stage               |
+| direct          | stage, manage, oversee       | direct a play, film director                   |
+| deliver (lines) | recite, speak, express       | deliver lines, deliver dialogue                |
+| set (design)    | scenery, backdrop, staging   | stage set, impressive set design               |
+| costume         | clothing, attire, outfit     | costume design, wear costumes                  |
+| lighting        | illumination, stage lights   | dim lighting, stage lighting                   |
+| experiment      | innovate, try out            | experiment with style, experiment with staging |
 # Opinion & Attitudes
 
 | Word / Phrase      | Meaning                                 | Synonyms / Paraphrases |
@@ -346,6 +397,7 @@ flock to the growing number of = go in large numbers to new places
 | five-week block          | five-week session, five-week course           | enrol for a block, complete a block |
 | moved them to Wednesdays | rescheduled to Wednesdays, shifted to midweek | change to, switch to                |
 
+
 # Transport
 
 | Word/Phrase                                   | Meaning / Context                                                        | Synonyms / Related Terms                            |
@@ -493,6 +545,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | animal care                          | livestock management, animal husbandry          | provide animal care                                      |
 | rural setting                        | countryside environment                         | live/work in a rural area                                |
 | remote areas                         | isolated places, rural locations                | work in a remote area                                    |
+
+| **Words / Phrases** | **Synonyms / Collocations**              | **Example**                                                    |
+| ------------------- | ---------------------------------------- | -------------------------------------------------------------- |
+| pollution           | contamination, environmental degradation | **Air pollution** is a major problem in cities.                |
+| conserve            | protect, preserve                        | We must **conserve** natural resources for future generations. |
+| sustainable         | eco-friendly, renewable                  | Solar energy is a **sustainable** source of power.             |
+| carbon footprint    | greenhouse gas emissions                 | People are trying to reduce their **carbon footprint**.        |
+| cut down on         | reduce consumption of                    | We should **cut down on** plastic usage.                       |
+
 # History
 
 | Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
@@ -600,6 +661,22 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | unconscious process    | automatic, not deliberate   | unconscious influence on behavior |
 | practical changes      | environmental modifications | make practical changes            |
 
+| **Word / Phrase**              | **Synonym / Paraphrase** | **Collocation**             |
+| ------------------------------ | ------------------------ | --------------------------- |
+| **take someone to hospital**   | give a lift, transport   | hospital appointment        |
+| **appointment**                | consultation, meeting    | hospital appointment        |
+| **struggling to find someone** | difficulty, shortage     | struggling to find a driver |
+| **healthy enough**             | in good condition        | not healthy enough to work  |
+|                                |                          |                             |
+
+| **Words / Phrases** | **Synonyms / Collocations** | **Example**                                             |
+| ------------------- | --------------------------- | ------------------------------------------------------- |
+| obesity             | overweight, excess weight   | Childhood **obesity** is increasing worldwide.          |
+| diagnose            | identify, detect            | Doctors can **diagnose** illnesses more accurately now. |
+| chronic             | long-term, persistent       | She suffers from **chronic** back pain.                 |
+| maintain health     | stay fit, promote wellbeing | Regular exercise helps to **maintain health**.          |
+| come down with      | contract, fall ill          | He **came down with** the flu last week.                |
+
 ## Psychology / Cognitive Skills
 
 | **Word / Phrase**      | **Synonym(s)**                     | **Collocation(s)**                             |
@@ -681,7 +758,27 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | bone density      | bone mass, bone strength             | increase/maintain bone density      |
 | bone remodelling  | bone renewal, bone restructuring     | mechanism of bone remodelling       |
 | physiologist      | scientist, biology researcher        | physiologist discovered/found       |
-# Shopping
+
+# Community / Volunteering / Social Events
+
+| **Word / Phrase**           | **Synonym / Paraphrase** | **Collocation**                       |
+| --------------------------- | ------------------------ | ------------------------------------- |
+| **volunteer**               | unpaid helper            | community volunteer                   |
+| **arrange** (help / events) | organize, coordinate     | arrange transport, arrange activities |
+| **provide transport**       | give lifts               | provide help, provide services        |
+| **help with hobbies**       | support, assist          | help with art, help with gardening    |
+| **work in the garden**      | weed, tidy               | do gardening for residents            |
+| **decorate the kitchen**    | paint, refurbish         | decorate a house                      |
+
+| **Word / Phrase**             | **Synonym / Paraphrase**  | **Collocation**             |
+| ----------------------------- | ------------------------- | --------------------------- |
+| **quiz**                      | competition, trivia night | hold a quiz                 |
+| **dance**                     | social event              | attend a dance              |
+| **party**                     | celebration, gathering    | New Year’s Eve party        |
+| **fill the hall**             | crowd the hall            | village hall full           |
+| **refreshments**              | snacks, drinks            | provide refreshments        |
+| **check tickets at the door** | control entry             | sell tickets, check tickets |
+| **poster**                    | advertisement, notice     | design a poster             |
 
 # Process
 
@@ -724,6 +821,14 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 
 
 # Tourism
+
+| **Term**         | **Synonym**   | **Collocations**                    |
+| ---------------- | ------------- | ----------------------------------- |
+| **guide**        | tour leader   | give an introduction                |
+| **feature**      | attraction    | latest addition, new feature        |
+| **audio guide**  | recorded tour | replace the audio guide             |
+| **refreshments** | food & drink  | lunch, afternoon tea, homemade cake |
+| **gift shop**    | retail        | buy gifts, jams, pickles, blankets  |
 
 # Urbanization - City Life - Community - Society
 
@@ -776,6 +881,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **unpopular**                           | Not liked or approved of by many people                         | disliked, unfavorable                        |
 | **felt safer**                          | Had a greater sense of security                                 | perceived more safety, more secure           |
 
+# Agriculture
+
+| **Term**               | **Synonym**           | **Collocations**                     |
+| ---------------------- | --------------------- | ------------------------------------ |
+| **dairy**              | creamery              | turn milk into cheese                |
+| **barn** (large/small) | farm building         | large barn, small barn               |
+| **stables**            | horse stalls          | horses no longer live in the stables |
+| **rare breeds**        | traditional livestock | preserve rare breeds                 |
+| **groom** (animals)    | brush, clean          | groom donkeys and horses             |
 
 # Housing - Building - Materials - Infrastructure
 
@@ -839,6 +953,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | rough (to touch)    | coarse, harsh              | rough texture, rough surface        |
 | needles (wood/bone) | knitting sticks, pins      | knitting needles, steel needles     |
 
+HERITAGE / ARCHITECTURE
+
+| **Term**                    | **Synonym / Notes** | **Collocations**               |
+| --------------------------- | ------------------- | ------------------------------ |
+| estate                      | grounds, property   | large estate, historic estate  |
+| **hall**                    | manor house         | Oniton Hall                    |
+| **ballroom / conservatory** | grand rooms         | add a ballroom, demolish rooms |
+| **dominates**               | towers over         | the large barn dominates       |
+| **parkland**                | landscaped grounds  | eighteenth‑century parkland    |
 # Water
 
 
@@ -1020,6 +1143,22 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | measuring fat content              | testing nutritional value    | fat content measurement                     |
 | scales not accurate enough         | imprecise weighing equipment | accuracy of scales                          |
 | nutritional information on package | food label data              | check / compare with packaging info         |
+
+| **Word / Phrase** | **Synonym / Paraphrase**      | **Collocation**               |
+| ----------------- | ----------------------------- | ----------------------------- |
+| **library**       | book collection, reading room | village library, town library |
+| **collect books** | gather, pick up               | collect donated books         |
+| **borrow books**  | take temporarily              | borrow from the town library  |
+| **donate books**  | give                          | donate to the library         |
+| **keep records**  | maintain, update              | keep records up to date       |
+
+| **Words / Phrases** | **Synonyms / Collocations**             | **Example**                                                          |
+| ------------------- | --------------------------------------- | -------------------------------------------------------------------- |
+| curriculum          | syllabus, program of study              | The school updated its **curriculum** to include more STEM subjects. |
+| learn               | acquire knowledge, master, grasp        | Students need to **grasp** fundamental concepts before moving on.    |
+| academic            | scholarly, educational                  | He received an **academic** award for his research paper.            |
+| pursue a degree     | study at university, undertake a course | Many students **pursue a degree** in engineering.                    |
+| catch up on         | make up for lost learning               | She stayed up late to **catch up on** her homework.                  |
 
 # Work & Careers
 
