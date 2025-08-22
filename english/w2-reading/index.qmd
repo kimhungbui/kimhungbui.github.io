@@ -1,0 +1,78 @@
+---
+title: Reading
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-21
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Some people think that people should read books from their own country, while others believe that reading international literature is more important. Discuss both views and give your opinion.
+
+
+Plan
+
+Introduction
+
+General topic: Reading and literature
+
+Focus: Local vs international literature
+
+Issue to discuss: Should people read national or international works?
+
+Position: While local literature is important, international literature has broader benefits
+
+Themes: culture, identity, personal development, education, global awareness
+
+Side A: Local literature is important
+
+Main topic of paragraph: Benefits of reading literature from your own country
+
+1 culture & identity - local stories reflect national history, traditions, values -> helps develop sense of belonging
+
+2 Language skills - written in familiar language -> easier comprehension and engagement
+
+3 Heritage & Knowledge - understanding historical events, local society -> educates younger generations
+
+link back: shows why reading local literature is valuable and necessary
+
+Side B international literature is important
+
+main topic: benefits of reading literature from other countries
+
+1 cultural awareness & empathy - exposure to different ways of life, social issues, moral dilemmas
+
+2 critical thinking & creativity - compare different societies, challenge assumptions
+
+3 global perspective helps navigate an interconnected world, broadens horizons 
+
+
+link back: shows why international literature is increasingly important.
+
+conclusion
+
+summary of main points: local literature promotes identity; international literature promotes understanding and critical thinking
+
+final position: balance is best - engage with both, but international exposure is essential for broader personal growth
+
+
+In many countries, there is an ongoing debate about whether people should focus on reading books from their own nation or whether exploring international literature is more beneficial. While literature from one's own country certainly has value, I believe that reading works from around the world provides wider benefits for personal development and understanding.
+
+It is true that local literature plays an important role in preserving culture and identity. Stories written by authors from one's own country often reflect national history, traditions, and social values. By reading these works, individuals gain a deeper understanding of their heritage, which can strengthen a sense of belonging and connection to their community. Moreover, local literature is usually written in a familiar language, which makes it easier for readers to engage with the content and appreciate the subtleties of style and expression. For younger generations, these books provide knowledge of historical events and societal norms, ensuring that important cultural lessons are not forgotten.
+
+Nevertheless, reading international literature offers benefits that local works alone cannot provide. Exposure to stories from different countries allows readers to develop empathy and a broader understanding of diverse cultures. International literature can present social issues, moral dilemmas, and everyday experiences that are entirely different from one's own, encouraging critical thinking and reflection. Additionally, such reading fosters creativity, as comparing different societies and styles challenges assumptions and expands the imagination. In today's increasingly interconnected world, having a global perspective is essential, and international literature is an effective way to achieve this.
+
+In conclusion, while books from one's own country are valuable for preserving identity and cultural knowledge, reading international works offers a broader understanding of humanity and encourages personal growth. Therefore, I would argue that a balanced approach is ideal: people should read both local and global literature, but international exposure should play a central role in fostering a well-rounded worldview.
