@@ -1,0 +1,58 @@
+---
+title: When do I use the present simple tense?
+lightbox: false
+description: When plural
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-08-22
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+1 Choose the correct sentence in each pair
+
+1 a Nowadays, our bodies becoming 'old' much later than 100 years ago
+ b Nowadays, our bodies become 'old' much later than 100 years ago.
+
+-> b i think it not have meaning continue in that sentence.
+
+Nowadays -> use present simple
+2 a Children lost their freedom if they have too many responsibilities.
+
+b Children lose their freedom if they have too many responsibilities.
+
+-> b, i think 
+
+We use the present simple tense:
+
+- to make general statements about our world: _The earth moves around the sun._
+- to show a pattern or general truth: _People work in order to meet their basic need._
+- with adverbs of frequency: _always, usually, often, sometimes, never_: People who are too lazy to walk often use their cars instead.
+- with expressions such as: nowadays, these days, today (with a general meaning): Many students today do their research via computer rather than through books.
+- for verbs showing opinions or feelings, e.g. believe, think, hope: I hope that we should all do as much as we can to improve our environment.
+
+# Correct the mistake
+
+My brother watch -> watches TV for 8 hours every day.
+
+# Correct the mistakes in the sentences below.
+
+1. People should act according to what they are ~~believing~~ believe. (for verbs showing opinions or feelings)
+2. In general, I think our government ~~spent~~ spend (general meaning) too much money on space travel.
+3. Nowadays, many people in my country ~~have sent~~ SEND (expressions general meaning) their children to single-sex education.
+4. These days, more and more people ~~traveling~~ travel (these days) to very distant places for their holidays.
+5. I am ~~hoping~~ hope (verbs show opinions or feelings) it is not too late to save the environment.
+6. The female hen ~~laying~~ lays (show an pattern) on average 5 or 6 eggs per week.
+7. Younger drivers ~~is~~ are more likely to be involved in a car accident.
+8. Most doctors ~~are agreeing~~ agree (that is present continuous, but the sentence expresses a general fact) that the only way to lose weight is by doing more exercises.
