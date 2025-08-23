@@ -1,0 +1,81 @@
+---
+title: Practice Writing Task 1
+lightbox: false
+description: Practice map
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-23
+categories:
+  - english
+  - writing
+  - graphs
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+The diagrams below show the layout of a public library now and the plans for its redevelopment.
+
+Now(current Library layout)
+
+Central reading room
+
+Small reception at entrance
+
+Book shelves on left and right sides
+
+Study tables at the back
+
+One computer room (next to reception)
+
+Planned Redevelopment
+
+Larger reception moved to center
+
+Cafe added near entrance
+
+More computers (two new computer labs replacing one side of bookshelves)
+
+Children's area and story corner replacing study tables
+
+Fewer shelves but more digital resources kiosks
+
+Plan
+
+Intro
+
+Paraphrase task -> The plans illustrate how a public library is set to be transformed.
+
+Overview -> highlight main changes (shift from books -> digital, social facilities like cafe/ children's area)
+
+Paragraph 1 (Current)
+
+Describe present features in logical oder (entrance -> reception -> shelves -> study area -> computer room)
+
+Paragraph 2 (Future)
+
+Describe new features and changes in same order (entrance -> reception -> cafe -> computer labs -> children's area -> kiosks)
+
+Conclusion/overall
+
+One clear sentence: "Overall, the library will become more modern and family-oriented, with fewer traditional books and more digital/communal spaces."
+
+***
+
+The plans illustrate how a public library is set to be transformed after redevelopment. Overall, while traditional book storage will be reduced, the new layout will prioritize digital learning and community spaces, making the library more modern and family-friendly.
+
+At present, the library consists of a central reading room with a small reception immediately inside the entrance. Bookshelves occupy both the left and the right sides of the building, while study tables are located at the back. In addition, there is a single computer room next to the reception area.
+
+Following the renovations, the reception will be relocated to the center of the building and significantly expanded. A cafe will be added near the entrance, providing a space for visitors to relax. The left-hand side of the library will be converted into two computer laboratories, replacing the existing bookshelves. At the rear, the study tables will be removed to make room for a children's area,  including a story corner. Meanwhile, the right-hand side will contain fewer shelves, with several digital resource kiosks added instead.
+
+
+

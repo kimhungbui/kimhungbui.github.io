@@ -554,6 +554,13 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | carbon footprint    | greenhouse gas emissions                 | People are trying to reduce their **carbon footprint**.        |
 | cut down on         | reduce consumption of                    | We should **cut down on** plastic usage.                       |
 
+| **Word / Phrase**     | **Synonyms**         | **Collocations**                             |
+| --------------------- | -------------------- | -------------------------------------------- |
+| mud                   | dirt, clay, sludge   | thick mud, mud flats, covered in mud         |
+| feathers              | plumage              | bright feathers, feather patterns            |
+| oceans                | seas, waters         | vast oceans, cross the ocean, ocean currents |
+| recovery (ecological) | restoration, renewal | environmental recovery, forest recovery      |
+
 # History
 
 | Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
@@ -758,6 +765,13 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | bone density      | bone mass, bone strength             | increase/maintain bone density      |
 | bone remodelling  | bone renewal, bone restructuring     | mechanism of bone remodelling       |
 | physiologist      | scientist, biology researcher        | physiologist discovered/found       |
+
+| **Word / Phrase** | **Synonyms**               | **Collocations**                        |
+| ----------------- | -------------------------- | --------------------------------------- |
+| evidence          | proof, data, confirmation  | scientific evidence, clear evidence     |
+| shape             | figure, outline, contour   | geometric shape, change shape           |
+| moon              | lunar body                 | full moon, crescent moon, lunar eclipse |
+| atlas             | map book, chart collection | world atlas, digital atlas              |
 
 # Community / Volunteering / Social Events
 

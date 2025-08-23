@@ -1,0 +1,91 @@
+---
+title: Process task
+lightbox: false
+description: Being precise in map and plan tasks
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-08-23
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Language used in process tasks
+
+The need to explain movement and physical changes.
+
+ORganize the infor step by step to explain how somethings is done or how st develops.
+
+![](Pasted%20image%2020250823163143.png)
+
+
+:::{.callout-tip}
+The word 'fish' is generally used as an uncountable noun (the plural 'fishes' is only used rarely to refer to different fish species). This includes different types of fish such as tuna, salmon, etc. So we can say '_the tuna swim_', not "_the tunas swim_"
+
+We can use the word to mean one fish: _the salmon swims_ or several fish: _the salmon swim_.
+
+NB Whales and dolphins are mammals and are countable nouns.
+:::
+
+## Language used in process task
+
+We may need to describe:
+
+_time, different stages, physical changes, movement_
+
+## Period of time
+
+often saying how long a stage or step in a process __takes__ or __lasts__, or how much time is __spent__ _in a place_.
+
+- _This stage __lasts__ for four years._
+- _The fry __spend__ four years in the upper river._
+- _It __took__ five years to complete the renovations._
+
+With our current task, we cannot say: '_The salmon eggs __take__ 5-6 months __to break out of their eggs___', because we do not know how long this specific process takes and it is unlikely to take up 6 months for the fish to break out of their eggs.
+
+__Phase, period, stage__, and __time__ are useful synonyms to use here, but be careful with the prepositions __at__ and __during__. __Phase__ and __time__ can refer to either a length of time or point of time, and so we can use both _during_ and _at_ with these:
+
+- During this phase NOT ~~at this phase~~
+- During this period NOT ~~at this period~~
+- During this stage, at this stage
+- During this time, at this time
+
+## Describing physical changes
+
+We can use the following verbs to describe the physical changes that occur in a natural process:
+
+_Become, change, develop, grow, turn into_
+
+They are used slightly differently
+
+:::{.callout-tip}
+## Describing physical change
+
+__Become__ is often used with a comparative e.g. '_become bigger_', or to describe a change: e.g. '_the smolt __becomes__ an adult salmon_'.
+
+__Change__ has a broader meaning and can be used to introduce the idea: e.g. '_the fish then __changes__ again and __becomes__ ..._', or '_the fish then __changes__ again, __growing__ bigger ..._' It can also be used with 'into' e.g. 'the fry __changes into__ a smolt' NB not ~~changes to~~ a smolt.
+
+__Develop__ and __grow__ can be used with a specific feature: e.g. '_the egg hatches and the young fish __develops / grows__ fins and a tail_'. Or to describe a change: e.g. '_the smolt __develops into / grows into__ an adult salmon_.'
+
+__Turn into__ is a phrasal verb and is similar in meaning to 'change into' or 'become'
+e.g. '_the fry __turn into__ a smolt_'
+::: 
+
+## Some words to be careful with
+
+We can't use the verb __evolve__ to describe this type of natural change.
+
+Similarly, be careful with the verb __transform__, which suggests a change into something completely new. For example, _a ceterpillar __transforms into__ a butterfly_ or _Following the renovation, the old shed was __transformed into__ a modern restaurant._
+
+Make sure any adjectives or adverbs we use __accurately__ describe what we are shown in the images. Can you see any problems in the following extracts?
+

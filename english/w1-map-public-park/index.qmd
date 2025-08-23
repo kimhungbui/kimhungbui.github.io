@@ -1,0 +1,170 @@
+---
+title: Practice Writing Task 1
+lightbox: false
+description: Practice map
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-23
+categories:
+  - english
+  - writing
+  - graphs
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Cambridge 14 writing test 4
+
+The plans below show a public park when it first opened in 1920 and the same park today.
+
+Summarize the information by selecting and reporting the main features and make comparisons where relevant.
+
+![](Pasted%20image%2020250823150007.png)
+
+intro
+
+paraphrase
+
+The plans show the public park as it was opened in 1920 and the current layout following its redevelopment.
+
+main points overall
+Overall, while almost all facilities have changed, the new layout prioritizes to serve for dense activities, making the park more modern and family-oriented.
+p1 past 
+overall
+2 entrances, fountain in the middle, stages for musician on the west, rose gardens in the north and the south, many seats around the area. on the east, rose garden and pond, glasshouse and seats.
+
+p2 now
+
+entrance, + 1 entrance, rose garden with seats, amphithreaters, rose garden,  cafe, children play area, water feature
+
+***
+
+
+The plans show the public park as it was opened in 1920 and the current layout following its redevelopment. Overall, while almost all facilities have changed, the new layout prioritizes to serve for dense activities, making the park more modern and family-oriented.
+
+In the past, the park consisted of many facilities for relaxing and had several seats around. There were two entrances from 2 Street, a fountain in the middle, stages for musicians, and two rose gardens on the west side. On the east side of the park, there was were rose garden, a pond for water plants, and a glasshouse. In addition, there were several seats around the edge of the park.
+
+Following the renovations, only the west rose garden and the two entrances remain the same, and a new entrance underground carpark has been added to the east side of the park.
+The fountain has been removed to make way for a rose garden, and all seats around the park have been moved to the center. On the west side, the old stage for musicians is replaced by an amphitheater, while just one rose garden still remains. These include a cafe, a children's play area, and a water feature on the east side, replacing the rose garden, the pond for water land, and the glasshouse.
+
+
+### Feedback on Your Draft
+
+1. Grammar / word choice
+    
+    - “prioritizes to serve for dense activities” → awkward, not idiomatic. Better: “prioritizes active recreation” or “caters to a wider range of recreational activities.”
+        
+    - “there was were rose garden” → typo.
+        
+    - “pond for water land” → likely mis-typed “pond for water plants.”
+        
+    - “These include a cafe…” → not clear what “these” refers to.
+        
+    
+2. Cohesion
+    
+    - Avoid repeating “rose garden” too often; group logically.
+        
+    - Use connectors like “In contrast,” “whereas,” “in place of.”
+        
+    
+3. Task achievement
+    
+    - You correctly mention what has remained (entrances + west rose garden), but be careful to clearly contrast past vs. now.
+
+
+### Task Achievement
+
+- ✅ You described both maps, mentioned changes and things that remained.
+    
+- ❌ Some details are unclear or inaccurate (“pond for water land” is wrong; “prioritizes to serve for dense activities” is unnatural).
+    
+- ❌ Overview is weakly expressed — “prioritizes to serve for dense activities” does not clearly summarize the main trend.
+    
+    Band: 6.0–6.5
+    
+
+---
+
+### Coherence and Cohesion
+
+- ✅ Logical order: past → present.
+    
+- ❌ Repetition (“rose garden” appears too often without grouping).
+    
+- ❌ Some sentences start awkwardly (“These include a cafe…” → unclear reference).
+    
+    Band: 6.0–6.5
+    
+
+---
+
+### Lexical Resource
+
+- ✅ You used some appropriate terms: redevelopment, layout, facilities.
+    
+- ❌ Many phrases are non-idiomatic or unnatural (“dense activities,” “rose garden still remains”).
+    
+- ❌ Limited variety (repeated rose garden, seats, replaced).
+    
+    Band: 6.0
+    
+
+---
+
+### Grammatical Range and Accuracy
+
+- ✅ Some correct complex sentences (“Following the renovations, only the west rose garden and the two entrances remain the same…”).
+    
+- ❌ Frequent grammar slips:
+    
+    - “there was were rose garden”
+        
+    - “there was were a pond for water land”
+        
+    - “making the park more modern and family-oriented” (ok, but phrased awkwardly in your context).
+        
+    
+- These errors reduce clarity.
+    
+    Band: 5.5–6.0
+
+
+***
+
+The plans show a public park as it appeared when it first opened in 1920 and its current layout after redevelopment. Overall, while most original facilities have been replaced, the park has been redesigned to cater to more active and family-oriented recreation.
+
+In 1920, the park mainly provided spaces for relaxation. There were two entrances from Arnold Avenue and Eldon Street, with a fountain in the center. To the west, visitors could find a stage for musicians and two rose gardens, while the east side contained another rose garden, a pond for water plants, and a glasshouse. Benches were also placed around the edges of the park for people to sit.
+
+Today, only the two original entrances and the western rose garden remain unchanged, and an additional entrance leading to an underground car park has been added on the east side. The central fountain has been replaced by a large rose garden with seating around it. On the west side, the old bandstand has been converted into an amphitheater. Meanwhile, the eastern side has undergone the most dramatic transformation: the pond, rose garden, and glasshouse have been removed and replaced with a cafe, a children's play area, and a water feature.
+
+
+
+The plans show the public park as it was when it opened in 1920 and its current layout after redevelopment. Overall, while almost all of the original facilities have been changed, the modern design focuses on providing spaces for a wider range of recreational activities, making the park more family-oriented.
+
+  
+
+In the past, the park contained several features for relaxation. There were two entrances from Arnold Avenue and Eldon Street, a fountain in the middle, a stage for musicians, and two rose gardens on the left side. On the right side, there was another rose garden, a pond for water plants, and a glasshouse. In addition, seats were placed around the edges of the park.
+
+  
+
+Following the renovations, only the rose garden on the left and the two original entrances remain unchanged, with a new underground car park entrance added to the right-hand side. The central fountain has been replaced by another rose garden, and all the seats have been moved to the center of the park. On the left, the old stage for musicians has been converted into an amphitheater, while the right side now includes a café, a children’s play area, and a water feature, replacing the former rose garden, pond, and glasshouse.
+
+
+***
+
+The plans show a public park when it first opened in 1920 and how it looks today after redevelopment. Overall, while most original features have either been replaced or relocated, the park now provides a wider range of facilities for recreation, especially for families.
+
+In 1920, the park was largely designed for relaxation and quiet leisure. A fountain stood at the center, surrounded by seats, with rose gardens in both the west and east corners. On the west side, there was a pond for water plants. Two entrances connected to the park to Arnold Avenue and Eldon Street.
+
+Currently, the central fountain has been replaced by a rose garden with seating, and most other features have been modernized. The stage for musicians has been redeveloped into an amphitheater for concerts, while the pond, glasshouse, and eastern rose garden have all been replaced with a cafe, a children's play area, and a water feature. The original entrances remain, but a new underground car park has been added to the east.

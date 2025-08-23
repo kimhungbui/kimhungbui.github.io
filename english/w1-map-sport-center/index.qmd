@@ -1,0 +1,75 @@
+---
+title: Practice Writing Task 1
+lightbox: false
+description: Practice map
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-23
+categories:
+  - english
+  - writing
+  - graphs
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+**_The plans below show the layout of a university's sports centre now, and how it will look after redevelopment._**
+
+**_Summarise the information by selecting and reporting the main features and make comparison where relevant._**
+
+![](Pasted%20image%2020250823141913.png)
+
+intro
+
+paraphrase task 
+
+the plans illustrate how a university sport center is set to be transformed.
+
+Overview main changes
+
+new sport shops, cafe, changing room
+
+1 outdoor court-> leisure pool, and changing room
+
+1 outdoor court -> sport hall, 2 dance studio
+
+paragraph 1 current
+consist of 1 building and 2 outdoor courts 
+describe in logical order 
+
+entrance - reception - pool, changing room, gym, at the back, seating
+
+2 outdoor courts
+
+only the central pool and its facilities remain the same
+paragraph 2 future
+
+entrance - reception - sports shop, cafe - pool changing room, gym, seating, - leisure pool, changinng room, sports hall, changing room dance studio
+
+conclusion
+
+Overall, the sports center will become more convenient and indoor-oriented, with no outdoor activities and more communal space.
+
+
+***
+
+The plans illustrate how a university sports center is set to be transformed after redevelopment. Overall, the sports center will become more convenient and indoor-oriented, with no outdoor activities and more communal space.
+
+At present, the sports center consists of a relatively small building and two outdoor courts on each side. The building houses a 25-meter pool, and its facilities include a changing room and a seating area, and there is a gym on the rear and a reception area to the front.
+
+Following the renovations, only the central pool and its facilities remain the same. The building will be expanded to the west and east, removing outdoor courts and making way for more indoor facilities. These include a leisure pool on the western side, which is slightly larger than the central pool, and will have its own changing room, and on the western side, a new sports hall, and two dance studios. The current gym will be lengthened so that it is double its current size. The reception area will also be widened, making it more spacious. On arrival, the visitors to the new center will benefit from a third changing room, a sports shop, and a cafe, all located around the reception area.
+
+
+
+
+

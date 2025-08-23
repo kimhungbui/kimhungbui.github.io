@@ -1,0 +1,109 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 17 listening test 3
+lightbox: false
+description: IELTS Practice Set 17 listening test 3
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-23
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 17 - listening test 2
+
+
+
+
+# Performance Summary
+
+
+# Recording 4
+
+## **What went wrong & how to fix it**
+
+  
+
+**Q36 — evidence (you wrote “evident”)**
+
+- **Why:** After “no ___ that…”, English requires a **noun**, not an adjective.
+    
+- **Collocation:** “no **evidence** that …” is the natural pair.
+    
+- **Mini rule:** If you hear “no / some / much / little ___ that…”, expect a **noun** (_evidence, proof, indication_).
+    
+- **Word-form pairs to remember:** evidence (n) vs. evident (adj); confidence vs. confident; intelligence vs. intelligent.
+    
+
+  
+
+**Q37 — destinations (you wrote “destination”)**
+
+- **Why:** The script says “Little was known about the **actual destinations** of particular species and **how they travelled there**.” Also the note line reads “about the **___ and journeys**”, which signals **parallel plurals**.
+    
+- **Mini rule:** When a blank is coordinated with another **plural** (“X **and** journeys”), make **both plural**.
+    
+
+  
+
+**Q38 — oceans (you wrote “ocean”)**
+
+- **Why:** The lecture uses the collocation “over **vast oceans**.” IELTS often tests the faint **-s** at word ends.
+    
+- **Mini rule:** Quantifiers like **vast**, **huge stretches of**, and references to large areas often take the **plural** (_oceans, mountains, forests_). Listen for the final /z/ sound.
+    
+
+  
+
+**Q40 — atlas (you wrote “atlat”)**
+
+- **Why:** Simple letter transposition under time pressure. The line was “In 1931, **an atlas** was published…”.
+    
+- **Mini rule:** Use the **article cue**: “**an** atlas” → vowel sound → _atlas_. When you hear an article + noun, lock in the standard spelling you know.
+
+
+## **Fast repair drills (15–30 seconds each)**
+
+  
+
+Say these aloud, then write the missing word exactly:
+
+1. There had been **no  that** storks migrate to Africa. → **evidence**
+    
+2. Little was known about birds’ actual **____** and journeys. → **destinations**
+    
+3. Small birds weighing only a few grams could still fly over vast **____**. → **oceans**
+    
+4. In 1931, **an ____** of European bird migration was published. → **atlas**
+
+## **Micro-skills to prevent these errors on test day**
+
+1. **Grammar slot check (Word form):**
+    
+    - After _no / little / much + ___ + that…_ → **noun**.
+        
+    
+2. **Parallelism scan (Number):**
+    
+    - If the other half is plural (“X **and** journeys”), make your blank plural too.
+        
+    
+3. **End-sound focus (Plural -s):**
+    
+    - Train your ear for the soft **/z/** at the end (oceans, destinations). Shadow-read transcripts to feel the endings.
+        
+    
+4. **Article cue for spelling:**
+    
+    - “**a/an + noun**” often signals a common, dictionary form you already know. Use the article to sanity-check spelling (an **atlas**).
