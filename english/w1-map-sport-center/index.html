@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hung">
-<meta name="dcterms.date" content="2025-04-04">
-<meta name="description" content="Your post description">
+<meta name="dcterms.date" content="2025-08-23">
+<meta name="description" content="Practice map">
 
-<title>Maximum subarray – Kim Hung’s ThinkStack</title>
+<title>Practice Writing Task 1 – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -218,34 +184,26 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question">Question</a></li>
-  <li><a href="#answer" id="toc-answer" class="nav-link" data-scroll-target="#answer">Answer:</a>
-  <ul class="collapse">
-  <li><a href="#brute-force" id="toc-brute-force" class="nav-link" data-scroll-target="#brute-force">Brute force</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Maximum subarray</h1>
+<h1 class="title">Practice Writing Task 1</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">leetcode</div>
-    <div class="quarto-category">programming</div>
+    <div class="quarto-category">english</div>
+    <div class="quarto-category">writing</div>
+    <div class="quarto-category">graphs</div>
+    <div class="quarto-category">task-1</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Your post description
+    Practice map
   </div>
 </div>
 
@@ -258,9 +216,7 @@ https://badge.dimensions.ai/
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://leetcode.com/problems/maximum-subarray/">
-            Leetcode
-            </a>
+            Barron’s Writing for IELTS
           </p>
       </div>
   </div>
@@ -271,7 +227,7 @@ https://badge.dimensions.ai/
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 4, 2025</p>
+      <p class="date">August 23, 2025</p>
     </div>
   </div>
   
@@ -283,44 +239,29 @@ https://badge.dimensions.ai/
 </header>
 
 
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>Given an integer array nums, find the subarray with the largest sum, and return its sum.</p>
-<p>Example 1:</p>
-<p>Input: nums = <code>[-2,1,-3,4,-1,2,1,-5,4]</code> Output: 6 Explanation: The subarray <code>[4,-1,2,1]</code> has the largest sum 6. Example 2:</p>
-<p>Input: nums = <code>[1]</code> Output: 1 Explanation: The subarray <code>[1]</code> has the largest sum 1. Example 3:</p>
-<p>Input: <code>nums = [5,4,-1,7,8]</code> Output: 23 Explanation: The subarray <code>[5,4,-1,7,8]</code> has the largest sum 23.</p>
-<p>Constraints:</p>
-<p><code>1 &lt;= nums.length &lt;= 105</code> <code>-104 &lt;= nums[i] &lt;= 104</code></p>
-<p>Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>
-</section>
-<section id="answer" class="level1">
-<h1>Answer:</h1>
-<section id="brute-force" class="level2">
-<h2 class="anchored" data-anchor-id="brute-force">Brute force</h2>
-<pre><code>    # brute force approach
-
-    # find all left, and right 
-    # cal sum of each
-    # return max
-    # T.C: O(n^2)</code></pre>
-<div id="c0ea10db" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maxSubArray(<span class="va">self</span>, nums: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    left, ans <span class="op">=</span> <span class="dv">0</span>, nums[<span class="dv">0</span>]</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> left <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(nums)):</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        cur <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> right <span class="kw">in</span> <span class="bu">range</span>(left, <span class="bu">len</span>(nums)):</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            cur <span class="op">+=</span> nums[right]</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            ans <span class="op">=</span> <span class="bu">max</span>(ans, cur)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ans</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>it will TLE.</p>
+<p><strong><em>The&nbsp;plans&nbsp;below&nbsp;show&nbsp;the&nbsp;layout&nbsp;of&nbsp;a&nbsp;university’s&nbsp;sports&nbsp;centre&nbsp;now,&nbsp;and&nbsp;how&nbsp;it&nbsp;will&nbsp;look&nbsp;after&nbsp;redevelopment.</em></strong></p>
+<p><strong><em>Summarise&nbsp;the&nbsp;information&nbsp;by&nbsp;selecting&nbsp;and&nbsp;reporting&nbsp;the&nbsp;main&nbsp;features&nbsp;and&nbsp;make&nbsp;comparison&nbsp;where&nbsp;relevant.</em></strong></p>
+<p><img src="Pasted image 20250823141913.png" class="img-fluid"></p>
+<p>intro</p>
+<p>paraphrase task</p>
+<p>the plans illustrate how a university sport center is set to be transformed.</p>
+<p>Overview main changes</p>
+<p>new sport shops, cafe, changing room</p>
+<p>1 outdoor court-&gt; leisure pool, and changing room</p>
+<p>1 outdoor court -&gt; sport hall, 2 dance studio</p>
+<p>paragraph 1 current consist of 1 building and 2 outdoor courts describe in logical order</p>
+<p>entrance - reception - pool, changing room, gym, at the back, seating</p>
+<p>2 outdoor courts</p>
+<p>only the central pool and its facilities remain the same paragraph 2 future</p>
+<p>entrance - reception - sports shop, cafe - pool changing room, gym, seating, - leisure pool, changinng room, sports hall, changing room dance studio</p>
+<p>conclusion</p>
+<p>Overall, the sports center will become more convenient and indoor-oriented, with no outdoor activities and more communal space.</p>
+<hr>
+<p>The plans illustrate how a university sports center is set to be transformed after redevelopment. Overall, the sports center will become more convenient and indoor-oriented, with no outdoor activities and more communal space.</p>
+<p>At present, the sports center consists of a relatively small building and two outdoor courts on each side. The building houses a 25-meter pool, and its facilities include a changing room and a seating area, and there is a gym on the rear and a reception area to the front.</p>
+<p>Following the renovations, only the central pool and its facilities remain the same. The building will be expanded to the west and east, removing outdoor courts and making way for more indoor facilities. These include a leisure pool on the western side, which is slightly larger than the central pool, and will have its own changing room, and on the western side, a new sports hall, and two dance studios. The current gym will be lengthened so that it is double its current size. The reception area will also be widened, making it more spacious. On arrival, the visitors to the new center will benefit from a third changing room, a sports shop, and a cafe, all located around the reception area.</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

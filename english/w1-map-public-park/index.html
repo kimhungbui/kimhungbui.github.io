@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hung">
-<meta name="dcterms.date" content="2025-04-04">
-<meta name="description" content="Your post description">
+<meta name="dcterms.date" content="2025-08-23">
+<meta name="description" content="Practice map">
 
-<title>Maximum subarray – Kim Hung’s ThinkStack</title>
+<title>Practice Writing Task 1 – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -223,11 +189,11 @@ https://badge.dimensions.ai/
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#question" id="toc-question" class="nav-link active" data-scroll-target="#question">Question</a></li>
-  <li><a href="#answer" id="toc-answer" class="nav-link" data-scroll-target="#answer">Answer:</a>
-  <ul class="collapse">
-  <li><a href="#brute-force" id="toc-brute-force" class="nav-link" data-scroll-target="#brute-force">Brute force</a></li>
-  </ul></li>
+  <li><a href="#feedback-on-your-draft" id="toc-feedback-on-your-draft" class="nav-link active" data-scroll-target="#feedback-on-your-draft"><span class="header-section-number">0.1</span> Feedback on Your Draft</a></li>
+  <li><a href="#task-achievement" id="toc-task-achievement" class="nav-link" data-scroll-target="#task-achievement"><span class="header-section-number">0.2</span> Task Achievement</a></li>
+  <li><a href="#coherence-and-cohesion" id="toc-coherence-and-cohesion" class="nav-link" data-scroll-target="#coherence-and-cohesion"><span class="header-section-number">0.3</span> Coherence and Cohesion</a></li>
+  <li><a href="#lexical-resource" id="toc-lexical-resource" class="nav-link" data-scroll-target="#lexical-resource"><span class="header-section-number">0.4</span> Lexical Resource</a></li>
+  <li><a href="#grammatical-range-and-accuracy" id="toc-grammatical-range-and-accuracy" class="nav-link" data-scroll-target="#grammatical-range-and-accuracy"><span class="header-section-number">0.5</span> Grammatical Range and Accuracy</a></li>
   </ul>
 </nav>
     </div>
@@ -236,16 +202,18 @@ https://badge.dimensions.ai/
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Maximum subarray</h1>
+<h1 class="title">Practice Writing Task 1</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">leetcode</div>
-    <div class="quarto-category">programming</div>
+    <div class="quarto-category">english</div>
+    <div class="quarto-category">writing</div>
+    <div class="quarto-category">graphs</div>
+    <div class="quarto-category">task-1</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Your post description
+    Practice map
   </div>
 </div>
 
@@ -258,9 +226,7 @@ https://badge.dimensions.ai/
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://leetcode.com/problems/maximum-subarray/">
-            Leetcode
-            </a>
+            Barron’s Writing for IELTS
           </p>
       </div>
   </div>
@@ -271,7 +237,7 @@ https://badge.dimensions.ai/
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 4, 2025</p>
+      <p class="date">August 23, 2025</p>
     </div>
   </div>
   
@@ -283,43 +249,97 @@ https://badge.dimensions.ai/
 </header>
 
 
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>Given an integer array nums, find the subarray with the largest sum, and return its sum.</p>
-<p>Example 1:</p>
-<p>Input: nums = <code>[-2,1,-3,4,-1,2,1,-5,4]</code> Output: 6 Explanation: The subarray <code>[4,-1,2,1]</code> has the largest sum 6. Example 2:</p>
-<p>Input: nums = <code>[1]</code> Output: 1 Explanation: The subarray <code>[1]</code> has the largest sum 1. Example 3:</p>
-<p>Input: <code>nums = [5,4,-1,7,8]</code> Output: 23 Explanation: The subarray <code>[5,4,-1,7,8]</code> has the largest sum 23.</p>
-<p>Constraints:</p>
-<p><code>1 &lt;= nums.length &lt;= 105</code> <code>-104 &lt;= nums[i] &lt;= 104</code></p>
-<p>Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.</p>
+<p>Cambridge 14 writing test 4</p>
+<p>The plans below show a public park when it first opened in 1920 and the same park today.</p>
+<p>Summarize the information by selecting and reporting the main features and make comparisons where relevant.</p>
+<p><img src="Pasted image 20250823150007.png" class="img-fluid"></p>
+<p>intro</p>
+<p>paraphrase</p>
+<p>The plans show the public park as it was opened in 1920 and the current layout following its redevelopment.</p>
+<p>main points overall Overall, while almost all facilities have changed, the new layout prioritizes to serve for dense activities, making the park more modern and family-oriented. p1 past overall 2 entrances, fountain in the middle, stages for musician on the west, rose gardens in the north and the south, many seats around the area. on the east, rose garden and pond, glasshouse and seats.</p>
+<p>p2 now</p>
+<p>entrance, + 1 entrance, rose garden with seats, amphithreaters, rose garden, cafe, children play area, water feature</p>
+<hr>
+<p>The plans show the public park as it was opened in 1920 and the current layout following its redevelopment. Overall, while almost all facilities have changed, the new layout prioritizes to serve for dense activities, making the park more modern and family-oriented.</p>
+<p>In the past, the park consisted of many facilities for relaxing and had several seats around. There were two entrances from 2 Street, a fountain in the middle, stages for musicians, and two rose gardens on the west side. On the east side of the park, there was were rose garden, a pond for water plants, and a glasshouse. In addition, there were several seats around the edge of the park.</p>
+<p>Following the renovations, only the west rose garden and the two entrances remain the same, and a new entrance underground carpark has been added to the east side of the park. The fountain has been removed to make way for a rose garden, and all seats around the park have been moved to the center. On the west side, the old stage for musicians is replaced by an amphitheater, while just one rose garden still remains. These include a cafe, a children’s play area, and a water feature on the east side, replacing the rose garden, the pond for water land, and the glasshouse.</p>
+<section id="feedback-on-your-draft" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="feedback-on-your-draft"><span class="header-section-number">0.1</span> Feedback on Your Draft</h3>
+<ol type="1">
+<li><p>Grammar / word choice</p>
+<ul>
+<li><p>“prioritizes to serve for dense activities” → awkward, not idiomatic. Better: “prioritizes active recreation” or “caters to a wider range of recreational activities.”</p></li>
+<li><p>“there was were rose garden” → typo.</p></li>
+<li><p>“pond for water land” → likely mis-typed “pond for water plants.”</p></li>
+<li><p>“These include a cafe…” → not clear what “these” refers to.</p></li>
+</ul></li>
+<li><p>Cohesion</p>
+<ul>
+<li><p>Avoid repeating “rose garden” too often; group logically.</p></li>
+<li><p>Use connectors like “In contrast,” “whereas,” “in place of.”</p></li>
+</ul></li>
+<li><p>Task achievement</p>
+<ul>
+<li>You correctly mention what has remained (entrances + west rose garden), but be careful to clearly contrast past vs.&nbsp;now.</li>
+</ul></li>
+</ol>
 </section>
-<section id="answer" class="level1">
-<h1>Answer:</h1>
-<section id="brute-force" class="level2">
-<h2 class="anchored" data-anchor-id="brute-force">Brute force</h2>
-<pre><code>    # brute force approach
-
-    # find all left, and right 
-    # cal sum of each
-    # return max
-    # T.C: O(n^2)</code></pre>
-<div id="c0ea10db" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maxSubArray(<span class="va">self</span>, nums: List[<span class="bu">int</span>]) <span class="op">-&gt;</span> <span class="bu">int</span>:</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    left, ans <span class="op">=</span> <span class="dv">0</span>, nums[<span class="dv">0</span>]</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> left <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(nums)):</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        cur <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> right <span class="kw">in</span> <span class="bu">range</span>(left, <span class="bu">len</span>(nums)):</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            cur <span class="op">+=</span> nums[right]</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            ans <span class="op">=</span> <span class="bu">max</span>(ans, cur)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ans</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>it will TLE.</p>
-
-
+<section id="task-achievement" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="task-achievement"><span class="header-section-number">0.2</span> Task Achievement</h3>
+<ul>
+<li><p>✅ You described both maps, mentioned changes and things that remained.</p></li>
+<li><p>❌ Some details are unclear or inaccurate (“pond for water land” is wrong; “prioritizes to serve for dense activities” is unnatural).</p></li>
+<li><p>❌ Overview is weakly expressed — “prioritizes to serve for dense activities” does not clearly summarize the main trend.</p>
+<p>Band: 6.0–6.5</p></li>
+</ul>
+<hr>
 </section>
+<section id="coherence-and-cohesion" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="coherence-and-cohesion"><span class="header-section-number">0.3</span> Coherence and Cohesion</h3>
+<ul>
+<li><p>✅ Logical order: past → present.</p></li>
+<li><p>❌ Repetition (“rose garden” appears too often without grouping).</p></li>
+<li><p>❌ Some sentences start awkwardly (“These include a cafe…” → unclear reference).</p>
+<p>Band: 6.0–6.5</p></li>
+</ul>
+<hr>
+</section>
+<section id="lexical-resource" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="lexical-resource"><span class="header-section-number">0.4</span> Lexical Resource</h3>
+<ul>
+<li><p>✅ You used some appropriate terms: redevelopment, layout, facilities.</p></li>
+<li><p>❌ Many phrases are non-idiomatic or unnatural (“dense activities,” “rose garden still remains”).</p></li>
+<li><p>❌ Limited variety (repeated rose garden, seats, replaced).</p>
+<p>Band: 6.0</p></li>
+</ul>
+<hr>
+</section>
+<section id="grammatical-range-and-accuracy" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="grammatical-range-and-accuracy"><span class="header-section-number">0.5</span> Grammatical Range and Accuracy</h3>
+<ul>
+<li><p>✅ Some correct complex sentences (“Following the renovations, only the west rose garden and the two entrances remain the same…”).</p></li>
+<li><p>❌ Frequent grammar slips:</p>
+<ul>
+<li><p>“there was were rose garden”</p></li>
+<li><p>“there was were a pond for water land”</p></li>
+<li><p>“making the park more modern and family-oriented” (ok, but phrased awkwardly in your context).</p></li>
+</ul></li>
+<li><p>These errors reduce clarity.</p>
+<p>Band: 5.5–6.0</p></li>
+</ul>
+<hr>
+<p>The plans show a public park as it appeared when it first opened in 1920 and its current layout after redevelopment. Overall, while most original facilities have been replaced, the park has been redesigned to cater to more active and family-oriented recreation.</p>
+<p>In 1920, the park mainly provided spaces for relaxation. There were two entrances from Arnold Avenue and Eldon Street, with a fountain in the center. To the west, visitors could find a stage for musicians and two rose gardens, while the east side contained another rose garden, a pond for water plants, and a glasshouse. Benches were also placed around the edges of the park for people to sit.</p>
+<p>Today, only the two original entrances and the western rose garden remain unchanged, and an additional entrance leading to an underground car park has been added on the east side. The central fountain has been replaced by a large rose garden with seating around it. On the west side, the old bandstand has been converted into an amphitheater. Meanwhile, the eastern side has undergone the most dramatic transformation: the pond, rose garden, and glasshouse have been removed and replaced with a cafe, a children’s play area, and a water feature.</p>
+<p>The plans show the public park as it was when it opened in 1920 and its current layout after redevelopment. Overall, while almost all of the original facilities have been changed, the modern design focuses on providing spaces for a wider range of recreational activities, making the park more family-oriented.</p>
+<p>In the past, the park contained several features for relaxation. There were two entrances from Arnold Avenue and Eldon Street, a fountain in the middle, a stage for musicians, and two rose gardens on the left side. On the right side, there was another rose garden, a pond for water plants, and a glasshouse. In addition, seats were placed around the edges of the park.</p>
+<p>Following the renovations, only the rose garden on the left and the two original entrances remain unchanged, with a new underground car park entrance added to the right-hand side. The central fountain has been replaced by another rose garden, and all the seats have been moved to the center of the park. On the left, the old stage for musicians has been converted into an amphitheater, while the right side now includes a café, a children’s play area, and a water feature, replacing the former rose garden, pond, and glasshouse.</p>
+<hr>
+<p>The plans show a public park when it first opened in 1920 and how it looks today after redevelopment. Overall, while most original features have either been replaced or relocated, the park now provides a wider range of facilities for recreation, especially for families.</p>
+<p>In 1920, the park was largely designed for relaxation and quiet leisure. A fountain stood at the center, surrounded by seats, with rose gardens in both the west and east corners. On the west side, there was a pond for water plants. Two entrances connected to the park to Arnold Avenue and Eldon Street.</p>
+<p>Currently, the central fountain has been replaced by a rose garden with seating, and most other features have been modernized. The stage for musicians has been redeveloped into an amphitheater for concerts, while the pond, glasshouse, and eastern rose garden have all been replaced with a cafe, a children’s play area, and a water feature. The original entrances remain, but a new underground car park has been added to the east.</p>
+
+
 </section>
 
 </main> <!-- /main -->
