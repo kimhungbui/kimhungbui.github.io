@@ -1,0 +1,83 @@
+---
+title: Articles 'the' before general concepts
+lightbox: false
+description: When plural
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-08-22
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Tick the correct sentence in each pair
+
+1 a Some people worry about the negative effects of mobile phones on brain.
+
+b Some people worry about the negative effects of mobile phones on the brain.
+
+-> b, because we say about general brain, in a -> which brain?
+2 a We need to look at factors such as the availability of health care.
+
+b We need to look at factors such as availability of health care.
+
+-> a
+
+We use _the_ before nouns which describe a general type of thing rather than a specific example of that thing:
+
+_There are problems for students living away from __the family__._
+
+_We don't know the effects of such chemicals on __the body__._
+
+_The role of __the student__ at university level varies greatly from country to country._
+
+_Most of our business is carried out over __the telephone__._
+
+_The_ is also used before abstract nouns which describe a situation, a quality, a process or a change. These words are often followed by _of_ something:
+
+_There is a problem with __the availability of__ clean water in some villages._
+
+___The distribution of__ income is uneven in most countries._
+
+_On the whole, __the standard of__ living is better in urban areas._
+
+Many residents complained about the frequency of bus services.
+
+This advance was brought about by the development of antibiotics.
+
+He made a number of recommendations for the improvement of staff training.
+
+We use _the development/improvement, etc of something_  to describe a general of change, but _developments/improvements, etc in something_ to describe specific changes:
+
+_We try to keep up-to-date with new __developments in__ information technology._
+
+# Correct the mistake below
+
+Doctors always stress __the importance of__ a balanced diet.
+
+# Are there sentences right or wrong? Correct those containing mistakes.
+
+1. A diet high in cholesterol is bad for heart -> the heart.
+2. The introduction of computerized systems led to an increase in unemployment -> the unemployment.
+3. We all benefit from development of new technologies. the development of
+4. We were unhappy about _the_ quality of the food available.
+5. Last year the airline saw a 20% improvement in delays. improvements in
+6. There have been changes in the relationship between the teacher and the student. the relationship -> correct, the student and the teacher -> correct, general student
+7. Rates vary depending on standard of accommodation you choose. -> the accommodation
+8. She focused on the role of a family in a child's education. -> families in, general concept, use plural
+   
+   - **“The family”** → refers to the family as an institution or concept.
+    
+- **“Families”** → plural, general concept.
+    
+- **“A family”** → refers to one specific family, which doesn’t fit here.
