@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kim Hung Bui">
-<meta name="dcterms.date" content="2025-07-19">
-<meta name="description" content="Some simple observations">
+<meta name="author" content="Hung">
+<meta name="dcterms.date" content="2025-08-25">
+<meta name="description" content="Being precise in map and plan tasks">
 
-<title>Merge Triplets to Form Target Triplet – Kim Hung’s ThinkStack</title>
+<title>Process task 02 – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -135,35 +101,6 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -252,12 +189,19 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#brute-force-idea-on2-or-worse" id="toc-brute-force-idea-on2-or-worse" class="nav-link active" data-scroll-target="#brute-force-idea-on2-or-worse"><span class="header-section-number">1</span> Brute Force Idea (<span class="math inline">\(O(n^2)\)</span> or worse)</a></li>
-  <li><a href="#key-observations-to-reduce-the-search-space" id="toc-key-observations-to-reduce-the-search-space" class="nav-link" data-scroll-target="#key-observations-to-reduce-the-search-space"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</a>
+  <li><a href="#task-achievement-band-target-7.07.5" id="toc-task-achievement-band-target-7.07.5" class="nav-link active" data-scroll-target="#task-achievement-band-target-7.07.5"><span class="header-section-number">0.0.1</span> <strong>1. Task Achievement (Band target: 7.0–7.5)</strong></a></li>
+  <li><a href="#coherence-and-cohesion" id="toc-coherence-and-cohesion" class="nav-link" data-scroll-target="#coherence-and-cohesion"><span class="header-section-number">0.0.2</span> <strong>2. Coherence and Cohesion</strong></a></li>
+  <li><a href="#lexical-resource" id="toc-lexical-resource" class="nav-link" data-scroll-target="#lexical-resource"><span class="header-section-number">0.0.3</span> <strong>3. Lexical Resource</strong></a></li>
+  <li><a href="#grammar-and-accuracy" id="toc-grammar-and-accuracy" class="nav-link" data-scroll-target="#grammar-and-accuracy"><span class="header-section-number">0.0.4</span> <strong>4. Grammar and Accuracy</strong></a></li>
+  <li><a href="#overall-band-estimate-6.5" id="toc-overall-band-estimate-6.5" class="nav-link" data-scroll-target="#overall-band-estimate-6.5"><span class="header-section-number">0.0.5</span> <strong>Overall Band Estimate: 6.5</strong></a></li>
+  <li><a href="#the-difference-between-trends-steps-and-stages" id="toc-the-difference-between-trends-steps-and-stages" class="nav-link" data-scroll-target="#the-difference-between-trends-steps-and-stages"><span class="header-section-number">1</span> The difference between trends steps and stages</a>
   <ul class="collapse">
-  <li><a href="#same-number-of-digits" id="toc-same-number-of-digits" class="nav-link" data-scroll-target="#same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</a></li>
-  <li><a href="#digit-permutation-check" id="toc-digit-permutation-check" class="nav-link" data-scroll-target="#digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</a></li>
+  <li><a href="#points-to-notice" id="toc-points-to-notice" class="nav-link" data-scroll-target="#points-to-notice"><span class="header-section-number">1.1</span> Points to notice</a></li>
+  <li><a href="#stages-and-trends" id="toc-stages-and-trends" class="nav-link" data-scroll-target="#stages-and-trends"><span class="header-section-number">1.2</span> Stages and trends</a></li>
+  <li><a href="#how-to-identify-the-main-stages" id="toc-how-to-identify-the-main-stages" class="nav-link" data-scroll-target="#how-to-identify-the-main-stages"><span class="header-section-number">1.3</span> How to identify the main stages</a></li>
+  <li><a href="#steps-and-stages" id="toc-steps-and-stages" class="nav-link" data-scroll-target="#steps-and-stages"><span class="header-section-number">1.4</span> Steps and stages</a></li>
   </ul></li>
+  <li><a href="#model-answer" id="toc-model-answer" class="nav-link" data-scroll-target="#model-answer"><span class="header-section-number">2</span> Model answer</a></li>
   </ul>
 </nav>
     </div>
@@ -266,16 +210,15 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Merge Triplets to Form Target Triplet</h1>
+<h1 class="title">Process task 02</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">project-euler</div>
-    <div class="quarto-category">programming</div>
+    <div class="quarto-category">english</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Some simple observations
+    Being precise in map and plan tasks
   </div>
 </div>
 
@@ -284,13 +227,11 @@ window.Quarto = {
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
+    <p class="author"><a href="https://kimhungbui.github.io">Hung</a> </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            <a href="https://projecteuler.net/problem=52">
-            Project Euler - 52. Permuted Multiples
-            </a>
+            Pauline Cullen
           </p>
       </div>
   </div>
@@ -301,7 +242,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 19, 2025</p>
+      <p class="date">August 25, 2025</p>
     </div>
   </div>
   
@@ -313,79 +254,171 @@ window.Quarto = {
 </header>
 
 
-<p>
-It can be seen that the number, <span class="math inline">\(125874\)</span>, and its double, <span class="math inline">\(251748\)</span>, contain exactly the same digits, but in a different order.
-</p>
-<p>
-Find the smallest positive integer, <span class="math inline">\(x\)</span>, such that <span class="math inline">\(2x\)</span>, <span class="math inline">\(3x\)</span>, <span class="math inline">\(4x\)</span>, <span class="math inline">\(5x\)</span>, and <span class="math inline">\(6x\)</span>, contain the same digits.
-</p>
-<section id="brute-force-idea-on2-or-worse" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Brute Force Idea (<span class="math inline">\(O(n^2)\)</span> or worse)</h1>
-<p>Test each number <code>x</code> starting from 1, and check if <code>2x, ..., 6x</code> are permutations of <code>x</code>. While that works, it’s not efficient if we don’t restrict the search space.</p>
-</section>
-<section id="key-observations-to-reduce-the-search-space" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</h1>
-<section id="same-number-of-digits" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</h2>
-<p>If <code>x</code> has <code>d</code> digits, <code>6x</code> must not have more digits than <code>x</code>, or they can’t be permutations.</p>
-<p>So</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(x) <span class="op">==</span> <span class="bu">len</span>(<span class="dv">6</span><span class="er">x</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Example: If <code>x = 100</code>, then <code>6x = 600</code>, same digit count (3). But <code>x = 200</code>, then <code>6x = 1200</code> (4 digits), not possible.</p>
-<p>That gives <strong>a range to search in</strong>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span><span class="op">**</span>(d<span class="op">-</span><span class="dv">1</span>), <span class="dv">10</span><span class="op">**</span>d):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="digit-permutation-check" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</h2>
-<p>Instead of sorting each time (<span class="math inline">\(O(n\log n)\)</span>), use:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> canonical(n):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">''</span>.join(<span class="bu">sorted</span>(<span class="bu">str</span>(n)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>then</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> canonical(x)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">all</span>(c <span class="op">==</span> canonical(i <span class="op">*</span> x) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This function is creating a canonical (standardized) form of any number:</p>
+<p>Write</p>
+<p><img src="Pasted image 20250825175957.png" class="img-fluid"></p>
+<p>3 main stage</p>
+<p>s1 1 2 growing and harvesting</p>
+<p>s2 3 4 crushing and purifying juice</p>
+<p>s3 5 6 7 evaporating, centrifuge, and drying and cooling</p>
+<p>intro The diagrams show different stages in the manufacturing process of sugar from sugar cane.</p>
+<p>overall</p>
+<p>linear process, diff areas</p>
+<p>part 1</p>
+<p>s1</p>
+<p>s2</p>
+<p>part 2</p>
+<p>s3</p>
+<p>The diagrams show different stages in the manufacturing process of sugar from sugar cane. Overall, the linear process takes at least 12 months and comprises three main stages, each of which takes place in a different production area.</p>
+<p>In the first stage, sugar cane is grown and nurtured for 12 to 18 months. After growing, sugar cane will be harvested by machine or by hand. It is crushed by a machine to remove sugarcane residue and produce juice. The juice then passed through a limestone filter, which removes any contaminants.</p>
+<p>At the end of this stage, the pure juice is boiled over fire to remove excess water, after which the juice is evaporated and becomes syrup. It will undergo a centrifuge process, separating sugar crystals from the syrup. Finally, the sugar is drying and cooling to remove excess moisture.</p>
+<section id="task-achievement-band-target-7.07.5" class="level3" data-number="0.0.1">
+<h3 data-number="0.0.1" class="anchored" data-anchor-id="task-achievement-band-target-7.07.5"><span class="header-section-number">0.0.1</span> <strong>1. Task Achievement (Band target: 7.0–7.5)</strong></h3>
 <ul>
-<li><p><code>str(n)</code> converts the number to a string (e.g., <code>123</code> → <code>'123'</code>)</p></li>
-<li><p><code>sorted(...)</code> puts the digits in ascending order (e.g., <code>'321'</code> → <code>['1','2','3']</code>)</p></li>
-<li><p><code>''.join(...)</code> joins them back to a single string (e.g., <code>['1','2','3']</code> → <code>'123'</code>)</p></li>
-</ul>
-<p>So:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">123</span>) <span class="op">==</span> <span class="st">'123'</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">231</span>) <span class="op">==</span> <span class="st">'123'</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>canonical(<span class="dv">312</span>) <span class="op">==</span> <span class="st">'123'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>All are permutations of the same digits ⇒ same canonical form</p>
-<p>Time Complexity</p>
+<li><p>✅ You covered <strong>all key stages</strong>: growing, harvesting, crushing/filtering, boiling, centrifuge, drying/cooling.</p></li>
+<li><p>✅ You provided an <strong>overview</strong> in paragraph 1 (good: mentions time, three stages, linear process).</p></li>
+<li><p>⚠️ Some <strong>inaccuracies</strong>:</p>
 <ul>
-<li><p>Each check is ~O(1) due to short digit lengths</p></li>
-<li><p>The loop is linear in x (but bounded by 6-digit numbers)</p></li>
-<li><p>Much faster than O(n²) since the search space is tightly controlled</p></li>
+<li><p>“boiled over fire” → the diagram shows an <em>evaporator</em>, not fire. “Boiled to evaporate water” would be better.</p></li>
+<li><p>“At the end of this stage” → confusing, because <em>boiling, centrifuge, drying</em> are actually separate later stages, not part of the first stage.</p></li>
+</ul></li>
+<li><p>⚠️ No clear separation into <strong>three main stages</strong> (grow → process → refine). You mixed processing and refining together.</p></li>
 </ul>
-<div id="229594f6" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> canonical(n):</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">''</span>.join(<span class="bu">sorted</span>(<span class="bu">str</span>(n)))</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> has_same_digits(x):</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> canonical(x)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">all</span>(canonical(x <span class="op">*</span> i) <span class="op">==</span> c <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>))</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> find_smallest_permuted_multiple():</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">100000</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> has_same_digits(x):</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> x</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        x <span class="op">+=</span> <span class="dv">1</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(find_smallest_permuted_multiple())  <span class="co"># Output: 142857</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>142857</code></pre>
+<p><strong>Score: Band 6.5–7.0</strong></p>
+<hr>
+</section>
+<section id="coherence-and-cohesion" class="level3" data-number="0.0.2">
+<h3 data-number="0.0.2" class="anchored" data-anchor-id="coherence-and-cohesion"><span class="header-section-number">0.0.2</span> <strong>2. Coherence and Cohesion</strong></h3>
+<ul>
+<li><p>✅ Logical sequence mostly maintained.</p></li>
+<li><p>✅ Linking words used: <em>after that, then, finally</em>.</p></li>
+<li><p>⚠️ Repetition of “after …, after …” instead of varied cohesion.</p></li>
+<li><p>⚠️ Stage grouping unclear — you don’t signal clearly where one stage ends and the next begins.</p></li>
+</ul>
+<p><strong>Score: Band 6.5–7.0</strong></p>
+<hr>
+</section>
+<section id="lexical-resource" class="level3" data-number="0.0.3">
+<h3 data-number="0.0.3" class="anchored" data-anchor-id="lexical-resource"><span class="header-section-number">0.0.3</span> <strong>3. Lexical Resource</strong></h3>
+<ul>
+<li><p>✅ Some good vocabulary: <em>residue, contaminants, centrifuge</em>.</p></li>
+<li><p>⚠️ Awkward phrases:</p>
+<ul>
+<li><p>“boiled over fire” → too informal.</p></li>
+<li><p>“sugar is drying and cooling” → incorrect form. Should be “sugar is dried and cooled.”</p></li>
+<li><p>“sugar cane will be harvested” → mixing tense unnecessarily. Present simple is better for describing processes.</p></li>
+</ul></li>
+</ul>
+<p><strong>Score: Band 6.0–6.5</strong></p>
+<hr>
+</section>
+<section id="grammar-and-accuracy" class="level3" data-number="0.0.4">
+<h3 data-number="0.0.4" class="anchored" data-anchor-id="grammar-and-accuracy"><span class="header-section-number">0.0.4</span> <strong>4. Grammar and Accuracy</strong></h3>
+<ul>
+<li><p>Frequent tense inconsistency:</p>
+<ul>
+<li>“will be harvested” vs.&nbsp;“is crushed” vs.&nbsp;“passed” (should be <strong>all present simple passive</strong> in process essays).</li>
+</ul></li>
+<li><p>Wrong verb form: “the juice then passed” → should be “is then passed.”</p></li>
+<li><p>Wrong voice: “sugar is drying” → should be passive “is dried.”</p></li>
+<li><p>Sentence structure sometimes clumsy: “After growing, sugar cane will be harvested …” → better: “Once grown, the sugar cane is harvested …”</p></li>
+</ul>
+<p><strong>Score: Band 6.0–6.5</strong></p>
+<hr>
+</section>
+<section id="overall-band-estimate-6.5" class="level3" data-number="0.0.5">
+<h3 data-number="0.0.5" class="anchored" data-anchor-id="overall-band-estimate-6.5"><span class="header-section-number">0.0.5</span> <strong>Overall Band Estimate: 6.5</strong></h3>
+<ul>
+<li><p>Strong attempt with all stages included.</p></li>
+<li><p>Weaknesses: grammar consistency, stage grouping, some inaccurate vocabulary.</p></li>
+<li><p>With corrections, this could easily reach <strong>Band 7.5–8.0</strong>.</p></li>
+</ul>
+<hr>
+<p>The diagrams illustrate the various stages involved in producing sugar from sugar cane. Overall, the linear process takes between 12 and 18 months and comprises three main stages: growing, processing, and refining.</p>
+<p>In the first stage, sugar cane is cultivated and nurtured in the field for 12 to 18 months. Once mature, it is harvested either manually, using a knife, or mechanically, with the help of a harvester. The harvested cane is then crushed by a machine to extract juice, while the remaining residue is discarded. This juice is subsequently passed through a limestone filter to eliminate impurities.</p>
+<p>Next, the purified juice is boiled in an evaporator to remove excess water. As a result, a concentrated syrup is produced. This syrup is transferred into a centrifuge, which spins at high speed to separate sugar crystals from the remaining liquid.</p>
+<p>Finally, in the refining stage, the sugar crystals are dried and cooled to remove any residual moisture. At this point, the refined sugar is ready for packaging and consumption.</p>
+</section>
+<section id="the-difference-between-trends-steps-and-stages" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> The difference between trends steps and stages</h1>
+<p>This lesson deals with a different type of process: the manufacturing or making of something. Although we are dealing with one specific product (sugar), the same approach can be used with any task where we are shown the different steps in a process.</p>
+<p><img src="Pasted image 20250825221253.png" class="img-fluid"></p>
+<section id="points-to-notice" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="points-to-notice"><span class="header-section-number">1.1</span> Points to notice</h2>
+<ul>
+<li>The length of time - this is only given in step 1, so we don’t know how long the other steps take.</li>
+<li>The names we are given: e.g.&nbsp;<em>sugar cane, juice; limestone filter, syrup, heat, sugar crystals, sugar</em>.</li>
+<li>Notice that with sugar cane, we can use the plural to write about the individual canes (as in the diagram) or the singular to write about the crop (as in the question).</li>
+<li>Notice the different arrows - In particular, those showing that there are two ways of harvesting the crop.</li>
+<li>In step 5 and 6 we are given extra information about what is happening.</li>
+<li>Notice that ‘centrifuge’ is a noun not a verb (there is no ‘ing’ at the end)</li>
+</ul>
+</section>
+<section id="stages-and-trends" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="stages-and-trends"><span class="header-section-number">1.2</span> Stages and trends</h2>
+<p>As we saw in lesson 9, process tasks have stages rather than trends, and it is these stages that we must highlight in our body paragraphs and summarise in our overview. We identity a trend by looking at the beginning point in the data. A common problem in process tasks is that, in their overview, candidates often mention only the first and the last stage in the process, thus confusing a stage with a trend. Look at the following example:</p>
+<p><font color="#ff0000">The process consists of seven steps of various time length, starting by farming sugar canes and ending by dry sugar ready to use.</font></p>
+<p>It not very helpful here.</p>
+<p><em>There is an overview presented in the first paragraph which summaries the process into the farming stages and the drying stages. This summary could be more detailed, e.g.&nbsp;farming, crushing, separating and drying stages.</em></p>
+<p>It is true that this is not a complete or clear overview because we do not get a clear picture of what happens between the farming of the sugar canes and the dry sugar at the end. However, the use of the word ‘detailed’ is unfortunate here. It would have been better to say that the overview needs to include more information in order to be a clear or complete overview.</p>
+<p>Listing four of the steps in the diagram as example (e.g.&nbsp;farming, crushing, separating, and drying stages) also suggests you should include these words in our overview, which is not a good idea as they are given in the question. Later in this lesson we will look at how to avoid using words from the question paper, which is very important. In PC view, this advice is better expressed as follows: <font color="#245bdb">There is an overview presented in the first paragraph which mentions two stage: farming and drying. A clearer summary would give an overview of the main stages rather than just the first and the last steps in the process.</font></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
-
-
+<div class="callout-body-container callout-body">
+<p>In a process task, be very careful <strong>not</strong> to just copy the words and phrases used in the diagram.</p>
+</div>
+</div>
 </section>
+<section id="how-to-identify-the-main-stages" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="how-to-identify-the-main-stages"><span class="header-section-number">1.3</span> How to identify the main stages</h2>
+<p>To identify the main stages in a process, we need to do more than just look at the beginning and end. Instead, we need to look at the different steps in the process and see if we can group them together in some way. This will help to categories them. With our current task, PC identified two main stages, each of which involves more than one step. Can you identify the two categories from the following list? NB The words you choose should umbrella terms rather than one specific step</p>
+<p>Crushing Drying Evaporating Farming Growing Harvesting Processing Purifying Separating</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Farming</th>
+<th>Processing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Growing</td>
+<td>Crushing</td>
+</tr>
+<tr class="even">
+<td>Harvesting</td>
+<td>Drying</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Evaporating</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Purifying</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Separating</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="steps-and-stages" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="steps-and-stages"><span class="header-section-number">1.4</span> Steps and stages</h2>
+<p>In lesson # Changing the language in the question</p>
+</section>
+</section>
+<section id="model-answer" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Model answer</h1>
+
+
 </section>
 
 </main> <!-- /main -->
