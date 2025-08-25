@@ -1,0 +1,217 @@
+---
+title: Process task 02
+lightbox: false
+description: Being precise in map and plan tasks
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-08-25
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Write
+
+![](Pasted%20image%2020250825175957.png)
+
+
+3 main stage
+
+s1 1 2 growing and harvesting
+
+s2 3 4 crushing and purifying juice
+ 
+s3 5 6 7 evaporating, centrifuge, and drying and cooling
+
+intro
+The diagrams show different stages in the manufacturing process of sugar from sugar cane. 
+
+overall
+
+linear process, diff areas
+
+
+
+
+part 1
+
+s1
+
+s2
+
+part 2
+
+s3
+
+
+The diagrams show different stages in the manufacturing process of sugar from sugar cane. Overall, the linear process takes at least 12 months and comprises three main stages, each of which takes place in a different production area.
+
+In the first stage, sugar cane is grown and nurtured for 12 to 18 months. After growing, sugar cane will be harvested by machine or by hand. It is crushed by a machine to remove sugarcane residue and produce juice. The juice then passed through a limestone filter, which removes any contaminants.
+
+At the end of this stage, the pure juice is boiled over fire to remove excess water, after which the juice is evaporated and becomes syrup. It will undergo a centrifuge process, separating sugar crystals from the syrup. Finally, the sugar is drying and cooling to remove excess moisture.
+
+
+### **1. Task Achievement (Band target: 7.0–7.5)**
+
+- ✅ You covered **all key stages**: growing, harvesting, crushing/filtering, boiling, centrifuge, drying/cooling.
+    
+- ✅ You provided an **overview** in paragraph 1 (good: mentions time, three stages, linear process).
+    
+- ⚠️ Some **inaccuracies**:
+    
+    - “boiled over fire” → the diagram shows an _evaporator_, not fire. “Boiled to evaporate water” would be better.
+        
+    - “At the end of this stage” → confusing, because _boiling, centrifuge, drying_ are actually separate later stages, not part of the first stage.
+        
+    
+- ⚠️ No clear separation into **three main stages** (grow → process → refine). You mixed processing and refining together.
+    
+
+  
+
+**Score: Band 6.5–7.0**
+
+---
+
+### **2. Coherence and Cohesion**
+
+- ✅ Logical sequence mostly maintained.
+    
+- ✅ Linking words used: _after that, then, finally_.
+    
+- ⚠️ Repetition of “after …, after …” instead of varied cohesion.
+    
+- ⚠️ Stage grouping unclear — you don’t signal clearly where one stage ends and the next begins.
+    
+
+  
+
+**Score: Band 6.5–7.0**
+
+---
+
+### **3. Lexical Resource**
+
+- ✅ Some good vocabulary: _residue, contaminants, centrifuge_.
+    
+- ⚠️ Awkward phrases:
+    
+    - “boiled over fire” → too informal.
+        
+    - “sugar is drying and cooling” → incorrect form. Should be “sugar is dried and cooled.”
+        
+    - “sugar cane will be harvested” → mixing tense unnecessarily. Present simple is better for describing processes.
+        
+    
+
+  
+
+**Score: Band 6.0–6.5**
+
+---
+
+### **4. Grammar and Accuracy**
+
+- Frequent tense inconsistency:
+    
+    - “will be harvested” vs. “is crushed” vs. “passed” (should be **all present simple passive** in process essays).
+        
+    
+- Wrong verb form: “the juice then passed” → should be “is then passed.”
+    
+- Wrong voice: “sugar is drying” → should be passive “is dried.”
+    
+- Sentence structure sometimes clumsy: “After growing, sugar cane will be harvested …” → better: “Once grown, the sugar cane is harvested …”
+    
+
+  
+
+**Score: Band 6.0–6.5**
+
+---
+
+### **Overall Band Estimate: 6.5**
+
+- Strong attempt with all stages included.
+    
+- Weaknesses: grammar consistency, stage grouping, some inaccurate vocabulary.
+    
+- With corrections, this could easily reach **Band 7.5–8.0**.
+
+
+***
+
+The diagrams illustrate the various stages involved in producing sugar from sugar cane. Overall, the linear process takes between 12 and 18 months and comprises three main stages: growing, processing, and refining.
+
+In the first stage, sugar cane is cultivated and nurtured in the field for 12 to 18 months. Once mature, it is harvested either manually, using a knife, or mechanically, with the help of a harvester. The harvested cane is then crushed by a machine to extract juice, while the remaining residue is discarded. This juice is subsequently passed through a limestone filter to eliminate impurities.
+
+Next, the purified juice is boiled in an evaporator to remove excess water. As a result, a concentrated syrup is produced. This syrup is transferred into a centrifuge, which spins at high speed to separate sugar crystals from the remaining liquid. 
+
+Finally, in the refining stage, the sugar crystals are dried and cooled to remove any residual moisture. At this point, the refined sugar is ready for packaging and consumption.
+
+
+# The difference between trends steps and stages
+
+This lesson deals with a different type of process: the manufacturing or making of something. Although we are dealing with one specific product (sugar), the same approach can be used with any task where we are shown the different steps in a process.
+
+![](Pasted%20image%2020250825221253.png)
+
+## Points to notice
+
+- The length of time - this is only given in step 1, so we don't know how long the other steps take.
+- The names we are given: e.g. _sugar cane, juice; limestone filter, syrup, heat, sugar crystals, sugar_.
+- Notice that with sugar cane, we can use the plural to write about the individual canes (as in the diagram) or the singular to write about the crop (as in the question).
+- Notice the different arrows - In particular, those showing that there are two ways of harvesting the crop.
+- In step 5 and 6 we are given extra information about what is happening.
+- Notice that 'centrifuge' is a noun not a verb (there is no 'ing' at the end)
+
+## Stages and trends
+
+As we saw in lesson 9, process tasks have stages rather than trends, and it is these stages that we must highlight in our body paragraphs and summarise in our overview. We identity a trend by looking at the beginning point in the data. A common problem in process tasks is that, in their overview, candidates often mention only the first and the last stage in the process, thus confusing a stage with a trend. Look at the following example:
+
+<font color="#ff0000">The process consists of seven steps of various time length, starting by farming sugar canes and ending by dry sugar ready to use.</font>
+
+It not very helpful here.
+
+_There is an overview presented in the first paragraph which summaries the process into the farming stages and the drying stages. This summary could be more detailed, e.g. farming, crushing, separating and drying stages._
+
+It is true that this is not a complete or clear overview because we do not get a clear picture of what happens between the farming of the sugar canes and the dry sugar at the end. However, the use of the word 'detailed' is unfortunate here. It would have been better to say that the overview needs to include more information in order to be a clear or complete overview.
+
+Listing four of the steps in the diagram as example (e.g. farming, crushing, separating, and drying stages) also suggests you should include these words in our overview, which is not a good idea as they are given in the question. Later in this lesson we will look at how to avoid using words from the question paper, which is very important. In PC view, this advice is better expressed as follows: <font color="#245bdb">There is an overview presented in the first paragraph which mentions two stage: farming and drying. A clearer summary would give an overview of the main stages rather than just the first and the last steps in the process.</font>
+
+:::{.callout-tip}
+In a process task, be very careful __not__ to just copy the words and phrases used in the diagram.
+:::
+
+## How to identify the main stages
+
+To identify the main stages in a process, we need to do more than just look at the beginning and end. Instead, we need to look at the different steps in the process and see if we can group them together in some way. This will help to categories them. With our current task, PC identified two main stages, each of which involves more than one step. Can you identify the two categories from the following list? NB The words you choose should umbrella terms rather than one specific step
+
+Crushing Drying Evaporating Farming Growing Harvesting Processing Purifying Separating
+
+
+| Farming    | Processing  |
+| ---------- | ----------- |
+| Growing    | Crushing    |
+| Harvesting | Drying      |
+|            | Evaporating |
+|            | Purifying   |
+|            | Separating  |
+
+## Steps and stages
+
+In lesson
+# Changing the language in the question
+
+
+# Model answer
