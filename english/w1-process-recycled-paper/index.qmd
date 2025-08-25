@@ -1,0 +1,94 @@
+---
+title: Task 1 - Recycled paper
+lightbox: false
+description: Practice process
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-25
+categories:
+  - english
+  - writing
+  - process
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+The diagram below shows how recycled paper is made.
+
+Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+
+![](Pasted%20image%2020250825205953.png)
+
+**Question (summary):**
+
+The diagrams show how recycled paper is produced.
+
+  
+
+**1. Introduction**
+
+- Paraphrase: The diagrams illustrate the process of recycled paper production.
+    
+
+  
+
+**2. Overview**
+
+linear process
+
+- Begins with making pulp from used paper and ends with producing recycled paper.
+  
+
+**3. Body Paragraph 1 – making pulp and filtering
+
+Used paper is transported by a conveyor belt.
+
+Chemicals and water are used to break down paper into pulp
+
+Pulp is then passed through a filter to remove contaminants.
+
+**4. Body Paragraph 2 – cleaning and making paper
+
+Filtered pulp cleaned air, water, and chemicals.
+
+Clean pulp moved by conveyor belt to paper-making machine.
+
+Passed through heated rollers -> final product: recycled paper.
+
+***
+
+The diagram shows the process of recycled paper production. Overall, the linear process comprises four main stages, beginning with making pulp from used paper and ending with producing recycled paper.
+
+Firstly, used paper is transported by a conveyor belt. After that, chemicals and water are used to break down paper into pulp. After this stage, it will be passed through a filter to remove contaminants.
+
+Next, the filtered pulp is cleaned by air, water, and soap before passing through water and chemicals. Clean pulp is moved by conveyor belt to paper-making machine. Finally, it will be passed through heated rollers to remove paper before being rolled and ready to use.
+
+
+***
+
+The diagram illustrates how recycled paper is produced. Overall, the process is linear and involves four main stages, beginning with the creation of pulp from waste paper and ending with the production of new paper.
+
+In the first stage, used paper is placed on a conveyor belt and mixed with water and chemicals to form pulp. This mixture is then passed through a filter, which removes any contaminants.
+
+Once filtered, the pulp undergoes a cleaning stage. Here, it is treated with air, water, and further chemicals to ensure that impurities are eliminated. The cleaned pulp is then transferred by conveyor belt to a paper-making machine, where it is pressed between heated rollers to remove excess water, after which the recycled paper is rolled and made ready for use.
+
+(128 words)
+
+The diagram illustrates the process involved in the production of recycled paper. Overall, the procedure is linear and consists of four distinct stages, starting with the conversion of waste paper into pulp and ending with the manufacture of new rolls of paper.
+
+In the initial stage, discarded paper is placed on a conveyor belt and combined with water and chemicals, which break it down into pulp. This pulp mixture is subsequently passed through a filter in order to remove contaminants such as plastic or staples.
+
+At the next stage, the filtered pulp undergoes a cleaning process. It is treated with are, water, and soap, before additional chemicals are applied to ensure that any remaining impurities are eliminated. Once this cleaning is complete, the pulp is transferred by conveyor belt to a paper-making machine. Here, it is pressed between heated rollers to remove excess moisture. Finally, the recycled paper is rolled into large sheets, ready to be distributed for reuse.
+
+(159)

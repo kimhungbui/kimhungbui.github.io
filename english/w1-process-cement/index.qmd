@@ -1,0 +1,116 @@
+---
+title: Practice Writing Task 1
+lightbox: false
+description: Practice process
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-25
+categories:
+  - english
+  - writing
+  - process
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Cam 8 test 4
+
+The diagrams below show the stages and equipment used in the cement-making process, and how cement is used to produce concrete for building purposes.
+
+Summarize the information by selecting and reporting the main features and make comparisons where relevant.
+
+![](Pasted%20image%2020250825201312.png)
+3 main stages
+1 mix and crush the ingredient, 
+
+heat and grind
+
+at factory
+
+at construction
+
+mix with other ingredients
+
+
+p1 cement
+changes in texture,
+powder -> heated and mixed powder -> grinder -> stored in bags
+
+p2 concrete
+
+cement mixed with sand, water, grave, by concrete mixer -> concrete
+
+changes in stickness
+
+change in 
+
+The diagrams show the different stages and equipment used in the cement-making process, and the production of concrete in building. Overall, the process comprises three main stages, which take place in different production areas.
+
+Firstly, in the factory, limestone, clay are crushed to have raw powder. To create a thinner texture, it will be mixed by the mixer before being heated and rotated simultaneously by the rotating heater. The powder then moves to the grinder and becomes cement. After that, cement will be stored in bags and will be ready to use.
+
+At the construction site, with a relatively small percentage of cement (15%), sand and gravel are added by a large percentage, by 25% and 50% respectively, and a little water (10%). The mixture is added to a concrete mixer to produce concrete.
+
+
+***
+
+**Question (summary):**
+
+The diagrams show how cement is made and how concrete is produced.
+
+  
+
+**1. Introduction**
+
+- Paraphrase: The diagrams illustrate the process of cement production, and how this material is used to produce concrete.
+    
+
+  
+
+**2. Overview**
+
+- Cement production: takes place in a factory, involves several stages.
+    
+- Concrete: made by mixing different materials at a building site.
+    
+- Key contrast: one is multi-step manufacturing, the other is simple mixing.
+    
+
+  
+
+**3. Body Paragraph 1 – Cement production**
+
+- Raw materials: limestone & clay.
+    
+- Crusher → powder.
+    
+- Mixer → rotating heater → grinding → cement.
+    
+- Cement packaged in bags.
+    
+
+  
+
+**4. Body Paragraph 2 – Concrete production**
+
+- Four ingredients: cement (15%), water (10%), sand (25%), gravel (50%).
+    
+- Combine in a concrete mixer → final product = concrete
+
+
+The diagrams show the process of producing cement and how this is then used in the production of concrete for construction. Overall, cement production involves several stages that take place in a factory, while concrete is made by combining different materials in a mixer at the building site.
+
+In the first stage of cement manufacture, limestone and clay are crushed together to form a powder. This mixture then passes through a mixer before entering a rotating heater, where it is simultaneously heated and mixed. The resulting substance is ground in a grinder to produce cement. The finished product is then packaged in bags for use.
+
+Concrete production, on the other hand, is a much simpler process. Four ingredients are combined in a concrete mixer: 15% cement, 10% water, 25% sand, and 50% gravel. These are throughly mixed together to form concrete, which can then be used in construction.
+
+
