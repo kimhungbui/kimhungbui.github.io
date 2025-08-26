@@ -1,0 +1,538 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 17 listening test 3
+lightbox: false
+description: IELTS Practice Set 18 listening test 3
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-26
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Cambridge IELTS 18 - listening test 2
+
+
+
+
+# Performance Summary
+
+### **Part-by-Part Analysis**
+
+  
+
+**Part 1 (Booking/Everyday Conversation)**
+
+- **Strengths:** You understood practical details like names, addresses, and numbers.
+    
+- **Weaknesses:** Occasional uncertainty with **spelling and numbers**.
+    
+- **Band Level:** 7.0
+    
+
+  
+
+**Part 2 (Tourist / Public Information)**
+
+- **Strengths:** Caught the main instructions and general message.
+    
+- **Weaknesses:** Struggled with **distractors** (when the speaker corrected themselves or added extra information).
+    
+- **Band Level:** 6.5–7.0
+    
+
+  
+
+**Part 3 (Student Discussion / Academic)**
+
+- **Strengths:** Good at recognizing topic shifts and key phrases like _“I chose X for two reasons”_.
+    
+- **Weaknesses:** Lost accuracy with **word forms** (Q24, Q25 mistake). Example: missed plural/singular endings or exact synonyms required.
+    
+- **Band Level:** 6.5
+    
+
+  
+
+**Part 4 (Lecture on Pockets – History)**
+
+- **Strengths:** Followed the chronological development and caught academic vocabulary (_waistcoat, breeches, silhouette_).
+    
+- **Weaknesses:** Some confusion with **specific terminology** and **collocations** (e.g., “tie-on pockets” vs just “pockets”).
+    
+- **Band Level:** 6.5–7.0
+    
+
+---
+
+### **Strengths**
+
+- Good understanding of **main ideas**.
+    
+- Able to track **logical flow** in academic lectures.
+    
+- Strong vocabulary awareness (you actively build tables & themes).
+    
+
+  
+
+### **Weaknesses**
+
+- **Detail accuracy**: losing marks for one word, plural/singular, or minor spelling.
+    
+- **Distractors**: when the speaker corrects themselves, you sometimes write the wrong answer.
+    
+- **Specialist terms**: some fashion/history vocabulary in Part 4 caused mistakes.
+    
+
+---
+
+### **Suggested Focus to Improve to Band 8+**
+
+1. **Word Forms Practice**
+    
+    - Train with minimal pairs: _student / students_, _pocket / pockets_.
+        
+    - After each practice test, highlight every wrong answer by word form.
+        
+    
+2. **Dictation Training (2–3 min daily)**
+    
+    - Listen to BBC podcasts / IELTS audios.
+        
+    - Write exactly what you hear (focus on **articles, plurals, prepositions**).
+        
+    
+3. **Distractor Training**
+    
+    - Pause when you hear corrections (e.g., “It’s £30 – no sorry £13”) and train to always write the **final version**.
+        
+    
+4. **Theme Vocabulary**
+    
+    - Build word banks by IELTS themes (Fashion, Society, Education, Environment).
+        
+    - Review spelling and collocations weekly.
+# Recording 1
+
+**6. WIVENHOE (you wrote “WAVENHOE”)**
+
+- In the audio the recruiter **spells it**: “W-I-V-E-N-H-O-E”.
+    
+- **Trap:** unfamiliar UK place names + similar /w/ vs /v/ sounds.
+    
+- **Fix:** when a name is spelled, write letter-by-letter as you hear it. If you’re unsure of a consonant (v vs w), mark it and confirm when they repeat (“It’s quite central, just off Cork Street.”).
+    
+
+  
+
+**8. £9.75 (you wrote £9.70)**
+
+- Exact line: “**to begin with, you’d be getting £9.75,** but that goes up to £11.25 after three months.”
+    
+- **Trap:** IELTS often says decimals as **“nine seventy-five”** (not “nine point seven five”). It’s easy to drop the “five”.
+    
+- **Fix:** train your ear for pay figures said as “seventy-five / twenty-five”. Also listen for **contrast markers** (“to begin with… but… goes up to…”) to lock in the _starting_ rate vs the raise.
+    
+
+  
+
+**9. deliveries (you wrote “delivery”)**
+
+- Exact cue: “making sure there’s enough stock each week — and **sorting out all the deliveries**.”
+    
+- **Trap:** the table prompt “Maintaining stock and organising ______” doesn’t force plural, but the audio does (“**all the** deliveries”).
+    
+- **Fix:** Use **grammar signals** from the audio: **“all the”** → plural count noun → **deliveries**. (Also note the table heading: “Responsibilities include” → plural tasks.)
+    
+
+  
+
+# **Confirming the rest**
+
+- **1 training, 2 discount, 3 taxi, 4 service, 5 English, 7 equipment, 10 Sunday** → all correct.
+    
+    - Nice catch on **service** (uncountable) and **equipment** (uncountable → “is clean”).
+
+# **Mini skill boosts**
+
+- **Spelling names:** write them down exactly as spelled (W-I-V-E-N-H-O-E). Say it back in your head once.
+    
+- **Money & decimals:** expect “£9.75” to be said as “nine seventy-five”; “£11.25” as “eleven twenty-five”.
+    
+- **Plural cues:** “all the / several / many / a number of” → plural noun (“deliveries”).
+    
+- **Anchor phrases:** “to begin with… goes up to…” separates starting pay vs pay after probation.
+
+
+# Recording 2
+
+## **1) Q11–14 — short corrections + why**
+
+  
+
+**Q11 & Q12 — your answers: E, B — correct.**
+
+- _E (convenient for workers)_ — Mark says the site was chosen because there’s demand for housing for employees (commuting problem).
+    
+- _B (easy access to local facilities)_ — he mentions the excellent hospital and a large secondary school nearby.
+    
+
+  
+
+**Q13–14 — you answered:** 13 **B** (correct), 14 **E** (incorrect).
+
+This was a **two-answer question (choose TWO letters B—E)**; the correct pair is **B and C**.
+
+- _B (the impact on the environment)_ — the public said the layout “blended in well with the natural features” and there was “provision made for protecting trees and wildlife.” That’s direct evidence for B.
+    
+- _C (encouragement of good relations between residents)_ — Mark said the development “seem[s] a place where people of all ages can live together happily.” That indicates social harmony / good relations.
+    
+- _E (rural location)_ is **not** a positive comment extracted in that passage (they did say “short drive to get out into the countryside” but that’s not framed as a positive feedback about the development itself the same way B and C are).
+    
+
+
+i missed the word 'short drive to get out'
+
+**So:** correct pair = **B and C**.
+
+
+# Recording 3
+
+## **Correct answers + brief justification**
+
+  
+
+**21 — C**
+
+_It had a profound effect on society._
+
+  
+
+> Michelle: “what I found more significant was how it impacted directly and indirectly on political events, as well as having massive social and economic consequences.”
+
+  
+
+**22 — A**
+
+_The number of places producing observations._
+
+  
+
+> Adam: “I was surprised there were so many weather stations established by that time — so… you can see how the weather changed, often by the hour.”
+
+  
+
+**23 — B**
+
+_It was associated with health issues._
+
+  
+
+> “Reports from the period blamed the haze for an increase in headaches, respiratory issues and asthma attacks.”
+
+  
+
+**24 — B**
+
+_He was the first to identify the reason for the haze._ (what Michelle claimed and Adam corrects)
+
+  
+
+> Michelle implied Franklin realised it first; Adam says “He’s often credited with that… but a French naturalist beat him to it.” So Adam corrects her claim that Franklin was first.
+
+  
+
+**25 & 26 — A and B** (choose TWO)
+
+_A. how widespread the effects were_
+
+_B. how long-lasting the effects were_
+
+  
+
+> They note strange weather events reported **two years after** the eruption and **as far away as North America and North Africa**, showing both _widespread_ and _long-lasting_ effects.
+
+> **Trap:** D (speed of ash cloud) is mentioned (“the ash drifted so swiftly”) but the question asks for **two** issues that _surprised_ them — the dialogue stresses _extent_ and _duration_ most clearly.
+
+  I choose D, mistake, and trapped. They said 2 answer in 1 sentence and i missed 'the far away ....'
+
+**27 — D (Iceland)**
+
+_Animals suffered from sickness._
+
+  
+
+> “the effect on livestock was devastating… they were poisoned because they ate vegetation that had been contaminated with fluorine.”
+
+  
+
+**28 — A (Egypt)**
+
+_This country suffered the most severe loss of life._
+
+  
+
+> “the famine there led to more people dying than any other country. It was worse than the plague.”
+
+  
+
+**29 — C (UK)**
+
+_There was a significant increase in deaths of young people._
+
+  
+
+> “mortality rate… about double the usual number and included an unusually high percentage of people under the age of 25.”
+
+  
+
+**30 — F (USA)**
+
+_It caused a particularly harsh winter._
+
+  
+
+> George Washington: “they were snowbound until March in Virginia” and reports of “ice floating down the Mississippi.”
+
+
+## **Quick exam tips from this section**
+
+- For “what surprised them” style questions, listen for _explicit_ surprise phrases (“I found all that hard to believe,” “It must have been terrible”) tied to concrete facts (distance, duration).
+    
+- When two answers are required, don’t pick a detail mentioned in passing (D/speed) unless the speakers emphasise it as surprising.
+    
+- Note attributions: words like _“credited with”_ vs _“actually first”_ indicate subtle corrections (see Q24).
+    
+
+
+### **❌ Q24 (Franklin and the haze)**
+
+- **Your answer:** not correct.
+    
+- **Correct answer: B — He was the first to identify the reason for the haze.**
+    
+
+  
+
+**Why?**
+
+Michelle says Franklin realised the haze was caused by a volcano. Adam then _corrects her_:
+
+  
+
+> “He’s often credited with that… but in fact a French naturalist got there first.”
+
+  
+
+So the _claim about Franklin_ = **He was the first**. That’s exactly what option B says. The answer is **B** (even though it was wrong historically, the question is about the claim).
+
+  
+
+**Trap:** Many test-takers confuse what Franklin _actually did_ with what he was _credited for_.
+
+
+### **❌ Q25 (two things that surprised them)**
+
+- **Your answer:** one wrong.
+    
+- **Correct answers:** **A — how widespread the effects were** & **B — how long-lasting the effects were.**
+    
+
+  
+
+**Why?**
+
+Adam says:
+
+  
+
+> “Reports came in not just from Europe but from North America and North Africa too.” → **Widespread**
+
+> “And even two years later there were still odd weather events linked to it.” → **Long-lasting**
+
+  
+
+Option D (_how quickly the ash cloud spread_) is **mentioned**:
+
+  
+
+> “The ash drifted so swiftly…”
+
+> But notice — they don’t say they were **surprised** by that. The question is “What surprised them?” So only A & B fit.
+
+  
+
+**Trap:** IELTS loves to mention three things, but only two are correct. Many candidates pick the wrong extra detail (here: speed).
+
+
+
+✅ Key learning for you:
+
+- **Q24:** Focus on _the claim_ (not the correction).
+    
+- **Q25:** Only tick things explicitly linked to “surprised / amazed / hard to believe.”
+# Recording 4
+
+
+## **Quick corrections**
+
+- **Q32 (correct):** **SUITS**
+    
+- **Q34 (correct):** **PROFESSION**
+    
+
+---
+
+## **Q32 — you wrote** **SUIT****(incorrect) → correct**  **SUITS**
+
+  
+
+### **Why you likely erred**
+
+1. **Plural ending missed** in the audio. The speaker said _“suits became popular”_ — the final /s/ can be soft and easily missed.
+    
+2. **Prediction error:** when asked “Men started to wear ___ in the 18th century” you may have focused on the singular form of the clothing word instead of the general plural (we usually say _men wear suits_, plural).
+    
+3. **Part-of-speech/number mismatch:** the subject _men_ normally collocates with a plural clothing noun in this type of general statement.
+    
+
+  
+
+### **Rule / test strategy**
+
+- When the subject is a plural noun (men, women, people) and the blank asks for what they **wear** in general, expect a **plural** count noun (e.g., _suits, coats, trousers_).
+    
+- Listen carefully for final /s/ or /z/ sounds — these indicate plurals. If you missed it, predict plurals when grammar & context allow.
+    
+
+  
+
+### **How to avoid it (practical tips)**
+
+- **Predict before listening:** with subject _men_, mentally pre-fill a plural noun (suits).
+    
+- **Sound-focus:** train your ear for final /s/ and /z/ in speech (listen to short phrases and check if plural).
+    
+- **Write as you hear letters/sounds:** if you think you heard “su…”, jot _suit(s)_ and confirm when the phrase repeats.
+    
+
+  
+
+### **Quick practice (write the missing word)**
+
+1. Women in the Victorian era often wore **______**. (dresses)
+    
+2. In winter many people wear **______** to keep warm. (coats)
+    
+3. Farmers usually wear **______** for work. (boots)
+    
+4. Gentlemen in the 18th century began wearing **______**. (suits) ← target item
+    
+
+---
+
+## **Q34 — you wrote** **INSTRUMENTS****(incorrect) → correct** **PROFESSION**
+
+  
+
+### **Why you likely erred**
+
+1. **Misreading the referent:** the passage mentions _medical instruments_ immediately after describing bigger pockets, so you may have copied that nearby noun instead of the intended abstract noun.
+    
+2. **Question grammar misread:** the test item asked “men who belonged to a certain type of ___” — grammatically this calls for a **category noun** (type of person/role), not an object carried by that person.
+    
+3. **Surface association trap:** because _instruments_ is topically related, it looked plausible, but it doesn’t fit the grammatical frame.
+    
+
+  
+
+### **Rule / test strategy**
+
+- **Predict part of speech from the question frame.** Phrases like _“type of ___”_ generally require a **group/category noun** (e.g., _profession, class, occupation_), not an object.
+    
+- **Check grammar in the question**: if the blank is followed by “who” or “that” and describes people, expect a noun referring to **people’s category** (profession/occupation) rather than tools.
+    
+
+  
+
+### **How to avoid it (practical tips)**
+
+- **Scan the question structure before listening:** ask yourself “Do I need a person-type (profession) or an object (instrument)?”
+    
+- **Listen for signal words:** in the transcript the speaker says _“if the wearer was someone with a profession who needed to carry medical instruments”_ — the phrase _“someone with a profession”_ is the direct clue you should capture.
+    
+- **Paraphrase mentally as you listen:** translate the clause into something like “men of a certain **profession** (e.g., doctor)” — then write _profession_.
+    
+
+  
+
+### **Quick practice (fill-in; predict part of speech first)**
+
+  
+
+Decide whether the blank expects **person-category** or **object**, then fill:
+
+1. Bigger pockets were made for men who practised a certain type of **______**. (profession) ← target pattern
+    
+2. Tradesmen carried a lot of **______** for their work. (tools)
+    
+3. The label reads “members of this **______** get discounts.” (group/club)
+    
+4. People in that **______** often wore protective clothing. (occupation/profession)
+    
+
+---
+
+## **General micro-skills & drills (5–10 minutes daily)**
+
+1. **Prediction Drill (1 min):** read the question stem, underline _subject_ and _grammatical frame_ (e.g., “men” → expect plural clothing noun; “type of ___” → expect category noun).
+    
+2. **Sound Drill (2–3 min):** practise listening for final /s/ and /z/ endings (e.g., _suit/suits, coat/coats_). Say them aloud and note the difference.
+    
+3. **Frame Drill (2–3 min):** convert sample sentences into expected part of speech:
+    
+    - “a type of ___” → NN (profession, occupation)
+        
+    - “carry ___” → object (tools, instruments, belongings)
+        
+    
+4. **Error reconstruction (3–5 min):** take one you got wrong, locate the sentence in the transcript, and rewrite the sentence with the correct target word (e.g., _Men started to wear suits in the 18th century_; _Bigger pockets might be made for men who belonged to a certain type of profession._)
+    
+
+---
+
+## **Summary — one-line takeaways**
+
+- For **Q32**: when the subject is plural and discussing clothing generally, write **plural** (SUITS).
+    
+- For **Q34**: use grammatical cues (_“type of ___”_) to predict **category nouns** (PROFESSION), not nearby objects (INSTRUMENTS).
+
+
+
+:::{.callout-tip}
+
+- **Fix:** Use **grammar signals** from the audio: **“all the”** → plural count noun → **deliveries**. (Also note the table heading: “Responsibilities include” → plural tasks.)
+
+- When the subject is a plural noun (men, women, people) and the blank asks for what they **wear** in general, expect a **plural** count noun (e.g., _suits, coats, trousers_).
+    
+- Listen carefully for final /s/ or /z/ sounds — these indicate plurals. If you missed it, predict plurals when grammar & context allow.
+    
+
+  - **Predict part of speech from the question frame.** Phrases like _“type of ___”_ generally require a **group/category noun** (e.g., _profession, class, occupation_), not an object.
+    
+- **Check grammar in the question**: if the blank is followed by “who” or “that” and describes people, expect a noun referring to **people’s category** (profession/occupation) rather than tools.
+    
+
+:::

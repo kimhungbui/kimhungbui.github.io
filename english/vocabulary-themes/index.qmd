@@ -208,6 +208,18 @@ flock to the growing number of = go in large numbers to new places
 | multicultural       | diverse, inclusive          | London is a **multicultural** city.                        |
 | social issues       | community problems          | Poverty is one of the major **social issues**.             |
 | pass down           | transmit, hand on           | Stories are **passed down** from generation to generation. |
+
+
+# Location & Direction
+
+| **Word/Phrase from Audio** | **Synonym / Paraphrase**            | **Common Collocations**                     |
+| -------------------------- | ----------------------------------- | ------------------------------------------- |
+| between the two entrances  | in the middle of both access points | **between … and …**                         |
+| just to the south of       | immediately below, directly under   | **just to the north/south of**              |
+| adjoining                  | next to, connected to               | **adjoining building / adjoining houses**   |
+| branching off              | diverging, splitting away           | **road branching off / path branching off** |
+| at the corner of           | on the edge of, at the intersection | **corner of the street / corner site**      |
+| to the right of            | positioned on the right-hand side   | **on the right of / to the left of**        |
 # Theatre & Performance
 
 | **Word/Phrase** | **Synonyms / Related Terms** | **Collocations**                               |
@@ -328,6 +340,19 @@ flock to the growing number of = go in large numbers to new places
 | retraining                       | upskilling, reskilling                        | retraining programme, workforce retraining     |
 | redundancy                       | layoff, job loss                              | voluntary redundancy, redundancy package       |
 | job security                     | employment stability, secure work             | guarantee job security, lack of job security   |
+
+| **Word / Phrase**    | **Synonyms / Related forms**            | **Collocations / Usage**                                  |
+| -------------------- | --------------------------------------- | --------------------------------------------------------- |
+| **training**         | instruction, coaching, induction        | **staff training**, undergo training, on-the-job training |
+| **responsibilities** | duties, tasks, obligations              | take on responsibilities, key responsibilities include…   |
+| **to begin with**    | initially, at first, in the early stage | to begin with, you will…, at first glance                 |
+
+| **Word / Phrase**      | **Synonyms / Related forms**        | **Collocations / Usage**                            |
+| ---------------------- | ----------------------------------- | --------------------------------------------------- |
+| **£9.75**              | wage, hourly rate, salary           | starting pay, basic wage, goes up to £11.25         |
+| **discount**           | reduction, cut price, special offer | staff discount, receive a discount, 20% discount    |
+| **goes up to**         | rises to, increases to, reaches     | wage goes up to, price goes up to                   |
+| **after three months** | probation period, trial period      | after a probationary period, after an initial stage |
 
 # Economic & Business & Advertising
 
@@ -561,6 +586,22 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | oceans                | seas, waters         | vast oceans, cross the ocean, ocean currents |
 | recovery (ecological) | restoration, renewal | environmental recovery, forest recovery      |
 
+| **Word/Phrase**                    | **Synonym / Paraphrase**                    | **Collocations**                                       |
+| ---------------------------------- | ------------------------------------------- | ------------------------------------------------------ |
+| blended in well with               | harmonised with, matched                    | **blend in with surroundings**                         |
+| natural features                   | landscape, environment                      | **protect natural features / admire natural features** |
+| protecting trees and wildlife      | conserving, preserving nature               | **protect wildlife / protect trees**                   |
+| all ages can live together happily | intergenerational harmony, community spirit | **live together happily / encourage good relations**   |
+| short drive to the countryside     | quick trip to rural area                    | **drive out into the countryside**                     |
+
+| **Word / Phrase**      | **Synonyms / Paraphrases**     | **IELTS Usage**                                                            |
+| ---------------------- | ------------------------------ | -------------------------------------------------------------------------- |
+| haze                   | fog, smog, mist                | “Air pollution created a thick haze over the city.”                        |
+| unusual weather events | odd climate effects, anomalies | “Unusual weather events are becoming more frequent due to climate change.” |
+| widespread effects     | extensive, far-reaching impact | “Deforestation has widespread effects on biodiversity.”                    |
+| long-lasting effects   | enduring, persistent           | “The drought had long-lasting effects on the local economy.”               |
+| drifted swiftly        | spread rapidly, moved quickly  | “The wildfire smoke drifted swiftly across state borders.”                 |
+
 # History
 
 | Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
@@ -584,9 +625,21 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | vessels           | containers, jars, pots          | stone vessels, ceremonial vessels              |
 | dynasty           | royal family line, succession   | ruling dynasty, ancient dynasty                |
 
+| **Word / Phrase**     | **Synonyms / Paraphrases**             | **IELTS Usage**                                                |
+| --------------------- | -------------------------------------- | -------------------------------------------------------------- |
+| contemporary accounts | eyewitness reports, historical records | “Contemporary accounts described the eruption in detail.”      |
+| records suggest       | evidence indicates, reports show       | “Records suggest the building dates back to the 12th century.” |
+| personal observations | own notes, individual reports          | “His personal observations helped future researchers.”         |
 # Family
 
-# Gender
+# Gender / Social Context
+
+| **Word/Phrase**                    | **Synonyms / Related Terms** | **Usage Context**                                    |
+| ---------------------------------- | ---------------------------- | ---------------------------------------------------- |
+| male vs female fashion differences | gendered clothing, disparity | “women’s pockets were less visible or easy to reach” |
+| mobility & independence            | autonomy, freedom            | “women tied to their possessions” (implied)          |
+| under clothing concealment         | hidden under, discreet       | “they hung beneath their clothes”                    |
+| fashion evolution                  | style change, trend shift    | “fashion altered towards the end of that period”     |
 
 # Competitions & Challenges
 
@@ -713,6 +766,22 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | majestic        | grand, impressive            | majestic animal          |
 | intelligent     | smart, clever                | intelligent species      |
 
+# Fashion & Clothing History
+
+| **Word/Phrase** | **Synonyms / Related Terms** | **Context / Usage**                                            |
+| --------------- | ---------------------------- | -------------------------------------------------------------- |
+| pockets         | compartments, pouches        | “people don’t really think about pockets too much”             |
+| breeches        | knee-length trousers         | “trousers were knee-length only and referred to as ‘breeches’” |
+| waistcoat       | vest                         | “waistcoats were short”                                        |
+| lined           | sewn, enclosed               | “pockets were sewn into this cloth”                            |
+| tie-on pockets  | detachable pouches           | “a pair of pockets made that were tied together with string”   |
+| petticoats      | underskirts                  | “hung beneath their clothes… between the layers of petticoats” |
+| pouches         | small bags                   | “called pouches… before women carried a handbag”               |
+| handbag         | purse                        | “inevitably led on to the handbag of more modern times”        |
+| silhouette      | outline, shape               | “dresses became tighter… detracted from the woman’s image”     |
+
+
+
 # Science & Technology
 
 | Vocabulary / Collocation                             | Meaning / Notes                                                  | Synonyms                                           |
@@ -772,6 +841,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | shape             | figure, outline, contour   | geometric shape, change shape           |
 | moon              | lunar body                 | full moon, crescent moon, lunar eclipse |
 | atlas             | map book, chart collection | world atlas, digital atlas              |
+
+| **Word / Phrase**   | **Synonyms / Paraphrases**                | **IELTS Usage**                                                  |
+| ------------------- | ----------------------------------------- | ---------------------------------------------------------------- |
+| naturalist          | scientist, biologist                      | “Darwin was a naturalist who studied evolution.”                 |
+| reports came in     | accounts were received, evidence gathered | “Reports came in from multiple research stations.”               |
+| credited with       | attributed to, regarded as                | “Einstein is credited with developing the theory of relativity.” |
+| identify the reason | determine the cause, explain why          | “Researchers identified the reason for the failure.”             |
+| got there first     | discovered earlier, preceded              | “Another scientist got there first, before it was published.”    |
+| contemporary        | peer, living at the same time             | “Shakespeare and Marlowe were contemporaries.”                   |
 
 # Community / Volunteering / Social Events
 
@@ -895,6 +973,14 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **unpopular**                           | Not liked or approved of by many people                         | disliked, unfavorable                        |
 | **felt safer**                          | Had a greater sense of security                                 | perceived more safety, more secure           |
 
+| **Word/Phrase**    | **Synonyms / Related Terms** | **Context / Usage**                                |
+| ------------------ | ---------------------------- | -------------------------------------------------- |
+| convenient         | handy, practical             | “nothing is quite as convenient as… a pocket”      |
+| professional       | occupation, vocation         | “if the wearer was someone with a profession”      |
+| style / image      | appearance, impression       | “had a negative effect on the woman’s image”       |
+| pickpockets        | thieves in public            | “women were more vulnerable to theft… pickpockets” |
+| theft / pickpocket | stealing, robbery            | “worried constantly about pickpockets”             |
+
 # Agriculture
 
 | **Term**               | **Synonym**           | **Collocations**                     |
@@ -967,7 +1053,16 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | rough (to touch)    | coarse, harsh              | rough texture, rough surface        |
 | needles (wood/bone) | knitting sticks, pins      | knitting needles, steel needles     |
 
-HERITAGE / ARCHITECTURE
+| **Word/Phrase**       | **Synonym / Related Phrase**    | **Collocations**                                    |
+| --------------------- | ------------------------------- | --------------------------------------------------- |
+| housing for employees | accommodation for workers       | **provide housing / staff housing**                 |
+| local facilities      | amenities, services             | **access to facilities / public facilities**        |
+| secondary school      | high school                     | **large secondary school / local secondary school** |
+| sports centre         | gym, recreation centre          | **large sports centre / community sports centre**   |
+| community centre      | social centre                   | **local community centre / community facilities**   |
+| clinic                | health centre, medical facility | **local clinic / health clinic**                    |
+| supermarket           | grocery store                   | **large supermarket / local supermarket**           |
+## HERITAGE / ARCHITECTURE
 
 | **Term**                    | **Synonym / Notes** | **Collocations**               |
 | --------------------------- | ------------------- | ------------------------------ |
@@ -1174,6 +1269,23 @@ HERITAGE / ARCHITECTURE
 | pursue a degree     | study at university, undertake a course | Many students **pursue a degree** in engineering.                    |
 | catch up on         | make up for lost learning               | She stayed up late to **catch up on** her homework.                  |
 
+
+| **Word/Phrase**            | **Synonyms / Related Terms**   | **Usage Context**                         |
+| -------------------------- | ------------------------------ | ----------------------------------------- |
+| focus                      | topic, subject                 | “main focus of our presentation”          |
+| development over time      | evolution, progression         | “talk about its development over time”    |
+| making sense of            | interpreting, understanding    | “trying to make sense of the science”     |
+| direct and indirect impact | immediate and long-term effect | “impacted directly and indirectly…”       |
+| reason for choice          | motivation, justification      | “I chose pockets for two reasons, really” |
+# Feedback & Evaluation
+
+| **Word/Phrase**        | **Synonym / Paraphrase**             | **Collocations**                                   |
+| ---------------------- | ------------------------------------ | -------------------------------------------------- |
+| one of the reasons why | one factor, a main cause             | **reason for choosing / reason why**               |
+| excellent hospital     | very good medical centre             | **excellent facilities / excellent services**      |
+| provision made for     | arrangement provided, measures taken | **provision for safety / provision for transport** |
+| positive comments      | favourable feedback, good remarks    | **positive response / positive review**            |
+| demand for housing     | need for accommodation               | **strong demand / rising demand**                  |
 # Work & Careers
 
 | **Word / Phrase**                   | **Synonyms / Paraphrases**               | **Collocations**                   |
@@ -1222,7 +1334,14 @@ HERITAGE / ARCHITECTURE
 | significant                      | important, notable                             | significant monument, significant change        | Core academic adjective     |
 | astonish and amaze               | surprise greatly, impress deeply               | astonished researchers, amazed visitors         | More for descriptive tone   |
 
-
+| **Word / Phrase**    | **Synonyms / Paraphrases**            | **IELTS Usage**                                             |
+| -------------------- | ------------------------------------- | ----------------------------------------------------------- |
+| linked to it         | associated with, related to           | “The rise in unemployment is linked to automation.”         |
+| surprised by         | astonished at, amazed at              | “Many people were surprised by the government’s decision.”  |
+| keep a record of     | document, log, note down              | “Farmers must keep a record of crop yields.”                |
+| published a paper    | released a study, produced an article | “The findings were published in a leading journal.”         |
+| reliable information | trustworthy, accurate data            | “Reliable information is crucial for decision-making.”      |
+| observed phenomenon  | recorded event, witnessed occurrence  | “The scientist described an observed phenomenon in detail.” |
 
 # **📝 IELTS Grammar Trap Cheat Sheet**
 
@@ -1261,3 +1380,51 @@ Examples from IELTS themes (Education, Business, Environment, Daily life):
 | aircraft  | aircraft       | aircraft      | Transport/aviation topics                      |
 | means     | means          | means         | “a means of transport” / “many means”          |
 | data*     | datum (formal) | data          | BUT IELTS usually treats “data” as uncountable |
+
+
+Here’s why:
+
+- **Part 1, 2, and 4** are mostly about **facts and details** (numbers, names, specific terms, processes). If you put 100% attention there (every word, every sound), you catch the small details, and your accuracy stays high.
+    
+- **Part 3** is more about **meaning and relationships between speakers**. If you use the same “100% detail focus,” your brain overloads because students often talk casually, add fillers, or change direction. That’s why when you reduce focus to 70–80% and listen more for _meaning and flow_, you actually do better.
+    
+
+  
+
+So your strategy is **partly correct**:
+
+- **Deep focus (100%)** → best for **Parts 1, 2, and 4** (details matter).
+    
+- **Broader focus (70–80%)** → best for **Part 3** (main idea + speaker agreement/disagreement).
+    
+
+  
+
+### **The problem**
+
+  
+
+Switching focus styles _within the same test_ can feel unstable — your brain doesn’t always adapt quickly between Part 2 and Part 3.
+
+  
+
+### **The solution**
+
+  
+
+Train to **control your “focus lens”**:
+
+- **Zoom-in mode (100%)**: for details (spelling, numbers, technical words).
+    
+- **Zoom-out mode (70–80%)**: for main ideas, student opinions, reasons.
+    
+
+  
+
+Practice switching deliberately:
+
+1. Do one Part 3 section listening only for _meaning_, not details. Summarize in 2 sentences.
+    
+2. Then do one Part 1/4 focusing on catching **every single keyword**.
+    
+3. Alternate until your brain naturally shifts mode depending on section.
