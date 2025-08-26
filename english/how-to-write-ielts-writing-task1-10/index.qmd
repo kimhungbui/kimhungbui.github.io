@@ -210,8 +210,474 @@ Crushing Drying Evaporating Farming Growing Harvesting Processing Purifying Sepa
 
 ## Steps and stages
 
-In lesson
+In lesson 4.2, PC recommended asking ourselves questions about a diagram, like this:
+
+<font color="#245bdb">Q: What are being shown here? A: This diagram is showing the steps involved in ...</font>
+
+A step is one part of a process. Here are some useful phrases with the word 'step':
+
+- When learning a new skill, it is best to do it <font color="#245bdb">one step at a time</font>. = (slowly and deliberately)
+- I will explain what you need to do <font color="#245bdb">step by step</font>. (=giving instruction in a logical order)
+- Changing the resources you need to use to practice is <font color="#245bdb">a step in the right decision</font>. (= a good starting point)
+
+The word 'stage' has a broader meaning:
+
+We're renovating the house <font color="#245bdb">in stages</font>, we'll start with the downstairs areas, then do the upstairs rooms, and finally the area outside the house.
+
+This mean than we can say that the diagram shows seven steps in a process, but we can also group these steps into key stages. This is very helpful in producing a clear overview, but we need ask a second question:
+
+_Q 1: What are we being shown here? Ans: The diagram shows the steps involved in a process._
+
+<font color="#245bdb">Q 2: What are main stages in this process?</font>
+
+Looking carefully at the diagram will help. One easy way to decide a 'main stage' is to look at the product or material being processed and noticing when it changes in form (e.g. from a plant to a juice). This means that, we need to notice:
+
+- <font color="#245bdb">What type of process it is (e.g. mechanical, manual)</font>
+- <font color="#245bdb">How many steps there are</font>
+- <font color="#245bdb">Where the process takes place</font>
+- <font color="#245bdb">the product and how it changes</font>
+- <font color="#245bdb">whether any of the steps can be grouped together into key stages</font>
+
+In our current diagram there are seven steps numbered 1-7, but they are not all equal. Some are important separate stages (growing, harvesting) while others are smaller steps in a part of the process (purifying, evaporating, separating). Looking at how the product changes (from sugar canes, to juice, to syrup, then sugar) helps to group these together so that we can summarize them in a clear overview.
+
+:::{.callout-tip}
+We can identify the main stages by grouping steps together. Remember, we are always looking for the main changes, so looking at when the product changes form can also help.
+
+For example: the plant -> juice -> syrup -> sugar
+:::
+
+PC's note for this step
+
+![](Pasted%20image%2020250826151628.png)
+
+For her overview, she identified two main stages 1) the growing and harvesting the crop and 2) the processing of the juice from canes to produce sugar. To make sure our overview is 'complete' and 'clear', we can include the following
+
+- the type of process
+- how many stages there are and what these are (using umbrella terms)
+- what happens during the process (without giving too much detail) i.e. the main changes
+
+Although we can't avoid giving some details here (e.g. sugar cane and sugar) try to avoid giving too many other details in this overview. Write our version below then compare it to her later when we look at her model.
+
+### Overview Practice
+
+Try to predict what PC overview will look like by writing an overview statement that includes the following information:
+
+- the type of process
+- the number of stages and what they are (use umbrella terms)
+- what happens during the process (avoid giving too much detail here)
+
+linear process
+2 stages farming, and processing
+
+Overall, the linear process consists of two main stages, including sugar cane farming and processing of juice to produce sugar.
 # Changing the language in the question
 
+Process tasks generally have more language on the question paper than other tasks. This helps us to understand what is happening but it also means we need to be careful: in order to show our language skills, we need to avoid just copying the language on the diagram.
 
+The different steps in the process are labelled, usually with the noun form of a verbs (the ing form). For example, __growing, harvesting, crushing, purifying, evaporating, drying and cooling__. Steps 5 and 6 in our current diagram are unusual. Rather than adding more detail to the diagram (e.g. showing and labelling the syrup and the centrifuge), the question is tell us that, in step 5 'juice becomes syrup' and in step 6 the centrifuge 'separates sugar crystals from syrup'. So we have even more language to avoid copying here.
+
+Repetition is another common problem in process tasks, as it is easy to use the same grammatical structures repeatedly. To solve these problems, use the language points below to build our vocabulary and our grammatical range and accuracy.
+
+## Comprise, consists of, involve
+
+These verbs are useful for our overview. They have a similar meaning but are structurally different.
+
+The following examples show how they are used. Make a note of any prepositions needed.
+
+- <font color="#245bdb">Comprise</font> is followed by a noun: This process <font color="#245bdb">comprises</font> two main stages.
+- <font color="#245bdb">Consist of</font> and <font color="#245bdb">involve</font> can both be followed by a noun or a verb (in <font color="#245bdb">the ing form</font>)
+- This process <font color="#245bdb">consists of</font> two main stages.
+- This <font color="#245bdb">consists of</font> grow<font color="#245bdb">ing</font> and harvest<font color="#245bdb">ing</font> the crop and then process<font color="#245bdb">ing</font> it to make sugar.
+- This process <font color="#245bdb">involves</font> two main stages.
+- This <font color="#245bdb">involves</font> grow<font color="#245bdb">ing</font> and harvest<font color="#245bdb">ing</font> the crop and then process<font color="#245bdb">ing</font> it to make sugar.
+
+:::{.callout-note}
+## Vocabulary note
+Here is some other useful vocabulary to learn:
+<font color="#245bdb">Raw materials</font> - this refer to the materials needed to produce something at the start of the process and in their original state.
+
+<font color="#245bdb">Ingredients</font> - this is used when the raw materials are different foods used in a recipe.
+
+We '<font color="#245bdb">remove</font>' something we do not want and '<font color="#245bdb">extract</font>' something we do want.
+
+- <font color="#245bdb">The leaves are removed from the plant before cooking.</font>
+- <font color="#245bdb">The juice is extracted from the plant and used to create the sugar.</font>
+
+The verb '<font color="#245bdb">allow</font>' means 'give permission for something', but it can also be used in a process to mean 'to make something possible'
+
+- <font color="#245bdb">Crushing the plants allows the juice to be extracted.</font>
+:::
+
+## Changing from ing to passive
+
+In our body paragraphs, we will need to change the 'ing' forms in the diagram and use the verbs actively or, more often, passively. For example:
+
+<font color="#245bdb">Step 1) growing -> the sugar can is grown.</font>
+
+Be careful with verbs that cannot be used in the passive. Verbs like this cannot have an object. For example, the verb 'fall' cannot be used with an object (something can fall but we cannot fall something). So we can say:
+
+<font color="#245bdb">The apples fall into a bucket.</font>
+
+But we cannot say:
+
+A worker ~~falls the apples~~ into a bucket.
+
+Which is why we also cannot use it in the passive
+
+The apples ~~are fallen~~ into a bucket.
+
+Instead, we would need to use the verb 'drop' here.
+
+- <font color="#245bdb">A worker drops the apple into a bucket.</font>
+- <font color="#245bdb">The apples are dropped into a bucket.</font>
+
+Problem verbs like these are called 'intransitive verbs' and we will see the letter [i] in brackets next to them in a dictionary. The verbs that can have an object are called transitive and have a [T] next to them. Some verbs can be both, depending on their meaning. Other intransitive verbs to be careful of (and which cannot be used in the passive) are:
+
+<font color="#245bdb">appear, arrive, become, come, disappear, go, jump</font>
+
+## To + infinitive of purpose
+
+In a process task, we often need to say <font color="#245bdb">why</font> something is done. <font color="#245bdb">To +  infinitive</font> can be helpful here. For example, this sentence, 'Seeds are planted to produce the crop', tells us why the seeds are planted.
+
+Practice these structures in the next exercises.
+
+### Exercises
+
+#### Fill in the gaps in the sentences below to change the name of the stage into a short sentence.
+
+1 Growing the sugar cane
+
+The sugar cane is grown.
+
+2 Harvesting the crop
+
+The crop is harvested
+
+3 Crush the plants
+
+The plants are crushed
+
+4 Extracting the juice.
+
+The juice is extracted
+
+5 Purifying the juice
+
+The juice is purified
+
+6 Separating out the sugar crystals
+
+The sugar crystals are separated out
+
+7 Spinning the syrup
+
+The syrup is ~~spinned~~ spun.
+
+8 Drying and cooling the sugar crystals
+
+The sugar crystals are dried and cooled.
+
+
+#### Put the words in the following sentences into the correct order. NB They each feature to + infinitive to show purpose
+
+![](Pasted%20image%2020250826154507.png)
+
+Seeds are planted to produce the crop.
+
+#### Q 3
+
+![](Pasted%20image%2020250826154550.png)
+
+The plants are crushed to extract the juice.
+
+#### Q4
+
+![](Pasted%20image%2020250826154622.png)
+
+The juice is passed through the filter to purify it.
+
+#### Q5
+
+![](Pasted%20image%2020250826154709.png)
+
+The juice is heated to turn it into a syrup.
+
+#### Q6
+
+![](Pasted%20image%2020250826154926.png)
+
+The syrup is spun in a centrifuge to separate out the sugar crystals.
+#### Q7
+
+![](Pasted%20image%2020250826154940.png)
+
+The sugar crystals are dried and cooled to produce the sugar.
+
+
+## Avoid repetition
+
+To avoid repeating the same structures, we can also use a relative clause or reduced relative clause to explain the result of a step. For example:
+
+- The plants are crushed <font color="#245bdb">to extract</font> the juice.
+- The plants are crushed<font color="#245bdb">,</font> <font color="#245bdb">which extracts</font> the juice.
+- The plants are crushed<font color="#245bdb">, extracting the</font> juice.
+
+As we saw in the vocabulary note, sometimes, we can add the verb 'allow':
+
+- The plants are crushed <font color="#245bdb">to extract</font> the juice.
+- The plants are crushed, <font color="#245bdb">which allows the juice to be extracted</font>.
+- The plants are crushed, <font color="#245bdb">allowing the juice to be extracted</font>.
+
+## After, Once and When
+
+Another way to avoid repeating the same structures is to use _after, once_ or _when_. This allows us to use a present perfect or present perfect passive and show a range of grammatical structures.
+
+Look at the following examples:
+
+- <font color="#245bdb">First the crop is grown and then it is harvested.</font>
+- <font color="#245bdb">After the crop has grown, it is harvested.</font>
+- <font color="#245bdb">Once the crop has grown, it is harvested.</font>
+- <font color="#245bdb">When the crop has grown, it is harvested.</font>
+
+We can vary the tense of the second clause by saying it: it <font color="#245bdb">can be</font> harvested, or it <font color="#245bdb">will be</font> harvested. However, we cannot use 'will' immediately following after, once, or when
+
+After / Once / When the crop <font color="#245bdb">will be grown</font>
+
+### Exercises
+
+#### Q1
+Fill in the gaps to rewrite the following sentences using
+
+A) a relative clause
+B) a reduced relative clause
+C) to + infinitive
+
+1. The juice is passed through a filler, to purify it
+
+A) The juice is passed through a filler, which purifies it.
+
+B) The juice is passed through a filler, purifying it.
+
+2. The juice is heated to turn it into a syrup.
+
+A) The juice is heated, which turns it into a syrup.
+
+B) The juice is heated, turning it into a syrup
+
+3. The syrup is spun in a centrifuge, separating out the sugar crystals. 
+
+A) The syrup is spun in the centrifuge, which separates out the sugar crystals.
+
+C) The syrup is spun in the centrifuge to separate out the sugar crystals.
+
+4. The sugar crystals are dried and cooled to produce the final product.
+B) The sugar crystals are dried and cooled, producing the final product.
+A) The sugar crystals are dried and cooled, which produces the final product.
+
+
+#### Q2
+
+Rewrite sentences 1-5 below to practice using after, once, or when + the present perfect or present perfect passive. 
+
+1) First the crop is grown and then it is harvested.
+
+-> After / Once / When the crop has grown, it is harvested.
+OR: After / Once / When the crop has grown, it will be / can be harvested.
+
+2) The crop is harvested and then taken to a factory for processing.
+
+-> After / Once / When the crop has been harvested, it is taken to a factory for processing.
+OR: After / Once / When the crop has been harvested, it will be / can be taken to a factory for processing.
+
+3) The crop is harvested and then crushed to extract the juice.
+
+-> After / Once / When the crop is harvested, it is crushed to extract the juice.
+OR After/ Once / When the crop is harvested, it can be / will be crushed to extract the juice.
+
+4) The juice is purified and then heated.
+
+-> After / Once / When the juice is purified, it is heated.
+OR After / Once / When the juice is purified, it can be / will be heated.
+
+5) The sugar crystals are separated out and then dried and cooled to produce sugar.
+
+-> After / Once / When the sugar crystals are separated out, they are dried an cooled to produce sugar.
+OR: After / Once / When the sugar crystals are separated out, they can be / will be dried and cooled to produce sugar.
 # Model answer
+
+The diagrams show the process used to make sugar. Overall, this is a largely mechanical process comprising two main stages: the farming of sugar cane and the processing of the crop, which turns it into a liquid and eventually into sugar.
+
+The first stage of the process is the longest as the sugar cane takes between 12 to 18 months to grow tall enough for harvesting. Once it is fully grown, the crop can be harvested in two ways, either mechanically using specialist machinery or by hand, a much more labour-intensive method.
+
+The second stage is wholly mechanical and involves five steps. First, the plants are crushed to form a juice, which is then extracted. The juice is purified by passing it through a limestone filter before being heated. During this step, the liquid content of the juice evaporates leaving behind a syrup. The syrup is then put in a centrifuge and spun at a high enough speed to separate out the sugar crystals, which are subsequently dried and cooled to produce the final product.
+
+## Point to notice
+- PC overview mentions the two main stages and the main changes, and these are reflected in her two body paragraphs.
+- She was able to make two comparisons: 1) the longest stage in the process and 2) comparising the different methods used for harvesting
+- In her editing, she read her answer aloud to see if there was repetition - this lead her to change to sentences to fix the following problems: 1) a repetition of 'then' (_Is then extracted ... is then heated_) and 2) in the last sentence, she had written 'which are <u>finally</u> dried and cooled to produce the <u>final</u> product.'. Notice the changes she made to avoid this. Be sure to read through our own answer in our head if we have time at the end.
+- Notice the clear coherence and cohesion in her answer. She signaled the main topic of each paragraph very clearly (The first stage ... The second stage) and the information is logically organized, step by step. Try to notice the referencing and how we can easily trace the ideas (the zig-zag pattern we saw in lesson 9)
+## Writing clearly
+
+Look back at the overview sentence we wrote earlier and compare it to her. How clear is our writing?
+
+A problem can occur in our overview if we identify the main stages but then do note make these clear in our overview. Look at the following example:
+
+_Overall, the process compromises two main stages,_ <font color="#c00000">where sugar canes and their juice are processed, and there are several different tools involved.</font>
+
+This overview begins well, stating that there are two main stages, but then presents the information as though this is one stage: <font color="#ff0000">where sugar canes and their juice are processed</font>. We need to show these are two separate stages:
+
+<font color="#245bdb">Overall, the process comprises two main stages, during which sugar canes are grown in the field, and then processed in the factory, when their juice is extracted and turned into sugar.</font>
+
+It is important to note that there are many ways to give our overview. For example, in the new version above she mentioned the two locations (the field and the factory). The following is another example of a clear overview.
+
+The entire process includes a total of 7 stages with the plant undergoing various changes in form from solid to liquid then to syrup. Although the process is partly manutal, most of the stages involves heavy machinery.
+
+### Exercises
+
+How many words you can remember from this lesson?
+
+1. The materials need to produce something = raw materials
+2. The different foods used in a recipe = ingredients
+3. To remove something you want = to extract
+4. To remove solids from a liquid or gas = to filter
+5. Requiring a lot of workers / work = labour-intensive
+6. By hand = manually
+7. By machine = mechanically
+8. Large machines = machinery
+9. Mostly = largely
+10. Completely = wholly
+11. Following this = subsequently
+12. To make something colder = to cool
+13. To make something hotter = to heat
+14. To allow something to fall = to drop
+
+
+# Extra practice
+
+Task achievement
+
+1) Look back at your answer to this process task and consider your overview. Did you include:
+
+the type of process it is (mechanical etc) the number of main stages and what these are (using umbrella terms) what happens during the process (the main changes that produce the final result)
+
+2) Did you manage to include any comparisons?
+
+3) Was your answer long enough?
+
+Varying your language
+
+If is it too short, can you see how to expand it?
+
+Read your answer aloud – do you notice any repetition such as the same grammatical structures or vocabulary used too often? What changes can you make to avoid this (e.g. to+ infinitive; relative clause; once + present perfect etc).
+
+Is there any vocabulary from this lesson you can use in your answer or that you would like to learn?
+
+After a week, repeat this test question again without looking back at this lesson. Then read the lesson again to see how much you have remembered learn.
+
+To prepare for Section 2: Test Practice, be sure to review the earlier lessons in this section.
+
+
+
+The diagrams show different stages in the manufacturing process of sugar from sugar cane. Overall, the linear process takes at least 12 months and comprises three main stages, each of which takes place in a different production area.
+
+  
+
+In the first stage, sugar cane is grown and nurtured for 12 to 18 months. After growing, sugar cane will be harvested by machine or by hand. It is crushed by a machine to remove sugarcane residue and produce juice. The juice then passed through a limestone filter, which removes any contaminants.
+
+  
+
+At the end of this stage, the pure juice is boiled over fire to remove excess water, after which the juice is evaporated and becomes syrup. It will undergo a centrifuge process, separating sugar crystals from the syrup. Finally, the sugar is drying and cooling to remove excess moisture.
+
+## **1) Task Achievement**
+
+  
+
+**Your overview**
+
+- ✅ You included: _the type of process_ (“linear process”), _the number of main stages_ (“three main stages”), and _what happens_ (sugar cane → juice → crystals → final sugar).
+    
+- ❌ But you didn’t **name the umbrella stages clearly** (e.g., _cultivation_, _extraction & purification_, _crystallisation & drying_).
+    
+
+  
+
+**Correction idea:**
+
+Instead of “three main stages,” say:
+
+  
+
+> “The process consists of three broad stages: cultivation of sugar cane, extraction and purification of juice, and crystallisation with drying to produce sugar.”
+
+  
+
+This makes the overview more precise.
+
+---
+
+## **2) Comparisons**
+
+- ❌ No explicit comparisons in your draft.
+    
+- Example of a useful comparison:
+    
+
+  
+
+> “While the first stage takes the longest (up to 18 months), the later stages involve mechanical and chemical procedures that are completed in a much shorter time.”
+
+  
+
+This kind of sentence shows contrast and strengthens cohesion.
+
+---
+
+## **3) Length**
+
+- Your answer is ~170 words, so **just enough**. But you could expand by:
+    
+    - Adding comparisons.
+        
+    - Using **relative clauses** (“…juice, which is then purified…”).
+        
+    - Adding sequencing language (“Once this is completed, …”, “Following this, …”).
+        
+    
+
+---
+
+## **4) Language Variation**
+
+  
+
+You repeated **“after,” “then,” “finally”** quite often. To improve:
+
+- Instead of _after growing_, write: _Once the cane has matured…_
+    
+- Instead of _then passed through_, write: _which is subsequently filtered…_
+    
+- Instead of _finally, the sugar is drying and cooling_, write: _In the final stage, the sugar undergoes drying and cooling…_
+    
+
+  
+
+**High-value vocabulary you can add:**
+
+- _cultivation, harvesting, extraction, purification, evaporation, crystallisation, mechanical process, chemical treatment_.
+    
+
+---
+
+## ** Revised Sample**
+
+  
+
+The diagrams illustrate the process by which sugar is produced from sugar cane. Overall, this is a **linear and partly mechanical process** that requires at least twelve months and can be divided into three main stages: cultivation, extraction and purification, and crystallisation with drying.
+
+  
+
+In the first stage, sugar cane plants are cultivated for a period of 12 to 18 months until they reach maturity. Once this has occurred, they are harvested either manually or using mechanical equipment. The stalks are then crushed to extract juice, which is subsequently purified through a limestone filter to remove any unwanted residue.
+
+  
+
+Following this, the filtered juice is boiled in order to evaporate excess water and is converted into syrup. This syrup undergoes centrifugation, during which sugar crystals are separated from the remaining liquid. In the final stage, the crystals are dried and cooled, producing refined sugar ready for distribution.

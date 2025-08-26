@@ -1399,7 +1399,25 @@ So your strategy is **partly correct**:
     
 
   
+# Process - Writing task 1
 
+## Natural
+## Man-made
+
+1. The materials need to produce something = raw materials
+2. The different foods used in a recipe = ingredients
+3. To remove something you want = to extract
+4. To remove solids from a liquid or gas = to filter
+5. Requiring a lot of workers / work = labour-intensive
+6. By hand = manually
+7. By machine = mechanically
+8. Large machines = machinery
+9. Mostly = largely
+10. Completely = wholly
+11. Following this = subsequently
+12. To make something colder = to cool
+13. To make something hotter = to heat
+14. To allow something to fall = to drop
 ### **The problem**
 
   
