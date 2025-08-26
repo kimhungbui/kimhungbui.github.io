@@ -1,0 +1,196 @@
+---
+title: Guide Test Practice 1 - Data about People
+lightbox: false
+description: Data about people
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-08-26
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Understand the Data
+
+![](Pasted%20image%2020250826194859.png)
+
+## Presenting details that is relevant, appropriate, and accurate
+
+Some answers to this question reveal a common problem with data tasks: drawing the wrong conclusions about what the data tell us. As we saw in lessons 1 and 3, this can present problems for TA score.
+
+To understand the issue, think about where the data in the bar chart has come from. Data about people and how they live generally comes from some sort of survey, where people answer personal questions. Our current data would be based on the answer to __one question__.
+
+Which of the following questions could have produced the data in the bar chart above?
+
+A. _Are you planning to buy or rent a house in the future?_
+
+B. _Where do you live now?_
+
+C. Do you live in a house or a flat?
+
+D. Do you rent or own your home?
+
+E. Would you prefer to own a home or rent?
+
+F. Where did you live before you moved to this house
+
+The only question that fits the data in this charts is Option D: _Do you rent or own your home?_
+
+This means we do not have any information about where people moved from, or what their living preferences are. Yet some people write sentences like this:
+
+It is clear from the chart that <font color="#ff0000">owned accommodation</font> become <font color="#ff0000">more popular</font> in the final 4 decades.
+
+To be able to say that something is '_more popular_', we would need to ask a different question in the survey in the survey. With our current data, we can only say that home ownership was <font color="#245bdb">more common</font> in the later years. We do not know if the people concerned <font color="#ff0000">preferred</font> or <font color="#ff0000">chose</font> to rent - they may have been forced through circumstances (e.g. a lack of money or job). If homelessness was increasing, we would not say that it was becoming '_more popular_'.
+
+:::{.callout-tip}
+Always think about what the data actually tells us - what question does it answer? Avoid using the words <font color="#245bdb">popular</font>, <font color="#245bdb">favorite</font>, or <font color="#245bdb">choice</font> unless the data answers a question such as '_Which do you prefer / enjoy?_' OR where it is clear that a choice has been made.
+:::
+
+## Is there data to support our description?
+
+The data in this chart is from 9 different years, so the same question would need to be asked in each of these years. The first year is 1918 and the last year is 2011, which means this data covers a period of 93 years. Do you think the people who were asked this question in 1918 are the same people answering the question in 2011? I think you'll agree this is highly unlikely. What about between 1971 and 1991? Again, we do not know. This tells us another important point: the data set for each year can tell us about general trends within the population of England and Wales, but it does not tell us about the movements of individual people. Therefore, we can't draw conclusions like this:
+
+However, <font color="#ff0000">over the next 40 years, more and more residents managed to buy their own place and moved out of rented accommodation.</font>
+
+This is going too far. We don't know whether the people who said they owned their home in 1991 and moved out of rental accommodation - we do not have data for this. They could be people who have just moved to the area after selling a house somewhere else, they could have lived with their parents until they could afford to buy a house, someone may have given the house to them. The increased numbers of home owners may be due to housing becoming cheaper and easier to buy, government support, or many more homes being built in the area. We do not know, so we cannot make statements about this is our answer.
+
+## How will I know if my statements are relevant?
+
+We need to present clear, logical evidence to support the points we make. The same idea applies in writing task 1. IF we make a statement such as '_more and more resident_ <font color="#ff0000">moved out of rented accommodation</font>', then we need to be sure we can supply evidence from the data we are given to support this. If there is no evidence in the data about <font color="#ff0000">people moving house</font>, then the statement is not relevant to the task.
+
+:::{.callout-tip}
+Think carefully about what the data actually shows and make sure to only write about what we can prove in the data
+:::
+
+
+## Correlation not causation
+
+It is important to see the data set for each year in the graph as a separate set of people answering the survey question, and we shouldn't try to connect the data in a cause and effect way. This is an important point in interpreting data, and a fact that is often repeated in academic writing that: <font color="#245bdb">correlation</font> (_two things matching or occurring at the same time_) should not be seen as <font color="#245bdb">causation</font> (_one thing being directly related to or caused by another_)
+
+![](Pasted%20image%2020250826200934.png)
+
+The increases in ice cream sales <font color="#245bdb">correspond</font> with increases in sun burn but this is <font color="#245bdb">correlation</font> not <font color="#245bdb">causation</font> - both just happen to occur in summer or hot weather.
+
+:::{.callout-tip}
+Don't try to find a connection between the data sets - we will not have enough information for this. We can talk about the data '<font color="#245bdb">corresponding</font>', but we should not relate them directly or invent a story about what is happening.
+:::
+
+## Language problems in this task
+
+This task presents some language challenges, especially as only 2 variables are mentioned (renting a home or living in a home you own). This means we need to try to avoid repeating the same words and phrases and we need to use different words to those in the question __when possible__. Remember, we do not need to vary this every time, sometimes a key word is unavoidable. We just need to reduce the number of times we repeat the same terms.
+
+One way to do this is to vary the way we present the data. We can either write about the figures in the chart, or about the people behind the data. Look at the following examples, which all present the same fact:
+
+- <font color="#245bdb">The figure for rented</font> accommodation fell from just under 80% in 1918 to less than 70% in 1939.
+- <font color="#245bdb">The percentage of people renting</font> accommodation fell from just under 80% in 1918 to less than 70% in 1939.
+- <font color="#245bdb">Fewer people rented</font> accommodation in 1918 than in 1939 (just under 80% and 70% respectively)
+
+Make sure to think about the people behind the statistic, and what the data presents.
+
+:::{.callout-tip}
+
+Be careful to vary our sentences - don't always refer just to the figures and what happens to the data. Think about the people that these numbers represent as well.
+:::
+
+## Household, House and home
+
+Although this question refers to 'households', this does not mean the people all lived in houses - they may have rented or owned a flat. A household refers to the group of people all living together within the same place - whether it is a house or flat. The word 'home' covers this nicely as a home refers to the place where we live, whether that is a tent, a boat, a flat, or a house.
+
+
+## My own, on your own, or to own?
+
+The word 'own' often creates problems because of its different meanings and uses. For example, <font color="#245bdb">to own</font> is a verb meaning to have something that legally belongs to us; <font color="#245bdb">own</font> is also a pronoun, or can be used to mean 'alone'
+
+The verb '<font color="#245bdb">to own</font>' is not used in the same way as the verb 'to possess', which has a much stronger meaning and is not appropriate in this context. Another important fact about the verb 'to own' is that it is a 'stative' verb, this mean it cannot be used in a continuous tense. So, we cannot say, 'More people <font color="#ff0000">were owning</font> their home'.  However, we can talk about 'owning a home' (the noun form of the verb), and we can also talk about '<font color="#245bdb">ownership</font>' and '<font color="#245bdb">home ownership</font>' (you will find this written as separate words, hyphenated, or as one word).
+
+Look at the following sentences and decide whether the word 'own' is a verb, a pronoun, or means 'alone'.
+
+1. That family is very rich, they live in a huge house and also <font color="#245bdb">own</font> 10 properties that they rent out. (verb)
+2. I didn't get my project finished because my family arrived and I couldn't get any time <font color="#245bdb">on my own</font>. (alone)
+3. I still live with my parents, I can't wait to have <font color="#245bdb">my own</font> home. (pronoun)
+
+Consider also that, if we rent a property, someone owns it. The wording in the question and the chart is a little unhelpful here as it refers to '<font color="#245bdb">owned</font> accommodation' and '<font color="#245bdb">rented</font> accommodation'. This works with 'accommodation' as the context is clear. But people are often tempted to write '<font color="#ff0000">living in an owned house / property</font>', which does not work. We need to write '<font color="#245bdb">the percentage of people living in their own home</font>' not 'living in ~~an owned home~~'
+
+:::{.callout-note}
+## Vocabulary note:
+
+<font color="#245bdb">Sector, market, category</font>
+
+These words are useful umbrella terms to use as synonyms to avoid repetition.
+
+<font color="#245bdb">Sector</font> = and area of economic activity (similar to 'field' in the academic world). Examples of sector are: the banking sector; the tourism sector; the housing sector
+
+<font color="#245bdb">Market</font> = business or trade in a specific product (e.g. the rental market; the housing market)
+
+<font color="#245bdb">Category</font> = a group, or system of grouping similar information or things.
+:::
+
+If you haven’t already done so, write an answer to this question. Remember the following key steps
+
+## Points to rememer
+
+- Spend a few moments noticing the details in the bar chart. Pay attention to what is being measured as well as when, and how is it being measured.
+- Identify the key trends in the data and think about how to write about these in our overview. Remember - we should not mention just one trend.
+- Think about: what stayed the same, what changed, what comparisons can be made.
+- Group the information together so that we can write about it logically. Chronological order is the clearest and most logical. Remember to make comparisons where relevant.
+- Our paragraphs should cover one main idea (e.g. The data for renting) and this should be clear to the reader.
+- As we write, remember to vary our tenses and our sentences structures.
+
+![](app://c38d95d723dbb3bb5340ee6ea78e53e4a900/Users/hung/Local%20Document/kimhungbui.github.io/english/how-to-write-ielts-writing-task1-11/Pasted%20image%2020250826194859.png?1756212539811)
+
+write
+
+intro
+
+The chart shows the statistics of owning and renting accommodation of family on England and Wales from 1918 to 2011.  
+overview
+
+people own home are more and more common from time
+intersect at 1971
+
+
+
+p2 own
+
+
+p1 rented
+
+have a mild decrease from 1918 to 1953, then drop rapid to 2001 before rose again in 2011
+
+
+The chart shows the statistics of owning and renting accommodation of families in England and Wales from 1918 to 2011. Overall, people tend to lean more towards having their own properties as renting a house becomes less and less common.
+
+
+In 1918, owned accommodations were less common, with just over 20% of people. This figure grew rapidly to 50% in 1971 and overtook the proportion of households in rented accommodations. The proportion of family living in their own home continued to rise to the peak of nearly 70% in 2011 before slightly dropping in 2011.
+
+On the other hand, the figure for rented accommodations began the period with a dominant percentage, at nearly 4 times that of owned home in 1918. There was a mild fluctuation in the proportion in the figure of those renting home in 1918 and 1953. The period between 1953 and 2001 experienced a gradual drop in the figure, with just over 30% at the end of the period, before a small rising in 2011.
+
+***
+
+The chart illustrates the proportion of households in England and Wales that owned or rented accommodation between 1918 and 2011. Overall, the data shows a clear shift from renting to owning, with ownership becoming the dominant trend after the early 1970s.
+
+In 1918, home ownership was relatively uncommon, accounting for just over 20% of households. This figure rose steadily throughout the period, reaching around 50% by 1971, at which point it overtook the share of rented homes. Ownership continued to increase, peaking at nearly 70% in 2001, before experiencing a slight decline in 2011.
+
+By contrast, renting was the predominant form of housing in 1918, at almost four times the level of ownership. The percentage of renters fluctuated mildly between 1918 and 1953 but then fell consistently over the following decades, dropping to just over 30% by 2001. A small rebound occurred in 2011, although renting remained significantly less common than owning.
+
+
+# Addressing band 6.5 problems
+
+
+The chart shows the statistics of owning and renting accommodation of families in England and Wales from 1918 to 2011. Overall, people tend to lean more towards having their own properties as renting a house becomes less and less common.
+
+
+In 1918, owned accommodations were less common, with just over 20% of people. This figure grew rapidly to 50% in 1971 and overtook the proportion of households in rented accommodations. The proportion of family living in their own home continued to rise to the peak of nearly 70% in 2011 before slightly dropping in 2011.
+
+On the other hand, the figure for rented accommodations began the period with a dominant percentage, at nearly 4 times that of owned home in 1918. There was a mild fluctuation in the proportion in the figure of those renting home in 1918 and 1953. The period between 1953 and 2001 experienced a gradual drop in the figure, with just over 30% at the end of the period, before a small rising in 2011.
+# Model answer and Language review
