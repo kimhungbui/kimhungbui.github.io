@@ -1,0 +1,268 @@
+---
+title: Speaking - Snacks
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-27
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+
+__Topic:__ snacks
+
+__Themes:__ Diet, health, lifestyle, habits
+
+__Personal / Local__:
+Present:
+These days, I usually snack on roasted peanuts or fruit because they're healthier, but when I feel stressed with studying, I can't resist ice cream with my girlfriend. I don't eat any fast food or have sugary drinks at all.
+
+Habits / preferences / like / dislikes:
+
+I love chocolate, but I mostly eat dark chocolate because it has less sugar. If I do snacks, I have something protein-based or vegetable.
+
+Past:
+
+I used to snack a lot when I was working – especially in the afternoons. Back then, I could eat whatever I wanted without putting on weight, but eventually, it caught up with me and I gained weight, so I stopped.
+
+Near future:
+
+I don’t plan to change my current snack habits, but I know many people will still consume too much sugar to get a quick energy boost.
+
+__Key memories:__
+
+I associate that snack with my time spent with my girlfriend, sometimes we buy groceries in the supermarket and eat ice cream or French fries together.
+
+When I was in high school, I often stayed up late playing computer games with friends. We always had chips and soda beside us, and at that time, I didn’t really care about health. Now when I see that brand of chips, it reminds me of those nights.
+
+
+# Language Gaps
+
+## Vocabulary
+- **Snacks variety**: chips, crackers, nuts, seeds, granola bars, yogurt, dried fruit, smoothies
+    
+- **Describing taste**: salty, sweet, crunchy, chewy, greasy, refreshing, creamy
+    
+- **Health-related words**: nutritious, balanced, sugar intake, processed food, junk food, energy boost, protein-based, wholegrain
+    
+- **Memory/emotion words**: remind me of, bring back memories, nostalgic, comforting, guilty pleasure
+
+try very hard to
+
+think part of it
+
+go through
+
+phases of
+
+health nut
+
+plant-based
+
+for a while
+
+i haven't found a way to really sustain that
+
+a bit of a 
+
+kind of a
+
+moved more towards
+
+embracing
+
+wholefoods
+
+well-rounded
+
+*Wholefoods are foods that are not processed and are more natural; *well-rounded' is often used to talk about experience or education that includes a very wide range of different areas. With food, we usually talk about having 'a balanced diet' though well-rounded can be used too, meaning a diet that includes a wide range of foods.
+
+I was nowhere near close to this before I met my wife.
+
+I grew up eating 4 chocolate products a day.
+
+every single day
+
+i think I have a bit of a bad habit of ...
+## Structures
+- **Contrast**: _I used to eat… but now I prefer…_
+    
+- **Conditionals**: _If I feel stressed, I usually reach for ice cream._
+    
+- **Comparisons**: _Dark chocolate is healthier than milk chocolate because it has less sugar._
+    
+- **Frequency**: _I rarely / occasionally / often snack between meals._
+    
+- **Cause-effect**: _Eating too many snacks made me gain weight, so I decided to change my habits._
+    
+- **Opinion giving**: _In my opinion, people today rely too much on sugary snacks for energy._
+    
+- **Narrative past**: _When I was in high school, I often stayed up late with friends and ate chips._
+
+| **Gap**                | **Simple Sentence**              | **Upgraded IELTS Sentence**                                                                                                    |
+| ---------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Variety of snacks**  | I usually eat peanuts.           | These days, I usually go for roasted peanuts or fruit, though occasionally I treat myself to something sweet like ice cream.   |
+| **Taste words**        | The snack is sweet.              | I enjoy dark chocolate because it’s slightly bitter yet still feels indulgent, unlike overly sweet candy.                      |
+| **Health vocabulary**  | Snacks are bad.                  | Many processed snacks are high in sugar and unhealthy fats, which can increase the risk of weight gain and low energy.         |
+| **Contrast structure** | I ate snacks before but not now. | I used to snack on chips and soda almost every afternoon, but now I’ve switched to healthier options like fruit or nuts.       |
+| **Conditional**        | When I’m stressed, I eat.        | If I feel stressed during study sessions, I can’t resist reaching for ice cream, especially when I’m with my girlfriend.       |
+| **Comparison**         | Chocolate is good.               | Dark chocolate is a better choice than milk chocolate since it contains less sugar and slightly more nutrients.                |
+| **Frequency**          | I eat snacks sometimes.          | I rarely snack late at night these days, but during high school I often stayed up with friends eating chips and drinking soda. |
+| **Cause-effect**       | Eating snacks made me fat.       | Eating too many sugary snacks in the past caused me to gain weight, so I decided to cut back and change my diet.               |
+| **Opinion**            | Snacks are unhealthy.            | In my opinion, snacks aren’t necessarily unhealthy, but it depends on the type and the amount people consume.                  |
+| **Narrative past**     | I ate snacks with friends.       | When I was in high school, I used to spend late nights gaming with friends, surrounded by bags of chips and bottles of soda.   |
+
+- In terms of your eating, what do you try very hard to do or not to do?
+- What food might tempt or entice you to break this rule?
+- Did your parents ever tell you not 'spoil your appetite' by snacking just before a meal?
+- Do you 'go through phases of doing something (e.g. trying to lose weight, trying to eat more of something)?
+- Have you moved away from something unhealthy (e.g. fast foods) and moved more towards something that is healthier (e.g. wholefoods)?
+- Do you eat a lot of wholefoods? Can you give examples?
+- Do you eat processed foods, or do you try to avoid them?
+-  Is your diet 'well-rounded and balanced? Can you give examples showing that it is (e.g. the range of foods you eat) or should you note that your diet isn't as balanced / as well-rounded as it could be (e.g. because you usually eat too much of a certain food type).
+- Have you 'embraced something new? (i.e. fully committed to it).
+- Would you say that you were 'nowhere near as' healthy as a child? Or are you 'nowhere near as' healthy now as you were when you were younger?
+- Is there a food habit from your childhood that you grew up doing - do you still do it now?
+- Is there something you eat or do several times a day? How many times a day do you do it? 
+- Is there something you would want to emphasise that you do every single day?
+- Do you have a bad habit of doing something (that you shouldn't)?
+
+### **1. In terms of your eating, what do you try very hard to do or not to do?**
+
+- **Sample Answer**: I try very hard not to eat late at night, because I used to snack heavily during high school. These days, I focus on eating more fruit or nuts instead of processed snacks.
+    
+- **Useful Phrases**: _I try very hard to avoid… / I make a conscious effort to… / I discipline myself not to…_
+    
+
+---
+
+### **2. What food might tempt or entice you to break this rule?**
+
+- **Sample Answer**: Ice cream is my biggest weakness. Even if I plan not to eat after 9 p.m., if there’s ice cream in the fridge, I can’t resist.
+    
+- **Useful Phrases**: _I can’t resist… / I’m easily tempted by… / My weakness is…_
+    
+
+---
+
+### **3. Did your parents ever tell you not to “spoil your appetite” by snacking just before a meal?**
+
+- **Sample Answer**: Yes, my mom often reminded me not to snack before dinner, especially when I was younger. But I often ignored her and grabbed a bag of chips anyway.
+    
+- **Useful Phrases**: _My parents used to warn me… / They always reminded me not to…_
+    
+
+---
+
+### **4. Do you go through phases of doing something, like trying to lose weight or eat more healthily?**
+
+- **Sample Answer**: Definitely. I often go through phases where I try to cut sugar completely, but I usually last only a few weeks before going back to sweets.
+    
+- **Useful Phrases**: _I go through phases of… / I sometimes commit to… but I don’t always sustain it._
+    
+
+---
+
+### **5. Have you moved away from something unhealthy and towards something healthier?**
+
+- **Sample Answer**: Yes, I used to eat a lot of fried snacks and fast food, but now I’ve moved towards eating more fruit and whole grains.
+    
+- **Useful Phrases**: _I’ve gradually shifted from… to… / I’ve moved away from… towards…_
+    
+
+---
+
+### **6. Do you eat a lot of wholefoods? Can you give examples?**
+
+- **Sample Answer**: I do try to eat wholefoods regularly. For example, I eat oatmeal, bananas, and boiled eggs for breakfast.
+    
+- **Useful Phrases**: _I regularly eat… / Some examples of wholefoods I include are…_
+    
+
+---
+
+### **7. Do you eat processed foods, or do you try to avoid them?**
+
+- **Sample Answer**: I try to avoid them, but realistically, I still eat instant noodles once or twice a week because they’re convenient.
+    
+- **Useful Phrases**: _I try to limit… / I occasionally indulge in… / I can’t avoid… completely._
+    
+
+---
+
+### **8. Is your diet well-rounded and balanced?**
+
+- **Sample Answer**: I think my diet is fairly well-rounded because I eat vegetables, protein, and fruit every day. But I know I eat too much meat compared to other food groups.
+    
+- **Useful Phrases**: _I’d say it’s fairly balanced… / My diet could be more balanced because…_
+    
+
+---
+
+### **9. Have you embraced something new?**
+
+- **Sample Answer**: Recently, I’ve embraced intermittent fasting. At first it was tough, but now I feel more energetic and less reliant on snacks.
+    
+- **Useful Phrases**: _I’ve fully embraced… / I’ve committed to…_
+    
+
+---
+
+### **10. Would you say you were nowhere near as healthy as a child, or are you nowhere near as healthy now?**
+
+- **Sample Answer**: I’d say I’m much healthier now. Back in high school, I was nowhere near as health-conscious — I lived on chips and soda.
+    
+- **Useful Phrases**: _Nowhere near as healthy as… / Much healthier than before…_
+    
+
+---
+
+### **11. Is there a food habit from your childhood you still do?**
+
+- **Sample Answer**: Yes, I still enjoy drinking milk before bed. It’s something I grew up with, and it feels comforting.
+    
+- **Useful Phrases**: _One childhood habit I’ve kept is…_
+    
+
+---
+
+### **12. Is there something you eat or do several times a day?**
+
+- **Sample Answer**: I drink green tea three times a day, usually in the morning, afternoon, and evening.
+    
+- **Useful Phrases**: _I usually… several times a day / I have the habit of… three times daily._
+    
+
+---
+
+### **13. Is there something you would emphasise that you do every single day?**
+
+- **Sample Answer**: I make sure to drink at least two liters of water every single day. It’s the one rule I always follow.
+    
+- **Useful Phrases**: _Something I never fail to do is… / Every single day, without exception, I…_
+    
+
+---
+
+### **14. Do you have a bad habit of doing something?**
+
+- **Sample Answer**: I do have a bad habit of eating snacks while watching YouTube, even when I’m not hungry.
+    
+- **Useful Phrases**: _A bad habit of mine is… / I know I shouldn’t… but I often do it anyway._
+
+
+
+

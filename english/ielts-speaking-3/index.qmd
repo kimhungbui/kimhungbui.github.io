@@ -42,10 +42,23 @@ Dropping certain sounds when we speak is often called 'elision'. We may have see
 in connected speech, it is more natural to omit the final /t/ sound and run the words together /mosmen/. Similarly, we don't pronounce the /t/ at the end of _sweet_ in 'sweet potato'. If you __do__ say this sound, it should be very brief and almost imperceptible. If you __don't__ drop this sound, your speech will sound unnatural because you either need to add an extra sound in between: (most-e-men, sweet-er-potato), or leave a space in between each word (most - men). These are both seen as rhythm problems, which we will cover later in the lesson.
 
 
+:::{.callout-note}
+Rehearsed, scripted speechs only occur on a stage in front of a large audience. To prepare for a live interview, we need to practice responding naturally to whatever question we are asked.
+:::
+
+## Solution
+
+### Begin with familiar materials
+
+### Use realistic models and expect toe be less fluent at times
 
 
-# Adding extra sounds
 
+:::{.callout-note}
+Be selective about the idiomatic language that we learn. Prioritize idiomatic language that:
 
+- native speakers often use (e.g. _move away from; move towards; embrace_)
+- we can relate to our own life and experiences
+- can be used in a range of contexts
+:::
 
-# Chunking and rhythm

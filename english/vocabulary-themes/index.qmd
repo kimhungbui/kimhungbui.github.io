@@ -515,7 +515,7 @@ flock to the growing number of = go in large numbers to new places
 | parking           | car park, parking area         | free parking, plenty of parking |
 | big sign          | large notice, large board      | display a sign, put up a sign   |
 
-# Environment
+# Environment / Nature
 
 not: _vegetarian_ -> This is a __vocabulary mistake__.
   correct word: __vegetation__ (meaning plants/trees, not people who don't eat meat!)
@@ -601,6 +601,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | widespread effects     | extensive, far-reaching impact | “Deforestation has widespread effects on biodiversity.”                    |
 | long-lasting effects   | enduring, persistent           | “The drought had long-lasting effects on the local economy.”               |
 | drifted swiftly        | spread rapidly, moved quickly  | “The wildfire smoke drifted swiftly across state borders.”                 |
+
+| **Word/Phrase** | **Synonyms / Related Words** | **Collocations**                      |
+| --------------- | ---------------------------- | ------------------------------------- |
+| wild mushrooms  | forest mushrooms, fungi      | pick wild mushrooms, mushroom species |
+| species         | types, varieties, kinds      | endangered species, mushroom species  |
+| forest          | woodland, jungle             | dense forest, tropical forest         |
+| poisonous       | toxic, harmful, dangerous    | poisonous mushrooms, poisonous plants |
+| edible          | safe to eat, consumable      | edible mushrooms, edible species      |
+| habitat         | environment, ecosystem       | natural habitat, mushroom habitat     |
 
 # History
 
@@ -912,7 +921,7 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
   
 
 
-# Tourism
+# Tourism / Travel
 
 | **Term**         | **Synonym**   | **Collocations**                    |
 | ---------------- | ------------- | ----------------------------------- |
@@ -922,6 +931,14 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **refreshments** | food & drink  | lunch, afternoon tea, homemade cake |
 | **gift shop**    | retail        | buy gifts, jams, pickles, blankets  |
 
+| **Word/Phrase** | **Synonyms / Related Words** | **Collocations**                     |
+| --------------- | ---------------------------- | ------------------------------------ |
+| guided tour     | organized trip, excursion    | guided tour, guided walk             |
+| festival        | celebration, event, fair     | mushroom festival, food festival     |
+| visitors        | tourists, guests             | attract visitors, number of visitors |
+| local area      | nearby region, community     | local economy, local attractions     |
+| excursion       | outing, trip, journey        | school excursion, day excursion      |
+| attract         | draw, appeal to, bring in    | attract tourists, attract attention  |
 # Urbanization - City Life - Community - Society
 
 | Word/Phrase                            | Meaning / Context                                | Example Sentence                                                                 |
@@ -1062,6 +1079,14 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | community centre      | social centre                   | **local community centre / community facilities**   |
 | clinic                | health centre, medical facility | **local clinic / health clinic**                    |
 | supermarket           | grocery store                   | **large supermarket / local supermarket**           |
+
+| **Word/Phrase** | **Synonym / Related expression** | **IELTS Collocation**              |
+| --------------- | -------------------------------- | ---------------------------------- |
+| cottage         | house, holiday home, lodge       | rent a cottage / stay in a cottage |
+| accommodation   | place to stay, lodging           | provide accommodation              |
+| rent            | hire, lease                      | rent a property / rental agreement |
+| quiet location  | peaceful area, tranquil spot     | quiet neighborhood                 |
+
 ## HERITAGE / ARCHITECTURE
 
 | **Term**                    | **Synonym / Notes** | **Collocations**               |
@@ -1071,6 +1096,16 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **ballroom / conservatory** | grand rooms         | add a ballroom, demolish rooms |
 | **dominates**               | towers over         | the large barn dominates       |
 | **parkland**                | landscaped grounds  | eighteenth‑century parkland    |
+
+# Food
+
+| **Word/Phrase** | **Synonyms / Related Words**      | **Collocations**                      |
+| --------------- | --------------------------------- | ------------------------------------- |
+| cooking         | preparing food, culinary activity | cooking class, cooking techniques     |
+| flavour         | taste, aroma, savor               | rich flavour, strong flavour          |
+| nutritious      | healthy, nourishing               | nutritious food, nutritious meal      |
+| recipes         | cooking instructions, formulas    | traditional recipes, mushroom recipes |
+| tasting         | sampling, trying, testing         | food tasting, mushroom tasting event  |
 # Water
 
 
@@ -1277,6 +1312,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | making sense of            | interpreting, understanding    | “trying to make sense of the science”     |
 | direct and indirect impact | immediate and long-term effect | “impacted directly and indirectly…”       |
 | reason for choice          | motivation, justification      | “I chose pockets for two reasons, really” |
+
+
+| **Word/Phrase** | **Synonyms/Paraphrases**      | **Collocations**                               |
+| --------------- | ----------------------------- | ---------------------------------------------- |
+| Career options  | Job choices, employment paths | Explore career options, limited career options |
+| Occupation      | Profession, trade, role       | Choose an occupation, demanding occupation     |
+| Employment      | Work, job, hiring             | Gain employment, long-term employment          |
+| Vocational      | Practical, skills-based       | Vocational training, vocational course         |
+| Internship      | Work placement, traineeship   | Paid internship, short internship              |
 # Feedback & Evaluation
 
 | **Word/Phrase**        | **Synonym / Paraphrase**             | **Collocations**                                   |
@@ -1300,6 +1344,22 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | maternity cover contract            | temporary job, fixed-term post           | provide maternity cover            |
 | competitive salary                  | attractive pay, above-average wage       | earn a competitive salary          |
 | perks of the job                    | job benefits, employment advantages      | perks include …                    |
+
+| **Word/Phrase**   | **Synonyms/Paraphrases**      | **Collocations**                                    |
+| ----------------- | ----------------------------- | --------------------------------------------------- |
+| Workplace         | Office, work setting          | Safe workplace, modern workplace                    |
+| Job satisfaction  | Work fulfillment, contentment | Increase job satisfaction, lack of job satisfaction |
+| Stressful         | Demanding, pressurised        | Stressful conditions, stressful role                |
+| Flexible hours    | Adaptable schedule            | Offer flexible hours, work flexible hours           |
+| Work-life balance | Professional–personal balance | Maintain work-life balance                          |
+
+| **Word/Phrase** | **Synonyms/Paraphrases**     | **Collocations**                             |
+| --------------- | ---------------------------- | -------------------------------------------- |
+| Job security    | Stability, steady employment | Guarantee job security, lack of job security |
+| Promotion       | Advancement, career progress | Earn a promotion, rapid promotion            |
+| High salary     | Well-paid, lucrative         | Receive a high salary, attract high salaries |
+| Demand          | Requirement, need            | In demand, meet demand for skills            |
+| Prospects       | Opportunities, outlook       | Future prospects, good career prospects      |
 
 # Cause & Effect Expression
 

@@ -1,0 +1,778 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 18 listening test 3
+lightbox: false
+description: IELTS Practice Set 18 listening test 3
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-27
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Performance summary
+Correct: 36/40
+
+
+# Recording 1
+
+## **What happened on Q6 (“clouds”)**
+
+- **Audio said:** “_The instructions were to_ **_capture the clouds_** _as well — it couldn’t just be blue sky and a setting sun._”
+    
+- **Table prompt:** “_Scene must show some _______”
+    
+- **Grammar clue:** “**some**” + **countable noun** → plural form. If it were singular, it would be **“a cloud”**; with “some,” it must be **“clouds.”**
+    
+- **Why it’s easy to miss:** The final **/z/** in “clouds” is short and can be swallowed in natural speech, especially before a consonant. Under time pressure, it’s common to write the base form.
+    
+
+  
+
+## **How to avoid this mistake next time**
+
+1. **Use the prompt grammar:** When you see **“some ___,”** pre-decide it will be **plural** (or an uncountable noun). For sunsets, the natural collocation is **“some clouds.”**
+    
+2. **Listen for plural cues in the audio:**
+    
+    - Determiner: **“some”**
+        
+    - Verb agreement: **“were”** (if used)
+        
+    - Pronouns: **“they/them”** referring back
+        
+    
+3. **Mark a quick “S?” in the margin** when you spot “some/many/few/these/those.” Confirm during the replay/check window.
+    
+4. **Pre-activate likely vocabulary:** For “sunsets,” anticipate **clouds / cloud cover / horizon / silhouettes**. When you expect “clouds,” you’re more likely to catch the plural.
+    
+5. **Micro-listening practice:** Train your ear for final consonant clusters **/dz/** (e.g., **clouds, birds, roads**). Say them aloud to feel the plural.
+    
+
+  
+
+## **Quick drill (1-minute)**
+
+  
+
+Fill with the correct number form (plural or uncountable) based on the cue:
+
+- some ______ (cloud) → **clouds**
+    
+- a piece of ______ (advice) → **advice** (uncountable)
+    
+- many ______ (leaf) → **leaves**
+    
+- some ______ (equipment) → **equipment** (uncountable)
+    
+- several ______ (bus) → **buses**
+    
+- a few ______ (photo) → **photos**
+
+# Recording 2
+
+## **Q11 — You answered** **D****; correct =** **B & C**
+
+  
+
+**Question:** Which TWO warnings does Dan give about picking mushrooms? (B = don’t pick near busy roads; C = don’t eat mushrooms given to you)
+
+  
+
+### **What Dan actually says (key quotes)**
+
+- “**you should never consume mushrooms picked by friends or neighbours** — always remember that some poisonous mushrooms look very similar to edible ones…” → maps to **C** (“Don’t eat mushrooms given to you”).
+    
+- “**The other thing to avoid is mushrooms growing beside busy roads for obvious reasons.**” → maps to **B** (“Don’t pick mushrooms near busy roads”).
+    
+
+  
+
+### **Why you likely picked D (error cause)**
+
+- You may have **over-generalised** “don’t eat” instructions and misread the target: Dan warns _against consuming others’ picks_, not against eating while you pick (D).
+    
+- In exam pressure, short negative words (“never”, “avoid”) can blur; you heard the caution but not the **object** (who picked them).
+    
+
+  
+
+### **How to avoid it (tactical rules)**
+
+1. **Listen for the direct object** after negation words: when you hear _never / avoid / don’t_, ask immediately **“who/what?”** — e.g., _never consume_ **_mushrooms picked by friends_** _→ answer refers to mushrooms given by others (C)_.
+    
+2. **Annotate differences in the margin:** write a short code for the object: e.g., never consume (others) vs avoid (roads). This avoids confusing “don’t eat” with “don’t eat while…”.
+    
+3. **Predict likely paraphrases**: “mushrooms picked by friends” → “mushrooms given to you.” If an option paraphrases that, flag it.
+    
+
+---
+
+## **Q16 — You answered incorrectly; correct =** 
+
+## **B (join a group)**
+
+  
+
+### **What Dan actually says (key quotes)**
+
+- “**I wouldn’t recommend going alone or relying on photos in a book…**” — negative about solo/book.
+    
+- “**There are some really good phone apps… but you can’t always rely on getting a good signal…**” — apps are useful but not a reliable substitute.
+    
+- “**If possible, you should go with a group led by an expert — you’ll stay safe and learn a lot that way.**” → explicit recommendation: **join a group** = **B**.
+    
+
+  
+
+### **Why this is a common trap**
+
+- Dan mentions apps positively earlier, so if you latch on to the first useful-sounding item, you may select **A** (use an app) without hearing the concluding recommendation.
+    
+- The speaker presents **several options** in quick succession (books, apps, group). The correct answer is the **final, explicit recommendation**; test-takers often pick an earlier-mentioned option.
+    
+
+  
+
+### **How to avoid it (tactical rules)**
+
+1. **Listen for recommendation signals**: _“you should…”, “I wouldn’t recommend…”, “if possible, …”_ — these mark the final preferred action.
+    
+2. **When multiple options are mentioned, prefer the speaker’s final advice.** Flag earlier options as “possible but limited” if hedging language appears (e.g., “but…”, “however”).
+    
+3. **Note contrast markers**: “I wouldn’t recommend X… There are some good apps, but… If possible, you should Y.” The contrast shifts to the correct choice.
+    
+
+---
+
+## **Short practice (apply immediately — 2 minutes)**
+
+  
+
+Read each short excerpt (imagined speech). Which is the recommended action?
+
+1. “I wouldn’t go on my own — phone guides can help, but join a local club if you can.” → **Answer: join a local club (final recommendation).**
+    
+2. “Books are useful; apps can identify plants too, but remember they aren’t perfect in the field.” → **Answer: neither is strongly recommended — hedged; watch for later ‘should’.**
+    
+3. “Never eat berries picked by a stranger. You can use a guidebook, but the safest way is to go with an expert.” → **Answer: go with an expert.**
+    
+
+  
+
+(If you picked the final recommended action each time, you’ve internalised the rule.)
+
+---
+
+## **Quick checklist for exam day (apply to every Part 2 Q)**
+
+- When you hear **warnings/advice**, mark the exact **object** of the warning (who/what/where).
+    
+- Underline the **modal phrase** that expresses recommendation: _should / must / wouldn’t recommend / never_. The sentence containing that modal is usually the answer.
+    
+- If several options are mentioned, **prefer the speaker’s final recommendation** unless the question asks for “mentioned” rather than “recommended”.
+    
+- When options paraphrase the same idea, map synonyms in your head: _“picked by friends” → “given to you”_.
+
+## **Questions 11–20: Full Breakdown**
+
+  
+
+### **Q11 & Q12 – Choose TWO Warnings**
+
+  
+
+**Question:** Which TWO warnings does Dan give about picking mushrooms?
+
+**Correct Answers:** B and C
+
+- **B**: Don’t pick mushrooms near busy roads.
+    
+- **C**: Don’t eat mushrooms given to you (i.e., mushrooms picked by friends/neighbours).
+    
+
+  
+
+**Tested Skills:**
+
+- Spotting caution language (_“never consume…”, “to avoid…”_).
+    
+- Paraphrasing: “picked by friends” → “given to you”.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Misinterpreting _“don’t eat mushrooms while picking them”_ vs. what was said.
+    
+- Choosing irrelevant yet plausible distractors.
+    
+
+  
+
+**Strategy:**
+
+- Listen for **“never”** or **“avoid”** followed by the **object** (what is forbidden).
+    
+- Paraphrase: understanding meaning over exact words.
+    
+
+---
+
+### **Q13 & Q14 – Ideas About Wild Mushrooms**
+
+  
+
+**Question:** Which TWO ideas about wild mushrooms does Dan say are correct?
+
+**Correct Answers:** B and D
+
+- **B**: Mushrooms eaten by animals may be unsafe.
+    
+- **D**: Brightly coloured mushrooms can be edible.
+    
+
+  
+
+**Tested Skills:**
+
+- Recognizing point-wise correction of myths.
+    
+- Matching direct statements with question options.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Being misled by plausible but incorrect choices (e.g., _“cooking destroys toxins”_ — was not stated).
+    
+
+  
+
+**Strategy:**
+
+- Listen for phrases like _“this is untrue”_ or _“you should remember”_ that highlight true/false ideas.
+    
+
+---
+
+### **Q15 – Picking in Parks**
+
+  
+
+**Question:** What advice does Dan give about picking mushrooms in parks?
+
+**Correct Answer:** C – Get there early.
+
+  
+
+**Tested Skills:**
+
+- Extracting **timing advice** from discussions of competition.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Misunderstanding “competition” — it refers to others picking early.
+    
+
+  
+
+**Strategy:**
+
+- Listen for **when** to act to avoid competition: “first thing in the morning,” “early.”
+    
+
+---
+
+### **Q16 – Advice for Beginners**
+
+  
+
+**Question:** Dan says it is a good idea for beginners to …
+
+**Correct Answer:** B – join a group.
+
+  
+
+**Tested Skills:**
+
+- Identifying recommendations from multiple suggestions.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Selecting earlier options (like “use an app”) instead of the main recommendation.
+    
+
+  
+
+**Strategy:**
+
+- Note the _modal verbs_ or recommendation phrases: “you should go with a group led by an expert.”
+    
+
+---
+
+### **Q17 – Conservation Priority**
+
+  
+
+**Question:** What does Dan say is important for conservation?
+
+**Correct Answer:** B – picking a limited amount of mushrooms.
+
+  
+
+**Tested Skills:**
+
+- Listening for do’s and don’ts related to conservation.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Misremembering “never pick all” vs. “fully grown” or “avoiding rare species.”
+    
+
+  
+
+**Strategy:**
+
+- Focus on restrictions tied to ecological impact and harvesting rules.
+    
+
+---
+
+### **Q18 – Reason for Decline**
+
+  
+
+**Question:** Why are some varieties of wild mushrooms in decline?
+
+**Correct Answer:** C – a rise in building developments locally.
+
+  
+
+**Tested Skills:**
+
+- Picking out cause from multiple reasons mentioned.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Choosing superficially plausible but incorrect options (like “demand from restaurants”).
+    
+
+  
+
+**Strategy:**
+
+- Identify the **major threat** linked to habitat loss (housing development, water extraction).
+    
+
+---
+
+### **Q19 – Storing Mushrooms**
+
+  
+
+**Question:** When storing mushrooms, people should …
+
+**Correct Answer:** A – keep them in the fridge for no more than two days.
+
+  
+
+**Tested Skills:**
+
+- Recognizing correct storage advice.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Confusing the “bag” used for collection vs. refrigeration duration.
+    
+
+  
+
+**Strategy:**
+
+- Note “fine for a couple of days” → storage duration in the fridge.
+    
+
+---
+
+### **Q20 – Trying New Varieties**
+
+  
+
+**Question:** What does Dan say about trying new varieties of mushrooms?
+
+**Correct Answer:** A – Experiment with different recipes.
+
+  
+
+**Tested Skills:**
+
+- Capturing encouragement/advice tone and specific supportive language.
+    
+
+  
+
+**Common Pitfalls:**
+
+- Focusing on negative outcomes (e.g., reactions) instead of the recommended approach.
+    
+
+  
+
+**Strategy:**
+
+- Listen for motivational phrases like _“be adventurous”_ and the practical advice that follows (many dishes).
+# Recording 3
+
+## **1) What the question asked**
+
+  
+
+“**Which TWO opinions about the Luddites do the students express?**” — choose **two** options representing the students’ expressed views (their attitudes/opinions in the conversation).
+
+---
+
+## **2) Correct answers and transcript evidence**
+
+- **A — Their actions were ineffective.**
+    
+    Evidence: Adam says **“Yes, and ultimately, they didn’t achieve anything.”** → direct statement that their actions were ineffective.
+    
+- **E — Their attitude is understandable.**
+    
+    Evidence: Gemma says **“I see why the Luddites felt so threatened.”** → explicit empathy; she understands their attitude.
+    
+
+  
+
+Those two map exactly to what was said: one factual evaluation (ineffective) and one expression of sympathy/understanding.
+
+---
+
+## **3) Why people (including you) commonly pick the wrong option B**
+
+- **Option B:** “They are still influential today.”
+    
+    This is _not_ stated in the dialogue. It may feel tempting because the Luddites are a well-known name and sometimes referenced today — but the students never claim contemporary influence.
+    
+- **Typical error patterns that lead to this:**
+    
+    - **Over-generalisation:** letting prior knowledge or assumptions about the Luddites replace what the speakers actually said.
+        
+    - **Missing both items:** in a “choose TWO” question some candidates only find one relevant detail and then guess a plausible second (often from background knowledge).
+        
+    - **Listening for gist only:** catching the topic (Luddites) but not the specific utterances that express **ineffective** and **understandable**.
+        
+    
+
+---
+
+## **4) How to avoid this mistake — exact, repeatable tactics**
+
+1. **Listen for exact opinion signals.**
+    
+    - Words/phrases that indicate judgment: _“they didn’t achieve anything”, “was ineffective”, “that didn’t work”._
+        
+    - Words that indicate empathy: _“I see why…”, “I can understand”, “I’d have felt the same”._
+        
+    
+2. **Map phrase → option immediately.**
+    
+    - When you hear _“they didn’t achieve anything”_ write shorthand: **ineffective → A**.
+        
+    - When you hear _“I see why… felt threatened”_ write **understandable → E**.
+        
+        This removes the need to remember exact wording later.
+        
+    
+3. **If the question asks for TWO, force yourself to find TWO distinct lines.**
+    
+    - Don’t stop after the first match. Keep listening and look for a second explicit opinion (not implied).
+        
+    
+4. **Ignore prior knowledge** — focus strictly on what the speakers actually say in the recording.
+    
+5. **Use short symbols while listening:** J (judgement), S (sympathy), F (fact). Then match them to options. Example: when you hear J → look for option meaning “ineffective”; when S → look for option meaning “understandable.”
+    
+
+---
+
+## **5) Quick 3-item practice (do mentally, 2–3 minutes)**
+
+  
+
+Read each mini-excerpt and pick the correct opinion option(s) (A–E). Answers at the end.
+
+1. Speaker A: “They tried hard, but in the end it changed nothing.”
+    
+    Speaker B: “Still, I can see why they panicked.”
+    
+    - Which TWO? → __________
+        
+    
+2. Speaker A: “This movement actually inspired much later legislation.”
+    
+    Speaker B: “No, that’s exaggerated.”
+    
+    - Which TWO? → __________
+        
+    
+3. Speaker A: “They were violent and broke equipment.”
+    
+    Speaker B: “It’s easy to criticise them now, but their fears were real.”
+    
+    - Which TWO? → __________
+        
+    
+
+  
+
+**Answers:** 1 → A & E (ineffective; understandable).
+
+2 → B (influential) and ??? — trick: B only; if question asks TWO, you’d need a second explicit opinion—not present → avoid guessing.
+
+3 → (A? or C?) Actually A = ineffective (not directly), C = unfair criticism? This item shows you must match exact wording — the safe mapping is E (understandable) and possibly none of the others — again don’t guess.
+
+  
+
+_(Purpose: practice mapping explicit lines to options and spotting when only one clear match exists — that’s a sign you should keep listening for the second.)_
+
+---
+
+## **6) Exam checklist you can use during practice/tests**
+
+- Q asks “Choose **TWO**” → tick box: **FIND 2**.
+    
+- As you listen, write 1-word notes next to the question slot (e.g., **ineffective**, **understood**).
+    
+- When matching options, prefer exact paraphrase over plausible background knowledge.
+    
+- If you have only one match after the section, _replay your notes_ — there must be a second explicit opinion somewhere; keep scanning the transcript in your head.
+
+
+## **Questions 21–22: Opinions about the Luddites**
+
+  
+
+**Q:** Which TWO opinions about the Luddites do the students express?
+
+**Options:**
+
+A. Their actions were ineffective.
+
+B. They are still influential today.
+
+C. They have received unfair criticism.
+
+D. They were proved right.
+
+E. Their attitude is understandable.
+
+  
+
+**Transcript references:**
+
+- _“With those protesting workers called the Luddites destroying their knitting machines because they were so worried about losing their jobs.”_
+    
+- _“Yes, and ultimately, they didn’t achieve anything.”_ → **A (ineffective)**
+    
+- _“Yes, that’s true — but it probably didn’t seem a positive thing at the time. I see why the Luddites felt so threatened.”_
+    
+- _“I know. I’m sure I would have felt the same.”_ → **E (attitude is understandable)**
+    
+
+  
+
+**Answer:** **21–22 → A, E**
+
+  
+
+**Trap:**
+
+- Option **B (still influential)** looks attractive because of historical importance, but the speakers never say the Luddites influenced today.
+    
+- Option **D (proved right)** is also tempting, but they explicitly said _“industrialisation created more jobs than it destroyed.”_
+    
+
+---
+
+## **Questions 23–24: Predictions about the future of work**
+
+  
+
+**Q:** Which TWO predictions about the future of work are the students doubtful about?
+
+**Options:**
+
+A. Work will be more rewarding.
+
+B. Unemployment will fall.
+
+C. People will want to delay retiring.
+
+D. Working hours will be shorter.
+
+E. People will change jobs more frequently.
+
+  
+
+**Transcript references:**
+
+- _“Bit too optimistic … I can’t see how people are about to have more leisure time, when all the evidence shows people are spending longer than ever at work.”_ → **D (working hours will be shorter)**
+    
+- _“No — that’s true. And what about lower unemployment? I’m not so sure about that. Perhaps in the long term — but not in the foreseeable future.”_ → **B (unemployment will fall)**
+    
+
+  
+
+**Answer:** **23–24 → D, B**
+
+  
+
+**Trap:**
+
+- **A (work will be more rewarding):** they actually agree that robots doing boring tasks will make work better → not doubtful.
+    
+- **C (retiring later):** they confirm this is happening → not doubtful.
+    
+- **E (change jobs more frequently):** never mentioned.
+    
+
+---
+
+## **Questions 25–30: Comments on jobs**
+
+  
+
+**Q:** What comment do the students make about each job?
+
+  
+
+### **25. Accountants → G**
+
+- _“You might think all the technological innovations would have put them out of a job, but in fact there are more of them than ever. They’re still really in demand and have become far more efficient.”_
+    
+- Both employment ↑ and productivity ↑.
+    
+
+  
+
+→ **Answer: G**
+
+---
+
+### **26. Hairdressers → E**
+
+- _“I’d never have thought that demand for hairdressing would have gone up so much … one hairdresser for every 287 people now, compared to one for over 1,500.”_
+    
+- _“Because people’s earning power has gone up so they can afford to spend more on personal services.”_
+    
+
+  
+
+→ **Answer: E (rise due to higher disposable income)**
+
+---
+
+### **27. Administrative staff → B**
+
+- _“The kind of work that administrative staff do has changed enormously … even 20 years ago there were secretaries doing dictation and typing.”_
+    
+- _“Really boring compared to these days, when they’re given much more responsibility and higher status.”_
+    
+
+  
+
+→ **Answer: B (role has become more interesting)**
+
+---
+
+### **28. Agricultural workers → C**
+
+- _“I’d expected there to be a much bigger change … But the 1871 census showed 25% of the population worked on the land.”_
+    
+- _“Now it’s less than 0.2%.”_
+    
+
+  
+
+→ **Answer: C (number has fallen dramatically)**
+
+---
+
+### **29. Care workers → F**
+
+- _“They barely existed in the 19th century as people’s lifespan was so much shorter. But now of course this sector will see huge growth.”_
+    
+
+  
+
+→ **Answer: F (significant rise in demand)**
+
+---
+
+### **30. Bank clerks → A**
+
+- _“The future looks quite bleak for bank clerks. They’ve been in decline since ATMs were introduced in the eighties.”_
+    
+- _“Technology will certainly make most of the jobs they do now redundant.”_
+    
+
+  
+
+→ **Answer: A (likely to be at risk)**
+
+---
+
+✅ **Final Answer Sheet:**
+
+- 21 → A
+    
+- 22 → E
+    
+- 23 → D
+    
+- 24 → B
+    
+- 25 → G
+    
+- 26 → E
+    
+- 27 → B
+    
+- 28 → C
+    
+- 29 → F
+    
+- 30 → A
+
+# Recording 4
