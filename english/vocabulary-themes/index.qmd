@@ -1399,10 +1399,82 @@ So your strategy is **partly correct**:
     
 
   
-# Process - Writing task 1
+# Writing Task 1
 
-## Natural
-## Man-made
+## Chart
+
+'Before + ing' is used to say what happened or what was done next and it is odd to use with 'remaining stable' (i.e. nothing happened) 'then remained' would be better here.
+
+**Odd with “before + remaining stable”:**
+
+- _The unemployment rate rose sharply before remaining stable for several years._
+    
+    (This sounds strange because “remaining stable” means “nothing happened,” but “before” suggests an active change.)
+    
+
+
+**Better with “then remained”:**
+
+- _The unemployment rate rose sharply and then remained stable for several years._
+    
+    (This flows naturally: first a change, then a steady state.)
+
+__As__
+
+  
+
+### As = while/when (time)
+
+- _The number of car owners increased steadily as the population of the city grew._
+    
+- _As internet usage rose, the proportion of people using printed newspapers declined._
+    
+
+  
+
+### As = because/since (reason)
+
+- _The demand for coal decreased as more households switched to renewable energy._
+    
+- _Public transport usage grew as fuel prices became more expensive._
+    
+
+  
+
+### **As = in the role of (less common, but possible in Task 1)**
+
+- _The chart shows data as a percentage of the total population._
+    
+- _Figures are given as millions of units sold worldwide._
+    
+
+In IELTS, you’ll mainly use **“as” for time trends** and **reasons**.
+
+For example:
+
+- _The unemployment rate fell sharply as the economy recovered from recession._
+
+### For Time Trends (simultaneous changes)
+
+- X increase steadily as Y rose.
+- The figure for A declined as the figure for B remained stable.
+- There was a gradual rise in X as Y became more common.
+
+### For Reasons (cause-effect)
+
+- The number of people using public transport grew as fuel prices rose.
+- Demand for coal fell as renewable energy sources gained popularity.
+- Internet usage expanded rapidly as technology become more affordable.
+
+### For Data Representation
+
+- The chart presents the figures as percentages of the total population.
+- Statistics are given as millions of units sold worldwide.
+
+## Process
+
+### Natural
+### Man-made
 
 1. The materials need to produce something = raw materials
 2. The different foods used in a recipe = ingredients

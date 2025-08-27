@@ -193,4 +193,89 @@ The chart shows the statistics of owning and renting accommodation of families i
 In 1918, owned accommodations were less common, with just over 20% of people. This figure grew rapidly to 50% in 1971 and overtook the proportion of households in rented accommodations. The proportion of family living in their own home continued to rise to the peak of nearly 70% in 2011 before slightly dropping in 2011.
 
 On the other hand, the figure for rented accommodations began the period with a dominant percentage, at nearly 4 times that of owned home in 1918. There was a mild fluctuation in the proportion in the figure of those renting home in 1918 and 1953. The period between 1953 and 2001 experienced a gradual drop in the figure, with just over 30% at the end of the period, before a small rising in 2011.
+
+### Exercises
+#### Read through the sample answer. Can you identify any problems?
+
+#### Can you correct the language issues highlighted
+![](Pasted%20image%2020250826213311.png)
+
+Suggested answers
+
+1. Change 'which' to 'who'
+2. This word should be singular: property
+3. We generally don't combine a related verb and noun (e.g. we do not say 'they are planning a plan') so we need to change either the verb or the noun: choosing this option / opting for this choice
+4. We can either say 'it decreased noticeably' or 'it decreased to 70%', to say both, we need to add another verb (it decreased noticeably, failing to less than 70% ...)
+5. Change to: Home ownership / owning your own home
+6. 'Possessing' is not appropriate here. Change to 'Owning'
+7. 'Staying' is temporary, this is about people 'living' in their own home.
+
+
+#### Coherence and Cohesion problem
+
+![](Pasted%20image%2020250826215541.png)
+Paragraph 1
+
+1) The fact in this sentence contrasts to the previous one, so this needs to be indicated – (Hint: Start with ‘However,…)
+
+2) 'Before + ing' is used to say what happened or what was done next and it is odd to use this with ‘remaining stable’ (i.e. nothing happened) ‘then remained’ would be better here.
+
+3) How does this sentence connect with the previous one? (Hint: It is again introducing a contrasting idea, which needs to be indicated and it is also showing what happened from 1953, which also needs to be signalled). We have already used ‘However,….’ So show this contrast using ‘While….’ (Hint: To do that, you need to change the previous sentence and contrast this idea with remaining stable).
+
+4) How do we use ‘as’? What is the function of ‘as’ here? (How does it connect the two ideas?) (Hint: Change this to ‘and’. What change could you make to ‘and reached’ to avoid repeating ‘and’ in the sentence?)
+
+5) We use ‘the’ with the superlative when ranking several things but this is referring to the lowest point for renting, (Hint: use ‘its’)
+
+6) This whole sentence is very long and this third point is different to the idea that started the sentence (People gradually became less interested in renting…) This means that again we need to show contrast, but it is also better to break this sentence into two. (Hint: Begin the new sentence with ‘It reached…’ and use ‘although’ to avoid repeating ‘however’ and ‘while’. )
+
+Paragraph 2
+
+7. This sentence should introduce the next topic. Is the main idea of this paragraph that ‘owning your home was less popular’? How can this be made clearer? Remember, you are helping the reader to follow your ideas.
+
+8. Can you find a way to reduce the repetition of ‘owning’
+
+9. We can sometimes use ‘however’ like this to add emphasis to the subject (This figure), but this seems odd here. Rewrite this to use 'However' correctly.
+
+
+10. The word order makes this confusing reorder it so that it is clear exactly what happened in 1971 and add a new cohesive device to show when one figure ‘overtook’ the other.
+
+
+Suggestion answers:
+
+and answers.
+
+1) and 2): Change to: 'However, in 1939, it decreased noticeably, falling to less than 70%, then remained stable until 1953.' (NB see next)
+
+ 3 To introduce a contrast and indicate the time element, we could start with: ‘However, from this point on/ onwards, …’ but we have already used ‘However,’ above, so, we need to change these sentences. For example:
+
+''However, in 1939, it decreased noticeably, falling to less than 70%. While it remained relatively stable until 1953, from this point on, ….''
+
+4) ‘As’ can be used to mean ‘at the same time / simultaneously’ (you can see this use in the overview) or to mean ‘because’. Neither meaning is appropriate here - we should not try to explain why something is happening in the data, so we need to change this to ‘and’. To avoid repeating ‘and’ we could change ‘and reached’ to ‘reaching’ :
+
+‘and the figure dropped steadily, reaching its lowest point of…’ (However, we will need to change this - see next sentence).
+
+5) change to ‘its lowest point’
+
+6) The sentence needs to be broken up here and, again, we need to show contrast without repeating ‘However,’ or ‘While’. (see the final image below)
+
+Paragraph 2
+
+7) It is better to use ‘In contrast’ here. ‘On the other hand’ is used to give a balanced view or perspective and is not appropriate here. The main idea of the paragraph is that owned housing followed a different pattern. So we can say: ‘In contrast, owning a home followed the opposite trend.’ Or, we can just signal a change of subject: ‘In terms of owning a home, in 1918…. / Turning to …,
+
+‘
+
+8) We can change ‘owning a home’ to 'home ownership' or change one of these to an active verb: ‘just over 20% of people owned ….’
+
+9) However, …. (NB, to avoid repeating ‘However’ we could change this to: Nevertheless,)
+
+10) To make the order of events clear, we need to put the date closest to the relevant verb: ‘However, in 1971, this figure rose rapidly to 50% and from 1981 overtook…’
+
+The bar chart provides statistic about families who lived in owned and rented accommodation in England and Wales from 1918 to 2011. Overall, renting a house became less and less common as people tended to lean more towards having their own property.
+
+In 1918, rented accommodation was the dominant choice, with the majority of residents in England and in Wales choosing this option. The figure stood at nearly 80% of the total households in both countries. However, in 1939, it decreased noticeably, falling to less than 70%. While it remained relatively stable until 1953, from this point on, people gradually became less interested in renting accommodation and the figure dropped steadily. It reached its lowest point of around 30% in 2001, although it did rise slightly in 2011, the final year of the period.
+
+In contrast, home ownership followed the opposite trend. In 1918, over 20% of families owned a property. Nevertheless, in 1971, this figure rose rapidly to 50% and from 1981 overtook the proportion of households in rented accommodation. By the end of the period, the percentage of households living in their own home had gone up to more than 60%.
+
+![](Pasted%20image%2020250826220450.png)
+
 # Model answer and Language review
