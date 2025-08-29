@@ -1,0 +1,318 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 18 listening test4
+lightbox: false
+description: IELTS Practice Set 18 listening test 4
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-28
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Performance summary
+Correct: 38/40
+
+# Recording 1
+
+### **❌ Mistake 4**
+
+  
+
+You wrote: **APPOINTMENT**
+
+Correct answer: **APPOINTMENTS**
+
+  
+
+**Why:**
+
+- The audio says: _“making appointments, whether face to face or on the phone.”_
+    
+- IELTS needs you to capture **plural vs. singular** exactly.
+    
+- You missed the **-s**, which is a common trap.
+    
+
+  
+
+**Fix:**
+
+👉 Train your ear for **plural endings** (“-s” / “-z” sounds). In notes, underline plural nouns during practice.
+
+Yes, you can **logically know** that the answer (No. 4) must be **plural**, because of the pronoun _“them”_ in the phrase:
+
+  
+
+> _“…making 4 _______ and reorganising_ **_them_**.”
+
+  
+
+If it were singular, the sentence would need _“it”_, not _“them.”_
+
+  
+
+So even if you mishear or miss the **-s** sound in _appointments_, the **grammar clue** (them = plural) tells you the correct form must be plural.
+
+
+### ** IELTS Strategy**
+
+  
+
+When filling gaps:
+
+1. **Listen carefully first** → try to catch the sound.
+    
+2. **Check grammar around the blank** → pronouns, verbs, determiners often reveal whether it’s plural, singular, past tense, etc.
+    
+3. **Confirm spelling & form** → IELTS marks strictly. _Appointment_ ≠ _appointments_.
+
+### **❌ Mistake 9**
+
+  
+
+You wrote: **1:50**
+
+Correct answer: **1.15**
+
+  
+
+**Why:**
+
+- The audio says clearly: _“What time would I finish? – One fifteen.”_
+    
+- Probably confusion because “fifty” and “fifteen” sound similar in fast speech. IELTS **loves this trap**.
+    
+
+  
+
+**Fix:**
+
+👉 Strategy:
+
+- Pay attention to **teen vs. ty endings**:
+    
+    - _fifteen_ = stress on the **second syllable**
+        
+    - _fifty_ = stress on the **first syllable**
+        
+    
+- During listening practice, shadow numbers (13/30, 15/50, etc.) until you instantly distinguish them.
+    
+
+---
+
+### **✅ The rest you got correct**
+
+1. Receptionist
+    
+2. Medical
+    
+3. Chastons
+    
+4. Database
+    
+5. Experience
+    
+6. Confident
+    
+7. Temporary
+    
+8. Parking
+    
+
+  
+
+These show you followed the flow of the conversation well.
+
+---
+
+### **🔑 Key Takeaways**
+
+1. **Plural accuracy** → Always double-check “do they mean one or many?”
+    
+2. **Number precision** → Watch for IELTS traps (15 vs 50, 40 vs 14, etc.).
+    
+3. **Don’t overthink** → You had the right idea, just small slips in detail.
+
+
+# Recording 2
+
+## **🎯 Multiple Choice (Q11–Q14)**
+
+  
+
+### **Q11 —** 
+
+### **The museum building was originally…**
+
+- Transcript: _“…constructed in 1880 as the home of a local businessman…”_
+    
+- Trap: They mention “factory” and “hall of residence” later, but those are **later stages**, not the original.
+    
+- Correct: **B (private home)**.
+    
+
+  
+
+👉 **Trap technique**: Listen for sequencing language (_originally_, _later_, _in 1951_, _in 2005_). IELTS often lists several possibilities, but only one is about the correct time frame.
+
+---
+
+### **Q12 —** 
+
+### **The university uses part of the building as…**
+
+- Transcript: _“…apart from two rooms that are our offices, the university uses the main part of the building. You may see students going into the building for lessons…”_
+    
+- Trap: The speaker first says “offices,” but those belong to the **museum staff**. Then comes the real answer: _teaching rooms_.
+    
+- Correct: **A (teaching rooms)**.
+    
+
+  
+
+👉 **Trap technique**: Pay attention when a speaker **corrects or shifts focus** after an initial detail.
+
+---
+
+### **Q13 —** 
+
+### **Entrance fee**
+
+- Transcript: _“…we’ve managed to keep entry to the museum free. This includes all the galleries, outdoor areas and special exhibitions. We do have a donation box…”_
+    
+- Trap:
+    
+    - “Donation box” might trick you into thinking it’s not free.
+        
+    - “Special exhibitions” are included — so don’t fall for option C.
+        
+    
+- Correct: **A (visitors decide whether or not to pay)**.
+    
+
+---
+
+### **Q14 —** 
+
+### **What should visitors leave in the cloakroom?**
+
+- Transcript: _“…we do have a cloakroom, if you’d like to leave your coats and bags. Unlike other museums, photography is allowed here, so you might like to keep your cameras with you. You might be more comfortable not carrying around heavy rucksacks, though keep your coats and jackets on as it’s quite cold in the garden.”_
+    
+- Trap:
+    
+    - Bags and coats are mentioned, but final advice = **leave bags**.
+        
+    - Coats: _don’t leave them_ (because garden is cold).
+        
+    - Cameras: _don’t leave them_ (photography allowed).
+        
+    
+- Correct: **C (bags)**.
+    
+
+  
+
+👉 **Trap technique**: Always notice _exceptions_ (“unlike other museums…”, “although…”, “but…”). The examiners love switching the answer at the last second.
+
+---
+
+## **🎯 Matching (Q15–Q20)**
+
+  
+
+### **Q15 — Four Seasons**
+
+- Transcript: _“…animation… designed by young people on a film studies course…”_
+    
+- Correct: **F (created by students)**.
+    
+- Trap: It’s for both kids and adults, so don’t choose “only school groups.”
+    
+
+---
+
+### **Q16 — Farmhouse Kitchen**
+
+- Transcript: _“…specialist cheesemaker will be giving demonstrations…”_
+    
+- Correct: **G (expert today)**.
+    
+- Trap: “equipment collection” is background info, not the focus.
+    
+
+---
+
+### **Q17 — A Year on the Farm**
+
+- Transcript: _“…good place to rest… you can take our memory test…”_
+    
+- Correct: **E (quiz for visitors)**.
+    
+- Trap: The presence of school visits is mentioned, but it’s not **only** for school groups.
+    
+
+---
+
+### **Q18 — Wagon Walk**
+
+- Transcript: _“…carts are old and fragile, so keep your children close and don’t let them climb…”_
+    
+- Correct: **A (parents supervise children)**.
+    
+- Trap: Looks like a one-way system, but they allow return to reception → so **not H**.
+    
+
+---
+
+### **Q19 — Bees are Magic**
+
+- Transcript: _“…redeveloping this area so you can’t visit that… you can still buy honey…”_
+    
+- Correct: **C (closed today)**.
+    
+- Trap: The shop reference may make you think “new things to see” or “something available,” but the _area itself_ is closed.
+    
+
+---
+
+### **Q20 — The Pond**
+
+- Transcript: _“…baby ducks… tiny frogs… perfectly safe…”_
+    
+- Correct: **B (new things to see)**. (baby animals just born)
+    
+- Trap: Could look like a safety issue, but the transcript explicitly says it’s _safe_.
+    
+
+---
+
+## **🔑 Key Takeaways / Traps**
+
+1. **Time sequence traps** — _originally… later… now…_ (Q11).
+    
+2. **Partial info traps** — first mention “offices,” then correct to “teaching rooms” (Q12).
+    
+3. **Exception traps** — “Unlike other museums…” changes expected answer (Q14).
+    
+4. **“Only” traps** — school groups mentioned, but not exclusive (Q17).
+    
+5. **Return option trap** — not a one-way system (Q18).
+    
+6. **Closed but available elsewhere trap** — bees area closed but honey for sale (Q19).
+
+# Recording 3
+
+# Recording 4

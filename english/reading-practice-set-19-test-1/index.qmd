@@ -1,0 +1,503 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 19 listening test 1
+lightbox: false
+description: IELTS Practice Set 19 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-29
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Performance summary
+Correct: 33/40
+
+# Summary Performance
+
+## Accuracy
+
+| **Section**                 | **Your Answers** | **Correct** | **Accuracy** |
+| --------------------------- | ---------------- | ----------- | ------------ |
+| Part 1 (Tennis Racket task) | 5 Qs             | 4/5 correct | **80%**      |
+| Part 3 (Misinformation)     | 5 Qs             | 4/5 correct | **80%**      |
+
+## Strengths
+
+- Good **elimination strategy**: you used context to rule out wrong answers.
+    
+- Strong at spotting **plural/singular forms** (“making 4… and reorganising _them_”).
+    
+- Able to recognize **synonyms/paraphrases** in multiple-choice (e.g., “entice” = “tempt”).
+    
+- Memory strategy works: you recall options at the end and compare with what you heard.
+    
+
+## Weakness
+
+| **Type**              | **Observation**                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Detail scanning**   | Sometimes missing small details that change the meaning (e.g., who does the action vs. what is done).         |
+| **Vocabulary gap**    | Hesitation when encountering academic/abstract words (e.g., “embrace,” “well-rounded,” “spoiling appetite”).  |
+| **Time management**   | Taking notes slows you down; when you don’t, you rely too much on memory, which is risky for tricky passages. |
+| **Theme connections** | Some difficulty transferring reading vocabulary into **speaking/writing use**.                                |
+
+## **4. Next Steps**
+
+1. **Refine scanning skills** – practice finding keywords and synonyms faster.
+    
+2. **Build thematic vocabulary tables** (like we started: _Health_, _Technology_, _Education_, etc.) → then reuse in speaking & writing.
+    
+3. **Balance practice** – 1 new test (for challenge) + 1 old test (for strategy review).
+    
+4. **Micro-drills** – Take 5 minutes/day to practice identifying synonyms and collocations in reading texts.
+    
+5. **Check plural/singular carefully** – it often decides the correct answer.
+# Part 1
+
+## **Q2. The change that Andy Murray made to his rackets attracted a lot of attention.**
+
+  
+
+Your answer: (not given?)
+
+Correct: **FALSE**
+
+  
+
+### **Evidence from text:**
+
+  
+
+> _“Another change was so subtle as to pass more or less unnoticed… A small change, perhaps, but its importance should not be underestimated.”_
+
+  
+
+- **Keyword:** “subtle… unnoticed” → opposite of “attracted a lot of attention”.
+    
+- Trap: You might think since it was “important,” then people noticed → but IELTS tests **visibility vs importance**.
+    
+
+  
+
+**Lesson:** Always separate _impact_ (important) vs _perception_ (noticed).
+
+---
+
+## **Q3. Most of the world’s top players take a professional racket stringer on tour with them.**
+
+  
+
+Your answer: (False?)
+
+Correct: **NOT GIVEN**
+
+  
+
+### **Evidence from text:**
+
+- Passage says: _“Touring professionals have their rackets customised… says Colin Triplow, a UK-based professional racket stringer.”_
+    
+- But no sentence states that players **take stringers with them on tour**.
+    
+- Trap: The phrase “touring professionals” + “professional stringer” tempts you to connect them, but IELTS checks if it’s explicitly stated.
+    
+- Since text only mentions stringing is important, **frequency / most players / taking stringers on tour** is NOT GIVEN.
+    
+
+  
+
+**Lesson:** If the text does not **quantify** (most, many, few, all) → answer = NOT GIVEN.
+
+---
+
+## **Q12. Pete Sampras had Metal 12 ______ put into the frames of his rackets.**
+
+  
+
+Your answer: **LEAD**
+
+Correct: **WEIGHTS**
+
+  
+
+### **Evidence from text:**
+
+  
+
+> _“…much of the serving power of US professional player Pete Sampras was attributed to the addition of four to five lead weights onto his rackets.”_
+
+  
+
+- IELTS expects **exact word form**: the blank requires a **noun**.
+    
+- In the passage, the phrase = “lead weights”. If you only write “lead”, you miss the **object**.
+    
+- Trap: IELTS often tests **precision** → e.g., “metal _weights_” vs “metal”.
+    
+- Also, “lead” alone doesn’t answer the question “Metal ___ ?” → correct noun = **weights**.
+    
+
+  
+
+**Lesson:** In completion tasks:
+
+1. Always check the **grammar of the blank** (singular/plural, countable/uncountable).
+    
+2. Copy exactly from passage, but make sure it **fits grammatically** in the sentence.
+    
+
+---
+
+## **✅ Key Takeaways for You**
+
+- **Q2 mistake:** Confusing _importance_ with _public attention_.
+    
+- **Q3 mistake:** Adding your own assumption (“most players do this”) → avoid extrapolation.
+    
+- **Q12 mistake:** Precision in noun form (“weights” not just “lead”).
+
+
+# Part 2
+
+
+# **Top traps in Passage 2 (Pirates)**
+
+1. **Paraphrase trap** — the text rarely repeats keywords from the question. The question may use a synonym or different grammatical form.
+    
+    _Example:_ “eradicate piracy” → question uses “campaign to eradicate” or “how a campaign was carried out.”
+    
+2. **Chronology / reference trap** — several paragraphs describe similar events at different times (Egypt, Greece, Rome). It’s easy to map the idea to the wrong paragraph if you don’t check the time/place signals.
+    
+3. **Implies vs states** — the passage often **implies** motives (e.g. economy improved) without saying exactly what the question asks; watch for explicit phrasing. If the passage _implies_ but does not _state_ something, it can be a NOT GIVEN or wrong-match trap.
+    
+4. **Detail displacement** — many paragraphs contain several facts; the correct answer will be tied to one particular sentence. The distractor typically appears nearby, using a related idea. Read full sentence, not just phrase.
+    
+5. **“Multiple-use” paragraphs** — a paragraph may support more than one question; this is normal. Don’t eliminate a paragraph after you use it once.
+    
+6. **Plural / word-form trap** in summaries — the exam often requires one-word answers. Make sure you copy the **exact noun** form that fits the gap (e.g., **GRAIN** not “grain ships”).
+    
+
+---
+
+# **What to notice (fast signals to find answers)**
+
+- **Opening / closing lines** of each paragraph often contain the gist.
+    
+- **Names & places** (Lukka, Sherden, Pompey, Alashiya) are excellent anchor points.
+    
+- **Time markers** (BCE dates, “By the 1st century BCE,” “In 67 BCE”) → map to Rome / Pompey.
+    
+- **Verbs of denial / refusal** (e.g., “rejected” in paragraph D) → match Q14.
+    
+- **Act-of-policy signals** (law, fleet, divided into districts) → match campaign/eradication (G).
+    
+- **“In return” / “in exchange”** language → economic incentive / encouraged not to return (G).
+    
+- **Geography / navigation clues** (coastal routes, coves, slow merchant ships) → match Q19 (B).
+    
+
+---
+
+# **Question-level notes & common distractors**
+
+  
+
+### **Q14 —**  **Denial of involvement** **→** **Paragraph D**
+
+- **Why D:** Amarna Letters record the king of Alashiya **rejecting** Akhenaten’s claim; explicit denial.
+    
+- **Trap:** Paragraphs mentioning pirates broadly (B or E) might seem relevant but do not include a _formal denial_.
+    
+
+  
+
+### **Q15 —** **How the eradication campaign was carried out** **→** **Paragraph G**
+
+- **Why G:** G gives the method: Pompey’s law, 13 districts, fleets assigned, sequential cleansing.
+    
+- **Trap:** F mentions Rome’s response but not the operational details; choose the paragraph with the _procedural description_.
+    
+
+  
+
+### **Q16 —** **States using pirates (wartime use)**  **→**  **Paragraph C**
+
+- **Why C:** C explicitly says governments employed pirates in wartime as a first wave.
+    
+- **Trap:** F discusses Rome profiting from piracy (economy) but not _states contracting pirates_.
+    
+
+  
+
+### **Q17 —**  **Modern/common view of pirates** **→** **Paragraph A**
+
+- **Why A:** A opens by describing the popular Caribbean swashbuckler image.
+    
+- **Trap:** Don’t confuse A’s modern stereotype with historical attitudes in E (Greek texts praising pirates).
+    
+
+  
+
+### **Q18 —** 
+
+### **How people were encouraged not to return to piracy**  **→**  **Paragraph G**
+
+- **Why G:** After suppression many pirates “were offered land … far from the sea” — economic resettlement.
+    
+- **Trap:** F (Rome profited) or B (coves) may mention pirates’ role, but only G mentions **resettlement** as discouragement.
+    
+
+  
+
+### **Q19 —** **Need for vessels to stay close to land** **→** **Paragraph B**
+
+- **Why B:** B explains pre-caravel ships followed coastlines and were trapped if slow — explicit geography/navigation reason.
+    
+- **Trap:** Paragraphs that mention coves or boats (B) are correct; ensure it’s the coastline/navigation reasoning, not economy or population.
+    
+
+---
+
+### **Q20–21 (Choose TWO) — inhabitants’ traits**
+
+- **Correct: D & B**
+    
+    - **D (depend on sea)**: B states inhabitants “relied heavily on marine resources.”
+        
+    - **B (escape capture)**: B highlights local knowledge and coves enabling pirates to avoid retaliation.
+        
+    
+- **Common distractors:**
+    
+    - **A** (using stolen vessels) — not stated.
+        
+    - **E** (storing goods in coves) — coves used as hiding places for boats, not explicitly for storing loot.
+        
+    
+
+  
+
+### **Q22–23 (Choose TWO) — piracy & ancient Greece**
+
+- **Correct: C & E**
+    
+    - **C (officials took part)**: Demosthenes example shows Athenian ambassadors capturing a ship.
+        
+    - **E (favourable view in texts)**: Homer and Thucydides praised piracy; explicit.
+        
+    
+- **Trap:** B & D reverse or exaggerate (“attitudes changed shortly after” / “every citizen regarded it unacceptable”) — neither is supported.
+    
+
+  
+
+### **Q24–26 (Summary)**
+
+- **24 GRAIN** — text: pirate attacks on grain ships resulted in calls for punishment.
+    
+- **25 PUNISHMENT** — calls for punishment appear in the Senate.
+    
+- **26 RANSOM** — pirates demanded ransom for Roman dignitaries (Julius Caesar example).
+    
+- **Summary trap:** keep **one-word** answers; watch for plural/singular and precise noun forms.
+    
+
+---
+
+# **Quick strategy checklist for this passage type**
+
+1. **Read the questions first** (or at least the keywords) before scanning the passage.
+    
+2. **Map keywords → paragraph** using names, dates, geographic terms.
+    
+3. **When matching paragraphs, confirm by reading 2–3 surrounding sentences.** The single sentence can be misleading.
+    
+4. **For multi-answer questions (Choose TWO),** underline two separate supporting lines in the text (they may be close or far apart).
+    
+5. **For summary gaps,** check grammar (singular/plural) and prefer exact vocabulary from the passage.
+    
+6. **If two paragraphs look similar,** use time/place signals (Egypt vs Greece vs Rome) to separate them.
+
+# Part 3
+
+## **Q28 — Role of technology**
+
+  
+
+**Correct: A – It may at some point provide us with a solution to misinformation.**
+
+- **Why A is right:** The text says the means to correct misinformation **“might, over time, be found in those same patterns of mass communication.”** That’s a cautious, future-oriented _may/might_ claim.
+    
+- **Common trap:**
+    
+    - **D** (“made it easier to check accuracy”) is **not** stated. No claim about fact-checking ease.
+        
+    - **B/C** change the meaning: no claim about altering how people regard information (B) or how organisations use misinformation (C).
+        
+    
+- **Spot-the-clue:** hedge verbs (“might”) + time phrase (“over time”) → _potential future solution_, not a current effect.
+    
+
+---
+
+## **Q29 — What is the writer doing in the fourth paragraph?**
+
+  
+
+**Correct: C – Outlining which issues connected with misinformation are significant today.**
+
+- **Why C is right:** The paragraph introduces **“at least three observations… warrant the attention of researchers, policy makers, and everyone,”** then lists them (initial belief, lack of blocking, costly correction). That’s a **menu of key issues**.
+    
+- **Common trap:**
+    
+    - **D** (policy makers’ attitude) tempts because policy makers are mentioned in the opener, but the paragraph **lists issues**, not opinions/attitudes.
+        
+    
+- **Spot-the-clue:** Look for list language (“first,” “second,” “third,” “observations”) → summary of **significant issues**.
+    
+
+---
+
+## **Q32 — Summary (Descartes vs Spinoza)**
+
+  
+
+**Correct: J – different ideas.**
+
+- **Why J is right:** The text: **“conflicting predictions”** from the two philosophers. That paraphrases to **“different ideas”** about engagement with information.
+    
+- **Common trap:**
+    
+    - **A** (“constant conflict”) misreads “conflicting predictions.” The philosophers aren’t fighting; their **theories** conflict. “Constant” isn’t in the text.
+        
+    
+- **Spot-the-clue:** When the noun is something like _predictions/accounts/theories_, “conflicting” → **different ideas/views**, not personal conflict.
+    
+
+---
+
+## **Q38 — Y/N/NG: Opposed teaching in elementary school**
+
+  
+
+**Correct: NOT GIVEN.**
+
+- **Why NG is right:** The passage **recommends** media literacy “as early as elementary school” but says **nothing** about it being **opposed**.
+    
+- **Common trap:**
+    
+    - Choosing **NO** because you _assume_ it’s supported; but NO requires a **clear contradiction** (“it has **not** been opposed”). We don’t have that.
+        
+    
+- **Spot-the-clue:** For Y/N/NG, ask: **Is the exact claim in the text?** If not explicitly supported or contradicted → **NOT GIVEN**.
+    
+
+---
+
+## **Micro-skills to lock these down**
+
+- **Modal hedges = future possibility** (might, may, over time) → choose options with _potential_, not _current fact_.
+    
+- **List signals = outlining key issues** (first/second/third, observations) → avoid options about attitudes/opinions unless explicitly discussed.
+    
+- **Paraphrase precision**: _conflicting predictions_ → **different ideas**, not interpersonal conflict.
+    
+- **Y/N/NG discipline**:
+    
+    - **YES** = clearly stated.
+        
+    - **NO** = clearly contradicted.
+        
+    - **NOT GIVEN** = anything else (no stance / missing detail).
+
+## **Mini Drill**
+
+  
+
+**1. Role of technology**
+
+Text: _“In the long term, algorithms might even help reduce the spread of false information.”_
+
+Q: What is implied here?
+
+A. Algorithms already make fact-checking easier
+
+B. Algorithms may eventually provide part of the solution
+
+C. Algorithms have changed how organisations spread lies
+
+D. Algorithms alter how people regard truth
+
+-> B
+
+**2. Function of a paragraph**
+
+Text: _“Three main problems arise when companies adopt green policies. First, the financial cost; second, the difficulty of measuring impact; third, the risk of greenwashing.”_
+
+Q: What is the writer doing here?
+
+A. Showing policy makers’ opinions on sustainability
+
+B. Explaining the cause of climate change
+
+C. Outlining which issues are significant today
+
+D. Presenting historical attitudes to company behaviour
+
+-> C
+
+**3. Paraphrase precision**
+
+Text: _“Philosopher A predicted humans believe only after careful reasoning, while Philosopher B claimed belief is automatic and rejection requires effort.”_
+
+Q: The two philosophers offered…
+
+A. Constant conflict with each other
+
+B. Different ideas about how belief works
+
+C. Support for the same conclusion
+
+D. Evidence that people rarely engage with ideas
+
+-> B
+
+**4. Y/N/NG**
+
+Text: _“Some experts argue children should learn coding as early as primary school.”_
+
+Q: The teaching of coding in primary school has been opposed.
+
+A. YES
+
+B. NO
+
+C. NOT GIVEN
+
+-> C
+
+**5. Y/N/NG subtle twist**
+
+Text: _“Scientists recommend daily walking for adults. However, there is no consensus yet on how much is optimal for children.”_
+
+Q: Scientists have proved children need 30 minutes of walking daily.
+
+A. YES
+
+B. NO
+
+C. NOT GIVEN
+
+-> C

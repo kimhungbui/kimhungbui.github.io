@@ -240,6 +240,17 @@ flock to the growing number of = go in large numbers to new places
 | fear / controversy | strong negative emotion or disagreement | dispute, uproar        |
 | avoid (a topic)    | not choose or deal with it              | steer clear of, skip   |
 
+# Psychology & Cognitive processes
+
+| **Word / phrase**     | **Synonym / paraphrase**             | **Collocations / example usage**                         |
+| --------------------- | ------------------------------------ | -------------------------------------------------------- |
+| encode                | record mentally; register            | encode information as true; encoded as if true           |
+| perceive / perceiving | sense; observe                       | perceiving and encoding; perceptual resources            |
+| skepticism            | doubt; critical judgement            | resources for skepticism; healthy skepticism             |
+| tag (information)     | label; mark                          | tag information as true/false; later tag                 |
+| mental resources      | cognitive capacity; brain mechanisms | mental resources reside in a different part of the brain |
+| default acceptance    | automatic belief; initial acceptance | accept information by default; automatic acceptance      |
+| verify                | check; confirm                       | verify or reject; verify claims                          |
 # Monument
 
 | **Word / Phrase**     | **Synonyms**                      | **Collocations**                            |
@@ -330,6 +341,30 @@ flock to the growing number of = go in large numbers to new places
 | **Developed countries**     | Nations with advanced economies and infrastructure  | industrialised nations, high-income countries                       |
 | **Poorer countries**        | Nations with low economic development               | less economically developed countries (LEDCs), low-income countries |
 
+# Policy & Regulation
+
+| **Word / phrase**                  | **Synonym / paraphrase**            | **Collocations / example usage**                    |
+| ---------------------------------- | ----------------------------------- | --------------------------------------------------- |
+| regulatory structures              | governing frameworks; regulators    | regulatory structures in the United States          |
+| post hoc detection                 | after-the-fact checking             | focus on post hoc detection; detect after broadcast |
+| preemptive censoring               | prior blocking; proactive filtering | does not involve preemptive censoring               |
+| Food and Drug Administration (FDA) | regulatory agency (USA)             | FDA oversees advertising; FDA guidelines            |
+| monitor / notification functions   | surveillance; alert mechanisms      | monitoring and notification functions               |
+| report (an issue)                  | flag; notify                        | report advertising; report violations               |
+| guidelines                         | rules; protocols                    | follow guidelines; violate guidelines               |
+
+# Solutions / Problem solving
+
+| **Word / phrase**    | **Synonym / paraphrase**                  | **Collocations / example usage**                        |
+| -------------------- | ----------------------------------------- | ------------------------------------------------------- |
+| corrective campaigns | remediation efforts; fact-checking drives | campaign to correct misinformation; corrective campaign |
+| reach and frequency  | audience scope; repetition                | necessary reach and frequency                           |
+| frame messages       | package communications; wording           | frame messages in accessible ways                       |
+| media literacy       | critical media education                  | media literacy efforts; teach media literacy            |
+| monitoring tools     | surveillance instruments                  | develop and maintain monitoring tools                   |
+| coordinated efforts  | joint actions; collaboration              | coordinated efforts over time                           |
+| no panacea           | no single cure                            | not a one-time panacea; no single solution              |
+
 # Work & Employment
 
 | **Word / Phrase**                | **Synonyms & Related Phrases**                | **Common Collocations**                        |
@@ -353,6 +388,16 @@ flock to the growing number of = go in large numbers to new places
 | **discount**           | reduction, cut price, special offer | staff discount, receive a discount, 20% discount    |
 | **goes up to**         | rises to, increases to, reaches     | wage goes up to, price goes up to                   |
 | **after three months** | probation period, trial period      | after a probationary period, after an initial stage |
+
+| **Word / Phrase** | **Synonyms / Similar expressions** | **Collocations / Usage**                   |
+| ----------------- | ---------------------------------- | ------------------------------------------ |
+| job               | occupation, profession, position   | part-time job, job satisfaction            |
+| task              | duty, assignment, responsibility   | complete a task, repetitive task           |
+| role              | function, position, duty           | leadership role, supportive role           |
+| responsibility    | duty, obligation                   | take responsibility, shared responsibility |
+| deadline          | due date, time limit               | meet a deadline, tight deadline            |
+| efficient         | effective, productive              | efficient worker, efficient system         |
+
 
 # Economic & Business & Advertising
 
@@ -746,6 +791,14 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | maintain health     | stay fit, promote wellbeing | Regular exercise helps to **maintain health**.          |
 | come down with      | contract, fall ill          | He **came down with** the flu last week.                |
 
+| **Word / Phrase** | **Synonyms / Paraphrases** | **Collocations / Usage**       |
+| ----------------- | -------------------------- | ------------------------------ |
+| Tennis racket     | racquet, sports equipment  | modern tennis racket           |
+| Player            | athlete, competitor        | professional player            |
+| Technique         | skill, method              | develop technique              |
+| Performance       | efficiency, effectiveness  | enhance performance            |
+| Injury            | harm, damage, strain       | risk of injury, prevent injury |
+
 ## Psychology / Cognitive Skills
 
 | **Word / Phrase**      | **Synonym(s)**                     | **Collocation(s)**                             |
@@ -920,7 +973,6 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | ceremonial music        | noun phrase    | Music written for formal or official events                  | _The orchestral piece was composed as ceremonial music for the event._    |
   
 
-
 # Tourism / Travel
 
 | **Term**         | **Synonym**   | **Collocations**                    |
@@ -998,6 +1050,15 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | pickpockets        | thieves in public            | “women were more vulnerable to theft… pickpockets” |
 | theft / pickpocket | stealing, robbery            | “worried constantly about pickpockets”             |
 
+| **Word / phrase**                           | **Synonym / paraphrase**           | **Collocations / example usage**                           |
+| ------------------------------------------- | ---------------------------------- | ---------------------------------------------------------- |
+| influence                                   | affect; sway                       | undue influence on attitudes/behaviour                     |
+| misperception                               | false belief; misunderstanding     | lead people to hold misperceptions                         |
+| downstream consequences                     | later effects; knock-on effects    | detrimental downstream consequences                        |
+| public opinion                              | collective view; societal attitude | sway public opinion; shape public attitudes                |
+| health / social harmony / political climate | societal domains                   | consequences for health, social harmony, political climate |
+| trust / fallibility                         | confidence / human error           | loss of trust; human fallibility                           |
+| exposure                                    | contact; frequency of contact      | frequent exposure; wide exposure                           |
 # Agriculture
 
 | **Term**               | **Synonym**           | **Collocations**                     |
@@ -1086,6 +1147,17 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | accommodation   | place to stay, lodging           | provide accommodation              |
 | rent            | hire, lease                      | rent a property / rental agreement |
 | quiet location  | peaceful area, tranquil spot     | quiet neighborhood                 |
+
+| **Word / Phrase** | **Synonyms / Paraphrases** | **Collocations / Usage**           |
+| ----------------- | -------------------------- | ---------------------------------- |
+| Material          | substance, component       | raw material, lightweight material |
+| Wood              | timber, natural material   | wooden frame                       |
+| Metal             | alloy, steel, aluminium    | metal racket                       |
+| Graphite          | carbon fibre, composite    | graphite racket                    |
+| Lightweight       | not heavy, low weight      | lightweight design                 |
+| Durability        | strength, robustness       | improve durability                 |
+| Flexibility       | elasticity, adaptability   | flexible frame                     |
+
 
 ## HERITAGE / ARCHITECTURE
 
@@ -1177,6 +1249,16 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | **Dominant**        | adjective      | Having control or influence over others                  | In group discussions, she tends to take a dominant role.                         |
 | **Self-centred**    | adjective      | Preoccupied with oneself                                 | He was too self-centred to consider how others felt.                             |
 
+# Development & Innovation
+
+| **Word / Phrase** | **Synonyms / Paraphrases**     | **Collocations / Usage**        |
+| ----------------- | ------------------------------ | ------------------------------- |
+| Innovation        | new idea, breakthrough         | technological innovation        |
+| Development       | progress, advancement          | product development             |
+| Improvement       | enhancement, upgrade           | continuous improvement          |
+| Evolution         | gradual change, transformation | the evolution of tennis rackets |
+| Modern design     | contemporary design, new style | modern racket design            |
+
 # Media & Communication
 
 | Word / Phrase                 | Meaning                                                   | Synonyms / Paraphrases                    |
@@ -1201,6 +1283,16 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | arts topic                    | story about cultural events                               | entertainment news, culture coverage      |
 | review (of a film)            | evaluation or critique                                    | assessment, appraisal                     |
 | funding for the arts          | financial support for cultural projects                   | cultural grants, arts subsidies           |
+
+| **Word / phrase**  | **Synonym / paraphrase**           | **Collocations / example usage**                               |
+| ------------------ | ---------------------------------- | -------------------------------------------------------------- |
+| misinformation     | false information; inaccurate data | spread/circulate misinformation; combat misinformation         |
+| fake news          | fabricated story; false report     | spread fake news; label something as “fake news”               |
+| mass communication | large-scale media distribution     | patterns of mass communication; channels of mass communication |
+| broadcast          | transmit; air                      | broadcast live; broadcast content; broadcast information       |
+| social media       | online platforms; digital networks | social media post/campaign; viral on social media              |
+| monitoring         | oversight; tracking                | monitoring tools; monitor content; continuous monitoring       |
+| credibility        | trustworthiness; reliability       | lose credibility; establish credibility; credible source       |
 
 
 # Education
@@ -1321,6 +1413,25 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | Employment      | Work, job, hiring             | Gain employment, long-term employment          |
 | Vocational      | Practical, skills-based       | Vocational training, vocational course         |
 | Internship      | Work placement, traineeship   | Paid internship, short internship              |
+
+| **Word / Phrase**       | **Synonyms / Similar expressions** | **Collocations / Usage**               |
+| ----------------------- | ---------------------------------- | -------------------------------------- |
+| project                 | assignment, undertaking            | group project, research project        |
+| practical               | hands-on, realistic                | practical skills, practical solution   |
+| organise                | arrange, structure                 | organise notes, organise materials     |
+| reorganise              | restructure, reshuffle             | reorganise ideas, reorganise timetable |
+| making (notes / tables) | creating, preparing                | making lists, making diagrams          |
+
+| **Word / phrase**         | **Synonym / paraphrase**              | **Collocations / example usage**                  |
+| ------------------------- | ------------------------------------- | ------------------------------------------------- |
+| empirical evidence        | observed data; experimental support   | empirical evidence supports Spinoza’s account     |
+| research teams            | study groups; investigators           | research teams of X and Y; researchers have found |
+| experiment / experimental | test; trial                           | empirically tested; experimental evidence         |
+| studies                   | research; investigations              | studies indicate; recent studies show             |
+| findings                  | results; outcomes                     | research findings; publish findings               |
+| robust testing            | rigorous evaluation                   | robustly tested; robust methods                   |
+| encode / tag pattern      | observed pattern; behavioural pattern | pattern that seems consistent with …              |
+
 # Feedback & Evaluation
 
 | **Word/Phrase**        | **Synonym / Paraphrase**             | **Collocations**                                   |
