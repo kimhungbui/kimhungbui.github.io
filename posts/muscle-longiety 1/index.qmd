@@ -1,0 +1,27 @@
+---
+title: Muscle and Longevity
+lightbox: false
+description: Why do we need to invest in muscle?
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-08-27
+categories:
+  - health
+  - muscle
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+
+and i learned that, fastest way to focus again is 2 inner breath and 1 out breath, it good

@@ -1,0 +1,225 @@
+---
+title: Practice Writing Task 1
+lightbox: false
+description: Practice process
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-25
+categories:
+  - english
+  - writing
+  - process
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+![](Pasted%20image%2020250829192342.png)
+
+
+# Plan
+
+Intro
+
+Paraphrase
+
+Overall
+
+- Highlight the **two broad stages**:
+    
+    1. Preparing the raw wool (shearing → cleaning → drying → storing tufts).
+        
+    2. Processing wool into yarn and products (dyeing → spinning → making textiles/carpets → recycling).
+
+### **Body Paragraph 1**
+
+###  **(Early stage – raw wool preparation)**
+
+- Step 1: Shearing sheep.
+    
+- Step 2: Cleaning the wool.
+    
+- Step 3: Drying the wool.
+    
+- Step 4: Storing wool in tufts for further use.
+    
+
+---
+
+### **Body Paragraph 2**
+
+###  **(Later stage – processing and final products)**
+
+- Step 5: Dyeing tufts.
+    
+- Step 6: Spinning tufts into yarn with spinning balls.
+    
+- Step 7: Using yarn for knitting or weaving into carpets and jackets.
+    
+- Step 8: Recycling surplus wool.
+
+The diagram illustrates the process by which wool is obtained from sheep and transformed into various products. Overall, this is a largely mechanical process comprising two main stages: preparing the raw wool and converting it into yarn and finished goods.
+
+The first stage of the process is shearing and can be done by hand. a vital step to obtain raw materials. This is followed by cleaning to eliminate impurities and drying to remove redundant water. While quality wool will be separated to be processed in the next step, messy wool will be strung and used for recycling. The wool is compacted into tufts and arranged and stored for the next stage.
+
+The second stage is almost mechanical and involves four steps. First, the storage wool is dyed for the demanded colors. The colored wool is then put in a spinning machine and spun at a speed to create balls of yarn. The yarn will be either knitted into textiles or further crafted into jackets and carpets. 
+
+***
+Fix grammar:
+
+
+The diagram illustrates the process by which wool is obtained from sheep and transformed into various products. Overall, this is a largely mechanical process comprising two main stages: preparing the raw wool and converting it into yarn and finished goods.
+
+The first stage of the process is shearing, which can be done by hand and is a vital step in obtaining the raw material. This is followed by cleaning to eliminate impurities and drying to remove excess moisture. While high-quality wool is separated for further processing, lower-quality wool is set aside for recycling. The wool is then compacted into tufts, which are arranged and stored for the next stage.
+
+The second stage is mainly mechanical and involves four steps. First, the stored wool is dyed in desired colors. The dyed wool is then placed in a spinning machine and spun into balls of yarn. Finally, the yarn is either knitted into textiles or manufactured into products such as jackets and carpets.
+
+***
+
+The diagram illustrates how wool is obtained from sheep and processed into a variety of products. Overall, the procedure consists of two main stages: preparing the raw wool and converting it into yarn for the production of textiles and garments.
+
+In the first stage, sheep are shorn to obtain the fleece, a process which can be carried out manually. The raw wool is then thoroughly cleaned to remove dirt and other impurities before being dried to eliminate excess moisture. At this point, the fleece is graded: the finer wool is selected for further processing, while the lower-quality material is recycled. The usable wool is then compacted into tuffs and shored for later use.
+
+The second stage is largely mechanical. The tufts are first dyed in a range of colors and subsequently spun in machines to produce balls of yarn. This yarn is either knitted into fabric or manufactured into finished goods such as jackets and carpets.
+
+***
+Longer:
+
+
+The diagram illustrates the process through which wool is obtained from sheep and converted into a range of products. Overall, it is a linear and partly mechanical procedure that can be divided into two broad stages: the preparation of raw fleece and the transformation of this material into yarn and finished items.
+
+  
+
+The process begins with the shearing of sheep, during which the fleece is removed by hand. This raw material then undergoes a series of treatments: it is carefully washed to eliminate dirt and grease, and subsequently dried to remove excess moisture. At this point, the wool is graded. While fine-quality fibres are selected for production, lower-quality portions are recycled rather than discarded. The usable wool is then compacted into tufts, which are systematically arranged and kept in storage until further processing.
+
+  
+
+In the second stage, the tufts are first dyed in a variety of colours. They are then fed into a spinning machine, where they are twisted at high speed into balls of yarn. This yarn can be knitted into fabric for textiles, or alternatively manufactured into a range of end products, including jackets for clothing and carpets for domestic use.
+
+
+
+
+
+
+
+
+
+
+other essay:
+
+
+The diagram outlines the intricate process of converting raw wool from sheep into various finished products such as jackets, carpets, and knitted items for personal or industrial use. Overall, the procedure involves a series of well-defined stages, from shearing and cleaning to dyeing and final crafting, with notable emphasis on recycling excess materials.
+
+In terms of the initial stages, the process begins with shearing wool from the sheep, a vital step to obtain raw material. This is followed by cleaning to eliminate impurities and drying to ready it for subsequent stages. The processed wool is then compacted into tufts and stored to maintain a consistent resource flow.
+
+Turning to the remaining phases, the stored tufts are dyed to introduce vibrant colors, enhancing their visual appeal. Next, the wool is separated into finer threads and spun into yarn using spinning balls. The yarn is subsequently either knitted into textiles or further crafted into jackets and carpets. Interestingly, surplus material from the separation stage is recycled, reflecting an eco-friendly approach in the process.
+
+
+
+# **IELTS Process Task 1 Template (180–220 words)**
+
+  
+
+### **1. Introduction (20–30 words)**
+
+- Paraphrase the task. Use “illustrates”, “demonstrates”, “depicts”, “outlines”.
+    
+    **Template:**
+    
+    “The diagram illustrates the process by which ___ is/are ___ and eventually transformed into ___.”
+    
+
+---
+
+### **2. Overview (35–50 words)**
+
+- Always highlight:
+    
+    - Shape (linear / cyclical)
+        
+    - Number of stages
+        
+    - Main division (manual vs mechanical, natural vs artificial)
+        
+    - Final outcome(s)
+        
+    
+
+  
+
+**Template:**
+
+“Overall, this is a ___ process consisting of ___ main stages. It begins with ___ and culminates in ___. Notably, the procedure is both ___ and ___, producing intermediate materials as well as finished products.”
+
+---
+
+### **3. Stage 1 – Early steps (60–70 words)**
+
+- Describe first half. Add **details + transitions**:
+    
+    - “Initially, …”
+        
+    - “Once this step is complete, …”
+        
+    - “At this stage, …”
+        
+    
+- Mention purposes: “in order to remove impurities”, “so that it can be stored.”
+    
+
+  
+
+**Template:**
+
+“The first stage involves ___. This is followed by ___. Once the material has been ___, it is then ___. At this point, ___ is separated into ___ and ___, with the latter either ___ or ___.”
+
+---
+
+### **4. Stage 2 – Later steps & final products (60–70 words)**
+
+- Do the same for the second half.
+    
+- Use variety: “subsequently”, “afterwards”, “eventually”, “in the final step”.
+    
+- End with final outcome.
+    
+
+  
+
+**Template:**
+
+“In the subsequent stage, the ___ is first ___. Following this, it is ___, producing ___. The resulting ___ may either be ___ into ___ or ultimately manufactured into finished products such as ___ and ___.”
+
+---
+
+# **Example Word Counts**
+
+- Intro: ~25
+    
+- Overview: ~40
+    
+- Stage 1: ~65
+    
+- Stage 2: ~65
+    
+    **Total: ~195** (ideal range)
+    
+
+---
+
+👉 With this template, you can “stretch” your essay naturally:
+
+- Expand the **overview** with 2–3 features.
+    
+- Add **purpose + transition phrases** between steps.
+    
+- Use **synonyms** + **passive voice** for variety.

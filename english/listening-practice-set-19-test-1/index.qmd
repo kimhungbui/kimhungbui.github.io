@@ -23,3 +23,89 @@ draft: false
 ---
 # Performance summary
 Correct: 38/40
+
+# Recording 1
+
+## **Q3 (you wrote**  **INSECTS** **— correct answer** **DATA***)**
+
+  
+
+**Where it appears in the recording:** “They also collect and analyse **data** about the things they see.”
+
+**Why DATA is correct:** the verbs _collect and analyse_ naturally collocate with _data_ (you collect/record data, not collect insects in this context).
+
+**Why you were tempted:** earlier the speaker mentions _birds and insects_ in the list of wildlife, and the science activity also involves plants and insects — it’s easy to grab a nearby noun instead of the object of the verb phrase.
+
+**How to avoid it:** focus on the **verb + object** pair. When you hear _collect / analyse_, expect a **non-count / abstract noun** (data / information / evidence) rather than a concrete species name. Train yourself to listen one or two words after the verb phrase to catch the direct object.
+
+  
+## Q7 DISCOVERY -> FREEDOM
+
+  
+
+**Where it appears in the recording:** “I would imagine they get a sense of **freedom** that might not be a normal part of their lives.”
+
+**Why FREEDOM is correct:** the exact phrase is _a sense of freedom_.
+
+**Why you were tempted:** the paragraph earlier uses _explore and discover_, so _discovery_ feels topically relevant and was in your short-term memory.
+
+**How to avoid it:** watch for **fixed expressions** such as _a sense of ____. If the speaker uses _a sense of …_, the missing word is usually an abstract state (freedom, independence, belonging). Also, when you hear the pattern “I would imagine they get a sense of …”, slow down in your head and expect one concrete abstract noun — not a gerund or verbal noun derived from the previous sentence.
+
+  
+## Q10 LEADER -> LEADERS
+  
+
+**Where it appears in the recording:** “There’s no charge for **leaders** and other adults - as many as you want to bring.”
+
+**Why LEADERS (plural) is correct:** the phrase _as many as you want_ makes clear the plural; the recording explicitly uses _leaders_.
+
+**Why you were tempted:** hearing the single word _leader_ in isolation (or reading the question fragment quickly) can look plausible, but it fails the grammar/number test.
+
+**How to avoid it:** check **number signals** in the sentence (as many / each / every / a / the). If the context allows more than one, answer must be plural. For summary completion always re-read the sentence mentally with your candidate word: does it fit grammatically?
+
+---
+
+## **Quick practice drills (2 minutes)**
+
+1. Hear the verb **“collect and analyse”** → supply the noun that collocates (answer: **data**).
+    
+2. Hear the phrase **“a sense of …”** → think of abstract nouns that fit (freedom, pride, belonging). Practice choosing the one that fits the passage meaning.
+    
+3. Hear **“as many as …”** or **“each”** → force yourself to write plural vs singular appropriately (leaders ≠ leader
+
+Look again at the original sentence from the recording:
+
+  
+
+_“There’s no charge for_ **_leaders_** _and other_ **_adults_** _— as many as you want to bring.”_
+
+- The word **adults** is plural, and it’s paired with **leaders** in the same structure.
+    
+- In English, when two nouns are linked with **and** in a parallel list, they normally match in number and form.
+    
+- If it were singular, the sentence would be odd: _“no charge for leader and other adults”_ — imbalance.
+    
+
+  
+
+So yes, **ADULTS** works as a **plural signal** for the missing word.
+
+  
+
+### **Strategy tip:**
+
+  
+
+When filling blanks in IELTS **sentence completion**, always:
+
+1. Look **left and right** of the blank for number cues (plural nouns, “as many as,” “other,” “these”).
+    
+2. Match your word form to those cues — IELTS often plants the singular/plural trap.
+
+# Recording 2
+
+
+# Recording 3
+
+
+# Recording 4

@@ -1,0 +1,119 @@
+---
+title: How to express agree/disagree, positive/negative, compare
+lightbox: false
+description: IELTS Practice Set 19 listening test 1
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-31
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Use in Writing Task 2
+
+# Express Agree / Disagree
+
+__I agree that__ + S + V / __I agree with__ ~
+   
+   __I agree that__ any child can become a good musician with enough practice.
+
+I firmly believe that + S + V
+   
+   I firmly believe that money is a better motivator than a job title for some employees.
+
+I support the idea that + S + V
+
+I support the idea that governments should fine people who do not recycle.
+
+Some people think that + S + V
+
+Some people think that learning languages is an important part of a well-rounded education.
+
+It is a common belief that + S + V
+
+It is a common belief that concentrating on practical skills is beneficial for students.
+
+It is true that + S + v
+
+It is true that people today are under more stress than in the past.
+
+It is evident that + S + V
+
+It is evident that developing artificial intelligence is advantageous.
+
+There is a more persuasive argument that parents should prioritize their children over their careers.
+
+It seems clear that + S + V + for several reasons.
+
+It seems clear that exercise is more important than diet for several reasons.
+
+I object to ~ / I object that + S + V
+
+I object to spending tax money on sponsoring international sporting events.
+
+I am against ~
+
+I am against using the death penalty to prevent crimes.
+
+# Express advantage / disadvantage
+
+## The main advantage / Disadvantage is that + S + v
+
+The main advantage is that students can learn technical skills. 
+
+## S + has its (own) advantages and disadvantages
+
+Opening borders to immigrants has its advantages and disadvantages.
+
+## It seems advantageous that + S + V
+
+It seems advantegeous that the firm has many bilingual staff members
+# Comparison
+
+## Similarly, S + V
+
+Similarly, saving for the future is more important than spending money now.
+
+## Compared to ~, S + V
+
+Compared to other living costs, housing expenses are expensive.
+
+## It is preferable for ~ to -
+
+It is preferable for governments to invest in education to foster long-term economic development.
+
+
+# Express contrast
+
+## Conversely, S + V
+
+Conversely, playing sports teaches students the value of teamwork and leadership.
+
+## On the one hand, S + V
+
+On the one hand, parental involvement encourages children to study.
+
+## On the contrary, S + V
+
+On the contrary, spending on health care has increased.
+
+## However, unlike ~, S + V
+
+However, unlike lecture-based classes, project-based learning offers hands-on experience.
+
+## While it is undeniable that + S + V, S + V
+
+While it is undeniable that communities need to stay safe, privacy rights are also important.
+

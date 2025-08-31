@@ -328,6 +328,18 @@ flock to the growing number of = go in large numbers to new places
 | basic skills      | simple skills, elementary skills | require basic skills, teach basic skills       |
 | financial outlay  | spending, cost, expense          | minimal outlay, initial outlay                 |
 | rewarding         | satisfying, fulfilling           | find something rewarding, personally rewarding |
+
+# Skill & Personal development
+
+| **Words/Phrases**  | **Synonyms**                   | **Collocations**                            |
+| ------------------ | ------------------------------ | ------------------------------------------- |
+| discover           | find out, learn                | discover plants, discover new skills        |
+| explore            | investigate, examine           | explore environment                         |
+| develop new skills | gain skills, acquire abilities | practical skills, social skills             |
+| self-confidence    | self-esteem, belief in oneself | build self-confidence, gain self-confidence |
+| creativity         | imagination, innovation        | encourage creativity                        |
+| sense of freedom   | independence, autonomy         | feel freedom, experience freedom            |
+
 # Government
 
 | Word/Phrase             | Meaning / Context                                   | Synonyms / Related Terms                                            |
@@ -656,6 +668,18 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | edible          | safe to eat, consumable      | edible mushrooms, edible species      |
 | habitat         | environment, ecosystem       | natural habitat, mushroom habitat     |
 
+| **Words/Phrases**             | **Synonyms**                   | **Collocations**                         |
+| ----------------------------- | ------------------------------ | ---------------------------------------- |
+| habitat                       | natural environment, ecosystem | three main habitats, protect habitats    |
+| wetland                       | marshland, bog, swamp          | wetland area, wetland conservation       |
+| grassland                     | meadow, pasture                | open grassland                           |
+| woodland                      | forest, woods                  | dense woodland, mixed woodland           |
+| oak plantation                | oak forest                     | oak plantation area                      |
+| gravel pits                   | quarry holes                   | abandoned gravel pits                    |
+| lakes/ponds/stream            | bodies of water                | large lakes, small ponds, flowing stream |
+| wildlife                      | fauna, animals                 | local wildlife, observe wildlife         |
+| species                       | types, varieties               | different species, endangered species    |
+| deer, rabbits, birds, insects | animals                        | wild deer, migratory birds               |
 # History
 
 | Vocabulary / Collocation                      | Meaning / Notes                    | Synonyms                         |
@@ -798,6 +822,19 @@ not: _vegetarian_ -> This is a __vocabulary mistake__.
 | Technique         | skill, method              | develop technique              |
 | Performance       | efficiency, effectiveness  | enhance performance            |
 | Injury            | harm, damage, strain       | risk of injury, prevent injury |
+
+| **Words/Phrases**              | **Synonyms**               | **Collocations**                        |
+| ------------------------------ | -------------------------- | --------------------------------------- |
+| educational visits             | school trips, fieldwork    | organise educational visits             |
+| activities                     | programs, tasks            | range of activities, outdoor activities |
+| science focus                  | biology studies            | science-based activities                |
+| collect and analyse data       | gather and study data      | data collection, analyse data           |
+| geography                      | map reading, navigation    | geography lessons                       |
+| use a compass                  | navigate                   | compass skills                          |
+| history                        | past, heritage             | study history, land use history         |
+| leisure and tourism            | recreation, travel studies | study leisure, focus on tourism         |
+| music (sounds, rhythm, tempo)  | musical experiment         | explore rhythm, create sounds           |
+| learning outside the classroom | outdoor education          | promote outdoor learning                |
 
 ## Psychology / Cognitive Skills
 
