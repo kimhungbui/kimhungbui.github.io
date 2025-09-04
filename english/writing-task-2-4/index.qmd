@@ -1,0 +1,200 @@
+---
+title: More complex arguments
+lightbox: false
+description: Different types of argument
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-04
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Arguing by showing contrast
+
+:::{.callout-tip}
+Candidates at C1 and C2 (bands 7 to 9) have mastered the language from A1 to C2; they use high-level language accurately and only at the appropriate time. You will show C1 and C2 skills by clearly explaining a complex argument, not by using as much high-level grammar or vocabulary as possible.
+:::
+
+We can provide strong reasoning or give extra support for an idea by making a point a bout a contrasting idea or argument. This can be a useful way of finding extra ideas when we are stuck. To get ideas like this, ask ourseves, '_What would happen if we <u>didn't</u> have / <u>do</u> this?_' or '_What happens when we <u>don't</u> have / <u>do</u> this?_' For example, 'What happens if the government <u>doesn't </u>help poor people.
+
+This type of argument can be useful when writing about whether a development is positive or negative. The words and phrases we might find in this type of argument are:
+
+__If ... does not ... then; Without ... ,__
+
+Look at the following example:
+
+_In many big cities, the population exceeds the number of flats and houses available, which means that many people do not have anywhere to live. This causes several problems. Firstly, it can put pressure on local charities, who have to find food and shelter for the homeless. If the government does not step in to help people who are struggling financially, then this puts even more stress on community programs, and causes homelessness to rise even further._
+
+## Point to notice
+
+- The tenses used here (the simple present and the conditional) indicate that the writer has some experience or knowledge of this topic, and feels very confident that these effects _will_ happen. Remember, if we are less certain, we can show this by using modal verbs (can, may etc) like this
+
+If the government does not step in to help people who are struggling financially, then this can put even more stress on community programs, and may cause homelessness to rise even further
+
+
+- The same language is useful in presenting a counterargument.
+
+
+# Combining different types of arguments
+
+At the moment, our paragraph is quite short. However, if we want to add another negative effect resulting from a lack of housing, we need to be very careful. A common mistake at band 6 is to simply add a new idea, like the final sentence in this extract:
+
+![](Pasted%20image%2020250904182248.png)
+
+The final sentence here creates a referencing problem - the pronoun 'it'
+ confuses the reader, and so the conclusion becomes unclear. A pronoun generally refers back to the last noun or idea mentioned, which in this case is either the rise in homelessness, or 'If the government does not step in to help people.'
+
+![](Pasted%20image%2020250904182419.png)
+
+
+The reader understands this as
+
+If the government does not step into help people who are struggling financially, this means that house prices and rents remain very high.
+
+or 
+
+If homelessness rises further, this means that house prices and rents remain very high.
+
+In both cases, the link between these ideas is not clear, so a referencing problem like this often results in a band 6 'unclear conclusion'.
+
+The writer actually intended to add another negative effect of the issue mentioned in the first sentence of this paragraph and make the following more logical argument:
+
+'When the population exceeds the number of houses and flats available, this makes house prices high'.
+
+To show that we are adding a new point to a much earlier idea, we need to use a synonym or paraphrase to refer back, like this.
+
+'In addition, a lack of accommodation means that house prices and rents remain very high.'
+
+Using paraphrase or a synonym rather than a pronoun to refer back to an earlier part of the paragraph clearly signals which 2 ideals are being linked by the connection phrases. 'In addition.' Look out for this type of referencing in the IELTS reading test too.
+
+![](Pasted%20image%2020250904182832.png)
+
+
+### Exercises
+
+#### Q1 
+Which of the following points would follow on logically to conclude our paragraph?
+
+Thus, housing problems have an impact on everyone in the community. 
+
+Thus, houses are likely to become even more expensive in the future. 
+
+Thus, employment is also a very important issue. 
+
+Thus, the government is not responsible for housing problems.
+
+
+1
+![](Pasted%20image%2020250904183157.png)
+# Joining ideas together to vary sentence length
+
+
+High-level writers show an awareness of style, and try to vary the length of their sentences. Using a mixture of long and shorter sentences makes reading easier and also makes our writing less repetitive.
+
+_In many big cities, the population exceeds the number of flats and houses available, which means that many people do not have anywhere to live. This causes several problems. Firstly, it can put pressure on local charities, who have to find food and shelter for the homeless. If the government does not step in to help people who are struggling financially, then this puts even more stress on community programmes, and causes homelessness to rise even further. In addition, a lack of accommodation means that house prices and rents remain very high. Thus, housing problems have an impact on everyone in the community._
+
+The first sentence of the paragraph makes a claim, and the remaining sentences either explain the effects of this claim, or a reaching conclusion about what these effects tell us. Remember, the effects can be seen as the supporting evidence or reasoning in this type of argument.
+
+## Practice
+
+Use symbols to show how the ideas are connected.
+
+![](Pasted%20image%2020250904184111.png)
+
+There some symbols we can used in planning
+
+![](Pasted%20image%2020250904184142.png)
+
+Alternatives to use easily in keyboard:
+
+| **Meaning**       | **Symbol (hard)** | **Easy keyboard alternative** |
+| ----------------- | ----------------- | ----------------------------- |
+| therefore / thus  | ∴                 | **=>** or **so**              |
+| this means        | =                 |                               |
+| rises / increases | ↑                 | **up**                        |
+| falls / decreases | ↓                 | __dn__                        |
+
+## Tracing the development of an argument
+
+![](Pasted%20image%2020250904184407.png)
+
+As this image shows, this is a very complex argument. It combines arguing by showing cause and effect, arguing by showing contrast, and arguing by adding information. Because of this complexity, there is a greater chance of language errors, and it is particularly difficult to explain the progression of the argument clearly and simply. When planning, we need to be aware of how complex our argument is before begin writing so that we can take extra care when connecting our ides, particularly when referring back to a much earlier idea.
+
+![](Pasted%20image%2020250904184636.png)
+
+
+:::{.callout-note}
+## Vocabulary note:
+We can say that __A causes B__ or that __B is the result of A__. Reversing ideas like this is a useful way to avoid repeating the same language and structures. Here are some other variations:
+
+- Eating too much fast food and a lack of exercise can cause obesity.
+- Obesity can be caused by eating too much fast food and a lack of exercise.
+- Obesity is often the result of eating too much fast food and a lack of exercise.
+- Eating too much fast food and a lack of exercise an result in obesity.
+- Eating too much fast food and a lack of exercise can lead to obesity.
+- Obesity can result from eating too much fast food and a lack of exercise.
+:::
+
+### Exercise
+
+Fill in the blanks with the correct verb or preposition?
+
+1. A poor diet can <font color="#245bdb">cause / lead to</font> health problems such as Type 2 diabetes.
+2. Type 2 diabetes can be caused <font color="#245bdb">by</font> eating food that is high in sugar.
+3. Type 2 diabetes is often the <font color="#245bdb">result</font> of eating too much fast food and a lack of exercise.
+4. Eating too much fast food and a lack of exercise can result <font color="#245bdb">in</font> many health problems.
+5. Eating too much fast food and a lack of exercise can <font color="#245bdb">lead</font> to Type 2 diabetes.
+6. Type 2 diabetes can <font color="#245bdb">result</font> from eating too much fast food and a lack of exercise.
+
+
+## Extra practice
+
+Practice changing the length of the sentences in our paragraph by doing the following:
+
+- make the first sentence shorter and the second sentence longer
+- break the third sentence up it into 2 shorter ones
+- connect the last 2 sentences
+
+- Be sure to study and practise relative clauses if you struggle with this exercise.
+- Rewrite the paragraph using one or more variations of the verb ‘cause ’ from the language note.
+
+__Varying sentence lengths__
+
+In many big cities, the population exceeds the number of flats and houses available. This means that many people do not have anywhere to live, which causes several problems. Firstly, it can put pressure on local charities and homeless shelters, who have to find food and shelter for the homeless. If the government does not step in to help people who are struggling financially, this puts even more stress on community programmes. When this happens, it can cause homelessness to rise even further. In addition, a lack of accommodation means that house prices and rents remain very high, which shows that housing problems affect everyone in the community.
+
+
+In many big cities, the population exceeds the number of flats and houses available.
+
+shorter ->
+
+In many big cities, people outnumber available home.
+
+**In many big cities where people outnumber available homes.**
+
+This means that many people do not have anywhere to live, which causes several problems.
+
+-> longer
+
+This means that a large number of people find themselves without nay place to live, a situation which inevitable causes several problems for both individuals and society.
+
+Firstly, it can put pressure on local charities and homeless shelters, who have to find food and shelter for the homeless.
+-> break to 2 shorter sentences
+
+Firstly, it can put pressure on local charities and homeless shelters. In particular, they have to find food and shelter for the homeless.
+
+When this happens, it can cause homelessness to rise even further. In addition, a lack of accommodation means that house prices and rents remain very high, which shows that the housing problem affects everyone in the community.
+
+-> connect 2 to 1 
+
+When this happens, it can cause homelessness to rise even further, and the lack of accommodation also means that house prices and rents remain very high, showing that the housing problem affects everyone in the community. 
