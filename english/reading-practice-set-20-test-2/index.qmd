@@ -1,0 +1,182 @@
+---
+title: Reading practice - mistake log IELTS Practice Set 20 listening test 2
+lightbox: false
+description: IELTS Practice Set 20 reading test 2
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-08-29
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Part 1
+
+
+# Part 2
+
+### **Q15 – Reference to the realisation that others also procrastinate**
+
+- You answered **C**.
+    
+- Correct answer is **F**.
+    
+
+  
+
+**Why?**
+
+- Paragraph **C** talks about perfectionists, low self-esteem, and avoiding judgment. It explains _who procrastinates_ and _why_, but it never mentions realizing that _other people_ also do it.
+    
+- Paragraph **F**, at the end, says:
+    
+    _“We should remind ourselves that we’re not the first person to procrastinate, nor the last.”_
+    
+    → This is exactly the “realisation that others also procrastinate.”
+    
+
+  
+
+**Tip:** When the question asks about “realisation” or “awareness,” look for _mental attitude shifts_ (not causes).
+
+---
+
+### **Q26 – Recommendations for getting out of procrastination**
+
+- You answered **D**.
+    
+- Correct answers are **A and E**.
+    
+
+  
+
+**Why?**
+
+- Paragraph **F** gives the strategies:
+    
+    - _“Forgiving ourselves and feeling compassion when we procrastinate…”_ → That’s **A (not judging ourselves harshly)**.
+        
+    - _“…strategies that can help us fend off distractions that can occupy our minds when we should be focusing…”_ → That’s **E (avoiding things that stop us concentrating)**.
+        
+    
+- **D (prioritising tasks)** is _not_ mentioned anywhere. It looks tempting because it feels logical, but IELTS traps you by including “reasonable but not in the text” options.
+    
+
+  
+
+**Tip:** Always match answers _word-for-word_ with evidence in the passage. If the text doesn’t mention it, it’s wrong — even if it sounds logical.
+
+---
+
+✅ **Summary of mistakes:**
+
+- **Q15**: Chose the wrong paragraph because you focused on causes of procrastination instead of the “realisation.”
+    
+- **Q26**: Fell into the “logical but not in the text” trap.
+# Part 3
+
+
+
+# Mini drill
+
+### **Mini Reading Passage**
+
+  
+
+**Paragraph A**
+
+Many people believe stress comes mainly from external pressure, such as work deadlines. However, recent studies show that stress often arises from how we _interpret_ events. If two people face the same challenge, one may feel anxious, while the other feels motivated.
+
+  
+
+**Paragraph B**
+
+Researchers also discovered that people who openly share their worries with others tend to recover faster from stressful events. By realising they are not alone, they reduce feelings of isolation. This awareness has been shown to lower stress hormones.
+
+  
+
+**Paragraph C**
+
+Although physical exercise is usually promoted for fitness, it also reduces stress. Exercise stimulates the release of chemicals in the brain that improve mood. For this reason, many doctors recommend regular activity to patients with high stress levels.
+
+---
+
+### **Questions**
+
+  
+
+**Q1.** Which paragraph mentions the role of _personal perception_ in stress?
+
+A. Paragraph A
+
+B. Paragraph B
+
+C. Paragraph C
+
+  
+
+**Q2.** Which paragraph refers to people realising that _others share similar experiences_?
+
+A. Paragraph A
+
+B. Paragraph B
+
+C. Paragraph C
+
+  
+
+**Q3.** Which paragraph refers to _medical recommendations_ about stress?
+
+A. Paragraph A
+
+B. Paragraph B
+
+C. Paragraph C
+
+  
+
+**Q4.** Choose TWO letters, A–E. Which TWO strategies for reducing stress are mentioned in the passage?
+
+A. Reframing how we see challenges
+
+B. Avoiding all external pressure
+
+C. Sharing concerns with others
+
+D. Taking medication
+
+E. Exercising regularly
+
+  
+
+**Q5.** Choose TWO letters, A–E. Which TWO beliefs about stress are shown to be false in the passage?
+
+A. Stress always comes from outside pressure
+
+B. Sharing problems increases stress
+
+C. Exercise is only good for fitness
+
+D. Stress affects everyone equally
+
+E. Doctors do not recommend exercise for stress
+
+
+1a
+2b
+3c
+
+q4 c e
+
+q5 c d

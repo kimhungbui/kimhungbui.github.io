@@ -1,0 +1,71 @@
+---
+title: GRE Verbal Practice
+lightbox: false
+description: a test
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-02
+categories:
+  - english
+  - gre
+  - verbal
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Although the film is rightly judged imperfected by most of today's critics, the film being created today are ... it, since its release in 1940 provoked sufficient critical discussion to enhance the intellectual respectively of cinema considerably.
+
+  
+
+A beholden to
+
+B in debted to
+
+C derivate of
+
+D based on
+
+E distinguishable from
+
+F biased against
+
+![](Pasted%20image%2020250902174949.png)
+
+
+
+Step 1: Logic
+
+The sentence contrast two ideas:
+
+- The 1940 film is imperfect. (negative)
+- Despite this, it had an important influence on films today (positive).
+
+So, the blank must mean "owe something to / influenced by".
+
+Step 2: Options
+
+A beholden to -> means "indebted to" (slightly archaic but valid)
+B indebted to -> directly means "owe something to"
+C derivative of -> means "copied from" (too strong slightly off)
+D based on -> possible, but usually used for content/story, not influence
+E distinguishable from -> opposite meaning
+F biased against -> opposite meaning
+
+Step 3: Best fit
+
+the correct sense: today's films owe something to that 1940 film.
+
+So the best choice is:
+
+B/ indebted to
+
+(A. beholden to could also work in older/literary phrasing, but GRE prefers the more standard form).

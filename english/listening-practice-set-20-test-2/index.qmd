@@ -1,0 +1,146 @@
+---
+title: Listening practice - mistake log IELTS Practice Set 20 listening test 2
+lightbox: false
+description: IELTS Practice Set 20 listening test 2
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-04
+categories:
+  - english
+  - listening
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+37/40
+
+
+# Recording 1
+
+# Recording 2
+
+### **Q18. What is the most important requirement for volunteers at the festivals?**
+
+- **Transcript extract:**
+    
+    _“We try to use volunteers who are flexible, though, because some festival events are held outdoors and the weather may affect the size of the audience and even whether the event can take place. So there can be changes at short notice._ **_What’s essential, though, is being able to get on well with other people and also to deal with someone who’s behaving badly, as occasionally happens._**
+    
+- **Your answer:** C (Flexibility)
+    
+- **Correct answer:** A (Interpersonal skills)
+
+✅ **Why?**
+
+The speaker first _mentions flexibility_ (and IELTS often puts distractors before the correct answer). But then comes the keyword _“What’s essential, though…”_ which signals the true answer.
+
+So, the test checks if you notice the contrast between _“try to use”_ vs. _“What’s essential”_.
+
+  
+
+⚠️ **Your mistake:** You stopped at “flexibility” and treated it as the final answer. But IELTS often hides the real answer in the _second half_ of the sentence with phrases like _“but, however, what’s essential, in fact”_.
+
+### **Q19. New volunteers will start working in the week beginning …**
+
+- **Transcript extract:**
+    
+    _“Our plan is to get your work in September_ **_after a week’s training starting on the 2nd_**_. So, we’ll be timetabling you for duties_ **_the following week from the 9th onward._**
+    
+- **Your answer:** A (2 September)
+    
+- **Correct answer:** B (9 September)
+    
+
+  
+
+✅ **Why?**
+
+The speaker mentions _training starts on the 2nd_ (distractor), but the actual _start of work_ is _the following week from the 9th onward_.
+
+The key is the words _“after a week’s training”_ → you don’t start on the 2nd, that’s only training.
+
+  
+
+⚠️ **Your mistake:** You focused on the first date you heard (Sept 2) instead of waiting for the sentence to finish. IELTS loves this “first date is training, second date is real start” trap.
+# Recording 3
+
+
+# Recording 4
+
+## **What happened on Q33**
+
+  
+
+**Question:** “Famous (33) ______ are influential.”
+
+**Transcript cue:** “…what **well-known chefs** are putting on their menus.”
+
+  
+
+**Your answer:** _chiefs_
+
+**Correct:** **chefs** (also accepted: _cooks_)
+
+  
+
+### **Why “chiefs” is wrong**
+
+- **Meaning:** _Chief_ = leader/boss (police chief, tribal chief) → doesn’t fit “putting things on menus.”
+    
+- **Context collocations:** _famous/well-known/celebrity_ **_chefs_** + _menus_ is a strong culinary collocation.
+    
+- **Pronunciation trap:**
+    
+    - **chef** /ʃef/ (starts with **sh** sound)
+        
+    - **chief** /tʃiːf/ (starts with **ch** sound, long **ee**)
+        
+        In fast speech, the vowel + consonant can blur, so you rely on **context** (“menus”) + **topic** (food marketing).
+        
+    
+
+  
+
+### **Quick discrimination drill (say them aloud)**
+
+- **chef** = /ʃ/ as in **sh**e, short **e**: _sh-ef_
+    
+- **chief** = /tʃ/ as in **ch**eese, long **ee**: _cheef_
+    
+    Try: _celebrity chefs_, _head chef_, _Michelin-starred chef_ vs. _police chief_, _tribal chief_, _chief executive_.
+    
+
+  
+
+### **Exam tactics for this item type**
+
+1. **Pre-read the gap:** “Famous ___ are influential.”
+    
+    Predict likely nouns: _chefs, influencers, brands, retailers_. With “menus” later, **chefs** becomes obvious.
+    
+2. **Use domain cues:** This section is about **food trends** → expect _chefs, restaurants, menus, supermarkets_.
+    
+3. **Grammar check (fast):** “Famous **chef** are …” (ungrammatical) → needs plural **chefs**.
+    
+4. **Write what you hear, but sanity-check with context.** If you wrote _chiefs_, ask, “Do chiefs have menus?” → no → revise to **chefs**.
+
+
+### **Re-usable collocations from this passage**
+
+- **celebrity / well-known / Michelin-starred chefs**
+    
+- **put (a dish/ingredient) on the menu**
+    
+- **influence food trends**
+    
+- **supermarkets track what’s trending**
+    
+- **brand ambassadors / social media influencers**
