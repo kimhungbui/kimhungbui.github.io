@@ -1,0 +1,106 @@
+---
+title: Article a/an before noun phrases
+lightbox: false
+description: A/an
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-04
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Tick the correct sentence in each pair
+
+1 a The company has captured a significant share of the market.
+b the company has captured significant share of the market.
+
+-> a
+share is a countable noun (a share, two shares)
+
+2 a I think they are also right to certain extent.
+b I think they are also right to a certain extent.
+
+2 -> a ->> b
+
+a certain extent is a phrase
+
+Don't forget to include _a/an_ before an adjective + singular noun combination.
+
+_He clearly has __a good understanding__ of the issues._
+
+_Many students have __a part-time job__ while studying._
+
+Notice the position of adverbs (very, really, quite, etc.) in these phrases:
+
+_We have __a very high percentage__ of women working in senior government posts._
+
+_There was __a really good atmosphere__._
+
+_In my view, this is __quite a strong argument__._
+
+Some common noun phrases to be careful with:
+
+- to a certain extent/degree: I agree with you to a certain degree.
+- a wide range/variety: We have a wide range of books to choose from.
+- a(n) large/small/equal number/amount: an equal number of men and women
+- a high/large/small/greater proportion/percentage: a small proportion of patients
+- a long time: I haven't seen her for a long time.
+
+# Correct the mistake below
+
+All competitors should have a equal chance of winning.
+
+
+# Use the words below in the same order to form correct sentences, adding any necessary articles or prepositions
+
+1 Only / small / number / troublemakers / were / responsible for / problems.
+
+-> Only a small number of trouble makers were responsible for the problems.
+
+2 Computers / play / very / important / role / education / nowadays.
+
+-> Computers play a very important role in education nowadays.
+
+3 She / can't / afford to / study / full-time / basis.
+
+-> She can't afford to study on a full-time basis.
+
+verb phrase: can't afford to
+
+expression is 'on a full-time basis'
+
+4 Teenagers / should be / allowed / greater / degree / freedom
+
+-> Teenagers should be allowed a greater degree of freedom.
+
+a greater degree of freedom
+
+5 They / have / slightly / different / approach to / studying
+
+They have a slightly different approach to studying
+
+6 We / had / one-week / intensive / training / course.
+
+We had a one-week intensive training course.
+
+7 There / has been / gradual / increase / number / thefts.
+
+There has been gradual increase a number of thefts.
+
+-> They has been a gradual increase in the number of thefts.
+
+8 They / offer / quite / wide / variety / courses.
+
+They offer a quite wide variety of courses.
+
