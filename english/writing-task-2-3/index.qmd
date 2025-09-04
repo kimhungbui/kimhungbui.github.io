@@ -1,0 +1,236 @@
+---
+title: Creating Different types of Argument
+lightbox: false
+description: Different types of argument
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-04
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Arguing by adding information
+
+The choice will depend on the ideas that occur to us when planning our essay - it cannot be decided in advance. This is because our ideas shape our argument, which then determines the language we must use. This cannot happen in reverse, beginning with the language, which is why a fixed template approach will not work.
+
+When creating an argument:
+
+![](Pasted%20image%2020250904165711.png)
+
+One way to build a clear argument is by presenting the different reasons that, when added together, led us to our conclusion. In our planning, we can use plus sign (+) to show arguments like this.
+
+Words and phrases often used in this type or argument are:
+
+__Firstly, Secondly, Thirdly, In addition, Similarly, also, etc.__
+
+We will look at a model and use critical thinking to identity the ideas within the argument and to understand how the ideas are connected.
+
+### Practice
+
+Look at the argument being made in the paragraph below and try to identify 3 points or ideas (PC's conclusion) and 3 reasons given for believing them. (Mentally adding 'because', or 'therefore' can help us identify a reason or conclusion - this is helpful for IELTS reading too)
+
+_There are several reasons why the government collects taxes. Firstly, the money raised can be used to build new roads or public buildings. Secondly, existing infrastructure, such as schools and hospitals, can be updated or repaired. Finally, these funds are needed to pay the salaries of all government workers, including firefighters and the police. Thus, taxes help improve the community while also making it safer._
+
+1. The 'evidence' is the reason why her believe a conclusion is valid or reasonable, so the three reasons given in this paragraph are her supporting evidence. She used her experience and knowledge of the world to think of these, which is what the task tells us to do. The conclusions, or the points she make, are her personal views about what this evidence shows or tells us. Remember, each of these conclusions, or points, reveals her position on this issue - if the reasons she give to support are unclear or illogical (as we saw in the previous lesson), then her position and conclusions will also be unclear. If this evidence is missing, her ideas will be both unclear and undeveloped.
+2. The points she make (her conclusion) are broad, general ideas (e.g. Taxes help make the community safer). In contrast, the reasons given are more specific, and they provide concrete supporting evidence to support her ideas (e.g. Taxes are used to pay the salaries of firefighters). Notice also that she was able to provide supporting evidence without using the phrases 'For example'. We will review this idea in Lesson 6.
+3. Notice her use of referencing in this paragraph (the way that she refer back to previous ideas). In the practice exercise, she used the word 'taxes' repeatedly, by if we look at her paragraph, we will see that she used synonyms to avoid repeating this word. This helps with our Coherence and cohesion score, and shows how building our vocabulary helps improve our writing score.
+
+Two words are used as synonyms to refer back to 'taxes': money, funds
+
+Infrastructure refers to public services such as water, transport, rubbish collection etc.
+
+Salaries refer to the money paid to workers.
+## Adding emphasis
+
+The language used in this argument tells the reader that each reason is equally important. However, we sometimes want to show that one reason is more important than the others, as in the following example.
+
+There are several reasons why the government collects taxes. In terms of infrastructure, the money raised can be used to build new roads or public buildings, or to maintain existing structures such as schools and hospitals. __More importantly,__ these funds are needed to pay the salaries of all government workers, including firefighters and the police. Thus, taxes __not only__ help improve the community __but also__ make it safer.
+
+The phrases in bold are used to show her position, which can be summed up as: there are several good reasons for collecting taxes, and I believe that safety is the most important of these. Other phrases we may find useful when making an argument like this are:
+
+__Moreover, Furthermore, What is more, Even more importantly.__
+
+Notice that she did not use a connecting phrases between the first two sentences - the link between them is made clear through the use of referencing ('the money raised' refers back to 'collects taxes'). As we have seen, some writers go even further, omitting even more connecting words and phrases. As well as removing clear signposting, this also creates a different tone in the writing, and sometimes goes too far.
+
+Version 1:
+
+_There are several reasons why the government collects taxes. Firstly, the money raised can be used to build new roads or public buildings. Secondly, existing infrastructure, such as schools and hospitals, can be updated or repaired. Finally, these funds are needed to pay the salaries of all government workers, including firefighters and the police._
+
+Version 2:
+
+_There are several reasons why the government collects taxes. The money raised can be used to build new roads or public buildings. Existing infrastructure, such as schools and hospitals, can be updated or repaired. The funds are needed to pay the salaries of all government workers, including firefighters and the police._
+
+Second version is far more difficult for language learners to master.
+
+In Version 2 the links are made clear through the use of synonyms ('collects taxes' in sentence 1 = 'The money raised' in sentence 2 and 'these funds' in sentence 3) The sentences are also connected through a common theme or context - each sentence provides a reason why the government collects taxes.
+
+Something between these two:
+
+Version 3:
+
+There are several reasons why the government collects taxes. The money raised can be used to build new roads or public buildings. Existing infrastructure, such as schools and hospitals, can also be updated or repaired. Furthermore, the funds are needed to pay the salaries of all government workers, including firefighters and the police.
+
+### Practice
+
+Match conclusion and point
+
+The money can be used to build new roads or public buildings.
+
+taxes pay the salaries of government workers including firefighters and the police
+
+existing infrastructure such as schools and hospitals can be updated or repaired.
+
+all of the ideas in this paragraph
+
+Conclusion 1: There are several reasons why governments collect taxes.
+
+Conclusion 2: taxes help improve the community
+
+Conclusion 3: taxes make the community safer.
+
+***
+
+Conclusion 2: taxes help improve the community -> The money can be used to build new roads or public buildings., -> -> existing infrastructure such as schools and hospitals can be updated or repaired. 
+
+C 3: taxes make the community safer. taxes pay the salaries of government workers including firefighters and the police
+
+C1: all of the ideas in this paragraph
+
+# Arguing by showing cause and effect
+
+Rather than separate reasons added together, these arguments show that one idea has an impact on a second, and perhaps even a third, in a domino effect.
+
+They are all connected, like links in a chain, which is why we also refer to this as a chain reaction. This type of argument helps explain that we believe something is a good or bad idea because of the effect it can have, and these provide the evidence in this type of argument. Generally, these arguments are based on facts or claims made by the writer, which may come from a claim made in the question itself or may be based on our own knowledge or experience.
+
+In planning, we should use an arrow to show the connection between ideas in this kind of argument. Here are some examples of phrases that are often used to present an argument like this:
+
+_This means that ...; This causes ...; This can lead to ...; As a result ...; in turn; if ... then ..._
+
+### Practice
+
+Read the extract and identify the claim being made and three effects this has.
+
+
+In many big cities, the population exceeds the number of flats and houses available, which means that many people do not have anywhere to live. This causes several problems. Firstly, it can put pressure on local charities, who then have to find food and shelter for the homeless.
+
+## Point to notice
+
+This argument relies on her ability to clearly explain a complex problem: a lack of houses leads to increased homelessness, which then increases problems for local charities. A plan or map of this argument looks like this:
+
+In many big cities the population exceeds the number of flats and house -> many people do not have anywhere to love -> puts pressure of local charities -> charities have to find food and shelter for the homeless.
+
+The complex chain of events forced her to produce complex grammatical structures. Complexity is not something we should aim to build into our writing through adding even more complex grammar points, creating overly long sentences, or using high-level vocabulary.
+
+:::{.callout-tip}
+If you try to boost your score by writing long, complex sentences, the complex issues you are explaining will be confusing to the reader, and your argument will be impossible to follow. Explaining complex ideas in a clear and simple way will raise your chances of achieving band 7, not lower it.
+:::
+![](Pasted%20image%2020250904173330.png)
+
+# Arguing by predicting a result or effect
+
+We may want to prove that an action is good or bad by making a claim about the effect or result it _will, would, may,_ or _could_ have. in this type or argument, we are offering this predicted result as a reason why we believe it should, or should not, be allowed to happen. We may be sure of the result or effect of this action because we have direct experience of it, or we may be expressing a future concern, or making a possible prediction.
+
+This type of argument uses the language of speculation, and such sentences often begin with 'If' or 'When'. The language tells us how likely it is that the action will occur, and how confident the writer feels about the result of the action. Thus, when it is used accurately and appropriately, the language we use helps to make our position clear and, if it is used inaccurately, it can make our position less clear.
+
+:::{.callout-tip}
+Many people try to use complex grammatical structures such as conditionals in their writing to boost their Grammatical range and accuracy score. However, this will only work if the structures are used accurately and appropriately - in other words, when they help to clearly explain your argument and your position.
+:::
+
+## Practice
+
+### Q 1
+In conditional sentences (using if or when), one clause is dependent on another clause happening first. We are essentially saying: If (or when) X happens / happened, Y will / would / may / might / could (etc.) happen / happens as a result.
+
+We can see these two clauses as the action and the result, or effect, of this action. 
+
+The different tenses used tell us how likely these actions and results (or effects) are. 
+
+Look at the following sentences (1-6) and identify the action and the result.
+
+1. If the government helps homeless people, this will solve all of their problems. (action: helps homeless people, result: all their problems are solved)
+2. When homeless people are given free accommodation, their health often improves as a result. (action: give free accommodation to homeless people, result: improve their health)
+3. If the government built more affordable housing, this could improve the situation for many people. 
+4. When homeless people have nowhere to shelter, winter is extremely difficult for them.
+5. Very few people would be upset if taxes were increased to help the homeless.
+6. If people are unemployed for a long time, they can eventually become homeless.
+
+### Q2
+Look at the tense used for each action in the sentences above and decide how likely it is to happen.
+
+
+|                                                                                                    | this happens in the real world | this is possible in the future | this is less likely to happen in the future |
+| -------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------ | ------------------------------------------- |
+| If the government helps homeless people, this will solve all of their problems.                    |                                | ok                             |                                             |
+| When homeless people are given free accommodation, their health often improves as a result.        | ok                             |                                |                                             |
+| If the government built more affordable housing, this could improve the situation for many people. |                                |                                | ok                                          |
+| When homeless people have nowhere to shelter, winter is extremely difficult for them.              | ok                             |                                |                                             |
+| Very few people would be upset if taxes were increased to help the homeless.                       |                                |                                | ok                                          |
+| If people are unemployed for a long time, they can eventually become homeless.                     | ok                             |                                |                                             |
+
+Notice that the writer is telling us how likely these actions are through the use of the different tenses:
+
+If + the simple present tells us this is possible in the future
+
+When + the simple present tells us this generally happens (If can also be used in other way:)
+
+If + simple past tells us the writer thinks this is less likely to happen.
+
+For sentences 1 and 6, we need to consider both clauses. In sentence 1, the use of 'will solve' tells us the writer is presenting a possible future action in the first clause ('if the government helps'). In sentence 6, the second clause ('can eventually become') tells us the writer is presenting a real situation and not an imagined one.
+
+### Q3
+
+Now look at the tense used for each result. How sure does the writer feel about each result?
+
+
+|                                                                              | 100% sure | 75% sure | 50% sure |
+| ---------------------------------------------------------------------------- | --------- | -------- | -------- |
+| ...this will solve all of their problems.                                    | ok        |          |          |
+| ... their health often improves as a result.                                 | ok        |          |          |
+| ... this could improve the situation for many people.                        |           |          | ok       |
+| ... winter is extremely difficult for them.                                  | ok        |          |          |
+| Very few people would be upset if taxes were increased to help the homeless. | ok        |          |          |
+| ... they can eventually become homeless.                                     | ok        |          | ok       |
+
+again, the tenses used tell us how confident or sure the writer feels about this result.
+In conditional sentences (where the result is dependent on a previous action):
+- the simple present, will, and would all tell us the writer is 100% sure that this will / would result
+- the modal verbs may, could, might tell us the writer is only 50% sure, or sees this as just one possible result
+- adverbs (e.g. probably) and phrases such as 'is likely to' can be used to show 75% certainty that a result would or will probably happen or is likely to happen.
+
+
+Being cautious
+
+If the government helps homeless people, this ... solve ... of their problems.
+
+..., this could/ may /might/ is likely to solve many/ some/ most of their problems.
+
+## Points to notice about conditional sentences
+
+- The likely __actions__ are i the simple present, and use if or when
+- The __less likely / unlikely actions__ use the simple past.
+- The less certain results use __may / could / possibly__ / etc.
+- The 100% sure results use __will, would__, or __the simple present__
+- Remember, these sentences require 2 clauses, and one clause (B) is 'conditional' upon the other (A).
+- We can say: 'If A happens then B will result'. This is a very firm prediction about the result.
+- We can also say: 'If A happened then B would result'. Although the first event is less likely to happen, we are still making a firm prediction about the result. We are saying that 'A' is less certain (it may not happen), but if it __DID__ happen, then B __would definitely__ result from this.
+
+The first sentence from this exercise makes a very strong prediction about the result of the government's action
+
+_If the government helps homeless people, this will solve all of their problems._
+
+It is highly unlikely that all of the problems that homeless people face will definitely be solved in this way. In formal writing, it is better to be more cautious about claims or predictions that we make. The language used to show this is known has 'hedging language', and it is important in making an argument and in making our position clear.
+
+
+![](Pasted%20image%2020250904181229.png)
+• To practise further, look through any of your previous essays and scan your writing for the following words and phrases: If, when, as a result, result in, causes, will, would, could, might. • Look carefully at the arguments you made using these words — is your position clear? Does the tense or verb accurately reflect how sure you feel about the result? (Think about your use of conditionals and modal verbs.) Make a note of any grammar points you need to study and make sure to practise these often. • If you have written any essays based on questions asking you to discuss the problems and solutions or the causes and effects of a problem, look at the body paragraphs in your essay and think about the following: • Can you Identify any claims you have made and the effects that you discussed? • How are the ideas in your argument connected? • How did you show this connection? • What improvements can you make?
