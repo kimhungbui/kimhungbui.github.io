@@ -1,0 +1,101 @@
+---
+title: Supporting evidence and giving examples
+lightbox: false
+description: examples
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-10
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# What is supporting evidence
+
+It is important to see the evidence we provide in our essay as the reason we believe something to be true. Supporting evidence helps the reader to understand our main argument and shows our thinking, but attempts to do this cause problems even at Band 7, where candidates may 'overgeneralize and/or supporting ideas may lack focus'. Only at band 8 are main ideas '_relevant, extended and supported_' and it is not until band 9 that they are '_fully extended and well-supported_.' Clearly, providing relevant, focused support for our argument is a high-level skill.
+
+The fact that supporting evidence is not mentioned at band 6 and below is often interpreted to mean that 'you must include examples to score band 7'. While this is true to a certain extent, the way in which this is done often continues to result in a score of band 6 or 6.5, which shows there is a problem with this advice. 
+
+# Common problems with examples
+
+## Problem 1: Template filling and invented examples
+
+In most of the band 6 essays, each paragraph contains a separate sentence with an example. There are often invented statistics that sound odd, and they rarely help to explain or support the main idea in the paragraph. Such examples are provided mechanically, often at the very end of the paragraph, as though the writer is thinking, '_now I need to write an example_', rather than, '_how can I prove this point?_'
+
+The following paragraphs was written by a native speaker. The essays was about helping older workers to get a job. Do you think the example (in bold) supports or explains the main idea?
+
+_To tackle this long-term problem, governments should provide a corporate tax incentive when they hire experienced people. That is to say that a lower income tax on the profits of companies would allow employers to hire the right people to perform the right job, without the need to lower HR fees. __For example, a similar initiative was launched by the United States government in San Francisco, California, which has resulted in Tesla's yearly corporate taxes to reduce by 35%.___
+
+There are some grammatical issues in this essay (native speakers often use patterns common in spoken language), but the main problems are with Coherence and cohesion and Task response: the main ideas are not adequately developed and remain confusing and unclear. How does lower income tax help companies to hire the right people? What is the relevance of lower HR fees? The example provided does not help the reader to understand any of these points, nor why the writer has concluded that 'governments should provide a corporate tax incentive when they hire experienced staff'.
+
+The second body paragraph also followed the same pattern: two sentences that are not logically connected followed by a very clearly invented example. The writer confirmed that he had been taught to use this same template approach in every essay. As a result, although the last sentence ___looks___ like an example, it does not perform the ___function___ of an example, because it doesn't support, or help to explain, any of the previous ideas.
+
+:::{.callout-note}
+Adding a sentence with an invented example will not provide supporting evidence for our ideas, or persuade the reader to believe them.
+:::
+
+## Problem 2: Examples that are not examples
+
+In many essays, the examples given are not examples at all - they are often simply a repetition of the previous idea:
+
+___On the other hand__, if good transportation is provided to the public they will travel by public transport. __For example__, if fast metro trains are provided to people who go to work and students who go to school or colleges in the morning. __In addition__, if there are buses on different routes that cover all the important destinations, such as downtown, hospitals, schools, factories area. __An example of this is__, in London, people prefer to travel by bus because buses are fast and they go to famous places of the city._
+
+This paragraph is another good examples of why a template approach will not work: there are cohesive device here (in bold) that have been used as a fixed framework for the paragraph, but they are not logically connected to the ideas in between. As a result, ideas are again presented as 'examples' but they do not perform this function: they do not help to explain or support the writer's points or claims:
+
+We map out these ideas to see the issue more clearly:
+
+
+| Claim                                                                                                                                  | Example given to show this claim reasonable                                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| if good transportation is provided to the public they will travel by public transport                                                  | if fast metro trains are provided to people who go to work and students who go to school or colleges in the morning |
+| if there are buses on different routes that cover all the important destinations, such as downtown, hospitals, schools, factories area | in London, people prefer to travel by buses because buses are fast and they go to famous places of the city         |
+
+As we can see, the examples given do not support the claims being made. This shows that simply writing '_For example, ..._' or '_An example of this is ..._' at the start of a sentence is not enough. The ideas that follows these patterns must provide evidence to support the previous idea, like this:
+
+:::{.callout-note}
+If good public transportation is provided people will use it. __For example, cities like London, Tokyo, and Singapore have excellent underground trains that are filled with people traveling to work, school or college every day. In addition,__ if there are buses on different routes that cover important destinations, __such as hospitals and factories, these would also no doubt be used in preference to private cars, reducing traffic as a result.__
+:::
+
+In this version, the connecting phrases are used because they are needed, and because they fit this argument. As a result, they work as effective signposts, helping the reader to follow the development of the argument, and showing how the ideas are connected.
+
+:::{.callout-tip}
+If you begin with a template of cohesive devices and then attempt to fill in the gaps between them, the result will be band 6 'mechanical' use of these linking words and phrases. Remember - your ideas and your argument must come first.
+:::
+
+
+## Problem 3: Using a trivial idea to support a serious or extreme conclusion.
+
+In lesson 2, she referred to an argument made in an essay discussing whether or not '_countries are becoming more and more similar because people are likely to buy the same products anywhere in the world_'.
+
+In the essay, the writer used the example of a famous Spanish fashion store called Zara:
+
+:::{.callout-note}
+Some people may say that this is definitely a positive trend because it helps them save time and money. This is because nowadays it is no longer necessary to buy a plane ticket and spend 5 hours to get to the US to buy a Zara handbag. In my experience, this mindset genuinely reflects human nature since many of us have a tendency to think about our own interests first.
+:::
+
+He went on to the argue that:
+
+:::{.callout-note}
+On the societal level, the results may be catastrophic if this is the case. Perhaps the worst-case scenario is that the global tourism industry may collapse. 
+:::
+
+The reasoning in this argument can be summarized as follows:
+
+:::{.callout-note}
+This is a positive trend because it saves us time and money (e.g. we no longer need to fly to the US to buy a Zara handbag) = human nature = people think of our own interests first => the global tourism industry may collapse.
+
+Mapping the ideas in this way shows the lack of logic in reaching this conclusion - the example does not support the conclusion that global tourism may collapse, and it is rather trivial in comparison.
+
+
+
+# Other ways of supporting our ideas
