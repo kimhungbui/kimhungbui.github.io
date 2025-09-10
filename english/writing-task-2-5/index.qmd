@@ -1,0 +1,98 @@
+---
+title: Explaining and Clarifying ideas
+lightbox: false
+description: Ideas
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-04
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Explaining an idea - when and how
+
+As part of our argument, we may need to give an explanation. We can do this to explain the meaning of a key term, explain the context for our ideas, or explain a complex idea in a simpler way. A question we are often asked is, 'How do I know when I need to explain an idea?'.
+
+We wrote about the topic of homelessness, and the issues surrounding this topic are generally the same in many parts of the world. However, with other topics, this is often not the case, which is why our ideas sometimes need to be explained further. For example, when writing about eating healthy, one person might make the following argument.
+
+_It is important to eat fruit every day, because it contains vitamins that help keep us healthy. Therefore, I completely agree with the idea that schools should encourage all children to eat fruit._
+
+However, someone with an intolerance to fruit, who gets a severe stomach ache and skin problems after eating it, may write:
+
+_Eating fruit makes people feel unwell, and it even affects their ability to work. Therefore, I completely disagree with the idea that schools should encourage all children to eat fruit._
+
+Anyone without the same intolerance is likely to be confused by the first statement in this argument. Again, language plays a key part: this is not a fact that is generally true for _everyone_, yet the use of the simple present suggests that it is. Using modal verbs (_may, can, etc_), as well as words and phrases like '_sometimes_', '_for some people_', helps to clarify ideas like this. For example:
+
+_Eating fruit can make some people feel unwell, and it can even affect their ability to work. Therefore, I completely disagree with the idea that schools should encourage all children to eat fruit._
+
+In this version, the writer has presented a fact that logically supports their argument, and helps the reader understand why they hold this position.
+
+Our test question will sometimes do this too:
+
+_There are now millions of cars on the road in most big cities. Pollution from cars is the most important problem that big cities face today._
+
+_To what extent do you agree or disagree?_
+
+The first sentence in this writing task presents a fact to support the argument being made in the second sentence - that this type of pollution is '_the most important_' problem that big cities face.
+
+## Fact and opinion
+
+A fact is something that can be objectively measured and verified, while an argument or opinion cannot. In the test question, we know that the first sentence is a fact because we can verify it by counting the number of cars on the roads. We cannot verify the second statement because it is an opinion; we can only discuss it, and decide whether it is a valid argument or not. This is what our essay must do, which helps to explain why there is no right or wrong answer in task 2.
+
+:::{.callout-tip}
+KEY IDEA: In writing task 2, you will be presented with an argument that you must discuss and respond to, there is no right or wrong answer. The question will sometimes include a fact that supports the argument being made. You do not need to discuss this fact, but you should not ignore it - it is there to make the context for your essay clear.
+:::
+
+
+# Perspective
+
+It is important to be aware when we are writing about things that are universally, or generally true, and when we are writing about things that are only true for us. This matters for bigger ideas too - our city will not necessarily look the same as my city, and it will not operate by the same rules, which are based on our culture and history. Thus, our ideas on city living, and life in general, will reflect our own background and experiences, and when we are writing, we need to help the reader see these issues from our viewpoint. Perspective matters.
+
+![](Pasted%20image%2020250904203437.png)
+
+To the person in these images, the tree and the house appear large or small, and easy to see or difficult to see, depending on where they are standing, and what is happening around them. This neatly illustrates the meaning of the terms viewpoint, point of view, and position. Thus, a rich person, who has always lived in a luxurious penthouse, will not have the same perspective on city life as a homeless person living in the same city. Similarly, someone with severe food allergies will not see the topic of food and diet in the same way as a person without these problems.
+
+If we live in a city where the justice system is unfair, this will inevitably affect our opinions about this topic, so we need to explain the context for our argument when discussing this issue. If we are writing about traffic problems, and we live in a very busy city like Ho Chi Minh city, we need to help the examiner to see the problem as we see it - from our perspective. We can do this by explaining the context for our dieas
+
+_Crime and punishment are extremely emotive issues in my country, where ..._
+
+_The traffic in my city is ..., so ..._
+
+## Language note
+
+In academic writing, or when writing about a serious issue, we often begin by defining key terms. This can help to explain the context for the ideas in our argument. For example, if we are writing about the topic of 'success', we could begin by defining what this word means to us, or in our culture, which may be different to the examiner's interpretation of the word.
+
+Sometimes, we rephrase an idea in order to make it clearer. For example:
+
+_Many cities have more people than houses. This means that many people do not have anywhere to live._
+
+In planning, we can use equals sign (=) to represent this:
+
+_Many cities have more people than houses = many people do not have anywhere to live._
+
+Rephrasing the issue in this way help us to show a different way of looking at it; it changed the focus and helped to highlight how this issue affects the people involved. Other phrases that can be used like this are:
+
+_This means, ... which means, ... In other words, ..._
+
+Whenever we use these phrases, what follows should be an explanation, or a different way to interpret what we have just said. However, the verb 'to mean' can also be used to show a consequence or result of something, like this:
+
+_Increasing house prices means fewer people can afford to buy a house._
+
+When planning, we would use an arrow to show the connection between these ideas:
+
+Increasing house prices -> fewer people can afford to buy a house.
+
+
+# Jumping to a conclusion
+
