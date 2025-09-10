@@ -93,6 +93,56 @@ When planning, we would use an arrow to show the connection between these ideas:
 
 Increasing house prices -> fewer people can afford to buy a house.
 
+### Exercises
+
+In the following extracts how are the phrases 'in other words' or 'this means' being used?
+
+
+|                                                                                                                                                                                                                                                                                           | to explain the meaning of something | to show a different way of looking at something | to show the result or consequence of something | we cannot say because it is being used inaccurately |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------- | ---------------------------------------------- | --------------------------------------------------- |
+| If you have a lot of money you can buy whatever you want, which means that food will never be a problem for you.                                                                                                                                                                          |                                     | ok                                              |                                                | ~~ok~~                                              |
+| In addition, sharing the cost of education and healthcare would also prevent people from taking it for granted. This means that having to pay for the service is equivalent to being more sincere.                                                                                        |                                     |                                                 | ~~ok~~                                         | ok                                                  |
+| Local businesses might suffer as they do not have the resources to beat off competition from multinational companies, and they might be eventually put out of work. This not only means a loss of jobs, but also a loss of traditional products, which is cause for even greater concern. |                                     |                                                 | ok                                             |                                                     |
+| The possibility of finding the same shops selling the same variety of items in almost every corner of the world can be alarming. In other words, every country has its own culture with its own particular foods, which allow us to identify it from every other country.                 |                                     | ~~ok~~                                          |                                                | ok                                                  |
+
+In sentence 1, the writer is showing a different way of looking at the issue of having a lot of money.
+
+In sentence 2, the problem may be one of vocabulary (the word 'sincere' is inaccurate here) but this is not an explanation of the previous sentence.
+
+In sentence 3, the writer is showing two results or consequences of what happens when local businesses close.
+
+In sentence 4, the second sentence is providing a reason for the previous sentence, so 'This is because' would be more accurate
 
 # Jumping to a conclusion
 
+When candidates don't allow enough time for critical thinking, they tend to jump to a conclusion that does not seem logical to the reader and so is rather confusing. The phrase 'jump to a conclusion' means reaching a quick decision when we don't have all of the evidence we need, or before considering the evidence. Here is an example:
+
+_John has arrived late for work every day this week. Clearly, he is not committed to his job._
+
+The first sentence is a verifiable fact - we can check the time that John arrived at work every day. However, the second sentence jumps to a conclusion about what this fact tells us about John's attitude towards work. There are several reasons why John may be arriving late, such as problems with transport, a problem or illness at home, he may even arranged with his manager to stay late to finish an important project and start the day later than normal. The fact in the first sentence requires further investigation before a valid conclusion can be reached about what it means. Similarly, in the writing test, if we do not stop to think, we will not gather the evidence needed to reach a valid, logical conclusion that we can then explain clearly. Even more importantly, if we jump to a conclusion about what the test question means, then we are likely to lose marks for Task response.
+
+Read the paragraph and try to guess what the topic of the writing task was.
+
+_First, let us consider the disadvantages of this trend towards driving more. If people drive more and more, our fossil fuels are likely to be depleted in the very near future. By 2050, it is estimated that human beings will have used up all of the natural resources if people keep using their vehicles more. Spending more time driving to work also means that people will have less time at work to do meaningful tasks. If it takes a person about 30 minutes to get to their destination, then they will lose approximately 15 hours a month. That invaluable amount of time could be better spend. In addition, the more time people spend driving, the more carbon emissions there will be in the atmosphere, which will further exacerbate our current environmental problems._
+
+This is the topic he was asked to discuss:
+
+_Many people are now spending a lot of time traveling to work or school. Some people believe that this is a negative development while others think there are some benefits._
+
+As we can see, driving is not mentioned in the question at all, but work is. This writer had spent a considerable amount of the paragraph explaining an issue that is not mentioned in the question (car driving and its impact on the environment), and then trying to connect this to the issue that _is_ mentioned (work).
+
+When PC asked why he had focused on cars and driving, he told that he lives in a very busy city, with major traffic problems, and where the vast majority of people drive to work or school every day. His perspective led him to interpret this question as, 'everyone is now driving even more when traveling to work.' In his city, the logical effects of this are that fossil fuels are being depleted, traffic is made worse, and work time is also being lost. Although we are being asked to use our own knowledge and experience to answer the question, the examiner needs help to be able to see the issue in the same way as we do.
+
+What changes could you make to help the examiner see this candidate's perspective more clearly? On our worksheet, try to rewrite the paragraph ourself so that the perspective is clear, and the argument is logically connected to the issue raised in the question.
+
+_First, let us consider the disadvantages of this trend. In my country, the vast majority of people drive to school or work. Therefore, if people are spending more time traveling, this means that they are also driving more and more. Because of this, our fossil fuels are likely to be depleted. In addition, the more people drive, the more carbon emissions there will be in the atmosphere, which will further exacerbate our current environmental problems. Spending more time driving to work and school also means that people will have less time to work on important tasks. If it takes a person about 30 minutes to get to their destination, then they will lose approximately 15 hours a month. That invaluable amount of time could be much better spend if people were abloe to shorten their journeys._
+
+## Points to notice
+
+- We can now understand the perspective and, as a result, the argument is clearer.
+- She used the phrases 'In my country' and 'this means' to show a different way of lokking at the issue raised in the question - one that reflects the perspective of the writer.
+- She has changed the order of some ideas so that they are organized more logically.
+- She cut this sentence: '_By 2050, it is estimated that human beings will have used up all of the natural resources if people keep using their vehicles more._' She did this because it is not necessary (the point about fossil fuels has already bene explained) and it is not directly connected to the original question. Going off on a tangent like this will reduce our Task response score.    
+
+  
+![](Pasted%20image%2020250910155553.png)
