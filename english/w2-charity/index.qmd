@@ -1,0 +1,43 @@
+---
+title: Writing task 2 - International / local charity
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-12
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Some people think that charity organizations should only offer help to people of their own country. But others believe that these organizations should give aid to people in great need wherever they live. Discuss both views and give your opinion.
+
+***
+
+Charitable organizations play an important role in supporting those in need, but there is debate about whether their assistance should be limited to people in their own country or extended across borders. While some argue that national responsibility must come first, others believe that aid should be based on human need rather than geography.
+
+
+
+There is debate about whether charity organizations should limit their assistance to people in their own country or provide help to those in need regardless of location. While both sides present convincing arguments, I believe charities should not restrict their efforts by national borders.
+
+
+
+There is ongoing debate about whether charity organizations should focus only on supporting people in their own country or whether they should extend their help to those in need abroad. While both perspectives have strong arguments, I believe the most effective approach is to provide assistance wherever it is most urgently required.
+
+One reason some people argue that charities should concentrate on their own citizens is the issue of limited resources. Most charities depend on donations, which are rarely enough to address every problem. By focusing on national issues such as poverty, homelessness, or healthcare, these organizations can ensure that urgent needs at home are met. Furthermore, donors may feel more motivated to contribute if they know their money directly benefits their local community, which strengthens long-term support for these charities.
+
+On the other hand, many believe that charity should not be restricted by geography. Natural disasters, famine, or war can create crises where entire populations are at risk, and local governments may lack the capacity to cope. In such circumstances, international charities are often the only organizations able to deliver essential aid like food, medicine, and shelter. Moreover, in today's interconnected world, problems in one country - such as pandemics or climate change - can easily affect others, making international assistance not only compassions but also practical.
+
+In my view, although it is reasonable for charities to prioritize local issues, they should not limit themselves entirely to national concerns. A balanced approach is most effective: dedicating part of their resources to domestic needs while also responding to international emergencies ensures that help reaches people in the greatest need, regardless of where they live.
+
+In conclusion, while there are clear benefits to focusing on domestic problems, there also compelling reasons for providing international aid. Therefore, I believe charities should aim to strike a balance between supporting their local communities and offering help to people overseas who are facing severe hardship.
