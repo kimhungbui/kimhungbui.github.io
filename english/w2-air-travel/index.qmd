@@ -1,0 +1,43 @@
+---
+title: Writing task 2 - International air travel
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-12
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+International air travel has a negative impact upon the environment and should therefore be restricted. Do you agree or disagree?
+
+***
+
+In recent years, some argue that international air travel should be curtailed due to its detrimental effect on the environment. However, I totally disagree with this idea, as restricting global flights would not only hinder economic growth but also undermine culture exchange.
+
+On the economic front, air transport plays a pivotal role in facilitating tourism and trade, which are indispensable drivers of prosperity. For example, nations such as Thailand or Spain rely heavily on international visitors, and limiting flights would deal a severe blow to their hospitality industries. Moreover, multinational companies depend on global mobility to conduct business, attend meetings, and negotiate contracts. Without air travel, the interconnected nature of the global economy would collapse, creating ripple effects on employment and living standards worldwide.
+
+Equally important is the cultural dimension. Air travel allows people from different continents to meet, share, and foster mutual understanding. This cross-cultural interaction broadens people's horizons and reduces prejudices, ultimately paving the way for a more harmonious world. If flights were restricted, such opportunities would vanish, leaving societies increasingly insular and intolerant. Although environmental concerns are legitimate, governments should prioritize sustainable aviation technologies such as biofuels and carbon offsetting instead of imposing blanket restrictions on flights.
+
+In conclusion, restricting international air travel would do more harm than good, as it would jeopardize both global economies and cultural connectivity.
+
+****
+
+It is argued that international air travel damages the environment and should therefore be reduced. Although air transport is a source of pollution, I completely disagree that restricting flights is the right solution. This is because global mobility is essential in today's world, and alternative measures can address the environmental challenges more effectively.
+
+Firstly, limiting international flights would create serious social and economic problems. Air travel allows people to study abroad, expand businesses, and maintain international relationships. Restricting this freedom would not only harm global trade and tourism but also prevent cultural exchange and educational opportunities. For instance, many students depend on international flights to pursue higher education in other countries, which would be impossible if travel were severely limited. Therefore, placing restrictions would have far-reaching negative consequences.
+
+Secondly, environmental issues caused by aviation can be addressed without banning or restricting flights. Governments and airlines are already investing in cleaner technology, such as more fuel-efficient engines and the development of sustainable aviation fuels. In addition, policies such as carbon offsetting and taxes on luxury or frequent travel can encourage responsible flying while still keeping it accessible. These strategies show that it is possible to reduce emissions without restricting international movement.
+
+In conclusion, although air travel contributes to environmental problems, restricting it would cause more harm than good. A better solution is to continue supporting technological improvements and policies that make aviation more sustainable, while still allowing people to enjoy the benefits of international mobility.
