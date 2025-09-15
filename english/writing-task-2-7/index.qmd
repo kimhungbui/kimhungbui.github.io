@@ -1,0 +1,104 @@
+---
+title: "Lesson 7: Strengthening Your Argument: Counterarguments"
+lightbox: false
+description: examples
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-15
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Presenting a counterargument
+
+## What is a counterargument?
+
+Imagine that we have a good job, and we may be promoted soon, but we have been offered a new job in a different country. Before reaching a decision, we would naturally think carefully about all sides of the issue. We would consider the benefits of staying in our current job, as well as the benefits of the new job. We would also consider the disadvantages of both ideas. If someone asked us, '_What did you decide to do?_' We might say:
+
+'_I'm going to take the job because it's a really good opportunity. I know you might think that I'll miss out on getting a promotion, but the pay is better, and I think I'll learn so much more if I go._'
+
+This speaker is showing that they reached a decision after considering all sides of the issue; they show this by:
+
+:::{.callout-note}
+Presenting an argument: <font color="#245bdb">I'm going to take the new job because it's a really good opportunity.</font>
+
+Acknowledging a counterargument: <font color="#d83931">I know you might think that I'll miss out on getting a promotion.</font>
+
+Refuting* the counterargument: <font color="#245bdb">But the pay is better and I think I'll learn so much more.</font>
+:::
+
+Acknowledging the counterargument in this way makes the argument stronger than simply saying: '_I've decided to take the job because it's a really good opportunity and I will learn a lot in the new job_.' Notice also that, even though they have referred to the counterargument, we still know what this person's position is - we still know what they have decided to do.
+
+:::{.callout-note}
+An argument is made stronger by not only presenting evidence to support our conclusions, but also by considering, and then refuting, the argument that is against, or 'counter', to it: the counterargument. Doing this shows that we considered all sides of the issues before reaching our conclusion.
+:::
+
+## How is this relevant to IELTS?
+
+The following examples help to see this analogy in terms of some typical writing task 2 questions:
+
+1) Some people think it is better to stay in the same job all your working life. To what extent do you agree or disagree? 
+2) Some people think it is better to stay in the same job all your life. Others think it is better to do different jobs throughout your career. Discuss both these views and give your own opinion. 
+3) Nowadays, people change jobs more often than in the past. Is this a positive or a negative development? 
+4) People are now more likely to have several different jobs throughout their career than in the past. Do the advantages of this outweigh the disadvantages?
+
+When responding to each on of these questions, we can present an argument for changing jobs, and discuss the counterargument - the argument for staying in the same job. With questions 2 to 4, we __must__ respond by considering both of these sides. Only question 1 is different
+
+## To what extent do you agree or disagree? Do you agree or disagree?
+
+Only with questions like this, and the General Training equivalent of '_Do you agree or disagree?_', do we have a choice in the way we respond. With these questions, we can:
+
+A. present an argument that looks at both sides, then reach a conclusion about it
+
+B. present an argument for only the side we agree with
+
+C. present an argument for only the side we agree with, while also mentioning, and refuting, the counterargument.
+
+![](Pasted%20image%2020250915205135.png)
+
+PC said that the approach A's advantages outweigh the disadvantages, and can be easier to achieve with less practice.
+
+## Why bad advice causes problems
+
+If you write, '_It is thought_', or '_It is felt_', then you are not telling the examiner that <u>you</u> think of feel. Similarly, as we will see, the advice to avoid using 'some' or 'some people' results in candidates presenting what should be a counterargument as though it is an argument they actually believe.
+
+By far the easiest way to present a clear counterargument is to say, '_Some people may think XYZ, but I think ABC_'.
+
+# The language of counterarguments: conceding and refuting
+
+## How should I use a counterargument?
+
+When answering, '_To what extent do you agree or disagree?_' questions, we are often asked how or when to include a counterargument. The examples below show, very briefly, some different ways we can do this. These arguments that might be made in answer to our previous question:
+
+_Some people think it is better to stay in the same job all your working life._
+
+_To what extent do you agree or disagree?_
+
+### Argument showing complete agreement
+
+If we completely agree, we might present an argument and counterargument like this:
+
+|                                                           |                                                                                                                                          |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| <font color="#245bdb">My position and argument</font><br> | <font color="#245bdb">I complete agree because staying in the same job is rewarding, and also increases your chance of promotion.</font> |
+| <font color="#d83931">The counterargument</font>          | <font color="#d83931">Some people might say it is boring to stay in the same job.</font>                                                 |
+| <font color="#245bdb">Conceding a point</font>            | <font color="#245bdb">It is true that there is less variety.</font>                                                                      |
+| <font color="#245bdb">Refuting this point</font>          | <font color="#245bdb">However, I believe changing jobs too often can be unsettling and we may actually learn less.</font>                |
+
+Or, we may choose to discuss the counterargument earlier in our essay:
+
+
+
+
+# Dealing with problems in counterargument
