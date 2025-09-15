@@ -2,6 +2,8 @@
   {
     "listing": "/english.html",
     "items": [
+      "/english/w2-food/index.html",
+      "/english/w2-drug-in-poor-countries/index.html",
       "/english/w2-air-travel/index.html",
       "/english/w2-charity/index.html",
       "/english/writing-task-2-6/index.html",
@@ -129,6 +131,8 @@
       "/math/statistics/references.html",
       "/math/convex-optimization/summary.html",
       "/math/statistics/summary.html",
+      "/english/w2-drug-in-poor-countries/index.html",
+      "/english/w2-food/index.html",
       "/english/w2-charity/index.html",
       "/english/w2-air-travel/index.html",
       "/english/writing-task-2-6/index.html",
