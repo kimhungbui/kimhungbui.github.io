@@ -99,3 +99,90 @@ Mapping the ideas in this way shows the lack of logic in reaching this conclusio
 
 
 # Other ways of supporting our ideas
+
+Our main ideas or points are often broad and general, while our supporting evidence is more specific. 
+
+:::{.callout-note}
+There are several reasons why the government collect taxes. Firstly, the money raised can be used to build new roads or public buildings. Secondly, existing infrastructure, such as schools and hospital, can be updated or repaired. Finally, these funds are needed to pay the salaries of all government workers, including firefighters and the police. Thus, taxes help improve the community while also making it safer.
+:::
+
+The following image shows that we can categorize the ideas in this paragraph as either 'general ideas' or 'supporting evidence':
+
+![](Pasted%20image%2020250915200859.png)
+
+
+We can transfer this idea to help in the reading test: for matching headings questions, we need to identify the broader, more general idea within a paragraph or section of the passage.
+
+### Practice
+Read through the paragraph and identify two 'general ideas' and three examples of 'specific evidence'.
+:::{.callout-note}
+In many big cities, the population exceeds the number of flats and houses available, which means that many people do not have anywhere to live. This causes several problems. Firstly, it can put pressure on local charities, who have to find food and shelter for the homeless. If the government does not step in to help people who are struggling financially, then this puts even more stress on community programs and causes homelessness to rise even further. In addition, a lack of accommodation means that house prices and rents remain very high. Thus, housing problems have an impact on everyone in the community. 
+
+:::
+
+general ideas: many people do not have anywhere to live -> cause several problems
+
+-> housing problems have an impact on everyone in the community
+
+specific evidence:
+
+put pressure on local charities
+
+local charities have to find food and shelter for the homeless
+
+lack of accommodation means that house prices and rents remain very high.
+
+## Points to notice
+
+In almost every case in these paragraphs, the ideas were supported without using a separate sentence beginning with 'For example, ...'
+
+The supporting evidence is relevant and focused, because of this, it supports the general ideas well.
+
+For variety, we can either begin with the supporting evidence and then draw a conclusion from this:
+
+
+_A: These funds are used to pay the salaries of all government workers, including firefighters and the police. <u>Thus</u>, taxes help improve the community while also making it safer._
+
+Or we can make the point and then show our evidence for this by giving an example:
+
+_B: Taxes help improve the community while also making it safer. <u>For example</u>, the funds are used to pay the salaries of government workers such as firefighters and the police._
+
+Although we do not need to begin with a sentence with '_For example_', sometimes, it is both helpful and necessary. Look at these two claims in the previous lesson, and the examples supporting them.
+
+:::{.callout-note}
+## Language note
+In academic writing, or when writing about a serious issue, we often begin by defining key terms. This can help to explain the context for the ideas in our argument. __For example__, if we are writing about the topic of 'success', we could begin by defining what this word means to us, or in our culture, which may be different to the examiner's interpretation of the word.
+
+Sometimes, we rephrase an idea in order to make it clearer. __For example__, in lesson 4, we wrote:
+
+Many cities have more people than houses. This means that many people do not have anywhere to live.
+:::
+
+She used these examples to show that her claims were true, but also to try to persuade us to take her claims seriously; putting each example into a separate sentence also helped to highlight it.
+
+:::{.callout-tip}
+Including an example to make an idea clearer or help to show that the argument and point we are making is a valid one. Finish our paragraphs with a general point rather than with an example.
+:::
+
+![](Pasted%20image%2020250915202615.png)
+
+Instead of making a point and then giving an example:
+
+_Point: Taxes help improve the community while also making it safer._
+
+_Example: For example, the funds are used to pay the salaries of government worker such as firefighters and the police._
+
+Begin with the example, and then draw a conclusion, or make a point about it, like this:
+
+_Example: These funds are used to pay the salaries of all government workers, including firefighters and the police._
+
+_Point: Thus, taxes help improve the community while also making it safer._
+
+Notice that, here, we present our example __without__ using the words '_For example_', and then begin the next sentence with '__Thus, ...__' or '__Therefore...__'
+
+Ask these questions to check whether our examples are acting as supporting evidence:
+
+- Is the example relevant to the main idea of the paragraph and to the essay question?
+- Does the point we are making follow on logically from our example?
+- If not, what logical conclusion _can_ we draw from our example? (i.e. What _does_ our example show?) If this is not relevant to our main idea then we should not use it.
+- Try to decide if our problem is with the main ideas and points we are making, the examples we have used to support them, or a combination of the two. 
