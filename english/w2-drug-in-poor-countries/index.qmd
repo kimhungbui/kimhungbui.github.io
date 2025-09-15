@@ -1,0 +1,127 @@
+---
+title: Writing Task 2 - Teaching cooking
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-14
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+You should spend about 40 minutes on this task.
+
+Write about the following topic:
+
+**Many people in poor countries die from diseases that are curable because they cannot afford the medication required.**
+
+**Do you believe that drug companies should make their products available at reduced prices in these countries?**
+
+Give reasons for your answer and include any relevant examples from your own knowledge and experience.
+
+Write at least 250 words.
+
+***
+curable
+can be made healthy again
+
+ethical
+connected to beliefs about what is right or wrong
+
+inequality
+unfair differences in society
+
+immunize
+to protect a person from a disease by giving them a vaccine
+
+pharmaceutical
+medicine
+
+profit
+to make money
+
+responsible
+having the duty of taking care of someone or something
+
+responsibility
+the duty of taking care of someone or something
+
+subsidize
+to give money to somebody to help them pay for something
+
+treat
+to give medical care to someone
+
+treatment
+medical care given to someone
+
+vaccine
+a substance you put in your blood to protect the body from disease
+
+
+Intro
+paraphrase the question:
+
+Many people in developing nations die from diseases that could be cured, mainly because medicines are too expensive. 
+
+thesis:
+
+While pharmaceutical companies need profit to fund research and development, I believe they should sell their products at reduced prices in poorer countries to reduce inequality and save lives.
+
+Body 1 - drug companies' side
+
+How do drug companies make money? -> by selling medicines at high prices.
+
+Why are medicines expensive? -> cost of research, clinical trials, and production.
+
+Is this good? Yes, because without profit, they cannot innovate or create new treatments/vaccines.
+
+Example: Development of vaccines (like for COVID-19) required huge investment and profit incentives.
+
+Body 2 - Poor countries' situation
+
+Can everyone in poor countries afford medicine? No, many live below poverty line.
+
+Why unfair? -> creates inequality; curable disease continue to kill people
+
+Who else can help? Governments, NGOs, international organizations (e.g. WHO) can subsidize or negotiate reduced prices.
+
+Example: Some vaccine programs (e.g. polio immunization) were subsidized globally, saving millions of lives.
+
+Conclusion
+Summarize: Drug companies must balance profit with responsibility.
+
+Opinion: They should make medicines affordable in poor countries, possibly through reduced prices or subsidies, because human life is more valuable than profit.
+
+
+Many people in developing nations die from diseases that could be cured, mainly because medicines are too expensive. While pharmaceutical companies need profit to fund research and development, I believe they should sell their products at reduced prices in poorer countries to reduce inequality and save lives.
+
+On the one hand, drug companies argue that their products are expensive because it need enormous resources to make. They must invest large amount of money on development process, such as research, clinical trials, vaccines, which can need several millions dollar and decades to success. Without profit, they would not be able to innovate or develop new treatments, enhance drugs. For example, the development of vaccines during the COVID-19 pandemic cost billions of dollars, and only strong profits made this possible. Therefore, it is understandable that pharmaceutical companies charge high prices in order to recover their investment and continue developing new treatments.
+
+On the other hand, people in poor countries often live below the poverty line, so some drugs have normal price in developed countries but cost a fortune of people in developing countries. This situation creates inequality because curable disease still kill people or destroy their family financial, making their future more hardly. In my opinion, drug companies can should reduce prices or allow governments and charities to subsidize treatments. A good example is the global campaign to immunize children against polio, where vaccines were provided a little or no cost, saving millions of lives. This shows that cooperation and reduced pricing can treat diseases effectively in poorer regions.
+
+In conclusion, although drug companies must make a profit in order to fund research and the development of new medicines, I believe they also have an ethical duty to make essential treatments affordable in poorer countries. By reducing prices or cooperating with international organisations, they can continue to benefit financially while helping to reduce global inequality and save lives.
+
+
+****
+
+Many individuals in developing countries suffer from preventable diseases due to the prohibitive cost of medication. I strongly believe that pharmaceutical companies should offer their products at reduced prices in these regions, as this approach promotes social equity, public health, and long-term business sustainability.  
+  
+Lowering drug prices in low-income countries would have a profound impact on public health by making essential medicines more accessible. For instance, affordable malaria treatment could drastically reduce mortality rates in sub-Saharan Africa, where the disease is widespread. Additionally, improved health outcomes contribute to economic growth, as a healthier workforce enhances productivity and reduces the financial burden on national healthcare systems.  
+  
+Critics argue that lowering drug prices may undermine pharmaceutical companies' ability to fund research and innovation. However, this concern can be addressed through tiered pricing models, where wealthier nations pay higher prices to compensate for lower costs in poorer regions. Moreover, international organizations and governments can provide subsidies or tax incentives to pharmaceutical firms, ensuring profitability without compromising humanitarian efforts.  
+  
+Beyond the ethical considerations already discussed, affordable medication fosters goodwill and enhances corporate reputation. Companies that engage in socially responsible pricing are likely to gain consumer trust and brand loyalty, which may lead to greater long-term profitability. Furthermore, preventing disease outbreaks in developing nations reduces the risk of global health crises, benefiting the entire world.  
+  
+In conclusion, making essential medicines more affordable in developing countries is both a moral obligation and a strategic decision that benefits public health, economic stability, and the pharmaceutical industry itself.

@@ -1,0 +1,36 @@
+---
+title: Writing Task 2 - Teaching cooking
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-14
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+_Some people think that students should study the science of food and how to prepare it. Others believe students should spend time on more important subjects. Discuss both views and give your own opinion._
+
+
+
+***
+
+Some people argue that schools should teach children about food science and cooking, while others believe the curriculum should concentrate only on academic subjects. This essay will examine both perspective before explaining why I believe that teaching food science and cooking is the more beneficial approach.
+
+On the one hand, those who prioritize academic subjects argue that focus on food science or cooking in school is a waste of valuable study time. This is because they suggest that students should devote their time to core academic subjects, such as mathematics and science, which are regarded as more important for future success. For instance, entry to prestigious universities usually depends on high grades in these subjects, rather than in cooking or food science. For this reason, they see little value including cooking or food science in the school curriculum.
+
+On the other hand, it is also believed that learning cooking and food science is essential for young people to become independent adults. In particular, understanding nutrition and learning to cook simple meals can help young people lead healthier lives. For example, students who know how to cook are less likely to rely on fast food when they live away from home. Furthermore, these skills allow them  to enjoy a wider variety of meals and to manage their finances more effectively. In fact, students who cook their own meals often spend far less money than those who rely on restaurants or fast food. As a result, these skills prepare young people to live both more healthy and more economically when they become independent.
+
+In conclusion, while some people think schools should focus only on academic subjects, others believe that cooking and food science are equally important. I agree with the latter view, as these skills not only promote healthier lifestyles but also help young people manage their finances and prepare for independent living.
+
