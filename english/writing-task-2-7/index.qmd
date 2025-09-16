@@ -99,6 +99,37 @@ If we completely agree, we might present an argument and counterargument like th
 Or, we may choose to discuss the counterargument earlier in our essay:
 
 
+|                                                       |                                                                                                                                                                |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <font color="#ff0000">The counterargument             | <font color="#ff0000">Some people might say it is boring to stay in the same job.</font>                                                                       |
+| <font color="#245bdb">Conceding a point               | <font color="#245bdb">It is true that there is less variety</font>                                                                                             |
+| <font color="#245bdb">Refuting this point</font>      | <font color="#245bdb">However, I believe changing jobs too often can be unsettling and you may actually learn less</font>                                      |
+| <font color="#245bdb">My position and argument</font> | <font color="#245bdb">Therefore, I completely agree, because staying in the same job is not only rewarding but also increases your chance of promotion.</font> |
+
+### Argument showing complete disagreement
+
+If you completely disagree, you might present an argument and counterargument like this
+
+|                                                  |                                                                                                                                                   |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <font color="#ff0000">My position and argument   | <font color="#ff0000">I completely disagree, because staying in the same job means you become bored and lose motivation.</font>                   |
+| <font color="#ff0000">The counterargument</font> | <font color="#d83931">Some people might say you have a better chance of promotion by staying in the same job.                             </font> |
+| <font color="#245bdb">Conceding a point</font>   | <font color="#245bdb">That may be true for some people</font>                                                                                     |
+| <font color="#245bdb">Refuting this point</font> | <font color="#245bdb">However, this is not true for everyone, many people have to apply for higher positions in a different company.</font>       |
+
+Or this:
+
+
+|                                                  |                                                                                                                      |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| <font color="#ff0000">The counterargument</font> | <font color="#ff0000">Some people might say you have a better chance of promotion by staying in the same job.</font> |
+| Conceding a point                                | That may be true for some people                                                                                     |
+| Refuting this point                              | However, this is not true for everyone, many people have to apply for higher positions in a different company        |
+| My position and argument                         | Therefore, I completely disagree because staying in the same job means you become bored and lose motivation          |
+
+
+
+## The language of counterarguments
 
 
 # Dealing with problems in counterargument

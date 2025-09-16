@@ -1,0 +1,94 @@
+---
+title: "Lesson 8: PARAGRAPH WRITING"
+lightbox: false
+description: Progression and development
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-16
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Progression and development within an argument
+
+As we have seen, individual arguments are logically connected through meaning, the effective use of linking words and phrases, and referencing (using a synonym or pronoun). In an earlier example we looked at, one candidate wrote, '_On the societal level, <u>the results</u> may be catastrophic if this is the case_'. This argument can only show clear progression if the reader can easily understand what the terms '_if this is the case_', and '_the results_' refer to. If these ideas remain unclear, then the whole argument will also be unclear. Thus, problems with progression are often connected to problems with cohesive devices, and to referencing in particular. These issues need to be controlled __throughout your essay__ to achieve band 7 or above.
+
+![](Pasted%20image%2020250916181359.png)
+# Addressing Coherence and cohesion problems
+
+- Use cohesive devices effectively but cohesion between sentences is faulty
+- does not always use referencing clearly
+
+This paragraph shows mixed success in using cohesive devices. Here are some examples where these are managed well
+
+:::{.callout-note}
+- Children spend the largest part of <font color="#245bdb">their day</font>
+- <font color="#245bdb">at school, where</font> the teachers can
+- knowledge that is <font color="#245bdb">not only</font> important for their career, <font color="#245bdb">but that can also</font>
+- in many different ways,<font color="#245bdb"> for instance through</font>
+- <font color="#245bdb">Additionally</font>, children become
+- <font color="#245bdb">at school, where</font> often <font color="#245bdb">they</font>
+- dress up like great leaders. <font color="#245bdb">While doing this, they</font>
+- <font color="#245bdb">Therefore</font>, the role of
+:::
+
+Each of these examples is a clear signpost showing how two ideas are connected - this is what cohesion means. However, the use of referencing sometimes causes confusion, making it difficult to follow the ideas
+
+
+![](Pasted%20image%2020250916180552.png)
+
+![](Pasted%20image%2020250916180559.png)
+
+Even though we have fixed the referencing problems, the second sentence in the final exercises shows a further common coherence problem at band 6.5: it contains too many different ideas and so it is difficult to follow
+
+:::{.callout-note}
+While doing this, the students become curious and want to know more about these people, which can encourage the children to emulate their qualities, which consequently become integrated into their own personality.
+:::
+
+This often happens when candidates write overly long, complex sentences.
+
+Rewrite this extract to make it clearer. Try to do the following:
+
+- split it into 2 or 3 separate sentences
+- add a cohesive device to make the links clearer (e.g. a linking phrase and / or a reference)
+- add modal verbs (can, might, may) to make the statements more cautious and less certain (hedging language)
+
+While doing this, the students become curious and want to know more about these people. That thinking can encourage the children to emulate their qualities, which consequently become integrated into their own personality.
+
+Weaknesses:
+Curiosity is not exactly 'thinking'. A smoother option would be "_This curiosity_" or "_Such interest_"
+
+While doing this, the students become curious and want to know more about these people. This curiosity can encourage the students to emulate those qualities, which then become integrated into their own personality.
+
+
+
+->
+
+While doing this, the students <span style="background:#fff88f">may</span> become curious and want to know more about these people, which <span style="background:#fff88f">could</span> encourage the children to emulate their qualities. These positive traits <span style="background:#fff88f">may even</span> become integrated into their personality.
+
+OR
+
+While doing this, they <span style="background:#fff88f">may</span> become curious and want to know more about these leaders, which <span style="background:#fff88f">could</span> encourage the children to emulate their qualities. These positive traits <span style="background:#fff88f">may even</span> become integrated into their personality.
+
+
+:::{.callout-tip}
+The examiner must be able to follow your reasoning to give you a score of band 7 or above, the more difficult this is to do, the lower your score. The language you use (referencing, modal verbs, the length of your sentences) can have an impact on the examiner's ability to follow your argument and understand your conclusions.
+:::
+
+## Reading aloud
+
+
+## A lack of clear central topic
+
+# Addressing Task response problems
