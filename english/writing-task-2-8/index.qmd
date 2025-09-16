@@ -88,7 +88,29 @@ The examiner must be able to follow your reasoning to give you a score of band 7
 
 ## Reading aloud
 
+Reading our writing out loud in can helps you to notice repetition more easily. Although we cannot do this in a test situation, practicing like this before our test should help us silently read over our work in a more focused way. We can make inner voice seem 'louder' when we want to do this type of final checking. 
 
 ## A lack of clear central topic
 
+We have a method for writing a paragraph known as PEEL. The P refer to making a Point, which is then Explained, Expanded, then clearly Links back to the question. The Point and Link also act as a frame for the main idea within the paragraph, and these are a good way to ensure that we 'present a clear central topic' (Band 7) - provided, that these sentences accurately reflect the idea within the paragraph. Look at the first and last sentences in our updated paragraph. Do you think that these help to 'present a clear central topic?'
+
+:::{.callout-note}
+Children spend the largest part of their day at school, where the teachers can cultivate their minds and fill them with knowledge that is not only important for their career, but that can also help them grow into wise adults. They can mentor the students in many different ways, for instance through books or group activities, where they can learn to tell right from wrong. In addition, children become engaged in various extra-curricular activities at school, where they are often asked to dress up like great leaders. While doing so, the students may become curious and want to know more about these people, which could encourage the children to emulate their qualities. These positive traits may even become integrated into their own personality. Therefore, the role of schools in instilling good behavior is much more crucial than that of the parent.
+:::
+
+### The first sentence
+
+The first sentence tells us that the central topic in this paragraph will be: '_school and teachers cultivating the minds of children to fill them with knowledge that is important for their career and helping them grow into wise adults._' This is too long and complex to be a helpful signpost for the reader, but it also isn't accurate - the children's careers are never mentioned again. This sentence would work better as a second sentence, which shows a common problem - the first sentence of the paragraph is missing. The writer's overall argument in this paragraph seems to be that '_schools have a lot of influence on children's behavior_', so this idea would produce a much more appropriate first sentence.
+
+### The final sentence
+
+In the final sentence, the writer makes a good attempt at linking this paragraph to the question. However, it claims that the paragraph shows that '_the role of schools in instilling good behavior is much more crucial than that of the parent_'. This conclusion is not supported by the evidence given here and so remains unclear - the role of parents is not mentioned at all. A more appropriate sentence would be: _Therefore, the role of schools in instilling good behavior is a significant one._ Revising the first and last sentence so that they accurately reflect the ideas in the paragraph will significantly improve the Coherence and cohesion score here.
+
 # Addressing Task response problems
+
+- Presents a relevant position although conclusions become unclear
+- Presents relevant main ideas but some are inadequately developed / unclear
+
+
+The argument being made in this paragraph is that '_schools have a lot of influence on children's behavior_'. This is the main idea or conclusion that needs to be made clear. The ideas within the paragraph need to explain and support this point if we want to present an adequately developed response. Remember, these explanations must help the reader to understand _why_ the writer believes this, and show that it is a valid argument or conclusion.
+
