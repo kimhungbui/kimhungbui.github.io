@@ -1,0 +1,27 @@
+---
+title: Language shape our thinking
+lightbox: false
+description: Language
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-09-21
+categories:
+  - health
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+In her talk _How language shapes the way we think_, Lera Boroditsky argues that the language we speak profoundly influences our perception of reality. Drawing on cross-cultural research, she shows that linguistic differences affect spatial orientation, concepts of time, numerical ability, color discrimination, and even memory and judgments of blame. For instance, Aboriginal speakers who use cardinal directions rather than "left" and "right" remain consistently oriented, while Russian speakers distinguish shades of blue more quickly due to have separate words for them. Similarly, grammatical gender can alter how objects are described, and verb structures can shape how responsibility is attributed in accidents. She concludes that linguistic diversity highlights the flexibility of the human mind but warns that many languages are disappearing, limiting our understanding of cognition.
+
+https://www.youtube.com/watch?v=RKK7wGAYP6k

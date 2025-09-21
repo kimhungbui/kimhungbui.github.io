@@ -1,0 +1,38 @@
+---
+title: Cardio or Strength
+lightbox: false
+description: Cardio or Strength for Longevity
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-08-27
+categories:
+  - health
+  - muscle
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+Investments in health can education are widely regarded as central to a nation's economic progress. Evidence presented by Our World in Data highlights robust connections showing that improvements in population well-being and knowledge create the necessary conditions for sustained growth and prosperity. These influences operate both directly, by raising productivity, and indirectly, by triggering important demographic and social shifts.
+
+With regard to health, national economic strength is closely tied to population health, and greater investment in healthcare proves highly effective, especially in poorer regions. A clear correlation has been observed between higher healthcare spending and improvements in life expectancy are achieved in nations with very low initial spending, reflecting a pattern of diminishing returns as expenditure increases. In addition, health improvements reduce vulnerability to crises, since better nutrition and sanitation have historically helped populations withstand famines and escape extreme poverty.
+
+However, financial barriers remain a serious challenge. Donor funding for health often falls as countries transition from low- to middle-income status, despite the fact that investments remain highly effective at this stage. Moreover, in many low-income nations, families continue to bear over half of all health costs out-of-pocket, creating significant obstacles for poorest households in accessing care.
+
+Education is similarly presented as not merely a consequence of development but as a prerequisite for it. Historical data indicate that improvements in literacy preceded industrialization, suggesting that economic transformation required an increasingly educated public able to innovate and adopt new technologies. The rise in global literacy is striking: whereas only one in ten could read and write in 1820, today only one in ten remains illiterate. This expansion has reduced educational inequality worldwide and underpinned board-based economic growth.
+
+A further critical role of education lies in its impact on demographic change. Greater female education, in particular, has driven fertility decline by raising the opportunity costs of childrearing. For example, in Iran, women's average schooling increased from a third of a year in 1950 to nine years by 2020, during which time fertility rates fell dramatically from seven to fewer than two children per woman. This shift has reinforced economic development by encouraging investment in the quality rather than the quantity of children.
+
+Nonetheless, higher expenditure alone does not fully explain learning outcomes across countries. Evidence suggests that the quality of inputs is crucial, with teacher qualifications and experience exerting more influence than smaller class sizes. Moreover, health-related interventions such as deworming have proven exceptionally cost-effective in boosting school attendance, showing that education policy must be integrated with public health measures.
+
+In conclusion, health and education investments from a virtuous cycle that underpins economic resilience and long-term growth. By improving well-being, reducing mortality, expanding literacy, and enabling demographic transition, they provide both the foundation and momentum for sustained national progress.
