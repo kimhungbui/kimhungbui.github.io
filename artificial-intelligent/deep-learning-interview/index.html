@@ -462,7 +462,7 @@ f(x) = \frac{L}{1 + e^{-k(x - x_0)}} \tag{1}
 <h2 data-number="2.1" class="anchored" data-anchor-id="problem-1-increase-observation"><span class="header-section-number">2.1</span> Problem 1: Increase observation</h2>
 <p><em>True or False:</em> For a fixed number of observations in a data set, introducing more variables normally generates a model that has a better fit to the data. What may be the drawback of such a model fitting strategy?</p>
 <p>Example:</p>
-<div id="6fd7654b" class="cell" data-execution_count="1">
+<div id="c9b8c744" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -980,7 +980,7 @@ p = \frac{1}{1 + e^{-z}}
 </tr>
 </tbody>
 </table>
-<div id="9f3860a9" class="cell" data-execution_count="2">
+<div id="e7736bfc" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1081,7 +1081,7 @@ L = \prod_{i=1}^{n} p(y_i \mid x_i)
 <section id="python-code-illustration" class="level3" data-number="2.7.2">
 <h3 data-number="2.7.2" class="anchored" data-anchor-id="python-code-illustration"><span class="header-section-number">2.7.2</span> Python Code Illustration</h3>
 <p>Below is an example comparing NLL for different predicted probabilities of the correct class:</p>
-<div id="363f2901" class="cell" data-execution_count="3">
+<div id="3e774067" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1129,7 +1129,7 @@ L = \prod_{i=1}^{n} p(y_i \mid x_i)
 </section>
 <section id="code" class="level4">
 <h4 class="anchored" data-anchor-id="code">Code:</h4>
-<div id="5785bd24" class="cell" data-execution_count="4">
+<div id="f25137df" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>predicted_probs <span class="op">=</span> [<span class="fl">0.9</span>, <span class="fl">0.7</span>, <span class="fl">0.5</span>, <span class="fl">0.3</span>, <span class="fl">0.1</span>]  <span class="co"># Predicted probability for the correct class</span></span>
@@ -1139,7 +1139,7 @@ L = \prod_{i=1}^{n} p(y_i \mid x_i)
 <pre><code>[0.9, 0.7, 0.5, 0.3, 0.1]</code></pre>
 </div>
 </div>
-<div id="159c0b97" class="cell" data-execution_count="5">
+<div id="5bc258aa" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1158,7 +1158,7 @@ L = \prod_{i=1}^{n} p(y_i \mid x_i)
 0.1 → 2.3026</code></pre>
 </div>
 </div>
-<div id="e4c087a5" class="cell" data-execution_count="6">
+<div id="a0e0e9fb" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -1339,7 +1339,7 @@ p = 0.1
 </tbody>
 </table>
 <p><strong>Log-odds give models a mathematically stable and interpretable way to reason about binary outcomes</strong> — especially for logistic regression.</p>
-<div id="903c8b2a" class="cell" data-execution_count="7">
+<div id="92010beb" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1469,7 +1469,7 @@ p = 0.1
 <section id="problem-10" class="level2" data-number="2.10">
 <h2 data-number="2.10" class="anchored" data-anchor-id="problem-10"><span class="header-section-number">2.10</span> Problem 10:</h2>
 <p>Draw a graph of odds to probabilities, mapping the entire range of probabilities to their respective odds.</p>
-<div id="83f406cb" class="cell" data-execution_count="8">
+<div id="c3a487c6" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1669,7 +1669,7 @@ p = \frac{1}{1 + e^{-\eta}}
 </tbody>
 </table>
 <p>This setup applies logistic regression to real-world audio-based classification.</p>
-<div id="cd1088d5" class="cell" data-execution_count="9">
+<div id="335a4583" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
