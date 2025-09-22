@@ -1,0 +1,80 @@
+---
+title: "Lesson 9: ESSAY STRUCTURE: Introduction, Body paragraph, Conclusion"
+lightbox: false
+description: Structure
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-09-22
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+# The introduction
+
+## The introduction
+
+There are no fixed governing what an introduction should look like or how many sentences it should contain. There are some key features to point out
+
+### Key features of an introduction
+
+Our introduction briefly tells the reader what they need to know before reading our argument. It should answer several questions:
+
+_What is the topic and focus of this essay? (i.e. the context for this essay)_
+
+_What is the main issue or point that will be discussed in your essay?_
+
+Although this is only a short paragraph, there are varying approaches to how to write it, which appear to cause quite a lot of confusion. Because of this, there are some recurring problems. The first three have one common thread: getting started.
+
+### Problem 1 - Misrepresenting the question
+
+Many people are so keen to get started in their writing that they quickly skim read the test question. This can mean that they jump to a conclusion about what it means, or misinterpret it, and then misrepresent it in their introduction. The idea in their body paragraphs then move further and further away from the issue raised in the question, compounding the problem. Some candidates identify only the broad general topic within the question and write about this instead of the very specific issue they were asked to discuss.
+
+### Problem 2 - Making a general statement
+
+Some people tell, '_I like to begin with a general statement_'. The danger here is that these are so general that they do not seem relevant to the issue raised in the question. Others begin their essays in a very rehearsed way that is often not accurate. For example, '_This is an often debated topic_'. Or '_This is a controversial topic_', when in fact the issue in the question is not a common topic of conversation, or is rather mundane.
+
+### Problem 3 - Trying to use a 'hook'
+
+Some people begin an introduction with a 'hook', such as an interesting fact or statistic. Hooks are used by professional writers to grab the attention of the reader. Our examiner does not need to be persuaded to read our answer, and they do not need to be entertained by our writing. Even more importantly, a hook can seem out of place in a formal discursive essay, and they often seem irrelevant to the question.
+
+### Solution 1: Read the test question carefully
+
+Although it is the first paragraph in our essay, our introduction should not be the starting point of our writing; we need to think carefully about the question, then think through and plan our whole argument first. We will never be asked to simply discuss a very broad topic such as 'pollution' or 'technology', so keep reading until we have fully understood exactly issue we are being asked to write about.
+
+Pay particular attention to the words and phrases in the question that indicate the claim or argument that is being made, because this is what we must respond to in our answer to achieve a good Task response score. Typical words and phrases to look for are:
+
+_should, should always; should not; would be better; the only way; the best way, etc_
+
+If there are any words in the question we do not know, read the whole question again more slowly. Skilled test writers try to help us understand words or ideas, either by giving an example, or using paraphrase, so take the time to look for these clues. Look at the following example:
+
+:::{.callout-note}
+Some people believe that parents should be responsible for teaching children right from wrong. Others think that schools should also teach children to behave well.
+
+Discuss both these views and give your own opinion.
+:::
+
+Some candidates might not know the phrase '_to teach right from wrong_', so the second sentence paraphrases this idea with '_teaching children to behave well_', helping to explain it. This is done deliberately at the test writing stage, so make sure we use all of the help that is there in the question.
+
+:::{.callout-tip}
+Don't quickly skim read the question so that you can start writing as soon as possible. Take the time to read it carefully; identify the issue you must discuss and the argument you must respond to. Look for clues within the question to help you understand the meaning of key ideas.
+:::
+
+### Solution 2: Begin with a general statement
+
+
+# The body paragraph
+
+
+# The conclusion
