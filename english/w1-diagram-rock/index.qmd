@@ -1,0 +1,35 @@
+---
+title: Cutting Tools
+lightbox: false
+description: Practic
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-22
+categories:
+  - english
+  - writing
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+The diagram below shows the development of cutting tools in the Stone Age
+![](Pasted%20image%2020250922093627.png)
+
+
+The diagram illustrates the evolution of the cutting tool during the period from 1.4 million years ago to 0.8 million years ago in the Stone Age.
+
+It can be seen that a number of upgrades were made in the shape and size of the tool so that it could become a more effective cutting instrument.
+
+1.4 million years ago, the tool was relatively primitive and resembled a natural stone, which suggests that little crafting was done. From the front and side view, Tool A had an oval shape, rough surface and blunt edges, hence presumably the inferior version compared to Tool B.
+
+After 0.6 million years, the tool was upgraded into a spear-shaped instrument with the tip and edges being much sharper. While tool B was 10 centimeters long - the same length as Tool A, the surface of Tool B was crafted to be smoother and the overall width to be larger. Therefore, these features rendered this version more superior in terms of cutting effeciency.
