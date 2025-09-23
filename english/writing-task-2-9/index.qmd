@@ -73,6 +73,21 @@ Don't quickly skim read the question so that you can start writing as soon as po
 
 ### Solution 2: Begin with a general statement
 
+Our first sentence should introduce the broad topic and thus set the context for our essay. Although this is quite a general statement, it should still be relevant to the question and to our argument.
+
+Accurately identifying the general topic in the question is an important first step. 
+
+
+### Problem 4 - 'Translating' the words in the question
+
+Having set the overall context in our first sentence, the next sentence will introduce the reader to the issue that is going to be discussed. Many people already know that you should avoid copying directly from the question, but then go too far by substituting each word with a synonym. 
+
+### Solution
+
+Although it is true that we should not copy large parts of the question, this does not mean you have to avoid __all__ of the words, which may have been used because they are the most appropriate or the most natural. For example, '_Some people_' is the most natural way to talk about an anonymous group; we don't use '_Numerous individuals_' or '_humans_', in the same way. Similarly, '_teachers_' is a better word to use than '_educational scholars_' and '_children_' is more natural than '_youths_'.
+
+Rather than translating the words in the question, aim to _interpret_ the overall meaning as precisely as we can. It can sometimes help to change the statement we are given into a question. This has the additional advantage of making our task clearer. For example
+
 
 # The body paragraph
 
