@@ -279,3 +279,10 @@ In contrast, home ownership followed the opposite trend. In 1918, over 20% of fa
 ![](Pasted%20image%2020250826220450.png)
 
 # Model answer and Language review
+
+The graph compares the percentage of households in England and Wales living either a rental property or their own home in 1918, 1939, and 1963, and at ten-year intervals between 1961 and 2011. Overall, the two sectors followed opposite trends, with renting generally declining as home ownership increased. However, towards the end of the period, there is evidence of this trend reversing and home ownership did not reach renting's highest level.
+
+Renting was at its peak in 1918, accounting for just under 80% of all households. Despite falling almost continually from this point, it remained the dominant category until 1971, when it reached parity with homeownership. Apart from 1939 and 1953, the figures dropped in almost every decade until 1991, when the decline slowed and renting increased slightly in 2011. Nevertheless, in the final 40 years, significant fewer people (40% or lower) were living in rented accommodation.
+
+This contrasts starkly with the data for home ownership, which climbed steadily throughout, again with the exception of 1939 and 1953. Notably, the increases in owning a home corresponding with the falls in renting, and from 1981 onwards, it was increasingly more common than renting. However, the figure peaked at below 70% in 2001, almost 10% less than the rental peak, and by 2011 had fallen to approximately 65%.
+
