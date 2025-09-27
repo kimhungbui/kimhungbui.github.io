@@ -86,10 +86,170 @@ Having set the overall context in our first sentence, the next sentence will int
 
 Although it is true that we should not copy large parts of the question, this does not mean you have to avoid __all__ of the words, which may have been used because they are the most appropriate or the most natural. For example, '_Some people_' is the most natural way to talk about an anonymous group; we don't use '_Numerous individuals_' or '_humans_', in the same way. Similarly, '_teachers_' is a better word to use than '_educational scholars_' and '_children_' is more natural than '_youths_'.
 
-Rather than translating the words in the question, aim to _interpret_ the overall meaning as precisely as we can. It can sometimes help to change the statement we are given into a question. This has the additional advantage of making our task clearer. For example
+Rather than translating the words in the question, aim to _interpret_ the overall meaning as precisely as we can. It can sometimes help to change the statement we are given into a question. This has the additional advantage of making our task clearer. 
 
+## Identifying common themes
+
+
+
+### Exercise 
+
+Complete the following introduction to our essay question using these words and phrases
+
+at school, grow up, discipline, teach
+
+Discipline is an important part of growing up. Some people believe that children should _be taught_ how to behave at school, while others think this is the job of their parents.
+
+What common themes do you think you might write about in an essay about
+
+one of the 4 general topics in the table below?
+
+Look at the following list of common themes and decide which of the general
+
+topics in the table they match. Write the words and phrases in the appropriate
+
+column.
+
+Common themes:
+
+accommodation, curriculum, doctors, diet, entertainment, exercise, free time,
+
+friends and family, food, going out, hospitals, holidays, medicine, money,
+
+nursing, pressure, resources, socialising, students, study, the arts, teachers,
+
+work
+
+
+| Education  | Life / Living     | Health    | Entertainment |
+| ---------- | ----------------- | --------- | ------------- |
+| students   | accommodation     | diet      | going out     |
+| curriculum | free time         | doctors   | holiday       |
+| students   | friend and family | exercise  | socializing   |
+| study      | money             | food      | the arts      |
+| teacher    | pressure          | hospitals |               |
+|            | resources         | medicine  |               |
+|            |                   | nursing   |               |
+
+
+Look at the following list of opening sentences taken from essays discussing whether: ‘being a celebrity brings more benefits or more challenges’.
+
+Decide whether the sentences introduce the focus and the general topic of this essay well and identify any problems (You may need to select more than one box). Click on 'Show answers' to see my comments.
+
+
+|     | introduces the focus of the essay | introduces the general topic of the essay | introduces the issue raised in the question | translates the question into synonyms | misrepresents the question | a good opening sentence for an introduction to this essay |
+| --- | --------------------------------- | ----------------------------------------- | ------------------------------------------- | ------------------------------------- | -------------------------- | --------------------------------------------------------- |
+| 1   |                                   |                                           |                                             |                                       | x                          |                                                           |
+| 2   |                                   |                                           | x                                           |                                       |                            |                                                           |
+| 3   |                                   | x                                         |                                             |                                       |                            | x                                                         |
+| 4   |                                   |                                           | x                                           |                                       | x                          |                                                           |
+1. It is true that when ambitious people follows their dreams, they achieve their goals at certain stage.
+
+2. It is an undeniable fact that eminent personalities are followed by almost everyone since the days bygone.
+3. It is argued that stardom does not only beget prosperity but also complications.
+4. Fame and its impact on the lifestyle of celebrities fascinates many people.
+
+ANSWER:
+
+|     | introduces the focus of the essay | introduces the general topic of the essay | introduces the issue raised in the question | translates the question into synonyms | misrepresents the question | a good opening sentence for an introduction to this essay |
+| --- | --------------------------------- | ----------------------------------------- | ------------------------------------------- | ------------------------------------- | -------------------------- | --------------------------------------------------------- |
+| 1   |                                   |                                           |                                             |                                       | x                          |                                                           |
+| 2   |                                   |                                           |                                             | x                                     | x                          |                                                           |
+| 3   |                                   | x                                         | x                                           |                                       |                            |                                                           |
+| 4   | x                                 | x                                         |                                             |                                       |                            | x                                                         |
+
+In sentence 1, the focus is not accurate - this is about famous people, not ambitious people. The general topic is not accurate (the topic is the impact that fame has)
+
+In sentence 2, the general topic is not accurate: 'eminent personalities' is an attempt to translate the question using synonyms but 'eminent' people (people who are important in society) are not the focus of this essay.
+
+Sentence 3 translates the words in the question into synonyms and also introduces the issue rather than the focus and general topic.
+
+Sentence 4 is a good opening sentence - the focus and general topic are clear. As you will see later, the phrase 'fascinates many people' introduces a theme that will occur later in the essay.
+## Paraphrasing
+
+
+## Problem 5 - Making an argument within your introduction
+
+Solution
+
+If you decide to include a thesis statement in your introduction, you need to:
+
+be fully aware of your position and main argument before writing it
+
+give only a brief overview of your thesis (in one sentence)
+
+make sure your thesis accurately reflects the argument you will make in your body paragraphs
+
+## Problem 6 - Ending your introduction
+
+Some candidates finish their introduction with a sentence that paraphrases the final question in the writing task. For example, '_In this essay I will discuss these two views before giving my own opinion_'. This copy the words in the task almost exactly, which is not a good idea. Others draw attention to the writing process in a different way: '_I will now prove that..._'. Again, this is unnecessary - your examiners knows __why__ you are writing; In our introduction, they just want to learn __what__ you are writing about.
+
+Solution
+
+Don't paraphrase the question itself, only focus on the topic and the issue that will be discussed. Aim to write in a less personal way - keep the focus on your essay, not on yourself as the writer. For example, it is better to write: '_This essay will discuss ..._' instead of '_In this essay I will discuss..._'
 
 # The body paragraph
 
 
+Your body paragraphs are made up of sentences that connect together to form one unit; each sentence is rather like a small building block that helps create one larger building block within your overall argument. The reader should be able to identify the central topic from your first and last sentences, and this same topic should be reflected in the sentences in between, which each serve to explain and support your main ideas.
+
+![](CleanShot%202025-09-27%20at%2022.59.35@2x.png)
+
+Look at how the first and the last sentences from the band 9 paragraph
+
+Schools 
+
+## Problem 1 - A lack of a clear argument and clear central topic
+
+## Problem 2 - Long confusing sentences
+
+### Solution
+
+:::{.callout-tip}
+Think of each sentence in your paragraph as having a clear purpose. For example:
+
+- Introducing an argument - (presenting your main central roles)
+- Giving a reason for believing a conclusion you have reached
+- Showing an effect (to help support your conclusion)
+- Explaining or expanding (to clarify your context, a key term, or an idea)
+- Giving an example (to support your conclusion)
+- Concluding an argument or paragraph (summing up the main idea and showing how it links to the question)
+:::
+
+## Problem 3 - One paragraph is more successful than another
+
+
+### Solution
+
 # The conclusion
+
+Problems
+
+Make sure to write at least two sentences in your conclusion. The first should summarise the main
+
+ideas in your argument. To help with this, look back at the first and last sentences in each body
+
+paragraph and summarise these. In your final sentence, make sure to answer the question you were
+
+given. In other words, make it clear whether you believe the advantages outweigh the disadvantages;
+
+whether this is a positive or a negative development; or the extent to which you agree or disagree etc.
+
+
+
+The biggest problems I see in conclusions are:
+
+conclusions that are too short (often one sentence only)
+
+summarising only one idea rather than the main points in the argument
+
+not answering the question (i.e. not saying to what extent you agree / disagree etc.)
+
+introducing a new idea that has not been discussed or mentioned earlier
+
+
+
+Words and phrases should use:
+
+_To sum up, ; In conclusion, ; Therefore, ; I completely agree / disagree ; In my view, etc_
+
