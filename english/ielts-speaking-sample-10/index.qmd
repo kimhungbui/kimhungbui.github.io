@@ -1,0 +1,27 @@
+---
+title: Sample answer ielts speaking
+lightbox: false
+description: Assess IELTS Speaking
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url: 
+date: 2025-08-19
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Part 1 
+• Who do you usually prefer to study with? • Do you have a lot in common with your friends? Can you give some examples? • Who do you prefer to socialise with? • Do you ever become angry or are you quite a calm person? 
+Part 2 Describe a person you have worked with who you admire. You should say • Who this person is and how you know them • What type of work this person does • What this person has done that you admire And explain why you admire this person so much. 
+
+Part 3 • What type of qualities do good leaders have? • What personal qualities do you think parents should teach their children? How might they do that? • Do you think that people can learn to be more adventurous? • Do you think it's important for business leaders to be hardworking?
