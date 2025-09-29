@@ -1,0 +1,37 @@
+---
+title: Zoo
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-27
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Keeping animals in captivity is cruel. There is no reason for zoos to exist in the 21st century.
+
+How far do you agree or disagree with this opinion?
+
+Around the world, people have differing opinions about zoos. Some people believe that keeping animals in captivity is wrong, while others contend that it is necessary and that we need zoos. In this essay, I will explore both of these views, as they each have some merit, before drawing a conclusion.
+
+Proponents of zoos tend to argue that these places are intended to educate the public about animals. They claim that people can go to zoos and become more aware of serious environmental issues, and therefore, zoos are essential in raising awareness of serious issues. For example, children can visit zoos and learn about the majestic elephant, and then adapt their behavior to become more responsible people in the future. However, this argument assumes that all zoos treat their purpose as education, when in fact many zoos are geared towards entertainment, and many people come away from a zoo visit having learned relatively little.
+
+Opponents of zoos claim that it is cruel to keep animals in captivity, and that therefore they belong in the wild. They point to numerous studies that show the suffering experienced by animals in even the best zoos. This is clear from evidence that many large animals require extensive space to roam that is just not available for them in their artificial enclosures, and so they suffer serious psychological and even physical damage. The fact that animals almost always live shorter lives in zoos is further proof of this fact.
+
+In conclusion, although there are some good reasons for the existence of zoos, they probably should not be allowed to continue into the twenty-first century. Despite the positive efforts of some zoos, the suffering experienced by animals in captivity is simply unacceptable.
+
+
+
+
