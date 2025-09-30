@@ -1,0 +1,125 @@
+---
+title: Zoo
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Barron's Writing for IELTS
+    affiliation-url:
+date: 2025-09-27
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Keeping animals in captivity is cruel. There is no reason for zoos to exist in the 21st century.
+
+How far do you agree or disagree with this opinion?
+
+Around the world, people have differing opinions about zoos. Some people believe that keeping animals in captivity is wrong, while others contend that it is necessary and that we need zoos. In this essay, I will explore both of these views, as they each have some merit, before drawing a conclusion.
+
+Proponents of zoos tend to argue that these places are intended to educate the public about animals. They claim that people can go to zoos and become more aware of serious environmental issues, and therefore, zoos are essential in raising awareness of serious issues. For example, children can visit zoos and learn about the majestic elephant, and then adapt their behavior to become more responsible people in the future. However, this argument assumes that all zoos treat their purpose as education, when in fact many zoos are geared towards entertainment, and many people come away from a zoo visit having learned relatively little.
+
+Opponents of zoos claim that it is cruel to keep animals in captivity, and that therefore they belong in the wild. They point to numerous studies that show the suffering experienced by animals in even the best zoos. This is clear from evidence that many large animals require extensive space to roam that is just not available for them in their artificial enclosures, and so they suffer serious psychological and even physical damage. The fact that animals almost always live shorter lives in zoos is further proof of this fact.
+
+In conclusion, although there are some good reasons for the existence of zoos, they probably should not be allowed to continue into the twenty-first century. Despite the positive efforts of some zoos, the suffering experienced by animals in captivity is simply unacceptable.
+
+# Plan
+
+Introduction
+
+General topic:
+
+The way animals are treated in captivity and the role of zoos in modern society.
+
+Focus:
+Whether zoos are cruel and unnecessary in the 21st century.
+
+Issues to discuss:
+
+Should zoos be closed because they no longer serve a useful purpose, or do they still provide important benefits?
+
+My initial position:
+
+Although some people believe zoos are cruel and outdated, I disagree because they continue to play an essential role in conservation, education, and scientific research.
+
+Themes:
+
+Conservation of endangered species
+
+Education and public awareness
+
+Scientific research and animal welfare
+
+
+Side A (Agree - zoos are cruel an unnescessary)
+
+main topic:
+
+Zoos are outdated institutions that no longer have a justifiable role in the 21st century
+
+1 conservation
+
+Zoos claim to conserve animals, but many species kept in zoos are not endangered. Resources would be better spent protecting habitats.
+
+2 education
+
+In the 21st century, people can learn through documentaries and VR instead of confining animals
+
+3 Animal welfare
+
+Animals in zoos are confined and can develop stress behavior
+
+What did i show or prove? link to the question
+
+Together, these points suggest that zoos may be seen as cruel and less relevant in the 21st century, since their conservation claims are limited, modern technology provides alternative education, and captivity can harm animal welfare.
+
+Side B (Disagree - zoos are still nesecessary)
+
+main topic:
+Despite criticisms, zoos remain necessary in the 21st century because they continue to play a vital role in conservation, education, and animal welfare.
+1 conservation
+
+However, zoos have had major conservation successes (e.g. pandas). For some species, the wild is no longer safe, so zoos are essential
+
+2 education
+
+seeing real animals in zoos has a stronger emotional impact, especially on children, leading to long-term awareness and conservation support
+
+3 animal welfare
+
+modern zoos focus on welfare, with large enclosures and enrichment activities, unlike circuses or outdated facilities
+
+Link to the question:
+
+Overall, these arguments demonstrate that zoos continue to serve an important purpose today by protecting endangered species, providing unique educational experiences, and ensuring high standards of animal welfare.
+
+Conclusion - Summary of my main points
+While critics argue that zoos are outdated, unnecessary for conservation, and harmful to animals, they in fact continue to protect endangered species, educate the public, and maintain high standards of welfare.
+
+Question to answer
+Are zoos cruel and unnecessary in the 21st century?
+My final position
+I disagree – zoos remain necessary today for conservation, education, and welfare.
+
+# Essay
+
+
+The way animals are treated in captivity and the role of zoos in modern society have long been debated. Some people argue that zoos are cruel and unnecessary in the 21st century, while others believe they continue to provide important benefits. Although some people view zoos as outdated institutions, this essay disagrees with that view, as they remain essential for social purposes.
+
+On the one hand, critics argue that zoos no longer have a justifiable role in today's world. Firstly, although zoos claim to conserve animals, many of the species they house are not endangered. From this perspective, the money and effort invested in maintaining these facilities could be better spent protecting natural habitats, where conservation has a broader and more lasting effect. Secondly, the educational value of zoos is often questioned. With the development of modern technology, such as documentaries, interactive media, and virtual reality, people can learn about wildlife without the need to confine animals. Finally, animal welfare is a major concern. Even in large enclosures, animals remain restricted, and some develop stress-related or abnormal behaviors. Together, these points suggest that zoos may be seen as cruel and less relevant in the 21st century.
+
+On the other hand, there are strong reasons to argue that zoos are still necessary. In terms of conservation, zoos have had real success in protecting species such as the giant panda and the black rhino, both of which might have faced extinction without intervention. For certain animals, the wild is no longer safe due to poaching, deforestation, and climate change, making captive breeding programs vital. Education is another important function. Seeing animals in real life has a much stronger emotional impact than watching them on a screen, particularly for children. This direct experience can create empathy and inspire long-term commitment to protecting wildlife. In addition, modern zoos have greatly improved in terms of animal welfare. They provide spacious enclosures, enrichment activities, and specialist veterinary care, making them fundamentally different from the exploitative conditions found in circuses or poorly managed facilities. Overall, these arguments demonstrate that zoos continue to serve an important purpose today.
+
+In summary, while critics argue that zoos are outdated, unnecessary for conservation, and harmful to animals, they in fact continue to protect endangered species, educate the public, and maintain high standards of welfare. Therefore, in my view, zoos remain necessary in the 21st century for their vital role in conservation, education, and animal welfare.
+
+
+
