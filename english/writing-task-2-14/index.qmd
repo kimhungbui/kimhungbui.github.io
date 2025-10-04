@@ -1,0 +1,39 @@
+---
+title: Lesson 14
+lightbox: false
+description: Structure
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-10-04
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Use a different grammatical structure. Some useful examples of this are: changing a verb to a
+
+noun; changing from active to passive; changing the focus of a sentence e.g. by making the object
+
+of the sentence into the subject; or by beginning with the final idea. Look at the grammatical
+
+changes I needed to make just by reversing the ideas in this sentence and changing the verb ‘to study’ into a noun:
+
+- It is better to study overseas than in your home town .
+
+- Studying in your home town has fewer advantages than studying overseas.
+
+
+1 Although celebrities have problems, there are plenty of advantages to being famous.
+
+-> Despite the benefits that fame brings, celebrities still have their problems.
+
