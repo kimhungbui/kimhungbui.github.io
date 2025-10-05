@@ -24,8 +24,21 @@ draft: false
 body paragraph 1
 
 
-Adding sports facilities would certainly be an attractive idea to some. However, this proposal assumes that the main reason people are unhealthy is that they lack access to such facilities. In reality, many public health issues occur due to a combination of factors, and lack of exercises is only one of these. Among other key factors are poor diet, work stress, and a lack of time to address them. Furthermore, sophisticated is not essential for getting fit; walking or running in the street would also achieve this. Thus, if a lack of facilities is not responsible for current health problems, simply adding more will not solve them.
+Adding sports facilities would certainly be an attractive idea to some. However, this proposal assumes that the main reason people are unhealthy is that they lack access to such facilities. In reality, many public health issues occur due to a combination of factors, and lack of exercises is only one of these. Among other key factors are poor diet, work stress, and a lack of time to address them. Furthermore, sophisticated equipment is not essential for getting fit; walking or running in the street would also achieve this. Thus, if a lack of facilities is not responsible for current health problems, simply adding more will not solve them.
 
 body paragraph 2
 
-Clearly, other measures are required to improve public health. If people lack the time to take care of themselves, then we need to find a way to address this. It may
+Clearly, other measures are required to improve public health. If people lack the time to take care of themselves, then we need to find a way to address this. It may require a change in attitude, and to see taking time out from the pressures of work as healthy rather than a sign of laziness or weakness. If more people did this, not only would work stress be reduced, but they would also have more time to exercise. The issue of diet could be tackled by persuading people to cook nutritious meals themselves rather than choosing a faster alternative. Nevertheless, these solutions will take time and, for those who cannot reduce their working hours, are likely to be ineffective. Seemingly, when it comes to solving complex health problems, there is no simple solution.
+
+
+Model answer
+
+Public health is a growing concern, with many countries reporting increasing levels of obesity. Some believe the problem can be addressed by adding more sports facilities, while others think this may not be enough. A closer look at the problem will help in assessing these views.
+
+Adding sports facilities would certainly be an attractive idea to some. However, this proposal assumes that the main reason people are unhealthy is that they lack access to such facilities. In reality, many public health issues occur due to a combination of factors, and a lack of exercise is only one of these. Among those key factors are poor diet, work stress, and a lack of time to address them. Furthermore, sophisticated equipment is not essential for getting fit; walking or running in the streets would also achieve this. Nevertheless, if a lack of facilities is not responsible for current health problems, simply adding more will not solve them.
+
+Clearly, other measures are required to improve public health. <font color="#245bdb">If</font> people lack the time to take care of themselves, <font color="#245bdb">then</font> we need to find a way to address this. <font color="#245bdb">It may require a change</font> in attitude, and to see taking time out from the pressures of work as healthy rather than a sign of laziness or weakness. <font color="#245bdb">If more people did this</font>, _not only_ would work stress be reduced, _but_ they would _also_ have more time to exercise. <font color="#245bdb">The issue of diet</font> could be tackled by persuading people to cook nutritious meals themselves rather than choosing a faster alternative. <font color="#245bdb">Nevertheless</font>, these solutions will take time and, for those who cannot reduce their working hours, are likely to be ineffective. Seemingly, when it comes to solving complex health problems, there is no simple solution.
+
+In conclusion, in my view, giving people who are time-poor greater access to sports facilities will not be effective and is too simplistic a solution. Other measures are clearly required, but any action taken to improve public health requires a change in lifestyle, and this needs the cooperation of everyone involved.
+
+# A Positive or a negative development
