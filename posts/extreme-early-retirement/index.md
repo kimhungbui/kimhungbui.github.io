@@ -9,6 +9,11 @@ draft: false
 ---
 
 
+
+halo
+
+
+
 # Family Man Retires at 39 – Extreme Early Retirement | FIRE
 ![](https://i.ytimg.com/vi/8yNsKxbq0Ak/maxresdefault.jpg)
 

@@ -1,0 +1,28 @@
+---
+title: Useful ink
+lightbox: false
+description: Links
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+date: 2025-10-08
+categories:
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+Some helpful links:
+
+https://effortlessacademic.com/ 
+
+https://truyentran.github.io/
