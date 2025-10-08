@@ -8,8 +8,8 @@ website:
   description: "My Personal Website"
   navbar:
     left:
-      - href: index.md
-        text: Home
+      # - href: index.md
+      #   text: Home
       - href: cv.md
         text: Resume
       - text: Mathematics
