@@ -10,7 +10,7 @@ website:
     left:
       # - href: index.md
       #   text: Home
-      - href: cv.md
+      - href: cv/cv.qmd
         text: Resume
       - text: Mathematics
         menu:

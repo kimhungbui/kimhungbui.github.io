@@ -1,0 +1,63 @@
+---
+title: Curriculum vitæ
+description: "Kim Hung's CV"
+date: 2025-08-13
+title-block-banner: "#771C6D"
+published-title: CV last updated
+freeze: false
+cv:
+  pdf: "CV_BUI_KIM_HUNG.pdf"
+---
+![](CV_BUI_KIM_HUNG.pdf)
+
+
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
+
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}cv
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+```
+```{python}
+from IPython.display import IFrame, display
+# Define the PDF file path as a Python variable
+cv_pdf = "CV_BUI_KIM_HUNG.pdf"
+
+display(IFrame(cv_pdf, width=800, height=1000))
+```
+
+```{=html}
+<!-- Download button -->
+<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="{{ cv_pdf }}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
+  </a>
+</p>
+
+<!-- Embedded PDF -->
+<div class="embed-container">
+  <iframe src="{{ cv_pdf }}" style="border: 0.5px solid #ccc;"></iframe>
+</div>
+</div>
+```
+
+<
