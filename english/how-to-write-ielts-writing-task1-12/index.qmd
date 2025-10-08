@@ -1,0 +1,72 @@
+---
+title: Guide Test Practice 1 - Data about People
+lightbox: false
+description: Data about people
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-10-06
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+# Writing about gender and age
+
+Cambridge IELTS 12, page 27
+
+![](Pasted%20image%2020251006211229.png)
+
+_male_ and _female_ are adjectives (male students, female students, etc) but the same words are also nouns:
+
+_The number of females increased while the number of males decreased._
+
+We might need to talk about 'the female' and 'the male' if we are given a life cycle of an animal, with charts and data, we are always writing about __more than one__, so we should not be using the singular form unless when we use it as a adjective.
+
+In introduction and overview, we can make a general statement about _males_ and _females_, or _men_ and _women_. We can also add the nationality, to describe the main trends in the behavior of _Australian men_ and _Australian women_ in 2010. However, in our body paragraphs, we will mainly refer to the specific age groups.
+
+We only use 'stage' or 'period' to talk about a stage or period in life. For example, '_childhood, the teenager years_' and '_adulthood_' are all examples of _stages_ or _periods_ in life. However, these terms are not appropriate for our data, which is divided into specific _age group_ or _age ranges_.
+
+## Prepositions
+
+Look at the following examples then the rules below:
+
+- Women <font color="#245bdb">aged 25 to 34 ...</font>
+- Men <font color="#245bdb">aged between 35 and 44 ...</font>
+- Women <font color="#245bdb">who were 25 to 34 years old ...</font>
+- Men <font color="#245bdb">in</font> the <font color="#245bdb">25- to 35-year-old age group...</font>
+- This fell <font color="#245bdb">from 24 years</font>
+
+We use 'at' with 'the age of' and 'in' with an age group or range. When it comes to specific ages, we can used _aged, years old_ or _year-old_. When giving data like this, we can also just write the 'number + years'
+
+## Hyphens
+
+We use hyphens when the number combines with 'year-old' to form a compound adjective or a compound noun. So, we can write the following:
+
+- I taught a class of ten-year-olds. (compound noun - plural)
+- I taught a class of ten-year-old children. (compound adjective)
+
+If we are using a range of ages, we use a hyphen with both numbers in the range:
+
+- I taught a class of 20- to 25-year-olds. (compound noun in a range)
+
+The final age group is often presented like this: 60+, 65+ etc. We can express this in two ways:
+
+- Men aged 60 and over ...
+- Women aged 65 and above...
+
+## Specific age groups
+
+A generation is generally seen as 25 years, so the groups in our data do not represent different generations. Teenagers are people aged thirteen to nineteen, so we cannot use this tern for the youngest age group, which goes up to 24. Be careful with 'middle' as it has a specific meaning when combine with 'age'. <font color="#245bdb">Middle-aged</font> refers to people aged between approximately 40 and 60. You can refer to the '<font color="#245bdb">middle age groups</font>' (meaning the groups in the middle), but you need to be careful in using this.
+
+## Counterparts
+
