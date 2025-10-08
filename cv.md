@@ -2,15 +2,5 @@
 title: Curriculum Vitae
 ---
 
-Write more markdown here!
+![](CV_BUI_KIM_HUNG.pdf)
 
-
-I'am Hung
-
-
-
-Some helpful links:
-
-https://effortlessacademic.com/ 
-
-https://truyentran.github.io/
