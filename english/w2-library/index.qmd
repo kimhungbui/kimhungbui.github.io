@@ -1,0 +1,29 @@
+---
+title: Public library
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+
+date: 2025-10-20
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+It is often argued that public libraries have become redundant due to the advancement of digital technologies that can fulfill the same purpose more efficiently. While computers and the internet have revolutionized the accessibility to information, I completely disagree that libraries are a waste of money; public libraries still play an irreplaceable social, educational, and cultural role.
+
+On the one hand, it is undeniable that digital devices have transformed how people obtain and consume knowledge. With a single device, a person can have access to millions of books, academic journals, and databases, without having to leave the premises of their own house. This capacity has eliminated the practical need for public libraries, especially in more developed countries where widespread internet access is possible. Furthermore, maintaining libraries' buildings, hiring staff, and updating archives require substantial public funding. These funds could be better invested in digital literacy programs or online resources that can reach a wider audience.
+
+On the other hand, libraries continue to provide a unique value that technologies cannot replicate. First, they ensure equal access to knowledge for individuals who may not have the means to own a computer or to live in an area with sufficient internet coverage. For example, in many Central African countries, public libraries remain the only quiet and free spaces where students from disadvantaged communities can access educational materials. Moreover, public libraries foster social cohesion and intellectual culture through workshops, exhibitions, and nurturing a sense of a tight-knit community that can be hard to replicate in a large space like the internet. Finally, public libraries safeguard cultural heritage through the preservation of ancient manuscripts and scriptures, ensuring that future generations can access authentic historical materials beyond the digital space.
+
+In conclusion, while digital devices have benefited the accessibility of knowledge, they cannot completely replace the functions and value of public libraries. Maintaining these archives is not a waste but a long-term investment into social equality, cultural preservation, and an intellectual community.

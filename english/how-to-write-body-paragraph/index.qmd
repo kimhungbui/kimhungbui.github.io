@@ -1,0 +1,447 @@
+---
+title: How to write the Introduction paragraph in IELTS writing Task 2
+lightbox: false
+description: Step-by-step guide how to write the introduction
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-10-13
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+Investing in space exploration programs can provide two positive outcomes: developing economic and scientific research. Space programs can create new commercial advances and lead to benefits in the military industry. Consequently, the economic benefits can outweigh the cost. For example, there are new space tours for sale at a high price, and military industries are in enormous surplus in some countries, which can not be developed like now without the techniques from space programs. In terms of scientific research, these programs can expand the frontier of knowledge. It can be applied to help human life. Like the GPS system and satellites, which are products of previous projects that can be seen as a waste at first. Expanding human knowledge creates new opportunities for all people, which is why some people favor space exploration.
+
+
+## **🧩 Structure Analysis (PEEL)**
+
+  
+
+### **✅** 
+
+### **Point (Topic sentence)**
+
+  
+
+> _“Investing in space exploration programs can provide two positive outcomes: developing economic and scientific research.”_
+
+  
+
+**Strengths:**
+
+- You clearly state your paragraph’s main idea: economic + scientific benefits.
+    
+- It signals a _two-part paragraph_ — good for coherence.
+    
+
+  
+
+**Improvements:**
+
+- The phrase “developing economic and scientific research” is grammatically off — “economic” isn’t something you _develop_, but _growth_ or _benefits_ are.
+    
+- Better:
+    
+    > “Investing in space exploration can generate two major benefits: economic growth and scientific advancement.”
+    
+
+---
+
+### **✅** 
+
+### **Explain (supporting logic)**
+
+  
+
+> _“Space programs can create new commercial advances and lead to benefits in the military industry. Consequently, the economic benefits can outweigh the cost.”_
+
+  
+
+**Strengths:**
+
+- Logical cause–effect reasoning (“can create … lead to … outweigh the cost”).
+    
+- Smooth connector “Consequently”.
+    
+
+  
+
+**Improvements:**
+
+- “Lead to benefits in the military industry” → unclear phrasing.
+    
+    Better:
+    
+    > “They also drive innovation in related industries, including defense and aerospace.”
+    
+- “Outweigh the cost” → good phrase, but could be more formal:
+    
+    > “These economic gains often outweigh the initial financial investment.”
+    
+
+---
+
+### **✅** 
+
+### **Example**
+
+  
+
+> _“For example, there are new space tours for sale at a high price, and military industries are in enormous surplus in some countries, which can not be developed like now without the techniques from space programs.”_
+
+  
+
+**Strengths:**
+
+- You’re giving _two real-world examples_: space tourism + military tech.
+    
+- Shows understanding of applied outcomes.
+    
+
+  
+
+**Improvements:**
+
+- Grammar and phrasing need polishing:
+    
+    - “for sale at a high price” → awkward → “space tourism has emerged as a profitable industry”.
+        
+    - “enormous surplus” → unclear (military industry doesn’t usually produce “surplus”).
+        
+        Better: “Some countries’ defense sectors have expanded rapidly thanks to technologies first developed for space missions.”
+        
+    - “which can not be developed like now without” → should be “which could not have developed without…”
+        
+    
+
+  
+
+✅ Improved example:
+
+  
+
+> “For example, space tourism has become a highly profitable industry, and many countries’ defense technologies have evolved directly from innovations first designed for space missions.”
+
+---
+
+### **✅** 
+
+### **Second Idea: Scientific Research**
+
+  
+
+> _“In terms of scientific research, these programs can expand the frontier of knowledge. It can be applied to help human life.”_
+
+  
+
+**Strengths:**
+
+- Good transition phrase “In terms of…”
+    
+- Clear focus on science/knowledge → matches your topic sentence.
+    
+
+  
+
+**Improvements:**
+
+- “It can be applied to help human life” → vague.
+    
+    Better:
+    
+    > “This new knowledge often leads to technologies that improve daily life.”
+    
+
+---
+
+### **✅** 
+
+### **Example + Link**
+
+  
+
+> _“Like the GPS system and satellites, which are products of previous projects that can be seen as a waste at first. Expanding human knowledge creates new opportunities for all people, which is why some people favor space exploration.”_
+
+  
+
+**Strengths:**
+
+- GPS and satellites = strong, concrete examples.
+    
+- Final sentence ties back to main idea → “why some people favor space exploration.”
+    
+
+  
+
+**Improvements:**
+
+- “Like the GPS system…” → fragment (not a full sentence). Combine it smoothly:
+    
+    > “For instance, technologies such as GPS and satellite communication—originally developed for space programs once considered wasteful—now play essential roles in daily life.”
+    
+- Final linking sentence could be more formal:
+    
+    > “Thus, expanding human knowledge not only benefits societies worldwide but also strengthens the argument for continued investment in space exploration.”
+
+
+Investing in space exploration can generate two major benefits: economic growth and scientific advancement. Space programs stimulate commercial innovation and create spin-off technologies that drive related sectors such as aerospace and defense. Consequently, the economic returns often outweigh the initial cost. For example, space tourism has become a profitable industry, and many defense technologies originated from space research. In addition, these programs expand the frontiers of knowledge and often produce technologies that improve daily life. For instance, GPS and satellite communication - once viewed as costly experiments - now play essential roles in navigation and global connectivity. Therefore, by fostering both innovation and understanding, space exploration continues to deliver long-term benefits for humanity.
+
+***
+
+Nevertheless, there are several problems in nations that need to be solved before outer space programs. Unlike developed countries, many countries in the world have a low living standard, especially poor countries. These countries must face challenges like diseases, drought, and many environmental problems that need an enormous amount of resources to solve.  For instance, many countries in Africa still do not have clean water supplies and basic amenities, preventing them from developing in the modern day. Furthermore, the results of space programs do not directly help basic human lives, and most of them benefit rich people. Therefore, the lives of humans on earth should be invested in before the universe.
+
+## **🧩 Structure Analysis (PEEL)**
+
+  
+
+### **✅** 
+
+### **Point (Topic Sentence)**
+
+  
+
+> _“Nevertheless, there are several problems in nations that need to be solved before outer space programs.”_
+
+  
+
+**Strengths:**
+
+- The word _“Nevertheless”_ clearly signals contrast → good transition from previous paragraph.
+    
+- The sentence directly introduces the idea: _national problems should take priority over space exploration._
+    
+
+  
+
+**Weaknesses:**
+
+- Slightly awkward phrasing — “problems in nations that need to be solved before outer space programs” → unclear grammar and logic.
+    
+- You want to express: “governments should focus on solving domestic problems before spending on space.”
+    
+
+  
+
+**Better Version:**
+
+  
+
+> “Nevertheless, many pressing national problems must be addressed before investing in space exploration.”
+
+  
+
+or
+
+  
+
+> “Nevertheless, governments should prioritise solving urgent domestic issues before funding outer space programs.”
+
+---
+
+### **✅** 
+
+### **Explain**
+
+  
+
+> _“Unlike developed countries, many countries in the world have a low living standard, especially poor countries. These countries must face challenges like diseases, drought, and many environmental problems that need an enormous amount of resources to solve.”_
+
+  
+
+**Strengths:**
+
+- Logical explanation of why poor nations should not focus on space → clear cause–effect reasoning.
+    
+- Good range of examples (disease, drought, environment).
+    
+
+  
+
+**Weaknesses & Fixes:**
+
+- Repetition (“many countries… especially poor countries”) → redundant.
+    
+- “Have a low living standard” → use **“have low living standards”** (plural, and article “a” not needed).
+    
+- “Must face challenges like…” → should be **“face challenges such as…”** (formal tone).
+    
+- “That need an enormous amount of resources to solve” → smoother: “which require enormous resources to address.”
+    
+
+  
+
+**Improved version:**
+
+  
+
+> “Unlike developed nations, many poorer countries still have low living standards. They face serious challenges such as disease, drought, and environmental degradation, all of which require substantial resources to overcome.”
+
+---
+
+### **✅** 
+
+### **Example**
+
+  
+
+> _“For instance, many countries in Africa still do not have clean water supplies and basic amenities, preventing them from developing in the modern day.”_
+
+  
+
+**Strengths:**
+
+- Realistic and specific example.
+    
+- The logic is clear and supports the argument.
+    
+
+  
+
+**Weaknesses & Fixes:**
+
+- “Countries in Africa” → acceptable, but could be framed more diplomatically.
+    
+- “Preventing them from developing in the modern day” → awkward phrasing → “hindering their development” is smoother.
+    
+- Avoid “do not have” → “lack” is more academic.
+    
+
+  
+
+**Better version:**
+
+  
+
+> “For example, many African nations still lack access to clean water and basic infrastructure, which continues to hinder their social and economic development.”
+
+---
+
+### **✅** 
+
+### **Further Explanation**
+
+  
+
+> _“Furthermore, the results of space programs do not directly help basic human lives, and most of them benefit rich people.”_
+
+  
+
+**Strengths:**
+
+- Good contrast and strong ethical argument (“benefit rich people” → clear stance).
+    
+- Logical flow with “Furthermore”.
+    
+
+  
+
+**Weaknesses:**
+
+- Grammar: “help basic human lives” → unnatural.
+    
+- Clarity: “most of them benefit rich people” → “them” = unclear (programs? results?).
+    
+
+  
+
+**Better version:**
+
+  
+
+> “Furthermore, the outcomes of space programs rarely improve basic living conditions and tend to benefit wealthier nations or individuals.”
+
+---
+
+### **✅** 
+
+### **Link Sentence**
+
+  
+
+> _“Therefore, the lives of humans on earth should be invested in before the universe.”_
+
+  
+
+**Strengths:**
+
+- Clear conclusion; ties back to main argument.
+    
+- Strong moral appeal.
+    
+
+  
+
+**Weaknesses:**
+
+- “invested in before the universe” → ungrammatical.
+    
+    You mean “before investing in the universe” or “before exploring the universe.”
+    
+
+  
+
+**Better version:**
+
+  
+
+> “Therefore, governments should invest in improving life on Earth before exploring the wider universe.”
+
+
+Nevertheless, governments should prioritize solving urgent domestic issues before funding space programs. Unlike developed nations, many poorer countries still have low living standards and face challenges such as disease, drought, and environmental degradation, all of which require substantial resources to overcome. For example, many African nations still lack access to clean water and basic infrastructure, which continues to hinder their social and economic development. Furthermore, the outcomes of space programs rarely improve basic living conditions and tend to benefit wealthier nations or individuals. Therefore, governments should invest in improving life on Earth before exploring the wider universe.
+
+
+***
+
+In conclusion, the benefits of space exploration can be worth the cost, but the money allocated to humans in nations is more needed. The lives of all people should be improved to a proper standard before getting the new opportunities in spaces, which are very costly.
+
+### **🔍 Sentence-by-sentence analysis**
+
+  
+
+**1.** “the benefits of space exploration can be worth the cost”
+
+✅ Good idea, but the modal “can be” weakens your stance.
+
+→ Better: “The benefits of space exploration _may justify_ its cost” (more academic tone)
+
+→ or “While the benefits of space exploration _are significant_…” if you want a stronger position.
+
+  
+
+**2.** “but the money allocated to humans in nations is more needed.”
+
+❌ “allocated to humans in nations” sounds unnatural and unclear.
+
+You mean: “money spent on domestic issues” or “investment in citizens’ welfare.”
+
+→ Better: “but the funds are more urgently needed to address pressing domestic problems.”
+
+  
+
+**3.** “The lives of all people should be improved to a proper standard before getting the new opportunities in spaces, which are very costly.”
+
+❌ Issues:
+
+- “getting the new opportunities in spaces” → “spaces” ❌ plural and vague.
+    
+- “getting” is informal; use “pursuing” or “exploring.”
+    
+- “proper standard” → too general; use “adequate standard of living.”
+    
+
+  
+
+✅ Better: “Governments should ensure that citizens achieve an adequate standard of living before pursuing costly opportunities in outer space.”
+
+
+In conclusion, while the benefits of space exploration may justify its cost, the funds are more urgently needed to address pressing social and economic problems on Earth. Governments should ensure that citizens achieve an adequate standard of living before pursuing ambitious and costly ventures in outer space.

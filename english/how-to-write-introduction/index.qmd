@@ -1,0 +1,170 @@
+---
+title: How to write the Introduction paragraph in IELTS writing Task 2
+lightbox: false
+description: Step-by-step guide how to write the introduction
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+    affiliation: Pauline Cullen
+    affiliation-url:
+date: 2025-10-13
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+## **Step-by-step guide**
+
+  
+
+**Step 1 — Read the question carefully (2 minutes).**
+
+Don’t skim. Identify:
+
+- **General topic** (what broad area? e.g., “communication technology”).
+    
+- **Specific issue** the question asks about (e.g., “negative effects on social relationships”).
+    
+- **Who/what focus** (people, children, governments, companies…).
+    
+- **Instruction words** (should, discuss, agree/disagree, advantages/disadvantages).
+    
+    _Why:_ this prevents misrepresenting the question.
+    
+
+  
+
+**Step 2 — Plan quickly (1–2 minutes).**
+
+Decide your position and the two or three main points you will develop in the body paragraphs. Know which side you lean to (agree / disagree / partly). This lets you write a short, accurate thesis.
+
+  
+
+**Step 3 — Write a context sentence (general topic).**
+
+Start with one sentence that introduces the subject in natural language. Keep it relevant — don’t use flashy “hooks.”
+
+Example: “With advances in science and technology, the way we communicate has changed significantly.”
+
+  
+
+**Step 4 — Paraphrase the question’s specific issue (one sentence).**
+
+Show you understand the exact task. Paraphrase — not invent synonyms for every word. Use natural language and keep key phrases if they’re the clearest choice.
+
+Example: “Many people believe that modern ways of communicating might be having an adverse effect on relationships between people.”
+
+  
+
+**Step 5 — State your position (thesis) briefly (one sentence).**
+
+Give a short, clear statement of your view — a full thesis, but **compact** (one sentence). If you will partly agree, include the nuance. Don’t write a mini-essay here. The thesis must match what you will develop in the body paragraphs.
+
+Examples:
+
+- Strong position: “However, I disagree and believe these technologies generally strengthen social bonds.”
+    
+- Partly agree: “While there are some drawbacks, I believe the overall effect is positive.”
+    
+
+  
+
+**Step 6 — Avoid common problems**
+
+- Don’t misrepresent or over-generalize the question.
+    
+- Don’t begin with irrelevant generalities or dramatic hooks.
+    
+- Don’t over-paraphrase (unnatural synonyms) that change meaning.
+    
+- Don’t present a long argument — save details for body paragraphs.
+    
+- Don’t end with “In this essay I will…” or “I will now prove that…” — be less personal.
+    
+
+  
+
+**Step 7 — Quick edit (30 seconds).**
+
+Check that:
+
+- You answered the exact question.
+    
+- Your thesis matches planned body paragraphs.
+    
+- Language is natural and not copied word-for-word too much.
+    
+- No personal meta-comments (e.g., “I will discuss…”).
+    
+
+---
+
+## **Reusable templates (fill the brackets)**
+
+  
+
+**Three-sentence (full):**
+
+1. Context / general topic sentence.
+    
+2. Paraphrase of the question / opposite view.
+    
+3. Thesis (your position / brief overview).
+    
+
+  
+
+Example:
+
+“With communication technologies becoming part of our everyday lives, the way we interact has changed. Many people claim that these developments harm interpersonal relationships. While there are some valid concerns, I believe these technologies are more likely to improve social connections.”
+
+  
+
+**Two-sentence (shorter):**
+
+“One sentence that combines context + opposite view. One sentence with your qualified position.”
+
+Example:
+
+“With communication tech now part of daily life, many think it has damaged relationships. While this is partly true, I believe the overall effect is positive.”
+
+  
+
+**Simplest (for quick tests):**
+
+“It is sometimes argued that [opposite view]. While this could be true to a certain extent, I believe [your view].”
+
+---
+
+## **Small worked example (question → intro)**
+
+  
+
+Question: _Many people think modern communication technology is having negative effects on social relationships. Do you agree or disagree?_
+
+  
+
+Intro:
+
+“With communication technologies becoming part of our everyday lives, it is thought by many that relationships between people have been adversely affected. While there are some reasons why this could be the case, I believe that these technologies are more likely to have a positive impact on social relationships.”
+
+---
+
+## **Final checklist before moving on to the body**
+
+- Did I correctly identify the topic and the specific issue?
+    
+- Is my thesis clear and matched to my plan?
+    
+- No long argument or unnecessary hook in the intro?
+    
+- Natural paraphrase — not unnatural synonyms?
+    
+- I can develop two or three clear body paragraphs based on this thesis?
