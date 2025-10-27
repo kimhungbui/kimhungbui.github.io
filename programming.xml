@@ -653,237 +653,642 @@ font-style: inherit;">print</span>(count_player1_wins())</span></code></pre></di
   <pubDate>Mon, 21 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Merge Triplets to Form Target Triplet</title>
+  <title>Optimizing String Partitioning – LeetCode 763 Deep Dive</title>
   <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/project-euler-52/</link>
+  <link>https://kimhungbui.github.io/programming/leetcode-/</link>
   <description><![CDATA[ 
 
 
 
 
-<p>
-It can be seen that the number, <img src="https://latex.codecogs.com/png.latex?125874">, and its double, <img src="https://latex.codecogs.com/png.latex?251748">, contain exactly the same digits, but in a different order.
-</p>
-<p>
-Find the smallest positive integer, <img src="https://latex.codecogs.com/png.latex?x">, such that <img src="https://latex.codecogs.com/png.latex?2x">, <img src="https://latex.codecogs.com/png.latex?3x">, <img src="https://latex.codecogs.com/png.latex?4x">, <img src="https://latex.codecogs.com/png.latex?5x">, and <img src="https://latex.codecogs.com/png.latex?6x">, contain the same digits.
-</p>
-<section id="brute-force-idea-on2-or-worse" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Brute Force Idea (<img src="https://latex.codecogs.com/png.latex?O(n%5E2)"> or worse)</h1>
-<p>Test each number <code>x</code> starting from 1, and check if <code>2x, ..., 6x</code> are permutations of <code>x</code>. While that works, it’s not efficient if we don’t restrict the search space.</p>
+<section id="intuition" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Intuition</h1>
+<!-- Describe your first thoughts on how to solve this problem. -->
+<p>We are given a string <code>s</code>, and we need to partition it into as many parts as possible such that <strong>each letter appears in at most one part</strong>. This suggests a <strong>greedy approach</strong>, where we keep extending the current partition until we are sure no character in it appears later.</p>
+<p>Initially, I thought of tracking how many times each character appears and using that to decide when a character is “done” — this forms <strong>Approach 1</strong>.</p>
+<p>Later, I realized that we can optimize by <strong>just tracking the last occurrence</strong> of each character and extending the partition greedily — this is <strong>Approach 2</strong>.</p>
 </section>
-<section id="key-observations-to-reduce-the-search-space" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</h1>
-<section id="same-number-of-digits" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</h2>
-<p>If <code>x</code> has <code>d</code> digits, <code>6x</code> must not have more digits than <code>x</code>, or they can’t be permutations.</p>
-<p>So</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(x) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">len</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span><span class="er" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">x</span>)</span></code></pre></div>
-<p>Example: If <code>x = 100</code>, then <code>6x = 600</code>, same digit count (3). But <code>x = 200</code>, then <code>6x = 1200</code> (4 digits), not possible.</p>
-<p>That gives <strong>a range to search in</strong>:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> x <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">**</span>(d<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>), <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">**</span>d):</span>
-<span id="cb2-2">    ...</span></code></pre></div>
+<section id="approach" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Approach</h1>
+<!-- Describe your approach to solving the problem. -->
+<section id="approach-1-frequency-based-tracking-counter" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="approach-1-frequency-based-tracking-counter"><span class="header-section-number">2.1</span> Approach 1: Frequency-based Tracking (Counter)</h2>
+<ol type="1">
+<li><p>Use <code>Counter</code> to store total character frequency.</p></li>
+<li><p>As we iterate through <code>s</code>, maintain a <code>current_count</code> Counter.</p></li>
+<li><p>Whenever all counts in <code>current_count</code> match the ones in <code>total_count</code>, we can safely cut the partition.</p></li>
+</ol>
 </section>
-<section id="digit-permutation-check" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</h2>
-<p>Instead of sorting each time (<img src="https://latex.codecogs.com/png.latex?O(n%5Clog%20n)">), use:</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+<section id="approach-2-greedy-with-last-occurrence" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="approach-2-greedy-with-last-occurrence"><span class="header-section-number">2.2</span> Approach 2: Greedy with Last Occurrence</h2>
+<ol type="1">
+<li><p>Precompute a map of the <strong>last index</strong> of every character.</p></li>
+<li><p>While iterating, keep track of the current partition’s end by updating to the farthest last index seen so far.</p></li>
+<li><p>When the current index equals the <code>end</code>, it means all characters in this partition are safely enclosed — we can cut here.</p></li>
+</ol>
+</section>
+</section>
+<section id="complexity" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Complexity</h1>
+<section id="approach-1" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="approach-1"><span class="header-section-number">3.1</span> Approach 1</h2>
+<ul>
+<li>Time complexity: <img src="https://latex.codecogs.com/png.latex?O(n%5Ccdot%20a)"> where <img src="https://latex.codecogs.com/png.latex?a"> is the number of unique characters (&lt;= 26)</li>
+<li>Space complexity: <img src="https://latex.codecogs.com/png.latex?O(a)"> for <code>Counter</code></li>
+</ul>
+</section>
+<section id="approach-2" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="approach-2"><span class="header-section-number">3.2</span> Approach 2</h2>
+<ul>
+<li>Time complexity: <img src="https://latex.codecogs.com/png.latex?O(n)"></li>
+<li>Space complexity: <img src="https://latex.codecogs.com/png.latex?O(a)"></li>
+</ul>
+</section>
+</section>
+<section id="code" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Code</h1>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">def</span> canonical(n):</span>
-<span id="cb3-2">    <span class="cf" style="color: #003B4F;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb1-2">    <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">return</span> <span class="st" style="color: #20794D;
+font-style: inherit;">def</span> partitionLabels(<span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;">''</span>.join(<span class="bu" style="color: null;
+font-style: inherit;">self</span>, s: <span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">sorted</span>(<span class="bu" style="color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">str</span>(n)))</span></code></pre></div>
-<p>then</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">c <span class="op" style="color: #5E5E5E;
+font-style: inherit;">-&gt;</span> List[<span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">=</span> canonical(x)</span>
-<span id="cb4-2"><span class="bu" style="color: null;
+font-style: inherit;">int</span>]:</span>
+<span id="cb1-3">        </span>
+<span id="cb1-4">        <span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">all</span>(c <span class="op" style="color: #5E5E5E;
+font-style: inherit;"># get a string</span></span>
+<span id="cb1-5"></span>
+<span id="cb1-6">        <span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">==</span> canonical(i <span class="op" style="color: #5E5E5E;
+font-style: inherit;"># part -&gt; as many parts as possible</span></span>
+<span id="cb1-7">        <span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">*</span> x) <span class="cf" style="color: #003B4F;
+font-style: inherit;"># 1 letter appears in at most 1 part.</span></span>
+<span id="cb1-8"></span>
+<span id="cb1-9">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># return the list of size of these parts</span></span>
+<span id="cb1-10">        </span>
+<span id="cb1-11">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># as many parts as possible </span></span>
+<span id="cb1-12">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># -&gt; parts is as shorts as possible</span></span>
+<span id="cb1-13"></span>
+<span id="cb1-14">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># if we find a char, we want to find the lastest char for cut into a part</span></span>
+<span id="cb1-15"></span>
+<span id="cb1-16">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># if we have a count_chars array, </span></span>
+<span id="cb1-17">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># we can use that for end find char</span></span>
+<span id="cb1-18"></span>
+<span id="cb1-19">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#################</span></span>
+<span id="cb1-20"></span>
+<span id="cb1-21">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># # import counter class from collections module</span></span>
+<span id="cb1-22">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># from collections import Counter</span></span>
+<span id="cb1-23"></span>
+<span id="cb1-24">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># total_count = Counter(s)</span></span>
+<span id="cb1-25"></span>
+<span id="cb1-26">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># ans = []</span></span>
+<span id="cb1-27">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># current_count = Counter()</span></span>
+<span id="cb1-28">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># start = 0</span></span>
+<span id="cb1-29">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># for i, char in enumerate(s):</span></span>
+<span id="cb1-30">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#     current_count[char] += 1</span></span>
+<span id="cb1-31">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#     # check all char in part == that char in count_part -&gt; cut it</span></span>
+<span id="cb1-32"></span>
+<span id="cb1-33">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#     if all(current_count[c] == total_count[c] for c in current_count):</span></span>
+<span id="cb1-34">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#         ans.append(i - start + 1)</span></span>
+<span id="cb1-35">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#         start = i + 1</span></span>
+<span id="cb1-36">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#         current_count.clear()</span></span>
+<span id="cb1-37">        </span>
+<span id="cb1-38">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># return ans</span></span>
+<span id="cb1-39"></span>
+<span id="cb1-40">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">################################</span></span>
+<span id="cb1-41">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Ok</span></span>
+<span id="cb1-42"></span>
+<span id="cb1-43">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># but instead of store all char in current part, and recheck it (O(n^2))</span></span>
+<span id="cb1-44">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># we just really concern about the last index of out current char</span></span>
+<span id="cb1-45">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># (if we get char[a], we want to expand to the last index of [a])</span></span>
+<span id="cb1-46">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># on the track of that, we can get new char,</span></span>
+<span id="cb1-47">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># if that char have the last index &gt; 'a'.</span></span>
+<span id="cb1-48">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># we need to update that</span></span>
+<span id="cb1-49"></span>
+<span id="cb1-50">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># TC: O(n)</span></span>
+<span id="cb1-51"></span>
+<span id="cb1-52">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Step 1: Record the last occurence of each character</span></span>
+<span id="cb1-53">        last_index <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> {char: i <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+font-style: inherit;">for</span> i, char <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">in</span> <span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+font-style: inherit;">enumerate</span>(s)}</span>
+<span id="cb1-54"></span>
+<span id="cb1-55">        result <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">7</span>))</span></code></pre></div>
-<p>This function is creating a canonical (standardized) form of any number:</p>
-<ul>
-<li><p><code>str(n)</code> converts the number to a string (e.g., <code>123</code> → <code>'123'</code>)</p></li>
-<li><p><code>sorted(...)</code> puts the digits in ascending order (e.g., <code>'321'</code> → <code>['1','2','3']</code>)</p></li>
-<li><p><code>''.join(...)</code> joins them back to a single string (e.g., <code>['1','2','3']</code> → <code>'123'</code>)</p></li>
-</ul>
-<p>So:</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">canonical(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">123</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'123'</span></span>
-<span id="cb5-2">canonical(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">231</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'123'</span></span>
-<span id="cb5-3">canonical(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">312</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'123'</span></span></code></pre></div>
-<p>All are permutations of the same digits ⇒ same canonical form</p>
-<p>Time Complexity</p>
-<ul>
-<li><p>Each check is ~O(1) due to short digit lengths</p></li>
-<li><p>The loop is linear in x (but bounded by 6-digit numbers)</p></li>
-<li><p>Much faster than O(n²) since the search space is tightly controlled</p></li>
-</ul>
-<div id="44fe920c" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> canonical(n):</span>
-<span id="cb6-2">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">''</span>.join(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">sorted</span>(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">str</span>(n)))</span>
-<span id="cb6-3"></span>
-<span id="cb6-4"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> has_same_digits(x):</span>
-<span id="cb6-5">    c <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> canonical(x)</span>
-<span id="cb6-6">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">all</span>(canonical(x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> i) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> c <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">7</span>))</span>
-<span id="cb6-7"></span>
-<span id="cb6-8"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> find_smallest_permuted_multiple():</span>
-<span id="cb6-9">    x <span class="op" style="color: #5E5E5E;
+font-style: inherit;">=</span> []</span>
+<span id="cb1-56">        start <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">100000</span></span>
-<span id="cb6-10">    <span class="cf" style="color: #003B4F;
+font-style: inherit;">0</span></span>
+<span id="cb1-57">        end <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb1-58"></span>
+<span id="cb1-59">        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Step 2: Iterate and find partition points</span></span>
+<span id="cb1-60">        <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">while</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span>:</span>
-<span id="cb6-11">        <span class="cf" style="color: #003B4F;
+font-style: inherit;">for</span> i, char <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">if</span> has_same_digits(x):</span>
-<span id="cb6-12">            <span class="cf" style="color: #003B4F;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">enumerate</span>(s):</span>
+<span id="cb1-61">            end <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(end, last_index[char]) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># extend the partition to the last seen char</span></span>
+<span id="cb1-62">            <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
-font-style: inherit;">return</span> x</span>
-<span id="cb6-13">        x <span class="op" style="color: #5E5E5E;
+font-style: inherit;">if</span> i <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+font-style: inherit;">==</span> end:</span>
+<span id="cb1-63">                result.append(end <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">1</span></span>
-<span id="cb6-14"></span>
-<span id="cb6-15"><span class="bu" style="color: null;
+font-style: inherit;">-</span> start <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">print</span>(find_smallest_permuted_multiple())  <span class="co" style="color: #5E5E5E;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;"># Output: 142857</span></span></code></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>142857</code></pre>
-</div>
-</div>
+font-style: inherit;">1</span>) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># cut here</span></span>
+<span id="cb1-64">                start <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># new partition</span></span>
+<span id="cb1-65">        </span>
+<span id="cb1-66">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> result</span></code></pre></div>
 
 
-</section>
 </section>
 
  ]]></description>
-  <category>project-euler</category>
+  <category>leetcode</category>
   <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/project-euler-52/</guid>
+  <category>greedy</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-/</guid>
+  <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Merge Triplets to Form Target Triplet</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-triplet/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="intuition" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Intuition</h1>
+<p>We aim to form the target triplet <code>[x, y, z]</code> by merging valid triplets using element-wise maximums. A key observation is that any triplet with a value exceeding the target in any dimension cannot be used. Therefore, we filter those out and search for triplets that can contribute exactly <code>x</code>, <code>y</code>, or <code>z</code> without exceeding the other target dimensions.</p>
+</section>
+<section id="approach" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Approach</h1>
+<ol type="1">
+<li>Initialize three boolean flags: <code>found_x</code>, <code>found_y</code>, and <code>found_z</code> to track whether we have found triplets that can provide <code>x</code>, <code>y</code>, and <code>z</code> respectively.</li>
+<li>Iterate through each triplet:
+<ul>
+<li>Skip the triplet if any of its elements exceed the target at the corresponding index.</li>
+<li>If the triplet is valid:
+<ul>
+<li>If <code>triplet[0] == x</code>, mark <code>found_x = True</code></li>
+<li>If <code>triplet[1] == y</code>, mark <code>found_y = True</code></li>
+<li>If <code>triplet[2] == z</code>, mark <code>found_z = True</code></li>
+</ul></li>
+</ul></li>
+<li>After iterating through all triplets, if all three flags are <code>True</code>, return <code>True</code>; otherwise, return <code>False</code>.</li>
+</ol>
+<p>This approach is greedy because we only care about finding at least one valid triplet that satisfies each coordinate condition individually.</p>
+</section>
+<section id="complexity" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Complexity</h1>
+<ul>
+<li><p>Time complexity:<br>
+<img src="https://latex.codecogs.com/png.latex?O(n)"><br>
+We iterate over the list of triplets once, performing constant-time operations per triplet.</p></li>
+<li><p>Space complexity:<br>
+<img src="https://latex.codecogs.com/png.latex?O(1)"><br>
+We only use three boolean variables and no additional data structures.</p></li>
+</ul>
+<section id="problem-summary-merge-triplets-to-form-target-triplet" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="problem-summary-merge-triplets-to-form-target-triplet"><span class="header-section-number">3.1</span> Problem Summary: Merge Triplets to Form Target Triplet</h2>
+<p>We are given: - A list of triplets: each is [a, b, c] - A target triplet: [x, y, z]</p>
+<p>Our task is to <strong>merge</strong> some of the triplets to form the target triplet, using this rule:</p>
+<section id="merge-rule" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="merge-rule"><span class="header-section-number">3.1.1</span> Merge Rule:</h3>
+<p>Merging two triplets means taking the element-wise maximum:</p>
+<pre><code>[a1, b1, c1] + [a2, b2, c2] = [max(a1, a2), max(b1, b2), max(c1, c2)]</code></pre>
+<p>But we can <strong>only use</strong> a triplet if it satisfies:</p>
+<pre><code>triplet[i] ≤ target[i] for all i in {0, 1, 2}</code></pre>
+<p>We must decide if it’s possible to form the target triplet through a sequence of such merges.</p>
+<hr>
+</section>
+</section>
+<section id="step-by-step-solution-strategy-greedy" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="step-by-step-solution-strategy-greedy"><span class="header-section-number">3.2</span> Step-by-step Solution Strategy (Greedy)</h2>
+<section id="step-1-filter-valid-triplets" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="step-1-filter-valid-triplets"><span class="header-section-number">3.2.1</span> Step 1: Filter Valid Triplets</h3>
+<p>We first discard any triplet that has a value greater than the target at any position:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> x <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> b <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> y <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">or</span> c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> z:</span>
+<span id="cb3-2">    skip this triplet</span></code></pre></div>
+<p>These triplets cannot be used in any valid merge.</p>
+<hr>
+</section>
+<section id="step-2-identify-building-blocks" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="step-2-identify-building-blocks"><span class="header-section-number">3.2.2</span> Step 2: Identify Building Blocks</h3>
+<p>We are trying to “build” each of the three elements of the target.</p>
+<p>That means we must find at least one triplet that contributes to: - <code>a == x</code> - <code>b == y</code> - <code>c == z</code></p>
+<p>For example: - A triplet like [x, ≤y, ≤z] helps construct the first coordinate - A triplet like [≤x, y, ≤z] helps the second - A triplet like [≤x, ≤y, z] helps the third</p>
+<p>We can mix triplets to form the full target.</p>
+<hr>
+</section>
+<section id="step-3-greedy-tracking" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="step-3-greedy-tracking"><span class="header-section-number">3.2.3</span> Step 3: Greedy Tracking</h3>
+<p>We initialize flags:</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">found_x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> found_y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> found_z <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span></code></pre></div>
+<p>Then iterate through all <strong>valid</strong> triplets:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> triplet <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> triplets:</span>
+<span id="cb5-2">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> x <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> y <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> z:</span>
+<span id="cb5-3">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> x:</span>
+<span id="cb5-4">            found_x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb5-5">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> y:</span>
+<span id="cb5-6">            found_y <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb5-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> z:</span>
+<span id="cb5-8">            found_z <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span></code></pre></div>
+<hr>
+</section>
+<section id="step-4-final-decision" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="step-4-final-decision"><span class="header-section-number">3.2.4</span> Step 4: Final Decision</h3>
+<p>If all three components are found:</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> found_x <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> found_y <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> found_z:</span>
+<span id="cb6-2">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span></span>
+<span id="cb6-3"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb6-4">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span></span></code></pre></div>
+<hr>
+</section>
+</section>
+<section id="example" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="example"><span class="header-section-number">3.3</span> Example</h2>
+<p>Given:</p>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">triplets <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>], [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>], [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>]]</span>
+<span id="cb7-2">target <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>]</span></code></pre></div>
+<ul>
+<li>[2,5,3] is valid: helps with x=2 and y=5</li>
+<li>[1,8,4] is invalid: 8 &gt; 5</li>
+<li>[2,3,5] is valid: helps with x=2 and z=5</li>
+</ul>
+<p>We found: - x: yes (from both) - y: yes (from [2,5,3]) - z: yes (from [2,3,5])</p>
+<p>Return: <code>True</code></p>
+<hr>
+</section>
+<section id="why-it-is-a-greedy-problem" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="why-it-is-a-greedy-problem"><span class="header-section-number">3.4</span> Why It Is a Greedy Problem</h2>
+<p>We make <strong>local greedy choices</strong>: - If a triplet is valid and has the required value for one of the coordinates, we “take” it. - We do not need to backtrack or search combinations. - As long as we collect the three necessary components, merging them gives the target.</p>
+<p>This approach is optimal and efficient because each choice is independent and bounded by the target.</p>
+</section>
+</section>
+<section id="source-code" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Source code</h1>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> List</span>
+<span id="cb8-2"></span>
+<span id="cb8-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">class</span> Solution:</span>
+<span id="cb8-4">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> mergeTriplets(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, triplets: List[List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]], target: List[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">bool</span>:</span>
+<span id="cb8-5">        a, b, c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># will simulate the merged triplet</span></span>
+<span id="cb8-6"></span>
+<span id="cb8-7">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> triplet <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> triplets:</span>
+<span id="cb8-8">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Only consider triplets where all elements are &lt;= target</span></span>
+<span id="cb8-9">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> target[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>] <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> target[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> target[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>]:</span>
+<span id="cb8-10">                a <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(a, triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>])</span>
+<span id="cb8-11">                b <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(b, triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>])</span>
+<span id="cb8-12">                c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">max</span>(c, triplet[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>])</span>
+<span id="cb8-13"></span>
+<span id="cb8-14">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> [a, b, c] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> target</span></code></pre></div>
+
+
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-triplet/</guid>
   <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -1444,645 +1849,6 @@ font-style: inherit;">1</span>]</span></code></pre></div>
   <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Merge Triplets to Form Target Triplet</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-triplet/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="intuition" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Intuition</h1>
-<p>We aim to form the target triplet <code>[x, y, z]</code> by merging valid triplets using element-wise maximums. A key observation is that any triplet with a value exceeding the target in any dimension cannot be used. Therefore, we filter those out and search for triplets that can contribute exactly <code>x</code>, <code>y</code>, or <code>z</code> without exceeding the other target dimensions.</p>
-</section>
-<section id="approach" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Approach</h1>
-<ol type="1">
-<li>Initialize three boolean flags: <code>found_x</code>, <code>found_y</code>, and <code>found_z</code> to track whether we have found triplets that can provide <code>x</code>, <code>y</code>, and <code>z</code> respectively.</li>
-<li>Iterate through each triplet:
-<ul>
-<li>Skip the triplet if any of its elements exceed the target at the corresponding index.</li>
-<li>If the triplet is valid:
-<ul>
-<li>If <code>triplet[0] == x</code>, mark <code>found_x = True</code></li>
-<li>If <code>triplet[1] == y</code>, mark <code>found_y = True</code></li>
-<li>If <code>triplet[2] == z</code>, mark <code>found_z = True</code></li>
-</ul></li>
-</ul></li>
-<li>After iterating through all triplets, if all three flags are <code>True</code>, return <code>True</code>; otherwise, return <code>False</code>.</li>
-</ol>
-<p>This approach is greedy because we only care about finding at least one valid triplet that satisfies each coordinate condition individually.</p>
-</section>
-<section id="complexity" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Complexity</h1>
-<ul>
-<li><p>Time complexity:<br>
-<img src="https://latex.codecogs.com/png.latex?O(n)"><br>
-We iterate over the list of triplets once, performing constant-time operations per triplet.</p></li>
-<li><p>Space complexity:<br>
-<img src="https://latex.codecogs.com/png.latex?O(1)"><br>
-We only use three boolean variables and no additional data structures.</p></li>
-</ul>
-<section id="problem-summary-merge-triplets-to-form-target-triplet" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="problem-summary-merge-triplets-to-form-target-triplet"><span class="header-section-number">3.1</span> Problem Summary: Merge Triplets to Form Target Triplet</h2>
-<p>We are given: - A list of triplets: each is [a, b, c] - A target triplet: [x, y, z]</p>
-<p>Our task is to <strong>merge</strong> some of the triplets to form the target triplet, using this rule:</p>
-<section id="merge-rule" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="merge-rule"><span class="header-section-number">3.1.1</span> Merge Rule:</h3>
-<p>Merging two triplets means taking the element-wise maximum:</p>
-<pre><code>[a1, b1, c1] + [a2, b2, c2] = [max(a1, a2), max(b1, b2), max(c1, c2)]</code></pre>
-<p>But we can <strong>only use</strong> a triplet if it satisfies:</p>
-<pre><code>triplet[i] ≤ target[i] for all i in {0, 1, 2}</code></pre>
-<p>We must decide if it’s possible to form the target triplet through a sequence of such merges.</p>
-<hr>
-</section>
-</section>
-<section id="step-by-step-solution-strategy-greedy" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="step-by-step-solution-strategy-greedy"><span class="header-section-number">3.2</span> Step-by-step Solution Strategy (Greedy)</h2>
-<section id="step-1-filter-valid-triplets" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="step-1-filter-valid-triplets"><span class="header-section-number">3.2.1</span> Step 1: Filter Valid Triplets</h3>
-<p>We first discard any triplet that has a value greater than the target at any position:</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> x <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">or</span> b <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> y <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">or</span> c <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> z:</span>
-<span id="cb3-2">    skip this triplet</span></code></pre></div>
-<p>These triplets cannot be used in any valid merge.</p>
-<hr>
-</section>
-<section id="step-2-identify-building-blocks" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="step-2-identify-building-blocks"><span class="header-section-number">3.2.2</span> Step 2: Identify Building Blocks</h3>
-<p>We are trying to “build” each of the three elements of the target.</p>
-<p>That means we must find at least one triplet that contributes to: - <code>a == x</code> - <code>b == y</code> - <code>c == z</code></p>
-<p>For example: - A triplet like [x, ≤y, ≤z] helps construct the first coordinate - A triplet like [≤x, y, ≤z] helps the second - A triplet like [≤x, ≤y, z] helps the third</p>
-<p>We can mix triplets to form the full target.</p>
-<hr>
-</section>
-<section id="step-3-greedy-tracking" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="step-3-greedy-tracking"><span class="header-section-number">3.2.3</span> Step 3: Greedy Tracking</h3>
-<p>We initialize flags:</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">found_x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> found_y <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> found_z <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span></span></code></pre></div>
-<p>Then iterate through all <strong>valid</strong> triplets:</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> triplet <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> triplets:</span>
-<span id="cb5-2">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> x <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> y <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> z:</span>
-<span id="cb5-3">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> x:</span>
-<span id="cb5-4">            found_x <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span></span>
-<span id="cb5-5">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> y:</span>
-<span id="cb5-6">            found_y <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span></span>
-<span id="cb5-7">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> z:</span>
-<span id="cb5-8">            found_z <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span></span></code></pre></div>
-<hr>
-</section>
-<section id="step-4-final-decision" class="level3" data-number="3.2.4">
-<h3 data-number="3.2.4" class="anchored" data-anchor-id="step-4-final-decision"><span class="header-section-number">3.2.4</span> Step 4: Final Decision</h3>
-<p>If all three components are found:</p>
-<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> found_x <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">and</span> found_y <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">and</span> found_z:</span>
-<span id="cb6-2">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span></span>
-<span id="cb6-3"><span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">else</span>:</span>
-<span id="cb6-4">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">False</span></span></code></pre></div>
-<hr>
-</section>
-</section>
-<section id="example" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="example"><span class="header-section-number">3.3</span> Example</h2>
-<p>Given:</p>
-<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">triplets <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>], [<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">8</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span>], [<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">3</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>]]</span>
-<span id="cb7-2">target <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>,<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span>]</span></code></pre></div>
-<ul>
-<li>[2,5,3] is valid: helps with x=2 and y=5</li>
-<li>[1,8,4] is invalid: 8 &gt; 5</li>
-<li>[2,3,5] is valid: helps with x=2 and z=5</li>
-</ul>
-<p>We found: - x: yes (from both) - y: yes (from [2,5,3]) - z: yes (from [2,3,5])</p>
-<p>Return: <code>True</code></p>
-<hr>
-</section>
-<section id="why-it-is-a-greedy-problem" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="why-it-is-a-greedy-problem"><span class="header-section-number">3.4</span> Why It Is a Greedy Problem</h2>
-<p>We make <strong>local greedy choices</strong>: - If a triplet is valid and has the required value for one of the coordinates, we “take” it. - We do not need to backtrack or search combinations. - As long as we collect the three necessary components, merging them gives the target.</p>
-<p>This approach is optimal and efficient because each choice is independent and bounded by the target.</p>
-</section>
-</section>
-<section id="source-code" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Source code</h1>
-<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> List</span>
-<span id="cb8-2"></span>
-<span id="cb8-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">class</span> Solution:</span>
-<span id="cb8-4">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> mergeTriplets(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, triplets: List[List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]], target: List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">bool</span>:</span>
-<span id="cb8-5">        a, b, c <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># will simulate the merged triplet</span></span>
-<span id="cb8-6"></span>
-<span id="cb8-7">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> triplet <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> triplets:</span>
-<span id="cb8-8">            <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Only consider triplets where all elements are &lt;= target</span></span>
-<span id="cb8-9">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> target[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>] <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> target[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>] <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">and</span> triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;=</span> target[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>]:</span>
-<span id="cb8-10">                a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">max</span>(a, triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>])</span>
-<span id="cb8-11">                b <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">max</span>(b, triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>])</span>
-<span id="cb8-12">                c <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">max</span>(c, triplet[<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>])</span>
-<span id="cb8-13"></span>
-<span id="cb8-14">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> [a, b, c] <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> target</span></code></pre></div>
-
-
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-triplet/</guid>
-  <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Optimizing String Partitioning – LeetCode 763 Deep Dive</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="intuition" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Intuition</h1>
-<!-- Describe your first thoughts on how to solve this problem. -->
-<p>We are given a string <code>s</code>, and we need to partition it into as many parts as possible such that <strong>each letter appears in at most one part</strong>. This suggests a <strong>greedy approach</strong>, where we keep extending the current partition until we are sure no character in it appears later.</p>
-<p>Initially, I thought of tracking how many times each character appears and using that to decide when a character is “done” — this forms <strong>Approach 1</strong>.</p>
-<p>Later, I realized that we can optimize by <strong>just tracking the last occurrence</strong> of each character and extending the partition greedily — this is <strong>Approach 2</strong>.</p>
-</section>
-<section id="approach" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Approach</h1>
-<!-- Describe your approach to solving the problem. -->
-<section id="approach-1-frequency-based-tracking-counter" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="approach-1-frequency-based-tracking-counter"><span class="header-section-number">2.1</span> Approach 1: Frequency-based Tracking (Counter)</h2>
-<ol type="1">
-<li><p>Use <code>Counter</code> to store total character frequency.</p></li>
-<li><p>As we iterate through <code>s</code>, maintain a <code>current_count</code> Counter.</p></li>
-<li><p>Whenever all counts in <code>current_count</code> match the ones in <code>total_count</code>, we can safely cut the partition.</p></li>
-</ol>
-</section>
-<section id="approach-2-greedy-with-last-occurrence" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="approach-2-greedy-with-last-occurrence"><span class="header-section-number">2.2</span> Approach 2: Greedy with Last Occurrence</h2>
-<ol type="1">
-<li><p>Precompute a map of the <strong>last index</strong> of every character.</p></li>
-<li><p>While iterating, keep track of the current partition’s end by updating to the farthest last index seen so far.</p></li>
-<li><p>When the current index equals the <code>end</code>, it means all characters in this partition are safely enclosed — we can cut here.</p></li>
-</ol>
-</section>
-</section>
-<section id="complexity" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Complexity</h1>
-<section id="approach-1" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="approach-1"><span class="header-section-number">3.1</span> Approach 1</h2>
-<ul>
-<li>Time complexity: <img src="https://latex.codecogs.com/png.latex?O(n%5Ccdot%20a)"> where <img src="https://latex.codecogs.com/png.latex?a"> is the number of unique characters (&lt;= 26)</li>
-<li>Space complexity: <img src="https://latex.codecogs.com/png.latex?O(a)"> for <code>Counter</code></li>
-</ul>
-</section>
-<section id="approach-2" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="approach-2"><span class="header-section-number">3.2</span> Approach 2</h2>
-<ul>
-<li>Time complexity: <img src="https://latex.codecogs.com/png.latex?O(n)"></li>
-<li>Space complexity: <img src="https://latex.codecogs.com/png.latex?O(a)"></li>
-</ul>
-</section>
-</section>
-<section id="code" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Code</h1>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">class</span> Solution:</span>
-<span id="cb1-2">    <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> partitionLabels(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">self</span>, s: <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-&gt;</span> List[<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">int</span>]:</span>
-<span id="cb1-3">        </span>
-<span id="cb1-4">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># get a string</span></span>
-<span id="cb1-5"></span>
-<span id="cb1-6">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># part -&gt; as many parts as possible</span></span>
-<span id="cb1-7">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># 1 letter appears in at most 1 part.</span></span>
-<span id="cb1-8"></span>
-<span id="cb1-9">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># return the list of size of these parts</span></span>
-<span id="cb1-10">        </span>
-<span id="cb1-11">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># as many parts as possible </span></span>
-<span id="cb1-12">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># -&gt; parts is as shorts as possible</span></span>
-<span id="cb1-13"></span>
-<span id="cb1-14">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># if we find a char, we want to find the lastest char for cut into a part</span></span>
-<span id="cb1-15"></span>
-<span id="cb1-16">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># if we have a count_chars array, </span></span>
-<span id="cb1-17">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># we can use that for end find char</span></span>
-<span id="cb1-18"></span>
-<span id="cb1-19">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#################</span></span>
-<span id="cb1-20"></span>
-<span id="cb1-21">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># # import counter class from collections module</span></span>
-<span id="cb1-22">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># from collections import Counter</span></span>
-<span id="cb1-23"></span>
-<span id="cb1-24">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># total_count = Counter(s)</span></span>
-<span id="cb1-25"></span>
-<span id="cb1-26">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># ans = []</span></span>
-<span id="cb1-27">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># current_count = Counter()</span></span>
-<span id="cb1-28">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># start = 0</span></span>
-<span id="cb1-29">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># for i, char in enumerate(s):</span></span>
-<span id="cb1-30">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#     current_count[char] += 1</span></span>
-<span id="cb1-31">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#     # check all char in part == that char in count_part -&gt; cut it</span></span>
-<span id="cb1-32"></span>
-<span id="cb1-33">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#     if all(current_count[c] == total_count[c] for c in current_count):</span></span>
-<span id="cb1-34">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#         ans.append(i - start + 1)</span></span>
-<span id="cb1-35">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#         start = i + 1</span></span>
-<span id="cb1-36">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">#         current_count.clear()</span></span>
-<span id="cb1-37">        </span>
-<span id="cb1-38">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># return ans</span></span>
-<span id="cb1-39"></span>
-<span id="cb1-40">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">################################</span></span>
-<span id="cb1-41">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Ok</span></span>
-<span id="cb1-42"></span>
-<span id="cb1-43">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># but instead of store all char in current part, and recheck it (O(n^2))</span></span>
-<span id="cb1-44">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># we just really concern about the last index of out current char</span></span>
-<span id="cb1-45">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># (if we get char[a], we want to expand to the last index of [a])</span></span>
-<span id="cb1-46">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># on the track of that, we can get new char,</span></span>
-<span id="cb1-47">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># if that char have the last index &gt; 'a'.</span></span>
-<span id="cb1-48">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># we need to update that</span></span>
-<span id="cb1-49"></span>
-<span id="cb1-50">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># TC: O(n)</span></span>
-<span id="cb1-51"></span>
-<span id="cb1-52">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Step 1: Record the last occurence of each character</span></span>
-<span id="cb1-53">        last_index <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> {char: i <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i, char <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">enumerate</span>(s)}</span>
-<span id="cb1-54"></span>
-<span id="cb1-55">        result <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> []</span>
-<span id="cb1-56">        start <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb1-57">        end <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span></span>
-<span id="cb1-58"></span>
-<span id="cb1-59">        <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Step 2: Iterate and find partition points</span></span>
-<span id="cb1-60">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">for</span> i, char <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">in</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">enumerate</span>(s):</span>
-<span id="cb1-61">            end <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">max</span>(end, last_index[char]) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># extend the partition to the last seen char</span></span>
-<span id="cb1-62">            <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> i <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> end:</span>
-<span id="cb1-63">                result.append(end <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">-</span> start <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>) <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># cut here</span></span>
-<span id="cb1-64">                start <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> i <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># new partition</span></span>
-<span id="cb1-65">        </span>
-<span id="cb1-66">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> result</span></code></pre></div>
-
-
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <category>greedy</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-/</guid>
-  <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>Combinatoric Selections</title>
   <dc:creator>Kim Hung Bui</dc:creator>
   <link>https://kimhungbui.github.io/programming/project-euler-53/</link>
@@ -2119,6 +1885,240 @@ How many, not necessarily distinct, values of <img src="https://latex.codecogs.c
   <category>project-euler</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/project-euler-53/</guid>
+  <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Merge Triplets to Form Target Triplet</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/project-euler-52/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>
+It can be seen that the number, <img src="https://latex.codecogs.com/png.latex?125874">, and its double, <img src="https://latex.codecogs.com/png.latex?251748">, contain exactly the same digits, but in a different order.
+</p>
+<p>
+Find the smallest positive integer, <img src="https://latex.codecogs.com/png.latex?x">, such that <img src="https://latex.codecogs.com/png.latex?2x">, <img src="https://latex.codecogs.com/png.latex?3x">, <img src="https://latex.codecogs.com/png.latex?4x">, <img src="https://latex.codecogs.com/png.latex?5x">, and <img src="https://latex.codecogs.com/png.latex?6x">, contain the same digits.
+</p>
+<section id="brute-force-idea-on2-or-worse" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Brute Force Idea (<img src="https://latex.codecogs.com/png.latex?O(n%5E2)"> or worse)</h1>
+<p>Test each number <code>x</code> starting from 1, and check if <code>2x, ..., 6x</code> are permutations of <code>x</code>. While that works, it’s not efficient if we don’t restrict the search space.</p>
+</section>
+<section id="key-observations-to-reduce-the-search-space" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Key observations (To Reduce the Search Space)</h1>
+<section id="same-number-of-digits" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="same-number-of-digits"><span class="header-section-number">2.1</span> Same number of digits:</h2>
+<p>If <code>x</code> has <code>d</code> digits, <code>6x</code> must not have more digits than <code>x</code>, or they can’t be permutations.</p>
+<p>So</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(x) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">x</span>)</span></code></pre></div>
+<p>Example: If <code>x = 100</code>, then <code>6x = 600</code>, same digit count (3). But <code>x = 200</code>, then <code>6x = 1200</code> (4 digits), not possible.</p>
+<p>That gives <strong>a range to search in</strong>:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> x <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span>(d<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>), <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span>d):</span>
+<span id="cb2-2">    ...</span></code></pre></div>
+</section>
+<section id="digit-permutation-check" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="digit-permutation-check"><span class="header-section-number">2.2</span> Digit permutation check:</h2>
+<p>Instead of sorting each time (<img src="https://latex.codecogs.com/png.latex?O(n%5Clog%20n)">), use:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> canonical(n):</span>
+<span id="cb3-2">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">''</span>.join(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sorted</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>(n)))</span></code></pre></div>
+<p>then</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> canonical(x)</span>
+<span id="cb4-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> canonical(i <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> x) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>))</span></code></pre></div>
+<p>This function is creating a canonical (standardized) form of any number:</p>
+<ul>
+<li><p><code>str(n)</code> converts the number to a string (e.g., <code>123</code> → <code>'123'</code>)</p></li>
+<li><p><code>sorted(...)</code> puts the digits in ascending order (e.g., <code>'321'</code> → <code>['1','2','3']</code>)</p></li>
+<li><p><code>''.join(...)</code> joins them back to a single string (e.g., <code>['1','2','3']</code> → <code>'123'</code>)</p></li>
+</ul>
+<p>So:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">canonical(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">123</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'123'</span></span>
+<span id="cb5-2">canonical(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">231</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'123'</span></span>
+<span id="cb5-3">canonical(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">312</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'123'</span></span></code></pre></div>
+<p>All are permutations of the same digits ⇒ same canonical form</p>
+<p>Time Complexity</p>
+<ul>
+<li><p>Each check is ~O(1) due to short digit lengths</p></li>
+<li><p>The loop is linear in x (but bounded by 6-digit numbers)</p></li>
+<li><p>Much faster than O(n²) since the search space is tightly controlled</p></li>
+</ul>
+<div id="6e0c35fb" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> canonical(n):</span>
+<span id="cb6-2">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">''</span>.join(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sorted</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>(n)))</span>
+<span id="cb6-3"></span>
+<span id="cb6-4"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> has_same_digits(x):</span>
+<span id="cb6-5">    c <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> canonical(x)</span>
+<span id="cb6-6">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">all</span>(canonical(x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> i) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> c <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span> i <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>))</span>
+<span id="cb6-7"></span>
+<span id="cb6-8"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> find_smallest_permuted_multiple():</span>
+<span id="cb6-9">    x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100000</span></span>
+<span id="cb6-10">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>:</span>
+<span id="cb6-11">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> has_same_digits(x):</span>
+<span id="cb6-12">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> x</span>
+<span id="cb6-13">        x <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span></span>
+<span id="cb6-14"></span>
+<span id="cb6-15"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(find_smallest_permuted_multiple())  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Output: 142857</span></span></code></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>142857</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>project-euler</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/project-euler-52/</guid>
   <pubDate>Sat, 19 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -2435,117 +2435,6 @@ font-style: inherit;">True</span></span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-hand-of-straights/</guid>
   <pubDate>Fri, 18 Jul 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Greedy Problem Solving Framework</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/greedy/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="greedy-problem-solving-framework" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Greedy Problem Solving Framework</h1>
-<p>Greedy algorithms solve problems by <strong>making locally optimal choices</strong> at each step in the hope that they lead to a <strong>globally optimal solution</strong> without backtracking. However, <strong>not all problems can be solved greedily</strong>. Here’s a reliable framework to decide <strong>when and how to apply</strong> a greedy strategy.</p>
-<hr>
-<section id="problem-understanding" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="problem-understanding"><span class="header-section-number">1.1</span> Problem Understanding</h2>
-<ul>
-<li><strong>Goal</strong>: What is being optimized? (e.g., minimize cost, maximize profit)</li>
-<li><strong>Constraints</strong>: Do choices need to be irreversible or done in order?</li>
-<li><strong>Input Size</strong>: Is brute-force even feasible?</li>
-</ul>
-<hr>
-</section>
-<section id="brute-force-first" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="brute-force-first"><span class="header-section-number">1.2</span> Brute Force First</h2>
-<ul>
-<li>Try all possible paths/choices.</li>
-<li>Ask: Why is this inefficient?</li>
-<li>This helps reveal <em>structure</em> in the problem (e.g., repeated states, redundant decisions).</li>
-</ul>
-<hr>
-</section>
-<section id="identify-the-greedy-choice" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="identify-the-greedy-choice"><span class="header-section-number">1.3</span> Identify the “Greedy Choice”</h2>
-<p>Ask: - What is the <em>best local decision</em> I can make at each step? - Can I prove that making this choice will <em>never hurt future decisions</em>?</p>
-<p>Common greedy choices: - <strong>Max gain</strong> per step - <strong>Min cost</strong> to reach the next step - <strong>Earliest deadline</strong>, <strong>highest value per weight</strong>, etc.</p>
-<hr>
-</section>
-<section id="validate-greedy-is-safe" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="validate-greedy-is-safe"><span class="header-section-number">1.4</span> Validate Greedy is Safe</h2>
-<p>Test your greedy choice with: - <strong>Counterexamples</strong>: Try inputs where greedy may fail. - <strong>Proof</strong>: Can you prove “greedy choice” leads to an optimal solution?</p>
-<p>Techniques: - <strong>Exchange Argument</strong> - <strong>Greedy Stays Ahead</strong></p>
-<hr>
-</section>
-<section id="implement-test" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="implement-test"><span class="header-section-number">1.5</span> Implement &amp; Test</h2>
-<ul>
-<li>Use <code>O(n)</code> or <code>O(n log n)</code> greedy logic.</li>
-<li>Track accumulative values (e.g., balance, remaining capacity).</li>
-<li>Reset conditions if necessary (like in gas station).</li>
-</ul>
-<hr>
-</section>
-<section id="common-greedy-patterns" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="common-greedy-patterns"><span class="header-section-number">1.6</span> Common Greedy Patterns</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 48%">
-<col style="width: 51%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Pattern</th>
-<th>Example Problems</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Interval Scheduling</td>
-<td>Activity selection, meeting rooms</td>
-</tr>
-<tr class="even">
-<td>Resource Allocation</td>
-<td>Fractional knapsack</td>
-</tr>
-<tr class="odd">
-<td>Accumulated Constraints</td>
-<td>Gas Station, Jump Game</td>
-</tr>
-<tr class="even">
-<td>Covering Problems</td>
-<td>Set cover approximations</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="mindset-summary" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="mindset-summary"><span class="header-section-number">1.7</span> Mindset Summary</h2>
-<blockquote class="blockquote">
-<p>“Make the best local decision… but <strong>prove</strong> or <strong>observe</strong> that it’s globally optimal.”</p>
-</blockquote>
-<p>Use greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with <strong>monotonic constraints</strong></p>
-<hr>
-<p><strong>Example</strong>: In the gas station problem<br>
-- Greedy resets starting index when <code>curr_tank &lt; 0</code><br>
-- If <code>total_tank &gt;= 0</code>, a valid start must exist<br>
-- Greedy eliminates bad candidates efficiently</p>
-<hr>
-<p>Final Note:<br>
-Not all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>leetcode</category>
-  <category>programming</category>
-  <guid>https://kimhungbui.github.io/programming/greedy/</guid>
-  <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Gas Station</title>
@@ -2980,6 +2869,117 @@ Not all problems are greedy-solvable. When in doubt, try: - Dynamic Programming 
   <category>leetcode</category>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-gas-station/</guid>
+  <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Greedy Problem Solving Framework</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/greedy/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="greedy-problem-solving-framework" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Greedy Problem Solving Framework</h1>
+<p>Greedy algorithms solve problems by <strong>making locally optimal choices</strong> at each step in the hope that they lead to a <strong>globally optimal solution</strong> without backtracking. However, <strong>not all problems can be solved greedily</strong>. Here’s a reliable framework to decide <strong>when and how to apply</strong> a greedy strategy.</p>
+<hr>
+<section id="problem-understanding" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="problem-understanding"><span class="header-section-number">1.1</span> Problem Understanding</h2>
+<ul>
+<li><strong>Goal</strong>: What is being optimized? (e.g., minimize cost, maximize profit)</li>
+<li><strong>Constraints</strong>: Do choices need to be irreversible or done in order?</li>
+<li><strong>Input Size</strong>: Is brute-force even feasible?</li>
+</ul>
+<hr>
+</section>
+<section id="brute-force-first" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="brute-force-first"><span class="header-section-number">1.2</span> Brute Force First</h2>
+<ul>
+<li>Try all possible paths/choices.</li>
+<li>Ask: Why is this inefficient?</li>
+<li>This helps reveal <em>structure</em> in the problem (e.g., repeated states, redundant decisions).</li>
+</ul>
+<hr>
+</section>
+<section id="identify-the-greedy-choice" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="identify-the-greedy-choice"><span class="header-section-number">1.3</span> Identify the “Greedy Choice”</h2>
+<p>Ask: - What is the <em>best local decision</em> I can make at each step? - Can I prove that making this choice will <em>never hurt future decisions</em>?</p>
+<p>Common greedy choices: - <strong>Max gain</strong> per step - <strong>Min cost</strong> to reach the next step - <strong>Earliest deadline</strong>, <strong>highest value per weight</strong>, etc.</p>
+<hr>
+</section>
+<section id="validate-greedy-is-safe" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="validate-greedy-is-safe"><span class="header-section-number">1.4</span> Validate Greedy is Safe</h2>
+<p>Test your greedy choice with: - <strong>Counterexamples</strong>: Try inputs where greedy may fail. - <strong>Proof</strong>: Can you prove “greedy choice” leads to an optimal solution?</p>
+<p>Techniques: - <strong>Exchange Argument</strong> - <strong>Greedy Stays Ahead</strong></p>
+<hr>
+</section>
+<section id="implement-test" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="implement-test"><span class="header-section-number">1.5</span> Implement &amp; Test</h2>
+<ul>
+<li>Use <code>O(n)</code> or <code>O(n log n)</code> greedy logic.</li>
+<li>Track accumulative values (e.g., balance, remaining capacity).</li>
+<li>Reset conditions if necessary (like in gas station).</li>
+</ul>
+<hr>
+</section>
+<section id="common-greedy-patterns" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="common-greedy-patterns"><span class="header-section-number">1.6</span> Common Greedy Patterns</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Example Problems</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interval Scheduling</td>
+<td>Activity selection, meeting rooms</td>
+</tr>
+<tr class="even">
+<td>Resource Allocation</td>
+<td>Fractional knapsack</td>
+</tr>
+<tr class="odd">
+<td>Accumulated Constraints</td>
+<td>Gas Station, Jump Game</td>
+</tr>
+<tr class="even">
+<td>Covering Problems</td>
+<td>Set cover approximations</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="mindset-summary" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="mindset-summary"><span class="header-section-number">1.7</span> Mindset Summary</h2>
+<blockquote class="blockquote">
+<p>“Make the best local decision… but <strong>prove</strong> or <strong>observe</strong> that it’s globally optimal.”</p>
+</blockquote>
+<p>Use greedy when: - Future choices don’t depend heavily on past ones - Local optimum leads to global optimum - Problem can be modeled with <strong>monotonic constraints</strong></p>
+<hr>
+<p><strong>Example</strong>: In the gas station problem<br>
+- Greedy resets starting index when <code>curr_tank &lt; 0</code><br>
+- If <code>total_tank &gt;= 0</code>, a valid start must exist<br>
+- Greedy eliminates bad candidates efficiently</p>
+<hr>
+<p>Final Note:<br>
+Not all problems are greedy-solvable. When in doubt, try: - Dynamic Programming - Backtracking with pruning</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>leetcode</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/greedy/</guid>
   <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
@@ -4802,7 +4802,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="c69ef8a7" class="cell" data-execution_count="1">
+<div id="388558a3" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
@@ -4879,63 +4879,6 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
   <category>programming</category>
   <guid>https://kimhungbui.github.io/programming/leetcode-maximum-subarray/</guid>
   <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Minimum Cost Walk in Weighted Graph</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="question" class="level1">
-<h1>Question</h1>
-<p>There is an undirected weighted graph with n vertices labeled from 0 to n - 1.</p>
-<p>You are given the integer n and an array edges, where edges[i] = [ui, vi, wi] indicates that there is an edge between vertices ui and vi with a weight of wi.</p>
-<p>A walk on a graph is a sequence of vertices and edges. The walk starts and ends with a vertex, and each edge connects the vertex that comes before it and the vertex that comes after it. It’s important to note that a walk may visit the same edge or vertex more than once.</p>
-<p>The cost of a walk starting at node u and ending at node v is defined as the bitwise AND of the weights of the edges traversed during the walk. In other words, if the sequence of edge weights encountered during the walk is w0, w1, w2, …, wk, then the cost is calculated as w0 &amp; w1 &amp; w2 &amp; … &amp; wk, where &amp; denotes the bitwise AND operator.</p>
-<p>You are also given a 2D array query, where query[i] = [si, ti]. For each query, you need to find the minimum cost of the walk starting at vertex si and ending at vertex ti. If there exists no such walk, the answer is -1.</p>
-<p>Return the array answer, where answer[i] denotes the minimum cost of a walk for query i.</p>
-<p>Example 1:</p>
-<p>Input: <code>n = 5</code>, edges = <code>[[0,1,7],[1,3,7],[1,2,1]]</code>, query = <code>[[0,3],[3,4]]</code></p>
-<p>Output: <code>[1,-1]</code></p>
-<p>Explanation:</p>
-<p>To achieve the cost of 1 in the first query, we need to move on the following edges: 0-&gt;1 (weight 7), 1-&gt;2 (weight 1), 2-&gt;1 (weight 1), 1-&gt;3 (weight 7).</p>
-<p>In the second query, there is no walk between nodes 3 and 4, so the answer is -1.</p>
-<p>Example 2:</p>
-<p>Input: n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]</p>
-<p>Output: [0]</p>
-<p>Explanation:</p>
-<p>To achieve the cost of 0 in the first query, we need to move on the following edges: 1-&gt;2 (weight 1), 2-&gt;1 (weight 6), 1-&gt;2 (weight 1).</p>
-<p>Constraints:</p>
-<pre><code>2 &lt;= n &lt;= 105
-0 &lt;= edges.length &lt;= 105
-edges[i].length == 3
-0 &lt;= ui, vi &lt;= n - 1
-ui != vi
-0 &lt;= wi &lt;= 105
-1 &lt;= query.length &lt;= 105
-query[i].length == 2
-0 &lt;= si, ti &lt;= n - 1
-si != ti</code></pre>
-</section>
-<section id="analysis" class="level1">
-<h1>Analysis</h1>
-<p>Let’s determine when the answer to a query is <code>-1</code>. This happens when no walk exists between the two nodes, meaning they belong to different connected components.</p>
-<p>Now, suppose the two nodes belong to the same connected component. What is the minimum cost of a walk connecting them? As mentioned, the optimal walk includes as many edges as possible. Since revisiting an edge does not affect the total score, we can freely traverse the edges of the component, meaning that we can move back and forth to reach all of them. Therefore, the best way to achieve the lowest cost is to visit every edge in the component.</p>
-<p>To efficiently find and process the connected components of the graph, we use the Disjoint Set (Union-Find) data structure. When we Union two nodes, we merge their entire groups, as now a path exists between every node in one group and every node in the other. To maintain efficiency, the root of the larger group is chosen as the representative of the merge group. This minimizes the time needed for future Find operations by reducing the number of steps required to reach the current representative.</p>
-
-
-</section>
-
- ]]></description>
-  <category>programming</category>
-  <category>data structure</category>
-  <category>DSU</category>
-  <guid>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</guid>
-  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Disjoint Set Union</title>
@@ -5431,6 +5374,63 @@ font-style: inherit;">}</span></span></code></pre></div>
   <guid>https://kimhungbui.github.io/programming/disjoint-set-union/</guid>
   <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
   <media:content url="https://kimhungbui.github.io/programming/disjoint-set-union/dundee.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Minimum Cost Walk in Weighted Graph</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="question" class="level1">
+<h1>Question</h1>
+<p>There is an undirected weighted graph with n vertices labeled from 0 to n - 1.</p>
+<p>You are given the integer n and an array edges, where edges[i] = [ui, vi, wi] indicates that there is an edge between vertices ui and vi with a weight of wi.</p>
+<p>A walk on a graph is a sequence of vertices and edges. The walk starts and ends with a vertex, and each edge connects the vertex that comes before it and the vertex that comes after it. It’s important to note that a walk may visit the same edge or vertex more than once.</p>
+<p>The cost of a walk starting at node u and ending at node v is defined as the bitwise AND of the weights of the edges traversed during the walk. In other words, if the sequence of edge weights encountered during the walk is w0, w1, w2, …, wk, then the cost is calculated as w0 &amp; w1 &amp; w2 &amp; … &amp; wk, where &amp; denotes the bitwise AND operator.</p>
+<p>You are also given a 2D array query, where query[i] = [si, ti]. For each query, you need to find the minimum cost of the walk starting at vertex si and ending at vertex ti. If there exists no such walk, the answer is -1.</p>
+<p>Return the array answer, where answer[i] denotes the minimum cost of a walk for query i.</p>
+<p>Example 1:</p>
+<p>Input: <code>n = 5</code>, edges = <code>[[0,1,7],[1,3,7],[1,2,1]]</code>, query = <code>[[0,3],[3,4]]</code></p>
+<p>Output: <code>[1,-1]</code></p>
+<p>Explanation:</p>
+<p>To achieve the cost of 1 in the first query, we need to move on the following edges: 0-&gt;1 (weight 7), 1-&gt;2 (weight 1), 2-&gt;1 (weight 1), 1-&gt;3 (weight 7).</p>
+<p>In the second query, there is no walk between nodes 3 and 4, so the answer is -1.</p>
+<p>Example 2:</p>
+<p>Input: n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]</p>
+<p>Output: [0]</p>
+<p>Explanation:</p>
+<p>To achieve the cost of 0 in the first query, we need to move on the following edges: 1-&gt;2 (weight 1), 2-&gt;1 (weight 6), 1-&gt;2 (weight 1).</p>
+<p>Constraints:</p>
+<pre><code>2 &lt;= n &lt;= 105
+0 &lt;= edges.length &lt;= 105
+edges[i].length == 3
+0 &lt;= ui, vi &lt;= n - 1
+ui != vi
+0 &lt;= wi &lt;= 105
+1 &lt;= query.length &lt;= 105
+query[i].length == 2
+0 &lt;= si, ti &lt;= n - 1
+si != ti</code></pre>
+</section>
+<section id="analysis" class="level1">
+<h1>Analysis</h1>
+<p>Let’s determine when the answer to a query is <code>-1</code>. This happens when no walk exists between the two nodes, meaning they belong to different connected components.</p>
+<p>Now, suppose the two nodes belong to the same connected component. What is the minimum cost of a walk connecting them? As mentioned, the optimal walk includes as many edges as possible. Since revisiting an edge does not affect the total score, we can freely traverse the edges of the component, meaning that we can move back and forth to reach all of them. Therefore, the best way to achieve the lowest cost is to visit every edge in the component.</p>
+<p>To efficiently find and process the connected components of the graph, we use the Disjoint Set (Union-Find) data structure. When we Union two nodes, we merge their entire groups, as now a path exists between every node in one group and every node in the other. To maintain efficiency, the root of the larger group is chosen as the representative of the merge group. This minimizes the time needed for future Find operations by reducing the number of steps required to reach the current representative.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>programming</category>
+  <category>data structure</category>
+  <category>DSU</category>
+  <guid>https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/</guid>
+  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://kimhungbui.github.io/programming/leetcode-minimum-cost-walk-in-weight-graph/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
