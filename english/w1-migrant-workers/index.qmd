@@ -1,0 +1,65 @@
+---
+title: Writing Task 1 - Migrant workers
+lightbox: false
+description: Practice table
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-10-27
+categories:
+  - english
+  - writing
+  - table
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+https://study4.com/tests/4790/practice/?part=11976
+
+_The table below shows the number of temporary migrant workers in four countries in 2003 and 2006 and the number of these workers per 1,000 people in these countries in 2006.
+
+Summarise the information by selecting and reporting the main features, and make comparisons where relevant._
+![](Pasted%20image%2020251027171528.png)
+
+
+First write:
+
+The table illustrates the number and the proportion of temporary migrant workers in four countries - New Zealand, the United Kingdom, Australia, and the United States from 2003 to 2006. Overall, the number of migrant workers in New Zealand and the United States increased mildly in the 3-year period, while the other two countries experienced a steady rise in migrant workers.
+
+New Zealand had the fewest migrant workers in both 2003 and 2006, ending the period at 87,000 people, but they have the most crowded in 2006 proportion with 21.1 per 1000 people. On the contrary, migrant workers of the United States were the largest in number, with 577,000 in 2003, and rose to 678,000 in 2006. Besides that, the rate of them was still the lowest in 4 countries, with just 2.3 per 1000 people.
+
+The second largest number of migrant workers in 2003 was in Australia, with 152,000, and it increased sharply to 219,000 in 2006. While the United Kingdom began the period with 137,000 in 2003, it had nearly doubled by 2006 to 266,000 people, surpassing Australia, but the rate of the UK was just nearly half of Australia, respectively 4.4 and 10.7 per 1000 people in 2006.  
+
+| **Criterion**                | **Band**    | **Feedback**                                                                                                                                                                                                                                                                            |
+| ---------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Task Achievement**         | **8.0**     | You clearly describe key trends, make comparisons, and cover all data. The overview is present and accurate. To reach Band 9, make the overview slightly clearer and summarize patterns more generally (e.g., “All countries saw growth, but the scale and rate varied significantly”). |
+| **Coherence & Cohesion**     | **7.5**     | Logical flow and good paragraphing. Some linking phrases (“on the contrary”, “besides that”) are slightly awkward for formal writing. Try “In contrast” and “Meanwhile”.                                                                                                                |
+| **Lexical Resource**         | **7.5–8.0** | You use a wide range: “experienced a steady rise,” “increased sharply,” “proportion.” Some collocation errors (“the most crowded proportion,” “rate of them”) reduce accuracy.                                                                                                          |
+| **Grammar Range & Accuracy** | **7.0–7.5** | Sentence variety is good. Issues: article use (“the number and the proportion”), tense agreement (“have the most crowded”), and comparative phrasing. Minor errors but meaning is always clear.                                                                                         |
+
+
+The table illustrates the number and proportion of temporary migrant workers in four countries - New Zealand, the United Kingdom, Australia, and the United States - between 2003 and 2006. Overall, all four nations experienced growth in their temporary migrant workers, although the scale of increase varied. While the United States consistently had the largest number of migrant workers, New Zealand recorded the highest proportion relative to its population.
+
+In 2003, the United States employed the greatest number of temporary migrants, at 577,000, rising to 678,000 by 2006. Despite this, its proportion remained the lowest among the four, at only 2.3 per 1,000 people. In contrast, New Zealand had the smallest number of such workers, just 64,000 in 2003 and 87,000 in three year laters, but its rate was the highest, reaching 21.1 per 1,000 people in 2006.
+
+Australia and the United Kingdom both saw notable growth. Australia's figures climbed from 152,000 to 219,000, while the UK nearly doubled its total, from 137,000 to 266,000. However, by 2006, the rate of temporary workers in the UK remained roughly half that of Australia, at 4.4 and 10.7 per 1,000 people respectively.
+
+|**Your phrase**|**Better academic alternative**|
+|---|---|
+|“have the most crowded in 2006 proportion”|“recorded the highest proportion in 2006”|
+|“rate of them was still the lowest”|“its rate remained the lowest”|
+|“respectivelyely”|“respectively”|
+|“on the contrary”|“in contrast” or “by contrast”|
+|“besides that”|“meanwhile” or “additionally”|
+
+
+use **such workers** to reference (and not repetitive)
+
+> migrant workers → such workers → these workers → this figure → this number → the proportion → this rate → these data

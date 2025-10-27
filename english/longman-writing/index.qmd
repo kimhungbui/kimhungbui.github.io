@@ -1,0 +1,22 @@
+---
+title: Longman Writing
+lightbox: false
+description: Sample
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-10-23
+categories:
+  - english
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: true
+---
+
+Hello! I would like to introduce myself to you. My name is Hung, and I was born in Vietnam. My family has four people, my parents and my sister. I speak Vietnamese and professional English. I did my education at the University of Technology. My favorite subject was physics, but now I like mathematics more. I learned English to move to the US to pursue a PhD. My dream is to have a research job at Google. In my free time, I ride a bicycle, swim, and run.
