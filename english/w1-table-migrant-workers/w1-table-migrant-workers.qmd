@@ -26,6 +26,7 @@ https://study4.com/tests/4790/practice/?part=11976
 _The table below shows the number of temporary migrant workers in four countries in 2003 and 2006 and the number of these workers per 1,000 people in these countries in 2006.
 
 Summarise the information by selecting and reporting the main features, and make comparisons where relevant._
+
 ![](Pasted%20image%2020251027171528.png)
 
 
@@ -44,6 +45,7 @@ The second largest number of migrant workers in 2003 was in Australia, with 152,
 | **Lexical Resource**         | **7.5–8.0** | You use a wide range: “experienced a steady rise,” “increased sharply,” “proportion.” Some collocation errors (“the most crowded proportion,” “rate of them”) reduce accuracy.                                                                                                          |
 | **Grammar Range & Accuracy** | **7.0–7.5** | Sentence variety is good. Issues: article use (“the number and the proportion”), tense agreement (“have the most crowded”), and comparative phrasing. Minor errors but meaning is always clear.                                                                                         |
 
+Revised:
 
 The table illustrates the number and proportion of temporary migrant workers in four countries - New Zealand, the United Kingdom, Australia, and the United States - between 2003 and 2006. Overall, all four nations experienced growth in their temporary migrant workers, although the scale of increase varied. While the United States consistently had the largest number of migrant workers, New Zealand recorded the highest proportion relative to its population.
 
