@@ -1,0 +1,107 @@
+---
+title: Writing Task 1 - Migrant workers
+lightbox: false
+description: Practice table
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-10-28
+categories:
+  - english
+  - writing
+  - table
+  - task-1
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+draft: false
+---
+
+_The charts provide information about students in 2007 who were happy with different facilities at a university of UK_
+
+
+![](Pasted%20image%2020251028103210.png)
+
+**Question:**
+
+_The charts provide information about students in 2007 who were happy with different facilities at a university in the UK._
+
+---
+
+### **Step 1: Overview**
+
+- Identify _what the charts show_: students’ satisfaction (undergraduate and postgraduate) in 2007.
+    
+- Identify _main features_:
+    
+    - Postgraduates were generally more satisfied than undergraduates.
+        
+    - The highest satisfaction was with school facilities (85%), and the lowest with cafeterias among undergraduates (52%).
+        
+    
+
+---
+
+### **Step 2: Key Trends (Group the data logically)**
+
+1. **School Rooms**
+    
+    - Both groups mostly “very satisfied” (62–63%), very similar results.
+        
+    - Fewest students were “quite satisfied” (13–14%).
+        
+    
+2. **University Cafeteria**
+    
+    - Postgraduates much happier (73%) than undergraduates (52%).
+        
+    - Undergraduates had higher “not satisfied” (26%).
+        
+    
+3. **School Facilities**
+    
+    - Undergraduates extremely satisfied (85%) — highest across all charts.
+        
+    - Postgraduates more mixed (43% very satisfied, 32% quite satisfied).
+        
+    
+
+---
+
+### **Step 3: Structure the Essay**
+
+  
+
+**Paragraph 1 – Introduction**
+
+- Paraphrase the question.
+    
+    > The charts compare the levels of satisfaction among undergraduate and postgraduate students at a UK university in 2007 regarding three types of facilities.
+    
+
+  
+
+**Paragraph 2 – Overview**
+
+- Give overall trends without numbers.
+    
+    > Overall, postgraduates were generally more satisfied than undergraduates. The school facilities received the most positive feedback, while the cafeteria was rated least favorably by undergraduates.
+    
+
+  
+
+**Paragraph 3 – Details (School rooms + Cafeteria)**
+
+- Describe percentages clearly and make comparisons.
+    
+
+  
+
+**Paragraph 4 – Details (School facilities)**
+
+- Highlight contrast between groups and emphasize extremes.
