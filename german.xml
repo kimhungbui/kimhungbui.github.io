@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Kim Hung&#39;s ThinkStack</title>
+<link>https://kimhungbui.github.io/german.html</link>
+<atom:link href="https://kimhungbui.github.io/german.xml" rel="self" type="application/rss+xml"/>
+<description>My Personal Website</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Wed, 26 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>German Learning</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/german/german/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="a1" class="level1">
+<h1>A1</h1>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">Alphabet https://learngerman.dw.com/en/abc/c-39621991</label></li>
+<li><label><input type="checkbox">Basic conversation, Deutschtrainer https://learngerman.dw.com/en/deutschtrainer/c-56705009</label></li>
+<li><label><input type="checkbox">Textbook, Netzwerk Neu A1</label></li>
+<li><label><input type="checkbox">Workbook, Netzwerk Neu A1</label></li>
+<li><label><input type="checkbox">Practice makes perfect, Grammar</label></li>
+<li><label><input type="checkbox">Practice makes perfect, Vocabulary</label></li>
+</ul>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p><embed src="r_German Wiki_ The Ultimate German Learning Guide.pdf" class="img-fluid"></p>
+<p>https://www.reddit.com/r/German/wiki/the_ultimate_link_guide_to_german/</p>
+<p><embed src="Netzwerk Neu A1 C1 for MMB Students.pdf" class="img-fluid"></p>
+
+
+</section>
+
+ ]]></description>
+  <category>german</category>
+  <guid>https://kimhungbui.github.io/german/german/</guid>
+  <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

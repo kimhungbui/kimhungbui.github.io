@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/german.html",
+    "items": [
+      "/german/german/index.html"
+    ]
+  },
+  {
     "listing": "/programming.html",
     "items": [
       "/programming/leetcode-40-combination-sum-ii/index.html",
@@ -42,7 +48,7 @@
       "/math/statistics/references.html",
       "/math/convex-optimization/summary.html",
       "/math/statistics/summary.html",
-      "/english/german/index.html",
+      "/german/german/index.html",
       "/english/w1-pie-uni-satisfaction/w1-pie-uni-satisfaction.html",
       "/english/w2-security-urban/index.html",
       "/english/w1-table-migrant-workers/w1-table-migrant-workers.html",
@@ -227,7 +233,6 @@
     "listing": "/english.html",
     "items": [
       "/english/common-mistake-2/Untitled.html",
-      "/english/german/index.html",
       "/english/w2-security-urban/index.html",
       "/english/w1-pie-uni-satisfaction/w1-pie-uni-satisfaction.html",
       "/english/w1-table-migrant-workers/w1-table-migrant-workers.html",
