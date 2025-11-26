@@ -1,7 +1,7 @@
 ---
 title: German Learning
 lightbox: false
-description: Beginning of german learning
+description: My German learning road
 author:
   - name: Hung
     url: https://kimhungbui.github.io
@@ -10,9 +10,10 @@ categories:
   - german
 draft: false
 ---
+
 # A1
-- [x] Alphabet https://learngerman.dw.com/en/abc/c-39621991
-- [ ] Basic conversation, Deutschtrainer https://learngerman.dw.com/en/deutschtrainer/c-56705009
+- [x] Alphabet <https://learngerman.dw.com/en/abc/c-39621991>
+- [ ] Basic conversation, Deutschtrainer <https://learngerman.dw.com/en/deutschtrainer/c-56705009>
 - [ ] Textbook, Netzwerk Neu A1
 - [ ] Workbook, Netzwerk Neu A1
 - [ ] Practice makes perfect, Grammar
@@ -22,6 +23,6 @@ draft: false
 # References
 ![](r_German%20Wiki_%20The%20Ultimate%20German%20Learning%20Guide.pdf)
 
-https://www.reddit.com/r/German/wiki/the_ultimate_link_guide_to_german/
+<https://www.reddit.com/r/German/wiki/the_ultimate_link_guide_to_german/>
 
 ![](Netzwerk%20Neu%20A1%20C1%20for%20MMB%20Students.pdf)
