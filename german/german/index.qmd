@@ -5,7 +5,6 @@ description: Beginning of german learning
 author:
   - name: Hung
     url: https://kimhungbui.github.io
-    affiliation: ChatGPT
 date: 2025-11-26
 categories:
   - german

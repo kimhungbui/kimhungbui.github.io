@@ -28,6 +28,10 @@ website:
 
       - href: english.md
         text: English
+
+      - href: german.md
+        text: German
+
       - href: posts.md
         text: Posts
 
