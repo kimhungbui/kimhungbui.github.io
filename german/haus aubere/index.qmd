@@ -1,0 +1,15 @@
+---
+title: HAUSE AUBERE
+lightbox: false
+description: German Alphabet
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-11-26
+categories:
+  - german
+draft: false
+---
+![](Pasted%20image%2020251127105032.png)
+
+https://www.collinsdictionary.com/dictionary/german-english/fenster

@@ -1,0 +1,79 @@
+---
+title: German Alphabet
+lightbox: false
+description: German Alphabet
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-11-26
+categories:
+  - german
+draft: false
+---
+# German Alphabet & Sounds
+
+| Letters   | Name     | IPA              | Easy English approximation                           | Key notes & common mistakes                     |
+| --------- | -------- | ---------------- | ---------------------------------------------------- | ----------------------------------------------- |
+| A a       | ah       | /aː/  /a/        | long: father short: cup (open)                       | aa → always long: Haar /haːr/                   |
+| Ä ä       | äh       | /ɛː/  /ɛ/        | long: fair (no r) short: bed                         | NEVER say “ay” like day                         |
+| E e       | eh       | /eː/  /ɛ/  /ə/   | long: café short: bed unstressed: about              | ee → always long: See /zeː/                     |
+| I i       | ih       | /iː/  /ɪ/        | long: see short: sit                                 |                                                 |
+| O o       | oh       | /oː/  /ɔ/        | long: go (no “w” glide!) short: or                   | Lips very round!                                |
+| Ö ö       | öh       | /øː/  /œ/        | say “ee” with rounded “oo” lips                      | schön, göttlich, Häuser (plurals love ö!)       |
+| U u       | uh       | /uː/  /ʊ/        | long: moon short: book                               |                                                 |
+| Ü ü       | üh       | /yː/  /ʏ/        | say “ee” while making tight “oo” shape               | über, fünf, süß, Tür                            |
+| B b       | beh      | /b/ → /p/ (end)  | final b = sharp p (no puff)                          | Lob /loːp/, ab /ap/                             |
+| P p       | peh      | /pʰ/ (aspirated) | strong puff at start                                 | Pack /pʰak/, Papa                               |
+| D d       | deh      | /d/ → /t/ (end)  | final d = sharp t                                    | Bad /baːt/, und /ʊnt/                           |
+| T t       | teh      | /tʰ/ (aspirated) | strong puff at start                                 | Tag /tʰaːk/, Tisch                              |
+| G g       | geh      | /ɡ/ → /k/ or /ç/ | final g usually /k/ (north) final -ig = /ɪç/         | Tag /taːk/, lustig /ˈlʊstɪç/, wichtig /ˈvɪçtɪç/ |
+| K k       | kah      | /kʰ/ (aspirated) | strong puff at start                                 | Kind /kʰɪnt/                                    |
+| C c       | ceh      | /ts/ or /k/      | only in foreign words                                | Café /kaˈfeː/, Celsius /ˈtsɛlzɪʊs/              |
+| F f       | eff      | /f/              | same as English                                      |                                                 |
+| V v       | fau      | /f/ or /v/       | German words = /f/ foreign = /v/                     | Vogel /ˈfoːɡl̩/, Vase /ˈvaːzə/                  |
+| W w       | weh      | /v/              | English “v” – never English “w”!                     | Wein /vaɪ̯n/, Wasser /ˈvasɐ/                    |
+| S s       | ess      | /z/ or /s/       | before vowel = /z/ at end/before t,p = /s/           | See /zeː/, Haus /haʊ̯s/, ist /ɪst/              |
+| Z z       | zett     | /ts/             | always “ts” – never English “z”                      | Zug /tsuːk/, Katze /ˈkatsə/                     |
+| ß (or ss) | ess-zett | /s/              | sharp s after long vowels/diphthongs                 | Fuß (long) vs. Kuss (short) Straße /ˈʃtʁaːsə/   |
+| H h       | hah      | /h/ or silent    | start: English h after vowel: lengthens it           | Haus /haʊ̯s/, sehen /ˈzeːən/                    |
+| J j       | jot      | /j/              | English “y” in yes                                   | ja /jaː/, jung /jʊŋ/                            |
+| L l       | ell      | /l/              | light, clear l (tongue on teeth)                     | Liebe /ˈliːbə/, Milch /mɪlç/                    |
+| R r       | err      | /ʁ/ ~ /r/        | uvular (French/gargle) or rolled r – never English r | Rot /ʁoːt/, Bruder /ˈbʁuːdɐ/                    |
+| X x       | iks      | /ks/             | same as English                                      | Taxi /ˈtaksi/                                   |
+| Y y       | ypsilon  | /yː/ /ʏ/ /j/     | German words = ü-sound foreign = /j/                 | Typ /tyːp/, Yoga /ˈjoːɡa/                       |
+
+# Special combinations
+
+| Combo | Pronunciation | Example                              |
+|-------|---------------|--------------------------------------|
+| Ch    | /ç/ or /x/    | ich /ɪç/ (hiss after e/i/ä/ö/ü) <br> ach /aːx/ (Scottish loch after a/o/u/au) |
+| Sch   | /ʃ/           | like “sh” – Schule, Fisch            |
+| Pf    | /pf/          | lips + tongue together – Apfel /ˈapfəl/ |
+| Qu    | /kv/          | never “kw” – Quelle /ˈkvɛlə/, quick  |
+| ck    | /k/           | sharp k after short vowels – lecker  |
+
+# Diphthongs (one smooth sound!)
+
+| Letters     | IPA     | English feel       | Examples                     |
+|-------------|---------|--------------------|------------------------------|
+| ei, ai, ay  | /aɪ̯/   | “eye”              | mein, Mai, Bayern            |
+| au          | /aʊ̯/   | “ow” in cow        | Haus, Maus, Braun            |
+| eu, äu      | /ɔɪ̯/   | “oy” in boy        | neu, Häuser, läuft           |
+| ie          | /iː/    | long “ee”          | lieben /ˈliːbn̩/, sie        |
+
+# Final -ig rule (super common!)
+-ig at the end of a word → always /ɪç/ (never /ɪɡ/ or /ɪk/)  
+→ wichtig /ˈvɪçtɪç/, lustig /ˈlʊstɪç/, königlich /ˈkøːnɪçlɪç/
+
+# Bonus: Numbers 0–20
+0 null • 1 eins • 2 zwei • 3 drei • 4 vier • 5 fünf • 6 sechs • 7 sieben • 8 acht • 9 neun • 10 zehn  
+11 elf • 12 zwölf • 13 dreizehn • … • 20 zwanzig
+
+Words that end in _voiced consonants_ change to their _voiceless_ counter parts.
+
+
+| If a word ends in ... | Pronounce it as ... | Example |      |
+| --------------------- | ------------------- | ------- | ---- |
+| b                     | p                   | Leib    | body |
+| d                     | t                   | Bad     | bath |
+| g                     | k                   | Weg     | path |
