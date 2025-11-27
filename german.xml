@@ -10,25 +10,428 @@
 <atom:link href="https://kimhungbui.github.io/german.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 26 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 27 Nov 2025 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>HAUSE AUBERE</title>
+  <title>Articles</title>
   <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/german/haus aubere/</link>
+  <link>https://kimhungbui.github.io/german/gender-noun/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://kimhungbui.github.io/german/haus aubere/Pasted image 20251127105032.png" class="img-fluid"></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 17%">
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 15%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Type</strong></th>
+<th><strong>Masc.</strong></th>
+<th><strong>Fem.</strong></th>
+<th><strong>Neut.</strong></th>
+<th><strong>Plural</strong></th>
+<th><strong>Meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Definite</td>
+<td>der</td>
+<td>die</td>
+<td>das</td>
+<td>die</td>
+<td>the</td>
+</tr>
+<tr class="even">
+<td>Indefinite</td>
+<td>ein</td>
+<td>eine</td>
+<td>ein</td>
+<td>—</td>
+<td>a/an</td>
+</tr>
+<tr class="odd">
+<td>Negative</td>
+<td>kein</td>
+<td>keine</td>
+<td>kein</td>
+<td>keine</td>
+<td>no / not any</td>
+</tr>
+<tr class="even">
+<td>Demonstrative</td>
+<td>dieser</td>
+<td>diese</td>
+<td>dieses</td>
+<td>diese</td>
+<td>this/that</td>
+</tr>
+<tr class="odd">
+<td>Possessive</td>
+<td>mein/dein/…</td>
+<td>meine</td>
+<td>mein</td>
+<td>meine</td>
+<td>my/your/etc.</td>
+</tr>
+</tbody>
+</table>
+<p>Below is the completed section, kept concise and formally structured.</p>
+</section>
+<section id="definitive-articles-bestimmte-artikel" class="level1">
+<h1>Definitive Articles (Bestimmte Artikel)</h1>
+<p>These correspond to English “<strong>the</strong>”. They identify <strong>specific</strong> nouns already known to the listener or clearly defined by context.</p>
+<p><strong>Forms (Nominative):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Gender</strong></th>
+<th><strong>Article</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Masculine</td>
+<td>der</td>
+</tr>
+<tr class="even">
+<td>Feminine</td>
+<td>die</td>
+</tr>
+<tr class="odd">
+<td>Neuter</td>
+<td>das</td>
+</tr>
+<tr class="even">
+<td>Plural</td>
+<td>die</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uses:</strong></p>
+<ul>
+<li><p>When something is <strong>specific or previously mentioned</strong></p>
+<p><em>Ich sehe</em> <strong><em>den</em></strong> <em>Hund, den wir gestern gesehen haben.</em></p></li>
+<li><p>When something is <strong>unique</strong></p>
+<p><em>Die Sonne,</em> <em>der Mond.</em></p></li>
+<li><p>With <strong>generalizations for an entire class</strong></p>
+<p><em>Die Deutschen trinken viel Kaffee.</em></p></li>
+<li><p>With <strong>time expressions</strong></p>
+<p><em>am Morgen</em>, <em>am Abend</em> (from <em>an dem</em>) # Indefinite Articles (Unbestimmte Artikel)</p></li>
+</ul>
+<p>These correspond to English <strong>“a/an”</strong>.</p>
+<p>They refer to <strong>non-specific</strong> or <strong>first-mentioned</strong> nouns.</p>
+<p><strong>Forms (Nominative):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Gender</strong></th>
+<th><strong>Article</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Masculine</td>
+<td>ein</td>
+</tr>
+<tr class="even">
+<td>Feminine</td>
+<td>eine</td>
+</tr>
+<tr class="odd">
+<td>Neuter</td>
+<td>ein</td>
+</tr>
+<tr class="even">
+<td>Plural</td>
+<td>— (no form)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uses:</strong> - When something is new or not specifically identified</p>
+<pre><code>_Ich habe_ **_ein_** _Auto gekauft._</code></pre>
+<ul>
+<li><p>For describing someone’s profession or identity</p>
+<p><em>Er ist</em> <strong><em>ein</em></strong> <em>Lehrer.</em></p></li>
+<li><p>When introducing a new topic</p>
+<p><em>Ich habe</em> <strong><em>eine</em></strong> <em>Idee.</em></p></li>
+</ul>
+<p><strong>Note:</strong> There is <strong>no plural indefinite article</strong> in German.</p>
+<p>Instead: <em>einige, manche, viele, wenige.</em></p>
+</section>
+<section id="negative-article-negationsartikel" class="level1">
+<h1>Negative Article (Negationsartikel)</h1>
+<p>This is the article used to negate a noun.</p>
+<p>It is formed with <strong>kein / keine / kein</strong> and declines exactly like <strong>ein-words</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Gender</strong></th>
+<th><strong>Article</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Masculine</td>
+<td>kein</td>
+</tr>
+<tr class="even">
+<td>Feminine</td>
+<td>keine</td>
+</tr>
+<tr class="odd">
+<td>Neuter</td>
+<td>kein</td>
+</tr>
+<tr class="even">
+<td>Plural</td>
+<td>keine</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uses:</strong></p>
+<p>This is the article used to negate a noun.</p>
+<p>It is formed with <strong>kein / keine / kein</strong> and declines exactly like <strong>ein-words</strong>.</p>
+</section>
+<section id="demonstrative-articles-demonstrativartikel" class="level1">
+<h1>Demonstrative Articles (Demonstrativartikel)</h1>
+<p>These correspond to English <strong>“this/that”</strong>.</p>
+<p>They highlight or point to something specific.</p>
+<p><strong>Forms (Nominative):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Gender</strong></th>
+<th><strong>Article</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Masculine</td>
+<td>dieser</td>
+</tr>
+<tr class="even">
+<td>Feminine</td>
+<td>diese</td>
+</tr>
+<tr class="odd">
+<td>Neuter</td>
+<td>dieses</td>
+</tr>
+<tr class="even">
+<td>Plural</td>
+<td>diese</td>
+</tr>
+</tbody>
+</table>
+<p>Other demonstratives include <strong>der, die, das</strong> (in stressed form), <strong>jener</strong>, <strong>solcher</strong>, <strong>welcher</strong>.</p>
+<p><strong>Uses:</strong></p>
+<ul>
+<li><p>To emphasize selection</p>
+<p><em>Ich nehme</em> <strong><em>dieses</em></strong> <em>Buch.</em></p></li>
+<li><p>To contrast</p>
+<p><em>Dieser Stift ist teuer, aber jener ist billig.</em></p></li>
+</ul>
+</section>
+<section id="possessive-articles-possessivartikel" class="level1">
+<h1>Possessive Articles (Possessivartikel)</h1>
+<p>These express ownership.</p>
+<p>They behave grammatically like <strong>ein-words</strong>.</p>
+<p><strong>Basic forms</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Person</strong></th>
+<th><strong>Form</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ich</td>
+<td>mein</td>
+</tr>
+<tr class="even">
+<td>du</td>
+<td>dein</td>
+</tr>
+<tr class="odd">
+<td>er</td>
+<td>sein</td>
+</tr>
+<tr class="even">
+<td>sie (she)</td>
+<td>ihr</td>
+</tr>
+<tr class="odd">
+<td>es</td>
+<td>sein</td>
+</tr>
+<tr class="even">
+<td>wir</td>
+<td>unser</td>
+</tr>
+<tr class="odd">
+<td>ihr (you plural)</td>
+<td>euer</td>
+</tr>
+<tr class="even">
+<td>Sie (formal)</td>
+<td>Ihr</td>
+</tr>
+<tr class="odd">
+<td>sie (they)</td>
+<td>ihr</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uses:</strong></p>
+<ul>
+<li><p>To express possession</p>
+<p><em>Das ist</em> <strong><em>mein</em></strong> <em>Buch.</em></p>
+<p><em>Sie besucht</em> <strong><em>ihre</em></strong> <em>Mutter.</em></p></li>
+<li><p>To clarify relationships</p>
+<p><em>Unser Lehrer</em>, <em>sein Freund.</em></p></li>
+</ul>
+</section>
+<section id="zero-article-nullartikel" class="level1">
+<h1>Zero Article (Nullartikel)</h1>
+<p>This refers to cases where <strong>no article</strong> is used.</p>
+<p><strong>Common uses:</strong></p>
+<ul>
+<li><p><strong>Plural nouns in general statements</strong></p>
+<p><em>Hunde sind treue Tiere.</em></p></li>
+<li><p><strong>Uncountable nouns in general statements</strong></p>
+<p><em>Wasser ist wichtig.</em></p></li>
+<li><p><strong>Professions, nationalities, religions (with “sein” / “werden”)</strong></p>
+<p><em>Er ist Arzt.</em></p>
+<p><em>Sie ist Deutsche.</em></p></li>
+<li><p><strong>Certain prepositional phrases</strong></p>
+<p><em>mit Freude</em>, <em>ohne Geld</em>, <em>zu Hause.</em></p></li>
+<li><p><strong>Set expressions</strong></p>
+<p><em>Fahrrad fahren</em>, <em>Schule gehen</em>, <em>Frühstück essen.</em> # <strong>Some signals for</strong>&nbsp;<strong>Masculine</strong> <strong>nouns (der)</strong></p></li>
+</ul>
+<p>In German, many noun endings are strong indicators of the <strong>masculine</strong> gender. While there are exceptions, these patterns are reliable for most vocabulary.</p>
+<p><strong>Common masculine endings:</strong></p>
+<ul>
+<li><p><strong>-er</strong></p>
+<p>der Computer, der Lehrer, der Fehler</p></li>
+<li><p><strong>-en</strong></p>
+<p>der Garten, der Ofen, der Wagen</p></li>
+<li><p><strong>-el</strong></p>
+<p>der Mantel, der Vogel, der Apfel</p></li>
+<li><p><strong>-ig</strong></p>
+<p>der Käfig, der Honig</p></li>
+<li><p><strong>-ling</strong></p>
+<p>der Lehrling, der Schmetterling</p></li>
+<li><p><strong>-ich</strong></p>
+<p>der Teppich, der Pfirsich</p></li>
+<li><p><strong>-ismus</strong></p>
+<p>der Kapitalismus, der Optimismus</p></li>
+</ul>
+<p><strong>Typical masculine categories:</strong></p>
+<ul>
+<li><p><strong>Days, months, seasons</strong></p>
+<p>der Montag, der Juli, der Sommer</p></li>
+<li><p><strong>Most weather elements</strong></p>
+<p>der Regen, der Wind, der Schnee</p></li>
+<li><p><strong>Cars, trains, mountains</strong></p>
+<p>der BMW, der Zug, der Himalaya</p></li>
+<li><p><strong>Male persons and professions</strong></p>
+<p>der Mann, der Sohn, der Student, der Arzt</p></li>
+</ul>
+<section id="some-signals-for-feminine-nouns-die" class="level3">
+<h3 class="anchored" data-anchor-id="some-signals-for-feminine-nouns-die"><strong>Some signals for</strong>&nbsp;<strong>Feminine</strong>&nbsp;<strong>nouns (die)</strong></h3>
+<p><strong>Common feminine endings:</strong></p>
+<ul>
+<li><p><strong>-e</strong></p>
+<p>die Blume, die Lampe, die Straße</p></li>
+<li><p><strong>-heit / -keit</strong></p>
+<p>die Freiheit, die Gesundheit, die Möglichkeit</p></li>
+<li><p><strong>-ung</strong></p>
+<p>die Zeitung, die Bedeutung, die Wohnung</p></li>
+<li><p><strong>-schaft</strong></p>
+<p>die Freundschaft, die Wissenschaft</p></li>
+<li><p><strong>-ion</strong></p>
+<p>die Nation, die Diskussion, die Information</p></li>
+<li><p><strong>-tät</strong></p>
+<p>die Universität, die Qualität</p></li>
+<li><p><strong>-ik</strong></p>
+<p>die Musik, die Physik, die Politik</p></li>
+<li><p><strong>-ie</strong></p>
+<p>die Chemie, die Biologie, die Theorie</p></li>
+</ul>
+<p><strong>Typical feminine categories:</strong></p>
+<ul>
+<li><p><strong>Most plants and trees</strong></p>
+<p>die Rose, die Birke, die Eiche</p></li>
+<li><p><strong>Airplanes, ships</strong></p>
+<p>die Boeing 747, die Titanic</p></li>
+<li><p><strong>Female persons and professions</strong></p>
+<p>die Frau, die Tochter, die Studentin</p></li>
+</ul>
+</section>
+<section id="some-signals-for-neuter-nouns-das" class="level3">
+<h3 class="anchored" data-anchor-id="some-signals-for-neuter-nouns-das"><strong>Some signals for</strong>&nbsp;<strong>Neuter</strong> <strong>nouns (das)</strong></h3>
+<p><strong>Common neuter endings:</strong></p>
+<ul>
+<li><p><strong>-chen / -lein</strong> (diminutives)</p>
+<p>das Mädchen, das Häuschen, das Fräulein</p></li>
+<li><p><strong>-ment</strong></p>
+<p>das Instrument, das Dokument</p></li>
+<li><p><strong>-um</strong></p>
+<p>das Zentrum, das Museum</p></li>
+<li><p><strong>-tum</strong> (some exceptions)</p>
+<p>das Eigentum, das Christentum</p></li>
+<li><p><strong>-ma</strong> (mostly from Greek)</p>
+<p>das Thema, das Drama, das Schema</p></li>
+</ul>
+<p><strong>Typical neuter categories:</strong></p>
+<ul>
+<li><p><strong>Infinitives used as nouns</strong></p>
+<p>das Essen, das Trinken, das Lesen</p></li>
+<li><p><strong>Hotels, cafés, restaurants</strong></p>
+<p>das Hilton, das Café Mozart, das Restaurant Schönblick</p></li>
+<li><p><strong>Most colors</strong></p>
+<p>das Blau, das Rot</p></li>
+<li><p><strong>Young beings</strong></p>
+<p>das Kind, das Baby, das Kalb</p></li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>german</category>
+  <guid>https://kimhungbui.github.io/german/gender-noun/</guid>
+  <pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>HAUSE AUBERE</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/german/haus-aubere/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://kimhungbui.github.io/german/haus-aubere/Pasted image 20251127105032.png" class="img-fluid"></p>
 <p>https://www.collinsdictionary.com/dictionary/german-english/fenster</p>
 
 
 
  ]]></description>
   <category>german</category>
-  <guid>https://kimhungbui.github.io/german/haus aubere/</guid>
-  <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
+  <guid>https://kimhungbui.github.io/german/haus-aubere/</guid>
+  <pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>German Alphabet</title>
