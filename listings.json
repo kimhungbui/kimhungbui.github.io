@@ -2,7 +2,9 @@
   {
     "listing": "/german.html",
     "items": [
-      "/german/german/index.html"
+      "/german/haus aubere/index.html",
+      "/german/alphabet/index.html",
+      "/german/german-learning-road/index.html"
     ]
   },
   {
@@ -48,7 +50,9 @@
       "/math/statistics/references.html",
       "/math/convex-optimization/summary.html",
       "/math/statistics/summary.html",
-      "/german/german/index.html",
+      "/german/alphabet/index.html",
+      "/german/german-learning-road/index.html",
+      "/german/haus aubere/index.html",
       "/english/w1-pie-uni-satisfaction/w1-pie-uni-satisfaction.html",
       "/english/w2-security-urban/index.html",
       "/english/w1-table-migrant-workers/w1-table-migrant-workers.html",
