@@ -5,7 +5,7 @@ description: German Alphabet
 author:
   - name: Hung
     url: https://kimhungbui.github.io
-date: 2025-11-26
+date: 2025-11-27
 categories:
   - german
 draft: false

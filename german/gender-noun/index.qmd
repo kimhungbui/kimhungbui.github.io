@@ -1,0 +1,342 @@
+---
+title: Articles
+lightbox: false
+description: Definitive and indefinite articles
+author:
+  - name: Hung
+    url: https://kimhungbui.github.io
+date: 2025-11-27
+categories:
+  - german
+draft: false
+---
+# Overview
+
+| **Type**      | **Masc.**   | **Fem.** | **Neut.** | **Plural** | **Meaning**  |
+| ------------- | ----------- | -------- | --------- | ---------- | ------------ |
+| Definite      | der         | die      | das       | die        | the          |
+| Indefinite    | ein         | eine     | ein       | —          | a/an         |
+| Negative      | kein        | keine    | kein      | keine      | no / not any |
+| Demonstrative | dieser      | diese    | dieses    | diese      | this/that    |
+| Possessive    | mein/dein/… | meine    | mein      | meine      | my/your/etc. |
+Below is the completed section, kept concise and formally structured.
+
+# Definitive Articles (Bestimmte Artikel)
+
+These correspond to English "**the**".
+They identify __specific__ nouns already known to the listener or clearly defined by context.
+
+**Forms (Nominative):**
+
+|**Gender**|**Article**|
+|---|---|
+|Masculine|der|
+|Feminine|die|
+|Neuter|das|
+|Plural|die|
+
+**Uses:**
+
+- When something is **specific or previously mentioned**
+    
+    _Ich sehe_ **_den_** _Hund, den wir gestern gesehen haben._
+    
+- When something is **unique**
+    
+    _Die Sonne,_ _der Mond._
+    
+- With **generalizations for an entire class**
+    
+    _Die Deutschen trinken viel Kaffee._
+    
+- With **time expressions**
+    
+    _am Morgen_, _am Abend_ (from _an dem_)
+# Indefinite Articles (Unbestimmte Artikel)
+
+These correspond to English **“a/an”**.
+
+They refer to **non-specific** or **first-mentioned** nouns.
+
+**Forms (Nominative):**
+
+| **Gender** | **Article** |
+| ---------- | ----------- |
+| Masculine  | ein         |
+| Feminine   | eine        |
+| Neuter     | ein         |
+| Plural     | — (no form) |
+__Uses:__
+- When something is new or not specifically identified
+    
+    _Ich habe_ **_ein_** _Auto gekauft._
+    
+- For describing someone’s profession or identity
+    
+    _Er ist_ **_ein_** _Lehrer._
+    
+- When introducing a new topic
+    
+    _Ich habe_ **_eine_** _Idee._
+    
+  
+
+**Note:** There is **no plural indefinite article** in German.
+
+Instead: _einige, manche, viele, wenige._
+
+# Negative Article (Negationsartikel)
+This is the article used to negate a noun.
+
+It is formed with **kein / keine / kein** and declines exactly like **ein-words**.
+
+| **Gender** | **Article** |
+| ---------- | ----------- |
+| Masculine  | kein        |
+| Feminine   | keine       |
+| Neuter     | kein        |
+| Plural     | keine       |
+__Uses:__
+
+This is the article used to negate a noun.
+
+It is formed with **kein / keine / kein** and declines exactly like **ein-words**.
+
+# Demonstrative Articles (Demonstrativartikel)
+
+These correspond to English **“this/that”**.
+
+They highlight or point to something specific.
+
+
+**Forms (Nominative):**
+
+|**Gender**|**Article**|
+|---|---|
+|Masculine|dieser|
+|Feminine|diese|
+|Neuter|dieses|
+|Plural|diese|
+
+Other demonstratives include **der, die, das** (in stressed form), **jener**, **solcher**, **welcher**.
+
+
+**Uses:**
+
+- To emphasize selection
+    
+    _Ich nehme_ **_dieses_** _Buch._
+    
+- To contrast
+    
+    _Dieser Stift ist teuer, aber jener ist billig._
+
+# Possessive Articles (Possessivartikel)
+
+These express ownership.
+
+They behave grammatically like **ein-words**.
+
+__Basic forms__:
+
+|**Person**|**Form**|
+|---|---|
+|ich|mein|
+|du|dein|
+|er|sein|
+|sie (she)|ihr|
+|es|sein|
+|wir|unser|
+|ihr (you plural)|euer|
+|Sie (formal)|Ihr|
+|sie (they)|ihr|
+**Uses:**
+
+- To express possession
+    
+    _Das ist_ **_mein_** _Buch._
+    
+    _Sie besucht_ **_ihre_** _Mutter._
+    
+- To clarify relationships
+    
+    _Unser Lehrer_, _sein Freund._
+
+# Zero Article (Nullartikel)
+
+This refers to cases where **no article** is used.
+
+  
+
+**Common uses:**
+
+- **Plural nouns in general statements**
+    
+    _Hunde sind treue Tiere._
+    
+- **Uncountable nouns in general statements**
+    
+    _Wasser ist wichtig._
+    
+- **Professions, nationalities, religions (with “sein” / “werden”)**
+    
+    _Er ist Arzt._
+    
+    _Sie ist Deutsche._
+    
+- **Certain prepositional phrases**
+    
+    _mit Freude_, _ohne Geld_, _zu Hause._
+    
+- **Set expressions**
+    
+    _Fahrrad fahren_, _Schule gehen_, _Frühstück essen._
+# **Some signals for** **Masculine** **nouns (der)**
+
+In German, many noun endings are strong indicators of the **masculine** gender. While there are exceptions, these patterns are reliable for most vocabulary.
+
+  
+
+**Common masculine endings:**
+
+- **-er**
+    
+    der Computer, der Lehrer, der Fehler
+    
+- **-en**
+    
+    der Garten, der Ofen, der Wagen
+    
+- **-el**
+    
+    der Mantel, der Vogel, der Apfel
+    
+- **-ig**
+    
+    der Käfig, der Honig
+    
+- **-ling**
+    
+    der Lehrling, der Schmetterling
+    
+- **-ich**
+    
+    der Teppich, der Pfirsich
+    
+- **-ismus**
+    
+    der Kapitalismus, der Optimismus
+    
+  
+**Typical masculine categories:**
+
+- **Days, months, seasons**
+    
+    der Montag, der Juli, der Sommer
+    
+- **Most weather elements**
+    
+    der Regen, der Wind, der Schnee
+    
+- **Cars, trains, mountains**
+    
+    der BMW, der Zug, der Himalaya
+    
+- **Male persons and professions**
+    
+    der Mann, der Sohn, der Student, der Arzt
+    
+
+### **Some signals for** **Feminine** **nouns (die)**
+
+**Common feminine endings:**
+
+- **-e**
+    
+    die Blume, die Lampe, die Straße
+    
+- **-heit / -keit**
+    
+    die Freiheit, die Gesundheit, die Möglichkeit
+    
+- **-ung**
+    
+    die Zeitung, die Bedeutung, die Wohnung
+    
+- **-schaft**
+    
+    die Freundschaft, die Wissenschaft
+    
+- **-ion**
+    
+    die Nation, die Diskussion, die Information
+    
+- **-tät**
+    
+    die Universität, die Qualität
+    
+- **-ik**
+    
+    die Musik, die Physik, die Politik
+    
+- **-ie**
+    
+    die Chemie, die Biologie, die Theorie
+
+**Typical feminine categories:**
+
+- **Most plants and trees**
+    
+    die Rose, die Birke, die Eiche
+    
+- **Airplanes, ships**
+    
+    die Boeing 747, die Titanic
+    
+- **Female persons and professions**
+    
+    die Frau, die Tochter, die Studentin
+
+### **Some signals for** **Neuter** **nouns (das)**
+
+
+**Common neuter endings:**
+
+- **-chen / -lein** (diminutives)
+    
+    das Mädchen, das Häuschen, das Fräulein
+    
+- **-ment**
+    
+    das Instrument, das Dokument
+    
+- **-um**
+    
+    das Zentrum, das Museum
+    
+- **-tum** (some exceptions)
+    
+    das Eigentum, das Christentum
+    
+- **-ma** (mostly from Greek)
+    
+    das Thema, das Drama, das Schema
+    
+
+**Typical neuter categories:**
+
+- **Infinitives used as nouns**
+    
+    das Essen, das Trinken, das Lesen
+    
+- **Hotels, cafés, restaurants**
+    
+    das Hilton, das Café Mozart, das Restaurant Schönblick
+    
+- **Most colors**
+    
+    das Blau, das Rot
+    
+- **Young beings**
+    
+    das Kind, das Baby, das Kalb
