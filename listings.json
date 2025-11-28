@@ -2,7 +2,8 @@
   {
     "listing": "/german.html",
     "items": [
-      "/german/pronouns-plural-sein/index.html",
+      "/german/titles-location-interrogatives/index.html",
+      "/german/pronouns-plural-sein/pronouns-plural-sein.html",
       "/german/gender-noun/index.html",
       "/german/haus-aubere/index.html",
       "/german/alphabet/index.html",
@@ -52,7 +53,8 @@
       "/math/statistics/references.html",
       "/math/convex-optimization/summary.html",
       "/math/statistics/summary.html",
-      "/german/pronouns-plural-sein/index.html",
+      "/german/pronouns-plural-sein/pronouns-plural-sein.html",
+      "/german/titles-location-interrogatives/index.html",
       "/german/gender-noun/index.html",
       "/german/haus-aubere/index.html",
       "/german/alphabet/index.html",
