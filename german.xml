@@ -10,7 +10,477 @@
 <atom:link href="https://kimhungbui.github.io/german.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Thu, 27 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 28 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Pronouns, plurals, and the verb sein</title>
+  <link>https://kimhungbui.github.io/german/pronouns-plural-sein/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="german-third-person-pronouns" class="level1">
+<h1>German Third-Person Pronouns</h1>
+<p>The German third-person pronouns also replace nouns and like English pronouns conform to gender of the noun they replace. But German gender is not always detetermined by the sex of an individual.</p>
+<section id="masculine-nouns-der" class="level2">
+<h2 class="anchored" data-anchor-id="masculine-nouns-der">Masculine Nouns (der)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>German Noun</th>
+<th>English</th>
+<th>Pronoun (German)</th>
+<th>Pronoun (English)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Mann</td>
+<td>the man</td>
+<td>er</td>
+<td>he</td>
+</tr>
+<tr class="even">
+<td>ein Bruder</td>
+<td>a brother</td>
+<td>er</td>
+<td>he</td>
+</tr>
+<tr class="odd">
+<td>der Käse</td>
+<td>cheese</td>
+<td>er</td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td>dieser Monat</td>
+<td>this month</td>
+<td>er</td>
+<td>it</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="feminine-nouns-die" class="level2">
+<h2 class="anchored" data-anchor-id="feminine-nouns-die">Feminine Nouns (die)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>German Noun</th>
+<th>English</th>
+<th>Pronoun (German)</th>
+<th>Pronoun (English)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Frau</td>
+<td>the woman</td>
+<td>sie</td>
+<td>she</td>
+</tr>
+<tr class="even">
+<td>eine Schwester</td>
+<td>a sister</td>
+<td>sie</td>
+<td>she</td>
+</tr>
+<tr class="odd">
+<td>die Lampe</td>
+<td>the lamp</td>
+<td>sie</td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td>diese Blume</td>
+<td>this flower</td>
+<td>sie</td>
+<td>it</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="neuter-nouns-das" class="level2">
+<h2 class="anchored" data-anchor-id="neuter-nouns-das">Neuter Nouns (das)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>German Noun</th>
+<th>English</th>
+<th>Pronoun (German)</th>
+<th>Pronoun (English)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>das Kind</td>
+<td>the child</td>
+<td>es</td>
+<td>he/she/it</td>
+</tr>
+<tr class="even">
+<td>ein Mädchen</td>
+<td>a girl</td>
+<td>es</td>
+<td>she</td>
+</tr>
+<tr class="odd">
+<td>das Auto</td>
+<td>the car</td>
+<td>es</td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td>dieses Buch</td>
+<td>this book</td>
+<td>es</td>
+<td>it</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="plural-nouns" class="level1">
+<h1>Plural nouns&nbsp;</h1>
+<p>German plurals are formed in a variety of ways. A small number end in&nbsp;<strong>-s</strong>, for example&nbsp;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>das Auto</td>
+<td>die Autos</td>
+<td>cars</td>
+</tr>
+<tr class="even">
+<td>die Kamera</td>
+<td>die Kameras</td>
+<td>cameras</td>
+</tr>
+<tr class="odd">
+<td>das Sofa</td>
+<td>die Sofas</td>
+<td>sofas</td>
+</tr>
+</tbody>
+</table>
+<p>Most plurals, however, follow one of the patterns below:</p>
+<p>All plural nouns use the definitive article&nbsp;<strong>die</strong>, no matter what their gender is in the singular.</p>
+<p>There is no clear-cut way to always determine the plural of a noun; there are only <em>inconsistent patterns</em> and not always fixed rules. We should check in a dictionary for the correct plural of a noun.</p>
+<section id="masculine" class="level2">
+<h2 class="anchored" data-anchor-id="masculine">Masculine</h2>
+<p>Many masculine nouns form their plural by an&nbsp;<strong>-e</strong>&nbsp;ending or by an umlaut over&nbsp;<strong>a, o,</strong>&nbsp;or&nbsp;<strong>u</strong>&nbsp;plus an&nbsp;<strong>e</strong>&nbsp;ending. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Tisch</td>
+<td>die Tische</td>
+<td>tables</td>
+</tr>
+<tr class="even">
+<td>der Schuh</td>
+<td>die Schuhe</td>
+<td>shoes</td>
+</tr>
+<tr class="odd">
+<td>der Satz</td>
+<td>die Sätze</td>
+<td>sentences</td>
+</tr>
+<tr class="even">
+<td>der Stuhl</td>
+<td>die Stühle</td>
+<td>chairs</td>
+</tr>
+</tbody>
+</table>
+<p>If a masculine noun ends in <strong>-en, -er</strong> or <strong>-el</strong>, there is no additional ending, but sometimes an umlaut is added. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Boden</td>
+<td>die Böden</td>
+<td>floors</td>
+</tr>
+<tr class="even">
+<td>der Wagen</td>
+<td>die Wagen</td>
+<td>cars</td>
+</tr>
+<tr class="odd">
+<td>der Sportler</td>
+<td>die Sportler</td>
+<td>athletes</td>
+</tr>
+<tr class="even">
+<td>der Lehrer</td>
+<td>die Lehrer</td>
+<td>teachers</td>
+</tr>
+<tr class="odd">
+<td>der Mantel</td>
+<td>die Mäntel</td>
+<td>coats</td>
+</tr>
+<tr class="even">
+<td>der Onkel</td>
+<td>die Onkel</td>
+<td>uncle</td>
+</tr>
+</tbody>
+</table>
+<p>But many other masculine nouns have their own plural formation and do not conform to simple patterns. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Mann</td>
+<td>die Männer</td>
+<td>men</td>
+</tr>
+<tr class="even">
+<td>der Junge</td>
+<td>die Jungen</td>
+<td>boys</td>
+</tr>
+<tr class="odd">
+<td>der Soldat</td>
+<td>die Soldaten</td>
+<td>soldiers</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="feminine" class="level2">
+<h2 class="anchored" data-anchor-id="feminine">Feminine</h2>
+<p>Many feminine nouns form their plural by an <strong>-n</strong> or <strong>-en</strong> ending. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Blume</td>
+<td>die Blumen</td>
+<td>flowers</td>
+</tr>
+<tr class="even">
+<td>die Zeitung</td>
+<td>die Zeitungen</td>
+<td>newspapers</td>
+</tr>
+<tr class="odd">
+<td>die Lampe</td>
+<td>die Lampen</td>
+<td>lamps</td>
+</tr>
+<tr class="even">
+<td>die Decke</td>
+<td>die Decken</td>
+<td>blankets</td>
+</tr>
+</tbody>
+</table>
+<p>But many feminine nouns have a plural formation that is based upon what is commonly accepted or tradition. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Wand</td>
+<td>die Wände</td>
+<td>walls</td>
+</tr>
+<tr class="even">
+<td>die Mutter</td>
+<td>die Mütter</td>
+<td>mothers</td>
+</tr>
+<tr class="odd">
+<td>die Tochter</td>
+<td>die Töchter</td>
+<td>daughters</td>
+</tr>
+<tr class="even">
+<td>die Wurst</td>
+<td>die Würste</td>
+<td>sausages</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="neuter" class="level2">
+<h2 class="anchored" data-anchor-id="neuter">Neuter</h2>
+<p>Many neuter nouns form their plural by an <strong>-er</strong> ending, often adding an umlaut to <strong>a, o, u</strong>. But if the noun ends in <strong>-chen</strong> or <strong>-lein</strong>, no ending is required. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>das Haus</td>
+<td>die Häuser</td>
+<td>houses</td>
+</tr>
+<tr class="even">
+<td>das Land</td>
+<td>die Länder</td>
+<td>countries</td>
+</tr>
+<tr class="odd">
+<td>das Kind</td>
+<td>die Kinder</td>
+<td>children</td>
+</tr>
+<tr class="even">
+<td>das Mädchen</td>
+<td>die Mädchen</td>
+<td>girls</td>
+</tr>
+<tr class="odd">
+<td>das Röslein</td>
+<td>due Röslein</td>
+<td>little roses</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="third-person-plural-pronoun" class="level1">
+<h1>Third-person plural pronoun</h1>
+<p>Just like the English pronoun <em>they</em>, the German third-person plural pronouns is used for all plurals, no matter the gender of the singular noun.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Plural noun</th>
+<th></th>
+<th>Pronoun replacement</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Frauen</td>
+<td><em>women</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="even">
+<td>die Männer</td>
+<td><em>men</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="odd">
+<td>die Sofas</td>
+<td><em>sofas</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="even">
+<td>die Bücher</td>
+<td><em>books</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="odd">
+<td>die Brüder</td>
+<td><em>brothers</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="even">
+<td>die Zeitungen</td>
+<td><em>newspapers</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+</tbody>
+</table>
+<p>Some plurals used in complete sentences:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>Die Manner sind heir.</td>
+<td><em>The men are here</em></td>
+</tr>
+<tr class="even">
+<td><strong>Sie</strong> sind heir.</td>
+<td>_ <strong>They</strong> are here._</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Die Bucher sind alt.</td>
+<td><em>The books are old.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Sie</strong> sind alt.</td>
+<td>_ <strong>They</strong> are old._</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Die Kinder sind jung.</td>
+<td><em>The children are young.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Sie</strong> sind jung.</td>
+<td>_ <strong>They</strong> are young._</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>german</category>
+  <guid>https://kimhungbui.github.io/german/pronouns-plural-sein/</guid>
+  <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Articles</title>
   <dc:creator>Hung </dc:creator>

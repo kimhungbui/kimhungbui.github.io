@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-28">
+<meta name="description" content="Pronouns, plurals, and the verb sein">
 
-<title>Artificial Intelligence – Kim Hung’s ThinkStack</title>
+<title>Pronouns, plurals, and the verb sein – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
 
 <script type="text/javascript">
@@ -129,38 +100,9 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Kim Hung's ThinkStack" href="artificial-intelligent.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -169,7 +111,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung’s ThinkStack</span>
     </a>
   </div>
@@ -180,7 +122,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -189,43 +131,43 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
         <li>
-    <a class="dropdown-item" href="./math/convex-optimization/">
+    <a class="dropdown-item" href="../../math/convex-optimization/">
  <span class="dropdown-text">Convex Optimization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/probability/">
+    <a class="dropdown-item" href="../../math/probability/">
  <span class="dropdown-text">Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/statistics/">
+    <a class="dropdown-item" href="../../math/statistics/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./artificial-intelligent.html" aria-current="page"> 
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
 <span class="menu-text">AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./german.html"> 
+    <a class="nav-link" href="../../german.html"> 
 <span class="menu-text">German</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -242,21 +184,53 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="math">math <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#german-third-person-pronouns" id="toc-german-third-person-pronouns" class="nav-link active" data-scroll-target="#german-third-person-pronouns">German Third-Person Pronouns</a>
+  <ul class="collapse">
+  <li><a href="#masculine-nouns-der" id="toc-masculine-nouns-der" class="nav-link" data-scroll-target="#masculine-nouns-der">Masculine Nouns (der)</a></li>
+  <li><a href="#feminine-nouns-die" id="toc-feminine-nouns-die" class="nav-link" data-scroll-target="#feminine-nouns-die">Feminine Nouns (die)</a></li>
+  <li><a href="#neuter-nouns-das" id="toc-neuter-nouns-das" class="nav-link" data-scroll-target="#neuter-nouns-das">Neuter Nouns (das)</a></li>
+  </ul></li>
+  <li><a href="#plural-nouns" id="toc-plural-nouns" class="nav-link" data-scroll-target="#plural-nouns">Plural nouns&nbsp;</a>
+  <ul class="collapse">
+  <li><a href="#masculine" id="toc-masculine" class="nav-link" data-scroll-target="#masculine">Masculine</a></li>
+  <li><a href="#feminine" id="toc-feminine" class="nav-link" data-scroll-target="#feminine">Feminine</a></li>
+  <li><a href="#neuter" id="toc-neuter" class="nav-link" data-scroll-target="#neuter">Neuter</a></li>
+  </ul></li>
+  <li><a href="#third-person-plural-pronoun" id="toc-third-person-plural-pronoun" class="nav-link" data-scroll-target="#third-person-plural-pronoun">Third-person plural pronoun</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Artificial Intelligence</h1>
-</div>
+<h1 class="title">Pronouns, plurals, and the verb sein</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">german</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Pronouns, plurals, and the verb sein
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 28, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -266,108 +240,464 @@ window.Quarto = {
 </header>
 
 
+<section id="german-third-person-pronouns" class="level1">
+<h1>German Third-Person Pronouns</h1>
+<p>The German third-person pronouns also replace nouns and like English pronouns conform to gender of the noun they replace. But German gender is not always detetermined by the sex of an individual.</p>
+<section id="masculine-nouns-der" class="level2">
+<h2 class="anchored" data-anchor-id="masculine-nouns-der">Masculine Nouns (der)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>German Noun</th>
+<th>English</th>
+<th>Pronoun (German)</th>
+<th>Pronoun (English)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Mann</td>
+<td>the man</td>
+<td>er</td>
+<td>he</td>
+</tr>
+<tr class="even">
+<td>ein Bruder</td>
+<td>a brother</td>
+<td>er</td>
+<td>he</td>
+</tr>
+<tr class="odd">
+<td>der Käse</td>
+<td>cheese</td>
+<td>er</td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td>dieser Monat</td>
+<td>this month</td>
+<td>er</td>
+<td>it</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="feminine-nouns-die" class="level2">
+<h2 class="anchored" data-anchor-id="feminine-nouns-die">Feminine Nouns (die)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>German Noun</th>
+<th>English</th>
+<th>Pronoun (German)</th>
+<th>Pronoun (English)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Frau</td>
+<td>the woman</td>
+<td>sie</td>
+<td>she</td>
+</tr>
+<tr class="even">
+<td>eine Schwester</td>
+<td>a sister</td>
+<td>sie</td>
+<td>she</td>
+</tr>
+<tr class="odd">
+<td>die Lampe</td>
+<td>the lamp</td>
+<td>sie</td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td>diese Blume</td>
+<td>this flower</td>
+<td>sie</td>
+<td>it</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="neuter-nouns-das" class="level2">
+<h2 class="anchored" data-anchor-id="neuter-nouns-das">Neuter Nouns (das)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>German Noun</th>
+<th>English</th>
+<th>Pronoun (German)</th>
+<th>Pronoun (English)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>das Kind</td>
+<td>the child</td>
+<td>es</td>
+<td>he/she/it</td>
+</tr>
+<tr class="even">
+<td>ein Mädchen</td>
+<td>a girl</td>
+<td>es</td>
+<td>she</td>
+</tr>
+<tr class="odd">
+<td>das Auto</td>
+<td>the car</td>
+<td>es</td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td>dieses Buch</td>
+<td>this book</td>
+<td>es</td>
+<td>it</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="plural-nouns" class="level1">
+<h1>Plural nouns&nbsp;</h1>
+<p>German plurals are formed in a variety of ways. A small number end in&nbsp;<strong>-s</strong>, for example&nbsp;</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>das Auto</td>
+<td>die Autos</td>
+<td>cars</td>
+</tr>
+<tr class="even">
+<td>die Kamera</td>
+<td>die Kameras</td>
+<td>cameras</td>
+</tr>
+<tr class="odd">
+<td>das Sofa</td>
+<td>die Sofas</td>
+<td>sofas</td>
+</tr>
+</tbody>
+</table>
+<p>Most plurals, however, follow one of the patterns below:</p>
+<p>All plural nouns use the definitive article&nbsp;<strong>die</strong>, no matter what their gender is in the singular.</p>
+<p>There is no clear-cut way to always determine the plural of a noun; there are only <em>inconsistent patterns</em> and not always fixed rules. We should check in a dictionary for the correct plural of a noun.</p>
+<section id="masculine" class="level2">
+<h2 class="anchored" data-anchor-id="masculine">Masculine</h2>
+<p>Many masculine nouns form their plural by an&nbsp;<strong>-e</strong>&nbsp;ending or by an umlaut over&nbsp;<strong>a, o,</strong>&nbsp;or&nbsp;<strong>u</strong>&nbsp;plus an&nbsp;<strong>e</strong>&nbsp;ending. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Tisch</td>
+<td>die Tische</td>
+<td>tables</td>
+</tr>
+<tr class="even">
+<td>der Schuh</td>
+<td>die Schuhe</td>
+<td>shoes</td>
+</tr>
+<tr class="odd">
+<td>der Satz</td>
+<td>die Sätze</td>
+<td>sentences</td>
+</tr>
+<tr class="even">
+<td>der Stuhl</td>
+<td>die Stühle</td>
+<td>chairs</td>
+</tr>
+</tbody>
+</table>
+<p>If a masculine noun ends in <strong>-en, -er</strong> or <strong>-el</strong>, there is no additional ending, but sometimes an umlaut is added. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Boden</td>
+<td>die Böden</td>
+<td>floors</td>
+</tr>
+<tr class="even">
+<td>der Wagen</td>
+<td>die Wagen</td>
+<td>cars</td>
+</tr>
+<tr class="odd">
+<td>der Sportler</td>
+<td>die Sportler</td>
+<td>athletes</td>
+</tr>
+<tr class="even">
+<td>der Lehrer</td>
+<td>die Lehrer</td>
+<td>teachers</td>
+</tr>
+<tr class="odd">
+<td>der Mantel</td>
+<td>die Mäntel</td>
+<td>coats</td>
+</tr>
+<tr class="even">
+<td>der Onkel</td>
+<td>die Onkel</td>
+<td>uncle</td>
+</tr>
+</tbody>
+</table>
+<p>But many other masculine nouns have their own plural formation and do not conform to simple patterns. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>der Mann</td>
+<td>die Männer</td>
+<td>men</td>
+</tr>
+<tr class="even">
+<td>der Junge</td>
+<td>die Jungen</td>
+<td>boys</td>
+</tr>
+<tr class="odd">
+<td>der Soldat</td>
+<td>die Soldaten</td>
+<td>soldiers</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="feminine" class="level2">
+<h2 class="anchored" data-anchor-id="feminine">Feminine</h2>
+<p>Many feminine nouns form their plural by an <strong>-n</strong> or <strong>-en</strong> ending. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Blume</td>
+<td>die Blumen</td>
+<td>flowers</td>
+</tr>
+<tr class="even">
+<td>die Zeitung</td>
+<td>die Zeitungen</td>
+<td>newspapers</td>
+</tr>
+<tr class="odd">
+<td>die Lampe</td>
+<td>die Lampen</td>
+<td>lamps</td>
+</tr>
+<tr class="even">
+<td>die Decke</td>
+<td>die Decken</td>
+<td>blankets</td>
+</tr>
+</tbody>
+</table>
+<p>But many feminine nouns have a plural formation that is based upon what is commonly accepted or tradition. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Wand</td>
+<td>die Wände</td>
+<td>walls</td>
+</tr>
+<tr class="even">
+<td>die Mutter</td>
+<td>die Mütter</td>
+<td>mothers</td>
+</tr>
+<tr class="odd">
+<td>die Tochter</td>
+<td>die Töchter</td>
+<td>daughters</td>
+</tr>
+<tr class="even">
+<td>die Wurst</td>
+<td>die Würste</td>
+<td>sausages</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="neuter" class="level2">
+<h2 class="anchored" data-anchor-id="neuter">Neuter</h2>
+<p>Many neuter nouns form their plural by an <strong>-er</strong> ending, often adding an umlaut to <strong>a, o, u</strong>. But if the noun ends in <strong>-chen</strong> or <strong>-lein</strong>, no ending is required. For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Singular</th>
+<th>Plural</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>das Haus</td>
+<td>die Häuser</td>
+<td>houses</td>
+</tr>
+<tr class="even">
+<td>das Land</td>
+<td>die Länder</td>
+<td>countries</td>
+</tr>
+<tr class="odd">
+<td>das Kind</td>
+<td>die Kinder</td>
+<td>children</td>
+</tr>
+<tr class="even">
+<td>das Mädchen</td>
+<td>die Mädchen</td>
+<td>girls</td>
+</tr>
+<tr class="odd">
+<td>das Röslein</td>
+<td>due Röslein</td>
+<td>little roses</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="third-person-plural-pronoun" class="level1">
+<h1>Third-person plural pronoun</h1>
+<p>Just like the English pronoun <em>they</em>, the German third-person plural pronouns is used for all plurals, no matter the gender of the singular noun.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Plural noun</th>
+<th></th>
+<th>Pronoun replacement</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>die Frauen</td>
+<td><em>women</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="even">
+<td>die Männer</td>
+<td><em>men</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="odd">
+<td>die Sofas</td>
+<td><em>sofas</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="even">
+<td>die Bücher</td>
+<td><em>books</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="odd">
+<td>die Brüder</td>
+<td><em>brothers</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+<tr class="even">
+<td>die Zeitungen</td>
+<td><em>newspapers</em></td>
+<td>sie</td>
+<td><em>they</em></td>
+</tr>
+</tbody>
+</table>
+<p>Some plurals used in complete sentences:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>Die Manner sind heir.</td>
+<td><em>The men are here</em></td>
+</tr>
+<tr class="even">
+<td><strong>Sie</strong> sind heir.</td>
+<td>_ <strong>They</strong> are here._</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Die Bucher sind alt.</td>
+<td><em>The books are old.</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Sie</strong> sind alt.</td>
+<td>_ <strong>They</strong> are old._</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Die Kinder sind jung.</td>
+<td><em>The children are young.</em></td>
+</tr>
+<tr class="even">
+<td><strong>Sie</strong> sind jung.</td>
+<td>_ <strong>They</strong> are young._</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="math" data-listing-date-sort="1749686400000" data-listing-file-modified-sort="1764301391478" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6097">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Logistic regression</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
-math
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<div class="listing-date">
-Jun 12, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="AI" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1764301391478" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p><a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Finetuning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-date">
-May 30, 2025
-</div>
-<div class="listing-author">
-Hung
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1764301391478" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1575">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p><a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/convolution/Pasted image 20250327230513.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<div class="listing-date">
-Mar 21, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
