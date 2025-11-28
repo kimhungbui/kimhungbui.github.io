@@ -1,0 +1,11 @@
+---
+title: Titles, locations, and interrogatives
+lightbox: false
+description: Titles, locations, and interrogatives
+date: 2025-11-28
+categories:
+  - german
+  - grammar
+draft: false
+---
+[Pronouns, plural, and the verb 'sein'](pronouns-plural-sein.qmd)
