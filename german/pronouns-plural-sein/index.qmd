@@ -130,7 +130,6 @@ Just like the English pronoun _they_, the German third-person plural pronouns is
 
 Some plurals used in complete sentences:
 
-
 |                       |                           |
 | --------------------- | ------------------------- |
 | Die Manner sind heir. | _The men are here_        |
@@ -142,4 +141,28 @@ Some plurals used in complete sentences:
 | Die Kinder sind jung. | _The children are young._ |
 | __Sie__ sind jung.    | _ __They__ are young._    |
 
+# First-person and second-person pronouns
+They are __ich__ _I_, __du__ _you_, __wir__ _we_, __ihr__ _you_, and __Sie__ _you_.
+__Ich__ and __wir__ are first-person pronouns, and __du__, __ihr__, and __Sie__ are second-person pronouns.
 
+
+|         |                                                                      |       |
+| ------- | -------------------------------------------------------------------- | ----- |
+| __du__  | Singular and informal. Use with children, family, and friends.       | /duː/ |
+| __ihr__ | Plural and informal. Use with children, family, and friends.         | [iːɐ] |
+| __Sie__ | Singular or plural informal. Use with strangers and to show respect. | /ziː/ |
+If we call someone by his or her first name (__Karl, Martin, Luise__), we should probably use __du__. Use __ihr__ if we are speaking to more than one person. Use __Sie__ when we address some one with a title (__Frau Braun, Herr Schmidt, Doktor Schneider__).
+# The verb 'sein' (to be)
+The changes the verb makes according to those pronouns are the _conjugation_ of the verb __sein__.
+
+|          | **Meaning**      | **Pronunciation (IPA)** |
+| -------- | ---------------- | ----------------------- |
+| ich bin  | I am             | **[ɪç bɪn]**            |
+| du bist  | you are          | **[duː bɪst]**          |
+| er ist   | he is            | **[eːɐ̯ ɪst]**          |
+| sie ist  | she is           | **[ziː ɪst]**           |
+| es ist   | it is            | **[ɛs ɪst]**            |
+| wir sind | we are           | **[viːɐ̯ zɪnt]**        |
+| ihr seid | you (pl.) are    | **[iːɐ̯ zaɪt]**         |
+| Sie sind | you (formal) are | **[ziː zɪnt]**          |
+| sie sind | they are         | **[ziː zɪnt]**          |
