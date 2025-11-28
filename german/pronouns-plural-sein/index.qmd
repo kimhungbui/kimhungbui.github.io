@@ -1,0 +1,145 @@
+---
+title: Pronouns, plurals, and the verb sein
+lightbox: false
+description: Pronouns, plurals, and the verb sein
+# author:
+#   - name: Hung
+#     url: https://kimhungbui.github.io
+date: 2025-11-28
+categories:
+  - german
+draft: false
+---
+# German Third-Person Pronouns
+
+The German third-person pronouns also replace nouns and like English pronouns conform to gender of the noun they replace. But German gender is not always detetermined by the sex of an individual.
+
+## Masculine Nouns (der)
+
+|German Noun|English|Pronoun (German)|Pronoun (English)|
+|---|---|---|---|
+|der Mann|the man|er|he|
+|ein Bruder|a brother|er|he|
+|der Käse|cheese|er|it|
+|dieser Monat|this month|er|it|
+
+## Feminine Nouns (die)
+
+
+| German Noun    | English     | Pronoun (German) | Pronoun (English) |
+| -------------- | ----------- | ---------------- | ----------------- |
+| die Frau       | the woman   | sie              | she               |
+| eine Schwester | a sister    | sie              | she               |
+| die Lampe      | the lamp    | sie              | it                |
+| diese Blume    | this flower | sie              | it                |
+
+## Neuter Nouns (das)
+
+
+| German Noun | English   | Pronoun (German) | Pronoun (English) |
+| ----------- | --------- | ---------------- | ----------------- |
+| das Kind    | the child | es               | he/she/it         |
+| ein Mädchen | a girl    | es               | she               |
+| das Auto    | the car   | es               | it                |
+| dieses Buch | this book | es               | it                |
+
+# Plural nouns 
+
+German plurals are formed in a variety of ways. A small number end in **-s**, for example 
+
+
+| Singular   | Plural      |         |
+| ---------- | ----------- | ------- |
+| das Auto   | die Autos   | cars    |
+| die Kamera | die Kameras | cameras |
+| das Sofa   | die Sofas   | sofas   |
+
+Most plurals, however, follow one of the patterns below:
+
+All plural nouns use the definitive article **die**, no matter what their gender is in the singular.
+
+
+There is no clear-cut way to always determine the plural of a noun; there are only _inconsistent patterns_ and not always fixed rules. We should check in a dictionary for the correct plural of a noun.
+
+## Masculine
+
+Many masculine nouns form their plural by an **-e** ending or by an umlaut over **a, o,** or **u** plus an **e** ending. For example:
+
+| Singular  | Plural     |           |
+| --------- | ---------- | --------- |
+| der Tisch | die Tische | tables    |
+| der Schuh | die Schuhe | shoes     |
+| der Satz  | die Sätze  | sentences |
+| der Stuhl | die Stühle | chairs    |
+If a masculine noun ends in __-en, -er__ or __-el__, there is no additional ending, but sometimes an umlaut is added. For example:
+
+| Singular     | Plural       |          |
+| ------------ | ------------ | -------- |
+| der Boden    | die Böden    | floors   |
+| der Wagen    | die Wagen    | cars     |
+| der Sportler | die Sportler | athletes |
+| der Lehrer   | die Lehrer   | teachers |
+| der Mantel   | die Mäntel   | coats    |
+| der Onkel    | die Onkel    | uncle    |
+But many other masculine nouns have their own plural formation and do not conform to simple patterns. For example:
+
+| Singular   | Plural       |          |
+| ---------- | ------------ | -------- |
+| der Mann   | die Männer   | men      |
+| der Junge  | die Jungen   | boys     |
+| der Soldat | die Soldaten | soldiers |
+
+## Feminine
+Many feminine nouns form their plural by an __-n__ or __-en__ ending. For example:
+
+| Singular    | Plural        |            |
+| ----------- | ------------- | ---------- |
+| die Blume   | die Blumen    | flowers    |
+| die Zeitung | die Zeitungen | newspapers |
+| die Lampe   | die Lampen    | lamps      |
+| die Decke   | die Decken    | blankets   |
+But many feminine nouns have a plural formation that is based upon what is commonly accepted or tradition. For example:
+
+| Singular    | Plural      |           |
+| ----------- | ----------- | --------- |
+| die Wand    | die Wände   | walls     |
+| die Mutter  | die Mütter  | mothers   |
+| die Tochter | die Töchter | daughters |
+| die Wurst   | die Würste  | sausages  |
+## Neuter
+Many neuter nouns form their plural by an __-er__ ending, often adding an umlaut to __a, o, u__. But if the noun ends in __-chen__ or __-lein__, no ending is required. For example:
+
+| Singular    | Plural      |              |
+| ----------- | ----------- | ------------ |
+| das Haus    | die Häuser  | houses       |
+| das Land    | die Länder  | countries    |
+| das Kind    | die Kinder  | children     |
+| das Mädchen | die Mädchen | girls        |
+| das Röslein | due Röslein | little roses |
+# Third-person plural pronoun
+Just like the English pronoun _they_, the German third-person plural pronouns is used for all plurals, no matter the gender of the singular noun.
+
+| Plural noun   |              | Pronoun replacement |        |
+| ------------- | ------------ | ------------------- | ------ |
+| die Frauen    | _women_      | sie                 | _they_ |
+| die Männer    | _men_        | sie                 | _they_ |
+| die Sofas     | _sofas_      | sie                 | _they_ |
+| die Bücher    | _books_      | sie                 | _they_ |
+| die Brüder    | _brothers_   | sie                 | _they_ |
+| die Zeitungen | _newspapers_ | sie                 | _they_ |
+
+Some plurals used in complete sentences:
+
+
+|                       |                           |
+| --------------------- | ------------------------- |
+| Die Manner sind heir. | _The men are here_        |
+| __Sie__ sind heir.    | _ __They__ are here._     |
+|                       |                           |
+| Die Bucher sind alt.  | _The books are old._      |
+| __Sie__ sind alt.     | _ __They__ are old._      |
+|                       |                           |
+| Die Kinder sind jung. | _The children are young._ |
+| __Sie__ sind jung.    | _ __They__ are young._    |
+
+

@@ -28,12 +28,12 @@ They identify __specific__ nouns already known to the listener or clearly define
 
 **Forms (Nominative):**
 
-|**Gender**|**Article**|
-|---|---|
-|Masculine|der|
-|Feminine|die|
-|Neuter|das|
-|Plural|die|
+| **Gender** | **Article** |
+| ---------- | ----------- |
+| Masculine  | der         |
+| Feminine   | die         |
+| Neuter     | das         |
+| Plural     | die         |
 
 **Uses:**
 
