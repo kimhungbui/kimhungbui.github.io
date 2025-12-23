@@ -8,4 +8,6 @@ categories:
   - grammar
 draft: false
 ---
-[Pronouns, plural, and the verb 'sein'](pronouns-plural-sein.qmd)
+
+
+Back: [Pronouns, plural, and the verb 'sein'](pronouns-plural-sein.qmd)
