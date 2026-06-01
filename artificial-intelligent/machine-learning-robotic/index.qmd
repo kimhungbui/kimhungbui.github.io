@@ -1,0 +1,131 @@
+---
+title: "Interactive Bayesian Optimization (Python)"
+format: html
+execute:
+    echo: false
+---
+
+Use the slider below to step through the Bayesian Optimization process and see how the surrogate model learns over time.
+
+
+
+```{python}
+import numpy as np
+import plotly.graph_objects as go
+from sklearn.gaussian_process import GaussianProcessRegressor
+from sklearn.gaussian_process.kernels import Matern, ConstantKernel as C
+import warnings
+warnings.filterwarnings('ignore')
+
+# 1. Setup the True Function and Domain
+def f(x):
+    return x * np.sin(x)
+
+X_domain = np.linspace(0, 10, 200).reshape(-1, 1)
+Y_true = f(X_domain).ravel()
+
+# 2. Pre-compute the Bayesian Optimization Steps
+n_steps = 10
+X_obs = np.array([[1.0], [8.0]])
+Y_obs = f(X_obs).ravel()
+
+frames_data = []
+
+for step in range(n_steps):
+    # Fit the Gaussian Process
+    kernel = C(1.0, (1e-3, 1e3)) * Matern(length_scale=1.0, nu=2.5)
+    gp = GaussianProcessRegressor(kernel=kernel, n_restarts_optimizer=5, alpha=1e-5)
+    gp.fit(X_obs, Y_obs)
+    
+    # Predict Mean and Uncertainty
+    Y_pred, sigma = gp.predict(X_domain, return_std=True)
+    
+    # Acquisition Function (Upper Confidence Bound for maximization)
+    acquisition = Y_pred + 1.96 * sigma
+    next_idx = np.argmax(acquisition)
+    X_next = X_domain[next_idx]
+    
+    # Store the state for this frame
+    frames_data.append({
+        'step': step,
+        'X_obs': X_obs.copy().ravel(),
+        'Y_obs': Y_obs.copy(),
+        'Y_pred': Y_pred,
+        'upper_bound': Y_pred + 1.96 * sigma,
+        'lower_bound': Y_pred - 1.96 * sigma,
+        'X_next': X_next[0],
+        'Y_next': Y_pred[next_idx]
+    })
+    
+    # Add the newly chosen point to our observations for the next loop
+    X_obs = np.vstack((X_obs, X_next))
+    Y_obs = np.append(Y_obs, f(X_next))
+
+# 3. Build the Interactive Plotly Figure
+fig = go.Figure()
+
+# Add True Function (Static)
+fig.add_trace(go.Scatter(x=X_domain.ravel(), y=Y_true, mode='lines', 
+                         line=dict(color='black', dash='dash'), name='True Function'))
+
+# Add traces for the first frame (Mean, Bounds, Observations, Next Target)
+init = frames_data[0]
+fig.add_trace(go.Scatter(x=X_domain.ravel(), y=init['upper_bound'], mode='lines', 
+                         line=dict(width=0), showlegend=False, name='Upper Bound'))
+fig.add_trace(go.Scatter(x=X_domain.ravel(), y=init['lower_bound'], mode='lines', 
+                         fill='tonexty', fillcolor='rgba(0, 0, 255, 0.2)', line=dict(width=0), 
+                         name='Uncertainty (95% CI)'))
+fig.add_trace(go.Scatter(x=X_domain.ravel(), y=init['Y_pred'], mode='lines', 
+                         line=dict(color='blue', width=2), name='Surrogate Mean'))
+fig.add_trace(go.Scatter(x=init['X_obs'], y=init['Y_obs'], mode='markers', 
+                         marker=dict(color='red', size=10, symbol='circle'), name='Past Data (D)'))
+fig.add_trace(go.Scatter(x=[init['X_next']], y=[init['Y_next']], mode='markers', 
+                         marker=dict(color='green', size=15, symbol='star'), name='Next Target (x*)'))
+
+# 4. Create Animation Frames
+frames = []
+for data in frames_data:
+    frames.append(go.Frame(
+        data=[
+            go.Scatter(x=X_domain.ravel(), y=Y_true), # Trace 0: True func (unchanged)
+            go.Scatter(x=X_domain.ravel(), y=data['upper_bound']), # Trace 1
+            go.Scatter(x=X_domain.ravel(), y=data['lower_bound']), # Trace 2
+            go.Scatter(x=X_domain.ravel(), y=data['Y_pred']),      # Trace 3
+            go.Scatter(x=data['X_obs'], y=data['Y_obs']),          # Trace 4
+            go.Scatter(x=[data['X_next']], y=[data['Y_next']])     # Trace 5
+        ],
+        name=str(data['step'])
+    ))
+
+fig.frames = frames
+
+# 5. Add the Slider Control
+sliders = [{
+    "pad": {"b": 10, "t": 50},
+    "len": 0.9,
+    "x": 0.1,
+    "y": 0,
+    "currentvalue": {
+        "font": {"size": 16},
+        "prefix": "Optimization Step: ",
+        "visible": True,
+        "xanchor": "right"
+    },
+    "steps": [
+        {"args": [[f.name], {"frame": {"duration": 0, "redraw": True}, "mode": "immediate", "transition": {"duration": 0}}],
+         "label": str(k), "method": "animate"} for k, f in enumerate(fig.frames)
+    ]
+}]
+
+fig.update_layout(
+    title='Bayesian Optimization (Interactive Scrubbing)',
+    xaxis_title='Parameter x',
+    yaxis_title='Objective Value',
+    yaxis=dict(range=[-10, 10]),
+    sliders=sliders,
+    height=600,
+    template='plotly_white'
+)
+
+fig.show()
+```
