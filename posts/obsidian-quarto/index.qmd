@@ -1,0 +1,32 @@
+---
+title: "The \"Source-to-Stage\" Workflow - Managing Obsidian Notes and Quarto Publishing"
+---
+
+I’ve moved away from trying to make one tool do everything. Instead of fighting syntax incompatibilities or forcing my personal notes to conform to publication standards, I use a "Source-to-Stage" approach.
+
+
+
+### The Philosophy
+*   **Obsidian (`.md`) is the Sandbox:** This is my primary workspace. I use `[Wikilinks](Wikilinks)`, callouts, and internal tagging because they are fast and flexible. I don't care about Quarto compliance here.
+*   **Quarto (`.qmd`) is the Stage:** This is exclusively for public-facing output. It requires rigid structure and standardized syntax.
+
+
+### The Pipeline
+I treat my Obsidian vault as the "Source Database" and my Quarto project folder as a "Build Directory."
+
+1.  **Drafting:** I write in Obsidian. If a note is destined for the web, I use standard Markdown as much as possible, but I don't compromise my internal linking structure. 
+2.  **The Bridge (Export):** I use an automation plugin to push content from Obsidian to my Quarto project folder. The conversion script is critical here; it handles three things:
+    *   **Link Translation:** Converts `[Wikilinks](Wikilinks)` into valid `[text](path.md)` syntax.
+    *   **Syntax Cleaning:** Strips or converts Obsidian-specific callouts to Quarto-compatible structures.
+    *   **Frontmatter Injection:** Appends the necessary YAML required for Quarto’s rendering engine.
+3.  **The Stage (Rendering):** I only edit in Obsidian. If I see an issue in the published output, I fix it in the source note and re-export. I treat the contents of the Quarto folder as ephemeral build artifacts.
+
+
+### The Workflow Rules
+*   **Never edit the export:** The Quarto directory is a one-way street. Any manual edits here will be wiped on the next export.
+*   **Decouple Version Control:** I keep my notes and my Quarto site in separate repositories. The "Source" is for my personal history; the "Stage" is for deployment history.
+*   **Ignore the noise:** I add all build artifacts (`_site/`, `.quarto/`) to `.gitignore`. My Obsidian vault stays clean, and my publication repo stays focused on output.
+
+
+### Why I stick with this
+This keeps my note-taking speed high and my publishing process predictable. I don't have to worry about broken links or formatting errors in my public site because the export process acts as a normalization layer. My notes stay "mine," and my output stays "professional."
