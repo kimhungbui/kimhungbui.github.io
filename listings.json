@@ -141,49 +141,6 @@
     ]
   },
   {
-    "listing": "/german.html",
-    "items": [
-      "/german/pronouns-plural-sein/pronouns-plural-sein.html",
-      "/german/titles-location-interrogatives/index.html",
-      "/german/gender-noun/index.html",
-      "/german/haus-aubere/index.html",
-      "/german/german-learning-road/index.html",
-      "/german/alphabet/index.html"
-    ]
-  },
-  {
-    "listing": "/programming.html",
-    "items": [
-      "/programming/leetcode-40-combination-sum-ii/index.html",
-      "/programming/project-euler-54-poker-hands/index.html",
-      "/programming/project-euler-52/index.html",
-      "/programming/project-euler-53/index.html",
-      "/programming/leetcode-678-valid-parenthesis-string/index.html",
-      "/programming/leetcode-triplet/index.html",
-      "/programming/leetcode-/index.html",
-      "/programming/leetcode-hand-of-straights/index.html",
-      "/programming/greedy/index.html",
-      "/programming/leetcode-gas-station/index.html",
-      "/programming/project-euler-prime-digit-replacements/index.html",
-      "/programming/leetcode-jump-game-2/index.html",
-      "/programming/maximum-subarray-problem/index.html",
-      "/programming/leetcode-word-ladder/index.html",
-      "/programming/leetcode-find-closest-node-given-2-nodes/index.html",
-      "/programming/parallel-computing/chapter1.html",
-      "/programming/leetcode-count-good-triplets/index.html",
-      "/programming/leetcode-maximum-subarray/index.html",
-      "/programming/disjoint-set-union/index.html",
-      "/programming/docker-intro/index.html",
-      "/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
-      "/programming/program-parity-invariance/parity-invariance.html",
-      "/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html",
-      "/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html",
-      "/programming/leetcode-house-robber/house-robber.html",
-      "/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
-      "/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/math/convex-optimization/index.html",
@@ -195,6 +152,7 @@
       "/math/statistics/references.html",
       "/math/convex-optimization/summary.html",
       "/math/statistics/summary.html",
+      "/posts/obsidian-quarto/index.html",
       "/german/pronouns-plural-sein/pronouns-plural-sein.html",
       "/german/titles-location-interrogatives/index.html",
       "/german/gender-noun/index.html",
@@ -382,9 +340,53 @@
     ]
   },
   {
+    "listing": "/programming.html",
+    "items": [
+      "/programming/leetcode-40-combination-sum-ii/index.html",
+      "/programming/project-euler-54-poker-hands/index.html",
+      "/programming/project-euler-52/index.html",
+      "/programming/project-euler-53/index.html",
+      "/programming/leetcode-678-valid-parenthesis-string/index.html",
+      "/programming/leetcode-triplet/index.html",
+      "/programming/leetcode-/index.html",
+      "/programming/leetcode-hand-of-straights/index.html",
+      "/programming/greedy/index.html",
+      "/programming/leetcode-gas-station/index.html",
+      "/programming/project-euler-prime-digit-replacements/index.html",
+      "/programming/leetcode-jump-game-2/index.html",
+      "/programming/maximum-subarray-problem/index.html",
+      "/programming/leetcode-word-ladder/index.html",
+      "/programming/leetcode-find-closest-node-given-2-nodes/index.html",
+      "/programming/parallel-computing/chapter1.html",
+      "/programming/leetcode-count-good-triplets/index.html",
+      "/programming/leetcode-maximum-subarray/index.html",
+      "/programming/disjoint-set-union/index.html",
+      "/programming/docker-intro/index.html",
+      "/programming/leetcode-minimum-cost-walk-in-weight-graph/index.html",
+      "/programming/program-parity-invariance/parity-invariance.html",
+      "/programming/leetcodeminimum-operations-to-make-binary-array-elements-equal-to-one-i/3191.html",
+      "/programming/leetcode-longest-nice-subarray/leetcode-Longest-Nice-Subarray.html",
+      "/programming/leetcode-house-robber/house-robber.html",
+      "/programming/programming-how-to-approach-most-dp-problems/how-to-approach-most-dp-problems.html",
+      "/programming/leetcode-divide-array-into-equal-pairs/Leetcode-Divide-array-into-equal-pairs.html"
+    ]
+  },
+  {
+    "listing": "/german.html",
+    "items": [
+      "/german/pronouns-plural-sein/pronouns-plural-sein.html",
+      "/german/titles-location-interrogatives/index.html",
+      "/german/gender-noun/index.html",
+      "/german/haus-aubere/index.html",
+      "/german/german-learning-road/index.html",
+      "/german/alphabet/index.html"
+    ]
+  },
+  {
     "listing": "/posts.html",
     "items": [
       "/posts/extreme-early-retirement/index.html",
+      "/posts/obsidian-quarto/index.html",
       "/posts/muscle-grow/how to grow muscle and have better life.html",
       "/posts/muscle-or-cardio/in 2 kind, which is better for longevity.html",
       "/posts/language-shape-think/in 2 kind, which is better for longevity.html",

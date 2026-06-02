@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Artificial Intelligence – Kim Hung’s ThinkStack</title>
+<title>The “Source-to-Stage” Workflow - Managing Obsidian Notes and Quarto Publishing – Kim Hung's ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
 
 <script type="text/javascript">
@@ -129,47 +98,18 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Kim Hung's ThinkStack" href="artificial-intelligent.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung’s ThinkStack</span>
     </a>
   </div>
@@ -180,7 +120,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -189,43 +129,43 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
         <li>
-    <a class="dropdown-item" href="./math/convex-optimization/">
+    <a class="dropdown-item" href="../../math/convex-optimization/">
  <span class="dropdown-text">Convex Optimization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/probability/">
+    <a class="dropdown-item" href="../../math/probability/">
  <span class="dropdown-text">Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/statistics/">
+    <a class="dropdown-item" href="../../math/statistics/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./artificial-intelligent.html" aria-current="page"> 
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
 <span class="menu-text">AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./german.html"> 
+    <a class="nav-link" href="../../german.html"> 
 <span class="menu-text">German</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -238,158 +178,82 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">The “Source-to-Stage” Workflow - Managing Obsidian Notes and Quarto Publishing</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="math">math <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-philosophy" id="toc-the-philosophy" class="nav-link active" data-scroll-target="#the-philosophy">The Philosophy</a></li>
+  <li><a href="#the-pipeline" id="toc-the-pipeline" class="nav-link" data-scroll-target="#the-pipeline">The Pipeline</a></li>
+  <li><a href="#the-workflow-rules" id="toc-the-workflow-rules" class="nav-link" data-scroll-target="#the-workflow-rules">The Workflow Rules</a></li>
+  <li><a href="#why-i-stick-with-this" id="toc-why-i-stick-with-this" class="nav-link" data-scroll-target="#why-i-stick-with-this">Why I stick with this</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Artificial Intelligence</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>I’ve moved away from trying to make one tool do everything. Instead of fighting syntax incompatibilities or forcing my personal notes to conform to publication standards, I use a “Source-to-Stage” approach.</p>
+<section id="the-philosophy" class="level3">
+<h3 class="anchored" data-anchor-id="the-philosophy">The Philosophy</h3>
+<ul>
+<li><strong>Obsidian (<code>.md</code>) is the Sandbox:</strong> This is my primary workspace. I use <code>[Wikilinks](Wikilinks)</code>, callouts, and internal tagging because they are fast and flexible. I don’t care about Quarto compliance here.</li>
+<li><strong>Quarto (<code>.qmd</code>) is the Stage:</strong> This is exclusively for public-facing output. It requires rigid structure and standardized syntax.</li>
+</ul>
+</section>
+<section id="the-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="the-pipeline">The Pipeline</h3>
+<p>I treat my Obsidian vault as the “Source Database” and my Quarto project folder as a “Build Directory.”</p>
+<ol type="1">
+<li><strong>Drafting:</strong> I write in Obsidian. If a note is destined for the web, I use standard Markdown as much as possible, but I don’t compromise my internal linking structure.</li>
+<li><strong>The Bridge (Export):</strong> I use an automation plugin to push content from Obsidian to my Quarto project folder. The conversion script is critical here; it handles three things:
+<ul>
+<li><strong>Link Translation:</strong> Converts <code>[Wikilinks](Wikilinks)</code> into valid <code>[text](path.md)</code> syntax.</li>
+<li><strong>Syntax Cleaning:</strong> Strips or converts Obsidian-specific callouts to Quarto-compatible structures.</li>
+<li><strong>Frontmatter Injection:</strong> Appends the necessary YAML required for Quarto’s rendering engine.</li>
+</ul></li>
+<li><strong>The Stage (Rendering):</strong> I only edit in Obsidian. If I see an issue in the published output, I fix it in the source note and re-export. I treat the contents of the Quarto folder as ephemeral build artifacts.</li>
+</ol>
+</section>
+<section id="the-workflow-rules" class="level3">
+<h3 class="anchored" data-anchor-id="the-workflow-rules">The Workflow Rules</h3>
+<ul>
+<li><strong>Never edit the export:</strong> The Quarto directory is a one-way street. Any manual edits here will be wiped on the next export.</li>
+<li><strong>Decouple Version Control:</strong> I keep my notes and my Quarto site in separate repositories. The “Source” is for my personal history; the “Stage” is for deployment history.</li>
+<li><strong>Ignore the noise:</strong> I add all build artifacts (<code>_site/</code>, <code>.quarto/</code>) to <code>.gitignore</code>. My Obsidian vault stays clean, and my publication repo stays focused on output.</li>
+</ul>
+</section>
+<section id="why-i-stick-with-this" class="level3">
+<h3 class="anchored" data-anchor-id="why-i-stick-with-this">Why I stick with this</h3>
+<p>This keeps my note-taking speed high and my publishing process predictable. I don’t have to worry about broken links or formatting errors in my public site because the export process acts as a normalization layer. My notes stay “mine,” and my output stays “professional.”</p>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1780388988525" data-listing-reading-time-sort="5" data-listing-word-count-sort="856">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external"></a></p><a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external">Interactive Bayesian Optimization (Python)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external">Use the slider below to step through the Bayesian Optimization process and see how the surrogate model learns over time.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external"></a></p><a href="./artificial-intelligent/machine-learning-robotic/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="math" data-listing-date-sort="1749686400000" data-listing-file-modified-sort="1780388988524" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6097">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/deep-learning-interview/index_files/figure-html/cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Logistic regression</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('math'); return false;">
-math
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/deep-learning-interview/index.html" class="no-external">
-<div class="listing-date">
-Jun 12, 2025
-</div>
-<div class="listing-author">
-Your name
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="AI" data-listing-date-sort="1748563200000" data-listing-file-modified-sort="1780388988524" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="662">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p><a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Finetuning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">Your post description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/finetunning/index.html" class="no-external">
-<div class="listing-date">
-May 30, 2025
-</div>
-<div class="listing-author">
-Hung
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1742515200000" data-listing-file-modified-sort="1780388988524" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1575">
-<div class="thumbnail">
-<p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p><a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<p class="card-img-top"><img src="artificial-intelligent/convolution/Pasted image 20250327230513.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./artificial-intelligent/convolution/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">Image classification</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./artificial-intelligent/convolution/index.html" class="no-external">
-<div class="listing-date">
-Mar 21, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

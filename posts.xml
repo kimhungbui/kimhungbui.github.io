@@ -1575,7 +1575,57 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 
  ]]></description>
   <guid>https://kimhungbui.github.io/posts/extreme-early-retirement/</guid>
-  <pubDate>Mon, 01 Jun 2026 14:35:41 GMT</pubDate>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
+</item>
+<item>
+  <title>The “Source-to-Stage” Workflow - Managing Obsidian Notes and Quarto Publishing</title>
+  <link>https://kimhungbui.github.io/posts/obsidian-quarto/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>I’ve moved away from trying to make one tool do everything. Instead of fighting syntax incompatibilities or forcing my personal notes to conform to publication standards, I use a “Source-to-Stage” approach.</p>
+<section id="the-philosophy" class="level3">
+<h3 class="anchored" data-anchor-id="the-philosophy">The Philosophy</h3>
+<ul>
+<li><strong>Obsidian (<code>.md</code>) is the Sandbox:</strong> This is my primary workspace. I use <code>[Wikilinks](Wikilinks)</code>, callouts, and internal tagging because they are fast and flexible. I don’t care about Quarto compliance here.</li>
+<li><strong>Quarto (<code>.qmd</code>) is the Stage:</strong> This is exclusively for public-facing output. It requires rigid structure and standardized syntax.</li>
+</ul>
+</section>
+<section id="the-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="the-pipeline">The Pipeline</h3>
+<p>I treat my Obsidian vault as the “Source Database” and my Quarto project folder as a “Build Directory.”</p>
+<ol type="1">
+<li><strong>Drafting:</strong> I write in Obsidian. If a note is destined for the web, I use standard Markdown as much as possible, but I don’t compromise my internal linking structure.</li>
+<li><strong>The Bridge (Export):</strong> I use an automation plugin to push content from Obsidian to my Quarto project folder. The conversion script is critical here; it handles three things:
+<ul>
+<li><strong>Link Translation:</strong> Converts <code>[Wikilinks](Wikilinks)</code> into valid <code>[text](path.md)</code> syntax.</li>
+<li><strong>Syntax Cleaning:</strong> Strips or converts Obsidian-specific callouts to Quarto-compatible structures.</li>
+<li><strong>Frontmatter Injection:</strong> Appends the necessary YAML required for Quarto’s rendering engine.</li>
+</ul></li>
+<li><strong>The Stage (Rendering):</strong> I only edit in Obsidian. If I see an issue in the published output, I fix it in the source note and re-export. I treat the contents of the Quarto folder as ephemeral build artifacts.</li>
+</ol>
+</section>
+<section id="the-workflow-rules" class="level3">
+<h3 class="anchored" data-anchor-id="the-workflow-rules">The Workflow Rules</h3>
+<ul>
+<li><strong>Never edit the export:</strong> The Quarto directory is a one-way street. Any manual edits here will be wiped on the next export.</li>
+<li><strong>Decouple Version Control:</strong> I keep my notes and my Quarto site in separate repositories. The “Source” is for my personal history; the “Stage” is for deployment history.</li>
+<li><strong>Ignore the noise:</strong> I add all build artifacts (<code>_site/</code>, <code>.quarto/</code>) to <code>.gitignore</code>. My Obsidian vault stays clean, and my publication repo stays focused on output.</li>
+</ul>
+</section>
+<section id="why-i-stick-with-this" class="level3">
+<h3 class="anchored" data-anchor-id="why-i-stick-with-this">Why I stick with this</h3>
+<p>This keeps my note-taking speed high and my publishing process predictable. I don’t have to worry about broken links or formatting errors in my public site because the export process acts as a normalization layer. My notes stay “mine,” and my output stays “professional.”</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://kimhungbui.github.io/posts/obsidian-quarto/</guid>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -1663,7 +1713,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://kimhungbui.github.io/posts/muscle-grow/how to grow muscle and have better life.html</guid>
-  <pubDate>Mon, 01 Jun 2026 14:35:41 GMT</pubDate>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -1739,7 +1789,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://kimhungbui.github.io/posts/muscle-or-cardio/in 2 kind, which is better for longevity.html</guid>
-  <pubDate>Mon, 01 Jun 2026 14:35:41 GMT</pubDate>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -1815,7 +1865,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://kimhungbui.github.io/posts/language-shape-think/in 2 kind, which is better for longevity.html</guid>
-  <pubDate>Mon, 01 Jun 2026 14:35:41 GMT</pubDate>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -1890,7 +1940,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://kimhungbui.github.io/posts/muscle-longiety/What muscles help live longer and better life.html</guid>
-  <pubDate>Mon, 01 Jun 2026 14:35:41 GMT</pubDate>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -1965,7 +2015,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://kimhungbui.github.io/posts/muscle-longiety 1/What muscles help live longer and better life.html</guid>
-  <pubDate>Mon, 01 Jun 2026 14:35:41 GMT</pubDate>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
 </item>
 <item>
   <title></title>
@@ -2041,7 +2091,7 @@ font-style: inherit;"> unless-stopped</span></span></code></pre></div>
 </ol>
 </section></div> ]]></description>
   <guid>https://kimhungbui.github.io/posts/trend-in-health/in 2 kind, which is better for longevity.html</guid>
-  <pubDate>Mon, 01 Jun 2026 14:35:41 GMT</pubDate>
+  <pubDate>Tue, 02 Jun 2026 08:35:02 GMT</pubDate>
 </item>
 </channel>
 </rss>
