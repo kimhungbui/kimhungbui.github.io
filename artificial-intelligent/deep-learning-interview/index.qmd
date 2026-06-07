@@ -1,12 +1,11 @@
 ---
 title: Logistic regression
 lightbox: false
-description: Your post description
+description: z
 author:
   - name: Your name
     url: https://kimhungbui.github.io
-    affiliation: Maybe your workplace?
-    affiliation-url: https://your.workplace.website
+
 date: 2025-06-12
 categories:
   - math
