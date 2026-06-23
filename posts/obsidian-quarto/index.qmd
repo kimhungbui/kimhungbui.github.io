@@ -1,5 +1,5 @@
 ---
-title: "The \"Source-to-Stage\" Workflow - Managing Obsidian Notes and Quarto Publishing"
+title: The "Source-to-Stage" Workflow - Managing Obsidian Notes and Quarto Publishing Anki
 ---
 
 I’ve moved away from trying to make one tool do everything. Instead of fighting syntax incompatibilities or forcing my personal notes to conform to publication standards, I use a "Source-to-Stage" approach.
@@ -30,3 +30,7 @@ I treat my Obsidian vault as the "Source Database" and my Quarto project folder 
 
 ### Why I stick with this
 This keeps my note-taking speed high and my publishing process predictable. I don't have to worry about broken links or formatting errors in my public site because the export process acts as a normalization layer. My notes stay "mine," and my output stays "professional."
+
+# Anki
+
+https://github.com/lukmay/simple-anki-sync
