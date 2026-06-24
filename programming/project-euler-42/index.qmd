@@ -50,4 +50,5 @@ $$n=\frac{\sqrt{1+8x}-1}{2}$$
 
 
 Each word in file words, we just calculate the $x$ from that word (O(n)) and calculate $n$ from it, if x in natural positive number (the order of triangle number) -> a triangle number.
-Otherwise, not a triangle number.
+Otherwise, not a triangle number. $\square$
+ 
