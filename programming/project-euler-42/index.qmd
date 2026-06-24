@@ -1,0 +1,53 @@
+---
+title: Coded triangle numbers
+lightbox: false
+description: Instead of Brute Force
+author:
+  - name: Kim Hung Bui
+    url: https://kimhungbui.github.io
+    affiliation: Project Euler - 52. Triangle number
+    affiliation-url: https://projecteuler.net/problem=52
+date: 2026-06-24
+categories:
+  - project-euler
+  - programming
+format:
+  html:
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    highlight-style: a11y
+execute:
+  echo: true
+  warning: false
+  error: false
+  result: interactive
+---
+The definition of a triangle number $x$ for a given position $n$ is:
+
+$$x=\frac{1}{2}n(n+1)$$
+
+If we know $n=10$, we plug it in to get the triangle number: $x=\frac{1}{2}(10)(11)=55$
+
+In the word problem, we have the oppostive situation. We already know the world value $x$ (for example, SKY = 55), but we do not know if there is a valid integer position $n$ that creates it.
+
+In stead of store a table of $n$ and check for $x$ in that, ($O(n)$) can we do better ($O(1)$)?
+
+Can we just look at the $x$ and calculate to $n$ ?
+
+From the formula above:
+
+$$2x=n(n+1)$$
+$$n^2+n-2x=0$$
+(Quadratic formula)
+So, we calculate $n$ from $x$
+$$n=\frac{-1+-\sqrt{(1+8x)}}{2}$$
+
+Since a position $n$ in a sequence must $n \in \mathbb{N}_{>0}$, so:
+$$n=\frac{\sqrt{1+8x}-1}{2}$$
+
+
+Each word in file words, we just calculate the $x$ from that word (O(n)) and calculate $n$ from it, if x in natural positive number (the order of triangle number) -> a triangle number.
+Otherwise, not a triangle number.
