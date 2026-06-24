@@ -10,7 +10,35 @@
 <atom:link href="https://kimhungbui.github.io/programming.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Mon, 21 Jul 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 24 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Coded triangle numbers</title>
+  <dc:creator>Kim Hung Bui</dc:creator>
+  <link>https://kimhungbui.github.io/programming/project-euler-42/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The definition of a triangle number <img src="https://latex.codecogs.com/png.latex?x"> for a given position <img src="https://latex.codecogs.com/png.latex?n"> is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?x=%5Cfrac%7B1%7D%7B2%7Dn(n+1)"></p>
+<p>If we know <img src="https://latex.codecogs.com/png.latex?n=10">, we plug it in to get the triangle number: <img src="https://latex.codecogs.com/png.latex?x=%5Cfrac%7B1%7D%7B2%7D(10)(11)=55"></p>
+<p>In the word problem, we have the oppostive situation. We already know the world value <img src="https://latex.codecogs.com/png.latex?x"> (for example, SKY = 55), but we do not know if there is a valid integer position <img src="https://latex.codecogs.com/png.latex?n"> that creates it.</p>
+<p>In stead of store a table of <img src="https://latex.codecogs.com/png.latex?n"> and check for <img src="https://latex.codecogs.com/png.latex?x"> in that, (<img src="https://latex.codecogs.com/png.latex?O(n)">) can we do better (<img src="https://latex.codecogs.com/png.latex?O(1)">)?</p>
+<p>Can we just look at the <img src="https://latex.codecogs.com/png.latex?x"> and calculate to <img src="https://latex.codecogs.com/png.latex?n"> ?</p>
+<p>From the formula above:</p>
+<p><img src="https://latex.codecogs.com/png.latex?2x=n(n+1)"> <img src="https://latex.codecogs.com/png.latex?n%5E2+n-2x=0"> (Quadratic formula) So, we calculate <img src="https://latex.codecogs.com/png.latex?n"> from <img src="https://latex.codecogs.com/png.latex?x"> <img src="https://latex.codecogs.com/png.latex?n=%5Cfrac%7B-1+-%5Csqrt%7B(1+8x)%7D%7D%7B2%7D"></p>
+<p>Since a position <img src="https://latex.codecogs.com/png.latex?n"> in a sequence must <img src="https://latex.codecogs.com/png.latex?n%20%5Cin%20%5Cmathbb%7BN%7D_%7B%3E0%7D">, so: <img src="https://latex.codecogs.com/png.latex?n=%5Cfrac%7B%5Csqrt%7B1+8x%7D-1%7D%7B2%7D"></p>
+<p>Each word in file words, we just calculate the <img src="https://latex.codecogs.com/png.latex?x"> from that word (O(n)) and calculate <img src="https://latex.codecogs.com/png.latex?n"> from it, if x in natural positive number (the order of triangle number) -&gt; a triangle number. Otherwise, not a triangle number.</p>
+
+
+
+ ]]></description>
+  <category>project-euler</category>
+  <category>programming</category>
+  <guid>https://kimhungbui.github.io/programming/project-euler-42/</guid>
+  <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Project Euler Problem 54- Poker Hands</title>
   <dc:creator>Kim Hung Bui</dc:creator>
@@ -1345,7 +1373,7 @@ font-style: inherit;">'123'</span></span></code></pre></div>
 <li><p>The loop is linear in x (but bounded by 6-digit numbers)</p></li>
 <li><p>Much faster than O(n²) since the search space is tightly controlled</p></li>
 </ul>
-<div id="78c6df2f" class="cell" data-execution_count="1">
+<div id="40eaa8e7" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="kw" style="color: #003B4F;
@@ -4802,7 +4830,7 @@ font-style: inherit;">return</span> ans</span></code></pre></div>
     # cal sum of each
     # return max
     # T.C: O(n^2)</code></pre>
-<div id="a4c7db48" class="cell" data-execution_count="1">
+<div id="19c66b58" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> typing <span class="im" style="color: #00769E;
@@ -5061,501 +5089,6 @@ font-style: inherit;">8</span> minutes ago              vibrant_bell</span></cod
   <category>docker</category>
   <guid>https://kimhungbui.github.io/programming/docker-intro/</guid>
   <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Disjoint Set Union</title>
-  <dc:creator>Kim Hung Bui</dc:creator>
-  <link>https://kimhungbui.github.io/programming/disjoint-set-union/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This data structure provides the following capabilities. We are given several elements, each of which is a separate set. A DSU will have an operation to <strong>combine any two sets</strong>, and it will be able to <strong>tell in which set a specific element is</strong>. The classical version also introduces a third operation, it can <strong>create a set from a new element</strong>.</p>
-<p>Thus the basic interface of this data structure consists of only three operations: - <code>make_set()</code> - create a new set consisting of the new element <code>v</code>. - <code>union_sets(a, b)</code> - merges the two specified sets (the set in which the element <code>a</code> is located, and the set in which the element <code>b</code> is located). - <code>find_set(v)</code> - return the representative (also called leader) of the set that contains the element <code>v</code>. This representative is an element of its corresponding set. It is selected in each set by the data structure itself (and can change over time, namely after <code>union_sets</code> call). This representative can be used to check if two elements are part of the same set or not. <code>a</code> and <code>b</code> are exactly in the same set, if <code>find_set(a) == find_set(b)</code>. Otherwise they are in different sets.</p>
-<p>As described on more detail later, the data structure allows us to do each of these operations in almost <img src="https://latex.codecogs.com/png.latex?O(1)"> time on average.</p>
-<p>Also in one of the subsections an alternative structure of a DSU is explained, which achieves a slower average complexity of <img src="https://latex.codecogs.com/png.latex?O(%5Clog%20n)">, but can be more powerful than the regular DSU structure.</p>
-<section id="build-an-efficient-data-structure" class="level1">
-<h1>Build an efficient data structure</h1>
-<p>We will store the sets in the form of <strong>trees</strong>: each tree will correspond to one set. And the root of the tree will be the representative/leader of the set.</p>
-<p>In the following image we can see the representative of such trees.</p>
-<p>![[DSU_example.png]] In the beginning, every element starts as a single set, there fore each vertex is its own tree. Then we combine the set containing the element 1 and the et containing the element 2. Then we combine the set containing the element 3 and the set containing the element 4. And in the last step, we combine the set containing the element 1 and the set containing the element 3.</p>
-<p>For the implementation this means that we will have to maintain an array <code>parent</code> that stores a reference to its immediate ancestor in the tree.</p>
-<section id="naive-implementation" class="level2">
-<h2 class="anchored" data-anchor-id="naive-implementation">Naive implementation</h2>
-<p>We can already write the first implementation of the Disjoint Set Union data structure. It will be pretty inefficient at first, but later we can improve it using two optimizations, so that it will take nearly constant time for each function call.</p>
-<p>As we said, all the information about the sets of elements will be kept in an array <code>parent</code>.</p>
-<p>To create a new set (operation <code>make_set(v)</code>), we simply create a tree with root in the vertex <code>x</code>, meaning that it is its own ancestor.</p>
-<p>To combine two sets (operation <code>union_sets(a, b)</code>), we first find the representative of the set in which <code>a</code> is located, and the representative of the set in which <code>b</code> is located. If the representatives are identical, that we have nothing to do, the sets are already merged. Otherwise, we can simply specify that one of the representatives is the parent of the other representative - thereby combining the two trees.</p>
-<p>Finally the implementation of the find representative function (operation <code>find_set(v)</code>): we simply climb the ancestors of the vertex <code>v</code> until we reach the root, i.e.&nbsp;a vertex such that the reference to the ancestor leads to itself. This operation is easily implemented recursively.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode c++ code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">void</span> make_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb1-2">    parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb1-3"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb1-4"></span>
-<span id="cb1-5"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb1-6">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>v <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">])</span></span>
-<span id="cb1-7">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb1-8">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]);</span></span>
-<span id="cb1-9"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb1-10"></span>
-<span id="cb1-11"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">void</span> union_sets<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> <span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb1-12">    a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb1-13">    b <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb1-14">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">!=</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span></span>
-<span id="cb1-15">        parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb1-16"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span></code></pre></div>
-<p>However this implementation is inefficient. It is easy to construct an example, so that the trees degenerate into long chains. In that case each call <code>find_set(v)</code> can take <img src="https://latex.codecogs.com/png.latex?O(n)"> time.</p>
-<p>This is far away from the complexity that we want to have (nearly constant time). Therefore we will consider two optimizations that will allow to significantly accelerate the work.</p>
-</section>
-<section id="path-compression-optimization" class="level2">
-<h2 class="anchored" data-anchor-id="path-compression-optimization">Path compression optimization</h2>
-<p>This optimization is designed for speeding up <code>find_set</code>.</p>
-<p>If we call <code>find_set()</code> for some vertex <code>x</code>, we actually find the representative <code>p</code> for all vertices that we visit on the path between <code>v</code> and the actually representative <code>p</code>. The trick is to make the paths for all those nodes shorter, by setting the parent of each visited vertex directly to <code>p</code>.</p>
-<p>We can see the operation in the following image. On the left there is a tree, and on the right side there is the compressed tree after calling <code>find_set(7)</code>, which shortens the paths for the visited node 7, 5, 3 and 2.</p>
-<p>![[DSU_path_compression.png]]</p>
-<p>The new implementation of <code>find_set</code> is as follows:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb2-2">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>v <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">])</span></span>
-<span id="cb2-3">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb2-4">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]);</span></span>
-<span id="cb2-5"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span></code></pre></div>
-<p>The simple implementation does what was intended: first find the representative of the set (root vertex), and then in the process of stack unwinding the visited nodes are attached directly to the representative.</p>
-<p>This simple modification of the operation already achieves the time complexity <img src="https://latex.codecogs.com/png.latex?O(%5Clog%20n)"> per call on average (here without proof). There is a second modification, that will make it even faster.</p>
-</section>
-<section id="union-by-size-rank" class="level2">
-<h2 class="anchored" data-anchor-id="union-by-size-rank">Union by size / rank</h2>
-<p>In this optimization we will change the <code>union_set</code> operation. To be precise, we will change which tree gets attached to the other one. In the naive implementation the second tree always got attached to the first one. In practice that can lead to trees containing chains of length <img src="https://latex.codecogs.com/png.latex?O(n)">. With this optimization we will avoid this by choosing very carefully which tree gets attached.</p>
-<p>There are many possible heuristic that can be used. Most popular are the following two approaches: In the first approach we use the size of the trees as rank, and in the second one we use the depth of the tree (more precisely, the upper bound on the tree depth, because the depth will get smaller when applying path compression).</p>
-<p>In both approaches the essence of the optimization is the same: we attach the tree with the lower rank to the one with the bigger rank.</p>
-<p>Here is the implementation of union by size:</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">void</span> make_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb3-2">    parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb3-3">    size<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb3-4"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb3-5"></span>
-<span id="cb3-6"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">void</span> union_sets<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> <span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">){</span></span>
-<span id="cb3-7">    a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb3-8">    b <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb3-9">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">!=</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb3-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>size<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> size<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">])</span></span>
-<span id="cb3-11">            swap<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb3-12">        parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb3-13">        size<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+=</span> size<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">];</span></span>
-<span id="cb3-14">    <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb3-15"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span></code></pre></div>
-<p>and here is the implementation of union by rank based on the depth of the trees:</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">void</span> make_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb4-2">    parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb4-3">    rank<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>v<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb4-4"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb4-5"></span>
-<span id="cb4-6"><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">void</span> union_sets<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> <span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">int</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb4-7">    a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb4-8">    b <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> find_set<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb4-9">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">!=</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span></span>
-<span id="cb4-10">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>rank<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&lt;</span> rank<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">])</span></span>
-<span id="cb4-11">            swap<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">);</span></span>
-<span id="cb4-12">        parent<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb4-13">        <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>rank<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> rank<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>b<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">])</span></span>
-<span id="cb4-14">            rank<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">[</span>a<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">]++;</span></span>
-<span id="cb4-15">    <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb4-16"><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span></code></pre></div>
-<p>Both optimizations are equivalent in terms of time and space complexity. So in practice we can use any of them.</p>
-</section>
-<section id="time-complexity" class="level2">
-<h2 class="anchored" data-anchor-id="time-complexity">Time complexity</h2>
-<p>As mentioned before, if we combine both optimizations - path compression with union by size / rank - we will reach nearly constant time queries. It turns out, that the final amortized complexity is <img src="https://latex.codecogs.com/png.latex?O(%5Calpha(n))">, where <img src="https://latex.codecogs.com/png.latex?%5Calpha%20(n)"> is the inverse Ackermann function, which grows very slowly. In fact it grows so lowly, that it doesn’t exceed 4 for all reasonable <img src="https://latex.codecogs.com/png.latex?n"> (approximately <img src="https://latex.codecogs.com/png.latex?n%3C10%5E%7B600%7D">).</p>
-<p>Amortized complexity is the total time per operation, evaluated over a sequence of multiple operations. The idea is to guarantee the total time of the entire sequence, while allowing single operations to be much slower than the amortized time. E.g. in our case a single call might take <img src="https://latex.codecogs.com/png.latex?O(%5Clog%20n)"> in the worst case, but if we do <img src="https://latex.codecogs.com/png.latex?m"> such calls back to back we will end up with an average time of <img src="https://latex.codecogs.com/png.latex?O(%5Calpha%20(n))">.</p>
-<p>We will also not present a proof for this time complexity, since it is quite long and complicated.</p>
-<p>Also, it’s worth mentioning that DSU with union by size / rank, but without path compression works in <img src="https://latex.codecogs.com/png.latex?O(%5Clog%20n)"> time per query.</p>
-</section>
-<section id="linking-by-index-coin-flip-linking" class="level2">
-<h2 class="anchored" data-anchor-id="linking-by-index-coin-flip-linking">Linking by index / coin-flip linking</h2>
-<p>Both union by rank and union by size require that we store additional data for each set, and maintain these values during each union operation. There exist also a randomized algorithm, that simplifies the union operation a little bit: linking by index.</p>
-<p>We assign each set a random value called the index, and we attach the set with the smaller index to the one with the larger one. It is likely that a bigger set will have a bigger than the smaller set, therefore this operation is closely related to union by size. In fact it can be proven, that this operation has the same time complexity as union by size. However in practice it is slightly slower than union by size.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>programming</category>
-  <category>data structure</category>
-  <guid>https://kimhungbui.github.io/programming/disjoint-set-union/</guid>
-  <pubDate>Fri, 21 Mar 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://kimhungbui.github.io/programming/disjoint-set-union/dundee.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
