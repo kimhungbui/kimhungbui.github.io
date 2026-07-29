@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Quarto Academic Website">
+<meta name="author" content="Kim Hung Bui">
+<meta name="dcterms.date" content="2026-07-29">
+<meta name="description" content="Recurring property">
 
-<title>Kim Hung Bui personal page – Kim Hung’s ThinkStack</title>
+<title>Project Euler Problem 57 – Kim Hung’s ThinkStack</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,28 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,36 +105,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 5,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-R5TB4V4ZYS"></script>
 
 <script type="text/javascript">
@@ -160,7 +165,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -170,7 +175,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Kim Hung’s ThinkStack</span>
     </a>
   </div>
@@ -181,7 +186,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -190,43 +195,43 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-mathematics">    
         <li>
-    <a class="dropdown-item" href="./math/convex-optimization/">
+    <a class="dropdown-item" href="../../math/convex-optimization/">
  <span class="dropdown-text">Convex Optimization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/probability/">
+    <a class="dropdown-item" href="../../math/probability/">
  <span class="dropdown-text">Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./math/statistics/">
+    <a class="dropdown-item" href="../../math/statistics/">
  <span class="dropdown-text">Statistics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./artificial-intelligent.html"> 
+    <a class="nav-link" href="../../artificial-intelligent.html"> 
 <span class="menu-text">AI</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./programming.html"> 
+    <a class="nav-link" href="../../programming.html"> 
 <span class="menu-text">Programming</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./english.html"> 
+    <a class="nav-link" href="../../english.html"> 
 <span class="menu-text">English</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./german.html"> 
+    <a class="nav-link" href="../../german.html"> 
 <span class="menu-text">German</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -239,127 +244,205 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mathematical-recurrence" id="toc-mathematical-recurrence" class="nav-link active" data-scroll-target="#mathematical-recurrence"><span class="header-section-number">0.1</span> Mathematical Recurrence</a></li>
+  <li><a href="#naive-recursive-implementation-python" id="toc-naive-recursive-implementation-python" class="nav-link" data-scroll-target="#naive-recursive-implementation-python"><span class="header-section-number">0.2</span> Naive Recursive Implementation (Python)</a></li>
+  <li><a href="#direct-numeratordenominator-recurrence-more-efficient-recursion" id="toc-direct-numeratordenominator-recurrence-more-efficient-recursion" class="nav-link" data-scroll-target="#direct-numeratordenominator-recurrence-more-efficient-recursion"><span class="header-section-number">0.3</span> Direct Numerator/Denominator Recurrence (More Efficient Recursion)</a></li>
+  <li><a href="#continued-fractions-linear-recurrences" id="toc-continued-fractions-linear-recurrences" class="nav-link" data-scroll-target="#continued-fractions-linear-recurrences"><span class="header-section-number">0.4</span> 1. Continued Fractions &amp; Linear Recurrences</a></li>
+  <li><a href="#best-rational-approximations-pells-equation" id="toc-best-rational-approximations-pells-equation" class="nav-link" data-scroll-target="#best-rational-approximations-pells-equation"><span class="header-section-number">0.5</span> 2. Best Rational Approximations (Pell’s Equation)</a></li>
+  <li><a href="#logarithmic-digit-growth-the-digit-inequality" id="toc-logarithmic-digit-growth-the-digit-inequality" class="nav-link" data-scroll-target="#logarithmic-digit-growth-the-digit-inequality"><span class="header-section-number">0.6</span> 3. Logarithmic Digit Growth &amp; The Digit Inequality</a></li>
+  <li><a href="#computational-efficiency-tail-recursion-vs.-loop" id="toc-computational-efficiency-tail-recursion-vs.-loop" class="nav-link" data-scroll-target="#computational-efficiency-tail-recursion-vs.-loop"><span class="header-section-number">0.7</span> 4. Computational Efficiency (Tail Recursion vs.&nbsp;Loop)</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Kim Hung Bui personal page</h1>
+<h1 class="title">Project Euler Problem 57</h1>
 </div>
-<div class="quarto-title-meta column-page">
+
+<div>
+  <div class="description">
+    Recurring property
   </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://kimhungbui.github.io">Kim Hung Bui</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://projecteuler.net/problem=54">
+            Project Euler
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 29, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="mailto:hungbk1100@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">E-mail</span>
-  </a>
-  <a href="https://www.linkedin.com/in/hung-bui-kim-38a347239/" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://www.youtube.com/@kim-hung/videos" class="about-link" rel="" target="_blank">
-    <i class="bi bi-youtube"></i>
-     <span class="about-link-text">YouTube</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<p>It’s my blogs and knowledge storage.</p>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-</section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
+
+
+<section id="mathematical-recurrence" class="level3" data-number="0.1">
+<h3 data-number="0.1" class="anchored" data-anchor-id="mathematical-recurrence"><span class="header-section-number">0.1</span> Mathematical Recurrence</h3>
+<p>Notice that every expansion after 1 has the form:</p>
+<p><span class="math display">\[\text{Expansion}_n = 1 + \frac{1}{D_n}\]</span></p>
+<p>where <span class="math inline">\(D_n\)</span> is the recursive nested denominator fraction:</p>
 <ul>
-<li>Currently Master of Science in Computer Science at Technical University Dresden, Germany.</li>
-<li>Bachelor of Engineering in Computer Science, Ho Chi Minh City University of Technology, Viet Nam</li>
+<li><p><span class="math inline">\(D_1 = 2\)</span></p></li>
+<li><p><span class="math inline">\(D_n = 2 + \frac{1}{D_{n-1}}\)</span></p></li>
+</ul>
+<p>If we compute <span class="math inline">\(D_n\)</span> as a fraction <span class="math inline">\(\frac{a_n}{b_n}\)</span>, then:</p>
+<p><span class="math display">\[D_n = 2 + \frac{b_{n-1}}{a_{n-1}} = \frac{2 a_{n-1} + b_{n-1}}{a_{n-1}}\]</span></p>
+<p>Thus, the overall expansion <span class="math inline">\(\text{Expansion}_n = 1 + \frac{1}{D_n} = 1 + \frac{b_n}{a_n} = \frac{a_n + b_n}{a_n}\)</span>.</p>
+</section>
+<section id="naive-recursive-implementation-python" class="level3" data-number="0.2">
+<h3 data-number="0.2" class="anchored" data-anchor-id="naive-recursive-implementation-python"><span class="header-section-number">0.2</span> Naive Recursive Implementation (Python)</h3>
+<p>Because Python automatically handles arbitrarily large integers, you don’t have to worry about integer overflow as the numerators and denominators grow beyond 1,000 digits.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Increase recursion depth limit to accommodate 1000 recursive calls</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>sys.setrecursionlimit(<span class="dv">2000</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_nested_denominator(n):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns the n-th nested denominator D_n as a tuple (numerator, denominator).</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    D_1 = 2 / 1</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    D_n = 2 + 1 / D_{n-1}</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="dv">2</span>, <span class="dv">1</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Recurse to get D_{n-1} = prev_num / prev_den</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    prev_num, prev_den <span class="op">=</span> get_nested_denominator(n <span class="op">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># D_n = 2 + (prev_den / prev_num) = (2 * prev_num + prev_den) / prev_num</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    new_num <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> prev_num <span class="op">+</span> prev_den</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    new_den <span class="op">=</span> prev_num</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (new_num, new_den)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_expansion(n):</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns the n-th total expansion as a tuple (numerator, denominator).</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">    Expansion_n = 1 + 1 / D_n = (D_num + D_den) / D_num</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    d_num, d_den <span class="op">=</span> get_nested_denominator(n)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (d_num <span class="op">+</span> d_den, d_num)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> solve(limit<span class="op">=</span><span class="dv">1000</span>):</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, limit <span class="op">+</span> <span class="dv">1</span>):</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        num, den <span class="op">=</span> get_expansion(i)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check if length of numerator digits exceeds denominator digits</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(<span class="bu">str</span>(num)) <span class="op">&gt;</span> <span class="bu">len</span>(<span class="bu">str</span>(den)):</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>            count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Result:"</span>, solve(<span class="dv">1000</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="direct-numeratordenominator-recurrence-more-efficient-recursion" class="level3" data-number="0.3">
+<h3 data-number="0.3" class="anchored" data-anchor-id="direct-numeratordenominator-recurrence-more-efficient-recursion"><span class="header-section-number">0.3</span> Direct Numerator/Denominator Recurrence (More Efficient Recursion)</h3>
+<p>The naive recursive approach above recomputes subproblems redundantly if you call <code>get_expansion(i)</code> in a loop, taking <span class="math inline">\(O(N^2)\)</span> time.</p>
+<p>If you express the numerator <span class="math inline">\(N_k\)</span> and denominator <span class="math inline">\(D_k\)</span> of the full expansion directly, they follow simple linear recurrences:</p>
+<ul>
+<li><p><span class="math inline">\(N_k = N_{k-1} + 2 D_{k-1}\)</span></p></li>
+<li><p><span class="math inline">\(D_k = N_{k-1} + D_{k-1}\)</span></p></li>
+</ul>
+<p>With base case <span class="math inline">\(N_1 = 3, D_1 = 2\)</span>.</p>
+<p>You can pass the current numerator, denominator, step count, and accumulator recursively in a single linear pass (<span class="math inline">\(O(N)\)</span> time):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sys.setrecursionlimit(<span class="dv">2000</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_expansions_rec(num, den, step, limit, count):</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> step <span class="op">&gt;</span> limit:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> count</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check digit condition for current step</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(<span class="bu">str</span>(num)) <span class="op">&gt;</span> <span class="bu">len</span>(<span class="bu">str</span>(den)):</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Recurrence relation for next step</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    next_num <span class="op">=</span> num <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> den</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    next_den <span class="op">=</span> num <span class="op">+</span> den</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count_expansions_rec(next_num, next_den, step <span class="op">+</span> <span class="dv">1</span>, limit, count)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Base case: step 1 is 3/2</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> count_expansions_rec(<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">1000</span>, <span class="dv">0</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Result:"</span>, result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="continued-fractions-linear-recurrences" class="level3" data-number="0.4">
+<h3 data-number="0.4" class="anchored" data-anchor-id="continued-fractions-linear-recurrences"><span class="header-section-number">0.4</span> 1. Continued Fractions &amp; Linear Recurrences</h3>
+<ul>
+<li><p><strong>Structure of Convergents:</strong> The continued fraction expansions for <span class="math inline">\(\sqrt{2}\)</span> are the <strong>convergents</strong> of <span class="math inline">\(\sqrt{2}\)</span>.</p></li>
+<li><p><strong>State Reduction:</strong> Rather than evaluating deeply nested fractions from the inside out every time (which is <span class="math inline">\(O(N^2)\)</span>), you can extract direct recurrence relations for the numerator <span class="math inline">\(N_k\)</span> and denominator <span class="math inline">\(D_k\)</span>:</p>
+<p><span class="math display">\[N_k = N_{k-1} + 2 D_{k-1}\]</span></p>
+<p><span class="math display">\[D_k = N_{k-1} + D_{k-1}\]</span></p>
+<p>This collapses nested fraction evaluation into simple integer arithmetic operating in <span class="math inline">\(O(N)\)</span> time.</p></li>
 </ul>
 </section>
-</div></div>
-</div>
-
-<p>Here are the latest updates across all notes:</p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1785314195385" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<a href="./math/convex-optimization/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Convex Optimization
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1785314195160" data-listing-reading-time-sort="5" data-listing-word-count-sort="856">
-<a href="./artificial-intelligent/machine-learning-robotic/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Interactive Bayesian Optimization (Python)
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1785314195385" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
-<a href="./math/convex-optimization/intro.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Introduction
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1785314195387" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
-<a href="./math/statistics/intro.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Introduction
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1785314195387" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
-<a href="./math/statistics/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Preface
-</h5>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<section id="best-rational-approximations-pells-equation" class="level3" data-number="0.5">
+<h3 data-number="0.5" class="anchored" data-anchor-id="best-rational-approximations-pells-equation"><span class="header-section-number">0.5</span> 2. Best Rational Approximations (Pell’s Equation)</h3>
+<ul>
+<li><p>The fraction <span class="math inline">\(\frac{N_k}{D_k}\)</span> isn’t just a random sequence of approximations; it yields integer solutions to <strong>Pell’s Equation</strong>:</p>
+<p><span class="math display">\[N_k^2 - 2 D_k^2 = \pm 1\]</span></p></li>
+<li><p>Because <span class="math inline">\(N_k^2 \approx 2 D_k^2\)</span>, taking square roots gives:</p>
+<p><span class="math display">\[\frac{N_k}{D_k} \approx \sqrt{2} \approx 1.41421356\dots\]</span></p>
+<p>The convergents generated by continued fractions produce the mathematically “best” rational approximations to irrational numbers for a given denominator size.</p></li>
+</ul>
+</section>
+<section id="logarithmic-digit-growth-the-digit-inequality" class="level3" data-number="0.6">
+<h3 data-number="0.6" class="anchored" data-anchor-id="logarithmic-digit-growth-the-digit-inequality"><span class="header-section-number">0.6</span> 3. Logarithmic Digit Growth &amp; The Digit Inequality</h3>
+<ul>
+<li><p><strong>Constant Ratio:</strong> As <span class="math inline">\(k \to \infty\)</span>, both numerator and denominator grow exponentially by a constant factor equal to the silver ratio <span class="math inline">\(\delta_S = 1 + \sqrt{2} \approx 2.41421356\)</span>:</p>
+<p><span class="math display">\[N_k \approx C \cdot (1 + \sqrt{2})^k\]</span></p></li>
+<li><p><strong>Digit Condition:</strong> The number of digits in an integer <span class="math inline">\(x\)</span> is given by <span class="math inline">\(\lfloor \log_{10}(x) \rfloor + 1\)</span>.</p></li>
+<li><p>The numerator exceeds the denominator in digits precisely when:</p>
+<p><span class="math display">\[\log_{10}(N_k) - \log_{10}(D_k) \ge 1 - \{\log_{10}(D_k)\}\]</span></p>
+<p>Since <span class="math inline">\(N_k / D_k \approx \sqrt{2}\)</span>, we have:</p>
+<p><span class="math display">\[\log_{10}(N_k) - \log_{10}(D_k) = \log_{10}\left(\frac{N_k}{D_k}\right) \approx \log_{10}(\sqrt{2}) \approx 0.150514\]</span></p>
+<p>Therefore, the numerator gains an extra digit whenever the fractional part <span class="math inline">\(\{\log_{10}(D_k)\}\)</span> falls in the narrow window between <span class="math inline">\(1 - \log_{10}(\sqrt{2}) \approx 0.849485\)</span> and <span class="math inline">\(1.0\)</span>.</p></li>
+</ul>
+</section>
+<section id="computational-efficiency-tail-recursion-vs.-loop" class="level3" data-number="0.7">
+<h3 data-number="0.7" class="anchored" data-anchor-id="computational-efficiency-tail-recursion-vs.-loop"><span class="header-section-number">0.7</span> 4. Computational Efficiency (Tail Recursion vs.&nbsp;Loop)</h3>
+<ul>
+<li><p><strong>Stack Depth Limits:</strong> Naive recursion risks overflowing the call stack for large <span class="math inline">\(N\)</span> (e.g., Python’s default limit is 1,000).</p></li>
+<li><p><strong>Tail Call Optimizations / Iteration:</strong> Moving from top-down subproblem evaluation to bottom-up state propagation demonstrates why stateful loops (or tail recursion) are standard for linear recurrence problems.</p></li>
+</ul>
 
 
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -526,6 +609,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
