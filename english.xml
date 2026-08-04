@@ -10,7 +10,34 @@
 <atom:link href="https://kimhungbui.github.io/english.xml" rel="self" type="application/rss+xml"/>
 <description>My Personal Website</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Tue, 28 Oct 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 04 Aug 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>IELTS Writing Task 1 - Table - Employees and Factories</title>
+  <dc:creator>Hung </dc:creator>
+  <link>https://kimhungbui.github.io/english/w1-table-workforce/w1-table-migrant-workers.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>The table shows the number of employees and factories producing silk in England and Wales betewen 1851 and 1901.</em> <img src="https://kimhungbui.github.io/english/w1-table-workforce/CleanShot-2026-08-04at10.59.27@2x.png" class="img-fluid"></p>
+<p>Analys: With table, we should analysys the columns before rows. In table with years (between 1851 and 1901), we use vocabularies describe trend like using in Line graph.</p>
+<p>Unit: number Tense: all the years is in the past -&gt; past simple</p>
+<p>body 1: males - females - total employees</p>
+<p>body 2: factories</p>
+<p>Sample:</p>
+<p>The table illustrates the number of employees and silk-manufactoring fatories in England and Wales between 1851 and 1901. Overall, the total workforce in the silk industry declined markedly over the 50-year period. A similar downward trend was observed in the number of factories, despite some short-term fluctuations. It is also notable that female employees consistently outnumbered their male counterparts. In 1851, the silk industry employed 130,750 workers in total, including 76,768 women and 53,964 men. Over the following decades, these figures fell steadily. By 1901, the numbers of female and male workers had dropped to 26,567 and 13,375 respectively, resulting a dramatic contraction in the total workforce to just 38,942. Regarding factories, there were only 272 in 1851, the lowest figure recorded in the table. This number then surged dramatically to 761 in 1861, nearly triple the initial level. Afterwards, the figure fluctuated slightly before gradually declining to 623 by 1901.</p>
+
+
+
+ ]]></description>
+  <category>english</category>
+  <category>writing</category>
+  <category>table</category>
+  <category>task-1</category>
+  <guid>https://kimhungbui.github.io/english/w1-table-workforce/w1-table-migrant-workers.html</guid>
+  <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Writing Task 1 - Migrant workers</title>
   <dc:creator>Hung </dc:creator>
@@ -1887,29 +1914,6 @@ Note
  ]]></description>
   <category>english</category>
   <guid>https://kimhungbui.github.io/english/w2-drug-in-poor-countries/</guid>
-  <pubDate>Sun, 14 Sep 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Writing Task 2 - Teaching cooking</title>
-  <dc:creator>Hung </dc:creator>
-  <link>https://kimhungbui.github.io/english/w2-food/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>Some people think that students should study the science of food and how to prepare it. Others believe students should spend time on more important subjects. Discuss both views and give your own opinion.</em></p>
-<hr>
-<p>Some people argue that schools should teach children about food science and cooking, while others believe the curriculum should concentrate only on academic subjects. This essay will examine both perspective before explaining why I believe that teaching food science and cooking is the more beneficial approach.</p>
-<p>On the one hand, those who prioritize academic subjects argue that focus on food science or cooking in school is a waste of valuable study time. This is because they suggest that students should devote their time to core academic subjects, such as mathematics and science, which are regarded as more important for future success. For instance, entry to prestigious universities usually depends on high grades in these subjects, rather than in cooking or food science. For this reason, they see little value including cooking or food science in the school curriculum.</p>
-<p>On the other hand, it is also believed that learning cooking and food science is essential for young people to become independent adults. In particular, understanding nutrition and learning to cook simple meals can help young people lead healthier lives. For example, students who know how to cook are less likely to rely on fast food when they live away from home. Furthermore, these skills allow them to enjoy a wider variety of meals and to manage their finances more effectively. In fact, students who cook their own meals often spend far less money than those who rely on restaurants or fast food. As a result, these skills prepare young people to live both more healthy and more economically when they become independent.</p>
-<p>In conclusion, while some people think schools should focus only on academic subjects, others believe that cooking and food science are equally important. I agree with the latter view, as these skills not only promote healthier lifestyles but also help young people manage their finances and prepare for independent living.</p>
-
-
-
- ]]></description>
-  <category>english</category>
-  <guid>https://kimhungbui.github.io/english/w2-food/</guid>
   <pubDate>Sun, 14 Sep 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
